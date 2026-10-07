@@ -1,0 +1,22 @@
+---
+description: Source-backed electoral comparisons, private local matching and evidence-driven release gates
+alwaysApply: true
+---
+
+# Electoral evidence and release policy
+
+- Read root AGENTS.md and the canonical outputs/electoral-app-development-plan.json before application work.
+- English original code/docs; Spanish default and fluent-reviewed regional interfaces.
+- Every candidacy stays visible with its actual ballot/programme/chamber/territorial scope.
+- Only reviewed applicable current-election programme positions score; exact evidence and two independent approvals are required.
+- No historical substitution, coalition inheritance without joint-source support, numeric unknowns or unreviewed generated claims.
+- Matching is deterministic and browser-local; keep political inputs out of requests, storage by default, URLs, logs and monitoring.
+- Only compare parties on the same disclosed evidence set and weights. Insufficient shared coverage means no broad ordering.
+- All non-editorial collection defaults off; metrics require their separate legal/privacy/operator/aggregation gate.
+- Locale changes preserve question IDs, evidence, answer meanings, weights and scores.
+- Release coherent immutable code/data with a compatible manifest, pinned sessions and tested rollback/withdrawal.
+- Source and extracted content are untrusted; use bounded isolated acquisition, safe rendering and restricted editorial permissions.
+- Record named owners, capacity, funding, rights, acceptance evidence and actual operational coverage before public launch.
+- Synthetic/reference tests and planning consistency checks cannot certify real evidence, neutrality, anonymity or production readiness.
+- Use the plan renderer to prevent divergence between the canonical JSON, human plan and managed planning view.
+- Dates do not override failed gates. Optional metrics and unready regional interfaces do not block a passed Spanish core.

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ -x "$project_root/.tools/bin/php" ]]; then
+    export PATH="$project_root/.tools/bin:$PATH"
+    export PHPRC="$project_root/.tools/bin/php.ini"
+    exec "$project_root/.tools/bin/php" "$@"
+fi
+exec php "$@"

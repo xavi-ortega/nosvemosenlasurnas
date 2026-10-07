@@ -1,0 +1,55 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite",
+        "lint": "eslint resources/js tests/Browser scripts/*.mjs vite.config.js eslint.config.js playwright.config.ts",
+        "typecheck": "tsc --noEmit",
+        "test:browser": "playwright test",
+        "test:reference": "node work/verify-matching-engine.mjs",
+        "docs:build": "python3 outputs/render-development-plan.py && node scripts/render-markdown-plans.mjs",
+        "check:plans": "python3 outputs/render-development-plan.py --check && python3 work/verify-development-plan.py && node scripts/render-markdown-plans.mjs --check",
+        "check:skills": "python3 scripts/check-skills.py",
+        "check:assets": "node scripts/check-assets.mjs"
+    },
+    "devDependencies": {
+        "@axe-core/playwright": "^4.13.0",
+        "@eslint/js": "^10.0.1",
+        "@playwright/test": "^1.63.0",
+        "@tailwindcss/vite": "^4.0.0",
+        "@types/node": "^24.19.1",
+        "concurrently": "^10.0.3",
+        "eslint": "^10.12.0",
+        "globals": "^17.13.0",
+        "laravel-vite-plugin": "^3.1",
+        "tailwindcss": "^4.0.0",
+        "turndown": "^7.2.4",
+        "turndown-plugin-gfm": "^1.0.2",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.71.1",
+        "vite": "^8.0.0"
+    },
+    "optionalDependencies": {
+        "@laravel/multiplex": "^0.4.1"
+    },
+    "overrides": {
+        "concurrently": {
+            "shell-quote": "1.11.0"
+        }
+    },
+    "name": "nosvemosenlasurnas",
+    "version": "0.1.0",
+    "description": "A free cited electoral-programme explorer with private browser-local policy matching in development.",
+    "license": "MIT",
+    "keywords": [
+        "elections",
+        "privacy",
+        "policy-comparison",
+        "open-source"
+    ],
+    "engines": {
+        "node": ">=24 <25"
+    }
+}

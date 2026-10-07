@@ -1,0 +1,303 @@
+{
+  "notice": "All parties, positions, answers and evidence in this fixture are invented for arithmetic verification. It describes no Spanish party or real user.",
+  "bundle": {
+    "kind": "synthetic",
+    "algorithmVersion": "policy-distance-v1.0.0",
+    "releaseId": "synthetic-example-v1",
+    "domains": [
+      {
+        "id": "housing",
+        "name": "Housing"
+      },
+      {
+        "id": "energy",
+        "name": "Energy"
+      },
+      {
+        "id": "care",
+        "name": "Health and care"
+      }
+    ],
+    "questions": [
+      {
+        "id": "h1",
+        "domainId": "housing",
+        "text": "Increase publicly owned rental housing.",
+        "baseWeight": 1
+      },
+      {
+        "id": "h2",
+        "domainId": "housing",
+        "text": "Limit rent increases in designated pressured areas.",
+        "baseWeight": 1
+      },
+      {
+        "id": "e1",
+        "domainId": "energy",
+        "text": "Set a closure date for existing nuclear plants.",
+        "baseWeight": 1
+      },
+      {
+        "id": "e2",
+        "domainId": "energy",
+        "text": "Expand new nuclear generation capacity.",
+        "baseWeight": 1
+      },
+      {
+        "id": "c1",
+        "domainId": "care",
+        "text": "Increase public primary-care capacity.",
+        "baseWeight": 1
+      },
+      {
+        "id": "c2",
+        "domainId": "care",
+        "text": "Expand use of private providers in publicly funded care.",
+        "baseWeight": 1
+      }
+    ],
+    "candidacies": [
+      {
+        "id": "X",
+        "name": "Fictional Party X"
+      },
+      {
+        "id": "Y",
+        "name": "Fictional Party Y"
+      },
+      {
+        "id": "Z",
+        "name": "Fictional Party Z"
+      }
+    ],
+    "positions": {
+      "X": {
+        "h1": {
+          "status": "fixture",
+          "stance": 2,
+          "evidenceIds": [
+            "fixture-X-h1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "h2": {
+          "status": "fixture",
+          "stance": 1,
+          "evidenceIds": [
+            "fixture-X-h2"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "e1": {
+          "status": "fixture",
+          "stance": 2,
+          "evidenceIds": [
+            "fixture-X-e1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "e2": {
+          "status": "fixture",
+          "stance": -1,
+          "evidenceIds": [
+            "fixture-X-e2"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "c1": {
+          "status": "fixture",
+          "stance": 2,
+          "evidenceIds": [
+            "fixture-X-c1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "c2": {
+          "status": "not_stated"
+        }
+      },
+      "Y": {
+        "h1": {
+          "status": "fixture",
+          "stance": 1,
+          "evidenceIds": [
+            "fixture-Y-h1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "h2": {
+          "status": "fixture",
+          "stance": 0,
+          "evidenceIds": [
+            "fixture-Y-h2"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "e1": {
+          "status": "fixture",
+          "stance": -2,
+          "evidenceIds": [
+            "fixture-Y-e1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "e2": {
+          "status": "fixture",
+          "stance": -1,
+          "evidenceIds": [
+            "fixture-Y-e2"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "c1": {
+          "status": "fixture",
+          "stance": 1,
+          "evidenceIds": [
+            "fixture-Y-c1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "c2": {
+          "status": "fixture",
+          "stance": 0,
+          "evidenceIds": [
+            "fixture-Y-c2"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        }
+      },
+      "Z": {
+        "h1": {
+          "status": "fixture",
+          "stance": 2,
+          "evidenceIds": [
+            "fixture-Z-h1"
+          ],
+          "approvedBy": [
+            "synthetic-reviewer-a",
+            "synthetic-reviewer-b"
+          ]
+        },
+        "h2": {
+          "status": "not_stated"
+        },
+        "e1": {
+          "status": "not_stated"
+        },
+        "e2": {
+          "status": "not_stated"
+        },
+        "c1": {
+          "status": "not_stated"
+        },
+        "c2": {
+          "status": "not_stated"
+        }
+      }
+    },
+    "evidence": {
+      "fixture-X-h1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party X has stance 2 on h1. This is not a real programme quotation."
+      },
+      "fixture-X-h2": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party X has stance 1 on h2. This is not a real programme quotation."
+      },
+      "fixture-X-e1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party X has stance 2 on e1. This is not a real programme quotation."
+      },
+      "fixture-X-e2": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party X has stance -1 on e2. This is not a real programme quotation."
+      },
+      "fixture-X-c1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party X has stance 2 on c1. This is not a real programme quotation."
+      },
+      "fixture-Y-h1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance 1 on h1. This is not a real programme quotation."
+      },
+      "fixture-Y-h2": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance 0 on h2. This is not a real programme quotation."
+      },
+      "fixture-Y-e1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance -2 on e1. This is not a real programme quotation."
+      },
+      "fixture-Y-e2": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance -1 on e2. This is not a real programme quotation."
+      },
+      "fixture-Y-c1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance 1 on c1. This is not a real programme quotation."
+      },
+      "fixture-Y-c2": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Y has stance 0 on c2. This is not a real programme quotation."
+      },
+      "fixture-Z-h1": {
+        "kind": "synthetic",
+        "quote": "Synthetic test definition only: Fictional Party Z has stance 2 on h1. This is not a real programme quotation."
+      }
+    }
+  },
+  "answers": {
+    "h1": 2,
+    "h2": 1,
+    "e1": -2,
+    "e2": -1,
+    "c1": 2,
+    "c2": 0
+  },
+  "importance": {
+    "housing": 3,
+    "energy": 1,
+    "care": 2
+  },
+  "demoPolicy": {
+    "minAnsweredQuestions": 4,
+    "minAnsweredDomains": 2,
+    "minCommonQuestions": 4,
+    "minCommonDomains": 2,
+    "minCommonCoverage": 0.8,
+    "closeScorePoints": 3
+  }
+}

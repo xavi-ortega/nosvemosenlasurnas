@@ -1,0 +1,23 @@
+name: Source or interpretation correction
+description: Provide verifiable public evidence for an editorial correction.
+title: "[Evidence]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Use official public evidence only. Do not attach private political profiles. This issue does not itself approve a scored mapping."
+  - type: textarea
+    id: source
+    attributes:
+      label: Official URL, election/candidacy, document and exact page/location
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Affected claim and reason for correction
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant conditions, exceptions or conflicting public evidence

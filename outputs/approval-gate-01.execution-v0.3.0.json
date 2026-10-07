@@ -1,0 +1,108 @@
+{
+  "gateId": "GATE-01",
+  "title": "Implementation blueprint approval",
+  "status": "pending",
+  "planVersion": "execution-v0.3.0",
+  "date": "2026-10-07",
+  "authorityRequired": "human_user",
+  "subjectHash": "d1523e467440080d6bce667b612b09945aa7c62c16babebc790516b650c695ef",
+  "action": "Start reversible local implementation using the 89-item dependency graph and loop-engineer protocol.",
+  "capability": "project",
+  "locale": "project",
+  "artifacts": [
+    "electoral-app-development-plan.html",
+    "electoral-app-development-plan.json",
+    "matching-algorithm-specification.html",
+    "project-language-policy.html",
+    "bootstrap-report.html",
+    "../docs/loop-engineer.md"
+  ],
+  "approveScope": [
+    "Free cited programme explorer plus separately gated deterministic browser-local questionnaire; Blade/Laravel/Boost and planned TypeScript module",
+    "Current-election scope, complete candidacy visibility, exact citations and two genuinely independent human mapping approvals",
+    "English original code/docs, complete Spanish default and fluent-reviewed ca/gl/eu surface activation",
+    "No default political-input transmission/persistence or non-editorial metrics",
+    "Autonomous reversible engineering through eligible tasks, bounded failure handling and evidence journal"
+  ],
+  "retainedStrictGates": [
+    "GATE-02 — Questionnaire methodology",
+    "GATE-03 — Actual-flow acceptance",
+    "GATE-04 — Rights, resources and external action",
+    "GATE-05 — Spanish cited explorer public release",
+    "GATE-06 — Questionnaire activation",
+    "GATE-07 — Regional interface activation",
+    "GATE-08 — Optional anonymous metrics activation"
+  ],
+  "notAuthorizedByThisGate": [
+    "Domain registration, provider purchase/provision, external publication or public deployment",
+    "Final calibrated questions/weights/coverage thresholds, actual-flow acceptance or scoring activation",
+    "Partial/unreviewed regional language activation or anonymous collection",
+    "Invented human owners, independent approvals, legal/licence/funding facts or production certification"
+  ],
+  "nextEligibleAfterApproval": [
+    "GOV-01 — Finalize neutrality and election scope",
+    "LANG-01 — Implement shared reviewed dictionaries"
+  ],
+  "remainingHumanInputs": [
+    {
+      "id": "INPUT-01",
+      "ownerRole": "Project owner",
+      "neededFor": [
+        "GOV-02",
+        "GOV-03",
+        "GOV-04"
+      ],
+      "input": "Actual legal operator and named human owners/reviewers, conflicts and available hours; licence and funded ceiling decisions."
+    },
+    {
+      "id": "INPUT-02",
+      "ownerRole": "Editorial lead",
+      "neededFor": [
+        "PILOT-01",
+        "PILOT-03",
+        "QUESTION-03",
+        "QUESTION-04"
+      ],
+      "input": "Current-election programmes and two genuinely independent qualified people per scored mapping; disagreement adjudication and question review."
+    },
+    {
+      "id": "INPUT-03",
+      "ownerRole": "Language review lead",
+      "neededFor": [
+        "LANG-05",
+        "LANG-06",
+        "LANG-07"
+      ],
+      "input": "Fluent ca/gl/eu review capacity for every surface proposed for activation."
+    },
+    {
+      "id": "INPUT-04",
+      "ownerRole": "Project owner + operations",
+      "neededFor": [
+        "OPS-02",
+        "OPS-03"
+      ],
+      "input": "Approved provider/domain choice, credentials through a safe channel, real costs and authority to provision."
+    },
+    {
+      "id": "INPUT-05",
+      "ownerRole": "Privacy reviewer",
+      "neededFor": [
+        "METRIC-03",
+        "METRIC-04"
+      ],
+      "input": "Independent operators and actual lawful data-flow/aggregation review if metrics are pursued."
+    }
+  ],
+  "approvalInstruction": "Explicitly approve GATE-01, execution-v0.3.0 and this subject/packet hash. The engineer records the exact approval message with these bindings; it cannot approve this packet itself.",
+  "implementationGatePrerequisites": "BOOT-01–BOOT-07 are locally completed within bootstrap-only scope. Product/public release acceptance remains pending.",
+  "packetHashDefinition": "SHA-256 of this JSON object excluding packetHash; sorted keys, compact separators, UTF-8 with unescaped Unicode.",
+  "artifactHashes": {
+    "matching-algorithm-specification.html": "4d18cb6e52b6fb85008dad595a9e23f09bc3d97fd04793bfe9dd8664e3d4614f",
+    "matching-engine.mjs": "006d78b64cc47792ba1628f714630d99333e721eeefeb16ab4df70b84a3e62cc",
+    "project-language-policy.html": "80c455ff29a0267585449773254c07e32947a0b2a6f27956d3a237ba93893402",
+    "../docs/loop-engineer.md": "064a039b549031506d35f04530bb29b2b96cd093029621dccde9fd2db8779f1b"
+  },
+  "artifactHashSemantics": "The normative specification/policy/guide files are bound to this first review packet. Progress-only JSON/journal updates do not invalidate the design fingerprint; changed normative artifacts require a refreshed packet and explicit approval.",
+  "packetHash": "e05fbfd5ff5e9b9535dd87bd1ad00da50e9599ec987afe2d36ee3eb79f527934"
+}

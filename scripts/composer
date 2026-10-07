@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+project_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ -f "$project_root/.tools/bin/composer" ]]; then
+    exec "$project_root/scripts/php" "$project_root/.tools/bin/composer" "$@"
+fi
+exec composer "$@"

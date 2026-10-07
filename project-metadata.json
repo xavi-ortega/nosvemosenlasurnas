@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "name": "Nos Vemos en las Urnas",
+  "slug": "nosvemosenlasurnas",
+  "stage": "initial_scaffold_ready",
+  "websiteLanguage": "es",
+  "developerLanguage": "en",
+  "plannedLocales": [
+    "ca",
+    "gl",
+    "eu"
+  ],
+  "publicPrice": "free",
+  "originalCodeLicense": "MIT",
+  "licenseDecision": "scaffold_default_pending_owner_publication_review",
+  "repositoryUrl": null,
+  "preferredDomain": "nosvemosenlasurnas.es",
+  "domainVerified": false,
+  "maintainers": [],
+  "legalOperator": null,
+  "securityContact": null,
+  "conductContact": null,
+  "funding": null,
+  "launchReady": false,
+  "capabilities": {
+    "sourceExplorer": false,
+    "questionnaire": false,
+    "anonymousMetrics": false
+  },
+  "canonicalPlan": "outputs/electoral-app-development-plan.json",
+  "humanPlan": "docs/plans/development-plan.md",
+  "runtime": {
+    "php": "^8.4.1",
+    "node": ">=24 <25",
+    "developmentDatabase": "sqlite",
+    "productionDatabase": "postgresql_planned"
+  },
+  "scaffoldReport": "outputs/initial-scaffold-report.json"
+}

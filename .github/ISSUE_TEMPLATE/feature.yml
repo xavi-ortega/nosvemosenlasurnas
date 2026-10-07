@@ -1,0 +1,14 @@
+name: Feature proposal
+description: Propose a scoped improvement to the tool.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: User need and intended behavior
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Requirements, accessibility, language and privacy implications

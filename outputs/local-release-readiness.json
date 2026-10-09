@@ -8,7 +8,7 @@
   "hostFlowVerified": false,
   "publicLaunchApproved": false,
   "collectionEnabled": false,
-  "pushed": false,
+  "pushed": true,
   "deployed": false,
   "reports": [
     "outputs/local-public-verification.json",
@@ -23,5 +23,13 @@
     "OCR for image-only sources",
     "Catalan/Basque/Galician interface packs"
   ],
-  "nextAction": "When current documents exist, import and inspect them, verify the full actual-source candidate and actual hosting flow, then prepare the single concrete public-launch action. No live approval is inferred from local checks."
+  "nextAction": "When current documents exist, import and inspect them, verify the full actual-source candidate and actual hosting flow, then prepare the single concrete public-launch action. No live approval is inferred from local checks.",
+  "verifiedPush": {
+    "remote": "origin",
+    "branch": "main",
+    "revision": "3285c3c6a63059c8aef97c5048822fa219b0cab9",
+    "verifiedAt": "2026-10-09T16:12:34.697930+00:00",
+    "historyUpdate": "fast_forward",
+    "hostedChecksAtVerification": "in_progress"
+  }
 }

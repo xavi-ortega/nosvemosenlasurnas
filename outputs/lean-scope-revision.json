@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-09T12:36:11.962962+00:00",
+  "authority": "human_user",
+  "recordType": "explicit_scope_revision",
+  "message": "the other session is putting to much effort into language and human review thing. I think the app should be way simpler. No need for human interaction. I provide the electoral plans myself from trusted sources. The only thing about languages are potential translations. The website have the quiz or the comparison tool. We collect relevant metrics like if people agrees or not and what topics do people most agree on (annonimized). Review the whole plan and strongly change it and cut it to the real important app. but still the devil is in details. But this is not a backoffice but a users service and remmber its free and we dont need a big infra",
+  "requestSha256": "c49495fb21cebaf34c9d72802ed7cbaf24a848e7c38c17a63a0fb99ad3ab9bdd",
+  "clarifications": [
+    {
+      "question": "May I tell the implementation session to pause the old backlog while I replace the plan? Both sessions are changing the same checkout.",
+      "answer": "Yes, tell it to pause"
+    },
+    {
+      "question": "For topic metrics, do you mean agreement with policy proposals, or feedback about how useful and clear each topic was?",
+      "answer": "Agreement with policy proposals"
+    }
+  ],
+  "supersedes": "execution-v0.8.0 / commit-plan-v1.0.0 product and governance scope",
+  "authorizationBoundary": "The user requested this planning/guidance revision. Earlier routine local engineering/verification/commits remain authorized within the reduced product scope. This is not user approval of a newly displayed hash, a deployment, purchase or live metric collection. The current session performs planning/tooling revision only.",
+  "archive": "outputs/legacy-execution-v0.8.0",
+  "implementationCoordination": {
+    "threadId": "01a11840-07cd-7280-ae1b-5b6efefef3db",
+    "title": "Implement approved engineering plan",
+    "observedState": "Stopped repository writes after signed C020; preserve work and await revised instructions."
+  }
+}

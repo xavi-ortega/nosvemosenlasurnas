@@ -32,16 +32,10 @@ jobs:
           extensions: mbstring, intl, pdo_sqlite
           tools: composer:v2
           coverage: none
-      - run: composer validate --strict
-      - run: composer install --no-interaction --prefer-dist --no-progress
-      - name: Prepare synthetic test environment
-        run: |
-          cp .env.example .env
-          php artisan key:generate --no-interaction
-      - run: composer audit
-      - run: composer lint
-      - run: composer analyse
-      - run: composer test
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check-ci.py php
 
   frontend:
     name: Frontend and browser
@@ -61,19 +55,10 @@ jobs:
           extensions: mbstring, intl, pdo_sqlite
           tools: composer:v2
           coverage: none
-      - run: composer install --no-interaction --prefer-dist --no-progress
-      - name: Prepare synthetic test environment
-        run: |
-          cp .env.example .env
-          php artisan key:generate --no-interaction
-      - run: npm ci --ignore-scripts
-      - run: npm audit
-      - run: npm run lint
-      - run: npm run typecheck
-      - run: npm run build
-      - run: npm run check:assets
-      - run: npx playwright install --with-deps chromium
-      - run: npm run test:browser
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/check-ci.py frontend
 
   integrity:
     name: Plans and reference integrity
@@ -82,6 +67,7 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
+          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
@@ -90,10 +76,7 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
-      - run: npm ci --ignore-scripts
-      - run: npm run check:plans
-      - run: npm run test:reference
-      - run: npm run check:skills
+      - run: python3 scripts/check-ci.py integrity
 
   security:
     name: Secrets and workflow safety
@@ -107,7 +90,4 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: '3.12'
-      - run: python3 scripts/install-ci-tools.py
-      - run: .tools/bin/actionlint
-      - run: .tools/bin/gitleaks git --redact --no-banner --log-opts=--all
-      - run: python3 scripts/check-repository.py
+      - run: python3 scripts/check-ci.py security

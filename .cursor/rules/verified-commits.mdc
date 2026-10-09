@@ -1,0 +1,17 @@
+---
+description: Require passing local CI on the exact staged tree before every commit
+alwaysApply: true
+---
+
+# Verified commits
+
+- The user's instruction requires no known required-check failures before committing.
+- Install `python3 scripts/install-git-hooks.py` in each checkout, preserving existing security hooks.
+- Stage only the intended coherent change, preserving user-owned index entries.
+- Run `python3 scripts/check-staged.py`; it runs the shared CI commands in a disposable clean staged snapshot.
+- Every required local check must pass. Failure, skipped checks or unavailable tools block the commit.
+- Rerun after staged changes. Do not use `--no-verify`, disable hooks, claim unrun checks passed or weaken checks.
+- Keep local PHP/assets/browser/integrity/audit/workflow/secret results distinct from hosted Linux/PHP matrix results.
+- Before merging, verify successful hosted CI for the exact published revision through the API/CLI.
+- A local pass does not authorize pushing, publishing, deploying, merging or passing a strict approval gate.
+- Read docs/ci.md for coverage and remaining production limitations.

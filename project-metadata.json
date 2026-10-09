@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "name": "Nos Vemos en las Urnas",
   "slug": "nosvemosenlasurnas",
-  "stage": "initial_scaffold_ready",
+  "stage": "authorized_scaffold_restart",
   "websiteLanguage": "es",
   "developerLanguage": "en",
   "plannedLocales": [
@@ -33,7 +33,6 @@
     "php": "^8.4.1",
     "node": ">=24 <25",
     "developmentDatabase": "sqlite",
-    "productionDatabase": "postgresql_planned"
-  },
-  "scaffoldReport": "outputs/initial-scaffold-report.json"
+    "productionDatabase": "sqlite_counters"
+  }
 }

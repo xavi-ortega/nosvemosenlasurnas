@@ -10,6 +10,11 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # The installed TypeScript ESLint packages require TypeScript <6.1.
+      # Revisit this bound when upgrading the lint toolchain together.
+      - dependency-name: typescript
+        versions: [">=6.1.0"]
   - package-ecosystem: github-actions
     directory: /
     schedule:

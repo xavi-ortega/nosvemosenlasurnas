@@ -1,68 +1,82 @@
 # Project instructions
 
-## Required language policy
+## Active lean scope
 
-- Apply this policy to the entire project and every future application change.
-- Spanish is the complete default website language, including admin, accessibility text, errors, privacy/help pages, result explanations and exports.
-- Keep Catalan, Basque and Galician interfaces in scope. Enable each only after complete UI/question translations receive fluent review.
-- All original code and developer documentation are English: identifiers, classes, filenames, routes, database/schema names, JSON/API keys, status/reason codes, translation keys, comments, docblocks, tests and internal diagnostics.
-- Translation values, reviewed content and source excerpts are content data. Keep their surrounding identifiers and code in English.
-- Use English semantic keys such as results.insufficient_evidence in lang/es/*.php; approved regional catalogs use ca, gl and eu. Browser UI consumes the same reviewed local dictionary.
-- Keep long translated questions/explanations in reviewed content, never mixed into scoring logic.
-- Set APP_LOCALE=es and APP_FALLBACK_LOCALE=es. HTML language and formatting follow an explicitly selected enabled locale. Keep the code/Eloquent pluralizer in English.
-- English UI is outside scope; browser preferences must not activate an unsupported English interface.
-- Spanish fallback is an unexpected-runtime safeguard, not approval to publish incomplete regional translations.
-- Localize framework/package errors and validation. Never render raw exception messages, machine codes or missing translation keys.
-- Original quotations and official proper names remain exact. Provide separately reviewed and labelled translations with access to the original.
-- AI can draft translations of public content; fluent reviewers approve them, with particular care for Basque and nuanced political/legal wording.
-- Shared glossary, question IDs, answer scales, evidence and scoring rubrics remain consistent across languages.
-- Before future application changes, read docs/plans/project-language-policy.md and section 17 of docs/plans/development-plan.md (generated from the retained HTML/canonical JSON).
-- Keep .cursor/rules/project-language.mdc consistent with this policy.
+- Read docs/loop-engineer.md and outputs/electoral-app-development-plan.json (lean-v1.1.0) before application work. L001-L030 replace the old 180-step backlog.
+- The latest user instruction in outputs/lean-scope-revision.json supersedes prior backoffice, reviewer/quorum, named staffing and formal translation-approval requirements. The owner supplies trusted electoral documents. Build a free public comparison tool and private progressive quiz, with relevant optional aggregate feedback.
+- No editorial accounts, MFA/invitations, reviewer identities/qualifications, adjudication, staff queues or web backoffice. No mandatory external human-review, recruited user-study, fluent-certification or multi-operator aggregation workflow.
+- Preserve prepared code, snapshots, user files, index and signed history until deliberately reconciled. Do not replay obsolete source snapshots or commit old phases for their own sake. Retain useful citation/hash/UI/CI utilities and retire unused code coherently; no destructive removal of non-synthetic data is authorized.
+- One Laravel/Blade/Tailwind/TypeScript app, static public bundles and SQLite counters. Source preparation runs locally at build time. No required PostgreSQL, Redis, runtime extraction worker, hosted model, Rubix ML or paid analytics. Free visitor access does not imply zero owner hosting cost.
 
-## Required implementation and release checks
+## Language and inclusive UI
 
-- Future CI checks hardcoded visible UI strings with template/AST-aware rules, enabled-locale key coverage, interpolation/plural variants, duplicate and unresolved keys.
-- Dynamic keys require explicit enumerated mappings. Exceptions require a documented, reviewed allowlist.
-- Browser checks cover approved languages across normal/empty/error flows, public/admin screens, accessibility, exports and formatting.
-- Verify locale changes preserve stored answer IDs, weights, scores, coverage and citations.
-- Review English code naming/comments/docs and fluent translated copy separately. Automatic language detection alone is insufficient.
-- The reference engine has English developer diagnostics. Its website adapter maps stable English reason codes to reviewed catalog values without changing the algorithm.
-- Language work preserves browser-local matching: no answers, priorities, constituency or affinities in requests, URLs, logs or analytics.
+- Spanish is the complete initial public interface, including errors, accessibility/help/privacy, explanations and local exports. All original code, filenames, routes, schema/API keys, translation keys, comments, tests, diagnostics and developer docs are English.
+- Use existing English semantic keys in lang/es catalogs; APP_LOCALE and APP_FALLBACK_LOCALE are es. Never render raw exception strings or unresolved keys.
+- Catalan, Basque and Galician are optional later public translations, not core dependencies. No formal human approval/quorum is required. Complete the enabled surface, preserve meaning and score/ID/weight/citation parity; disable incomplete or uncertain packs.
+- Keep original quotations/proper names exact. Label translated summaries separately and keep the original accessible. No admin translation work is required.
+- Keep the public UI modern, readable, responsive and accessible: native controls, focus/keyboard, contrast, reduced motion, screen-reader names and reflow. Use existing automated checks and a practical keyboard/mobile checklist; no recruited certification panel is required.
+- Read docs/plans/project-language-policy.md; keep .cursor/rules/project-language.mdc consistent.
 
-## Current stage
+## Evidence, matching and metrics
 
-- This repository contains a local Laravel bootstrap, planning documents and a synthetic reference engine. Product features and production readiness remain implementation work.
-- Persistent instructions are active. The local Spanish preparation/error pages are a bootstrap only; production language CI/browser checks and fluent content review remain implementation work.
-- Developer planning artifacts remain English. The eventual user-facing methodology follows the approved interface language.
+- Owner sources need explicit election/candidacy/applicability and provenance hashes/locators. Only current applicable documents support current scoring. Keep missing candidacies visible; historical samples never substitute for current positions.
+- Automated mappings are labelled derived interpretations with exact contextual citations. Unknown, ambiguous, conflicting or unsupported positions remain unscored. No independent human approval quorum; automatic checks do not prove every semantic interpretation or perfect truth.
+- Matching is deterministic and browser-local. Do not transmit/persist answers, priorities, constituency, affinity, selection/progress or finish state by default. Fetch a fixed public bank; no personalized question APIs or result URLs.
+- Start with ten balanced questions and offer five more. Reveal personalized parties/results only on deliberate finish. Overlap is an independent weighted policy index, not confidence/probability/voting intention; more answers can lower it. Same evidence/weights are required for ordering; otherwise show cited partial comparisons and coverage.
+- Metrics are in scope as a separate voluntary flow: result-fit and agreement with one independently sampled public policy proposition. Never send raw quiz/survey responses, party, score, constituency, demographics, profile vector or identifiers.
+- Use the canonical randomized-response/counters/uncertainty contract. No raw event/body log or default collection. Actual host/proxy/log flow and truthful notice/basis must pass before live activation. Do not call hashes or noisy counters guaranteed anonymity, representative voters or unique people.
+- Metrics failures and optional languages/OCR never block independently ready core. Release coherent validated bundles, pin sessions and support small correction/withdrawal history and rollback.
 
-## Evidence, privacy and release discipline
+## Execution and checks
 
-- The canonical developer plan is outputs/electoral-app-development-plan.json; use its requirements, task dependencies, risks and decisions.
-- Regenerate/check the human plan with outputs/render-development-plan.py. Keep the managed planning view in sync when changing the plan.
-- Follow current-election programme scope, exact citations and two genuinely independent approvals; unknown/conflicting/pending positions remain unscored.
-- Preserve browser-local deterministic matching. No answer, priority, constituency or affinity submission/persistence by default.
-- All non-editorial metrics default off until their separate actual-flow, legal and aggregation gate passes.
-- Never silently drop candidacies, use historical programmes as current evidence or order indices calculated on different evidence sets.
-- Insufficient shared evidence means cited overlaps/comparisons without broad ordering; unready regional languages stay disabled.
-- Publish only a coherent verified release; pin active sessions, validate schema/hashes and preserve correction/withdrawal history.
-- Document what has been verified and what remains pending. Planning checks and synthetic arithmetic do not certify production privacy, neutrality or readiness.
-- Named owners, reviewer capacity, licences, funding, actual production checks and restore/rollback proof are required before public launch.
-
-- Record gate applicability by capability/locale: a cited explorer may release before scoring; questionnaire and metric activation require their extra gates. Complete regional coverage applies to enabled surfaces, with reviewed question translations required before questionnaire locale activation.
-
-
-
-## Execution plan and strict approvals
-
-- The selected project brand is Nos Vemos en las Urnas; the preferred .es domain is unverified and unpurchased.
-- Use the atomic work items and GATE-00–GATE-08 in outputs/electoral-app-development-plan.json.
-- Read docs/loop-engineer.md and outputs/approval-gate-01.html before continuing implementation.
-- GATE-00 records the actual user identity/setup and initial-scaffold instructions. The latest user instruction explicitly authorizes local Laravel/Boost, project skills, CI, Markdown plans and open-source scaffold metadata (outputs/initial-scaffold-authorization.json). GATE-01 and later gates remain pending for features and their concrete subjects.
-- Prepare reversible implementation and review artifacts within the approved blueprint. Never approve a gate on behalf of the user or count AI/accounts as independent natural-person reviewers.
-- Record task progress with meaningful acceptance evidence in work/execution-journal.jsonl. Synthetic or local bootstrap evidence does not certify production readiness.
-- A pending optional gate does not block independently ready core work; keep the unapproved capability disabled.
+- The 2026-10-09 user request authorizes the one-time unpublished scaffold restart after verified external backup. Legacy records stay outside the active repository. Continue local implementation; keep the prior session paused.
+- Routine reversible local engineering/tests/docs/verified commits need no new blueprint, methodology, reviewer or language approval. PUBLIC-LAUNCH remains the one concrete external-action/cost/publication/optional-collection approval. Prepare actual reviewable artifacts before requesting it; never approve it as an agent.
+- Work directly on main. No branches, worktrees, forks, automatic push/merge or identity changes. The single authorized local restart is complete; no further history rewrite or reset of user work. Record meaningful actual command/artifact evidence in work/execution-journal.jsonl.
+- Before EVERY commit, run python3 scripts/check-staged.py for the exact staged tree. Failed, skipped or unavailable required CI checks block commit. Never bypass hooks, use --no-verify or weaken surviving checks. Install/preserve the local gate with python3 scripts/install-git-hooks.py; reverify after staged changes. Hosted results for the published revision are separate.
+- Regenerate/check human plans with outputs/render-development-plan.py and npm run docs:build/check:plans. Keep the existing managed planning view synchronized when the plan changes.
+- Continue independent eligible work when a source/host/optional task is blocked. Synthetic/local checks do not certify current source correctness, actual production privacy or public launch readiness. No scheduler is started by this plan.
 
 <laravel-boost-guidelines>
+=== .ai/project-policy rules ===
+
+# Project instructions
+
+## Active lean scope
+
+- Read docs/loop-engineer.md and outputs/electoral-app-development-plan.json (lean-v1.1.0) before application work. L001-L030 replace the old 180-step backlog.
+- The latest user instruction in outputs/lean-scope-revision.json supersedes prior backoffice, reviewer/quorum, named staffing and formal translation-approval requirements. The owner supplies trusted electoral documents. Build a free public comparison tool and private progressive quiz, with relevant optional aggregate feedback.
+- No editorial accounts, MFA/invitations, reviewer identities/qualifications, adjudication, staff queues or web backoffice. No mandatory external human-review, recruited user-study, fluent-certification or multi-operator aggregation workflow.
+- Preserve prepared code, snapshots, user files, index and signed history until deliberately reconciled. Do not replay obsolete source snapshots or commit old phases for their own sake. Retain useful citation/hash/UI/CI utilities and retire unused code coherently; no destructive removal of non-synthetic data is authorized.
+- One Laravel/Blade/Tailwind/TypeScript app, static public bundles and SQLite counters. Source preparation runs locally at build time. No required PostgreSQL, Redis, runtime extraction worker, hosted model, Rubix ML or paid analytics. Free visitor access does not imply zero owner hosting cost.
+
+## Language and inclusive UI
+
+- Spanish is the complete initial public interface, including errors, accessibility/help/privacy, explanations and local exports. All original code, filenames, routes, schema/API keys, translation keys, comments, tests, diagnostics and developer docs are English.
+- Use existing English semantic keys in lang/es catalogs; APP_LOCALE and APP_FALLBACK_LOCALE are es. Never render raw exception strings or unresolved keys.
+- Catalan, Basque and Galician are optional later public translations, not core dependencies. No formal human approval/quorum is required. Complete the enabled surface, preserve meaning and score/ID/weight/citation parity; disable incomplete or uncertain packs.
+- Keep original quotations/proper names exact. Label translated summaries separately and keep the original accessible. No admin translation work is required.
+- Keep the public UI modern, readable, responsive and accessible: native controls, focus/keyboard, contrast, reduced motion, screen-reader names and reflow. Use existing automated checks and a practical keyboard/mobile checklist; no recruited certification panel is required.
+- Read docs/plans/project-language-policy.md; keep .cursor/rules/project-language.mdc consistent.
+
+## Evidence, matching and metrics
+
+- Owner sources need explicit election/candidacy/applicability and provenance hashes/locators. Only current applicable documents support current scoring. Keep missing candidacies visible; historical samples never substitute for current positions.
+- Automated mappings are labelled derived interpretations with exact contextual citations. Unknown, ambiguous, conflicting or unsupported positions remain unscored. No independent human approval quorum; automatic checks do not prove every semantic interpretation or perfect truth.
+- Matching is deterministic and browser-local. Do not transmit/persist answers, priorities, constituency, affinity, selection/progress or finish state by default. Fetch a fixed public bank; no personalized question APIs or result URLs.
+- Start with ten balanced questions and offer five more. Reveal personalized parties/results only on deliberate finish. Overlap is an independent weighted policy index, not confidence/probability/voting intention; more answers can lower it. Same evidence/weights are required for ordering; otherwise show cited partial comparisons and coverage.
+- Metrics are in scope as a separate voluntary flow: result-fit and agreement with one independently sampled public policy proposition. Never send raw quiz/survey responses, party, score, constituency, demographics, profile vector or identifiers.
+- Use the canonical randomized-response/counters/uncertainty contract. No raw event/body log or default collection. Actual host/proxy/log flow and truthful notice/basis must pass before live activation. Do not call hashes or noisy counters guaranteed anonymity, representative voters or unique people.
+- Metrics failures and optional languages/OCR never block independently ready core. Release coherent validated bundles, pin sessions and support small correction/withdrawal history and rollback.
+
+## Execution and checks
+
+- The 2026-10-09 user request authorizes the one-time unpublished scaffold restart after verified external backup. Legacy records stay outside the active repository. Continue local implementation; keep the prior session paused.
+- Routine reversible local engineering/tests/docs/verified commits need no new blueprint, methodology, reviewer or language approval. PUBLIC-LAUNCH remains the one concrete external-action/cost/publication/optional-collection approval. Prepare actual reviewable artifacts before requesting it; never approve it as an agent.
+- Work directly on main. No branches, worktrees, forks, automatic push/merge or identity changes. The single authorized local restart is complete; no further history rewrite or reset of user work. Record meaningful actual command/artifact evidence in work/execution-journal.jsonl.
+- Before EVERY commit, run python3 scripts/check-staged.py for the exact staged tree. Failed, skipped or unavailable required CI checks block commit. Never bypass hooks, use --no-verify or weaken surviving checks. Install/preserve the local gate with python3 scripts/install-git-hooks.py; reverify after staged changes. Hosted results for the published revision are separate.
+- Regenerate/check human plans with outputs/render-development-plan.py and npm run docs:build/check:plans. Keep the existing managed planning view synchronized when the plan changes.
+- Continue independent eligible work when a source/host/optional task is blocked. Synthetic/local checks do not certify current source correctness, actual production privacy or public launch readiness. No scheduler is started by this plan.
+
 === foundation rules ===
 
 # Laravel Boost Guidelines
@@ -161,6 +175,16 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 
 - Laravel can be deployed using [Laravel Cloud](https://cloud.laravel.com/), which is the fastest way to deploy and scale production Laravel applications.
 - Activate the `deploying-to-cloud` skill whenever deploying to Laravel Cloud, configuring Cloud environments or resources, using the Cloud CLI, or troubleshooting Cloud deployments.
+
+=== tests rules ===
+
+# Test Enforcement
+
+- Add or update tests for behavior and logic changes when a test provides meaningful regression coverage.
+- Pure copy, styling, and layout-only changes do not require new or updated tests.
+- When test coverage applies, run the affected tests and ensure they pass.
+- Test the changed behavior and its important failure modes, but do not add tests beyond them.
+- Read the `testing-best-practices` skill before writing tests.
 
 === laravel/core rules ===
 

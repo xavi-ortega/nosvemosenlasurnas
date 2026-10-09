@@ -959,7 +959,7 @@
           "sequence": 12,
           "phaseId": "LP3",
           "subject": "feat: prepare balanced current-source question banks",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L006"
           ],
@@ -996,7 +996,11 @@
             "Bank coverage/range/weight/duplicate/citation and neutral wording lint fixtures; label semantic lint limits."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/matching.ts",
+            "resources/js/questionnaire.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1004,7 +1008,7 @@
           "sequence": 13,
           "phaseId": "LP3",
           "subject": "feat: calculate deterministic browser-local policy overlaps",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L007",
             "L012"
@@ -1040,7 +1044,11 @@
           "reuseCandidates": [
             "Historical matching-engine.mjs arithmetic only"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/matching.ts",
+            "resources/js/questionnaire.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1048,7 +1056,7 @@
           "sequence": 14,
           "phaseId": "LP3",
           "subject": "feat: choose balanced informative follow-up questions",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L013"
           ],
@@ -1081,7 +1089,11 @@
             "Balanced breadth, close/identical profiles, reordering, family redundancy, fallback and edited-answer cases."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/matching.ts",
+            "resources/js/questionnaire.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1089,7 +1101,7 @@
           "sequence": 15,
           "phaseId": "LP3",
           "subject": "feat: expose honest overlap and evidence coverage",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L013"
           ],
@@ -1130,7 +1142,7 @@
           "sequence": 16,
           "phaseId": "LP3",
           "subject": "feat: build the private questionnaire state machine",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L014",
             "L015"
@@ -1166,7 +1178,11 @@
             "State transitions, errors, edits/reset, reload behavior and pre-finish result leakage browser tests."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/matching.ts",
+            "resources/js/questionnaire.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1174,7 +1190,7 @@
           "sequence": 17,
           "phaseId": "LP3",
           "subject": "feat: offer ten-question checkpoints and five more",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L016"
           ],
@@ -1216,7 +1232,7 @@
           "sequence": 18,
           "phaseId": "LP3",
           "subject": "feat: reveal cited results after deliberate finish",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L011",
             "L017"
@@ -1311,7 +1327,7 @@
           "sequence": 20,
           "phaseId": "LP3",
           "subject": "test: verify local reset export and private quiz traffic",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L019"
           ],

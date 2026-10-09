@@ -130,7 +130,7 @@ Dependencies: L010
 
 ## L012 feat: prepare balanced current-source question banks
 
-Status: planned
+Status: completed
 
 Dependencies: L006
 
@@ -141,7 +141,7 @@ Dependencies: L006
 
 ## L013 feat: calculate deterministic browser-local policy overlaps
 
-Status: planned
+Status: completed
 
 Dependencies: L007, L012
 
@@ -152,7 +152,7 @@ Dependencies: L007, L012
 
 ## L014 feat: choose balanced informative follow-up questions
 
-Status: planned
+Status: completed
 
 Dependencies: L013
 
@@ -163,7 +163,7 @@ Dependencies: L013
 
 ## L015 feat: expose honest overlap and evidence coverage
 
-Status: planned
+Status: in_progress
 
 Dependencies: L013
 
@@ -174,7 +174,7 @@ Dependencies: L013
 
 ## L016 feat: build the private questionnaire state machine
 
-Status: planned
+Status: completed
 
 Dependencies: L014, L015
 
@@ -185,7 +185,7 @@ Dependencies: L014, L015
 
 ## L017 feat: offer ten-question checkpoints and five more
 
-Status: planned
+Status: in_progress
 
 Dependencies: L016
 
@@ -196,7 +196,7 @@ Dependencies: L016
 
 ## L018 feat: reveal cited results after deliberate finish
 
-Status: planned
+Status: in_progress
 
 Dependencies: L011, L017
 
@@ -218,7 +218,7 @@ Dependencies: L009, L018
 
 ## L020 test: verify local reset export and private quiz traffic
 
-Status: planned
+Status: in_progress
 
 Dependencies: L019
 

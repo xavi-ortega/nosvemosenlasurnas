@@ -33,6 +33,7 @@ JOBS = {
         ["npm", "run", "check:plans"],
         ["npm", "run", "check:evidence"],
         ["npm", "run", "test:reference"],
+        ["npm", "run", "test:engine"],
         ["npm", "run", "check:skills"],
     ],
     "security": [

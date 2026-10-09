@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "kind": "synthetic",
+  "asOf": "2026-10-09",
+  "election": {
+    "id": "synthetic-election",
+    "name": "Elección ficticia de desarrollo",
+    "date": "2026-11-01",
+    "constituencies": [
+      {
+        "id": "north",
+        "name": "Distrito ficticio norte"
+      },
+      {
+        "id": "south",
+        "name": "Distrito ficticio sur"
+      }
+    ]
+  },
+  "topics": [
+    {
+      "id": "housing",
+      "name": "Vivienda",
+      "budget": 1
+    },
+    {
+      "id": "economy",
+      "name": "Economía",
+      "budget": 1
+    },
+    {
+      "id": "services",
+      "name": "Servicios públicos",
+      "budget": 1
+    },
+    {
+      "id": "climate",
+      "name": "Clima y movilidad",
+      "budget": 1
+    },
+    {
+      "id": "institutions",
+      "name": "Instituciones",
+      "budget": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "housing-1",
+      "topicId": "housing",
+      "familyId": "housing-family-1",
+      "text": "Aumentar la vivienda pública en alquiler.",
+      "level": "general"
+    },
+    {
+      "id": "housing-2",
+      "topicId": "housing",
+      "familyId": "housing-family-2",
+      "text": "Limitar los alquileres en zonas de alta demanda.",
+      "level": "general"
+    },
+    {
+      "id": "housing-3",
+      "topicId": "housing",
+      "familyId": "housing-family-1",
+      "text": "Rehabilitar viviendas con ayudas públicas.",
+      "level": "specific"
+    },
+    {
+      "id": "housing-4",
+      "topicId": "housing",
+      "familyId": "housing-family-2",
+      "text": "Movilizar las viviendas vacías mediante incentivos.",
+      "level": "specific"
+    },
+    {
+      "id": "economy-1",
+      "topicId": "economy",
+      "familyId": "economy-family-1",
+      "text": "Aumentar la progresividad del impuesto sobre la renta.",
+      "level": "general"
+    },
+    {
+      "id": "economy-2",
+      "topicId": "economy",
+      "familyId": "economy-family-2",
+      "text": "Reducir la jornada laboral sin reducir el salario.",
+      "level": "general"
+    },
+    {
+      "id": "economy-3",
+      "topicId": "economy",
+      "familyId": "economy-family-1",
+      "text": "Apoyar a pequeñas empresas con financiación pública.",
+      "level": "specific"
+    },
+    {
+      "id": "economy-4",
+      "topicId": "economy",
+      "familyId": "economy-family-2",
+      "text": "Aumentar el salario mínimo.",
+      "level": "specific"
+    },
+    {
+      "id": "services-1",
+      "topicId": "services",
+      "familyId": "services-family-1",
+      "text": "Aumentar la inversión en atención primaria.",
+      "level": "general"
+    },
+    {
+      "id": "services-2",
+      "topicId": "services",
+      "familyId": "services-family-2",
+      "text": "Ampliar la educación infantil pública.",
+      "level": "general"
+    },
+    {
+      "id": "services-3",
+      "topicId": "services",
+      "familyId": "services-family-1",
+      "text": "Reforzar los servicios de atención a la dependencia.",
+      "level": "specific"
+    },
+    {
+      "id": "services-4",
+      "topicId": "services",
+      "familyId": "services-family-2",
+      "text": "Reducir las listas de espera con más personal público.",
+      "level": "specific"
+    },
+    {
+      "id": "climate-1",
+      "topicId": "climate",
+      "familyId": "climate-family-1",
+      "text": "Acelerar la sustitución de combustibles fósiles.",
+      "level": "general"
+    },
+    {
+      "id": "climate-2",
+      "topicId": "climate",
+      "familyId": "climate-family-2",
+      "text": "Ampliar el transporte público entre municipios.",
+      "level": "general"
+    },
+    {
+      "id": "climate-3",
+      "topicId": "climate",
+      "familyId": "climate-family-1",
+      "text": "Financiar la eficiencia energética de las viviendas.",
+      "level": "specific"
+    },
+    {
+      "id": "climate-4",
+      "topicId": "climate",
+      "familyId": "climate-family-2",
+      "text": "Priorizar el tren frente a nuevos vuelos internos.",
+      "level": "specific"
+    },
+    {
+      "id": "institutions-1",
+      "topicId": "institutions",
+      "familyId": "institutions-family-1",
+      "text": "Publicar los contratos públicos en formatos abiertos.",
+      "level": "general"
+    },
+    {
+      "id": "institutions-2",
+      "topicId": "institutions",
+      "familyId": "institutions-family-2",
+      "text": "Ampliar la participación ciudadana en decisiones locales.",
+      "level": "general"
+    },
+    {
+      "id": "institutions-3",
+      "topicId": "institutions",
+      "familyId": "institutions-family-1",
+      "text": "Reforzar la protección de denunciantes de corrupción.",
+      "level": "specific"
+    },
+    {
+      "id": "institutions-4",
+      "topicId": "institutions",
+      "familyId": "institutions-family-2",
+      "text": "Limitar la acumulación de cargos públicos.",
+      "level": "specific"
+    }
+  ],
+  "candidacies": [
+    {
+      "id": "alpha",
+      "name": "Candidatura ficticia Alba",
+      "constituencyIds": [
+        "north"
+      ]
+    },
+    {
+      "id": "beta",
+      "name": "Candidatura ficticia Brisa",
+      "constituencyIds": [
+        "north"
+      ]
+    },
+    {
+      "id": "gamma",
+      "name": "Candidatura ficticia Cauce",
+      "constituencyIds": [
+        "north"
+      ]
+    },
+    {
+      "id": "delta",
+      "name": "Candidatura ficticia sin programa",
+      "constituencyIds": [
+        "south"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "alpha-programme",
+      "candidacyId": "alpha",
+      "electionId": "synthetic-election",
+      "kind": "synthetic",
+      "file": "alpha.txt",
+      "sha256": "ed45c606bfb8a45120c9277b80ec8f1fac8aea3412d9b54b04c62d9ad7c6ff0c",
+      "url": "https://fixture.invalid/alpha",
+      "publishedAt": "2026-10-01",
+      "retrievedAt": "2026-10-09",
+      "validFrom": "2026-10-01",
+      "validUntil": "2026-11-01",
+      "publicExcerptAllowed": true
+    },
+    {
+      "id": "beta-programme",
+      "candidacyId": "beta",
+      "electionId": "synthetic-election",
+      "kind": "synthetic",
+      "file": "beta.txt",
+      "sha256": "b71e71161131fe96d132bd89ffdc4e5de73e71984cb34748ff8bc816ba1fdbc3",
+      "url": "https://fixture.invalid/beta",
+      "publishedAt": "2026-10-01",
+      "retrievedAt": "2026-10-09",
+      "validFrom": "2026-10-01",
+      "validUntil": "2026-11-01",
+      "publicExcerptAllowed": true
+    },
+    {
+      "id": "gamma-programme",
+      "candidacyId": "gamma",
+      "electionId": "synthetic-election",
+      "kind": "synthetic",
+      "file": "gamma.txt",
+      "sha256": "a4ac147c91d287f17915197641e00fa69cc95574bb76cfbc655526b097e7e32e",
+      "url": "https://fixture.invalid/gamma",
+      "publishedAt": "2026-10-01",
+      "retrievedAt": "2026-10-09",
+      "validFrom": "2026-10-01",
+      "validUntil": "2026-11-01",
+      "publicExcerptAllowed": true
+    }
+  ]
+}

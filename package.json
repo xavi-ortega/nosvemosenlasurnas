@@ -12,7 +12,8 @@
         "docs:build": "python3 outputs/render-development-plan.py && node scripts/render-markdown-plans.mjs",
         "check:plans": "python3 outputs/render-development-plan.py --check && python3 work/verify-development-plan.py && node scripts/render-markdown-plans.mjs --check",
         "check:skills": "python3 scripts/check-skills.py",
-        "check:assets": "node scripts/check-assets.mjs"
+        "check:assets": "node scripts/check-assets.mjs",
+        "check:evidence": "python3 scripts/prepare_sources.py tests/Fixtures/programmes/manifest.json --check"
     },
     "devDependencies": {
         "@axe-core/playwright": "^4.13.0",

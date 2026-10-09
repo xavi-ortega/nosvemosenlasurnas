@@ -29,7 +29,7 @@ Dependencies: L001
 
 ## L003 feat: accept owner source manifests and candidacy coverage
 
-Status: planned
+Status: completed
 
 Dependencies: L002
 
@@ -40,7 +40,7 @@ Dependencies: L002
 
 ## L004 feat: extract native programme text locally
 
-Status: planned
+Status: in_progress
 
 Dependencies: L003
 
@@ -51,7 +51,7 @@ Dependencies: L003
 
 ## L005 feat: validate exact contextual citations
 
-Status: planned
+Status: in_progress
 
 Dependencies: L004
 
@@ -62,7 +62,7 @@ Dependencies: L004
 
 ## L006 feat: compile grounded programme positions automatically
 
-Status: planned
+Status: in_progress
 
 Dependencies: L005
 
@@ -75,7 +75,7 @@ Dependencies: L005
 
 ## L007 feat: build and verify immutable public bundles
 
-Status: planned
+Status: in_progress
 
 Dependencies: L006
 

@@ -140,11 +140,11 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 
 - L001 · chore: restart from verified scaffold and restore CI · completed
 - L002 · refactor: keep a stateless public app and retire editorial runtime · completed
-- L003 · feat: accept owner source manifests and candidacy coverage · planned
-- L004 · feat: extract native programme text locally · planned
-- L005 · feat: validate exact contextual citations · planned
-- L006 · feat: compile grounded programme positions automatically · planned
-- L007 · feat: build and verify immutable public bundles · planned
+- L003 · feat: accept owner source manifests and candidacy coverage · completed
+- L004 · feat: extract native programme text locally · in_progress
+- L005 · feat: validate exact contextual citations · in_progress
+- L006 · feat: compile grounded programme positions automatically · in_progress
+- L007 · feat: build and verify immutable public bundles · in_progress
 - L008 · feat: browse and search cited programmes · planned
 - L009 · feat: compare programme proposals locally · planned
 - L010 · feat: open original contextual evidence · planned

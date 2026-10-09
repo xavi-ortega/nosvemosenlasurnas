@@ -31,6 +31,7 @@ JOBS = {
     "integrity": [
         ["npm", "ci", "--ignore-scripts"],
         ["npm", "run", "check:plans"],
+        ["npm", "run", "check:evidence"],
         ["npm", "run", "test:reference"],
         ["npm", "run", "check:skills"],
     ],

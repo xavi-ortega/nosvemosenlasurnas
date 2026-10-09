@@ -552,7 +552,7 @@
           "sequence": 3,
           "phaseId": "LP1",
           "subject": "feat: accept owner source manifests and candidacy coverage",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L002"
           ],
@@ -589,7 +589,10 @@
           "reuseCandidates": [
             "C008-C013 election/source identities"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "tests/Tooling/test_source_preparation.py"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -597,7 +600,7 @@
           "sequence": 4,
           "phaseId": "LP1",
           "subject": "feat: extract native programme text locally",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L003"
           ],
@@ -642,7 +645,7 @@
           "sequence": 5,
           "phaseId": "LP1",
           "subject": "feat: validate exact contextual citations",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L004"
           ],
@@ -684,7 +687,7 @@
           "sequence": 6,
           "phaseId": "LP1",
           "subject": "feat: compile grounded programme positions automatically",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L005"
           ],
@@ -732,7 +735,7 @@
           "sequence": 7,
           "phaseId": "LP1",
           "subject": "feat: build and verify immutable public bundles",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "L006"
           ],

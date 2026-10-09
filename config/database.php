@@ -31,6 +31,16 @@ return [
     */
 
     'connections' => [
+        'metrics' => [
+            'driver' => 'sqlite',
+            'database' => env('METRICS_DATABASE', database_path('metrics.sqlite')),
+            'prefix' => '',
+            'foreign_key_constraints' => true,
+            'busy_timeout' => 250,
+            'journal_mode' => 'WAL',
+            'synchronous' => 'FULL',
+            'transaction_mode' => 'IMMEDIATE',
+        ],
 
         'sqlite' => [
             'driver' => 'sqlite',

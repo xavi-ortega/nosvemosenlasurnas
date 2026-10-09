@@ -26,8 +26,11 @@
             <a href="{{ route('privacy') }}">{{ __('public.privacy') }}</a>
             <a href="{{ route('method') }}">{{ __('public.method') }}</a>
             <a href="{{ route('accessibility') }}">{{ __('public.accessibility') }}</a>
+            <a href="{{ route('feedback') }}">{{ __('public.feedback_link') }}</a>
+            <a href="{{ route('insights') }}">{{ __('public.insights_link') }}</a>
         </nav>
     </footer>
+    <script type="application/json" id="feedback-config">@json($feedbackConfig)</script>
     <script type="application/json" id="public-messages">@json(__('public'))</script>
 </body>
 </html>

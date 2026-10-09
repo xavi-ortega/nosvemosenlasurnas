@@ -1409,7 +1409,7 @@
           "sequence": 21,
           "phaseId": "LP4",
           "subject": "feat: add voluntary randomized feedback on fit and policies",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L018"
           ],
@@ -1442,7 +1442,17 @@
             "Deterministic injected-RNG branches, distribution/estimator fixtures, consent/no-consent and independent survey selection."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/feedback.ts",
+            "app/Http/Controllers/FeedbackController.php",
+            "app/FeedbackCounters.php",
+            "app/FeedbackEstimator.php",
+            "tests/Feature/FeedbackTest.php",
+            "tests/Feature/FeedbackReportTest.php",
+            "tests/Feature/FeedbackConcurrencyTest.php",
+            "tests/Browser/feedback.spec.ts",
+            "docs/tooling.md"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1450,7 +1460,7 @@
           "sequence": 22,
           "phaseId": "LP4",
           "subject": "feat: store bounded aggregate counters in SQLite",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L021"
           ],
@@ -1485,7 +1495,17 @@
             "HTTP schema/no-cookie/error/body logging and parallel counter updates/retries/global budget tests."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/feedback.ts",
+            "app/Http/Controllers/FeedbackController.php",
+            "app/FeedbackCounters.php",
+            "app/FeedbackEstimator.php",
+            "tests/Feature/FeedbackTest.php",
+            "tests/Feature/FeedbackReportTest.php",
+            "tests/Feature/FeedbackConcurrencyTest.php",
+            "tests/Browser/feedback.spec.ts",
+            "docs/tooling.md"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1493,7 +1513,7 @@
           "sequence": 23,
           "phaseId": "LP4",
           "subject": "feat: report aggregate agreement with uncertainty",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L022"
           ],
@@ -1526,7 +1546,17 @@
             "Known randomized counts, small cells, impossible estimates, intervals, incomplete topics and snapshot differencing boundaries."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/feedback.ts",
+            "app/Http/Controllers/FeedbackController.php",
+            "app/FeedbackCounters.php",
+            "app/FeedbackEstimator.php",
+            "tests/Feature/FeedbackTest.php",
+            "tests/Feature/FeedbackReportTest.php",
+            "tests/Feature/FeedbackConcurrencyTest.php",
+            "tests/Browser/feedback.spec.ts",
+            "docs/tooling.md"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1534,7 +1564,7 @@
           "sequence": 24,
           "phaseId": "LP4",
           "subject": "test: verify metric privacy refusal failures and limits",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L020",
             "L023"
@@ -1570,7 +1600,17 @@
             "Opt-in/refusal/retries/outage/malicious payload/aggregate concurrency browser+HTTP tests; no production collection."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/feedback.ts",
+            "app/Http/Controllers/FeedbackController.php",
+            "app/FeedbackCounters.php",
+            "app/FeedbackEstimator.php",
+            "tests/Feature/FeedbackTest.php",
+            "tests/Feature/FeedbackReportTest.php",
+            "tests/Feature/FeedbackConcurrencyTest.php",
+            "tests/Browser/feedback.spec.ts",
+            "docs/tooling.md"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {

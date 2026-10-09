@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
 use App\PublicBank;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Http\Request;
@@ -60,3 +61,20 @@ foreach ([
     Route::view('/'.$path, 'public.information', ['page' => $path, 'paragraphs' => $paragraphs])
         ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
 }
+
+Route::post('/api/feedback', FeedbackController::class)->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('feedback.submit');
+Route::view('/feedback', 'public.app', ['page' => 'feedback'])->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('feedback');
+
+Route::view('/insights', 'public.app', ['page' => 'insights'])->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('insights');
+Route::get('/api/feedback-report', function (Request $request): Response {
+    abort_if($request->query() !== [], 400);
+    $files = glob(resource_path('feedback-reports/????-??-??.json')) ?: [];
+    rsort($files);
+    abort_if($files === [], 503);
+    $bytes = file_get_contents($files[0]);
+    abort_if($bytes === false || strlen($bytes) > 1024 * 1024, 503);
+    $report = json_decode($bytes, true);
+    abort_if(! is_array($report) || ($report['schemaVersion'] ?? null) !== 1 || (($report['kind'] ?? null) !== 'current' && ! app()->environment(['local', 'testing'])), 503);
+
+    return response($bytes)->withHeaders(['Content-Type' => 'application/json; charset=utf-8', 'Cache-Control' => 'public, max-age=3600']);
+})->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('feedback.report');

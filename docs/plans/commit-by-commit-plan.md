@@ -229,7 +229,7 @@ Dependencies: L019
 
 ## L021 feat: add voluntary randomized feedback on fit and policies
 
-Status: planned
+Status: completed
 
 Dependencies: L018
 
@@ -240,7 +240,7 @@ Dependencies: L018
 
 ## L022 feat: store bounded aggregate counters in SQLite
 
-Status: planned
+Status: completed
 
 Dependencies: L021
 
@@ -251,7 +251,7 @@ Dependencies: L021
 
 ## L023 feat: report aggregate agreement with uncertainty
 
-Status: planned
+Status: completed
 
 Dependencies: L022
 
@@ -262,7 +262,7 @@ Dependencies: L022
 
 ## L024 test: verify metric privacy refusal failures and limits
 
-Status: planned
+Status: completed
 
 Dependencies: L020, L023
 

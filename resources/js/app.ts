@@ -1,10 +1,15 @@
 import { parseBank, match } from './matching.ts';
 import type { Answer, Bank, Citation, Question, Position, Priorities, Scale } from './matching.ts';
+import { Feedback, renderFeedback } from './feedback.ts';
+import type { FeedbackConfig } from './feedback.ts';
 import { Questionnaire } from './questionnaire.ts';
 
 const dictionary = document.getElementById('public-messages');
 const messages: Record<string, string> = dictionary ? JSON.parse(dictionary.textContent ?? '{}') : {};
 const t = (key: string): string => messages[key] ?? messages.generic_error ?? 'No hemos podido completar esta acción.';
+const feedbackNode = document.getElementById('feedback-config');
+let feedback: Feedback | null = null;
+try { if (feedbackNode) feedback = new Feedback(JSON.parse(feedbackNode.textContent ?? '{}') as FeedbackConfig); } catch { /* Optional feedback cannot block the core. */ }
 const root = document.getElementById('app');
 const page = document.body.dataset.page;
 let bank: Bank;
@@ -216,10 +221,39 @@ function renderResults(): void {
         section.append(explanations); rows.append(section);
     }
     root.append(rows, actions(button('review', renderReview), button('export', exportResults), button('reset', reset)));
-    const feedback = e('section', '', 'source-card'); feedback.append(e('h3', t('feedback_title')), p('feedback_description'), p('collection_disabled')); root.append(feedback);
+    if (feedback) renderFeedback(root, feedback, t, true);
 }
 
-if (root) {
+async function renderInsights(): Promise<void> {
+    if (!root) return;
+    try {
+        const response = await fetch('/api/feedback-report', { credentials: 'omit', referrerPolicy: 'no-referrer' });
+        if (!response.ok) throw new Error('Report unavailable.');
+        const report: { notice: string; week: string; metrics: { id: string; text: string; status: string; contributions?: number; estimate?: number[]; intervals?: number[][] }[]; topics: { topicId: string; topicName: string; propositions: number; coveredPropositions: number; status: string; agreement?: number; interval?: number[] }[] } = await response.json();
+        root.replaceChildren(e('p', report.notice), e('p', `${t('report_week')}: ${report.week}`));
+        for (const metric of report.metrics) {
+            const card = e('section', '', 'source-card'); card.append(e('h2', metric.text));
+            if (metric.status !== 'published' || !metric.estimate || !metric.intervals) card.append(p('report_suppressed'));
+            else {
+                card.append(e('p', `${t('report_contributions')}: ${new Intl.NumberFormat('es-ES').format(metric.contributions ?? 0)}`));
+                for (let i = 0; i < 3; i++) card.append(e('p', `${t(metric.id === 'result_fit' ? i === 0 ? 'fit_negative' : i === 1 ? 'fit_unsure' : 'fit_positive' : i === 0 ? 'policy_negative' : i === 1 ? 'policy_unsure' : 'policy_positive')}: ${percentage(100 * metric.estimate[i])}. ${t('report_interval')}: ${percentage(100 * metric.intervals[i][0])} – ${percentage(100 * metric.intervals[i][1])}.`));
+            }
+            root.append(card);
+        }
+        for (const topic of report.topics) {
+            const card = e('section', '', 'source-card'); card.append(e('h2', `${t('topic')}: ${topic.topicName}`), e('p', `${t('coverage')}: ${topic.coveredPropositions}/${topic.propositions}`));
+            if (topic.status === 'published' && topic.agreement !== undefined && topic.interval) card.append(e('p', `${t('policy_positive')}: ${percentage(100 * topic.agreement)}. ${t('report_interval')}: ${percentage(100 * topic.interval[0])} – ${percentage(100 * topic.interval[1])}.`));
+            else card.append(p('report_suppressed'));
+            root.append(card);
+        }
+    } catch { root.replaceChildren(p('report_unavailable')); }
+}
+
+if (root && page === 'insights') {
+    void renderInsights();
+} else if (root && page === 'feedback') {
+    root.replaceChildren(); if (feedback) renderFeedback(root, feedback, t); else root.append(p('collection_disabled'));
+} else if (root) {
     void load().then(() => { if (page === 'comparison') renderComparison(); else if (page === 'sources') renderSources(); else renderSetup(); }).catch((error: unknown) => {
         const unavailable = error instanceof Error && error.message === 'Bank unavailable.';
         root.replaceChildren(p(unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));

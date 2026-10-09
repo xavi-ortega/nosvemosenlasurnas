@@ -158,10 +158,10 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 - L018 · feat: reveal cited results after deliberate finish · completed
 - L019 · feat: polish the fast accessible public experience · completed
 - L020 · test: verify local reset export and private quiz traffic · completed
-- L021 · feat: add voluntary randomized feedback on fit and policies · planned
-- L022 · feat: store bounded aggregate counters in SQLite · planned
-- L023 · feat: report aggregate agreement with uncertainty · planned
-- L024 · test: verify metric privacy refusal failures and limits · planned
+- L021 · feat: add voluntary randomized feedback on fit and policies · completed
+- L022 · feat: store bounded aggregate counters in SQLite · completed
+- L023 · feat: report aggregate agreement with uncertainty · completed
+- L024 · test: verify metric privacy refusal failures and limits · completed
 - L025 · data: import supplied current programmes and regenerate the bank · planned
 - L026 · chore: prepare one-host deployment backup and rollback · planned
 - L027 · test: verify complete release candidate and recovery · planned

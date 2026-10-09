@@ -1,19 +1,19 @@
 ---
 name: private-matching
-description: Implement or review deterministic browser-local scoring, progressive question selection, explicit finish/result insights, privacy boundaries and synthetic matching checks.
+description: Implement deterministic local overlaps, balanced adaptive ten-plus-five questions, explicit result reveal and separate voluntary randomized aggregate feedback.
 license: MIT
 ---
 
 # Private matching
 
-Read [matching reference](../../../docs/plans/matching-algorithm-specification.md), [adaptive proposal](../../../docs/plans/adaptive-questionnaire-specification.md) and the canonical plan. The v1 synthetic reference and proposed fixed-bank adaptive method have different weight contracts; a new reviewed version is required before adaptive scoring.
+Read the current lean matching/adaptive specifications and canonical plan. Keep the historical v1 reference as an arithmetic oracle only; the current fixed-budget contract has its own version.
 
-No ML or private-input API. Fetch the same complete public bank for everyone. Answers, priorities, constituency, affinities, next-question IDs, progress, stop reasons and finish/refinement state stay in browser memory. No such data in requests, URLs/fragments, cookies, default persistence, telemetry, logs, crash/support payloads or AI tooling. Explicit local export is separately explained and reviewed. Finish is not data consent.
+Matching has no ML/private-input API. Fetch the same public bank for all. Answers/priorities/constituency/affinities/progress/finish/next-question state stay in browser memory, with no default persistence, personal URL, log, telemetry or crash disclosure. A deliberate local export explains its contents; finish is not consent.
 
-Compute deterministic independent overlap indices using applicable reviewed evidence, original weights and a common evidence set before ordering. Scores do not sum to 100 and are not probabilities. Preserve ties, unknown evidence and honest limited-result states. More answers can raise or lower an overlap.
+Use similarity 1-abs(a-p)/4 and fixed topic/family budgets with local explicit priorities. Preserve unknowns, ties and candidacies. Same evidence/weights precede ordering; insufficient coverage produces cited partial comparison. Independent overlaps are not probabilities and can rise or fall.
 
-Start with ten balanced presented questions and optionally five more per block. Adaptive selection needs transparent versioned local rules, domain coverage, bounded question families and a reviewed stopping policy. Do not chase a fabricated 100%.
+Ten balanced starter questions, optional five more, simple published local coverage/spread selector and balanced fallback. No elaborate completion-bound certification, fabricated 100% or private belief prediction. Withhold personalized parties/score mappings/citations until deliberate finish; exhaustion never auto-reveals.
 
-No party-specific personalised result before deliberate finish. Checkpoints may show only a reviewed unnamed index when evidence permits. At finish explain answered-question agreement/disagreement, weights and exact contextual citations; show unknowns and all candidacies. Public exploration of unanswered topics must not imply an inferred preference.
+The user separately authorized planning relevant metrics. Optional fit and independently sampled policy surveys use the canonical randomized-response protocol; never reuse/upload quiz answers or party/scores/profile. Counters only; truthful uncertainty, no guaranteed anonymity/unique people. Actual host/log flow precedes live activation.
 
-Use synthetic arithmetic and actual browser traffic/storage/log checks for implemented flows. Inspect DOM, accessibility tree, titles, notifications, previews and exports for premature identity/score/citation disclosure. Full public evidence is inspectable: presentation discipline is not secrecy. Report unimplemented checks as pending.
+Use exact arithmetic examples, invariants and implemented browser request/storage/DOM/accessibility/reveal checks. Report actual scope rather than manufacturing human review or production readiness.

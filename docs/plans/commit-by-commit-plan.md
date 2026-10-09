@@ -15,7 +15,7 @@ Dependencies:
 
 ## L002 refactor: keep a stateless public app and retire editorial runtime
 
-Status: planned
+Status: completed
 
 Dependencies: L001
 

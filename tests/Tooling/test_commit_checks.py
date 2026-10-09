@@ -5,6 +5,7 @@ import io
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -92,6 +93,34 @@ class CommitChecksTest(unittest.TestCase):
 
         with self.assertRaisesRegex(RuntimeError, "modified tracked snapshot files: example.txt"):
             staged.verify_staged(self.root, checker=mutate)
+
+    def test_removed_editor_copies_naming_drafts_and_extraction_bytes_are_rejected(self):
+        cases = [
+            (".claude/settings.local.json", "Removed local/editor or obsolete naming artifact"),
+            (".cursor/skills/example/SKILL.md", "Removed local/editor or obsolete naming artifact"),
+            ("outputs/electoral-app-naming-explorer.v1.json", "Removed local/editor or obsolete naming artifact"),
+            ("storage/framework/extraction-workspaces/owned/input.pdf", "Extraction runtime bytes"),
+        ]
+        for name, reason in cases:
+            with self.subTest(path=name):
+                path = self.root / name
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text("Synthetic unwanted artifact\n")
+                self.git("add", name)
+                try:
+                    result = subprocess.run(
+                        [sys.executable, str(ROOT / "scripts/check-repository.py")],
+                        cwd=self.root,
+                        env={**os.environ, "GIT_DIR": str(self.root / ".git"), "GIT_WORK_TREE": str(self.root)},
+                        capture_output=True,
+                        text=True,
+                    )
+
+                    self.assertEqual(result.returncode, 1)
+                    self.assertIn(reason + " must not be tracked: " + name, result.stderr)
+                finally:
+                    self.git("rm", "--cached", name)
+                    path.unlink()
 
     def test_reviewed_relative_skill_aliases_survive_snapshot_export(self):
         source = self.root / ".agents" / "skills" / "example"

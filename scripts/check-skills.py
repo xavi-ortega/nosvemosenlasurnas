@@ -7,7 +7,7 @@ from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 lock = json.loads((root / "skills-lock.json").read_text())
 actual = set()
-for client in [".agents", ".cursor", ".claude"]:
+for client in [".agents"]:
     for skill in (root / client / "skills").iterdir():
         if skill.is_symlink():
             expected = lock["aliases"].get(str(skill.relative_to(root)))
@@ -23,4 +23,4 @@ if actual != expected:
 for name, digest in lock["files"].items():
     if hashlib.sha256((root / name).read_bytes()).hexdigest() != digest:
         raise SystemExit("Reviewed skill changed: " + name)
-print("Verified " + str(len(lock["skills"])) + " canonical skills, aliases and " + str(len(actual)) + " pinned files. Integrity is not human editorial approval.")
+print("Verified " + str(len(lock["skills"])) + " canonical skills and " + str(len(actual)) + " pinned files. Integrity is not human editorial approval.")

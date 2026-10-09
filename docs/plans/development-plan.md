@@ -139,7 +139,7 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 ## Progress
 
 - L001 · chore: restart from verified scaffold and restore CI · completed
-- L002 · refactor: keep a stateless public app and retire editorial runtime · planned
+- L002 · refactor: keep a stateless public app and retire editorial runtime · completed
 - L003 · feat: accept owner source manifests and candidacy coverage · planned
 - L004 · feat: extract native programme text locally · planned
 - L005 · feat: validate exact contextual citations · planned

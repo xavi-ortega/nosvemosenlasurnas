@@ -1,17 +1,17 @@
 ---
 name: inclusive-interface-review
-description: Review or implement this project's public/admin interfaces, Spanish catalogs, regional locale activation, accessibility, motion and result presentation.
+description: Implement or review the modern accessible Spanish public comparison/quiz, optional translations, result presentation and voluntary feedback.
 license: MIT
 ---
 
 # Inclusive interface review
 
-Read AGENTS.md and [language policy](../../../docs/plans/project-language-policy.md), then the applicable experience and language requirements in [development plan](../../../docs/plans/development-plan.md). Use the frontend-design and Tailwind skills for visual implementation when available; their aesthetic guidance does not override the civic brief or accessibility.
+Read AGENTS.md and the lean language/experience plan. Public product only: no admin language backlog, recruited usability panel or mandatory human fluent-certification workflow.
 
-Keep original code, keys and developer documentation English. All visible copy, errors, accessibility names and exports use reviewed Spanish catalogs. Keep source quotations exact and mark separately reviewed translations. Regional interfaces require complete fluent approval for their enabled surfaces; a fallback cannot justify activation.
+Original code/keys/docs are English. Public copy/errors/a11y/help/privacy/exports are Spanish catalogs. Original quotes/names stay exact; translated paraphrases are labelled with access to the original. Optional ca/gl/eu packs preserve semantic IDs/scales/weights/citations; keep incomplete or uncertain packs disabled, without blocking Spanish core.
 
-Review normal, empty, loading, failure, offline/recovery and reduced-motion states with keyboard/touch and assistive technology. Preserve text alternatives, focus, zoom/reflow, contrast and 44 px primary targets. Modern interactions must remain understandable to older and younger people with different digital confidence.
+Keep readable modern responsive UI, native labelled controls, focus/keyboard, contrast, generous targets, screen-reader names, reduced motion and reflow. Check normal/empty/loading/error states. Reuse existing public UI and language tools rather than expanding governance infrastructure.
 
-Party identities, logos, individual scores, ordering and personalised citations require explicit finish. A neutral unnamed highest-overlap index is allowed only by the approved comparable-evidence policy. Never reveal automatically at a checkpoint or bank exhaustion. Do not mix coverage, stability and overlap or describe overlap as a confidence probability.
+Reveal personalized parties/logos/scores/ranking/citations only after explicit finish. The permitted unnamed comparable overlap is not confidence; coverage and count are separate. No automatic reveal, force toward 100% or inference for unanswered topics.
 
-Use Playwright/axe for implemented pages; report automated coverage separately from manual accessibility, fluent review and actual participant/device evidence. Bootstrap checks cannot certify the future questionnaire. Preserve stable answers/weights/citations across locale changes and keep all political state local.
+Playwright/axe and a short keyboard/mobile checklist provide regression evidence, not universal certification. Optional feedback is a separate clear opt-in/refusal flow; failure never blocks the free public service. Preserve local matching and locale score parity.

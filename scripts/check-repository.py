@@ -9,6 +9,10 @@ root = Path(__file__).resolve().parents[1]
 tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=root).decode().split("\0")
 for name in filter(None, tracked):
     path = Path(name)
+    if name.startswith("storage/framework/extraction-workspaces/"):
+        raise SystemExit("Extraction runtime bytes must not be tracked: " + name)
+    if name.startswith((".claude/", ".cursor/skills/")) or name in ['CLAUDE.md', 'outputs/creative-domain-name-shortlist.json', 'outputs/domain-name-shortlist.json', 'outputs/electoral-app-naming-explorer.html', 'outputs/electoral-app-naming-explorer.json', 'outputs/electoral-app-naming-explorer.v1.json', 'outputs/electoral-app-naming-explorer.v2.json', 'outputs/electoral-app-naming-explorer.v3.json', 'outputs/render-naming-explorer.py']:
+        raise SystemExit("Removed local/editor or obsolete naming artifact must not be tracked: " + name)
     if any(part in {"vendor", "node_modules", ".tools", ".git", "test-results", "playwright-report"} for part in path.parts):
         raise SystemExit("Runtime/test output must not be tracked: " + name)
     if path.name.startswith(".env") and name != ".env.example":

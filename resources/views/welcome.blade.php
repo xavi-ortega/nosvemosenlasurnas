@@ -2,8 +2,9 @@
     <section class="hero">
         <h1>{{ __('public.home_title') }}</h1>
         <p class="hero-description">{{ __('public.home_description') }}</p>
-        @if(app()->environment(['local', 'testing']))
-            <p class="notice">{{ __('public.development') }}</p>
+        @if($release !== null)
+            <p class="notice">{{ __('public.'.($release['kind'] === 'synthetic' ? 'development' : ($release['kind'] === 'historical' ? 'historical' : 'source_warning'))) }}</p>
+            <p>{{ __('public.release') }}: {{ $release['asOf'] }}</p>
         @else
             <p class="notice">{{ __('public.unavailable') }}</p>
         @endif

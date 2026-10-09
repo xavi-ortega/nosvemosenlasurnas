@@ -8,7 +8,7 @@
   },
   "bankBytes": 24061,
   "bankGzipBytes": 2965,
-  "initialAssetGzipBytes": 10688,
+  "initialAssetGzipBytes": 12263,
   "enginePlusSelectionP95Ms": 0.21324999999999505,
   "samples": 200,
   "budgets": {
@@ -16,7 +16,7 @@
     "bankGzipBytes": 5242880,
     "engineP95Ms": 100
   },
-  "browserChecks": "32 desktop/mobile emulation tests passed; 6 cohort/refinement and 2 Spanish local-export regressions passed",
+  "browserChecks": "26 public-journey cases and 8 separate feedback/report cases passed after source/metric increments; final full CI repeats the complete suite.",
   "limitations": [
     "Synthetic small bank and local unthrottled timings do not establish full current-bank or actual mobile/hosting performance."
   ],

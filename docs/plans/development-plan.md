@@ -162,9 +162,9 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 - L022 · feat: store bounded aggregate counters in SQLite · completed
 - L023 · feat: report aggregate agreement with uncertainty · completed
 - L024 · test: verify metric privacy refusal failures and limits · completed
-- L025 · data: import supplied current programmes and regenerate the bank · planned
-- L026 · chore: prepare one-host deployment backup and rollback · planned
-- L027 · test: verify complete release candidate and recovery · planned
-- L028 · docs: prepare the single concrete public launch action · planned
+- L025 · data: import supplied current programmes and regenerate the bank · blocked
+- L026 · chore: prepare one-host deployment backup and rollback · completed
+- L027 · test: verify complete release candidate and recovery · blocked
+- L028 · docs: prepare the single concrete public launch action · blocked
 - L029 · feat: optionally import image-only programmes with local OCR · planned
 - L030 · feat: optionally translate the public interface · planned

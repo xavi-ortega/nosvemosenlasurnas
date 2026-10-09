@@ -273,7 +273,7 @@ Dependencies: L020, L023
 
 ## L025 data: import supplied current programmes and regenerate the bank
 
-Status: planned
+Status: blocked
 
 Dependencies: L007, L011, L012
 
@@ -284,7 +284,7 @@ Dependencies: L007, L011, L012
 
 ## L026 chore: prepare one-host deployment backup and rollback
 
-Status: planned
+Status: completed
 
 Dependencies: L002, L007
 
@@ -296,7 +296,7 @@ Dependencies: L002, L007
 
 ## L027 test: verify complete release candidate and recovery
 
-Status: planned
+Status: blocked
 
 Dependencies: L020, L025, L026
 
@@ -307,7 +307,7 @@ Dependencies: L020, L025, L026
 
 ## L028 docs: prepare the single concrete public launch action
 
-Status: planned
+Status: blocked
 
 Dependencies: L027
 

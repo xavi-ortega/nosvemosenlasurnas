@@ -35,6 +35,7 @@ return [
     'release_withdrawn' => 'Edición retirada',
     'history_unavailable' => 'No hemos podido cargar el historial. Las citas de esta página siguen disponibles.',
     'publication_unknown' => 'Fecha de publicación no verificada',
+    'synthetic_change' => 'Cambio de la edición ficticia de desarrollo.',
     'home_title' => 'Tu voto merece contexto.',
     'home_description' => 'Compara propuestas, consulta sus fuentes y explora qué políticas encajan con tus ideas. Tú decides.',
     'comparison_title' => 'Compara las propuestas',

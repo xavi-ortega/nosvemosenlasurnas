@@ -1,0 +1,52 @@
+{
+  "evidenceClass": "synthetic_engineering",
+  "productionModeLocalSmoke": [
+    {
+      "path": "/",
+      "status": 200,
+      "cookies": false,
+      "language": "es"
+    },
+    {
+      "path": "/questionnaire",
+      "status": 200,
+      "cookies": false,
+      "language": "es"
+    },
+    {
+      "path": "/api/bank",
+      "status": 503,
+      "cookies": false,
+      "language": "es"
+    },
+    {
+      "path": "/api/feedback-report",
+      "status": 503,
+      "cookies": false,
+      "language": "es"
+    },
+    {
+      "path": "/api/feedback",
+      "status": 503,
+      "collectionEnabled": false
+    }
+  ],
+  "boostInstalled": false,
+  "parserInstalled": false,
+  "collectionEnabled": false,
+  "hostFlowVerified": false,
+  "limit": "The production-mode local package withholds its synthetic bank. No current-source or actual-host certification.",
+  "authenticatedBackup": {
+    "cipherSha256": "e56fec5057bb3f07509f30fad5a58a3074f932d3ba4fa58bf58a005b66437d30",
+    "verifiedRestoredFiles": 14,
+    "restoredReleaseSha256": "fe627ea3171fbf6cda9a2180d1b446026f60cb2f85b1886790b0a9e6a2046ebd",
+    "containsCounters": true,
+    "historicalSourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108"
+  },
+  "regressions": [
+    "Wrong key/tampered ciphertext rejected before extraction",
+    "Backup during active SQLite writes; original counters retain WAL mode and a standalone integrity-checked snapshot restores",
+    "Fresh targets and path/symlink/file/size/privacy boundaries",
+    "Actual preserved historical PDF/source/preparation and synthetic counter schema restored with matching hashes"
+  ]
+}

@@ -18,6 +18,11 @@ class PublicJourneyTest extends TestCase
         }
     }
 
+    public function test_home_exposes_only_the_fixed_public_release_date(): void
+    {
+        $this->get('/')->assertSeeText('Edición de fuentes: 2026-10-09')->assertSeeText('Demo con candidaturas');
+    }
+
     public function test_quiz_profiles_and_retired_authentication_have_no_endpoint(): void
     {
         foreach (['/api/questionnaire', '/api/results', '/api/answers'] as $path) {

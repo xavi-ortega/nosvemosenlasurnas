@@ -1658,7 +1658,7 @@
           "sequence": 25,
           "phaseId": "LP5",
           "subject": "data: import supplied current programmes and regenerate the bank",
-          "status": "planned",
+          "status": "blocked",
           "dependsOn": [
             "L007",
             "L011",
@@ -1696,14 +1696,15 @@
           ],
           "reuseCandidates": [],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
+          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
         },
         {
           "id": "L026",
           "sequence": 26,
           "phaseId": "LP5",
           "subject": "chore: prepare one-host deployment backup and rollback",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L002",
             "L007"
@@ -1739,7 +1740,15 @@
             "Production-mode local smoke, SQLite backup during writes, restore/hash/previous-bundle and missing-disk checks."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_runtime.py",
+            "scripts/local_recovery.py",
+            "scripts/encrypt-backup.php",
+            "tests/Feature/LocalRecoveryTest.php",
+            "tests/Fixtures/recovery_contract.py",
+            "outputs/local-recovery-verification.json",
+            "docs/tooling.md"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1747,7 +1756,7 @@
           "sequence": 27,
           "phaseId": "LP5",
           "subject": "test: verify complete release candidate and recovery",
-          "status": "planned",
+          "status": "blocked",
           "dependsOn": [
             "L020",
             "L025",
@@ -1790,14 +1799,15 @@
           ],
           "reuseCandidates": [],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
+          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
         },
         {
           "id": "L028",
           "sequence": 28,
           "phaseId": "LP5",
           "subject": "docs: prepare the single concrete public launch action",
-          "status": "planned",
+          "status": "blocked",
           "dependsOn": [
             "L027"
           ],
@@ -1834,7 +1844,8 @@
           ],
           "reuseCandidates": [],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
+          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
         },
         {
           "id": "L029",
@@ -1933,7 +1944,7 @@
     "externalInputs": {
       "owner_current_programmes_and_manifest": {
         "status": "pending",
-        "description": "Owner-provided current documents, candidacy/election/applicability and provenance manifest; real files with hashes, not a reviewer signoff."
+        "description": "Owner will collect programmes as published, including official party websites; historical documents may support labelled local trials only. Current election/candidacy/applicability/provenance records remain pending."
       }
     }
   },

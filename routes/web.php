@@ -9,8 +9,14 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Symfony\Component\HttpFoundation\Response;
 
-Route::get('/', function (): Response {
-    return response()->view('welcome')->withHeaders([
+Route::get('/', function (PublicBank $bank): Response {
+    try {
+        $release = json_decode($bank->bytes(), true);
+    } catch (Throwable) {
+        $release = null;
+    }
+
+    return response()->view('welcome', ['release' => $release])->withHeaders([
         'Content-Language' => app()->getLocale(),
         'Referrer-Policy' => 'no-referrer',
         'X-Content-Type-Options' => 'nosniff',
@@ -87,5 +93,10 @@ Route::get('/api/release-history', function (Request $request, PublicBank $bank)
         abort(503);
     }
 
-    return response()->json($state['history'])->header('Cache-Control', 'no-store');
+    $history = $state['history'];
+    if ($state['kind'] === 'synthetic') {
+        $history = array_map(fn (array $change): array => [...$change, 'reason' => __('public.synthetic_change')], $history);
+    }
+
+    return response()->json($history)->header('Cache-Control', 'no-store');
 })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('release.history');

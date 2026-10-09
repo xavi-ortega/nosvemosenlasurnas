@@ -59,6 +59,7 @@ function citation(c: Citation): HTMLElement {
 function positionView(position: Position): HTMLElement {
     const block = e('div');
     block.append(p(position.status !== 'derived' ? position.status : position.value === 2 ? 'support' : position.value === -2 ? 'oppose' : 'intermediate'));
+    if (position.rationale) block.append(e('p', position.rationale));
     for (const c of position.citations) block.append(citation(c));
     return block;
 }
@@ -108,12 +109,19 @@ function renderSources(): void {
         const documents = bank.documents.filter(d => d.candidacyId === c.id);
         if (!documents.length) card.append(p('missing_programme'));
         for (const d of documents) {
-            card.append(e('p', `${bank.election.name}. ${d.publishedAt}.`));
+            card.append(e('p', `${bank.election.name}. ${d.publishedAt ?? t('publication_unknown')}.`));
             if (bank.kind === 'synthetic') card.append(p('synthetic_original'));
             else { const link = e('a', t('original')); link.href = d.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.referrerPolicy = 'no-referrer'; card.append(link); }
         }
         root.append(card);
     }
+    const history = e('section', '', 'source-card'); history.append(e('h2', t('correction_history'))); root.append(history);
+    void fetch('/api/release-history', { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' }).then(async response => {
+        if (!response.ok) throw new Error('History unavailable.');
+        const changes: { sha256: string; reason: string; action?: string }[] = await response.json();
+        for (const change of changes) history.append(e('p', `${change.sha256.slice(0, 12)}. ${t(change.action === 'withdraw' ? 'release_withdrawn' : 'release_changed')}: ${change.reason}`));
+    }).catch(() => history.append(p('history_unavailable')));
+
 }
 
 function renderSetup(): void {

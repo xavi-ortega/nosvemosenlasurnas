@@ -600,7 +600,7 @@
           "sequence": 4,
           "phaseId": "LP1",
           "subject": "feat: extract native programme text locally",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L003"
           ],
@@ -637,7 +637,15 @@
           "reuseCandidates": [
             "Prepared C045-C047 extraction/layout code after removing review dependencies"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "scripts/grounded_positions.py",
+            "scripts/manage_releases.py",
+            "tests/Tooling/test_grounded_releases.py",
+            "tests/Feature/ReleaseApplicabilityTest.php",
+            "tests/Browser/public-journeys.spec.ts",
+            "outputs/historical-parser-trial.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -645,7 +653,7 @@
           "sequence": 5,
           "phaseId": "LP1",
           "subject": "feat: validate exact contextual citations",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L004"
           ],
@@ -679,7 +687,15 @@
           "reuseCandidates": [
             "CitationResolver and prepared source-range tests"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "scripts/grounded_positions.py",
+            "scripts/manage_releases.py",
+            "tests/Tooling/test_grounded_releases.py",
+            "tests/Feature/ReleaseApplicabilityTest.php",
+            "tests/Browser/public-journeys.spec.ts",
+            "outputs/historical-parser-trial.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -687,7 +703,7 @@
           "sequence": 6,
           "phaseId": "LP1",
           "subject": "feat: compile grounded programme positions automatically",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L005"
           ],
@@ -727,7 +743,15 @@
           "reuseCandidates": [
             "Position/proposition schemas; remove ReviewLedger requirements"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "scripts/grounded_positions.py",
+            "scripts/manage_releases.py",
+            "tests/Tooling/test_grounded_releases.py",
+            "tests/Feature/ReleaseApplicabilityTest.php",
+            "tests/Browser/public-journeys.spec.ts",
+            "outputs/historical-parser-trial.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -735,7 +759,7 @@
           "sequence": 7,
           "phaseId": "LP1",
           "subject": "feat: build and verify immutable public bundles",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L006"
           ],
@@ -773,7 +797,15 @@
           "reuseCandidates": [
             "C014-C019 public release contracts and fixtures"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "scripts/grounded_positions.py",
+            "scripts/manage_releases.py",
+            "tests/Tooling/test_grounded_releases.py",
+            "tests/Feature/ReleaseApplicabilityTest.php",
+            "tests/Browser/public-journeys.spec.ts",
+            "outputs/historical-parser-trial.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -929,7 +961,7 @@
           "sequence": 11,
           "phaseId": "LP2",
           "subject": "feat: explain coverage and support bundle corrections",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L010"
           ],
@@ -966,7 +998,15 @@
             "Correction/withdrawal/session-version browser checks and rollback rehearsal."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "scripts/prepare_sources.py",
+            "scripts/grounded_positions.py",
+            "scripts/manage_releases.py",
+            "tests/Tooling/test_grounded_releases.py",
+            "tests/Feature/ReleaseApplicabilityTest.php",
+            "tests/Browser/public-journeys.spec.ts",
+            "outputs/historical-parser-trial.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {

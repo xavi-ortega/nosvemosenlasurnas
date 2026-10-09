@@ -40,7 +40,7 @@ Dependencies: L002
 
 ## L004 feat: extract native programme text locally
 
-Status: in_progress
+Status: completed
 
 Dependencies: L003
 
@@ -51,7 +51,7 @@ Dependencies: L003
 
 ## L005 feat: validate exact contextual citations
 
-Status: in_progress
+Status: completed
 
 Dependencies: L004
 
@@ -62,7 +62,7 @@ Dependencies: L004
 
 ## L006 feat: compile grounded programme positions automatically
 
-Status: in_progress
+Status: completed
 
 Dependencies: L005
 
@@ -75,7 +75,7 @@ Dependencies: L005
 
 ## L007 feat: build and verify immutable public bundles
 
-Status: in_progress
+Status: completed
 
 Dependencies: L006
 
@@ -119,7 +119,7 @@ Dependencies: L009
 
 ## L011 feat: explain coverage and support bundle corrections
 
-Status: planned
+Status: completed
 
 Dependencies: L010
 

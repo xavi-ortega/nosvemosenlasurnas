@@ -11,8 +11,10 @@ import subprocess
 import sys
 import tempfile
 import time
+from urllib.parse import urlsplit
 
 LIMIT = 20 * 1024 * 1024
+PDF_SECONDS = 60
 ID = re.compile(r"[a-z][a-z0-9_-]{0,63}\Z")
 
 
@@ -61,7 +63,7 @@ def extract(path, pdf_python=None):
                 process = subprocess.Popen([pdf_python or sys.executable, str(worker), str(path)], stdout=stream, stderr=diagnostics)
                 try:
                     while process.poll() is None:
-                        if time.monotonic() - started > 60 or output.stat().st_size > LIMIT or errors.stat().st_size > LIMIT:
+                        if time.monotonic() - started > PDF_SECONDS or output.stat().st_size > LIMIT or errors.stat().st_size > LIMIT:
                             raise ValueError("PDF time/output budget exceeded")
                         measured = subprocess.run(["ps", "-o", "rss=", "-p", str(process.pid)], capture_output=True, text=True)
                         if measured.stdout.strip() and int(measured.stdout.strip()) > 256 * 1024:
@@ -123,14 +125,21 @@ def compile_manifest(path, pdf_python=None):
         source_ids.add(source["id"])
         require(source["candidacyId"] in positions and source["electionId"] == election["id"], "Source applicability mismatch")
         require(source["kind"] == kind and source["publicExcerptAllowed"] is True, "Source kind or excerpt permission mismatch")
-        require(re.fullmatch(r"https://[^\s<>]+", source["url"]), "Invalid original URL")
-        require(date.fromisoformat(source["publishedAt"]) <= as_of and date.fromisoformat(source["retrievedAt"]) <= date.today(), "Future source provenance")
+        url = urlsplit(source["url"])
+        require(re.fullmatch(r"https://[^\s<>]+", source["url"]) and url.hostname and not url.username and not url.password, "Invalid original URL")
+        if source['publishedAt'] is None:
+            require(kind == 'historical' and source.get('publishedAtPrecision') == 'unknown', 'Current sources require dated provenance')
+        else:
+            require(date.fromisoformat(source['publishedAt']) <= as_of, 'Future source provenance')
+        require(date.fromisoformat(source['retrievedAt']) <= date.today(), 'Future retrieval provenance')
         require(date.fromisoformat(source["validFrom"]) <= as_of <= date.fromisoformat(source["validUntil"]), "Source is not applicable at release date")
         local = (path.parent / source["file"]).resolve()
         require(local.is_relative_to(path.parent.resolve()), "Source path escapes manifest directory")
         data, text = extract(local, pdf_python)
         require(digest(data) == source["sha256"], "Source hash mismatch")
         document = {k: source[k] for k in ["id", "candidacyId", "electionId", "kind", "url", "sha256", "publishedAt", "retrievedAt", "validFrom", "validUntil"]}
+        if source.get('publishedAtPrecision') == 'unknown':
+            document['publishedAtPrecision'] = 'unknown'
         document.update(text=text, textSha256=digest(text.encode()), extraction="native_text_v1")
         documents.append(document)
         offset = 0
@@ -141,7 +150,8 @@ def compile_manifest(path, pdf_python=None):
                 if sentence not in values:
                     continue
                 quote_start = offset + line.index(sentence)
-                context_start = text.rfind("\n\n", 0, quote_start) + 2
+                boundary = text.rfind("\n\n", 0, quote_start)
+                context_start = boundary + 2 if boundary >= 0 else 0
                 context_end = text.find("\n\n", quote_start + len(sentence))
                 context = text[context_start:context_end if context_end >= 0 else len(text)].strip()
                 if context != sentence:
@@ -156,29 +166,45 @@ def compile_manifest(path, pdf_python=None):
                     position.update(status="derived", value=value)
                 position["citations"].append(citation)
             offset += len(line)
-    return {"schemaVersion": 1, "engineVersion": "lean-fixed-budgets-v1", "compilerVersion": "literal-policy-rule-v1", "kind": kind, "asOf": manifest["asOf"], "election": election, "topics": topics, "questions": questions, "candidacies": parties, "documents": documents, "positions": positions, "interpretation": "derived_literal_rules", "limitations": ["Literal mappings are derived interpretations; source-exact matching does not certify semantics.", "Unsupported wording, numbers, conditions and ambiguous claims remain unknown."]}
+    bank = {"schemaVersion": 1, "engineVersion": "lean-fixed-budgets-v1", "compilerVersion": "literal-policy-rule-v1", "kind": kind, "asOf": manifest["asOf"], "election": election, "topics": topics, "questions": questions, "candidacies": parties, "documents": documents, "positions": positions, "interpretation": "derived_literal_rules", "limitations": ["Literal mappings are derived interpretations; source-exact matching does not certify semantics.", "Unsupported wording, numbers, conditions and ambiguous claims remain unknown."]}
+    from grounded_positions import attach
+    return attach(bank, manifest, path.parent, digest, require)
+
+
+
+def public_bytes(bank):
+    public = {**bank, "documents": [{k: v for k, v in d.items() if k != "text"} for d in bank["documents"]]}
+    data = json.dumps(public, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
+    require(len(data) <= 5 * 1024 * 1024, "Public bank limit exceeded")
+    return data
 
 
 def publish(bank, directory, reason):
     require(reason.strip(), "A release/correction reason is required")
-    directory.mkdir(parents=True, exist_ok=True)
-    public = {**bank, "documents": [{k: v for k, v in d.items() if k != "text"} for d in bank["documents"]]}
-    data = json.dumps(public, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode()
-    require(len(data) <= 5 * 1024 * 1024, "Public bank limit exceeded")
+    expiry = None
+    if bank["kind"] == "current":
+        expiry = min([bank["election"]["date"], *[d["validUntil"] for d in bank["documents"]]])
+        require(expiry >= date.today().isoformat() and bank["asOf"] <= date.today().isoformat(), "Current evidence expired or future-dated")
+    data = public_bytes(bank)
     sha = digest(data)
+    directory.mkdir(parents=True, exist_ok=True)
+    pointer = directory / "current.json"
+    previous = json.loads(pointer.read_text()) if pointer.exists() else {"history": [], "withdrawn": []}
+    require(sha not in previous["withdrawn"], "Withdrawn content requires a new correction release")
     target = directory / (sha + ".json")
     if target.exists():
         require(target.read_bytes() == data, "Immutable release collision")
     else:
         target.write_bytes(data)
-    pointer = directory / "current.json"
-    previous = json.loads(pointer.read_text()) if pointer.exists() else {"history": [], "withdrawn": []}
     if previous.get("sha256") == sha:
         return sha
     history = previous["history"] + [{"sha256": sha, "previous": previous.get("sha256"), "reason": reason}]
     current = {"sha256": sha, "kind": bank["kind"], "withdrawn": previous["withdrawn"], "history": history}
+    if expiry is not None:
+        current["validUntil"] = expiry
+        history[-1]["validUntil"] = expiry
     temporary = directory / "current.json.tmp"
-    temporary.write_text(json.dumps(current, indent=2) + "\n")
+    temporary.write_text(json.dumps(current, ensure_ascii=False, indent=2) + "\n")
     temporary.replace(pointer)
     return sha
 
@@ -190,6 +216,7 @@ def main():
     parser.add_argument("--reason", default="")
     parser.add_argument("--check", action="store_true")
     parser.add_argument("--pdf-python")
+    parser.add_argument("--archive", type=Path, default=Path(".tools/prepared-evidence"))
     args = parser.parse_args()
     bank = compile_manifest(args.manifest, args.pdf_python)
     if args.check:
@@ -200,7 +227,17 @@ def main():
         require(digest((args.output / (expected + ".json")).read_bytes()) == expected, "Immutable bank corrupted")
         print("Evidence reproducibility and hash checks passed")
     else:
-        print(publish(bank, args.output, args.reason))
+        sha = digest(public_bytes(bank))
+        args.archive.mkdir(parents=True, exist_ok=True, mode=0o700)
+        private = args.archive / (sha + '.json')
+        prepared = json.dumps(bank, ensure_ascii=False, sort_keys=True).encode()
+        if private.exists():
+            require(private.read_bytes() == prepared, 'Private preparation archive differs')
+        else:
+            private.write_bytes(prepared)
+            private.chmod(0o600)
+        require(publish(bank, args.output, args.reason) == sha, "Release/archive mismatch")
+        print(sha)
 
 
 if __name__ == "__main__":

@@ -78,3 +78,14 @@ Route::get('/api/feedback-report', function (Request $request): Response {
 
     return response($bytes)->withHeaders(['Content-Type' => 'application/json; charset=utf-8', 'Cache-Control' => 'public, max-age=3600']);
 })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('feedback.report');
+
+Route::get('/api/release-history', function (Request $request, PublicBank $bank): Response {
+    abort_if($request->query() !== [], 400);
+    try {
+        $state = $bank->state();
+    } catch (Throwable) {
+        abort(503);
+    }
+
+    return response()->json($state['history'])->header('Cache-Control', 'no-store');
+})->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('release.history');

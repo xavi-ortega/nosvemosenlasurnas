@@ -4,13 +4,13 @@ export type Answers = Record<string, Answer>;
 export type Priorities = Record<string, 0 | 1 | 2>;
 export interface Question { id: string; topicId: string; familyId: string; text: string; level: 'general' | 'specific' }
 export interface Citation { documentId: string; start: number; end: number; quote: string; context: string; locator: { page: number; line: number } }
-export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value: Scale | null; citations: Citation[] }
+export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value: Scale | null; citations: Citation[]; rationale?: string }
 export interface Bank {
     schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
     topics: { id: string; name: string; budget: number }[]; questions: Question[];
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
-    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
+    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
     positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
 }
 const idPattern = /^[a-z][a-z0-9_-]{0,63}$/;
@@ -50,6 +50,7 @@ export function parseBank(value: unknown): Bank {
             for (const q of b.questions) {
                 const p = map[q.id];
                 ensure(p && ['derived', 'unknown', 'conflicting'].includes(p.status) && Array.isArray(p.citations));
+                ensure(p.rationale === undefined || safeText(p.rationale));
                 ensure(p.status === 'derived' ? isScale(p.value) && p.citations.length > 0 : p.value === null);
                 for (const citation of p.citations) {
                     const d = b.documents.find(d => d.id === citation.documentId);

@@ -141,14 +141,14 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 - L001 · chore: restart from verified scaffold and restore CI · completed
 - L002 · refactor: keep a stateless public app and retire editorial runtime · completed
 - L003 · feat: accept owner source manifests and candidacy coverage · completed
-- L004 · feat: extract native programme text locally · in_progress
-- L005 · feat: validate exact contextual citations · in_progress
-- L006 · feat: compile grounded programme positions automatically · in_progress
-- L007 · feat: build and verify immutable public bundles · in_progress
+- L004 · feat: extract native programme text locally · completed
+- L005 · feat: validate exact contextual citations · completed
+- L006 · feat: compile grounded programme positions automatically · completed
+- L007 · feat: build and verify immutable public bundles · completed
 - L008 · feat: browse and search cited programmes · completed
 - L009 · feat: compare programme proposals locally · completed
 - L010 · feat: open original contextual evidence · completed
-- L011 · feat: explain coverage and support bundle corrections · planned
+- L011 · feat: explain coverage and support bundle corrections · completed
 - L012 · feat: prepare balanced current-source question banks · completed
 - L013 · feat: calculate deterministic browser-local policy overlaps · completed
 - L014 · feat: choose balanced informative follow-up questions · completed

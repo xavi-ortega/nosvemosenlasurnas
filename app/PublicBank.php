@@ -9,7 +9,7 @@ class PublicBank
     /** @return array{sha256: string, kind: string, withdrawn: list<string>, history: list<array<string, mixed>>} */
     public function state(): array
     {
-        $path = resource_path('evidence/current.json');
+        $path = (config('evidence.directory') ?? resource_path('evidence')).'/current.json';
         if (! is_file($path)) {
             throw new RuntimeException('Public evidence unavailable.');
         }
@@ -21,6 +21,21 @@ class PublicBank
             throw new RuntimeException('Current evidence unavailable.');
         }
 
+        if ($state['kind'] === 'current') {
+            if (! is_string($state['validUntil'] ?? null) || ! preg_match('/\A\d{4}-\d{2}-\d{2}\z/', $state['validUntil'])) {
+                throw new RuntimeException('Current evidence applicability unavailable.');
+            }
+            if ($state['validUntil'] < now('UTC')->format('Y-m-d')) {
+                $state['withdrawn'][] = $state['sha256'];
+            }
+        }
+        foreach ($state['history'] as $release) {
+            if (isset($release['validUntil']) && $release['validUntil'] < now('UTC')->format('Y-m-d')) {
+                $state['withdrawn'][] = $release['sha256'];
+            }
+        }
+        $state['withdrawn'] = array_values(array_unique($state['withdrawn']));
+
         return $state;
     }
 
@@ -30,7 +45,7 @@ class PublicBank
         if (in_array($state['sha256'], $state['withdrawn'], true)) {
             throw new RuntimeException('Evidence release withdrawn.');
         }
-        $path = resource_path('evidence/'.$state['sha256'].'.json');
+        $path = (config('evidence.directory') ?? resource_path('evidence')).'/'.$state['sha256'].'.json';
         $bytes = is_file($path) ? file_get_contents($path) : false;
         if (! is_string($bytes) || strlen($bytes) > 5 * 1024 * 1024 || ! hash_equals($state['sha256'], hash('sha256', $bytes))) {
             throw new RuntimeException('Evidence integrity failure.');

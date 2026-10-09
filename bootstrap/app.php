@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Middleware\PublicHeaders;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
@@ -15,7 +16,7 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        //
+        $middleware->append(PublicHeaders::class);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->render(function (Throwable $exception, Request $request): Response {
@@ -55,13 +56,13 @@ return Application::configure(basePath: dirname(__DIR__))
             $code = $codes[$status] ?? 'internal_error';
 
             if ($request->is('api/*') || $request->expectsJson()) {
-                return response()->json(['error' => ['code' => $code]], $status);
+                return response()->json(['error' => ['code' => $code]], $status)->withHeaders(PublicHeaders::values());
             }
 
             return response()->view('errors.message', [
                 'messageKey' => $messageKeys[$code],
             ], $status)->withHeaders([
-                'Content-Language' => app()->getLocale(),
+                ...PublicHeaders::values(),
                 'Referrer-Policy' => 'no-referrer',
                 'X-Content-Type-Options' => 'nosniff',
             ]);

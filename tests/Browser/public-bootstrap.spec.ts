@@ -17,7 +17,7 @@ for (const path of ['/', '/missing-page']) {
         expect(response?.headers()['set-cookie']).toBeUndefined();
         await expect(page.locator('html')).toHaveAttribute('lang', 'es');
         await expect(page.getByRole('heading', { level: 1 })).toHaveText(
-            path === '/' ? 'Estamos preparando el sitio.' : 'No encontramos esta página.',
+            path === '/' ? 'Tu voto merece contexto.' : 'No encontramos esta página.',
         );
         const accessibility = await new AxeBuilder({ page })
             .withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
@@ -37,5 +37,5 @@ test('error recovery works with a keyboard', async ({ page }) => {
     await page.keyboard.press('Tab');
     await expect(page.getByRole('link', { name: 'Volver al inicio' })).toBeFocused();
     await page.keyboard.press('Enter');
-    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Estamos preparando el sitio.');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Tu voto merece contexto.');
 });

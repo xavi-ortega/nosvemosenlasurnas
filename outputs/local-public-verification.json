@@ -1,0 +1,31 @@
+{
+  "evidenceClass": "synthetic_engineering",
+  "profile": {
+    "node": "v24.14.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "hardware": "Current local development host; no real mobile hardware certification"
+  },
+  "bankBytes": 24061,
+  "bankGzipBytes": 2965,
+  "initialAssetGzipBytes": 10688,
+  "enginePlusSelectionP95Ms": 0.21324999999999505,
+  "samples": 200,
+  "budgets": {
+    "initialAssetGzipBytes": 307200,
+    "bankGzipBytes": 5242880,
+    "engineP95Ms": 100
+  },
+  "browserChecks": "32 desktop/mobile emulation tests passed; 6 cohort/refinement and 2 Spanish local-export regressions passed",
+  "limitations": [
+    "Synthetic small bank and local unthrottled timings do not establish full current-bank or actual mobile/hosting performance."
+  ],
+  "practicalChecklist": [
+    "Native keyboard answer and continue tested",
+    "320px/mobile reflow and comparison cards checked by browser tests",
+    "Axe WCAG 2 A/AA, 2.1 AA and 2.2 AA checks passed",
+    "Reduced-motion CSS disables animation and transitions",
+    "Loading, corrupt bank, withdrawal and service outage preserve Spanish recovery and concealed results"
+  ],
+  "visualInspection": "Interactive preview unavailable: in-app browser absent and Chrome computer use was not approved. No manual visual certification claimed."
+}

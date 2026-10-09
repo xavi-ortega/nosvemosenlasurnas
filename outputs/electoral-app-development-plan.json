@@ -781,7 +781,7 @@
           "sequence": 8,
           "phaseId": "LP2",
           "subject": "feat: browse and search cited programmes",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L007"
           ],
@@ -819,7 +819,12 @@
             "Catalogue/search/citation/coverage browser flows; XSS and no-personal-state network assertions."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -827,7 +832,7 @@
           "sequence": 9,
           "phaseId": "LP2",
           "subject": "feat: compare programme proposals locally",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L008"
           ],
@@ -863,7 +868,12 @@
             "Two/many/missing/territorial candidacy browser cases, mobile reflow, keyboard and no selection traffic/storage."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -871,7 +881,7 @@
           "sequence": 10,
           "phaseId": "LP2",
           "subject": "feat: open original contextual evidence",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L009"
           ],
@@ -906,7 +916,12 @@
             "Original-source parity, labelled translation, malicious text, broken link and keyboard reader checks."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1101,7 +1116,7 @@
           "sequence": 15,
           "phaseId": "LP3",
           "subject": "feat: expose honest overlap and evidence coverage",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L013"
           ],
@@ -1134,7 +1149,12 @@
             "Threshold edges, skipped questions, different evidence sets, ties and minority-candidacy coverage."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1190,7 +1210,7 @@
           "sequence": 17,
           "phaseId": "LP3",
           "subject": "feat: offer ten-question checkpoints and five more",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L016"
           ],
@@ -1224,7 +1244,12 @@
             "Ten-plus-five, many skips, bank exhaustion, no common evidence, keyboard/reduced-motion checks."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1232,7 +1257,7 @@
           "sequence": 18,
           "phaseId": "LP3",
           "subject": "feat: reveal cited results after deliberate finish",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L011",
             "L017"
@@ -1271,7 +1296,12 @@
             "Reveal/non-reveal, score-citation parity, partial/tie/unknown, withdrawal and informed-refinement flows."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1279,7 +1309,7 @@
           "sequence": 19,
           "phaseId": "LP3",
           "subject": "feat: polish the fast accessible public experience",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "L009",
             "L018"
@@ -1319,7 +1349,12 @@
           "reuseCandidates": [
             "Prepared C026-C032 public design foundations"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {
@@ -1327,7 +1362,7 @@
           "sequence": 20,
           "phaseId": "LP3",
           "subject": "test: verify local reset export and private quiz traffic",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "L019"
           ],
@@ -1361,7 +1396,12 @@
             "Intercept actual browser traffic/storage across answer/edit/finish/refine/export/exit/restart and failure flows."
           ],
           "reuseCandidates": [],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Feature/PublicJourneyTest.php",
+            "outputs/local-public-verification.json"
+          ],
           "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
         },
         {

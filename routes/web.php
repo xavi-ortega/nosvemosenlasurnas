@@ -47,3 +47,16 @@ Route::get('/api/release-state', function (PublicBank $bank): Response {
 
     return response()->json(['sha256' => $state['sha256'], 'withdrawn' => $state['withdrawn']])->withHeaders(['Cache-Control' => 'no-store', 'Content-Language' => 'es']);
 })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('release-state');
+
+foreach (['comparison' => 'comparison', 'questionnaire' => 'quiz', 'sources' => 'sources'] as $path => $page) {
+    Route::view('/'.$path, 'public.app', ['page' => $page])
+        ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
+}
+foreach ([
+    'privacy' => ['privacy_details', 'connection_metadata', 'metrics_details'],
+    'method' => ['method_details', 'threshold_details', 'selector_details', 'source_warning'],
+    'accessibility' => ['a11y_details'],
+] as $path => $paragraphs) {
+    Route::view('/'.$path, 'public.information', ['page' => $path, 'paragraphs' => $paragraphs])
+        ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
+}

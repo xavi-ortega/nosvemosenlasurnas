@@ -86,7 +86,7 @@ Dependencies: L006
 
 ## L008 feat: browse and search cited programmes
 
-Status: planned
+Status: completed
 
 Dependencies: L007
 
@@ -97,7 +97,7 @@ Dependencies: L007
 
 ## L009 feat: compare programme proposals locally
 
-Status: planned
+Status: completed
 
 Dependencies: L008
 
@@ -108,7 +108,7 @@ Dependencies: L008
 
 ## L010 feat: open original contextual evidence
 
-Status: planned
+Status: completed
 
 Dependencies: L009
 
@@ -163,7 +163,7 @@ Dependencies: L013
 
 ## L015 feat: expose honest overlap and evidence coverage
 
-Status: in_progress
+Status: completed
 
 Dependencies: L013
 
@@ -185,7 +185,7 @@ Dependencies: L014, L015
 
 ## L017 feat: offer ten-question checkpoints and five more
 
-Status: in_progress
+Status: completed
 
 Dependencies: L016
 
@@ -196,7 +196,7 @@ Dependencies: L016
 
 ## L018 feat: reveal cited results after deliberate finish
 
-Status: in_progress
+Status: completed
 
 Dependencies: L011, L017
 
@@ -207,7 +207,7 @@ Dependencies: L011, L017
 
 ## L019 feat: polish the fast accessible public experience
 
-Status: planned
+Status: completed
 
 Dependencies: L009, L018
 
@@ -218,7 +218,7 @@ Dependencies: L009, L018
 
 ## L020 test: verify local reset export and private quiz traffic
 
-Status: in_progress
+Status: completed
 
 Dependencies: L019
 

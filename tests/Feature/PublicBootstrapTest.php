@@ -13,8 +13,8 @@ class PublicBootstrapTest extends TestCase
         $response = $this->get('/', ['Accept-Language' => 'en-US,en;q=0.9']);
 
         $response->assertSee('lang="es"', false)
-            ->assertSeeText('Estamos preparando el sitio.')
-            ->assertSeeText('El comparador y el cuestionario todavía no están disponibles.')
+            ->assertSeeText('Tu voto merece contexto.')
+            ->assertSeeText('Compara propuestas, consulta sus fuentes')
             ->assertHeader('Content-Language', 'es');
     }
 
@@ -42,11 +42,11 @@ class PublicBootstrapTest extends TestCase
         $response->assertNotFound()->assertExactJson(['error' => ['code' => 'not_found']]);
     }
 
-    public function test_disabled_questionnaire_does_not_have_a_public_route(): void
+    public function test_questionnaire_loads_without_a_public_session(): void
     {
         $response = $this->get('/questionnaire');
 
-        $response->assertNotFound()->assertSeeText('No encontramos esta página.');
+        $response->assertOk()->assertSeeText('Explora tus coincidencias')->assertHeaderMissing('Set-Cookie');
     }
 
     public function test_public_home_rejects_submitted_answers(): void

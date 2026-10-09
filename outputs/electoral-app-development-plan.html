@@ -145,19 +145,19 @@ The owner explicitly authorized a one-time unpublished local restart after a ver
 - L005 · feat: validate exact contextual citations · in_progress
 - L006 · feat: compile grounded programme positions automatically · in_progress
 - L007 · feat: build and verify immutable public bundles · in_progress
-- L008 · feat: browse and search cited programmes · planned
-- L009 · feat: compare programme proposals locally · planned
-- L010 · feat: open original contextual evidence · planned
+- L008 · feat: browse and search cited programmes · completed
+- L009 · feat: compare programme proposals locally · completed
+- L010 · feat: open original contextual evidence · completed
 - L011 · feat: explain coverage and support bundle corrections · planned
 - L012 · feat: prepare balanced current-source question banks · completed
 - L013 · feat: calculate deterministic browser-local policy overlaps · completed
 - L014 · feat: choose balanced informative follow-up questions · completed
-- L015 · feat: expose honest overlap and evidence coverage · in_progress
+- L015 · feat: expose honest overlap and evidence coverage · completed
 - L016 · feat: build the private questionnaire state machine · completed
-- L017 · feat: offer ten-question checkpoints and five more · in_progress
-- L018 · feat: reveal cited results after deliberate finish · in_progress
-- L019 · feat: polish the fast accessible public experience · planned
-- L020 · test: verify local reset export and private quiz traffic · in_progress
+- L017 · feat: offer ten-question checkpoints and five more · completed
+- L018 · feat: reveal cited results after deliberate finish · completed
+- L019 · feat: polish the fast accessible public experience · completed
+- L020 · test: verify local reset export and private quiz traffic · completed
 - L021 · feat: add voluntary randomized feedback on fit and policies · planned
 - L022 · feat: store bounded aggregate counters in SQLite · planned
 - L023 · feat: report aggregate agreement with uncertainty · planned

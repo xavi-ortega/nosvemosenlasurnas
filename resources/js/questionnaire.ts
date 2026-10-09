@@ -14,6 +14,7 @@ export class Questionnaire {
     readonly releaseHash: string;
     readonly cohort: string[];
     readonly priorities: Priorities;
+    constituency: string;
     readonly answers: Answers = {};
     readonly presented: string[] = [];
     private queue: Question[];
@@ -23,6 +24,7 @@ export class Questionnaire {
     constructor(bank: Bank, releaseHash: string, constituency: string = 'all', priorities: Priorities = {}) {
         this.bank = freeze(parseBank(structuredClone(bank)));
         this.releaseHash = releaseHash;
+        this.constituency = constituency;
         if (constituency !== 'all' && !bank.election.constituencies.some(c => c.id === constituency)) throw new Error('Invalid constituency.');
         this.cohort = bank.candidacies.filter(c => constituency === 'all' || c.constituencyIds.includes(constituency)).map(c => c.id);
         this.priorities = { ...priorities };
@@ -65,13 +67,14 @@ export class Questionnaire {
 
     export() {
         if (!this.revealed) throw new Error('Explicit finish required before export.');
-        return { releaseHash: this.releaseHash, engineVersion: this.bank.engineVersion, electionId: this.bank.election.id, answers: { ...this.answers }, priorities: { ...this.priorities }, cohort: [...this.cohort], results: match(this.bank, this.answers, this.priorities, this.cohort) };
+        return { constituency: this.constituency, releaseHash: this.releaseHash, engineVersion: this.bank.engineVersion, electionId: this.bank.election.id, answers: { ...this.answers }, priorities: { ...this.priorities }, cohort: [...this.cohort], results: match(this.bank, this.answers, this.priorities, this.cohort) };
     }
 
     reset(): void {
         for (const key of Object.keys(this.answers)) delete this.answers[key];
         for (const key of Object.keys(this.priorities)) delete this.priorities[key];
         this.cohort.splice(0);
+        this.constituency = "all";
         this.presented.splice(0);
         this.queue = [];
         this.cursor = 0;

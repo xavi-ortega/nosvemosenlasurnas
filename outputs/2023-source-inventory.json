@@ -4107,8 +4107,8 @@
           "votes": 1446
         }
       ],
-      "programmeSearchStatus": "primary_23j_programme_and_campaign_annexes_acquired_fully_read",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "all_three_campaign_documents_retained_and_read",
+      "analysisStatus": "specific_three_document_80_cell_bank_audit",
       "programmeIds": [
         "autonomos-23j",
         "autonomos-23j-diptych",
@@ -4117,7 +4117,7 @@
       "ballotAliases": [
         "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)"
       ],
-      "programmeApplicabilityStatus": "document_specific_alicante_campaign_adoption_verified_not_scoring_ready",
+      "programmeApplicabilityStatus": "explicit_23j_alicante_congress_campaign_adoption_verified",
       "ballotRecordIds": [
         "congress-alicante-3"
       ],
@@ -4137,6 +4137,15 @@
           "congress-alicante-3"
         ],
         "rationale": "CompleteJuly21campaignpage and exactdownloadanchors verified forCongress/Alicante only;2022decalogue expressly adopted. No unrecoveredPDFbyte-snapshot equivalence asserted."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T19:14:01.016599+00:00",
+        "report": "outputs/2023-authored-autonomos-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 2,
+        "newDerivedMappings": 1,
+        "ambiguousCells": 51,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -6124,7 +6133,7 @@
       "retrievedAt": "2026-10-11T11:40:35.696342+00:00",
       "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2023/07/PARTIDO-AUTONOMOS-PROGRAMA-ELECCIONES-GENERALES-23J.pdf",
       "mediaType": "application/pdf",
-      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "status": "primary_campaign_documents_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/autonomos-23j.pdf",
       "sha256": "c2ab91d3e7d35a5cd9f94d75d0990e657d0699c30720a5929b62f366eb187aa5",
       "bytes": 15129223,
@@ -6136,7 +6145,11 @@
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
       "notebook": "outputs/2023-programme-notebooks/autonomos-23j.json",
-      "analysisStatus": "full_document_read_not_scoring_ready"
+      "analysisStatus": "specific_three_document_80_cell_bank_audit",
+      "applicableBallotRecordIds": [
+        "congress-alicante-3"
+      ],
+      "electionApplicability": "23J Congress campaign page and retained July 21 2023 archive explicitly offer downloads 8003/8010/8014 for Alicante. May 2022 decalogue is explicitly adopted; no different election or unproclaimed Valencia ballot inherits. Archived PDF byte identity remains unverified."
     },
     {
       "id": "autonomos-23j-diptych",
@@ -6145,7 +6158,7 @@
       "retrievedAt": "2026-10-11T11:40:35.696664+00:00",
       "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2023/07/diptico-PARTIDO-AUTONOMOS.pdf",
       "mediaType": "application/pdf",
-      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "status": "primary_campaign_documents_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/autonomos-23j-diptych.pdf",
       "sha256": "43a7565a95dd6d1c33922c5bf2b0ddc9a14444786123f5ae771abce11358888e",
       "bytes": 1040975,
@@ -6158,7 +6171,11 @@
         "warning": "Rotated text discovered. Output will be incomplete.\nRotated text discovered. Output will be incomplete.\nRotated text discovered. Output will be incomplete.\n"
       },
       "notebook": "outputs/2023-programme-notebooks/autonomos-23j-diptych.json",
-      "analysisStatus": "full_document_read_not_scoring_ready"
+      "analysisStatus": "specific_three_document_80_cell_bank_audit",
+      "applicableBallotRecordIds": [
+        "congress-alicante-3"
+      ],
+      "electionApplicability": "23J Congress campaign page and retained July 21 2023 archive explicitly offer downloads 8003/8010/8014 for Alicante. May 2022 decalogue is explicitly adopted; no different election or unproclaimed Valencia ballot inherits. Archived PDF byte identity remains unverified."
     },
     {
       "id": "autonomos-23j-decalogue",
@@ -6167,7 +6184,7 @@
       "retrievedAt": "2026-10-11T11:40:35.696761+00:00",
       "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2022/05/Decalogo_a4_plegable.pdf",
       "mediaType": "application/pdf",
-      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "status": "primary_campaign_documents_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/autonomos-23j-decalogue.pdf",
       "sha256": "ef7d54cc63217d1c4727858b2868b46c3baf21a954c2c71a0ab80ac14caf50bc",
       "bytes": 1121156,
@@ -6179,7 +6196,11 @@
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
       "notebook": "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json",
-      "analysisStatus": "full_document_read_not_scoring_ready"
+      "analysisStatus": "specific_three_document_80_cell_bank_audit",
+      "applicableBallotRecordIds": [
+        "congress-alicante-3"
+      ],
+      "electionApplicability": "23J Congress campaign page and retained July 21 2023 archive explicitly offer downloads 8003/8010/8014 for Alicante. May 2022 decalogue is explicitly adopted; no different election or unproclaimed Valencia ballot inherits. Archived PDF byte identity remains unverified."
     },
     {
       "id": "escanos-manifesto-annex",
@@ -9358,8 +9379,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4880,
-    "scoredDraftMappings": 172,
-    "independentAnswerCases": 860,
+    "scoredDraftMappings": 173,
+    "independentAnswerCases": 865,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9370,31 +9391,30 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
+    "latestBrowserDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
       15,
       20,
-      25,
-      30
+      25
     ],
     "latestBrowserRentCases": 0,
     "latestBrowserProgressivePaths": 12,
-    "latestBrowserVerification": "outputs/2023-authored-falange-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-falange-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-autonomos-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-autonomos-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
+    "latestDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
+    "latestAuthoredDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9497,7 +9517,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 160,
-    "defaultScoredDraftMappings": 171,
+    "defaultScoredDraftMappings": 172,
     "scopedScoredDraftMappings": 1,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9538,7 +9558,19 @@
     "latestFalangeCitedAnswerPaths": 70,
     "latestFalangeCitedUnscoredPaths": 6,
     "falangeFixedComparisonEligible": false,
-    "allPrevious165MappingsUnchanged": true
+    "allPrevious165MappingsUnchanged": true,
+    "autonomosBankAudit": "outputs/2023-authored-autonomos-audit.json",
+    "autonomosVerification": "outputs/2023-authored-autonomos-verification.json",
+    "autonomosValuesBrowserVerification": "outputs/2023-authored-autonomos-values-browser-verification.json",
+    "autonomosUnknownsBrowserVerification": "outputs/2023-authored-autonomos-unknowns-browser-verification.json",
+    "newAutonomosAuditedCells": 80,
+    "newAutonomosDerivedMappings": 1,
+    "newAutonomosCitedUncertainties": 51,
+    "latestAutonomosBrowserSessions": 12,
+    "latestAutonomosCitedAnswerPaths": 20,
+    "latestAutonomosCitedUnscoredPaths": 12,
+    "autonomosFixedComparisonEligible": false,
+    "allPrevious172MappingsUnchanged": true
   },
   "recordedAt": "2026-10-11T18:33:08.683841+00:00"
 }

@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T19:08:28.507519+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_three_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-041",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/autonomos-23j.json",
+          "sha256": "f334a76da31ba5ffd1c0a7b500a4b0268b63585a575570f08d6072e8f8393bc4",
+          "documentId": "autonomos-23j",
+          "sourceSha256": "c2ab91d3e7d35a5cd9f94d75d0990e657d0699c30720a5929b62f366eb187aa5",
+          "extractionSha256": "9cef897196a7fd608174ea455e319176077a06e881f0772b3533a95352efc510"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/autonomos-23j-diptych.json",
+          "sha256": "2463730b6a4fcec0b0d98e4a70057a9bf81eaf3de97c3c4db031465da81d1ac0",
+          "documentId": "autonomos-23j-diptych",
+          "sourceSha256": "43a7565a95dd6d1c33922c5bf2b0ddc9a14444786123f5ae771abce11358888e",
+          "extractionSha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json",
+          "sha256": "4e785a25960ce5103561ff2022e804de07c8f67c36cd3e58d44b8a31319b94d3",
+          "documentId": "autonomos-23j-decalogue",
+          "sourceSha256": "ef7d54cc63217d1c4727858b2868b46c3baf21a954c2c71a0ab80ac14caf50bc",
+          "extractionSha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone controlar los precios y sus subidas, pero no concreta un precio máximo.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": true
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los horarios flexibles o comprimidos para conciliar no establecen una jornada máxima de 35 horas con el mismo sueldo.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La financiación de ayudas prescritas no concreta una ampliación de los servicios dentales públicos. El díptico menciona ortodoncias, pero no establece por sí solo esa prestación sanitaria.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El fomento de energías renovables en la industria no establece prolongar las centrales nucleares existentes.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone eliminar por completo el impuesto de sucesiones y donaciones.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": true
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El apoyo a la conciliación no establece plazas gratuitas de 0 a 3 años para todas las familias.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La mejora del ferrocarril no establece limitar los vuelos que tengan alternativa adecuada en tren.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece mantener o eliminar el derecho a solicitar la eutanasia.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La selección profesional descrita no identifica los miembros judiciales del órgano de gobierno. El programa reparte la elección entre jueces, abogados y fiscales; el díptico habla de jueces. No hay un mecanismo concreto coherente para esta pregunta.",
+          "citationCount": 2,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La cuenta individual y la mejora de pensiones por más años cotizados no establecen actualizarlas según el coste de la vida.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La fiscalidad progresiva según los ingresos no establece un impuesto específico y permanente sobre las grandes fortunas personales.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La propuesta de capitalización y jubilación no establece eximir la pensión del impuesto sobre la renta.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Fomentar vivienda protegida y cooperativas no establece conservar sin venta privada la propiedad pública.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La colaboración público-privada para gestionar administraciones no concreta aumentar acuerdos sanitarios con centros privados.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece dónde realizar los abortos permitidos por la ley.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El impulso a renovables no establece gestión pública de las centrales hidroeléctricas al caducar concesiones.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Adaptar los horarios por necesidades familiares no establece prohibir los contactos de la empresa fuera del horario laboral.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece comedor gratuito para todo el alumnado de las etapas obligatorias.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La financiación de audífonos, gafas y prótesis prescritos no establece eliminar el copago de medicamentos.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece permitir votar a quienes tienen dieciséis o diecisiete años.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reutilización, el reciclaje y la economía circular no establecen obligar a facilitar piezas de recambio.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las prácticas de formación profesional de al menos 16 horas semanales no establecen su remuneración.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El apoyo general a la conciliación no establece permisos de maternidad y paternidad de al menos seis meses.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un impuesto específico sobre bebidas azucaradas.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar las sanciones penales del cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar el incremento de matrícula al repetir asignaturas universitarias.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un mínimo de tres horas semanales de Educación Física en la educación obligatoria.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una cuota reducida mientras los ingresos no superen el salario mínimo, pero no establece una exención de pago.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas e incentivos para adquirir vivienda no establecen eximir del impuesto sobre el valor añadido la primera vivienda habitual.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La legislación de bienestar animal no establece prohibir la compraventa de animales de compañía.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La protección animal general no establece retirar financiación a espectáculos taurinos con muerte del animal.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La legislación animal que contempla distintos sectores no establece una prohibición de la caza en toda España.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La bajada del impuesto de la electricidad no establece una prohibición permanente de cortar suministros a hogares vulnerables.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La formación y financiación para jóvenes emprendedores no establece una transferencia universal de 20.000 euros al cumplir 23 años.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece aumentos anuales del salario mínimo superiores a la inflación.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La digitalización y formación tecnológica no establecen formatos abiertos de documentos administrativos.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece mantener o derogar la prohibición de gestar para otra persona.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una opción vegetariana en todos los comedores escolares.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece libros de texto escolares gratuitos que cualquiera pueda copiar y compartir.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La digitalización no establece conservar la atención presencial sin obligación de usar internet.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La protección animal y las ayudas del díptico a asociaciones no establecen rebajar al 10% el impuesto de los servicios veterinarios.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El fomento de reutilización y reciclaje no establece poder elegir talleres independientes del fabricante.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La economía circular industrial no establece un depósito reembolsable por envases de bebidas.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece acceso gratuito a anticonceptivos para jóvenes.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reforzar servicios sanitarios no establece crear una empresa pública de medicamentos y vacunas.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Fomentar la economía digital no establece acceso gratuito universal a internet básico.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que el suministro de agua tenga gestión pública.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reducir costes de educación especial no establece atención temprana pública y gratuita para menores de seis años.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Permitir horarios adaptados para cuidados no establece reducir la jornada por hijos hasta los 16 años.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Promover renovables no establece prohibir publicidad y patrocinio de combustibles fósiles.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La protección animal general no establece prohibir criar animales para obtener pieles.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone eliminar las subvenciones a medios de comunicación privados. La excepción del párrafo anterior se refiere a sindicatos y asociaciones, no a medios.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar tribunales especiales por ocupar cargos públicos.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar las firmas de apoyo para candidaturas al Congreso sin representación.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una ficha pública por ley con quienes negociaron o intermediaron en su elaboración.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Aumentar psiquiatras y psicólogos y ofrecer apoyo psicológico a víctimas no concreta incluir la psicoterapia como prestación de la sanidad pública.",
+          "citationCount": 2,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Dotar de medios a las fuerzas de seguridad no establece apoyar el tratado de prohibición de armas nucleares.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece restringir publicidad de alimentos poco saludables dirigida a menores.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La exención de impuestos sobre beneficios durante dos años para parados de larga duración no establece una cuota gratuita el primer año para todos los nuevos autónomos.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La progresividad fiscal no establece ajustar el impuesto sobre la renta por la inflación.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reducir el impuesto de la electricidad no establece ayudas energéticas pagadas directamente a hogares vulnerables.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reforzar la atención primaria no establece permitir trabajar a sus médicos y pediatras hasta los 72 años.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece exigir autorización de responsables legales para el aborto de menores.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Acelerar solicitudes de dependencia no establece citas de prestaciones estatales en un máximo de 15 días naturales.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que las decisiones públicas que valoran cada caso deban tomarlas personas aunque utilicen inteligencia artificial.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Mejorar los medios de seguridad no establece que el gasto en seguridad y defensa alcance el 2% de la economía.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas a jóvenes para comprar o alquilar vivienda no establecen avales de hipoteca hasta los 35 años.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El apoyo a la natalidad no establece una prestación por hijo desde el quinto mes de embarazo.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Acelerar las solicitudes de dependencia no establece su reconocimiento automático al diagnosticar esclerosis lateral amiotrófica.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Bonificar cuotas a trabajadores que cuidan familiares de primer grado no establece una bonificación del 45% por contratar empleados del hogar en familias numerosas.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece tutorías adicionales para recuperar aprendizaje perdido durante la pandemia.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece intermediarios de la Administración que hagan trámites en nombre de otras personas.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Mejorar conexiones ferroviarias no establece transporte rural a demanda y a precio reducido al municipio de referencia.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La legislación de bienestar animal no establece prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La inversión en investigación no establece acceso libre a resultados financiados con dinero público.",
+          "citationCount": 1,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "unknown",
+          "value": null,
+          "rationale": "La elección a dos vueltas no establece una única circunscripción nacional para el Congreso.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece igual tiempo para vídeos electorales de todos los partidos en los medios públicos.",
+          "citationCount": 0,
+          "previousCellPreservedExactly": false
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 2,
+      "newDerivedMappings": 1,
+      "citedUncertainties": 51
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 160,
+  "explicitMatrixCells": 4880,
+  "defaultNumericMappings": 172,
+  "scopedNumericMappings": 1,
+  "totalNumericMappings": 173,
+  "independentAnswerCases": 865,
+  "limitations": [
+    "Existing complete readings of 57+3+2 pages reused; 7 main pages and all 5 annex pages visually reopened. No new complete-reading, notebook, page or distinct-PDF count.",
+    "All three current original PDFs match retained bytes. July 21 campaign archive establishes offered download identities, not equivalence with unrecovered archived PDF bytes.",
+    "Main/diptych conflicts retain 60%/50% programme fulfilment, judicial selection groups and paid/unpaid invoice wording. No silent correction.",
+    "Diptych orthodontics is a prescribed quality-of-life aid without its own explicit public dental-service expansion. Main public-cost examples do not explicitly name dental care; no numeric dental mapping inferred.",
+    "Reduced low-income contributions, targeted profit-tax exemption and general flat rate remain separate with all exceptions; none proves either requested zero-contribution policy.",
+    "Prior inheritance mapping and cited unscored rent cell preserved exactly. One new media-aid mapping; public predictions about independence/competition remain attributed.",
+    "Only the proclaimed Alicante Congress candidacy inherits. Complete corpus/source-family/production privacy/publication acceptance remains open."
+  ]
+}

@@ -361,3 +361,50 @@ test('HTML citations show sections and preserve original links while PDFs retain
     await expect(html.getByRole('link', { name: 'Abrir documento original' })).toHaveAttribute('href', 'https://fixture.invalid/alpha');
     await expect(page.locator('a[href="https://fixture.invalid/beta#page=1"]').first()).toHaveAttribute('referrerpolicy', 'no-referrer');
 });
+
+
+for (const scope of ['north', 'south', 'all']) {
+    test(`territorial ${scope} results and exports use the same locally scoped evidence`, async ({ page, context }) => {
+        const requests: { path: string; method: string; body: string | null }[] = [];
+        page.on('request', request => { if (request.url().includes('/api/')) requests.push({ path: new URL(request.url()).pathname, method: request.method(), body: request.postData() }); });
+        await page.route('**/api/bank', async route => {
+            const response = await route.fetch();
+            const bank = await response.json();
+            bank.candidacies.find((c: { id: string }) => c.id === 'alpha').constituencyIds.push('south');
+            const position = structuredClone(bank.positions.alpha['housing-1']);
+            position.value = 2;
+            position.rationale = 'Propuesta exclusiva del distrito ficticio norte.';
+            position.citations[0].quote = 'Apoyamos: Aumentar la vivienda pública en alquiler.';
+            position.citations[0].context = position.citations[0].quote;
+            bank.constituencyPositions = { north: { alpha: { 'housing-1': position } } };
+            const body = JSON.stringify(bank);
+            await route.fulfill({ response, body, headers: { ...response.headers(), 'x-evidence-sha256': createHash('sha256').update(body).digest('hex') } });
+        });
+        await page.goto('/questionnaire');
+        await page.getByLabel('Ámbito de comparación').selectOption(scope);
+        await page.getByRole('button', { name: 'Empezar las diez preguntas' }).click();
+        for (let i = 0; i < 10; i++) {
+            const housing = await page.locator('#app h2').textContent() === 'Aumentar la vivienda pública en alquiler.';
+            await page.getByRole('radio', { name: housing ? 'Muy de acuerdo' : 'Prefiero no responder', exact: true }).check();
+            await page.getByRole('button', { name: 'Continuar', exact: true }).click();
+        }
+        await hidden(page);
+        await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+
+        const result = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia Alba', exact: true }) });
+        const proposal = result.locator('[data-question-id="housing-1"]').first();
+        await expect(proposal).toContainText(scope === 'north' ? 'Tu respuesta y la posición citada coinciden en esta propuesta.' : 'Tu respuesta está en desacuerdo con la posición citada en esta propuesta.');
+        await proposal.getByText('Leer cita y contexto', { exact: true }).click();
+        await expect(proposal).toContainText(scope === 'north' ? 'Apoyamos: Aumentar' : 'Rechazamos: Aumentar');
+        page.once('dialog', dialog => void dialog.accept());
+        const download = page.waitForEvent('download');
+        await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
+        const exported = JSON.parse(await readFile((await (await download).path())!, 'utf8'));
+        expect(exported.constituency).toBe(scope);
+        expect(exported.candidacyDetails.find((c: { candidacyId: string }) => c.candidacyId === 'alpha').positions['housing-1'].value).toBe(scope === 'north' ? 2 : -2);
+        expect(exported.results.rows.find((r: { id: string }) => r.id === 'alpha').partialIndex).toBe(scope === 'north' ? 100 : 0);
+        expect(requests).toEqual([{ path: '/api/bank', method: 'GET', body: null }, { path: '/api/release-state', method: 'GET', body: null }]);
+        expect(await context.cookies()).toEqual([]);
+        expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
+    });
+}

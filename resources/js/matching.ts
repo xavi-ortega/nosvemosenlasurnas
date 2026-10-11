@@ -12,7 +12,7 @@ export interface Bank {
     comparisonPolicy?: 'fixed-bank-evidence-v1'; draft?: boolean; releaseEligible?: boolean;
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
     documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string; mediaType?: 'application/pdf' | 'text/html' }[];
-    positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
+    positions: Record<string, Record<string, Position>>; constituencyPositions?: Record<string, Record<string, Record<string, Position>>>; interpretation: string; limitations: string[];
 }
 const idPattern = /^[a-z][a-z0-9_-]{0,63}$/;
 const isScale = (value: unknown): value is Scale => Number.isInteger(value) && typeof value === 'number' && value >= -2 && value <= 2;
@@ -73,11 +73,36 @@ export function parseBank(value: unknown): Bank {
                 }
             }
         }
+        if (b.constituencyPositions !== undefined) {
+            ensure(b.constituencyPositions !== null && typeof b.constituencyPositions === 'object' && !Array.isArray(b.constituencyPositions));
+            ensure(Object.keys(b.constituencyPositions).length <= b.election.constituencies.length);
+            for (const [scope, candidates] of Object.entries(b.constituencyPositions)) {
+                ensure(b.election.constituencies.some(c => c.id === scope));
+                ensure(candidates !== null && typeof candidates === 'object' && !Array.isArray(candidates) && Object.keys(candidates).length > 0);
+                const positions = { ...b.positions };
+                for (const [candidate, overrides] of Object.entries(candidates)) {
+                    ensure(b.candidacies.some(c => c.id === candidate && c.constituencyIds.includes(scope)));
+                    ensure(overrides !== null && typeof overrides === 'object' && !Array.isArray(overrides) && Object.keys(overrides).length > 0);
+                    ensure(Object.keys(overrides).every(id => b.questions.some(q => q.id === id)));
+                    positions[candidate] = { ...b.positions[candidate], ...overrides };
+                }
+                parseBank({ ...b, positions, constituencyPositions: undefined });
+            }
+        }
         ensure(safeText(b.interpretation) && Array.isArray(b.limitations) && b.limitations.every(safeText));
         return b;
     } catch {
         throw new Error('Invalid public evidence contract.');
     }
+}
+
+export function bankForConstituency(bank: Bank, constituency: string): Bank {
+    ensure(constituency === 'all' || bank.election.constituencies.some(c => c.id === constituency));
+    const positions = { ...bank.positions };
+    for (const [candidate, overrides] of Object.entries(bank.constituencyPositions?.[constituency] ?? {})) {
+        positions[candidate] = { ...positions[candidate], ...overrides };
+    }
+    return { ...bank, positions, constituencyPositions: undefined };
 }
 
 export function weights(bank: Bank, priorities: Priorities = {}): Record<string, number> {

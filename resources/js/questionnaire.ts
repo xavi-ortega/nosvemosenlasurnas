@@ -1,4 +1,4 @@
-import { balanced, followups, match, parseBank } from './matching.ts';
+import { bankForConstituency, balanced, followups, match, parseBank } from './matching.ts';
 import type { Answer, Answers, Bank, Priorities, Question } from './matching.ts';
 
 function freeze<T>(value: T): T {
@@ -22,7 +22,7 @@ export class Questionnaire {
     revealed = false;
 
     constructor(bank: Bank, releaseHash: string, constituency: string = 'all', priorities: Priorities = {}) {
-        this.bank = freeze(parseBank(structuredClone(bank)));
+        this.bank = freeze(bankForConstituency(parseBank(structuredClone(bank)), constituency));
         this.releaseHash = releaseHash;
         this.constituency = constituency;
         if (constituency !== 'all' && !bank.election.constituencies.some(c => c.id === constituency)) throw new Error('Invalid constituency.');

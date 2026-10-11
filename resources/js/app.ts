@@ -247,6 +247,7 @@ function renderReview(): void {
 }
 function exportResults(): void {
     if (!session?.revealed || !window.confirm(t('export_warning'))) return;
+    const bank = session.bank;
     const data = {
         title: t('export_title'), explanation: t('export_limit'), ...session.export(),
         answerDetails: session.presented.map(id => ({ questionId: id, text: bank.questions.find(q => q.id === id)!.text, answerLabel: t(answerKeys[String(session!.answers[id])]) })),
@@ -268,6 +269,7 @@ function resultProposal(question: Question, answer: Scale, position: Position, h
 
 function renderResults(): void {
     if (!root || !session?.revealed) return;
+    const bank = session.bank;
     const result = match(session.bank, session.answers, session.priorities, session.cohort);
     root.replaceChildren(sampleNotice(), e('h2', t('results_title')), p('results_explanation'), e('h3', t(result.comparable ? 'comparable' : 'partial')));
     if (!result.comparable) root.append(p('partial_explanation'));

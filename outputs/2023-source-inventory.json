@@ -3108,7 +3108,12 @@
         "questionCount": 80,
         "derivedMappings": 0,
         "ambiguousCells": 6,
-        "widerProgrammeFamilyCertified": false
+        "widerProgrammeFamilyCertified": false,
+        "territorialReconciliation": "outputs/2023-authored-ev-leon-audit.json",
+        "scope": "leon",
+        "baseCitationsRemovedWithoutDeletion": true,
+        "previousAuthoredCellsPreserved": 80,
+        "territoryBrowserVerification": "outputs/2023-authored-upl-territory-browser-verification.json"
       }
     },
     {
@@ -3738,7 +3743,7 @@
         }
       ],
       "programmeSearchStatus": "leon_23j_programme_fully_read_other_territorial_sources_unresolved",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_leon_complete_document_scoped_80_cell_bank_audit",
       "programmeIds": [
         "ev-leon-23j"
       ],
@@ -3768,6 +3773,15 @@
         "ballotRecordIds": [
           "congress-leon-9"
         ]
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T18:38:37.024011+00:00",
+        "report": "outputs/2023-authored-ev-leon-audit.json",
+        "questionCount": 80,
+        "constituencyId": "leon",
+        "derivedMappings": 1,
+        "ambiguousCells": 29,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5990,7 +6004,7 @@
       "mediaType": "application/pdf",
       "bytes": 258377,
       "sha256": "6e9feef4de1c57e17cd0be8047b06691eb1ab5a1b05b0fd7dac0ab0e852df19c",
-      "status": "downloaded_applicability_and_reading_pending",
+      "status": "downloaded_23j_leon_original_fully_read_scoped_bank_audited",
       "file": "storage/app/election-sources/2023-congress/ev-leon-23j.pdf",
       "extraction": {
         "file": "storage/app/election-sources/2023-congress/ev-leon-23j.txt",
@@ -5999,8 +6013,12 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/ev-leon-23j.json"
+      "analysisStatus": "specific_complete_document_80_question_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/ev-leon-23j.json",
+      "applicableBallotRecordIds": [
+        "congress-leon-9"
+      ],
+      "electionApplicability": "León España Vaciada programme for 23J2023 Congress; original cover V06_07 and primary July 2023 candidacy publication. Other four result-denomination ballots require separate evidence."
     },
     {
       "id": "frente-political-documents-2023",
@@ -9306,9 +9324,9 @@
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
-    "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 161,
-    "independentAnswerCases": 805,
+    "explicitMatrixCells": 4880,
+    "scoredDraftMappings": 162,
+    "independentAnswerCases": 810,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9319,28 +9337,31 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
+    "latestBrowserDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
-      15
+      15,
+      20,
+      25,
+      30
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 12,
-    "latestBrowserVerification": "outputs/2023-authored-palenciatierraviva-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-palenciatierraviva-verification.json",
+    "latestBrowserProgressivePaths": 26,
+    "latestBrowserVerification": "outputs/2023-authored-ev-leon-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-ev-leon-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
+    "latestDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
+    "latestAuthoredDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9440,6 +9461,26 @@
     "latestPalenciatierravivaBrowserSessions": 12,
     "latestPalenciatierravivaCitedAnswerPaths": 10,
     "latestPalenciatierravivaCitedUnscoredPaths": 4,
-    "palenciatierravivaFixedComparisonEligible": false
-  }
+    "palenciatierravivaFixedComparisonEligible": false,
+    "defaultMatrixCells": 4720,
+    "scopedMatrixCells": 160,
+    "defaultScoredDraftMappings": 161,
+    "scopedScoredDraftMappings": 1,
+    "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
+    "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
+    "evLeonBrowserVerification": "outputs/2023-authored-ev-leon-browser-verification.json",
+    "uplTerritoryBrowserVerification": "outputs/2023-authored-upl-territory-browser-verification.json",
+    "newEvLeonAuditedCells": 80,
+    "newEvLeonDerivedMappings": 1,
+    "newEvLeonCitedUncertainties": 29,
+    "latestEvLeonBrowserSessions": 20,
+    "latestEvLeonCitedAnswerPaths": 10,
+    "latestEvLeonOtherScopeUnknownPaths": 10,
+    "latestUplReconciledScopedCells": 80,
+    "latestUplTerritoryBrowserSessions": 6,
+    "latestUplCitedUnknownPaths": 6,
+    "latestUplOtherScopeUnknownPaths": 12,
+    "allPrevious161MappingsUnchanged": true
+  },
+  "recordedAt": "2026-10-11T18:33:08.683841+00:00"
 }

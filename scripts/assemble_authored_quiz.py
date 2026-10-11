@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Assemble a local, unpublished quiz preview from directly authored source records."""
 import argparse
+import copy
 import json
 from pathlib import Path
 import tempfile
@@ -60,12 +61,27 @@ def assemble(root):
     prepared = []
     unknown_rationales = []
     html_sections = {}
+    scoped_prepared = {}
+    scoped_unknown_rationales = {}
+    scoped_candidates = {}
+    scoped_questions = {}
     for question in questions:
         issue = issues[question["id"]]
         require(issue["topicId"] == question["topicId"] and issue["familyId"] == question["familyId"], "Issue budget mismatch")
         cells = issue["cells"]
         require(len(cells) == len(candidate_ids) and {cell["candidacyId"] for cell in cells} == set(candidate_ids), "Missing or duplicate authored pair")
-        for cell in cells:
+        scoped_cells = issue.get("constituencyCells", [])
+        require(isinstance(scoped_cells, list), "Invalid constituency cells")
+        scoped_pairs = set()
+        for cell in scoped_cells:
+            candidate, scope = cell["candidacyId"], cell["constituencyId"]
+            require(isinstance(candidate, str) and isinstance(scope, str) and candidate in territories and scope in territories[candidate] and (candidate, scope) not in scoped_pairs, "Invalid or duplicate constituency pair")
+            scoped_pairs.add((candidate, scope))
+            scoped_candidates.setdefault(scope, set()).add(candidate)
+            scoped_questions.setdefault(scope, {}).setdefault(candidate, set()).add(question["id"])
+        require(all("constituencyId" not in cell for cell in cells), "Default cell has a constituency override")
+        for cell in cells + scoped_cells:
+            scope = cell.get("constituencyId")
             require(cell["status"] in {"derived", "unknown", "ambiguous", "unsupported", "conflicting"}, "Invalid authored status")
             require((type(cell["value"]) is int and -2 <= cell["value"] <= 2) if cell["status"] == "derived" else cell["value"] is None, "Unsupported authored number")
             citations = []
@@ -79,6 +95,12 @@ def assemble(root):
                                if source.get("sha256") == citation["sourceSha256"]
                                and source.get("resolvedUrl", source["url"]) == citation["sourceUrl"]), None)
                 require(source is not None, "Unregistered source hash or URL")
+                if scope is not None:
+                    applicable = source.get("applicableBallotRecordIds", [])
+                    require(any(row["id"] in applicable and row["status"] == "proclaimed" and row["resultDenominationId"] == cell["candidacyId"] and row["id"].rsplit("-", 1)[0].removeprefix("congress-") == scope for row in registry["records"]), "Missing explicit territorial source applicability")
+                elif source.get("applicableBallotRecordIds"):
+                    applicable_scopes = {row["id"].rsplit("-", 1)[0].removeprefix("congress-") for row in registry["records"] if row["id"] in source["applicableBallotRecordIds"] and row["status"] == "proclaimed" and row["resultDenominationId"] == cell["candidacyId"]}
+                    require(territories[cell["candidacyId"]] <= applicable_scopes, "Territorial citation cannot become a default position")
                 original = retained_file(root, source["file"], max_bytes=64 * 1024 * 1024)
                 require(digest(original.read_bytes()) == citation["sourceSha256"], "Original source changed")
                 extraction = retained_file(root, source.get("extraction", {}).get("file", source.get("textFile")))
@@ -113,9 +135,11 @@ def assemble(root):
                 citations.append({key: citation[key] for key in ["start", "end", "contextStart", "contextEnd"]} | {"documentId": public_document_id})
             require(cell["status"] != "derived" or citations, "Scored pair has no context")
             if citations:
-                prepared.append({key: cell[key] for key in ["candidacyId", "status", "value", "rationale"]} | {"questionId": question["id"], "citations": citations})
+                mappings = prepared if scope is None else scoped_prepared.setdefault(scope, [])
+                mappings.append({key: cell[key] for key in ["candidacyId", "status", "value", "rationale"]} | {"questionId": question["id"], "citations": citations})
             else:
-                unknown_rationales.append((cell["candidacyId"], question["id"], cell["rationale"]))
+                rationales = unknown_rationales if scope is None else scoped_unknown_rationales.setdefault(scope, [])
+                rationales.append((cell["candidacyId"], question["id"], cell["rationale"]))
     topic_names = {
         "housing": "Vivienda", "employment": "Trabajo", "health": "Sanidad",
         "energy": "Energía y medio ambiente", "taxes": "Impuestos", "education": "Educación",
@@ -147,12 +171,26 @@ def assemble(root):
         (folder / "positions.json").write_bytes(data)
         manifest = {"preparation": {"schemaVersion": 1, "toolVersion": "direct-authored-quiz-v1", "promptVersion": "manual-source-context-v1", "file": "positions.json", "sha256": digest(data)}}
         bank = attach(bank, manifest, folder, digest, require)
-    for candidate, positions in bank["positions"].items():
-        for question, position in positions.items():
-            for citation in position["citations"]:
-                key = (candidate, question, citation["documentId"], citation["start"], citation["end"])
-                if key in html_sections:
-                    citation["locator"]["section"] = html_sections[key]
+        for scope, candidates in scoped_candidates.items():
+            scoped = copy.deepcopy(bank)
+            for candidate in candidates:
+                scoped["positions"][candidate] = {question: {"status": "unknown", "value": None, "citations": []} for question in question_ids}
+            scoped_input = preparation | {"positions": scoped_prepared.get(scope, [])}
+            data = json.dumps(scoped_input, ensure_ascii=False).encode()
+            filename = "positions-" + scope + ".json"
+            (folder / filename).write_bytes(data)
+            manifest["preparation"].update(file=filename, sha256=digest(data))
+            scoped = attach(scoped, manifest, folder, digest, require)
+            for candidate, question, rationale in scoped_unknown_rationales.get(scope, []):
+                scoped["positions"][candidate][question]["rationale"] = rationale
+            bank.setdefault("constituencyPositions", {})[scope] = {candidate: {question: scoped["positions"][candidate][question] for question in question_ids if question in scoped_questions[scope][candidate]} for candidate in sorted(candidates)}
+    for candidate_positions in [bank["positions"], *bank.get("constituencyPositions", {}).values()]:
+        for candidate, positions in candidate_positions.items():
+            for question, position in positions.items():
+                for citation in position["citations"]:
+                    key = (candidate, question, citation["documentId"], citation["start"], citation["end"])
+                    if key in html_sections:
+                        citation["locator"]["section"] = html_sections[key]
     for candidate, question, rationale in unknown_rationales:
         bank["positions"][candidate][question]["rationale"] = rationale
     bank["documents"] = [{key: value for key, value in document.items() if key != "text"} for document in bank["documents"]]

@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
-import { parseBank, weights, match, balanced, followups, similarity, relationship } from '../../resources/js/matching.ts';
+import { parseBank, bankForConstituency, weights, match, balanced, followups, similarity, relationship } from '../../resources/js/matching.ts';
 import type { Answers, Bank } from '../../resources/js/matching.ts';
 const pointer = JSON.parse(readFileSync('resources/evidence/current.json', 'utf8'));
 const bank = parseBank(JSON.parse(readFileSync(`resources/evidence/${pointer.sha256}.json`, 'utf8')));
@@ -322,4 +322,44 @@ test('HTML section locators preserve scores and reject invalid or non-HTML secti
     citation.locator.section = 2;
     copy.documents[0].mediaType = 'application/pdf';
     assert.throws(() => parseBank(copy));
+});
+
+
+test('territorial projections preserve common evidence and freeze independent sessions', () => {
+    const copy = structuredClone(bank);
+    copy.candidacies.find(c => c.id === 'alpha')!.constituencyIds.push('south');
+    copy.constituencyPositions = { north: { alpha: { 'housing-1': { ...structuredClone(copy.positions.alpha['housing-1']), value: 2, rationale: 'Postura territorial ficticia.' } } } };
+    const original = structuredClone(copy);
+    const north = new Questionnaire(copy, pointer.sha256, 'north');
+    const south = new Questionnaire(copy, pointer.sha256, 'south');
+    const all = new Questionnaire(copy, pointer.sha256);
+
+    assert.equal(north.bank.positions.alpha['housing-1'].value, 2);
+    assert.equal(south.bank.positions.alpha['housing-1'].value, -2);
+    assert.equal(all.bank.positions.alpha['housing-1'].value, -2);
+    assert.equal(north.bank.positions.alpha['housing-2'].value, 2);
+    assert.equal(match(north.bank, { 'housing-1': 2 }, {}, north.cohort).rows.find(r => r.id === 'alpha')!.partialIndex, 100);
+    assert.equal(match(south.bank, { 'housing-1': 2 }, {}, south.cohort).rows.find(r => r.id === 'alpha')!.partialIndex, 0);
+    assert.deepEqual(copy, original);
+    assert.throws(() => north.export());
+    copy.constituencyPositions.north.alpha['housing-1'].value = -2;
+    assert.equal(north.bank.positions.alpha['housing-1'].value, 2);
+    assert.ok(Object.isFrozen(north.bank.positions.alpha['housing-1']));
+    assert.throws(() => bankForConstituency(copy, 'missing'));
+    north.finish();
+    assert.equal(north.export().releaseHash, pointer.sha256);
+    assert.equal(north.export().constituency, 'north');
+});
+
+test('territorial unknown overrides remove scoring and invalid scoped evidence fails closed', () => {
+    const copy = structuredClone(bank);
+    copy.constituencyPositions = { north: { alpha: { 'housing-1': { status: 'unknown', value: null, citations: [], rationale: 'No hay posición territorial acreditada.' } } } };
+
+    const projected = bankForConstituency(parseBank(copy), 'north');
+
+    assert.equal(match(projected, { 'housing-1': 2 }, {}, ['alpha']).rows[0].partialIndex, null);
+    assert.equal(bankForConstituency(copy, 'all').positions.alpha['housing-1'].value, -2);
+    for (const scoped of [null, [], { missing: { alpha: copy.positions.alpha } }, { north: {} }, { north: { delta: copy.positions.delta } }, { north: { alpha: {} } }, { north: { alpha: { missing: copy.positions.alpha['housing-1'] } } }, { north: { alpha: { 'housing-1': { status: 'derived', value: 2, citations: [] } } } }, { north: { alpha: { 'housing-1': copy.positions.beta['housing-1'] } } }]) {
+        assert.throws(() => parseBank({ ...copy, constituencyPositions: scoped }));
+    }
 });

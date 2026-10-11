@@ -187,6 +187,78 @@ class AuthoredQuizTest(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     assembler.assemble(root)
 
+    def prepare_territorial(self, root):
+        files = self.prepare(root)
+        registry = files["2023-candidacy-registry.json"]
+        registry["constituencyCount"] = 2
+        registry["records"].append({"id": "congress-other-1", "status": "proclaimed", "resultDenominationId": "fixture-a", "constituency": "Other"})
+        files["2023-source-inventory.json"]["acquisitions"][0]["applicableBallotRecordIds"] = ["congress-test-1", "congress-other-1"]
+        authored = files["2023-authored-question-bank.json"]
+        authored["questions"].append(authored["questions"][0] | {"id": "fixture-second", "familyId": "second-family"})
+        matrix = files["2023-authored-issue-matrix.json"]
+        matrix["issues"].append(copy.deepcopy(matrix["issues"][0]) | {"id": "fixture-second", "familyId": "second-family"})
+        matrix["issues"][0]["constituencyCells"] = [copy.deepcopy(matrix["issues"][0]["cells"][0]) | {"constituencyId": "test", "value": -2, "rationale": "Interpretación territorial ficticia."}]
+        for name, value in files.items():
+            (root / "outputs" / name).write_text(json.dumps(value))
+        return files
+
+    def test_scoped_citations_do_not_replace_common_or_unrelated_positions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.prepare_territorial(root)
+
+            bank = assembler.assemble(root)
+
+            self.assertEqual(bank["positions"]["fixture-a"]["fixture-question"]["value"], 2)
+            self.assertEqual(bank["positions"]["fixture-a"]["fixture-second"]["value"], 2)
+            self.assertEqual(set(bank["constituencyPositions"]), {"test"})
+            scoped = bank["constituencyPositions"]["test"]["fixture-a"]
+            self.assertEqual(set(scoped), {"fixture-question"})
+            self.assertEqual(scoped["fixture-question"]["value"], -2)
+            self.assertEqual(scoped["fixture-question"]["citations"][0]["quote"], "café proposal.")
+            self.assertNotIn("text", bank["documents"][0])
+
+    def test_uncited_scoped_unknown_remains_explicit_and_unscored(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare_territorial(root)
+            cell = files["2023-authored-issue-matrix.json"]["issues"][0]["constituencyCells"][0]
+            cell.update(status="unknown", value=None, citations=[], rationale="No hay postura territorial acreditada.")
+            (root / "outputs/2023-authored-issue-matrix.json").write_text(json.dumps(files["2023-authored-issue-matrix.json"]))
+
+            scoped = assembler.assemble(root)["constituencyPositions"]["test"]["fixture-a"]["fixture-question"]
+
+            self.assertEqual(scoped, {"status": "unknown", "value": None, "citations": [], "rationale": "No hay postura territorial acreditada."})
+
+    def test_territorial_duplicates_ineligible_pairs_and_unverified_applicability_fail_closed(self):
+        for failure in ["duplicate", "unknown-scope", "ineligible-owner", "missing-applicability", "wrong-ballot", "narrow-default", "scoped-default"]:
+            with self.subTest(failure=failure), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                files = self.prepare_territorial(root)
+                issue = files["2023-authored-issue-matrix.json"]["issues"][0]
+                source = files["2023-source-inventory.json"]["acquisitions"][0]
+                if failure == "duplicate":
+                    issue["constituencyCells"].append(copy.deepcopy(issue["constituencyCells"][0]))
+                elif failure == "unknown-scope":
+                    issue["constituencyCells"][0]["constituencyId"] = "missing"
+                elif failure == "ineligible-owner":
+                    issue["constituencyCells"][0].update(candidacyId="fixture-b", constituencyId="other")
+                elif failure == "missing-applicability":
+                    source.pop("applicableBallotRecordIds")
+                elif failure == "wrong-ballot":
+                    source["applicableBallotRecordIds"] = ["congress-other-1"]
+                    for item in files["2023-authored-issue-matrix.json"]["issues"]:
+                        item["cells"][0].update(status="unknown", value=None, citations=[])
+                elif failure == "narrow-default":
+                    source["applicableBallotRecordIds"] = ["congress-test-1"]
+                else:
+                    issue["cells"][0]["constituencyId"] = "test"
+                for name, value in files.items():
+                    (root / "outputs" / name).write_text(json.dumps(value))
+
+                with self.assertRaises(ValueError):
+                    assembler.assemble(root)
+
     def test_retained_source_cannot_escape_project_root(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / "project"

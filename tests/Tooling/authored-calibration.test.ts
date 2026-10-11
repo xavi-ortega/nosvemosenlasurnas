@@ -8,13 +8,14 @@ interface MappingCase {
     sourceExpectedValue: Scale;
     answerCases: { answer: Scale; expectedOverlap: number; expectedRelationship: ReturnType<typeof relationship> }[];
 }
+interface ConstituencyCase extends Partial<Omit<MappingCase, 'sourceExpectedValue'>> { candidacyId: string; constituencyId: string; expectedScored: boolean; sourceExpectedValue: Scale | null }
 interface Cell { candidacyId: string; status: string; value: Scale | null; citations: unknown[] }
 const calibration = JSON.parse(readFileSync('outputs/2023-authored-calibration.json', 'utf8')) as {
-    questions: { questionId: string; mappingCases: MappingCase[]; unknownCases: { candidacyId: string; expectedScored: boolean }[] }[];
+    questions: { questionId: string; mappingCases: MappingCase[]; unknownCases: { candidacyId: string; expectedScored: boolean }[]; constituencyCases?: ConstituencyCase[] }[];
     mandatoryRentCase: { questionId: string; candidacyId: string; answer: Scale; expectedPartyValue: Scale; expectedOverlap: number; expectedRelationship: ReturnType<typeof relationship> };
 };
 const matrix = JSON.parse(readFileSync('outputs/2023-authored-issue-matrix.json', 'utf8')) as {
-    candidacyIds: string[]; issues: { id: string; cells: Cell[] }[];
+    candidacyIds: string[]; issues: { id: string; cells: Cell[]; constituencyCells?: (Cell & { constituencyId: string })[] }[];
 };
 const authored = JSON.parse(readFileSync('outputs/2023-authored-question-bank.json', 'utf8')) as {
     releaseEligible: boolean; questions: { id: string; topicId: string; familyId: string; text: string; help: string }[];
@@ -69,5 +70,33 @@ test('authored drafts retain unique questions and do not assert release readines
     assert.equal(new Set(authored.questions.map(q => q.familyId)).size, authored.questions.length);
     for (const q of authored.questions) {
         assert.ok(q.text.length <= 400 && q.help.length <= 1200);
+    }
+});
+
+
+test('territorial calibrations cover every scoped cell without inheriting a default mapping', () => {
+    for (const question of calibration.questions) {
+        const issue = matrix.issues.find(issue => issue.id === question.questionId)!;
+        const cells = issue.constituencyCells ?? [];
+        const cases = question.constituencyCases ?? [];
+        const key = (item: { candidacyId: string; constituencyId: string }) => `${item.constituencyId}/${item.candidacyId}`;
+        assert.deepEqual(cases.map(key).sort(), cells.map(key).sort());
+        assert.equal(new Set(cells.map(key)).size, cells.length);
+        for (const expected of cases) {
+            const cell = cells.find(cell => key(cell) === key(expected))!;
+            assert.equal(cell.value, expected.sourceExpectedValue);
+            assert.equal(cell.status === 'derived', expected.expectedScored);
+            if (!expected.expectedScored) {
+                assert.equal(cell.value, null);
+                assert.equal((expected.answerCases ?? []).length, 0);
+                continue;
+            }
+            assert.ok(cell.citations.length > 0);
+            assert.deepEqual(expected.answerCases!.map(item => item.answer), [-2, -1, 0, 1, 2]);
+            for (const answer of expected.answerCases!) {
+                assert.equal(similarity(answer.answer, cell.value!), answer.expectedOverlap);
+                assert.equal(relationship(answer.answer, cell.value!), answer.expectedRelationship);
+            }
+        }
     }
 });

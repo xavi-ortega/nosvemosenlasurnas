@@ -1,0 +1,852 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T17:06:27.531211+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_document_bank_audit_with_historical_model_limits",
+  "releaseEligible": false,
+  "questionBankSha256": "70fabb3ec6cd3a1a47c7940c2f5bf42333bbf416c81e307216f6a8d4962d706f",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-027",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+          "sha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+          "documentId": "jaenmerecemas-july",
+          "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+          "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+          "sha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+          "documentId": "jaen-adopted-model-primary-http",
+          "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+          "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/jaen-model-annex-m2.json",
+          "sha256": "2c04dc5bab4ce552df3710c0cb42e3a847a9c86792ba50aa6892c1db240319a2",
+          "documentId": "jaen-model-annex-m2-primary",
+          "sourceSha256": "807fe363958c1ec1cc8a03fa145d9b354ab393143991550463d9456e58ac8de7",
+          "extractionSha256": "c3d51ca930260732a8befd1916604b66cb5e3db5d0d22be053537eeca373121c"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Abandoned-home expropriation and access to social rent do not set a binding total-price ceiling in high-price areas.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "The full model explicitly expands rural dental staff/equipment. This is potentially qualified public dental support, but unresolved historical version prevents a numeric mapping.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Municipal residence and inherited-property restrictions must both be retained. Page57 sentence completes on58; this is not a nationwide parent-child exemption. Historical model vintage unresolved.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Public 0–3 centres or regional alternatives do not establish universal zero-price access.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Increasing living standards and constitutional periodic-update language do not specify cost-of-living or consumer-price indexation.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Public stock expansion and access do not establish a private-sale prohibition.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Cross-region healthcare access does not identify private providers. Programme p32 disability-association places are not automatically clinical referrals; no private-healthcare expansion or abolition inferred.",
+          "citationCount": 1,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Reservoir compensation and ecological-flow criticism are distinct from transferring hydro operator management on expiry.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Comedor provision in eligible rural centres and free school transport are separate; no universal free-meal entitlement.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Explicit targeted pensioner/disability copay elimination, not universal elimination. Potential qualified meaning retained without scoring while historical version unresolved.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Financing the student-company research connection does not expressly pay students for all curricular work placements.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Disability/rural exemption for first3years then up-to50% relief under income condition is not zero contribution below net minimum wage for every self-employed person. Primary programme up-to50% relief is separately bounded by convergence.",
+          "citationCount": 1,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "ITP exemption is not VAT exemption. Separate rural VAT 4% including housing must not become national first-home VAT zero.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Explicit regulated lawful hunting is incompatible with a blanket hunting prohibition, but historical model applicability remains unresolved so no numeric opposition assigned.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Quality, infrastructure failures and nonpayment disconnection protection are different mechanisms.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Targeted return, rental and entrepreneurship support lacks the universal age23andEUR20000mechanism.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Explicit in-person elderly/basic healthcare and electronic-access support do not establish all administrative procedures with no forced internet use.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Free electronic-administration access is separately worded from available internet; neither establishes universal residential freeinternet.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Public environmental control over extraction/contamination is distinct from utility operator ownership/management.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Centre within 30 minutes and continuity at six do not specify free price or public operator for full eligibility. Programme scholarships are targeted support, not universal provision.",
+          "citationCount": 1,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Childcare/home support does not establish work-hours reduction or sixteen-year eligibility.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Psychologists in possible community centres, victim-specific therapy and broad mental-health improvements do not themselves establish general public psychotherapy entitlement.",
+          "citationCount": 1,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Two-year waived or subsidised fees for young returners and three-year disability rural exemptions are targeted potential qualified support, not blanket first-year zero fees. Historical applicability unresolved; no number.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 2,
+          "pendingSourceCitationCount": 2
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Geographic/residence/sex/dependant relief lacks inflation-based bracket adjustment.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Named research GDP target must not be converted to defence GDP target.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Agency-guaranteed firsthome in return plan up to age 36 and rural scope is not precisely unqualified State mortgage guarantees up to age 35. Mortgage instrument is not explicit; do not fill it in.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "After-schoollibraryaccess/homework support does not specify pandemic-learning-recovery tutorials.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Youth-return professional advice and labour mediation differ from authority to file administrative procedures for citizens.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "General demand transport, subsidised mobility for elderly or disabled people and age-specific free or reduced public transport have separate scopes. Do not combine them into a general fare or destination promise.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 3,
+          "pendingSourceCitationCount": 3
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Information campaigns/knowledgecirculation lack a universal open-access right to publicly funded results; no copyright or paywall term inferred.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 1,
+          "pendingSourceCitationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
+          "citationCount": 0,
+          "internalContextualCitationCount": 0,
+          "pendingSourceCitationCount": 0
+        }
+      ]
+    }
+  ],
+  "authorship": "All 80 shown propositions directly compared with the complete 45-page Jaén programme, 342-page model and 16-page historical reference. Decisions and rationales directly authored; the helper only packages supplied decisions and validates literal contexts.",
+  "limitations": [
+    "Specific 2023 programme expressly adopts a model; current 342-page original and July 26 post-vote viewer are preserved. Exact pre-vote bytes, distinct 341-page variant and annex precedence remain unresolved. Potential meanings are recorded without numeric values.",
+    "Emergency-map annex 1 was not located in the retained programme or inspected primary pages; search failure does not certify absence.",
+    "The complete Gaona chapter 263–284 was read separately; the remaining 345-page book is unread.",
+    "All 155 existing numeric mappings and 775 calibration cases remain unchanged; no public bank pointer or hosted runtime changed.",
+    "Every candidature remains visible; this partial audit does not complete corpus or release eligibility.",
+    "Initial immutable draft assembly passed literal checks but browser bank parsing rejected the HTTP model source URL. All 38 HTTP excerpts remain in the authored internal ledger; only the four HTTPS programme citations enter the next local draft. No check weakened or source URL relabelled."
+  ],
+  "publicContextualCitations": 4,
+  "pendingInternalHttpCitations": 38,
+  "retainedContextualCitations": 42
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T16:19:35.073360+00:00",
+  "recordedAt": "2026-10-11T17:08:40.361559+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -546,12 +546,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Abandoned-home expropriation and access to social rent do not set a binding total-price ceiling in high-price areas.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 312,
+              "printedPage": 312,
+              "start": 999584,
+              "end": 999657,
+              "quote": "se deben facilitar los trámites de expropiación de viviendas abandonadas,",
+              "contextStart": 999015,
+              "contextEnd": 1002472,
+              "contextSha256": "ddc9bb978df451ef17f1b4674be00ffc4deea75de86da7fb131c678c621bc84d"
+            }
+          ],
+          "authoredSourceRationale": "La propuesta de vivienda rural no fija un precio máximo general al alquiler.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -1308,10 +1334,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -2016,12 +2048,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "The full model explicitly expands rural dental staff/equipment. This is potentially qualified public dental support, but unresolved historical version prevents a numeric mapping.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 126,
+              "printedPage": 126,
+              "start": 447559,
+              "end": 447596,
+              "quote": "psicología u odontología, entre otros",
+              "contextStart": 446701,
+              "contextEnd": 449704,
+              "contextSha256": "4dbd5e1d9de3c2db72f6533ba3c0f189666241de0c65920ee58604b666c1eb3d"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 129,
+              "printedPage": 129,
+              "start": 456948,
+              "end": 456994,
+              "quote": "Sillón odontológico (odontólogo e higienista).",
+              "contextStart": 454989,
+              "contextEnd": 457913,
+              "contextSha256": "b6aae063fc580c49701c0222d13c847d193ee942b6d4b7b0b615f43adfbe66d3"
+            }
+          ],
+          "authoredSourceRationale": "El modelo propone profesionales y equipos dentales en centros rurales. Su versión aplicable antes de las elecciones sigue sin confirmarse.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -2745,10 +2819,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -3418,12 +3498,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Municipal residence and inherited-property restrictions must both be retained. Page57 sentence completes on58; this is not a nationwide parent-child exemption. Historical model vintage unresolved.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 222191,
+              "end": 222382,
+              "quote": "Supresión  del  Impuesto  sobre  Sucesiones  y  Donaciones,  cuando  los  herederos  sean\n        residentes en municipios con población inferior a 1.000 habitantes, respecto de los inmuebles",
+              "contextStart": 218511,
+              "contextEnd": 222499,
+              "contextSha256": "e96aff8eb3e1cc1f62b7ad7c733c5cbeddc081b4dc56bcc6df3de90b11e5bb1b"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "start": 222584,
+              "end": 222741,
+              "quote": "comprendidos en la herencia ubicados en esos municipios de residencia del sucesor o en\n         cualesquiera otros con población inferior a 1.000 habitantes.",
+              "contextStart": 222500,
+              "contextEnd": 225901,
+              "contextSha256": "d44ac2cdf27a3f51daffad4ac1a033e21399dadcf1f2408db80a4ab29159642f"
+            }
+          ],
+          "authoredSourceRationale": "El modelo limita la exención de sucesiones a residentes y determinados inmuebles en pueblos pequeños; su versión electoral sigue pendiente.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -4078,12 +4200,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Public 0–3 centres or regional alternatives do not establish universal zero-price access.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 117,
+              "printedPage": 117,
+              "start": 420023,
+              "end": 420180,
+              "quote": "Dotación de centros de Educación Infantil públicos de 0               -3 años o las alternativas que puedan\n         disponer las CC.AA. en un radio próximo.",
+              "contextStart": 417566,
+              "contextEnd": 420419,
+              "contextSha256": "bd5deb915be338bfc06eadf59947e4a144f3086d08f8c4a15f104e513a68cdd9"
+            }
+          ],
+          "authoredSourceRationale": "Propone centros públicos de educación infantil próximos, sin establecer que las plazas sean gratuitas para todas las familias.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -4705,10 +4853,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -5366,10 +5520,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -6044,10 +6204,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -6772,12 +6938,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Increasing living standards and constitutional periodic-update language do not specify cost-of-living or consumer-price indexation.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 103,
+              "printedPage": 103,
+              "start": 373555,
+              "end": 373763,
+              "quote": "Blindaje de pensiones dignas acordes al incremento del nivel de vida                     , partiendo del\n                  cumplimiento de la Constitución y de la Carta Social Europea en materia de pensiones.",
+              "contextStart": 372195,
+              "contextEnd": 374975,
+              "contextSha256": "b9b71b277ddc7280872a50a939698ed4ebbcd8b3d50b21a1b13d204a7d34157b"
+            }
+          ],
+          "authoredSourceRationale": "Propone proteger pensiones dignas, sin precisar un índice de precios para actualizarlas.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -7506,10 +7698,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -8123,10 +8321,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -8774,12 +8978,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Public stock expansion and access do not establish a private-sale prohibition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "start": 163727,
+              "end": 163957,
+              "quote": "Es indispensable contar con un parque de viviendas públicas am                 plio, tanto en las ciudades pequeñas\ncomo en los pueblos, al que puedan acceder con facilidades en el alquiler aquellos jóvenes en riesgo\nde exclusión.",
+              "contextStart": 160717,
+              "contextEnd": 165008,
+              "contextSha256": "8f4c9d572ad869c3cd155c3ba51d0789ceb824ca087a85b5aa6dc04f7e05d71f"
+            }
+          ],
+          "authoredSourceRationale": "Propone ampliar la vivienda pública y social, sin precisar que nunca pueda venderse a propietarios privados.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -9498,12 +9728,55 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Cross-region healthcare access does not identify private providers. Programme p32 disability-association places are not automatically clinical referrals; no private-healthcare expansion or abolition inferred.",
+          "citations": [
+            {
+              "documentId": "jaenmerecemas-july",
+              "sourceUrl": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+              "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+              "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+              "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+              "notebookSha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "start": 75892,
+              "end": 76140,
+              "quote": "las asociaciones   de  los colectivos  de  personas   con\ndeterminadas    discapacidades    precisan    un aumento     significativo  del número    de  plazas\nconcertadas   con  la Junta  de Andalucía   y puesto   que  son del todo   insuficientes.",
+              "contextStart": 75667,
+              "contextEnd": 77901,
+              "contextSha256": "19b6a42693eca5cd93e91a115279592d2eb5f5aef4325c2a61738bb3b8571b0e"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 127,
+              "printedPage": 127,
+              "start": 449789,
+              "end": 450184,
+              "quote": "Buscar soluciones para la atención de los pacientes de aquellos núcleos de población que se\n         encuentran más próximos de acceso al sistema sanitario de otra comunidad                            autónoma.\n         Existen ya precedentes que lo han solucionado, pero debería establecerse una regularización\n         generalizada y más consolidada entre las comunidades autónomas implicadas.",
+              "contextStart": 449705,
+              "contextEnd": 452013,
+              "contextSha256": "c16cb1e25e8ce6dac966df9255f55ec7de0ef816c7b3e98398ab87f8c7d8f9b7"
+            }
+          ],
+          "authoredSourceRationale": "Propone acuerdos entre comunidades para acceder a la sanidad más cercana y ampliar plazas para discapacidad; no precisa aumentar conciertos sanitarios privados.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -10161,10 +10434,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -10803,12 +11082,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Reservoir compensation and ecological-flow criticism are distinct from transferring hydro operator management on expiry.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 238,
+              "printedPage": 238,
+              "start": 767459,
+              "end": 767716,
+              "quote": "La expansión hidráulica en España ha traído consigo una disparidad de las medidas compensatorias\npara los pueblos y sus habitantes. Este punto sigue siendo objeto de demanda por parte de ciertas\nregiones a las empresas productoras de energía hidroeléctrica.",
+              "contextStart": 765626,
+              "contextEnd": 768973,
+              "contextSha256": "b1f77ff59b983af3721384f490594cbfcdc3aae83b296989140755b7ccd4d07c"
+            }
+          ],
+          "authoredSourceRationale": "Reclama compensaciones y protección del agua, sin concretar gestión pública de centrales al acabar las concesiones.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -11397,10 +11702,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -12023,12 +12334,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Comedor provision in eligible rural centres and free school transport are separate; no universal free-meal entitlement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 278,
+              "printedPage": 278,
+              "start": 903137,
+              "end": 903255,
+              "quote": "Proveer de servicio de c     omedor a aquellos centros que, por las características del entorno, lo\n         precisen.",
+              "contextStart": 901822,
+              "contextEnd": 904987,
+              "contextSha256": "79c32d5b92066c931cf9c6a54d487034bace6c34b9dd972fa6175f8954a200dd"
+            }
+          ],
+          "authoredSourceRationale": "Propone comedores para alumnado rural que los necesita, sin establecer su gratuidad para todo el alumnado obligatorio.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -12668,12 +13005,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Explicit targeted pensioner/disability copay elimination, not universal elimination. Potential qualified meaning retained without scoring while historical version unresolved.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 125,
+              "printedPage": 125,
+              "start": 444596,
+              "end": 444726,
+              "quote": "Eliminar progresivamente el copago sanitario en pensionistas y en otros colectivos como\n        personas con diversidad funcional.",
+              "contextStart": 443023,
+              "contextEnd": 446700,
+              "contextSha256": "9f3d32229b985c46520ce7de3bc3c98ba7009d30fe1de6b3b1842dfffbfe6fad"
+            }
+          ],
+          "authoredSourceRationale": "El modelo propone retirar progresivamente el copago a pensionistas y otros colectivos. Su versión electoral sigue pendiente de confirmar.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -13294,10 +13657,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -13920,10 +14289,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -14579,12 +14954,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Financing the student-company research connection does not expressly pay students for all curricular work placements.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 281,
+              "printedPage": 281,
+              "start": 913616,
+              "end": 913723,
+              "quote": "La   conexión   estudiante          -empresa   debe   estar   financiada   por   la\n        Administración.",
+              "contextStart": 911817,
+              "contextEnd": 916046,
+              "contextSha256": "e7ec7ed768a4757c1a6e5f0fb85b904edaa2bfa2bb6971802972f93555096f9c"
+            }
+          ],
+          "authoredSourceRationale": "Propone financiar proyectos de conexión entre estudiantes y empresas, sin concretar remuneración de prácticas curriculares.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -15226,10 +15627,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -15837,10 +16244,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -16430,10 +16843,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -17040,10 +17459,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -17650,10 +18075,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -18291,12 +18722,55 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Disability/rural exemption for first3years then up-to50% relief under income condition is not zero contribution below net minimum wage for every self-employed person. Primary programme up-to50% relief is separately bounded by convergence.",
+          "citations": [
+            {
+              "documentId": "jaenmerecemas-july",
+              "sourceUrl": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+              "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+              "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+              "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+              "notebookSha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+              "pdfPage": 16,
+              "printedPage": 16,
+              "start": 36168,
+              "end": 36536,
+              "quote": "las mismas    bonificaciones,   de  hasta  del 50%   en las\ncotizaciones  para  los emprendedores      y pymes,   de  que  gozan  en  Ceuta  y Melilla  ysegún\nlos parámetros    ligados  a  las tasas  de actividad,  empleo    y paro  hasta  tanto   en cuanto\nconverjan   en   términos   relativos   con  los  correspondientes     datos   agregados    a  nivel\nnacional.",
+              "contextStart": 34601,
+              "contextEnd": 36993,
+              "contextSha256": "b72a091880bb6caaaaa6b0ba858aaf9526c408b3c06bafeaca655efeec656db1"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 106,
+              "printedPage": 106,
+              "start": 385172,
+              "end": 385486,
+              "quote": "se establecería la gratuidad de las cuotas de autónomos para las personas\n                 con diversidad funcional residentes en la España Vaciada durante los tres primeros\n                 años, pudiendo tener reducciones en la cuota de hasta el 50% si sus ingresos no\n                 superan el ingreso mínimo.",
+              "contextStart": 382272,
+              "contextEnd": 385913,
+              "contextSha256": "ad4a4bf5c1aaeb609ce7c385ab281b366d6e245d572d72bf6193510a7a233602"
+            }
+          ],
+          "authoredSourceRationale": "Propone ayudas para determinados autónomos rurales, sin una exención general por ingresar menos que el salario mínimo.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -18918,12 +19392,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "ITP exemption is not VAT exemption. Separate rural VAT 4% including housing must not become national first-home VAT zero.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 42,
+              "printedPage": 42,
+              "start": 165085,
+              "end": 165234,
+              "quote": "pago del Impuesto de Transiciones Patrimoniales ITP en la adquisición de la primera vivienda, avalada\npor la  Agencia Nacional contra la Despoblación",
+              "contextStart": 165009,
+              "contextEnd": 168778,
+              "contextSha256": "5a4fb0c9457ba6137dcb0c1fbc4ad3491a75c87be3ecfe48244300bbb5cf708e"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "start": 223860,
+              "end": 224149,
+              "quote": "Reducción del IVA al 4% para los productos generados en el sector primario y específicamente\n         en el medio rural y para los sectores productores de servicios con mayor imp                   lantación en el\n         mundo rural: turismo rural, restauración, viviend           a, etc.",
+              "contextStart": 222500,
+              "contextEnd": 225901,
+              "contextSha256": "d44ac2cdf27a3f51daffad4ac1a033e21399dadcf1f2408db80a4ab29159642f"
+            }
+          ],
+          "authoredSourceRationale": "El modelo distingue una exención del impuesto de transmisiones y un IVA rural reducido; no establece IVA cero para la primera vivienda.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -19513,10 +20029,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -20123,10 +20645,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -20748,12 +21276,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Explicit regulated lawful hunting is incompatible with a blanket hunting prohibition, but historical model applicability remains unresolved so no numeric opposition assigned.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 226,
+              "printedPage": 226,
+              "start": 725522,
+              "end": 725738,
+              "quote": "Regulación y control de los cotos. Proteger los recursos cinegéticos: la caza genera\n                  recursos en los ayuntamientos con la venta de piezas cinegéticas y con alquileres de\n                  los cotos.",
+              "contextStart": 722358,
+              "contextEnd": 726582,
+              "contextSha256": "697e984c2d8f8df64de774d56ed7e0e911cd704329ca77df959500d20d5c8ed7"
+            }
+          ],
+          "authoredSourceRationale": "El modelo conserva la caza con regulación de los cotos. Su versión aplicable antes de las elecciones sigue pendiente.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -21376,12 +21930,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Quality, infrastructure failures and nonpayment disconnection protection are different mechanisms.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 115,
+              "printedPage": 115,
+              "start": 412363,
+              "end": 412427,
+              "quote": "Garantizar el acceso a la energía y al agua corriente de calidad",
+              "contextStart": 411280,
+              "contextEnd": 414334,
+              "contextSha256": "30c9b39e36d2943ba906254c2189e3fe8473265e559eb3ccbeaa7a7359eed68b"
+            }
+          ],
+          "authoredSourceRationale": "Propone mejorar el acceso y la calidad de luz y agua, sin concretar una prohibición permanente de cortes por impago.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -21986,12 +22566,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Targeted return, rental and entrepreneurship support lacks the universal age23andEUR20000mechanism.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "start": 164699,
+              "end": 164826,
+              "quote": "durante el primer año los jóvenes retornados dispondrían de apoyo económico para alquileres y\nreformas de la vivienda habitual.",
+              "contextStart": 160717,
+              "contextEnd": 165008,
+              "contextSha256": "8f4c9d572ad869c3cd155c3ba51d0789ceb824ca087a85b5aa6dc04f7e05d71f"
+            }
+          ],
+          "authoredSourceRationale": "Propone ayudas para jóvenes retornados, sin una transferencia de 20.000 euros a cada joven al cumplir 23 años.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -22581,10 +23187,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -23211,10 +23823,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -23876,10 +24494,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -24502,10 +25126,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -25095,10 +25725,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -25775,12 +26411,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Explicit in-person elderly/basic healthcare and electronic-access support do not establish all administrative procedures with no forced internet use.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 103,
+              "printedPage": 103,
+              "start": 374467,
+              "end": 374605,
+              "quote": "Presencialidad en el acceso a servicios públicos              básicos que tomarán como principio\n                  fundamental el sistema:",
+              "contextStart": 372195,
+              "contextEnd": 374975,
+              "contextSha256": "b9b71b277ddc7280872a50a939698ed4ebbcd8b3d50b21a1b13d204a7d34157b"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 119,
+              "printedPage": 119,
+              "start": 424007,
+              "end": 424064,
+              "quote": "Punto de acceso gratuito a la administración electrónica.",
+              "contextStart": 423733,
+              "contextEnd": 426885,
+              "contextSha256": "719c537a362c08e7ad44ac7b9e209f6c0e2ef50e06e9505cbedb4f360c5b2615"
+            }
+          ],
+          "authoredSourceRationale": "Propone atención presencial en servicios básicos y acceso a trámites electrónicos, sin garantizar que todos los trámites puedan completarse en persona.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -26439,10 +27117,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -27049,10 +27733,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -27659,10 +28349,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -28272,10 +28968,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -28865,10 +29567,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -29524,12 +30232,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Free electronic-administration access is separately worded from available internet; neither establishes universal residential freeinternet.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 119,
+              "printedPage": 119,
+              "start": 424007,
+              "end": 424064,
+              "quote": "Punto de acceso gratuito a la administración electrónica.",
+              "contextStart": 423733,
+              "contextEnd": 426885,
+              "contextSha256": "719c537a362c08e7ad44ac7b9e209f6c0e2ef50e06e9505cbedb4f360c5b2615"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 119,
+              "printedPage": 119,
+              "start": 425849,
+              "end": 425885,
+              "quote": "Disponibilidad de acceso a internet.",
+              "contextStart": 423733,
+              "contextEnd": 426885,
+              "contextSha256": "719c537a362c08e7ad44ac7b9e209f6c0e2ef50e06e9505cbedb4f360c5b2615"
+            }
+          ],
+          "authoredSourceRationale": "Propone mejorar la conexión y puntos de acceso, sin ofrecer internet básico gratuito a todas las personas.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -30235,12 +30985,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Public environmental control over extraction/contamination is distinct from utility operator ownership/management.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 239,
+              "printedPage": 239,
+              "start": 770444,
+              "end": 770619,
+              "quote": "Impulsar planes públicos de vigilancia y control ambiental en el medio rural, bajo redes de\n        prevención gestión y monitorización hacia los puntos de extracción de agua,",
+              "contextStart": 768974,
+              "contextEnd": 773227,
+              "contextSha256": "ab68ecc285f15f1632eec76cfdf0a82b516bbd788e8083447e52969eb4a6099a"
+            }
+          ],
+          "authoredSourceRationale": "Propone vigilancia pública e infraestructuras de agua, sin precisar que las entidades públicas gestionen todo el suministro.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -30899,12 +31675,55 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Centre within 30 minutes and continuity at six do not specify free price or public operator for full eligibility. Programme scholarships are targeted support, not universal provision.",
+          "citations": [
+            {
+              "documentId": "jaenmerecemas-july",
+              "sourceUrl": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+              "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+              "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+              "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+              "notebookSha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "start": 76561,
+              "end": 76695,
+              "quote": "Ayudar   con  becas  a niños  con  necesidades    educativas  especiales   (para logopedas,\ntratamiento   psicopedagógico,    etc...).",
+              "contextStart": 75667,
+              "contextEnd": 77901,
+              "contextSha256": "19b6a42693eca5cd93e91a115279592d2eb5f5aef4325c2a61738bb3b8571b0e"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 107,
+              "printedPage": 107,
+              "start": 386520,
+              "end": 386683,
+              "quote": "ha de existir un\n        centro  de  atención  temprana  en  cada  comarca  o  a  una  distancia  con  un  tiempo  de\n        desplazamiento inferior a 30 minutos.",
+              "contextStart": 385914,
+              "contextEnd": 389891,
+              "contextSha256": "206a09069f4ecd13182ab251d2a060ab04e1fcb2d1d9922d307d81d17265ca76"
+            }
+          ],
+          "authoredSourceRationale": "Propone acercar la atención temprana y apoyar tratamientos, sin concretar atención pública y gratuita para todos los menores de seis años.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -31492,12 +32311,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Childcare/home support does not establish work-hours reduction or sixteen-year eligibility.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 117,
+              "printedPage": 117,
+              "start": 419922,
+              "end": 420012,
+              "quote": "Garantizar la conciliación familiar e        fectiva, a través de las siguientes acciones:",
+              "contextStart": 417566,
+              "contextEnd": 420419,
+              "contextSha256": "bd5deb915be338bfc06eadf59947e4a144f3086d08f8c4a15f104e513a68cdd9"
+            }
+          ],
+          "authoredSourceRationale": "Propone servicios para conciliar la vida familiar, sin concretar reducción de jornada por hijos menores de 16 años.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -32122,10 +32967,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -32715,10 +33566,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -33326,10 +34183,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -33919,10 +34782,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -34512,10 +35381,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -35122,10 +35997,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -35732,10 +36613,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -36376,10 +37263,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -36967,12 +37860,55 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Psychologists in possible community centres, victim-specific therapy and broad mental-health improvements do not themselves establish general public psychotherapy entitlement.",
+          "citations": [
+            {
+              "documentId": "jaenmerecemas-july",
+              "sourceUrl": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+              "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+              "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+              "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+              "notebookSha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "start": 77192,
+              "end": 77269,
+              "quote": "importantes     mejoras    en   todo   lo\nrelacionado   con la salud  mental.",
+              "contextStart": 75667,
+              "contextEnd": 77901,
+              "contextSha256": "19b6a42693eca5cd93e91a115279592d2eb5f5aef4325c2a61738bb3b8571b0e"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 118,
+              "printedPage": 118,
+              "start": 422690,
+              "end": 422879,
+              "quote": "Dichos centros podrían contar con\n         profesionales de trabajo social, psicología, agentes de igualdad, asesoría legal, terapeuta\n         ocupacional, educación y dinamización social.",
+              "contextStart": 420420,
+              "contextEnd": 423732,
+              "contextSha256": "9c5bb5e77d84d8ca03fba3b26a73e0d58f07e423a44a7b27a2ed7aeb1bd7dc29"
+            }
+          ],
+          "authoredSourceRationale": "Propone reforzar la salud mental y contar con profesionales de psicología, sin concretar psicoterapia en la cartera pública para quienes la necesitan.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -37580,10 +38516,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -38190,10 +39132,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -38799,12 +39747,54 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Two-year waived or subsidised fees for young returners and three-year disability rural exemptions are targeted potential qualified support, not blanket first-year zero fees. Historical applicability unresolved; no number.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "start": 163587,
+              "end": 163692,
+              "quote": "durante los primeros dos años no sería necesario pagar\nla cuota de autónomos -o estuviera subvencionada-.",
+              "contextStart": 160717,
+              "contextEnd": 165008,
+              "contextSha256": "8f4c9d572ad869c3cd155c3ba51d0789ceb824ca087a85b5aa6dc04f7e05d71f"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 106,
+              "printedPage": 106,
+              "start": 385172,
+              "end": 385368,
+              "quote": "se establecería la gratuidad de las cuotas de autónomos para las personas\n                 con diversidad funcional residentes en la España Vaciada durante los tres primeros\n                 años,",
+              "contextStart": 382272,
+              "contextEnd": 385913,
+              "contextSha256": "ad4a4bf5c1aaeb609ce7c385ab281b366d6e245d572d72bf6193510a7a233602"
+            }
+          ],
+          "authoredSourceRationale": "El modelo plantea ayudas a jóvenes retornados y personas con discapacidad que emprenden. Su versión electoral sigue pendiente.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -39463,12 +40453,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Geographic/residence/sex/dependant relief lacks inflation-based bracket adjustment.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 221196,
+              "end": 221381,
+              "quote": "Deducción en el IRPF de los trabajadores residenciados en municipios de menos de 5.000\n        habitantes del 15 % de  la  cuota  íntegra  resultante  si es varón, del 20 % si es mujer,",
+              "contextStart": 218511,
+              "contextEnd": 222499,
+              "contextSha256": "e96aff8eb3e1cc1f62b7ad7c733c5cbeddc081b4dc56bcc6df3de90b11e5bb1b"
+            }
+          ],
+          "authoredSourceRationale": "Propone reducciones fiscales para residentes rurales, sin concretar ajustes del impuesto sobre la renta por inflación.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -40110,10 +41126,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -40704,10 +41726,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -41315,10 +42343,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -41909,10 +42943,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -42537,10 +43577,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -43181,12 +44227,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Named research GDP target must not be converted to defence GDP target.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 266,
+              "printedPage": 266,
+              "start": 860575,
+              "end": 860627,
+              "quote": "Petición del 2% del PIB destinado a la investigación",
+              "contextStart": 860202,
+              "contextEnd": 863243,
+              "contextSha256": "030053bac1dce3071efb37e8f3b7a7e35aa4ac601b2303be61aca98e3594ae24"
+            }
+          ],
+          "authoredSourceRationale": "El modelo pide destinar el 2% a investigación, sin establecer ese porcentaje para seguridad y defensa.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -43828,12 +44900,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Agency-guaranteed firsthome in return plan up to age 36 and rural scope is not precisely unqualified State mortgage guarantees up to age 35. Mortgage instrument is not explicit; do not fill it in.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 42,
+              "printedPage": 42,
+              "start": 165137,
+              "end": 165234,
+              "quote": "en la adquisición de la primera vivienda, avalada\npor la  Agencia Nacional contra la Despoblación",
+              "contextStart": 165009,
+              "contextEnd": 168778,
+              "contextSha256": "5a4fb0c9457ba6137dcb0c1fbc4ad3491a75c87be3ecfe48244300bbb5cf708e"
+            }
+          ],
+          "authoredSourceRationale": "El modelo plantea avalar primeras viviendas de jóvenes retornados en zonas despobladas. Su versión electoral sigue pendiente.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -44441,10 +45539,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -45035,10 +46139,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -45629,10 +46739,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -46221,12 +47337,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "After-schoollibraryaccess/homework support does not specify pandemic-learning-recovery tutorials.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 278,
+              "printedPage": 278,
+              "start": 903265,
+              "end": 903385,
+              "quote": "Proponer la apertura de bibliotecas escolares por la tarde que pueda servir de apoyo en las\n         tareas al alumnado.",
+              "contextStart": 901822,
+              "contextEnd": 904987,
+              "contextSha256": "79c32d5b92066c931cf9c6a54d487034bace6c34b9dd972fa6175f8954a200dd"
+            }
+          ],
+          "authoredSourceRationale": "Propone bibliotecas escolares y apoyo a tareas, sin concretar tutorías estatales adicionales para recuperar pérdidas de la pandemia.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -46815,12 +47957,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Youth-return professional advice and labour mediation differ from authority to file administrative procedures for citizens.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "start": 161724,
+              "end": 161804,
+              "quote": "mediadores laborales, asesores de empresas y\nemprendimiento, asesores jurídicos,",
+              "contextStart": 160717,
+              "contextEnd": 165008,
+              "contextSha256": "8f4c9d572ad869c3cd155c3ba51d0789ceb824ca087a85b5aa6dc04f7e05d71f"
+            }
+          ],
+          "authoredSourceRationale": "Propone asesoramiento jurídico y empresarial, sin precisar representación para hacer trámites en nombre de cada persona.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -47426,12 +48594,70 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "General demand transport, subsidised mobility for elderly or disabled people and age-specific free or reduced public transport have separate scopes. Do not combine them into a general fare or destination promise.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 264,
+              "printedPage": 264,
+              "start": 854618,
+              "end": 854801,
+              "quote": "Garantizar  el     derecho  a  un  transporte  público             eficaz  para  la  población  rural,\n              modernizando el servicio con la modalidad de transporte a demanda.",
+              "contextStart": 852792,
+              "contextEnd": 856175,
+              "contextSha256": "295cb15bca436065c2c946df459f7b0458d74f0b085e13644b8e74efd9be760e"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 117,
+              "printedPage": 117,
+              "start": 419527,
+              "end": 419578,
+              "quote": "Fomento de líneas y viajes a demanda subvencionados",
+              "contextStart": 417566,
+              "contextEnd": 420419,
+              "contextSha256": "bd5deb915be338bfc06eadf59947e4a144f3086d08f8c4a15f104e513a68cdd9"
+            },
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 264,
+              "printedPage": 264,
+              "start": 854816,
+              "end": 854965,
+              "quote": "Pacto de Estado sobre transporte escolar y público gratuito de 0 a 18 años, y gratuita o\n              con  tarifa  reducida  entre  19  a  25  años.",
+              "contextStart": 852792,
+              "contextEnd": 856175,
+              "contextSha256": "295cb15bca436065c2c946df459f7b0458d74f0b085e13644b8e74efd9be760e"
+            }
+          ],
+          "authoredSourceRationale": "Propone transporte a demanda y algunas ayudas por edad o discapacidad, sin concretar un precio reducido general hacia el municipio de referencia.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -48090,10 +49316,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -48684,10 +49916,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -49326,12 +50564,38 @@
         },
         {
           "candidacyId": "boe-2023-027",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No hemos podido confirmar una postura puntuable sobre esta medida: siguen pendientes la versión electoral del modelo y un enlace verificable para sus citas.",
+          "authoredAnalysis": "Information campaigns/knowledgecirculation lack a universal open-access right to publicly funded results; no copyright or paywall term inferred.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ],
+          "pendingSourceCitations": [
+            {
+              "documentId": "jaen-adopted-model-primary-http",
+              "sourceUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+              "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+              "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+              "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+              "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+              "pdfPage": 285,
+              "printedPage": 285,
+              "start": 922975,
+              "end": 923326,
+              "quote": "Realizar campañas de información y formación, sobre las líneas de investigación que se están\n         desarrollando, bien a través de publicaciones, o bien a través de                          cursos y     jornadas de\n         formación dirigidos al sector, para transmitir los campos en los que se está trabajando y los\n         resultados obtenidos.",
+              "contextStart": 922889,
+              "contextEnd": 924631,
+              "contextSha256": "f819e747098fbf3e139e52a67dee9c50b3f880b469f7230b98606af52d1012fb"
+            }
+          ],
+          "authoredSourceRationale": "Propone difundir conocimientos y resultados de investigación, sin exigir acceso libre a todos los resultados financiados con dinero público.",
+          "pendingCitationReason": "Original model retrieved over HTTP; preserve original hash and URL internally. Public HTTPS citation contract remains mandatory; no working HTTPS original acquired."
         },
         {
           "candidacyId": "boe-2023-028",
@@ -49973,10 +51237,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",
@@ -50584,10 +51854,16 @@
           "candidacyId": "boe-2023-027",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En el programa de Jaén y los documentos relacionados consultados no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct complete-document comparison did not establish the exact shown proposition, mechanism and scope. Missing policy does not become opposition or numeric neutrality. Remaining source variant/annex limits are retained.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_historical_model_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "jaenmerecemas-july",
+            "jaen-adopted-model-primary-http",
+            "jaen-model-annex-m2-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-028",

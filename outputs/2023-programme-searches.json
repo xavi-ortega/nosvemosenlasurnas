@@ -3548,6 +3548,26 @@
       "provenanceRecord": "outputs/2023-jaen-model-source-provenance.json",
       "failedRetrievalsRetained": true,
       "noProgrammeAbsenceCertified": true
+    },
+    {
+      "candidacyId": "boe-2023-027",
+      "recordedAt": "2026-10-11T17:06:27.531211+00:00",
+      "queries": [
+        "site:jaenmerecemas.es \"2023\" \"anexo\" \"mapa\"",
+        "site:jaenmerecemas.es \"mapa de emergencias\"",
+        "\"Anexo MdD M5.1\" \"CFRA\"",
+        "\"Modelo-de-Desarrollo-v9a.pdf\" \"2023\""
+      ],
+      "status": "actual_search_followup_no_new_emergency_map_or_prevote_original",
+      "observationScope": "Fourqueriesexecutedinonewebbatch;combinedresultonlyrepeatedtheknownCOCEDERmodel. Exactperqueryassociationsnotreturned.",
+      "discoveredPages": [
+        {
+          "title": "Previously acquired distinct COCEDER model",
+          "url": "https://www.coceder.org/wp-content/uploads/2021/05/Modelo-de-Desarrollo-v9a.pdf"
+        }
+      ],
+      "noProgrammeAbsenceCertified": true,
+      "numericPositionAdded": false
     }
   ]
 }

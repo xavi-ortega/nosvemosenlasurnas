@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T17:02:39.213897+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-027",
+  "documentId": "jaen-model-annex-m5-full-book",
+  "sourceSha256": "2d40f95534894c655d481841df2465a80cb99016f1666c026586a524c1322e26",
+  "extractionSha256": "3c46dcb060dc781c95790a511f0ea67a8294aab157e77a6c00597212277c89c9",
+  "pageCount": 345,
+  "fullDocumentRead": false,
+  "scoringReady": false,
+  "readingScope": "Complete Cristina Gaona chapter, including abstract, introduction, methods, all results, conclusions and full bibliography; remaining book chapters unread.",
+  "chapter": {
+    "pdfPageRange": [
+      263,
+      284
+    ],
+    "printedPageRange": [
+      263,
+      284
+    ],
+    "coveredPages": [
+      263,
+      264,
+      265,
+      266,
+      267,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      278,
+      279,
+      280,
+      281,
+      282,
+      283,
+      284
+    ],
+    "fullChapterRead": true,
+    "originalVisualPagesRead": [
+      265,
+      268,
+      269,
+      270,
+      271,
+      272,
+      273,
+      277,
+      279
+    ],
+    "readingMode": "All native chapter pages directly read sequentially in the preceding continuation; every embedded table/figure inspected in original renders. Selected full contexts reconfirmed in this continuation."
+  },
+  "relatedModelNotebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+  "modelReferencePage": 324,
+  "listedAnnexFilename": "Anexo MdD M5.1 - CFRA-enfoquesCristinaGaona2020.pdf",
+  "exactNamedAnnexIdentityCertified": false,
+  "authoredFindings": [
+    "Historical 2017-2019 Gijón social-purchase aid with economic, age, registration and residence requirements; not universal unconditional basic income.",
+    "Table 3 page 271 requires authorised activity/products, physical premises in Gijón and billing technology. Model page 182 replaces Gijón with province/area and municipal requirements with provincial social services; adaptation is not text-identical annex adoption.",
+    "2896 family units, 327 merchants and EUR6231337.93 are source historical research figures, not independently verified facts or programme commitments.",
+    "Health-product share is 11% in narrative page 271 and 10% in tables on pages 272/277. Merchant closure/job-maintenance/growth shares also differ between narrative and later presentation; preserve discrepancies.",
+    "Table 5 page 277 rounds purchase amounts differently from table 4 page 272. Conclusions page 281 state EUR6231337.90 rather than the EUR6231337.93 reported earlier; do not silently harmonise.",
+    "Applications/beneficiaries figure spans 2005-2018; trade-unemployment figure spans 2017-2019. Temporal coincidence and merchant perceptions do not independently establish causal effects.",
+    "The chapter uses anonymous language for concealing recipients’ poverty at purchase. Card/payment/anti-fraud handling is described; this is not guaranteed personal-data anonymity and provides no validation of our quiz metrics.",
+    "Introduction says two research questions but the body separately labels three. Sustainable Development Goal framing, laws and economic claims remain source assertions.",
+    "Full bibliography pages 283-284 was read as bibliography. Referenced works and remaining book chapters are separate unread sources."
+  ],
+  "limitations": [
+    "The acquired publisher full book contains the complete related chapter, but exact historical identity with the separately named model annex remains unresolved.",
+    "Two rotated-text extraction warnings retained for the whole book; chapter figures/tables inspected in originals.",
+    "No numeric position, automatic question generation, pre-vote byte certification or complete-book reading claim.",
+    "Complete programme-notebook/page totals remain 52/2527; the 22 ancillary chapter pages are separately reported."
+  ],
+  "claims": [
+    {
+      "pdfPage": 271,
+      "printedPage": 271,
+      "start": 1007124,
+      "end": 1007662,
+      "quote": "Ingresos mínimos insuficientes.\n                                               2. El solicitante debe ser mayor de edad.\n                                               3. El solicitante debe estar empadronado al menos 1 año antes.\n                                               4. El solicitante debe tener nacionalidad española o ser extranjero\n                                                      en situación legal regularizada.\n                                               5. Y cumpla con una serie de requisitos definidos por FMSS",
+      "contextStart": 1006269,
+      "contextEnd": 1010573,
+      "contextSha256": "0dbcc3706e05181a6f9a1c2da7d68c7c19e107b0eb2a0dca181c6104c11eb2ba",
+      "analysis": "Conditional beneficiary eligibility; not a universal transfer or unconditional income.",
+      "numericPosition": null
+    },
+    {
+      "pdfPage": 271,
+      "printedPage": 271,
+      "start": 1008418,
+      "end": 1008767,
+      "quote": "Tener un establecimiento físico en Gijón.\n                                               3. Acreditar el alta en IAE de los productos autorizados.\n                                               4. Disponer del equipamiento informático y conexión a internet\n                                                     para acceder al sistema de facturación.",
+      "contextStart": 1006269,
+      "contextEnd": 1010573,
+      "contextSha256": "0dbcc3706e05181a6f9a1c2da7d68c7c19e107b0eb2a0dca181c6104c11eb2ba",
+      "analysis": "Gijón merchants and authorised products/activity/technology; the model adapts geographic scope.",
+      "numericPosition": null
+    },
+    {
+      "pdfPage": 274,
+      "printedPage": 274,
+      "start": 1023021,
+      "end": 1023113,
+      "quote": "anonimizar la situación de precariedad\neconómica de las familias en el momento de la compra.",
+      "contextStart": 1021391,
+      "contextEnd": 1024982,
+      "contextSha256": "47482ab0ccfc92db75b64b7748a413425e8bf07b542cabb5f2230aed3c1f4e4a",
+      "analysis": "Source describes not signalling poverty at checkout; does not establish data anonymity.",
+      "numericPosition": null
+    },
+    {
+      "pdfPage": 278,
+      "printedPage": 278,
+      "start": 1042654,
+      "end": 1042773,
+      "quote": "un listado limitado de productos autorizados y un límite econó-\nmico en las compras con la Tarjeta prepago Renta Social",
+      "contextStart": 1041638,
+      "contextEnd": 1044576,
+      "contextSha256": "0b78a49bdbfc8e2fbbe74e8ee2b21921916717405b3fa7bbf6fa23a9badedcbc",
+      "analysis": "Restricted products and purchase amount; no universal unrestricted grant.",
+      "numericPosition": null
+    },
+    {
+      "pdfPage": 281,
+      "printedPage": 281,
+      "start": 1052850,
+      "end": 1052864,
+      "quote": "6.231.337,90 €",
+      "contextStart": 1050039,
+      "contextEnd": 1052983,
+      "contextSha256": "1249acdd10ed816f43edb69ad528b65bbf2746fa481190bd7590e404669e0398",
+      "analysis": "Conclusion differs by three cents from the earlier reported total; preserve exact source.",
+      "numericPosition": null
+    }
+  ]
+}

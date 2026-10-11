@@ -3493,7 +3493,7 @@
         }
       ],
       "programmeSearchStatus": "2023_primary_programme_and_adopted_model_fully_read_annex_version_followup_pending",
-      "analysisStatus": "full_source_documents_read_historical_version_and_semantic_bank_audit_pending",
+      "analysisStatus": "specific_complete_documents_bank_audited_historical_model_and_annex_limits_pending",
       "programmeIds": [
         "jaenmerecemas-july",
         "jaen-adopted-model-primary-http",
@@ -3512,7 +3512,15 @@
         "outputs/2023-programme-notebooks/jaen-model-annex-m2.json"
       ],
       "sourceFamilyComplete": false,
-      "sourceProvenance": "outputs/2023-jaen-model-source-provenance.json"
+      "sourceProvenance": "outputs/2023-jaen-model-source-provenance.json",
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:06:27.531211+00:00",
+        "report": "outputs/2023-authored-jaen-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 30,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-028",
@@ -6251,9 +6259,9 @@
         "sha256": "3c46dcb060dc781c95790a511f0ea67a8294aab157e77a6c00597212277c89c9",
         "pageCount": 345,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_fully_read"
+        "readStatus": "chapter_263_284_fully_read_remaining_book_unread"
       },
-      "analysisStatus": "ancillary_full_book_unread_referenced_chapter_locator_pending",
+      "analysisStatus": "referenced_chapter_fully_read_remaining_book_unread_exact_annex_version_unresolved",
       "referencedPrintedPageRange": [
         263,
         284
@@ -6261,6 +6269,32 @@
       "fullDocumentRead": false,
       "extractionWarnings": [
         "Two rotated-text warnings; original-page checks required before whole-book reading completion."
+      ],
+      "chapterReading": "outputs/2023-jaen-model-annex-m5-reading.json",
+      "fullReferencedChapterRead": true,
+      "coveredChapterPdfPages": [
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284
       ]
     },
     {
@@ -9153,7 +9187,7 @@
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
+    "latestDraftSha256": "725a1b1ed791dc7b8641761b338917fcd18e8ca970ec1d08fe432c236b346e52",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
@@ -9182,6 +9216,13 @@
     "newThreeMinorNumericMappings": 0,
     "latestThreeMinorBrowserPaths": 6,
     "newCaminandoCitedPositionBrowserCases": 10,
-    "newCaminandoCitedPositionBrowserVerification": "outputs/2023-authored-caminando-values-browser-verification.json"
+    "newCaminandoCitedPositionBrowserVerification": "outputs/2023-authored-caminando-values-browser-verification.json",
+    "jaenBankAudit": "outputs/2023-authored-jaen-audit.json",
+    "newJaenAuditedCells": 80,
+    "newJaenCitedUncertainties": 30,
+    "newJaenDerivedMappings": 0,
+    "jaenVerification": "outputs/2023-authored-jaen-verification.json",
+    "pendingJaenHttpCitations": 38,
+    "newJaenPublicHttpsCitations": 4
   }
 }

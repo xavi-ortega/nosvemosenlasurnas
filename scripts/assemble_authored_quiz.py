@@ -74,8 +74,10 @@ def assemble(root):
                 notebook = load_json(notebook_path)
                 require(notebook["fullDocumentRead"] is True and notebook["candidacyId"] == cell["candidacyId"], "Unread or inapplicable notebook")
                 require(notebook["documentId"] == citation["documentId"] and notebook["sourceSha256"] == citation["sourceSha256"] and notebook["extractionSha256"] == citation["extractionSha256"], "Authored source mismatch")
-                source = next((source for source in acquisitions if source.get("sha256") == citation["sourceSha256"]), None)
-                require(source is not None, "Unregistered source")
+                source = next((source for source in acquisitions
+                               if source.get("sha256") == citation["sourceSha256"]
+                               and source.get("resolvedUrl", source["url"]) == citation["sourceUrl"]), None)
+                require(source is not None, "Unregistered source hash or URL")
                 original = retained_file(root, source["file"], max_bytes=64 * 1024 * 1024)
                 require(digest(original.read_bytes()) == citation["sourceSha256"], "Original source changed")
                 extraction = retained_file(root, source.get("extraction", {}).get("file", source.get("textFile")))

@@ -84,6 +84,37 @@ class AuthoredQuizTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 assembler.assemble(root)
 
+    def test_identical_primary_and_mirror_bytes_preserve_the_authored_source_url(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            inventory = files["2023-source-inventory.json"]
+            primary = inventory["acquisitions"][0]
+            mirror = primary | {"url": "https://mirror.invalid/copied-programme"}
+            inventory["acquisitions"].insert(0, mirror)
+            path = root / "outputs/2023-source-inventory.json"
+            path.write_text(json.dumps(inventory))
+
+            bank = assembler.assemble(root)
+
+            self.assertEqual(bank["documents"][0]["url"], "https://fixture.invalid/programme")
+            self.assertEqual(bank["positions"]["fixture-a"]["fixture-question"]["citations"][0]["quote"], "café proposal.")
+            inventory["acquisitions"].reverse()
+            path.write_text(json.dumps(inventory))
+            self.assertEqual(assembler.assemble(root), bank)
+
+    def test_an_unregistered_url_cannot_borrow_a_registered_source_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            matrix = files["2023-authored-issue-matrix.json"]
+            citation = matrix["issues"][0]["cells"][0]["citations"][0]
+            citation["sourceUrl"] = "https://unregistered.invalid/programme"
+            (root / "outputs/2023-authored-issue-matrix.json").write_text(json.dumps(matrix))
+
+            with self.assertRaises(ValueError):
+                assembler.assemble(root)
+
     def test_original_extraction_notebook_and_context_changes_fail_closed(self):
         for changed in ["original", "extraction", "notebook", "context", "owner"]:
             with self.subTest(changed=changed), tempfile.TemporaryDirectory() as directory:

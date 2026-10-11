@@ -1429,7 +1429,18 @@
         "congress-tarragona-1"
       ],
       "notebooks": [],
-      "programmeApplicabilityNote": "Primary July 13 2023 PSC article publishes the socialist programme memory chapter; observed through web tool, local retrieval HTTP403. Contemporary secondary article says PSC issued no separate programme; this is a lead, not automatic inheritance of all PSOE mappings."
+      "programmeApplicabilityNote": "Primary July 13 2023 PSC article publishes the socialist programme memory chapter; observed through web tool, local retrieval HTTP403. Contemporary secondary article says PSC issued no separate programme; this is a lead, not automatic inheritance of all PSOE mappings.",
+      "sourceFollowup": {
+        "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+        "publicationIds": [
+          "psc-culture-23j-primary",
+          "psc-rural-23j-primary",
+          "psc-culture-23j-archive"
+        ],
+        "finding": "Primary July12 culture chapter observed in the search reader. Culture and July17 rural primary-byte retrievals returned HTTP403; requested July2023 culture archive returned404. These excerpts/statements do not establish adoption of the complete PSOE programme. No acquired full source or numerical position added.",
+        "allEligibleBallotsRetained": true,
+        "sourceAbsenceCertified": false
+      }
     },
     {
       "id": "boe-2023-006",
@@ -2122,7 +2133,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "cup-primary",
         "cup-preserved-lasexta"
@@ -2140,7 +2151,15 @@
       "notebook": "outputs/2023-programme-notebooks/cup.json",
       "notebooks": [
         "outputs/2023-programme-notebooks/cup.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T15:34:10.239686+00:00",
+        "report": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 2,
+        "ambiguousCells": 10,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-015",
@@ -4045,7 +4064,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_article_fully_read_wider_twenty_reasons_booklet_unresolved",
-      "analysisStatus": "full_article_and_original_visuals_read_numeric_mapping_pending",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "jxg-23j-four-things-archive"
       ],
@@ -4069,6 +4088,14 @@
         "finding": "Both archived original visual assets directly read; full article complete. Primary June 27 announcement independently confirms the Granada Congress lists for 23 July. The wider 20-reasons booklet remains unresolved; the 28 May municipal PDF excluded.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T15:34:10.239686+00:00",
+        "report": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 9,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -4464,7 +4491,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_programme_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "full_document_notebook_available_numeric_mapping_pending",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "unidossi-23j-programme-archive"
       ],
@@ -4489,6 +4516,14 @@
         "finding": "July12same-daypreservedfullfour-axisCongressprogramme directlyreadwithembeddedposter. July19homepage corroborationread. SoleTarragonaballot; laterJuly14variant identityunverified; no numericmapping.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T15:34:10.239686+00:00",
+        "report": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 5,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -8366,14 +8401,35 @@
         "https://juntosxgranada.es/2023/06/27/"
       ],
       "analysis": "Entire native announcement directly read, including June 27 date, explicit23July GranadaCongress/Senate scope, rationale, municipal-history distinction and interface/footer. It supplies scope corroboration, not a missing 20-reasons programme."
+    },
+    {
+      "id": "psc-culture-23j-primary",
+      "url": "https://socialistes.cat/es/actualitat/generales-2023-la-cultura-en-el-programa-electoral-de-los-socialistas/",
+      "retrievedAt": "2026-10-11T15:29:43.905971+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "psc-rural-23j-primary",
+      "url": "https://www.socialistes.cat/actualitat/minguez-aturar-el-despoblament-a-les-comarques-rurals-i-de-muntanya-nomes-ho-garanteix-seguir-amb-un-govern-que-les-enten-i-les-aten/",
+      "retrievedAt": "2026-10-11T15:29:43.906421+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "psc-culture-23j-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://socialistes.cat/es/actualitat/generales-2023-la-cultura-en-el-programa-electoral-de-los-socialistas/",
+      "retrievedAt": "2026-10-11T15:29:43.906546+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
     }
   ],
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 149,
-    "independentAnswerCases": 745,
+    "scoredDraftMappings": 151,
+    "independentAnswerCases": 755,
     "browserRentCases": 80,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -8384,7 +8440,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 14,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "771e0a521b77914ee0be52634e49c0e9257f41dc4eafbdb4d48b6569870e01cf",
+    "latestBrowserDraftSha256": "c0475f7ec8ab7988f7c92c95b4c2d9acfed2ab4ffaa5ee3619934b69a94b05e3",
     "previousBrowserVerification": "outputs/2023-authored-80-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -8396,11 +8452,15 @@
     ],
     "latestBrowserRentCases": 10,
     "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-authored-erc-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-cup-jxg-unidossi-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
-    "fixedComparisonCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-authored-territorial-verification.json",
-    "latestDraftSha256": "c88da0450683f610c5ad0156893e3ef86baace9e85d3de820b11a14e135ed876"
+    "fixedComparisonCohortVerification": "outputs/2023-authored-cup-jxg-unidossi-verification.json",
+    "fixedComparisonBrowserVerification": "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
+    "latestDraftSha256": "c0475f7ec8ab7988f7c92c95b4c2d9acfed2ab4ffaa5ee3619934b69a94b05e3",
+    "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
+    "newSpecificDocumentAuditedCells": 240,
+    "newCitedPositionBrowserCases": 20,
+    "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json"
   }
 }

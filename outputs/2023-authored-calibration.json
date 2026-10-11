@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T22:18:44.759808+00:00",
+  "recordedAt": "2026-10-11T22:46:15.638234+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -2049,7 +2049,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -2540,7 +2540,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -3927,7 +3927,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -4385,7 +4385,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -5341,6 +5341,39 @@
               "expectedRelationship": "opposed"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "sourceExpectedValue": 2,
+          "sourceReason": "PDF70 heading d and its complete current-policy paragraph explicitly seek effective operation of the existing specific large-fortunes tax. This satisfies retention in the question, without inventing a permanent date, rate or the unstated contents of earlier Senate amendments. Original visually reopened and checked; general redistribution alone is not the basis.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -5356,11 +5389,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -5754,7 +5782,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -6184,7 +6212,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -8935,7 +8963,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -9299,7 +9327,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -13948,7 +13976,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -14715,7 +14743,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -15087,7 +15115,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -15864,7 +15892,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -16641,7 +16669,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -17064,7 +17092,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -17586,7 +17614,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -18009,7 +18037,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -18371,7 +18399,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -18743,7 +18771,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -20194,7 +20222,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -21050,7 +21078,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -21878,7 +21906,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -22283,7 +22311,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -22706,7 +22734,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -23445,7 +23473,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -23883,7 +23911,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -24617,7 +24645,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -25389,7 +25417,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -26566,7 +26594,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -27896,7 +27924,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -28296,7 +28324,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -29119,7 +29147,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -29491,7 +29519,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -29957,7 +29985,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -30319,7 +30347,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -30691,7 +30719,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -31063,7 +31091,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -31435,7 +31463,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -31807,7 +31835,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -32212,7 +32240,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -32607,7 +32635,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -32979,7 +33007,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -33351,7 +33379,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -33723,7 +33751,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -34095,7 +34123,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -34467,7 +34495,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -34839,7 +34867,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -35216,7 +35244,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -35588,7 +35616,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -35960,7 +35988,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -36365,7 +36393,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -36834,7 +36862,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",

@@ -1,0 +1,683 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T22:46:15.638234+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "complete_specific_erc_80_question_audit_partial_corpus",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-006",
+      "documentId": "erc-july",
+      "auditedCellCount": 80,
+      "derivedMappings": 8,
+      "newDerivedMappings": 1,
+      "citedUncertainties": 55,
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone que las autonomías competentes puedan regular los precios de alquiler, pero este apartado no concreta un precio máximo en zonas con precios altos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Plantea una semana de cuatro días, sin precisar aquí un máximo de 35 horas ni que se mantenga el sueldo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone financiar los planes dentales ya incluidos en la cartera de servicios, sin concretar aquí nuevos servicios dentales.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone financiar la transición nuclear en Cataluña, sin concretar si deben prorrogarse las centrales existentes.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone controlar el uso de préstamos para eludir el impuesto de donaciones; no establece una exención de todas las herencias de padres a hijos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone universalizar la educación infantil gratuita de 0 a 3 años y financiar a las administraciones competentes para hacerlo.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone priorizar el tren e imponer límites a los vuelos cuando haya alternativa ferroviaria.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Defiende los avances para una muerte digna, pero este pasaje no identifica expresamente el derecho a solicitar la eutanasia y sus condiciones.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone democratizar la justicia, sin precisar que los jueces elijan a los miembros judiciales de su órgano de gobierno.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone actualizar automáticamente las pensiones mínimas según el salario mínimo, sin ligar aquí todas las pensiones a la subida de precios.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone mejorar el funcionamiento del impuesto a las grandes fortunas y garantizar que recaude, manteniendo esta figura.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone cambios en la edad y el cálculo de las pensiones, sin establecer que la pensión contributiva de jubilación quede exenta del impuesto sobre la renta.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone ceder viviendas de la SAREB a administraciones para fines sociales, sin fijar una prohibición permanente de venderlas a entidades privadas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una postura clara sobre aumentar los acuerdos de la sanidad pública con centros privados.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aplicar la legislación del aborto y ampliar el acceso a los servicios, sin precisar en este pasaje que la intervención deba ofrecerse en centros públicos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone recuperar la gestión y titularidad pública de centrales hidroeléctricas para gobiernos autonómicos, sin vincularlo aquí al vencimiento de las concesiones.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una prohibición expresa de que las empresas contacten con su personal fuera del horario laboral.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece un comedor gratuito para todo el alumnado de las etapas obligatorias.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una propuesta clara de suprimir el copago de los medicamentos cubiertos por la sanidad pública.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone ampliar el derecho a votar a las personas de dieciséis y diecisiete años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone garantizar el derecho a reparar productos, sin detallar aquí una obligación de los fabricantes de facilitar recambios.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone remunerar las prácticas curriculares y preservar su carácter formativo y los derechos del alumnado.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone seis meses de maternidad y acumular permisos en familias monoparentales; no concreta seis meses de paternidad para todas las familias.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone penalizar fiscalmente las bebidas azucaradas, sin concretar aquí la creación de un impuesto específico.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone regular el cáñamo industrial y el cannabis no psicoactivo; no establece que el cultivo y consumo propio de todo cannabis quede libre de sanciones penales.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mejorar precios y becas universitarios, sin precisar que repetir una asignatura no encarezca la matrícula.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece un mínimo de tres horas semanales de Educación Física en la enseñanza obligatoria.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una cotización reducida según ingresos y beneficios, sin eximir por completo a quienes ganan menos del salario mínimo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una exención del impuesto sobre el valor añadido al comprar la primera vivienda habitual.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone proteger a los animales de compañía en los procesos familiares, sin establecer una prohibición de su compraventa.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone abolir las corridas y derogar su protección cultural, sin formular aquí una medida específica sobre su financiación pública.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone incluir a los perros de caza en la protección legal; no establece una prohibición de toda la caza en España.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Defiende evitar cortes y cancelar deuda energética de hogares vulnerables, pero no concreta una prohibición legal permanente del corte de todos los suministros básicos.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una prestación universal de crianza, sin establecer una ayuda de 20.000 euros para cada joven al cumplir 23 años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone salarios mínimos territoriales y revalorizaciones salariales, sin fijar que el salario mínimo estatal suba cada año más que los precios.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una obligación de usar formatos abiertos para todos los documentos de la Administración.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una postura clara sobre mantener la prohibición de la gestación subrogada en España.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone menús públicos más inclusivos por motivos de salud, éticos o religiosos, sin exigir una opción vegetariana en todos los comedores escolares.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece libros de texto gratuitos con permiso para copiarlos y compartirlos libremente.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone alternativas no telemáticas y atención directa frente a la brecha digital, sin garantizar aquí la realización presencial de todos los trámites.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone bajar al 10% el impuesto sobre los servicios veterinarios y ayudar con esos cuidados a quienes tienen menos recursos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone garantizar el derecho a reparar, sin concretar la elección de un taller independiente ni su acceso a lo necesario para reparar.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone fomentar la reutilización y el reciclaje, sin concretar un sistema de depósito y devolución de envases de bebidas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El modelo de futura república incluye anticoncepción gratuita de larga duración; no establece una medida equivalente de acceso gratuito para los jóvenes en el Congreso.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece la creación de una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone cobertura universal de conexión y un fondo para desplegar el servicio, sin establecer que la conexión básica sea gratuita para todas las personas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El modelo de futura república tiende a la gestión pública del agua; no establece una medida equivalente para el suministro en España en el apartado del Congreso.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una atención al desarrollo pública y gratuita para todos los menores de seis años que la necesiten.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone proteger las cotizaciones durante los cuidados, sin ampliar expresamente hasta los 16 años la edad para solicitar reducción de jornada.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone un impuesto que aumente con cada vuelo adicional del año, con devoluciones según la renta para proteger a quienes tienen menos ingresos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone gravar las emisiones de carbono, sin establecer una prohibición de publicidad y patrocinios de los combustibles fósiles.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone que desaparezcan las granjas de pieles, pero este apartado no precisa una prohibición legal de toda cría y explotación para obtenerlas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una prohibición expresa del uso del glifosato.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reforzar los medios públicos, sin establecer una prohibición de ayudas directas a medios privados.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece la eliminación de todos los tribunales distintos por razón del cargo público.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece la eliminación de las firmas de apoyo para candidaturas al Congreso sin representación.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone participación de organizaciones en la preparación de leyes, sin exigir una ficha pública de cada ley con las negociaciones e intermediaciones.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone apoyo social y sanitario para personas con trastornos mentales, sin concretar la psicoterapia en la cartera de servicios públicos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone promover la ratificación del tratado que prohíbe las armas nucleares.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone proteger a menores de comunicaciones nocivas y limitar mensajes que fomentan trastornos alimentarios, sin definir una restricción de anuncios de alimentos según criterios nutricionales.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone diferir el impuesto sobre la renta al iniciar la actividad y reducir cotizaciones; no establece una cuota gratuita durante todo el primer año.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar tipos sobre rentas del capital y nuevos tramos altos, sin concretar el ajuste del impuesto sobre la renta a la inflación.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone automatizar el bono eléctrico y cancelar deuda de hogares vulnerables, sin sustituir los bonos de luz y calefacción por pagos directos a la persona.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone flexibilizar la jubilación de profesionales sanitarios, sin fijar los 72 años para médicos de familia y pediatras de atención primaria.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Defiende aplicar la legislación y ampliar el acceso al aborto, sin establecer aquí una postura expresa sobre la autorización de responsables legales de menores.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone transferir y mejorar la gestión de prestaciones, sin fijar un máximo de 15 días naturales para las citas estatales.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una regla expresa que reserve a personas las decisiones públicas discrecionales cuando se use inteligencia artificial.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reducir gasto y capacidad militar y recortar partidas de armamento, sin fijar una postura sobre el objetivo exacto del 2% para seguridad y defensa.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone limitar el endeudamiento y proteger a deudores y avalistas de vivienda habitual, sin establecer avales estatales para hipotecas de jóvenes de hasta 35 años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una prestación universal de crianza, sin anticipar su cobro al quinto mes de embarazo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reconocer la esclerosis lateral amiotrófica como enfermedad grave y mortal, sin hacer que el diagnóstico otorgue por sí solo el reconocimiento de dependencia.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone equiparar derechos de familias monoparentales y numerosas, sin concretar una bonificación del 45% en cotizaciones de personal del hogar.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece un programa estatal de tutorías adicionales para recuperar el aprendizaje perdido durante la pandemia.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone atención directa y alternativas no telemáticas, sin crear intermediarios que realicen trámites en nombre de los ciudadanos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone transporte público integrado y accesible, sin concretar un servicio rural a demanda y a precio reducido hacia el municipio de referencia.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone que desaparezcan las granjas de foie gras, sin concretar una prohibición legal de toda alimentación forzada para producir alimentos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "El programa leído no establece una prohibición general de petardos y fuegos artificiales, incluidas las fiestas populares.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mejorar la financiación y gestión de la investigación, sin exigir acceso libre a todos sus resultados financiados con dinero público.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone suprimir provincias y diputaciones como organización territorial, sin establecer una única circunscripción estatal para elegir el Congreso.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reforzar el servicio audiovisual público, sin establecer el mismo tiempo de vídeos electorales para todas las candidaturas.",
+          "citationCount": 1
+        }
+      ],
+      "notebook": "outputs/2023-programme-notebooks/erc.json",
+      "applicableConstituencyIds": [
+        "barcelona",
+        "girona",
+        "lleida",
+        "tarragona"
+      ]
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 510,
+  "totalExplicitCells": 5230,
+  "defaultNumericMappings": 208,
+  "scopedNumericMappings": 111,
+  "totalNumericMappings": 319,
+  "independentAnswerCases": 1595,
+  "limitations": [
+    "Complete132page original reading reused; no new unique reading, page/PDF count or owner. Relevant full native contexts directly reopened, new tax paragraph visually checked on originalPDF70/printed69.",
+    "Current Congress measures remain distinct from future CatalanRepublic vision and historical grievances. EH Bildu coalition is Senate only; no Congress inheritance.",
+    "One new retention mapping directly authored; previous seven numeric ERC mappings, seven cited uncertainties and all other candidate/scoped records preserved. Unknowns do not imply neutrality or opposition.",
+    "Dated primary publication confirms exact election/chambers and structure; current hosted bytes are not independently certified as exact pre-vote archive bytes.",
+    "Specific bank audit is not full corpus/source-family/finalinterface/actualhost/privacy/publication acceptance."
+  ]
+}

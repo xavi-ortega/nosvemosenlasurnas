@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T15:12:49.242Z",
+  "electionId": "es-congress-2023-07-23",
+  "draftSha256": "771e0a521b77914ee0be52634e49c0e9257f41dc4eafbdb4d48b6569870e01cf",
+  "status": "actual_draft_local_walkthrough_passed",
+  "publicPointerChanged": false,
+  "publicLaunchApproved": false,
+  "metricsEnabled": false,
+  "coreApiInterception": false,
+  "completedWalkthroughCommand": "f19c6c: desktop and mobile practical draft walkthrough assertions passed before loading-capture selector timeout",
+  "correctedFailureCaptureCommand": "This recorded run used the actual Spanish loading label, released the delayed bank, then checked an aborted request.",
+  "surfaces": [
+    {
+      "surface": "desktop",
+      "layouts": [
+        {
+          "width": 320,
+          "cssZoom": 1
+        },
+        {
+          "width": 1280,
+          "cssZoom": 2
+        },
+        {
+          "width": 1280,
+          "cssZoom": 4
+        }
+      ],
+      "reflowPassed": true,
+      "minimum44pxTargetsPassed": true,
+      "questionAxeViolations": 0,
+      "resultAxeViolations": 0,
+      "radioArrowKeysPassed": true,
+      "visibleFocusPassed": true,
+      "reducedMotionPassed": true,
+      "backEditPassed": true,
+      "explicitFinishPassed": true,
+      "missingEvidenceVisible": true,
+      "sourceLinkAndNoReferrerPassed": true,
+      "upToThreeHighlightsPassed": true,
+      "cookiesEmpty": true,
+      "storageEmpty": true,
+      "requestMethodGetOnly": true,
+      "requestBodyNone": true,
+      "queryNone": true,
+      "originLoopbackOnly": true,
+      "allowedApiPaths": [
+        "/api/bank",
+        "/api/release-state"
+      ],
+      "crossTabIsolated": true,
+      "resetClearsAnswers": true,
+      "reloadClearsAnswers": true,
+      "deliberateLocalExportPassed": true,
+      "export2023EditionPassed": true
+    },
+    {
+      "surface": "mobile",
+      "layouts": [
+        {
+          "width": 320,
+          "cssZoom": 1
+        },
+        {
+          "width": 1280,
+          "cssZoom": 2
+        },
+        {
+          "width": 1280,
+          "cssZoom": 4
+        }
+      ],
+      "reflowPassed": true,
+      "minimum44pxTargetsPassed": true,
+      "questionAxeViolations": 0,
+      "resultAxeViolations": 0,
+      "radioArrowKeysPassed": true,
+      "visibleFocusPassed": true,
+      "reducedMotionPassed": true,
+      "backEditPassed": true,
+      "explicitFinishPassed": true,
+      "missingEvidenceVisible": true,
+      "sourceLinkAndNoReferrerPassed": true,
+      "upToThreeHighlightsPassed": true,
+      "cookiesEmpty": true,
+      "storageEmpty": true,
+      "requestMethodGetOnly": true,
+      "requestBodyNone": true,
+      "queryNone": true,
+      "originLoopbackOnly": true,
+      "allowedApiPaths": [
+        "/api/bank",
+        "/api/release-state"
+      ],
+      "crossTabIsolated": true,
+      "resetClearsAnswers": true,
+      "reloadClearsAnswers": true,
+      "deliberateLocalExportPassed": true,
+      "export2023EditionPassed": true
+    }
+  ],
+  "walkthrough": [
+    "Read draft notice, choose Albacete and start",
+    "Tab to help and open with Enter",
+    "Tab to native radio, Space, ArrowRight and ArrowLeft",
+    "Continue, return and edit the rent answer twice",
+    "Answer ten with explicit unsure and skip",
+    "Inspect checkpoint before deliberate finish",
+    "Open another tab with no shared answers",
+    "Finish and read cited agreement/difference examples",
+    "Inspect rent disagreement and original page-77 link",
+    "Inspect missing PSOE positions without neutral inference",
+    "Export only ten presented answers after confirmation",
+    "Reset and reload without persistence"
+  ],
+  "simulatedFailureStates": [
+    "Delayed fixed bank loading",
+    "Aborted bank request with Spanish error and no opinions"
+  ],
+  "limitations": [
+    "Agent-operated practical walkthrough; no recruited study or universal accessibility certification.",
+    "CSS zoom approximates reflow; not every OS/browser text-zoom combination.",
+    "The initial capture script had a wrong loading-label selector; both core walkthroughs passed before that harness timeout. Corrected failure-state capture passed separately.",
+    "Only local draft flows checked. Production host/proxy/log privacy and source/mapping completion remain open."
+  ],
+  "uiSourceSha256": {
+    "resources/js/app.ts": "3546fe00915bf7aa4b7015952b341ef5ff1e55d3e408dab9e613a56b8d78d55a",
+    "resources/js/matching.ts": "b27d77692bf37bdfe068389c5c0a41182c11429ebec246bbd9ccadfb17e94c2a",
+    "resources/css/app.css": "83158fad149c38a722075038632e2989bee771a345abafab5b89c615493293b1",
+    "lang/es/public.php": "9785db3660521feb0fca1edf3d2a03d29a69cdff6f41d1ef799912d6b7ca2213"
+  },
+  "screenshots": [
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-checkpoint.png",
+      "sha256": "0d069244a28d51a5ecdd131a61db9468b1543c08dc12dd3edc5df7b83b8ed63e"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-fixed-selection.png",
+      "sha256": "f1def00dee4e5890f820ae2d781540229360810e880464ad19138d19a8466cf7"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-help.png",
+      "sha256": "7f939b62a3a2a9e994fd03d1239c3f5d50befe2cc084707dd53452eb5a0526f6"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-intro.png",
+      "sha256": "3d56735db9461838341b781fe811d7e06c67979b3cfab2543fd4a19dc3054d2e"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-question.png",
+      "sha256": "f27ac73362c1a29e4fc236c48afbe8ecc7eb39488559c6790a89eb35a6ea5afe"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-rent-question.png",
+      "sha256": "988684085b02a959654d0980738bfa228854e0ce305b4f1d133ec8dbe0eaf3a6"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-rent-result.png",
+      "sha256": "385cefb060f12743321e542791cc50724a4b7247c94f5dad29b5a3b91e6787e9"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-result-highlights.png",
+      "sha256": "7b6ed3bb68691da5705068cea6ef5629d2be58ffeea07d00fa06835a0cf875ec"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/desktop-selected.png",
+      "sha256": "b4dcccb3e092048fe3879ba21935f6df15f20533a7cedf6129b850b3492b56e7"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-checkpoint.png",
+      "sha256": "b3dd885ab00cc2fd1b72187af433eee7c28c5fd1af96a53e97af7b5fb0b995fd"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-error.png",
+      "sha256": "05da26f9cff17d815319d3c5536fddb32c697022969f23f2b84f5ebe7c7a5d88"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-fixed-selection.png",
+      "sha256": "1af914ed8f6aae66b0165c439403de53e5ed6427ddbf60ef357d3d08308a97ea"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-help.png",
+      "sha256": "409d13c130dc915bf92ca8a3d6e89e773473189d830774b7bd3a4ef1bf4c7707"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-intro.png",
+      "sha256": "6cb49cde48e610718a4575904f89cc12a28b342a630f997dc6a40cf5f3ca4aa4"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-loading.png",
+      "sha256": "b0759df1c3dfd9186c67d019ce0d3ea08c1316281cbedf022dd5e131b2a9f73c"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-question.png",
+      "sha256": "80976dbfa7004ad03dc0ebb37eed0f7cb977720c094c253c940b6b9ac0dc2c28"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-rent-question.png",
+      "sha256": "60e0e9b7a0d541e7a10a3f72be1e7228caa590b5cd99bb01262a65c5e7109afa"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-rent-result.png",
+      "sha256": "4f8dea76cf3ea67bf4131502fff4db4f791e179567fffc8dd04856bb8fad97d3"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-result-highlights.png",
+      "sha256": "1825a5a6a03d51d3ea763c0b18580be52562d87e92894db2f490422990c973ab"
+    },
+    {
+      "path": ".tools/authored-local-runtime-verification/mobile-selected.png",
+      "sha256": "c3d56b6d197df5588fd1239f5ec870a75abf3a399370d09deca6438baa6f3e46"
+    }
+  ]
+}

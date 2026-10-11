@@ -252,7 +252,7 @@ Dependencies: Q020
 
 ## Q022 feat: present understandable cited results
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q015, Q016, Q021
 
@@ -264,7 +264,7 @@ Dependencies: Q015, Q016, Q021
 
 ## Q023 feat: complete Spanish help errors privacy and local export
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q022
 
@@ -276,7 +276,7 @@ Dependencies: Q022
 
 ## Q024 test: verify actual mobile keyboard motion and readability
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q023
 
@@ -288,7 +288,7 @@ Dependencies: Q023
 
 ## Q025 test: verify the real-data quiz privacy boundary
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q024
 

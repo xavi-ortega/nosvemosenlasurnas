@@ -136,12 +136,16 @@ test('ordered labels store strong rent disagreement and explain it separately fr
     await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
     const party = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia Alba', exact: true }) });
     await expect(party.locator('.result-number')).toContainText('60 %');
-    await party.getByText('Coincidencias y diferencias citadas', { exact: true }).click();
+    await expect(party.locator('.result-differences [data-question-id="housing-2"]')).toBeVisible();
+    await expect(party.locator('.result-agreements [data-question-id]')).toHaveCount(3);
+    await party.getByText('Consultar las demás respuestas y lo que falta', { exact: true }).click();
     const rent = party.locator('[data-question-id="housing-2"]');
     await expect(rent).toContainText('Tu respuesta: Muy en desacuerdo');
     await expect(rent).toContainText('Posición interpretada del programa: Muy de acuerdo');
     await expect(rent.locator('.relationship')).toContainText('está en desacuerdo');
+    await rent.getByText('Cómo se calcula esta coincidencia', { exact: true }).click();
     await expect(rent).toContainText('Coincidencia solo en esta propuesta: 0 %');
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
     page.once('dialog', dialog => void dialog.accept());
     const download = page.waitForEvent('download');
     await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
@@ -273,4 +277,35 @@ test('fixed evidence comparison discloses its selection and retains missing cand
     expect(await context.cookies()).toEqual([]);
     expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
     expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+});
+
+
+test('result highlights preserve sparse evidence and never treat unsure or skip as neutral', async ({ page }) => {
+    await start(page, false);
+    for (let i = 0; i < 10; i++) {
+        await page.getByRole('radio', { name: i === 0 ? 'Muy de acuerdo' : i % 2 ? 'No lo tengo claro' : 'Prefiero no responder', exact: true }).check();
+        await page.getByRole('button', { name: 'Continuar', exact: true }).click();
+    }
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+    const supported = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia Brisa', exact: true }) });
+    await expect(supported.locator('.result-agreements [data-question-id]')).toHaveCount(1);
+    await expect(supported.locator('.result-differences [data-question-id]')).toHaveCount(0);
+    await expect(supported.locator('[data-question-id]')).toHaveCount(1);
+    await expect(supported.locator('.result-differences')).toContainText('No hay diferencias');
+    const missing = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia sin programa', exact: true }) });
+    await expect(missing).toContainText('No hemos encontrado una posición clara y aplicable');
+    await expect(missing.locator('.result-highlights')).toHaveCount(0);
+    await missing.getByText('Consultar las demás respuestas y lo que falta', { exact: true }).click();
+    await expect(missing.locator('[data-question-id]')).toHaveCount(1);
+    await expect(missing.locator('.relationship')).toHaveCount(0);
+    await page.getByRole('button', { name: 'Borrar respuestas y empezar de nuevo' }).click();
+    await page.getByRole('button', { name: 'Empezar las diez preguntas' }).click();
+    for (let i = 0; i < 10; i++) {
+        await page.getByRole('radio', { name: 'No lo tengo claro', exact: true }).check();
+        await page.getByRole('button', { name: 'Continuar', exact: true }).click();
+    }
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+    await expect(page.locator('.result').first()).toContainText('No hay opiniones numéricas para comparar');
+    await expect(page.locator('.result-highlights')).toHaveCount(0);
+    await expect(page.locator('.result [data-question-id]')).toHaveCount(0);
 });

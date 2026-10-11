@@ -50,7 +50,9 @@ input[type=radio], input[type=checkbox] { width: 21px; height: 21px; accent-colo
 .progress { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .6rem; color: #385574; font-size: .98rem; margin-bottom: 1.5rem; }
 .results { display: grid; gap: 1.5rem; }
 .result { border-top: 2px solid #a9bdcf; padding-block: 1.5rem; }
-.result-number { font-size: 2.2rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.result-number { font-size: 1.15rem; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.2; }
+.result-highlights h4 { margin-block: 1rem .5rem; font-size: 1.15rem; font-weight: 700; }
+.result-highlights h5, .result-all-proposals h4 { margin: 0 0 .8rem; font-size: 1.1rem; line-height: 1.4; font-weight: 700; }
 .result-metadata { display: flex; flex-wrap: wrap; gap: 1rem 2rem; font-size: .98rem; }
 blockquote { margin: .8rem 0; border-left: 3px solid #8096b0; padding-left: 1rem; color: #233e59; white-space: pre-wrap; }
 details { margin-block: .6rem; }

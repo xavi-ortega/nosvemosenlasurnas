@@ -1773,7 +1773,7 @@
           "sequence": 22,
           "phaseId": "QP4",
           "subject": "feat: present understandable cited results",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q015",
             "Q016",
@@ -1819,14 +1819,20 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressNote": "Cited up-to-three agreement/near-position and difference examples now precede the secondary total; every shown item separates answer, interpreted programme proposition, relationship and original citation. Missing positions remain visible and unscored. Actual immutable draft served directly by an isolated loopback runtime passed ten desktop/mobile rent cases and two 10/15/20/25/30 paths. Complete semantic applicability and release acceptance remain open.",
+          "progressEvidence": [
+            "outputs/2023-authored-local-runtime-verification.json",
+            "resources/js/app.ts",
+            "tests/Browser/public-journeys.spec.ts"
+          ]
         },
         {
           "id": "Q023",
           "sequence": 23,
           "phaseId": "QP4",
           "subject": "feat: complete Spanish help errors privacy and local export",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q022"
           ],
@@ -1870,14 +1876,19 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressNote": "Spanish draft/2023 notices, missing/sparse/no-opinion explanations and explicit local-export edition are implemented. The actual draft walkthrough verified original no-referrer links, deliberate export of presented answers only, reset and reload. The real edition is still unpublished and source/mapping review remains incomplete.",
+          "progressEvidence": [
+            "outputs/2023-authored-local-walkthrough-verification.json",
+            "lang/es/public.php"
+          ]
         },
         {
           "id": "Q024",
           "sequence": 24,
           "phaseId": "QP4",
           "subject": "test: verify actual mobile keyboard motion and readability",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q023"
           ],
@@ -1919,14 +1930,18 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressNote": "Actual draft desktop/mobile intro/question/help/selected/checkpoint/result screenshots and a practical agent-operated keyboard/back/edit/citation walkthrough retained. Axe found no question/result violations; 320px and CSS 200/400 percent zoom reflow, 44px choices and reduced motion passed. Corrected a loading-label selector in the harness; delayed loading and aborted-request error states passed separately. This is not a recruited study or universal certification; full release acceptance remains open.",
+          "progressEvidence": [
+            "outputs/2023-authored-local-walkthrough-verification.json"
+          ]
         },
         {
           "id": "Q025",
           "sequence": 25,
           "phaseId": "QP5",
           "subject": "test: verify the real-data quiz privacy boundary",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q024"
           ],
@@ -1967,7 +1982,12 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressNote": "Actual loopback draft bank was served without API interception during core journeys. Ten rent paths, two progression paths and desktop/mobile practical walkthroughs retained fixed GET-only, body/query-free public API traffic, empty cookies/local/session storage, cross-tab isolation, reset/reload clearing and deliberate local export. Metrics stayed disabled. Production host/proxy/log flows and final real-release checks remain unverified.",
+          "progressEvidence": [
+            "outputs/2023-authored-local-runtime-verification.json",
+            "outputs/2023-authored-local-walkthrough-verification.json"
+          ]
         },
         {
           "id": "Q026",
@@ -2721,7 +2741,7 @@
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   },
   "implementationProgress": {
-    "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+    "recordedAt": "2026-10-11T15:13:31.084788+00:00",
     "sourceSummary": {
       "officialDenominations": 59,
       "programmeFilesDownloaded": 39,
@@ -2760,6 +2780,21 @@
       "comparisonPolicy": "fixed-bank-evidence-v1",
       "fixedComparisonCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
       "fixedComparisonBrowserVerification": "outputs/2023-authored-territorial-verification.json"
+    },
+    "localRealDraftReview": {
+      "baseUrl": "http://127.0.0.1:8766",
+      "directory": ".tools/authored-local-runtime",
+      "draftSha256": "771e0a521b77914ee0be52634e49c0e9257f41dc4eafbdb4d48b6569870e01cf",
+      "developmentOnly": true,
+      "releaseEligible": false,
+      "publicPointerChanged": false,
+      "rentCases": 10,
+      "progressionPaths": 2,
+      "walkthroughSurfaces": 2,
+      "evidence": [
+        "outputs/2023-authored-local-runtime-verification.json",
+        "outputs/2023-authored-local-walkthrough-verification.json"
+      ]
     }
   }
 }

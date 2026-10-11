@@ -35,7 +35,7 @@ const focusHeading = () => { const heading = root?.querySelector('h2') ?? docume
 const answerKeys: Record<string, string> = { '-2': 'answer_negative_2', '-1': 'answer_negative_1', '0': 'answer_neutral', '1': 'answer_positive_1', '2': 'answer_positive_2', unsure: 'unsure', skip: 'skip' };
 const answerOrder = ['-2', '-1', '0', '1', '2', 'unsure', 'skip'] as const;
 const parseAnswer = (value: string): Answer => value === 'unsure' || value === 'skip' ? value : Number(value) as Scale;
-const sampleNotice = () => bank.kind === 'current' ? p('source_warning') : p(bank.kind === 'synthetic' ? 'development' : 'historical', 'notice');
+const sampleNotice = () => bank.kind === 'current' ? p('source_warning') : p(bank.kind === 'synthetic' ? 'development' : bank.draft === true || bank.releaseEligible === false ? 'authored_draft' : 'historical', 'notice');
 const progress = () => e('p', `${t('presented')}: ${session?.presented.length ?? 0}.`, 'progress');
 
 async function load(): Promise<void> {
@@ -249,6 +249,17 @@ function exportResults(): void {
     const url = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
     const link = e('a'); link.href = url; link.download = 'policy-overlap.json'; link.click(); URL.revokeObjectURL(url);
 }
+function resultProposal(question: Question, answer: Scale, position: Position, heading: 'h4' | 'h5'): HTMLElement {
+    const item = e('section', '', 'source-card'); item.dataset.questionId = question.id;
+    item.append(e(heading, question.text), e('p', `${t('your_answer')}: ${t(answerKeys[String(answer)])}`));
+    if (position.status === 'derived' && position.value !== null) {
+        item.append(e('p', `${t('party_position')}: ${t(answerKeys[String(position.value)])}`), p(`relationship_${relationship(answer, position.value)}`, 'relationship'));
+        item.append(positionView(position));
+        const calculation = e('details'); calculation.append(e('summary', t('proposal_calculation')), e('p', `${t('question_overlap')}: ${percentage(100 * similarity(answer, position.value))}.`)); item.append(calculation);
+    } else item.append(positionView(position));
+    return item;
+}
+
 function renderResults(): void {
     if (!root || !session?.revealed) return;
     const result = match(session.bank, session.answers, session.priorities, session.cohort);
@@ -280,23 +291,41 @@ function renderResults(): void {
             partialGroupShown = true;
         }
         const party = bank.candidacies.find(c => c.id === row.id)!; const section = e('section', '', 'result'); section.append(e('h3', party.name));
+        const answered = session.presented.map(id => bank.questions.find(q => q.id === id)!).filter(q => typeof session!.answers[q.id] === 'number');
+        const known = answered.filter(q => bank.positions[row.id][q.id].status === 'derived' && bank.positions[row.id][q.id].value !== null);
+        const highlighted = new Set<string>();
+        if (known.length) {
+            section.append(p('highlights_explanation'));
+            const highlights = e('div', '', 'result-highlights grid gap-x-8 md:grid-cols-2');
+            for (const group of ['agreements', 'differences'] as const) {
+                const block = e('section', '', `result-${group}`); block.append(e('h4', t(`highlight_${group}`)));
+                const questions = known.filter(q => {
+                    const relation = relationship(session!.answers[q.id] as Scale, bank.positions[row.id][q.id].value!);
+                    return group === 'agreements' ? relation === 'same' || relation === 'close' : relation === 'opposed' || relation === 'different';
+                }).slice(0, 3);
+                if (!questions.length) block.append(p(`no_${group}`));
+                for (const q of questions) {
+                    highlighted.add(q.id);
+                    block.append(resultProposal(q, session.answers[q.id] as Scale, bank.positions[row.id][q.id], 'h5'));
+                }
+                highlights.append(block);
+            }
+            section.append(highlights);
+        } else section.append(p(answered.length ? 'no_clear_positions' : 'no_numeric_answers'));
+        const missingCount = answered.length - known.length;
+        if (missingCount > 0 && known.length) section.append(e('p', t('missing_answered_positions').replace(':count', String(missingCount))));
         const value = row.index ?? row.partialIndex;
         section.append(e('p', value === null ? t('no_score') : `${t(row.index !== null ? 'overlap' : 'partial_overlap')}: ${percentage(value)}`, 'result-number'));
         section.append(e('p', `${t('coverage')}: ${percentage(row.coverage * 100)}. ${row.knownCount} ${t('known_questions').toLocaleLowerCase('es')}.`, 'result-metadata'));
         if (bank.comparisonPolicy && !row.comparisonEligible) section.append(p('outside_comparison_subset'));
         if (row.index !== null && result.rows.some(other => other.id !== row.id && other.index !== null && Math.abs(other.index - row.index!) < 1e-8)) section.append(p('tie'));
-        const explanations = e('details'); explanations.append(e('summary', t('agreements')));
-        for (const q of bank.questions.filter(q => typeof session!.answers[q.id] === 'number')) {
-            const answer = session!.answers[q.id] as Scale;
-            const position = bank.positions[row.id][q.id];
-            const item = e('section', '', 'source-card'); item.dataset.questionId = q.id;
-            item.append(e('h3', q.text), e('p', `${t('your_answer')}: ${t(answerKeys[String(answer)])}`));
-            if (position.status === 'derived' && position.value !== null) {
-                item.append(e('p', `${t('party_position')}: ${t(answerKeys[String(position.value)])}`), p(`relationship_${relationship(answer, position.value)}`, 'relationship'), e('p', `${t('question_overlap')}: ${percentage(100 * similarity(answer, position.value))}.`));
-            }
-            item.append(positionView(position)); explanations.append(item);
+        const remaining = answered.filter(q => !highlighted.has(q.id));
+        if (remaining.length) {
+            const explanations = e('details', '', 'result-all-proposals'); explanations.append(e('summary', t('agreements')));
+            for (const q of remaining) explanations.append(resultProposal(q, session.answers[q.id] as Scale, bank.positions[row.id][q.id], 'h4'));
+            section.append(explanations);
         }
-        section.append(explanations); rows.append(section);
+        rows.append(section);
     }
     root.append(rows, actions(button('review', renderReview), button('export', exportResults), button('reset', reset)));
     if (feedback) renderFeedback(root, feedback, t, true);

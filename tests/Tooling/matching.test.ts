@@ -296,3 +296,11 @@ test('qualified candidacies still require identical sufficient answered evidence
     copy.comparisonPolicy = 'invalid-policy' as never;
     assert.throws(() => parseBank(copy));
 });
+
+
+test('optional draft metadata keeps booleans and rejects string readiness flags', () => {
+    const draft = parseBank({ ...structuredClone(bank), draft: true, releaseEligible: false });
+    assert.equal(draft.draft, true);
+    assert.equal(draft.releaseEligible, false);
+    for (const invalid of [{ draft: 'false' }, { releaseEligible: 'true' }]) assert.throws(() => parseBank({ ...structuredClone(bank), ...invalid }));
+});

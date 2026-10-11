@@ -9,7 +9,7 @@ export interface Bank {
     schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
     topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
-    comparisonPolicy?: 'fixed-bank-evidence-v1';
+    comparisonPolicy?: 'fixed-bank-evidence-v1'; draft?: boolean; releaseEligible?: boolean;
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
     documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
     positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
@@ -26,6 +26,8 @@ export function parseBank(value: unknown): Bank {
         const b = value as Bank;
         ensure(b && b.schemaVersion === 1 && b.engineVersion === 'lean-fixed-budgets-v1' && ['synthetic', 'historical', 'current'].includes(b.kind));
         ensure(b.comparisonPolicy === undefined || b.comparisonPolicy === 'fixed-bank-evidence-v1');
+        ensure(b.draft === undefined || typeof b.draft === 'boolean');
+        ensure(b.releaseEligible === undefined || typeof b.releaseEligible === 'boolean');
         ensure(safeText(b.election.name) && idPattern.test(b.election.id) && datePattern.test(b.election.date) && datePattern.test(b.asOf));
         ensure(Array.isArray(b.topics) && Array.isArray(b.questions) && b.questions.length <= 1000 && Array.isArray(b.candidacies) && b.candidacies.length <= 100);
         ensure(unique(b.topics.map(t => t.id)) && unique(b.questions.map(q => q.id)) && unique(b.candidacies.map(c => c.id)) && unique(b.election.constituencies.map(c => c.id)));

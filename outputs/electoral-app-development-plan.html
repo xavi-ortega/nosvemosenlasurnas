@@ -176,10 +176,10 @@ Work one inspectable increment at a time with factual evidence.
 - Q019 · feat: build the accessible single-question experience · in_progress
 - Q020 · feat: add smooth transitions without losing private state · in_progress
 - Q021 · feat: make deeper quiz checkpoints clear and optional · in_progress
-- Q022 · feat: present understandable cited results · planned
-- Q023 · feat: complete Spanish help errors privacy and local export · planned
-- Q024 · test: verify actual mobile keyboard motion and readability · planned
-- Q025 · test: verify the real-data quiz privacy boundary · planned
+- Q022 · feat: present understandable cited results · in_progress
+- Q023 · feat: complete Spanish help errors privacy and local export · in_progress
+- Q024 · test: verify actual mobile keyboard motion and readability · in_progress
+- Q025 · test: verify the real-data quiz privacy boundary · in_progress
 - Q026 · test: verify the complete 2023 corpus and release candidate · planned
 - Q027 · chore: prove 2023 bundle recovery and rollback · in_progress
 - Q028 · docs: prepare the concrete 2023 public release packet · planned

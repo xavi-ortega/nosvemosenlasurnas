@@ -1118,6 +1118,83 @@
       "status": "current_2026_excluded_23j_archive_search_open",
       "recordedAt": "2026-10-11T08:52:00.094699+00:00",
       "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
+    },
+    {
+      "observationKind": "prior_continuation_actual_searches_reconciled",
+      "queries": [
+        "\"UPL\" \"23J\" \"programa electoral\" pdf",
+        "\"Soria Ya\" \"23 julio\" \"programa\" 2023",
+        "\"Jaén Merece Más\" \"programa\" \"generales\" 2023",
+        "\"Escaños en Blanco\" \"23J\" \"programa\"",
+        "site.soriaya.org \"2023\" \"programa\" \"generales\"",
+        "site.upl.es \"2023\" \"programa\" \"Congreso\"",
+        "site.escanos.org \"23J\" \"programa\"",
+        "\"PSC\" \"23J\" \"programa electoral\" pdf",
+        "\"Soria\" \"Hecho en Soria\" \"programa\" pdf 2023",
+        "site.upl.es \"programa_upl_140723\"",
+        "site.socialistes.cat \"programa\" \"23\" \"juliol\" \"2023\""
+      ],
+      "discoveredPages": [
+        {
+          "title": "UPL León 2023 original",
+          "url": "https://www.upl.es/wp-content/uploads/2023/07/programa_upl_140723.pdf"
+        },
+        {
+          "title": "Soria 6 July 2023 announcement",
+          "url": "https://soriaya.org/soria-ya-presenta-su-programa-electoral-hecho-en-soria/"
+        },
+        {
+          "title": "Jaén July 2023 original",
+          "url": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf"
+        },
+        {
+          "title": "Soria 2026 edition excluded",
+          "url": "https://soriaya.org/wp-content/uploads/2026/03/Programa-Soria-Ya-2026.pdf"
+        }
+      ],
+      "status": "primary_2023_leads_acquired_other_editions_excluded_remaining_unresolved",
+      "limitations": "Prior continuation reported actual queries/results; no reconstructed search-response bytes or proof of absent PSC/Escaños programmes.",
+      "recordedAt": "2026-10-11T09:07:26.508688+00:00"
+    },
+    {
+      "observationKind": "actual_batched_search_followup",
+      "queries": [
+        "site.upl.es \"2023\" \"programa_upl_140723\"",
+        "site.jaenmerecemas.es \"23J\" \"programa\" \"anexo\"",
+        "\"Jaén Merece Más\" \"programa\" \"2023\" \"21 de julio\"",
+        "site.upl.es \"julio\" \"2023\" \"programa electoral\"",
+        "site.upl.es \"Miguel Ángel Díez\" \"2023\" \"23J\"",
+        "\"Escaños en Blanco\" \"23J\" programa elecciones 2023",
+        "\"PSC\" \"23J\" \"programa\" pdf"
+      ],
+      "discoveredPages": [
+        {
+          "title": "Primary Jaén campaign catalogue",
+          "url": "https://www.jaenmerecemas.es/actualidad/"
+        },
+        {
+          "title": "Escaños Catalan post-election calculator; lead only",
+          "url": "https://esconsenblanc.org/calculadora-eleccions-23j/"
+        },
+        {
+          "title": "15 July 2023 Escaños Álava report; lead only",
+          "url": "https://www.gasteizhoy.com/escanos-en-blanco-elecciones-23j-alava/"
+        },
+        {
+          "title": "14 July 2023 UPL report; lead only",
+          "url": "https://www.digitaldeleon.com/articulo/politica-y-economia/upl-pide-alternativa-leoneses-23j/20230714173000153063.html"
+        }
+      ],
+      "status": "jaen_annex_upl_publication_psc_escanos_primary_scope_followup_open",
+      "limitations": "Batched queries returned noisy irrelevant results. Snippets are leads, not full readings or proof of unavailability.",
+      "recordedAt": "2026-10-11T09:07:26.508688+00:00"
+    },
+    {
+      "candidacyId": "boe-2023-009",
+      "observationKind": "primary_publication_acquired",
+      "url": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+      "status": "explicit_23j2023_page_link_cached_full_pnv_reading_unscored",
+      "recordedAt": "2026-10-11T09:07:26.508688+00:00"
     }
   ]
 }

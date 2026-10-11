@@ -14,7 +14,8 @@
     "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread.",
     "Four additional complete individual readings reconciled: Compromís-Sumar13PDFpages, Vía Burgalesa20national HTMLsections (2026update/vintage unresolved), Teruel Existe29PDFpages and PDeCAT35PDFpages. Byte/text hashes and literal locators checked; source applicability, corpus closure and numeric mapping remain open. Teruel/Valencian supplement scope never extends automatically to other coalition territories.",
     "New observed primary programme links acquired: Por Ávila alternate OK_23JPDF replaces failedURLlead; Nueva Canarias July23JPDF distinct from Mayregional programme,75741915bytes original retained (webPDFfetch had rejected size). No reading completion follows acquisition. Geroa transparency lists May/other-edition programmes; Frente current linked political PDF is under2026/10and cannot substitute for23J.",
-    "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit."
+    "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit.",
+    "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open."
   ],
   "candidacies": [
     {
@@ -1297,7 +1298,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "pnv"
       ],
@@ -2577,9 +2578,11 @@
           "votes": 526
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "leon_programme_acquired_zamora_adoption_unresolved",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "upl-leon-july"
+      ],
       "ballotAliases": [
         "UNIÓN DEL PUEBLO LEONÉS (U.P.L.)",
         "UNIÓN DEL PUEBLO LEONÉS (UPL)"
@@ -2848,9 +2851,11 @@
           "votes": 9697
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "soriaya-2023-programme-html"
+      ],
       "ballotAliases": [
         "SORIA ¡YA! (SY)"
       ],
@@ -2964,9 +2969,11 @@
           "votes": 8293
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_pdf_acquired_full_reading_and_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "jaenmerecemas-july"
+      ],
       "ballotAliases": [
         "JAÉN MERECE MÁS (JM+)"
       ],
@@ -4098,8 +4105,17 @@
         "sha256": "9f2b300764933ee8d83391a925cbc849d75549324834a61a305e4e4b48c75950",
         "pageCount": 52,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pnv.json",
+      "electionApplicability": "Primary party 23J 2023 page links original; Euskadi Congress scope; no Geroa adoption.",
+      "applicableBallotRecordIds": [
+        "congress-alava-2",
+        "congress-bizkaia-2",
+        "congress-gipuzkoa-3"
+      ],
+      "publishedAt": "2023-07-23"
     },
     {
       "id": "bng",
@@ -4627,15 +4643,69 @@
         "Original exceeds guarded 20 MiB import limit; direct extraction includes NUL glyphs/duplicate lines. Original retained; bounded release preparation pending."
       ],
       "electionApplicability": "Primary page labels July 23 2023 separately from May regional edition; cover/Congress-Senate introduction match Canary scope."
+    },
+    {
+      "id": "jaenmerecemas-july",
+      "url": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+      "resolvedUrl": "https://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+      "publicationUrl": "https://www.jaenmerecemas.es/",
+      "retrievedAt": "2026-10-11T08:56:46.629166+00:00",
+      "mediaType": "application/pdf",
+      "lastModified": "Fri, 21 Jul 2023 09:02:53 GMT",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/jaenmerecemas-july.pdf",
+      "sha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+      "bytes": 902105,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/jaenmerecemas-july.txt",
+        "sha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+        "pageCount": 45,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+      "electionApplicability": "Cover 23J July 2023; page 13 Congress/Senate; Jaén scope.",
+      "applicableBallotRecordIds": [
+        "congress-jaen-9"
+      ]
+    },
+    {
+      "id": "upl-leon-july",
+      "url": "https://www.upl.es/wp-content/uploads/2023/07/programa_upl_140723.pdf",
+      "resolvedUrl": "https://www.upl.es/wp-content/uploads/2023/07/programa_upl_140723.pdf",
+      "retrievedAt": "2026-10-11T08:59:43.818322+00:00",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/upl-leon-july.pdf",
+      "sha256": "dc9389610068a71d760d2efd2b47fa0926cca6ee9ede02fec14d1d678a0d2313",
+      "bytes": 259768,
+      "lastModified": "Tue, 08 Jul 2025 12:00:42 GMT",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/upl-leon-july.txt",
+        "sha256": "d9112976af63932520cca26ee821a114d2c5d0bd62b12f64bcb1e339ba99a9cc",
+        "pageCount": 8,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "preparationLimitations": [
+        "Native adapter reported a corrected non-zero-indexed xref table; original retained; extracted eight pages need visual checks."
+      ],
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/upl-leon.json",
+      "electionApplicability": "Cover Cortes Generales del Estado-León 2023; Congress candidate. Zamora adoption unresolved.",
+      "applicableBallotRecordIds": [
+        "congress-leon-8"
+      ]
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 26,
+    "programmeFilesDownloaded": 28,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 17
+    "programmeDocumentsFullyRead": 21
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -4941,6 +5011,59 @@
       "sha256": "a07deacc30398814c79b9504b278699a575baa09dc286c03f7ddb3a8ac23be19",
       "textFile": "storage/app/election-sources/2023-congress/frenteobrero-current-programme-excluded-a07deacc3039.txt",
       "textSha256": "c953b5059059e84659cfc25dbd6e0a606ffed547ed27f8b8afddcad6d2200cb1"
+    },
+    {
+      "id": "pnv-23j-publication",
+      "url": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+      "resolvedUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+      "publicationUrl": null,
+      "retrievedAt": "2026-10-11T08:56:46.629166+00:00",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_programme_reading",
+      "file": "storage/app/election-sources/2023-congress/pnv-23j-publication.html",
+      "sha256": "f9513841a724764ce924d476888964a9ca50267b77f374ab8c10a60d704bd10d",
+      "bytes": 57910
+    },
+    {
+      "id": "soriaya-2023-programme-html",
+      "url": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+      "resolvedUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+      "retrievedAt": "2026-10-11T08:59:43.818322+00:00",
+      "mediaType": "text/html",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.html",
+      "sha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+      "bytes": 168297,
+      "textFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.txt",
+      "textSha256": "506ea6f01c0194898d4573b126992e79492408eacaeabb7c2aaa13c9859eed9b",
+      "extractionMethod": "stdlib_htmlparser_visible_post_content_v1",
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+      "publishedAt": "2023-07-06T08:30:00+00:00",
+      "modifiedAt": "2023-07-10T09:39:12+00:00",
+      "publicationUrl": "https://soriaya.org/soria-ya-presenta-su-programa-electoral-hecho-en-soria/",
+      "electionApplicability": "Explicit 23J 2023 Congress/Senate article; 6 July 2023 announcement links complete 73 measures.",
+      "applicableBallotRecordIds": [
+        "congress-soria-5"
+      ]
+    },
+    {
+      "id": "soriaya-2023-publication",
+      "url": "https://soriaya.org/soria-ya-presenta-su-programa-electoral-hecho-en-soria/",
+      "resolvedUrl": "https://soriaya.org/soria-ya-presenta-su-programa-electoral-hecho-en-soria/",
+      "retrievedAt": "2026-10-11T08:59:43.818322+00:00",
+      "mediaType": "text/html",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/soriaya-2023-publication.html",
+      "sha256": "4c356b50fb583547172b1b295ef3ea84c74e8aee6466126715996add7b3b44a4",
+      "bytes": 142143,
+      "textFile": "storage/app/election-sources/2023-congress/soriaya-2023-publication.txt",
+      "textSha256": "210cfa7781960ea43915acdbf656e8fe9f8c866b4320834325b73cf6fd0204f2",
+      "extractionMethod": "stdlib_htmlparser_visible_post_content_v1",
+      "publishedAt": "2023-07-06",
+      "analysisStatus": "publication_fully_read_programme_link_evidence",
+      "linkedProgrammeId": "soriaya-2023-programme-html"
     }
   ]
 }

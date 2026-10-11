@@ -169,7 +169,7 @@ Dependencies: Q013
 
 ## Q015 fix: explain agreements differences and aggregate results correctly
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q013
 

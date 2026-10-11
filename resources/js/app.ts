@@ -254,6 +254,14 @@ function renderResults(): void {
     const result = match(session.bank, session.answers, session.priorities, session.cohort);
     root.replaceChildren(sampleNotice(), e('h2', t('results_title')), p('results_explanation'), e('h3', t(result.comparable ? 'comparable' : 'partial')));
     if (!result.comparable) root.append(p('partial_explanation'));
+    if (bank.comparisonPolicy) {
+        const disclosure = e('details'); disclosure.append(e('summary', t('comparison_selection')), p('comparison_rule'));
+        const candidates = e('ul');
+        for (const id of result.comparisonCohort) candidates.append(e('li', bank.candidacies.find(c => c.id === id)!.name));
+        disclosure.append(result.comparisonCohort.length ? candidates : p('no_comparison_candidates'));
+        root.append(disclosure);
+    }
+    if (result.comparable) root.append(e('p', t('same_comparison_questions').replace(':count', String(result.sharedCount))));
     const scope = bank.election.constituencies.find(c => c.id === session!.constituency)?.name ?? t('all_constituencies');
     root.append(e('p', `${t('constituency')}: ${scope}.`));
     const outside = bank.candidacies.filter(c => !session!.cohort.includes(c.id));
@@ -265,12 +273,18 @@ function renderResults(): void {
     }
     root.append(e('p', `${t('shared_coverage')}: ${percentage(result.sharedCoverage * 100)}. ${t('scored_questions')}: ${result.sharedCount}.`));
     const rows = e('div', '', 'results');
+    let partialGroupShown = false;
     for (const row of result.rows) {
+        if (result.comparable && row.index === null && !partialGroupShown) {
+            rows.append(e('h3', t('other_eligible_candidates')), p('other_candidates_explanation'));
+            partialGroupShown = true;
+        }
         const party = bank.candidacies.find(c => c.id === row.id)!; const section = e('section', '', 'result'); section.append(e('h3', party.name));
-        const value = result.comparable ? row.index : row.partialIndex;
-        section.append(e('p', value === null ? t('no_score') : `${t(result.comparable ? 'overlap' : 'partial_overlap')}: ${percentage(value)}`, 'result-number'));
+        const value = row.index ?? row.partialIndex;
+        section.append(e('p', value === null ? t('no_score') : `${t(row.index !== null ? 'overlap' : 'partial_overlap')}: ${percentage(value)}`, 'result-number'));
         section.append(e('p', `${t('coverage')}: ${percentage(row.coverage * 100)}. ${row.knownCount} ${t('known_questions').toLocaleLowerCase('es')}.`, 'result-metadata'));
-        if (result.comparable && result.rows.some(other => other.id !== row.id && Math.abs(other.index! - row.index!) < 1e-8)) section.append(p('tie'));
+        if (bank.comparisonPolicy && !row.comparisonEligible) section.append(p('outside_comparison_subset'));
+        if (row.index !== null && result.rows.some(other => other.id !== row.id && other.index !== null && Math.abs(other.index - row.index!) < 1e-8)) section.append(p('tie'));
         const explanations = e('details'); explanations.append(e('summary', t('agreements')));
         for (const q of bank.questions.filter(q => typeof session!.answers[q.id] === 'number')) {
             const answer = session!.answers[q.id] as Scale;

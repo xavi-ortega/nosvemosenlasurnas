@@ -1244,9 +1244,11 @@
             "scripts/assemble_authored_quiz.py",
             "tests/Tooling/test_authored_quiz.py",
             "outputs/2023-authored-60-verification.json",
-            "outputs/2023-authored-60-cohort-verification.json"
+            "outputs/2023-authored-60-cohort-verification.json",
+            "outputs/2023-fixed-comparison-verification.json",
+            "outputs/2023-fixed-comparison-cohort-verification.json"
           ],
-          "progressNote": "Partial unpublished bank: 60 directly authored distinct questions across 10 topics, 3540 explicit pairs, 109 numeric mappings and 545 independent cases. Ten desktop/mobile rent paths and two 10/15/20/25/30 browser paths passed for the current immutable draft; 52 generated roster-cohort profiles retain all eligible candidacies and use source-qualified followups. Minimum count reached; complete corpus applicability, pair interpretation and release acceptance remain open."
+          "progressNote": "Fixed comparison policy implemented: at least eight distinct authored families/four topics across the pinned bank, independent of answers/priorities. All eligible candidacies remain visible; partial indices are separate from any common-evidence ordering. 52 actual roster cohorts pass generated membership/retention/block checks; ten real-draft rent browser cases and two progressive paths pass on desktop/mobile. Shared evidence remains insufficient in this draft; no manufactured ranking or release acceptance."
         },
         {
           "id": "Q014",
@@ -1303,16 +1305,18 @@
             "scripts/assemble_authored_quiz.py",
             "tests/Tooling/test_authored_quiz.py",
             "outputs/2023-authored-60-verification.json",
-            "outputs/2023-authored-60-cohort-verification.json"
+            "outputs/2023-authored-60-cohort-verification.json",
+            "outputs/2023-fixed-comparison-verification.json",
+            "outputs/2023-fixed-comparison-cohort-verification.json"
           ],
-          "progressNote": "Partial unpublished bank: 60 directly authored distinct questions across 10 topics, 3540 explicit pairs, 109 numeric mappings and 545 independent cases. Ten desktop/mobile rent paths and two 10/15/20/25/30 browser paths passed for the current immutable draft; 52 generated roster-cohort profiles retain all eligible candidacies and use source-qualified followups. Minimum count reached; complete corpus applicability, pair interpretation and release acceptance remain open."
+          "progressNote": "Fixed comparison policy implemented: at least eight distinct authored families/four topics across the pinned bank, independent of answers/priorities. All eligible candidacies remain visible; partial indices are separate from any common-evidence ordering. 52 actual roster cohorts pass generated membership/retention/block checks; ten real-draft rent browser cases and two progressive paths pass on desktop/mobile. Shared evidence remains insufficient in this draft; no manufactured ranking or release acceptance."
         },
         {
           "id": "Q015",
           "sequence": 15,
           "phaseId": "QP3",
           "subject": "fix: explain agreements differences and aggregate results correctly",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q013"
           ],
@@ -1352,7 +1356,12 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-fixed-comparison-verification.json",
+            "outputs/2023-fixed-comparison-cohort-verification.json"
+          ],
+          "progressNote": "Fixed comparison policy implemented: at least eight distinct authored families/four topics across the pinned bank, independent of answers/priorities. All eligible candidacies remain visible; partial indices are separate from any common-evidence ordering. 52 actual roster cohorts pass generated membership/retention/block checks; ten real-draft rent browser cases and two progressive paths pass on desktop/mobile. Shared evidence remains insufficient in this draft; no manufactured ranking or release acceptance."
         },
         {
           "id": "Q016",
@@ -2626,7 +2635,7 @@
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   },
   "implementationProgress": {
-    "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+    "recordedAt": "2026-10-11T13:51:06.708930+00:00",
     "sourceSummary": {
       "officialDenominations": 59,
       "programmeFilesDownloaded": 39,
@@ -2644,10 +2653,10 @@
       "explicitMatrixCells": 3540,
       "scoredDraftMappings": 109,
       "independentAnswerCases": 545,
-      "browserRentCases": 40,
-      "browserProgressivePaths": 6,
+      "browserRentCases": 50,
+      "browserProgressivePaths": 8,
       "latestBrowserQuestions": 60,
-      "latestBrowserDraftSha256": "82c529bebf35158c6e16c1f3b3a2d2076a927c4753c7bcf299e8ab1b6d13c402",
+      "latestBrowserDraftSha256": "15f3c313bf462a688f0cb948c45e0450a893201311425d66add5a98341288c33",
       "releasedRealQuestions": 0,
       "releaseEligible": false,
       "allConstituencyGeneratedProfilesChecked": 52,
@@ -2660,8 +2669,11 @@
       ],
       "latestBrowserRentCases": 10,
       "latestBrowserProgressivePaths": 2,
-      "latestBrowserVerification": "outputs/2023-authored-60-verification.json",
-      "latestCohortVerification": "outputs/2023-authored-60-cohort-verification.json"
+      "latestBrowserVerification": "outputs/2023-fixed-comparison-verification.json",
+      "latestCohortVerification": "outputs/2023-fixed-comparison-cohort-verification.json",
+      "comparisonPolicy": "fixed-bank-evidence-v1",
+      "fixedComparisonCohortVerification": "outputs/2023-fixed-comparison-cohort-verification.json",
+      "fixedComparisonBrowserVerification": "outputs/2023-fixed-comparison-verification.json"
     }
   }
 }

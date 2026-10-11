@@ -28,6 +28,8 @@ def assemble(root):
     election_id = inventory["electionId"]
     require(all(item["electionId"] == election_id for item in [authored, matrix, registry]), "Authored election mismatch")
     require(authored["releaseEligible"] is False and matrix["releaseEligible"] is False, "This command assembles drafts only")
+    policy = authored.get("comparisonPolicy")
+    require(policy is None or policy == "fixed-bank-evidence-v1", "Invalid comparison policy")
     questions = authored["questions"]
     question_ids = [question["id"] for question in questions]
     require(question_ids and len(question_ids) == len(set(question_ids)), "Duplicate authored question")
@@ -126,6 +128,8 @@ def assemble(root):
     }
     if starters is not None:
         bank["starterQuestionIds"] = starters
+    if policy is not None:
+        bank["comparisonPolicy"] = policy
     preparation = {"schemaVersion": 1, "electionId": election_id, "sourceHashes": {key: document["sha256"] for key, document in documents.items()}, "positions": prepared}
     with tempfile.TemporaryDirectory(prefix="authored-quiz-") as directory:
         folder = Path(directory)

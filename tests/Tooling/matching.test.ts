@@ -224,3 +224,75 @@ test('continuations require scored evidence from at least one eligible candidacy
     assert.deepEqual(followups(bank, answers, selected, {}, ['delta']), []);
     assert.equal(followups(bank, answers, selected, {}, ['alpha']).length, 5);
 });
+
+
+test('fixed bank evidence qualifies candidates without hiding sparse or missing candidacies', () => {
+    const copy = structuredClone(bank);
+    copy.comparisonPolicy = 'fixed-bank-evidence-v1';
+    const retained = new Set(balanced(copy).slice(0, 7).map(q => q.id));
+    for (const q of copy.questions) if (!retained.has(q.id)) copy.positions.gamma[q.id] = { status: 'unknown', value: null, citations: [] };
+
+    const result = match(parseBank(copy), answers);
+
+    assert.deepEqual(result.comparisonCohort, ['alpha', 'beta']);
+    assert.equal(result.comparable, true);
+    assert.equal(result.sharedCount, 10);
+    assert.equal(result.rows.find(row => row.id === 'alpha')?.index, 70);
+    assert.equal(result.rows.find(row => row.id === 'gamma')?.index, null);
+    assert.equal(result.rows.find(row => row.id === 'gamma')?.knownCount, 7);
+    assert.notEqual(result.rows.find(row => row.id === 'gamma')?.partialIndex, null);
+    assert.equal(result.rows.find(row => row.id === 'delta')?.partialIndex, null);
+    assert.deepEqual(result.rows.filter(row => row.index === null).map(row => row.id), ['delta', 'gamma']);
+    assert.deepEqual(new Set(result.rows.map(row => row.id)), new Set(['alpha', 'beta', 'gamma', 'delta']));
+});
+
+test('fixed comparison membership ignores answers priorities and question order', () => {
+    const copy = structuredClone(bank);
+    copy.comparisonPolicy = 'fixed-bank-evidence-v1';
+    const muted = Object.fromEntries(copy.topics.map(topic => [topic.id, 0])) as Record<string, 0>;
+    const edited = Object.fromEntries(Object.keys(answers).map(id => [id, -2])) as Answers;
+    const unsure = Object.fromEntries(Object.keys(answers).map(id => [id, 'unsure'])) as Answers;
+
+    for (const [input, priority] of [[{}, {}], [answers, {}], [edited, {}], [unsure, {}], [answers, muted]] as const) {
+        assert.deepEqual(match(copy, input, priority).comparisonCohort, ['alpha', 'beta', 'gamma']);
+    }
+    copy.questions.reverse(); copy.candidacies.reverse();
+    assert.deepEqual(match(copy, answers).comparisonCohort, ['alpha', 'beta', 'gamma']);
+    assert.deepEqual(match(copy, answers, {}, ['alpha', 'delta']).comparisonCohort, ['alpha']);
+    assert.equal(match(copy, answers, {}, ['alpha', 'delta']).comparable, false);
+});
+
+test('qualification requires eight distinct families and four topics with derived evidence', () => {
+    for (const failure of ['seven-families', 'three-topics', 'conflicting']) {
+        const copy = structuredClone(bank);
+        copy.comparisonPolicy = 'fixed-bank-evidence-v1';
+        const retained = failure === 'three-topics' ? copy.questions.filter(q => ['housing', 'economy', 'services'].includes(q.topicId)) : balanced(copy).slice(0, 8);
+        for (const q of copy.questions) {
+            if (!retained.includes(q)) copy.positions.gamma[q.id] = { status: 'unknown', value: null, citations: [] };
+        }
+        if (failure === 'conflicting') copy.positions.gamma[retained[7].id] = { status: 'conflicting', value: null, citations: [] };
+        if (failure === 'seven-families') retained[5].familyId = retained[0].familyId;
+
+        assert.deepEqual(match(parseBank(copy), answers).comparisonCohort, ['alpha', 'beta']);
+    }
+    const copy = structuredClone(bank); copy.comparisonPolicy = 'fixed-bank-evidence-v1';
+    const retained = new Set(balanced(copy).slice(0, 8).map(q => q.id));
+    for (const q of copy.questions) if (!retained.has(q.id)) copy.positions.gamma[q.id] = { status: 'unknown', value: null, citations: [] };
+    assert.deepEqual(match(parseBank(copy), answers).comparisonCohort, ['alpha', 'beta', 'gamma']);
+});
+
+test('qualified candidacies still require identical sufficient answered evidence before ordering', () => {
+    const copy = structuredClone(bank); copy.comparisonPolicy = 'fixed-bank-evidence-v1';
+    const starters = new Set(balanced(copy).map(q => q.id));
+    for (const q of copy.questions) if (starters.has(q.id)) copy.positions.gamma[q.id] = { status: 'unknown', value: null, citations: [] };
+
+    const result = match(copy, answers);
+
+    assert.deepEqual(result.comparisonCohort, ['alpha', 'beta', 'gamma']);
+    assert.equal(result.comparable, false);
+    assert.equal(result.sharedCount, 0);
+    assert.ok(result.rows.every(row => row.index === null));
+    assert.equal(match(copy, Object.fromEntries(Object.entries(answers).slice(0, 7))).comparable, false);
+    copy.comparisonPolicy = 'invalid-policy' as never;
+    assert.throws(() => parseBank(copy));
+});

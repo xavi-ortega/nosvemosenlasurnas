@@ -237,3 +237,40 @@ test('question and selected controls stay accessible at 320px and four-times zoo
     await expect(page.getByRole('radio', { name: 'En desacuerdo', exact: true })).toBeChecked();
     await hidden(page);
 });
+
+
+test('fixed evidence comparison discloses its selection and retains missing candidates separately', async ({ page, context }) => {
+    const requests: string[] = [];
+    page.on('request', request => { if (request.url().includes('/api/')) requests.push(new URL(request.url()).pathname); });
+    await page.route('**/api/bank', async route => {
+        const response = await route.fetch();
+        const bank = await response.json(); bank.comparisonPolicy = 'fixed-bank-evidence-v1';
+        const body = JSON.stringify(bank);
+        await route.fulfill({ response, body, headers: { ...response.headers(), 'x-evidence-sha256': createHash('sha256').update(body).digest('hex') } });
+    });
+
+    await start(page, false); await answer(page, 10); await hidden(page);
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+
+    await expect(page.locator('#app')).toContainText('Estas candidaturas se comparan usando las mismas 10 respuestas y los mismos pesos.');
+    const disclosure = page.locator('details').filter({ has: page.getByText('Qué candidaturas pueden compararse', { exact: true }) });
+    await disclosure.locator('summary').click();
+    await expect(disclosure.getByRole('listitem')).toHaveCount(3);
+    await expect(disclosure).toContainText('Tus respuestas y la importancia que das a los temas no cambian esta selección.');
+    await expect(disclosure).not.toContainText('Candidatura ficticia sin programa');
+    const missing = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia sin programa', exact: true }) });
+    await expect(missing).toContainText('Índice no disponible');
+    await expect(missing).toContainText('no reúne todavía la evidencia necesaria');
+    await expect(missing).not.toContainText('Empate');
+    await expect(page.getByRole('heading', { name: 'Otras candidaturas de tu ámbito', exact: true })).toBeVisible();
+    page.once('dialog', dialog => void dialog.accept());
+    const download = page.waitForEvent('download'); await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
+    const exported = JSON.parse(await readFile((await (await download).path())!, 'utf8'));
+    expect(exported.results.comparisonCohort).toEqual(['alpha', 'beta', 'gamma']);
+    expect(exported.results.rows).toHaveLength(4);
+    expect(exported.results.rows.find((row: { id: string }) => row.id === 'delta').index).toBeNull();
+    expect(requests).toEqual(['/api/bank', '/api/release-state']);
+    expect(await context.cookies()).toEqual([]);
+    expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+});

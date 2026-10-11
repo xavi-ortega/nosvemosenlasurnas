@@ -65,6 +65,25 @@ class AuthoredQuizTest(unittest.TestCase):
             self.assertNotIn("text", bank["documents"][0])
             self.assertFalse((root / "resources/evidence/current.json").exists())
 
+    def test_preserves_explicit_comparison_policy_and_rejects_an_unknown_policy(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            authored = files["2023-authored-question-bank.json"]
+            authored["comparisonPolicy"] = "fixed-bank-evidence-v1"
+            path = root / "outputs/2023-authored-question-bank.json"
+            path.write_text(json.dumps(authored))
+
+            bank = assembler.assemble(root)
+
+            self.assertEqual(bank["comparisonPolicy"], "fixed-bank-evidence-v1")
+            self.assertFalse(bank["releaseEligible"])
+            self.assertIsNone(bank["positions"]["fixture-b"]["fixture-question"]["value"])
+            authored["comparisonPolicy"] = "answer-dependent"
+            path.write_text(json.dumps(authored))
+            with self.assertRaises(ValueError):
+                assembler.assemble(root)
+
     def test_original_extraction_notebook_and_context_changes_fail_closed(self):
         for changed in ["original", "extraction", "notebook", "context", "owner"]:
             with self.subTest(changed=changed), tempfile.TemporaryDirectory() as directory:

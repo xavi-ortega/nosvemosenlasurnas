@@ -169,7 +169,7 @@ Work one inspectable increment at a time with factual evidence.
 - Q012 · test: calibrate the full five-answer scoring surface · in_progress
 - Q013 · fix: compare eligible parties on the same evidence and weights · in_progress
 - Q014 · feat: select balanced authored questions and useful follow-ups · in_progress
-- Q015 · fix: explain agreements differences and aggregate results correctly · planned
+- Q015 · fix: explain agreements differences and aggregate results correctly · in_progress
 - Q016 · test: validate citations editions and correction behavior · planned
 - Q017 · design: specify and review the quiz visual system · in_progress
 - Q018 · feat: make the test the primary entry point · in_progress

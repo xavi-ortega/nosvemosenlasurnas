@@ -9,6 +9,7 @@ export interface Bank {
     schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
     topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
+    comparisonPolicy?: 'fixed-bank-evidence-v1';
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
     documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
     positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
@@ -24,6 +25,7 @@ export function parseBank(value: unknown): Bank {
     try {
         const b = value as Bank;
         ensure(b && b.schemaVersion === 1 && b.engineVersion === 'lean-fixed-budgets-v1' && ['synthetic', 'historical', 'current'].includes(b.kind));
+        ensure(b.comparisonPolicy === undefined || b.comparisonPolicy === 'fixed-bank-evidence-v1');
         ensure(safeText(b.election.name) && idPattern.test(b.election.id) && datePattern.test(b.election.date) && datePattern.test(b.asOf));
         ensure(Array.isArray(b.topics) && Array.isArray(b.questions) && b.questions.length <= 1000 && Array.isArray(b.candidacies) && b.candidacies.length <= 100);
         ensure(unique(b.topics.map(t => t.id)) && unique(b.questions.map(q => q.id)) && unique(b.candidacies.map(c => c.id)) && unique(b.election.constituencies.map(c => c.id)));
@@ -94,23 +96,36 @@ export function relationship(answer: Scale, position: Scale): 'same' | 'close' |
 }
 const known = (bank: Bank, candidacyId: string, qid: string): boolean => bank.positions[candidacyId][qid].status === 'derived' && isScale(bank.positions[candidacyId][qid].value);
 
+export function comparisonCohort(bank: Bank, cohort: string[]): string[] {
+    if (bank.comparisonPolicy === undefined) return [...cohort];
+    return cohort.filter(id => {
+        const evidence = bank.questions.filter(q => known(bank, id, q.id));
+        return new Set(evidence.map(q => q.familyId)).size >= 8 && new Set(evidence.map(q => q.topicId)).size >= 4;
+    }).sort((a, b) => a.localeCompare(b, 'en'));
+}
+
 export function match(bank: Bank, answers: Answers, priorities: Priorities = {}, cohort = bank.candidacies.map(c => c.id)) {
     ensure(unique(cohort) && cohort.every(id => bank.candidacies.some(c => c.id === id)));
     ensure(Object.entries(answers).every(([id, value]) => bank.questions.some(q => q.id === id) && (isScale(value) || value === 'skip' || value === 'unsure')));
     const w = weights(bank, priorities);
     const answered = bank.questions.filter(q => isScale(answers[q.id]) && w[q.id] > 0).sort((a, b) => a.id.localeCompare(b.id, 'en'));
-    const common = answered.filter(q => cohort.every(id => known(bank, id, q.id)));
+    const qualified = comparisonCohort(bank, cohort);
+    const common = qualified.length >= 2 ? answered.filter(q => qualified.every(id => known(bank, id, q.id))) : [];
     const sum = (items: Question[]) => items.reduce((total, q) => total + w[q.id], 0);
     const answeredWeight = sum(answered), sharedWeight = sum(common);
     const sharedCoverage = answeredWeight > 0 ? sharedWeight / answeredWeight : 0;
-    const comparable = cohort.length >= 2 && common.length >= 8 && new Set(common.map(q => q.topicId)).size >= 4 && sharedCoverage >= 0.6;
+    const comparable = qualified.length >= 2 && common.length >= 8 && new Set(common.map(q => q.topicId)).size >= 4 && sharedCoverage >= 0.6;
     const index = (id: string, items: Question[]): number | null => sum(items) > 0 ? 100 * items.reduce((total, q) => total + w[q.id] * similarity(answers[q.id] as Scale, bank.positions[id][q.id].value as Scale), 0) / sum(items) : null;
     const rows = cohort.map(id => {
         const evidence = answered.filter(q => known(bank, id, q.id));
-        return { id, index: comparable ? index(id, common) : null, partialIndex: index(id, evidence), coverage: answeredWeight > 0 ? sum(evidence) / answeredWeight : 0, knownCount: evidence.length };
+        return { id, comparisonEligible: qualified.includes(id), index: comparable && qualified.includes(id) ? index(id, common) : null, partialIndex: index(id, evidence), coverage: answeredWeight > 0 ? sum(evidence) / answeredWeight : 0, knownCount: evidence.length };
     });
-    rows.sort(comparable ? (a, b) => (b.index! - a.index!) || a.id.localeCompare(b.id, 'en') : (a, b) => a.id.localeCompare(b.id, 'en'));
-    return { comparable, rows, sharedCoverage, sharedCount: common.length, numericCount: answered.length, topicCount: new Set(common.map(q => q.topicId)).size, commonIds: common.map(q => q.id), cohort: [...cohort] };
+    rows.sort((a, b) => {
+        if (a.index !== null && b.index !== null) return (b.index - a.index) || a.id.localeCompare(b.id, 'en');
+        if (a.index !== null || b.index !== null) return a.index !== null ? -1 : 1;
+        return a.id.localeCompare(b.id, 'en');
+    });
+    return { comparable, rows, sharedCoverage, sharedCount: common.length, numericCount: answered.length, topicCount: new Set(common.map(q => q.topicId)).size, commonIds: common.map(q => q.id), cohort: [...cohort], comparisonCohort: qualified };
 }
 
 export function balanced(bank: Bank, excluded: string[] = [], count = 10): Question[] {
@@ -147,7 +162,7 @@ export function followups(bank: Bank, answers: Answers, presented: string[], pri
         const started = performance.now();
         const result = match(bank, answers, priorities, cohort);
         const top = result.rows[0]?.index;
-        const close = result.comparable ? result.rows.filter(r => top! - r.index! <= 10).map(r => r.id) : result.cohort;
+        const close = result.comparable ? result.rows.filter(r => r.index !== null && top! - r.index <= 10).map(r => r.id) : result.cohort;
         const w = weights(bank, priorities);
         const numeric = bank.questions.filter(q => isScale(answers[q.id]) && w[q.id] > 0);
         const seen = new Set(presented);

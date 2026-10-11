@@ -2485,14 +2485,14 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_original_byte_identity_reverified",
-      "analysisStatus": "full_document_read_bounded_preparation_verified_bank_audit_pending",
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
       "programmeIds": [
         "nuevacanarias-july"
       ],
       "ballotAliases": [
         "NUEVA CANARIAS - BLOQUE CANARISTA (NC-bc)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_canary_congress_campaign_scope_verified",
       "ballotRecordIds": [
         "congress-laspalmas-6",
         "congress-santacruzdetenerife-5"
@@ -2500,7 +2500,19 @@
       "notebooks": [
         "outputs/2023-programme-notebooks/nuevacanarias.json"
       ],
-      "sourcePreparationEvidence": "outputs/2023-nuevacanarias-preparation.json"
+      "sourcePreparationEvidence": "outputs/2023-nuevacanarias-preparation.json",
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T19:30:52.425552+00:00",
+        "report": "outputs/2023-authored-nuevacanarias-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 2,
+        "newDerivedMappings": 2,
+        "ambiguousCells": 50,
+        "widerProgrammeFamilyCertified": false
+      },
+      "notebookVariants": [
+        "outputs/2023-programme-notebooks/nuevacanarias-native-plain-visual-corrections.json"
+      ]
     },
     {
       "id": "boe-2023-017",
@@ -5815,22 +5827,30 @@
       "resolvedUrl": "https://nuevacanariasbc.org/public/wp-content/uploads/2023/07/PROGRAMA_23J.pdf",
       "mediaType": "application/pdf",
       "lastModified": "Fri, 07 Jul 2023 09:04:37 GMT",
-      "status": "primary_23j_programme_fully_read_bounded_preparation_verified_bank_audit_pending",
+      "status": "primary_23j_programme_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.pdf",
       "sha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
       "bytes": 75741915,
       "extraction": {
-        "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.txt",
-        "sha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+        "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-native-plain-visual-corrections.txt",
+        "sha256": "37a6bab549fe4ec134acea6cc509493a02525cb39962f9d098a84f434a6fb040",
+        "bytes": 116068,
         "pageCount": 36,
-        "method": "pypdf_native_layout_v1",
-        "readStatus": "full_document_read_recorded_in_authored_notebook"
+        "method": "pypdf_native_plain_visual_corrections_v1",
+        "readStatus": "complete_variant_read_recorded_without_new_unique_document_count"
       },
-      "analysisStatus": "full_document_read_bounded_preparation_verified_bank_audit_pending",
-      "notebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+      "analysisStatus": "specific_document_80_cell_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/nuevacanarias-native-plain-visual-corrections.json",
       "preparationLimitations": [
-        "Original retained with four byte-identical, individually bounded fragments and aggregate/original hash validation. Existing import command still rejects over-20 MiB parser inputs.",
-        "Unsafe original extraction is preserved. New native plain variant has three visually verified glyph corrections; variant-specific notebook, direct 80-cell audit and integration remain pending."
+        "Plain extraction still duplicates the complete introduction on PDF page 3; retained and labelled, not counted as additional evidence.",
+        "Only three original visually verified NUL glyph sequences transcribed; fi/fl ligatures and all original PDF/text/notebook bytes retained.",
+        "Four bounded raw fragments verify the entire 75,741,915-byte original. No parser size guard weakened.",
+        "Workweek debate gives neither 35 hours nor preserved salary; past pension rise gives no future cost-of-living formula.",
+        "Generalised early education gives no explicit free entitlement; mental-health care gives no explicit psychotherapy service.",
+        "Bullfighting rejection does not specify public financing. Technical handling of complex cases does not explicitly reserve final discretionary decisions to a human.",
+        "La Palma annex stays island-specific; no national fee exemption or first-home tax exemption inferred.",
+        "Source statistics, legal descriptions and causal forecasts are attributed; inconsistent housing subtotals remain preserved.",
+        "Current primary PDF identity verified; pre-vote archived byte identity and wider source-family completeness are not certified."
       ],
       "electionApplicability": "Primary page labels July 23 2023 separately from May regional edition; cover/Congress-Senate introduction match Canary scope.",
       "originalChunks": [
@@ -5855,7 +5875,21 @@
           "sha256": "e3082bf5ccb695697359a40ff3dd2c1f8ddf97728f5678eb73fd96dfaad9c4c7"
         }
       ],
-      "preparationEvidence": "outputs/2023-nuevacanarias-preparation.json"
+      "preparationEvidence": "outputs/2023-nuevacanarias-preparation.json",
+      "retainedExtractionVariants": [
+        {
+          "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.txt",
+          "sha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+          "method": "pypdf_native_layout_v1",
+          "notebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+          "notebookSha256": "96f70570efc649647e1bea7db14fb08bb603b71cef8bd1a97b6e02cbff3d8da6",
+          "retainedUnchanged": true
+        }
+      ],
+      "applicableBallotRecordIds": [
+        "congress-laspalmas-6",
+        "congress-santacruzdetenerife-5"
+      ]
     },
     {
       "id": "jaenmerecemas-july",
@@ -9404,8 +9438,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4880,
-    "scoredDraftMappings": 173,
-    "independentAnswerCases": 865,
+    "scoredDraftMappings": 175,
+    "independentAnswerCases": 875,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9415,8 +9449,8 @@
     "browserVerification": "outputs/2023-authored-progressive-verification.json",
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
-    "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
+    "latestBrowserQuestions": 25,
+    "latestBrowserDraftSha256": "6c0728ef6a1581f67032586de230bd53407a4cdfcc014dd1bbea336d9fda7e6a",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9425,21 +9459,21 @@
       20,
       25
     ],
-    "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 12,
-    "latestBrowserVerification": "outputs/2023-authored-autonomos-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-autonomos-verification.json",
+    "latestBrowserRentCases": 20,
+    "latestBrowserProgressivePaths": 22,
+    "latestBrowserVerification": "outputs/2023-authored-nuevacanarias-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-nuevacanarias-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
+    "latestDraftSha256": "6c0728ef6a1581f67032586de230bd53407a4cdfcc014dd1bbea336d9fda7e6a",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
+    "latestAuthoredDraftSha256": "6c0728ef6a1581f67032586de230bd53407a4cdfcc014dd1bbea336d9fda7e6a",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9542,7 +9576,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 160,
-    "defaultScoredDraftMappings": 172,
+    "defaultScoredDraftMappings": 174,
     "scopedScoredDraftMappings": 1,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9595,7 +9629,19 @@
     "latestAutonomosCitedAnswerPaths": 20,
     "latestAutonomosCitedUnscoredPaths": 12,
     "autonomosFixedComparisonEligible": false,
-    "allPrevious172MappingsUnchanged": true
+    "allPrevious172MappingsUnchanged": true,
+    "nuevacanariasBankAudit": "outputs/2023-authored-nuevacanarias-audit.json",
+    "nuevacanariasVerification": "outputs/2023-authored-nuevacanarias-verification.json",
+    "nuevacanariasValuesBrowserVerification": "outputs/2023-authored-nuevacanarias-values-browser-verification.json",
+    "nuevacanariasUnknownsBrowserVerification": "outputs/2023-authored-nuevacanarias-unknowns-browser-verification.json",
+    "newNuevacanariasAuditedCells": 80,
+    "newNuevacanariasDerivedMappings": 2,
+    "newNuevacanariasCitedUncertainties": 50,
+    "latestNuevacanariasBrowserSessions": 22,
+    "latestNuevacanariasCitedAnswerPaths": 40,
+    "latestNuevacanariasCitedUnscoredPaths": 12,
+    "nuevacanariasFixedComparisonEligible": false,
+    "allPrevious173MappingsUnchanged": true
   },
-  "recordedAt": "2026-10-11T18:33:08.683841+00:00"
+  "recordedAt": "2026-10-11T19:30:52.425552+00:00"
 }

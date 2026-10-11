@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T19:27:22.701176+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "publicationUrl": "https://www.nuevacanariasbc.org/programa/",
+  "publicationFile": ".tools/nuevacanarias-bank-audit/current-publication.html",
+  "publicationSha256": "4119769edf2b24130455ad690bd8605f2f0e46a57bf7cb845e8a1ad78494db51",
+  "sourceFile": "storage/app/election-sources/2023-congress/nuevacanarias-july.pdf",
+  "sourceSha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
+  "sourceBytes": 75741915,
+  "currentPrimaryBytesMatchRetained": true,
+  "completeOriginalStreamVerified": true,
+  "originalChunks": [
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-1.bin",
+      "bytes": 20971520,
+      "sha256": "0f406aa75a93e2cff698323ce6bd7b6b70cad678e770ca24c7ff10defaeb06f2"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-2.bin",
+      "bytes": 20971520,
+      "sha256": "3bb9fa44c29619f5a31951188f866a1244112f1c05670b5cebf38c20805e60f6"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-3.bin",
+      "bytes": 20971520,
+      "sha256": "398355e92ef86625b0b4258db5bc53ff35a18dd6f7017f381e1245006d79aa17"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-4.bin",
+      "bytes": 12827355,
+      "sha256": "e3082bf5ccb695697359a40ff3dd2c1f8ddf97728f5678eb73fd96dfaad9c4c7"
+    }
+  ],
+  "extractionFile": "storage/app/election-sources/2023-congress/nuevacanarias-july-native-plain-visual-corrections.txt",
+  "extractionSha256": "37a6bab549fe4ec134acea6cc509493a02525cb39962f9d098a84f434a6fb040",
+  "extractionMethod": "pypdf_native_plain_visual_corrections_v1",
+  "notebook": "outputs/2023-programme-notebooks/nuevacanarias-native-plain-visual-corrections.json",
+  "notebookSha256": "f4269e20bb24db6b6ba67b3a3d9e98d236a7e0c62f32f29b8fa59b77792f20cd",
+  "retainedOriginalNotebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+  "retainedOriginalNotebookSha256": "96f70570efc649647e1bea7db14fb08bb603b71cef8bd1a97b6e02cbff3d8da6",
+  "retainedOriginalExtractionSha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+  "applicableBallotRecordIds": [
+    "congress-laspalmas-6",
+    "congress-santacruzdetenerife-5"
+  ],
+  "nativeContextsReopened": [
+    6,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    23,
+    25,
+    26,
+    33,
+    35
+  ],
+  "originalPagesVisuallyReopened": [
+    4,
+    19,
+    23,
+    25,
+    33
+  ],
+  "visualCorrections": [
+    {
+      "pdfPage": 4,
+      "printedPage": 2,
+      "before": "h\u0000os",
+      "after": "hijos",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-4.png"
+    },
+    {
+      "pdfPage": 4,
+      "printedPage": 2,
+      "before": "h\u0000as",
+      "after": "hijas",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-4.png"
+    },
+    {
+      "pdfPage": 33,
+      "printedPage": 31,
+      "before": "redir\u0000a",
+      "after": "redirija",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-33.png"
+    }
+  ],
+  "duplicatedIntroductionRetained": true,
+  "fullDocumentPageCount": 36,
+  "newUniqueDocumentCount": 0,
+  "limitations": [
+    "Plain extraction still duplicates the complete introduction on PDF page 3; retained and labelled, not counted as additional evidence.",
+    "Only three original visually verified NUL glyph sequences transcribed; fi/fl ligatures and all original PDF/text/notebook bytes retained.",
+    "Four bounded raw fragments verify the entire 75,741,915-byte original. No parser size guard weakened.",
+    "Workweek debate gives neither 35 hours nor preserved salary; past pension rise gives no future cost-of-living formula.",
+    "Generalised early education gives no explicit free entitlement; mental-health care gives no explicit psychotherapy service.",
+    "Bullfighting rejection does not specify public financing. Technical handling of complex cases does not explicitly reserve final discretionary decisions to a human.",
+    "La Palma annex stays island-specific; no national fee exemption or first-home tax exemption inferred.",
+    "Source statistics, legal descriptions and causal forecasts are attributed; inconsistent housing subtotals remain preserved.",
+    "Current primary PDF identity verified; pre-vote archived byte identity and wider source-family completeness are not certified.",
+    "The original complete 36-page reading is preserved. A variant rereading/notebook does not increase unique documents, pages or distinct PDFs.",
+    "Only the two proclaimed Canary Congress ballots inherit the programme. No coalition/other canarist candidacy or wider territorial scope inferred.",
+    "Complete corpus/source-family/production privacy/publication acceptance remains open."
+  ]
+}

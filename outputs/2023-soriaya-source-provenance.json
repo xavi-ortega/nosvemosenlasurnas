@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T18:03:03.217046+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-024",
+  "status": "primary_explicit_23j_programme_with_preserved_original_block_boundaries",
+  "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+  "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+  "retainedSourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+  "paragraphExtraction": {
+    "recordedAt": "2026-10-11T18:00:07.660876+00:00",
+    "sourceFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.html",
+    "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+    "previousExtractionFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.txt",
+    "previousExtractionSha256": "506ea6f01c0194898d4573b126992e79492408eacaeabb7c2aaa13c9859eed9b",
+    "extractionFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-paragraphs.txt",
+    "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+    "method": "stdlib_htmlparser_original_post_block_boundaries_v2",
+    "normalizedVisibleTextExactlyEqual": true,
+    "originalBlockEndTags": 133,
+    "paragraphBoundaries": 131,
+    "originalExtractionPreserved": true,
+    "originalSourceUnchanged": true
+  },
+  "previousNotebookHash": "7a07b340e4442a93f847dcdd36cfac4b6f96e0e9ad9de16013708273f45fee47",
+  "currentSourceVerification": {
+    "recordedAt": "2026-10-11T18:01:16.047084+00:00",
+    "url": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+    "resolvedUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+    "httpStatus": 200,
+    "mediaType": "text/html; charset=UTF-8",
+    "bytes": 168136,
+    "sha256": "fd8e8a1f1af2f71fdefa5d57a2cfe7557be0aa26cfd3dca3e490914f7cdd0d86",
+    "file": ".tools/soriaya-bank-audit/current-programme.html",
+    "retainedHtmlBytesEqual": false,
+    "normalizedVisibleProgrammeExactlyEqual": true
+  },
+  "primaryAnnouncementUrl": "https://soriaya.org/soria-ya-presenta-su-programa-electoral-hecho-en-soria/",
+  "applicableBallotRecordIds": [
+    "congress-soria-5"
+  ],
+  "newCompleteNotebookCount": 0,
+  "newDistinctPdfByteCount": 0,
+  "publicPointerChanged": false,
+  "limitations": [
+    "Allnine complete original programme sections and73measures plus the complete6July2023announcement reread. All visible tokens are unchanged in the block-preserving extraction;131original HTML paragraph boundaries restored without weakening compiler checks.",
+    "Original HTML/extraction and previous notebook hash preserved. Current surrounding HTML bytes differ, but the complete visible programme text exactly matches. Exact archived pre-vote bytes remain uncertified.",
+    "Only congress-soria-5applies. Geographic aid for other provinces does not adopt their ballot programmes.",
+    "No new numeric mapping. Source conditions, reasonable appointments, personalised access and geographic flat fees are not widened into exact universal questionnaire propositions.",
+    "Specific complete document audit; broader corpus and public-release acceptance remain open."
+  ]
+}

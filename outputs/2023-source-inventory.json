@@ -3371,20 +3371,29 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_programme_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "soriaya-2023-programme-html"
       ],
       "ballotAliases": [
         "SORIA ¡YA! (SY)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_programme_single_Soria_Congress_ballot",
       "ballotRecordIds": [
         "congress-soria-5"
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/soriaya.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T18:03:03.217046+00:00",
+        "report": "outputs/2023-authored-soriaya-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "newDerivedMappings": 0,
+        "ambiguousCells": 30,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-025",
@@ -6787,10 +6796,10 @@
       "file": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.html",
       "sha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
       "bytes": 168297,
-      "textFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.txt",
-      "textSha256": "506ea6f01c0194898d4573b126992e79492408eacaeabb7c2aaa13c9859eed9b",
-      "extractionMethod": "stdlib_htmlparser_visible_post_content_v1",
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "textFile": "storage/app/election-sources/2023-congress/soriaya-2023-programme-paragraphs.txt",
+      "textSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+      "extractionMethod": "stdlib_htmlparser_original_post_block_boundaries_v2",
+      "analysisStatus": "full_document_read_specific_bank_audited_partial_corpus",
       "notebook": "outputs/2023-programme-notebooks/soriaya.json",
       "publishedAt": "2023-07-06T08:30:00+00:00",
       "modifiedAt": "2023-07-10T09:39:12+00:00",
@@ -6798,7 +6807,16 @@
       "electionApplicability": "Explicit 23J 2023 Congress/Senate article; 6 July 2023 announcement links complete 73 measures.",
       "applicableBallotRecordIds": [
         "congress-soria-5"
-      ]
+      ],
+      "extractionHistory": [
+        {
+          "file": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.txt",
+          "sha256": "506ea6f01c0194898d4573b126992e79492408eacaeabb7c2aaa13c9859eed9b",
+          "method": "stdlib_htmlparser_visible_post_content_v1",
+          "notebookSha256": "7a07b340e4442a93f847dcdd36cfac4b6f96e0e9ad9de16013708273f45fee47"
+        }
+      ],
+      "questionBankAudit": "outputs/2023-authored-soriaya-audit.json"
     },
     {
       "id": "soriaya-2023-publication",
@@ -9274,28 +9292,31 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
+    "latestBrowserDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
-      15
+      15,
+      20,
+      25,
+      30
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 10,
-    "latestBrowserVerification": "outputs/2023-authored-cc-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-cc-verification.json",
+    "latestBrowserProgressivePaths": 6,
+    "latestBrowserVerification": "outputs/2023-authored-soriaya-runtime-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-soriaya-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
+    "latestDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
+    "latestAuthoredDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9372,6 +9393,17 @@
     "latestCcContextualCitations": 34,
     "latestCcBrowserSessions": 10,
     "latestCcCitedAnswerPaths": 20,
-    "ccFixedComparisonEligible": false
+    "ccFixedComparisonEligible": false,
+    "soriayaBankAudit": "outputs/2023-authored-soriaya-audit.json",
+    "newSoriayaAuditedCells": 80,
+    "newSoriayaDerivedMappings": 0,
+    "newSoriayaCitedUncertainties": 30,
+    "soriayaVerification": "outputs/2023-authored-soriaya-verification.json",
+    "soriayaRuntimeVerification": "outputs/2023-authored-soriaya-runtime-verification.json",
+    "latestSoriayaContextualCitations": 37,
+    "latestSoriayaBrowserSessions": 6,
+    "latestSoriayaCitedUnscoredPaths": 18,
+    "soriayaFixedComparisonEligible": false,
+    "htmlCitationLocatorVerification": "tests/Browser/public-journeys.spec.ts"
   }
 }

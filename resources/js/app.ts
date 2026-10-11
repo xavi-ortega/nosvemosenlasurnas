@@ -53,11 +53,15 @@ async function load(): Promise<void> {
 function citation(c: Citation): HTMLElement {
     const details = e('details'); details.append(e('summary', t('citation')));
     const document = bank.documents.find(d => d.id === c.documentId)!;
-    details.append(e('blockquote', c.context), e('p', `${t('page')} ${c.locator.page}; ${t('line')} ${c.locator.line}.`), p('interpretation'));
+    const location = document.mediaType === 'text/html'
+        ? (c.locator.section === undefined ? '' : `${t('section')} ${c.locator.section}; `) + `${t('line')} ${c.locator.line}.`
+        : `${t('page')} ${c.locator.page}; ${t('line')} ${c.locator.line}.`;
+    details.append(e('blockquote', c.context), e('p', location), p('interpretation'));
     if (bank.kind === 'synthetic') {
         details.append(p('synthetic_original'));
     } else {
-        const link = e('a', t('original')); const url = new URL(document.url); url.hash = `page=${c.locator.page}`;
+        const link = e('a', t('original')); const url = new URL(document.url);
+        if (document.mediaType !== 'text/html') url.hash = `page=${c.locator.page}`;
         link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.referrerPolicy = 'no-referrer'; details.append(link);
     }
     return details;

@@ -304,3 +304,22 @@ test('optional draft metadata keeps booleans and rejects string readiness flags'
     assert.equal(draft.releaseEligible, false);
     for (const invalid of [{ draft: 'false' }, { releaseEligible: 'true' }]) assert.throws(() => parseBank({ ...structuredClone(bank), ...invalid }));
 });
+
+test('HTML section locators preserve scores and reject invalid or non-HTML sections', () => {
+    const copy = structuredClone(bank);
+    copy.documents[0].mediaType = 'text/html';
+    const citation = copy.positions.alpha['housing-1'].citations[0];
+    citation.locator.section = 2;
+
+    const parsed = parseBank(copy);
+
+    assert.equal(parsed.positions.alpha['housing-1'].citations[0].locator.section, 2);
+    assert.deepEqual(match(parsed, answers, {}, cohort), match(bank, answers, {}, cohort));
+    for (const section of [0, -1, 1.5]) {
+        citation.locator.section = section;
+        assert.throws(() => parseBank(copy));
+    }
+    citation.locator.section = 2;
+    copy.documents[0].mediaType = 'application/pdf';
+    assert.throws(() => parseBank(copy));
+});

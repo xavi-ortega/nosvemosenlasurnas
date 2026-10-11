@@ -337,3 +337,27 @@ test('result highlights preserve sparse evidence and never treat unsure or skip 
     await expect(page.locator('.result-highlights')).toHaveCount(0);
     await expect(page.locator('.result [data-question-id]')).toHaveCount(0);
 });
+
+test('HTML citations show sections and preserve original links while PDFs retain page links', async ({ page }) => {
+    await page.route('**/api/bank', async route => {
+        const response = await route.fetch();
+        const bank = await response.json();
+        bank.kind = 'historical';
+        for (const document of bank.documents) document.kind = 'historical';
+        bank.documents[0].mediaType = 'text/html';
+        for (const position of Object.values(bank.positions.alpha) as { citations: { locator: { section?: number } }[] }[]) {
+            for (const citation of position.citations) citation.locator.section = 2;
+        }
+        const body = JSON.stringify(bank);
+        await route.fulfill({ response, body, headers: { ...response.headers(), 'x-evidence-sha256': createHash('sha256').update(body).digest('hex') } });
+    });
+
+    await page.goto('/comparison');
+    await page.getByText('Leer cita y contexto', { exact: true }).first().click();
+
+    const html = page.locator('details').filter({ has: page.locator('a[href="https://fixture.invalid/alpha"]') }).first();
+    await expect(html).toContainText('Sección 2; Línea 3.');
+    await expect(html).not.toContainText('Página');
+    await expect(html.getByRole('link', { name: 'Abrir documento original' })).toHaveAttribute('href', 'https://fixture.invalid/alpha');
+    await expect(page.locator('a[href="https://fixture.invalid/beta#page=1"]').first()).toHaveAttribute('referrerpolicy', 'no-referrer');
+});

@@ -3,7 +3,7 @@ export type Answer = Scale | 'unsure' | 'skip';
 export type Answers = Record<string, Answer>;
 export type Priorities = Record<string, 0 | 1 | 2>;
 export interface Question { id: string; topicId: string; familyId: string; text: string; help?: string; level: 'general' | 'specific' }
-export interface Citation { documentId: string; start: number; end: number; quote: string; context: string; locator: { page: number; line: number } }
+export interface Citation { documentId: string; start: number; end: number; quote: string; context: string; locator: { page: number; line: number; section?: number } }
 export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value: Scale | null; citations: Citation[]; rationale?: string }
 export interface Bank {
     schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
@@ -11,7 +11,7 @@ export interface Bank {
     topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
     comparisonPolicy?: 'fixed-bank-evidence-v1'; draft?: boolean; releaseEligible?: boolean;
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
-    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
+    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string; mediaType?: 'application/pdf' | 'text/html' }[];
     positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
 }
 const idPattern = /^[a-z][a-z0-9_-]{0,63}$/;
@@ -53,6 +53,7 @@ export function parseBank(value: unknown): Bank {
             ensure(d.electionId === b.election.id && d.kind === b.kind && b.candidacies.some(c => c.id === d.candidacyId));
             ensure(/^[a-f0-9]{64}$/.test(d.sha256) && /^[a-f0-9]{64}$/.test(d.textSha256) && datePattern.test(d.validFrom) && datePattern.test(d.validUntil) && d.validFrom <= b.asOf && b.asOf <= d.validUntil);
             ensure(!Object.hasOwn(d, 'text'));
+            ensure(d.mediaType === undefined || ['application/pdf', 'text/html'].includes(d.mediaType));
         }
         ensure(Object.keys(b.positions).length === b.candidacies.length);
         for (const c of b.candidacies) {
@@ -67,6 +68,7 @@ export function parseBank(value: unknown): Bank {
                 for (const citation of p.citations) {
                     const d = b.documents.find(d => d.id === citation.documentId);
                     ensure(d && d.candidacyId === c.id && safeText(citation.quote) && safeText(citation.context) && citation.context.includes(citation.quote));
+                    ensure(citation.locator.section === undefined || (d?.mediaType === 'text/html' && Number.isInteger(citation.locator.section) && citation.locator.section > 0));
                     ensure(Number.isInteger(citation.start) && Number.isInteger(citation.end) && citation.start >= 0 && citation.end > citation.start && Number.isInteger(citation.locator.page) && citation.locator.page > 0 && Number.isInteger(citation.locator.line) && citation.locator.line > 0);
                 }
             }

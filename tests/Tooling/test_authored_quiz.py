@@ -65,6 +65,37 @@ class AuthoredQuizTest(unittest.TestCase):
             self.assertNotIn("text", bank["documents"][0])
             self.assertFalse((root / "resources/evidence/current.json").exists())
 
+    def test_html_citations_preserve_a_verified_section_and_reject_an_outside_section(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            inventory = files["2023-source-inventory.json"]
+            inventory["acquisitions"][0]["mediaType"] = "text/html; charset=UTF-8"
+            (root / "outputs/2023-source-inventory.json").write_text(json.dumps(inventory))
+            notebook_path = root / "outputs/notebook.json"
+            notebook = json.loads(notebook_path.read_text())
+            notebook["coverage"] = [{"sectionNumber": 2, "start": 0, "end": 39}]
+            notebook_path.write_text(json.dumps(notebook))
+            matrix = files["2023-authored-issue-matrix.json"]
+            citation = matrix["issues"][0]["cells"][0]["citations"][0]
+            citation["pdfPage"] = None
+            citation["htmlSection"] = 2
+            citation["notebookSha256"] = assembler.digest(notebook_path.read_bytes())
+            matrix_path = root / "outputs/2023-authored-issue-matrix.json"
+            matrix_path.write_text(json.dumps(matrix))
+
+            bank = assembler.assemble(root)
+
+            self.assertEqual(bank["documents"][0]["mediaType"], "text/html")
+            result = bank["positions"]["fixture-a"]["fixture-question"]
+            self.assertEqual(result["value"], 2)
+            self.assertEqual(result["citations"][0]["locator"]["section"], 2)
+            self.assertEqual(result["citations"][0]["quote"], "café proposal.")
+            citation["htmlSection"] = 3
+            matrix_path.write_text(json.dumps(matrix))
+            with self.assertRaises(ValueError):
+                assembler.assemble(root)
+
     def test_preserves_explicit_comparison_policy_and_rejects_an_unknown_policy(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

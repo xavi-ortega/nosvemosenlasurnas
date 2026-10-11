@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T17:56:31.429978+00:00",
+  "recordedAt": "2026-10-11T18:03:03.217046+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -605,12 +605,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone viviendas de alquiler y rehabilitación en zonas despobladas, sin concretar un precio máximo para alquileres privados.",
+          "authoredAnalysis": "A housing bank, public buildings converted to social/regulatory rentals and rehabilitation are not a general binding private-rental ceiling in high-price areas.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 6141,
+              "end": 6916,
+              "quote": "5- Apostaremos por una política de vivienda que haga frente a la actual problemática de escasez de la misma y permita el establecimiento de población, a través de:\n\nLa creación de un banco de viviendas de alquiler.\n\nAyudas a la rehabilitación de viviendas en las zonas despobladas vinculadas al alquiler o como primera residencia.\n\nEl desarrollo de construcción de viviendas de protección oficial.\n\nLa actuación sobre el problema de inmuebles en ruinas y abandonados en las áreas despobladas y centros históricos, impulsando un cambio normativo que agilice la tramitación de los expedientes de ruina.\n\nLa conversión de edificios públicos en desuso, en viviendas de alquiler social o regulado en pueblos afectados por la despoblación o para su conversión en centros coworking.",
+              "contextStart": 6141,
+              "contextEnd": 6916,
+              "contextSha256": "1759c189cb3f72354998b2bfd5d47952e064634641d82532f9f32a128e18ddef"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -1498,10 +1520,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -2275,12 +2301,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más financiación y profesionales sanitarios en Soria, sin concretar ampliar los servicios dentales públicos.",
+          "authoredAnalysis": "Medical/nursing training capacity and health investment do not name dental portfolio expansion.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27072,
+              "end": 27300,
+              "quote": "68.- Reclamaremos una mejora de la financiación de la provincia y la Comunidad, atendiendo a los factores de dispersión demográfica y extensión del territorio, que permita incrementar la inversión en gasto sanitario y educativo.",
+              "contextStart": 27072,
+              "contextEnd": 27300,
+              "contextSha256": "04f1d4cff030cc458bc289c999fd897b82400239b4318165df0e99c3af9c3b24"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27302,
+              "end": 27483,
+              "quote": "69.- Ampliación de plazas MIR y EIR, así como agilización de los procesos de convalidación de títulos para ayudar a cubrir el vacío de profesionales sanitarios en nuestra provincia.",
+              "contextStart": 27302,
+              "contextEnd": 27483,
+              "contextSha256": "0af309b4c9b50bdbaf3b1ae19b2af980b23ff1ddc2b78a4fb3b2f0e96f0cab63"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -3164,12 +3229,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone beneficios locales de las energías renovables, sin concretar qué haría con la vida útil de las centrales nucleares.",
+          "authoredAnalysis": "Territorial renewable benefits do not specify existing nuclear plant extension/closure.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 22149,
+              "end": 22457,
+              "quote": "54- Fomentaremos el establecimiento de una línea normativa que permita que las provincias “donantes de energía”, a través de renovables, obtengan beneficios fiscales y económicos en el propio territorio. Todo ello de acuerdo con la protección de los intereses medioambientales y paisajísticos del territorio.",
+              "contextStart": 22149,
+              "contextEnd": 22457,
+              "contextSha256": "28999826e64cc38e9adf7efd9cf7fa69393fa14252ae1f3ce9cac17b39f4cd98"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -3915,12 +4002,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir impuestos en tres provincias despobladas, sin concretar exención de herencias de padres a hijos.",
+          "authoredAnalysis": "Unspecified main-tax liability cuts do not name succession taxation or establish kinship exemption.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 13763,
+              "end": 14108,
+              "quote": "29- Propondremos la puesta en marcha de un conjunto de medidas fiscales especiales en las zonas despobladas. Reducción efectiva del 50% de la Cuota Íntegra de las principales figuras impositivas para trabajadores y empresas que operan en las provincias reconocidas por la Unión Europea como regiones escasamente pobladas (Soria, Cuenca, Teruel).",
+              "contextStart": 13763,
+              "contextEnd": 14108,
+              "contextSha256": "7dd6fc13f31b039c6aabc248253a5ddf832b9a891b03024e53e7f3115d085291"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -4682,10 +4791,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -5458,12 +5571,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar líneas y frecuencias ferroviarias, sin concretar limitar vuelos que tengan alternativa en tren.",
+          "authoredAnalysis": "Rail building and service increases do not restrict flight routes.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 10629,
+              "end": 10779,
+              "quote": "17- Estudio Informativo y proyecto de adecuación y construcción de vía doble electrificada Torralba – Soria – Castejón mixta de viajeros y mercancías.",
+              "contextStart": 10629,
+              "contextEnd": 10779,
+              "contextSha256": "9737c5e23fa48fe046025210acc44cd5d5364ebdb01fd703f601e508f8774365"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 11221,
+              "end": 11345,
+              "quote": "19.- Incremento de frecuencias en la línea ferroviaria Soria- Madrid-Soria y en la línea Zaragoza – Arcos de Jalón – Madrid.",
+              "contextStart": 11221,
+              "contextEnd": 11345,
+              "contextSha256": "1e8fd3a943abd31c708e3cbf2819774e098c797b7495f7e02a8829a1383c351b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -6231,10 +6383,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -6918,10 +7074,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -7743,10 +7903,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -8554,10 +8718,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -9212,12 +9380,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir impuestos en tres provincias despobladas, sin concretar exención de la pensión de jubilación.",
+          "authoredAnalysis": "Territorial tax cuts for workers/firms do not specify contributory retirement income exemption.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 13763,
+              "end": 14108,
+              "quote": "29- Propondremos la puesta en marcha de un conjunto de medidas fiscales especiales en las zonas despobladas. Reducción efectiva del 50% de la Cuota Íntegra de las principales figuras impositivas para trabajadores y empresas que operan en las provincias reconocidas por la Unión Europea como regiones escasamente pobladas (Soria, Cuenca, Teruel).",
+              "contextStart": 13763,
+              "contextEnd": 14108,
+              "contextSha256": "7dd6fc13f31b039c6aabc248253a5ddf832b9a891b03024e53e7f3115d085291"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -9934,12 +10124,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone convertir edificios públicos en viviendas de alquiler social, sin concretar una prohibición de vender viviendas públicas.",
+          "authoredAnalysis": "Public building reuse and protected housing construction do not impose permanent public ownership/non-alienation.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 6141,
+              "end": 6916,
+              "quote": "5- Apostaremos por una política de vivienda que haga frente a la actual problemática de escasez de la misma y permita el establecimiento de población, a través de:\n\nLa creación de un banco de viviendas de alquiler.\n\nAyudas a la rehabilitación de viviendas en las zonas despobladas vinculadas al alquiler o como primera residencia.\n\nEl desarrollo de construcción de viviendas de protección oficial.\n\nLa actuación sobre el problema de inmuebles en ruinas y abandonados en las áreas despobladas y centros históricos, impulsando un cambio normativo que agilice la tramitación de los expedientes de ruina.\n\nLa conversión de edificios públicos en desuso, en viviendas de alquiler social o regulado en pueblos afectados por la despoblación o para su conversión en centros coworking.",
+              "contextStart": 6141,
+              "contextEnd": 6916,
+              "contextSha256": "1759c189cb3f72354998b2bfd5d47952e064634641d82532f9f32a128e18ddef"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -10764,10 +10976,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -11564,10 +11780,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -12290,12 +12510,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone terminar una presa y apoyar beneficios locales de las renovables, sin concretar gestión pública de hidroeléctricas al caducar concesiones.",
+          "authoredAnalysis": "Dam construction and renewable territorial revenue do not prescribe expiry-based operator transfer.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 11347,
+              "end": 11465,
+              "quote": "20- Hidráulicas. Impulsaremos la finalización de las obras de la presa del Rio Mayor, ya prometida en el PAES de 2005.",
+              "contextStart": 11347,
+              "contextEnd": 11465,
+              "contextSha256": "9dafecf077d04d92e106aa8d4c17f17f608e9e2ad49bf6d3f66b3551ce9f1c3c"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 22149,
+              "end": 22457,
+              "quote": "54- Fomentaremos el establecimiento de una línea normativa que permita que las provincias “donantes de energía”, a través de renovables, obtengan beneficios fiscales y económicos en el propio territorio. Todo ello de acuerdo con la protección de los intereses medioambientales y paisajísticos del territorio.",
+              "contextStart": 22149,
+              "contextEnd": 22457,
+              "contextSha256": "28999826e64cc38e9adf7efd9cf7fa69393fa14252ae1f3ce9cac17b39f4cd98"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -12963,10 +13222,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -13634,10 +13897,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -14359,10 +14626,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -15029,10 +15300,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -15681,10 +15956,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -16449,12 +16728,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone formación profesional para empresas y trabajadores, sin concretar remuneración de prácticas curriculares.",
+          "authoredAnalysis": "General skills development is not a student placement remuneration rule.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27485,
+              "end": 27853,
+              "quote": "70.- Propondremos crear un programa específico que incluya formación y capacitación profesional dirigido tanto a empresarios como a trabajadores, centrado en el desarrollo de habilidades y competencias necesarias para el emprendimiento, la gestión empresarial, la promoción del liderazgo en las zonas rurales y la especialización laboral, atendiendo a sus necesidades.",
+              "contextStart": 27485,
+              "contextEnd": 27853,
+              "contextSha256": "4fb5ce0e3b493127e8610f6a7729be9694d1d494a7d3e1e3c57c1f161fc3df80"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -17233,12 +17534,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone adaptar servicios para conciliar trabajo y cuidados en zonas despobladas, sin concretar permisos de al menos seis meses.",
+          "authoredAnalysis": "Conciliation services for rural women do not establish birth-leave duration.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 7132,
+              "end": 7446,
+              "quote": "7- Ayudaremos a las mujeres en las zonas despobladas, como una de las claves para revertir la despoblación, sobre todo aquellas que se dedican o cuentan con explotaciones agrarias familiares, especializando y adaptando los servicios de conciliación familiar, de manera que permitan el desempeño de sus actividades.",
+              "contextStart": 7132,
+              "contextEnd": 7446,
+              "contextSha256": "680033276739eb1538fcc131dd38e0ac4664ad61fd7f7cf4e582ad25e800c671"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-026",
@@ -17896,10 +18219,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -18532,10 +18859,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -19183,12 +19514,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone becas y deducciones para estudiantes de zonas despobladas, sin concretar eliminar el recargo por repetir asignaturas.",
+          "authoredAnalysis": "Rural travel-based grants/tax deductions do not remove repeat-enrolment fees.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27939,
+              "end": 28265,
+              "quote": "72- Lucharemos porque se incluya, como factor específico en la concesión de becas, la procedencia del alumnado de zonas despobladas, atendiendo a las especiales necesidades que conlleva la residencia en estas áreas y su problemática de desplazamientos, así como la implementación de deducciones en el IRPF para estos supuestos",
+              "contextStart": 27939,
+              "contextEnd": 28265,
+              "contextSha256": "144d6f02888281f05e15c7ec390805f88039095083132990c00a3d560e99c9bc"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -19855,10 +20208,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -20556,12 +20913,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una tarifa de 80 euros para autónomos en zonas despobladas, sin concretar exención por ingresos inferiores al salario mínimo.",
+          "authoredAnalysis": "A territorial flat fee does not define low-net-income exemption or expressly reject the exact income threshold.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 14110,
+              "end": 14335,
+              "quote": "30- Pediremos una tarifa plana de 80 euros para autónomos que fijen su sede de trabajo en territorios despoblados, flexibilizando y adaptando los requisitos legales para su implantación a la realidad de las zonas despobladas.",
+              "contextStart": 14110,
+              "contextEnd": 14335,
+              "contextSha256": "e16cdbf81d29d262d7acd1edf18f8ae29e6a9c9db8a26fa3e4f679bb9f1c5747"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -21313,12 +21692,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ayudas para rehabilitar viviendas como primera residencia, sin concretar exención del impuesto por la primera compra.",
+          "authoredAnalysis": "Rehabilitation grants and first residence eligibility do not abolish VAT on first home purchase.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 6141,
+              "end": 6916,
+              "quote": "5- Apostaremos por una política de vivienda que haga frente a la actual problemática de escasez de la misma y permita el establecimiento de población, a través de:\n\nLa creación de un banco de viviendas de alquiler.\n\nAyudas a la rehabilitación de viviendas en las zonas despobladas vinculadas al alquiler o como primera residencia.\n\nEl desarrollo de construcción de viviendas de protección oficial.\n\nLa actuación sobre el problema de inmuebles en ruinas y abandonados en las áreas despobladas y centros históricos, impulsando un cambio normativo que agilice la tramitación de los expedientes de ruina.\n\nLa conversión de edificios públicos en desuso, en viviendas de alquiler social o regulado en pueblos afectados por la despoblación o para su conversión en centros coworking.",
+              "contextStart": 6141,
+              "contextEnd": 6916,
+              "contextSha256": "1759c189cb3f72354998b2bfd5d47952e064634641d82532f9f32a128e18ddef"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -22003,10 +22404,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -22656,10 +23061,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -23326,10 +23735,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -24017,10 +24430,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -24688,12 +25105,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una ayuda para trasladarse a zonas despobladas, con cinco años de permanencia y actividad laboral, sin concretar 20.000 euros para cada joven a los 23 años.",
+          "authoredAnalysis": "The one-off relocation grant is conditional on both five-year residence and labour activity, with no amount or age23 entitlement. Do not import a different universal transfer.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 7448,
+              "end": 8725,
+              "quote": "8- Abogaremos por la creación de un plan de financiación estatal que favorezca la movilidad de familias desde las grandes ciudades a áreas despobladas mediante la entrega de una cantidad única para su establecimiento, vinculándolo a un permanencia mínima de cinco años y al ejercicio de una actividad laboral. Planes similares han logrado éxitos en países como Japón mediante el denominado Plan Tokio.\n\nINFRAESTRUCTURAS\n\nLas infraestructuras como una de las reivindicaciones históricas que nos han llevado a dar el paso. Estas condicionan el desarrollo económico y la calidad de vida de las personas. Sin conexiones eficientes con la red viaria y ferroviaria estatal, el desarrollo de nuestra provincia será inviable. Por ello, reivindicaremos la deuda histórica en infraestructuras que el Estado mantiene con nuestra provincia.\n\nHay nueve corredores de transporte (viarios y ferroviarios) en Europa. Dos de ellos en la Península Ibérica: Atlántico y Mediterráneo. Según el diseño que se está planificando, Soria queda excluida de ambos. Esto supondrá que quedemos fuera de los sistemas de transporte modernos, tanto de mercancías como de viajeros, perdiendo así una oportunidad de cohesionar socialmente el territorio soriano y ser agentes activos en el mercado común europeo.",
+              "contextStart": 7448,
+              "contextEnd": 8725,
+              "contextSha256": "e6ea7c3ddf3f4ba9e097e2f6689f0b0d1cd1baa63ae517287e06297acb8e03f9"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -25446,10 +25885,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -26102,10 +26545,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -26793,10 +27240,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -27445,10 +27896,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -28098,10 +28553,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -28804,12 +29263,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone atención personalizada y puntos comarcales para hacer trámites, sin concretar que todos los trámites puedan hacerse en persona.",
+          "authoredAnalysis": "Personalised service can be provided through different channels; physical access points in depopulated areas do not establish universal in-person access to all procedures without compulsory online replacement.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5616,
+              "end": 6139,
+              "quote": "4- Propondremos la creación de ventanillas únicas comarcales contra la despoblación que funcionen como puntos dinamizadores donde coordinar los recursos públicos en contacto con la realidad de la zona. Actuarán fomentando el emprendimiento, la gestión de proyectos, la formación, el relevo generacional, la mejora de la coordinación público privada y la alfabetización digital.\n\nEstas agencias funcionarán simultáneamente como puntos de acceso en las áreas despobladas para la realización de trámites con la Administración.",
+              "contextStart": 5616,
+              "contextEnd": 6139,
+              "contextSha256": "35fa11bdbc53061cd66c6a2d117906118ae37981357edbfd18d9c818e00ed572"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 23890,
+              "end": 24169,
+              "quote": "59- Lucharemos por la eliminación de la brecha digital de nuestros mayores y de su exclusión financiera. Exigiremos a las administraciones y empresas de servicios el mantenimiento de la atención personalizada. Solicitaremos a la administración un uso razonable de la cita previa.",
+              "contextStart": 23890,
+              "contextEnd": 24169,
+              "contextSha256": "e16fc5c8c106eb49917737321566b30931855df1bcf93123ad00392e128b108b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -29580,10 +30078,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -30216,10 +30718,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -30852,10 +31358,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -31508,10 +32018,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -32161,10 +32675,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -32863,12 +33381,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar la banda ancha en Soria, sin concretar una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Broadband infrastructure/administrative access does not establish universal free service.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 11984,
+              "end": 12469,
+              "quote": "23- Reivindicaremos que las promesas incumplidas desde 2005, de dotar de una conectividad efectiva a la provincia, se cumplan, permitiendo el desarrollo de las actividades, tanto laborales como comerciales y empresariales en el ámbito privado, así como la prestación, por parte de la administración, de los servicios públicos, permitiendo la interacción de los ciudadanos con los mismos. 162 de los 183 municipios de la provincia carecen de acceso a la banda ancha de nueva generación.",
+              "contextStart": 11984,
+              "contextEnd": 12469,
+              "contextSha256": "ea93046b6847ad6d215406b7474520b2f099aa0a08e919f4db263c820891d692"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -33736,12 +34276,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone tratar aguas residuales y reparar redes de agua, sin concretar gestión pública de todo el suministro doméstico.",
+          "authoredAnalysis": "Water quality and leak prevention do not establish provider ownership/operator status.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 22459,
+              "end": 22709,
+              "quote": "55- Haremos del agua un objetivo prioritario instando la aplicación de la directiva marco 91/271 CEE para el tratamiento de todas las aguas residuales así como la intervención integral de las redes de abastecimiento minimizando las pérdidas de caudal",
+              "contextStart": 22459,
+              "contextEnd": 22709,
+              "contextSha256": "f93783e0e8cb94760d266f2275c3fac948e6d6b0f47db3b5731a1e5cad0bbb78"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -34481,10 +35043,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -35219,12 +35785,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone adaptar servicios para conciliar trabajo y cuidados, sin concretar reducción de jornada por hijos menores de 16 años.",
+          "authoredAnalysis": "Rural conciliation services do not define reduced-hours age eligibility.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 7132,
+              "end": 7446,
+              "quote": "7- Ayudaremos a las mujeres en las zonas despobladas, como una de las claves para revertir la despoblación, sobre todo aquellas que se dedican o cuentan con explotaciones agrarias familiares, especializando y adaptando los servicios de conciliación familiar, de manera que permitan el desempeño de sus actividades.",
+              "contextStart": 7132,
+              "contextEnd": 7446,
+              "contextSha256": "680033276739eb1538fcc131dd38e0ac4664ad61fd7f7cf4e582ad25e800c671"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -35912,10 +36500,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -36531,10 +37123,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -37168,10 +37764,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -37785,12 +38385,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone apoyar pequeñas explotaciones agrícolas y ganaderas, sin concretar prohibir el glifosato.",
+          "authoredAnalysis": "Farm support/training do not name glyphosate approval or prohibition.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 20398,
+              "end": 21112,
+              "quote": "49- Apoyaremos al sector agrícola y ganadero, mediante:\n\nUn sistema que garantice un precio justo para los productores\n\nLa reducción de la carga burocrática para las explotaciones.\n\nEl acceso de los agricultores y ganaderos a formación específica para la mejora en el rendimiento de sus explotaciones.\n\nLa creación de un portal agrícola para la venta directa por parte de los agricultores y ganaderos de sus productos.\n\nLa elaboración de una ley que favorezca las pequeñas explotaciones agrícolas y ganaderas familiares, ya que son las predominantes en nuestra provincia, y están fuertemente comprometidas con el territorio y el medio ambiente.\n\nIncentivos para la incorporación de nuevos agricultores y ganaderos.",
+              "contextStart": 20398,
+              "contextEnd": 21112,
+              "contextSha256": "3f33f2a02e2ce3a5239c0ad79f9ebddbc50fcd847a4b87fd0f83728a9ac54fc9"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -38406,10 +39028,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -39059,10 +39685,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -39695,10 +40325,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -40382,10 +41016,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -41066,12 +41704,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más financiación y profesionales sanitarios, sin concretar incluir psicoterapia en los servicios públicos.",
+          "authoredAnalysis": "General funding and residency capacity do not define psychotherapy entitlement.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27072,
+              "end": 27300,
+              "quote": "68.- Reclamaremos una mejora de la financiación de la provincia y la Comunidad, atendiendo a los factores de dispersión demográfica y extensión del territorio, que permita incrementar la inversión en gasto sanitario y educativo.",
+              "contextStart": 27072,
+              "contextEnd": 27300,
+              "contextSha256": "04f1d4cff030cc458bc289c999fd897b82400239b4318165df0e99c3af9c3b24"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27302,
+              "end": 27483,
+              "quote": "69.- Ampliación de plazas MIR y EIR, así como agilización de los procesos de convalidación de títulos para ayudar a cubrir el vacío de profesionales sanitarios en nuestra provincia.",
+              "contextStart": 27302,
+              "contextEnd": 27483,
+              "contextSha256": "0af309b4c9b50bdbaf3b1ae19b2af980b23ff1ddc2b78a4fb3b2f0e96f0cab63"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -41792,10 +42469,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -42428,10 +43109,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -43097,12 +43782,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una tarifa de 80 euros para autónomos en zonas despobladas, sin concretar exención de cuota durante el primer año.",
+          "authoredAnalysis": "The geographic flat fee does not specify first-year entry exemption; absence is not opposition.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 14110,
+              "end": 14335,
+              "quote": "30- Pediremos una tarifa plana de 80 euros para autónomos que fijen su sede de trabajo en territorios despoblados, flexibilizando y adaptando los requisitos legales para su implantación a la realidad de las zonas despobladas.",
+              "contextStart": 14110,
+              "contextEnd": 14335,
+              "contextSha256": "e16cdbf81d29d262d7acd1edf18f8ae29e6a9c9db8a26fa3e4f679bb9f1c5747"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -43872,12 +44579,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir impuestos en Soria, Cuenca y Teruel, sin concretar descontar la inflación al calcular el impuesto sobre la renta.",
+          "authoredAnalysis": "A50%tax-liability reduction in three sparsely populated provinces is not price indexation of income-tax calculation.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 13763,
+              "end": 14108,
+              "quote": "29- Propondremos la puesta en marcha de un conjunto de medidas fiscales especiales en las zonas despobladas. Reducción efectiva del 50% de la Cuota Íntegra de las principales figuras impositivas para trabajadores y empresas que operan en las provincias reconocidas por la Unión Europea como regiones escasamente pobladas (Soria, Cuenca, Teruel).",
+              "contextStart": 13763,
+              "contextEnd": 14108,
+              "contextSha256": "7dd6fc13f31b039c6aabc248253a5ddf832b9a891b03024e53e7f3115d085291"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -44665,10 +45394,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -45300,12 +46033,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar plazas de formación médica y enfermera, sin concretar que médicos de familia y pediatras trabajen hasta los 72 años.",
+          "authoredAnalysis": "Training/degree-recognition capacity does not change retirement/work-age permission for the two named specialties.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 27302,
+              "end": 27483,
+              "quote": "69.- Ampliación de plazas MIR y EIR, así como agilización de los procesos de convalidación de títulos para ayudar a cubrir el vacío de profesionales sanitarios en nuestra provincia.",
+              "contextStart": 27302,
+              "contextEnd": 27483,
+              "contextSha256": "0af309b4c9b50bdbaf3b1ae19b2af980b23ff1ddc2b78a4fb3b2f0e96f0cab63"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -46006,10 +46761,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -46641,12 +47400,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un uso razonable de la cita previa, sin concretar un plazo máximo de 15 días naturales.",
+          "authoredAnalysis": "Reasonable appointments have no numeric calendar-day deadline or state-benefit scope.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 23890,
+              "end": 24169,
+              "quote": "59- Lucharemos por la eliminación de la brecha digital de nuestros mayores y de su exclusión financiera. Exigiremos a las administraciones y empresas de servicios el mantenimiento de la atención personalizada. Solicitaremos a la administración un uso razonable de la cita previa.",
+              "contextStart": 23890,
+              "contextEnd": 24169,
+              "contextSha256": "e16fc5c8c106eb49917737321566b30931855df1bcf93123ad00392e128b108b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -47345,12 +48126,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone atención personalizada, sin concretar quién toma las decisiones públicas que requieren valorar cada caso.",
+          "authoredAnalysis": "A personalised service front-end does not govern human-versus-automated discretionary final decisions.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 23890,
+              "end": 24169,
+              "quote": "59- Lucharemos por la eliminación de la brecha digital de nuestros mayores y de su exclusión financiera. Exigiremos a las administraciones y empresas de servicios el mantenimiento de la atención personalizada. Solicitaremos a la administración un uso razonable de la cita previa.",
+              "contextStart": 23890,
+              "contextEnd": 24169,
+              "contextSha256": "e16fc5c8c106eb49917737321566b30931855df1bcf93123ad00392e128b108b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -48069,10 +48872,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -48794,12 +49601,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone medidas de vivienda en zonas despobladas, sin concretar avales de hipotecas para jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Rental/rehabilitation supply is not an age-specific public mortgage guarantee.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 6141,
+              "end": 6916,
+              "quote": "5- Apostaremos por una política de vivienda que haga frente a la actual problemática de escasez de la misma y permita el establecimiento de población, a través de:\n\nLa creación de un banco de viviendas de alquiler.\n\nAyudas a la rehabilitación de viviendas en las zonas despobladas vinculadas al alquiler o como primera residencia.\n\nEl desarrollo de construcción de viviendas de protección oficial.\n\nLa actuación sobre el problema de inmuebles en ruinas y abandonados en las áreas despobladas y centros históricos, impulsando un cambio normativo que agilice la tramitación de los expedientes de ruina.\n\nLa conversión de edificios públicos en desuso, en viviendas de alquiler social o regulado en pueblos afectados por la despoblación o para su conversión en centros coworking.",
+              "contextStart": 6141,
+              "contextEnd": 6916,
+              "contextSha256": "1759c189cb3f72354998b2bfd5d47952e064634641d82532f9f32a128e18ddef"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -49486,10 +50315,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -50187,12 +51020,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone adaptar la atención a la dependencia en zonas despobladas, sin concretar reconocimiento automático por diagnóstico de esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Rural care funding/carer bonuses do not define an ALS diagnosis eligibility rule.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 23531,
+              "end": 23888,
+              "quote": "58- Impulsaremos la dotación presupuestaria de Ley de Dependencia y su revisión para adaptarla a las necesidades específicas que implican la prestación de estos servicios en zonas despobladas, incluyendo la figura especial del cuidador rural, adaptando su figura a las particularidades de estas zonas, aplicando bonificaciones al desempeño de sus funciones.",
+              "contextStart": 23531,
+              "contextEnd": 23888,
+              "contextSha256": "ba2f8a3c9007a81434eedee1719c7d951bd7ac298acebc53951f1c91eee0666a"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -50809,10 +51664,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -51446,10 +52305,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -52118,12 +52981,34 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone puntos comarcales para acceder a trámites, sin concretar intermediarios que actúen en nombre de las personas.",
+          "authoredAnalysis": "Access points/coordination do not explicitly establish an authorised proxy performing procedures on a citizen behalf.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5616,
+              "end": 6139,
+              "quote": "4- Propondremos la creación de ventanillas únicas comarcales contra la despoblación que funcionen como puntos dinamizadores donde coordinar los recursos públicos en contacto con la realidad de la zona. Actuarán fomentando el emprendimiento, la gestión de proyectos, la formación, el relevo generacional, la mejora de la coordinación público privada y la alfabetización digital.\n\nEstas agencias funcionarán simultáneamente como puntos de acceso en las áreas despobladas para la realización de trámites con la Administración.",
+              "contextStart": 5616,
+              "contextEnd": 6139,
+              "contextSha256": "35fa11bdbc53061cd66c6a2d117906118ae37981357edbfd18d9c818e00ed572"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -52842,12 +53727,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone subvencionar billetes con origen o destino en Soria y recuperar frecuencias de autobús, sin concretar transporte a demanda a un municipio de referencia.",
+          "authoredAnalysis": "Interregional ticket aid and pre-pandemic frequencies are not a new demand-responsive rural route or defined reference destination.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 12471,
+              "end": 12654,
+              "quote": "24- Apostaremos por mantener la subvención de una parte sustancial de los billetes de transporte de viajeros interautonómicos por carretera y ferrocarril con origen y destino en Soria",
+              "contextStart": 12471,
+              "contextEnd": 12654,
+              "contextSha256": "556b934cbda9075a531c385e8a40594f7c8914df99bec3650ac489132a374dfc"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 12656,
+              "end": 12769,
+              "quote": "25- Pediremos el restablecimiento de las frecuencias de las líneas de autobuses al estado anterior a la pandemia.",
+              "contextStart": 12656,
+              "contextEnd": 12769,
+              "contextSha256": "3861aee8c598ceae80dce920ac2cba266398bf34afc1237d3490b495498035cd"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -53615,12 +54539,51 @@
         },
         {
           "candidacyId": "boe-2023-024",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone apoyar ganadería familiar y extensiva, sin concretar prohibir alimentar animales por la fuerza.",
+          "authoredAnalysis": "The supported farming models do not impose a prohibition on the specific feeding mechanism.",
+          "citations": [
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 20398,
+              "end": 21112,
+              "quote": "49- Apoyaremos al sector agrícola y ganadero, mediante:\n\nUn sistema que garantice un precio justo para los productores\n\nLa reducción de la carga burocrática para las explotaciones.\n\nEl acceso de los agricultores y ganaderos a formación específica para la mejora en el rendimiento de sus explotaciones.\n\nLa creación de un portal agrícola para la venta directa por parte de los agricultores y ganaderos de sus productos.\n\nLa elaboración de una ley que favorezca las pequeñas explotaciones agrícolas y ganaderas familiares, ya que son las predominantes en nuestra provincia, y están fuertemente comprometidas con el territorio y el medio ambiente.\n\nIncentivos para la incorporación de nuevos agricultores y ganaderos.",
+              "contextStart": 20398,
+              "contextEnd": 21112,
+              "contextSha256": "3f33f2a02e2ce3a5239c0ad79f9ebddbc50fcd847a4b87fd0f83728a9ac54fc9"
+            },
+            {
+              "documentId": "soriaya-2023-programme-html",
+              "sourceUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
+              "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+              "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+              "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+              "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 22711,
+              "end": 22901,
+              "quote": "56- Impulsaremos un Plan Estatal de Ayuda a la Ganadería Extensiva y a la Trashumancia como factor fundamental en la lucha contra incendios y el mantenimiento de ecosistemas y biodiversidad.",
+              "contextStart": 22711,
+              "contextEnd": 22901,
+              "contextSha256": "8118fdd221499d2b774490aece394ca81b3690c774d63a6b861f2707dda51020"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -54237,10 +55200,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -54975,10 +55942,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -55716,10 +56687,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",
@@ -56386,10 +57361,14 @@
           "candidacyId": "boe-2023-024",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de Soria ¡Ya! no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with allnine complete sections and73measures did not establish this exact proposition and scope. Silence is neither neutral nor opposed; no other ballot or election inheritance.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "soriaya-2023-programme-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-025",

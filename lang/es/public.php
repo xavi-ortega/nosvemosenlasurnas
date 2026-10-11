@@ -76,6 +76,7 @@ return [
     'original' => 'Abrir documento original',
     'page' => 'Página',
     'line' => 'Línea',
+    'section' => 'Sección',
     'limited_cohort' => 'Comparación limitada a tu ámbito seleccionado. Las demás candidaturas no forman parte de estos índices.',
     'outside_cohort' => 'Otras candidaturas de esta edición',
     'known_questions' => 'Respuestas con evidencia citada',

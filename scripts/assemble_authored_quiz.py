@@ -59,6 +59,7 @@ def assemble(root):
     documents = {}
     prepared = []
     unknown_rationales = []
+    html_sections = {}
     for question in questions:
         issue = issues[question["id"]]
         require(issue["topicId"] == question["topicId"] and issue["familyId"] == question["familyId"], "Issue budget mismatch")
@@ -100,6 +101,13 @@ def assemble(root):
                     "retrievedAt": source.get("retrievedAt", source.get("recordedAt"))[:10], "validFrom": inventory["electionDate"],
                     "validUntil": inventory["electionDate"], "extraction": notebook["extraction"],
                 }
+                if source.get("mediaType", "").split(";", 1)[0].strip() == "text/html":
+                    document["mediaType"] = "text/html"
+                    section = citation.get("htmlSection")
+                    if section is not None:
+                        coverage = next((item for item in notebook.get("coverage", []) if item.get("sectionNumber") == section), None)
+                        require(type(section) is int and section > 0 and coverage is not None and coverage["start"] <= start < coverage["end"], "Invalid authored HTML section")
+                        html_sections[(cell["candidacyId"], question["id"], public_document_id, start, end)] = section
                 require(public_document_id not in documents or documents[public_document_id] == document, "Conflicting source versions")
                 documents[public_document_id] = document
                 citations.append({key: citation[key] for key in ["start", "end", "contextStart", "contextEnd"]} | {"documentId": public_document_id})
@@ -139,6 +147,12 @@ def assemble(root):
         (folder / "positions.json").write_bytes(data)
         manifest = {"preparation": {"schemaVersion": 1, "toolVersion": "direct-authored-quiz-v1", "promptVersion": "manual-source-context-v1", "file": "positions.json", "sha256": digest(data)}}
         bank = attach(bank, manifest, folder, digest, require)
+    for candidate, positions in bank["positions"].items():
+        for question, position in positions.items():
+            for citation in position["citations"]:
+                key = (candidate, question, citation["documentId"], citation["start"], citation["end"])
+                if key in html_sections:
+                    citation["locator"]["section"] = html_sections[key]
     for candidate, question, rationale in unknown_rationales:
         bank["positions"][candidate][question]["rationale"] = rationale
     bank["documents"] = [{key: value for key, value in document.items() if key != "text"} for document in bank["documents"]]

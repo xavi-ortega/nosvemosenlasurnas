@@ -2,7 +2,7 @@ export type Scale = -2 | -1 | 0 | 1 | 2;
 export type Answer = Scale | 'unsure' | 'skip';
 export type Answers = Record<string, Answer>;
 export type Priorities = Record<string, 0 | 1 | 2>;
-export interface Question { id: string; topicId: string; familyId: string; text: string; level: 'general' | 'specific' }
+export interface Question { id: string; topicId: string; familyId: string; text: string; help?: string; level: 'general' | 'specific' }
 export interface Citation { documentId: string; start: number; end: number; quote: string; context: string; locator: { page: number; line: number } }
 export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value: Scale | null; citations: Citation[]; rationale?: string }
 export interface Bank {
@@ -31,6 +31,7 @@ export function parseBank(value: unknown): Bank {
         const familyTopics = new Map<string, string>();
         for (const q of b.questions) {
             ensure(b.topics.some(t => t.id === q.topicId) && idPattern.test(q.familyId) && safeText(q.text) && q.text.length <= 400 && ['general', 'specific'].includes(q.level));
+            ensure(q.help === undefined || (safeText(q.help) && q.help.length <= 1200));
             ensure(!familyTopics.has(q.familyId) || familyTopics.get(q.familyId) === q.topicId);
             familyTopics.set(q.familyId, q.topicId);
         }

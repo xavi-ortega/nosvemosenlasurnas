@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T08:20:47.841773+00:00",
+  "taskIds": [
+    "Q018",
+    "Q019",
+    "Q020",
+    "Q021"
+  ],
+  "status": "in_progress",
+  "bankKind": "synthetic_internal_fixture",
+  "changes": [
+    "Quiz-first home/navigation and explicit 2023 preparation notice; priorities behind an optional disclosure.",
+    "Large single-question stage with ordered native radios, separate unsure/skip, optional bounded authored-help slot, visible selection and stage progress.",
+    "Persistent selected question history enables back/edit across optional blocks, invalidates reveal and caps sessions at thirty.",
+    "180ms action-triggered transition, reduced-motion override and duplicate-gesture/focus protection; finish requests are guarded and pinned to the active session."
+  ],
+  "checks": [
+    {
+      "command": "npm run test:engine",
+      "passed": true,
+      "tests": 15
+    },
+    {
+      "command": "npm run lint && npm run typecheck",
+      "passed": true
+    },
+    {
+      "command": "npm run build",
+      "passed": true,
+      "assetBytes": 44046
+    },
+    {
+      "command": "npm run test:browser",
+      "passed": true,
+      "tests": 48,
+      "projects": [
+        "chromium",
+        "mobile-chromium"
+      ]
+    },
+    {
+      "command": "scripts/php artisan test --compact tests/Feature/PublicBootstrapTest.php tests/Feature/PublicJourneyTest.php",
+      "passed": true,
+      "tests": 10,
+      "assertions": 109
+    },
+    {
+      "command": "scripts/php vendor/bin/pint --dirty --format agent",
+      "passed": true
+    }
+  ],
+  "resolvedFindings": [
+    "Temporary button disabling rejected quick keyboard input; controls now keep native focus and accept deliberate new answers.",
+    "Second mouse-down after navigation could focus the page background; duplicate gestures now preserve the question heading focus.",
+    "Low initial animation opacity reduced text contrast; entry starts at 0.9 opacity.",
+    "Redundant header CTA and long question words overflowed at narrow/zoomed sizes; the quiz header is compact and question text can reflow."
+  ],
+  "walkthrough": {
+    "mode": "Reproducible native keyboard/mobile browser fixture walkthrough and direct screenshot inspection.",
+    "steps": [
+      "Start without opening priorities.",
+      "Choose numeric/unsure/skip; no automatic advancement.",
+      "Validate a missing answer without losing the question.",
+      "Go back and change an answer; double click advances once and focuses the next heading.",
+      "Extend to fifteen, return to question ten and resume the same eleventh question.",
+      "Finish deliberately, inspect rent disagreement separately, export fifteen unique answers and reset."
+    ],
+    "reflow": [
+      {
+        "viewportWidth": 320,
+        "zoom": 1
+      },
+      {
+        "viewportWidth": 1280,
+        "zoom": 2
+      },
+      {
+        "viewportWidth": 1280,
+        "zoom": 4
+      }
+    ],
+    "minimumTargetPx": 44,
+    "axeViolations": 0,
+    "privateTraffic": "Fixed public bank; only public release-state check at deliberate finish. No private POST/query/storage/cookie."
+  },
+  "artifacts": [
+    {
+      "path": "resources/js/app.ts",
+      "sha256": "e0b1064e7d31a5297a28770b765da2903a690663e8eb00b8cf14d18bfbde424b"
+    },
+    {
+      "path": "resources/js/questionnaire.ts",
+      "sha256": "fbbe7a1c147e6f8982408fd4d57ddc5db2b1c160f729576a956408f09e794d62"
+    },
+    {
+      "path": "resources/js/matching.ts",
+      "sha256": "37f29e969b33ec7a83b0209d463ff8a87ed8a9f8de79ec9977400d9aec95d038"
+    },
+    {
+      "path": "resources/css/app.css",
+      "sha256": "c697c153926acc746fd4a5871f863bd11fa9b9912051fe648e29a91088977685"
+    },
+    {
+      "path": "tests/Browser/public-journeys.spec.ts",
+      "sha256": "09b42bb9e405e8fb7d4188e53a0d2206a90f6e4257d50aa54adc2904230e57f4"
+    },
+    {
+      "path": "tests/Tooling/matching.test.ts",
+      "sha256": "0424313606303b2eeffee0c4cdb99733bb6f44448d41531195c7b21b6aec6b64"
+    },
+    {
+      "path": "outputs/quiz-2023-app-previews/desktop-question.png",
+      "sha256": "2dcae004910ab6412087efc0df13725f723c50a866f00522959c28663052817b"
+    },
+    {
+      "path": "outputs/quiz-2023-app-previews/mobile-checkpoint.png",
+      "sha256": "6e2e617f92872d03b4223b3d6a160b2a5bd12c468fe5373ce9aefff9f821d4dc"
+    },
+    {
+      "path": "outputs/quiz-2023-app-previews/mobile-selected.png",
+      "sha256": "87cf44629bbff6195a4173b9bdbe418eda55d19de949545c94e92583c7edd873"
+    }
+  ],
+  "limitations": [
+    "Fixture verification is not real-source acceptance. Active bank still contains twenty fictitious questions and two fictitious districts.",
+    "Full real-programme reading, directly authored Spanish question/help bank, all52 application options and semantic acceptance remain unfinished.",
+    "Optional help is supported by the browser contract; build-time real authoring/import integration remains pending.",
+    "Comparison/feedback implementations are retained but removed from the primary navigation; metrics remain disabled.",
+    "Q018-Q021 are not marked complete; exact staged CI and any hosted results are separate from these affected checks."
+  ]
+}

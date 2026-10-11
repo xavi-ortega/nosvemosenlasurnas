@@ -94,3 +94,67 @@ test('all five rent answers preserve direction independently of aggregate overla
     assert.equal(relationship(mixed['housing-2'] as -2, bank.positions.alpha['housing-2'].value!), 'opposed');
     assert.equal(match(bank, { 'housing-2': -2 }, {}, cohort).rows.find(r => r.id === 'alpha')?.partialIndex, 0);
 });
+
+
+test('back and edited answers preserve the selected questions across five-question blocks', () => {
+    const q = new Questionnaire(bank, pointer.sha256, 'north');
+    const first = q.current()!.id;
+    assert.equal(q.previous(), false);
+    assert.deepEqual(q.progress(), { current: 1, total: 10 });
+    q.answer(2);
+    const second = q.current()!.id;
+    q.answer('skip');
+    assert.equal(q.previous(), true);
+    assert.equal(q.current()!.id, second);
+    assert.equal(q.answers[second], 'skip');
+    assert.equal(q.previous(), true);
+    assert.equal(q.current()!.id, first);
+    q.answer(-2);
+    assert.equal(q.current()!.id, second);
+    assert.equal(q.answers[first], -2);
+    for (let i = 0; i < 9; i++) q.answer(1);
+    const initial = [...q.presented];
+    assert.equal(q.extend(), true);
+    const followup = q.current()!.id;
+    assert.deepEqual(q.progress(), { current: 11, total: 15 });
+    assert.equal(q.previous(), true);
+    assert.equal(q.current()!.id, initial[9]);
+    q.answer(-1);
+    assert.equal(q.current()!.id, followup);
+    assert.deepEqual(q.presented, [...initial, followup]);
+    for (let i = 0; i < 5; i++) q.answer('unsure');
+    q.finish();
+    assert.equal(Object.keys(q.export().answers).length, 15);
+    q.previous();
+    assert.equal(q.revealed, false);
+    assert.throws(() => q.export());
+});
+
+test('optional blocks stop at thirty even when a larger fixture bank has useful questions', () => {
+    const copy = structuredClone(bank);
+    for (let i = 0; i < 30; i++) {
+        const question = { ...copy.questions[0], id: `extra-${i}`, familyId: `extra-family-${i}` };
+        copy.questions.push(question);
+        for (const c of copy.candidacies) copy.positions[c.id][question.id] = structuredClone(copy.positions[c.id]['housing-1']);
+    }
+    const q = new Questionnaire(copy, pointer.sha256, 'north');
+    for (let i = 0; i < 10; i++) q.answer(2);
+    for (let block = 0; block < 4; block++) {
+        assert.equal(q.extend(), true);
+        for (let i = 0; i < 5; i++) q.answer(2);
+    }
+    assert.equal(q.presented.length, 30);
+    assert.equal(new Set(q.presented).size, 30);
+    assert.equal(q.extend(), false);
+    assert.equal(q.revealed, false);
+});
+
+test('optional authored help is bounded text and does not alter scoring', () => {
+    const copy = structuredClone(bank);
+    copy.questions[0].help = 'Ayuda ficticia de prueba.';
+    assert.deepEqual(match(parseBank(copy), answers, {}, cohort), match(bank, answers, {}, cohort));
+    for (const invalid of ['', '\u0000', 'x'.repeat(1201)]) {
+        copy.questions[0].help = invalid;
+        assert.throws(() => parseBank(copy));
+    }
+});

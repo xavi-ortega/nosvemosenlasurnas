@@ -14,7 +14,7 @@ class PublicBootstrapTest extends TestCase
 
         $response->assertSee('lang="es"', false)
             ->assertSeeText('Tu voto merece contexto.')
-            ->assertSeeText('Compara propuestas, consulta sus fuentes')
+            ->assertSeeText('Explora qué propuestas de las elecciones al Congreso de 2023')
             ->assertHeader('Content-Language', 'es');
     }
 

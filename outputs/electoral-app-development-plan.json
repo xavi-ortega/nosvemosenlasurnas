@@ -1348,7 +1348,7 @@
           "sequence": 18,
           "phaseId": "QP4",
           "subject": "feat: make the test the primary entry point",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q017"
           ],
@@ -1391,14 +1391,20 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/quiz-2023-app-verification.json",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
+          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
         },
         {
           "id": "Q019",
           "sequence": 19,
           "phaseId": "QP4",
           "subject": "feat: build the accessible single-question experience",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q014",
             "Q018"
@@ -1442,14 +1448,20 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/quiz-2023-app-verification.json",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
+          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
         },
         {
           "id": "Q020",
           "sequence": 20,
           "phaseId": "QP4",
           "subject": "feat: add smooth transitions without losing private state",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q019"
           ],
@@ -1490,14 +1502,20 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/quiz-2023-app-verification.json",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
+          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
         },
         {
           "id": "Q021",
           "sequence": 21,
           "phaseId": "QP4",
           "subject": "feat: make deeper quiz checkpoints clear and optional",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q020"
           ],
@@ -1539,7 +1557,13 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/quiz-2023-app-verification.json",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
+          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
         },
         {
           "id": "Q022",
@@ -2498,6 +2522,7 @@
       "programmeDocumentsFullyRead": 10
     },
     "evidence": "outputs/2023-programme-reading-verification.json",
-    "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending"
+    "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending",
+    "uiEvidence": "outputs/quiz-2023-app-verification.json"
   }
 }

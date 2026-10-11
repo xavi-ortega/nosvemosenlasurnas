@@ -205,7 +205,7 @@ Dependencies: Q001
 
 ## Q018 feat: make the test the primary entry point
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q017
 
@@ -217,7 +217,7 @@ Dependencies: Q017
 
 ## Q019 feat: build the accessible single-question experience
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q014, Q018
 
@@ -229,7 +229,7 @@ Dependencies: Q014, Q018
 
 ## Q020 feat: add smooth transitions without losing private state
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q019
 
@@ -240,7 +240,7 @@ Dependencies: Q019
 
 ## Q021 feat: make deeper quiz checkpoints clear and optional
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q020
 

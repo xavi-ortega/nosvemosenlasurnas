@@ -172,10 +172,10 @@ Work one inspectable increment at a time with factual evidence.
 - Q015 · fix: explain agreements differences and aggregate results correctly · planned
 - Q016 · test: validate citations editions and correction behavior · planned
 - Q017 · design: specify and review the quiz visual system · in_progress
-- Q018 · feat: make the test the primary entry point · planned
-- Q019 · feat: build the accessible single-question experience · planned
-- Q020 · feat: add smooth transitions without losing private state · planned
-- Q021 · feat: make deeper quiz checkpoints clear and optional · planned
+- Q018 · feat: make the test the primary entry point · in_progress
+- Q019 · feat: build the accessible single-question experience · in_progress
+- Q020 · feat: add smooth transitions without losing private state · in_progress
+- Q021 · feat: make deeper quiz checkpoints clear and optional · in_progress
 - Q022 · feat: present understandable cited results · planned
 - Q023 · feat: complete Spanish help errors privacy and local export · planned
 - Q024 · test: verify actual mobile keyboard motion and readability · planned

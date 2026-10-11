@@ -38,6 +38,21 @@ export class Questionnaire {
         return q;
     }
 
+    progress(): { current: number; total: number } {
+        return { current: Math.min(this.cursor + 1, this.queue.length), total: this.queue.length };
+    }
+
+    canGoBack(): boolean {
+        return this.cursor > 0;
+    }
+
+    previous(): boolean {
+        if (!this.canGoBack()) return false;
+        this.cursor--;
+        this.revealed = false;
+        return true;
+    }
+
     answer(value: Answer): void {
         const q = this.current();
         if (!q || ![-2, -1, 0, 1, 2, 'unsure', 'skip'].includes(value)) throw new Error('Invalid answer transition.');
@@ -54,10 +69,11 @@ export class Questionnaire {
 
     extend(): boolean {
         if (this.current()) throw new Error('Checkpoint required.');
-        this.queue = followups(this.bank, this.answers, this.presented, this.priorities, this.cohort);
-        this.cursor = 0;
+        const remaining = Math.max(0, 30 - this.queue.length);
+        const next = remaining === 0 ? [] : followups(this.bank, this.answers, this.presented, this.priorities, this.cohort, Math.min(5, remaining));
+        this.queue.push(...next);
         this.revealed = false;
-        return this.queue.length > 0;
+        return next.length > 0;
     }
 
     finish() {

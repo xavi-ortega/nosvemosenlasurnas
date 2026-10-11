@@ -29,8 +29,8 @@ test('disabled collection and refusal never post; feedback failure leaves the co
     await page.getByRole('button', { name: 'No participar' }).click();
     await expect(page.locator('#app')).toContainText('No has enviado ninguna valoración');
     expect(posts).toEqual([]);
-    await page.getByRole('link', { name: 'Comparar programas', exact: true }).click();
-    await expect(page.getByRole('table')).toBeVisible();
+    await page.getByRole('link', { name: 'Hacer el cuestionario', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Empezar las diez preguntas' })).toBeVisible();
 });
 
 test('opt-in sends at most two bounded randomized reports without quiz fields, identifiers or retries', async ({ page, context }) => {

@@ -8,10 +8,10 @@
         @else
             <p class="notice">{{ __('public.unavailable') }}</p>
         @endif
-        <div class="journeys grid gap-6 md:grid-cols-2">
-            <a class="journey" href="{{ route('comparison') }}"><h2>{{ __('public.compare') }}</h2><p>{{ __('public.compare_description') }}</p><span aria-hidden="true" class="journey-mark">↗</span></a>
-            <a class="journey" href="{{ route('questionnaire') }}"><h2>{{ __('public.take_quiz') }}</h2><p>{{ __('public.quiz_description') }}</p><span aria-hidden="true" class="journey-mark">↗</span></a>
+        <div class="actions">
+            <a class="start-link" href="{{ route('questionnaire') }}">{{ __('public.take_quiz') }}</a>
         </div>
+        <p>{{ __('public.quiz_description') }}</p>
         <p class="privacy-note">{{ __('public.privacy_short') }} <a href="{{ route('privacy') }}">{{ __('public.privacy') }}</a></p>
     </section>
 </x-layout>

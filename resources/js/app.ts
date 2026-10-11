@@ -20,18 +20,23 @@ const e = <K extends keyof HTMLElementTagNameMap>(tag: K, text = '', className =
     const element = document.createElement(tag); element.textContent = text; element.className = className; return element;
 };
 const p = (key: string, className = '') => e('p', t(key), className);
+let lastNextClickAt = -Infinity;
 const button = (key: string, action: () => void | Promise<void>, primary = false): HTMLButtonElement => {
     const control = e('button', t(key), primary ? 'primary' : ''); control.type = 'button';
-    control.addEventListener('click', () => { void action(); }); return control;
+    control.addEventListener('keydown', event => { if (event.repeat && ['Enter', ' '].includes(event.key)) event.preventDefault(); });
+    control.addEventListener('click', () => {
+        if (!control.isConnected || control.disabled) return;
+        if (key === 'next' && performance.now() - lastNextClickAt < 180 && control.closest<HTMLElement>('.quiz-stage')?.dataset.interacted !== 'true') { focusHeading(); return; }
+        void action();
+    }); return control;
 };
 const actions = (...buttons: HTMLButtonElement[]) => { const group = e('div', '', 'actions'); group.append(...buttons); return group; };
 const focusHeading = () => { const heading = root?.querySelector('h2') ?? document.getElementById('page-title'); if (heading) { heading.tabIndex = -1; heading.focus(); } };
-const numberAnswers = () => Object.values(session?.answers ?? {}).filter(value => typeof value === 'number').length;
 const answerKeys: Record<string, string> = { '-2': 'answer_negative_2', '-1': 'answer_negative_1', '0': 'answer_neutral', '1': 'answer_positive_1', '2': 'answer_positive_2', unsure: 'unsure', skip: 'skip' };
 const answerOrder = ['-2', '-1', '0', '1', '2', 'unsure', 'skip'] as const;
 const parseAnswer = (value: string): Answer => value === 'unsure' || value === 'skip' ? value : Number(value) as Scale;
 const sampleNotice = () => bank.kind === 'current' ? p('source_warning') : p(bank.kind === 'synthetic' ? 'development' : 'historical', 'notice');
-const progress = () => e('p', `${t('presented')}: ${session?.presented.length ?? 0}. ${t('numeric')}: ${numberAnswers()}.`, 'progress');
+const progress = () => e('p', `${t('presented')}: ${session?.presented.length ?? 0}.`, 'progress');
 
 async function load(): Promise<void> {
     const response = await fetch('/api/bank', { credentials: 'omit', cache: 'no-cache', referrerPolicy: 'no-referrer' });
@@ -125,68 +130,110 @@ function renderSources(): void {
 
 }
 
+let quizRendered = false;
+function showQuiz(...nodes: HTMLElement[]): void {
+    if (!root) return;
+    root.replaceChildren(...nodes);
+    const stage = root.querySelector<HTMLElement>('.quiz-stage');
+    if (quizRendered && stage) {
+        stage.classList.add('state-enter');
+    }
+    quizRendered = true;
+    focusHeading();
+}
 function renderSetup(): void {
     if (!root) return;
-    root.replaceChildren(sampleNotice(), p('quiz_intro'), p('quiz_reload'));
+    const stage = e('section', '', 'quiz-stage quiz-intro');
+    stage.append(e('h2', t('quiz_start_title')), p('quiz_intro'), p('quiz_reload', 'quiet'));
     const scopeLabel = e('label', t('constituency'), 'control'); const scope = e('select'); scope.autocomplete = 'off'; scope.append(new Option(t('all_constituencies'), 'all'));
     for (const s of bank.election.constituencies) scope.append(new Option(s.name, s.id)); scopeLabel.append(scope);
-    const priorityGroup = e('fieldset'); priorityGroup.append(e('legend', t('priorities')));
+    const prioritiesDisclosure = e('details', '', 'priorities'); prioritiesDisclosure.append(e('summary', t('priorities')));
+    const priorityGroup = e('fieldset', '', 'grid gap-x-6 md:grid-cols-2'); priorityGroup.append(e('legend', t('priority_help')));
     const selects: Record<string, HTMLSelectElement> = {};
     for (const topic of bank.topics) {
         const label = e('label', topic.name, 'control'); const select = e('select'); select.autocomplete = 'off';
         for (const n of [0, 1, 2]) select.append(new Option(t(`priority_${n}`), String(n), n === 1, n === 1));
         label.append(select); selects[topic.id] = select; priorityGroup.append(label);
     }
-    root.append(scopeLabel, priorityGroup, button('start', () => {
+    prioritiesDisclosure.append(priorityGroup);
+    stage.append(scopeLabel, actions(button('start', () => {
         const priorities = Object.fromEntries(Object.entries(selects).map(([id, select]) => [id, Number(select.value)])) as Priorities;
         session = new Questionnaire(bank, releaseHash, scope.value, priorities); renderQuestion();
-    }, true));
+    }, true)), prioritiesDisclosure);
+    showQuiz(sampleNotice(), stage);
 }
 function answerControls(question: Question, current: Answer | undefined, onChange?: (value: Answer) => void): HTMLFieldSetElement {
     const fieldset = e('fieldset'); fieldset.append(e('legend', t('opinion')));
+    const main = e('div', '', 'answers'); const other = e('div', '', 'other-answers');
     for (const value of answerOrder) {
         const key = answerKeys[value];
         const label = e('label', '', 'choice'); const input = e('input'); input.type = 'radio'; input.name = `answer-${question.id}`; input.value = value; input.checked = String(current) === value; input.autocomplete = 'off';
-        input.addEventListener('change', () => onChange?.(parseAnswer(input.value))); label.append(input, e('span', t(key))); fieldset.append(label);
+        input.addEventListener('change', () => { const stage = fieldset.closest<HTMLElement>('.quiz-stage'); if (stage) stage.dataset.interacted = 'true'; onChange?.(parseAnswer(input.value)); }); label.append(input, e('span', t(key)));
+        (value === 'unsure' || value === 'skip' ? other : main).append(label);
     }
+    fieldset.append(main, other);
     return fieldset;
 }
-function reset(): void { session?.reset(); session = null; renderSetup(); focusHeading(); }
+function reset(): void { session?.reset(); session = null; renderSetup(); }
 function renderQuestion(): void {
     if (!root || !session) return;
     const question = session.current();
     if (!question) { renderCheckpoint(); return; }
-    const card = e('section', '', 'quiz-card'); card.append(progress(), e('h2', question.text));
-    const choices = answerControls(question, session.answers[question.id]); const status = e('p', '', 'error'); status.setAttribute('role', 'alert');
-    card.append(choices, status, actions(button('next', () => {
+    const card = e('section', '', 'quiz-stage quiz-card'); card.dataset.questionId = question.id;
+    const state = session.progress();
+    const stageProgress = e('div', '', 'progress');
+    stageProgress.append(e('span', `${t('question')} ${state.current} ${t('of')} ${state.total}`), e('span', bank.topics.find(topic => topic.id === question.topicId)!.name));
+    const track = e('div', '', 'progress-track'); track.setAttribute('aria-hidden', 'true');
+    const fill = e('span'); fill.style.width = `${100 * state.current / state.total}%`; track.append(fill);
+    card.append(stageProgress, track, e('h2', question.text, 'question-title'));
+    if (question.help) { const help = e('details', '', 'question-help'); help.append(e('summary', t('question_help')), e('p', question.help)); card.append(help); }
+    const status = e('p', '', 'error'); status.setAttribute('role', 'alert'); status.id = 'answer-error';
+    const choices = answerControls(question, session.answers[question.id]); choices.setAttribute('aria-describedby', status.id);
+    const back = button('back', () => { lastNextClickAt = -Infinity; if (session!.previous()) renderQuestion(); }); back.disabled = !session.canGoBack();
+    card.append(choices, status, actions(back, button('next', () => {
         const selected = choices.querySelector<HTMLInputElement>('input:checked');
         if (!selected) { status.textContent = t('choose_answer'); return; }
-        session!.answer(parseAnswer(selected.value)); renderQuestion(); focusHeading();
-    }, true), button('reset', reset)));
-    root.replaceChildren(sampleNotice(), card); focusHeading();
+        lastNextClickAt = performance.now();
+        session!.answer(parseAnswer(selected.value)); renderQuestion();
+    }, true)));
+    const resetActions = actions(button('reset', reset)); resetActions.classList.add('secondary-actions'); card.append(resetActions);
+    showQuiz(sampleNotice(), card);
 }
+let finishing = false;
 async function finish(): Promise<void> {
-    if (!root || !session) return;
-    const status = e('p', '', 'error'); status.setAttribute('role', 'alert'); root.append(status);
+    if (!root || !session || finishing) return;
+    const activeSession = session;
+    finishing = true;
+    const controls = [...root.querySelectorAll<HTMLButtonElement>('button')];
+    for (const control of controls) control.disabled = true;
+    const status = e('p', t('checking_release'), 'quiet'); status.setAttribute('role', 'status'); root.append(status);
     try {
         const response = await fetch('/api/release-state', { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' });
         if (!response.ok) throw new Error('Release state unavailable.');
         const state: { sha256: string; withdrawn: string[] } = await response.json();
         if (!Array.isArray(state.withdrawn)) throw new Error('Invalid release state.');
-        if (state.withdrawn.includes(session.releaseHash)) { status.textContent = t('withdrawn'); return; }
-        session.finish(); renderResults(); focusHeading();
-    } catch { status.textContent = t('release_check_failed'); }
+        if (session !== activeSession) return;
+        if (state.withdrawn.includes(activeSession.releaseHash)) { status.textContent = t('withdrawn'); status.className = 'error'; return; }
+        activeSession.finish(); renderResults(); focusHeading();
+    } catch { if (session === activeSession) { status.textContent = t('release_check_failed'); status.className = 'error'; } }
+    finally {
+        finishing = false;
+        for (const control of controls) if (control.isConnected) control.disabled = false;
+    }
 }
 function renderCheckpoint(exhausted = false): void {
     if (!root || !session) return;
-    root.replaceChildren(sampleNotice(), e('h2', t('checkpoint')), progress(), p(exhausted ? 'exhausted' : 'checkpoint_description'));
-    root.append(actions(button('finish', finish, true), button('more', () => { if (session!.extend()) renderQuestion(); else renderCheckpoint(true); }), button('review', renderReview), button('reset', reset)));
-    focusHeading();
+    const stage = e('section', '', 'quiz-stage quiz-checkpoint');
+    stage.append(progress(), e('h2', t('checkpoint')), p(exhausted ? 'exhausted' : 'checkpoint_description'));
+    stage.append(actions(button('finish', finish, true), button('more', () => { if (session!.extend()) renderQuestion(); else renderCheckpoint(true); })));
+    const back = button('back', () => { lastNextClickAt = -Infinity; if (session!.previous()) renderQuestion(); }); back.disabled = !session.canGoBack();
+    stage.append(actions(back, button('review', renderReview), button('reset', reset)));
+    showQuiz(sampleNotice(), stage);
 }
 function renderReview(): void {
     if (!root || !session) return;
     session.revealed = false;
-    root.replaceChildren(e('h2', t('review')), p('quiz_reload'));
+    root.replaceChildren(sampleNotice(), e('h2', t('review')), p('quiz_reload'));
     for (const id of session.presented) {
         const q = bank.questions.find(q => q.id === id)!; const section = e('section', '', 'source-card'); section.append(e('h3', q.text), answerControls(q, session.answers[id], value => session!.edit(id, value))); root.append(section);
     }
@@ -276,5 +323,8 @@ if (root && page === 'insights') {
         root.replaceChildren(p(unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
     });
 }
+document.addEventListener('mousedown', event => {
+    if (page === 'quiz' && event.detail > 1 && performance.now() - lastNextClickAt < 180) event.preventDefault();
+}, true);
 window.addEventListener('pagehide', () => { session?.reset(); session = null; root?.replaceChildren(); });
 window.addEventListener('pageshow', event => { if (event.persisted && page === 'quiz' && root && bank) renderSetup(); });

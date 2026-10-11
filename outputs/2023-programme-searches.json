@@ -3525,6 +3525,29 @@
       "status": "actual_primary_publisher_chain_followup",
       "observationScope": "Six searches executed before this integration. Exact per-query result associations were not retained; no attribution of all batch discoveries to each query.",
       "batchEvidence": "outputs/2023-pdecat-source-provenance.json"
+    },
+    {
+      "candidacyId": "boe-2023-027",
+      "recordedAt": "2026-10-11T16:56:03.967814+00:00",
+      "query": "Exact model annex filenames; REVa v8; Cristina Gaona Renta Social Gijón; primary Jaén 23J programme/emergency-map publications.",
+      "discoveredPages": [
+        {
+          "title": "Publisher August 2019 v8 reference",
+          "url": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/espana-vaciada-agosto-de-2019/"
+        },
+        {
+          "title": "Original publisher full book with Gaona chapter",
+          "url": "https://www.catedrafundacionarecesdcuniovi.es/fotos/si237dhfnc/CFRA-enfoques.pdf"
+        },
+        {
+          "title": "Jaén 2023 primary programme/candidacy page",
+          "url": "https://www.jaenmerecemas.es/elecciones-generales-2023/"
+        }
+      ],
+      "status": "primary_model_and_related_v8_annex_fully_read_version_and_other_annex_limits_retained",
+      "provenanceRecord": "outputs/2023-jaen-model-source-provenance.json",
+      "failedRetrievalsRetained": true,
+      "noProgrammeAbsenceCertified": true
     }
   ]
 }

@@ -3492,21 +3492,27 @@
           "votes": 8293
         }
       ],
-      "programmeSearchStatus": "primary_pdf_acquired_full_reading_and_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "2023_primary_programme_and_adopted_model_fully_read_annex_version_followup_pending",
+      "analysisStatus": "full_source_documents_read_historical_version_and_semantic_bank_audit_pending",
       "programmeIds": [
-        "jaenmerecemas-july"
+        "jaenmerecemas-july",
+        "jaen-adopted-model-primary-http",
+        "jaen-model-annex-m2-primary"
       ],
       "ballotAliases": [
         "JAÉN MERECE MÁS (JM+)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_jaen_congress_23j_programme_model_adoption_historical_model_annex_bytes_pending",
       "ballotRecordIds": [
         "congress-jaen-9"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/jaenmerecemas.json"
-      ]
+        "outputs/2023-programme-notebooks/jaenmerecemas.json",
+        "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+        "outputs/2023-programme-notebooks/jaen-model-annex-m2.json"
+      ],
+      "sourceFamilyComplete": false,
+      "sourceProvenance": "outputs/2023-jaen-model-source-provenance.json"
     },
     {
       "id": "boe-2023-028",
@@ -5667,7 +5673,7 @@
       "retrievedAt": "2026-10-11T08:56:46.629166+00:00",
       "mediaType": "application/pdf",
       "lastModified": "Fri, 21 Jul 2023 09:02:53 GMT",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_fully_read_related_model_and_emergency_annex_audit_pending",
       "file": "storage/app/election-sources/2023-congress/jaenmerecemas-july.pdf",
       "sha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
       "bytes": 902105,
@@ -5683,7 +5689,15 @@
       "electionApplicability": "Cover 23J July 2023; page 13 Congress/Senate; Jaén scope.",
       "applicableBallotRecordIds": [
         "congress-jaen-9"
-      ]
+      ],
+      "provenancePublicationIds": [
+        "jaen-primary-23j-programme-publication"
+      ],
+      "relatedDocumentIds": [
+        "jaen-adopted-model-primary-http",
+        "jaen-model-annex-m2-primary"
+      ],
+      "provenanceRecord": "outputs/2023-jaen-model-source-provenance.json"
     },
     {
       "id": "upl-leon-july",
@@ -6089,15 +6103,217 @@
       "analysisStatus": "duplicate_identical_original_already_fully_read",
       "sameOriginalAs": "poravila-primary-july",
       "notebook": "outputs/2023-programme-notebooks/poravila.json"
+    },
+    {
+      "id": "jaen-adopted-model-primary",
+      "url": "https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:26:33.088455+00:00",
+      "status": "retrieval_failed",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>"
+    },
+    {
+      "id": "jaen-adopted-model-coceder",
+      "url": "https://www.coceder.org/wp-content/uploads/2021/05/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://www.coceder.org/",
+      "retrievedAt": "2026-10-11T16:26:33.088823+00:00",
+      "resolvedUrl": "https://www.coceder.org/wp-content/uploads/2021/05/Modelo-de-Desarrollo-v9a.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-coceder.pdf",
+      "sha256": "8171080315a52a50627f3c741296bbf01689962bd12c213fc85b4d2ef9a1f4d6",
+      "bytes": 6343460,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-coceder.txt",
+        "sha256": "8fbc61a40ef36e39aaba8d4f44a674ca1b0a01a636569ea9a1454043d5e92db0",
+        "pageCount": 341,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_fully_read"
+      },
+      "analysisStatus": "distinct_historical_variant_not_fully_read_or_certified_equivalent"
+    },
+    {
+      "id": "jaen-adopted-model-primary-retry",
+      "url": "https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:27:05.846592+00:00",
+      "status": "retrieval_failed",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)>"
+    },
+    {
+      "id": "jaen-adopted-model-primary-july-archive",
+      "url": "https://web.archive.org/web/20230726170008id_/https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://web.archive.org/web/20230726170008id_/https://revueltaespa%C3%B1avaciada.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:27:05.846913+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "jaen-adopted-model-primary-http",
+      "url": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:27:57.667813+00:00",
+      "resolvedUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_fully_read_historical_byte_identity_pending",
+      "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-http.pdf",
+      "sha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+      "bytes": 6347565,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-http.txt",
+        "sha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+        "pageCount": 342,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+      "applicableBallotRecordIds": [
+        "congress-jaen-9"
+      ],
+      "electionApplicability": "Jaén 23J programme pages 8-9 expressly adopt and link model; archived publisher metadata is July 26, after voting. Exact pre-vote PDF bytes remain unresolved.",
+      "originalVisualPagesRead": [
+        1,
+        11,
+        14,
+        21,
+        30,
+        65,
+        93,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        167,
+        182,
+        184,
+        188,
+        201,
+        203,
+        205,
+        259,
+        284,
+        285,
+        297,
+        342
+      ]
+    },
+    {
+      "id": "jaen-adopted-model-unicode-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://revueltaespa%C3%B1avaciada.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:27:57.668145+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "jaen-adopted-model-primary-www",
+      "url": "https://www.xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:27:57.668232+00:00",
+      "status": "retrieval_failed",
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "id": "jaen-adopted-model-http-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:32:29.881695+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "jaen-adopted-model-primary-2021-archive",
+      "url": "https://web.archive.org/web/20211001000000id_/https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/09/Modelo-de-Desarrollo-v9a.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:32:29.882054+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "jaen-model-annex-m5-full-book",
+      "url": "https://www.catedrafundacionarecesdcuniovi.es/fotos/si237dhfnc/CFRA-enfoques.pdf",
+      "publicationUrl": "https://www.researchgate.net/publication/348250392_Gaona_C_2020_Buscando_nuevos_enfoques_de_marketing_para_afrontar_los_cambios_Caso_practico_Renta_Social_Gijon_El_consumo_que_suma_ODS_Ayudas_sociales_que_revierten_en_la_sostenibilidad_de_familias_en_",
+      "retrievedAt": "2026-10-11T16:49:25.776955+00:00",
+      "resolvedUrl": "https://www.catedrafundacionarecesdcuniovi.es/fotos/si237dhfnc/CFRA-enfoques.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m5-full-book.pdf",
+      "sha256": "2d40f95534894c655d481841df2465a80cb99016f1666c026586a524c1322e26",
+      "bytes": 4281060,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m5-full-book.txt",
+        "sha256": "3c46dcb060dc781c95790a511f0ea67a8294aab157e77a6c00597212277c89c9",
+        "pageCount": 345,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_fully_read"
+      },
+      "analysisStatus": "ancillary_full_book_unread_referenced_chapter_locator_pending",
+      "referencedPrintedPageRange": [
+        263,
+        284
+      ],
+      "fullDocumentRead": false,
+      "extractionWarnings": [
+        "Two rotated-text warnings; original-page checks required before whole-book reading completion."
+      ]
+    },
+    {
+      "id": "jaen-model-annex-m2-primary",
+      "url": "https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/05/REVa-Espana-Vaciada-v8.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/espana-vaciada-agosto-de-2019/",
+      "retrievedAt": "2026-10-11T16:50:24.181277+00:00",
+      "resolvedUrl": "https://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/05/REVa-Espana-Vaciada-v8.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_fully_read_referenced_historical_annex_identity_pending",
+      "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary.pdf",
+      "sha256": "807fe363958c1ec1cc8a03fa145d9b354ab393143991550463d9456e58ac8de7",
+      "bytes": 507228,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary.txt",
+        "sha256": "c3d51ca930260732a8befd1916604b66cb5e3db5d0d22be053537eeca373121c",
+        "pageCount": 16,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/jaen-model-annex-m2.json",
+      "applicableBallotRecordIds": [
+        "congress-jaen-9"
+      ],
+      "electionApplicability": "Historical August 2019 document, related to model annex M2.1; direct 2023 model adoption does not resolve annex version/precedence.",
+      "originalVisualPagesRead": [
+        1
+      ]
+    },
+    {
+      "id": "jaen-model-annex-m2-primary-http",
+      "url": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/05/REVa-Espana-Vaciada-v8.pdf",
+      "publicationUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/espana-vaciada-agosto-de-2019/",
+      "retrievedAt": "2026-10-11T16:50:25.426733+00:00",
+      "resolvedUrl": "http://xn--revueltaespaavaciada-f7b.org/wp-content/uploads/2021/05/REVa-Espana-Vaciada-v8.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary-http.pdf",
+      "sha256": "807fe363958c1ec1cc8a03fa145d9b354ab393143991550463d9456e58ac8de7",
+      "bytes": 507228,
+      "analysisStatus": "duplicate_identical_original_already_fully_read",
+      "sameOriginalAs": "jaen-model-annex-m2-primary",
+      "notebook": "outputs/2023-programme-notebooks/jaen-model-annex-m2.json"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 39,
+    "programmeFilesDownloaded": 43,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 50
+    "programmeDocumentsFullyRead": 52
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -8799,6 +9015,109 @@
       "fullNativePublicationTextRead": true,
       "programmeReading": true,
       "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time."
+    },
+    {
+      "id": "jaen-adopted-model-primary",
+      "url": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:23:32.732299+00:00",
+      "resolvedUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-publication-539fc0d15694.html",
+      "sha256": "539fc0d15694149d7af8d3764b2c59c4037507182f5e949e0476a5690b63cad4",
+      "textFile": "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-publication-539fc0d15694.txt",
+      "textSha256": "5e0c0e46ce61a01f0fc1ab0de70834330741da107938fd5a20cfb7efc8e140fe",
+      "links": [],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native title/navigation/body/footer/cookie text directly read. Model viewer data decoded as inert base64 JSON, never executed. Linked PDFs are separate readings. Current 2026 news, source biographies and cookie/privacy assertions do not create 2023 policy evidence."
+    },
+    {
+      "id": "jaen-adopted-model-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/modelo-de-desarrollo/",
+      "retrievedAt": "2026-10-11T16:23:33.946992+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230726170008id_/https://revueltaespa%C3%B1avaciada.org/3d-flip-book/modelo-de-desarrollo/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/jaen-adopted-model-july-archive-publication-181ecf2bed36.html",
+      "sha256": "181ecf2bed3674178e25264fe1980981efc669e1e44905fbc284da8ce5851fbd",
+      "textFile": "storage/app/election-sources/2023-congress/jaen-adopted-model-july-archive-publication-181ecf2bed36.txt",
+      "textSha256": "d5846e39beabf0a3c0e6fb516bd8eec0975da49034a7d58c8c879c920ce19f91",
+      "links": [],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native title/navigation/body/footer/cookie text directly read. Model viewer data decoded as inert base64 JSON, never executed. Linked PDFs are separate readings. Current 2026 news, source biographies and cookie/privacy assertions do not create 2023 policy evidence."
+    },
+    {
+      "id": "jaen-model-annex-m5-researchgate",
+      "url": "https://www.researchgate.net/publication/348250392_Gaona_C_2020_Buscando_nuevos_enfoques_de_marketing_para_afrontar_los_cambios_Caso_practico_Renta_Social_Gijon_El_consumo_que_suma_ODS_Ayudas_sociales_que_revierten_en_la_sostenibilidad_de_familias_en_",
+      "retrievedAt": "2026-10-11T16:49:24.397134+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "jaen-primary-programme-annex-search",
+      "url": "https://www.jaenmerecemas.es/?s=mapa+de+emergencia",
+      "retrievedAt": "2026-10-11T16:49:24.479395+00:00",
+      "resolvedUrl": "https://www.jaenmerecemas.es/?s=mapa+de+emergencia",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/jaen-primary-programme-annex-search-publication-a42dcecc4c38.html",
+      "sha256": "a42dcecc4c382be16438af0d3b2f02a80f6498f124aab709c5639c0bda3d685e",
+      "textFile": "storage/app/election-sources/2023-congress/jaen-primary-programme-annex-search-publication-a42dcecc4c38.txt",
+      "textSha256": "68d4c697b8a569ae10cad2ab0e251b6b2f5142612a3c8d2419b06885628025db",
+      "links": [
+        "http://www.jaenmerecemas.es/producto/donacion-municipales-2023/",
+        "https://www.jaenmerecemas.es/elecciones-generales-2023/",
+        "https://www.jaenmerecemas.es/elecciones-municipales-2023/"
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native title/navigation/body/footer/cookie text directly read. Model viewer data decoded as inert base64 JSON, never executed. Linked PDFs are separate readings. Current 2026 news, source biographies and cookie/privacy assertions do not create 2023 policy evidence."
+    },
+    {
+      "id": "jaen-model-annex-m2-primary-publication",
+      "url": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/espana-vaciada-agosto-de-2019/",
+      "retrievedAt": "2026-10-11T16:49:54.602811+00:00",
+      "resolvedUrl": "https://xn--revueltaespaavaciada-f7b.org/3d-flip-book/espana-vaciada-agosto-de-2019/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary-publication-publication-829d5f24f085.html",
+      "sha256": "829d5f24f0852359528cdc0749da4ece20adfdaaf006dc2e6c869c78d111b97d",
+      "textFile": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary-publication-publication-829d5f24f085.txt",
+      "textSha256": "81418520f27a7caee14dc0a0b8bf3f6c59eab8f5cf795c623b2f283b9cc5ce25",
+      "links": [],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native title/navigation/body/footer/cookie text directly read. Model viewer data decoded as inert base64 JSON, never executed. Linked PDFs are separate readings. Current 2026 news, source biographies and cookie/privacy assertions do not create 2023 policy evidence."
+    },
+    {
+      "id": "jaen-primary-23j-programme-publication",
+      "url": "https://www.jaenmerecemas.es/elecciones-generales-2023/",
+      "retrievedAt": "2026-10-11T16:49:55.914126+00:00",
+      "resolvedUrl": "https://www.jaenmerecemas.es/elecciones-generales-2023/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/jaen-primary-23j-programme-publication-publication-d812e24c29b9.html",
+      "sha256": "d812e24c29b9fafaf9fc5e8047fd63e5024fbc27d271c2d34e8420acb6a4ea42",
+      "textFile": "storage/app/election-sources/2023-congress/jaen-primary-23j-programme-publication-publication-d812e24c29b9.txt",
+      "textSha256": "a1a5b0b5d0e9f80c131a2ab82bbefd157f3b9aabe66e1f760d4250e6414991d9",
+      "links": [
+        "http://www.jaenmerecemas.es/producto/donacion-municipales-2023/",
+        "http://www.jaenmerecemas.es/wp-content/uploads/2022/06/DIPTICO-JAEN-MERECE-JUNIO-2022-WEB.pdf",
+        "http://www.jaenmerecemas.es/wp-content/uploads/2022/06/PROGRAMA-JAEN-MERECE-MAS.pdf",
+        "http://www.jaenmerecemas.es/wp-content/uploads/2023/07/PROGRAMA-JM-GENERALES-1-1.pdf",
+        "https://www.jaenmerecemas.es/elecciones-generales-2023/",
+        "https://www.jaenmerecemas.es/elecciones-municipales-2023/"
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native title/navigation/body/footer/cookie text directly read. Model viewer data decoded as inert base64 JSON, never executed. Linked PDFs are separate readings. Current 2026 news, source biographies and cookie/privacy assertions do not create 2023 policy evidence."
     }
   ],
   "authoredDraftSummary": {

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T07:29:22.901736+00:00",
+  "scope": "Q002 engineering regression on internal synthetic fixtures; real-source semantic acceptance remains open.",
+  "defect": "Integer-key enumeration rendered 0,1,2 before -2,-1.",
+  "answerOrder": [
+    -2,
+    -1,
+    0,
+    1,
+    2,
+    "unsure",
+    "skip"
+  ],
+  "rentCase": {
+    "questionId": "housing-2",
+    "visibleAnswer": "Muy en desacuerdo",
+    "storedAnswer": -2,
+    "supportPosition": 2,
+    "similarity": 0,
+    "aggregateAlphaOverlap": 60,
+    "visibleRelationship": "opposed"
+  },
+  "checks": [
+    {
+      "command": "npm run test:engine",
+      "exitCode": 0,
+      "passed": 12
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "npm exec --no -- playwright test tests/Browser/public-journeys.spec.ts --grep ordered labels",
+      "exitCode": 0,
+      "passed": 2,
+      "projects": [
+        "chromium",
+        "mobile-chromium"
+      ]
+    }
+  ],
+  "limitations": [
+    "No programme has been marked fully analysed by this engineering repair.",
+    "Full authored real-bank calibration is pending."
+  ]
+}

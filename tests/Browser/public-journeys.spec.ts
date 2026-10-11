@@ -118,3 +118,33 @@ test('quiz works through native keyboard answer controls', async ({ page }) => {
     await page.getByRole('button', { name: 'Continuar', exact: true }).focus(); await page.keyboard.press('Enter');
     await expect(page.locator('#app')).toContainText('Preguntas presentadas: 2');
 });
+
+
+test('ordered labels store strong rent disagreement and explain it separately from a high total', async ({ page }) => {
+    await start(page);
+    const expectedLabels = ['Muy en desacuerdo', 'En desacuerdo', 'Ni de acuerdo ni en desacuerdo', 'De acuerdo', 'Muy de acuerdo', 'No lo tengo claro', 'Prefiero no responder'];
+    const radios = page.getByRole('radio');
+    await expect(page.locator('.quiz-card .choice span')).toHaveText(expectedLabels);
+    expect(await radios.evaluateAll(inputs => inputs.map(input => (input as HTMLInputElement).value))).toEqual(['-2', '-1', '0', '1', '2', 'unsure', 'skip']);
+    for (let i = 0; i < 10; i++) {
+        const isRent = await page.getByRole('heading', { name: 'Limitar los alquileres en zonas de alta demanda.', exact: true }).count() > 0;
+        await page.getByRole('radio', { name: isRent ? 'Muy en desacuerdo' : 'Muy de acuerdo', exact: true }).check();
+        await page.getByRole('button', { name: 'Continuar', exact: true }).click();
+    }
+    await hidden(page);
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+    const party = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia Alba', exact: true }) });
+    await expect(party.locator('.result-number')).toContainText('60 %');
+    await party.getByText('Coincidencias y diferencias citadas', { exact: true }).click();
+    const rent = party.locator('[data-question-id="housing-2"]');
+    await expect(rent).toContainText('Tu respuesta: Muy en desacuerdo');
+    await expect(rent).toContainText('Posición interpretada del programa: Muy de acuerdo');
+    await expect(rent.locator('.relationship')).toContainText('está en desacuerdo');
+    await expect(rent).toContainText('Coincidencia solo en esta propuesta: 0 %');
+    page.once('dialog', dialog => void dialog.accept());
+    const download = page.waitForEvent('download');
+    await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
+    const exported = JSON.parse(await readFile((await (await download).path())!, 'utf8'));
+    expect(exported.answers['housing-2']).toBe(-2);
+    expect(exported.answerDetails.find((item: { questionId: string }) => item.questionId === 'housing-2').answerLabel).toBe('Muy en desacuerdo');
+});

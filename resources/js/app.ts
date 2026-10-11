@@ -1,4 +1,4 @@
-import { parseBank, match } from './matching.ts';
+import { parseBank, match, relationship, similarity } from './matching.ts';
 import type { Answer, Bank, Citation, Question, Position, Priorities, Scale } from './matching.ts';
 import { Feedback, renderFeedback } from './feedback.ts';
 import type { FeedbackConfig } from './feedback.ts';
@@ -28,6 +28,7 @@ const actions = (...buttons: HTMLButtonElement[]) => { const group = e('div', ''
 const focusHeading = () => { const heading = root?.querySelector('h2') ?? document.getElementById('page-title'); if (heading) { heading.tabIndex = -1; heading.focus(); } };
 const numberAnswers = () => Object.values(session?.answers ?? {}).filter(value => typeof value === 'number').length;
 const answerKeys: Record<string, string> = { '-2': 'answer_negative_2', '-1': 'answer_negative_1', '0': 'answer_neutral', '1': 'answer_positive_1', '2': 'answer_positive_2', unsure: 'unsure', skip: 'skip' };
+const answerOrder = ['-2', '-1', '0', '1', '2', 'unsure', 'skip'] as const;
 const parseAnswer = (value: string): Answer => value === 'unsure' || value === 'skip' ? value : Number(value) as Scale;
 const sampleNotice = () => bank.kind === 'current' ? p('source_warning') : p(bank.kind === 'synthetic' ? 'development' : 'historical', 'notice');
 const progress = () => e('p', `${t('presented')}: ${session?.presented.length ?? 0}. ${t('numeric')}: ${numberAnswers()}.`, 'progress');
@@ -143,7 +144,8 @@ function renderSetup(): void {
 }
 function answerControls(question: Question, current: Answer | undefined, onChange?: (value: Answer) => void): HTMLFieldSetElement {
     const fieldset = e('fieldset'); fieldset.append(e('legend', t('opinion')));
-    for (const [value, key] of Object.entries(answerKeys)) {
+    for (const value of answerOrder) {
+        const key = answerKeys[value];
         const label = e('label', '', 'choice'); const input = e('input'); input.type = 'radio'; input.name = `answer-${question.id}`; input.value = value; input.checked = String(current) === value; input.autocomplete = 'off';
         input.addEventListener('change', () => onChange?.(parseAnswer(input.value))); label.append(input, e('span', t(key))); fieldset.append(label);
     }
@@ -224,7 +226,14 @@ function renderResults(): void {
         if (result.comparable && result.rows.some(other => other.id !== row.id && Math.abs(other.index! - row.index!) < 1e-8)) section.append(p('tie'));
         const explanations = e('details'); explanations.append(e('summary', t('agreements')));
         for (const q of bank.questions.filter(q => typeof session!.answers[q.id] === 'number')) {
-            const item = e('section', '', 'source-card'); item.append(e('h3', q.text), e('p', `${t('your_answer')}: ${t(answerKeys[String(session!.answers[q.id])])}`), positionView(bank.positions[row.id][q.id])); explanations.append(item);
+            const answer = session!.answers[q.id] as Scale;
+            const position = bank.positions[row.id][q.id];
+            const item = e('section', '', 'source-card'); item.dataset.questionId = q.id;
+            item.append(e('h3', q.text), e('p', `${t('your_answer')}: ${t(answerKeys[String(answer)])}`));
+            if (position.status === 'derived' && position.value !== null) {
+                item.append(e('p', `${t('party_position')}: ${t(answerKeys[String(position.value)])}`), p(`relationship_${relationship(answer, position.value)}`, 'relationship'), e('p', `${t('question_overlap')}: ${percentage(100 * similarity(answer, position.value))}.`));
+            }
+            item.append(positionView(position)); explanations.append(item);
         }
         section.append(explanations); rows.append(section);
     }

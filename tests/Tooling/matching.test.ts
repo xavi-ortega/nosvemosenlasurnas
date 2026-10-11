@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { test } from 'node:test';
-import { parseBank, weights, match, balanced, followups, similarity } from '../../resources/js/matching.ts';
+import { parseBank, weights, match, balanced, followups, similarity, relationship } from '../../resources/js/matching.ts';
 import type { Answers, Bank } from '../../resources/js/matching.ts';
 const pointer = JSON.parse(readFileSync('resources/evidence/current.json', 'utf8'));
 const bank = parseBank(JSON.parse(readFileSync(`resources/evidence/${pointer.sha256}.json`, 'utf8')));
@@ -75,4 +75,22 @@ test('session freezes bank and exports the pinned release even if outside bank c
     copy.candidacies[0].name = 'outside change'; assert.notEqual(q.bank.candidacies[0].name, 'outside change');
     assert.throws(() => { q.bank.questions[0].text = 'mutation'; });
     q.current(); q.answer(2); q.finish(); assert.equal(q.export().releaseHash, pointer.sha256);
+});
+
+
+test('all five rent answers preserve direction independently of aggregate overlap', () => {
+    const expected = [0, 0.25, 0.5, 0.75, 1];
+    for (const [i, value] of ([-2, -1, 0, 1, 2] as const).entries()) {
+        assert.equal(similarity(value, 2), expected[i]);
+    }
+    assert.equal(relationship(-2, 2), 'opposed');
+    assert.equal(relationship(-1, 1), 'opposed');
+    assert.equal(relationship(0, 2), 'different');
+    assert.equal(relationship(1, 2), 'close');
+    assert.equal(relationship(2, 2), 'same');
+    const mixed: Answers = { ...answers, 'housing-2': -2 };
+    const result = match(bank, mixed, {}, cohort);
+    assert.equal(result.rows.find(r => r.id === 'alpha')?.index, 60);
+    assert.equal(relationship(mixed['housing-2'] as -2, bank.positions.alpha['housing-2'].value!), 'opposed');
+    assert.equal(match(bank, { 'housing-2': -2 }, {}, cohort).rows.find(r => r.id === 'alpha')?.partialIndex, 0);
 });

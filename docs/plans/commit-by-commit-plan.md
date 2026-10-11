@@ -13,7 +13,7 @@ Dependencies:
 
 ## Q002 fix: order answer labels and reproduce the rent direction path
 
-Status: planned
+Status: completed
 
 Dependencies: Q001
 
@@ -25,7 +25,7 @@ Dependencies: Q001
 
 ## Q003 data: reconcile every 23J Congress candidacy
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q001
 

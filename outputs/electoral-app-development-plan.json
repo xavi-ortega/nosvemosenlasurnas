@@ -4,7 +4,7 @@
   "title": "Nos Vemos en las Urnas: a useful private quiz for the 2023 Congress election",
   "subtitle": "Real programmes, directly authored questions, verified meaning and a modern readable quiz",
   "summary": "Build a quiz for ordinary Spanish users based explicitly on the 23 July 2023 Congress election. Acquire the complete official candidacy corpus, read available programmes in full one by one, cross-reference policies and directly author a larger balanced question bank. Correct and prove the full answer/citation/scoring path, then replace the basic UI with an accessible smooth quiz. Defer programme-comparison screens, metrics expansion and optional languages. This is a new acceptance baseline, not a claim that the existing synthetic implementation satisfies the request.",
-  "status": "plan_verified_implementation_pending",
+  "status": "implementation_in_progress",
   "createdAt": "2026-10-09T12:36:11.963155+00:00",
   "scopeRevision": "outputs/quiz-2023-scope-revision.json",
   "baseline": [
@@ -566,7 +566,7 @@
           "sequence": 2,
           "phaseId": "QP0",
           "subject": "fix: order answer labels and reproduce the rent direction path",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "Q001"
           ],
@@ -605,7 +605,11 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/quiz-2023-answer-path-verification.json",
+            "tests/Browser/public-journeys.spec.ts",
+            "tests/Tooling/matching.test.ts"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
@@ -613,7 +617,7 @@
           "sequence": 3,
           "phaseId": "QP1",
           "subject": "data: reconcile every 23J Congress candidacy",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q001"
           ],
@@ -2037,7 +2041,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T06:23:56.059873+00:00",
+  "revisedAt": "2026-10-11T07:29:22.901736+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",

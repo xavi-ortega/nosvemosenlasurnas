@@ -79,6 +79,11 @@ export function weights(bank: Bank, priorities: Priorities = {}): Record<string,
     return result;
 }
 export const similarity = (answer: Scale, position: Scale): number => 1 - Math.abs(answer - position) / 4;
+export function relationship(answer: Scale, position: Scale): 'same' | 'close' | 'different' | 'opposed' {
+    if (answer === position) return 'same';
+    if (answer * position < 0) return 'opposed';
+    return Math.abs(answer - position) === 1 ? 'close' : 'different';
+}
 const known = (bank: Bank, candidacyId: string, qid: string): boolean => bank.positions[candidacyId][qid].status === 'derived' && isScale(bank.positions[candidacyId][qid].value);
 
 export function match(bank: Bank, answers: Answers, priorities: Priorities = {}, cohort = bank.candidacies.map(c => c.id)) {

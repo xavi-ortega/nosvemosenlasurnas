@@ -2,6 +2,7 @@
 """Assemble a local, unpublished quiz preview from directly authored source records."""
 import argparse
 import copy
+import hashlib
 import json
 from pathlib import Path
 import tempfile
@@ -19,6 +20,39 @@ def retained_file(root, relative, max_bytes=LIMIT):
     require(path.is_relative_to(root.resolve()), "Retained source path escapes the project")
     require(path.is_file() and 0 < path.stat().st_size <= max_bytes, "Missing or oversized retained source")
     return path
+
+
+def verify_original(root, source, expected_sha256):
+    chunks = source.get("originalChunks")
+    if chunks is None:
+        original = retained_file(root, source["file"], max_bytes=64 * 1024 * 1024)
+        require(digest(original.read_bytes()) == expected_sha256, "Original source changed")
+        return
+    require(isinstance(chunks, list) and 1 <= len(chunks) <= 4, "Invalid original chunk count")
+    require(type(source.get("bytes")) is int and 0 < source["bytes"] <= 4 * LIMIT, "Original chunk byte budget exceeded")
+    original = (root / source["file"]).resolve()
+    require(original.is_relative_to(root.resolve()) and original.is_file() and original.stat().st_size == source["bytes"], "Original chunk source unavailable")
+    total = 0
+    complete_hash = hashlib.sha256()
+    paths = set()
+    with original.open("rb") as original_stream:
+        for chunk in chunks:
+            require(isinstance(chunk, dict) and set(chunk) == {"file", "bytes", "sha256"}, "Invalid original chunk record")
+            require(type(chunk["bytes"]) is int and 0 < chunk["bytes"] <= LIMIT, "Original chunk byte limit exceeded")
+            path = retained_file(root, chunk["file"])
+            require(path != original and path not in paths and path.stat().st_size == chunk["bytes"], "Duplicate or changed original chunk")
+            paths.add(path)
+            part_hash = hashlib.sha256()
+            with path.open("rb") as part:
+                while data := part.read(1024 * 1024):
+                    require(original_stream.read(len(data)) == data, "Original chunk order or content changed")
+                    part_hash.update(data)
+                    complete_hash.update(data)
+                    total += len(data)
+                    require(total <= source["bytes"], "Original chunks exceed declared source")
+            require(part_hash.hexdigest() == chunk["sha256"], "Original chunk hash changed")
+        require(total == source["bytes"] and original_stream.read(1) == b"", "Incomplete original chunks")
+    require(complete_hash.hexdigest() == expected_sha256, "Original source changed")
 
 
 def assemble(root):
@@ -101,11 +135,11 @@ def assemble(root):
                 elif source.get("applicableBallotRecordIds"):
                     applicable_scopes = {row["id"].rsplit("-", 1)[0].removeprefix("congress-") for row in registry["records"] if row["id"] in source["applicableBallotRecordIds"] and row["status"] == "proclaimed" and row["resultDenominationId"] == cell["candidacyId"]}
                     require(territories[cell["candidacyId"]] <= applicable_scopes, "Territorial citation cannot become a default position")
-                original = retained_file(root, source["file"], max_bytes=64 * 1024 * 1024)
-                require(digest(original.read_bytes()) == citation["sourceSha256"], "Original source changed")
+                verify_original(root, source, citation["sourceSha256"])
                 extraction = retained_file(root, source.get("extraction", {}).get("file", source.get("textFile")))
                 require(digest(extraction.read_bytes()) == citation["extractionSha256"], "Original extraction changed")
                 text = extraction.read_text(encoding="utf-8")
+                require(text.strip() and "\x00" not in text, "Empty or unsafe authored extraction")
                 start, end = citation["start"], citation["end"]
                 low, high = citation["contextStart"], citation["contextEnd"]
                 require(all(type(offset) is int for offset in [start, end, low, high]) and 0 <= low <= start < end <= high <= len(text), "Invalid authored locator")

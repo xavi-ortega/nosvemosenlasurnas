@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T19:19:38.751666+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "bounded_preparation_verified_bank_audit_pending",
+  "releaseEligible": false,
+  "sourceFile": "storage/app/election-sources/2023-congress/nuevacanarias-july.pdf",
+  "sourceSha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
+  "sourceBytes": 75741915,
+  "originalChunks": [
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-1.bin",
+      "bytes": 20971520,
+      "sha256": "0f406aa75a93e2cff698323ce6bd7b6b70cad678e770ca24c7ff10defaeb06f2"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-2.bin",
+      "bytes": 20971520,
+      "sha256": "3bb9fa44c29619f5a31951188f866a1244112f1c05670b5cebf38c20805e60f6"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-3.bin",
+      "bytes": 20971520,
+      "sha256": "398355e92ef86625b0b4258db5bc53ff35a18dd6f7017f381e1245006d79aa17"
+    },
+    {
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-4.bin",
+      "bytes": 12827355,
+      "sha256": "e3082bf5ccb695697359a40ff3dd2c1f8ddf97728f5678eb73fd96dfaad9c4c7"
+    }
+  ],
+  "chunkByteLimit": 20971520,
+  "maximumChunks": 4,
+  "completeOriginalStreamVerified": true,
+  "currentOriginalByteIdentityVerified": true,
+  "uncorrectedVariantFile": ".tools/nuevacanarias-bank-audit/plain-extraction-uncorrected.txt",
+  "uncorrectedVariantSha256": "fc1fa22f0053944b20f4ae4c0424ddab01dfcd64c813628cef43d72f60d4a608",
+  "preparedExtraction": {
+    "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-native-plain-visual-corrections.txt",
+    "sha256": "37a6bab549fe4ec134acea6cc509493a02525cb39962f9d098a84f434a6fb040",
+    "bytes": 116068,
+    "pageCount": 36,
+    "method": "pypdf_native_plain_visual_corrections_v1"
+  },
+  "visualCorrections": [
+    {
+      "pdfPage": 4,
+      "printedPage": 2,
+      "before": "h\u0000os",
+      "after": "hijos",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-4.png"
+    },
+    {
+      "pdfPage": 4,
+      "printedPage": 2,
+      "before": "h\u0000as",
+      "after": "hijas",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-4.png"
+    },
+    {
+      "pdfPage": 33,
+      "printedPage": 31,
+      "before": "redir\u0000a",
+      "after": "redirija",
+      "originalImage": ".tools/nuevacanarias-bank-audit/page-33.png"
+    }
+  ],
+  "previousExtractionFile": "storage/app/election-sources/2023-congress/nuevacanarias-july.txt",
+  "previousExtractionSha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+  "previousNotebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+  "newUniqueDocumentCount": 0,
+  "publicPointerChanged": false,
+  "limitations": [
+    "Four raw byte fragments retain the complete original, never per-page substitutions. Each fragment respects the existing 20 MiB file budget; order, bytes, per-part hashes, aggregate hash and exact original EOF are verified.",
+    "The existing 64 MiB unchunked-original guard and 20 MiB extraction guards remain. The bounded chunked path accepts at most four fragments and verifies their exact identity with the retained original. No required CI check is skipped.",
+    "The original cached extraction and notebook remain unchanged. New plain extraction retains original fi/fl ligatures; only three visually verified NUL glyph sequences are transcribed.",
+    "Original complete 36-page reading is preserved. This preparation is not a new reading or authorship/calibration completion; full bank-specific audit and source notebook/variant integration remain pending.",
+    "No claim of archived pre-vote PDF byte identity, release readiness or production privacy."
+  ],
+  "priorBankSha256Unchanged": "38748cf2acef8e05665e06cd8834a70f80783d439ba6766f6a5f93760c8c5b3b",
+  "prior173MappingsUnchanged": true,
+  "negativeAssemblerTestsPassed": 20
+}

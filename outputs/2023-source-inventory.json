@@ -2484,8 +2484,8 @@
           "votes": 3165
         }
       ],
-      "programmeSearchStatus": "downloaded_applicability_pending_not_analysed",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "primary_23j_original_byte_identity_reverified",
+      "analysisStatus": "full_document_read_bounded_preparation_verified_bank_audit_pending",
       "programmeIds": [
         "nuevacanarias-july"
       ],
@@ -2499,7 +2499,8 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/nuevacanarias.json"
-      ]
+      ],
+      "sourcePreparationEvidence": "outputs/2023-nuevacanarias-preparation.json"
     },
     {
       "id": "boe-2023-017",
@@ -5814,7 +5815,7 @@
       "resolvedUrl": "https://nuevacanariasbc.org/public/wp-content/uploads/2023/07/PROGRAMA_23J.pdf",
       "mediaType": "application/pdf",
       "lastModified": "Fri, 07 Jul 2023 09:04:37 GMT",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "primary_23j_programme_fully_read_bounded_preparation_verified_bank_audit_pending",
       "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.pdf",
       "sha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
       "bytes": 75741915,
@@ -5825,12 +5826,36 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "full_document_read_bounded_preparation_verified_bank_audit_pending",
       "notebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
       "preparationLimitations": [
-        "Original exceeds guarded 20 MiB import limit; direct extraction includes NUL glyphs/duplicate lines. Original retained; bounded release preparation pending."
+        "Original retained with four byte-identical, individually bounded fragments and aggregate/original hash validation. Existing import command still rejects over-20 MiB parser inputs.",
+        "Unsafe original extraction is preserved. New native plain variant has three visually verified glyph corrections; variant-specific notebook, direct 80-cell audit and integration remain pending."
       ],
-      "electionApplicability": "Primary page labels July 23 2023 separately from May regional edition; cover/Congress-Senate introduction match Canary scope."
+      "electionApplicability": "Primary page labels July 23 2023 separately from May regional edition; cover/Congress-Senate introduction match Canary scope.",
+      "originalChunks": [
+        {
+          "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-1.bin",
+          "bytes": 20971520,
+          "sha256": "0f406aa75a93e2cff698323ce6bd7b6b70cad678e770ca24c7ff10defaeb06f2"
+        },
+        {
+          "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-2.bin",
+          "bytes": 20971520,
+          "sha256": "3bb9fa44c29619f5a31951188f866a1244112f1c05670b5cebf38c20805e60f6"
+        },
+        {
+          "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-3.bin",
+          "bytes": 20971520,
+          "sha256": "398355e92ef86625b0b4258db5bc53ff35a18dd6f7017f381e1245006d79aa17"
+        },
+        {
+          "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-4.bin",
+          "bytes": 12827355,
+          "sha256": "e3082bf5ccb695697359a40ff3dd2c1f8ddf97728f5678eb73fd96dfaad9c4c7"
+        }
+      ],
+      "preparationEvidence": "outputs/2023-nuevacanarias-preparation.json"
     },
     {
       "id": "jaenmerecemas-july",

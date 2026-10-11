@@ -49,6 +49,109 @@ class AuthoredQuizTest(unittest.TestCase):
             (output / name).write_text(json.dumps(value))
         return files
 
+    def prepare_chunked(self, root):
+        files = self.prepare(root)
+        source = files["2023-source-inventory.json"]["acquisitions"][0]
+        original = (root / source["file"]).read_bytes()
+        parts = [original[:15], original[15:]]
+        source["bytes"] = len(original)
+        source["originalChunks"] = []
+        for index, part in enumerate(parts):
+            name = f"original-part-{index}.bin"
+            (root / name).write_bytes(part)
+            source["originalChunks"].append({"file": name, "bytes": len(part), "sha256": assembler.digest(part)})
+        (root / "outputs/2023-source-inventory.json").write_text(json.dumps(files["2023-source-inventory.json"]))
+        return files
+
+    def test_chunked_original_preserves_the_original_hash_url_and_citation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare_chunked(root)
+
+            bank = assembler.assemble(root)
+
+            self.assertEqual(bank["documents"][0]["sha256"], files["2023-source-inventory.json"]["acquisitions"][0]["sha256"])
+            self.assertEqual(bank["documents"][0]["url"], "https://fixture.invalid/programme")
+            self.assertEqual(bank["positions"]["fixture-a"]["fixture-question"]["citations"][0]["quote"], "café proposal.")
+            self.assertFalse((root / "resources/evidence/current.json").exists())
+
+    def test_chunked_original_rejects_incomplete_reordered_changed_and_unbounded_records(self):
+        for changed in ["missing", "reordered", "duplicate", "part_hash", "part_bytes", "content", "source_hash", "source_bytes", "escape", "count", "budget", "part_budget", "extra_key"]:
+            with self.subTest(changed=changed), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                files = self.prepare_chunked(root)
+                source = files["2023-source-inventory.json"]["acquisitions"][0]
+                chunks = source["originalChunks"]
+                if changed == "missing":
+                    chunks.pop()
+                elif changed == "reordered":
+                    chunks.reverse()
+                elif changed == "duplicate":
+                    chunks[1] = chunks[0].copy()
+                elif changed == "part_hash":
+                    chunks[0]["sha256"] = "0" * 64
+                elif changed == "part_bytes":
+                    chunks[0]["bytes"] += 1
+                elif changed == "content":
+                    (root / chunks[0]["file"]).write_bytes(b"x" * chunks[0]["bytes"])
+                elif changed == "source_hash":
+                    (root / source["file"]).write_bytes(b"y" * source["bytes"])
+                elif changed == "source_bytes":
+                    source["bytes"] += 1
+                elif changed == "escape":
+                    chunks[0]["file"] = "../outside.bin"
+                elif changed == "count":
+                    source["originalChunks"] *= 3
+                elif changed == "budget":
+                    source["bytes"] = 4 * assembler.LIMIT + 1
+                elif changed == "part_budget":
+                    chunks[0]["bytes"] = assembler.LIMIT + 1
+                else:
+                    chunks[0]["trusted"] = True
+                (root / "outputs/2023-source-inventory.json").write_text(json.dumps(files["2023-source-inventory.json"]))
+
+                with self.assertRaises(ValueError):
+                    assembler.assemble(root)
+
+    def test_an_unchunked_oversized_original_keeps_the_existing_size_rejection(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = self.prepare(root)["2023-source-inventory.json"]["acquisitions"][0]
+            with (root / source["file"]).open("r+b") as stream:
+                stream.truncate(64 * 1024 * 1024 + 1)
+
+            with self.assertRaisesRegex(ValueError, "oversized retained source"):
+                assembler.verify_original(root, source, source["sha256"])
+
+    def test_chunked_original_rejects_a_wrong_expected_complete_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            source = self.prepare_chunked(root)["2023-source-inventory.json"]["acquisitions"][0]
+
+            with self.assertRaises(ValueError):
+                assembler.verify_original(root, source, "0" * 64)
+
+    def test_uncorrected_nul_text_is_rejected_before_a_public_citation_is_built(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            text = "Context: a fixture-only café proposal.\x00\n\n"
+            (root / "source.txt").write_text(text)
+            sha = assembler.digest(text.encode())
+            notebook_path = root / "outputs/notebook.json"
+            notebook = json.loads(notebook_path.read_text())
+            notebook.update(sourceSha256=sha, extractionSha256=sha)
+            notebook_path.write_text(json.dumps(notebook))
+            source = files["2023-source-inventory.json"]["acquisitions"][0]
+            source["sha256"] = sha
+            citation = files["2023-authored-issue-matrix.json"]["issues"][0]["cells"][0]["citations"][0]
+            citation.update(sourceSha256=sha, extractionSha256=sha, notebookSha256=assembler.digest(notebook_path.read_bytes()), contextEnd=len(text), contextSha256=sha)
+            for name in ["2023-source-inventory.json", "2023-authored-issue-matrix.json"]:
+                (root / "outputs" / name).write_text(json.dumps(files[name]))
+
+            with self.assertRaisesRegex(ValueError, "unsafe authored extraction"):
+                assembler.assemble(root)
+
     def test_assembles_exact_unicode_citations_and_missing_candidacy_without_source_text(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

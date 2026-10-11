@@ -1412,20 +1412,21 @@
           "votes": 121126
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "primary_23j_memory_excerpt_observed_full_adoption_source_unresolved",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "independent_psc_4_constituency_adoption_evidence_pending",
       "ballotRecordIds": [
         "congress-barcelona-1",
         "congress-girona-1",
         "congress-lleida-1",
         "congress-tarragona-1"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "programmeApplicabilityNote": "Primary July 13 2023 PSC article publishes the socialist programme memory chapter; observed through web tool, local retrieval HTTP403. Contemporary secondary article says PSC issued no separate programme; this is a lead, not automatic inheritance of all PSOE mappings."
     },
     {
       "id": "boe-2023-006",
@@ -2321,13 +2322,15 @@
           "votes": 53
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "dated_original_full_reading_and_contemporaneous_campaign_link_verified",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "frente-political-documents-2023"
+      ],
       "ballotAliases": [
         "FRENTE OBRERO (FO)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "july12_2023_primary_archive_programme_campaign_adoption_verified",
       "ballotRecordIds": [
         "congress-albacete-2",
         "congress-alicante-2",
@@ -2380,7 +2383,10 @@
         "congress-zaragoza-1",
         "congress-ceuta-3"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/frente-political-documents-2023.json"
+      ],
+      "programmeApplicabilityNote": "National Frente Obrero political programme published as NUESTRO PROGRAMA on its archived July 12 2023 general-election campaign homepage. Applies as the movement programme used during this campaign to reconciled Frente Obrero Congress ballots. Page 7 explicitly says it is not an electoral programme; preserve that characterisation and never present political aspirations as independently guaranteed election outcomes."
     },
     {
       "id": "boe-2023-016",
@@ -2669,13 +2675,15 @@
           "votes": 23
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "archived_23j_variant_fully_read_main_version_gap_open",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "recortes-23j-archived"
+      ],
       "ballotAliases": [
         "RECORTES CERO (RECORTES CERO)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j2023_congress_scope_verified_variant_and_annex_gap_open",
       "ballotRecordIds": [
         "congress-albacete-8",
         "congress-alicante-11",
@@ -2730,7 +2738,10 @@
         "congress-ceuta-8",
         "congress-melilla-8"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/recortes-23j-archived.json"
+      ],
+      "programmeApplicabilityNote": "Recovered 48-page PROG.-23J_05.pdf explicitly identifies 23J 2023 and Congress/Senate and is fully read. Separate indexed 53-page PROG.-23J.pdf not recovered; no byte-equivalence or annex-completeness claim."
     },
     {
       "id": "boe-2023-019",
@@ -3557,14 +3568,16 @@
           "votes": 1226
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "leon_23j_programme_fully_read_other_territorial_sources_unresolved",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "ev-leon-23j"
+      ],
       "ballotAliases": [
         "ASTURIAS EXISTE-ESPAÑA VACIADA (ASTURIAS EXISTE EV)",
         "ESPAÑA VACIADA (ESPAÑA VACIADA)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "primary_23j_programme_verified_for_leon_only",
       "ballotRecordIds": [
         "congress-asturias-9",
         "congress-leon-9",
@@ -3572,7 +3585,21 @@
         "congress-salamanca-9",
         "congress-valladolid-9"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/ev-leon-23j.json"
+      ],
+      "programmeApplicabilityNote": "Nineteen-page original linked by the primary León page, explicit 23J cover/version V06_07. León ballot reconciled; Asturias, Palencia, Salamanca and Valladolid pages expose no programme link in the acquired HTML. This does not prove no programme existed. Burgos EV-PCAS-TC is independent.",
+      "applicabilityEvidence": {
+        "documentIds": [
+          "ev-leon-23j"
+        ],
+        "publicationIds": [
+          "ev-leon-23j-publication"
+        ],
+        "ballotRecordIds": [
+          "congress-leon-9"
+        ]
+      }
     },
     {
       "id": "boe-2023-032",
@@ -5424,15 +5451,100 @@
         "completeIndependentReading": false,
         "analysis": "Campaign copy omits the arts/music tax-deduction parity clause and one contributed year per child clauses, and uses different constitutional pension wording. Current primary PDF observed through the web tool includes preserved-copy additions; local primary bytes and version chronology are unresolved. Variant-specific proposals remain unscored."
       }
+    },
+    {
+      "id": "ev-leon-23j",
+      "url": "https://xn--espaavaciada-dhb.org/wp-content/uploads/2023/07/Programa-EV-23J-LEON.pdf",
+      "recordedAt": "2026-10-11T11:22:55.326354+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/wp-content/uploads/2023/07/Programa-EV-23J-LEON.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 258377,
+      "sha256": "6e9feef4de1c57e17cd0be8047b06691eb1ab5a1b05b0fd7dac0ab0e852df19c",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-leon-23j.pdf",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/ev-leon-23j.txt",
+        "sha256": "2b35df19849f178b497dd6758caddfa8dcedca7faf57a6c0840ba9461689afbb",
+        "pageCount": 19,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/ev-leon-23j.json"
+    },
+    {
+      "id": "frente-political-documents-2023",
+      "url": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+      "recordedAt": "2026-10-11T11:22:55.326763+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 12472465,
+      "sha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/frente-political-documents-2023.pdf",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/frente-political-documents-2023.txt",
+        "sha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+        "pageCount": 87,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json"
+    },
+    {
+      "id": "frente-political-documents-2023-archive",
+      "url": "https://web.archive.org/web/20230712084137id_/https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+      "recordedAt": "2026-10-11T11:22:55.326852+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://web.archive.org/web/20230712084137id_/https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 12472465,
+      "sha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/frente-political-documents-2023-archive.pdf",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/frente-political-documents-2023.txt",
+        "sha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+        "pageCount": 87,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json"
+    },
+    {
+      "id": "recortes-23j-archived",
+      "url": "https://web.archive.org/web/20230923050200id_/https://recortescero.es/wp-content/uploads/2023/07/PROG.-23J_05.pdf",
+      "recordedAt": "2026-10-11T11:25:36.874620+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://web.archive.org/web/20230923050200id_/https://recortescero.es/wp-content/uploads/2023/07/PROG.-23J_05.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 242710,
+      "sha256": "0492c7ae1cb30662799f2975160699f960d15f375e7f8d74f0feb850987293bb",
+      "status": "archived_primary_23j_programme_variant_full_reading_recorded",
+      "file": "storage/app/election-sources/2023-congress/recortes-23j-archived.pdf",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/recortes-23j-archived.txt",
+        "sha256": "f2a6009305090562c4cde8319d87e627f96a6cb2f90877c985f1556d0c8ce798",
+        "pageCount": 48,
+        "method": "pypdf_native_layout_v1",
+        "warning": "Xref table not zero-indexed. ID numbers for objects will be corrected.",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "notebook": "outputs/2023-programme-notebooks/recortes-23j-archived.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 32,
+    "programmeFilesDownloaded": 35,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 33
+    "programmeDocumentsFullyRead": 36
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -6005,6 +6117,102 @@
       "file": "storage/app/election-sources/2023-congress/psoe-transparency-publication.html",
       "httpStatus": 200,
       "error": "Retrieved Incapsula challenge shell with empty body, not publication content. No source publication acquired."
+    },
+    {
+      "id": "ev-leon-23j-publication",
+      "url": "https://xn--espaavaciada-dhb.org/castillayleon/leon/",
+      "recordedAt": "2026-10-11T11:22:55.326662+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/castillayleon/leon/",
+      "mediaType": "text/html",
+      "bytes": 136922,
+      "sha256": "2f8a47ae73fabf4dceda639b20b75226ba0f838a2b894bae3c84037dff6bdb4b",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-leon-23j-publication.html"
+    },
+    {
+      "id": "ev-asturias-publication",
+      "url": "https://xn--espaavaciada-dhb.org/asturias/",
+      "recordedAt": "2026-10-11T11:25:36.875090+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/asturias/",
+      "mediaType": "text/html",
+      "bytes": 135926,
+      "sha256": "5f21bed975bf26ff0beaf61898d3d745ef8bb1b8d05a27a78cf99f88875b824e",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-asturias-publication.html"
+    },
+    {
+      "id": "ev-palencia-publication",
+      "url": "https://xn--espaavaciada-dhb.org/castillayleon/palencia/",
+      "recordedAt": "2026-10-11T11:25:36.875164+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/castillayleon/palencia/",
+      "mediaType": "text/html",
+      "bytes": 134733,
+      "sha256": "e00d893672c96708b1557ee11ff875defadf5a052537671b5d416cdbfa981a7f",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-palencia-publication.html"
+    },
+    {
+      "id": "ev-salamanca-publication",
+      "url": "https://xn--espaavaciada-dhb.org/castillayleon/salamanca/",
+      "recordedAt": "2026-10-11T11:25:36.875220+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/castillayleon/salamanca/",
+      "mediaType": "text/html",
+      "bytes": 133016,
+      "sha256": "6d41789d98deafa05257b28a4a544c8608e416535eef2442c3ac81514bee060a",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-salamanca-publication.html"
+    },
+    {
+      "id": "ev-valladolid-publication",
+      "url": "https://xn--espaavaciada-dhb.org/castillayleon/valladolid/",
+      "recordedAt": "2026-10-11T11:25:36.875288+00:00",
+      "httpStatus": 200,
+      "resolvedUrl": "https://xn--espaavaciada-dhb.org/castillayleon/valladolid/",
+      "mediaType": "text/html",
+      "bytes": 130014,
+      "sha256": "02b55d3831e65027f403d06e3466271f5ab9495e83f415f9848bc6944437b08b",
+      "status": "downloaded_applicability_and_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/ev-valladolid-publication.html"
+    },
+    {
+      "id": "frente-july12-homepage",
+      "url": "https://web.archive.org/web/20230712084133id_/https://frenteobrero.es/",
+      "retrievedAt": "2026-10-11T11:34:29.619993+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230712084133id_/https://frenteobrero.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_directly_read_campaign_context_verified",
+      "file": "storage/app/election-sources/2023-congress/frente-july12-homepage-publication-884fbd61e985.html",
+      "sha256": "884fbd61e9853040f6e36b4229a363b3dcbc31c11be7621ee3b2632aa867597f",
+      "textFile": "storage/app/election-sources/2023-congress/frente-july12-homepage-publication-884fbd61e985.txt",
+      "textSha256": "5898ca4edc2f86eb4c506830c07bb0b4e10bfe35fbb598546405fb16bc8425e8",
+      "links": [
+        "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf"
+      ],
+      "analysisStatus": "complete_publication_text_and_links_directly_read",
+      "applicabilityNote": "July 12 2023 archived national campaign context. Homepage offers the exact political programme under DESCARGA NUESTRO PROGRAMA and links the general-election campaign page; campaign page discusses election participation and national polling-station support. This is campaign adoption evidence; the document remains a political programme, not rewritten as an election-specific promise."
+    },
+    {
+      "id": "frente-july-campaign",
+      "url": "https://web.archive.org/web/20230712090000id_/https://frenteobrero.es/elecciones-generales-frente-obrero/",
+      "retrievedAt": "2026-10-11T11:36:40.755710+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230712132844id_/https://frenteobrero.es/elecciones-generales-frente-obrero/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_directly_read_campaign_context_verified",
+      "file": "storage/app/election-sources/2023-congress/frente-july-campaign-publication-6689548cd3a4.html",
+      "sha256": "6689548cd3a4434ce6b564c4983f492555fc04256742366ae5499f5c96d7aad4",
+      "textFile": "storage/app/election-sources/2023-congress/frente-july-campaign-publication-6689548cd3a4.txt",
+      "textSha256": "9fc656b6728ee89b7a9edf5914ea2a9a18bb91019b8d5a1464fe38ed8baf4416",
+      "links": [
+        "https://frenteobrero.es/wp-content/uploads/2023/07/material-fo-elecciones.zip"
+      ],
+      "analysisStatus": "complete_publication_text_and_links_directly_read",
+      "applicabilityNote": "July 12 2023 archived national campaign context. Homepage offers the exact political programme under DESCARGA NUESTRO PROGRAMA and links the general-election campaign page; campaign page discusses election participation and national polling-station support. This is campaign adoption evidence; the document remains a political programme, not rewritten as an election-specific promise."
     }
   ]
 }

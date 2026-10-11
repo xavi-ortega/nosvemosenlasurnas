@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T14:28:16.483629+00:00",
+  "recordedAt": "2026-10-11T15:21:43.070189+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -209,7 +209,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -649,7 +649,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -1150,7 +1150,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -2370,6 +2370,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "sourceExpectedValue": 2,
+          "sourceReason": "The public-investment commitment explicitly describes expanding universal free zero-to-three provision. The current Congress/Senate education bullet independently commits necessary financial transfers to named governments and the other competent administrations for universal provision. These two current-policy passages are read together; the future-Republic chapter alone is not inherited.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -2380,11 +2413,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -3924,7 +3952,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -8081,7 +8109,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -9131,7 +9159,7 @@
         {
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-007",
@@ -14961,6 +14989,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "sourceExpectedValue": 2,
+          "sourceReason": "The current animal-rights bullet explicitly sets veterinary-service VAT at ten percent and separately supports a care-cost bonus for vulnerable carers of companion animals. Ten percent matches the question’s threshold; the current tax baseline is a publisher statement, not a separately verified legal fact.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -14981,11 +15042,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -18019,6 +18075,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "sourceExpectedValue": 2,
+          "sourceReason": "The operative State-tax section explicitly increases the aviation tax for each additional annual flight. Income-related refunds and protection for lower-income passengers are retained. The separate rent/rail policies and the publisher’s climate-effect claims are not used as numerical evidence.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -18039,11 +18128,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -18710,11 +18794,6 @@
           "reason": "unknown"
         },
         {
-          "candidacyId": "boe-2023-006",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
           "reason": "unknown"
@@ -18973,6 +19052,11 @@
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "reason": "ambiguous",
+          "expectedScored": false
         }
       ]
     },
@@ -20998,6 +21082,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "sourceExpectedValue": 2,
+          "sourceReason": "The current Congress/Senate section explicitly promotes ratification of the nuclear-weapons prohibition treaty. This directly supports the treaty; it does not imply a civilian-reactor policy or a particular military-spending target.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -21018,11 +21135,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "unknown"
         },

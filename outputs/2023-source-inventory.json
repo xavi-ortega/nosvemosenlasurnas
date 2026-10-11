@@ -1454,7 +1454,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_programme_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "full_document_read_partial_authored_mapping",
       "programmeIds": [
         "erc-july"
       ],
@@ -1484,6 +1484,29 @@
         "publicationUrl": "https://en.esquerra.cat/en/esquerra-republicana-includes-negotiations-on-a-referendum--an-amnesty-law-and-building-the-catalan-republic-erc-esquerra",
         "publicationDate": "2023-07-06",
         "rationale": "Primary party publication and original presentation explicitly identify 23 July Congress/Senate programme; exact official ERC ballot names in four Catalan constituencies. Future Republic model is separated from current chamber measures and stated EH Bildu alliance is Senate-only."
+      },
+      "authoredMappingProgress": {
+        "recordedAt": "2026-10-11T15:21:43.070189+00:00",
+        "derivedQuestionIds": [
+          "rail-alternative-flight-limits",
+          "voting-age-sixteen",
+          "paid-curricular-internships",
+          "support-nuclear-weapons-ban-treaty",
+          "frequent-flight-levy",
+          "free-early-education",
+          "lower-veterinary-vat"
+        ],
+        "newCitedUnknownQuestionIds": [
+          "rent-price-cap",
+          "shorter-workweek",
+          "public-dental-care",
+          "pensions-cost-of-living",
+          "available-repair-parts",
+          "sugary-drink-tax",
+          "ban-fur-animal-breeding"
+        ],
+        "futureRepublicNotInherited": true,
+        "fullMatrixComplete": false
       }
     },
     {
@@ -4287,7 +4310,7 @@
           "\"Unidad Castellana\" \"programa electoral\" 2023",
           "\"Unidad Castellana\" \"julio\" \"2023\""
         ],
-        "finding": "Actual election-specific and primary-domain followup completed. Results establish roster/identity or other-election/secondary leads only. No verified full primary 23J programme acquired.",
+        "finding": "Both current and preserved primary news catalogues read in full as native text. The current catalogue contains 2022 pension opinion and 2019 Puertollano municipal articles; the archive resolved to April 2019. Neither establishes a 23J Congress programme. Embedded external media remain unreviewed; programme absence is not certified.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
       }
@@ -8302,7 +8325,10 @@
         "https://unidadcastellana.jimdofree.com/programas-electorales/",
         "https://www.unidadcastellana.com/programas-electorales/"
       ],
-      "analysis": "Primary news catalogue recovered. Native catalogue reading is not completed, and no23Jprogramme certification is inferred."
+      "analysis": "Entire native catalogue text directly read, including the 23 April 2022 pension opinion, complete reproduced April 2019 Puertollano municipal articles, contact/footer and the blocked external YouTube placeholder. These are attributed publisher/secondary opinions and municipal proposals, not a verified 23J Congress programme. No numerical policy inherited; external video/images are not marked read.",
+      "analysisStatus": "complete_native_catalogue_text_read_wrong_election_material_excluded",
+      "fullNativeTextRead": true,
+      "fullProgrammeRead": false
     },
     {
       "id": "unidadcastellana-primary-july-archive-followup",
@@ -8319,7 +8345,10 @@
       "links": [
         "https://web.archive.org/programas-electorales/"
       ],
-      "analysis": "Requested July2023 capture resolves April2019. Not a verified23J programme; native catalogue not fully read."
+      "analysis": "Entire preserved native news text directly read, including municipal Puertollano election announcement and footer. The requested 2023 capture resolved to April 2019. It is excluded as other-election catalogue material and does not certify programme absence.",
+      "analysisStatus": "complete_native_catalogue_text_read_wrong_election_material_excluded",
+      "fullNativeTextRead": true,
+      "fullProgrammeRead": false
     },
     {
       "id": "jxg-national-election-announcement-followup",
@@ -8343,8 +8372,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 145,
-    "independentAnswerCases": 725,
+    "scoredDraftMappings": 149,
+    "independentAnswerCases": 745,
     "browserRentCases": 80,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -8367,10 +8396,11 @@
     ],
     "latestBrowserRentCases": 10,
     "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-authored-territorial-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-erc-runtime-verification.json",
     "latestCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-authored-territorial-verification.json"
+    "fixedComparisonBrowserVerification": "outputs/2023-authored-territorial-verification.json",
+    "latestDraftSha256": "c88da0450683f610c5ad0156893e3ef86baace9e85d3de820b11a14e135ed876"
   }
 }

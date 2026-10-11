@@ -3834,7 +3834,7 @@
           "votes": 1698
         }
       ],
-      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
+      "programmeSearchStatus": "searched_primary_archive_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3925,17 +3925,30 @@
           "votes": 1442
         }
       ],
-      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_or_coalition_agreement_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "evb-info-july-archive"
+      ],
       "ballotAliases": [
         "ESTAT VALENCIÀ DEL BENESTAR (EVB)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_campaign_evidence_recorded_qualifications_pending_scoring",
       "ballotRecordIds": [
         "congress-valencia-9"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/evb-23j-agreement.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "evb-info-july-archive"
+        ],
+        "ballotRecordIds": [
+          "congress-valencia-9"
+        ],
+        "rationale": "June8agreement quotedinJune20primarypressnote forJuly23Congresscoalition withsixparliamentarysupportconditions. ArchivedAugust16afterelection; currentsummarysamewording, noothermemberprogrammeinherited."
+      }
     },
     {
       "id": "boe-2023-043",
@@ -4130,18 +4143,32 @@
           "votes": 198
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_or_coalition_agreement_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "3edad-july-archive"
+      ],
       "ballotAliases": [
         "TERCERA EDAD EN ACCIÓN (3e)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_campaign_evidence_recorded_qualifications_pending_scoring",
       "ballotRecordIds": [
         "congress-larioja-2",
         "congress-segovia-4"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/3edad-23j-campaign.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "3edad-july-archive"
+        ],
+        "ballotRecordIds": [
+          "congress-larioja-2",
+          "congress-segovia-4"
+        ],
+        "rationale": "July20primaryhomepage national23Julyprogramme andtwocampaignbrochures explicitlylinked; fourfacesfullyread. Nationalprogramme forLaRioja/Segovia; provincialwater/transport/industryonlySegovia."
+      }
     },
     {
       "id": "boe-2023-051",
@@ -4153,7 +4180,7 @@
           "votes": 463
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_archive_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -4338,17 +4365,30 @@
           "votes": 115
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_or_coalition_agreement_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "fuerza-published-document-archive"
+      ],
       "ballotAliases": [
         "FUERZA CÍVICA (FUERZA CÍVICA)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_campaign_evidence_recorded_qualifications_pending_scoring",
       "ballotRecordIds": [
         "congress-valladolid-7"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/fuerza-23j-archived.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "fuerza-published-document-archive"
+        ],
+        "ballotRecordIds": [
+          "congress-valladolid-7"
+        ],
+        "rationale": "ValladolidCongress campaignarticleJune22/July11linkedprogramme wrapper archivedJuly27withactualGoogleembeddedpublishedID; July27document fullyread, draftstatusretained; lateraddedclausesexcluded."
+      }
     }
   ],
   "acquisitions": [
@@ -5628,7 +5668,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 39
+    "programmeDocumentsFullyRead": 42
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -6416,6 +6456,498 @@
       ],
       "analysisStatus": "complete_publication_text_and_download_links_directly_read",
       "applicabilityNote": "Full campaign page and actual anchors read. July21 2023 archive offers programme8003, diptych8010 and decalogue8014; Congress candidate Lydia Cañedo in Alicante. Current PDFs are not assumed byte-identical to an unrecovered2023PDFsnapshot."
+    },
+    {
+      "id": "fuerza-primary-programme",
+      "url": "https://fuerzacivica.es/programa/",
+      "retrievedAt": "2026-10-11T11:51:30.972689+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "candidacyId": "boe-2023-059"
+    },
+    {
+      "id": "fuerza-primary-23j",
+      "url": "https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/",
+      "retrievedAt": "2026-10-11T11:51:30.973016+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "candidacyId": "boe-2023-059"
+    },
+    {
+      "id": "fuerza-archive-programme",
+      "url": "https://web.archive.org/web/20230720000000id_/https://fuerzacivica.es/programa/",
+      "retrievedAt": "2026-10-11T11:51:30.973126+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230727134106id_/https://fuerzacivica.es/programa/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/fuerza-archive-programme-decoded-publication-1beef8a6faea.html",
+      "sha256": "1beef8a6faeadfed3f60e011ee917ac620eb207ab1a06d8e38c8f5f03ca617e4",
+      "textFile": "storage/app/election-sources/2023-congress/fuerza-archive-programme-decoded-publication-1beef8a6faea.txt",
+      "textSha256": "33358cf1c152b7e1a3b5d4185a07e3a699024167c24a824bb8dc05d23a4cd313",
+      "links": [
+        "https://fuerzacivica.es/programa/"
+      ],
+      "transportFile": "storage/app/election-sources/2023-congress/fuerza-archive-programme-publication-cc95939eaef5.html",
+      "transportSha256": "cc95939eaef553f13c41a48bf95cc0b00c26e0a8127458469f07f00bfddd77aa",
+      "transportEncoding": "gzip",
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-059"
+    },
+    {
+      "id": "fuerza-archive-23j",
+      "url": "https://web.archive.org/web/20230720000000id_/https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/",
+      "retrievedAt": "2026-10-11T11:51:30.973217+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230727134104id_/https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/fuerza-archive-23j-publication-eb8e5cee2bdf.html",
+      "sha256": "eb8e5cee2bdf8d2e2288ccb61be6ba9771fa517d81c67dbd4c711d327e12ff7a",
+      "textFile": "storage/app/election-sources/2023-congress/fuerza-archive-23j-publication-eb8e5cee2bdf.txt",
+      "textSha256": "5631d0c44f66e46d93785b38cd6ae8ad5f15836f0912d795009aa417d610f4a4",
+      "links": [
+        "https://fuerzacivica.es/programa/",
+        "mailto:enteryour@addresshere.com?subject=Fuerza%20C%C3%ADvica%20en%20las%20Elecciones%20Generales%20del%2023%20de%20Julio&body=Check%20this%20out:%20https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/",
+        "whatsapp://send?text=Fuerza%20C%C3%ADvica%20en%20las%20Elecciones%20Generales%20del%2023%20de%20Julio - https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-059"
+    },
+    {
+      "id": "evb-republica-primary",
+      "url": "https://republicavalenciana.org/",
+      "retrievedAt": "2026-10-11T11:52:40.599414+00:00",
+      "resolvedUrl": "https://republicavalenciana.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-republica-primary-publication-a2bc3a58ff0b.html",
+      "sha256": "a2bc3a58ff0b45a2b4e01f1c5bf8718f2b68148d60a5254cbafad3a881dad308",
+      "textFile": "storage/app/election-sources/2023-congress/evb-republica-primary-publication-a2bc3a58ff0b.txt",
+      "textSha256": "2837a84b95ffe1df512cc1819b4b54359e436683d4eb3b8b9957ab38d76e0890",
+      "links": [
+        "https://republicavalenciana.org/candidatura/generals-2023",
+        "https://republicavalenciana.org/evb-programa"
+      ],
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "evb-via-primary",
+      "url": "https://www.viamediterrania.org/",
+      "retrievedAt": "2026-10-11T11:52:40.599763+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "3edad-primary",
+      "url": "https://3edad.org/",
+      "retrievedAt": "2026-10-11T11:52:40.599846+00:00",
+      "resolvedUrl": "https://3edad.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-primary-publication-763bd11eb996.html",
+      "sha256": "763bd11eb9967451798e8c4f1edb76db2d2429d0057f418c33a5756a147d1e6a",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-primary-publication-763bd11eb996.txt",
+      "textSha256": "26b1615024fbc3fadb861ae79c59dbb38e261f365dd74bfcae54c89d5f0e5a2b",
+      "links": [],
+      "candidacyId": "boe-2023-050"
+    },
+    {
+      "id": "3edad-primary-programme",
+      "url": "https://3edad.org/programa-politico-para-madrid/",
+      "retrievedAt": "2026-10-11T11:52:40.599911+00:00",
+      "resolvedUrl": "https://3edad.org/programa-politico-para-madrid/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-primary-programme-publication-6e758ddb5cf1.html",
+      "sha256": "6e758ddb5cf139f0ce5b8a76d9f5d17fedb04f78697160914cb506eef7a93064",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-primary-programme-publication-6e758ddb5cf1.txt",
+      "textSha256": "aa1e4be807a7d8060b41dbaac2efe48e2d326f4efae5409e5054b01c2e65aaa5",
+      "links": [],
+      "candidacyId": "boe-2023-050"
+    },
+    {
+      "id": "por-mi-region-primary",
+      "url": "https://pormiregion.es/",
+      "retrievedAt": "2026-10-11T11:52:41.146689+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+      "candidacyId": "boe-2023-039",
+      "applicabilityNote": "July8homepage completely read. Links/topics municipal/Mayregional only; no verifiedCongressprogramme substitution."
+    },
+    {
+      "id": "unidad-castellana-primary",
+      "url": "https://unidadcastellana.wordpress.com/",
+      "retrievedAt": "2026-10-11T11:52:41.217432+00:00",
+      "resolvedUrl": "https://unidadcastellana.wordpress.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/unidad-castellana-primary-publication-6a3c4e570f84.html",
+      "sha256": "6a3c4e570f8454d68e5ead203e9b2fd8d32af6c8703260450f6be08c1f11017f",
+      "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-primary-publication-6a3c4e570f84.txt",
+      "textSha256": "68703e022f444f6d0aaf39d4d68d1e69b7cc6e0cc29ddf4bebecacf6a86d8856",
+      "links": [
+        "https://unidadcastellana.wordpress.com/2023/03/21/hello-world-2/",
+        "https://unidadcastellana.wordpress.com/2023/03/21/hello-world-2/#respond",
+        "https://unidadcastellana.wordpress.com/2023/03/21/presentate-con-nosotros/",
+        "https://unidadcastellana.wordpress.com/2023/03/21/presentate-con-nosotros/#respond",
+        "https://unidadcastellana.wordpress.com/2023/03/28/creemos/",
+        "https://unidadcastellana.wordpress.com/2023/03/28/creemos/#respond",
+        "https://unidadcastellana.wordpress.com/2023/03/28/queremos/",
+        "https://unidadcastellana.wordpress.com/2023/03/28/queremos/#respond",
+        "https://unidadcastellana.wordpress.com/2023/03/28/somos/",
+        "https://unidadcastellana.wordpress.com/2023/03/28/somos/#respond",
+        "https://unidadcastellana.wordpress.com/2023/04/06/la-union-hace-la-fuerza/",
+        "https://unidadcastellana.wordpress.com/2023/04/06/la-union-hace-la-fuerza/#respond",
+        "https://unidadcastellana.wordpress.com/2023/04/06/ud-ca-propone-un-museo-de-semana-santa-en-valladolid/",
+        "https://unidadcastellana.wordpress.com/2023/04/06/ud-ca-propone-un-museo-de-semana-santa-en-valladolid/#respond",
+        "https://unidadcastellana.wordpress.com/2023/05/07/presentada-la-candidatura-de-medina-del-campo/",
+        "https://unidadcastellana.wordpress.com/2023/05/07/presentada-la-candidatura-de-medina-del-campo/#respond",
+        "https://unidadcastellana.wordpress.com/2023/05/07/unidad-castellana-presenta-sus-candidaturas-a-las-elecciones-municipales/",
+        "https://unidadcastellana.wordpress.com/2023/05/07/unidad-castellana-presenta-sus-candidaturas-a-las-elecciones-municipales/#respond",
+        "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Funidadcastellana.wordpress.com%2F2023%2F05%2F07%2Fpresentada-la-candidatura-de-medina-del-campo%2F&signup_flow=account"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-051",
+      "applicabilityNote": "Complete primarysites/catalogue text read. Only municipal2011/2019/May2023 andgeneralpartyprinciples; no verified23JCongressadoption."
+    },
+    {
+      "id": "evb-republica-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://republicavalenciana.org/",
+      "retrievedAt": "2026-10-11T11:52:41.415980+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720014946id_/https://republicavalenciana.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-republica-july-archive-publication-346813d238ca.html",
+      "sha256": "346813d238caf14720464e4a48081ed9d49f5047d18df40e58f5dba4a9451bc8",
+      "textFile": "storage/app/election-sources/2023-congress/evb-republica-july-archive-publication-346813d238ca.txt",
+      "textSha256": "48241145c14951cef8babd74842c6d2cd594991aefd3357a460d6392abdee727",
+      "links": [],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "3edad-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://3edad.org/",
+      "retrievedAt": "2026-10-11T11:52:41.761908+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.html",
+      "sha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.txt",
+      "textSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+      "links": [
+        "https://3edad.org/programas-electorales/"
+      ],
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "candidacyId": "boe-2023-050",
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json"
+    },
+    {
+      "id": "evb-programme-primary",
+      "url": "https://republicavalenciana.org/evb-programa",
+      "retrievedAt": "2026-10-11T11:53:06.688224+00:00",
+      "resolvedUrl": "https://republicavalenciana.org/evb-programa",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-programme-primary-publication-90251e9dc8e4.html",
+      "sha256": "90251e9dc8e4b358502dd2fbbbb4f36065a3b87b11a0baca81dacbb8dd16cb92",
+      "textFile": "storage/app/election-sources/2023-congress/evb-programme-primary-publication-90251e9dc8e4.txt",
+      "textSha256": "7d5aa398c4cb85faa30c34bf7c2f73acfdf75f86edfa8fa9f25b768862cef66e",
+      "links": [
+        "https://republicavalenciana.org/candidatura/generals-2023",
+        "https://republicavalenciana.org/evb-programa"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "evb-candidacy-primary",
+      "url": "https://republicavalenciana.org/candidatura/generals-2023",
+      "retrievedAt": "2026-10-11T11:53:06.688544+00:00",
+      "resolvedUrl": "https://republicavalenciana.org/candidatura/generals-2023",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-candidacy-primary-publication-12c79cb1fd56.html",
+      "sha256": "12c79cb1fd56b5bb71f9e3524866f581785ce93f1a9860ca0ab283eeb3902030",
+      "textFile": "storage/app/election-sources/2023-congress/evb-candidacy-primary-publication-12c79cb1fd56.txt",
+      "textSha256": "56b08623e56d6ba8aef2793b1d4c7afb2bc39b6b004c2588c77b8ff3cec23c98",
+      "links": [
+        "https://republicavalenciana.org/candidatura/generals-2023",
+        "https://republicavalenciana.org/estat-valencia-del-benestar/generals-2023",
+        "https://republicavalenciana.org/evb-programa"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "3edad-programmes-july",
+      "url": "https://web.archive.org/web/20230720000000id_/https://3edad.org/programas-electorales/",
+      "retrievedAt": "2026-10-11T11:53:06.688637+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230905104130id_/https://3edad.org/programas-electorales/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-programmes-july-decoded-publication-1719192abe2c.html",
+      "sha256": "1719192abe2c484fb46381aae8e4a22c4c568efc727805309150e63df3dc176f",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-programmes-july-decoded-publication-1719192abe2c.txt",
+      "textSha256": "5dd421b198268c7b33bcdabdda63cef23bf17dcae58cd339dcc152c2b11b8751",
+      "links": [
+        "https://3edad.org/programas-electorales/",
+        "https://3edad.org/wp-content/uploads/2023/05/PROGRAMA-POLITICO-AYUNTAMIENTO-MADRID.pdf",
+        "https://3edad.org/wp-content/uploads/2023/05/PROGRAMA-POLITICO-C.A.-MURCIA.pdf"
+      ],
+      "transportFile": "storage/app/election-sources/2023-congress/3edad-programmes-july-publication-60835baef2fe.html",
+      "transportSha256": "60835baef2fe49d6ab26527bbdd9041c8337e3e6a71a04e17d95dd245eb32cad",
+      "transportEncoding": "gzip",
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-050",
+      "applicabilityNote": "Complete catalogue read; onlyMayMadridmunicipal/Murciaregionalprogrammes. Excludedwithout23Jadoption."
+    },
+    {
+      "id": "fuerza-published-document",
+      "url": "https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+      "retrievedAt": "2026-10-11T11:53:36.952592+00:00",
+      "resolvedUrl": "https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/fuerza-published-document-publication-72c855dbaca8.html",
+      "sha256": "72c855dbaca8c8f90d5c9da4545ffe83f4bfdc07f252af4d62d40fd2d3b70084",
+      "textFile": "storage/app/election-sources/2023-congress/fuerza-published-document-publication-72c855dbaca8.txt",
+      "textSha256": "a167d5eafbbe00218cb9ca022462296d558acff84db1b8741690c6193740f39c",
+      "links": [],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-059"
+    },
+    {
+      "id": "evb-programme-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://republicavalenciana.org/evb-programa",
+      "retrievedAt": "2026-10-11T11:53:36.952906+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230921115437id_/https://republicavalenciana.org/evb-programa",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-programme-july-archive-publication-2b83921441a1.html",
+      "sha256": "2b83921441a1512ebbb73e5b97256a7f97cd1db4904793f7038915589eeb9302",
+      "textFile": "storage/app/election-sources/2023-congress/evb-programme-july-archive-publication-2b83921441a1.txt",
+      "textSha256": "04de14f910270d2dab7e573c0248613813b5a10695316fed11573bd111c394fb",
+      "links": [
+        "https://web.archive.org/web/20230720000000id_/https:/republicavalenciana.org/republicavalenciana.org/evb-programa"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-042"
+    },
+    {
+      "id": "evb-info-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://republicavalenciana.info/",
+      "retrievedAt": "2026-10-11T11:53:36.952997+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230816091100id_/https://republicavalenciana.org/candidatura",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.html",
+      "sha256": "83b8a1e803132fb9492d6856f25aedfef58511c48d9db36a26dc10e60fe0ec21",
+      "textFile": "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.txt",
+      "textSha256": "f1dbb799477219a29091a103e2e3074780b6f609545c13ae64fad9beeeadaf49",
+      "links": [
+        "https://annanoticies.com/wp-content/uploads/2023/06/congres.jpg",
+        "https://annanoticies.com/wp-content/uploads/2023/06/senat.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/AVALS-G-2023.pdf",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant1.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant2.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant3.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant4.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant5.jpg",
+        "https://republicavalenciana.org/wp-content/uploads/2023/06/llevant6.jpg"
+      ],
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "candidacyId": "boe-2023-042",
+      "notebook": "outputs/2023-programme-notebooks/evb-23j-agreement.json"
+    },
+    {
+      "id": "por-mi-region-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://pormiregion.es/",
+      "retrievedAt": "2026-10-11T11:53:36.953061+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230708160431id_/https://pormiregion.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/por-mi-region-july-archive-decoded-publication-3b5e0d64c8ff.html",
+      "sha256": "3b5e0d64c8ff8511e79b1f6967e247502fab0e19c93ed993aa3b5e417a02a3f6",
+      "textFile": "storage/app/election-sources/2023-congress/por-mi-region-july-archive-decoded-publication-3b5e0d64c8ff.txt",
+      "textSha256": "4f793e52ede9aff6d7ab0396b27832ae2a585fcb43f5a5f57b2b59193ddeb734",
+      "links": [
+        "https://pormiregion.es/wp-content/uploads/2023/04/NP-presentacion-Juana-Rocamora-1.pdf",
+        "https://pormiregion.es/wp-content/uploads/2023/04/WhatsApp-Audio-2023-04-26-at-17.45.29.mp3",
+        "https://web.archive.org/category/candidaturas-2023/"
+      ],
+      "transportFile": "storage/app/election-sources/2023-congress/por-mi-region-july-archive-publication-de3d6c543bc9.html",
+      "transportSha256": "de3d6c543bc9114f4727ea85d1f6c407deb1e8f954f7072c8fa2286c8ad23e9d",
+      "transportEncoding": "gzip",
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-039",
+      "applicabilityNote": "July8homepage completely read. Links/topics municipal/Mayregional only; no verifiedCongressprogramme substitution."
+    },
+    {
+      "id": "3edad-segovia-brochure-page",
+      "url": "https://3edad.org/folleto-de-la-candidatura-en-segovia/",
+      "retrievedAt": "2026-10-11T11:57:06.564672+00:00",
+      "resolvedUrl": "https://3edad.org/folleto-de-la-candidatura-en-segovia/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-segovia-brochure-page-publication-7f2d5dca2eab.html",
+      "sha256": "7f2d5dca2eabcd12f6f228849b435540f6549eb3854ec06dd5cae1341380e84e",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-segovia-brochure-page-publication-7f2d5dca2eab.txt",
+      "textSha256": "5f199588510d5ee20b5b757167dc5dbbb6aa3e11e57d3cb5ab4c5f8852cab16c",
+      "links": [],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-050"
+    },
+    {
+      "id": "3edad-general-brochure-page",
+      "url": "https://3edad.org/nuevo-folleto-de-3-edad-en-accion/",
+      "retrievedAt": "2026-10-11T11:57:06.564942+00:00",
+      "resolvedUrl": "https://3edad.org/nuevo-folleto-de-3-edad-en-accion/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/3edad-general-brochure-page-publication-8a7a6f7954a6.html",
+      "sha256": "8a7a6f7954a6db5862cc828992fc59ee8657b5f6f0a88197ac06432313897784",
+      "textFile": "storage/app/election-sources/2023-congress/3edad-general-brochure-page-publication-8a7a6f7954a6.txt",
+      "textSha256": "976847543f674e858458786770659b6d627108bc8c7e597e28585e13c5763e96",
+      "links": [],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-050"
+    },
+    {
+      "id": "fuerza-published-document-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+      "retrievedAt": "2026-10-11T11:57:06.565033+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.html",
+      "sha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+      "textFile": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.txt",
+      "textSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+      "links": [],
+      "transportFile": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-publication-34b910161b8a.html",
+      "transportSha256": "34b910161b8abb2133fccb13028eefba9059fd82c54d53e169811a3d9c76168d",
+      "transportEncoding": "gzip",
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "candidacyId": "boe-2023-059",
+      "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json"
+    },
+    {
+      "id": "unidad-castellana-secondary-primary",
+      "url": "https://unidadcastellana.jimdofree.com/",
+      "retrievedAt": "2026-10-11T11:57:06.565118+00:00",
+      "resolvedUrl": "https://unidadcastellana.jimdofree.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/unidad-castellana-secondary-primary-publication-c323bc9eb718.html",
+      "sha256": "c323bc9eb71882ffcce6fd162bc2d5693fdc74dc54e9d397e07742a56a558ee5",
+      "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-secondary-primary-publication-c323bc9eb718.txt",
+      "textSha256": "decbe98e34e7d9a3d950ed5d95a5f1ace143d8a844e51d2f33064091aaab2afd",
+      "links": [
+        "https://unidadcastellana.jimdofree.com/programas-electorales/"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-051",
+      "applicabilityNote": "Complete primarysites/catalogue text read. Only municipal2011/2019/May2023 andgeneralpartyprinciples; no verified23JCongressadoption."
+    },
+    {
+      "id": "unidad-castellana-programme-catalogue",
+      "url": "https://unidadcastellana.jimdofree.com/programas-electorales/",
+      "retrievedAt": "2026-10-11T11:57:47.742150+00:00",
+      "resolvedUrl": "https://unidadcastellana.jimdofree.com/programas-electorales/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/unidad-castellana-programme-catalogue-publication-ee2945bab56f.html",
+      "sha256": "ee2945bab56fec234b233b96df7eb0def8343c6f9ab10e5ff8d7a74630b76904",
+      "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-programme-catalogue-publication-ee2945bab56f.txt",
+      "textSha256": "123d5c8faf6fd448bac2c9fb5e002b1b61004f33974cf999dd1036855b8c746a",
+      "links": [
+        "https://unidadcastellana.jimdofree.com/app/download/14256469829/Programa_2011_de_Felix.pdf?t=1555162693",
+        "https://unidadcastellana.jimdofree.com/app/download/14256476729/TODO+LO+DE+PORZUNA.pdf?t=1555162693",
+        "https://unidadcastellana.jimdofree.com/app/download/14256481229/UNIDAD+CASTELLANA+de+Fuente+el+fresno.pdf?t=1555162693",
+        "https://unidadcastellana.jimdofree.com/app/download/14281750429/Programa+Electoral+2019+-+Puertollano.pdf?t=1555162745",
+        "https://unidadcastellana.jimdofree.com/programas-electorales/"
+      ],
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded",
+      "candidacyId": "boe-2023-051",
+      "applicabilityNote": "Complete primarysites/catalogue text read. Only municipal2011/2019/May2023 andgeneralpartyprinciples; no verified23JCongressadoption."
+    },
+    {
+      "id": "3edad-segovia-front",
+      "url": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-A.jpg",
+      "retrievedAt": "2026-10-11T11:57:47.334263+00:00",
+      "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-A.jpg",
+      "mediaType": "image/jpeg",
+      "status": "image_acquired_completely_read_visual_citations_pending",
+      "file": "storage/app/election-sources/2023-congress/3edad-segovia-front-20b3f5b42306.jpg",
+      "sha256": "20b3f5b42306414e336899dd8f2fed2500cea140c9211b37ba08d7d620ae97a5",
+      "candidacyId": "boe-2023-050",
+      "analysisStatus": "complete_original_image_directly_read",
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "applicabilityNote": "PrimaryJuly23campaignbrochurepage andJuly20archivehomepage links verified; currentimagebytesnotcertifiedequalunrecovered2023image."
+    },
+    {
+      "id": "3edad-segovia-back",
+      "url": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-B.jpg",
+      "retrievedAt": "2026-10-11T11:57:47.334546+00:00",
+      "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-B.jpg",
+      "mediaType": "image/jpeg",
+      "status": "image_acquired_completely_read_visual_citations_pending",
+      "file": "storage/app/election-sources/2023-congress/3edad-segovia-back-65fb5ce2b64f.jpg",
+      "sha256": "65fb5ce2b64fa4d4009bdde8b86fc960a9b0f8a6bb90f48ff8f60a13369c1d56",
+      "candidacyId": "boe-2023-050",
+      "analysisStatus": "complete_original_image_directly_read",
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "applicabilityNote": "PrimaryJuly23campaignbrochurepage andJuly20archivehomepage links verified; currentimagebytesnotcertifiedequalunrecovered2023image."
+    },
+    {
+      "id": "3edad-general-front",
+      "url": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-A-2048x1444.jpg",
+      "retrievedAt": "2026-10-11T11:57:47.334633+00:00",
+      "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-A-2048x1444.jpg",
+      "mediaType": "image/jpeg",
+      "status": "image_acquired_completely_read_visual_citations_pending",
+      "file": "storage/app/election-sources/2023-congress/3edad-general-front-3a6ac28bf0f2.jpg",
+      "sha256": "3a6ac28bf0f2fcc95f3b02cff8486aade25f6fc90c1d6097b7b7333f882d82df",
+      "candidacyId": "boe-2023-050",
+      "analysisStatus": "complete_original_image_directly_read",
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "applicabilityNote": "PrimaryJuly23campaignbrochurepage andJuly20archivehomepage links verified; currentimagebytesnotcertifiedequalunrecovered2023image."
+    },
+    {
+      "id": "3edad-general-back",
+      "url": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-B-2048x1444.jpg",
+      "retrievedAt": "2026-10-11T11:57:47.334719+00:00",
+      "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-B-2048x1444.jpg",
+      "mediaType": "image/jpeg",
+      "status": "image_acquired_completely_read_visual_citations_pending",
+      "file": "storage/app/election-sources/2023-congress/3edad-general-back-692968d5c0fc.jpg",
+      "sha256": "692968d5c0fc74dcfaf2651b614caca58d87bd01536133727986c7ac82399307",
+      "candidacyId": "boe-2023-050",
+      "analysisStatus": "complete_original_image_directly_read",
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "applicabilityNote": "PrimaryJuly23campaignbrochurepage andJuly20archivehomepage links verified; currentimagebytesnotcertifiedequalunrecovered2023image."
     }
   ]
 }

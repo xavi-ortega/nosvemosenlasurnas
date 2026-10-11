@@ -1,9 +1,33 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-11T11:49:46.536050+00:00",
+  "recordedAt": "2026-10-11T12:01:15.146323+00:00",
   "electionId": "es-congress-2023-07-23",
   "scope": "Original-byte/text hashes, declared complete PDF-page or HTML-section coverage and supplied literal offsets. This verifies structure, not semantic correctness, complete corpus, territorial applicability, archival vintage or released mappings.",
   "documents": [
+    {
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+      "documentId": "3edad-july-archive",
+      "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+      "textSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 12,
+      "coveredSections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
     {
       "notebook": "outputs/2023-programme-notebooks/adelante-decalogue.json",
       "notebookSha256": "8ffba4ad4f5c1754ac606e4f173927d4de9dfe9000015d067ab5cafe0846ed08",
@@ -661,6 +685,22 @@
       ]
     },
     {
+      "notebook": "outputs/2023-programme-notebooks/evb-23j-agreement.json",
+      "notebookSha256": "3db8a907f3d134357433e71f1ecf42d2cfa3eb11123206e32375b76df22132b5",
+      "documentId": "evb-info-july-archive",
+      "sourceSha256": "83b8a1e803132fb9492d6856f25aedfef58511c48d9db36a26dc10e60fe0ec21",
+      "textSha256": "f1dbb799477219a29091a103e2e3074780b6f609545c13ae64fad9beeeadaf49",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 4,
+      "coveredSections": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
       "notebook": "outputs/2023-programme-notebooks/falange.json",
       "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
       "documentId": "falange-primary",
@@ -788,6 +828,43 @@
         85,
         86,
         87
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+      "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+      "documentId": "fuerza-published-document-archive",
+      "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+      "textSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 25,
+      "coveredSections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
       ]
     },
     {
@@ -2362,11 +2439,12 @@
     }
   ],
   "summary": {
-    "fullyReadDocumentNotebooks": 39,
+    "fullyReadVisualAnnexImages": 4,
+    "fullyReadDocumentNotebooks": 42,
     "coveredPdfPages": 1896,
-    "coveredHtmlSections": 29,
-    "nativeLiteralExcerptsChecked": 1397,
-    "visualExcerptsWithTranscriptionPending": 41,
+    "coveredHtmlSections": 70,
+    "nativeLiteralExcerptsChecked": 1454,
+    "visualExcerptsWithTranscriptionPending": 45,
     "semanticCorrectnessCertified": false,
     "completeCorpusCertified": false,
     "releasedRealQuestions": 0

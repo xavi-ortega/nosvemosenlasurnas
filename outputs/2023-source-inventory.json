@@ -18,7 +18,8 @@
     "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open.",
     "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release.",
     "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open.",
-    "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown."
+    "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown.",
+    "VOX178-page programme fully read including all381numbered measures/submeasures and every historical-action list,32original cover/low-native-text visual pages.70supplied literal excerpts checked; all positions null. Earlier VAT motions distinguished from current pledges; repeated chapter policies do not pad the future bank."
   ],
   "candidacies": [
     {
@@ -838,15 +839,15 @@
           "votes": 4359
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "vox-campaign-30mb"
       ],
       "ballotAliases": [
         "VOX (VOX)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_national_vox_2023_scope_verified_not_scoring_ready",
       "ballotRecordIds": [
         "congress-albacete-7",
         "congress-alicante-7",
@@ -900,7 +901,68 @@
         "congress-ceuta-6",
         "congress-melilla-3"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/vox.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "vox-campaign-30mb"
+        ],
+        "ballotRecordIds": [
+          "congress-albacete-7",
+          "congress-alicante-7",
+          "congress-almeria-6",
+          "congress-alava-8",
+          "congress-asturias-7",
+          "congress-avila-8",
+          "congress-badajoz-6",
+          "congress-baleares-3",
+          "congress-barcelona-7",
+          "congress-bizkaia-7",
+          "congress-burgos-7",
+          "congress-caceres-6",
+          "congress-cadiz-10",
+          "congress-cantabria-5",
+          "congress-castellon-6",
+          "congress-ciudadreal-5",
+          "congress-cordoba-5",
+          "congress-acoruna-8",
+          "congress-cuenca-3",
+          "congress-gipuzkoa-7",
+          "congress-girona-10",
+          "congress-granada-5",
+          "congress-guadalajara-8",
+          "congress-huelva-6",
+          "congress-huesca-7",
+          "congress-jaen-8",
+          "congress-leon-11",
+          "congress-lleida-7",
+          "congress-lugo-4",
+          "congress-madrid-5",
+          "congress-malaga-8",
+          "congress-murcia-8",
+          "congress-navarra-10",
+          "congress-ourense-7",
+          "congress-palencia-14",
+          "congress-laspalmas-7",
+          "congress-pontevedra-4",
+          "congress-larioja-10",
+          "congress-salamanca-11",
+          "congress-segovia-5",
+          "congress-sevilla-5",
+          "congress-soria-6",
+          "congress-tarragona-5",
+          "congress-teruel-6",
+          "congress-toledo-10",
+          "congress-valencia-5",
+          "congress-valladolid-10",
+          "congress-zamora-9",
+          "congress-zaragoza-8",
+          "congress-ceuta-6",
+          "congress-melilla-3"
+        ],
+        "rationale": "National VOX programme explicitly23July2023 in original cover and23J2023 backcover;51final Congress ballots reconciled. BOE-A-2023-15066 Santa Cruz de Tenerife Congress entry7 explicitly No proclamada; retained outside final choices."
+      }
     },
     {
       "id": "boe-2023-004",
@@ -4660,8 +4722,11 @@
         "sha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
         "pageCount": 178,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/vox.json",
+      "electionApplicability": "Original primary campaign PDF covers explicitly23J2023 and23July2023. National programme matches51final VOX Congress ballots. Santa Cruz de Tenerife is officially not proclaimed."
     },
     {
       "id": "cup-primary",
@@ -4946,7 +5011,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 25
+    "programmeDocumentsFullyRead": 26
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

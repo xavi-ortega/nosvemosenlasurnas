@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T19:27:22.701176+00:00",
+  "recordedAt": "2026-10-11T19:35:15.842136+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -1016,10 +1016,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No establece poner un precio máximo al alquiler de viviendas en zonas con precios muy altos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -1954,12 +1962,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Permitir trabajo remunerado a pensionistas no establece una jornada máxima de 35 horas con el mismo sueldo.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 5,
+              "start": 3398,
+              "end": 3507,
+              "quote": "Protección a los autónomos y refroma laboral que permita a los pensionistas desarrollar trabajos remunerados.",
+              "contextStart": 3393,
+              "contextEnd": 3513,
+              "contextSha256": "6b3d5ac99fb7c3131545b67c479c5594e767fae51210b778470c8bf4cecefa8a",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -3011,12 +3046,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La tarjeta sanitaria común y la historia clínica compartida no establecen ampliar los servicios dentales públicos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -4015,10 +4077,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No establece prolongar o cerrar las centrales nucleares existentes.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -5829,12 +5899,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los criterios comunes entre comunidades no establecen plazas de 0 a 3 años gratuitas para todas las familias.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 4595,
+              "end": 4699,
+              "quote": "Coordinación y criterios comunes en todas las autonomías principlmente en Sanidad, Educación y Justicia.",
+              "contextStart": 4590,
+              "contextEnd": 4705,
+              "contextSha256": "1e04497041b009d31215db8473f9a5a9fb24640942a3637583afefc1cc8a2315",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -6798,10 +6895,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece limitar vuelos con alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -7631,10 +7736,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener o eliminar el derecho a solicitar la eutanasia.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -8498,12 +8611,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los criterios comunes de justicia no establecen quién elige a los miembros judiciales del órgano de gobierno.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 4595,
+              "end": 4699,
+              "quote": "Coordinación y criterios comunes en todas las autonomías principlmente en Sanidad, Educación y Justicia.",
+              "contextStart": 4590,
+              "contextEnd": 4705,
+              "contextSha256": "1e04497041b009d31215db8473f9a5a9fb24640942a3637583afefc1cc8a2315",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -9457,12 +9597,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las pensiones dignas y las exenciones de impuestos no establecen actualizarlas según la subida de precios.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 3008,
+              "end": 3196,
+              "quote": "Pensiones dignas y justas. Eliminación del IRPF de la pensión. Reducción del IBI de la vivienda habitual del pensionista. Eliminación de impuestos de herencia y donaciones en primer grado.",
+              "contextStart": 3003,
+              "contextEnd": 3202,
+              "contextSha256": "3c667575e74ee943ac5c6071b70541025257c1ff074379a02031c9e5ee875aa1",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -10293,12 +10460,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las exenciones de impuestos de pensiones y herencias no establecen mantener un impuesto específico sobre grandes fortunas.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 3008,
+              "end": 3196,
+              "quote": "Pensiones dignas y justas. Eliminación del IRPF de la pensión. Reducción del IBI de la vivienda habitual del pensionista. Eliminación de impuestos de herencia y donaciones en primer grado.",
+              "contextStart": 3003,
+              "contextEnd": 3202,
+              "contextSha256": "3c667575e74ee943ac5c6071b70541025257c1ff074379a02031c9e5ee875aa1",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -12019,10 +12213,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece conservar sin venta privada las viviendas de propiedad pública.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -13003,12 +13205,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La tarjeta y la historia clínica comunes no establecen ampliar los acuerdos con centros privados.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -13854,10 +14083,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prestar el aborto permitido por la ley en centros sanitarios públicos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -14793,10 +15030,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece la gestión de las centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -15557,12 +15802,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El trabajo remunerado de pensionistas no establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 5,
+              "start": 3398,
+              "end": 3507,
+              "quote": "Protección a los autónomos y refroma laboral que permita a los pensionistas desarrollar trabajos remunerados.",
+              "contextStart": 3393,
+              "contextEnd": 3513,
+              "contextSha256": "6b3d5ac99fb7c3131545b67c479c5594e767fae51210b778470c8bf4cecefa8a",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -16360,12 +16632,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación en valores no establece comedores gratuitos para todo el alumnado de etapas obligatorias.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 11,
+              "start": 5200,
+              "end": 5310,
+              "quote": "Educación social en valores: recuperar los valores de respeto en todo los ámbitos desde la educación primaria.",
+              "contextStart": 5195,
+              "contextEnd": 5316,
+              "contextSha256": "ce58b524131bb0d2008df118c52233289c734f6dc51e607429bae0107d452138",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -17197,12 +17496,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La tarjeta sanitaria común no establece eliminar el copago de medicamentos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -17942,12 +18268,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las listas abiertas no establecen reconocer el voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 4017,
+              "end": 4080,
+              "quote": "Reforma electoral y promoción de un sistema de listas abiertas.",
+              "contextStart": 4012,
+              "contextEnd": 4086,
+              "contextSha256": "8e6d37a01ba4bcd19e9cb415f7fd1a2b87a1c7739b5f2febf68c8d9214f6c79c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -18710,10 +19063,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -19682,10 +20043,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece remunerar las prácticas en empresas que forman parte de los estudios.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -20584,12 +20953,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El ministerio de diversidad familiar no establece permisos de maternidad y paternidad de seis meses o más.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 2702,
+              "end": 2806,
+              "quote": "Creación del Ministerio de Diversidad Familiar. Lucha contra cualquier discriminación por razón de edad.",
+              "contextStart": 2697,
+              "contextEnd": 2812,
+              "contextSha256": "606ea7d26c6dcf6499a1fd3687d9f7437b22910be4679f1bb8a4b5a91415e52c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -21318,10 +21714,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -22049,10 +22453,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece despenalizar el cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -22813,12 +23225,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los criterios educativos comunes no establecen retirar el recargo de matrícula al repetir asignaturas.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 4595,
+              "end": 4699,
+              "quote": "Coordinación y criterios comunes en todas las autonomías principlmente en Sanidad, Educación y Justicia.",
+              "contextStart": 4590,
+              "contextEnd": 4705,
+              "contextSha256": "1e04497041b009d31215db8473f9a5a9fb24640942a3637583afefc1cc8a2315",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -23595,12 +24034,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación en valores no establece al menos tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 11,
+              "start": 5200,
+              "end": 5310,
+              "quote": "Educación social en valores: recuperar los valores de respeto en todo los ámbitos desde la educación primaria.",
+              "contextStart": 5195,
+              "contextEnd": 5316,
+              "contextSha256": "ce58b524131bb0d2008df118c52233289c734f6dc51e607429bae0107d452138",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -24517,12 +24983,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La protección a los autónomos no concreta una exención de cuota por ingresos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 5,
+              "start": 3398,
+              "end": 3507,
+              "quote": "Protección a los autónomos y refroma laboral que permita a los pensionistas desarrollar trabajos remunerados.",
+              "contextStart": 3393,
+              "contextEnd": 3513,
+              "contextSha256": "6b3d5ac99fb7c3131545b67c479c5594e767fae51210b778470c8bf4cecefa8a",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -25404,12 +25897,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reducir el impuesto municipal de la vivienda habitual del pensionista no establece eximir de IVA la compra de la primera vivienda.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 3008,
+              "end": 3196,
+              "quote": "Pensiones dignas y justas. Eliminación del IRPF de la pensión. Reducción del IBI de la vivienda habitual del pensionista. Eliminación de impuestos de herencia y donaciones en primer grado.",
+              "contextStart": 3003,
+              "contextEnd": 3202,
+              "contextSha256": "3c667575e74ee943ac5c6071b70541025257c1ff074379a02031c9e5ee875aa1",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -26138,10 +26658,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -26905,10 +27433,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece retirar la financiación pública de espectáculos taurinos con muerte del animal.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -27691,10 +28227,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la caza en toda España.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -28545,12 +29089,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La referencia general a políticas sociales no establece una prohibición permanente de cortar suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 10,
+              "start": 4901,
+              "end": 4997,
+              "quote": "Políticas sociales coherentes y supervisión y eliminación de “chiringuitos” de cualquier índole.",
+              "contextStart": 4896,
+              "contextEnd": 5003,
+              "contextSha256": "c85dd75cfa41a3ff7b57d6706a5d314895c7a43cd7f9a1c0b09dddeb6b0cfc93",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -29350,10 +29921,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una transferencia universal de 20.000 euros al cumplir 23 años.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -30131,10 +30710,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -30881,12 +31468,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La historia clínica accesible digitalmente no establece formatos abiertos para todos los documentos administrativos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -31702,10 +32316,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener o retirar la prohibición de gestación subrogada.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -32399,10 +33021,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -33164,10 +33794,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece libros escolares gratuitos que cualquiera pueda copiar y compartir.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -34121,12 +34759,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La historia clínica accesible digitalmente no concreta que todos los trámites puedan hacerse en persona sin obligación de usar internet.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -34924,10 +35589,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece rebajar al 10% o menos el impuesto de servicios veterinarios.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -35691,10 +36364,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho a elegir talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -36423,10 +37104,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un depósito reembolsable por envases de bebidas.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -37156,10 +37845,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece anticonceptivos gratuitos para jóvenes.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -37922,10 +38619,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -38843,10 +39548,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Combatir la brecha digital en los folletos no concreta acceso gratuito universal a una conexión básica a internet.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -39831,10 +40544,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "La mejora de gestión del agua del folleto de Segovia no concreta gestión pública del suministro ni se aplica automáticamente a La Rioja.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -40688,10 +41409,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece atención pública y gratuita a menores de seis años con dificultades del desarrollo.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -41559,12 +42288,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El ministerio familiar no establece una reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 2702,
+              "end": 2806,
+              "quote": "Creación del Ministerio de Diversidad Familiar. Lucha contra cualquier discriminación por razón de edad.",
+              "contextStart": 2697,
+              "contextEnd": 2812,
+              "contextSha256": "606ea7d26c6dcf6499a1fd3687d9f7437b22910be4679f1bb8a4b5a91415e52c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -42327,10 +43083,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -43042,10 +43806,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -43775,10 +44547,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la cría de animales para obtener pieles.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -44472,10 +45252,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -45218,12 +46006,57 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Suprimir gastos considerados superfluos o ciertas entidades no identifica una prohibición de ayudas directas a medios privados.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 2442,
+              "end": 2500,
+              "quote": "Supresión del gasto superfluo en la administración pública",
+              "contextStart": 2437,
+              "contextEnd": 2506,
+              "contextSha256": "35aac06fc6414c9cc3541bd449b0087bb3dd994eeddedc552fb52c9aefb02d8d",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            },
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 10,
+              "start": 4901,
+              "end": 4997,
+              "quote": "Políticas sociales coherentes y supervisión y eliminación de “chiringuitos” de cualquier índole.",
+              "contextStart": 4896,
+              "contextEnd": 5003,
+              "contextSha256": "c85dd75cfa41a3ff7b57d6706a5d314895c7a43cd7f9a1c0b09dddeb6b0cfc93",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -45966,12 +46799,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los criterios comunes de justicia no establecen retirar los tribunales especiales por razón del cargo.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 9,
+              "start": 4595,
+              "end": 4699,
+              "quote": "Coordinación y criterios comunes en todas las autonomías principlmente en Sanidad, Educación y Justicia.",
+              "contextStart": 4590,
+              "contextEnd": 4705,
+              "contextSha256": "1e04497041b009d31215db8473f9a5a9fb24640942a3637583afefc1cc8a2315",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -46680,12 +47540,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las listas abiertas no establecen eliminar las firmas exigidas a partidos sin representación.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 4017,
+              "end": 4080,
+              "quote": "Reforma electoral y promoción de un sistema de listas abiertas.",
+              "contextStart": 4012,
+              "contextEnd": 4086,
+              "contextSha256": "8e6d37a01ba4bcd19e9cb415f7fd1a2b87a1c7739b5f2febf68c8d9214f6c79c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -47447,10 +48334,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una ficha pública de quienes negocian o intermedian en cada propuesta de ley.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -48366,12 +49261,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La tarjeta sanitaria y la historia clínica comunes no establecen incluir psicoterapia entre los servicios públicos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 4282,
+              "end": 4393,
+              "quote": "Tarjeta sanitaria única. Historia clínica individual y accesible digitalmente desde cualquier parte del Estado.",
+              "contextStart": 4277,
+              "contextEnd": 4399,
+              "contextSha256": "aed1532e57f3b9eca01e94fa518ab2af0a2c70f87e68239e88a76a203ca88860",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -49152,10 +50074,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece apoyar el tratado internacional de prohibición de armas nucleares.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -49883,10 +50813,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece restringir la publicidad infantil de alimentos poco saludables.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -50787,12 +51725,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La protección a autónomos no concreta una exención de cuota durante el primer año.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 5,
+              "start": 3398,
+              "end": 3507,
+              "quote": "Protección a los autónomos y refroma laboral que permita a los pensionistas desarrollar trabajos remunerados.",
+              "contextStart": 3393,
+              "contextEnd": 3513,
+              "contextSha256": "6b3d5ac99fb7c3131545b67c479c5594e767fae51210b778470c8bf4cecefa8a",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -51729,12 +52694,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Eximir de impuestos las pensiones no establece ajustar el impuesto sobre la renta por la inflación.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 4,
+              "start": 3008,
+              "end": 3196,
+              "quote": "Pensiones dignas y justas. Eliminación del IRPF de la pensión. Reducción del IBI de la vivienda habitual del pensionista. Eliminación de impuestos de herencia y donaciones en primer grado.",
+              "contextStart": 3003,
+              "contextEnd": 3202,
+              "contextSha256": "3c667575e74ee943ac5c6071b70541025257c1ff074379a02031c9e5ee875aa1",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -52600,10 +53592,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece ayudas domésticas de energía pagadas directamente a la persona consumidora.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -53384,10 +54384,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece que médicos de familia y pediatras puedan seguir trabajando hasta los 72 años.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -54167,10 +55175,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece una autorización legal previa para que una menor pueda abortar.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -54985,10 +56001,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece citas para prestaciones estatales en un máximo de 15 días naturales.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -55785,10 +56809,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece que toda decisión pública que requiera valorar un caso deba tomarla una persona.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -56624,10 +57656,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece un gasto en seguridad y defensa del 2% de la economía.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -57533,10 +58573,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece avales estatales de hipotecas para jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -58314,12 +59362,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El ministerio familiar no establece cobrar la prestación por hijo desde el quinto mes del embarazo.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 2702,
+              "end": 2806,
+              "quote": "Creación del Ministerio de Diversidad Familiar. Lucha contra cualquier discriminación por razón de edad.",
+              "contextStart": 2697,
+              "contextEnd": 2812,
+              "contextSha256": "606ea7d26c6dcf6499a1fd3687d9f7437b22910be4679f1bb8a4b5a91415e52c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -59115,12 +60190,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las residencias especializadas no establecen reconocimiento de dependencia al diagnosticar esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 3709,
+              "end": 3774,
+              "quote": "Residencias con sello de calidad, especializadas y más numerosas.",
+              "contextStart": 3704,
+              "contextEnd": 3780,
+              "contextSha256": "0897b72b3a1dd4209e13d6a14b5f1c15c212623ffba6331c613353ab615f972e",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -59866,12 +60968,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El ministerio familiar no concreta bonificar hasta el 45% de cotizaciones del personal contratado para el hogar.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 2702,
+              "end": 2806,
+              "quote": "Creación del Ministerio de Diversidad Familiar. Lucha contra cualquier discriminación por razón de edad.",
+              "contextStart": 2697,
+              "contextEnd": 2812,
+              "contextSha256": "606ea7d26c6dcf6499a1fd3687d9f7437b22910be4679f1bb8a4b5a91415e52c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -60601,12 +61730,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación en valores no establece tutorías adicionales para recuperar aprendizaje perdido en la pandemia.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 11,
+              "start": 5200,
+              "end": 5310,
+              "quote": "Educación social en valores: recuperar los valores de respeto en todo los ámbitos desde la educación primaria.",
+              "contextStart": 5195,
+              "contextEnd": 5316,
+              "contextSha256": "ce58b524131bb0d2008df118c52233289c734f6dc51e607429bae0107d452138",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -61440,10 +62596,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece intermediarios administrativos que hagan trámites en nombre de la persona.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -62430,10 +63594,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "Mejorar conexiones en el folleto de Segovia no establece transporte rural a demanda y a precio reducido, ni una medida nacional.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -63215,10 +64387,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir la alimentación forzada de animales para producir alimentos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -63912,10 +65092,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -64801,10 +65989,18 @@
           "candidacyId": "boe-2023-050",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece acceso libre a resultados de investigaciones financiadas con dinero público.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -65648,12 +66844,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las listas abiertas no establecen una única circunscripción nacional para el Congreso.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 4017,
+              "end": 4080,
+              "quote": "Reforma electoral y promoción de un sistema de listas abiertas.",
+              "contextStart": 4012,
+              "contextEnd": 4086,
+              "contextSha256": "8e6d37a01ba4bcd19e9cb415f7fd1a2b87a1c7739b5f2febf68c8d9214f6c79c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",
@@ -66414,12 +67637,39 @@
         },
         {
           "candidacyId": "boe-2023-050",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las listas abiertas no establecen igual tiempo para vídeos electorales de todas las candidaturas en medios públicos.",
+          "authoredAnalysis": "Direct audit of this exact proposition against the whole twelve-section archived campaign homepage and four original leaflet faces. General goals, the contributory minimum linked to minimum wage and provincial Segovia water/transport/industry proposals are not broadened or converted into numeric positions.",
+          "citations": [
+            {
+              "documentId": "3edad-july-archive",
+              "sourceUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+              "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+              "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+              "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+              "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 7,
+              "start": 4017,
+              "end": 4080,
+              "quote": "Reforma electoral y promoción de un sistema de listas abiertas.",
+              "contextStart": 4012,
+              "contextEnd": 4086,
+              "contextSha256": "8e6d37a01ba4bcd19e9cb415f7fd1a2b87a1c7739b5f2febf68c8d9214f6c79c",
+              "provenanceEvidence": "outputs/2023-3edad-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_campaign_family_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "3edad-july-archive",
+            "3edad-segovia-front",
+            "3edad-segovia-back",
+            "3edad-general-front",
+            "3edad-general-back"
+          ]
         },
         {
           "candidacyId": "boe-2023-051",

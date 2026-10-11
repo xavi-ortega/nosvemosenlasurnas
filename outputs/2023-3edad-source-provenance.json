@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T19:35:15.842136+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "sourceFile": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.html",
+  "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+  "extractionFile": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.txt",
+  "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+  "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+  "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+  "publicationUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+  "archivedPublicationDate": "2023-07-20",
+  "archiveHtmlBytesReverified": true,
+  "allFourCurrentImageBytesMatchRetained": true,
+  "archivedImageByteIdentityVerified": false,
+  "visualAnnexes": [
+    {
+      "documentId": "3edad-segovia-front",
+      "sourceUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-A.jpg",
+      "file": "storage/app/election-sources/2023-congress/3edad-segovia-front-20b3f5b42306.jpg",
+      "sha256": "20b3f5b42306414e336899dd8f2fed2500cea140c9211b37ba08d7d620ae97a5",
+      "fullImageRead": true,
+      "authoredAnalysis": "Segoviafrontfullyread: NuriaMartínezRos, CongresscandidateSegovia, partyname/campaignslogans/web/nationalparty. Candidateidentity tiesbacktoSegovia; slogan aboutfirstprovince isnot verifiednationalrostertruth."
+    },
+    {
+      "documentId": "3edad-segovia-back",
+      "sourceUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-B.jpg",
+      "file": "storage/app/election-sources/2023-congress/3edad-segovia-back-65fb5ce2b64f.jpg",
+      "sha256": "65fb5ce2b64fa4d4009bdde8b86fc960a9b0f8a6bb90f48ff8f60a13369c1d56",
+      "fullImageRead": true,
+      "authoredAnalysis": "WholeSegoviaback: generationalpact/respect/education/justice, eldergeneralLaw, FamilyAffairsministry, minimumcontributorypension equalminimumwage andpensionincometaxexemption,digitaldivide, care/healthqualityseal, lonelinessplan, superfluousspending,youthopportunity, provincialwatermanagement, transportconnectionsandexternalindustrialinvestment. Provincialmeasures notnationallygeneralised."
+    },
+    {
+      "documentId": "3edad-general-front",
+      "sourceUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-A-2048x1444.jpg",
+      "file": "storage/app/election-sources/2023-congress/3edad-general-front-3a6ac28bf0f2.jpg",
+      "sha256": "3a6ac28bf0f2fcc95f3b02cff8486aade25f6fc90c1d6097b7b7333f882d82df",
+      "fullImageRead": true,
+      "authoredAnalysis": "Entiregeneralfrontread: partytitle/brand, multi-generationphoto, values/experience/wisdom, inform/affiliateQR/web/hashtag. Noextraoperationalpolicy."
+    },
+    {
+      "documentId": "3edad-general-back",
+      "sourceUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-B-2048x1444.jpg",
+      "file": "storage/app/election-sources/2023-congress/3edad-general-back-692968d5c0fc.jpg",
+      "sha256": "692968d5c0fc74dcfaf2651b614caca58d87bd01536133727986c7ac82399307",
+      "fullImageRead": true,
+      "authoredAnalysis": "Entiregeneralbackread: generationalpact, respect/education/justice, talentsforchildren/grandchildren, eldersgeneralLaw, FamilyAffairsministry, minimumcontributorypension equalminimumwage,pensionIRPFexemption,digitaldivide, care/healthqualityseal, lonelinessplan, superfluouspolitical/publicspending,youthopportunity; nobottomprovincialplan."
+    }
+  ],
+  "currentVerification": {
+    "recordedAt": "2026-10-11T19:32:33.964446+00:00",
+    "requests": [
+      {
+        "documentId": "3edad-july-archive",
+        "url": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+        "expectedRetainedSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+        "retainedHashVerified": true,
+        "status": 200,
+        "resolvedUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
+        "mediaType": "text/html; charset=UTF-8",
+        "bytes": 138798,
+        "sha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+        "file": ".tools/3edad-bank-audit/3edad-july-archive-recheck.html",
+        "currentBytesMatchRetained": true
+      },
+      {
+        "documentId": "3edad-segovia-front",
+        "url": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-A.jpg",
+        "expectedRetainedSha256": "20b3f5b42306414e336899dd8f2fed2500cea140c9211b37ba08d7d620ae97a5",
+        "retainedHashVerified": true,
+        "status": 200,
+        "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-A.jpg",
+        "mediaType": "image/jpeg",
+        "bytes": 1746148,
+        "sha256": "20b3f5b42306414e336899dd8f2fed2500cea140c9211b37ba08d7d620ae97a5",
+        "file": ".tools/3edad-bank-audit/3edad-segovia-front-recheck.jpg",
+        "currentBytesMatchRetained": true
+      },
+      {
+        "documentId": "3edad-segovia-back",
+        "url": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-B.jpg",
+        "expectedRetainedSha256": "65fb5ce2b64fa4d4009bdde8b86fc960a9b0f8a6bb90f48ff8f60a13369c1d56",
+        "retainedHashVerified": true,
+        "status": 200,
+        "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/Candidatura-Nuria-V2-cara-B.jpg",
+        "mediaType": "image/jpeg",
+        "bytes": 1505331,
+        "sha256": "65fb5ce2b64fa4d4009bdde8b86fc960a9b0f8a6bb90f48ff8f60a13369c1d56",
+        "file": ".tools/3edad-bank-audit/3edad-segovia-back-recheck.jpg",
+        "currentBytesMatchRetained": true
+      },
+      {
+        "documentId": "3edad-general-front",
+        "url": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-A-2048x1444.jpg",
+        "expectedRetainedSha256": "3a6ac28bf0f2fcc95f3b02cff8486aade25f6fc90c1d6097b7b7333f882d82df",
+        "retainedHashVerified": true,
+        "status": 200,
+        "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-A-2048x1444.jpg",
+        "mediaType": "image/jpeg",
+        "bytes": 1740221,
+        "sha256": "3a6ac28bf0f2fcc95f3b02cff8486aade25f6fc90c1d6097b7b7333f882d82df",
+        "file": ".tools/3edad-bank-audit/3edad-general-front-recheck.jpg",
+        "currentBytesMatchRetained": true
+      },
+      {
+        "documentId": "3edad-general-back",
+        "url": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-B-2048x1444.jpg",
+        "expectedRetainedSha256": "692968d5c0fc74dcfaf2651b614caca58d87bd01536133727986c7ac82399307",
+        "retainedHashVerified": true,
+        "status": 200,
+        "resolvedUrl": "https://3edad.org/wp-content/uploads/2023/07/3aEDAD-General-Cara-B-2048x1444.jpg",
+        "mediaType": "image/jpeg",
+        "bytes": 1651079,
+        "sha256": "692968d5c0fc74dcfaf2651b614caca58d87bd01536133727986c7ac82399307",
+        "file": ".tools/3edad-bank-audit/3edad-general-back-recheck.jpg",
+        "currentBytesMatchRetained": true
+      }
+    ]
+  },
+  "htmlSectionsReopened": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "allFourOriginalFacesVisuallyReopened": true,
+  "applicableBallotRecordIds": [
+    "congress-larioja-2",
+    "congress-segovia-4"
+  ],
+  "newUniqueDocumentCount": 0,
+  "limitations": [
+    "The existing twelve-section complete homepage notebook and four original leaflet-face readings reused/reopened. No new unique document/page/HTML-section/notebook count.",
+    "Fresh archived homepage bytes and all four current primary image bytes match the retained originals. Archive image byte identity remains unverified; the pre-vote homepage links identify campaign leaflets.",
+    "Exact family-inheritance and pension-income-tax mapping cells preserved unchanged, including their citations and notebook hashes. No new numeric positions.",
+    "Brochure minimum contributory pension equal to minimum wage is distinct from future inflation indexation; ministry naming varies between Family Diversity and Family Affairs. No silent correction.",
+    "Segovia provincial water, transport and industrial measures do not become national/La Rioja commitments and do not establish public ownership/on-demand low-cost transport.",
+    "Image claims remain direct visual records; no unsupported image-as-PDF/native-offset citation is generated. Municipal Madrid/Murcia and May 2021 programmes remain excluded.",
+    "Complete corpus/source-family/production privacy/publication acceptance remains open."
+  ]
+}

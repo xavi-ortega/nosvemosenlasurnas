@@ -56,7 +56,7 @@ function citation(c: Citation): HTMLElement {
     const location = document.mediaType === 'text/html'
         ? (c.locator.section === undefined ? '' : `${t('section')} ${c.locator.section}; `) + `${t('line')} ${c.locator.line}.`
         : `${t('page')} ${c.locator.page}; ${t('line')} ${c.locator.line}.`;
-    details.append(e('blockquote', c.context), e('p', location), p('interpretation'));
+    details.append(e('blockquote', c.context, document.mediaType === 'text/html' ? 'html-source-context' : ''), e('p', location), p('interpretation'));
     if (bank.kind === 'synthetic') {
         details.append(p('synthetic_original'));
     } else {

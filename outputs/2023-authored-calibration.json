@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T17:06:27.531211+00:00",
+  "recordedAt": "2026-10-11T17:17:08.249394+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -257,7 +257,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -687,7 +687,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -1188,7 +1188,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -4463,7 +4463,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -5180,7 +5180,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -7514,7 +7514,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -8625,7 +8625,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -8986,7 +8986,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -9645,7 +9645,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -10638,7 +10638,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -10969,7 +10969,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -13039,7 +13039,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -15226,7 +15226,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -16601,7 +16601,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -17255,6 +17255,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit public management of water security and supply, including domestic use in the same paragraph. No private operator exception is inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -17290,11 +17323,6 @@
         },
         {
           "candidacyId": "boe-2023-008",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-009",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -17953,7 +17981,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -19926,6 +19954,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit total abolition of special jurisdiction by public office. Royal inviolability in non-institutional acts is separately addressed and does not qualify this abolition.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -19966,11 +20027,6 @@
         },
         {
           "candidacyId": "boe-2023-008",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-009",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -20629,7 +20685,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -21981,7 +22037,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -22378,7 +22434,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -22699,7 +22755,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -23030,7 +23086,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -23361,7 +23417,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -23692,7 +23748,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -24023,7 +24079,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -24387,7 +24443,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-011",
@@ -24741,7 +24797,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -25072,7 +25128,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -25403,7 +25459,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -25734,7 +25790,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -26065,7 +26121,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -26396,7 +26452,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -26727,7 +26783,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -27063,7 +27119,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -27394,7 +27450,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -27725,7 +27781,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -28056,7 +28112,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -28387,7 +28443,7 @@
         {
           "candidacyId": "boe-2023-009",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-010",

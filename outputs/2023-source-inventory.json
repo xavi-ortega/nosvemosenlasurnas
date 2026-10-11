@@ -1637,7 +1637,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "pnv"
       ],
@@ -1652,7 +1652,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/pnv.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:17:08.249394+00:00",
+        "report": "outputs/2023-authored-pnv-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 3,
+        "newDerivedMappings": 2,
+        "ambiguousCells": 25,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-010",
@@ -5120,7 +5129,7 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "full_document_read_specific_bank_audited_partial_corpus",
       "notebook": "outputs/2023-programme-notebooks/pnv.json",
       "electionApplicability": "Primary party 23J 2023 page links original; Euskadi Congress scope; no Geroa adoption.",
       "applicableBallotRecordIds": [
@@ -5128,7 +5137,8 @@
         "congress-bizkaia-2",
         "congress-gipuzkoa-3"
       ],
-      "publishedAt": "2023-07-23"
+      "publishedAt": "2023-07-23",
+      "questionBankAudit": "outputs/2023-authored-pnv-audit.json"
     },
     {
       "id": "bng",
@@ -6668,10 +6678,16 @@
       "retrievedAt": "2026-10-11T08:56:46.629166+00:00",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_programme_reading",
+      "status": "publication_acquired_full_native_text_read_provenance_only",
       "file": "storage/app/election-sources/2023-congress/pnv-23j-publication.html",
       "sha256": "f9513841a724764ce924d476888964a9ca50267b77f374ab8c10a60d704bd10d",
-      "bytes": 57910
+      "bytes": 57910,
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "textFile": "storage/app/election-sources/2023-congress/pnv-23j-publication-visible.txt",
+      "textSha256": "349c496de746b39522bc6f1b1dca9ff2485a4aed1edcb5dbcb30e82d8e897920",
+      "extraction": "stdlib_htmlparser_visible_text_v1",
+      "authoredAnalysis": "Complete title/date/body/link, navigation/footer and entire cookie table/notice directly read. Published body explicitly says July23,2023 and links original programme20945. Cookie/analytics source assertions do not become product privacy claims; no social share, form or subscription executed."
     },
     {
       "id": "soriaya-2023-programme-html",
@@ -9158,8 +9174,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 155,
-    "independentAnswerCases": 775,
+    "scoredDraftMappings": 157,
+    "independentAnswerCases": 785,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9170,7 +9186,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
+    "latestBrowserDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9181,20 +9197,20 @@
       30
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 14,
-    "latestBrowserVerification": "outputs/2023-authored-caminando-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-three-small-verification.json",
+    "latestBrowserProgressivePaths": 10,
+    "latestBrowserVerification": "outputs/2023-authored-pnv-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pnv-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "725a1b1ed791dc7b8641761b338917fcd18e8ca970ec1d08fe432c236b346e52",
+    "latestDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
+    "latestAuthoredDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9223,6 +9239,15 @@
     "newJaenDerivedMappings": 0,
     "jaenVerification": "outputs/2023-authored-jaen-verification.json",
     "pendingJaenHttpCitations": 38,
-    "newJaenPublicHttpsCitations": 4
+    "newJaenPublicHttpsCitations": 4,
+    "pnvBankAudit": "outputs/2023-authored-pnv-audit.json",
+    "newPnvAuditedCells": 80,
+    "newPnvDerivedMappings": 2,
+    "newPnvCitedUncertainties": 25,
+    "pnvVerification": "outputs/2023-authored-pnv-verification.json",
+    "pnvValuesBrowserVerification": "outputs/2023-authored-pnv-values-browser-verification.json",
+    "latestPnvBrowserSessions": 10,
+    "latestPnvCitedAnswerPaths": 20,
+    "pnvFixedComparisonEligible": false
   }
 }

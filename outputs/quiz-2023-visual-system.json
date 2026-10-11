@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T08:06:01.970152+00:00",
+  "taskId": "Q017",
+  "status": "in_progress",
+  "prototype": "outputs/quiz-2023-design-prototype.html",
+  "tokens": {
+    "colors": {
+      "paper": "#f1f5fa",
+      "surface": "#ffffff",
+      "ink": "#173c69",
+      "muted": "#435c78",
+      "rule": "#a9bdcf",
+      "focus": "#006b61",
+      "selected": "#e8f4f2",
+      "error": "#9e2633"
+    },
+    "type": {
+      "family": "'Avenir Next', 'Segoe UI', Arial, sans-serif; local only",
+      "bodyPx": 18,
+      "mobileBodyPx": 17,
+      "questionRem": [
+        2.1,
+        3.4
+      ],
+      "introRem": [
+        2.5,
+        4
+      ],
+      "lineHeight": 1.55,
+      "questionLineHeight": 1.13
+    },
+    "layout": {
+      "shellMaxPx": 1040,
+      "questionStageMaxPx": 820,
+      "introMaxPx": 700,
+      "answerMinHeightPx": 62,
+      "actionMinHeightPx": 48,
+      "alignment": "left",
+      "answerOrder": [
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        "unsure",
+        "skip"
+      ]
+    },
+    "motion": {
+      "trigger": "deliberate state navigation only",
+      "durationMs": 180,
+      "translationPx": 5,
+      "reducedMotion": "no animation or transitions"
+    }
+  },
+  "designRationale": "A quiet civic reading surface with a dominant proposal and five equal vertical choices. Existing ballot-box identity and local type remain; no competition, clock, opinion-correctness signals, party palettes or analytical entry form.",
+  "briefReview": "Retained existing blue-grey/ink palette and ballot identity; removed competing programme-comparison actions and priority setup from the intro. Large proposal typography carries identity, while results lead with concrete relationships rather than a winner.",
+  "contrastChecks": [
+    {
+      "foreground": "ink",
+      "background": "paper",
+      "ratio": 10.17
+    },
+    {
+      "foreground": "ink",
+      "background": "surface",
+      "ratio": 11.13
+    },
+    {
+      "foreground": "muted",
+      "background": "paper",
+      "ratio": 6.31
+    },
+    {
+      "foreground": "surface",
+      "background": "ink",
+      "ratio": 11.13
+    },
+    {
+      "foreground": "ink",
+      "background": "selected",
+      "ratio": 9.89
+    },
+    {
+      "foreground": "focus",
+      "background": "surface",
+      "ratio": 6.41
+    },
+    {
+      "foreground": "error",
+      "background": "paper",
+      "ratio": 6.9
+    }
+  ],
+  "visualReview": {
+    "inspected": [
+      "desktop intro/question/results",
+      "mobile scope/selected/help/checkpoint/missing/loading/error",
+      "mobile validation"
+    ],
+    "findingResolved": "Prototype validation state initially retained an earlier selected option; it now clears the selection in the missing-answer specimen.",
+    "observations": [
+      "All five opinion options have the same size and appearance before selection.",
+      "Selected radio, border and background provide redundant feedback.",
+      "Help remains optional and does not predict policy consequences.",
+      "A high fictitious aggregate result still labels the rent disagreement separately.",
+      "Missing programme candidacy remains visible and unscored."
+    ]
+  },
+  "limitations": [
+    "This is a local fixture prototype, not the released 2023 bank or complete application.",
+    "Actual full-length directly authored questions and help must be reviewed after corpus reading/cross-reference.",
+    "Scope specimen shows three provinces only; the application still needs all52 local registry options.",
+    "Prototype state switching does not implement adaptive selection or actual scores.",
+    "Q017 remains in progress; Q018-Q024 application integration and real-copy acceptance remain pending."
+  ]
+}

@@ -171,7 +171,7 @@ Work one inspectable increment at a time with factual evidence.
 - Q014 · feat: select balanced authored questions and useful follow-ups · planned
 - Q015 · fix: explain agreements differences and aggregate results correctly · planned
 - Q016 · test: validate citations editions and correction behavior · planned
-- Q017 · design: specify and review the quiz visual system · planned
+- Q017 · design: specify and review the quiz visual system · in_progress
 - Q018 · feat: make the test the primary entry point · planned
 - Q019 · feat: build the accessible single-question experience · planned
 - Q020 · feat: add smooth transitions without losing private state · planned

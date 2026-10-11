@@ -1293,7 +1293,7 @@
           "sequence": 17,
           "phaseId": "QP4",
           "subject": "design: specify and review the quiz visual system",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q001"
           ],
@@ -1335,7 +1335,13 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/quiz-2023-visual-system.json",
+            "outputs/quiz-2023-design-prototype.html",
+            "outputs/quiz-2023-design-review.json"
+          ],
+          "progressNote": "Eleven concrete local fixture states reviewed with browser/axe/reflow/keyboard checks. Real authored copy and app integration remain pending; no real-data design completion claimed."
         },
         {
           "id": "Q018",
@@ -2061,7 +2067,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T07:59:55.820247+00:00",
+  "revisedAt": "2026-10-11T08:06:01.970152+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",

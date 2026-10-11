@@ -193,7 +193,7 @@ Dependencies: Q011, Q015
 
 ## Q017 design: specify and review the quiz visual system
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q001
 

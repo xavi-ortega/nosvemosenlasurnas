@@ -4433,6 +4433,141 @@
         "Archive index links/campaign statements are leads, not a fully acquired/read applicable programme; errors/challenges never establish programme absence.",
         "No unique programme/notebook/page count or numeric position added."
       ]
+    },
+    {
+      "candidacyId": "boe-2023-021",
+      "recordedAt": "2026-10-11T20:11:43.596440+00:00",
+      "status": "distinct_primary_aragon_23j_programme_located_acquisition_and_full_reading_pending",
+      "constituencyIds": [
+        "huesca",
+        "zaragoza"
+      ],
+      "queries": [
+        "Aragón Existe programa electoral 23J 2023 Congreso Huesca Zaragoza",
+        "\"Aragón Existe\" \"programa\" \"23 de julio\"",
+        "\"Coalición Existe\" \"programa electoral\" \"2023\" \"generales\"",
+        "site:aragonexiste.org \"23J\"",
+        "site:aragonexiste.org \"julio\" \"2023\" \"programa\"",
+        "site:teruelexiste.info \"Aragón Existe\" \"23J\" \"programa\""
+      ],
+      "httpAttempts": [
+        {
+          "id": "aragon-home",
+          "requestedUrl": "https://www.aragonexiste.org/",
+          "recordedAt": "2026-10-11T20:08:51.892290+00:00",
+          "status": 200,
+          "resolvedUrl": "https://aragonexiste.org/",
+          "bytes": 138763,
+          "sha256": "7fd15729d3eb69cb326bed77c5f0c9fdfff9bb952b4df9234526795a3540253d",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-home.raw"
+        },
+        {
+          "id": "aragon-search",
+          "requestedUrl": "https://www.aragonexiste.org/wp-json/wp/v2/search?search=23J&per_page=30",
+          "recordedAt": "2026-10-11T20:08:56.150117+00:00",
+          "status": 200,
+          "resolvedUrl": "https://www.aragonexiste.org/wp-json/wp/v2/search?search=23J&per_page=30",
+          "bytes": 945,
+          "sha256": "b601e2566e98d6f3407f2b52c1f9432f4fc06a79c90b7efa09a1dfb8f722337d",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-search.raw"
+        },
+        {
+          "id": "aragon-archive-availability",
+          "requestedUrl": "https://archive.org/wayback/available?url=www.aragonexiste.org&timestamp=20230720",
+          "recordedAt": "2026-10-11T20:08:57.388707+00:00",
+          "status": 200,
+          "resolvedUrl": "https://archive.org/wayback/available?url=www.aragonexiste.org&timestamp=20230720",
+          "bytes": 238,
+          "sha256": "c954a2ceee657f24659343d965b6d1e174d9dff22aa47719db774055b6f542f0",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-archive-availability.raw"
+        },
+        {
+          "id": "aragon-programme-publication",
+          "requestedUrl": "https://aragonexiste.org/programaelectoral/",
+          "recordedAt": "2026-10-11T20:09:41.953444+00:00",
+          "status": 200,
+          "resolvedUrl": "https://aragonexiste.org/programaelectoral/",
+          "bytes": 115518,
+          "sha256": "dc77b0c581bce8052136b5ba65071150a196e1f6f70fdeffbbae23b3cd5b8017",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-programme-publication.raw"
+        },
+        {
+          "id": "aragon-july-ballots",
+          "requestedUrl": "https://aragonexiste.org/aragon-existe-listas-23j/",
+          "recordedAt": "2026-10-11T20:09:43.620533+00:00",
+          "status": 200,
+          "resolvedUrl": "https://aragonexiste.org/aragon-existe-listas-23j/",
+          "bytes": 110607,
+          "sha256": "21e5bb04649b0dc84359cfa74abd1a0484055ab8ef8a61dcb66a494403cfadfe",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-july-ballots.raw"
+        },
+        {
+          "id": "aragon-programme-api",
+          "requestedUrl": "https://aragonexiste.org/wp-json/wp/v2/pages/2348",
+          "recordedAt": "2026-10-11T20:09:45.397039+00:00",
+          "status": 200,
+          "resolvedUrl": "https://aragonexiste.org/wp-json/wp/v2/pages/2348",
+          "bytes": 14521,
+          "sha256": "7b4d0301a73245107408f355bdfa07887f63761410d3d9641e0ed9f9b79b2c17",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-programme-api.raw"
+        },
+        {
+          "id": "aragon-home-july-archive",
+          "requestedUrl": "https://web.archive.org/web/20230720202237id_/https://aragonexiste.org/",
+          "recordedAt": "2026-10-11T20:10:56.410434+00:00",
+          "status": 200,
+          "resolvedUrl": "https://web.archive.org/web/20230720202237id_/https://aragonexiste.org/",
+          "bytes": 212833,
+          "sha256": "b6426ee2f55294f22baf3bd5b4a3ae2e3da3897d0fc2a1ce8e129cd03f39ccdf",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-home-july-archive.raw"
+        },
+        {
+          "id": "aragon-programme-archive-availability",
+          "requestedUrl": "https://archive.org/wayback/available?url=aragonexiste.org%2Fprogramaelectoral%2F&timestamp=20230720",
+          "recordedAt": "2026-10-11T20:10:58.155083+00:00",
+          "status": 200,
+          "resolvedUrl": "https://archive.org/wayback/available?url=aragonexiste.org%2Fprogramaelectoral%2F&timestamp=20230720",
+          "bytes": 271,
+          "sha256": "826cf531a0440e11aa78cb2d0d491b2be51e47923753b8a5708b7eae097129b0",
+          "bodyComplete": true,
+          "retainedFile": ".tools/teruel-bank-audit/aragon-programme-archive-availability.raw"
+        }
+      ],
+      "discoveredPages": [
+        {
+          "url": "https://aragonexiste.org/programaelectoral/",
+          "scopeAssessment": "Primary live page explicitly states Congress/Senate and 23 July. Complete substantive fourteen-point summary read, plus opening text. Publication API created May 15 2023 and modified November 30 2024; creation is not certified publication date of current July content."
+        },
+        {
+          "url": "https://aragonexiste.org/wp-content/uploads/2023/07/Programa-23j_ARAGON-EXISTE.-Elecciones-generales.pdf",
+          "scopeAssessment": "Distinct linked primary 29-page programme, opening pages explicitly Aragón/23 July/Cortes Generales. Complete acquisition/native extraction/full sequential reading and separate Huesca/Zaragoza audit remain pending; no Teruel inheritance."
+        },
+        {
+          "url": "https://aragonexiste.org/aragon-existe-listas-23j/",
+          "scopeAssessment": "Complete substantive primary announcement read. Names Huesca and Zaragoza Congress and Senate candidates separately; Senate candidates do not extend Congress evidence."
+        },
+        {
+          "url": "https://teruelexiste.info/teruel-existe-cree-en-un-sector-primario-fuerte-moderno-y-rentable-y-plantea-una-ley-de-agricultura-familiar/",
+          "scopeAssessment": "July 9 2023 primary campaign article fully opened. Mentions both Aragón/Teruel programmes for farming proposals; no adoption of the complete Teruel programme inferred."
+        },
+        {
+          "url": "https://www.aragonexiste.org/wp-content/uploads/2023/05/PROGRAMA-ELECTORAL-AE-TE.pdf",
+          "scopeAssessment": "May regional election programme lead excluded as a 23J substitute."
+        }
+      ],
+      "limitations": [
+        "Six actual queries and eight bounded HTTP/archive requests; live homepage worked by HTTP after the web-reader root open failed.",
+        "Current WordPress search for 23J returned the actual programme page and ballot announcement. No programme inferred from search snippets alone.",
+        "Archive responses and any capture retain actual timing; availability or a homepage capture alone does not certify original PDF bytes.",
+        "No new full programme acquired or read in this Teruel increment; separate new source loop continues next. No source absence certified."
+      ]
     }
   ]
 }

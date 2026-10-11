@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Explicit official roster alias reconciliation; programme applicability must be established separately for each ballot owner.",
+  "sourceHashes": {
+    "boe-proclaimed.html": "90a375bcfe81ab100847a3431ac94d51c7ceca78da8270a68347f1372af54e22",
+    "boe-correction-15548.html": "5fa05e1b9e717f495259f625ff5cbb246db41c522ff13705bdf55c9d2ed4a03f",
+    "boe-correction-15828.html": "0a683849a287caaf7d4e49ebe1569faf9a6673321e580849cb0768097ea81177",
+    "boe-results.html": "8db32c3e893966072e39afb003a711c74c0968d785017044ed00e856a81e90c0",
+    "boe-results-correction.html": "6ffe3554e334c7bb5ded8e3d0346c664c43452e95a5bde14c97baa80c2ccb9ab"
+  },
+  "constituencyAliases": {
+    "ALICANTE": "Alicante/Alacant",
+    "ÁLAVA": "Araba/Álava",
+    "BALEARES": "Balears (Illes)",
+    "CASTELLÓN": "Castellón/Castelló",
+    "A CORUÑA": "Coruña (A)",
+    "LAS PALMAS": "Palmas (Las)",
+    "LA RIOJA": "Rioja (La)",
+    "VALENCIA": "Valencia/València"
+  },
+  "candidacyAliases": {
+    "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)": "boe-2023-002",
+    "PARTIDO SOCIALISTA DE ISLAS BALEARES-PSOE (PSIB-PSOE)": "boe-2023-002",
+    "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)": "boe-2023-002",
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) [PSE-EE (PSOE)]": "boe-2023-002",
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) (PSE-EE (PSOE))": "boe-2023-002",
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)": "boe-2023-002",
+    "PARTIDO POPULAR/PARTIT POPULAR (PP)": "boe-2023-001",
+    "PARTIT POPULAR/PARTIDO POPULAR (PP)": "boe-2023-001",
+    "SUMAR ANDALUCÍA (SUMAR)": "boe-2023-004",
+    "SUMAR ARAGÓN (SUMAR ARAGÓN)": "boe-2023-004",
+    "SUMAR CANARIAS (SUMAR)": "boe-2023-004",
+    "SUMAR GALICIA (SUMAR)": "boe-2023-004",
+    "SUMAR-EN COMÚ PODEM (SUMAR-ECP)": "boe-2023-004",
+    "SUMAR MÉS (MÉS PER MALLORCA-MÉS PER MENORCA-SUMAR)": "boe-2023-004",
+    "COMPROMÍS - SUMAR: SUMEM PER GUANYAR (SUMAR - COMPROMÍS)": "boe-2023-004",
+    "COMPROMÍS-SUMAR: SUMEM PER GUANYAR (SUMAR-COMPROMÍS)": "boe-2023-004",
+    "JUNTS PER CATALUNYA-JUNTS (J x CAT-JUNTS)": "boe-2023-007",
+    "JUNTS PER CATALUNYA-JUNTS (JxCAT-JUNTS)": "boe-2023-007",
+    "BIDEZKO MUNDURANTZ (PUM+J)": "boe-2023-019",
+    "POR UN MUNDO MAIS XUSTO (PUM+J)": "boe-2023-019",
+    "POR UN MUNDO MAS JUSTO (PUM+J)": "boe-2023-019",
+    "PER UN MÓN MES JUST (PUM+J)": "boe-2023-019",
+    "POR UN MUNDO MÁIS XUSTO (PUM+J)": "boe-2023-019",
+    "PARTIT ANIMALISTA AMB EL MEDI AMBIENT (PACMA)": "boe-2023-013",
+    "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)": "boe-2023-022",
+    "PARTIDO COMUNISTA DOS TRABALLADORES DE GALIZA (PCTG)": "boe-2023-022",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)": "boe-2023-022",
+    "ARAGÓN EXISTE - COALICIÓN EXISTE (EXISTE)": "boe-2023-021",
+    "TERUEL EXISTE-Coalición EXISTE (EXISTE)": "boe-2023-021",
+    "ASTURIAS EXISTE-ESPAÑA VACIADA (ASTURIAS EXISTE EV)": "boe-2023-031",
+    "ESCONS EN BLANC (ESCONS EN BLANC)": "boe-2023-026"
+  },
+  "corrections": [
+    {
+      "sourceId": "BOE-A-2023-15548",
+      "sourceFile": "boe-correction-15548.html",
+      "district": "BALEARES",
+      "number": 6,
+      "before": "SUMAR MÉS (MÉS PER MALLORCA-SUMAR)",
+      "after": "SUMAR MÉS (MÉS PER MALLORCA-MÉS PER MENORCA-SUMAR)",
+      "evidence": "«6. SUMAR MÉS (MÉS PER MALLORCA-MÉS PER MENORCA-SUMAR)»"
+    },
+    {
+      "sourceId": "BOE-A-2023-15548",
+      "sourceFile": "boe-correction-15548.html",
+      "district": "BIZKAIA",
+      "number": 3,
+      "before": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) (PSE-EE (PSOE))",
+      "after": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+      "evidence": "«3. PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)»"
+    },
+    {
+      "sourceId": "BOE-A-2023-15828",
+      "sourceFile": "boe-correction-15828.html",
+      "district": "TERUEL",
+      "number": 13,
+      "before": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+      "after": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+      "status": "proclaimed",
+      "evidence": "1. Elena Campón de Miguel."
+    }
+  ],
+  "resultCorrection": "BOE-A-2023-19537 corrects a Senate Madrid candidate vote count only; no Congress candidacy change.",
+  "unproclaimedHandling": "All initial non-proclaimed records are retained; PACMA Teruel is restored by the explicit official correction. Final pair-set equality with result tables is mandatory."
+}

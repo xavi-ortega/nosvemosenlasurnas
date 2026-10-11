@@ -25,7 +25,7 @@ Dependencies: Q001
 
 ## Q003 data: reconcile every 23J Congress candidacy
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q001
 
@@ -37,7 +37,7 @@ Dependencies: Q001
 
 ## Q004 data: acquire and hash every available 2023 programme
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q003
 

@@ -5,11 +5,12 @@
   "chamber": "congress",
   "sourceUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907",
   "sourceSha256": "8db32c3e893966072e39afb003a711c74c0968d785017044ed00e856a81e90c0",
-  "status": "initial_official_results_inventory_requires_proclamation_and_corrections_reconciliation",
+  "status": "official_congress_roster_reconciled_programme_acquisition_in_progress",
   "officialDenominations": 59,
   "notes": [
     "Official result-table denominations are not yet deduplicated programme owners or final candidacy records. Preserve territorial/coalition distinctions until documented applicability permits sharing.",
-    "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz."
+    "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz.",
+    "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions."
   ],
   "candidacies": [
     {
@@ -230,6 +231,66 @@
       "analysisStatus": "not_started",
       "programmeIds": [
         "pp"
+      ],
+      "ballotAliases": [
+        "PARTIDO POPULAR (PP)",
+        "PARTIDO POPULAR/PARTIT POPULAR (PP)",
+        "PARTIT POPULAR/PARTIDO POPULAR (PP)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-3",
+        "congress-alicante-5",
+        "congress-almeria-5",
+        "congress-alava-5",
+        "congress-asturias-3",
+        "congress-avila-3",
+        "congress-badajoz-3",
+        "congress-baleares-2",
+        "congress-barcelona-4",
+        "congress-bizkaia-5",
+        "congress-burgos-8",
+        "congress-caceres-3",
+        "congress-cadiz-3",
+        "congress-cantabria-4",
+        "congress-castellon-3",
+        "congress-ciudadreal-3",
+        "congress-cordoba-3",
+        "congress-acoruna-3",
+        "congress-cuenca-5",
+        "congress-gipuzkoa-4",
+        "congress-girona-3",
+        "congress-granada-3",
+        "congress-guadalajara-5",
+        "congress-huelva-1",
+        "congress-huesca-4",
+        "congress-jaen-3",
+        "congress-leon-3",
+        "congress-lleida-3",
+        "congress-lugo-3",
+        "congress-madrid-3",
+        "congress-malaga-1",
+        "congress-murcia-3",
+        "congress-navarra-6",
+        "congress-ourense-4",
+        "congress-palencia-4",
+        "congress-laspalmas-1",
+        "congress-pontevedra-2",
+        "congress-larioja-3",
+        "congress-salamanca-3",
+        "congress-santacruzdetenerife-1",
+        "congress-segovia-2",
+        "congress-sevilla-3",
+        "congress-soria-3",
+        "congress-tarragona-8",
+        "congress-teruel-5",
+        "congress-toledo-3",
+        "congress-valencia-3",
+        "congress-valladolid-4",
+        "congress-zamora-4",
+        "congress-zaragoza-4",
+        "congress-ceuta-1",
+        "congress-melilla-1"
       ]
     },
     {
@@ -432,7 +493,66 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
+        "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
+        "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) [PSE-EE (PSOE)]",
+        "PARTIDO SOCIALISTA DE ISLAS BALEARES-PSOE (PSIB-PSOE)",
+        "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
+        "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-1",
+        "congress-alicante-1",
+        "congress-almeria-2",
+        "congress-alava-3",
+        "congress-asturias-1",
+        "congress-avila-2",
+        "congress-badajoz-2",
+        "congress-baleares-4",
+        "congress-bizkaia-3",
+        "congress-burgos-2",
+        "congress-caceres-2",
+        "congress-cadiz-2",
+        "congress-cantabria-2",
+        "congress-castellon-1",
+        "congress-ciudadreal-1",
+        "congress-cordoba-1",
+        "congress-acoruna-1",
+        "congress-cuenca-1",
+        "congress-gipuzkoa-2",
+        "congress-granada-1",
+        "congress-guadalajara-1",
+        "congress-huelva-2",
+        "congress-huesca-1",
+        "congress-jaen-1",
+        "congress-leon-2",
+        "congress-lugo-2",
+        "congress-madrid-2",
+        "congress-malaga-3",
+        "congress-murcia-2",
+        "congress-navarra-3",
+        "congress-ourense-1",
+        "congress-palencia-2",
+        "congress-laspalmas-2",
+        "congress-pontevedra-6",
+        "congress-larioja-4",
+        "congress-salamanca-2",
+        "congress-santacruzdetenerife-3",
+        "congress-segovia-3",
+        "congress-sevilla-2",
+        "congress-soria-2",
+        "congress-teruel-2",
+        "congress-toledo-1",
+        "congress-valencia-1",
+        "congress-valladolid-1",
+        "congress-zamora-1",
+        "congress-zaragoza-2",
+        "congress-ceuta-2",
+        "congress-melilla-2"
+      ]
     },
     {
       "id": "boe-2023-003",
@@ -646,7 +766,64 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "VOX (VOX)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-7",
+        "congress-alicante-7",
+        "congress-almeria-6",
+        "congress-alava-8",
+        "congress-asturias-7",
+        "congress-avila-8",
+        "congress-badajoz-6",
+        "congress-baleares-3",
+        "congress-barcelona-7",
+        "congress-bizkaia-7",
+        "congress-burgos-7",
+        "congress-caceres-6",
+        "congress-cadiz-10",
+        "congress-cantabria-5",
+        "congress-castellon-6",
+        "congress-ciudadreal-5",
+        "congress-cordoba-5",
+        "congress-acoruna-8",
+        "congress-cuenca-3",
+        "congress-gipuzkoa-7",
+        "congress-girona-10",
+        "congress-granada-5",
+        "congress-guadalajara-8",
+        "congress-huelva-6",
+        "congress-huesca-7",
+        "congress-jaen-8",
+        "congress-leon-11",
+        "congress-lleida-7",
+        "congress-lugo-4",
+        "congress-madrid-5",
+        "congress-malaga-8",
+        "congress-murcia-8",
+        "congress-navarra-10",
+        "congress-ourense-7",
+        "congress-palencia-14",
+        "congress-laspalmas-7",
+        "congress-pontevedra-4",
+        "congress-larioja-10",
+        "congress-salamanca-11",
+        "congress-segovia-5",
+        "congress-sevilla-5",
+        "congress-soria-6",
+        "congress-tarragona-5",
+        "congress-teruel-6",
+        "congress-toledo-10",
+        "congress-valencia-5",
+        "congress-valladolid-10",
+        "congress-zamora-9",
+        "congress-zaragoza-8",
+        "congress-ceuta-6",
+        "congress-melilla-3"
+      ]
     },
     {
       "id": "boe-2023-004",
@@ -866,6 +1043,72 @@
       "analysisStatus": "not_started",
       "programmeIds": [
         "sumar"
+      ],
+      "ballotAliases": [
+        "COMPROMÍS - SUMAR: SUMEM PER GUANYAR (SUMAR - COMPROMÍS)",
+        "COMPROMÍS-SUMAR: SUMEM PER GUANYAR (SUMAR-COMPROMÍS)",
+        "SUMAR (SUMAR)",
+        "SUMAR ANDALUCÍA (SUMAR)",
+        "SUMAR ARAGÓN (SUMAR ARAGÓN)",
+        "SUMAR CANARIAS (SUMAR)",
+        "SUMAR GALICIA (SUMAR)",
+        "SUMAR MÉS (MÉS PER MALLORCA-MÉS PER MENORCA-SUMAR)",
+        "SUMAR-EN COMÚ PODEM (SUMAR-ECP)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-6",
+        "congress-alicante-8",
+        "congress-almeria-11",
+        "congress-alava-9",
+        "congress-asturias-11",
+        "congress-avila-12",
+        "congress-badajoz-8",
+        "congress-baleares-6",
+        "congress-barcelona-9",
+        "congress-bizkaia-9",
+        "congress-burgos-12",
+        "congress-caceres-5",
+        "congress-cadiz-9",
+        "congress-cantabria-6",
+        "congress-castellon-7",
+        "congress-ciudadreal-7",
+        "congress-cordoba-7",
+        "congress-acoruna-10",
+        "congress-cuenca-9",
+        "congress-gipuzkoa-12",
+        "congress-girona-5",
+        "congress-granada-8",
+        "congress-guadalajara-9",
+        "congress-huelva-3",
+        "congress-huesca-8",
+        "congress-jaen-5",
+        "congress-leon-5",
+        "congress-lleida-6",
+        "congress-lugo-8",
+        "congress-madrid-11",
+        "congress-malaga-7",
+        "congress-murcia-11",
+        "congress-navarra-11",
+        "congress-ourense-9",
+        "congress-palencia-11",
+        "congress-laspalmas-8",
+        "congress-pontevedra-9",
+        "congress-larioja-6",
+        "congress-salamanca-12",
+        "congress-santacruzdetenerife-11",
+        "congress-segovia-7",
+        "congress-sevilla-10",
+        "congress-soria-10",
+        "congress-tarragona-7",
+        "congress-teruel-9",
+        "congress-toledo-9",
+        "congress-valencia-6",
+        "congress-valladolid-13",
+        "congress-zamora-8",
+        "congress-zaragoza-5",
+        "congress-ceuta-4",
+        "congress-melilla-4"
       ]
     },
     {
@@ -892,7 +1135,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-barcelona-1",
+        "congress-girona-1",
+        "congress-lleida-1",
+        "congress-tarragona-1"
+      ]
     },
     {
       "id": "boe-2023-006",
@@ -918,7 +1171,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-barcelona-6",
+        "congress-girona-7",
+        "congress-lleida-4",
+        "congress-tarragona-3"
+      ]
     },
     {
       "id": "boe-2023-007",
@@ -944,7 +1207,19 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "JUNTS (JUNTS)",
+        "JUNTS PER CATALUNYA-JUNTS (J x CAT-JUNTS)",
+        "JUNTS PER CATALUNYA-JUNTS (JxCAT-JUNTS)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-barcelona-10",
+        "congress-girona-8",
+        "congress-lleida-8",
+        "congress-tarragona-11"
+      ]
     },
     {
       "id": "boe-2023-008",
@@ -970,7 +1245,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "EUSKAL HERRIA BILDU (EH Bildu)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alava-1",
+        "congress-bizkaia-1",
+        "congress-gipuzkoa-1",
+        "congress-navarra-1"
+      ]
     },
     {
       "id": "boe-2023-009",
@@ -992,7 +1277,16 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alava-2",
+        "congress-bizkaia-2",
+        "congress-gipuzkoa-3"
+      ]
     },
     {
       "id": "boe-2023-010",
@@ -1018,7 +1312,18 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
+        "BLOQUE NACIONALISTA GALEGO (BNG)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-acoruna-5",
+        "congress-lugo-6",
+        "congress-ourense-6",
+        "congress-pontevedra-8"
+      ]
     },
     {
       "id": "boe-2023-011",
@@ -1036,7 +1341,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "COALICIÓN CANARIA (CCa)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-laspalmas-5",
+        "congress-santacruzdetenerife-4"
+      ]
     },
     {
       "id": "boe-2023-012",
@@ -1050,7 +1363,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "UNIÓN DEL PUEBLO NAVARRO (UPN)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-navarra-5"
+      ]
     },
     {
       "id": "boe-2023-013",
@@ -1266,6 +1586,64 @@
       "analysisStatus": "not_started",
       "programmeIds": [
         "pacma"
+      ],
+      "ballotAliases": [
+        "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+        "PARTIT ANIMALISTA AMB EL MEDI AMBIENT (PACMA)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-4",
+        "congress-alicante-10",
+        "congress-almeria-7",
+        "congress-alava-7",
+        "congress-asturias-4",
+        "congress-avila-5",
+        "congress-badajoz-7",
+        "congress-baleares-8",
+        "congress-barcelona-3",
+        "congress-bizkaia-12",
+        "congress-burgos-9",
+        "congress-caceres-10",
+        "congress-cadiz-8",
+        "congress-cantabria-7",
+        "congress-castellon-4",
+        "congress-ciudadreal-6",
+        "congress-cordoba-8",
+        "congress-acoruna-11",
+        "congress-cuenca-4",
+        "congress-gipuzkoa-6",
+        "congress-girona-11",
+        "congress-granada-6",
+        "congress-guadalajara-6",
+        "congress-huelva-8",
+        "congress-huesca-12",
+        "congress-jaen-4",
+        "congress-leon-10",
+        "congress-lleida-5",
+        "congress-lugo-9",
+        "congress-madrid-6",
+        "congress-malaga-5",
+        "congress-murcia-13",
+        "congress-navarra-9",
+        "congress-ourense-8",
+        "congress-palencia-10",
+        "congress-laspalmas-10",
+        "congress-pontevedra-5",
+        "congress-larioja-8",
+        "congress-salamanca-8",
+        "congress-santacruzdetenerife-8",
+        "congress-segovia-8",
+        "congress-sevilla-4",
+        "congress-soria-8",
+        "congress-tarragona-14",
+        "congress-teruel-13",
+        "congress-toledo-5",
+        "congress-valencia-8",
+        "congress-valladolid-3",
+        "congress-zamora-11",
+        "congress-zaragoza-12",
+        "congress-melilla-6"
       ]
     },
     {
@@ -1292,7 +1670,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA (CUP-PR)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-barcelona-12",
+        "congress-girona-9",
+        "congress-lleida-9",
+        "congress-tarragona-10"
+      ]
     },
     {
       "id": "boe-2023-015",
@@ -1502,7 +1890,63 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "FRENTE OBRERO (FO)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-2",
+        "congress-alicante-2",
+        "congress-almeria-1",
+        "congress-alava-4",
+        "congress-asturias-2",
+        "congress-avila-1",
+        "congress-badajoz-1",
+        "congress-baleares-1",
+        "congress-barcelona-2",
+        "congress-bizkaia-4",
+        "congress-burgos-1",
+        "congress-caceres-1",
+        "congress-cadiz-1",
+        "congress-cantabria-1",
+        "congress-castellon-2",
+        "congress-ciudadreal-2",
+        "congress-cordoba-2",
+        "congress-acoruna-2",
+        "congress-cuenca-2",
+        "congress-gipuzkoa-5",
+        "congress-girona-2",
+        "congress-granada-2",
+        "congress-guadalajara-2",
+        "congress-huesca-3",
+        "congress-jaen-2",
+        "congress-leon-1",
+        "congress-lleida-2",
+        "congress-lugo-1",
+        "congress-madrid-1",
+        "congress-malaga-2",
+        "congress-murcia-1",
+        "congress-navarra-2",
+        "congress-ourense-2",
+        "congress-palencia-1",
+        "congress-laspalmas-3",
+        "congress-pontevedra-1",
+        "congress-larioja-1",
+        "congress-salamanca-1",
+        "congress-santacruzdetenerife-2",
+        "congress-segovia-1",
+        "congress-sevilla-1",
+        "congress-soria-1",
+        "congress-tarragona-2",
+        "congress-teruel-3",
+        "congress-toledo-2",
+        "congress-valencia-2",
+        "congress-valladolid-2",
+        "congress-zamora-2",
+        "congress-zaragoza-1",
+        "congress-ceuta-3"
+      ]
     },
     {
       "id": "boe-2023-016",
@@ -1520,7 +1964,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "NUEVA CANARIAS - BLOQUE CANARISTA (NC-bc)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-laspalmas-6",
+        "congress-santacruzdetenerife-5"
+      ]
     },
     {
       "id": "boe-2023-017",
@@ -1546,7 +1998,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU (PDeCAT-E-CiU)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-barcelona-16",
+        "congress-girona-13",
+        "congress-lleida-13",
+        "congress-tarragona-15"
+      ]
     },
     {
       "id": "boe-2023-018",
@@ -1764,7 +2226,65 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "RECORTES CERO (RECORTES CERO)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-8",
+        "congress-alicante-11",
+        "congress-almeria-9",
+        "congress-alava-12",
+        "congress-asturias-10",
+        "congress-avila-6",
+        "congress-badajoz-4",
+        "congress-baleares-5",
+        "congress-barcelona-14",
+        "congress-bizkaia-11",
+        "congress-burgos-10",
+        "congress-caceres-8",
+        "congress-cadiz-6",
+        "congress-cantabria-8",
+        "congress-castellon-9",
+        "congress-ciudadreal-8",
+        "congress-cordoba-9",
+        "congress-acoruna-6",
+        "congress-cuenca-10",
+        "congress-gipuzkoa-11",
+        "congress-girona-12",
+        "congress-granada-11",
+        "congress-guadalajara-10",
+        "congress-huelva-7",
+        "congress-huesca-9",
+        "congress-jaen-6",
+        "congress-leon-6",
+        "congress-lleida-10",
+        "congress-lugo-10",
+        "congress-madrid-12",
+        "congress-malaga-10",
+        "congress-murcia-9",
+        "congress-navarra-8",
+        "congress-ourense-11",
+        "congress-palencia-3",
+        "congress-laspalmas-9",
+        "congress-pontevedra-10",
+        "congress-larioja-7",
+        "congress-salamanca-5",
+        "congress-santacruzdetenerife-9",
+        "congress-segovia-10",
+        "congress-sevilla-6",
+        "congress-soria-7",
+        "congress-tarragona-13",
+        "congress-teruel-8",
+        "congress-toledo-7",
+        "congress-valencia-12",
+        "congress-valladolid-14",
+        "congress-zamora-5",
+        "congress-zaragoza-6",
+        "congress-ceuta-8",
+        "congress-melilla-8"
+      ]
     },
     {
       "id": "boe-2023-019",
@@ -1934,7 +2454,56 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "BIDEZKO MUNDURANTZ (PUM+J)",
+        "POR UN MUNDO MAIS XUSTO (PUM+J)",
+        "POR UN MUNDO MAS JUSTO (PUM+J)",
+        "POR UN MUNDO MÁS JUSTO (PUM+J)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-albacete-5",
+        "congress-almeria-3",
+        "congress-alava-6",
+        "congress-asturias-6",
+        "congress-avila-4",
+        "congress-badajoz-5",
+        "congress-bizkaia-10",
+        "congress-burgos-4",
+        "congress-caceres-4",
+        "congress-cadiz-7",
+        "congress-ciudadreal-4",
+        "congress-cordoba-10",
+        "congress-cuenca-6",
+        "congress-gipuzkoa-10",
+        "congress-granada-10",
+        "congress-guadalajara-3",
+        "congress-huelva-5",
+        "congress-huesca-10",
+        "congress-jaen-7",
+        "congress-leon-12",
+        "congress-lugo-5",
+        "congress-madrid-8",
+        "congress-malaga-4",
+        "congress-navarra-12",
+        "congress-ourense-3",
+        "congress-palencia-5",
+        "congress-laspalmas-4",
+        "congress-larioja-11",
+        "congress-salamanca-7",
+        "congress-segovia-9",
+        "congress-sevilla-8",
+        "congress-soria-4",
+        "congress-teruel-4",
+        "congress-toledo-4",
+        "congress-valencia-7",
+        "congress-valladolid-6",
+        "congress-zamora-7",
+        "congress-zaragoza-9",
+        "congress-ceuta-7",
+        "congress-melilla-7"
+      ]
     },
     {
       "id": "boe-2023-020",
@@ -1952,7 +2521,16 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "UNIÓN DEL PUEBLO LEONÉS (U.P.L.)",
+        "UNIÓN DEL PUEBLO LEONÉS (UPL)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-leon-8",
+        "congress-zamora-6"
+      ]
     },
     {
       "id": "boe-2023-021",
@@ -1974,7 +2552,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ARAGÓN EXISTE - COALICIÓN EXISTE (EXISTE)",
+        "TERUEL EXISTE-Coalición EXISTE (EXISTE)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-huesca-11",
+        "congress-teruel-10",
+        "congress-zaragoza-11"
+      ]
     },
     {
       "id": "boe-2023-022",
@@ -2116,7 +2704,49 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+        "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
+        "PARTIDO COMUNISTA DOS TRABALLADORES DE GALIZA (PCTG)",
+        "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alava-10",
+        "congress-asturias-5",
+        "congress-avila-11",
+        "congress-baleares-7",
+        "congress-barcelona-13",
+        "congress-bizkaia-8",
+        "congress-burgos-3",
+        "congress-cantabria-3",
+        "congress-cordoba-6",
+        "congress-cuenca-8",
+        "congress-gipuzkoa-8",
+        "congress-girona-6",
+        "congress-granada-4",
+        "congress-guadalajara-4",
+        "congress-huesca-6",
+        "congress-leon-7",
+        "congress-lleida-11",
+        "congress-lugo-7",
+        "congress-madrid-4",
+        "congress-navarra-7",
+        "congress-ourense-10",
+        "congress-palencia-13",
+        "congress-pontevedra-7",
+        "congress-larioja-5",
+        "congress-salamanca-10",
+        "congress-segovia-11",
+        "congress-sevilla-9",
+        "congress-soria-11",
+        "congress-tarragona-4",
+        "congress-teruel-11",
+        "congress-valladolid-12",
+        "congress-zamora-12",
+        "congress-zaragoza-7"
+      ]
     },
     {
       "id": "boe-2023-023",
@@ -2130,7 +2760,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "GEROA BAI (GBAI)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-navarra-4"
+      ]
     },
     {
       "id": "boe-2023-024",
@@ -2144,7 +2781,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "SORIA ¡YA! (SY)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-soria-5"
+      ]
     },
     {
       "id": "boe-2023-025",
@@ -2158,7 +2802,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-cadiz-4"
+      ]
     },
     {
       "id": "boe-2023-026",
@@ -2212,7 +2863,25 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+        "ESCONS EN BLANC (ESCONS EN BLANC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alava-11",
+        "congress-cordoba-4",
+        "congress-cuenca-7",
+        "congress-gipuzkoa-9",
+        "congress-huesca-5",
+        "congress-lleida-12",
+        "congress-murcia-14",
+        "congress-larioja-9",
+        "congress-teruel-1",
+        "congress-valladolid-11",
+        "congress-zaragoza-3"
+      ]
     },
     {
       "id": "boe-2023-027",
@@ -2226,7 +2895,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "JAÉN MERECE MÁS (JM+)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-jaen-9"
+      ]
     },
     {
       "id": "boe-2023-028",
@@ -2240,7 +2916,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "POR ÁVILA (XAV)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-avila-7"
+      ]
     },
     {
       "id": "boe-2023-029",
@@ -2258,7 +2941,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "BLOQUE EXTREMEÑO (BQEX)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-badajoz-9",
+        "congress-caceres-9"
+      ]
     },
     {
       "id": "boe-2023-030",
@@ -2308,7 +2999,23 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "CAMINANDO JUNTOS (CJ)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alicante-6",
+        "congress-cadiz-11",
+        "congress-granada-7",
+        "congress-malaga-9",
+        "congress-murcia-5",
+        "congress-palencia-8",
+        "congress-salamanca-6",
+        "congress-segovia-6",
+        "congress-sevilla-7",
+        "congress-valencia-11"
+      ]
     },
     {
       "id": "boe-2023-031",
@@ -2338,7 +3045,19 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ASTURIAS EXISTE-ESPAÑA VACIADA (ASTURIAS EXISTE EV)",
+        "ESPAÑA VACIADA (ESPAÑA VACIADA)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-asturias-9",
+        "congress-leon-9",
+        "congress-palencia-6",
+        "congress-salamanca-9",
+        "congress-valladolid-9"
+      ]
     },
     {
       "id": "boe-2023-032",
@@ -2392,7 +3111,25 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+        "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-avila-10",
+        "congress-castellon-5",
+        "congress-guadalajara-7",
+        "congress-madrid-10",
+        "congress-murcia-7",
+        "congress-palencia-9",
+        "congress-sevilla-11",
+        "congress-toledo-8",
+        "congress-valencia-4",
+        "congress-valladolid-8",
+        "congress-zaragoza-10"
+      ]
     },
     {
       "id": "boe-2023-033",
@@ -2414,7 +3151,16 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO ARAGONÉS (PAR)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-huesca-13",
+        "congress-teruel-7",
+        "congress-zaragoza-13"
+      ]
     },
     {
       "id": "boe-2023-034",
@@ -2428,7 +3174,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO HUMANISTA (PH)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-madrid-7"
+      ]
     },
     {
       "id": "boe-2023-035",
@@ -2442,7 +3195,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "POR HUELVA (XH)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-huelva-4"
+      ]
     },
     {
       "id": "boe-2023-036",
@@ -2456,7 +3216,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "VAMOS PALENCIA (VP)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-palencia-7"
+      ]
     },
     {
       "id": "boe-2023-037",
@@ -2470,7 +3237,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ZAMORA SÍ (Zsi)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-zamora-10"
+      ]
     },
     {
       "id": "boe-2023-038",
@@ -2484,7 +3258,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "VÍA BURGALESA (VB)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-burgos-5"
+      ]
     },
     {
       "id": "boe-2023-039",
@@ -2498,7 +3279,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "POR MI REGIÓN (POR MI REGIÓN)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-murcia-12"
+      ]
     },
     {
       "id": "boe-2023-040",
@@ -2516,7 +3304,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO (AHORA CANARIAS-PCPC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-laspalmas-11",
+        "congress-santacruzdetenerife-10"
+      ]
     },
     {
       "id": "boe-2023-041",
@@ -2530,7 +3326,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-alicante-3"
+      ]
     },
     {
       "id": "boe-2023-042",
@@ -2544,7 +3347,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ESTAT VALENCIÀ DEL BENESTAR (EVB)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-valencia-9"
+      ]
     },
     {
       "id": "boe-2023-043",
@@ -2558,7 +3368,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "COALICIÓN POR MELILLA (CpM)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-melilla-5"
+      ]
     },
     {
       "id": "boe-2023-044",
@@ -2572,7 +3389,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "JUNTOS POR GRANADA (JxG)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-granada-9"
+      ]
     },
     {
       "id": "boe-2023-045",
@@ -2586,7 +3410,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA (EV-PCAS-TC)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-burgos-11"
+      ]
     },
     {
       "id": "boe-2023-046",
@@ -2608,7 +3439,16 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO REGIONALISTA DEL PAÍS LEONÉS (PREPAL)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-leon-4",
+        "congress-salamanca-4",
+        "congress-zamora-3"
+      ]
     },
     {
       "id": "boe-2023-047",
@@ -2622,7 +3462,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "SOMOS CÁCERES (Somos Cc)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-caceres-7"
+      ]
     },
     {
       "id": "boe-2023-048",
@@ -2636,7 +3483,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ALMERIENSES-REGIONALISTAS PRO ALMERÍA (ALM)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-almeria-4"
+      ]
     },
     {
       "id": "boe-2023-049",
@@ -2658,7 +3512,17 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN (F.I.A.)",
+        "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN (FIA)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-huesca-2",
+        "congress-teruel-12",
+        "congress-zaragoza-14"
+      ]
     },
     {
       "id": "boe-2023-050",
@@ -2676,7 +3540,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "TERCERA EDAD EN ACCIÓN (3e)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-larioja-2",
+        "congress-segovia-4"
+      ]
     },
     {
       "id": "boe-2023-051",
@@ -2690,7 +3562,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "UNIDAD CASTELLANA (Ud.Ca)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-valladolid-5"
+      ]
     },
     {
       "id": "boe-2023-052",
@@ -2704,7 +3583,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA (GITV)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-palencia-12"
+      ]
     },
     {
       "id": "boe-2023-053",
@@ -2718,7 +3604,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "PARTIDO UNIONISTA ESTADO DE ESPAÑA (PUEDE)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-asturias-8"
+      ]
     },
     {
       "id": "boe-2023-054",
@@ -2732,7 +3625,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "ENTRE VEÏNS CATALUNYA (EVR)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-tarragona-6"
+      ]
     },
     {
       "id": "boe-2023-055",
@@ -2750,7 +3650,15 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "LIBRES (LB)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-almeria-8",
+        "congress-ceuta-5"
+      ]
     },
     {
       "id": "boe-2023-056",
@@ -2764,7 +3672,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "UNIDOS POR LA SOLIDARIDAD INTERNACIONAL (UNIDOS SI)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-tarragona-16"
+      ]
     },
     {
       "id": "boe-2023-057",
@@ -2778,7 +3693,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "REFERÉNDUM SISTEMA DINERO (+RDS+)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-murcia-10"
+      ]
     },
     {
       "id": "boe-2023-058",
@@ -2792,7 +3714,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "COALICIÓN DE CENTRO DEMOCRÁTICO (CCD)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-ourense-5"
+      ]
     },
     {
       "id": "boe-2023-059",
@@ -2806,7 +3735,14 @@
       ],
       "programmeSearchStatus": "pending",
       "analysisStatus": "not_started",
-      "programmeIds": []
+      "programmeIds": [],
+      "ballotAliases": [
+        "FUERZA CÍVICA (FUERZA CÍVICA)"
+      ],
+      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "ballotRecordIds": [
+        "congress-valladolid-7"
+      ]
     }
   ],
   "acquisitions": [
@@ -2914,14 +3850,168 @@
       "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
       "status": "retrieval_failed",
       "error": "Not a bounded PDF response; content type text/html"
+    },
+    {
+      "id": "boe-results-correction",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-19537",
+      "resolvedUrl": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-19537",
+      "status": "downloaded_roster_analysed",
+      "file": "storage/app/election-sources/2023-congress/boe-results-correction.html",
+      "sha256": "6ffe3554e334c7bb5ded8e3d0346c664c43452e95a5bde14c97baa80c2ccb9ab",
+      "bytes": 16891,
+      "retrievedAt": "2026-10-11T07:30:12.892097+00:00",
+      "scope": "Senate Madrid candidate vote-count typo only; no Congress registry change."
+    },
+    {
+      "id": "psoe-primary-retry",
+      "url": "https://www.psoe.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "publicationUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "retrievedAt": "2026-10-11T07:34:28.034466+00:00",
+      "resolvedUrl": "https://www.psoe.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "text/html",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: text/html"
+    },
+    {
+      "id": "vox-primary-retry",
+      "url": "https://www.voxespana.es/wp-content/uploads/2023/07/Programa-VOX-2023-con-menos-peso.pdf",
+      "publicationUrl": "https://www.voxespana.es/programa/programa-electoral-Vox",
+      "retrievedAt": "2026-10-11T07:34:28.034835+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "erc-july",
+      "url": "https://static.esquerra.cat/uploads/20230705/e2023-programa.pdf",
+      "publicationUrl": "https://en.esquerra.cat/en/esquerra-republicana-includes-negotiations-on-a-referendum--an-amnesty-law-and-building-the-catalan-republic-erc-esquerra",
+      "retrievedAt": "2026-10-11T07:34:28.034920+00:00",
+      "resolvedUrl": "https://static.esquerra.cat/uploads/20230705/e2023-programa.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/erc-july.pdf",
+      "sha256": "455e0629d90ef63ab59c43c35d67cdd739165958587e3242eb5b6e4914afe991",
+      "bytes": 1261619
+    },
+    {
+      "id": "upn",
+      "url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+      "publicationUrl": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+      "retrievedAt": "2026-10-11T07:34:28.034992+00:00",
+      "resolvedUrl": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/upn.pdf",
+      "sha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
+      "bytes": 628803
+    },
+    {
+      "id": "junts-preserved-abc",
+      "url": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+      "publicationUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+      "retrievedAt": "2026-10-11T07:34:28.139100+00:00",
+      "resolvedUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/junts-preserved-abc.pdf",
+      "sha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+      "bytes": 6579528
+    },
+    {
+      "id": "ehbildu-preserved-newtral",
+      "url": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+      "publicationUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+      "retrievedAt": "2026-10-11T07:34:28.368956+00:00",
+      "resolvedUrl": "https://www.newtral.es/wp-content/uploads/2023/07/Programa-electoral-EHBildu-23j-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.pdf",
+      "sha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
+      "bytes": 64872
+    },
+    {
+      "id": "pnv",
+      "url": "https://www.eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j",
+      "publicationUrl": "https://www.eaj-pnv.eus/es/documentos/20945/con-voz-propia-programa-electoral-23-j",
+      "retrievedAt": "2026-10-11T07:36:24.474197+00:00",
+      "resolvedUrl": "https://www.eaj-pnv.eus/es/adjuntos-documentos/20945/pdf/con-voz-propia-programa-electoral-23-j",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/pnv.pdf",
+      "sha256": "46fec3a017cdc5c4e506fa5e228b97690071d5a03dfd3d8128392aa20f57d132",
+      "bytes": 3602932
+    },
+    {
+      "id": "bng",
+      "url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+      "publicationUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "retrievedAt": "2026-10-11T07:36:24.474507+00:00",
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/bng.pdf",
+      "sha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+      "bytes": 396842
+    },
+    {
+      "id": "bng-decalogue",
+      "url": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_decalogo.pdf",
+      "publicationUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "retrievedAt": "2026-10-11T07:36:24.474600+00:00",
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_decalogo.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/bng-decalogue.pdf",
+      "sha256": "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3",
+      "bytes": 946734
+    },
+    {
+      "id": "cc-manifesto",
+      "url": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+      "publicationUrl": "https://coalicioncanaria.org/acuerdos/",
+      "retrievedAt": "2026-10-11T07:36:24.474666+00:00",
+      "resolvedUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/cc-manifesto.pdf",
+      "sha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+      "bytes": 219682
+    },
+    {
+      "id": "pcte",
+      "url": "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf",
+      "publicationUrl": "https://www.pcte.es/elecciones23j/",
+      "retrievedAt": "2026-10-11T07:36:24.582403+00:00",
+      "resolvedUrl": "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/pcte.pdf",
+      "sha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
+      "bytes": 2492669
+    },
+    {
+      "id": "recortes-cero",
+      "url": "https://recortescero.es/wp-content/uploads/2023/07/PROG.-23J.pdf",
+      "publicationUrl": "https://recortescero.es/nueva-home",
+      "retrievedAt": "2026-10-11T07:36:24.594757+00:00",
+      "resolvedUrl": "https://recortesceroes.wordpress.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: text/html; charset=UTF-8"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 3,
+    "programmeFilesDownloaded": 12,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false
   },
-  "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output."
+  "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
+  "registry": "outputs/2023-candidacy-registry.json",
+  "rosterSummary": {
+    "constituencyCount": 52,
+    "finalBallotCount": 550,
+    "notProclaimedCount": 34,
+    "resultDenominationCount": 59
+  }
 }

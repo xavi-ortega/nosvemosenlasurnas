@@ -157,8 +157,8 @@ Work one inspectable increment at a time with factual evidence.
 
 - Q001 · docs: adopt the 2023 quiz and everyday-user contract · completed
 - Q002 · fix: order answer labels and reproduce the rent direction path · completed
-- Q003 · data: reconcile every 23J Congress candidacy · in_progress
-- Q004 · data: acquire and hash every available 2023 programme · planned
+- Q003 · data: reconcile every 23J Congress candidacy · completed
+- Q004 · data: acquire and hash every available 2023 programme · in_progress
 - Q005 · data: close missing-source and extraction gaps explicitly · planned
 - Q006 · data: read each available programme in full and author notes · planned
 - Q007 · data: cross-reference proposals into an authored issue matrix · planned

@@ -617,7 +617,7 @@
           "sequence": 3,
           "phaseId": "QP1",
           "subject": "data: reconcile every 23J Congress candidacy",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q001"
           ],
@@ -655,7 +655,12 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-candidacy-registry.json",
+            "outputs/2023-candidacy-aliases.json",
+            "scripts/reconcile_candidacies.py",
+            "tests/Tooling/test_candidacy_registry.py"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
@@ -663,7 +668,7 @@
           "sequence": 4,
           "phaseId": "QP1",
           "subject": "data: acquire and hash every available 2023 programme",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q003"
           ],
@@ -2041,7 +2046,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T07:29:22.901736+00:00",
+  "revisedAt": "2026-10-11T07:33:56.115026+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
@@ -2390,14 +2395,15 @@
     "constituencyCount": 52,
     "coverage": "All applicable real candidacies, including those without seats or a located programme. Distinguish official territorial/coalition labels; document any shared-programme applicability.",
     "inventory": "outputs/2023-source-inventory.json",
-    "inventoryComplete": false,
+    "inventoryComplete": true,
     "initialOfficialDenominations": 59,
     "exclude": [
       "2023 municipal and autonomous elections",
       "Senate candidate-specific ballots",
       "Hypothetical future election dates",
       "Post-election conduct or vote shares as a source of policy positions"
-    ]
+    ],
+    "inventoryInterpretation": "Roster complete: 550 final ballots; programme acquisition, per-alias applicability and semantic reading remain incomplete."
   },
   "audienceDesign": {
     "audience": "A person who does not regularly follow politics or economics, using a phone, without prerequisite knowledge. Respectful adult language; no condescension.",

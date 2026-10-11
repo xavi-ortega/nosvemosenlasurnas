@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T20:24:18.836077+00:00",
+  "recordedAt": "2026-10-11T20:34:46.377621+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -519,12 +519,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Supervisar los precios del alquiler no concreta un precio máximo obligatorio en zonas con precios muy altos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 62,
+              "printedPage": 62,
+              "start": 60167,
+              "end": 60191,
+              "quote": "los precios del alquiler",
+              "contextStart": 60017,
+              "contextEnd": 61164,
+              "contextSha256": "de57e3e20e8822307be204cc0b10b17a4e097b38c29c27d25f8bcb5f75e349c3",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -1721,12 +1743,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas laborales no fijan una jornada máxima de 35 horas manteniendo el sueldo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 6285,
+              "end": 6325,
+              "quote": "Subir el salario mínimo interprofesional",
+              "contextStart": 5815,
+              "contextEnd": 8789,
+              "contextSha256": "705c2295e2127c949820b098a92a164f183bf3aa6b8ca1d24d4b35f328d8fe99",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -2749,12 +2793,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone ampliar la atención dental pública con tratamiento gratuito.",
+          "authoredAnalysis": "Explicit public dental-service expansion, free treatment and national-health resources. Worker-oriented programme language is not a newly specified employment-only eligibility rule. +2 follows the existing portfolio-expansion rubric; no detailed treatment basket inferred.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 55469,
+              "end": 55535,
+              "quote": "tratamiento bucodental, fisioterapéutico y oftalmológico gratuito.",
+              "contextStart": 55142,
+              "contextEnd": 55715,
+              "contextSha256": "1825775d2c9f82cc78cbe7d7ee38d4db9f918f652c861a1b714d013c662b851e",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -4833,8 +4899,8 @@
           "candidacyId": "boe-2023-015",
           "status": "ambiguous",
           "value": null,
-          "rationale": "Propone eximir las rentas bajas y retirar bonificaciones para las más altas, sin concretar una regla entre padres e hijos.",
-          "authoredAnalysis": "Low-income exemption does not establish the complete kinship rule. No inferred numerical opposition.",
+          "rationale": "Propone centralizar el impuesto de sucesiones y eximir a las rentas bajas; no concreta la exención general de herencias de padres a hijos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [
             {
               "documentId": "frente-political-documents-2023",
@@ -4845,14 +4911,20 @@
               "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
               "pdfPage": 25,
               "printedPage": 25,
-              "start": 19486,
-              "end": 19547,
-              "quote": "Eliminar el impuesto\n    de sucesiones para las rentas bajas.",
+              "start": 19370,
+              "end": 19407,
+              "quote": "Centralizar el impuesto de sucesiones",
               "contextStart": 18942,
               "contextEnd": 20249,
-              "contextSha256": "34855e1c0df8a746a3f9b70d8aa2e49968c2c059c4a85e859c2a4b617244deb2"
+              "contextSha256": "34855e1c0df8a746a3f9b70d8aa2e49968c2c059c4a85e859c2a4b617244deb2",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
             }
-          ]
+          ],
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit"
         },
         {
           "candidacyId": "boe-2023-001",
@@ -6011,12 +6083,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone educación gratuita y construir guarderías públicas gratuitas, sin concretar una plaza de 0 a 3 años para todas las familias que la soliciten.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42190,
+              "end": 42232,
+              "quote": "guarderías y jardines de infancia públicos",
+              "contextStart": 41932,
+              "contextEnd": 42852,
+              "contextSha256": "5dac138b8906144f5d2912045e896cef39b0c958af6237c3d0474fe2ef30d587",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -7106,10 +7217,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece limitar vuelos dentro de España cuando haya una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -8225,10 +8340,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener o retirar el derecho a solicitar la eutanasia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -9048,12 +9167,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Democratizar la justicia y facilitar el acceso a la carrera judicial no establece quién elegiría a los miembros judiciales de su órgano de gobierno.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "start": 75535,
+              "end": 75543,
+              "quote": "justicia",
+              "contextStart": 75520,
+              "contextEnd": 78683,
+              "contextSha256": "022e4fb4540634aa812a6f7540cb095cf35771230d3c9d5a4136baea45de4e61",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -10154,12 +10295,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone aumentar pensiones mínimas y no contributivas, sin establecer que todas se actualicen según la subida de precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 65,
+              "printedPage": 65,
+              "start": 63393,
+              "end": 63418,
+              "quote": "Incrementar las pensiones",
+              "contextStart": 62985,
+              "contextEnd": 64392,
+              "contextSha256": "e4862fe4879514c36e723d0fe31405b26f3f10b95c863abdf9c456584822fec2",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -11175,12 +11338,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone aumentar impuestos a grandes empresas, sin concretar un impuesto específico sobre grandes fortunas personales.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 18721,
+              "end": 18755,
+              "quote": "Reducir el impuesto sobre la renta",
+              "contextStart": 17246,
+              "contextEnd": 20249,
+              "contextSha256": "1242c1bba3fc7b327b2cde9e8323bfc80fc2e79b40f2df20c4b288e649127f34",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -12115,12 +12300,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reducir impuestos a trabajadores con menos recursos no establece eximir las pensiones contributivas del impuesto sobre la renta.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 18721,
+              "end": 18755,
+              "quote": "Reducir el impuesto sobre la renta",
+              "contextStart": 17246,
+              "contextEnd": 20249,
+              "contextSha256": "1242c1bba3fc7b327b2cde9e8323bfc80fc2e79b40f2df20c4b288e649127f34",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -13075,12 +13282,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Crear vivienda social no establece que las viviendas públicas no puedan venderse al sector privado.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "start": 59878,
+              "end": 59920,
+              "quote": "Crear un amplio parque de vivienda social.",
+              "contextStart": 58429,
+              "contextEnd": 61164,
+              "contextSha256": "5a10d86c68e06e1fa232488e5d1ddd9f90b0476fd78f087fd88afaedf54bc1a0",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -15317,10 +15546,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece realizar el aborto legal en centros de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -16181,12 +16414,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La planificación energética no concreta gestión pública de centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 21,
+              "printedPage": 21,
+              "start": 15787,
+              "end": 15830,
+              "quote": "Regular inmediatamente la factura de la luz",
+              "contextStart": 14957,
+              "contextEnd": 17242,
+              "contextSha256": "601fb8ac36688beca5422bb5d88582da3cf078af97f44f8bc8d9c05d0c7fb068",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -17200,12 +17455,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Controlar las horas extraordinarias no establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 6285,
+              "end": 6325,
+              "quote": "Subir el salario mínimo interprofesional",
+              "contextStart": 5815,
+              "contextEnd": 8789,
+              "contextSha256": "705c2295e2127c949820b098a92a164f183bf3aa6b8ca1d24d4b35f328d8fe99",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -19139,12 +19416,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone abaratar medicamentos y tender a su gratuidad en casos de especial necesidad; no concreta eliminar de forma general el copago de los medicamentos cubiertos por la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "start": 56356,
+              "end": 56400,
+              "quote": "Abaratar el acceso a medicamentos con receta",
+              "contextStart": 55812,
+              "contextEnd": 56774,
+              "contextSha256": "59c95bbdf1e2076ca21e8d423529912e5dc915eccc7dd87ee2a1f4c2d5a01002",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -20073,10 +20372,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho al voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -20953,10 +21256,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -21861,12 +22168,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone pagar las prácticas de formación profesional y universidad, sin excepciones.",
+          "authoredAnalysis": "Explicit vocational/university practical placements paid without exceptions; +2 under student-placement remuneration rubric. No amount or employment-contract guarantee inferred.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 29,
+              "printedPage": 29,
+              "start": 23796,
+              "end": 23857,
+              "quote": "remuneradas en base al trabajo desarrollado, sin excepciones.",
+              "contextStart": 23731,
+              "contextEnd": 23857,
+              "contextSha256": "4296b1686765eac3180663f2add39df2d45f6dea7b70d08a38ad901d22654138",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -22941,12 +23270,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone alargar los permisos de maternidad y paternidad, sin fijar una duración de seis meses o más.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42318,
+              "end": 42343,
+              "quote": "Prolongación de las bajas",
+              "contextStart": 40264,
+              "contextEnd": 42852,
+              "contextSha256": "86e4b7bf2aafda17fb3a9021a763d8c844b86a5f98d2858201fc9e205d1dae20",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -23937,10 +24288,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -24708,12 +25063,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas contra narcotráfico y de atención a adicciones no establecen despenalizar el autocultivo y consumo de cannabis.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 37,
+              "printedPage": 37,
+              "start": 32681,
+              "end": 32717,
+              "quote": "Crear parques de vivienda juveniles.",
+              "contextStart": 32463,
+              "contextEnd": 34418,
+              "contextSha256": "e5ae985b01433e1a24ab4eab0d55ed897833d1f7bcecc16c4ac6f32eacc6d2b1",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -25516,12 +25893,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone matrícula gratuita, sin concretar la regla del precio al repetir una asignatura universitaria.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -26466,12 +26865,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Promover el deporte en centros públicos no establece tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 30,
+              "printedPage": 30,
+              "start": 25620,
+              "end": 25625,
+              "quote": "depor",
+              "contextStart": 25574,
+              "contextEnd": 25893,
+              "contextSha256": "5fba62b2f709d42bb574d0dd936f1d5b0e6c1771aa455f77e265258db6a6e6e9",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -27381,12 +27802,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone eliminar la cuota de autónomos que no llegan al salario mínimo, dentro de un sistema basado en sus beneficios.",
+          "authoredAnalysis": "Complete cross-page measure establishes contributions based on benefits and elimination below minimum wage. Benefits directly means net activity proceeds, consistently with the shown net-income proposition; +2. Sickness waiver and retirement are separate clauses.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 7481,
+              "end": 7497,
+              "quote": "no llegan al SMI",
+              "contextStart": 7247,
+              "contextEnd": 7598,
+              "contextSha256": "142bb24e40d98a0518592de76daca43577e0197e3a98906e81ce2948335115c5",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -28487,12 +28930,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reducir impuestos a bienes esenciales y ampliar vivienda social no establece eximir de IVA la primera vivienda habitual.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 18721,
+              "end": 18755,
+              "quote": "Reducir el impuesto sobre la renta",
+              "contextStart": 17246,
+              "contextEnd": 20249,
+              "contextSha256": "1242c1bba3fc7b327b2cde9e8323bfc80fc2e79b40f2df20c4b288e649127f34",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "start": 59878,
+              "end": 59920,
+              "quote": "Crear un amplio parque de vivienda social.",
+              "contextStart": 58429,
+              "contextEnd": 61164,
+              "contextSha256": "5a10d86c68e06e1fa232488e5d1ddd9f90b0476fd78f087fd88afaedf54bc1a0",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -29473,12 +29955,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas rurales no establecen prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48934,
+              "end": 48967,
+              "quote": "Mejorar y restaurar las infraestr",
+              "contextStart": 46379,
+              "contextEnd": 49364,
+              "contextSha256": "7d81aad2c99c34a0c9f21185569985a6570768a81f3911190287605fa43a780f",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -30355,10 +30859,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece retirar la financiación pública de espectáculos taurinos en los que muere el animal.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -31214,12 +31722,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "El documento político usado en la campaña de 2023 mantiene la caza bajo competencia estatal y la participación de cazadores locales en el control de poblaciones.",
+          "authoredAnalysis": "Explicit state hunting competence and operational cooperation with local hunters retain hunting as a permitted activity. -2 follows the already revised activity-retention rubric; this is direct continuation evidence, not silence or opposition to environmental regulation.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48463,
+              "end": 48495,
+              "quote": "la caza y el control poblacional",
+              "contextStart": 48448,
+              "contextEnd": 48764,
+              "contextSha256": "2c468c2abf985aba70b2e3c900919b9876cd42c65fd3ff99b92b71e7f4035e38",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -32078,12 +32608,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Garantizar suministros a todos los hogares no concreta una prohibición permanente de cortar suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 62,
+              "printedPage": 62,
+              "start": 60382,
+              "end": 60413,
+              "quote": "Garantizar suministro eléctrico",
+              "contextStart": 60017,
+              "contextEnd": 61164,
+              "contextSha256": "de57e3e20e8822307be204cc0b10b17a4e097b38c29c27d25f8bcb5f75e349c3",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -33049,12 +33601,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ayudas para emanciparse no establecen dar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 37,
+              "printedPage": 37,
+              "start": 32681,
+              "end": 32717,
+              "quote": "Crear parques de vivienda juveniles.",
+              "contextStart": 32463,
+              "contextEnd": 34418,
+              "contextSha256": "e5ae985b01433e1a24ab4eab0d55ed897833d1f7bcecc16c4ac6f32eacc6d2b1",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -34050,12 +34624,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone subir el salario mínimo y los salarios en relación con el coste de la vida; no establece que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 6285,
+              "end": 6325,
+              "quote": "Subir el salario mínimo interprofesional",
+              "contextStart": 5815,
+              "contextEnd": 8789,
+              "contextSha256": "705c2295e2127c949820b098a92a164f183bf3aa6b8ca1d24d4b35f328d8fe99",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -34863,10 +35459,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece formatos abiertos para los documentos de la Administración.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -35790,12 +36390,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone prohibir la gestación subrogada.",
+          "authoredAnalysis": "Explicit prohibition, +2 under the retained-ban rubric. No overseas-registration/child-right/penal conclusion inferred.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 42,
+              "printedPage": 42,
+              "start": 39283,
+              "end": 39323,
+              "quote": "Prohibición de los vientres de alquiler.",
+              "contextStart": 39279,
+              "contextEnd": 39380,
+              "contextSha256": "8f81864fcdc040d8a14b4c981ce3c0cdd567512b34e7e8b9219659928519a1c1",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -36654,12 +37276,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El comedor escolar gratuito no concreta una opción vegetariana en todos los centros.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -37461,12 +38105,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone materiales de estudio gratuitos, sin establecer permisos para copiar y compartir los libros de texto.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -38412,12 +39078,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reorganización de administraciones no establece una vía presencial para todos los trámites sin obligación de usar internet.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 74,
+              "printedPage": 74,
+              "start": 75180,
+              "end": 75217,
+              "quote": "Centralizar determinadas competencias",
+              "contextStart": 72681,
+              "contextEnd": 75516,
+              "contextSha256": "3673bbf9f2ce10fd43f9cf960d485db2730b98f15bf7989b6ec30980ef1a4440",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -39501,12 +40189,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Rebajar el impuesto de bienes esenciales no concreta el impuesto sobre servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 18721,
+              "end": 18755,
+              "quote": "Reducir el impuesto sobre la renta",
+              "contextStart": 17246,
+              "contextEnd": 20249,
+              "contextSha256": "1242c1bba3fc7b327b2cde9e8323bfc80fc2e79b40f2df20c4b288e649127f34",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -40329,10 +41039,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho a reparar aparatos en talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -41138,10 +41852,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un depósito reembolsable para envases de bebidas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -41947,12 +42665,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone productos anticonceptivos gratuitos en toda la red de farmacias, dentro de sus medidas para la juventud.",
+          "authoredAnalysis": "Youth chapter sexual education and free contraceptive products across the pharmacy network expressly endorse the youth sexual-health proposition. +2; no invented age ceiling/product entitlement.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 38,
+              "printedPage": 38,
+              "start": 34199,
+              "end": 34242,
+              "quote": "Ofrecer productos anticonceptivos gratuitos",
+              "contextStart": 34001,
+              "contextEnd": 34277,
+              "contextSha256": "636297f84dfc9a1fd7ddb5d4283a5dd4bed5b81cf01b1db0899a2639de7c814b",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -42754,12 +43494,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una industria farmacéutica nacional, sin concretar una empresa pública de medicamentos y vacunas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "start": 56356,
+              "end": 56400,
+              "quote": "Abaratar el acceso a medicamentos con receta",
+              "contextStart": 55812,
+              "contextEnd": 56774,
+              "contextSha256": "59c95bbdf1e2076ca21e8d423529912e5dc915eccc7dd87ee2a1f4c2d5a01002",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -43668,12 +44430,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone asegurar acceso a internet y telecomunicaciones, sin establecer una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 37,
+              "printedPage": 37,
+              "start": 32681,
+              "end": 32717,
+              "quote": "Crear parques de vivienda juveniles.",
+              "contextStart": 32463,
+              "contextEnd": 34418,
+              "contextSha256": "e5ae985b01433e1a24ab4eab0d55ed897833d1f7bcecc16c4ac6f32eacc6d2b1",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 62,
+              "printedPage": 62,
+              "start": 60382,
+              "end": 60413,
+              "quote": "Garantizar suministro eléctrico",
+              "contextStart": 60017,
+              "contextEnd": 61164,
+              "contextSha256": "de57e3e20e8822307be204cc0b10b17a4e097b38c29c27d25f8bcb5f75e349c3",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -44819,12 +45620,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los planes de agua y el cuidado de ríos y embalses no determinan la titularidad de la gestión del suministro de agua.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 47935,
+              "end": 47955,
+              "quote": "planes hidrográficos",
+              "contextStart": 47906,
+              "contextEnd": 49364,
+              "contextSha256": "1752864952e50a178e0f4a2fe77e11d797dcfd3195ce7bad7bde180f7f21b264",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -45789,12 +46612,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de educación especial y apoyo familiar no concretan atención pública y gratuita para menores de seis años con dificultades del desarrollo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42609,
+              "end": 42644,
+              "quote": "Se otorgarán psicólogos, terapeutas",
+              "contextStart": 41932,
+              "contextEnd": 42852,
+              "contextSha256": "5dac138b8906144f5d2912045e896cef39b0c958af6237c3d0474fe2ef30d587",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -46808,12 +47670,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La flexibilidad del teletrabajo y la ampliación de permisos no establecen una reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42318,
+              "end": 42343,
+              "quote": "Prolongación de las bajas",
+              "contextStart": 40264,
+              "contextEnd": 42852,
+              "contextSha256": "86e4b7bf2aafda17fb3a9021a763d8c844b86a5f98d2858201fc9e205d1dae20",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -47817,10 +48701,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -48588,12 +49476,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas sobre publicidad de alcohol y apuestas no establecen prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "start": 30066,
+              "end": 30076,
+              "quote": "publicidad",
+              "contextStart": 27574,
+              "contextEnd": 30592,
+              "contextSha256": "def68e983fe2fc593ec4f2af7f7465245f78805ffc859fa52bd761f699977e54",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -49452,12 +50362,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas rurales no establecen prohibir criar animales para obtener pieles.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48934,
+              "end": 48967,
+              "quote": "Mejorar y restaurar las infraestr",
+              "contextStart": 46379,
+              "contextEnd": 49364,
+              "contextSha256": "7d81aad2c99c34a0c9f21185569985a6570768a81f3911190287605fa43a780f",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -50298,12 +51230,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Modernizar las explotaciones agrícolas no establece prohibir el glifosato.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48934,
+              "end": 48967,
+              "quote": "Mejorar y restaurar las infraestr",
+              "contextStart": 46379,
+              "contextEnd": 49364,
+              "contextSha256": "7d81aad2c99c34a0c9f21185569985a6570768a81f3911190287605fa43a780f",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -51143,12 +52097,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La independencia de medios públicos no establece prohibir ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "start": 52472,
+              "end": 52520,
+              "quote": "medios de comunicación públicos dejen de ser una",
+              "contextStart": 49368,
+              "contextEnd": 52766,
+              "contextSha256": "ad83f3de24a718a3c75b05e33cfcbbade66f256eb1c905e3bd7b2f68f7bcffdc",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -52005,12 +52981,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Democratizar la justicia no establece retirar los tribunales distintos por razón del cargo público.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "start": 75535,
+              "end": 75543,
+              "quote": "justicia",
+              "contextStart": 75520,
+              "contextEnd": 78683,
+              "contextSha256": "022e4fb4540634aa812a6f7540cb095cf35771230d3c9d5a4136baea45de4e61",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -52834,10 +53832,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eliminar firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -53730,12 +54732,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reorganización administrativa no establece una ficha pública de quién negoció o intermedió en cada propuesta de ley.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 74,
+              "printedPage": 74,
+              "start": 75180,
+              "end": 75217,
+              "quote": "Centralizar determinadas competencias",
+              "contextStart": 72681,
+              "contextEnd": 75516,
+              "contextSha256": "3673bbf9f2ce10fd43f9cf960d485db2730b98f15bf7989b6ec30980ef1a4440",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -54676,12 +55700,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más recursos de salud mental y profesionales de apoyo familiar, sin concretar la psicoterapia como prestación de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 55363,
+              "end": 55375,
+              "quote": "salud mental",
+              "contextStart": 54403,
+              "contextEnd": 55811,
+              "contextSha256": "1faf4096bc7ae22abbe20d0a0460b613dec7e0afd50cef6b13a3f87ac832c37d",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42609,
+              "end": 42644,
+              "quote": "Se otorgarán psicólogos, terapeutas",
+              "contextStart": 41932,
+              "contextEnd": 42852,
+              "contextSha256": "5dac138b8906144f5d2912045e896cef39b0c958af6237c3d0474fe2ef30d587",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -55749,12 +56812,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas sobre el ejército no establecen apoyar el tratado internacional que prohíbe las armas nucleares.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 81,
+              "printedPage": 81,
+              "start": 81226,
+              "end": 81234,
+              "quote": "Ejército",
+              "contextStart": 80013,
+              "contextEnd": 82459,
+              "contextSha256": "92dc4cc864f204b7e3cdef8daf9f887d8083cb428ac59fe9931ce0383eddc620",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -56592,12 +57677,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las restricciones sobre publicidad de alcohol y apuestas no establecen la regla para alimentos poco saludables dirigida a menores.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "start": 30066,
+              "end": 30076,
+              "quote": "publicidad",
+              "contextStart": 27574,
+              "contextEnd": 30592,
+              "contextSha256": "def68e983fe2fc593ec4f2af7f7465245f78805ffc859fa52bd761f699977e54",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -57383,12 +58490,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La exención de cuota por ingresos bajos no establece una exención general durante el primer año de actividad.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 7481,
+              "end": 7497,
+              "quote": "no llegan al SMI",
+              "contextStart": 7247,
+              "contextEnd": 7598,
+              "contextSha256": "142bb24e40d98a0518592de76daca43577e0197e3a98906e81ce2948335115c5",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -58491,12 +59620,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Cambiar tipos y tramos por nivel de renta no establece descontar el efecto de la subida de precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 18721,
+              "end": 18755,
+              "quote": "Reducir el impuesto sobre la renta",
+              "contextStart": 17246,
+              "contextEnd": 20249,
+              "contextSha256": "1242c1bba3fc7b327b2cde9e8323bfc80fc2e79b40f2df20c4b288e649127f34",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -59598,12 +60749,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Regular facturas de energía no establece ayudas pagadas directamente a hogares vulnerables.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 21,
+              "printedPage": 21,
+              "start": 15787,
+              "end": 15830,
+              "quote": "Regular inmediatamente la factura de la luz",
+              "contextStart": 14957,
+              "contextEnd": 17242,
+              "contextSha256": "601fb8ac36688beca5422bb5d88582da3cf078af97f44f8bc8d9c05d0c7fb068",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -60514,12 +61687,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Aumentar recursos sanitarios no establece permitir trabajar hasta los 72 años en atención primaria.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 55363,
+              "end": 55375,
+              "quote": "salud mental",
+              "contextStart": 54403,
+              "contextEnd": 55811,
+              "contextSha256": "1faf4096bc7ae22abbe20d0a0460b613dec7e0afd50cef6b13a3f87ac832c37d",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -61482,10 +62677,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece autorización de responsables legales para que una menor pueda abortar.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -62289,12 +63488,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reorganizar administraciones no establece un máximo de quince días naturales para citas de prestaciones.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 74,
+              "printedPage": 74,
+              "start": 75180,
+              "end": 75217,
+              "quote": "Centralizar determinadas competencias",
+              "contextStart": 72681,
+              "contextEnd": 75516,
+              "contextSha256": "3673bbf9f2ce10fd43f9cf960d485db2730b98f15bf7989b6ec30980ef1a4440",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -63257,10 +64478,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece quién tomaría decisiones públicas discrecionales al usar inteligencia artificial.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -64149,12 +65374,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Modernizar el ejército no establece un gasto en seguridad y defensa del 2% de la economía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 81,
+              "printedPage": 81,
+              "start": 81226,
+              "end": 81234,
+              "quote": "Ejército",
+              "contextStart": 80013,
+              "contextEnd": 82459,
+              "contextSha256": "92dc4cc864f204b7e3cdef8daf9f887d8083cb428ac59fe9931ce0383eddc620",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -65083,12 +66330,51 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ayudas para emanciparse y la vivienda social no establecen avales estatales para hipotecas de jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 37,
+              "printedPage": 37,
+              "start": 32681,
+              "end": 32717,
+              "quote": "Crear parques de vivienda juveniles.",
+              "contextStart": 32463,
+              "contextEnd": 34418,
+              "contextSha256": "e5ae985b01433e1a24ab4eab0d55ed897833d1f7bcecc16c4ac6f32eacc6d2b1",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            },
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "start": 59878,
+              "end": 59920,
+              "quote": "Crear un amplio parque de vivienda social.",
+              "contextStart": 58429,
+              "contextEnd": 61164,
+              "contextSha256": "5a10d86c68e06e1fa232488e5d1ddd9f90b0476fd78f087fd88afaedf54bc1a0",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -66053,12 +67339,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ayudas por natalidad no establecen cobrar la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42318,
+              "end": 42343,
+              "quote": "Prolongación de las bajas",
+              "contextStart": 40264,
+              "contextEnd": 42852,
+              "contextSha256": "86e4b7bf2aafda17fb3a9021a763d8c844b86a5f98d2858201fc9e205d1dae20",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -67036,12 +68344,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las mejoras sanitarias no establecen reconocer la dependencia al diagnosticar esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "start": 55363,
+              "end": 55375,
+              "quote": "salud mental",
+              "contextStart": 54403,
+              "contextEnd": 55811,
+              "contextSha256": "1faf4096bc7ae22abbe20d0a0460b613dec7e0afd50cef6b13a3f87ac832c37d",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -67937,12 +69267,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ventajas fiscales para familias numerosas no concretan una bonificación de hasta el 45% en cotizaciones de personal del hogar.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "start": 42318,
+              "end": 42343,
+              "quote": "Prolongación de las bajas",
+              "contextStart": 40264,
+              "contextEnd": 42852,
+              "contextSha256": "86e4b7bf2aafda17fb3a9021a763d8c844b86a5f98d2858201fc9e205d1dae20",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -68838,12 +70190,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Mejorar la educación no establece tutorías para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 22679,
+              "end": 22742,
+              "quote": "Ofrecer una educación gratuita en todos los niveles académicos.",
+              "contextStart": 22053,
+              "contextEnd": 25573,
+              "contextSha256": "b96a59094814cf02bde2bc9757d93d40f18e35825f6637d8cba2db093f54d314",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -69740,12 +71114,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reorganización administrativa no concreta intermediarios que hagan trámites en nombre de quien necesite ayuda.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 74,
+              "printedPage": 74,
+              "start": 75180,
+              "end": 75217,
+              "quote": "Centralizar determinadas competencias",
+              "contextStart": 72681,
+              "contextEnd": 75516,
+              "contextSha256": "3673bbf9f2ce10fd43f9cf960d485db2730b98f15bf7989b6ec30980ef1a4440",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -70725,12 +72121,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Mejorar comunicaciones y servicios rurales no establece transporte a demanda, precio reducido y municipio de referencia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48934,
+              "end": 48967,
+              "quote": "Mejorar y restaurar las infraestr",
+              "contextStart": 46379,
+              "contextEnd": 49364,
+              "contextSha256": "7d81aad2c99c34a0c9f21185569985a6570768a81f3911190287605fa43a780f",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -71829,12 +73247,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas rurales no establecen prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 51,
+              "printedPage": 51,
+              "start": 48934,
+              "end": 48967,
+              "quote": "Mejorar y restaurar las infraestr",
+              "contextStart": 46379,
+              "contextEnd": 49364,
+              "contextSha256": "7d81aad2c99c34a0c9f21185569985a6570768a81f3911190287605fa43a780f",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -72730,10 +74170,14 @@
           "candidacyId": "boe-2023-015",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -73553,12 +74997,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Invertir en investigación no establece acceso libre a sus resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 13060,
+              "end": 13089,
+              "quote": "Impulsar inversiones en I+D+i",
+              "contextStart": 12628,
+              "contextEnd": 13291,
+              "contextSha256": "bfa1cf6f40f2343797278a3948a72633f0b88be4791f8fe62166d5394f9336a5",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -74606,12 +76072,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Una reorganización federal del Estado no establece una circunscripción nacional única para el Congreso.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 74,
+              "printedPage": 74,
+              "start": 75180,
+              "end": 75217,
+              "quote": "Centralizar determinadas competencias",
+              "contextStart": 72681,
+              "contextEnd": 75516,
+              "contextSha256": "3673bbf9f2ce10fd43f9cf960d485db2730b98f15bf7989b6ec30980ef1a4440",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",
@@ -75538,12 +77026,34 @@
         },
         {
           "candidacyId": "boe-2023-015",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La independencia de los medios públicos no establece igual tiempo para vídeos electorales de todos los partidos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citations": [
+            {
+              "documentId": "frente-political-documents-2023",
+              "sourceUrl": "https://frenteobrero.es/wp-content/uploads/2023/07/Documentos-Politicos-Frente-Obrero.pdf",
+              "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+              "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+              "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+              "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "start": 52472,
+              "end": 52520,
+              "quote": "medios de comunicación públicos dejen de ser una",
+              "contextStart": 49368,
+              "contextEnd": 52766,
+              "contextSha256": "ad83f3de24a718a3c75b05e33cfcbbade66f256eb1c905e3bd7b2f68f7bcffdc",
+              "provenanceEvidence": "outputs/2023-frente-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "frente-political-documents-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-016",

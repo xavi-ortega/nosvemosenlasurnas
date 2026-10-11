@@ -1,0 +1,851 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T20:34:46.377621+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_complete_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-015",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+          "sha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+          "documentId": "frente-political-documents-2023",
+          "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+          "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Supervisar los precios del alquiler no concreta un precio máximo obligatorio en zonas con precios muy altos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas laborales no fijan una jornada máxima de 35 horas manteniendo el sueldo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone ampliar la atención dental pública con tratamiento gratuito.",
+          "authoredAnalysis": "Explicit public dental-service expansion, free treatment and national-health resources. Worker-oriented programme language is not a newly specified employment-only eligibility rule. +2 follows the existing portfolio-expansion rubric; no detailed treatment basket inferred.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone evitar el cierre de las centrales en plena capacidad e invertir en su modernización.",
+          "authoredAnalysis": "Sectionitems4–5 maintainproductiveexistingplants; capacitycondition limitswhichplants, notallunsafestations. Expansion/uranium separate.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": true
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone centralizar el impuesto de sucesiones y eximir a las rentas bajas; no concreta la exención general de herencias de padres a hijos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone educación gratuita y construir guarderías públicas gratuitas, sin concretar una plaza de 0 a 3 años para todas las familias que la soliciten.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece limitar vuelos dentro de España cuando haya una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece mantener o retirar el derecho a solicitar la eutanasia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Democratizar la justicia y facilitar el acceso a la carrera judicial no establece quién elegiría a los miembros judiciales de su órgano de gobierno.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar pensiones mínimas y no contributivas, sin establecer que todas se actualicen según la subida de precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar impuestos a grandes empresas, sin concretar un impuesto específico sobre grandes fortunas personales.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reducir impuestos a trabajadores con menos recursos no establece eximir las pensiones contributivas del impuesto sobre la renta.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Crear vivienda social no establece que las viviendas públicas no puedan venderse al sector privado.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "derived",
+          "value": -2,
+          "rationale": "El documento político propone acabar con la externalización y la privatización de la sanidad.",
+          "authoredAnalysis": "Campaign-linked political document explicitly ends medical outsourcing; qualification that this is a political-principles document remains in the source notebook.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": true
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece realizar el aborto legal en centros de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La planificación energética no concreta gestión pública de centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Controlar las horas extraordinarias no establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone ofrecer comedor escolar gratuito dentro de sus medidas educativas.",
+          "authoredAnalysis": "Educationalmeasure2 states free school meals with no income restriction; narrower compulsory-stage inclusion follows from general school-meal provision.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": true
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone abaratar medicamentos y tender a su gratuidad en casos de especial necesidad; no concreta eliminar de forma general el copago de los medicamentos cubiertos por la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece el derecho al voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone pagar las prácticas de formación profesional y universidad, sin excepciones.",
+          "authoredAnalysis": "Explicit vocational/university practical placements paid without exceptions; +2 under student-placement remuneration rubric. No amount or employment-contract guarantee inferred.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone alargar los permisos de maternidad y paternidad, sin fijar una duración de seis meses o más.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas contra narcotráfico y de atención a adicciones no establecen despenalizar el autocultivo y consumo de cannabis.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone matrícula gratuita, sin concretar la regla del precio al repetir una asignatura universitaria.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Promover el deporte en centros públicos no establece tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone eliminar la cuota de autónomos que no llegan al salario mínimo, dentro de un sistema basado en sus beneficios.",
+          "authoredAnalysis": "Complete cross-page measure establishes contributions based on benefits and elimination below minimum wage. Benefits directly means net activity proceeds, consistently with the shown net-income proposition; +2. Sickness waiver and retirement are separate clauses.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reducir impuestos a bienes esenciales y ampliar vivienda social no establece eximir de IVA la primera vivienda habitual.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas rurales no establecen prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece retirar la financiación pública de espectáculos taurinos en los que muere el animal.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "derived",
+          "value": -2,
+          "rationale": "El documento político usado en la campaña de 2023 mantiene la caza bajo competencia estatal y la participación de cazadores locales en el control de poblaciones.",
+          "authoredAnalysis": "Explicit state hunting competence and operational cooperation with local hunters retain hunting as a permitted activity. -2 follows the already revised activity-retention rubric; this is direct continuation evidence, not silence or opposition to environmental regulation.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Garantizar suministros a todos los hogares no concreta una prohibición permanente de cortar suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas para emanciparse no establecen dar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone subir el salario mínimo y los salarios en relación con el coste de la vida; no establece que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece formatos abiertos para los documentos de la Administración.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone prohibir la gestación subrogada.",
+          "authoredAnalysis": "Explicit prohibition, +2 under the retained-ban rubric. No overseas-registration/child-right/penal conclusion inferred.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El comedor escolar gratuito no concreta una opción vegetariana en todos los centros.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone materiales de estudio gratuitos, sin establecer permisos para copiar y compartir los libros de texto.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reorganización de administraciones no establece una vía presencial para todos los trámites sin obligación de usar internet.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Rebajar el impuesto de bienes esenciales no concreta el impuesto sobre servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece el derecho a reparar aparatos en talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un depósito reembolsable para envases de bebidas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El documento político usado en la campaña de 2023 propone productos anticonceptivos gratuitos en toda la red de farmacias, dentro de sus medidas para la juventud.",
+          "authoredAnalysis": "Youth chapter sexual education and free contraceptive products across the pharmacy network expressly endorse the youth sexual-health proposition. +2; no invented age ceiling/product entitlement.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una industria farmacéutica nacional, sin concretar una empresa pública de medicamentos y vacunas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone asegurar acceso a internet y telecomunicaciones, sin establecer una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los planes de agua y el cuidado de ríos y embalses no determinan la titularidad de la gestión del suministro de agua.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de educación especial y apoyo familiar no concretan atención pública y gratuita para menores de seis años con dificultades del desarrollo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La flexibilidad del teletrabajo y la ampliación de permisos no establecen una reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas sobre publicidad de alcohol y apuestas no establecen prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas rurales no establecen prohibir criar animales para obtener pieles.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Modernizar las explotaciones agrícolas no establece prohibir el glifosato.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La independencia de medios públicos no establece prohibir ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Democratizar la justicia no establece retirar los tribunales distintos por razón del cargo público.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reorganización administrativa no establece una ficha pública de quién negoció o intermedió en cada propuesta de ley.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone más recursos de salud mental y profesionales de apoyo familiar, sin concretar la psicoterapia como prestación de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas sobre el ejército no establecen apoyar el tratado internacional que prohíbe las armas nucleares.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las restricciones sobre publicidad de alcohol y apuestas no establecen la regla para alimentos poco saludables dirigida a menores.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La exención de cuota por ingresos bajos no establece una exención general durante el primer año de actividad.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Cambiar tipos y tramos por nivel de renta no establece descontar el efecto de la subida de precios.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Regular facturas de energía no establece ayudas pagadas directamente a hogares vulnerables.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Aumentar recursos sanitarios no establece permitir trabajar hasta los 72 años en atención primaria.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece autorización de responsables legales para que una menor pueda abortar.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reorganizar administraciones no establece un máximo de quince días naturales para citas de prestaciones.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece quién tomaría decisiones públicas discrecionales al usar inteligencia artificial.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Modernizar el ejército no establece un gasto en seguridad y defensa del 2% de la economía.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas para emanciparse y la vivienda social no establecen avales estatales para hipotecas de jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 2,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas por natalidad no establecen cobrar la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las mejoras sanitarias no establecen reconocer la dependencia al diagnosticar esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ventajas fiscales para familias numerosas no concretan una bonificación de hasta el 45% en cotizaciones de personal del hogar.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Mejorar la educación no establece tutorías para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reorganización administrativa no concreta intermediarios que hagan trámites en nombre de quien necesite ayuda.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Mejorar comunicaciones y servicios rurales no establece transporte a demanda, precio reducido y municipio de referencia.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas rurales no establecen prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 0,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Invertir en investigación no establece acceso libre a sus resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Una reorganización federal del Estado no establece una circunscripción nacional única para el Congreso.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La independencia de los medios públicos no establece igual tiempo para vídeos electorales de todos los partidos.",
+          "authoredAnalysis": "Direct comparison against the exact authored proposition/rubric after the retained complete 87-page reading. Related political goals do not establish missing mechanisms, amounts, timing or eligibility. No silence-as-neutrality, whole-law-clause inference or campaign-rhetoric-as-fact.",
+          "citationCount": 1,
+          "previousMappingExactlyPreserved": false
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 9,
+      "newDerivedMappings": 6,
+      "citedUncertainties": 56,
+      "previousMappingIdsExactlyPreserved": [
+        "extend-existing-nuclear",
+        "more-private-healthcare-agreements",
+        "free-compulsory-school-meals"
+      ]
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 400,
+  "explicitMatrixCells": 5120,
+  "defaultNumericMappings": 179,
+  "scopedNumericMappings": 7,
+  "totalNumericMappings": 186,
+  "independentAnswerCases": 930,
+  "limitations": [
+    "Retained complete 87-page direct reading reused, including 28 original minimal-text pages previously visually read. This audit reopens relevant native contexts and 13 original pages; no new programme/notebook/page count.",
+    "Original and July 12 archived PDF bytes match. Contemporaneous archived campaign homepage links this document as its programme; 50 Congress ballot records reconciled. Page 7 expressly calls it a political rather than electoral programme, and that qualification is preserved.",
+    "Six directly authored numeric positions added; prior nuclear, private-healthcare-agreement and school-meal mapping cells/calibration remain exact. No blanket sign inversion.",
+    "Universal 0-3 place entitlement, six-month birth leave, repeat-tuition rule, public pharmaceutical ownership, psychotherapy and general copayment abolition are not inferred from related goals.",
+    "State/local-hunter activity continuation directly opposes a general hunting ban under the existing rubric. Ecological controls remain compatible; no unlimited hunting inferred.",
+    "Political/historical/statistical/causal and medical claims remain attributed source assertions; automatic literal checks do not certify semantic truth.",
+    "Complete corpus/source-family/final-release/production privacy/publication acceptance remains open."
+  ]
+}

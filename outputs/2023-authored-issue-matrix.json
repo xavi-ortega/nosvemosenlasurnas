@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T13:27:34.256721+00:00",
+  "recordedAt": "2026-10-11T14:03:25.629980+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -280,12 +280,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone desarrollar las medidas de contención de precios de la ley de vivienda, sin concretar aquí el precio máximo.",
+          "authoredAnalysis": "Programme221 endorses lawinstruments/containingprices but does not spellout totalrentceiling scope. No inference of everyprovision from whole-law approval; PSEcampaign tope observation is not nationwide substitution.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 221,
+              "printedPage": 215,
+              "start": 637503,
+              "end": 638061,
+              "quote": "La ley nos dota de los instrumentos necesarios para atender las prioridades de la\nmayoría social de este país: controlar subidas de precios               abusivas, sacar al mercado\nviviendas vacías, establecer incentivos fiscales para el control de precios, y, lo más\nimportante,  garantizar  y  blindar  el  parque  público  de  vivienda.  Por  lo  tanto,  nos\ncomprometemos a activar y desarrollar los instrumentos previstos en la ley:\n\n    •   Desarrollaremos       las  medidas  contempladas  para  la  contención  de  los\n        precios de la vivienda.",
+              "contextStart": 635329,
+              "contextEnd": 638116,
+              "contextSha256": "123fc372273f6a36fc18f182e3d840604e3e22c28ac6a3cfa4324ff3d53143bb",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -898,12 +918,49 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "unsupported",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un proyecto piloto industrial y concentrar la semana en cuatro días, sin fijar un máximo general de 35 horas.",
+          "authoredAnalysis": "Fourdaycompression33/143 is not hourreduction; industrialpilot50 promises no wage loss but no35hour universalstatutorymaximum. Adjacent policies, not exact support/opposition.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 33,
+              "printedPage": 31,
+              "start": 95833,
+              "end": 96105,
+              "quote": "Pondremos en marcha un Plan Nacional para que las empresas ofrezcan\n        una mejor conciliación mediante jornadas híbridas que combinen lo presencial\n        con lo remoto, horarios más adaptables, y la posibilidad de concentrar en cuatro\n        días su semana laboral",
+              "contextStart": 95824,
+              "contextEnd": 98613,
+              "contextSha256": "a723eacf701237f8b2bdfa3846d5f505f464d7c91956d4856d2f35ea234a96b2",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            },
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 50,
+              "printedPage": 48,
+              "start": 146833,
+              "end": 147045,
+              "quote": "Continuaremos impulsando el proyecto piloto de reducción de jornada laboral\n        para  empresas  industriales  con  medidas  destinadas  a  la  reducción  de  las\n        jornadas laborales sin merma salarial.",
+              "contextStart": 146094,
+              "contextEnd": 149080,
+              "contextSha256": "50d0ae59c0e2c9032cd6ac40ac2f0c83275a71c5718d86a94e8780bca12bd029",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -1543,12 +1600,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone ampliar la atención dental progresivamente, empezando por las personas mayores de 75 años.",
+          "authoredAnalysis": "Qualified support: progressive fillings/implants start75plus. Childhealthaccess183 is also explicit, but no universal adult dentistry entitlement is specified. Preserve the restricted initial population rather than immediate coverage for every patient.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 204,
+              "printedPage": 198,
+              "start": 583189,
+              "end": 583412,
+              "quote": "Salud Bucodental: promoveremos la   incorporación progresiva de    servicios como\n         las  obturaciones  (empastes)  o  los  implantes  dentales  a  más  colectivos,\n         comenzando por personas mayores de 75 años.",
+              "contextStart": 582655,
+              "contextEnd": 585932,
+              "contextSha256": "795b7b10ae7538374d7bf9ad925bc9405a8fae317c63e68138daec027feb47f7",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -2145,12 +2222,49 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Prevé el desmantelamiento progresivo de las centrales, pero no fija aquí si se prorrogaría o no su vida útil.",
+          "authoredAnalysis": "Wasteplanning74–75 covers futuredismantling, which can coexist with laterextension. No explicitclosurecalendar/nonextension pledge; no -2 from a heading.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 74,
+              "printedPage": 71,
+              "start": 214352,
+              "end": 214382,
+              "quote": "Aprobaremos el 7º Plan General",
+              "contextStart": 212147,
+              "contextEnd": 217490,
+              "contextSha256": "16863c4bdcea43814e324e376266fd75475b48c51163c13f1bb650cad9311831",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            },
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 75,
+              "printedPage": 72,
+              "start": 214581,
+              "end": 214689,
+              "quote": "necesidades en el desmantelamiento ordenado                 y progresivo de las centrales\n        nucleares.",
+              "contextStart": 212147,
+              "contextEnd": 217490,
+              "contextSha256": "16863c4bdcea43814e324e376266fd75475b48c51163c13f1bb650cad9311831",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -3319,12 +3433,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone crear progresivamente suficientes plazas públicas gratuitas de 0 a 3 años para todas las familias.",
+          "authoredAnalysis": "Universal freepublicplaces are explicit; gradualcapacitycreation and voluntaryuse do not change eligibility or fee. No immediate rollout date or compulsory attendance inferred.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 103,
+              "printedPage": 99,
+              "start": 288182,
+              "end": 288813,
+              "quote": "Ampliaremos el derecho a la formación y el aprendizaje a lo largo de toda la\n        vida, universalizando la escolarización de 0 a 18 años, no mediante la\n        obligatoriedad sino promoviendo de forma gr                adual una oferta suficiente de\n        plazas públicas gratuitas, tanto de escuelas infantiles para niños de 0 a 3\n        años,  como  de  formación  profesional             ,  junto  a  un  esquema  de  garantía\n        formativa  16-18  que  ayude  a  reducir  el  abandono  temprano  y  refuerce  la\n        igualdad de oportunidades en las zonas rurales y en los barrios urbanos más\n        vulnerables.",
+              "contextStart": 287295,
+              "contextEnd": 290641,
+              "contextSha256": "f154f33e92cb7ff13042751093c901e2d6cd1269a43c2cd1c83143e960c114e8",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -4479,12 +4613,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Defiende mantener la ley de eutanasia y el derecho que regula.",
+          "authoredAnalysis": "Explicitly guarantees defence of the enacted euthanasia law. The question preserves statutory conditions; no unconditional death assistance or eligibility widening inferred.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 197,
+              "printedPage": 191,
+              "start": 562755,
+              "end": 563666,
+              "quote": "Hemos eliminado el copago farmacéutico a 6,8 millones de personas: pensionistas con\nrentas   bajas,  perceptores     del  Ingreso    Mínimo    Vital  y menores     con   discapacidad.     Y\nseguimos     trabajando     para   su   eliminación    total.  Hemos      aprobado      la  Ley    de   la\nEutanasia, despenalizando y regulando por primera una prestación de ayuda para morir\nen nuestro país. Un nuevo derecho que surge de la empatía con la condición humana y\nla compasión con las       personas que les tocó         vivir su última etapa con un        sufrimiento\ninsoportable.    Por  eso,   como    sociedad,     adaptamos      nuestras    reglas   de  convivencia,\nnuestras   leyes,   para  permitirles   decir:  hasta aquí he      llegado.   Ante   una  derecha que\nquiere derogar esta ley, su defensa está garantizada por nosotras y nosotros, contando\nademás con el aval del Tribunal Constitucional.",
+              "contextStart": 560780,
+              "contextEnd": 564189,
+              "contextSha256": "e462c558df496127ddfd9f041d92cc9c8cf4c3bc45bb9ed4925956303faccbb8",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -5067,12 +5221,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende renovar el Consejo con su sistema actual de doble legitimación; este texto no detalla la elección de los miembros judiciales.",
+          "authoredAnalysis": "Currentmodelrenewal248 does not spellout finalselection for judicial-origin seats. Statutorycrossreference pending; no judges-only, intermediate or parliamentary value inferred automatically.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 248,
+              "printedPage": 241,
+              "start": 712173,
+              "end": 712416,
+              "quote": "Por ello, seguiremos exigiendo la inmediata renovación del Consejo General del\n         Poder Judicial con el sistema actual de doble legitimación en su elección,\n         conectando el gobierno de los jueces con la única fuente de legitimidad",
+              "contextStart": 711294,
+              "contextEnd": 714376,
+              "contextSha256": "2a352a825ab7351618fed88b1c861da98c547cbea5a5063ad3b732d172c7fec1",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -5664,12 +5838,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone actualizar todas las pensiones según el índice de precios para mantener su poder adquisitivo.",
+          "authoredAnalysis": "Common sentence guarantees allpensions purchasingpower with IPC. The preceding constitutionalmechanism differs across campaignvariants and is not part of this question or value.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 170,
+              "printedPage": 164,
+              "start": 483427,
+              "end": 483542,
+              "quote": "Garantizaremos ante cualquier circunstancia el poder adquisitivo de todas\n        las pensiones con arreglo al IPC.",
+              "contextStart": 481161,
+              "contextEnd": 484196,
+              "contextSha256": "dd853fd4c8dd9e3e384a0900ff4093c86447a0666ff7991fbb84068fed9ff568",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -6218,12 +6412,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone evaluar el impuesto temporal sobre grandes fortunas; no aclara si lo mantendría de forma permanente.",
+          "authoredAnalysis": "Evaluation and possiblewealthtaxdebate39 are not bindingcontinuation, repeal or evidencedneutralpolicy. Preserve en su caso.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 39,
+              "printedPage": 37,
+              "start": 114413,
+              "end": 114726,
+              "quote": "Evaluaremos  los  resultados  del  Impuesto  Temporal  de  Solidaridad  de  las\n         Grandes Fortunas y, en su caso, avanzaremos en el debate sobre la tributación\n         de la riqueza en el marco del modelo de financiación autonómica para acabar\n         con la competencia fiscal desleal entre territorios.",
+              "contextStart": 113673,
+              "contextEnd": 116767,
+              "contextSha256": "80cd81f15d7e7e2dce52ba231ae09a940c34f671b0a1bc44a740e682dfb871bd",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -7371,12 +7585,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone proteger de forma permanente el uso social de la vivienda protegida, sin precisar una prohibición de vender toda vivienda pública.",
+          "authoredAnalysis": "Permanent irreversible socialuseprotection222 differs from ownershipsaleban. Explicit public/privatepromotion mix retained; no privatesaleban inferred.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 222,
+              "printedPage": 216,
+              "start": 639412,
+              "end": 639842,
+              "quote": "Este incremento del parque de vivienda pública de alquiler será posible                   bien\n        mediante amplios mecanismos de compra o alquiler de viviendas existentes,\n        bien con viviendas de nueva construcción. Hablamos de viviendas públicas y de\n        promoción de viviendas privadas, contando en el caso de las protegidas con una\n        protección blindada de su uso social de forma permanente e irreversible.",
+              "contextStart": 638117,
+              "contextEnd": 640895,
+              "contextSha256": "f8390e3a467c162acfc9183bd431c62efbc4b5791edffd96e2a563b58b040a92",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -8588,12 +8822,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Garantiza el acceso al aborto y a sus dos métodos, pero esta propuesta no precisa que se realice en centros públicos.",
+          "authoredAnalysis": "Equalregional/ruralaccess and clinicalsafety do not specify publicprovider facilities. Publicfinancing/legalguarantee differs from publiccentreprovision; no whole-law provision inference.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 160,
+              "printedPage": 155,
+              "start": 454954,
+              "end": 455288,
+              "quote": "Debemos  garantizar  la  IVE  en  igualdad  de  condiciones  en  todas  las\n             Comunidades        así  como  la  información  y  garantía  de  la  elección  y  la\n             disponibilidad de acceder a los dos métodos mediante los cuales se\n             lleva a cabo la prestación: el método quirúrgico y el farmacológico.",
+              "contextStart": 454473,
+              "contextEnd": 457569,
+              "contextSha256": "102fffff96f166858cd4329d49d147b8c7983164ce18d01d826c13a1677857db",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -10263,12 +10517,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acceso al comedor escolar para todos los menores, pero no indica que sea gratuito para todos.",
+          "authoredAnalysis": "Universalaccess and targetedterritorialexpansion183 do not establish nofees. Unmentionedprice is not freecoverage or opposition.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 183,
+              "printedPage": 177,
+              "start": 521953,
+              "end": 522132,
+              "quote": "Garantizar  el  acceso  de  todos  los  niños,  niñas  y  adolescentes  a\n                 comedores escolares, para asegurar al menos una comida saludable al\n                 día",
+              "contextStart": 520047,
+              "contextEnd": 522625,
+              "contextSha256": "023ec7fdf093984ac89629556cc56e8e432853c60e7644217592508555103410",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -10835,12 +11109,49 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Plantea eliminar todo el copago farmacéutico y, como medida concreta, mejorar las condiciones de las rentas bajas.",
+          "authoredAnalysis": "Totalelimination is a continuing objective197; targetedusercontribution reform204 is a nearer concrete measure, not an explicit permanent refusal of widerelimination. The question/help allowprogressiveimplementation. No repealdeadline inferred; both contexts disclosed.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 197,
+              "printedPage": 191,
+              "start": 562755,
+              "end": 563006,
+              "quote": "Hemos eliminado el copago farmacéutico a 6,8 millones de personas: pensionistas con\nrentas   bajas,  perceptores     del  Ingreso    Mínimo    Vital  y menores     con   discapacidad.     Y\nseguimos     trabajando     para   su   eliminación    total.",
+              "contextStart": 560780,
+              "contextEnd": 564189,
+              "contextSha256": "e462c558df496127ddfd9f041d92cc9c8cf4c3bc45bb9ed4925956303faccbb8",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            },
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 204,
+              "printedPage": 198,
+              "start": 584788,
+              "end": 585035,
+              "quote": "Revisión de    copagos farmacéuticos: reformaremos la   aportación del     usuario al\n         pago         de    medicamentos para beneficiar a las rentas menores de    18.000 euros, y\n         mantendremos la   gratuidad para grupos vulnerables.",
+              "contextStart": 582655,
+              "contextEnd": 585932,
+              "contextSha256": "795b7b10ae7538374d7bf9ad925bc9405a8fae317c63e68138daec027feb47f7",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -12567,12 +12878,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "unsupported",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone prácticas con salario para jóvenes que lleven un año en paro, una medida distinta de las prácticas curriculares.",
+          "authoredAnalysis": "Employmententryprogramme26 one-yearunemploymenteligibility/mentors differs from studentcurriculum placements. No numeric support/opposition.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 26,
+              "printedPage": 24,
+              "start": 76136,
+              "end": 76485,
+              "quote": "Pondremos en marcha el programa de prácticas de empresa, con\n                      el SMI y la SS cubiertos, con mentores en el sistema público de\n                      empleo y tutores en las empresas, como el mejor modo de entrada\n                      en el mercado de trabajo de los jóvenes que hayan estado un año\n                      en paro.",
+              "contextStart": 74539,
+              "contextEnd": 77791,
+              "contextSha256": "3a7dfcc0faff12f5be53284813981caff28ebf13fbcc2503ce4b73b348534551",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -13139,12 +13470,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "unsupported",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone permisos de nacimiento de 20 semanas; no concreta una ampliación hasta seis meses.",
+          "authoredAnalysis": "20weeks143 below sixmonths still extends16weeks. No explicit rejection of sixmonths/strongerextension documented; negative score would invent opposition.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 143,
+              "printedPage": 138,
+              "start": 402826,
+              "end": 403076,
+              "quote": "Extenderemos  la  prestación  por  nacimiento y cuidado  (antes  paternidad  y\n         maternidad) hasta las 20 semanas, incorporando una mayor flexibilidad con el\n         trabajo a tiempo parcial de    los padres y madres a partir de la semana 16.",
+              "contextStart": 401358,
+              "contextEnd": 404167,
+              "contextSha256": "d5a4088e201632800da3feff74b07a05d55d54a65aa81bcd637af76f1524a968",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -20422,12 +20773,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "unsupported",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acceso a datos públicos; eso no aclara qué formatos deberían usar los documentos administrativos.",
+          "authoredAnalysis": "OpenData59 differs from mandatedopenfileformats. No keyword Open maps this position.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 59,
+              "printedPage": 57,
+              "start": 172523,
+              "end": 172665,
+              "quote": "Estableceremos un marco regulatorio “Open Data” para que empresas y ciudadanía\n    tengan acceso a los datos de las Administraciones Públicas.",
+              "contextStart": 172519,
+              "contextEnd": 175474,
+              "contextSha256": "b456eb72b70986db6eb539480e7217d01907a147d45e1eea950b63ca44b67284",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -21005,12 +21376,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Rechaza la gestación subrogada y propone medidas legislativas contra ella, preservando los derechos de los menores.",
+          "authoredAnalysis": "Explicit blanketopposition follows domesticnullity158 and continues with legislative/Europeanprohibition159. Childinterests/adoption safeguards do not create a domesticaltruistic exception. Campaignmoralclaims are not neutral questionhelp.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 159,
+              "printedPage": 154,
+              "start": 452006,
+              "end": 452388,
+              "quote": "El Partido Socialista     se opone contundentemente a la práctica de la gestación por\nsustitución o gestación subrogada, términos que solo suavizan la cruel rea                lidad de los\ndenominados  \"vientres  de  alquiler\".  Consideramos  que  esta  práctica  vulnera  los\nderechos de las mujeres, especialmente aquellas que se encuentran en situaciones de\nmayor vulnerabilidad.",
+              "contextStart": 448450,
+              "contextEnd": 454472,
+              "contextSha256": "487fd7ace9af817f0eb83efe45b02980a45e7e971d471124cc796cf3ddd99886",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-004",
@@ -22693,12 +23084,66 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone atención presencial y puntos en municipios pequeños; otros apartados la garantizan cuando sea imprescindible o para ciertos colectivos.",
+          "authoredAnalysis": "53conditionalnecessity,58older65/disabilityguarantee,240generalservicepoints read together. Universalability to completeevery procedureoffline unresolved; no forced +2/opposition.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 53,
+              "printedPage": 51,
+              "start": 157409,
+              "end": 157490,
+              "quote": "también es necesario garantizar la presencialidad cuando esta sea imprescindible.",
+              "contextStart": 155418,
+              "contextEnd": 158095,
+              "contextSha256": "e6ee8dffe9bd0076c5433b046bdc8ae510f00635661f7e69b3638a493722bc0f",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            },
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 58,
+              "printedPage": 56,
+              "start": 171179,
+              "end": 171335,
+              "quote": "Impulsaremos medidas de trato preferente y garantía de prestación presencial de\n    servicios públicos a las personas mayores de 65 años y con discapacidad.",
+              "contextStart": 169552,
+              "contextEnd": 172518,
+              "contextSha256": "567544c0e6db784b272d47574016fcd1bf9bfd8d00e0f15ee9e3b5f80ff7a918",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            },
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 240,
+              "printedPage": 233,
+              "start": 689567,
+              "end": 689935,
+              "quote": "Implantaremos un nuevo modelo de atención presencial a la ciudadanía sin cita\n        previa obligatoria, adaptado a las necesidades reales de la sociedad del siglo\n        XXI, garantizando unos horarios flexibles y la existencia de un punto de atención\n        presencial de todas las Administraciones Públicas en cada municipio de menos\n        de 5.000 habitantes.",
+              "contextStart": 687562,
+              "contextEnd": 690392,
+              "contextSha256": "b8afc43137dc3442036815e3173a61bf6babc95f22b8771cc41b1b81166dc9a4",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -24963,12 +25408,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone acceso gratuito a preservativos y anticonceptivos para las personas jóvenes.",
+          "authoredAnalysis": "Freeaccess explicit; unspecifiedyouthage and widerdistributionpoints do not authorise a numericalagecutoff or restrict the question to condoms.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 132,
+              "printedPage": 128,
+              "start": 371225,
+              "end": 371409,
+              "quote": "Garantizaremos el acceso a preservativos y anticonceptivos de forma gratuita a\n         las personas jóvenes ampliando la red de puntos a lugares frecuentados por la\n         juventud.",
+              "contextStart": 370739,
+              "contextEnd": 373154,
+              "contextSha256": "6656d2df6fc1d62c0840102070d05f0a36eb08f340efc612ef7ed9a35788bf57",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -27208,12 +27673,32 @@
         },
         {
           "candidacyId": "boe-2023-002",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Garantiza acceso a la atención temprana para menores de seis años, sin aclarar aquí la gratuidad y la provisión pública.",
+          "authoredAnalysis": "Regionalcooperation/access183 does not specify askedfee and provider. Unknown rather than neutral or againstcare.",
+          "citations": [
+            {
+              "documentId": "psoe-preserved-objective",
+              "sourceUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+              "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+              "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+              "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+              "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+              "pdfPage": 183,
+              "printedPage": 177,
+              "start": 520433,
+              "end": 520539,
+              "quote": "Garantizamos en colaboración con las CCAA el acceso a la atención temprana\n        para menores de 6 años.",
+              "contextStart": 520047,
+              "contextEnd": 522625,
+              "contextSha256": "023ec7fdf093984ac89629556cc56e8e432853c60e7644217592508555103410",
+              "provenanceEvidence": "outputs/2023-psoe-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_common_variant_context_authored",
+          "sourceContextReopened": true,
+          "applicabilityEvidence": "outputs/2023-psoe-source-provenance.json"
         },
         {
           "candidacyId": "boe-2023-003",

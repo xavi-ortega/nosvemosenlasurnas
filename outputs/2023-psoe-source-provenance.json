@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "electionId": "es-congress-2023-07-23",
+  "recordedAt": "2026-10-11T14:00:46.321669+00:00",
+  "status": "primary_archive_verified_common_policy_mapping_only",
+  "releaseEligible": false,
+  "candidacyId": "boe-2023-002",
+  "primaryArchive": {
+    "id": "psoe-primary-archived-july",
+    "url": "https://web.archive.org/web/20230714000000id_/https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+    "publicationUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+    "retrievedAt": "2026-10-11T13:56:27.583136+00:00",
+    "resolvedUrl": "https://web.archive.org/web/20230718130128id_/https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+    "mediaType": "application/pdf",
+    "status": "archived_primary_bytes_equal_previously_fully_read_programme",
+    "file": "storage/app/election-sources/2023-congress/psoe-primary-archived-july.pdf",
+    "sha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+    "bytes": 6619452,
+    "sameBytesAsDocumentId": "psoe-preserved-objective",
+    "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+    "extraction": {
+      "file": "storage/app/election-sources/2023-congress/psoe-preserved-objective.txt",
+      "sha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+      "pageCount": 272,
+      "method": "pypdf_native_layout_v1",
+      "readStatus": "full_document_read_recorded_in_authored_notebook"
+    },
+    "newIndependentReadingClaimed": false
+  },
+  "campaignVariant": {
+    "documentId": "psoe-campaign-programme-copy",
+    "sha256": "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7",
+    "federalPublicationUrl": "https://www.psoe.es/el-socialista/la-espana-del-siglo-xxi-manual-de-instrucciones/",
+    "publishedAt": "2023-07-13",
+    "observedLink": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf"
+  },
+  "versionDecision": {
+    "byteIdentityVerified": true,
+    "differingPdfPages": [
+      125,
+      143,
+      170,
+      171
+    ],
+    "replacementChronologyVerified": false,
+    "mappingPolicy": "Use only meanings present in both independently fully read variants; constitutional-mechanism, arts-deduction and contributed-year additions remain unscored."
+  },
+  "territorialDecision": {
+    "ballotRecordIds": [
+      "congress-albacete-1",
+      "congress-alicante-1",
+      "congress-almeria-2",
+      "congress-alava-3",
+      "congress-asturias-1",
+      "congress-avila-2",
+      "congress-badajoz-2",
+      "congress-baleares-4",
+      "congress-bizkaia-3",
+      "congress-burgos-2",
+      "congress-caceres-2",
+      "congress-cadiz-2",
+      "congress-cantabria-2",
+      "congress-castellon-1",
+      "congress-ciudadreal-1",
+      "congress-cordoba-1",
+      "congress-acoruna-1",
+      "congress-cuenca-1",
+      "congress-gipuzkoa-2",
+      "congress-granada-1",
+      "congress-guadalajara-1",
+      "congress-huelva-2",
+      "congress-huesca-1",
+      "congress-jaen-1",
+      "congress-leon-2",
+      "congress-lugo-2",
+      "congress-madrid-2",
+      "congress-malaga-3",
+      "congress-murcia-2",
+      "congress-navarra-3",
+      "congress-ourense-1",
+      "congress-palencia-2",
+      "congress-laspalmas-2",
+      "congress-pontevedra-6",
+      "congress-larioja-4",
+      "congress-salamanca-2",
+      "congress-santacruzdetenerife-3",
+      "congress-segovia-3",
+      "congress-sevilla-2",
+      "congress-soria-2",
+      "congress-teruel-2",
+      "congress-toledo-1",
+      "congress-valencia-1",
+      "congress-valladolid-1",
+      "congress-zamora-1",
+      "congress-zaragoza-2",
+      "congress-ceuta-2",
+      "congress-melilla-2"
+    ],
+    "nationalProgrammeAppliesToSamePartyDenominations": true,
+    "excludedCandidacyIds": [
+      "boe-2023-005"
+    ],
+    "authoredRationale": "The national federal programme explicitly covers 23 July 2023 and Spain. BOE reconciles 48 PSOE ballots, including PSdeG, PSE-EE, PSIB and PSN denominations. Federal territorial rules describe implementation of competent federal proposals; dated Balearic and Basque campaign publications promote the national electoral programme. This is a directly authored same-party scope interpretation. Separate PSC coverage is not inferred. Territorial supplements and possible contradictory local proposals require further research.",
+    "evidencePublicationIds": [
+      "psoe-federal-territorial-archive",
+      "psib-23j-federal-programme",
+      "pse-23j-federal-programme"
+    ],
+    "organisationalArchiveTimestamp": "20230730194202",
+    "organisationalArchiveLimit": "Captured one week after voting; used only for organisational scope, never as a new policy programme."
+  },
+  "publicationReadings": [
+    {
+      "id": "psoe-federal-territorial-archive",
+      "sha256": "8a99c483960b674ddd4a32b91ee023c4ef26e7186fd8a3296c8adbfa2e4351a7",
+      "textSha256": "2cb496dcc5d9744b4975f96ebd2bb9da75f6a96b94c7116cb2b501c4e765999e",
+      "status": "complete_publication_text_read_provenance_only"
+    },
+    {
+      "id": "psoe-programme-publication-archive",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "textSha256": "9c8d0d8dc8633ab1a8324bcd19679616729360171fde33812b12c335938f45dc",
+      "status": "empty_publication_extraction_not_election_evidence"
+    },
+    {
+      "id": "psib-23j-federal-programme",
+      "sha256": "bfdd19f27fc35450f876c8d1353afab150419601f85b6cb9ae7c7c27a22d81e0",
+      "textSha256": "784bcddbd10e7e41843a14adb4361b7e989e8d62b032a86bc5bd29ce08e5a8b5",
+      "status": "complete_publication_text_read_provenance_only"
+    },
+    {
+      "id": "pse-23j-federal-programme",
+      "sha256": "103102990019b4240933ea1a8bdac983378a0a08abdd011abcf43a96c6e8204c",
+      "textSha256": "707a5819ba377b52ab4adb6b97f5d1c5917c71eea753889ba279789d5e0a2e1d",
+      "status": "complete_publication_text_read_provenance_only"
+    }
+  ],
+  "limitations": [
+    "No precedence inferred merely from filedate or archiveorder.",
+    "No second full reading counted for byte-identical primaryPDF.",
+    "Regional supplements and PSC acquisition remain pending; seven selected common-policy mappings do not certify the complete corpus."
+  ]
+}

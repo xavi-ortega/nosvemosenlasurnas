@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T13:27:34.256721+00:00",
+  "recordedAt": "2026-10-11T14:03:25.629980+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -199,7 +199,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -634,7 +634,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "unsupported"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -1101,16 +1101,44 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Qualified support: progressive fillings/implants start75plus. Childhealthaccess183 is also explicit, but no universal adult dentistry entitlement is specified. Preserve the restricted initial population rather than immediate coverage for every patient.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
         {
           "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-002",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -1547,7 +1575,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -2309,14 +2337,42 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Universal freepublicplaces are explicit; gradualcapacitycreation and voluntaryuse do not change eligibility or fee. No immediate rollout date or compulsory attendance inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-002",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-003",
           "expectedScored": false,
@@ -3026,6 +3082,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicitly guarantees defence of the enacted euthanasia law. The question preserves statutory conditions; no unconditional death assistance or eligibility widening inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
@@ -3033,11 +3122,6 @@
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-002",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -3398,7 +3482,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -3781,16 +3865,44 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Common sentence guarantees allpensions purchasingpower with IPC. The preceding constitutionalmechanism differs across campaignvariants and is not part of this question or value.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
         {
           "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-002",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -4143,7 +4255,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -4870,7 +4982,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -5709,7 +5821,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -6731,7 +6843,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -7081,16 +7193,44 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Totalelimination is a continuing objective197; targetedusercontribution reform204 is a nearer concrete measure, not an explicit permanent refusal of widerelimination. The question/help allowprogressiveimplementation. No repealdeadline inferred; both contexts disclosed.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
         {
           "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-002",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -8203,7 +8343,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "unsupported"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -8564,7 +8704,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "unsupported"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -12920,7 +13060,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "unsupported"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -13273,16 +13413,44 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit blanketopposition follows domesticnullity158 and continues with legislative/Europeanprohibition159. Childinterests/adoption safeguards do not create a domesticaltruistic exception. Campaignmoralclaims are not neutral questionhelp.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
         {
           "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-002",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -14305,7 +14473,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -15669,16 +15837,44 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Freeaccess explicit; unspecifiedyouthage and widerdistributionpoints do not authorise a numericalagecutoff or restrict the question to condoms.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
         }
       ],
       "unknownCases": [
         {
           "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-002",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -17032,7 +17228,7 @@
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",

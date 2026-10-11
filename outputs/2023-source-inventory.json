@@ -567,7 +567,7 @@
           "votes": 6943
         }
       ],
-      "programmeSearchStatus": "two_programme_variants_fully_read_version_and_regional_applicability_pending",
+      "programmeSearchStatus": "primary_archived_variant_verified_common_policy_cross_reference_in_progress",
       "analysisStatus": "full_document_notebooks_available_not_scoring_ready",
       "programmeIds": [
         "psoe-preserved-objective",
@@ -581,7 +581,7 @@
         "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
         "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)"
       ],
-      "programmeApplicabilityStatus": "explicit_23j2023_party_edition_48_ballots_reconciled_version_and_alias_adoption_pending",
+      "programmeApplicabilityStatus": "national_same_party_48_ballot_scope_authored_regional_supplements_pending",
       "ballotRecordIds": [
         "congress-albacete-1",
         "congress-alicante-1",
@@ -636,7 +636,7 @@
         "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
         "outputs/2023-programme-notebooks/psoe-campaign-copy.json"
       ],
-      "programmeApplicabilityNote": "Both complete 272-page preserved and campaign-linked PSOE variants independently read, including original graphics and all four differing pages. Primary July 2023 publication observations establish election links, but primary-byte/version precedence and regional alias supplements remain unresolved. PSC is a separate four-constituency denomination with no automatic inheritance.",
+      "programmeApplicabilityNote": "The national federal programme explicitly covers23July2023 and Spain. BOE reconciles48PSOE ballots, including PSdeG, PSE-EE, PSIB and PSN denominations. Federal territorial rules state these bodies implement competent federal proposals, and Balearic/Basque July2023 publications explicitly promote the national electoral programme. This is an authored same-party scope interpretation, not automatic coalition inheritance. Separate PSC coverage is not inferred. Territorial supplements and possible contradictory local proposals still require followup.",
       "applicabilityEvidence": {
         "documentIds": [
           "psoe-preserved-objective",
@@ -697,7 +697,9 @@
           "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
           "https://www.psoe.es/el-socialista/la-espana-del-siglo-xxi-manual-de-instrucciones/"
         ],
-        "rationale": "Primary party web observations and original election cover establish 23J 2023 identity, but do not supply acquired primary raw-byte hashes or resolve territorial adoption/version precedence."
+        "rationale": "Primary party web observations and original election cover establish 23J 2023 identity, but do not supply acquired primary raw-byte hashes or resolve territorial adoption/version precedence.",
+        "primaryArchiveId": "psoe-primary-archived-july",
+        "provenanceReport": "outputs/2023-psoe-source-provenance.json"
       }
     },
     {
@@ -4441,7 +4443,7 @@
           "votes": 153
         }
       ],
-      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "programmeSearchStatus": "wrong_election_proposals_excluded_23j_congress_programme_unresolved",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -4453,13 +4455,15 @@
       ],
       "notebooks": [],
       "sourceFollowup": {
-        "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+        "recordedAt": "2026-10-11T14:09:56.641136+00:00",
         "publicationIds": [
           "ccd-july-news-archive",
           "ccd-primary-catalogue",
-          "ccd-july-2023-archive"
+          "ccd-july-2023-archive",
+          "ccd-proposals-july-archive",
+          "ccd-proposals-primary"
         ],
-        "finding": "July19primaryhomepage fullyread: standingpropuestas/manifiesto and2021news; no23Jprogrammeestablished. Currentcertificatemismatchandarchivedguessednewspath404recorded; notexhaustiveabsence.",
+        "finding": "The July 19 primary homepage and both proposals pages were read completely. The proposals explicitly identify the 2019 European election; the requested July 2023 archive resolves to September 2024. They cannot establish a 23J Congress programme. The sole Ourense candidacy remains visible and unscored; programme absence is not certified.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
       }
@@ -5809,6 +5813,38 @@
       "candidacyId": "boe-2023-026",
       "notebook": "outputs/2023-programme-notebooks/escanos-manifesto-annex.json",
       "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "psoe-primary-archived-july",
+      "url": "https://web.archive.org/web/20230714000000id_/https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "publicationUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "retrievedAt": "2026-10-11T13:56:27.583136+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230718130128id_/https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "archived_primary_bytes_equal_previously_fully_read_programme",
+      "file": "storage/app/election-sources/2023-congress/psoe-primary-archived-july.pdf",
+      "sha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+      "bytes": 6619452,
+      "sameBytesAsDocumentId": "psoe-preserved-objective",
+      "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/psoe-preserved-objective.txt",
+        "sha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+        "pageCount": 272,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "newIndependentReadingClaimed": false
+    },
+    {
+      "id": "psoe-primary-direct-new-retry",
+      "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "publicationUrl": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+      "retrievedAt": "2026-10-11T13:56:27.583435+00:00",
+      "resolvedUrl": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "text/html",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: text/html"
     }
   ],
   "summary": {
@@ -7882,15 +7918,155 @@
       "file": "storage/app/election-sources/2023-congress/unidossi-23j-poster-9ada347a3937.jpg",
       "bytes": 260579,
       "readingNotebook": "outputs/2023-programme-notebooks/unidossi-23j-programme.json"
+    },
+    {
+      "id": "psoe-federal-territorial-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.psoe.es/conocenos/estructura/territorial/",
+      "retrievedAt": "2026-10-11T13:58:53.077846+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230730194202id_/https://www.psoe.es/conocenos/estructura/territorial/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "complete_publication_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/psoe-federal-territorial-archive-publication-8a99c483960b.html",
+      "sha256": "8a99c483960b674ddd4a32b91ee023c4ef26e7186fd8a3296c8adbfa2e4351a7",
+      "textFile": "storage/app/election-sources/2023-congress/psoe-federal-territorial-archive-publication-8a99c483960b.txt",
+      "textSha256": "2cb496dcc5d9744b4975f96ebd2bb9da75f6a96b94c7116cb2b501c4e765999e",
+      "links": [
+        "https://www.psoe.es/agenda/07/2023/",
+        "https://xn--espaaavanza-4db.es/programa/"
+      ],
+      "readingNote": "Complete extracted publication read, including navigation/footer; this is provenance or campaign-context evidence, not a replacement programme."
+    },
+    {
+      "id": "psoe-programme-publication-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "retrievedAt": "2026-10-11T13:58:53.078131+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230715103825id_/https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "mediaType": "text/html",
+      "lastModified": null,
+      "status": "empty_publication_extraction_not_election_evidence",
+      "file": "storage/app/election-sources/2023-congress/psoe-programme-publication-archive-publication-d02032286070.html",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "textFile": "storage/app/election-sources/2023-congress/psoe-programme-publication-archive-publication-d02032286070.txt",
+      "textSha256": "9c8d0d8dc8633ab1a8324bcd19679616729360171fde33812b12c335938f45dc",
+      "links": [],
+      "readingNote": "Archive returned an empty extraction; programme publication observed through web tool separately, no acquired page content certified."
+    },
+    {
+      "id": "psib-23j-federal-programme",
+      "url": "https://www.psib-psoe.org/armengol-demana-el-vot-per-al-psoe-perque-som-linstrument-util-per-frenar-lextrema-dreta-pero-tambe-per-creixer-economicament-i-garantir-drets/",
+      "retrievedAt": "2026-10-11T13:58:53.078201+00:00",
+      "resolvedUrl": "https://www.psib-psoe.org/armengol-demana-el-vot-per-al-psoe-perque-som-linstrument-util-per-frenar-lextrema-dreta-pero-tambe-per-creixer-economicament-i-garantir-drets/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "complete_publication_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/psib-23j-federal-programme-publication-bfdd19f27fc3.html",
+      "sha256": "bfdd19f27fc35450f876c8d1353afab150419601f85b6cb9ae7c7c27a22d81e0",
+      "textFile": "storage/app/election-sources/2023-congress/psib-23j-federal-programme-publication-bfdd19f27fc3.txt",
+      "textSha256": "784bcddbd10e7e41843a14adb4361b7e989e8d62b032a86bc5bd29ce08e5a8b5",
+      "links": [
+        "https://www.psib-psoe.org/mallorca/consell-de-mallorca-2023-2027/",
+        "https://www.psib-psoe.org/menorca/consell-de-menorca-2019-2023/"
+      ],
+      "readingNote": "Complete extracted publication read, including navigation/footer; this is provenance or campaign-context evidence, not a replacement programme."
+    },
+    {
+      "id": "pse-23j-federal-programme",
+      "url": "https://www.socialistasvascos.com/eneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm",
+      "retrievedAt": "2026-10-11T13:58:53.078251+00:00",
+      "resolvedUrl": "https://www.socialistasvascos.com/eneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "complete_publication_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pse-23j-federal-programme-publication-103102990019.html",
+      "sha256": "103102990019b4240933ea1a8bdac983378a0a08abdd011abcf43a96c6e8204c",
+      "textFile": "storage/app/election-sources/2023-congress/pse-23j-federal-programme-publication-103102990019.txt",
+      "textSha256": "707a5819ba377b52ab4adb6b97f5d1c5917c71eea753889ba279789d5e0a2e1d",
+      "links": [
+        "http://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.socialistasvascos.com%2Feneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm?partekatu",
+        "http://www.linkedin.com/shareArticle?mini=true?title=Noticias&url=https%3A%2F%2Fwww.socialistasvascos.com%2Feneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm?partekatu&source=PSE_EE_Euskadi&summary=Eneko+Andueza:+ldquo;Sois+nuestra+mejor+apuesta+para+frenar+a+la+derecha+y+la+ultraderecha;+el+23J+contamos+con+vosotros,+la+juventud,+para+ganar+las+eleccionesrdquo;",
+        "http://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.socialistasvascos.com%2Feneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm?partekatu?spref%3Dpi&description=Eneko+Andueza:+ldquo;Sois+nuestra+mejor+apuesta+para+frenar+a+la+derecha+y+la+ultraderecha;+el+23J+contamos+con+vosotros,+la+juventud,+para+ganar+las+eleccionesrdquo;&media=https%3A%2F%2Fwww.socialistasvascos.com%2Fcms_web%2Ffoto_din%2Fnoticias/NOTICIA_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1_1.jpg",
+        "https://twitter.com/hashtag/23J?src=hash&ref_src=twsrc%5Etfw",
+        "https://www.socialistasvascos.com/documentos/documentos/Acuerdo_de_bases_para_el_Programa_de_Gobierno_2024-2028.pdf",
+        "https://www.socialistasvascos.com/eneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones-eu.htm",
+        "https://www.socialistasvascos.com/programa-electoral-2016.htm",
+        "mailto:?subject=PSE EUSKADI: Noticias&body=Enlace interesante: https%3A%2F%2Fwww.socialistasvascos.com%2Feneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm?partekatu",
+        "whatsapp://send?text=https%3A%2F%2Fwww.socialistasvascos.com%2Feneko-andueza-sois-nuestra-mejor-apuesta-para-frenar-a-la-derecha-y-la-ultraderecha-el-23j-contamos-con-vosotros-la-juventud-para-ganar-las-elecciones.htm?partekatu"
+      ],
+      "readingNote": "Complete extracted publication read, including navigation/footer; this is provenance or campaign-context evidence, not a replacement programme."
+    },
+    {
+      "id": "ccd-proposals-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/http://ccd-centro.com/propuestas-centristas/",
+      "retrievedAt": "2026-10-11T13:48:56.614744+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20240919001610id_/http://ccd-centro.com/propuestas-centristas/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "full_publication_text_read_excluded_wrong_election",
+      "file": "storage/app/election-sources/2023-congress/ccd-proposals-july-archive-publication-738253e6ad47.html",
+      "sha256": "738253e6ad470fdf2a3c51ea6e5a0c400962e46137c8c3b29564bc3529f74ea6",
+      "textFile": "storage/app/election-sources/2023-congress/ccd-proposals-july-archive-publication-738253e6ad47.txt",
+      "textSha256": "7a2fcef313a24277248e9268afc8c3f016618f132ae000c2c34f54e8a40ec429",
+      "links": [],
+      "analysis": "Complete A–E policy text and page furniture read. The final section explicitly identifies the 2019 European election. The requested July 2023 archive resolves to September 2024. Neither this archive nor the current page establishes 23J Congress adoption; no scoring or applicable-programme reading is counted."
+    },
+    {
+      "id": "ccd-proposals-primary",
+      "url": "http://ccd-centro.com/propuestas-centristas/",
+      "retrievedAt": "2026-10-11T13:48:56.615055+00:00",
+      "resolvedUrl": "http://ccd-centro.com/propuestas-centristas/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "full_publication_text_read_excluded_wrong_election",
+      "file": "storage/app/election-sources/2023-congress/ccd-proposals-primary-publication-7c59c67d6148.html",
+      "sha256": "7c59c67d614818e57daca83176ae9299c6300ebcf036bebc529f1451d819b8b4",
+      "textFile": "storage/app/election-sources/2023-congress/ccd-proposals-primary-publication-7c59c67d6148.txt",
+      "textSha256": "f9522b95ca4822dc43328c34c3e5a29a9026648bdd83784a669b0f25f66b2df8",
+      "links": [],
+      "analysis": "Complete A–E policy text and page furniture read. The final section explicitly identifies the 2019 European election. The requested July 2023 archive resolves to September 2024. Neither this archive nor the current page establishes 23J Congress adoption; no scoring or applicable-programme reading is counted."
+    },
+    {
+      "id": "unidossi-programme-july19-archive",
+      "url": "https://web.archive.org/web/20230719212315id_/https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
+      "retrievedAt": "2026-10-11T13:48:56.615145+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230712213036id_/https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "byte_identical_previously_fully_read_programme_no_new_variant",
+      "file": "storage/app/election-sources/2023-congress/unidossi-programme-july19-archive-publication-e41abd6118d8.html",
+      "sha256": "e41abd6118d892793c16ac1aaced216ea2443b8421583725e2d585d1646cc0db",
+      "textFile": "storage/app/election-sources/2023-congress/unidossi-programme-july19-archive-publication-e41abd6118d8.txt",
+      "textSha256": "394645266a69fa24882e6bb9c74678704b3ae1dadc9e8a168eeb87674910662b",
+      "links": [
+        "http://en.wordpress.com/abuse/?report_url=https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
+        "https://unidossi.es/2023/01/",
+        "https://unidossi.es/2023/03/",
+        "https://unidossi.es/2023/05/",
+        "https://unidossi.es/2023/07/",
+        "https://unidossi.es/2023/07/09/por-la-autonomia-de-tabarnia-ya-elecciones-generales-23jl/",
+        "https://unidossi.es/2023/07/09/por-la-autonomia-de-tabarnia-ya-elecciones-generales-23jl/comment-page-1/#comment-1484",
+        "https://unidossi.es/2023/07/09/por-la-autonomia-de-tabarnia-ya-elecciones-generales-23jl/comment-page-1/#comment-1486",
+        "https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
+        "https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/#respond",
+        "https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/?share=facebook",
+        "https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/?share=twitter",
+        "https://unidossi.es/programa-electoral-sabadell-15/",
+        "https://unidossi.files.wordpress.com/2023/07/cartel-unidos-si-tabarnia-libre.jpg",
+        "https://unidossi.wordpress.com/wp-admin/customize.php?url=https%3A%2F%2Funidossi.wordpress.com%2F2023%2F07%2F12%2Fprograma-unidos-si-elecciones-generales-2023%2F",
+        "https://web.archive.org/2023/07/12/programa-unidos-si-elecciones-generales-2023/#respond",
+        "https://widgets.wp.com/likes/master.html?ver=20230309#ver=20230309&lang=es&lang_ver=1685691064&origin=https://unidossi.es",
+        "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Funidossi.es%252F2023%252F07%252F12%252Fprograma-unidos-si-elecciones-generales-2023%252F"
+      ],
+      "analysis": "Requested July19 archive resolves July12 and has exactly the previously read UNIDOS SI programme hash; July14 revised content not acquired."
     }
   ],
   "authoredDraftSummary": {
     "authoredDraftQuestions": 60,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 3540,
-    "scoredDraftMappings": 109,
-    "independentAnswerCases": 545,
-    "browserRentCases": 50,
+    "scoredDraftMappings": 116,
+    "independentAnswerCases": 580,
+    "browserRentCases": 60,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
     "matrix": "outputs/2023-authored-issue-matrix.json",
@@ -7898,9 +8074,9 @@
     "calibration": "outputs/2023-authored-calibration.json",
     "browserVerification": "outputs/2023-authored-progressive-verification.json",
     "sourceCorrectnessCertified": false,
-    "browserProgressivePaths": 8,
+    "browserProgressivePaths": 10,
     "latestBrowserQuestions": 60,
-    "latestBrowserDraftSha256": "15f3c313bf462a688f0cb948c45e0450a893201311425d66add5a98341288c33",
+    "latestBrowserDraftSha256": "b96be734c76281e6dd81cf958c8503046d4c0b5094e4b00f232ae964abe495d0",
     "previousBrowserVerification": "outputs/2023-authored-draft-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -7912,10 +8088,10 @@
     ],
     "latestBrowserRentCases": 10,
     "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-fixed-comparison-verification.json",
-    "latestCohortVerification": "outputs/2023-fixed-comparison-cohort-verification.json",
+    "latestBrowserVerification": "outputs/2023-psoe-common-verification.json",
+    "latestCohortVerification": "outputs/2023-psoe-common-cohort-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
-    "fixedComparisonCohortVerification": "outputs/2023-fixed-comparison-cohort-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-fixed-comparison-verification.json"
+    "fixedComparisonCohortVerification": "outputs/2023-psoe-common-cohort-verification.json",
+    "fixedComparisonBrowserVerification": "outputs/2023-psoe-common-verification.json"
   }
 }

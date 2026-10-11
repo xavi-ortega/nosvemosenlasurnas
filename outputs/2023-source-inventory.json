@@ -567,10 +567,11 @@
           "votes": 6943
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "preserved_programme_fully_read_campaign_variant_and_regional_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
-        "psoe-preserved-objective"
+        "psoe-preserved-objective",
+        "psoe-campaign-programme-copy"
       ],
       "ballotAliases": [
         "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
@@ -580,7 +581,7 @@
         "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
         "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j2023_party_edition_48_ballots_reconciled_version_and_alias_adoption_pending",
       "ballotRecordIds": [
         "congress-albacete-1",
         "congress-alicante-1",
@@ -631,7 +632,72 @@
         "congress-ceuta-2",
         "congress-melilla-2"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/psoe-preserved-objective.json"
+      ],
+      "programmeApplicabilityNote": "Complete 272-page preserved PSOE programme read. Primary July 2023 publications observed through the web tool establish the election and programme links, but local primary retrieval returns a challenge shell. Campaign-linked 272-page variant has four policy-text differences. Regional aliases need adoption/supplement checks; PSC is a separate four-constituency denomination and does not inherit PSOE positions.",
+      "applicabilityEvidence": {
+        "documentIds": [
+          "psoe-preserved-objective",
+          "psoe-campaign-programme-copy"
+        ],
+        "ballotRecordIds": [
+          "congress-albacete-1",
+          "congress-alicante-1",
+          "congress-almeria-2",
+          "congress-alava-3",
+          "congress-asturias-1",
+          "congress-avila-2",
+          "congress-badajoz-2",
+          "congress-baleares-4",
+          "congress-bizkaia-3",
+          "congress-burgos-2",
+          "congress-caceres-2",
+          "congress-cadiz-2",
+          "congress-cantabria-2",
+          "congress-castellon-1",
+          "congress-ciudadreal-1",
+          "congress-cordoba-1",
+          "congress-acoruna-1",
+          "congress-cuenca-1",
+          "congress-gipuzkoa-2",
+          "congress-granada-1",
+          "congress-guadalajara-1",
+          "congress-huelva-2",
+          "congress-huesca-1",
+          "congress-jaen-1",
+          "congress-leon-2",
+          "congress-lugo-2",
+          "congress-madrid-2",
+          "congress-malaga-3",
+          "congress-murcia-2",
+          "congress-navarra-3",
+          "congress-ourense-1",
+          "congress-palencia-2",
+          "congress-laspalmas-2",
+          "congress-pontevedra-6",
+          "congress-larioja-4",
+          "congress-salamanca-2",
+          "congress-santacruzdetenerife-3",
+          "congress-segovia-3",
+          "congress-sevilla-2",
+          "congress-soria-2",
+          "congress-teruel-2",
+          "congress-toledo-1",
+          "congress-valencia-1",
+          "congress-valladolid-1",
+          "congress-zamora-1",
+          "congress-zaragoza-2",
+          "congress-ceuta-2",
+          "congress-melilla-2"
+        ],
+        "observedPublicationUrls": [
+          "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+          "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+          "https://www.psoe.es/el-socialista/la-espana-del-siglo-xxi-manual-de-instrucciones/"
+        ],
+        "rationale": "Primary party web observations and original election cover establish 23J 2023 identity, but do not supply acquired primary raw-byte hashes or resolve territorial adoption/version precedence."
+      }
     },
     {
       "id": "boe-2023-003",
@@ -4774,8 +4840,10 @@
         "sha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
         "pageCount": 272,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json"
     },
     {
       "id": "vox-campaign",
@@ -5313,15 +5381,58 @@
       "analysisStatus": "full_document_read_not_scoring_ready",
       "notebook": "outputs/2023-programme-notebooks/adelante-decalogue.json",
       "electionApplicability": "Primary23Jcampaignpublication and July2023URL/LastModified10July2023, originalcovernamesCongresscandidatePilarGonzález. Siximagepages/all13numberedcommitments visuallyread."
+    },
+    {
+      "id": "psoe-primary-programme-retry",
+      "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "recordedAt": "2026-10-11T11:13:29.006743+00:00",
+      "status": "retrieval_failed",
+      "resolvedUrl": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "text/html",
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "error": "Response is not a PDF"
+    },
+    {
+      "id": "psoe-campaign-programme-copy",
+      "url": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "recordedAt": "2026-10-11T11:13:29.209392+00:00",
+      "status": "downloaded_version_comparison_pending_full_reading",
+      "resolvedUrl": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 6925600,
+      "sha256": "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7",
+      "file": "storage/app/election-sources/2023-congress/psoe-campaign-programme-copy.pdf",
+      "publicationUrl": "https://www.psoe.es/el-socialista/la-espana-del-siglo-xxi-manual-de-instrucciones/",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/psoe-campaign-programme-copy.txt",
+        "sha256": "23105e438b89a1a1b0f6a28e1d0ce6a3ba3232f4ccdd1a941afeeed2edb00f18",
+        "pageCount": 272,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "four_differing_full_pages_read_second_complete_sequential_reading_pending"
+      },
+      "versionComparison": {
+        "referenceDocumentId": "psoe-preserved-objective",
+        "normalizedIdenticalTextPages": 268,
+        "differingPdfPages": [
+          125,
+          143,
+          170,
+          171
+        ],
+        "differingPagesDirectlyRead": true,
+        "completeIndependentReading": false,
+        "analysis": "Campaign copy omits the arts/music tax-deduction parity clause and one contributed year per child clauses, and uses different constitutional pension wording. Current primary PDF observed through the web tool includes preserved-copy additions; local primary bytes and version chronology are unresolved. Variant-specific proposals remain unscored."
+      }
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 31,
+    "programmeFilesDownloaded": 32,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 32
+    "programmeDocumentsFullyRead": 33
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -5868,6 +5979,32 @@
         }
       ],
       "limitations": "Publication host path2025does not establish campaign publication vintage. Public scan read in full; no native text offsets or policy programme. Not counted as another programme/notebook."
+    },
+    {
+      "id": "psoe-23j-publication",
+      "url": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "recordedAt": "2026-10-11T11:13:29.132972+00:00",
+      "status": "retrieval_failed",
+      "resolvedUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "mediaType": "text/html",
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "file": "storage/app/election-sources/2023-congress/psoe-23j-publication.html",
+      "httpStatus": 200,
+      "error": "Retrieved Incapsula challenge shell with empty body, not publication content. No source publication acquired."
+    },
+    {
+      "id": "psoe-transparency-publication",
+      "url": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+      "recordedAt": "2026-10-11T11:13:29.159280+00:00",
+      "status": "retrieval_failed",
+      "resolvedUrl": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+      "mediaType": "text/html",
+      "bytes": 212,
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "file": "storage/app/election-sources/2023-congress/psoe-transparency-publication.html",
+      "httpStatus": 200,
+      "error": "Retrieved Incapsula challenge shell with empty body, not publication content. No source publication acquired."
     }
   ]
 }

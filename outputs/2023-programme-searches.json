@@ -1499,6 +1499,134 @@
       "status": "territorial_original_unresolved",
       "url": "https://www.elnacional.cat/es/elecciones/generales-2023/programa-electoral-sumar-comu-podem-2023-aina-vidal-elecciones-generales_1059366_102.html",
       "limitations": "Searches returned municipal/wrong-election programmes and secondary ECP23Jarticle. Retrieved HTML exposes no programmePDF/iframe. No substitute or numericposition inferred."
+    },
+    {
+      "recordedAt": "2026-10-11T11:13:29.006743+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Verify PSOE 23J 2023 publication provenance and original versions after complete preserved-programme reading.",
+      "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "observationKind": "bounded_actual_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "psoe-primary-programme-retry",
+      "actual": {
+        "id": "psoe-primary-programme-retry",
+        "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+        "recordedAt": "2026-10-11T11:13:29.006743+00:00",
+        "status": "retrieval_failed",
+        "resolvedUrl": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+        "mediaType": "text/html",
+        "bytes": 212,
+        "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+        "error": "Response is not a PDF"
+      },
+      "limitations": "HTTP 200 challenge shells are failed acquisitions. The successfully acquired campaign PDF is a distinct version; four differing full pages read, no second complete sequential reading claimed."
+    },
+    {
+      "recordedAt": "2026-10-11T11:13:29.132972+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Verify PSOE 23J 2023 publication provenance and original versions after complete preserved-programme reading.",
+      "url": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "observationKind": "bounded_actual_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "psoe-23j-publication",
+      "actual": {
+        "id": "psoe-23j-publication",
+        "url": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+        "recordedAt": "2026-10-11T11:13:29.132972+00:00",
+        "status": "retrieval_failed",
+        "resolvedUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+        "mediaType": "text/html",
+        "bytes": 212,
+        "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+        "file": "storage/app/election-sources/2023-congress/psoe-23j-publication.html",
+        "httpStatus": 200,
+        "error": "Retrieved Incapsula challenge shell with empty body, not publication content. No source publication acquired."
+      },
+      "limitations": "HTTP 200 challenge shells are failed acquisitions. The successfully acquired campaign PDF is a distinct version; four differing full pages read, no second complete sequential reading claimed."
+    },
+    {
+      "recordedAt": "2026-10-11T11:13:29.159280+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Verify PSOE 23J 2023 publication provenance and original versions after complete preserved-programme reading.",
+      "url": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+      "observationKind": "bounded_actual_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "psoe-transparency-publication",
+      "actual": {
+        "id": "psoe-transparency-publication",
+        "url": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+        "recordedAt": "2026-10-11T11:13:29.159280+00:00",
+        "status": "retrieval_failed",
+        "resolvedUrl": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+        "mediaType": "text/html",
+        "bytes": 212,
+        "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+        "file": "storage/app/election-sources/2023-congress/psoe-transparency-publication.html",
+        "httpStatus": 200,
+        "error": "Retrieved Incapsula challenge shell with empty body, not publication content. No source publication acquired."
+      },
+      "limitations": "HTTP 200 challenge shells are failed acquisitions. The successfully acquired campaign PDF is a distinct version; four differing full pages read, no second complete sequential reading claimed."
+    },
+    {
+      "recordedAt": "2026-10-11T11:13:29.209392+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Verify PSOE 23J 2023 publication provenance and original versions after complete preserved-programme reading.",
+      "url": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "observationKind": "bounded_actual_retrieval",
+      "status": "200",
+      "acquisitionId": "psoe-campaign-programme-copy",
+      "actual": {
+        "id": "psoe-campaign-programme-copy",
+        "url": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+        "recordedAt": "2026-10-11T11:13:29.209392+00:00",
+        "status": 200,
+        "resolvedUrl": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+        "mediaType": "application/pdf",
+        "bytes": 6925600,
+        "sha256": "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7",
+        "file": "storage/app/election-sources/2023-congress/psoe-campaign-programme-copy.pdf"
+      },
+      "limitations": "HTTP 200 challenge shells are failed acquisitions. The successfully acquired campaign PDF is a distinct version; four differing full pages read, no second complete sequential reading claimed."
+    },
+    {
+      "recordedAt": "2026-10-11T11:19:30.230177+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Primary PSOE 23J publication/version reconciliation.",
+      "url": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "observationKind": "web_tool_publication_observation_without_local_primary_bytes",
+      "status": "primary_publication_observed_not_locally_acquired",
+      "observation": "July 7 primary party article explicitly identifies the 23 July 2023 programme and links the main primary PDF.",
+      "limitations": "No successful local acquisition or primary raw-byte hash is claimed. Version chronology and regional adoption remain unresolved."
+    },
+    {
+      "recordedAt": "2026-10-11T11:19:30.230177+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Primary PSOE 23J publication/version reconciliation.",
+      "url": "https://www.psoe.es/transparencia/informacion-politica-organizativa/programa/",
+      "observationKind": "web_tool_publication_observation_without_local_primary_bytes",
+      "status": "primary_publication_observed_not_locally_acquired",
+      "observation": "Primary transparency page labels the programme as July 2023 general elections.",
+      "limitations": "No successful local acquisition or primary raw-byte hash is claimed. Version chronology and regional adoption remain unresolved."
+    },
+    {
+      "recordedAt": "2026-10-11T11:19:30.230177+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Primary PSOE 23J publication/version reconciliation.",
+      "url": "https://www.psoe.es/el-socialista/la-espana-del-siglo-xxi-manual-de-instrucciones/",
+      "observationKind": "web_tool_publication_observation_without_local_primary_bytes",
+      "status": "primary_publication_observed_not_locally_acquired",
+      "observation": "July 13 primary article fully read; links the campaign-host programme copy and identifies the election.",
+      "limitations": "No successful local acquisition or primary raw-byte hash is claimed. Version chronology and regional adoption remain unresolved."
+    },
+    {
+      "recordedAt": "2026-10-11T11:19:30.230177+00:00",
+      "candidacyId": "boe-2023-002",
+      "query": "Primary PSOE 23J publication/version reconciliation.",
+      "url": "https://www.psoe.es/media-content/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "observationKind": "web_tool_publication_observation_without_local_primary_bytes",
+      "status": "primary_publication_observed_not_locally_acquired",
+      "observation": "Primary PDF parsed through the web tool has 272 pages and includes the four policy additions present in the preserved original.",
+      "limitations": "No successful local acquisition or primary raw-byte hash is claimed. Version chronology and regional adoption remain unresolved."
     }
   ]
 }

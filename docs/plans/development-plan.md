@@ -161,12 +161,12 @@ Work one inspectable increment at a time with factual evidence.
 - Q004 · data: acquire and hash every available 2023 programme · in_progress
 - Q005 · data: close missing-source and extraction gaps explicitly · in_progress
 - Q006 · data: read each available programme in full and author notes · in_progress
-- Q007 · data: cross-reference proposals into an authored issue matrix · planned
-- Q008 · data: author a larger bank of everyday Spanish questions · planned
-- Q009 · data: write question rubrics and cited party positions · planned
-- Q010 · test: audit every question for meaning and everyday usefulness · planned
+- Q007 · data: cross-reference proposals into an authored issue matrix · in_progress
+- Q008 · data: author a larger bank of everyday Spanish questions · in_progress
+- Q009 · data: write question rubrics and cited party positions · in_progress
+- Q010 · test: audit every question for meaning and everyday usefulness · in_progress
 - Q011 · feat: compile authored real-source bundles without question generation · in_progress
-- Q012 · test: calibrate the full five-answer scoring surface · planned
+- Q012 · test: calibrate the full five-answer scoring surface · in_progress
 - Q013 · fix: compare eligible parties on the same evidence and weights · planned
 - Q014 · feat: select balanced authored questions and useful follow-ups · planned
 - Q015 · fix: explain agreements differences and aggregate results correctly · planned

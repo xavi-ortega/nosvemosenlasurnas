@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "electionId": "es-congress-2023-07-23",
+  "recordedAt": "2026-10-11T12:26:29.916998+00:00",
+  "status": "partial_authored_draft",
+  "releaseEligible": false,
+  "limitations": [
+    "Ten questions across ten topics are an initial authoring increment, not the minimum 60-question release. Other pairs remain explicitly not yet authored rather than source-certified absence.",
+    "The second PSOE edition and minor-source follow-up remain pending; these artifacts do not complete full corpus readiness.",
+    "No public bank pointer changed. Ten desktop/mobile rent paths passed with this draft; complete mapping, usefulness, all-cohort and release validation remain required."
+  ],
+  "targetQuestions": 80,
+  "minimumReleaseQuestions": 60,
+  "minimumTopics": 10,
+  "questions": [
+    {
+      "id": "rent-price-cap",
+      "topicId": "housing",
+      "familyId": "rental-price-regulation",
+      "text": "El Estado debería poner un precio máximo al alquiler de viviendas en zonas con precios muy altos.",
+      "help": "Sería fijar un límite al importe del alquiler en esas zonas. La pregunta se refiere al precio de la vivienda habitual; cada propuesta puede usar distintos criterios para calcular ese límite.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "An explicitly evidenced intermediate position on this same ceiling; never silence, study or ambiguity.",
+        "1": "Endorses this ceiling subject to a substantive condition not already contained in the question.",
+        "2": "Explicitly endorses a binding ceiling in these areas or in a wider set including them.",
+        "-2": "Explicitly abolishes/rejects legal residential rent-price controls.",
+        "-1": "Explicitly rejects the ceiling in the stated scope while allowing a narrower qualified restriction."
+      },
+      "issueMatrixId": "rent-price-cap",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "shorter-workweek",
+      "topicId": "employment",
+      "familyId": "maximum-weekly-hours",
+      "text": "La jornada laboral máxima debería bajar a 35 horas semanales o menos, manteniendo el mismo sueldo.",
+      "help": "Se trata de reducir el tiempo máximo de trabajo por semana conservando el salario. La distribución de las horas y la aplicación en cada sector podrían acordarse de distintas formas.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate position on this same hours/pay tradeoff.",
+        "1": "Proposes a staged shorterweek that initially remainsabove35, withsubsequent atmost35 requiring negotiation.",
+        "2": "Explicitly proposes maximum35orless withunchangedpay; distributionnegotiation alone is not a numeric qualification.",
+        "-2": "Explicitly opposes shorter maximumweeklyhours withpreservedpay.",
+        "-1": "Supports only totalhourpreservation/alternative approach while explicitly rejecting the proposed reduction."
+      },
+      "issueMatrixId": "shorter-workweek",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "public-dental-care",
+      "topicId": "health",
+      "familyId": "dental-service-coverage",
+      "text": "La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.",
+      "help": "Se trata de añadir atención de la boca y los dientes a los servicios públicos, como ocurre con otros tratamientos. Las prestaciones concretas y sus condiciones tendrían que definirse.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate stance on publicdentalexpansion.",
+        "1": "Endorses expansion only for a newlyspecifiedlimited group, withgeneralexpansionnotendorsed.",
+        "2": "Explicitly includes/expands oralhealthcare within the publicserviceportfolio.",
+        "-2": "Explicitly rejects including/expanding publicdentalservices.",
+        "-1": "Explicitly restricts publicdentalcoverage while rejectingthe stated generalexpansion."
+      },
+      "issueMatrixId": "public-dental-care",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "extend-existing-nuclear",
+      "topicId": "energy",
+      "familyId": "existing-nuclear-lifetime",
+      "text": "Se debería alargar la vida útil de las centrales nucleares que ya existen en España.",
+      "help": "La vida útil es el periodo durante el que una central puede funcionar. Ampliarla supone que siga produciendo electricidad durante más años, con las revisiones y autorizaciones correspondientes.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate decision onexistingplantsextension.",
+        "1": "Only conditionally endorsesextension underasubstantiveconditionbeyondnormalregulatorypermission.",
+        "2": "Explicitly endorsesextendingexistingplantlife, preservingrequiredsafety/regulatoryauthorisation.",
+        "-2": "Explicitly maintainsplannedclosure orcallsforclosingexistingplants ratherthanextendingthem.",
+        "-1": "Explicitly opposesgeneralextension butallowsa documentedlimitedcase."
+      },
+      "issueMatrixId": "extend-existing-nuclear",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "family-inheritance-exemption",
+      "topicId": "taxes",
+      "familyId": "inheritance-tax",
+      "text": "Las herencias de padres a hijos deberían estar exentas del impuesto de sucesiones.",
+      "help": "El impuesto de sucesiones grava los bienes recibidos al heredar. La pregunta plantea que no se cobre en las herencias de padres a hijos, cualquiera que sea su valor.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate position on the same kinship exemption.",
+        "1": "Explicit first-degree exemption with an additional value/income condition.",
+        "2": "Explicit first-degree exemption or wider abolition including it.",
+        "-1": "Explicitly rejects general kinship exemption while allowing a narrower one.",
+        "-2": "Explicitly retains taxation of all parent-to-child inheritances."
+      },
+      "issueMatrixId": "family-inheritance-exemption",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "free-early-education",
+      "topicId": "education",
+      "familyId": "early-education-access",
+      "text": "Todas las familias deberían poder acceder gratis a una plaza de educación infantil de 0 a 3 años.",
+      "help": "Es la etapa educativa anterior al colegio desde los tres años. La propuesta consiste en ofrecer plazas gratuitas a todas las familias que las soliciten, sin obligarlas a utilizarlas.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate payment/access rule on the same places.",
+        "1": "Explicit free access for a limited group rather than every family.",
+        "2": "Explicit universal free access for the stated ages.",
+        "-1": "Explicit rejection of universal free access with targeted free places retained.",
+        "-2": "Explicit rejection of free access for the stated stage."
+      },
+      "issueMatrixId": "free-early-education",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "rail-alternative-flight-limits",
+      "topicId": "transport",
+      "familyId": "domestic-flight-limits",
+      "text": "Se deberían limitar los vuelos dentro de España cuando exista una alternativa adecuada en tren.",
+      "help": "Se trata de reducir o retirar vuelos entre ciudades que pueden conectarse en tren. Las propuestas pueden fijar condiciones sobre la duración del viaje y las conexiones disponibles.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate position on flight limitation itself.",
+        "1": "Explicit limits only where rail also meets a specified duration threshold.",
+        "2": "Explicit domestic flight limits where rail is an alternative, without an additional duration threshold.",
+        "-1": "Explicitly rejects broad limits while accepting a narrower specified limit.",
+        "-2": "Explicitly rejects limits based on a rail alternative."
+      },
+      "issueMatrixId": "rail-alternative-flight-limits",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "retain-euthanasia-right",
+      "topicId": "rights",
+      "familyId": "euthanasia-law",
+      "text": "Debería mantenerse el derecho a solicitar la eutanasia en las condiciones previstas por la ley.",
+      "help": "La pregunta trata de conservar la posibilidad legal de pedir ayuda médica para morir. Se refiere a una solicitud voluntaria sujeta a las condiciones y garantías de la ley.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate retention/repeal proposal on this same right.",
+        "1": "Explicit retention with a specified substantive additional restriction.",
+        "2": "Explicit support for the law or rights in accordance with it.",
+        "-1": "Explicit restriction removing the right in specified cases while retaining others.",
+        "-2": "Explicit repeal of the euthanasia law."
+      },
+      "issueMatrixId": "retain-euthanasia-right",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "judges-select-council-members",
+      "topicId": "institutions",
+      "familyId": "judicial-council-selection",
+      "text": "Los jueces deberían elegir a los miembros de origen judicial del órgano que gobierna la justicia.",
+      "help": "El Consejo General del Poder Judicial organiza aspectos como los nombramientos y la disciplina de los jueces. La pregunta se refiere a quién elige a sus miembros que proceden de la judicatura.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit mixed final selection of those same seats.",
+        "1": "Explicit judge selection with an additional substantive restriction.",
+        "2": "Explicit judge selection of judicial-origin seats.",
+        "-1": "Explicit mixed scheme retaining only a narrow judicial selection role.",
+        "-2": "Explicit parliamentary final selection of judicial-origin seats."
+      },
+      "issueMatrixId": "judges-select-council-members",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "pensions-cost-of-living",
+      "topicId": "pensions",
+      "familyId": "pension-indexation",
+      "text": "Las pensiones públicas deberían actualizarse según lo que sube el coste de la vida.",
+      "help": "La idea es revisar la cantidad de la pensión teniendo en cuenta la subida de los precios. Esto es distinto de fijar una pensión mínima o cambiar la edad de jubilación.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate indexation rule on the same pensions.",
+        "1": "Explicit indexation only for a restricted pension class.",
+        "2": "Explicit cost-of-living or consumer-price indexation.",
+        "-1": "Explicitly rejects general indexation while retaining it for a limited group.",
+        "-2": "Explicitly rejects cost-of-living indexation."
+      },
+      "issueMatrixId": "pensions-cost-of-living",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    }
+  ]
+}

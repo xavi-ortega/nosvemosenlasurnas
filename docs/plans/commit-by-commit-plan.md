@@ -73,7 +73,7 @@ Dependencies: Q005
 
 ## Q007 data: cross-reference proposals into an authored issue matrix
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q006
 
@@ -85,7 +85,7 @@ Dependencies: Q006
 
 ## Q008 data: author a larger bank of everyday Spanish questions
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q007
 
@@ -97,7 +97,7 @@ Dependencies: Q007
 
 ## Q009 data: write question rubrics and cited party positions
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q008
 
@@ -109,7 +109,7 @@ Dependencies: Q008
 
 ## Q010 test: audit every question for meaning and everyday usefulness
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q009
 
@@ -133,7 +133,7 @@ Dependencies: Q010
 
 ## Q012 test: calibrate the full five-answer scoring surface
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q002, Q011
 

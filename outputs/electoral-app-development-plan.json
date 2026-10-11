@@ -341,7 +341,7 @@
     "continuationPolicy": "Ten balanced starter questions, deliberate finish or five more; continue in five-question blocks through 15/20/25/30 while useful unseen evidence exists. A larger authored bank is not a requirement to answer every question."
   },
   "metricsDesign": {
-    "inScope": true,
+    "inScope": false,
     "liveCollectionEnabled": false,
     "politicalProfileUploadAllowed": false,
     "purposes": [
@@ -359,7 +359,7 @@
     "uniquePeopleClaimed": false,
     "anonymityGuaranteed": false,
     "actualHostFlowRequiredBeforeActivation": true,
-    "iterationStatus": "deferred_quiz_first_preserve_disabled_implementation",
+    "iterationStatus": "deferred_quiz_first_collection_disabled",
     "iterationPolicy": "No feedback expansion or live collection in this iteration. Preserve the separately voluntary protocol and security boundaries; future activation still requires actual hosted privacy/notice checks and explicit approval."
   },
   "infrastructure": {
@@ -821,7 +821,7 @@
           "sequence": 7,
           "phaseId": "QP2",
           "subject": "data: cross-reference proposals into an authored issue matrix",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q006"
           ],
@@ -861,14 +861,24 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
+          ],
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q008",
           "sequence": 8,
           "phaseId": "QP2",
           "subject": "data: author a larger bank of everyday Spanish questions",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q007"
           ],
@@ -908,14 +918,24 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
+          ],
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q009",
           "sequence": 9,
           "phaseId": "QP2",
           "subject": "data: write question rubrics and cited party positions",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q008"
           ],
@@ -954,14 +974,24 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
+          ],
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q010",
           "sequence": 10,
           "phaseId": "QP2",
           "subject": "test: audit every question for meaning and everyday usefulness",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q009"
           ],
@@ -1002,7 +1032,17 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
+          ],
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q011",
@@ -1051,18 +1091,22 @@
           "completionEvidence": [],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
-            "scripts/prepare_sources.py",
-            "tests/Tooling/test_source_preparation.py",
-            "tests/Tooling/test_grounded_releases.py"
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
           ],
-          "progressNote": "Partial compiler engineering: authored optional help preserves frontend bounds; literal polarity inference only for synthetic fixtures. Real positions stay unknown until contextual authored input. Fixture reproducibility unchanged; real manifest/bank absent."
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q012",
           "sequence": 12,
           "phaseId": "QP3",
           "subject": "test: calibrate the full five-answer scoring surface",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q002",
             "Q011"
@@ -1102,7 +1146,17 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-authored-question-bank.json",
+            "outputs/2023-authored-issue-matrix.json",
+            "outputs/2023-authored-calibration.json",
+            "outputs/2023-authored-draft-verification.json",
+            "scripts/assemble_authored_quiz.py",
+            "tests/Tooling/authored-calibration.test.ts",
+            "tests/Tooling/test_authored_quiz.py"
+          ],
+          "progressNote": "Partial authoring: 10 distinct questions/10 topics, 590 explicit pairs, 36 source-grounded numeric draft mappings and 180 independent answer cases. An unpublished original-hash/context-validated draft contains all 59 candidacies/52 constituencies. All five rent answers passed on desktop and mobile, with -2 versus Sumar +2 explicitly opposed despite 87.5% partial overall overlap. Minimum 60-question release, complete readings, remaining pair interpretations, full cohort and semantic/UI acceptance remain open; no public pointer changed."
         },
         {
           "id": "Q013",
@@ -2518,7 +2572,7 @@
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   },
   "implementationProgress": {
-    "recordedAt": "2026-10-11T12:01:15.146323+00:00",
+    "recordedAt": "2026-10-11T12:26:29.916998+00:00",
     "sourceSummary": {
       "officialDenominations": 59,
       "programmeFilesDownloaded": 38,
@@ -2529,6 +2583,16 @@
     },
     "evidence": "outputs/2023-programme-reading-verification.json",
     "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending",
-    "uiEvidence": "outputs/quiz-2023-app-verification.json"
+    "uiEvidence": "outputs/quiz-2023-app-verification.json",
+    "authoredDraftSummary": {
+      "authoredDraftQuestions": 10,
+      "authoredDraftTopics": 10,
+      "explicitMatrixCells": 590,
+      "scoredDraftMappings": 36,
+      "independentAnswerCases": 180,
+      "browserRentCases": 10,
+      "releasedRealQuestions": 0,
+      "releaseEligible": false
+    }
   }
 }

@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T12:42:57.136160+00:00",
+  "recordedAt": "2026-10-11T13:14:30.766679+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
-    "Partial directly authored bank; not the minimum 60-question release. Other pairs remain explicitly not yet authored rather than source-certified absence.",
-    "The second PSOE edition and minor-source follow-up remain pending; these artifacts do not complete full corpus readiness.",
-    "No public bank pointer changed. Ten desktop/mobile rent paths passed for the immutable ten-question snapshot16263a2a; later authored increments require their own browser verification."
+    "Partial directly authored bank; not the minimum 60-question release. Unassigned pairs are not yet authored, rather than source-certified absence.",
+    "Both PSOE variants are fully read; version/alias provenance and remaining minor-source follow-up still keep complete corpus readiness open.",
+    "No public bank pointer changed. Immutable ten/23-question browser evidence is retained; the 43-question bank passes all five rent answers on desktop/mobile, complete 10/15/20/25/30 paths and generated-profile roster/evidence selection checks for all 52 constituencies. This does not certify a released real bank."
   ],
   "targetQuestions": 80,
   "minimumReleaseQuestions": 60,
@@ -403,6 +403,523 @@
       },
       "issueMatrixId": "birth-leave-at-least-six-months",
       "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "sugary-drink-tax",
+      "topicId": "taxes",
+      "familyId": "sweetened-drink-tax",
+      "text": "Se debería crear un impuesto específico sobre las bebidas azucaradas que se venden en España.",
+      "help": "Sería un impuesto aplicado a este tipo de bebidas. La pregunta trata de establecerlo, sin fijar su importe. Es distinto de cobrar el mismo impuesto a todas las bebidas o a todos los alimentos.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection or repeal of a levy on sweetened drinks.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit new sweetened-drink levy."
+      },
+      "issueMatrixId": "sugary-drink-tax",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 34
+      }
+    },
+    {
+      "id": "nonprofit-cannabis-selfuse",
+      "topicId": "rights",
+      "familyId": "personal-cannabis-criminalisation",
+      "text": "El cultivo y consumo propio de cannabis, sin ánimo de lucro, deberían quedar libres de sanciones penales.",
+      "help": "La propuesta se refiere a producir y consumir cannabis para uso personal, sin venderlo para obtener ganancias. Es distinta de autorizar su venta comercial o de permitirlo solamente como tratamiento médico.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit retention of criminal punishment for the same personal nonprofit conduct.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit personal nonprofit cultivation/consumption decriminalisation."
+      },
+      "issueMatrixId": "nonprofit-cannabis-selfuse",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 17,
+        "helpWords": 31
+      }
+    },
+    {
+      "id": "no-repeat-tuition-surcharge",
+      "topicId": "education",
+      "familyId": "repeat-course-public-tuition",
+      "text": "Repetir una asignatura en una universidad pública no debería encarecer el precio de su matrícula.",
+      "help": "La pregunta plantea pagar la misma matrícula por una asignatura aunque haya que cursarla de nuevo. No propone eliminar las evaluaciones ni las reglas académicas sobre cuántas veces puede repetirse.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit retention or increase of the repeat-subject surcharge.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit abolition of the surcharge on successive enrolment in the same subject."
+      },
+      "issueMatrixId": "no-repeat-tuition-surcharge",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 30
+      }
+    },
+    {
+      "id": "three-hours-school-pe",
+      "topicId": "education",
+      "familyId": "compulsory-physical-education-hours",
+      "text": "La educación obligatoria debería incluir al menos tres horas de Educación Física cada semana.",
+      "help": "Se trata del tiempo dedicado a esta asignatura dentro del horario escolar. La pregunta fija un mínimo semanal; no exige practicar un deporte concreto ni se refiere a actividades extraescolares.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of three weekly hours or retention of a smaller maximum.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit minimum of three or more weekly curricular physical-education hours in compulsory schooling."
+      },
+      "issueMatrixId": "three-hours-school-pe",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 14,
+        "helpWords": 30
+      }
+    },
+    {
+      "id": "waive-low-income-self-employed-fee",
+      "topicId": "employment",
+      "familyId": "self-employed-minimum-income-contribution",
+      "text": "Los autónomos con ingresos netos inferiores al salario mínimo deberían quedar exentos de pagar su cuota.",
+      "help": "Los ingresos netos son lo que queda de los ingresos de la actividad después de sus gastos. La cuota es la aportación a la Seguridad Social; esta pregunta no trata de eximirles de todos los impuestos.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicitly require the contribution below the same net-income threshold.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit contribution exemption below the minimum wage using net income."
+      },
+      "issueMatrixId": "waive-low-income-self-employed-fee",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 16,
+        "helpWords": 36
+      }
+    },
+    {
+      "id": "first-home-vat-exemption",
+      "topicId": "taxes",
+      "familyId": "first-habitual-home-vat",
+      "text": "La compra de la primera vivienda habitual debería quedar exenta del impuesto sobre el valor añadido.",
+      "help": "Este impuesto, conocido como IVA, se cobra en las compras de vivienda nueva sujetas a él. La propuesta es suprimirlo al comprar la primera vivienda habitual. No trata de los impuestos de una vivienda de segunda mano.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of the exemption with VAT retained on the same purchase.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit zero VAT on the first habitual home."
+      },
+      "issueMatrixId": "first-home-vat-exemption",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 16,
+        "helpWords": 37
+      },
+      "helpGrounding": {
+        "sourceUrl": "https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-inmobiliarias/compro-vivienda-tengo-que-pagar-itp.html",
+        "scope": "General VAT/new-versus-used home distinction only; not a party-position source or individual tax advice.",
+        "observedAt": "2026-10-11T13:14:30.766679+00:00"
+      }
+    },
+    {
+      "id": "ban-companion-animal-sale",
+      "topicId": "rights",
+      "familyId": "companion-animal-commercial-sale",
+      "text": "Se debería prohibir la compraventa de animales de compañía, manteniendo la posibilidad de adoptarlos.",
+      "help": "La propuesta impediría vender y comprar animales destinados a convivir con personas. Seguiría permitiendo la adopción. Es distinta de limitar las ventas a criadores registrados o de prohibir tener animales de compañía.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit continuation of lawful commercial companion-animal sales.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit companion-animal trade prohibition with adoption retained."
+      },
+      "issueMatrixId": "ban-companion-animal-sale",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 14,
+        "helpWords": 32
+      }
+    },
+    {
+      "id": "end-public-funding-lethal-bullfighting",
+      "topicId": "rights",
+      "familyId": "public-financing-lethal-bullfighting",
+      "text": "El dinero público debería dejar de financiar espectáculos taurinos en los que muere el animal.",
+      "help": "La pregunta trata de las subvenciones y otras formas de financiación pública de esos espectáculos. No plantea por sí misma prohibirlos ni se refiere a todos los festejos en los que participan animales.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicitly retain or add public financing for lethal bullfighting.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit withdrawal of public funding of lethal bullfighting, including a wider animal-show funding withdrawal."
+      },
+      "issueMatrixId": "end-public-funding-lethal-bullfighting",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 33
+      }
+    },
+    {
+      "id": "ban-hunting",
+      "topicId": "rights",
+      "familyId": "hunting-legality",
+      "text": "Se debería prohibir la caza de animales en todo el territorio de España.",
+      "help": "La pregunta plantea que la caza deje de ser una actividad permitida. Es distinta de limitar determinadas especies, temporadas o métodos, o de cambiar las licencias necesarias para cazar.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit legal hunting continuation/defence with operative hunting permits.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit general hunting prohibition."
+      },
+      "issueMatrixId": "ban-hunting",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 13,
+        "helpWords": 29
+      }
+    },
+    {
+      "id": "protect-vulnerable-household-utilities",
+      "topicId": "housing",
+      "familyId": "vulnerable-household-utility-disconnection",
+      "text": "Se debería prohibir de forma permanente cortar suministros básicos a los hogares en situación de vulnerabilidad.",
+      "help": "La propuesta mantendría una protección frente al corte de servicios básicos para esos hogares. No equivale a que todos los suministros sean gratuitos ni a cancelar automáticamente cualquier deuda pendiente.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of permanent protection permitting cuts for the same vulnerable households.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit permanent ban on basic utility disconnections for vulnerable households."
+      },
+      "issueMatrixId": "protect-vulnerable-household-utilities",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 16,
+        "helpWords": 30
+      }
+    },
+    {
+      "id": "universal-youth-twenty-thousand",
+      "topicId": "taxes",
+      "familyId": "universal-youth-capital-transfer",
+      "text": "Cada joven debería recibir 20.000 euros del Estado al cumplir 23 años para iniciar su vida adulta.",
+      "help": "Sería una ayuda para continuar los estudios, empezar la trayectoria profesional o independizarse. La pregunta plantea concederla a cada joven a esa edad, sin limitarla a quienes tengan ingresos bajos.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of this universal age-23 transfer.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit universal 20000-euro transfer at age 23 for the stated adult-entry purposes."
+      },
+      "issueMatrixId": "universal-youth-twenty-thousand",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 17,
+        "helpWords": 30
+      }
+    },
+    {
+      "id": "minimum-wage-above-inflation",
+      "topicId": "employment",
+      "familyId": "minimum-wage-inflation-rule",
+      "text": "El salario mínimo debería subir cada año más que el aumento de los precios.",
+      "help": "La pregunta plantea que la subida del salario mínimo supere la inflación anual, medida mediante el índice de precios. No fija una cantidad concreta en euros ni se refiere a todos los sueldos.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicitly reject increases above annual inflation for the minimum wage.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit annual minimum-wage increase above consumer-price inflation."
+      },
+      "issueMatrixId": "minimum-wage-above-inflation",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 14,
+        "helpWords": 33
+      }
+    },
+    {
+      "id": "open-public-document-formats",
+      "topicId": "institutions",
+      "familyId": "public-administration-open-document-standards",
+      "text": "La Administración debería usar formatos abiertos para sus documentos, sin depender de un programa informático concreto.",
+      "help": "Un formato abierto tiene unas reglas que pueden conocer distintos fabricantes de programas. La propuesta se refiere a los documentos que la Administración entrega o pide. No exige publicar datos personales ni todos los archivos internos.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit exclusive proprietary document formats required for these documents.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit open standards for administration-issued/requested electronic documents."
+      },
+      "issueMatrixId": "open-public-document-formats",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 16,
+        "helpWords": 36
+      }
+    },
+    {
+      "id": "retain-surrogacy-ban",
+      "topicId": "rights",
+      "familyId": "domestic-surrogacy-legality",
+      "text": "Se debería mantener en España la prohibición de que una mujer geste un bebé para otra persona.",
+      "help": "Esta práctica se conoce como gestación subrogada. La pregunta trata de permitirla o prohibirla en España, sin cambiar por sí misma los derechos de los menores nacidos mediante ella en otros países.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit legalisation of domestic surrogacy, including a defined altruistic model.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit general domestic surrogacy prohibition retained."
+      },
+      "issueMatrixId": "retain-surrogacy-ban",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 17,
+        "helpWords": 32
+      }
+    },
+    {
+      "id": "school-vegetarian-menu-option",
+      "topicId": "education",
+      "familyId": "school-catering-vegetarian-choice",
+      "text": "Todos los comedores escolares deberían ofrecer una opción de menú vegetariano para quien la prefiera.",
+      "help": "Sería una opción sin carne ni pescado disponible junto a otros menús. La propuesta no obliga a todo el alumnado a elegirla ni plantea que desaparezcan las demás opciones.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of a vegetarian-menu option in school canteens.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit vegetarian option in all educational-centre canteens."
+      },
+      "issueMatrixId": "school-vegetarian-menu-option",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 29
+      }
+    },
+    {
+      "id": "free-shareable-school-textbooks",
+      "topicId": "education",
+      "familyId": "open-licensed-school-textbooks",
+      "text": "Las administraciones deberían ofrecer libros de texto escolares gratuitos que cualquiera pueda copiar y compartir.",
+      "help": "La propuesta consiste en elaborar libros con permiso para distribuirlos y copiarlos libremente. Es distinta de pagar los libros comerciales que compra cada familia o de exigir que todos los materiales sean digitales.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of free shared textbook production retaining restrictive copying.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit free access plus publicly coordinated freely copyable/distributable textbooks."
+      },
+      "issueMatrixId": "free-shareable-school-textbooks",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 33
+      }
+    },
+    {
+      "id": "keep-in-person-public-services",
+      "topicId": "institutions",
+      "familyId": "public-service-in-person-access",
+      "text": "Los trámites con la Administración deberían poder realizarse en persona, sin obligar a usar internet.",
+      "help": "La propuesta mantendría la atención presencial como una vía para hacer los trámites. Los servicios digitales podrían seguir existiendo. No equivale a eliminar todas las citas previas ni a garantizar atención inmediata.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit mandatory online-only substitution for administrative procedure access.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit in-person administrative access retained across levels/all procedures without compulsory digital replacement."
+      },
+      "issueMatrixId": "keep-in-person-public-services",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 32
+      }
+    },
+    {
+      "id": "lower-veterinary-vat",
+      "topicId": "taxes",
+      "familyId": "veterinary-service-vat",
+      "text": "El impuesto sobre los servicios veterinarios para animales de compañía debería bajar al 10% o menos.",
+      "help": "Se trata del impuesto sobre el valor añadido, conocido como IVA, que aparece en esas facturas. La pregunta plantea reducir su tipo; no propone que todas las consultas veterinarias sean gratuitas.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of reducing veterinary VAT to 10% or lower.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit companion-animal veterinary VAT at 10% or lower."
+      },
+      "issueMatrixId": "lower-veterinary-vat",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 16,
+        "helpWords": 31
+      }
+    },
+    {
+      "id": "choose-independent-repair-shop",
+      "topicId": "energy",
+      "familyId": "independent-product-repair-access",
+      "text": "Se debería poder reparar un aparato en un taller independiente, sin estar obligado a acudir al fabricante.",
+      "help": "La propuesta permitiría elegir quién repara un aparato y daría acceso a lo necesario para hacerlo. Es distinta de garantizar que todas las reparaciones sean gratis o de eliminar las revisiones de seguridad.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit compulsory exclusive manufacturer-service repair.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit independent repair-shop choice or legally guaranteed repair access for independent repairers."
+      },
+      "issueMatrixId": "choose-independent-repair-shop",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 17,
+        "helpWords": 33
+      }
+    },
+    {
+      "id": "drink-container-deposit-return",
+      "topicId": "energy",
+      "familyId": "beverage-container-deposit-return",
+      "text": "Se deberían devolver los envases de bebidas usados para recuperar un depósito pagado al comprarlos.",
+      "help": "Al comprar la bebida se pagaría una cantidad por el envase, que se recuperaría al devolverlo. La pregunta trata de implantar ese sistema; no fija la cantidad del depósito ni los puntos de devolución.",
+      "level": "general",
+      "scaleRubric": {
+        "-2": "Explicit rejection of a deposit-refund return system.",
+        "-1": "Explicit rejection of the stated general proposition while retaining a narrower, documented exception.",
+        "0": "Explicitly evidenced intermediate decision on this exact proposition; never silence, uncertainty or an unverified interpretation.",
+        "1": "Explicit support restricted by a substantive condition absent from the shown proposition.",
+        "2": "Explicit deposit/devolution/return system implementation."
+      },
+      "issueMatrixId": "drink-container-deposit-return",
+      "authorship": "Directly written after complete programme readings and reopened complete native source pages; no generator.",
+      "usefulnessAudit": {
+        "oneConcreteDecision": true,
+        "conditionsPreserved": true,
+        "neutralHelp": true,
+        "unsupportedOutcomePrediction": false,
+        "statementWords": 15,
+        "helpWords": 34
+      }
     }
+  ],
+  "starterQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living"
   ]
 }

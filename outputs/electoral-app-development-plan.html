@@ -167,8 +167,8 @@ Work one inspectable increment at a time with factual evidence.
 - Q010 · test: audit every question for meaning and everyday usefulness · in_progress
 - Q011 · feat: compile authored real-source bundles without question generation · in_progress
 - Q012 · test: calibrate the full five-answer scoring surface · in_progress
-- Q013 · fix: compare eligible parties on the same evidence and weights · planned
-- Q014 · feat: select balanced authored questions and useful follow-ups · planned
+- Q013 · fix: compare eligible parties on the same evidence and weights · in_progress
+- Q014 · feat: select balanced authored questions and useful follow-ups · in_progress
 - Q015 · fix: explain agreements differences and aggregate results correctly · planned
 - Q016 · test: validate citations editions and correction behavior · planned
 - Q017 · design: specify and review the quiz visual system · in_progress

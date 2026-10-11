@@ -145,7 +145,7 @@ Dependencies: Q002, Q011
 
 ## Q013 fix: compare eligible parties on the same evidence and weights
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q012
 
@@ -157,7 +157,7 @@ Dependencies: Q012
 
 ## Q014 feat: select balanced authored questions and useful follow-ups
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q013
 

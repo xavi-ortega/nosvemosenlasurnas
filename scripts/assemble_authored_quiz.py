@@ -31,6 +31,12 @@ def assemble(root):
     questions = authored["questions"]
     question_ids = [question["id"] for question in questions]
     require(question_ids and len(question_ids) == len(set(question_ids)), "Duplicate authored question")
+    starters = authored.get("starterQuestionIds")
+    if starters is not None:
+        require(isinstance(starters, list) and len(starters) == 10 and all(isinstance(identifier, str) for identifier in starters) and len(set(starters)) == 10 and set(starters) <= set(question_ids), "Invalid authored starters")
+        selected = [next(question for question in questions if question["id"] == identifier) for identifier in starters]
+        require(all(question["level"] == "general" for question in selected) and len({question["familyId"] for question in selected}) == 10, "Invalid authored starter families")
+        require(len({question["topicId"] for question in selected}) == min(10, len({question["topicId"] for question in questions})), "Unbalanced authored starter topics")
     issues = {issue["id"]: issue for issue in matrix["issues"]}
     require(len(issues) == len(matrix["issues"]) and set(issues) == set(question_ids), "Issue/question mismatch")
     candidate_ids = [candidate["id"] for candidate in inventory["candidacies"]]
@@ -100,7 +106,7 @@ def assemble(root):
                 unknown_rationales.append((cell["candidacyId"], question["id"], cell["rationale"]))
     topic_names = {
         "housing": "Vivienda", "employment": "Trabajo", "health": "Sanidad",
-        "energy": "Energía", "taxes": "Impuestos", "education": "Educación",
+        "energy": "Energía y medio ambiente", "taxes": "Impuestos", "education": "Educación",
         "transport": "Transporte", "rights": "Derechos", "institutions": "Instituciones",
         "pensions": "Pensiones",
     }
@@ -118,6 +124,8 @@ def assemble(root):
         "documents": list(documents.values()),
         "positions": {candidate: {question: {"status": "unknown", "value": None, "citations": []} for question in question_ids} for candidate in candidate_ids},
     }
+    if starters is not None:
+        bank["starterQuestionIds"] = starters
     preparation = {"schemaVersion": 1, "electionId": election_id, "sourceHashes": {key: document["sha256"] for key, document in documents.items()}, "positions": prepared}
     with tempfile.TemporaryDirectory(prefix="authored-quiz-") as directory:
         folder = Path(directory)

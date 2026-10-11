@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T12:42:57.136160+00:00",
+  "recordedAt": "2026-10-11T13:14:30.766679+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
-    "Partial directly authored bank; not the minimum 60-question release. Other pairs remain explicitly not yet authored rather than source-certified absence.",
-    "The second PSOE edition and minor-source follow-up remain pending; these artifacts do not complete full corpus readiness.",
-    "No public bank pointer changed. Ten desktop/mobile rent paths passed for the immutable ten-question snapshot16263a2a; later authored increments require their own browser verification."
+    "Partial directly authored bank; not the minimum 60-question release. Unassigned pairs are not yet authored, rather than source-certified absence.",
+    "Both PSOE variants are fully read; version/alias provenance and remaining minor-source follow-up still keep complete corpus readiness open.",
+    "No public bank pointer changed. Immutable ten/23-question browser evidence is retained; the 43-question bank passes all five rent answers on desktop/mobile, complete 10/15/20/25/30 paths and generated-profile roster/evidence selection checks for all 52 constituencies. This does not certify a released real bank."
   ],
   "questions": [
     {
@@ -8844,6 +8844,6794 @@
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
       "status": "draft_source_context_pass_browser_and_release_validation_pending"
+    },
+    {
+      "questionId": "sugary-drink-tax",
+      "positiveAnswerMeaning": "Introduce a specific tax on sweetened drinks.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Fiscal-health measure 10 explicitly proposes this drink tax; unhealthy ultraprocessed foods and alcohol/tobacco revision are separate. No tax rate or health effect invented.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "nonprofit-cannabis-selfuse",
+      "positiveAnswerMeaning": "Decriminalise cannabis production and consumption for personal nonprofit use.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 15 separately discusses nonprofit associations, personal production/consumption and medical legalisation. The asked scope is nonprofit personal use, with no commercial-sale or medical-only inference.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "no-repeat-tuition-surcharge",
+      "positiveAnswerMeaning": "Remove the added public-university tuition charge for repeated enrolment in the same subject.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Public-price policy II.2 explicitly removes successive-enrolment economic punishment. First-year gratuity and income-linked grants are different clauses; no abolition of academic pass requirements.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "three-hours-school-pe",
+      "positiveAnswerMeaning": "Guarantee at least three weekly hours of physical education in compulsory schooling.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Sport measure 6 directly specifies three weekly compulsory-education hours. Outcome claims about obesity/sedentary life are attributed and omitted from neutral help.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "ambiguous"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "waive-low-income-self-employed-fee",
+      "positiveAnswerMeaning": "Waive the social-security contribution of self-employed people with net income below the minimum wage.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-003",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 36 preserves the net-income minimum-wage threshold in the surrounding full-page context. Separate full medical-leave bonus and false-self-employment measures are not bundled.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "first-home-vat-exemption",
+      "positiveAnswerMeaning": "Remove VAT on purchasing the first habitual home where VAT applies.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-003",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 66 is the operative zero-VAT pledge. The past 4% motion mentioned later is historical and does not replace this text. No purchase subsidy or secondhand-tax exemption inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "ban-companion-animal-sale",
+      "positiveAnswerMeaning": "Prohibit commercial purchase/sale of companion animals while retaining adoption.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 1.1.2 expressly contrasts a full trade ban with registered-breeder restrictions, and ends with adoption-only acquisition. Do not generalise to every animal/product transaction.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "end-public-funding-lethal-bullfighting",
+      "positiveAnswerMeaning": "End public financing of bullfighting shows involving the animal's death.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 1 explicitly states the lethal-show funding condition, independently of the cultural-protection repeal and minor-participation clauses.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 1.1.7 names lethal bullfighting within the wider animal-show set and proposes immediate direct/indirect funding withdrawal pending a broader ban. The wider scope includes the asked subset.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "ban-hunting",
+      "positiveAnswerMeaning": "Prohibit hunting animals throughout Spain.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 1.1.8.1 treats a general hunting ban as the objective and animal-as-hunting-tool restrictions as interim measures. Pages 14-16 read in full; attributed environmental allegations are not neutral premises.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "sourceExpectedValue": -2,
+          "sourceReason": "Measures 323/323.2 explicitly defend lawful hunting and implement nationwide licences. This directly retains the activity, rather than inferring opposition from absence of a ban; wolf-management clauses are separate.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "protect-vulnerable-household-utilities",
+      "positiveAnswerMeaning": "Make the ban on basic utility disconnections for vulnerable households permanent.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-008",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Protection-social first bullet explicitly states permanence and vulnerability. Neighbouring proposal to broaden income limits by 15% is distinct; no exact water/power quantity or debt writeoff invented.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "universal-youth-twenty-thousand",
+      "positiveAnswerMeaning": "Give every young person a 20000-euro public transfer at age 23 for education, professional entry or independence.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "VII.1 states amount, age, universal scope and intended uses, financed by a new large-fortunes tax. Financing is retained in source context but not made a second question. No income limit or equal-effect prediction.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "minimum-wage-above-inflation",
+      "positiveAnswerMeaning": "Increase the minimum wage every year by more than annual consumer-price inflation.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 5 specifies annual IPC-relative minimum-wage increases. Programme effect claims are attributed; the question/help do not certify claimed employment or inequality outcomes.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "open-public-document-formats",
+      "positiveAnswerMeaning": "Use open standards for electronic documents issued or requested by public administration.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 3.8.2.3 lists open document standards separately from publishing public-developed tools under free licences. No inferred disclosure of private data.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "retain-surrogacy-ban",
+      "positiveAnswerMeaning": "Retain the domestic Spanish prohibition on surrogacy.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-003",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 380 rejects surrogacy generally; its continuation on page 175 concerns registering overseas births. Only the domestic legality question is scored, with no child-right conclusion.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 72 explicitly maintains the domestic ban. Adjacent gender-violence, unwanted-pregnancy and LGTBI measures are not bundled.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "school-vegetarian-menu-option",
+      "positiveAnswerMeaning": "Offer a vegetarian menu choice in all school canteens.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 3.3.1 guarantees both kinds of option without requiring all pupils to choose them. Asking the vegetarian subset does not silently mandate vegan eating.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "free-shareable-school-textbooks",
+      "positiveAnswerMeaning": "Provide freely accessible school textbooks under licences permitting free copying and distribution.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 3.3.1 states gratuity/free access and an inter-regional collaboration project for copyleft textbooks. These describe one resource model; no ban on commercial books or digital-only inference.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "keep-in-person-public-services",
+      "positiveAnswerMeaning": "Retain in-person access to administrative procedures without mandatory digital substitution.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 3 explicitly keeps in-person access at every administrative level and prohibits compulsory digital substitution. Appointment and speed guarantees are not supplied.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Final protection-social bullet explicitly targets all population sectors and all necessary procedures, separate from IMV-specific simplification. It does not abolish internet service.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "lower-veterinary-vat",
+      "positiveAnswerMeaning": "Reduce companion-animal veterinary-service VAT to at most 10 percent.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 2 separately recognises clinics as health centres and specifies 10% VAT. No free-care inference; the broader veterinary service scope includes companion animals.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 1.7 expressly chooses 4% rather than 10% and discusses companion-animal services. A lower rate meets the proposition without falsely calling both programmes identical.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "choose-independent-repair-shop",
+      "positiveAnswerMeaning": "Allow independent repair shops to repair products without exclusive manufacturer-service requirements.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Section 2.5 directly links any-repair-shop choice to absence of mandatory official manufacturer service. Parts and warranty reforms are separate supporting access measures.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure 3.3 explicitly makes legal repair access available to independent repairers as well as consumers/community groups. This supports the repair-choice decision, independently of a parts-only pledge.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
+    },
+    {
+      "questionId": "drink-container-deposit-return",
+      "positiveAnswerMeaning": "Implement deposit-refund return systems for used beverage containers.",
+      "mappingCases": [
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Circular-economy measure 1 gives a firm implementation date, distinct from reused-packaging percentage targets and taxes. Deposit amount and return locations are not stated.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ],
+          "sourceContextReopened": true
+        }
+      ],
+      "unknownCases": [
+        {
+          "candidacyId": "boe-2023-013",
+          "expectedScored": false,
+          "reason": "ambiguous"
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-002",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-003",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-005",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-006",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-009",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-010",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-011",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-012",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-014",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-015",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-016",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-018",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-019",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-020",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-021",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-022",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-023",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-024",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-025",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-026",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-027",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-028",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-029",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-030",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-031",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-033",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-034",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-035",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-036",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-037",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-038",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-039",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-040",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-041",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-042",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-043",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-044",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-045",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-046",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-047",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-048",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-049",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-050",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-051",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-052",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-053",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-054",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-055",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-056",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-057",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-058",
+          "expectedScored": false,
+          "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "expectedScored": false,
+          "reason": "unknown"
+        }
+      ]
     }
   ],
   "mandatoryRentCase": {

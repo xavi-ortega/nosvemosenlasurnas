@@ -1,4 +1,5 @@
 """Test draft assembly from authored input, without source generation or publication."""
+import copy
 import json
 from pathlib import Path
 import sys
@@ -155,3 +156,43 @@ class AuthoredQuizTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 assembler.write_draft(bank, output)
             self.assertEqual(output.read_bytes(), second_bytes)
+
+
+    def test_assembly_preserves_authored_starters_after_question_permutation(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            files = self.prepare(root)
+            authored = files["2023-authored-question-bank.json"]
+            matrix = files["2023-authored-issue-matrix.json"]
+            question = authored["questions"][0]
+            issue = matrix["issues"][0]
+            topics = ["housing", "employment", "health", "energy", "taxes", "education", "transport", "rights", "institutions", "pensions"]
+            authored["questions"] = []
+            matrix["issues"] = []
+            expected = []
+            for index, topic in enumerate(topics):
+                identifier = f"fixture-question-{index}"
+                expected.append(identifier)
+                authored["questions"].append(question | {"id": identifier, "familyId": f"fixture-family-{index}", "topicId": topic})
+                matrix["issues"].append(copy.deepcopy(issue) | {"id": identifier, "familyId": f"fixture-family-{index}", "topicId": topic})
+            authored["starterQuestionIds"] = expected
+            authored["questions"].reverse()
+            for name in ["2023-authored-question-bank.json", "2023-authored-issue-matrix.json"]:
+                (root / "outputs" / name).write_text(json.dumps(files[name]))
+
+            assembled = assembler.assemble(root)
+
+            self.assertEqual(assembled["starterQuestionIds"], expected)
+            self.assertEqual(len(assembled["questions"]), 10)
+
+    def test_invalid_authored_starter_ids_stop_assembly_before_public_output(self):
+        for starters in [[], ["fixture-question"] * 10, ["missing-question"] * 10, [{}] * 10]:
+            with self.subTest(starters=starters), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                files = self.prepare(root)
+                files["2023-authored-question-bank.json"]["starterQuestionIds"] = starters
+                (root / "outputs/2023-authored-question-bank.json").write_text(json.dumps(files["2023-authored-question-bank.json"]))
+
+                with self.assertRaises(ValueError):
+                    assembler.assemble(root)
+                self.assertFalse((root / "resources/evidence/current.json").exists())

@@ -8,7 +8,7 @@ export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value
 export interface Bank {
     schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
-    topics: { id: string; name: string; budget: number }[]; questions: Question[];
+    topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
     documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string }[];
     positions: Record<string, Record<string, Position>>; interpretation: string; limitations: string[];
@@ -34,6 +34,13 @@ export function parseBank(value: unknown): Bank {
             ensure(q.help === undefined || (safeText(q.help) && q.help.length <= 1200));
             ensure(!familyTopics.has(q.familyId) || familyTopics.get(q.familyId) === q.topicId);
             familyTopics.set(q.familyId, q.topicId);
+        }
+        if (b.starterQuestionIds !== undefined) {
+            ensure(Array.isArray(b.starterQuestionIds) && b.starterQuestionIds.length === 10 && unique(b.starterQuestionIds));
+            const starters = b.starterQuestionIds.map(id => b.questions.find(q => q.id === id));
+            ensure(starters.every(q => q !== undefined && q.level === 'general'));
+            ensure(new Set(starters.map(q => q!.familyId)).size === 10);
+            ensure(new Set(starters.map(q => q!.topicId)).size === Math.min(b.topics.length, 10));
         }
         ensure(Array.isArray(b.documents) && new Set(b.documents.map(d => d.id)).size === b.documents.length);
         for (const d of b.documents) {
@@ -107,6 +114,9 @@ export function match(bank: Bank, answers: Answers, priorities: Priorities = {},
 }
 
 export function balanced(bank: Bank, excluded: string[] = [], count = 10): Question[] {
+    if (excluded.length === 0 && count === 10 && bank.starterQuestionIds) {
+        return bank.starterQuestionIds.map(id => bank.questions.find(q => q.id === id)!);
+    }
     const selected: Question[] = [];
     const seen = new Set(excluded);
     const familyCounts = new Map<string, number>();
@@ -130,6 +140,9 @@ export function balanced(bank: Bank, excluded: string[] = [], count = 10): Quest
 }
 
 export function followups(bank: Bank, answers: Answers, presented: string[], priorities: Priorities = {}, cohort?: string[], count = 5): Question[] {
+    const applicableCohort = cohort ?? bank.candidacies.map(candidate => candidate.id);
+    const hasEvidence = (q: Question): boolean => applicableCohort.some(id => bank.positions[id]?.[q.id]?.status === 'derived' && isScale(bank.positions[id][q.id].value));
+    const fallback = (): Question[] => balanced(bank, presented, bank.questions.length).filter(q => hasEvidence(q) && (priorities[q.topicId] ?? 1) > 0).slice(0, count);
     try {
         const started = performance.now();
         const result = match(bank, answers, priorities, cohort);
@@ -141,7 +154,7 @@ export function followups(bank: Bank, answers: Answers, presented: string[], pri
         const selected: Question[] = [];
         const familyCount = (id: string) => [...seen].filter(qid => bank.questions.find(q => q.id === qid)?.familyId === id).length;
         while (selected.length < count) {
-            const candidates = bank.questions.filter(q => !seen.has(q.id) && w[q.id] > 0 && familyCount(q.familyId) < 2);
+            const candidates = bank.questions.filter(q => !seen.has(q.id) && w[q.id] > 0 && hasEvidence(q) && familyCount(q.familyId) < 2);
             const score = (q: Question): number => {
                 const topic = bank.questions.filter(item => item.topicId === q.topicId);
                 const total = topic.reduce((n, item) => n + w[item.id], 0);
@@ -154,10 +167,10 @@ export function followups(bank: Bank, answers: Answers, presented: string[], pri
             candidates.sort((a, b) => uncovered(a, false) - uncovered(b, false) || uncovered(a, true) - uncovered(b, true) || score(b) - score(a) || a.id.localeCompare(b.id, 'en'));
             if (!candidates[0]) break;
             selected.push(candidates[0]); seen.add(candidates[0].id);
-            if (performance.now() - started > 50) return balanced(bank, presented, count).filter(q => w[q.id] > 0);
+            if (performance.now() - started > 50) return fallback();
         }
         return selected;
     } catch {
-        return balanced(bank, presented, count);
+        return fallback();
     }
 }

@@ -179,3 +179,48 @@ test('fewer than five unseen questions do not create a partial extension or reve
     assert.equal(q.revealed, false);
     assert.throws(() => q.export());
 });
+
+
+test('authored ten-question starters stay fixed when the bank grows or changes order', () => {
+    const copy = structuredClone(bank);
+    const expected = ['institutions-2', 'institutions-1', 'climate-2', 'climate-1', 'services-2', 'services-1', 'economy-2', 'economy-1', 'housing-2', 'housing-1'];
+    copy.starterQuestionIds = expected;
+    for (const [index, topic] of copy.topics.entries()) {
+        const added = { ...copy.questions[0], id: `a-extra-${index}`, familyId: `added-family-${index}`, topicId: topic.id };
+        copy.questions.unshift(added);
+        for (const candidate of copy.candidacies) copy.positions[candidate.id][added.id] = structuredClone(copy.positions[candidate.id]['housing-1']);
+    }
+    copy.questions.reverse();
+
+    const selected = balanced(parseBank(copy));
+    const unseen = followups(copy, {}, expected, {}, cohort);
+
+    assert.deepEqual(selected.map(question => question.id), expected);
+    assert.equal(new Set(selected.map(question => question.topicId)).size, 5);
+    assert.equal(unseen.length, 5);
+    assert.ok(unseen.every(question => !expected.includes(question.id)));
+});
+
+test('missing duplicate specific or unbalanced authored starters fail closed', () => {
+    const valid = ['housing-1', 'housing-2', 'economy-1', 'economy-2', 'services-1', 'services-2', 'climate-1', 'climate-2', 'institutions-1', 'institutions-2'];
+    for (const changed of ['short', 'duplicate', 'missing', 'topic', 'family', 'specific']) {
+        const copy = structuredClone(bank);
+        copy.starterQuestionIds = [...valid];
+        if (changed === 'short') copy.starterQuestionIds.pop();
+        if (changed === 'duplicate') copy.starterQuestionIds[0] = copy.starterQuestionIds[1];
+        if (changed === 'missing') copy.starterQuestionIds[0] = 'absent-question';
+        if (changed === 'topic') copy.starterQuestionIds.splice(6, 2, 'housing-3', 'housing-4');
+        if (changed === 'family') copy.questions.find(q => q.id === 'housing-2')!.familyId = copy.questions.find(q => q.id === 'housing-1')!.familyId;
+        if (changed === 'specific') copy.questions.find(q => q.id === 'housing-1')!.level = 'specific';
+
+        assert.throws(() => parseBank(copy), changed);
+    }
+});
+
+
+test('continuations require scored evidence from at least one eligible candidacy', () => {
+    const selected = balanced(bank).map(q => q.id);
+
+    assert.deepEqual(followups(bank, answers, selected, {}, ['delta']), []);
+    assert.equal(followups(bank, answers, selected, {}, ['alpha']).length, 5);
+});

@@ -3156,33 +3156,42 @@
           "votes": 7780
         }
       ],
-      "programmeSearchStatus": "teruel_acquired_and_scoped_bank_audited_aragon_23j_programme_located",
-      "analysisStatus": "specific_complete_teruel_document_80_cell_scoped_bank_audit_other_territorial_reading_pending",
+      "programmeSearchStatus": "teruel_and_aragon_primary_programmes_acquired_fully_read_and_scoped_bank_audited",
+      "analysisStatus": "two_distinct_complete_territorial_documents_80_proposition_scoped_audits",
       "programmeIds": [
-        "teruel-existe"
+        "teruel-existe",
+        "aragon-existe-23j"
       ],
       "ballotAliases": [
         "ARAGÓN EXISTE - COALICIÓN EXISTE (EXISTE)",
         "TERUEL EXISTE-Coalición EXISTE (EXISTE)"
       ],
-      "programmeApplicabilityStatus": "teruel_verified_huesca_zaragoza_separate_programme_located_not_yet_audited",
+      "programmeApplicabilityStatus": "separate_primary_programmes_verified_for_all_three_congress_ballots",
       "ballotRecordIds": [
         "congress-huesca-11",
         "congress-teruel-10",
         "congress-zaragoza-11"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/teruel-existe.json"
+        "outputs/2023-programme-notebooks/teruel-existe.json",
+        "outputs/2023-programme-notebooks/aragon-existe-23j.json"
       ],
-      "programmeApplicabilityNote": "Teruel document explicitly applies to congress-teruel-10 only. A distinct primary Aragón Existe 23J programme is newly located via its programme publication; complete acquisition/reading and separate Huesca/Zaragoza mappings remain pending, with no Teruel-source inheritance.",
+      "programmeApplicabilityNote": "Separate 29-page primary programmes directly read and audited: Teruel for congress-teruel-10, Aragón Existe for congress-huesca-11 and congress-zaragoza-11. No source inheritance across these ballots; default/all aggregate remains unscored and directs users to select scope. Exact pre-vote byte timing remains uncertified for these current primary PDFs.",
       "questionBankAudit": {
-        "recordedAt": "2026-10-11T20:11:01.741115+00:00",
-        "report": "outputs/2023-authored-teruel-audit.json",
+        "recordedAt": "2026-10-11T20:28:00.355007+00:00",
+        "reports": [
+          "outputs/2023-authored-teruel-audit.json",
+          "outputs/2023-authored-aragon-audit.json"
+        ],
         "questionCount": 80,
-        "derivedMappings": 2,
-        "newDerivedMappings": 1,
-        "citedUncertainties": 55,
-        "constituencyId": "teruel",
+        "scopedCellCount": 240,
+        "scopedDerivedMappings": 6,
+        "citedUncertaintiesPerScope": 55,
+        "scopes": [
+          "teruel",
+          "huesca",
+          "zaragoza"
+        ],
         "widerProgrammeFamilyCertified": false
       }
     },
@@ -6707,15 +6716,44 @@
       ],
       "countsAsAdditionalCompleteReading": false,
       "countsAsDistinctPdfBytes": false
+    },
+    {
+      "id": "aragon-existe-23j",
+      "url": "https://aragonexiste.org/wp-content/uploads/2023/07/Programa-23j_ARAGON-EXISTE.-Elecciones-generales.pdf",
+      "publicationUrl": "https://aragonexiste.org/programaelectoral/",
+      "retrievedAt": "2026-10-11T20:19:28.532147+00:00",
+      "resolvedUrl": "https://aragonexiste.org/wp-content/uploads/2023/07/Programa-23j_ARAGON-EXISTE.-Elecciones-generales.pdf",
+      "mediaType": "application/pdf",
+      "status": "primary_2023_aragon_programme_fully_read_specific_scoped_bank_audited",
+      "file": "storage/app/election-sources/2023-congress/aragon-existe-23j.pdf",
+      "sha256": "787d50b11e61a033867429ed913bf622892bccfe91425cfeff029c6afd7c7742",
+      "bytes": 414362,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/aragon-existe-23j.txt",
+        "sha256": "483be20dceedb56e04dd55109bce93fa842cb76690b8ce4aae91f34bfa3ea176",
+        "pageCount": 29,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "specific_complete_document_80_proposition_two_scope_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/aragon-existe-23j.json",
+      "applicableBallotRecordIds": [
+        "congress-huesca-11",
+        "congress-zaragoza-11"
+      ],
+      "excludedBallotRecordIds": [
+        "congress-teruel-10"
+      ],
+      "electionApplicability": "Original general-election 2023 cover, pages 3-4 next 23 July/Cortes Generales/Aragón Existe candidates; primary candidate announcement expressly identifies both Huesca/Zaragoza Congress lists. Separate Teruel source retained."
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 43,
+    "programmeFilesDownloaded": 44,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 52
+    "programmeDocumentsFullyRead": 53
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -9563,9 +9601,9 @@
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
-    "explicitMatrixCells": 4880,
-    "scoredDraftMappings": 176,
-    "independentAnswerCases": 880,
+    "explicitMatrixCells": 5120,
+    "scoredDraftMappings": 180,
+    "independentAnswerCases": 900,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9576,7 +9614,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 25,
-    "latestBrowserDraftSha256": "5cf04519b5c9588579e1659d430cbbe118329954a5de8d46204b4ae4b4b31632",
+    "latestBrowserDraftSha256": "2f190cd78244212469521e63004032e4281737c8a42a3bc4d2bcb57830e15020",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9586,20 +9624,20 @@
       25
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 20,
-    "latestBrowserVerification": "outputs/2023-authored-teruel-scopes-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-teruel-verification.json",
+    "latestBrowserProgressivePaths": 32,
+    "latestBrowserVerification": "outputs/2023-authored-aragon-scopes-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-aragon-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "5cf04519b5c9588579e1659d430cbbe118329954a5de8d46204b4ae4b4b31632",
+    "latestDraftSha256": "2f190cd78244212469521e63004032e4281737c8a42a3bc4d2bcb57830e15020",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "5cf04519b5c9588579e1659d430cbbe118329954a5de8d46204b4ae4b4b31632",
+    "latestAuthoredDraftSha256": "2f190cd78244212469521e63004032e4281737c8a42a3bc4d2bcb57830e15020",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9701,9 +9739,9 @@
     "latestPalenciatierravivaCitedUnscoredPaths": 4,
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
-    "scopedMatrixCells": 240,
+    "scopedMatrixCells": 400,
     "defaultScoredDraftMappings": 173,
-    "scopedScoredDraftMappings": 3,
+    "scopedScoredDraftMappings": 7,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
     "evLeonBrowserVerification": "outputs/2023-authored-ev-leon-browser-verification.json",
@@ -9793,7 +9831,7 @@
     "latestPumjCitedAnswerPaths": 4,
     "latestPumjCitedUnscoredPaths": 14,
     "pumjFixedComparisonEligible": false,
-    "explicitCellCount": 4960,
+    "explicitCellCount": 5120,
     "teruelBankAudit": "outputs/2023-authored-teruel-audit.json",
     "teruelVerification": "outputs/2023-authored-teruel-verification.json",
     "teruelScopesBrowserVerification": "outputs/2023-authored-teruel-scopes-browser-verification.json",
@@ -9813,7 +9851,22 @@
       "all",
       "huesca",
       "zaragoza"
-    ]
+    ],
+    "aragonBankAudit": "outputs/2023-authored-aragon-audit.json",
+    "aragonVerification": "outputs/2023-authored-aragon-verification.json",
+    "aragonScopesBrowserVerification": "outputs/2023-authored-aragon-scopes-browser-verification.json",
+    "aragonUnknownsBrowserVerification": "outputs/2023-authored-aragon-unknowns-browser-verification.json",
+    "newAragonAuditedScopedCells": 160,
+    "newAragonDerivedMappings": 4,
+    "newAragonCitedUncertaintiesPerScope": 55,
+    "latestAragonBrowserSessions": 32,
+    "latestAragonCitedAnswerPaths": 44,
+    "latestAragonDefaultUnscoredPaths": 4,
+    "latestAragonCitedUnscoredPaths": 84,
+    "allPrevious176NumericMappingsUnchanged": true,
+    "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
+    "allOtherCandidateResultsUnchanged": true,
+    "bankBytes": 4140667
   },
-  "recordedAt": "2026-10-11T20:11:01.741115+00:00"
+  "recordedAt": "2026-10-11T20:28:00.355007+00:00"
 }

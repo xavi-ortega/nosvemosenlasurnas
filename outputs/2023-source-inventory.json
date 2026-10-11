@@ -11,11 +11,12 @@
     "Official result-table denominations are not yet deduplicated programme owners or final candidacy records. Preserve territorial/coalition distinctions until documented applicability permits sharing.",
     "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz.",
     "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions.",
-    "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread.",
+    "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. The complete 68-page main programme and separate 16-page easy-reading companion are now fully read in their individual notebooks.",
     "Four additional complete individual readings reconciled: Compromís-Sumar13PDFpages, Vía Burgalesa20national HTMLsections (2026update/vintage unresolved), Teruel Existe29PDFpages and PDeCAT35PDFpages. Byte/text hashes and literal locators checked; source applicability, corpus closure and numeric mapping remain open. Teruel/Valencian supplement scope never extends automatically to other coalition territories.",
     "New observed primary programme links acquired: Por Ávila alternate OK_23JPDF replaces failedURLlead; Nueva Canarias July23JPDF distinct from Mayregional programme,75741915bytes original retained (webPDFfetch had rejected size). No reading completion follows acquisition. Geroa transparency lists May/other-edition programmes; Frente current linked political PDF is under2026/10and cannot substitute for23J.",
     "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit.",
-    "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open."
+    "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open.",
+    "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release."
   ],
   "candidacies": [
     {
@@ -296,7 +297,8 @@
         "congress-zaragoza-4",
         "congress-ceuta-1",
         "congress-melilla-1"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-002",
@@ -559,7 +561,8 @@
         "congress-zaragoza-2",
         "congress-ceuta-2",
         "congress-melilla-2"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-003",
@@ -832,7 +835,8 @@
         "congress-zaragoza-8",
         "congress-ceuta-6",
         "congress-melilla-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-004",
@@ -1158,7 +1162,8 @@
         "congress-girona-1",
         "congress-lleida-1",
         "congress-tarragona-1"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-006",
@@ -1196,7 +1201,8 @@
         "congress-girona-7",
         "congress-lleida-4",
         "congress-tarragona-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-007",
@@ -1236,7 +1242,8 @@
         "congress-girona-8",
         "congress-lleida-8",
         "congress-tarragona-11"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-008",
@@ -1310,6 +1317,9 @@
         "congress-alava-2",
         "congress-bizkaia-2",
         "congress-gipuzkoa-3"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pnv.json"
       ]
     },
     {
@@ -1338,13 +1348,14 @@
       "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "bng",
-        "bng-decalogue"
+        "bng-decalogue",
+        "bng-easy-read"
       ],
       "ballotAliases": [
         "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
         "BLOQUE NACIONALISTA GALEGO (BNG)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_2023_bng_galician_scope_verified_not_scoring_ready",
       "ballotRecordIds": [
         "congress-acoruna-5",
         "congress-lugo-6",
@@ -1352,8 +1363,25 @@
         "congress-pontevedra-8"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/bng-decalogue.json"
-      ]
+        "outputs/2023-programme-notebooks/bng-decalogue.json",
+        "outputs/2023-programme-notebooks/bng-easy-read.json",
+        "outputs/2023-programme-notebooks/bng.json"
+      ],
+      "applicabilityEvidence": {
+        "publicationUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+        "documentIds": [
+          "bng",
+          "bng-decalogue",
+          "bng-easy-read"
+        ],
+        "ballotRecordIds": [
+          "congress-acoruna-5",
+          "congress-lugo-6",
+          "congress-ourense-6",
+          "congress-pontevedra-8"
+        ],
+        "rationale": "Primary BNG 2023 general-election publication and originals identify BNG/Galicia; easy-reading page4 specifies 23 July 2023 and pages5-7 distinguish Congress/Senate. Registry confirms the four BNG Congress ballots. No coalition extension."
+      }
     },
     {
       "id": "boe-2023-011",
@@ -1686,7 +1714,8 @@
         "congress-zamora-11",
         "congress-zaragoza-12",
         "congress-melilla-6"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-014",
@@ -1995,7 +2024,8 @@
         "congress-zamora-2",
         "congress-zaragoza-1",
         "congress-ceuta-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-016",
@@ -2023,6 +2053,9 @@
       "ballotRecordIds": [
         "congress-laspalmas-6",
         "congress-santacruzdetenerife-5"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/nuevacanarias.json"
       ]
     },
     {
@@ -2341,7 +2374,8 @@
         "congress-zaragoza-6",
         "congress-ceuta-8",
         "congress-melilla-8"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-019",
@@ -2562,6 +2596,9 @@
         "congress-zaragoza-9",
         "congress-ceuta-7",
         "congress-melilla-7"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pumj.json"
       ]
     },
     {
@@ -2591,6 +2628,9 @@
       "ballotRecordIds": [
         "congress-leon-8",
         "congress-zamora-6"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/upl-leon.json"
       ]
     },
     {
@@ -2839,7 +2879,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-navarra-4"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-024",
@@ -2862,6 +2903,9 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-soria-5"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/soriaya.json"
       ]
     },
     {
@@ -2885,7 +2929,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-cadiz-4"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-026",
@@ -2957,7 +3002,8 @@
         "congress-teruel-1",
         "congress-valladolid-11",
         "congress-zaragoza-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-027",
@@ -2980,6 +3026,9 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-jaen-9"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/jaenmerecemas.json"
       ]
     },
     {
@@ -3003,6 +3052,9 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-avila-7"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/poravila.json"
       ]
     },
     {
@@ -3029,7 +3081,8 @@
       "ballotRecordIds": [
         "congress-badajoz-9",
         "congress-caceres-9"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-030",
@@ -3143,7 +3196,8 @@
         "congress-palencia-6",
         "congress-salamanca-9",
         "congress-valladolid-9"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-032",
@@ -3251,7 +3305,8 @@
         "congress-huesca-13",
         "congress-teruel-7",
         "congress-zaragoza-13"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-034",
@@ -3272,7 +3327,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-madrid-7"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-035",
@@ -3293,7 +3349,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-huelva-4"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-036",
@@ -3314,7 +3371,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-palencia-7"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-037",
@@ -3335,7 +3393,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-zamora-10"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-038",
@@ -3382,7 +3441,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-murcia-12"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-040",
@@ -3408,7 +3468,8 @@
       "ballotRecordIds": [
         "congress-laspalmas-11",
         "congress-santacruzdetenerife-10"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-041",
@@ -3429,7 +3490,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-alicante-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-042",
@@ -3450,7 +3512,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-valencia-9"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-043",
@@ -3471,7 +3534,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-melilla-5"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-044",
@@ -3492,7 +3556,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-granada-9"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-045",
@@ -3513,7 +3578,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-burgos-11"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-046",
@@ -3544,7 +3610,8 @@
         "congress-leon-4",
         "congress-salamanca-4",
         "congress-zamora-3"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-047",
@@ -3565,7 +3632,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-caceres-7"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-048",
@@ -3623,7 +3691,8 @@
         "congress-huesca-2",
         "congress-teruel-12",
         "congress-zaragoza-14"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-050",
@@ -3649,7 +3718,8 @@
       "ballotRecordIds": [
         "congress-larioja-2",
         "congress-segovia-4"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-051",
@@ -3670,7 +3740,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-valladolid-5"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-052",
@@ -3717,7 +3788,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-asturias-8"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-054",
@@ -3738,7 +3810,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-tarragona-6"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-055",
@@ -3764,7 +3837,8 @@
       "ballotRecordIds": [
         "congress-almeria-8",
         "congress-ceuta-5"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-056",
@@ -3785,7 +3859,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-tarragona-16"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-057",
@@ -3806,7 +3881,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-murcia-10"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-058",
@@ -3827,7 +3903,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-ourense-5"
-      ]
+      ],
+      "notebooks": []
     },
     {
       "id": "boe-2023-059",
@@ -3848,7 +3925,8 @@
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-valladolid-7"
-      ]
+      ],
+      "notebooks": []
     }
   ],
   "acquisitions": [
@@ -4133,8 +4211,12 @@
         "sha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
         "pageCount": 68,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/bng.json",
+      "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
     },
     {
       "id": "bng-decalogue",
@@ -4155,7 +4237,9 @@
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
       "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json"
+      "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json",
+      "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
     },
     {
       "id": "cc-manifesto",
@@ -4697,15 +4781,38 @@
       "applicableBallotRecordIds": [
         "congress-leon-8"
       ]
+    },
+    {
+      "id": "bng-easy-read",
+      "url": "https://www.bng.gal/media/bnggaliza/files/2023/07/12/Programa%20BNG%20LF.pdf",
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/12/Programa%20BNG%20LF.pdf",
+      "publicationUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "retrievedAt": "2026-10-11T09:13:23.830094+00:00",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/bng-easy-read.pdf",
+      "bytes": 4524440,
+      "sha256": "7d55070f9910d5ff4b63eaf313d2cfd79bbc7e8b4cd648b39b37027ddf45f17d",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/bng-easy-read.txt",
+        "sha256": "06b4e7cab1d4082994447b73631beac7be21bec9d5546f49ad5eeca6c2fc31c2",
+        "pageCount": 16,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/bng-easy-read.json",
+      "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 28,
+    "programmeFilesDownloaded": 29,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 21
+    "programmeDocumentsFullyRead": 23
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

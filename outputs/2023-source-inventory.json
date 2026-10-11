@@ -20,7 +20,8 @@
     "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open.",
     "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown.",
     "VOX178-page programme fully read including all381numbered measures/submeasures and every historical-action list,32original cover/low-native-text visual pages.70supplied literal excerpts checked; all positions null. Earlier VAT motions distinguished from current pledges; repeated chapter policies do not pad the future bank.",
-    "Adelante Andalucía85-page programme, sixpage image-only decálogo with13numberedcommitments and linked18pageindustrystrategy fullyread. Main64andstrategy8nativeexcerptsoffsetsverified;12decálogovisualexcerptsfulltranscriptionpending. Preserve retirement62vs64 conflict, territorialrentcapvsfamilyhomelesscap, and olderstrategyversion conditions. No numericposition released."
+    "Adelante Andalucía85-page programme, sixpage image-only decálogo with13numberedcommitments and linked18pageindustrystrategy fullyread. Main64andstrategy8nativeexcerptsoffsetsverified;12decálogovisualexcerptsfulltranscriptionpending. Preserve retirement62vs64 conflict, territorialrentcapvsfamilyhomelesscap, and olderstrategyversion conditions. No numericposition released.",
+    "ERC 132-page original fully read, including complete index, all three levels, references and published language-revision notice/back cover; nine original visual pages and 102 native literal anchors checked. Current regional rent-price powers, future-state numerical designs, qualified meat/flight/tax proposals and source editorial errors remain separately qualified. No numeric positions or real questions released."
   ],
   "candidacies": [
     {
@@ -1314,22 +1315,38 @@
           "votes": 55461
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "primary_23j_programme_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "erc-july"
       ],
       "ballotAliases": [
         "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "23j_congress_four_erc_ballots_verified_no_senate_coalition_inheritance",
       "ballotRecordIds": [
         "congress-barcelona-6",
         "congress-girona-7",
         "congress-lleida-4",
         "congress-tarragona-3"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/erc.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "erc-july"
+        ],
+        "ballotRecordIds": [
+          "congress-barcelona-6",
+          "congress-girona-7",
+          "congress-lleida-4",
+          "congress-tarragona-3"
+        ],
+        "publicationUrl": "https://en.esquerra.cat/en/esquerra-republicana-includes-negotiations-on-a-referendum--an-amnesty-law-and-building-the-catalan-republic-erc-esquerra",
+        "publicationDate": "2023-07-06",
+        "rationale": "Primary party publication and original presentation explicitly identify 23 July Congress/Senate programme; exact official ERC ballot names in four Catalan constituencies. Future Republic model is separated from current chamber measures and stated EH Bildu alliance is Senate-only."
+      }
     },
     {
       "id": "boe-2023-007",
@@ -4318,8 +4335,22 @@
         "sha256": "d7d23847d698684a5bb5fc991b2a9f50c4b2b03e4baf288930980a74cdbe1a74",
         "pageCount": 132,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/erc.json",
+      "electionApplicability": "Original presentation explicitly Congress/Senate 23 July 2023; cover 2023; primary party publication dated 6 July 2023 confirms three-level structure and the same programme. Four final ERC Congress ballots; EH Bildu coalition text applies to Senate only.",
+      "originalVisualPagesRead": [
+        1,
+        65,
+        90,
+        103,
+        114,
+        128,
+        130,
+        131,
+        132
+      ]
     },
     {
       "id": "upn",
@@ -5094,7 +5125,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 29
+    "programmeDocumentsFullyRead": 30
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

@@ -3049,7 +3049,7 @@
         }
       ],
       "programmeSearchStatus": "leon_programme_acquired_zamora_adoption_unresolved",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "upl-leon-july"
       ],
@@ -3064,7 +3064,15 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/upl-leon.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:19:35.073360+00:00",
+        "report": "outputs/2023-authored-three-small-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 6,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-021",
@@ -3511,7 +3519,7 @@
         }
       ],
       "programmeSearchStatus": "downloaded_applicability_pending_not_analysed",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "poravila-primary-july"
       ],
@@ -3524,7 +3532,15 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/poravila.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:19:35.073360+00:00",
+        "report": "outputs/2023-authored-three-small-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 10,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-029",
@@ -3599,15 +3615,16 @@
           "votes": 1056
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "primary_archived_programme_and_contemporaneous_preserved_copy_fully_read",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
-        "caminando-preserved-i28"
+        "caminando-preserved-i28",
+        "caminando-july-programme-archive"
       ],
       "ballotAliases": [
         "CAMINANDO JUNTOS (CJ)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "primary_july_homepage_matches_all_ten_final_congress_ballots_with_post_vote_programme_capture_limitation",
       "ballotRecordIds": [
         "congress-alicante-6",
         "congress-cadiz-11",
@@ -3622,8 +3639,17 @@
       ],
       "notebook": "outputs/2023-programme-notebooks/caminando-juntos.json",
       "notebooks": [
-        "outputs/2023-programme-notebooks/caminando-juntos.json"
-      ]
+        "outputs/2023-programme-notebooks/caminando-juntos.json",
+        "outputs/2023-programme-notebooks/caminando-2023-primary-programme.json"
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:19:35.073360+00:00",
+        "report": "outputs/2023-authored-three-small-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 1,
+        "ambiguousCells": 9,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-031",
@@ -6032,6 +6058,37 @@
       "mediaType": "text/html",
       "status": "retrieval_failed",
       "error": "Response is not a bounded PDF: text/html"
+    },
+    {
+      "id": "upl-july-long-programme",
+      "url": "https://www.upl.es/wp-content/uploads/2023/07/programa-largo.pdf",
+      "publicationUrl": "https://www.upl.es/programa-electoral-al-congreso-y-senado_2023/",
+      "retrievedAt": "2026-10-11T16:15:27.303678+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "upl-long-programme-2023-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.upl.es/wp-content/uploads/2023/07/programa-largo.pdf",
+      "publicationUrl": "https://www.upl.es/programa-electoral-al-congreso-y-senado_2023/",
+      "retrievedAt": "2026-10-11T16:16:34.913273+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "poravila-updated-observed-http",
+      "url": "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf",
+      "publicationUrl": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia",
+      "retrievedAt": "2026-10-11T16:19:10.358530+00:00",
+      "resolvedUrl": "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/poravila-updated-observed-http.pdf",
+      "sha256": "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305",
+      "bytes": 349880,
+      "analysisStatus": "duplicate_identical_original_already_fully_read",
+      "sameOriginalAs": "poravila-primary-july",
+      "notebook": "outputs/2023-programme-notebooks/poravila.json"
     }
   ],
   "summary": {
@@ -6040,7 +6097,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 49
+    "programmeDocumentsFullyRead": 50
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -6058,14 +6115,17 @@
       "resolvedUrl": "https://poravila.es/candidaturas-23j",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_provenance_only",
       "file": "storage/app/election-sources/2023-congress/poravila-publication-f7766d762c69.html",
       "sha256": "f7766d762c69d9e3357776b806a35e3e5c0c19067d38004decd7ad9567d97184",
       "textFile": "storage/app/election-sources/2023-congress/poravila-publication-f7766d762c69.txt",
       "textSha256": "9eb44b329c9cf7292b1a4e94a2dc3d8db6f3153a6f46d418bc7b3dd79690b60c",
       "links": [
         "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.59.pdf"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Complete original publisher programme-announcement or candidacy-page native text read, including all footer/cookie navigation. Explicit23July2023Congress/Senate scope and correct originalPDFlink verified. Current2026calendar and new-election navigation excluded. Older candidacy download59PDF is404; updatedOKPDF is retained and fully read."
     },
     {
       "id": "soriaya",
@@ -6293,11 +6353,14 @@
       "retrievedAt": "2026-10-11T08:41:18.062234+00:00",
       "resolvedUrl": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia",
       "mediaType": "text/html; charset=UTF-8",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_provenance_only",
       "file": "storage/app/election-sources/2023-congress/poravila-july-publication-de22f0b10324.html",
       "sha256": "de22f0b1032485ee0e6aa23a16ec790fe82b2cb27eaa4571005f39550134ea36",
       "textFile": "storage/app/election-sources/2023-congress/poravila-july-publication-de22f0b10324.txt",
-      "textSha256": "3ab4efd87579c9d2fd6e37aa1b4e9ce141d9da28230531dc541dbdd05107e1c1"
+      "textSha256": "3ab4efd87579c9d2fd6e37aa1b4e9ce141d9da28230531dc541dbdd05107e1c1",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Complete original publisher programme-announcement or candidacy-page native text read, including all footer/cookie navigation. Explicit23July2023Congress/Senate scope and correct originalPDFlink verified. Current2026calendar and new-election navigation excluded. Older candidacy download59PDF is404; updatedOKPDF is retained and fully read."
     },
     {
       "id": "nuevacanarias-july-programmes",
@@ -8664,14 +8727,86 @@
       "candidacyId": "boe-2023-048",
       "fullNativePublicationTextRead": true,
       "authoredAnalysis": "Complete primary July10 2023 article and all33 reproduced programme measures read in sequence, cross-checked against the previously fully read two-page original. Current2026 navigation/footer and other-election links excluded from political evidence; exact pre-vote HTML bytes not certified."
+    },
+    {
+      "id": "caminando-primary-programme-followup",
+      "url": "https://caminando-juntos.org/",
+      "retrievedAt": "2026-10-11T16:14:08.268456+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "id": "caminando-july-primary-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://caminando-juntos.org/",
+      "retrievedAt": "2026-10-11T16:14:08.711209+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720002806id_/https://caminando-juntos.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_complete_native_text_read",
+      "file": "storage/app/election-sources/2023-congress/caminando-july-primary-archive-publication-1872b3f630d7.html",
+      "sha256": "1872b3f630d7d2a7085651e9f5ecf2f6a5f254fd52311dcff1037a708220f2f0",
+      "textFile": "storage/app/election-sources/2023-congress/caminando-july-primary-archive-publication-1872b3f630d7.txt",
+      "textSha256": "58f567c723c06a21bb58ffb37f68fa20a5e315a7d478678a5f775a500242abdd",
+      "links": [
+        "https://caminando-juntos.org/programa/",
+        "https://caminando-juntos.org/wp-content/uploads/2023/06/hoja-de-firmas.pdf",
+        "https://caminando-juntos.org/wp-content/uploads/2023/06/macarena-olona-cope.jpeg",
+        "https://caminando-juntos.org/wp-content/uploads/2023/06/macarena-olona-registra-un-nuevo-partido.jpeg"
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time."
+    },
+    {
+      "id": "upl-july-programme-publication-followup",
+      "url": "https://www.upl.es/programa-electoral/",
+      "retrievedAt": "2026-10-11T16:14:24.521105+00:00",
+      "resolvedUrl": "https://www.upl.es/programa-electoral-al-congreso-y-senado_2023/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_complete_native_text_read",
+      "file": "storage/app/election-sources/2023-congress/upl-july-programme-publication-followup-publication-226fea4dc8a8.html",
+      "sha256": "226fea4dc8a8f2ece5346d96df34e4f1ee327196de776975d923a9337cc487d8",
+      "textFile": "storage/app/election-sources/2023-congress/upl-july-programme-publication-followup-publication-226fea4dc8a8.txt",
+      "textSha256": "561c599b11b8adc463cbc4fd34d71b381b9bd44a03ed7aa444c6a8301e837416",
+      "links": [
+        "https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.upl.es%2Fprograma-electoral-al-congreso-y-senado_2023%2F",
+        "https://www.upl.es/programa-electoral-al-congreso-y-senado_2023/#respond",
+        "https://www.upl.es/programa-politico/",
+        "https://www.upl.es/wp-content/uploads/2019/04/ESTATUTOS-2019.pdf",
+        "https://www.upl.es/wp-content/uploads/2023/07/programa-largo.pdf",
+        "https://x.com/intent/post?url=https%3A%2F%2Fwww.upl.es%2Fprograma-electoral-al-congreso-y-senado_2023%2F"
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time."
+    },
+    {
+      "id": "caminando-july-programme-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://caminando-juntos.org/programa/",
+      "retrievedAt": "2026-10-11T16:15:08.227125+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20231129092857id_/https://caminando-juntos.org/programa/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_complete_native_text_read",
+      "file": "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.html",
+      "sha256": "5e39e394b51f21a1c0cca7fcb9ff969d6ba49ab007c8050c42556d392802c737",
+      "textFile": "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.txt",
+      "textSha256": "2d1d9974d3275da6d471b03b053bfc363b05ff3d3ac42609095dd69c51827072",
+      "links": [
+        "https://caminando-juntos.org/programa/"
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": true,
+      "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time."
     }
   ],
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 154,
-    "independentAnswerCases": 770,
+    "scoredDraftMappings": 155,
+    "independentAnswerCases": 775,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -8682,8 +8817,8 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "1278c07dc4bd6c2ed8b77f96e2b23030cd80b5264d595ffe1cf7391d50327850",
-    "previousBrowserVerification": "outputs/2023-authored-80-verification.json",
+    "latestBrowserDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
+    "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
@@ -8692,21 +8827,21 @@
       25,
       30
     ],
-    "latestBrowserRentCases": 10,
-    "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-authored-pdecat-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-pdecat-verification.json",
+    "latestBrowserRentCases": 0,
+    "latestBrowserProgressivePaths": 14,
+    "latestBrowserVerification": "outputs/2023-authored-caminando-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
-    "fixedComparisonCohortVerification": "outputs/2023-authored-pdecat-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-authored-pdecat-runtime-verification.json",
-    "latestDraftSha256": "c0475f7ec8ab7988f7c92c95b4c2d9acfed2ab4ffaa5ee3619934b69a94b05e3",
+    "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
+    "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
+    "latestDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "1278c07dc4bd6c2ed8b77f96e2b23030cd80b5264d595ffe1cf7391d50327850",
+    "latestAuthoredDraftSha256": "507cd1088f00813d5dce17a9ab535737ac21b0050f6aa256747e0715e1b6d2da",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -8715,6 +8850,19 @@
     "newPdecatFixedComparisonEligible": false,
     "threeMinorBankAudit": "outputs/2023-authored-three-minor-audit.json",
     "newThreeMinorAuditedCells": 240,
-    "newThreeMinorCitedUncertainties": 12
+    "newThreeMinorCitedUncertainties": 12,
+    "threeSmallBankAudit": "outputs/2023-authored-three-small-audit.json",
+    "newThreeSmallAuditedCells": 240,
+    "newThreeSmallDerivedMappings": 1,
+    "newThreeSmallCitedUncertainties": 25,
+    "ercVerification": "outputs/2023-authored-erc-verification.json",
+    "latestEducationBrowserCases": 5,
+    "newErcDerivedMappings": 4,
+    "newErcCitedUncertainties": 7,
+    "ercFixedComparisonEligible": false,
+    "newThreeMinorNumericMappings": 0,
+    "latestThreeMinorBrowserPaths": 6,
+    "newCaminandoCitedPositionBrowserCases": 10,
+    "newCaminandoCitedPositionBrowserVerification": "outputs/2023-authored-caminando-values-browser-verification.json"
   }
 }

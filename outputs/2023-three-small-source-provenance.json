@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T16:19:35.073360+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "specific_programme_provenance_with_explicit_archive_and_missing_source_limits",
+  "records": [
+    {
+      "candidacyId": "boe-2023-030",
+      "preElectionHomepage": {
+        "documentId": "caminando-july-primary-archive",
+        "resolvedUrl": "https://web.archive.org/web/20230720002806id_/https://caminando-juntos.org/",
+        "sha256": "1872b3f630d7d2a7085651e9f5ecf2f6a5f254fd52311dcff1037a708220f2f0",
+        "capture": "2023-07-20T00:28:06Z",
+        "programmeUrl": "https://caminando-juntos.org/programa/"
+      },
+      "primaryProgramme": {
+        "documentId": "caminando-july-programme-archive",
+        "resolvedUrl": "https://web.archive.org/web/20231129092857id_/https://caminando-juntos.org/programa/",
+        "sha256": "5e39e394b51f21a1c0cca7fcb9ff969d6ba49ab007c8050c42556d392802c737",
+        "capture": "2023-11-29T09:28:57Z",
+        "preElectionCapture": false
+      },
+      "preservedProgrammeDocumentId": "caminando-preserved-i28",
+      "ballotRecordIds": [
+        "congress-alicante-6",
+        "congress-cadiz-11",
+        "congress-granada-7",
+        "congress-malaga-9",
+        "congress-murcia-5",
+        "congress-palencia-8",
+        "congress-salamanca-6",
+        "congress-segovia-6",
+        "congress-sevilla-7",
+        "congress-valencia-11"
+      ],
+      "all17PoliciesDirectlyCompared": true,
+      "item7PrimaryDuplicationRecorded": true,
+      "primaryPreVoteByteIdentityCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-020",
+      "publicationDocumentId": "upl-july-programme-publication-followup",
+      "publishedBodyDate": "2023-07-08",
+      "linkedLongPdf": "https://www.upl.es/wp-content/uploads/2023/07/programa-largo.pdf",
+      "liveAndArchiveRetrievalFailed": true,
+      "existingLeoneightPageProgrammeId": "upl-leon-july",
+      "zamoraAdoptionUnresolved": true
+    },
+    {
+      "candidacyId": "boe-2023-028",
+      "publicationDocumentId": "poravila-july-publication",
+      "publishedBodyDate": "2023-07-04",
+      "programmeDocumentId": "poravila-primary-july",
+      "sourceSha256": "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305",
+      "exactUpdatedOriginalLinkChecked": true,
+      "ballotRecordIds": [
+        "congress-avila-7"
+      ],
+      "exactPublishedHttpUrl": "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf",
+      "publishedHttpOriginalSha256": "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305",
+      "httpsSameOriginalBytes": true
+    }
+  ],
+  "limitations": [
+    "All80exact propositions directly compared with the specific fullCJ17measure texts,UPLLeoneight-pageprogramme and PorÁvila20pageprogramme. Neither absent policy nor missing mechanism becomes neutrality/opposition.",
+    "CJprimary programme requestedJuly20resolvesNovember29; primaryJuly20homepage names final10territories and linksprogramme; contemporaneousJuly16preservedPDFagrees on all17policies except a primary duplicated phrase in item7. Exact pre-vote primary bytes unresolved.",
+    "UPLJuly8publication links a different longPDFwhich returns404live and archived. Eight-pageLeónprogramme fully read; unavailable longer source and Zamoraadoption remain unresolved. No scores inherited toZamora.",
+    "PorÁvilaJuly4primary announcement links the exact updatedOKoriginal. Candidacy59PDFis404and current2026calendar/navigation excluded. Physical appointment request is not all-procedure physical completion.",
+    "Partial draft and full release/corpus/mapping acceptance remain unfinished."
+  ]
+}

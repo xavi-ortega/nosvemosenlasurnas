@@ -11,7 +11,8 @@
     "Official result-table denominations are not yet deduplicated programme owners or final candidacy records. Preserve territorial/coalition distinctions until documented applicability permits sharing.",
     "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz.",
     "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions.",
-    "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread."
+    "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread.",
+    "Four additional complete individual readings reconciled: Compromís-Sumar13PDFpages, Vía Burgalesa20national HTMLsections (2026update/vintage unresolved), Teruel Existe29PDFpages and PDeCAT35PDFpages. Byte/text hashes and literal locators checked; source applicability, corpus closure and numeric mapping remain open. Teruel/Valencian supplement scope never extends automatically to other coalition territories."
   ],
   "candidacies": [
     {
@@ -1045,7 +1046,7 @@
         }
       ],
       "programmeSearchStatus": "downloaded_not_analysed",
-      "analysisStatus": "not_started",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "sumar"
       ],
@@ -1114,7 +1115,11 @@
         "congress-zaragoza-5",
         "congress-ceuta-4",
         "congress-melilla-4"
-      ]
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/compromis-sumar.json"
+      ],
+      "programmeApplicabilityNote": "Compromís-Sumar supplement read; only Valencian ballot aliases are candidates for applicability. Main182page Sumar programme remains unread; no automatic national inheritance."
     },
     {
       "id": "boe-2023-005",
@@ -2038,7 +2043,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "pdecat-primary-cdn",
         "pdecat-preserved-beteve"
@@ -2052,6 +2057,9 @@
         "congress-girona-13",
         "congress-lleida-13",
         "congress-tarragona-15"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pdecat.json"
       ]
     },
     {
@@ -2597,7 +2605,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "teruel-existe"
       ],
@@ -2610,7 +2618,11 @@
         "congress-huesca-11",
         "congress-teruel-10",
         "congress-zaragoza-11"
-      ]
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/teruel-existe.json"
+      ],
+      "programmeApplicabilityNote": "Full Teruel-specific programme read. Huesca/Zaragoza EXISTEballots require separate/shared-programme applicability evidence; no inheritance."
     },
     {
       "id": "boe-2023-022",
@@ -3323,14 +3335,19 @@
         }
       ],
       "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "viaburgalesa-national-2023-html"
+      ],
       "ballotAliases": [
         "VÍA BURGALESA (VB)"
       ],
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-burgos-5"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/viaburgalesa.json"
       ]
     },
     {
@@ -4234,8 +4251,10 @@
         "sha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
         "pageCount": 35,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json"
     },
     {
       "id": "pdecat-preserved-beteve",
@@ -4253,8 +4272,10 @@
         "sha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
         "pageCount": 35,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json"
     },
     {
       "id": "teruel-existe",
@@ -4272,8 +4293,10 @@
         "sha256": "d3a99ceffaf2031f58a24143e9c9ef6b480abce22875f28c08020fdd79da01d6",
         "pageCount": 29,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/teruel-existe.json"
     },
     {
       "id": "compromis-sumar",
@@ -4291,8 +4314,10 @@
         "sha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
         "pageCount": 13,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/compromis-sumar.json"
     },
     {
       "id": "cup-preserved-lasexta",
@@ -4310,8 +4335,10 @@
         "sha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4",
         "pageCount": 12,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/cup.json"
     },
     {
       "id": "vox-preserved-lasexta",
@@ -4339,8 +4366,10 @@
         "sha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
         "pageCount": 16,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/ehbildu.json"
     },
     {
       "id": "caminando-preserved-i28",
@@ -4548,7 +4577,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 10
+    "programmeDocumentsFullyRead": 14
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -4617,7 +4646,7 @@
       "resolvedUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_fully_read_not_scoring_ready_archive_vintage_pending",
       "file": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.html",
       "sha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
       "textFile": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.txt",
@@ -4630,7 +4659,9 @@
         "https://www.viaburgalesa.es/wp-content/uploads/2024/04/Programa-Electoral-Rabe-de-las-Calzadas-Municipales2023.pdf",
         "https://www.viaburgalesa.es/wp-content/uploads/2025/07/Prioridades-Via-Burgalesa-2022.pdf",
         "https://www.viaburgalesa.es/wp-content/uploads/2025/11/PROGRAMA-ELECTORAL-Quintanaduenas2023.pdf"
-      ]
+      ],
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json"
     },
     {
       "id": "partidoautonomos",

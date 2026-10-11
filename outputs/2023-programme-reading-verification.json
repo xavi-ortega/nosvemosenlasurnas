@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-11T07:59:55.820247+00:00",
+  "recordedAt": "2026-10-11T08:33:30.281113+00:00",
   "electionId": "es-congress-2023-07-23",
-  "scope": "Original-byte/text hashes, declared page coverage and supplied literal offsets; this does not certify semantic correctness, complete corpus, territorial applicability or a released question bank.",
+  "scope": "Original-byte/text hashes, declared complete PDF-page or HTML-section coverage and supplied literal offsets. This verifies structure, not semantic correctness, complete corpus, territorial applicability, archival vintage or released mappings.",
   "documents": [
     {
       "notebook": "outputs/2023-programme-notebooks/almerienses.json",
@@ -10,12 +10,12 @@
       "documentId": "almerienses",
       "sourceSha256": "a701772abfd3776228cc5989453bc0719a90142f2c3d2b239e768b2a12699233",
       "textSha256": "e2d8f0723a71e708300844646e5d6dcf3a0217f079fbc4f385bdd1f80ac9471b",
+      "structuralChecksPassed": true,
       "pageCount": 2,
       "coveredPages": [
         1,
         2
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json",
@@ -23,14 +23,14 @@
       "documentId": "bng-decalogue",
       "sourceSha256": "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3",
       "textSha256": "ab91a61c1d9705d98fe46ee5d1b910217d10510067b7ba5417146d28b6bffb95",
+      "structuralChecksPassed": true,
       "pageCount": 4,
       "coveredPages": [
         1,
         2,
         3,
         4
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/caminando-juntos.json",
@@ -38,12 +38,12 @@
       "documentId": "caminando-preserved-i28",
       "sourceSha256": "eeb4b4d21551840355d169c46a515cbc4f93a4b37acccb4b6c317a732c437103",
       "textSha256": "708dce749b4b9216c1f5354704aa81b24d1e74ea950779106e54799d5425f39c",
+      "structuralChecksPassed": true,
       "pageCount": 2,
       "coveredPages": [
         1,
         2
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
@@ -51,6 +51,7 @@
       "documentId": "cc-manifesto",
       "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
       "textSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+      "structuralChecksPassed": true,
       "pageCount": 14,
       "coveredPages": [
         1,
@@ -67,8 +68,31 @@
         12,
         13,
         14
-      ],
-      "structuralChecksPassed": true
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/compromis-sumar.json",
+      "notebookSha256": "850bc9fe1806d5e15b33a67f5cff50d065771fa535b802134b0e3f453e2ae3ee",
+      "documentId": "compromis-sumar",
+      "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+      "textSha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+      "structuralChecksPassed": true,
+      "pageCount": 13,
+      "coveredPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/cup.json",
@@ -76,6 +100,7 @@
       "documentId": "cup-primary",
       "sourceSha256": "cadc3b68e128640dd263d499cace2c8266d7971984cb26f4aa7ba8f42c621a16",
       "textSha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4",
+      "structuralChecksPassed": true,
       "pageCount": 12,
       "coveredPages": [
         1,
@@ -90,8 +115,7 @@
         10,
         11,
         12
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/ehbildu.json",
@@ -99,6 +123,7 @@
       "documentId": "ehbildu-preserved-newtral",
       "sourceSha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
       "textSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+      "structuralChecksPassed": true,
       "pageCount": 16,
       "coveredPages": [
         1,
@@ -117,8 +142,7 @@
         14,
         15,
         16
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/falange.json",
@@ -126,6 +150,7 @@
       "documentId": "falange-primary",
       "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
       "textSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+      "structuralChecksPassed": true,
       "pageCount": 21,
       "coveredPages": [
         1,
@@ -149,8 +174,7 @@
         19,
         20,
         21
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json",
@@ -158,6 +182,7 @@
       "documentId": "palenciatierraviva",
       "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
       "textSha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+      "structuralChecksPassed": true,
       "pageCount": 6,
       "coveredPages": [
         1,
@@ -166,8 +191,7 @@
         4,
         5,
         6
-      ],
-      "structuralChecksPassed": true
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/pcte.json",
@@ -175,6 +199,7 @@
       "documentId": "pcte",
       "sourceSha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
       "textSha256": "fa1ce59f1a89bcd231e79ba69f2cd9cbefb1d3f5fd0b689a55b296af6da18f4a",
+      "structuralChecksPassed": true,
       "pageCount": 24,
       "coveredPages": [
         1,
@@ -201,8 +226,93 @@
         22,
         23,
         24
-      ],
-      "structuralChecksPassed": true
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+      "notebookSha256": "a2db875ab4f22e80c6609f1446967ad5c7983b872d58903931b6c89d234ad398",
+      "documentId": "pdecat-primary-cdn",
+      "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+      "textSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+      "structuralChecksPassed": true,
+      "pageCount": 35,
+      "coveredPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/teruel-existe.json",
+      "notebookSha256": "69e239e24bfb1af8d743f0084fd0b529b8161902b80ffa7b2af85b2788dae0a3",
+      "documentId": "teruel-existe",
+      "sourceSha256": "1443b068f97f23b455cbf16dd192e21b0656d8b23e4755fb6572d98fc6930d14",
+      "textSha256": "d3a99ceffaf2031f58a24143e9c9ef6b480abce22875f28c08020fdd79da01d6",
+      "structuralChecksPassed": true,
+      "pageCount": 29,
+      "coveredPages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
     },
     {
       "notebook": "outputs/2023-programme-notebooks/upn.json",
@@ -210,6 +320,7 @@
       "documentId": "upn",
       "sourceSha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
       "textSha256": "6c3524d25f07bfae05f23a795c68c71fb8c38e0a4737040973e4b4818280f867",
+      "structuralChecksPassed": true,
       "pageCount": 6,
       "coveredPages": [
         1,
@@ -218,14 +329,46 @@
         4,
         5,
         6
-      ],
-      "structuralChecksPassed": true
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+      "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+      "documentId": "viaburgalesa-national-2023-html",
+      "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+      "textSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 20,
+      "coveredSections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
     }
   ],
   "summary": {
-    "fullyReadDocumentNotebooks": 10,
-    "coveredPdfPages": 107,
-    "nativeLiteralExcerptsChecked": 75,
+    "fullyReadDocumentNotebooks": 14,
+    "coveredPdfPages": 184,
+    "coveredHtmlSections": 20,
+    "nativeLiteralExcerptsChecked": 138,
     "visualExcerptsWithTranscriptionPending": 8,
     "semanticCorrectnessCertified": false,
     "completeCorpusCertified": false,

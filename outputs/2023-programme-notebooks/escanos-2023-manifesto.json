@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "documentId": "escanos-manifesto-july-followup",
+  "candidacyId": "boe-2023-026",
+  "recordedAt": "2026-10-11T12:40:25.116931+00:00",
+  "sourceSha256": "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5",
+  "extractionSha256": "e34d04bb7a7364d311153e0967f13ed9a69400bb4db2fe52c74c5db415185c04",
+  "extraction": "stdlib_htmlparser_visible_text_v1",
+  "format": "html",
+  "fullDocumentRead": true,
+  "readingMode": "Complete original document directly read sequentially; deterministic locator checks only. No generated summary, question or position.",
+  "provenanceStatus": "standing_primary_programme_preserved_before23J_with_contemporaneous23J_press_corroboration",
+  "territorialScope": "National standing programme; primary footer identifies territorial aliases. July15 press specifically corroborates Alava Congress. Exact pre-vote PDF byte identity and per-alias adoption not certified.",
+  "scoringReady": false,
+  "coverage": [
+    {
+      "sectionNumber": 1,
+      "heading": "Complete programme and page footer",
+      "start": 0,
+      "end": 6022,
+      "authoredAnalysis": "Complete manifesto including opening discontent, two claimed shortcomings of protest ballots, empty-seat/no-remuneration pledge, three visibility/media/pressure objectives, electoral-law reform counting a dedicated blank vote like a candidacy and translating allocation into vacant seats, self-dissolution, linked one-page PDF and footer licence. Statements about politicians/media/effects are attributed campaigning, not verified policy forecasts."
+    }
+  ],
+  "claims": [
+    {
+      "policyTopic": "vacant_seats",
+      "quote": "dejar vacío cualquier escaño que podamos llegar a obtener",
+      "start": 3162,
+      "end": 3221,
+      "analysis": "Direct party pledge, not a position on unrelated policies.",
+      "conditionsAndContext": "Direct party pledge, not a position on unrelated policies.",
+      "numericPosition": null,
+      "sectionNumber": 1
+    },
+    {
+      "policyTopic": "blank_vote_reform",
+      "quote": "como el de una candidatura más",
+      "start": 4516,
+      "end": 4547,
+      "analysis": "Proposed dedicated blank-vote allocation; paragraph requires electoral-law reform.",
+      "conditionsAndContext": "Proposed dedicated blank-vote allocation; paragraph requires electoral-law reform.",
+      "numericPosition": null,
+      "sectionNumber": 1
+    },
+    {
+      "policyTopic": "self_dissolution",
+      "quote": "Escaños en Blanco se autodisolverá cuando dicho objetivo haya sido alcanzado.",
+      "start": 4983,
+      "end": 5062,
+      "analysis": "Conditional on reform objective.",
+      "conditionsAndContext": "Conditional on reform objective.",
+      "numericPosition": null,
+      "sectionNumber": 1
+    }
+  ],
+  "uncertainties": [
+    "May22 programme and June5 manifesto captures predate23J but are standing documents. Election-day July23homepage links these; contemporaneousJune21/July15reporting ties same single-point pledge to23J. No primary dated23J adoption publication located.",
+    "No ordinary-policy value follows from a vacant seat not voting; explicit non-selection of measures is not neutral or opposition.",
+    "Annex current PDF carries2013copyright and is linked by June2023HTML; exact2023PDF bytes not recovered.",
+    "Source licence attribution/noncommercial notice retained; permissions for eventual public excerpts require release review."
+  ],
+  "applicabilityEvidence": [
+    {
+      "url": "https://www.europapress.es/nacional/noticia-obreristas-antisistemas-autonomos-tercera-edad-centristas-otros-partidos-23j-20230621193009.html",
+      "publishedAt": "2023-06-21",
+      "role": "Secondary contemporary23J single-point programme corroboration, not numeric evidence"
+    },
+    {
+      "url": "https://www.gasteizhoy.com/escanos-en-blanco-elecciones-23j-alava/",
+      "publishedAt": "2023-07-15",
+      "role": "Secondary Alava Congress single-point pledge corroboration, not numeric evidence"
+    },
+    {
+      "documentId": "escanos-home-july-followup",
+      "sha256": "bc9038a0edeb2a934535d9dbc14d28c4da01d460dcfffe4645f22b003c8cdec9",
+      "role": "Election-day primary links standing programme and explicitly declines particular measures"
+    }
+  ],
+  "authorship": "Direct complete reading and English analysis with exact original quotations.",
+  "sectionCount": 1
+}

@@ -139,6 +139,24 @@ def assemble(root):
     return bank
 
 
+def write_draft(bank, output):
+    data = (json.dumps(bank, ensure_ascii=False, indent=2) + "\n").encode()
+    sha = digest(data)
+    snapshot = output.parent / "snapshots" / (sha + ".json")
+    snapshot.parent.mkdir(parents=True, exist_ok=True)
+    if snapshot.exists():
+        require(snapshot.read_bytes() == data, "Existing draft snapshot changed")
+    else:
+        with snapshot.open("xb") as stream:
+            stream.write(data)
+    output.write_bytes(data)
+    return {"draftFile": str(output), "snapshotFile": str(snapshot), "sha256": sha,
+            "questions": len(bank["questions"]), "topics": len(bank["topics"]),
+            "candidacies": len(bank["candidacies"]),
+            "constituencies": len(bank["election"]["constituencies"]),
+            "publicPointerChanged": False}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=Path(".tools/authored-quiz-preview/bank.json"))
@@ -147,10 +165,7 @@ def main():
     output = (root / args.output).resolve()
     require(output.is_relative_to(root / ".tools"), "Draft output must stay in the ignored local .tools directory")
     bank = assemble(root)
-    data = (json.dumps(bank, ensure_ascii=False, indent=2) + "\n").encode()
-    output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_bytes(data)
-    print(json.dumps({"draftFile": str(output), "sha256": digest(data), "questions": len(bank["questions"]), "topics": len(bank["topics"]), "candidacies": len(bank["candidacies"]), "constituencies": len(bank["election"]["constituencies"]), "publicPointerChanged": False}))
+    print(json.dumps(write_draft(bank, output)))
 
 
 if __name__ == "__main__":

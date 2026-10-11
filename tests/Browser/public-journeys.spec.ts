@@ -43,7 +43,7 @@ test('ten-plus-five, exhaustion and deliberate finish preserve private request/D
     await expect(page.locator('#app')).toContainText('Preguntas presentadas: 15');
     await page.getByRole('button', { name: 'Responder cinco más' }).click(); await answer(page, 5);
     await page.getByRole('button', { name: 'Responder cinco más' }).click(); await hidden(page);
-    await expect(page.locator('#app')).toContainText('Has llegado al final');
+    await expect(page.locator('#app')).toContainText('No hay otro bloque de cinco');
     await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
     await expect(page.getByRole('heading', { name: 'Tus coincidencias, con contexto' })).toBeVisible();
     await expect(page.locator('#app')).toContainText('Candidatura ficticia Alba');

@@ -158,3 +158,24 @@ test('optional authored help is bounded text and does not alter scoring', () => 
         assert.throws(() => parseBank(copy));
     }
 });
+
+test('fewer than five unseen questions do not create a partial extension or reveal results', () => {
+    const copy = structuredClone(bank);
+    const retained = new Set(copy.questions.slice(0, 13).map(question => question.id));
+    copy.questions = copy.questions.filter(question => retained.has(question.id));
+    for (const candidate of copy.candidacies) {
+        copy.positions[candidate.id] = Object.fromEntries(Object.entries(copy.positions[candidate.id]).filter(([id]) => retained.has(id)));
+    }
+    const q = new Questionnaire(copy, pointer.sha256, 'north');
+    for (let i = 0; i < 10; i++) q.answer(2);
+    const presented = [...q.presented];
+    const saved = { ...q.answers };
+
+    assert.equal(q.extend(), false);
+    assert.equal(q.current(), undefined);
+    assert.deepEqual(q.presented, presented);
+    assert.deepEqual(q.answers, saved);
+    assert.equal(q.progress().total, 10);
+    assert.equal(q.revealed, false);
+    assert.throws(() => q.export());
+});

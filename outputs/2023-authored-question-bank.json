@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T12:26:29.916998+00:00",
+  "recordedAt": "2026-10-11T12:42:57.136160+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
-    "Ten questions across ten topics are an initial authoring increment, not the minimum 60-question release. Other pairs remain explicitly not yet authored rather than source-certified absence.",
+    "Partial directly authored bank; not the minimum 60-question release. Other pairs remain explicitly not yet authored rather than source-certified absence.",
     "The second PSOE edition and minor-source follow-up remain pending; these artifacts do not complete full corpus readiness.",
-    "No public bank pointer changed. Ten desktop/mobile rent paths passed with this draft; complete mapping, usefulness, all-cohort and release validation remain required."
+    "No public bank pointer changed. Ten desktop/mobile rent paths passed for the immutable ten-question snapshot16263a2a; later authored increments require their own browser verification."
   ],
   "targetQuestions": 80,
   "minimumReleaseQuestions": 60,
@@ -181,6 +181,227 @@
         "-2": "Explicitly rejects cost-of-living indexation."
       },
       "issueMatrixId": "pensions-cost-of-living",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "permanent-large-fortunes-tax",
+      "topicId": "taxes",
+      "familyId": "large-fortunes-tax",
+      "text": "Se debería mantener un impuesto específico sobre las grandes fortunas de las personas.",
+      "help": "Una fortuna es el conjunto de bienes y dinero acumulados, descontando las deudas. Este impuesto se dirige a los patrimonios de mayor valor; es distinto del impuesto sobre los ingresos del trabajo.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate retention of this same levy.",
+        "1": "Explicit retention subject to a substantive additional restriction.",
+        "2": "Explicit retention or permanent implementation of this specific large-fortunes levy.",
+        "-1": "Explicit restriction of the levy while retaining a narrower version.",
+        "-2": "Explicit abolition of the large-fortunes levy."
+      },
+      "issueMatrixId": "permanent-large-fortunes-tax",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "retirement-pension-income-tax-exemption",
+      "topicId": "pensions",
+      "familyId": "pension-income-tax",
+      "text": "La pensión de jubilación de quienes han cotizado debería estar exenta del impuesto sobre la renta.",
+      "help": "Se trata de no cobrar el impuesto sobre la renta por esa pensión. La pregunta se refiere a las pensiones de jubilación vinculadas a las cotizaciones, sin cambiar su cuantía.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit partial taxation of the same pension.",
+        "1": "Explicit exemption only below an additional income threshold.",
+        "2": "Explicit exemption of contributory pensions or a wider class including them.",
+        "-1": "Explicit retention of pension taxation with a narrowly limited exemption.",
+        "-2": "Explicit rejection of this pension exemption."
+      },
+      "issueMatrixId": "retirement-pension-income-tax-exemption",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "retain-public-housing-ownership",
+      "topicId": "housing",
+      "familyId": "public-housing-ownership",
+      "text": "Las viviendas públicas deberían conservarse sin poder venderse al sector privado.",
+      "help": "Se trata de mantener las viviendas como propiedad pública, aunque las ocupen familias mediante alquiler u otro derecho de uso. La pregunta no impide trasladarlas de una entidad pública a otra.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate private-sale regime on that same stock.",
+        "1": "Explicit private-sale ban only for a specified narrow public stock.",
+        "2": "Explicit ban on private sale of public housing, retaining public-to-public transfers.",
+        "-1": "Explicit general private-sale permission with a specified narrower exclusion.",
+        "-2": "Explicit general private-sale permission or rejection of the ban."
+      },
+      "issueMatrixId": "retain-public-housing-ownership",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "more-private-healthcare-agreements",
+      "topicId": "health",
+      "familyId": "healthcare-provider-management",
+      "text": "La sanidad pública debería aumentar los acuerdos con centros privados para atender a sus pacientes.",
+      "help": "Con estos acuerdos, la administración paga a un centro privado para prestar atención a pacientes de la sanidad pública. La pregunta trata de ampliar esa forma de atención financiada públicamente.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicitly retain the existing level without expansion or reduction.",
+        "1": "Explicit expansion limited to a specified exceptional category.",
+        "2": "Explicit reinforcement of private healthcare agreements.",
+        "-1": "Explicit general restriction with a documented exceptional agreement retained.",
+        "-2": "Explicit end of private referrals/outsourcing or return of privatised services to public management."
+      },
+      "issueMatrixId": "more-private-healthcare-agreements",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "public-abortion-care",
+      "topicId": "rights",
+      "familyId": "public-abortion-service",
+      "text": "El aborto permitido por la ley debería poder realizarse en centros de la sanidad pública.",
+      "help": "La pregunta trata de que los centros públicos puedan prestar esta atención cuando la ley la permite. Es una decisión sobre el servicio sanitario, sin plantear cambios en los plazos legales.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate public-provider arrangement on this same service.",
+        "1": "Explicit public service limited by an additional documented restriction.",
+        "2": "Explicit abortion service provision in public healthcare centres.",
+        "-1": "Explicit rejection of general public provision with limited documented cases retained.",
+        "-2": "Explicit removal of abortion from the public healthcare service."
+      },
+      "issueMatrixId": "public-abortion-care",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "public-hydro-on-expiry",
+      "topicId": "energy",
+      "familyId": "hydroelectric-concession-expiry",
+      "text": "Las centrales hidroeléctricas deberían pasar a gestión pública cuando caduquen sus concesiones.",
+      "help": "Estas centrales producen electricidad con agua. Una concesión permite explotarlas durante un plazo. La propuesta es que, al acabar ese plazo, un organismo público se encargue de su gestión.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit mixed-management alternative at concession expiry.",
+        "1": "Public return restricted to an additional documented subset of expiring concessions.",
+        "2": "Explicit direct public management of hydroelectric operations as concessions expire.",
+        "-1": "Reject general direct public return while allowing a defined subset.",
+        "-2": "Explicitly keep private management when hydro concessions expire."
+      },
+      "issueMatrixId": "public-hydro-on-expiry",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "no-work-contact-outside-hours",
+      "topicId": "employment",
+      "familyId": "out-of-hours-employer-contact",
+      "text": "Las empresas deberían tener prohibido contactar con su personal fuera de su horario de trabajo.",
+      "help": "La pregunta plantea impedir llamadas o mensajes de la empresa cuando la persona está fuera de su jornada. Es una regla sobre el contacto, más amplia que permitir no responder.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit agreed middle arrangement on out-of-hours contacts.",
+        "1": "Explicit contact ban with a specified exception.",
+        "2": "Explicit prohibition on employer contact outside working hours.",
+        "-1": "Reject broad prohibition while limiting some contacts.",
+        "-2": "Explicitly permit employer contact outside working hours without this prohibition."
+      },
+      "issueMatrixId": "no-work-contact-outside-hours",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "free-compulsory-school-meals",
+      "topicId": "education",
+      "familyId": "school-meal-funding",
+      "text": "El comedor escolar debería ser gratuito para todo el alumnado de las etapas obligatorias.",
+      "help": "La propuesta es ampliar la gratuidad del comedor hasta cubrir a todo el alumnado de primaria y secundaria obligatoria. Trata de quién paga el servicio, sin decidir qué alimentos incluye.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit partial universal meal subsidy while retaining a payment.",
+        "1": "Free compulsory-stage meals only for a documented restricted group.",
+        "2": "Explicit universal free compulsory-stage school meals, including a progressive implementation.",
+        "-1": "Reject universal gratuity while retaining narrowly targeted grants.",
+        "-2": "Explicit rejection of free compulsory-stage school meals."
+      },
+      "issueMatrixId": "free-compulsory-school-meals",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "phase-out-prescription-copay",
+      "topicId": "health",
+      "familyId": "prescription-user-contribution",
+      "text": "Debería eliminarse el copago de los medicamentos que cubre la sanidad pública.",
+      "help": "El copago es la parte del precio de un medicamento financiado públicamente que paga la persona al recogerlo. La propuesta es retirarlo progresivamente, sin incluir cualquier producto que se venda en una farmacia.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit general reduction retaining a user contribution.",
+        "1": "Elimination restricted permanently to a defined patient group or medicine class.",
+        "2": "Explicit elimination of pharmaceutical copayment, including progressive implementation.",
+        "-1": "Retain general copay with narrow new exemptions.",
+        "-2": "Explicitly retain pharmaceutical copay instead of elimination."
+      },
+      "issueMatrixId": "phase-out-prescription-copay",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "voting-age-sixteen",
+      "topicId": "institutions",
+      "familyId": "minimum-voting-age",
+      "text": "Las personas de dieciséis y diecisiete años deberían poder votar en las elecciones.",
+      "help": "La propuesta es reconocer el derecho a votar desde los dieciséis años. Trata de participar como votante, sin decidir la edad para presentarse como candidato ni otros derechos de la mayoría de edad.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit intermediate age17 rather than16.",
+        "1": "Voting at16 only for a specified election class.",
+        "2": "Explicit electoral voting entitlement from16.",
+        "-1": "Reject16 but accept17 in a specified subset.",
+        "-2": "Explicitly retain voting from18 and reject16."
+      },
+      "issueMatrixId": "voting-age-sixteen",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "available-repair-parts",
+      "topicId": "energy",
+      "familyId": "consumer-product-repairability",
+      "text": "Los fabricantes deberían estar obligados a facilitar piezas de recambio para reparar sus productos.",
+      "help": "La idea es que una avería pueda resolverse cambiando una pieza y que haya recambios disponibles. La pregunta no exige que todas las reparaciones sean gratuitas ni que siempre se repare en vez de sustituir.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit negotiated partial parts access.",
+        "1": "Parts obligation limited to a specified narrow product class.",
+        "2": "Explicit legal availability/accessibility or easy replacement of spare parts for repair.",
+        "-1": "Reject broad mandatory availability but accept a defined exception.",
+        "-2": "Explicit rejection of mandatory spare-parts availability for repair."
+      },
+      "issueMatrixId": "available-repair-parts",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "paid-curricular-internships",
+      "topicId": "employment",
+      "familyId": "student-internship-payment",
+      "text": "Las prácticas en empresas que forman parte de los estudios deberían ser remuneradas.",
+      "help": "Son las prácticas que un centro educativo incluye en el plan de estudios. La propuesta es pagar al alumnado por realizarlas, además de su función formativa. Es distinto de una beca para estudiar.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit fixed expense-only intermediate arrangement.",
+        "1": "Pay only a documented restricted subset of curricular placements.",
+        "2": "Explicit remuneration of curricular or all student work placements.",
+        "-1": "Reject general placement pay while allowing a limited grant.",
+        "-2": "Explicit unpaid curricular placements retained instead of remuneration."
+      },
+      "issueMatrixId": "paid-curricular-internships",
+      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+    },
+    {
+      "id": "birth-leave-at-least-six-months",
+      "topicId": "rights",
+      "familyId": "birth-parent-leave-duration",
+      "text": "Los permisos de maternidad y paternidad deberían ampliarse hasta durar al menos seis meses.",
+      "help": "La pregunta trata del permiso por el nacimiento de un hijo o hija y plantea un mínimo de seis meses. Es distinto de los permisos para atender cuidados durante los años siguientes.",
+      "level": "general",
+      "scaleRubric": {
+        "0": "Explicit duration increase below6months.",
+        "1": "Atleast6months restricted to a defined parental class.",
+        "2": "Explicit maternity and paternity duration at least6months, including progressive extension.",
+        "-1": "Reject6months while proposing a smaller extension.",
+        "-2": "Explicitly reject extension to6months or more."
+      },
+      "issueMatrixId": "birth-leave-at-least-six-months",
       "authorship": "Directly written after the recorded cross-programme reading; no generator."
     }
   ]

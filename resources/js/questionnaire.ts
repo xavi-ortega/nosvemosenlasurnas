@@ -71,9 +71,10 @@ export class Questionnaire {
         if (this.current()) throw new Error('Checkpoint required.');
         const remaining = Math.max(0, 30 - this.queue.length);
         const next = remaining === 0 ? [] : followups(this.bank, this.answers, this.presented, this.priorities, this.cohort, Math.min(5, remaining));
-        this.queue.push(...next);
         this.revealed = false;
-        return next.length > 0;
+        if (next.length !== 5) return false;
+        this.queue.push(...next);
+        return true;
     }
 
     finish() {

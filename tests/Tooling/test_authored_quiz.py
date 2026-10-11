@@ -132,3 +132,26 @@ class AuthoredQuizTest(unittest.TestCase):
             self.assertEqual(bank["documents"][0]["id"], "source-3edad-fixture")
             self.assertEqual(bank["documents"][0]["originalDocumentId"], "3edad-fixture")
             self.assertEqual(bank["positions"]["fixture-a"]["fixture-question"]["citations"][0]["documentId"], "source-3edad-fixture")
+
+
+    def test_new_preview_keeps_previous_hash_snapshot_and_rejects_changed_snapshot(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.prepare(root)
+            bank = assembler.assemble(root)
+            output = root / "preview" / "bank.json"
+            first = assembler.write_draft(bank, output)
+            first_bytes = output.read_bytes()
+            bank["questions"][0]["text"] = "Otra pregunta ficticia para las pruebas."
+            second = assembler.write_draft(bank, output)
+            second_bytes = output.read_bytes()
+
+            self.assertNotEqual(first["sha256"], second["sha256"])
+            self.assertEqual(Path(first["snapshotFile"]).read_bytes(), first_bytes)
+            self.assertEqual(Path(second["snapshotFile"]).read_bytes(), second_bytes)
+            self.assertEqual(assembler.digest(first_bytes), first["sha256"])
+            Path(first["snapshotFile"]).write_text("Changed snapshot")
+            bank["questions"][0]["text"] = "Una pregunta ficticia para las pruebas."
+            with self.assertRaises(ValueError):
+                assembler.write_draft(bank, output)
+            self.assertEqual(output.read_bytes(), second_bytes)

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-11T12:01:15.146323+00:00",
+  "recordedAt": "2026-10-11T12:46:21.082927+00:00",
   "electionId": "es-congress-2023-07-23",
   "scope": "Original-byte/text hashes, declared complete PDF-page or HTML-section coverage and supplied literal offsets. This verifies structure, not semantic correctness, complete corpus, territorial applicability, archival vintage or released mappings.",
   "documents": [
@@ -652,6 +652,44 @@
         130,
         131,
         132
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
+      "notebookSha256": "3cebf73764643a214e388b4bd3322f6d1e268a2230434bcd1e0c3febb4f5f88e",
+      "documentId": "escanos-manifesto-july-followup",
+      "sourceSha256": "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5",
+      "textSha256": "e34d04bb7a7364d311153e0967f13ed9a69400bb4db2fe52c74c5db415185c04",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 1,
+      "coveredSections": [
+        1
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-programme.json",
+      "notebookSha256": "485b2544827c4ff0d5cf482b3c64acd8a37cc5ceb82b167101a1a22019a9f95e",
+      "documentId": "escanos-programme-july-followup",
+      "sourceSha256": "6b209fc6297e464ade02a6abad2e5b82eca95c254c531b63bf90e7f97692180a",
+      "textSha256": "b14155751cb53fde6e450e89ff800faf6cb27a2c65a1bead625d32311a464d7f",
+      "structuralChecksPassed": true,
+      "format": "html",
+      "sectionCount": 1,
+      "coveredSections": [
+        1
+      ]
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-manifesto-annex.json",
+      "notebookSha256": "4383e3c8fd34ae94db6d4415b818099d703ccb5b6ce0d32680ed6c4685b01dea",
+      "documentId": "escanos-manifesto-annex",
+      "sourceSha256": "d191a570aecad31947aa33c58772e3913ad394d6d0ccdc1b70335daf5533d02a",
+      "textSha256": "a95026e765ba7f5497c54196e965b4ceffaed532d10a14b9b734c9e02c3576a5",
+      "structuralChecksPassed": true,
+      "pageCount": 1,
+      "coveredPages": [
+        1
       ]
     },
     {
@@ -2440,10 +2478,10 @@
   ],
   "summary": {
     "fullyReadVisualAnnexImages": 4,
-    "fullyReadDocumentNotebooks": 42,
-    "coveredPdfPages": 1896,
-    "coveredHtmlSections": 70,
-    "nativeLiteralExcerptsChecked": 1454,
+    "fullyReadDocumentNotebooks": 45,
+    "coveredPdfPages": 1897,
+    "coveredHtmlSections": 72,
+    "nativeLiteralExcerptsChecked": 1463,
     "visualExcerptsWithTranscriptionPending": 45,
     "semanticCorrectnessCertified": false,
     "completeCorpusCertified": false,

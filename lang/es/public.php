@@ -126,7 +126,7 @@ return [
     'review' => 'Revisar respuestas',
     'back_checkpoint' => 'Volver al punto de decisión',
     'reset' => 'Borrar respuestas y empezar de nuevo',
-    'exhausted' => 'Has llegado al final de las preguntas disponibles. Tus resultados siguen ocultos hasta que decidas terminar.',
+    'exhausted' => 'No hay otro bloque de cinco para añadir a este recorrido. Tus resultados siguen ocultos hasta que decidas terminar.',
     'results_title' => 'Tus coincidencias, con contexto',
     'results_explanation' => 'Cada porcentaje es un índice independiente de coincidencia con políticas. No es una probabilidad, intención de voto ni medida de certeza. Los porcentajes no suman cien.',
     'partial' => 'Comparaciones parciales, sin clasificación',

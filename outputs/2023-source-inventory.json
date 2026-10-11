@@ -3236,7 +3236,7 @@
           "votes": 9938
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "congress_ballot_pack_excluded_23J_programme_unresolved",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3368,14 +3368,18 @@
           "votes": 2146
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "standing_primary_programme_and_manifesto_completely_read_23J_chain_caveated",
+      "analysisStatus": "full_documents_read_not_scoring_ready",
+      "programmeIds": [
+        "escanos-programme-july-followup",
+        "escanos-manifesto-july-followup",
+        "escanos-manifesto-annex"
+      ],
       "ballotAliases": [
         "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
         "ESCONS EN BLANC (ESCONS EN BLANC)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "standing_programme_23J_secondary_corroboration_primary_election_day_links_per_alias_review_pending",
       "ballotRecordIds": [
         "congress-alava-11",
         "congress-cordoba-4",
@@ -3389,7 +3393,11 @@
         "congress-valladolid-11",
         "congress-zaragoza-3"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/escanos-2023-programme.json",
+        "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
+        "outputs/2023-programme-notebooks/escanos-manifesto-annex.json"
+      ]
     },
     {
       "id": "boe-2023-027",
@@ -3720,7 +3728,7 @@
           "votes": 2902
         }
       ],
-      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
+      "programmeSearchStatus": "archived_access_challenges_current_2024_european_programme_excluded_23J_unresolved",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -5660,15 +5668,37 @@
       },
       "notebook": "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json",
       "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "escanos-manifesto-annex",
+      "url": "https://escanos.org/wp-content/uploads/2022/12/EB_manifiesto_es_v3.pdf",
+      "retrievedAt": "2026-10-11T12:38:27.714132+00:00",
+      "resolvedUrl": "https://escanos.org/wp-content/uploads/2022/12/EB_manifiesto_es_v3.pdf",
+      "mediaType": "application/pdf",
+      "status": "pdf_downloaded_full_reading_pending",
+      "file": "storage/app/election-sources/2023-congress/escanos-manifesto-annex-d191a570aeca.pdf",
+      "sha256": "d191a570aecad31947aa33c58772e3913ad394d6d0ccdc1b70335daf5533d02a",
+      "bytes": 36186,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/escanos-manifesto-annex-d191a570aeca.txt",
+        "sha256": "a95026e765ba7f5497c54196e965b4ceffaed532d10a14b9b734c9e02c3576a5",
+        "pageCount": 1,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "resolvedPreparationIssue": "[Errno 2] No such file or directory: '.tools/source-extraction-venv/bin/python'",
+      "candidacyId": "boe-2023-026",
+      "notebook": "outputs/2023-programme-notebooks/escanos-manifesto-annex.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 38,
+    "programmeFilesDownloaded": 39,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 42
+    "programmeDocumentsFullyRead": 45
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -6948,21 +6978,242 @@
       "analysisStatus": "complete_original_image_directly_read",
       "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
       "applicabilityNote": "PrimaryJuly23campaignbrochurepage andJuly20archivehomepage links verified; currentimagebytesnotcertifiedequalunrecovered2023image."
+    },
+    {
+      "id": "escanos-programme-current-followup",
+      "url": "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+      "retrievedAt": "2026-10-11T12:29:56.236044+00:00",
+      "resolvedUrl": "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/escanos-programme-current-followup-publication-7e4797264766.html",
+      "sha256": "7e4797264766526a5f87c36ab53e0fa90d1c67c0e5eb25c7a0d678c9cdce2a41",
+      "textFile": "storage/app/election-sources/2023-congress/escanos-programme-current-followup-publication-7e4797264766.txt",
+      "textSha256": "a67c85da7cc4869172d62b87ad3fbf9c3b66f552ca5d4eb6c1a0e4a583aa3962",
+      "links": [
+        "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/"
+      ],
+      "candidacyId": "boe-2023-026",
+      "analysisStatus": "complete_current_standing_programme_read_historical_byte_equivalence_not_asserted"
+    },
+    {
+      "id": "escanos-programme-july-followup",
+      "url": "https://web.archive.org/web/20230720000000id_/https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+      "retrievedAt": "2026-10-11T12:29:56.236382+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230522231730id_/https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.html",
+      "sha256": "6b209fc6297e464ade02a6abad2e5b82eca95c254c531b63bf90e7f97692180a",
+      "textFile": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.txt",
+      "textSha256": "b14155751cb53fde6e450e89ff800faf6cb27a2c65a1bead625d32311a464d7f",
+      "links": [
+        "http://twitter.com/share?text=Programa%20electoral%20de%20Esca%C3%B1os%20en%20Blanco&url=https%3A%2F%2Fescanos.org%2Fconocenos%2Fprograma-electoral-de-escanos-en-blanco%2F&via=@escanosenblanco",
+        "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fescanos.org%2Fconocenos%2Fprograma-electoral-de-escanos-en-blanco%2F&t=Programa%20electoral%20de%20Esca%C3%B1os%20en%20Blanco",
+        "http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fescanos.org%2Fconocenos%2Fprograma-electoral-de-escanos-en-blanco%2F&title=Programa%20electoral%20de%20Esca%C3%B1os%20en%20Blanco",
+        "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/"
+      ],
+      "transportFile": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-publication-0088e013a282.html",
+      "transportSha256": "0088e013a282c1352702124bd2e39b348b8ca0b20523a6bdce2c2abf062237b4",
+      "transportEncoding": "gzip",
+      "candidacyId": "boe-2023-026",
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-programme.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "escanos-home-july-followup",
+      "url": "https://web.archive.org/web/20230720000000id_/https://escanos.org/",
+      "retrievedAt": "2026-10-11T12:29:56.236457+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230723144406id_/https://escanos.org/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/escanos-home-july-followup-publication-bc9038a0edeb.html",
+      "sha256": "bc9038a0edeb2a934535d9dbc14d28c4da01d460dcfffe4645f22b003c8cdec9",
+      "textFile": "storage/app/election-sources/2023-congress/escanos-home-july-followup-publication-bc9038a0edeb.txt",
+      "textSha256": "ce8d80385d941792a8788b9b44e2b1c849595d68adf33c90f260db6944e07d4c",
+      "links": [
+        "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+        "https://escanos.org/wp-content/uploads/2023/03/abtencion-nulo-y-blanco-2011-partidos.png",
+        "https://escanos.org/wp-content/uploads/2023/03/abtencion-nulo-y-blanco-2016-partidos.png",
+        "https://escanos.org/wp-content/uploads/2023/03/abtencion-nulo-y-blanco-2019-partidos.png"
+      ],
+      "candidacyId": "boe-2023-026",
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+    },
+    {
+      "id": "humanista-home-current-followup",
+      "url": "https://partidohumanista.es/",
+      "retrievedAt": "2026-10-11T12:29:56.236511+00:00",
+      "resolvedUrl": "https://partidohumanista.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/humanista-home-current-followup-publication-2799cc1bcae6.html",
+      "sha256": "2799cc1bcae6cf2946bb37b3a44e6c5e7bde1b153ef28502ac9d97930ab6b6f9",
+      "textFile": "storage/app/election-sources/2023-congress/humanista-home-current-followup-publication-2799cc1bcae6.txt",
+      "textSha256": "21c7eeb6b1a1887d5aa2516300160e07ae828f20ab1370cdb80905bf21c06d24",
+      "links": [
+        "https://partidohumanista.es/index.php/programa-europeas/",
+        "https://partidohumanista.es/wp-content/uploads/2024/05/Programa-elecciones-europeas-2024_ok.pdf"
+      ],
+      "candidacyId": "boe-2023-034",
+      "analysisStatus": "catalogue_checked_2024_european_programme_not23J",
+      "applicabilityNote": "2024 European programme cannot substitute23J Congress."
+    },
+    {
+      "id": "humanista-home-july-followup",
+      "url": "https://web.archive.org/web/20230720000000id_/https://partidohumanista.es/",
+      "retrievedAt": "2026-10-11T12:29:57.282675+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720054636id_/http://www.partidohumanista.es/",
+      "mediaType": "text/html",
+      "lastModified": null,
+      "status": "archived_access_challenge_not_source",
+      "file": "storage/app/election-sources/2023-congress/humanista-home-july-followup-publication-9214e7f64441.html",
+      "sha256": "9214e7f6444109d6394f3ef1bdc28e031bbcc3de0d5db66fd23ccc75d9088790",
+      "textFile": "storage/app/election-sources/2023-congress/humanista-home-july-followup-publication-9214e7f64441.txt",
+      "textSha256": "86a98686103374fb0cb0161d86e8afb71898fa64c9f52f22408631c5ee68288b",
+      "links": [],
+      "candidacyId": "boe-2023-034",
+      "analysisStatus": "access_challenge_excluded",
+      "applicabilityNote": "Archived200HTML is browser verification/Imunify360 challenge, not programme or proof of absence."
+    },
+    {
+      "id": "geroa-commons-description-followup",
+      "url": "https://commons.wikimedia.org/wiki/File:Navarra-congreso-castellano.pdf",
+      "retrievedAt": "2026-10-11T12:29:58.622637+00:00",
+      "resolvedUrl": "https://commons.wikimedia.org/wiki/File:Navarra-congreso-castellano.pdf",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": "Sun, 27 Sep 2026 12:29:58 GMT",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/geroa-commons-description-followup-publication-b5418d0df60d.html",
+      "sha256": "b5418d0df60ddc3365e8fbc4f3135206ebf356d40fb7d1ba24e8ac3f11a4b6e7",
+      "textFile": "storage/app/election-sources/2023-congress/geroa-commons-description-followup-publication-b5418d0df60d.txt",
+      "textSha256": "7bd7770d547fcb5c1c9c4260a328a36f6906a001d5dc0897cb94d354950246cc",
+      "links": [
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&action=edit",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&action=edit&section=1",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&action=edit&section=2",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&action=history",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&action=info",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&mobileaction=toggle_view_mobile",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&oldid=782749086",
+        "https://commons.wikimedia.org/w/index.php?title=File:Navarra-congreso-castellano.pdf&page=2",
+        "https://commons.wikimedia.org/w/index.php?title=File_talk:Navarra-congreso-castellano.pdf&action=edit&redlink=1",
+        "https://commons.wikimedia.org/w/index.php?title=Special:CiteThisPage&page=File%3ANavarra-congreso-castellano.pdf&id=782749086&wpFormIdentifier=titleform",
+        "https://commons.wikimedia.org/w/index.php?title=Special:CreateAccount&returnto=File%3ANavarra-congreso-castellano.pdf",
+        "https://commons.wikimedia.org/w/index.php?title=Special:DownloadAsPdf&page=File%3ANavarra-congreso-castellano.pdf&action=show-download-screen",
+        "https://commons.wikimedia.org/w/index.php?title=Special:UrlShortener&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ANavarra-congreso-castellano.pdf",
+        "https://commons.wikimedia.org/w/index.php?title=Special:UserLogin&returnto=File%3ANavarra-congreso-castellano.pdf",
+        "https://commons.wikimedia.org/wiki/Category:All_media_supported_by_Wikimedia_Espa%C3%B1a_in_2023",
+        "https://commons.wikimedia.org/wiki/Category:Ballot_papers_for_the_2023_Spain_general_election_supported_by_Wikimedia_Espa%C3%B1a",
+        "https://commons.wikimedia.org/wiki/Category:Ballot_papers_for_the_2023_general_election_for_Navarre",
+        "https://commons.wikimedia.org/wiki/File:Navarra-congreso-castellano.pdf",
+        "https://commons.wikimedia.org/wiki/Special:RecentChangesLinked/File:Navarra-congreso-castellano.pdf",
+        "https://commons.wikimedia.org/wiki/Special:WhatLinksHere/File:Navarra-congreso-castellano.pdf",
+        "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Navarra-congreso-castellano.pdf/page1-120px-Navarra-congreso-castellano.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Navarra-congreso-castellano.pdf/page1-330px-Navarra-congreso-castellano.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Navarra-congreso-castellano.pdf/page1-500px-Navarra-congreso-castellano.pdf.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Navarra-congreso-castellano.pdf?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+      ],
+      "candidacyId": "boe-2023-023",
+      "analysisStatus": "complete_description_read_ballot_pack_excluded",
+      "applicabilityNote": "Twelve-page Congress ballot collection, not programme. No policy score."
+    },
+    {
+      "id": "escanos-manifesto-july-followup",
+      "url": "https://web.archive.org/web/20230720000000id_/https://escanos.org/conocenos/manifiesto-de-escanos-en-blanco/",
+      "retrievedAt": "2026-10-11T12:32:41.249400+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230605000120id_/https://escanos.org/conocenos/manifiesto-de-escanos-en-blanco/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.html",
+      "sha256": "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5",
+      "textFile": "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.txt",
+      "textSha256": "e34d04bb7a7364d311153e0967f13ed9a69400bb4db2fe52c74c5db415185c04",
+      "links": [
+        "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
+        "https://web.archive.org/wp-content/uploads/2022/12/EB_manifiesto_es_v3.pdf"
+      ],
+      "candidacyId": "boe-2023-026",
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "resolvedPublisherPdfLead": "https://escanos.org/wp-content/uploads/2022/12/EB_manifiesto_es_v3.pdf",
+      "leadCorrection": "Relative PDF href resolved against original publisher; retained source bytes/initial observed lead unchanged."
+    },
+    {
+      "id": "escanos-news-july-followup",
+      "url": "https://web.archive.org/web/20230720000000id_/https://escanos.org/noticias/",
+      "retrievedAt": "2026-10-11T12:32:41.249707+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230716110709id_/https://escanos.org/noticias/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/escanos-news-july-followup-publication-5023376f64e6.html",
+      "sha256": "5023376f64e6a88147d10f70399f3762bb0519f73f9f2fcd5a961d3bfbfabcf4",
+      "textFile": "storage/app/election-sources/2023-congress/escanos-news-july-followup-publication-5023376f64e6.txt",
+      "textSha256": "76d05a3c7380262e9af2a509a7b668f8e14a5333fe74298dd3eed7f0d1ca0633",
+      "links": [
+        "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/"
+      ],
+      "candidacyId": "boe-2023-026",
+      "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+    },
+    {
+      "id": "humanista-home-early-july-followup",
+      "url": "https://web.archive.org/web/20230708000000id_/https://partidohumanista.es/",
+      "retrievedAt": "2026-10-11T12:32:41.249782+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230708120554id_/http://www.partidohumanista.es/",
+      "mediaType": "text/html",
+      "lastModified": null,
+      "status": "archived_access_challenge_not_source",
+      "file": "storage/app/election-sources/2023-congress/humanista-home-early-july-followup-publication-d5267ae22072.html",
+      "sha256": "d5267ae22072b7ba447b39d0d5c8227dbbd7993166f4377a49c98bc3053fa3e7",
+      "textFile": "storage/app/election-sources/2023-congress/humanista-home-early-july-followup-publication-d5267ae22072.txt",
+      "textSha256": "d594875ddf63b98c153f0a54e97bfeadac1d155699e135171e960c533a116611",
+      "links": [],
+      "candidacyId": "boe-2023-034",
+      "analysisStatus": "access_challenge_excluded",
+      "applicabilityNote": "Archived200HTML is browser verification/Imunify360 challenge, not programme or proof of absence."
+    },
+    {
+      "id": "humanista-www-home-early-july-followup",
+      "url": "https://web.archive.org/web/20230701000000id_/https://www.partidohumanista.es/",
+      "retrievedAt": "2026-10-11T12:32:41.249862+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230708120554id_/http://www.partidohumanista.es/",
+      "mediaType": "text/html",
+      "lastModified": null,
+      "status": "archived_access_challenge_not_source",
+      "file": "storage/app/election-sources/2023-congress/humanista-www-home-early-july-followup-publication-d5267ae22072.html",
+      "sha256": "d5267ae22072b7ba447b39d0d5c8227dbbd7993166f4377a49c98bc3053fa3e7",
+      "textFile": "storage/app/election-sources/2023-congress/humanista-www-home-early-july-followup-publication-d5267ae22072.txt",
+      "textSha256": "d594875ddf63b98c153f0a54e97bfeadac1d155699e135171e960c533a116611",
+      "links": [],
+      "candidacyId": "boe-2023-034",
+      "analysisStatus": "access_challenge_excluded",
+      "applicabilityNote": "Archived200HTML is browser verification/Imunify360 challenge, not programme or proof of absence."
     }
   ],
   "authoredDraftSummary": {
-    "authoredDraftQuestions": 10,
+    "authoredDraftQuestions": 23,
     "authoredDraftTopics": 10,
-    "explicitMatrixCells": 590,
-    "scoredDraftMappings": 36,
-    "independentAnswerCases": 180,
-    "browserRentCases": 10,
+    "explicitMatrixCells": 1357,
+    "scoredDraftMappings": 65,
+    "independentAnswerCases": 325,
+    "browserRentCases": 20,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
     "matrix": "outputs/2023-authored-issue-matrix.json",
     "questionBank": "outputs/2023-authored-question-bank.json",
     "calibration": "outputs/2023-authored-calibration.json",
-    "browserVerification": "outputs/2023-authored-draft-verification.json",
-    "sourceCorrectnessCertified": false
+    "browserVerification": "outputs/2023-authored-progressive-verification.json",
+    "sourceCorrectnessCertified": false,
+    "browserProgressivePaths": 2,
+    "latestBrowserQuestions": 23,
+    "latestBrowserDraftSha256": "1d65e59dcdc8fdfe53d8435d08929aaee2e85b5efd5fe093200478555ec83920",
+    "previousBrowserVerification": "outputs/2023-authored-draft-verification.json"
   }
 }

@@ -567,8 +567,8 @@
           "votes": 6943
         }
       ],
-      "programmeSearchStatus": "preserved_programme_fully_read_campaign_variant_and_regional_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "two_programme_variants_fully_read_version_and_regional_applicability_pending",
+      "analysisStatus": "full_document_notebooks_available_not_scoring_ready",
       "programmeIds": [
         "psoe-preserved-objective",
         "psoe-campaign-programme-copy"
@@ -633,9 +633,10 @@
         "congress-melilla-2"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/psoe-preserved-objective.json"
+        "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+        "outputs/2023-programme-notebooks/psoe-campaign-copy.json"
       ],
-      "programmeApplicabilityNote": "Complete 272-page preserved PSOE programme read. Primary July 2023 publications observed through the web tool establish the election and programme links, but local primary retrieval returns a challenge shell. Campaign-linked 272-page variant has four policy-text differences. Regional aliases need adoption/supplement checks; PSC is a separate four-constituency denomination and does not inherit PSOE positions.",
+      "programmeApplicabilityNote": "Both complete 272-page preserved and campaign-linked PSOE variants independently read, including original graphics and all four differing pages. Primary July 2023 publication observations establish election links, but primary-byte/version precedence and regional alias supplements remain unresolved. PSC is a separate four-constituency denomination with no automatic inheritance.",
       "applicabilityEvidence": {
         "documentIds": [
           "psoe-preserved-objective",
@@ -5492,7 +5493,7 @@
       "id": "psoe-campaign-programme-copy",
       "url": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
       "recordedAt": "2026-10-11T11:13:29.209392+00:00",
-      "status": "downloaded_version_comparison_pending_full_reading",
+      "status": "downloaded_full_document_read_variant_precedence_pending",
       "resolvedUrl": "https://xn--espaaavanza-4db.es/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
       "mediaType": "application/pdf",
       "bytes": 6925600,
@@ -5504,7 +5505,7 @@
         "sha256": "23105e438b89a1a1b0f6a28e1d0ce6a3ba3232f4ccdd1a941afeeed2edb00f18",
         "pageCount": 272,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "four_differing_full_pages_read_second_complete_sequential_reading_pending"
+        "readStatus": "all_272_pages_directly_read_sequentially_with_complete_authored_notebook"
       },
       "versionComparison": {
         "referenceDocumentId": "psoe-preserved-objective",
@@ -5516,9 +5517,27 @@
           171
         ],
         "differingPagesDirectlyRead": true,
-        "completeIndependentReading": false,
-        "analysis": "Campaign copy omits the arts/music tax-deduction parity clause and one contributed year per child clauses, and uses different constitutional pension wording. Current primary PDF observed through the web tool includes preserved-copy additions; local primary bytes and version chronology are unresolved. Variant-specific proposals remain unscored."
-      }
+        "completeIndependentReading": true,
+        "analysis": "Both 272-page variants independently read in full. Campaign copy omits arts/music tax-deduction parity, contributed-year-per-child clauses and the exact constitutional purchasing-power amendment wording, while broader constitutional pension protection remains at 229/235. Primary raw bytes/version chronology and territorial adoption remain unresolved; variant-specific claims stay unscored."
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/psoe-campaign-copy.json",
+      "originalVisualPagesRead": [
+        1,
+        11,
+        71,
+        98,
+        109,
+        125,
+        135,
+        143,
+        164,
+        170,
+        171,
+        227,
+        258,
+        272
+      ]
     },
     {
       "id": "ev-leon-23j",
@@ -5698,7 +5717,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 45
+    "programmeDocumentsFullyRead": 46
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

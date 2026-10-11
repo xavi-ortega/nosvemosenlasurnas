@@ -1285,7 +1285,7 @@
         }
       ],
       "programmeSearchStatus": "joint_programme_fully_read_territorial_sources_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_182_page_joint_and_13_page_valencian_80_cell_bank_audit",
       "programmeIds": [
         "sumar"
       ],
@@ -1300,7 +1300,7 @@
         "SUMAR MÉS (MÉS PER MALLORCA-MÉS PER MENORCA-SUMAR)",
         "SUMAR-EN COMÚ PODEM (SUMAR-ECP)"
       ],
-      "programmeApplicabilityStatus": "joint_23j_programme_and52coalition_ballots_verified_territorial_precedence_pending",
+      "programmeApplicabilityStatus": "joint_23j2023_congress_52_scopes_valencian_supplement_3_scopes_no_precedence_assumed",
       "ballotRecordIds": [
         "congress-albacete-6",
         "congress-alicante-8",
@@ -1424,6 +1424,16 @@
           "congress-melilla-4"
         ],
         "rationale": "Byte-identical primary23Jjointprogramme publication, contemporaneous coalition adoption evidence and full original coalition pact. No automatic inheritance of every715IUproposal or separate coalition member programme."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T22:42:49.580473+00:00",
+        "report": "outputs/2023-authored-sumar-audit.json",
+        "questionCount": 80,
+        "defaultDerivedMappings": 42,
+        "newCommonMappings": 3,
+        "newTerritorialPropositions": 2,
+        "citedUncertaintyCells": 37,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5038,7 +5048,7 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_original_read_specific_joint_and_territorial_bank_audit_recorded",
       "notebook": "outputs/2023-programme-notebooks/sumar.json",
       "electionApplicability": "Original cover explicitly identifies23July2023general elections. Primary transparency portal links byte-identical PDF under electoral coalitions. Contemporaneous IU6July2023publication identifies the joint final coalition programme; coalition pact9June/subsanation13June2023 identifies state-wide Congress coalition and territorial aliases. Territorial programme precedence/conflicts require separate checking.",
       "originalVisualPagesRead": [
@@ -5124,7 +5134,8 @@
         "sumar-transparency-publication",
         "sumar-iu-joint-programme-publication",
         "sumar-2023-coalition-pact"
-      ]
+      ],
+      "bankAudit": "outputs/2023-authored-sumar-audit.json"
     },
     {
       "id": "vox",
@@ -5676,19 +5687,110 @@
       "retrievedAt": "2026-10-11T07:43:38.985007+00:00",
       "resolvedUrl": "https://sumar.compromis.net/docs/programa-cas.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_full_original_read_visible_citation_extraction_verified",
       "file": "storage/app/election-sources/2023-congress/compromis-sumar.pdf",
       "sha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
       "bytes": 542885,
       "extraction": {
-        "file": "storage/app/election-sources/2023-congress/compromis-sumar.txt",
-        "sha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+        "file": "storage/app/election-sources/2023-congress/compromis-sumar-visible-policy.txt",
+        "sha256": "8847058056745f9ec1252e6f61618e7e8e420d6778f742e896621ce581f66156",
         "pageCount": 13,
-        "method": "pypdf_native_layout_v1",
-        "readStatus": "full_document_read_recorded_in_authored_notebook"
+        "method": "visible_policy_column_poppler_v1",
+        "readStatus": "complete_original_reading_reused_cited_spans_visually_verified"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/compromis-sumar.json"
+      "analysisStatus": "complete_original_read_specific_joint_and_territorial_bank_audit_recorded",
+      "notebook": "outputs/2023-programme-notebooks/compromis-sumar-visible-citations.json",
+      "extractionHistory": [
+        {
+          "file": "storage/app/election-sources/2023-congress/compromis-sumar.txt",
+          "sha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+          "pageCount": 13,
+          "method": "pypdf_native_layout_v1",
+          "readStatus": "full_document_read_recorded_in_authored_notebook"
+        }
+      ],
+      "previousNotebook": "outputs/2023-programme-notebooks/compromis-sumar.json",
+      "applicableBallotRecordIds": [
+        "congress-alicante-8",
+        "congress-castellon-7",
+        "congress-valencia-6"
+      ],
+      "electionApplicability": "Primary23Jjoint campaign publication identifies Congress and Alicante/Castellon/Valencia candidates; original coalition pact states this territorial alias. No propagation outside those three Congress constituencies.",
+      "citationExtraction": {
+        "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+        "extractionFile": "storage/app/election-sources/2023-congress/compromis-sumar-visible-policy.txt",
+        "extractionSha256": "8847058056745f9ec1252e6f61618e7e8e420d6778f742e896621ce581f66156",
+        "method": "Deterministic in-memory exclusion of the first two text blocks covered by the later page artwork on pages3/5/7/9/11/13; original PDF unchanged. Poppler layout extraction cropped to the policy column x200..596; sidebar titles/part of cover excluded; all13original rendered pages visually checked.",
+        "pages": [
+          {
+            "pdfPage": 1,
+            "textBlocks": 1,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 2,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 3,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          },
+          {
+            "pdfPage": 4,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 5,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          },
+          {
+            "pdfPage": 6,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 7,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          },
+          {
+            "pdfPage": 8,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 9,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          },
+          {
+            "pdfPage": 10,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 11,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          },
+          {
+            "pdfPage": 12,
+            "textBlocks": 2,
+            "excludedCoveredTextBlocks": 0
+          },
+          {
+            "pdfPage": 13,
+            "textBlocks": 4,
+            "excludedCoveredTextBlocks": 2
+          }
+        ],
+        "fullTranscriptVisuallyVerified": false
+      },
+      "bankAudit": "outputs/2023-authored-sumar-audit.json"
     },
     {
       "id": "cup-preserved-lasexta",
@@ -10132,9 +10234,9 @@
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
-    "explicitMatrixCells": 5120,
-    "scoredDraftMappings": 213,
-    "independentAnswerCases": 1065,
+    "explicitMatrixCells": 5230,
+    "scoredDraftMappings": 318,
+    "independentAnswerCases": 1590,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10145,7 +10247,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
+    "latestBrowserDraftSha256": "e5aafee18f8a483e5c0b2b3fb644cc91b2be65d679ccf5f173c50528d6a5f34e",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10156,20 +10258,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 124,
-    "latestBrowserVerification": "outputs/2023-authored-vox-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-vox-verification.json",
+    "latestBrowserProgressivePaths": 258,
+    "latestBrowserVerification": "outputs/2023-authored-sumar-conflicts-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-sumar-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
+    "latestDraftSha256": "e5aafee18f8a483e5c0b2b3fb644cc91b2be65d679ccf5f173c50528d6a5f34e",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
+    "latestAuthoredDraftSha256": "e5aafee18f8a483e5c0b2b3fb644cc91b2be65d679ccf5f173c50528d6a5f34e",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10271,9 +10373,9 @@
     "latestPalenciatierravivaCitedUnscoredPaths": 4,
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
-    "scopedMatrixCells": 400,
-    "defaultScoredDraftMappings": 206,
-    "scopedScoredDraftMappings": 7,
+    "scopedMatrixCells": 510,
+    "defaultScoredDraftMappings": 207,
+    "scopedScoredDraftMappings": 111,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
     "evLeonBrowserVerification": "outputs/2023-authored-ev-leon-browser-verification.json",
@@ -10363,7 +10465,7 @@
     "latestPumjCitedAnswerPaths": 4,
     "latestPumjCitedUnscoredPaths": 14,
     "pumjFixedComparisonEligible": false,
-    "explicitCellCount": 5120,
+    "explicitCellCount": 5230,
     "teruelBankAudit": "outputs/2023-authored-teruel-audit.json",
     "teruelVerification": "outputs/2023-authored-teruel-verification.json",
     "teruelScopesBrowserVerification": "outputs/2023-authored-teruel-scopes-browser-verification.json",
@@ -10398,7 +10500,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 5033686,
+    "bankBytes": 4907528,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10487,7 +10589,54 @@
     "voxFixedComparisonEligible": true,
     "voxTerritories": 51,
     "voxNotProclaimedTerritoriesExcluded": 1,
-    "allPrevious209NumericMappingsUnchanged": true
+    "allPrevious209NumericMappingsUnchanged": true,
+    "sumarBankAudit": "outputs/2023-authored-sumar-audit.json",
+    "sumarVerification": "outputs/2023-authored-sumar-verification.json",
+    "sumarBrowserVerification": "outputs/2023-authored-sumar-browser-verification.json",
+    "sumarConflictsBrowserVerification": "outputs/2023-authored-sumar-conflicts-browser-verification.json",
+    "newSumarAuditedCells": 80,
+    "newSumarCommonDerivedMappings": 3,
+    "newSumarTerritorialPropositions": 2,
+    "totalSumarDefaultMappings": 42,
+    "sumarProvinceKnownCount": 44,
+    "newSumarCitedUncertaintyCells": 37,
+    "latestSumarBrowserSessions": 258,
+    "latestSumarCitedAnswerPaths": 500,
+    "latestSumarCitedUnscoredPaths": 92,
+    "latestSumarScreenshotsReviewedThroughOverviews": 52,
+    "latestSumarOverviewFilesInspected": 26,
+    "sumarBrowserBankAttribution": [
+      {
+        "draftSha256": "49264d52ebedd5fb4a9d5191a6a7d9ed514e3b42e8a5967a652b1824a599cfd4",
+        "browserSessions": 254,
+        "citedNumericPaths": 500,
+        "citedUnscoredPaths": 88,
+        "screenshotsReviewedThroughOverviews": 48,
+        "report": "outputs/2023-authored-sumar-browser-verification.json"
+      },
+      {
+        "draftSha256": "e5aafee18f8a483e5c0b2b3fb644cc91b2be65d679ccf5f173c50528d6a5f34e",
+        "browserSessions": 4,
+        "citedNumericPaths": 0,
+        "citedUnscoredPaths": 4,
+        "screenshotsReviewedThroughOverviews": 4,
+        "report": "outputs/2023-authored-sumar-conflicts-browser-verification.json"
+      }
+    ],
+    "sumarFixedComparisonEligible": true,
+    "sumarTerritories": 52,
+    "sumarConflictTerritories": [
+      "alicante",
+      "castellon",
+      "valencia"
+    ],
+    "sumarNationalValuesRetainedTerritories": 49,
+    "sumarAllScopeWithdrawnValues": 2,
+    "sumarPreviousNumericExceptions": [
+      "retain-public-housing-ownership",
+      "phase-out-prescription-copay"
+    ],
+    "previousScopedOverridesUnchanged": true
   },
-  "recordedAt": "2026-10-11T22:01:09.199631+00:00"
+  "recordedAt": "2026-10-11T22:42:49.580473+00:00"
 }

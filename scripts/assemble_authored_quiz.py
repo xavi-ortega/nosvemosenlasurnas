@@ -134,7 +134,17 @@ def assemble(root):
                     require(any(row["id"] in applicable and row["status"] == "proclaimed" and row["resultDenominationId"] == cell["candidacyId"] and row["id"].rsplit("-", 1)[0].removeprefix("congress-") == scope for row in registry["records"]), "Missing explicit territorial source applicability")
                 elif source.get("applicableBallotRecordIds"):
                     applicable_scopes = {row["id"].rsplit("-", 1)[0].removeprefix("congress-") for row in registry["records"] if row["id"] in source["applicableBallotRecordIds"] and row["status"] == "proclaimed" and row["resultDenominationId"] == cell["candidacyId"]}
-                    require(territories[cell["candidacyId"]] <= applicable_scopes, "Territorial citation cannot become a default position")
+                    if not territories[cell["candidacyId"]] <= applicable_scopes:
+                        overrides = {item["constituencyId"]: item for item in scoped_cells if item["candidacyId"] == cell["candidacyId"]}
+                        require(cell["status"] == "conflicting" and cell["value"] is None
+                                and len({item["documentId"] for item in cell["citations"]}) >= 2
+                                and applicable_scopes
+                                and territories[cell["candidacyId"]] <= set(overrides)
+                                and all(overrides[territory]["status"] == "conflicting"
+                                        and overrides[territory]["value"] is None
+                                        and citation in overrides[territory]["citations"]
+                                        for territory in applicable_scopes),
+                                "Territorial citation cannot become a default position")
                 verify_original(root, source, citation["sourceSha256"])
                 extraction = retained_file(root, source.get("extraction", {}).get("file", source.get("textFile")))
                 require(digest(extraction.read_bytes()) == citation["extractionSha256"], "Original extraction changed")
@@ -240,7 +250,7 @@ def assemble(root):
 
 
 def write_draft(bank, output):
-    data = (json.dumps(bank, ensure_ascii=False, indent=2) + "\n").encode()
+    data = (json.dumps(bank, ensure_ascii=False, separators=(",", ":")) + "\n").encode()
     sha = digest(data)
     snapshot = output.parent / "snapshots" / (sha + ".json")
     snapshot.parent.mkdir(parents=True, exist_ok=True)

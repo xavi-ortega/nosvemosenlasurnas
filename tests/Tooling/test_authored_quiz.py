@@ -362,6 +362,75 @@ class AuthoredQuizTest(unittest.TestCase):
                 with self.assertRaises(ValueError):
                     assembler.assemble(root)
 
+    def prepare_territorial_conflict(self, root):
+        files = self.prepare_territorial(root)
+        notebook_path = root / "outputs/territorial-notebook.json"
+        notebook = json.loads((root / "outputs/notebook.json").read_text())
+        notebook["documentId"] = "territorial-document"
+        notebook_path.write_text(json.dumps(notebook))
+        issue = files["2023-authored-issue-matrix.json"]["issues"][0]
+        default = issue["cells"][0]
+        citation = copy.deepcopy(default["citations"][0])
+        citation.update(documentId="territorial-document", notebook="outputs/territorial-notebook.json",
+                        notebookSha256=assembler.digest(notebook_path.read_bytes()),
+                        sourceUrl="https://fixture.invalid/territorial-programme")
+        inventory = files["2023-source-inventory.json"]
+        inventory["acquisitions"].append(inventory["acquisitions"][0] | {
+            "url": citation["sourceUrl"], "applicableBallotRecordIds": ["congress-test-1"]})
+        unaffected = copy.deepcopy(default) | {"constituencyId": "other"}
+        default.update(status="conflicting", value=None, rationale="Diferencia territorial documentada.")
+        default["citations"].append(citation)
+        issue["constituencyCells"] = [copy.deepcopy(default) | {"constituencyId": "test"}, unaffected]
+        for name, value in files.items():
+            (root / "outputs" / name).write_text(json.dumps(value))
+        return files
+
+    def test_all_scope_conflict_discloses_both_sources_without_a_territorial_numeric_default(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            self.prepare_territorial_conflict(root)
+
+            bank = assembler.assemble(root)
+
+            default = bank["positions"]["fixture-a"]["fixture-question"]
+            self.assertEqual(default["status"], "conflicting")
+            self.assertIsNone(default["value"])
+            self.assertEqual({citation["documentId"] for citation in default["citations"]},
+                             {"fixture-document", "territorial-document"})
+            territorial = bank["constituencyPositions"]["test"]["fixture-a"]["fixture-question"]
+            self.assertEqual(territorial, default)
+            unaffected = bank["constituencyPositions"]["other"]["fixture-a"]["fixture-question"]
+            self.assertEqual(unaffected["value"], 2)
+            self.assertEqual([citation["documentId"] for citation in unaffected["citations"]], ["fixture-document"])
+
+    def test_all_scope_territorial_disclosure_rejects_numeric_or_unreconciled_positions(self):
+        for failure in ["numeric", "unknown", "missing-other-override", "missing-conflict",
+                        "different-citation", "single-document", "unverified-territory"]:
+            with self.subTest(failure=failure), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                files = self.prepare_territorial_conflict(root)
+                issue = files["2023-authored-issue-matrix.json"]["issues"][0]
+                default = issue["cells"][0]
+                if failure == "numeric":
+                    default.update(status="derived", value=2)
+                elif failure == "unknown":
+                    default["status"] = "unknown"
+                elif failure == "missing-other-override":
+                    issue["constituencyCells"].pop()
+                elif failure == "missing-conflict":
+                    issue["constituencyCells"][0].update(status="derived", value=2)
+                elif failure == "different-citation":
+                    issue["constituencyCells"][0]["citations"].pop()
+                elif failure == "single-document":
+                    default["citations"].pop(0)
+                else:
+                    files["2023-source-inventory.json"]["acquisitions"][1]["applicableBallotRecordIds"] = ["congress-missing-1"]
+                for name, value in files.items():
+                    (root / "outputs" / name).write_text(json.dumps(value))
+
+                with self.assertRaises(ValueError):
+                    assembler.assemble(root)
+
     def test_retained_source_cannot_escape_project_root(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory) / "project"
@@ -399,9 +468,11 @@ class AuthoredQuizTest(unittest.TestCase):
             output = root / "preview" / "bank.json"
             first = assembler.write_draft(bank, output)
             first_bytes = output.read_bytes()
+            self.assertEqual(json.loads(first_bytes), bank)
             bank["questions"][0]["text"] = "Otra pregunta ficticia para las pruebas."
             second = assembler.write_draft(bank, output)
             second_bytes = output.read_bytes()
+            self.assertEqual(json.loads(second_bytes), bank)
 
             self.assertNotEqual(first["sha256"], second["sha256"])
             self.assertEqual(Path(first["snapshotFile"]).read_bytes(), first_bytes)

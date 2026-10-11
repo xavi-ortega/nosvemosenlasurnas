@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T21:52:55.120592+00:00",
+  "recordedAt": "2026-10-11T22:18:44.759808+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -2530,7 +2530,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -4822,6 +4822,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Direct interpretation against the question-specific rubric: Propone mantener la actualización automática de las pensiones según el crecimiento de los precios y subir más las pensiones mínimas y no contributivas.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -4834,11 +4867,6 @@
           "candidacyId": "boe-2023-003",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-004",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -5716,7 +5744,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -6037,39 +6065,6 @@
       "questionId": "retain-public-housing-ownership",
       "positiveAnswerMeaning": "Keep public housing in public ownership rather than selling it to private owners.",
       "mappingCases": [
-        {
-          "candidacyId": "boe-2023-004",
-          "sourceExpectedValue": 2,
-          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
-          "answerCases": [
-            {
-              "answer": -2,
-              "expectedOverlap": 0,
-              "expectedRelationship": "opposed"
-            },
-            {
-              "answer": -1,
-              "expectedOverlap": 0.25,
-              "expectedRelationship": "opposed"
-            },
-            {
-              "answer": 0,
-              "expectedOverlap": 0.5,
-              "expectedRelationship": "different"
-            },
-            {
-              "answer": 1,
-              "expectedOverlap": 0.75,
-              "expectedRelationship": "close"
-            },
-            {
-              "answer": 2,
-              "expectedOverlap": 1,
-              "expectedRelationship": "same"
-            }
-          ],
-          "sourceContextReopened": true
-        },
         {
           "candidacyId": "boe-2023-025",
           "sourceExpectedValue": 2,
@@ -6445,6 +6440,11 @@
           "candidacyId": "boe-2023-058",
           "expectedScored": false,
           "reason": "unknown"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "conflicting"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -6488,6 +6488,1696 @@
           "sourceExpectedValue": null,
           "sourceReason": "Direct comparison of this exact proposition and rubric against the complete distinct 29-page Aragón programme. Related goals do not establish omitted mechanisms, quantities or conditions. Unknown remains unscored; no silence-as-neutrality or Teruel-source inheritance.",
           "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "acoruna",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alava",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "albacete",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alicante",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "almeria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "asturias",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "avila",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "badajoz",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "baleares",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "barcelona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "bizkaia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "burgos",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "caceres",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cadiz",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cantabria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "castellon",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ceuta",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ciudadreal",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cordoba",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cuenca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "gipuzkoa",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "girona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "granada",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "guadalajara",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "huelva",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "huesca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "jaen",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "larioja",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "laspalmas",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "leon",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "lleida",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "lugo",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "madrid",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "malaga",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "melilla",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "murcia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "navarra",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ourense",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "palencia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "pontevedra",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "salamanca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "santacruzdetenerife",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "segovia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "sevilla",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "soria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "tarragona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "teruel",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "toledo",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valencia",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valladolid",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "zamora",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "zaragoza",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Measure5 includes public-to-public transmission and possible public-private rental projects; no public ownership transfer to a private buyer inferred.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ]
     },
@@ -8786,39 +10476,6 @@
       "positiveAnswerMeaning": "Progressively eliminate the patient's contribution for medicines covered by public healthcare.",
       "mappingCases": [
         {
-          "candidacyId": "boe-2023-004",
-          "sourceExpectedValue": 2,
-          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
-          "answerCases": [
-            {
-              "answer": -2,
-              "expectedOverlap": 0,
-              "expectedRelationship": "opposed"
-            },
-            {
-              "answer": -1,
-              "expectedOverlap": 0.25,
-              "expectedRelationship": "opposed"
-            },
-            {
-              "answer": 0,
-              "expectedOverlap": 0.5,
-              "expectedRelationship": "different"
-            },
-            {
-              "answer": 1,
-              "expectedOverlap": 0.75,
-              "expectedRelationship": "close"
-            },
-            {
-              "answer": 2,
-              "expectedOverlap": 1,
-              "expectedRelationship": "same"
-            }
-          ],
-          "sourceContextReopened": true
-        },
-        {
           "candidacyId": "boe-2023-010",
           "sourceExpectedValue": 2,
           "sourceReason": "FullGalicianparagraph specifies pharmaceutical prestation and end of model. Not a free-retail-drug claim.",
@@ -9165,6 +10822,11 @@
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "ambiguous"
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "expectedScored": false,
+          "reason": "conflicting"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -9208,6 +10870,1696 @@
           "sourceExpectedValue": null,
           "sourceReason": "Direct comparison of this exact proposition and rubric against the complete distinct 29-page Aragón programme. Related goals do not establish omitted mechanisms, quantities or conditions. Unknown remains unscored; no silence-as-neutrality or Teruel-source inheritance.",
           "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "acoruna",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alava",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "albacete",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alicante",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "almeria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "asturias",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "avila",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "badajoz",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "baleares",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "barcelona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "bizkaia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "burgos",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "caceres",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cadiz",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cantabria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "castellon",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ceuta",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ciudadreal",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cordoba",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "cuenca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "gipuzkoa",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "girona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "granada",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "guadalajara",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "huelva",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "huesca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "jaen",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "larioja",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "laspalmas",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "leon",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "lleida",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "lugo",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "madrid",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "malaga",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "melilla",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "murcia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "navarra",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "ourense",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "palencia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "pontevedra",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "salamanca",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "santacruzdetenerife",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "segovia",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "sevilla",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "soria",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "tarragona",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "teruel",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "toledo",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valencia",
+          "expectedScored": false,
+          "sourceExpectedValue": null,
+          "sourceReason": "No all-Spain value asserted across a documented territorial source difference. The national source remains scored in49scopes; the three supplement scopes and all-scope view are unscored pending precedence.",
+          "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valladolid",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "zamora",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "zaragoza",
+          "expectedScored": true,
+          "sourceExpectedValue": 2,
+          "sourceReason": "Prioritisation sets phase-out order, not a permanent limit to low incomes; +2matches progressive general proposition.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ]
     },
@@ -10199,7 +13551,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -12502,7 +15854,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -12869,7 +16221,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -13279,7 +16631,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -14224,7 +17576,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -14598,6 +17950,39 @@
               "expectedRelationship": "close"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Direct interpretation against the question-specific rubric: Propone impedir los cortes de agua, energía y calefacción a personas y familias vulnerables como derecho de acceso básico, sin limitarlo a una emergencia temporal.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -14615,11 +18000,6 @@
           "candidacyId": "boe-2023-003",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-004",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -15730,7 +19110,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -16356,7 +19736,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -16755,6 +20135,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Direct interpretation against the question-specific rubric: Propone una alternativa vegetariana diaria para el alumnado que la quiera, aparte de un día vegetariano semanal para todo el comedor.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -16772,11 +20185,6 @@
           "candidacyId": "boe-2023-003",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-004",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -17148,7 +20556,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -22381,7 +25789,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -22748,7 +26156,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -23148,7 +26556,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -23614,7 +27022,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -23916,6 +27324,108 @@
           "sourceExpectedValue": null,
           "sourceReason": "Direct comparison of this exact proposition and rubric against the complete distinct 29-page Aragón programme. Related goals do not establish omitted mechanisms, quantities or conditions. Unknown remains unscored; no silence-as-neutrality or Teruel-source inheritance.",
           "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alicante",
+          "expectedScored": true,
+          "sourceExpectedValue": 1,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone reducir el aforamiento parlamentario a asuntos del periodo y tarea parlamentarios, conservando esa excepción.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "castellon",
+          "expectedScored": true,
+          "sourceExpectedValue": 1,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone reducir el aforamiento parlamentario a asuntos del periodo y tarea parlamentarios, conservando esa excepción.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valencia",
+          "expectedScored": true,
+          "sourceExpectedValue": 1,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone reducir el aforamiento parlamentario a asuntos del periodo y tarea parlamentarios, conservando esa excepción.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ]
     },
@@ -23976,7 +27486,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -24376,7 +27886,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -25971,7 +29481,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -26437,7 +29947,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -26799,7 +30309,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -27171,7 +30681,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -27543,7 +31053,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -27915,7 +31425,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -28287,7 +31797,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -28692,7 +32202,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -29087,7 +32597,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -29459,7 +32969,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -29831,7 +33341,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -30203,7 +33713,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -30575,7 +34085,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -30947,7 +34457,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -31319,7 +34829,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -31696,7 +35206,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -32068,7 +35578,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -32440,7 +35950,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -32845,7 +36355,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",
@@ -33152,6 +36662,108 @@
           "sourceExpectedValue": null,
           "sourceReason": "Direct comparison of this exact proposition and rubric against the complete distinct 29-page Aragón programme. Related goals do not establish omitted mechanisms, quantities or conditions. Unknown remains unscored; no silence-as-neutrality or Teruel-source inheritance.",
           "answerCases": []
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "alicante",
+          "expectedScored": true,
+          "sourceExpectedValue": -2,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone circunscripciones autonómicas para elegir el Congreso, en lugar de una única circunscripción estatal.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "castellon",
+          "expectedScored": true,
+          "sourceExpectedValue": -2,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone circunscripciones autonómicas para elegir el Congreso, en lugar de una única circunscripción estatal.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-004",
+          "constituencyId": "valencia",
+          "expectedScored": true,
+          "sourceExpectedValue": -2,
+          "sourceReason": "Direct territory-specific interpretation of the exact proposal and scale rubric. El suplemento valenciano propone circunscripciones autonómicas para elegir el Congreso, en lugar de una única circunscripción estatal.",
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ]
     },
@@ -33212,7 +36824,7 @@
         {
           "candidacyId": "boe-2023-004",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-005",

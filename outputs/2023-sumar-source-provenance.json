@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T22:18:44.759808+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-004",
+  "mainProgramme": {
+    "sourceSha256": "d5ccdac0d20f1b93a5f703f180d086041bd988835072dd5cb5d1378bf0195820",
+    "extractionSha256": "140b13f8b05825120102a43f7b5e3f2521417f7df6cde02ca9fd7e602c0c9d21",
+    "pdfPages": 182,
+    "explicitElectionCoverPage": 1,
+    "notebook": "outputs/2023-programme-notebooks/sumar.json"
+  },
+  "territorialSupplement": {
+    "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+    "previousExtractionSha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+    "citationExtraction": {
+      "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+      "extractionFile": "storage/app/election-sources/2023-congress/compromis-sumar-visible-policy.txt",
+      "extractionSha256": "8847058056745f9ec1252e6f61618e7e8e420d6778f742e896621ce581f66156",
+      "method": "Deterministic in-memory exclusion of the first two text blocks covered by the later page artwork on pages3/5/7/9/11/13; original PDF unchanged. Poppler layout extraction cropped to the policy column x200..596; sidebar titles/part of cover excluded; all13original rendered pages visually checked.",
+      "pages": [
+        {
+          "pdfPage": 1,
+          "textBlocks": 1,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 2,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 3,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        },
+        {
+          "pdfPage": 4,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 5,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        },
+        {
+          "pdfPage": 6,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 7,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        },
+        {
+          "pdfPage": 8,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 9,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        },
+        {
+          "pdfPage": 10,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 11,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        },
+        {
+          "pdfPage": 12,
+          "textBlocks": 2,
+          "excludedCoveredTextBlocks": 0
+        },
+        {
+          "pdfPage": 13,
+          "textBlocks": 4,
+          "excludedCoveredTextBlocks": 2
+        }
+      ],
+      "fullTranscriptVisuallyVerified": false
+    },
+    "notebooks": [
+      "outputs/2023-programme-notebooks/compromis-sumar.json",
+      "outputs/2023-programme-notebooks/compromis-sumar-visible-citations.json"
+    ],
+    "applicableBallotRecordIds": [
+      "congress-alicante-8",
+      "congress-castellon-7",
+      "congress-valencia-6"
+    ],
+    "originalPagesVisuallyReopened": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ]
+  },
+  "coalitionPact": {
+    "sha256": "024b3decca3ed1fd07e20b03f555564c5b03a1772075f99e090cafba29ccbb53",
+    "originalPagesVisuallyRead": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "scopeEvidencePages": [
+      5,
+      9,
+      10,
+      11,
+      12,
+      13,
+      15
+    ],
+    "interpretation": "Joint52constituencyCongresscoalition; territorial names are aliases. This does not adopt every component programme or establish supplement precedence. Representative identities and signatures are excluded from tracked excerpts."
+  },
+  "primaryAttempts": [
+    {
+      "id": "sumar-transparency-publication",
+      "url": "https://movimientosumar.es/transparencia/",
+      "recordedAt": "2026-10-11T10:52:16.816641+00:00",
+      "status": 200,
+      "resolvedUrl": "https://movimientosumar.es/transparencia/",
+      "mediaType": "text/html",
+      "file": "storage/app/election-sources/2023-congress/sumar-transparency-publication.html",
+      "sha256": "2c8d6b81c245931e6ee8689f1c430bd33cf4978028d3338b713c8685de82b526",
+      "bytes": 104441,
+      "textFile": "storage/app/election-sources/2023-congress/sumar-transparency-publication.txt",
+      "textSha256": "bc0678d3b2d762af850f74871d4cceef858b882486e0b08d9101ce8906319004"
+    },
+    {
+      "id": "sumar-transparency-programme",
+      "url": "https://movimientosumar.es/transparencia/wp-content/uploads/sites/6/2023/12/un-programa-para-ti.pdf",
+      "recordedAt": "2026-10-11T10:52:16.929635+00:00",
+      "status": 200,
+      "resolvedUrl": "https://movimientosumar.es/transparencia/wp-content/uploads/sites/6/2023/12/un-programa-para-ti.pdf",
+      "mediaType": "application/pdf",
+      "file": "storage/app/election-sources/2023-congress/sumar-transparency-programme.pdf",
+      "sha256": "d5ccdac0d20f1b93a5f703f180d086041bd988835072dd5cb5d1378bf0195820",
+      "bytes": 2567339
+    },
+    {
+      "id": "sumar-2023-coalition-pact",
+      "url": "https://movimientosumar.es/transparencia/wp-content/uploads/sites/6/2025/07/PactoCoalicionSumar23J.pdf",
+      "recordedAt": "2026-10-11T10:52:17.204193+00:00",
+      "status": 200,
+      "resolvedUrl": "https://movimientosumar.es/transparencia/wp-content/uploads/sites/6/2025/07/PactoCoalicionSumar23J.pdf",
+      "mediaType": "application/pdf",
+      "file": "storage/app/election-sources/2023-congress/sumar-2023-coalition-pact.pdf",
+      "sha256": "024b3decca3ed1fd07e20b03f555564c5b03a1772075f99e090cafba29ccbb53",
+      "bytes": 5533575
+    },
+    {
+      "id": "sumar-iu-joint-programme-publication",
+      "url": "https://izquierdaunida.org/2023/07/06/iu-valora-que-el-programa-conjunto-de-sumar-cumple-las-aspiraciones-de-solvencia-y-rigor-en-la-elaboracion-compromiso-con-la-clase-trabajadora-y-perspectiva-constituyente/",
+      "recordedAt": "2026-10-11T10:52:17.437981+00:00",
+      "status": 200,
+      "resolvedUrl": "https://izquierdaunida.org/2023/07/06/iu-valora-que-el-programa-conjunto-de-sumar-cumple-las-aspiraciones-de-solvencia-y-rigor-en-la-elaboracion-compromiso-con-la-clase-trabajadora-y-perspectiva-constituyente/",
+      "mediaType": "text/html",
+      "file": "storage/app/election-sources/2023-congress/sumar-iu-joint-programme-publication.html",
+      "sha256": "5e56725750b6b6bc25325496129ff66084d82c32c55c72c4ac45478a8c773ca1",
+      "bytes": 158463,
+      "textFile": "storage/app/election-sources/2023-congress/sumar-iu-joint-programme-publication.txt",
+      "textSha256": "915d6001302ddc70a23f0c8d4fb50a5531e0677514c6bb9c4d508d0c61728f22"
+    },
+    {
+      "id": "sumar-ecp-programme-lead",
+      "url": "https://www.elnacional.cat/es/elecciones/generales-2023/programa-electoral-sumar-comu-podem-2023-aina-vidal-elecciones-generales_1059366_102.html",
+      "recordedAt": "2026-10-11T10:52:18.673576+00:00",
+      "status": 200,
+      "resolvedUrl": "https://www.elnacional.cat/es/elecciones/generales-2023/programa-electoral-sumar-comu-podem-2023-aina-vidal-elecciones-generales_1059366_102.html",
+      "mediaType": "text/html",
+      "file": "storage/app/election-sources/2023-congress/sumar-ecp-programme-lead.html",
+      "sha256": "566bff6f1b36b166ce49672e1be53899c2d8753549f24578df0fbce1b4cf6092",
+      "bytes": 204295,
+      "textFile": "storage/app/election-sources/2023-congress/sumar-ecp-programme-lead.txt",
+      "textSha256": "347686654eb5c34f1dfd6fbe8d58c252b8f2002a719f521aa830dcbfa72e245f"
+    },
+    {
+      "id": "compromis-sumar-campaign-publication",
+      "url": "https://sumar.compromis.net/cas",
+      "recordedAt": "2026-10-11T22:10:42.245870+00:00",
+      "status": 200,
+      "resolvedUrl": "https://sumar.compromis.net/cas",
+      "mediaType": "text/html",
+      "bytes": 214846,
+      "sha256": "aec316bd44a212e7aadccc8d177cec33b7697d7dfef2b36aea7b00db2a40b1b8",
+      "file": "storage/app/election-sources/2023-congress/compromis-sumar-campaign-publication.html",
+      "textFile": "storage/app/election-sources/2023-congress/compromis-sumar-campaign-publication.txt",
+      "textSha256": "889a8cdffbbaa9e0bea395d05b17195e37331a293049bc83a1a03fdb37ef0fd1"
+    },
+    {
+      "id": "sumar-23j-primary-publication",
+      "url": "https://movimientosumar.es/programa-electoral-23j/",
+      "recordedAt": "2026-10-11T22:10:44.179000+00:00",
+      "status": 200,
+      "resolvedUrl": "https://movimientosumar.es/programa-electoral-23j/",
+      "mediaType": "text/html",
+      "bytes": 156099,
+      "sha256": "085f6fa2485e34467ad73d31c550187995770b8577d803f3478c728f4e0372e1",
+      "file": "storage/app/election-sources/2023-congress/sumar-23j-primary-publication.html",
+      "textFile": "storage/app/election-sources/2023-congress/sumar-23j-primary-publication.txt",
+      "textSha256": "059b84c8005b7fdfedd288259004e0d3fe1e96e26d7213ded7a6d1220b5d7f17"
+    }
+  ],
+  "preVoteExactBytesCertified": false,
+  "newUniqueReadings": 0,
+  "newProgrammeDownloads": 0,
+  "limitations": [
+    "Main182page and territorial13page complete original readings reused; no new unique programme, page count or owner claimed. All19coalition-pact pages and all13supplement original pages visually reopened; main15/20/68 visually reopened.",
+    "Main joint programme covers52Congress ballots with verified territorial alias relationship; no inheritance of separate component-party programmes. ECP-specific additional original and further territorial sources remain unresolved.",
+    "Two cross-source differences are unscored in the three Valencian territories and all-scope view. National+2positions retained in49other scopes; no document precedence invented.",
+    "Three new common mappings and two territorial mappings directly supplied. Other prior numeric cells and the existing seven numeric scoped overrides preserved. Mechanical checks do not prove semantic correctness.",
+    "Citation extraction excludes sidebar/part of cover and covered stale education text; original and prior extraction/notebook retained. Only released spans/full policy contexts are checked here, not a certified full clean transcript.",
+    "Primary election identity/current exact-copy equivalence does not certify the exact pre-vote bytes. Full corpus/source-family/finalrelease/actualhost/privacy/publication acceptance remain open."
+  ]
+}

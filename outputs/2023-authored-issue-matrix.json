@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T17:46:08.534494+00:00",
+  "recordedAt": "2026-10-11T17:56:31.429978+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -441,10 +441,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -1317,12 +1321,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone empleo estable y sueldos dignos, sin concretar una jornada máxima de 35 horas con el mismo sueldo.",
+          "authoredAnalysis": "Employment quality and dignified wages in commitment15 do not specify maximum hours or preserved pay after reduction.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 12735,
+              "end": 13546,
+              "quote": "15)     Entre los grandes retos de las fuerzas políticas para la próxima legislatura\n        debe figurar la creación de empleo. Las políticas activas de empleo, el nuevo\n        papel de la Formación Profesional y las modalidades de contrato de las leyes\n\n                                                                                                      5\n\f        laborales deben estar dirigidas a la creación de puestos de trabajo, la mejora\n        de la calidad del empleo y la estabilidad. Debemos dejar atrás la precariedad\n        laboral y encaminar nuestros esfuerzos a conseguir plantillas formadas en las\n        empresas,  con  sueldos  dignos  y  una  excelencia  e  implicación  con  las\n        empresas como fin último y objetivo de empresarios, sindicatos y la sociedad\n        en general.",
+              "contextStart": 12735,
+              "contextEnd": 13546,
+              "contextSha256": "0ff2eeda8a4ffdb9597e5a7ae6c6f33707cb83c4632abf7eafebc9d29638b17f"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -2101,12 +2126,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende la sanidad pública y universal, sin concretar ampliar sus servicios dentales.",
+          "authoredAnalysis": "The universal health commitment does not name dental portfolio expansion.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 19736,
+              "end": 20543,
+              "quote": "26)     Continuaremos exigiendo al Estado la protección constitucional de la salud\n        como un derecho fundamental de las personas. Nos mantendremos firmes\n        en la defensa de una Sanidad pública y universal. Y defenderemos un nuevo\n        modelo de financiación en el que la obligación constitucional de financiación\n        sanitaria por parte de Estado sea más transparente, específica y no diluida\n        en la financiación autonómica. Junto a ello, reclamaremos una revisión del\n        sobrecoste  de  la  insularidad  y  la  lejanía,  propio  del              único  territorio\n        ultraperiférico que tiene España.           Y reivindicaremos que el Gobierno del\n        Estado aumente la partida que transfiere a Canarias para seguir impulsando\n        la atención a la salud mental.",
+              "contextStart": 19736,
+              "contextEnd": 20543,
+              "contextSha256": "ea6371aa18ee0562f858d9ec5dbbd0177436f4c54c81b4851ca4f68aacb03574"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -2952,12 +2998,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acelerar la transición energética canaria, sin concretar alargar o cerrar las centrales nucleares existentes en España.",
+          "authoredAnalysis": "Island renewable transition has no disposition of existing Spanish nuclear operating lives.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 34625,
+              "end": 34933,
+              "quote": "45)     En especial, se instará al Estado a que se articulen medidas específicas para\n        acelerar la transición energética en Canarias (considerando que en territorios\n        insulares y aislados como Canarias resulta más difícil acometer los cambios\n        necesarios del nuevo paradigma energético).",
+              "contextStart": 34625,
+              "contextEnd": 34933,
+              "contextSha256": "84e41f18fb44abc72cbc1442cdfbfd385498d0946bee5d9bbfc931eef2ecc9e5"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -3692,10 +3759,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -4442,12 +4513,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone reconocer por ley la gratuidad de la educación infantil de 0 a 3 años y garantizar suficientes plazas públicas.",
+          "authoredAnalysis": "Commitment20 explicitly establishes free access for the entire first cycle and sufficient public places. It proposes a legislative framework, not a limited income class. Page6 continues on page7; both originals were visually inspected.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 15811,
+              "end": 16541,
+              "quote": "20)     En la primera etapa de la Educación Infantil, sin embargo, el marco legal dista\n        mucho  aún  de  ser  claro.  Propondremos  una  reforma  legislativa  que\n        reconozca la gratuidad del primer ciclo de la Educación Infantil (0               -3 años) y\n\n                                                                                                     6\n\f        que disponga el deber de las administraciones educativas de garantizar una\n        oferta  suficiente  de  plazas  en  centros  públicos.  Y  que  se  realicen  las\n        modificaciones legislativas pertinentes, desarrollando de esta forma un real\n        decreto por el que se establezcan las enseñanzas mínimas de esa etapa\n        educativa.",
+              "contextStart": 15811,
+              "contextEnd": 16541,
+              "contextSha256": "9bbc057e7e62dd1845a5d4ed43828ea749e508c465680deaeb553fb18249b9ac"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -5183,12 +5275,49 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone proteger conexiones aéreas canarias y sus tarifas, sin concretar restricciones a vuelos con alternativa en tren.",
+          "authoredAnalysis": "Canary resident discounts and regulated public-service route price caps do not explicitly reject or endorse rail-alternative flight restrictions.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 4,
+              "printedPage": 4,
+              "start": 8493,
+              "end": 8897,
+              "quote": "7)      Nos  negaremos        a  que  el  Gobierno  del  Estado          continúe  cuestionando\n        sistemáticamente derechos consolidados como la bonificación del 75% para\n        los  residentes     en  Canarias.  Y  exigiremos  que           ponga  en  marcha  los\n        mecanismos de defensa de la competencia y promueva ante las compañías\n        aéreas la eliminación de las tarifas abusivas.",
+              "contextStart": 8493,
+              "contextEnd": 8897,
+              "contextSha256": "963339855b164b32e2ad3d819ae12b7e7157acad7950e066620925d499d7a183"
+            },
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 31542,
+              "end": 32880,
+              "quote": "40)     Alcanzar la cohesión territorial y sacar provecho a nuestra posición geográfica\n        pasa por el desarrollo de las redes de transporte y la adecuación de nuestras\n        infraestructuras marítimas y aéreas. Los canarios pagamos ocho veces más\n        que  un    peninsular  por  el  uso  del  transporte,  un  servicio  esencial  para\n        garantizar la cohesión social y económica del archipiélago y para nuestra\n        construcción como un pueblo único. El 75% de descuento en el transporte\n        aéreo y marítimo de pasajeros ha sido un logr          o histórico para Canarias. Ahora\n        bien, ante una posible colusión de intereses entre las compañías aéreas para\n        llevar a cabo un artificial incremento de las tarifas, se precisa de claras\n        decisiones como el establecimiento de precios máximos de referencia en\n        aquellas líneas declaradas como obligación de servicio público. Este objetivo\n        no es excusa para que se mantenga una continua vigilancia sobre posibles\n\n                                                                                                    11\n\f        abusos en los precios por parte del Ministerio de Fomento y de la Comisión\n        Nacional de los Mercados y la Competencia (CNMC), como hemos venido\n        exigiendo reiteradamente al Gobierno del PSOE.",
+              "contextStart": 31542,
+              "contextEnd": 32880,
+              "contextSha256": "355801597f5ed6f44e1f0f26cb2af6662b784b34cb849f60d6c56ad1ff6adee4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -5933,12 +6062,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende la sanidad pública y universal, sin concretar qué haría con el derecho legal a solicitar la eutanasia.",
+          "authoredAnalysis": "Universal public healthcare neither explicitly retains nor repeals the statutory assisted-dying right.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 19736,
+              "end": 20543,
+              "quote": "26)     Continuaremos exigiendo al Estado la protección constitucional de la salud\n        como un derecho fundamental de las personas. Nos mantendremos firmes\n        en la defensa de una Sanidad pública y universal. Y defenderemos un nuevo\n        modelo de financiación en el que la obligación constitucional de financiación\n        sanitaria por parte de Estado sea más transparente, específica y no diluida\n        en la financiación autonómica. Junto a ello, reclamaremos una revisión del\n        sobrecoste  de  la  insularidad  y  la  lejanía,  propio  del              único  territorio\n        ultraperiférico que tiene España.           Y reivindicaremos que el Gobierno del\n        Estado aumente la partida que transfiere a Canarias para seguir impulsando\n        la atención a la salud mental.",
+              "contextStart": 19736,
+              "contextEnd": 20543,
+              "contextSha256": "ea6371aa18ee0562f858d9ec5dbbd0177436f4c54c81b4851ca4f68aacb03574"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -6618,10 +6768,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -7260,6 +7414,11 @@
               "contextEnd": 19380,
               "contextSha256": "06a59b4a145ca05f57d39bd1ee4465bb30479afdc606b9a072dce35496cd8e9e"
             }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
           ]
         },
         {
@@ -8228,10 +8387,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -8899,12 +9062,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone pensiones dignas y actualizadas, sin concretar exención del impuesto sobre la renta para la jubilación.",
+          "authoredAnalysis": "Pension sustainability and price indexation do not establish retirement income-tax exemption.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 17431,
+              "end": 18370,
+              "quote": "23)     Las personas pensionistas han sido uno de los colectivos más afectados por\n        la crisis. Defenderemos la sostenibilidad del sistema de pensiones públicas.\n        Garantizando pensiones dignas y actualizadas en función del coste de la vida.\n        Reduciendo  la  actual  brecha  de  género.  Tomando  decisiones,  como  la\n        financiación   vía   Presupuestos   Generales   del   Estado,   que   eliminen\n        incertidumbres y blinden su presente y futuro.               Para ello, apoyaremos         el\n        impulso de     un  Pacto de Estado, suscrito por todos los partidos polític               os\n        parlamentarios y con la participación de todos los actores sociales, que\n        garantice un sistema de pensiones dignas, fiable y duradero, teniendo como\n        objetivo la sostenibilidad y la suficiencia de las pensiones actuales y futuras,\n        y tramitándose en la comisión del Pacto de Toledo.",
+              "contextStart": 17431,
+              "contextEnd": 18370,
+              "contextSha256": "07454789bb932741b640bceeacb32d49b4f29c5024d1224e9bc1610e53ced973"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -9568,10 +9752,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -10401,12 +10589,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende una sanidad pública y universal, sin concretar aumentar o retirar acuerdos con centros privados.",
+          "authoredAnalysis": "Public/universal health and transparent financing do not specify the disposition of private referrals/agreements.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 19736,
+              "end": 20543,
+              "quote": "26)     Continuaremos exigiendo al Estado la protección constitucional de la salud\n        como un derecho fundamental de las personas. Nos mantendremos firmes\n        en la defensa de una Sanidad pública y universal. Y defenderemos un nuevo\n        modelo de financiación en el que la obligación constitucional de financiación\n        sanitaria por parte de Estado sea más transparente, específica y no diluida\n        en la financiación autonómica. Junto a ello, reclamaremos una revisión del\n        sobrecoste  de  la  insularidad  y  la  lejanía,  propio  del              único  territorio\n        ultraperiférico que tiene España.           Y reivindicaremos que el Gobierno del\n        Estado aumente la partida que transfiere a Canarias para seguir impulsando\n        la atención a la salud mental.",
+              "contextStart": 19736,
+              "contextEnd": 20543,
+              "contextSha256": "ea6371aa18ee0562f858d9ec5dbbd0177436f4c54c81b4851ca4f68aacb03574"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -11153,12 +11362,49 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende la sanidad pública y la igualdad, sin concretar prestación del aborto legal en centros públicos.",
+          "authoredAnalysis": "General health and equality commitments do not specify abortion providers.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 19736,
+              "end": 20543,
+              "quote": "26)     Continuaremos exigiendo al Estado la protección constitucional de la salud\n        como un derecho fundamental de las personas. Nos mantendremos firmes\n        en la defensa de una Sanidad pública y universal. Y defenderemos un nuevo\n        modelo de financiación en el que la obligación constitucional de financiación\n        sanitaria por parte de Estado sea más transparente, específica y no diluida\n        en la financiación autonómica. Junto a ello, reclamaremos una revisión del\n        sobrecoste  de  la  insularidad  y  la  lejanía,  propio  del              único  territorio\n        ultraperiférico que tiene España.           Y reivindicaremos que el Gobierno del\n        Estado aumente la partida que transfiere a Canarias para seguir impulsando\n        la atención a la salud mental.",
+              "contextStart": 19736,
+              "contextEnd": 20543,
+              "contextSha256": "ea6371aa18ee0562f858d9ec5dbbd0177436f4c54c81b4851ca4f68aacb03574"
+            },
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 21599,
+              "end": 22245,
+              "quote": "28)     Exigiremos el cumplimiento efectivo de las leyes y mecanismos para superar\n        las brechas de género y todas las discriminaciones que afe              ctan a las mujeres\n        en la economía y en el mundo laboral: empleo,                   condiciones de trabajo,\n        retribución, pensiones y otras prestaciones. Asimismo, exigiremos atención y\n        medidas concretas contra la feminización de la pobreza y contra las dobles y\n        triples  discriminaciones  que  afectan  a  los  colectivos  de  mujeres  con\n        discapacidad, migrantes y racializadas, en colectivos laborales como las\n        trabajadoras del hogar.",
+              "contextStart": 21599,
+              "contextEnd": 22245,
+              "contextSha256": "fcd17b19ea89c5a6dc3ea899196de7fb0819aa0adce9689d051712d795bae564"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -11843,12 +12089,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone impulsar proyectos hidroeléctricos y renovables en Canarias, sin concretar gestión pública al caducar concesiones.",
+          "authoredAnalysis": "Named island renewable/pumped-water projects do not establish concession-expiry transfer of hydropower operations.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 33918,
+              "end": 34623,
+              "quote": "44)     La central hidroeólica de “Gorona del Viento”, en El Hierro, representa el más\n        claro ejemplo de la vía por la que debemos transitar si queremos que nuestras\n        Islas sean un modelo sostenible y un ejemplo para el resto del mundo.                      Lo\n        mismo que el proyecto Chira-Soria, en Gran Canaria, y el desarrollo del\n        proyectado  en  Güímar.         España  debe  considerar  a  Canarias  la  región\n        geográfica    más sensible en materia de cambio climático y, por lo                    tanto,\n        comprometerse a establecer series temporales fijas. Esta es la única forma\n        que tenemos de conocer de verdad la dimensión del cambio climático.",
+              "contextStart": 33918,
+              "contextEnd": 34623,
+              "contextSha256": "2007f8a2f6d156f53de77749bddf28e116b388eb1a240046318e45c26d70b589"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -12563,10 +12830,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -13220,12 +13491,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone ayudas de comedor gratuito ligadas a un umbral de renta relacionado con la pobreza, sin ofrecerlo gratis a todo el alumnado.",
+          "authoredAnalysis": "Commitment52 expressly retains an income/poverty threshold for free school-meal aid. This matches the pre-existing +1 targeted-group rubric; it is not universal gratuity, an explicit universal rejection or neutral silence. The same threshold across Spain is not universal eligibility. The source does not define every procedural detail of the income calculation.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 38516,
+              "end": 39439,
+              "quote": "52)     Demandaremos medidas complementarias para la ayuda a la crianza de los\n        niños y las niñas con el objetivo de que alcance automáticamente a todas las\n        familias y apoye especialmente a aquellas con menos ingresos. Se debe\n\n                                                                                                  13\n\f        establecer, además, el umbral de pobreza como nivel de renta mínimo común\n        a nivel estatal para acceder a ayudas (o bonificaciones) de comedor escolar\n        gratuito, vivan donde vivan, elevando la cobertura del 13% actual al 29% de\n        tasa  de  pobreza  infantil.  También  plantearemos  que  se  incremente  la\n        identificación temprana del alumnado en situación socialmente vulnerable y\n        extender de forma preventiva su acceso a apoyo y refuerzo educativo y, por\n        otro lado, que se aumente el número de profesionales de salud mental.",
+              "contextStart": 38516,
+              "contextEnd": 39439,
+              "contextSha256": "d2fe1323399bd213ee3ebc3585ff1cbece1299cc7691fbf696e335835213d0b4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -13934,10 +14226,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -14600,10 +14896,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -15257,10 +15557,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -15929,12 +16233,49 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone incentivos para contratos en prácticas y formación profesional, sin concretar remuneración de prácticas que forman parte de los estudios.",
+          "authoredAnalysis": "Employment-contract incentives and dual vocational learning do not prescribe remuneration of curricular placements.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 14335,
+              "end": 14941,
+              "quote": "17)     Abogamos por mantener los incentivos a la contratación indefinida a los\n        jóvenes  por     microempresas  y  empresarios  autónomos,  incentivos  a  la\n        contratación en nuevos proyectos de emprendimiento joven, primer empleo\n        joven   e   incentivos   a   los   contratos   en   prácticas.   Y   demandaremos\n        bonificaciones en la cuota empresarial de la Seguridad Social para contratos\n        indefinidos para jóvenes entre 16 y 30 años, para mayores de 45 años, y para\n        mujeres en ocupaciones en las que el colectivo no está suficientemente\n        representado.",
+              "contextStart": 14335,
+              "contextEnd": 14941,
+              "contextSha256": "3023fef63323da857c9494fcce58db2cdb62ab7d63437e3664b15683799ec052"
+            },
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 16543,
+              "end": 17001,
+              "quote": "21)     Reivindicaremos que se desarrolle la normativa qu                e regula la Formación\n        Profesional Dual del sistema educativo. Una modalidad de formación fl                 exible\n        y adecuada a la realidad social y a la demanda de la empresa, y que\n        proporcione mayores posibilidades de inserción laboral, tanto en aquellos\n        sectores  económicos  consolidados  como  aquellos  emergentes,  como  la\n        economía azul.",
+              "contextStart": 16543,
+              "contextEnd": 17001,
+              "contextSha256": "b3ce716929fc27da2dde909025df0fc11c888358a77c9b44fc07f539cedf3386"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -16725,12 +17066,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar los permisos de maternidad y paternidad, sin concretar una duración de al menos seis meses.",
+          "authoredAnalysis": "Improvement is explicit, but neither duration nor six-month entitlement appears in commitment29.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 22247,
+              "end": 22966,
+              "quote": "29)     Propondremos más medidas para mejorar la corresponsabilidad del Estado,\n        de las empresas y de toda la sociedad en las políticas de conciliación: en\n        especial extender la escolarización de 0 a 3 años, la mejora de los permisos\n        de  paternidad  y  maternidad  y  atención  a  la  dependencia.  Especiales\n\n                                                                                                     8\n\f        esfuerzos deberán hacerse en materia de legislación, políticas y recursos\n        para  la  igualdad  en  educación,  sanidad,  vivienda,  deportes,  cultura  y\n        migraciones como motores del cambio de mentalidades y de prevención de\n        las desigualdades futuras.",
+              "contextStart": 22247,
+              "contextEnd": 22966,
+              "contextSha256": "9e578d0d57b8b086d4f61c045cd35f5f6b3272aa64ee71144f9881982ee120fb"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -17401,10 +17763,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -18033,10 +18399,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -18646,12 +19016,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone becas de estudio y desplazamiento para estudiantes canarios, sin concretar eliminar el recargo por repetir asignaturas.",
+          "authoredAnalysis": "Travel/study aid where a home island lacks courses does not abolish successive enrolment surcharges.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 17003,
+              "end": 17429,
+              "quote": "22)     Demandaremos el cumplimiento del artículo 23 del REF (Ley 19/1994)  en el\n        que se indica que “se         establecerá un programa específico de becas de\n        estudio para los estudiantes canarios que no encuentren en su isla de\n        residencia la oferta educativa que demanden. Asimismo, se establece                   rá un\n        programa específico de becas de desplazamiento para los jóvenes canarios.",
+              "contextStart": 17003,
+              "contextEnd": 17429,
+              "contextSha256": "3887b2ea13da9c700b8a0075df57c302b5bf0093bcff80e6cbf7d920ae3115b3"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -19295,12 +19686,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone financiar desplazamientos deportivos canarios, sin concretar tres horas semanales de Educación Física escolar.",
+          "authoredAnalysis": "Sports mobility/competition financing is not a compulsory-school weekly timetable.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 23567,
+              "end": 24484,
+              "quote": "31)     Exigiremos la recuperación de los recursos que desde el año 2004 destinaba\n        el Gobierno de España para facilitar la movilidad cultural de los artistas y\n        proyectos culturales de los territorios extrapeninsulares y promoveremos que\n        se remuevan los obstáculos de la Agencia Tributaria estatal a la exposición\n        de la obra plástica de los artistas canarios en la Península. Garantizaremos\n        la suficiencia financiera que permita la movilidad de deportistas y clubes en\n        el interior de las islas, así como los que participan en competiciones estatales\n        e internacionales. Y lucharemos y reivindicaremos, concretamente ante el\n        Consejo Superior de Deportes, el cumplimiento exhaustivo del artículo 4.3 de\n        la Ley del deporte español, garantizando la financiación de los deportistas\n        canarios en sus desplazamientos a otras Comunidades Autónomas.",
+              "contextStart": 23567,
+              "contextEnd": 24484,
+              "contextSha256": "c44924e8fd196ab52230c86570f08fdc2cddbc6245dd70bccc8d122a15d65aab"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -19963,10 +20375,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -20730,12 +21146,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone corregir el impuesto aplicado por error a compras digitales canarias, sin concretar exención para la primera vivienda.",
+          "authoredAnalysis": "The IVA/IGIC error concerns electronic purchases; no first-home exemption is established.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 30104,
+              "end": 31540,
+              "quote": "39)     Canarias  tiene  que  integrarse  plenamente  en  el  Mercado  Único  Digital\n        Europeo. Para ello, impulsaremos el Plan Específico de Telecomunicaciones\n        de  Canarias,  dentro  de  la  Agenda  Digital  española,  tal  como  prevé  la\n        Disposición Adicional Sexta del Estatuto. Por otro lado            , tanto los ciudadanos\n        como las empresas sufren de forma cotidiana dificultades para participar en\n        el comercio electrónico, sea como vendedores o como compradores. Las\n        dificultades no sólo se advierten en la comercialización de bienes materiales\n        sino también en bienes inmateriales, tales como, por ejemplo, libro               s digitales.\n        Es necesario acordar con el Estado y con la Unión Europea medidas que\n        aseguren que la compra desde Canarias no se vea sujeta a sobrecostes de\n        intermediación abusivos, teniendo acceso efectivo al conjunto de la oferta\n        comercial disponible en la Unión Europea. Y que las ventas desde Canarias\n        sean efectivamente accesibles desde cualquier Estado miembro, sin barreras\n        ni dificultades para nuestras Pymes exportadoras. También han de corregirse\n        los frecuentes errores impositivos en la compra de bienes digitales, en los\n        que se daña al consumidor canario y a la Hacienda pública canaria, por\n        recaudarse IVA en vez de IGIC en múltiples contrataciones electrónicas.",
+              "contextStart": 30104,
+              "contextEnd": 31540,
+              "contextSha256": "4cce1524b2507f24b292c938a3615e29a406130ead02f714ad610a45a8add024"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -21442,10 +21879,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -22074,10 +22515,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -22723,10 +23168,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -23401,10 +23850,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -24087,10 +24540,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -24820,12 +25277,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone sueldos dignos, sin concretar que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Dignified wages and employment quality do not establish minimum-wage annual inflation indexation.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 12735,
+              "end": 13546,
+              "quote": "15)     Entre los grandes retos de las fuerzas políticas para la próxima legislatura\n        debe figurar la creación de empleo. Las políticas activas de empleo, el nuevo\n        papel de la Formación Profesional y las modalidades de contrato de las leyes\n\n                                                                                                      5\n\f        laborales deben estar dirigidas a la creación de puestos de trabajo, la mejora\n        de la calidad del empleo y la estabilidad. Debemos dejar atrás la precariedad\n        laboral y encaminar nuestros esfuerzos a conseguir plantillas formadas en las\n        empresas,  con  sueldos  dignos  y  una  excelencia  e  implicación  con  las\n        empresas como fin último y objetivo de empresarios, sindicatos y la sociedad\n        en general.",
+              "contextStart": 12735,
+              "contextEnd": 13546,
+              "contextSha256": "0ff2eeda8a4ffdb9597e5a7ae6c6f33707cb83c4632abf7eafebc9d29638b17f"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -25483,10 +25961,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -26170,10 +26652,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -26835,10 +27321,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -27448,12 +27938,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone financiación de infraestructura educativa, sin concretar libros gratuitos que se puedan copiar y compartir.",
+          "authoredAnalysis": "Educational infrastructure investment does not establish textbook gratuity or redistribution rights.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 15440,
+              "end": 15809,
+              "quote": "19)     Exigiremos la continuidad del convenio plurianual para                el Plan Especial de\n        Infraestructura Educativa, dotado con al menos 42 millones de euros anuales,\n        que  permita  seguir  desarrollando  el  sistema  educativo  canario,  hasta\n        recuperar su histórica desventaja con las condiciones de otras Comunidades\n        Autónomas.",
+              "contextStart": 15440,
+              "contextEnd": 15809,
+              "contextSha256": "813be1d88ff12d7f7fcd5e99097f3cc548e2a5108f0a2b5dcfaed69a31725f95"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -28162,10 +28673,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -28941,10 +29456,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -29573,10 +30092,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -30205,10 +30728,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -30848,10 +31375,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -31480,10 +32011,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -32127,12 +32662,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar telecomunicaciones y compras por internet en Canarias, sin concretar una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Digital market integration and telecommunications planning do not create a universal free consumer connection.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 30104,
+              "end": 31540,
+              "quote": "39)     Canarias  tiene  que  integrarse  plenamente  en  el  Mercado  Único  Digital\n        Europeo. Para ello, impulsaremos el Plan Específico de Telecomunicaciones\n        de  Canarias,  dentro  de  la  Agenda  Digital  española,  tal  como  prevé  la\n        Disposición Adicional Sexta del Estatuto. Por otro lado            , tanto los ciudadanos\n        como las empresas sufren de forma cotidiana dificultades para participar en\n        el comercio electrónico, sea como vendedores o como compradores. Las\n        dificultades no sólo se advierten en la comercialización de bienes materiales\n        sino también en bienes inmateriales, tales como, por ejemplo, libro               s digitales.\n        Es necesario acordar con el Estado y con la Unión Europea medidas que\n        aseguren que la compra desde Canarias no se vea sujeta a sobrecostes de\n        intermediación abusivos, teniendo acceso efectivo al conjunto de la oferta\n        comercial disponible en la Unión Europea. Y que las ventas desde Canarias\n        sean efectivamente accesibles desde cualquier Estado miembro, sin barreras\n        ni dificultades para nuestras Pymes exportadoras. También han de corregirse\n        los frecuentes errores impositivos en la compra de bienes digitales, en los\n        que se daña al consumidor canario y a la Hacienda pública canaria, por\n        recaudarse IVA en vez de IGIC en múltiples contrataciones electrónicas.",
+              "contextStart": 30104,
+              "contextEnd": 31540,
+              "contextSha256": "4cce1524b2507f24b292c938a3615e29a406130ead02f714ad610a45a8add024"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -33006,12 +33562,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone compensar costes del agua en Canarias, sin concretar gestión pública del suministro doméstico.",
+          "authoredAnalysis": "Price compensation for desalinated/reused/agricultural water does not establish provider ownership or universal public operation.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 27299,
+              "end": 28042,
+              "quote": "36)     Asimismo, reclamaremos que se cumpla el establecimiento de un sistema de\n        compensación, consignado anualmente en los Presupuestos Generales del\n        Estado, que garantice en las Islas Canarias la moderación de los precios del\n        agua  desalinizada,  regenerada  o  reutilizada  hasta  alcanzar  un  nivel\n        equivalente al del resto del territorio del Estado, así como los precios del agua\n        de consumo agrario fruto de la extracción y elevación de pozos y galerías, y\n        de la desalación para riego agrícola. Y reiteraremos nuestra demanda                   para\n        que se introduzcan mejoras en la inspección fitosanitaria para impedir la\n        entrada de plagas que destruyan nuestros cultivos.",
+              "contextStart": 27299,
+              "contextEnd": 28042,
+              "contextSha256": "2c2d933ba2dc363d926425855f21a40efa8a6b3e0a4ae3fa0aa72a2ef0e16679"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -33754,10 +34331,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -34488,12 +35069,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone medidas para conciliar trabajo y cuidados, sin concretar reducción de jornada por hijos menores de 16 años.",
+          "authoredAnalysis": "Care/conciliation and birth-leave improvements do not define the separate reduced-hours age limit.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 22247,
+              "end": 22966,
+              "quote": "29)     Propondremos más medidas para mejorar la corresponsabilidad del Estado,\n        de las empresas y de toda la sociedad en las políticas de conciliación: en\n        especial extender la escolarización de 0 a 3 años, la mejora de los permisos\n        de  paternidad  y  maternidad  y  atención  a  la  dependencia.  Especiales\n\n                                                                                                     8\n\f        esfuerzos deberán hacerse en materia de legislación, políticas y recursos\n        para  la  igualdad  en  educación,  sanidad,  vivienda,  deportes,  cultura  y\n        migraciones como motores del cambio de mentalidades y de prevención de\n        las desigualdades futuras.",
+              "contextStart": 22247,
+              "contextEnd": 22966,
+              "contextSha256": "9e578d0d57b8b086d4f61c045cd35f5f6b3272aa64ee71144f9881982ee120fb"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -35158,12 +35760,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone eximir a Canarias de una tasa verde sobre vuelos, sin concretar una tasa que aumente con la frecuencia de los viajes.",
+          "authoredAnalysis": "International green-levy territorial exemption is a different instrument from a frequency-increasing passenger levy. No general opposition to the exact asked mechanism is inferred.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 11071,
+              "end": 11910,
+              "quote": "12)     Durante la Presidencia de España en la              UE, en este segundo semestre de\n        2023, reforzaremos la alianza con Portugal y Francia y exigiremos que el\n        Estado  se  implique  en  la  consolidación  de  los  derechos  de  las  RUP.\n        Priorizaremos las negociaciones con las autoridades comunitarias para tratar\n        de corregir el gravísimo error que constituiría la no exención de Canarias en\n        la nueva tasa verde que se aplicará a los vuelos internacionales                   dentro del\n        espacio económico europeo (UE, más Islandia, Noruega y Suiza. La no\n        exención, junto a al régimen de comercio de emisiones, supondrá un notable\n        encarecimiento  de  los  vuelos  con  las  islas  y  un  notable  perjuicio  a  la\n        conectividad con las islas y al sector turístico.",
+              "contextStart": 11071,
+              "contextEnd": 11910,
+              "contextSha256": "bbba982941fc29599a8197935871e97cc0cd3b0ddd0e9066ae8c35869cdcf107"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -35775,10 +36398,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -36417,10 +37044,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -37032,10 +37663,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -37638,10 +38273,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -38296,10 +38935,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -38928,10 +39571,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -39568,10 +40215,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -40232,12 +40883,49 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más financiación y profesionales de salud mental, sin concretar incluir la psicoterapia entre los servicios públicos.",
+          "authoredAnalysis": "Commitments26/52 fund mental-health capacity but do not expressly guarantee clinical psychological/psychotherapy service eligibility, unlike the distinct EH Bildu clinical-service promise. Staffing alone is not that service entitlement.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 8,
+              "printedPage": 8,
+              "start": 19736,
+              "end": 20543,
+              "quote": "26)     Continuaremos exigiendo al Estado la protección constitucional de la salud\n        como un derecho fundamental de las personas. Nos mantendremos firmes\n        en la defensa de una Sanidad pública y universal. Y defenderemos un nuevo\n        modelo de financiación en el que la obligación constitucional de financiación\n        sanitaria por parte de Estado sea más transparente, específica y no diluida\n        en la financiación autonómica. Junto a ello, reclamaremos una revisión del\n        sobrecoste  de  la  insularidad  y  la  lejanía,  propio  del              único  territorio\n        ultraperiférico que tiene España.           Y reivindicaremos que el Gobierno del\n        Estado aumente la partida que transfiere a Canarias para seguir impulsando\n        la atención a la salud mental.",
+              "contextStart": 19736,
+              "contextEnd": 20543,
+              "contextSha256": "ea6371aa18ee0562f858d9ec5dbbd0177436f4c54c81b4851ca4f68aacb03574"
+            },
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 38516,
+              "end": 39439,
+              "quote": "52)     Demandaremos medidas complementarias para la ayuda a la crianza de los\n        niños y las niñas con el objetivo de que alcance automáticamente a todas las\n        familias y apoye especialmente a aquellas con menos ingresos. Se debe\n\n                                                                                                  13\n\f        establecer, además, el umbral de pobreza como nivel de renta mínimo común\n        a nivel estatal para acceder a ayudas (o bonificaciones) de comedor escolar\n        gratuito, vivan donde vivan, elevando la cobertura del 13% actual al 29% de\n        tasa  de  pobreza  infantil.  También  plantearemos  que  se  incremente  la\n        identificación temprana del alumnado en situación socialmente vulnerable y\n        extender de forma preventiva su acceso a apoyo y refuerzo educativo y, por\n        otro lado, que se aumente el número de profesionales de salud mental.",
+              "contextStart": 38516,
+              "contextEnd": 39439,
+              "contextSha256": "d2fe1323399bd213ee3ebc3585ff1cbece1299cc7691fbf696e335835213d0b4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -40952,12 +41640,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone Canarias como plataforma de paz y cooperación, sin concretar apoyo al tratado de prohibición de armas nucleares.",
+          "authoredAnalysis": "A peace/cooperation platform does not name treaty endorsement/ratification.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 35429,
+              "end": 36417,
+              "quote": "47)     Propiciaremos la definición de objetivos comunes y el impulso conjunto de\n        actuaciones estratégicas para Canarias en el ámbito exterior, a través del\n\n                                                                                                   12\n\f        establecimiento de planes estratégicos y la participación en consorcios como\n        Casa  África  o  la  ZEC.  Propiciaremos  la  condición  de  Canarias  como\n        Plataforma de Paz y fomentaremos esta circunstancia para la cooperación\n        con África Occidental. Reclamaremos, por otro lado, una mayor participación\n        de las empresas canarias en los programas y herramientas estatales –ICEX\n        Next, FIEM, créditos ICO, Cofides, España Expansión Exterior o programas\n        de conversión de deuda en países africanos– a través de una adaptación a\n        sus necesidades y de una especialización en los sectores y países en los que\n        la empresa canaria presenta ventajas comparativas.",
+              "contextStart": 35429,
+              "contextEnd": 36417,
+              "contextSha256": "144efe6f44ea358608b683c205963c1bca846f0a98d4e4002a25916ea9d45d25"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -41586,10 +42295,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -42219,10 +42932,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -42971,12 +43688,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone prolongar una bonificación del impuesto sobre la renta para residentes en La Palma, sin concretar ajustarlo a la inflación.",
+          "authoredAnalysis": "La Palma resident60% tax bonus for ten years is a territorial recovery measure, not general inflation adjustment.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 12259,
+              "end": 12733,
+              "quote": "14)     Propondremos,  además,  a  ampliar  durante  un  periodo  de  diez  años  la\n        bonificación del 60% del IRPF para los residentes en la isla de La Palma para\n        contribuir, de esta manera, a su recuperación económica y social.                   Y una de\n        nuestras prioridades en la próxima legislatura será el cumplimiento por parte\n        del Estado de todos los compromisos adquiridos para la recuperación y la\n        reconstrucción de La Palma.",
+              "contextStart": 12259,
+              "contextEnd": 12733,
+              "contextSha256": "0cad548cc164172012d4160317c5a02af5eec6566ce0deb57c0c934f38789c6f"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -43760,10 +44498,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -44427,10 +45169,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -45093,10 +45839,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -45760,10 +46510,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -46460,10 +47214,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -47178,10 +47936,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -47884,10 +48646,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -48570,10 +49336,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -49253,10 +50023,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -49902,10 +50676,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -50516,12 +51294,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone refuerzo educativo para alumnado vulnerable, sin concretar tutorías para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Commitment52 targets social vulnerability and preventive support; it does not define pandemic-related learning-loss recovery.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 38516,
+              "end": 39439,
+              "quote": "52)     Demandaremos medidas complementarias para la ayuda a la crianza de los\n        niños y las niñas con el objetivo de que alcance automáticamente a todas las\n        familias y apoye especialmente a aquellas con menos ingresos. Se debe\n\n                                                                                                  13\n\f        establecer, además, el umbral de pobreza como nivel de renta mínimo común\n        a nivel estatal para acceder a ayudas (o bonificaciones) de comedor escolar\n        gratuito, vivan donde vivan, elevando la cobertura del 13% actual al 29% de\n        tasa  de  pobreza  infantil.  También  plantearemos  que  se  incremente  la\n        identificación temprana del alumnado en situación socialmente vulnerable y\n        extender de forma preventiva su acceso a apoyo y refuerzo educativo y, por\n        otro lado, que se aumente el número de profesionales de salud mental.",
+              "contextStart": 38516,
+              "contextEnd": 39439,
+              "contextSha256": "d2fe1323399bd213ee3ebc3585ff1cbece1299cc7691fbf696e335835213d0b4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -51188,10 +51987,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -51889,12 +52692,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone gratuidad o bonificaciones de guaguas y tranvías, sin concretar transporte rural a demanda a un municipio de referencia.",
+          "authoredAnalysis": "Existing bus/tram fares and island rail networks do not define a rural demand-responsive service. The fallback for needed user groups remains within the source, without a universal new network inference.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 10250,
+              "end": 11069,
+              "quote": "11)     Demandaremos la ampliación del 100% de la bonificación para las guaguas\n        y los tranvías, sin limitaciones, más allá del 31 de diciembre de 2023                     , al\n        menos en identidad con las medidas del transporte de cercanías en territo                   rio\n        peninsular. En su defecto, garantice la medida para grupos de usuarios que\n        más  los  precisen.  Si  queremos  apostar  por  el  transporte  sostenible  y\n        contribuir a la reducción de las emisiones de CO2 es clave apostar por un\n        servicio público accesible. La inclusión en la red ferroviaria de ADIF de los\n        trenes de Gran Canaria y Tenerife y la aportación financiera estatal y europea\n        para su ejecución son determinantes para ese transporte público en las islas\n        más pobladas.",
+              "contextStart": 10250,
+              "contextEnd": 11069,
+              "contextSha256": "c8569cff9db7ecd3b0299c1f5dcb544b3e9124e47892a99bdd62cea23071f87d"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -52642,10 +53466,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -53258,10 +54086,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -53906,12 +54738,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone investigación y transferencia de resultados a empresas, sin concretar acceso libre a resultados financiados con dinero público.",
+          "authoredAnalysis": "Research priorities and transfer to the productive sector do not prescribe open-access publication conditions.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 28759,
+              "end": 30102,
+              "quote": "38)     La potenciación, fortalecimiento y aprovechamiento de la oferta científico-\n        tecnológica es fundamental para el desarrollo y el futuro de Canarias. Para\n        ello, se hace necesario verificar qué parte de esta amplia oferta es capaz de\n\n                                                                                                  10\n\f        contribuir más eficazmente al desarrollo socioeconómico y cubrir de forma\n        efectiva  las  necesidades  de  innovación  del  tejido  productivo  y  más\n        competitivo, eficiente y sustentable, al objeto de concentrar la mayor parte de\n        los  recursos  disponibles  en  esos  ámbitos  de  especialización.  Entre  las\n        medidas que debe impulsar el Gobierno del Estado, en colaboración con el\n        Gobierno  de  Canarias,  las  Universidades  canarias  y  los  centros  de\n        investigación científica con sede en las Islas, figuran el fomento de las\n        actividades de I+D y los procesos de transferencia de sus resultados al tejido\n        productivo y la generación de conocimiento y potenciación de la excelencia,\n        con énfasis en la especialización y el fortalecimiento de los siguientes ámbitos\n        prioritarios: astrofísica y espacio, ciencias marino marítimas y biotecnología\n        y biomedicina asociadas a la biodiversidad.",
+              "contextStart": 28759,
+              "contextEnd": 30102,
+              "contextSha256": "c06863bd01cf9062bf8a644c10f32c7eae220a385d970dcc85174f344920f6ce"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -54676,12 +55529,33 @@
         },
         {
           "candidacyId": "boe-2023-011",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un grupo parlamentario canario y mayor autogobierno, sin concretar una circunscripción única para elegir el Congreso.",
+          "authoredAnalysis": "Parliamentary group/autonomy objectives are not a nationwide Congress district design.",
+          "citations": [
+            {
+              "documentId": "cc-manifesto",
+              "sourceUrl": "https://coalicioncanaria.org/wp-content/uploads/2023/06/COALICION_POR_CANARIAS.pdf",
+              "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+              "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+              "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+              "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+              "pdfPage": 3,
+              "printedPage": 3,
+              "start": 6218,
+              "end": 6578,
+              "quote": "2)      Las fuerzas que integramos esta coalición creemos en una Canarias más\n        fuerte y con el máximo nivel de autogobierno, en igualdad de condiciones y\n        competencias, dentro de un consensuado estado plurinacional. Y para ello,\n        trabajaremos  para  consolidar  los  derechos  históricos  de  Canarias  y\n        conquistar nuevos avances.",
+              "contextStart": 6218,
+              "contextEnd": 6578,
+              "contextSha256": "6663e78abd411a44cf9008efc69ff24f9a3244537ca85e735d3206f165fcec1b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",
@@ -55361,10 +56235,14 @@
           "candidacyId": "boe-2023-011",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este manifiesto de Coalición Canaria no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison with the full fourteen-page manifesto and all52commitments did not establish the exact proposition, mechanism and scope. Silence is neither neutral nor opposed. Other elections and separate signatory candidacies do not supply a substitute.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "cc-manifesto"
+          ]
         },
         {
           "candidacyId": "boe-2023-012",

@@ -1749,7 +1749,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "cc-manifesto"
       ],
@@ -1764,7 +1764,16 @@
       "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
       "notebooks": [
         "outputs/2023-programme-notebooks/coalicion-canaria.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:56:31.429978+00:00",
+        "report": "outputs/2023-authored-cc-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 3,
+        "newDerivedMappings": 2,
+        "ambiguousCells": 27,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-012",
@@ -5246,8 +5255,14 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json"
+      "analysisStatus": "full_document_read_specific_bank_audited_partial_corpus",
+      "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+      "questionBankAudit": "outputs/2023-authored-cc-audit.json",
+      "currentOriginalBytesVerified": true,
+      "applicableBallotRecordIds": [
+        "congress-laspalmas-5",
+        "congress-santacruzdetenerife-4"
+      ]
     },
     {
       "id": "pcte",
@@ -9247,8 +9262,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 158,
-    "independentAnswerCases": 790,
+    "scoredDraftMappings": 160,
+    "independentAnswerCases": 800,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9259,30 +9274,28 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
+    "latestBrowserDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
-      15,
-      20,
-      25
+      15
     ],
     "latestBrowserRentCases": 0,
     "latestBrowserProgressivePaths": 10,
-    "latestBrowserVerification": "outputs/2023-authored-ehbildu-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-ehbildu-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-cc-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-cc-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
+    "latestDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
+    "latestAuthoredDraftSha256": "9f1065c1918ee5c56f877ef37894ab7880977434b4fea863ad63d9d5775fc88c",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9349,6 +9362,16 @@
     "latestEhbilduContextualCitations": 37,
     "latestEhbilduBrowserSessions": 10,
     "latestEhbilduCitedAnswerPaths": 10,
-    "ehbilduFixedComparisonEligible": false
+    "ehbilduFixedComparisonEligible": false,
+    "ccBankAudit": "outputs/2023-authored-cc-audit.json",
+    "newCcAuditedCells": 80,
+    "newCcDerivedMappings": 2,
+    "newCcCitedUncertainties": 27,
+    "ccVerification": "outputs/2023-authored-cc-verification.json",
+    "ccValuesBrowserVerification": "outputs/2023-authored-cc-values-browser-verification.json",
+    "latestCcContextualCitations": 34,
+    "latestCcBrowserSessions": 10,
+    "latestCcCitedAnswerPaths": 20,
+    "ccFixedComparisonEligible": false
   }
 }

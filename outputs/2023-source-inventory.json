@@ -1600,9 +1600,10 @@
         }
       ],
       "programmeSearchStatus": "preserved_pdf_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
-        "ehbildu-preserved-newtral"
+        "ehbildu-preserved-newtral",
+        "ehbildu-primary-23j"
       ],
       "ballotAliases": [
         "EUSKAL HERRIA BILDU (EH Bildu)"
@@ -1616,7 +1617,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/ehbildu.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:46:08.534494+00:00",
+        "report": "outputs/2023-authored-ehbildu-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 6,
+        "newDerivedMappings": 1,
+        "ambiguousCells": 22,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-009",
@@ -5122,7 +5132,7 @@
       "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.pdf",
       "sha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
       "bytes": 64872,
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "full_document_read_specific_bank_audited_partial_corpus",
       "notebook": "outputs/2023-programme-notebooks/ehbildu.json",
       "textSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
       "pageCount": 16,
@@ -5132,7 +5142,16 @@
         "pageCount": 16,
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
-      }
+      },
+      "questionBankAudit": "outputs/2023-authored-ehbildu-audit.json",
+      "primaryOriginalUrl": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf",
+      "primaryOriginalBytesVerified": true,
+      "applicableBallotRecordIds": [
+        "congress-alava-1",
+        "congress-bizkaia-1",
+        "congress-gipuzkoa-1",
+        "congress-navarra-1"
+      ]
     },
     {
       "id": "pnv",
@@ -6372,6 +6391,33 @@
       "analysisStatus": "duplicate_identical_original_already_fully_read",
       "sameOriginalAs": "jaen-model-annex-m2-primary",
       "notebook": "outputs/2023-programme-notebooks/jaen-model-annex-m2.json"
+    },
+    {
+      "id": "ehbildu-primary-23j",
+      "url": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf",
+      "resolvedUrl": "https://ehbildu.eus/dokumentuak/23J-COMPROMISO-DE-EUSKAL-HERRIA-BILDU.pdf",
+      "retrievedAt": "2026-10-11T17:42:18.840106+00:00",
+      "mediaType": "application/pdf",
+      "status": "primary_original_byte_identical_to_full_read_preserved_mirror",
+      "file": "storage/app/election-sources/2023-congress/ehbildu-primary-23j-6634c0786c1e.pdf",
+      "sha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
+      "bytes": 64872,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.txt",
+        "sha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+        "pageCount": 16,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "notebook": "outputs/2023-programme-notebooks/ehbildu.json",
+      "applicableBallotRecordIds": [
+        "congress-alava-1",
+        "congress-bizkaia-1",
+        "congress-gipuzkoa-1",
+        "congress-navarra-1"
+      ],
+      "countsAsAdditionalCompleteReading": false,
+      "countsAsDistinctPdfBytes": false
     }
   ],
   "summary": {
@@ -9201,8 +9247,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 157,
-    "independentAnswerCases": 785,
+    "scoredDraftMappings": 158,
+    "independentAnswerCases": 790,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9213,31 +9259,30 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
+    "latestBrowserDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
       15,
       20,
-      25,
-      30
+      25
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 6,
-    "latestBrowserVerification": "outputs/2023-authored-viaburgalesa-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-viaburgalesa-verification.json",
+    "latestBrowserProgressivePaths": 10,
+    "latestBrowserVerification": "outputs/2023-authored-ehbildu-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-ehbildu-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
+    "latestDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
+    "latestAuthoredDraftSha256": "8fabe635f0c4ed229f14d07a285c6e40893409d819130b6a7a87d4c45724832e",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9294,6 +9339,16 @@
     "latestViaburgalesaBrowserSessions": 6,
     "latestViaburgalesaCitedUnscoredPaths": 12,
     "viaburgalesaSourceVintageConfirmed": false,
-    "viaburgalesaFixedComparisonEligible": false
+    "viaburgalesaFixedComparisonEligible": false,
+    "ehbilduBankAudit": "outputs/2023-authored-ehbildu-audit.json",
+    "newEhbilduAuditedCells": 80,
+    "newEhbilduDerivedMappings": 1,
+    "newEhbilduCitedUncertainties": 22,
+    "ehbilduVerification": "outputs/2023-authored-ehbildu-verification.json",
+    "ehbilduValuesBrowserVerification": "outputs/2023-authored-ehbildu-values-browser-verification.json",
+    "latestEhbilduContextualCitations": 37,
+    "latestEhbilduBrowserSessions": 10,
+    "latestEhbilduCitedAnswerPaths": 10,
+    "ehbilduFixedComparisonEligible": false
   }
 }

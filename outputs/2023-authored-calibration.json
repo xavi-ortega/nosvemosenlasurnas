@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T17:36:10.208852+00:00",
+  "recordedAt": "2026-10-11T17:46:08.534494+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -252,7 +252,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -1623,7 +1623,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -2836,7 +2836,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -3225,7 +3225,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -4018,7 +4018,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-012",
@@ -5696,7 +5696,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -6098,7 +6098,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -6421,7 +6421,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -7509,7 +7509,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -8981,7 +8981,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -13034,7 +13034,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -16265,7 +16265,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -17324,7 +17324,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-010",
@@ -17976,7 +17976,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -20975,6 +20975,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-008",
+          "sourceExpectedValue": 2,
+          "sourceReason": "The healthcare chapter expressly guarantees public/free psychological services for applicants, supported by expanded clinical psychology training. The shown question defines psychotherapy as psychological care for mental-health difficulties, within this unrestricted clinical service promise. Special attention to young people is not exclusive eligibility. No unlimited sessions, modality or diagnosis-specific entitlement is inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -21005,11 +21038,6 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-008",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -22032,7 +22060,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -22429,7 +22457,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -22750,7 +22778,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -23081,7 +23109,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -23412,7 +23440,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -23743,7 +23771,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -24074,7 +24102,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -24438,7 +24466,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -24792,7 +24820,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -25123,7 +25151,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -25454,7 +25482,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -25785,7 +25813,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -26116,7 +26144,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -26447,7 +26475,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -26778,7 +26806,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -27114,7 +27142,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -27445,7 +27473,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -27776,7 +27804,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -28107,7 +28135,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -28438,7 +28466,7 @@
         {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-009",

@@ -1,0 +1,684 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T17:46:08.534494+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_complete_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "70fabb3ec6cd3a1a47c7940c2f5bf42333bbf416c81e307216f6a8d4962d706f",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-008",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/ehbildu.json",
+          "sha256": "3533dbf1a9a026e1480fc2f51d1792baaf010ae09e34e54c529fc6fd2995705e",
+          "documentId": "ehbildu-preserved-newtral",
+          "sourceSha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
+          "extractionSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Page2 is a retrospective record; page4 proposes rent-preserving automatic renewal. This is not an unqualified ceiling for all new contracts in high-price areas.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Explicit32andno salary/conditions reduction; notgeneralising ethnicidentity intoquestion.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Oral andopticalbasicservices specified separately; onlydentalproposal mapped.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Decarbonisation goals and renewable planning neither explicitly extend nor terminate nuclear operating life.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Rail investment and public transport discounts do not restrict domestic air routes.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "General bodily/life autonomy does not explicitly retain or repeal the statutory assisted-dying right.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Minimum pension amounts and widow/noncontributory increases do not establish general inflation indexation. Page7 IPC rule concerns IPREM, not pensions.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "EH Bildu explicitly makes the bank, energy and large-fortune taxes permanent while preserving foral management and collection. Only the large-fortune personal tax is mapped here, without inferring rates, thresholds or coalition-member inheritance.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "The explicit repeal purpose addresses privatisation/outsourcing. It does not state the disposition of each referral/agreement or return all currently externalised services, required by the -2 rubric. Do not infer every provision from whole-law repeal.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Feminist bodily autonomy is expressly defended; it does not specify abortion providers or public service rules.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Electricity retail companies and reservoir oversight differ from hydro generation assets or expiry-based operator transfer.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Named hygiene products do not remove prescription-drug copayment.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "The feminist care and labour commitment has no birth-leave duration.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Protection-social first bullet explicitly states permanence and vulnerability. Neighbouring proposal to broaden income limits by 15% is distinct; no exact water/power quantity or debt writeoff invented.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "The numeric floor and sixty-percent mean-wage reference differ from an annual above-inflation minimum-wage rule.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Final protection-social bullet explicitly targets all population sectors and all necessary procedures, separate from IMV-specific simplification. It does not abolish internet service.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Menstrual hygiene products and reduced VAT are distinct from contraceptives and young-person eligibility.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Water security and hydrological oversight do not establish public ownership/operation of every domestic supply provider.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Broad care/employment equality does not define a working-hours reduction or a sixteen-year age threshold.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "The healthcare chapter expressly guarantees public/free psychological services for applicants, supported by expanded clinical psychology training. The shown question defines psychotherapy as psychological care for mental-health difficulties, within this unrestricted clinical service promise. Special attention to young people is not exclusive eligibility. No unlimited sessions, modality or diagnosis-specific entitlement is inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "A regulated community-boiler tariff and generation-price control do not establish direct household grants.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Recruitment/training capacity is distinct from a late-retirement eligibility rule.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "No minor age, abortion consent or legal-representative condition is supplied.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Benefit simplification lacks a numeric calendar-day appointment guarantee.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct filing access and simpler processing do not create a authorised representative service.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Existing public-fare reductions do not define a new demand-responsive rural network or destination.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Industrial innovation and research funding do not impose general open-access conditions.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "National recognition and self-determination concern a political settlement, not the Congress district formula.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison with all sixteen native pages did not establish this exact proposition, mechanism and scope. Silence is neither neutral nor opposed; no other election or coalition inheritance.",
+          "citationCount": 0
+        }
+      ]
+    }
+  ],
+  "originalVisualPagesReopened": [
+    6
+  ],
+  "limitations": [
+    "All sixteen native pages reread completely; original primary page6 visually inspected. Primary64,872bytePDF exactly matches the retained mirror, with the same hash and extraction. This does not add another complete notebook or distinct PDF rendering.",
+    "Official primary URL identifies23J and exact byte identity verifies the preserved source chain. Archive-availability request returned no snapshot; exact pre-vote bytes or publication day remain uncertified.",
+    "Only the four proclaimed Euskadi/Navarra Congress ballots apply; no ERC Senate coalition or other election inheritance.",
+    "Clinical psychological care is interpreted to include the psychotherapy described by the shown help. No unlimited sessions, specific modality or young-only entitlement is inferred.",
+    "Retrospective rent-law claims, renewal rules, broad rights, whole-law repeal and other undefined mechanisms remain separately unscored.",
+    "All157previous numeric mappings remain unchanged; one directly authored draft addition yields158mappings/790independent answer cases. Full corpus and public-release acceptance remain open."
+  ],
+  "summary": {
+    "auditedCells": 80,
+    "derivedMappings": 6,
+    "newDerivedMappings": 1,
+    "citedUncertainties": 22,
+    "contextualCitations": 37
+  }
+}

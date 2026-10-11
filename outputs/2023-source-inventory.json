@@ -1767,7 +1767,7 @@
         }
       ],
       "programmeSearchStatus": "primary_pdf_acquired",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "upn"
       ],
@@ -1781,7 +1781,16 @@
       "notebook": "outputs/2023-programme-notebooks/upn.json",
       "notebooks": [
         "outputs/2023-programme-notebooks/upn.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:27:49.602152+00:00",
+        "report": "outputs/2023-authored-upn-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 1,
+        "newDerivedMappings": 0,
+        "ambiguousCells": 30,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-013",
@@ -5041,8 +5050,13 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/upn.json"
+      "analysisStatus": "full_document_read_specific_bank_audited_partial_corpus",
+      "notebook": "outputs/2023-programme-notebooks/upn.json",
+      "questionBankAudit": "outputs/2023-authored-upn-audit.json",
+      "applicableBallotRecordIds": [
+        "congress-navarra-5"
+      ],
+      "applicabilityEvidence": "Original cover explicitly says July 23, 2023; page 2 identifies UPN deputies/senators and Navarra. Proclaimed Congress record congress-navarra-5 is UPN."
     },
     {
       "id": "junts-preserved-abc",
@@ -9186,7 +9200,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
+    "latestBrowserDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9197,20 +9211,20 @@
       30
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 10,
-    "latestBrowserVerification": "outputs/2023-authored-pnv-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-pnv-verification.json",
+    "latestBrowserProgressivePaths": 6,
+    "latestBrowserVerification": "outputs/2023-authored-upn-runtime-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-upn-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
+    "latestDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "b5648da448ca7da8638602e684cc149472b11cfad7ab86f95d7bf8d3ee572787",
+    "latestAuthoredDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9248,6 +9262,15 @@
     "pnvValuesBrowserVerification": "outputs/2023-authored-pnv-values-browser-verification.json",
     "latestPnvBrowserSessions": 10,
     "latestPnvCitedAnswerPaths": 20,
-    "pnvFixedComparisonEligible": false
+    "pnvFixedComparisonEligible": false,
+    "upnBankAudit": "outputs/2023-authored-upn-audit.json",
+    "newUpnAuditedCells": 80,
+    "newUpnDerivedMappings": 0,
+    "newUpnCitedUncertainties": 30,
+    "upnVerification": "outputs/2023-authored-upn-verification.json",
+    "upnRuntimeVerification": "outputs/2023-authored-upn-runtime-verification.json",
+    "latestUpnBrowserSessions": 6,
+    "latestUpnCitedUnscoredPaths": 18,
+    "upnFixedComparisonEligible": false
   }
 }

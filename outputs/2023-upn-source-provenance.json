@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T17:27:49.602152+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-012",
+  "status": "specific_primary_explicit_2023_programme_verified_with_retrieval_limits",
+  "programme": {
+    "documentId": "upn",
+    "url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+    "sourceSha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
+    "extractionSha256": "6c3524d25f07bfae05f23a795c68c71fb8c38e0a4737040973e4b4818280f867",
+    "pageCount": 6,
+    "fullDocumentRead": true,
+    "notebook": "outputs/2023-programme-notebooks/upn.json"
+  },
+  "applicableBallotRecordIds": [
+    "congress-navarra-5"
+  ],
+  "currentOriginalVerification": {
+    "recordedAt": "2026-10-11T17:26:17.414216+00:00",
+    "url": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+    "resolvedUrl": "https://www.upn.org/wp-content/uploads/2023/07/Programa-Generales-23J_V2-1.pdf",
+    "status": 200,
+    "mediaType": "application/pdf",
+    "bytes": 628803,
+    "sha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
+    "retainedOriginalBytesEqual": true
+  },
+  "originalVisualPagesReopened": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "publicationSearches": [
+    {
+      "query": "site:upn.org \"Programa-Generales-23J_V2-1.pdf\"",
+      "outcome": "No separate publication result returned."
+    },
+    {
+      "query": "site:upn.org \"julio\" \"2023\" \"programa\" \"Congreso\"",
+      "outcome": "No separate publication result returned."
+    }
+  ],
+  "publicPointerChanged": false,
+  "limitations": [
+    "All 80 propositions directly compared with the entire six-page 23J programme and original page images. No claim covers other possible UPN publications.",
+    "Only the proclaimed Navarra UPN Congress ballot applies. No PP, former Navarra Suma or Geroa Bai source inheritance.",
+    "Whole-law repeal, general defence of life, pension dignity and service-quality commitments are not positions on every narrower question.",
+    "Hunting defence is explicitly retained but remains unscored under the existing operative-permission rubric; bullfighting defence does not establish public subsidy.",
+    "Current public PDF retrieval matches the retained original byte for byte. No archived pre-vote byte certification or exact publication day is claimed.",
+    "All 157 numeric mappings and 785 independent answer cases are unchanged. Complete corpus and real-release acceptance remain open."
+  ]
+}

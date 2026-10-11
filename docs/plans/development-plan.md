@@ -170,7 +170,7 @@ Work one inspectable increment at a time with factual evidence.
 - Q013 · fix: compare eligible parties on the same evidence and weights · in_progress
 - Q014 · feat: select balanced authored questions and useful follow-ups · in_progress
 - Q015 · fix: explain agreements differences and aggregate results correctly · in_progress
-- Q016 · test: validate citations editions and correction behavior · planned
+- Q016 · test: validate citations editions and correction behavior · in_progress
 - Q017 · design: specify and review the quiz visual system · in_progress
 - Q018 · feat: make the test the primary entry point · in_progress
 - Q019 · feat: build the accessible single-question experience · in_progress
@@ -181,7 +181,7 @@ Work one inspectable increment at a time with factual evidence.
 - Q024 · test: verify actual mobile keyboard motion and readability · planned
 - Q025 · test: verify the real-data quiz privacy boundary · planned
 - Q026 · test: verify the complete 2023 corpus and release candidate · planned
-- Q027 · chore: prove 2023 bundle recovery and rollback · planned
+- Q027 · chore: prove 2023 bundle recovery and rollback · in_progress
 - Q028 · docs: prepare the concrete 2023 public release packet · planned
 - Q029 · docs: record deferred comparison feedback and translation scope · planned
 - Q030 · feat: prepare separate future-programme edition updates · planned

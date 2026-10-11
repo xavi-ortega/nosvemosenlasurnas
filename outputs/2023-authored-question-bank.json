@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T13:27:34.256721+00:00",
+  "recordedAt": "2026-10-11T14:21:22.713471+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -1333,6 +1333,346 @@
         "statementWords": 16,
         "helpWords": 35
       }
+    },
+    {
+      "id": "free-first-year-self-employed-fee",
+      "topicId": "employment",
+      "familyId": "new-business-first-year-contributions",
+      "text": "Quienes comiencen a trabajar como autónomos deberían estar exentos de pagar su cuota durante el primer año.",
+      "help": "La cuota es el pago periódico a la Seguridad Social. Esta propuesta se refiere al inicio de la actividad; es una decisión distinta de dar una exención según los ingresos.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit first-year exemption for new self-employed workers.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of the first-year exemption."
+      },
+      "issueMatrixId": "free-first-year-self-employed-fee",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "adjust-income-tax-for-inflation",
+      "topicId": "taxes",
+      "familyId": "income-tax-inflation-adjustment",
+      "text": "El impuesto sobre la renta debería ajustarse para descontar el efecto de la subida de los precios.",
+      "help": "Es el impuesto que se aplica a los ingresos personales. Se pregunta por adaptar su cálculo a la inflación, sin fijar una nueva exención ni un tipo concreto.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit adjustment of the income-tax calculation for inflation.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of inflation adjustment of this income tax."
+      },
+      "issueMatrixId": "adjust-income-tax-for-inflation",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "direct-vulnerable-household-energy-aid",
+      "topicId": "energy",
+      "familyId": "direct-household-energy-payment",
+      "text": "Las ayudas de luz y calefacción para hogares vulnerables deberían pagarse directamente a la persona consumidora.",
+      "help": "Se pregunta por cómo se recibe la ayuda para pagar energía. La propuesta sustituiría los bonos de luz y calefacción por un pago directo; no fija aquí su importe.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit replacement by direct consumer payments for electricity and heating aid.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of direct payment in favour of another mandatory mechanism."
+      },
+      "issueMatrixId": "direct-vulnerable-household-energy-aid",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "primary-care-doctors-work-until-seventy-two",
+      "topicId": "health",
+      "familyId": "primary-care-active-retirement",
+      "text": "Los médicos de familia y pediatras de atención primaria deberían poder seguir trabajando hasta los 72 años.",
+      "help": "Se pregunta por permitir esa continuidad laboral a estos especialistas. No sería una obligación de seguir trabajando ni un cambio de la edad de jubilación para toda la población.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit permission through age 72 for both named primary-care specialties.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of continued active work to age 72 for these specialties."
+      },
+      "issueMatrixId": "primary-care-doctors-work-until-seventy-two",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "prior-authorization-for-minor-abortion",
+      "topicId": "rights",
+      "familyId": "minor-abortion-prior-authorization",
+      "text": "Una menor debería necesitar autorización de quien tenga su responsabilidad legal para poder abortar.",
+      "help": "Se pregunta por exigir consentimiento previo de quienes tengan la patria potestad, es decir, la responsabilidad legal sobre la menor. Es una decisión distinta de dónde se realiza el aborto.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit prior parental-authority consent requirement for abortion by minors.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of that prior-consent requirement."
+      },
+      "issueMatrixId": "prior-authorization-for-minor-abortion",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "benefit-appointment-within-fifteen-days",
+      "topicId": "institutions",
+      "familyId": "state-benefit-appointment-delay",
+      "text": "Las citas para prestaciones de la Administración estatal deberían darse en un máximo de 15 días naturales.",
+      "help": "El plazo iría desde la solicitud de cita hasta el día en que se atiende a la persona. Los días naturales incluyen sábados, domingos y festivos.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit maximum fifteen-calendar-day wait for state benefit appointments.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of this maximum appointment wait."
+      },
+      "issueMatrixId": "benefit-appointment-within-fifteen-days",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "human-discretionary-public-decisions",
+      "topicId": "institutions",
+      "familyId": "human-administrative-discretion",
+      "text": "Las decisiones públicas que requieren valorar cada caso deberían tomarlas personas, aunque usen inteligencia artificial.",
+      "help": "Se trata de decisiones en las que no basta con aplicar automáticamente una regla. Un sistema informático podría ayudar; la decisión final correspondería a una persona.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit human final decision for discretionary administrative cases.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit permission for entirely automated final discretionary decisions without a human decision maker."
+      },
+      "issueMatrixId": "human-discretionary-public-decisions",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "defence-spending-two-percent",
+      "topicId": "rights",
+      "familyId": "defence-spending-economic-share",
+      "text": "El gasto de España en seguridad y defensa debería alcanzar el 2% de su economía.",
+      "help": "Ese porcentaje se calcula sobre el producto interior bruto, el valor de los bienes y servicios producidos en un año. La pregunta fija el objetivo, sin establecer una fecha.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit two-percent-of-national-GDP security and defence target.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of this two-percent spending target."
+      },
+      "issueMatrixId": "defence-spending-two-percent",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "public-young-home-mortgage-guarantees",
+      "topicId": "housing",
+      "familyId": "young-home-purchase-public-guarantees",
+      "text": "El Estado debería avalar hipotecas de jóvenes de hasta 35 años para facilitarles la compra de una vivienda.",
+      "help": "Se pregunta por una garantía pública para conseguir un préstamo para comprar vivienda. Cada propuesta puede limitar quién la recibe y qué porcentaje del precio permite financiar.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit public mortgage guarantees for homebuyers aged up to 35.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of public mortgage guarantees for young homebuyers."
+      },
+      "issueMatrixId": "public-young-home-mortgage-guarantees",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "child-benefit-from-fifth-pregnancy-month",
+      "topicId": "pensions",
+      "familyId": "prenatal-child-benefit-start",
+      "text": "La prestación por hijo a cargo debería poder cobrarse desde el quinto mes de embarazo.",
+      "help": "Se pregunta por adelantar el comienzo de esta ayuda al embarazo. No se fija su importe ni se afirma que todas las familias la recibirían.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit possibility of child-benefit payment starting in pregnancy month five.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of starting this benefit during pregnancy."
+      },
+      "issueMatrixId": "child-benefit-from-fifth-pregnancy-month",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "als-dependency-recognition-at-diagnosis",
+      "topicId": "health",
+      "familyId": "als-diagnosis-dependency-recognition",
+      "text": "El diagnóstico de esclerosis lateral amiotrófica debería bastar para reconocer la situación de dependencia.",
+      "help": "Es la enfermedad conocida como ELA. Se pregunta por iniciar el reconocimiento de la necesidad de ayuda desde el diagnóstico, sin esperar otro momento de su evolución.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit dependency declaration upon ALS diagnosis.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of dependency declaration upon ALS diagnosis."
+      },
+      "issueMatrixId": "als-dependency-recognition-at-diagnosis",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "large-family-household-worker-contribution-bonus",
+      "topicId": "employment",
+      "familyId": "large-family-household-employment-contributions",
+      "text": "Las familias numerosas deberían tener una bonificación de hasta el 45% en las cotizaciones de quienes contraten para el hogar.",
+      "help": "Las cotizaciones son los pagos a la Seguridad Social por contratar a una persona. Se pregunta por reducir esos pagos a las familias numerosas que empleen personal del hogar.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit up-to-45% household-employment contribution bonus for large families.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of that large-family contribution bonus."
+      },
+      "issueMatrixId": "large-family-household-worker-contribution-bonus",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "extra-school-pandemic-recovery-tutoring",
+      "topicId": "education",
+      "familyId": "pandemic-learning-recovery-tutoring",
+      "text": "El Estado debería ofrecer tutorías adicionales para recuperar el aprendizaje escolar perdido durante la pandemia.",
+      "help": "Sería un programa extraordinario de apoyo escolar. La propuesta usa evaluaciones para adaptar la ayuda a las necesidades de cada alumno, sin que esas evaluaciones cambien sus notas en primaria.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit extraordinary tutoring programme for pandemic-related learning losses.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of extra tutoring for this recovery purpose."
+      },
+      "issueMatrixId": "extra-school-pandemic-recovery-tutoring",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "administrative-intermediaries-for-citizens",
+      "topicId": "institutions",
+      "familyId": "authorized-administrative-intermediaries",
+      "text": "La Administración debería contar con intermediarios que hagan trámites en nombre de quienes necesiten esa ayuda.",
+      "help": "Estas personas actuarían ante la Administración en nombre del ciudadano. Es una medida distinta de explicar cómo usar una página web o de acompañar sin realizar el trámite.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit intermediaries who can perform procedures on behalf of citizens.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of administrative intermediaries performing procedures on behalf of citizens."
+      },
+      "issueMatrixId": "administrative-intermediaries-for-citizens",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "low-cost-rural-on-demand-transport",
+      "topicId": "transport",
+      "familyId": "rural-on-demand-local-transport",
+      "text": "Los pueblos pequeños deberían contar con transporte a demanda y a precio reducido hacia su municipio de referencia.",
+      "help": "Es un servicio que se solicita cuando se necesita viajar, en vez de depender solo de horarios fijos. Conectaría pueblos pequeños con municipios donde se concentran servicios.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit low-cost demand-responsive connection from small villages to reference municipalities.",
+        "1": "Supports this exact measure with a narrower eligibility or scope that the citation must identify.",
+        "0": "An explicitly evidenced intermediate position on this exact measure; silence, study and uncertainty are unscored.",
+        "-1": "Explicitly rejects the stated scope while endorsing a narrower version, with the exception preserved.",
+        "-2": "Explicit rejection of this rural on-demand low-cost service."
+      },
+      "issueMatrixId": "low-cost-rural-on-demand-transport",
+      "authorship": "Directly written after reopening the fully read PP programme and checking related authored programme distinctions; no generator."
+    },
+    {
+      "id": "ban-food-production-force-feeding",
+      "topicId": "energy",
+      "familyId": "food-animal-force-feeding",
+      "text": "Se debería prohibir alimentar por la fuerza a animales para producir alimentos, como el foie gras.",
+      "help": "La pregunta se refiere a forzar la alimentación durante la cría para obtener un producto alimentario. Es una prohibición de esa práctica, sin pedir aquí una prohibición de toda la ganadería.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit prohibition of force-feeding animals for food production.",
+        "1": "Supports a narrower scope or a substantive exception, which must be identified explicitly in the citation.",
+        "0": "An explicitly evidenced intermediate position on the exact measure; absence, studies and uncertainty are unscored.",
+        "-1": "Explicit rejection of the stated broad scope while allowing a narrower measure, with the exception retained.",
+        "-2": "Explicit rejection of prohibiting food-production force-feeding."
+      },
+      "issueMatrixId": "ban-food-production-force-feeding",
+      "authorship": "Directly authored after reopening the complete PACMA policy pages and distinguishing related measures; no generator."
+    },
+    {
+      "id": "ban-fireworks-and-firecrackers",
+      "topicId": "energy",
+      "familyId": "pyrotechnic-use-prohibition",
+      "text": "Se debería prohibir el uso de petardos y fuegos artificiales, también en las fiestas populares.",
+      "help": "Sería una prohibición general de estos artículos, tanto para uso particular como en espectáculos. Es una decisión distinta de limitar solo sus horarios o los lugares donde se utilizan.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit general firecracker and firework use prohibition.",
+        "1": "Supports a narrower scope or a substantive exception, which must be identified explicitly in the citation.",
+        "0": "An explicitly evidenced intermediate position on the exact measure; absence, studies and uncertainty are unscored.",
+        "-1": "Explicit rejection of the stated broad scope while allowing a narrower measure, with the exception retained.",
+        "-2": "Explicit rejection of a general firecracker and firework use prohibition."
+      },
+      "issueMatrixId": "ban-fireworks-and-firecrackers",
+      "authorship": "Directly authored after reopening the complete PACMA policy pages and distinguishing related measures; no generator."
+    },
+    {
+      "id": "open-publicly-funded-research-results",
+      "topicId": "institutions",
+      "familyId": "public-research-results-access",
+      "text": "Los resultados de investigaciones financiadas con dinero público deberían estar disponibles con acceso libre.",
+      "help": "Se pregunta por poder consultar los resultados sin pagar por su lectura. Esto es distinto de permitir copiar cualquier obra o de exigir que se publiquen datos personales de quienes participan.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit free access to publicly funded scientific research results.",
+        "1": "Supports a narrower scope or a substantive exception, which must be identified explicitly in the citation.",
+        "0": "An explicitly evidenced intermediate position on the exact measure; absence, studies and uncertainty are unscored.",
+        "-1": "Explicit rejection of the stated broad scope while allowing a narrower measure, with the exception retained.",
+        "-2": "Explicit rejection of free access to publicly funded research results."
+      },
+      "issueMatrixId": "open-publicly-funded-research-results",
+      "authorship": "Directly authored after reopening the complete PACMA policy pages and distinguishing related measures; no generator."
+    },
+    {
+      "id": "single-national-congress-constituency",
+      "topicId": "institutions",
+      "familyId": "congress-electoral-district-scope",
+      "text": "El Congreso debería elegirse contando los votos en una única circunscripción para toda España.",
+      "help": "Los votos se agruparían en un único ámbito estatal para asignar los escaños, en vez de repartirlos por provincias. La pregunta no fija una barrera electoral ni una fórmula de reparto.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit single nationwide Congress electoral district.",
+        "1": "Supports a narrower scope or a substantive exception, which must be identified explicitly in the citation.",
+        "0": "An explicitly evidenced intermediate position on the exact measure; absence, studies and uncertainty are unscored.",
+        "-1": "Explicit rejection of the stated broad scope while allowing a narrower measure, with the exception retained.",
+        "-2": "Explicit rejection of a single nationwide Congress district."
+      },
+      "issueMatrixId": "single-national-congress-constituency",
+      "authorship": "Directly authored after reopening the complete PACMA policy pages and distinguishing related measures; no generator."
+    },
+    {
+      "id": "equal-public-media-election-video-time",
+      "topicId": "institutions",
+      "familyId": "election-public-broadcast-video-allocation",
+      "text": "Todos los partidos que se presenten deberían tener el mismo tiempo para sus vídeos electorales en los medios públicos.",
+      "help": "Se refiere a los espacios para emitir vídeos de campaña en radios y televisiones públicas. La pregunta trata del tiempo asignado, sin repartirlo según los votos de elecciones anteriores.",
+      "level": "specific",
+      "scaleRubric": {
+        "2": "Explicit equal campaign-video minutes for all registered parties in public media.",
+        "1": "Supports a narrower scope or a substantive exception, which must be identified explicitly in the citation.",
+        "0": "An explicitly evidenced intermediate position on the exact measure; absence, studies and uncertainty are unscored.",
+        "-1": "Explicit rejection of the stated broad scope while allowing a narrower measure, with the exception retained.",
+        "-2": "Explicit rejection of equal campaign-video time for all registered parties."
+      },
+      "issueMatrixId": "equal-public-media-election-video-time",
+      "authorship": "Directly authored after reopening the complete PACMA policy pages and distinguishing related measures; no generator."
     }
   ],
   "starterQuestionIds": [

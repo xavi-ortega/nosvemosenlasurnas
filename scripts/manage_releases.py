@@ -37,7 +37,10 @@ def manage(directory, action, sha, reason):
             state.pop('validUntil', None)
     else:
         raise ValueError('Unsupported release action')
-    state['history'].append({'action': action, 'sha256': sha, 'previous': json.loads(pointer.read_text())['sha256'], 'reason': reason})
+    change = {'action': action, 'sha256': sha, 'kind': bank['kind'], 'previous': json.loads(pointer.read_text())['sha256'], 'reason': reason}
+    if bank['kind'] == 'current':
+        change['validUntil'] = min([bank['election']['date'], *[d['validUntil'] for d in bank['documents']]])
+    state['history'].append(change)
     temporary = directory / 'current.json.tmp'
     temporary.write_text(json.dumps(state, ensure_ascii=False, indent=2) + '\n')
     temporary.replace(pointer)

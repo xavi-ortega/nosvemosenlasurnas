@@ -15,7 +15,9 @@ PATHS = ['app', 'bootstrap', 'config', 'database/migrations', 'public', 'resourc
 def prepare(root, output, development=False):
     require(not output.exists() and output.parent.is_dir(), 'Runtime target must be new')
     state, bank = evidence_state(root / 'resources/evidence')
-    require(development or (state['kind'] == 'current' and state.get('validUntil', '') >= date.today().isoformat()), 'A verified applicable current bank is required for a production candidate')
+    current = state['kind'] == 'current' and state.get('validUntil', '') >= date.today().isoformat()
+    historical = state['kind'] == 'historical' and bank.get('releaseEligible') is True and bank.get('draft') is False
+    require(development or current or historical, 'A verified applicable current or explicitly finished historical bank is required for a production candidate')
     require((root / 'public/build/manifest.json').is_file() and not (root / 'public/hot').exists(), 'A complete production asset build is required')
     output.mkdir(mode=0o700)
     for relative in PATHS:
@@ -41,6 +43,6 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(); parser.add_argument('output', type=Path); parser.add_argument('--development', action='store_true'); args = parser.parse_args()
     try:
         result = prepare(ROOT, args.output, args.development)
-        print('Local runtime candidate prepared; hosting, current-source and launch checks remain separate')
+        print('Local runtime candidate prepared; hosting, source and launch checks remain separate')
     except (ValueError, KeyError, OSError) as error:
         raise SystemExit('Runtime preparation failed: ' + type(error).__name__) from error

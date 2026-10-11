@@ -3468,7 +3468,7 @@
           "votes": 1922
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3766,7 +3766,7 @@
           "votes": 1931
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "primary_23j_announcement_and_catalogue_recovered_full_programme_unresolved",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3776,7 +3776,8 @@
       "ballotRecordIds": [
         "congress-huelva-4"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "programmeApplicabilityNote": "Primary June 20 Congress announcement and July 20 homepage verified. June 19 programme catalogue shows only explicit municipal 2023 items; homepage also links Andalusian 2022 material. These do not establish a 23J programme, which may have been published later."
     },
     {
       "id": "boe-2023-036",
@@ -4020,17 +4021,21 @@
           "votes": 1218
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_acquired_native_read_visual_assets_pending",
+      "analysisStatus": "full_native_text_read_original_visual_completion_pending",
+      "programmeIds": [
+        "jxg-23j-four-things-archive"
+      ],
       "ballotAliases": [
         "JUNTOS POR GRANADA (JxG)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "primary_dated_23j_granada_congress_programme_verified_original_completion_pending",
       "ballotRecordIds": [
         "congress-granada-9"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/jxg-23j-four-things.json"
+      ]
     },
     {
       "id": "boe-2023-045",
@@ -4119,7 +4124,7 @@
           "votes": 963
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -8058,15 +8063,143 @@
         "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Funidossi.es%252F2023%252F07%252F12%252Fprograma-unidos-si-elecciones-generales-2023%252F"
       ],
       "analysis": "Requested July19 archive resolves July12 and has exactly the previously read UNIDOS SI programme hash; July14 revised content not acquired."
+    },
+    {
+      "id": "psc-23j-memory-publication",
+      "url": "https://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+      "retrievedAt": "2026-10-11T14:14:37.871983+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "psc-23j-memory-july-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+      "retrievedAt": "2026-10-11T14:22:52.552990+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "psc-23j-memory-primary-http",
+      "url": "http://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+      "retrievedAt": "2026-10-11T14:22:52.553284+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": "jxg-primary-current",
+      "url": "https://juntosxgranada.es/",
+      "retrievedAt": "2026-10-11T14:39:09.112130+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "id": "jxg-primary-july2023-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://juntosxgranada.es/",
+      "retrievedAt": "2026-10-11T14:39:09.112425+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720024902id_/https://juntosxgranada.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/jxg-primary-july2023-archive-publication-76dac410a87b.html",
+      "sha256": "76dac410a87ba61cd0f47148f4a8d4b17ac1f07c09f2fa6523a52f6b47274588",
+      "textFile": "storage/app/election-sources/2023-congress/jxg-primary-july2023-archive-publication-76dac410a87b.txt",
+      "textSha256": "5265ba3760f9a74f87e69241afb2e039423cda64baea19f1829db96d7fcc7f3b",
+      "links": [
+        "https://juntosxgranada.es/programa-marco-jxg-28m/",
+        "https://juntosxgranada.es/wp-content/uploads/2023/04/C.3-castellano-formulario.pdf",
+        "https://juntosxgranada.es/wp-content/uploads/2023/05/vota_cesar_web.webp"
+      ],
+      "analysis": "Complete native catalogue read. July7 article explicitly links the 23J programme, separately from the municipal28M programme. Follow the national article; do not inherit municipal measures."
+    },
+    {
+      "id": "porhuelva-july2023-domain-lead",
+      "url": "https://web.archive.org/web/20230720000000id_/https://porhuelva.es/",
+      "retrievedAt": "2026-10-11T14:39:09.112495+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230720005637id_/https://porhuelva.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/porhuelva-july2023-domain-lead-publication-3043e7bf94a6.html",
+      "sha256": "3043e7bf94a67a98d547e7b29e3d8ba89341cf590822b11c94d47092a27ad950",
+      "textFile": "storage/app/election-sources/2023-congress/porhuelva-july2023-domain-lead-publication-3043e7bf94a6.txt",
+      "textSha256": "c8f339eb761b3d3f504de3017eb74bbd1358e12ba4c61c83c62610e3a73ed536",
+      "links": [
+        "https://porhuelva.es/2023/02",
+        "https://porhuelva.es/2023/04",
+        "https://porhuelva.es/2023/06",
+        "https://porhuelva.es/2023/07",
+        "https://porhuelva.es/felicitacion-de-ano-nuevo-2023",
+        "https://porhuelva.es/https:/porhuelva.es/PUBLICACIONES/DOCUMENTOS/programa",
+        "https://porhuelva.es/joaquin-de-la-torre-1-en-el-debate-de-antena-huelva-24-01-2023",
+        "https://porhuelva.es/programa-para-las-elecciones-andaluzas-2022"
+      ],
+      "analysis": "Complete native catalogue read. Party identity and June20Congress announcement verified; top programme link is Andalusian2022, excluded from23J scoring."
+    },
+    {
+      "id": "jxg-23j-four-things-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://juntosxgranada.es/te-voy-a-decir-cuatro-cosas/",
+      "retrievedAt": "2026-10-11T14:40:02.646711+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230710163506id_/https://juntosxgranada.es/te-voy-a-decir-cuatro-cosas/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "23j_programme_native_text_read_visual_assets_pending",
+      "file": "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.html",
+      "sha256": "b4bd9d4aeea940129e58f1dce4c46a8a6bd987a132be17e54fd1d0d730f67371",
+      "textFile": "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.txt",
+      "textSha256": "ffea37c759e7d0d31fba3952d7b628d51e62818b828b6ecf5d32bba7347890fc",
+      "links": [
+        "https://juntosxgranada.es/2023/07/07/"
+      ],
+      "analysis": "Full native article read, July7 publication preservedJuly10 before election; four complete policy sections plus all navigation/ending. Embedded Acrobat screenshot and campaign image remain visually unreviewed because enabled browser inventory is empty and web image retrieval unavailable. No complete original-reading or score-readiness certification."
+    },
+    {
+      "id": "porhuelva-23j-candidacy-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://porhuelva.es/porhuelva-registra-las-firmas-necesarias-y-se-presenta-candidatura-a-las-elecciones-generales",
+      "retrievedAt": "2026-10-11T14:40:02.646999+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230621132626id_/https://porhuelva.es/porhuelva-registra-las-firmas-necesarias-y-se-presenta-candidatura-a-las-elecciones-generales",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/porhuelva-23j-candidacy-archive-publication-5ef30396e5ef.html",
+      "sha256": "5ef30396e5ef6f5be75455910d9c67d54fd592c26184f76493732f2ca77270ec",
+      "textFile": "storage/app/election-sources/2023-congress/porhuelva-23j-candidacy-archive-publication-5ef30396e5ef.txt",
+      "textSha256": "518bb324c490b4335b7565c120c7f29e363d152c0420c49d98542ddba89f5ff6",
+      "links": [
+        "https://porhuelva.es/wp-content/uploads/2023/06/audio-candidatura-congreso.mp3"
+      ],
+      "analysis": "Full native announcement read; explicitly June20/23July2023, AlfonsoInfante-led Congress list. No full programme or issue-specific quiz interpretation established; audio is a separate unreviewed asset."
+    },
+    {
+      "id": "porhuelva-programme-category-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://porhuelva.es/https:/porhuelva.es/PUBLICACIONES/DOCUMENTOS/programa",
+      "retrievedAt": "2026-10-11T14:40:02.647101+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230619235525id_/https://porhuelva.es/https:/porhuelva.es/PUBLICACIONES/DOCUMENTOS/programa",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/porhuelva-programme-category-archive-publication-4019775a490d.html",
+      "sha256": "4019775a490deb5a2658962b64082ba86d1b9ff7d5192be398c931454ee5966c",
+      "textFile": "storage/app/election-sources/2023-congress/porhuelva-programme-category-archive-publication-4019775a490d.txt",
+      "textSha256": "3cad914616414053d3d7aa734f03bec6117d1e56661ab9898f98cf736112063e",
+      "links": [
+        "https://porhuelva.es/2023/02",
+        "https://porhuelva.es/2023/04",
+        "https://porhuelva.es/2023/05",
+        "https://porhuelva.es/https:/porhuelva.es/PUBLICACIONES/DOCUMENTOS/programa",
+        "https://porhuelva.es/https:/porhuelva.es/PUBLICACIONES/DOCUMENTOS/programa/page/2",
+        "https://porhuelva.es/programa-municipales-2023-huelva-capital",
+        "https://porhuelva.es/programa-para-huelva-capital-municipales-28-de-mayo-2023"
+      ],
+      "analysis": "Full native catalogue read; visible programmes explicitly municipal28May2023, excluded. Archive resolvesJune19, so no assertion that later23Jprogramme was absent."
     }
   ],
   "authoredDraftSummary": {
-    "authoredDraftQuestions": 60,
+    "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
-    "explicitMatrixCells": 3540,
-    "scoredDraftMappings": 116,
-    "independentAnswerCases": 580,
-    "browserRentCases": 60,
+    "explicitMatrixCells": 4720,
+    "scoredDraftMappings": 145,
+    "independentAnswerCases": 725,
+    "browserRentCases": 80,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
     "matrix": "outputs/2023-authored-issue-matrix.json",
@@ -8074,10 +8207,10 @@
     "calibration": "outputs/2023-authored-calibration.json",
     "browserVerification": "outputs/2023-authored-progressive-verification.json",
     "sourceCorrectnessCertified": false,
-    "browserProgressivePaths": 10,
-    "latestBrowserQuestions": 60,
-    "latestBrowserDraftSha256": "b96be734c76281e6dd81cf958c8503046d4c0b5094e4b00f232ae964abe495d0",
-    "previousBrowserVerification": "outputs/2023-authored-draft-verification.json",
+    "browserProgressivePaths": 14,
+    "latestBrowserQuestions": 80,
+    "latestBrowserDraftSha256": "771e0a521b77914ee0be52634e49c0e9257f41dc4eafbdb4d48b6569870e01cf",
+    "previousBrowserVerification": "outputs/2023-authored-80-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
@@ -8088,10 +8221,10 @@
     ],
     "latestBrowserRentCases": 10,
     "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-psoe-common-verification.json",
-    "latestCohortVerification": "outputs/2023-psoe-common-cohort-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-territorial-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
-    "fixedComparisonCohortVerification": "outputs/2023-psoe-common-cohort-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-psoe-common-verification.json"
+    "fixedComparisonCohortVerification": "outputs/2023-authored-territorial-cohort-verification.json",
+    "fixedComparisonBrowserVerification": "outputs/2023-authored-territorial-verification.json"
   }
 }

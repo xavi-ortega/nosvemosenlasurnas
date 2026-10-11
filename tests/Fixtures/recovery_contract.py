@@ -1,4 +1,5 @@
 """Cross-runtime authenticated backup and portable runtime acceptance fixtures."""
+import hashlib
 import json
 from pathlib import Path
 import shutil
@@ -75,6 +76,50 @@ class RecoveryContractTest(unittest.TestCase):
             with self.assertRaises(ValueError): recovery.backup(ROOT / 'resources/evidence', folder / 'missing-parent/snapshot.enc', folder / 'key')
             links = folder / 'links'; links.mkdir(); (links / 'link').symlink_to(ROOT / 'README.md')
             with self.assertRaises(ValueError): recovery.copy_tree(links, folder / 'copied')
+
+
+    def historical_runtime_source(self, folder, flags):
+        source = folder / 'app'; source.mkdir()
+        evidence = source / 'resources/evidence'; evidence.mkdir(parents=True)
+        pointer = json.loads((ROOT / 'resources/evidence/current.json').read_text())
+        bank = json.loads((ROOT / 'resources/evidence' / (pointer['sha256'] + '.json')).read_text())
+        bank.pop('releaseEligible', None); bank.pop('draft', None)
+        bank.update(flags); bank['kind'] = 'historical'; bank['election']['date'] = '2023-07-23'
+        encoded = json.dumps(bank).encode()
+        digest = hashlib.sha256(encoded).hexdigest()
+        (evidence / (digest + '.json')).write_bytes(encoded)
+        (evidence / 'current.json').write_text(json.dumps({'sha256': digest, 'kind': 'historical', 'withdrawn': [], 'history': []}))
+        (source / 'public/build').mkdir(parents=True); (source / 'public/build/manifest.json').write_text('{}')
+        return source, digest
+
+    def test_finished_historical_runtime_candidate_is_local_unpublished_and_collection_disabled(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            source, digest = self.historical_runtime_source(folder, {'releaseEligible': True, 'draft': False})
+
+            result = runtime.prepare(source, folder / 'candidate')
+
+            self.assertEqual(result['releaseSha256'], digest)
+            self.assertFalse(result['developmentOnly']); self.assertFalse(result['publicLaunchApproved']); self.assertFalse(result['collectionEnabled'])
+            self.assertIn('resources/evidence/' + digest + '.json', result['files'])
+            self.assertIn('METRICS_ENABLED=false', (folder / 'candidate/.env.example').read_text())
+            self.assertEqual(json.loads((source / 'resources/evidence/current.json').read_text())['sha256'], digest)
+
+    def test_unfinished_historical_banks_cannot_prepare_a_production_runtime(self):
+        cases = [
+            {}, {'draft': False}, {'releaseEligible': False, 'draft': False},
+            {'releaseEligible': 1, 'draft': False}, {'releaseEligible': True},
+            {'releaseEligible': True, 'draft': True}, {'releaseEligible': True, 'draft': 0},
+        ]
+        for flags in cases:
+            with self.subTest(flags=flags), tempfile.TemporaryDirectory() as directory:
+                folder = Path(directory)
+                source, _ = self.historical_runtime_source(folder, flags)
+
+                with self.assertRaisesRegex(ValueError, 'explicitly finished historical'):
+                    runtime.prepare(source, folder / 'candidate')
+
+                self.assertFalse((folder / 'candidate').exists())
 
 
 if __name__ == '__main__': unittest.main()

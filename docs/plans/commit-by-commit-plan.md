@@ -181,7 +181,7 @@ Dependencies: Q013
 
 ## Q016 test: validate citations editions and correction behavior
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q011, Q015
 
@@ -312,7 +312,7 @@ Dependencies: Q016, Q025
 
 ## Q027 chore: prove 2023 bundle recovery and rollback
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q026
 

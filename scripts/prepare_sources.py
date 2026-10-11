@@ -205,7 +205,7 @@ def publish(bank, directory, reason):
         target.write_bytes(data)
     if previous.get("sha256") == sha:
         return sha
-    history = previous["history"] + [{"sha256": sha, "previous": previous.get("sha256"), "reason": reason}]
+    history = previous["history"] + [{"sha256": sha, "kind": bank["kind"], "previous": previous.get("sha256"), "reason": reason}]
     current = {"sha256": sha, "kind": bank["kind"], "withdrawn": previous["withdrawn"], "history": history}
     if expiry is not None:
         current["validUntil"] = expiry

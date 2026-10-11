@@ -118,6 +118,23 @@ class GroundedReleaseTest(unittest.TestCase):
             with self.assertRaises(ValueError): releases.manage(folder / 'releases', 'activate', second, 'Invalid restoration')
             with self.assertRaises(ValueError): compiler.publish(changed, folder / 'releases', 'Invalid restoration')
 
+    def test_historical_correction_and_rollback_record_their_evidence_kind(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory); path, _ = self.prepare(folder / 'sources')
+            bank = compiler.compile_manifest(path)
+            bank['kind'] = 'historical'
+            first = compiler.publish(bank, folder / 'releases', 'Initial historical fixture')
+            bank['limitations'].append('Historical correction fixture')
+            second = compiler.publish(bank, folder / 'releases', 'Historical correction fixture')
+
+            state = releases.manage(folder / 'releases', 'activate', first, 'Historical rollback fixture')
+
+            self.assertEqual(state['sha256'], first)
+            self.assertEqual([entry['kind'] for entry in state['history']], ['historical', 'historical', 'historical'])
+            self.assertNotIn('validUntil', state)
+            self.assertTrue(all('validUntil' not in entry for entry in state['history']))
+            self.assertTrue((folder / 'releases' / (second + '.json')).exists())
+
     def test_real_positions_are_supplied_only_by_authored_contextual_input(self):
         with tempfile.TemporaryDirectory() as directory:
             path, _ = self.prepare(Path(directory))

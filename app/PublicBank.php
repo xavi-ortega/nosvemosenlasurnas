@@ -17,8 +17,16 @@ class PublicBank
         if (! is_array($state) || ! preg_match('/\A[a-f0-9]{64}\z/', $state['sha256'] ?? '') || ! in_array($state['kind'] ?? null, ['current', 'synthetic', 'historical'], true) || ! is_array($state['withdrawn'] ?? null) || ! is_array($state['history'] ?? null)) {
             throw new RuntimeException('Invalid evidence pointer.');
         }
-        if ($state['kind'] !== 'current' && ! app()->environment(['local', 'testing'])) {
-            throw new RuntimeException('Current evidence unavailable.');
+        if (! app()->environment(['local', 'testing'])) {
+            if ($state['kind'] === 'synthetic') {
+                throw new RuntimeException('Public evidence unavailable.');
+            }
+            if ($state['kind'] === 'historical') {
+                $bank = json_decode($this->releaseBytes($state['sha256'], $state['kind']), true, flags: JSON_THROW_ON_ERROR);
+                if (($bank['releaseEligible'] ?? null) !== true || ($bank['draft'] ?? null) !== false) {
+                    throw new RuntimeException('Historical evidence unfinished.');
+                }
+            }
         }
 
         if ($state['kind'] === 'current') {
@@ -30,7 +38,7 @@ class PublicBank
             }
         }
         foreach ($state['history'] as $release) {
-            if (isset($release['validUntil']) && $release['validUntil'] < now('UTC')->format('Y-m-d')) {
+            if (($release['kind'] ?? 'current') === 'current' && isset($release['validUntil']) && $release['validUntil'] < now('UTC')->format('Y-m-d')) {
                 $state['withdrawn'][] = $release['sha256'];
             }
         }
@@ -45,13 +53,19 @@ class PublicBank
         if (in_array($state['sha256'], $state['withdrawn'], true)) {
             throw new RuntimeException('Evidence release withdrawn.');
         }
-        $path = (config('evidence.directory') ?? resource_path('evidence')).'/'.$state['sha256'].'.json';
+
+        return $this->releaseBytes($state['sha256'], $state['kind']);
+    }
+
+    private function releaseBytes(string $sha256, string $kind): string
+    {
+        $path = (config('evidence.directory') ?? resource_path('evidence')).'/'.$sha256.'.json';
         $bytes = is_file($path) ? file_get_contents($path) : false;
-        if (! is_string($bytes) || strlen($bytes) > 5 * 1024 * 1024 || ! hash_equals($state['sha256'], hash('sha256', $bytes))) {
+        if (! is_string($bytes) || strlen($bytes) > 5 * 1024 * 1024 || ! hash_equals($sha256, hash('sha256', $bytes))) {
             throw new RuntimeException('Evidence integrity failure.');
         }
         $bank = json_decode($bytes, true, flags: JSON_THROW_ON_ERROR);
-        if (! is_array($bank) || ($bank['schemaVersion'] ?? null) !== 1 || ($bank['engineVersion'] ?? null) !== 'lean-fixed-budgets-v1' || ($bank['kind'] ?? null) !== $state['kind']) {
+        if (! is_array($bank) || ($bank['schemaVersion'] ?? null) !== 1 || ($bank['engineVersion'] ?? null) !== 'lean-fixed-budgets-v1' || ($bank['kind'] ?? null) !== $kind) {
             throw new RuntimeException('Evidence version mismatch.');
         }
 

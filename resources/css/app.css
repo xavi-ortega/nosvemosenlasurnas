@@ -54,8 +54,7 @@ input[type=radio], input[type=checkbox] { width: 21px; height: 21px; accent-colo
 .result-highlights h4 { margin-block: 1rem .5rem; font-size: 1.15rem; font-weight: 700; }
 .result-highlights h5, .result-all-proposals h4 { margin: 0 0 .8rem; font-size: 1.1rem; line-height: 1.4; font-weight: 700; }
 .result-metadata { display: flex; flex-wrap: wrap; gap: 1rem 2rem; font-size: .98rem; }
-blockquote { margin: .8rem 0; border-left: 3px solid #8096b0; padding-left: 1rem; color: #233e59; white-space: pre-line; }
-blockquote.html-source-context { white-space: normal; }
+blockquote, .source-quote { margin: .8rem 0; border-left: 3px solid #8096b0; padding-left: 1rem; color: #233e59; white-space: normal; overflow-wrap: anywhere; }
 details { margin-block: .6rem; }
 summary { cursor: pointer; padding-block: .4rem; font-weight: 600; min-height: 44px; }
 .source-card { padding-block: 1.5rem; border-top: 1px solid #c6d5e5; overflow-wrap: anywhere; }

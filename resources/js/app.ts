@@ -56,7 +56,8 @@ function citation(c: Citation): HTMLElement {
     const location = document.mediaType === 'text/html'
         ? (c.locator.section === undefined ? '' : `${t('section')} ${c.locator.section}; `) + `${t('line')} ${c.locator.line}.`
         : `${t('page')} ${c.locator.page}; ${t('line')} ${c.locator.line}.`;
-    details.append(e('blockquote', c.context, document.mediaType === 'text/html' ? 'html-source-context' : ''), e('p', location), p('interpretation'));
+    const context = e('details', '', 'source-context'); context.append(e('summary', t('full_citation_context')), e('blockquote', c.context));
+    details.append(e('p', c.quote, 'source-quote'), e('p', location), p('interpretation'), context);
     if (bank.kind === 'synthetic') {
         details.append(p('synthetic_original'));
     } else {
@@ -68,7 +69,8 @@ function citation(c: Citation): HTMLElement {
 }
 function positionView(position: Position): HTMLElement {
     const block = e('div');
-    block.append(p(position.status !== 'derived' ? position.status : position.value === 2 ? 'support' : position.value === -2 ? 'oppose' : 'intermediate'));
+    const label = position.status !== 'derived' ? position.status : position.value === 2 ? 'support' : position.value === 1 ? 'support_qualified' : position.value === -2 ? 'oppose' : position.value === -1 ? 'oppose_qualified' : 'intermediate';
+    block.append(p(label));
     if (position.rationale) block.append(e('p', position.rationale));
     for (const c of position.citations) block.append(citation(c));
     return block;

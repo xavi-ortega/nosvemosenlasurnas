@@ -408,3 +408,51 @@ for (const scope of ['north', 'south', 'all']) {
         expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
     });
 }
+
+test('results distinguish qualified directions and disclose exact PDF context without extraction whitespace', async ({ page }) => {
+    const labels = {
+        'climate-1': 'Rechazo de la propuesta',
+        'economy-1': 'Rechazo parcial o con condiciones',
+        'housing-1': 'Posición intermedia',
+        'institutions-1': 'Apoyo parcial o con condiciones',
+        'services-1': 'Apoyo a la propuesta',
+        'climate-2': 'Sin evidencia suficiente. No se puntúa.',
+        'economy-2': 'Las fuentes contienen posiciones en conflicto. No se puntúa.',
+    };
+    let literalQuote = ''; let literalContext = '';
+    await page.route('**/api/bank', async route => {
+        const response = await route.fetch(); const bank = await response.json();
+        for (const [id, value] of [['climate-1', -2], ['economy-1', -1], ['housing-1', 0], ['institutions-1', 1], ['services-1', 2]] as const) {
+            bank.positions.alpha[id].value = value;
+        }
+        bank.positions.alpha['climate-2'] = { status: 'unknown', value: null, citations: [] };
+        bank.positions.alpha['economy-2'] = { status: 'conflicting', value: null, citations: [] };
+        const citation = bank.positions.alpha['climate-1'].citations[0];
+        literalQuote = citation.quote;
+        literalContext = `${'\n'.repeat(80)}${literalQuote}\n\nCondición adicional de la fuente ficticia.`;
+        citation.context = literalContext;
+        const body = JSON.stringify(bank);
+        await route.fulfill({ response, body, headers: { ...response.headers(), 'x-evidence-sha256': createHash('sha256').update(body).digest('hex') } });
+    });
+    await page.setViewportSize({ width: 320, height: 720 });
+    await start(page); await answer(page, 10); await hidden(page);
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+    const party = page.locator('.result').filter({ has: page.getByRole('heading', { name: 'Candidatura ficticia Alba', exact: true }) });
+    await party.getByText('Consultar las demás respuestas y lo que falta', { exact: true }).click();
+
+    for (const [id, label] of Object.entries(labels)) {
+        await expect(party.locator(`[data-question-id="${id}"]`).getByText(label, { exact: true })).toBeVisible();
+    }
+    const proposal = party.locator('[data-question-id="climate-1"]');
+    await proposal.getByText('Leer cita y contexto', { exact: true }).click();
+    await expect(proposal.locator('.source-quote')).toHaveText(literalQuote);
+    const context = proposal.locator('.source-context');
+    await expect(context).not.toHaveAttribute('open');
+    await context.getByText('Leer el contexto completo', { exact: true }).focus();
+    await page.keyboard.press('Enter');
+    await expect(context.locator('blockquote')).toBeVisible();
+    expect(await context.locator('blockquote').textContent()).toBe(literalContext);
+    expect((await context.locator('blockquote').boundingBox())!.height).toBeLessThan(300);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
+});

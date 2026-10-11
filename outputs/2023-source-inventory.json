@@ -3436,7 +3436,7 @@
         }
       ],
       "programmeSearchStatus": "standing_primary_programme_and_manifesto_completely_read_23J_chain_caveated",
-      "analysisStatus": "full_documents_read_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "escanos-programme-july-followup",
         "escanos-manifesto-july-followup",
@@ -3464,7 +3464,15 @@
         "outputs/2023-programme-notebooks/escanos-2023-programme.json",
         "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
         "outputs/2023-programme-notebooks/escanos-manifesto-annex.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:04:22.079608+00:00",
+        "report": "outputs/2023-authored-three-minor-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 2,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-027",
@@ -4015,7 +4023,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_programme_or_coalition_agreement_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "evb-info-july-archive"
       ],
@@ -4037,6 +4045,14 @@
           "congress-valencia-9"
         ],
         "rationale": "June8agreement quotedinJune20primarypressnote forJuly23Congresscoalition withsixparliamentarysupportconditions. ArchivedAugust16afterelection; currentsummarysamewording, noothermemberprogrammeinherited."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:04:22.079608+00:00",
+        "report": "outputs/2023-authored-three-minor-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 2,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -4229,21 +4245,41 @@
           "votes": 874
         }
       ],
-      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "specific_primary_23j_publication_and_original_fully_read",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
-        "almerienses"
+        "almerienses",
+        "almerienses-23j-specific-publication"
       ],
       "ballotAliases": [
         "ALMERIENSES-REGIONALISTAS PRO ALMERÍA (ALM)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "specific_primary_23j_body_and_original_pdf_almeria_ballot_verified",
       "ballotRecordIds": [
         "congress-almeria-4"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/almerienses.json"
-      ]
+        "outputs/2023-programme-notebooks/almerienses.json",
+        "outputs/2023-programme-notebooks/almerienses-23j-publication.json"
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T16:04:22.079608+00:00",
+        "report": "outputs/2023-authored-three-minor-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "ambiguousCells": 7,
+        "widerProgrammeFamilyCertified": false
+      },
+      "applicabilityEvidence": {
+        "documentIds": [
+          "almerienses",
+          "almerienses-23j-specific-publication"
+        ],
+        "ballotRecordIds": [
+          "congress-almeria-4"
+        ],
+        "rationale": "Original publisher July10 article explicitly identifies23July general elections, reproduces all33 original measures and links exact retained PDF. Final Congress Almeria ALM ballot is the territorial scope. Current2026navigation never supplies policy."
+      }
     },
     {
       "id": "boe-2023-049",
@@ -6004,7 +6040,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 48
+    "programmeDocumentsFullyRead": 49
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -8603,6 +8639,31 @@
       "fullNativePublicationTextRead": true,
       "programmeReading": false,
       "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
+    },
+    {
+      "id": "almerienses-23j-specific-publication",
+      "url": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+      "retrievedAt": "2026-10-11T16:01:25.219291+00:00",
+      "resolvedUrl": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "primary_dated_23j_complete_programme_publication_fully_read",
+      "file": "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.html",
+      "sha256": "b29f0f71c180516cc1b78b7ee32bb4669782812016c08e78520a6786578536df",
+      "textFile": "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.txt",
+      "textSha256": "f07a744315028d3be8fa6e8aa17de4af06a2f1872e084a29b8ba6eaf6d43af13",
+      "links": [
+        "https://www.proalmerienses.es/category/elecciones-23j/",
+        "https://www.proalmerienses.es/category/programa-almeria/",
+        "https://www.proalmerienses.es/category/programa-el-ejido/",
+        "https://www.proalmerienses.es/wp-content/uploads/2023/07/Programa_23J.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/04/Programa_Almerienses_Andaluzas_2026-FINAL-VERSION.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/AF-traz-razones-almerienses-2026.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/Cartel-Electoral-Juanjo-Cano.pdf"
+      ],
+      "candidacyId": "boe-2023-048",
+      "fullNativePublicationTextRead": true,
+      "authoredAnalysis": "Complete primary July10 2023 article and all33 reproduced programme measures read in sequence, cross-checked against the previously fully read two-page original. Current2026 navigation/footer and other-election links excluded from political evidence; exact pre-vote HTML bytes not certified."
     }
   ],
   "authoredDraftSummary": {
@@ -8651,6 +8712,9 @@
     "newPdecatCitedUncertainties": 19,
     "latestPdecatBrowserPaths": 30,
     "exhaustionVerification": "outputs/quiz-2023-exhaustion-verification.json",
-    "newPdecatFixedComparisonEligible": false
+    "newPdecatFixedComparisonEligible": false,
+    "threeMinorBankAudit": "outputs/2023-authored-three-minor-audit.json",
+    "newThreeMinorAuditedCells": 240,
+    "newThreeMinorCitedUncertainties": 12
   }
 }

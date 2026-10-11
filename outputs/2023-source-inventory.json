@@ -16,7 +16,8 @@
     "New observed primary programme links acquired: Por Ávila alternate OK_23JPDF replaces failedURLlead; Nueva Canarias July23JPDF distinct from Mayregional programme,75741915bytes original retained (webPDFfetch had rejected size). No reading completion follows acquisition. Geroa transparency lists May/other-edition programmes; Frente current linked political PDF is under2026/10and cannot substitute for23J.",
     "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit.",
     "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open.",
-    "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release."
+    "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release.",
+    "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open."
   ],
   "candidacies": [
     {
@@ -233,8 +234,8 @@
           "votes": 13446
         }
       ],
-      "programmeSearchStatus": "downloaded_not_analysed",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "pp"
       ],
@@ -243,7 +244,7 @@
         "PARTIDO POPULAR/PARTIT POPULAR (PP)",
         "PARTIT POPULAR/PARTIDO POPULAR (PP)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_national_pp_2023_scope_verified_not_scoring_ready",
       "ballotRecordIds": [
         "congress-albacete-3",
         "congress-alicante-5",
@@ -298,7 +299,69 @@
         "congress-ceuta-1",
         "congress-melilla-1"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pp.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "pp"
+        ],
+        "ballotRecordIds": [
+          "congress-albacete-3",
+          "congress-alicante-5",
+          "congress-almeria-5",
+          "congress-alava-5",
+          "congress-asturias-3",
+          "congress-avila-3",
+          "congress-badajoz-3",
+          "congress-baleares-2",
+          "congress-barcelona-4",
+          "congress-bizkaia-5",
+          "congress-burgos-8",
+          "congress-caceres-3",
+          "congress-cadiz-3",
+          "congress-cantabria-4",
+          "congress-castellon-3",
+          "congress-ciudadreal-3",
+          "congress-cordoba-3",
+          "congress-acoruna-3",
+          "congress-cuenca-5",
+          "congress-gipuzkoa-4",
+          "congress-girona-3",
+          "congress-granada-3",
+          "congress-guadalajara-5",
+          "congress-huelva-1",
+          "congress-huesca-4",
+          "congress-jaen-3",
+          "congress-leon-3",
+          "congress-lleida-3",
+          "congress-lugo-3",
+          "congress-madrid-3",
+          "congress-malaga-1",
+          "congress-murcia-3",
+          "congress-navarra-6",
+          "congress-ourense-4",
+          "congress-palencia-4",
+          "congress-laspalmas-1",
+          "congress-pontevedra-2",
+          "congress-larioja-3",
+          "congress-salamanca-3",
+          "congress-santacruzdetenerife-1",
+          "congress-segovia-2",
+          "congress-sevilla-3",
+          "congress-soria-3",
+          "congress-tarragona-8",
+          "congress-teruel-5",
+          "congress-toledo-3",
+          "congress-valencia-3",
+          "congress-valladolid-4",
+          "congress-zamora-4",
+          "congress-zaragoza-4",
+          "congress-ceuta-1",
+          "congress-melilla-1"
+        ],
+        "rationale": "PrimaryJuly2023PDFvisual23Jcover/date introduction and2023reference, nationalPPprogramme. Registry confirms52PPCongressballots underSpanish/Catalanparty-name aliases; noUPNinheritance."
+      }
     },
     {
       "id": "boe-2023-002",
@@ -4024,8 +4087,14 @@
         "sha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
         "pageCount": 112,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pp.json",
+      "electionApplicability": "Primary PP July2023 PDF; visual23Jgeneral-election cover, July23introduction and2023consular text; national PP Congress52constituencies.",
+      "preparationLimitations": [
+        "Institutional-quality plan23January2023 externally endorsed onPDF67 not yet acquired/read; no silent inheritance of external policy."
+      ]
     },
     {
       "id": "vox",
@@ -4812,7 +4881,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 23
+    "programmeDocumentsFullyRead": 24
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

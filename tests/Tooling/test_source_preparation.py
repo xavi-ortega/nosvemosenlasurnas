@@ -67,3 +67,70 @@ class SourcePreparationTest(unittest.TestCase):
             pointer = json.loads((folder / 'releases/current.json').read_text())
             self.assertEqual(pointer['history'][1]['previous'], first)
             self.assertTrue((folder / 'releases' / (first + '.json')).exists())
+
+    def test_authored_help_survives_public_bundle_without_changing_positions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            shutil.copytree(ROOT / 'tests/Fixtures/programmes', folder, dirs_exist_ok=True)
+            path = folder / 'manifest.json'
+            baseline = compiler.compile_manifest(path)
+            manifest = json.loads(path.read_text())
+            help_text = 'Explicación ficticia: la ayuda conserva las condiciones de la pregunta.'
+            manifest['questions'][0]['help'] = help_text
+            path.write_text(json.dumps(manifest, ensure_ascii=False))
+
+            bank = compiler.compile_manifest(path)
+            public = json.loads(compiler.public_bytes(bank))
+
+            self.assertEqual(public['questions'][0]['help'], help_text)
+            self.assertEqual(bank['positions'], baseline['positions'])
+            self.assertNotIn('help', public['questions'][1])
+
+    def test_rejects_invalid_help_and_other_unexpected_question_fields(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            shutil.copytree(ROOT / 'tests/Fixtures/programmes', folder, dirs_exist_ok=True)
+            path = folder / 'manifest.json'
+            original = json.loads(path.read_text())
+            for value in [None, 3, [], '', '   ', 'x' * 1201, '\x00', '\x0b', '😀' * 601]:
+                with self.subTest(help=value):
+                    manifest = json.loads(json.dumps(original))
+                    manifest['questions'][0]['help'] = value
+                    path.write_text(json.dumps(manifest))
+
+                    with self.assertRaisesRegex(ValueError, 'Invalid question help'):
+                        compiler.compile_manifest(path)
+            for value in ['x' * 1200, '😀' * 600]:
+                with self.subTest(accepted_help_length=len(value)):
+                    manifest = json.loads(json.dumps(original))
+                    manifest['questions'][0]['help'] = value
+                    path.write_text(json.dumps(manifest))
+
+                    self.assertEqual(compiler.compile_manifest(path)['questions'][0]['help'], value)
+            manifest['questions'][0]['internalNotes'] = 'Unpublished author notes'
+            path.write_text(json.dumps(manifest))
+
+            with self.assertRaisesRegex(ValueError, 'Unknown public fields'):
+                compiler.compile_manifest(path)
+
+    def test_real_sources_never_receive_automatic_literal_positions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory)
+            shutil.copytree(ROOT / 'tests/Fixtures/programmes', folder, dirs_exist_ok=True)
+            path = folder / 'manifest.json'
+            original = json.loads(path.read_text())
+            for kind in ['historical', 'current']:
+                with self.subTest(kind=kind):
+                    manifest = json.loads(json.dumps(original))
+                    manifest['kind'] = kind
+                    for source in manifest['sources']:
+                        source['kind'] = kind
+                    path.write_text(json.dumps(manifest))
+
+                    bank = compiler.compile_manifest(path)
+
+                    self.assertEqual(bank['interpretation'], 'authored_positions_pending')
+                    self.assertTrue(bank['documents'])
+                    for positions in bank['positions'].values():
+                        for position in positions.values():
+                            self.assertEqual(position, {'status': 'unknown', 'value': None, 'citations': []})

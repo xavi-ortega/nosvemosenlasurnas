@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
   "notes": [
-    "Initial actual web searches are leads, not programme availability or applicability decisions. Search-result snippets never establish a scored policy. Archive and primary publication follow-up remains open."
+    "Initial actual web searches are leads, not programme availability or applicability decisions. Search-result snippets never establish a scored policy. Archive and primary publication follow-up remains open.",
+    "Previous continuation reported PROG.-23J/PROG.-23J_05.pdf searches without resolving Recortes Cero original; failed links redirected to WordPress. Unresolved, not proven unavailable."
   ],
   "searches": [
     {
@@ -1045,6 +1046,78 @@
       ],
       "recordedAt": "2026-10-11",
       "status": "batched_actual_search_results_require_primary_archive_followup"
+    },
+    {
+      "candidacyId": "boe-2023-028",
+      "query": "Primary publication/PDF follow-up",
+      "observationKind": "primary_publication_follow_up",
+      "discoveredPages": [
+        {
+          "title": "4 July 2023 announcement",
+          "url": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia"
+        },
+        {
+          "title": "23J PDF",
+          "url": "https://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf"
+        }
+      ],
+      "status": "primary_23j_acquired_fully_read_unscored",
+      "recordedAt": "2026-10-11T08:52:00.094699+00:00",
+      "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
+    },
+    {
+      "candidacyId": "boe-2023-016",
+      "query": "Primary July-versus-May programme follow-up",
+      "observationKind": "primary_publication_follow_up",
+      "discoveredPages": [
+        {
+          "title": "Primary programme editions",
+          "url": "https://www.nuevacanariasbc.org/programa/"
+        },
+        {
+          "title": "July PDF",
+          "url": "https://nuevacanariasbc.org/public/wp-content/uploads/2023/07/PROGRAMA_23J.pdf"
+        },
+        {
+          "title": "Previously inspected 6 July announcement",
+          "url": "https://www.nuevacanariasbc.org/blog/2023/07/06/luis-campos-advierte-de-que-si-nc-no-esta-en-madrid-volara-el-75-de-bonificacion-aerea-y-maritima/"
+        }
+      ],
+      "status": "primary_23j_full_reading_import_limitations_pending",
+      "recordedAt": "2026-10-11T08:52:00.094699+00:00",
+      "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
+    },
+    {
+      "candidacyId": "boe-2023-023",
+      "query": "Primary transparency catalogue follow-up",
+      "observationKind": "primary_publication_follow_up",
+      "discoveredPages": [
+        {
+          "title": "Geroa catalogue",
+          "url": "https://geroabai.eus/es/transparencia"
+        }
+      ],
+      "status": "23j_unresolved_catalogue_lists_may2023_and_older_editions",
+      "recordedAt": "2026-10-11T08:52:00.094699+00:00",
+      "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
+    },
+    {
+      "candidacyId": "boe-2023-015",
+      "query": "Current primary programme vintage follow-up",
+      "observationKind": "primary_publication_follow_up",
+      "discoveredPages": [
+        {
+          "title": "Current page updated 7 October 2026",
+          "url": "https://frenteobrero.es/nuestro-programa-2/"
+        },
+        {
+          "title": "Previously inspected current PDF excluded",
+          "url": "https://frenteobrero.es/wp-content/uploads/2026/10/Programa.pdf"
+        }
+      ],
+      "status": "current_2026_excluded_23j_archive_search_open",
+      "recordedAt": "2026-10-11T08:52:00.094699+00:00",
+      "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
     }
   ]
 }

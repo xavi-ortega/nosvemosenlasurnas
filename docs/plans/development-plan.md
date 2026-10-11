@@ -165,7 +165,7 @@ Work one inspectable increment at a time with factual evidence.
 - Q008 · data: author a larger bank of everyday Spanish questions · planned
 - Q009 · data: write question rubrics and cited party positions · planned
 - Q010 · test: audit every question for meaning and everyday usefulness · planned
-- Q011 · feat: compile authored real-source bundles without question generation · planned
+- Q011 · feat: compile authored real-source bundles without question generation · in_progress
 - Q012 · test: calibrate the full five-answer scoring surface · planned
 - Q013 · fix: compare eligible parties on the same evidence and weights · planned
 - Q014 · feat: select balanced authored questions and useful follow-ups · planned

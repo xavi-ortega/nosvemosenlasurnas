@@ -121,7 +121,7 @@ Dependencies: Q009
 
 ## Q011 feat: compile authored real-source bundles without question generation
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q010
 

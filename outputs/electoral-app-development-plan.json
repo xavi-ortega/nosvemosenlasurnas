@@ -712,7 +712,7 @@
             "outputs/2023-source-inventory.json",
             "outputs/2023-programme-searches.json"
           ],
-          "progressNote": "Partial source progress: 14 complete individual notebooks, 184 PDFpages and 20 HTMLsections; 138 literal excerpts checked and 8 visual excerpts pending transcription. Complete acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
+          "progressNote": "Partial source progress: 17 complete notebooks, 279 PDF pages and 20 HTML sections; 219 literal excerpts checked, 8 visual excerpts pending. Acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
         },
         {
           "id": "Q005",
@@ -763,7 +763,7 @@
             "outputs/2023-source-inventory.json",
             "outputs/2023-programme-searches.json"
           ],
-          "progressNote": "Partial source progress: 14 complete individual notebooks, 184 PDFpages and 20 HTMLsections; 138 literal excerpts checked and 8 visual excerpts pending transcription. Complete acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
+          "progressNote": "Partial source progress: 17 complete notebooks, 279 PDF pages and 20 HTML sections; 219 literal excerpts checked, 8 visual excerpts pending. Acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
         },
         {
           "id": "Q006",
@@ -814,7 +814,7 @@
             "outputs/2023-programme-reading-verification.json",
             "outputs/2023-programme-notebooks"
           ],
-          "progressNote": "Partial source progress: 14 complete individual notebooks, 184 PDFpages and 20 HTMLsections; 138 literal excerpts checked and 8 visual excerpts pending transcription. Complete acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
+          "progressNote": "Partial source progress: 17 complete notebooks, 279 PDF pages and 20 HTML sections; 219 literal excerpts checked, 8 visual excerpts pending. Acquisition/full corpus reading, applicability, authored mappings and real release remain unfinished."
         },
         {
           "id": "Q007",
@@ -1009,7 +1009,7 @@
           "sequence": 11,
           "phaseId": "QP2",
           "subject": "feat: compile authored real-source bundles without question generation",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q010"
           ],
@@ -1049,7 +1049,13 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "scripts/prepare_sources.py",
+            "tests/Tooling/test_source_preparation.py",
+            "tests/Tooling/test_grounded_releases.py"
+          ],
+          "progressNote": "Partial compiler engineering: authored optional help preserves frontend bounds; literal polarity inference only for synthetic fixtures. Real positions stay unknown until contextual authored input. Fixture reproducibility unchanged; real manifest/bank absent."
         },
         {
           "id": "Q012",
@@ -2091,7 +2097,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T08:33:30.281113+00:00",
+  "revisedAt": "2026-10-11T08:52:00.094699+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
@@ -2512,14 +2518,14 @@
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   },
   "implementationProgress": {
-    "recordedAt": "2026-10-11T08:33:30.281113+00:00",
+    "recordedAt": "2026-10-11T08:52:00.094699+00:00",
     "sourceSummary": {
       "officialDenominations": 59,
-      "programmeFilesDownloaded": 24,
+      "programmeFilesDownloaded": 26,
       "programmesFullyAnalysed": 0,
       "releasedRealQuestions": 0,
       "completeCorpusCertified": false,
-      "programmeDocumentsFullyRead": 14
+      "programmeDocumentsFullyRead": 17
     },
     "evidence": "outputs/2023-programme-reading-verification.json",
     "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending",

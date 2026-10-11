@@ -117,3 +117,18 @@ class GroundedReleaseTest(unittest.TestCase):
             self.assertTrue((folder / 'releases' / (second + '.json')).exists())
             with self.assertRaises(ValueError): releases.manage(folder / 'releases', 'activate', second, 'Invalid restoration')
             with self.assertRaises(ValueError): compiler.publish(changed, folder / 'releases', 'Invalid restoration')
+
+    def test_real_positions_are_supplied_only_by_authored_contextual_input(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path, _ = self.prepare(Path(directory))
+            manifest = json.loads(path.read_text())
+            manifest['kind'] = 'historical'
+            for source in manifest['sources']:
+                source['kind'] = 'historical'
+            path.write_text(json.dumps(manifest))
+
+            bank = compiler.compile_manifest(path)
+
+            self.assertEqual(bank['positions']['alpha']['housing-1']['value'], 2)
+            self.assertIn('30 %', bank['positions']['alpha']['housing-1']['citations'][0]['context'])
+            self.assertEqual(bank['positions']['beta']['housing-1'], {'status': 'unknown', 'value': None, 'citations': []})

@@ -12,7 +12,9 @@
     "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz.",
     "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions.",
     "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread.",
-    "Four additional complete individual readings reconciled: Compromís-Sumar13PDFpages, Vía Burgalesa20national HTMLsections (2026update/vintage unresolved), Teruel Existe29PDFpages and PDeCAT35PDFpages. Byte/text hashes and literal locators checked; source applicability, corpus closure and numeric mapping remain open. Teruel/Valencian supplement scope never extends automatically to other coalition territories."
+    "Four additional complete individual readings reconciled: Compromís-Sumar13PDFpages, Vía Burgalesa20national HTMLsections (2026update/vintage unresolved), Teruel Existe29PDFpages and PDeCAT35PDFpages. Byte/text hashes and literal locators checked; source applicability, corpus closure and numeric mapping remain open. Teruel/Valencian supplement scope never extends automatically to other coalition territories.",
+    "New observed primary programme links acquired: Por Ávila alternate OK_23JPDF replaces failedURLlead; Nueva Canarias July23JPDF distinct from Mayregional programme,75741915bytes original retained (webPDFfetch had rejected size). No reading completion follows acquisition. Geroa transparency lists May/other-edition programmes; Frente current linked political PDF is under2026/10and cannot substitute for23J.",
+    "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit."
   ],
   "candidacies": [
     {
@@ -2008,9 +2010,11 @@
           "votes": 3165
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "downloaded_applicability_pending_not_analysed",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "nuevacanarias-july"
+      ],
       "ballotAliases": [
         "NUEVA CANARIAS - BLOQUE CANARISTA (NC-bc)"
       ],
@@ -2505,7 +2509,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "pumj"
       ],
@@ -2981,9 +2985,11 @@
           "votes": 7362
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "downloaded_applicability_pending_not_analysed",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "poravila-primary-july"
+      ],
       "ballotAliases": [
         "POR ÁVILA (XAV)"
       ],
@@ -4203,8 +4209,10 @@
         "sha256": "2624abd20b905e9883cd59ba93a742592ee481f5c5dabbdae73456076baf3bdb",
         "pageCount": 39,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pumj.json"
     },
     {
       "id": "psoe-preserved-objective",
@@ -4569,15 +4577,65 @@
       "mediaType": "text/html; charset=UTF-8",
       "status": "retrieval_failed",
       "error": "Response is not a bounded PDF: text/html; charset=UTF-8"
+    },
+    {
+      "id": "poravila-primary-july",
+      "url": "https://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf",
+      "publicationUrl": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia",
+      "retrievedAt": "2026-10-11T08:41:15.690288+00:00",
+      "resolvedUrl": "https://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.OK_.pdf",
+      "mediaType": "application/pdf",
+      "lastModified": "Tue, 04 Jul 2023 16:51:51 GMT",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/poravila-primary-july.pdf",
+      "sha256": "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305",
+      "bytes": 349880,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/poravila-primary-july.txt",
+        "sha256": "902ab07cbcdf6bc3a9e5156f0777fdf48fdb239fbe583051f776e8f71f850e07",
+        "pageCount": 20,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/poravila.json",
+      "publishedAt": "2023-07-04",
+      "electionApplicability": "23 July 2023 Congress/Senate Ávila; dated primary link and original cover."
+    },
+    {
+      "id": "nuevacanarias-july",
+      "url": "https://nuevacanariasbc.org/public/wp-content/uploads/2023/07/PROGRAMA_23J.pdf",
+      "publicationUrl": "https://www.nuevacanariasbc.org/programa/",
+      "retrievedAt": "2026-10-11T08:41:15.857204+00:00",
+      "resolvedUrl": "https://nuevacanariasbc.org/public/wp-content/uploads/2023/07/PROGRAMA_23J.pdf",
+      "mediaType": "application/pdf",
+      "lastModified": "Fri, 07 Jul 2023 09:04:37 GMT",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.pdf",
+      "sha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
+      "bytes": 75741915,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/nuevacanarias-july.txt",
+        "sha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+        "pageCount": 36,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+      "preparationLimitations": [
+        "Original exceeds guarded 20 MiB import limit; direct extraction includes NUL glyphs/duplicate lines. Original retained; bounded release preparation pending."
+      ],
+      "electionApplicability": "Primary page labels July 23 2023 separately from May regional edition; cover/Congress-Senate introduction match Canary scope."
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 24,
+    "programmeFilesDownloaded": 26,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 14
+    "programmeDocumentsFullyRead": 17
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -4823,6 +4881,66 @@
       "textFile": "storage/app/election-sources/2023-congress/recortes-23j-publication-7417b23ffbf6.txt",
       "textSha256": "cb9179c07083636550f62dab375d9e2a3540a26e99c3ab564ada345fecf9c09f",
       "links": []
+    },
+    {
+      "id": "poravila-july-publication",
+      "url": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia",
+      "retrievedAt": "2026-10-11T08:41:18.062234+00:00",
+      "resolvedUrl": "https://poravila.es/por-avila-plantea-en-su-programa-electoral-12-puntos-esenciales-para-trabajar-en-la-cohesion-y-desarrollo-de-la-provincia",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/poravila-july-publication-de22f0b10324.html",
+      "sha256": "de22f0b1032485ee0e6aa23a16ec790fe82b2cb27eaa4571005f39550134ea36",
+      "textFile": "storage/app/election-sources/2023-congress/poravila-july-publication-de22f0b10324.txt",
+      "textSha256": "3ab4efd87579c9d2fd6e37aa1b4e9ce141d9da28230531dc541dbdd05107e1c1"
+    },
+    {
+      "id": "nuevacanarias-july-programmes",
+      "url": "https://www.nuevacanariasbc.org/programa/",
+      "retrievedAt": "2026-10-11T08:41:19.339209+00:00",
+      "resolvedUrl": "https://www.nuevacanariasbc.org/programa/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-programmes-100a89c4731f.html",
+      "sha256": "100a89c4731f9ce00f602f16768b367b670acae218b0259917976cc1b890311c",
+      "textFile": "storage/app/election-sources/2023-congress/nuevacanarias-july-programmes-100a89c4731f.txt",
+      "textSha256": "db5a2e2fdd8e5aae2465d8a62d4c3ac613b6e7f3e6154b8b24f5c3ff9aeacb49"
+    },
+    {
+      "id": "nuevacanarias-july-announcement",
+      "url": "https://www.nuevacanariasbc.org/blog/2023/07/06/luis-campos-advierte-de-que-si-nc-no-esta-en-madrid-volara-el-75-de-bonificacion-aerea-y-maritima/",
+      "retrievedAt": "2026-10-11T08:41:20.801248+00:00",
+      "resolvedUrl": "https://www.nuevacanariasbc.org/blog/2023/07/06/luis-campos-advierte-de-que-si-nc-no-esta-en-madrid-volara-el-75-de-bonificacion-aerea-y-maritima/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-announcement-5b876ad4b81c.html",
+      "sha256": "5b876ad4b81c892222ff6c84000131261ab258748b24552e28b59dd4160a271e",
+      "textFile": "storage/app/election-sources/2023-congress/nuevacanarias-july-announcement-5b876ad4b81c.txt",
+      "textSha256": "2f12625365a5e8dbf9b22963ea238cc8638c4c6130aeca5bf28a1ddde6e65601"
+    },
+    {
+      "id": "geroabai-transparency",
+      "url": "https://geroabai.eus/es/transparencia",
+      "retrievedAt": "2026-10-11T08:41:21.998389+00:00",
+      "resolvedUrl": "https://geroabai.eus/es/transparencia",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/geroabai-transparency-31c9fbe14e38.html",
+      "sha256": "31c9fbe14e388cff05da2945aaa1ca8ee93f632585cce82b8a53d292462abbf6",
+      "textFile": "storage/app/election-sources/2023-congress/geroabai-transparency-31c9fbe14e38.txt",
+      "textSha256": "4efcadb83e9712fd134f0de8d16e2ac94c554a93dbcc2b5be640b82d78531d99"
+    },
+    {
+      "id": "frenteobrero-current-programme-excluded",
+      "url": "https://frenteobrero.es/nuestro-programa-2/",
+      "retrievedAt": "2026-10-11T08:41:23.444336+00:00",
+      "resolvedUrl": "https://frenteobrero.es/nuestro-programa-2/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/frenteobrero-current-programme-excluded-a07deacc3039.html",
+      "sha256": "a07deacc30398814c79b9504b278699a575baa09dc286c03f7ddb3a8ac23be19",
+      "textFile": "storage/app/election-sources/2023-congress/frenteobrero-current-programme-excluded-a07deacc3039.txt",
+      "textSha256": "c953b5059059e84659cfc25dbd6e0a606ffed547ed27f8b8afddcad6d2200cb1"
     }
   ]
 }

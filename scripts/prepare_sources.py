@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Compile owner manifests offline into immutable, inspectable public evidence banks."""
+"""Validate offline manifests and authored positions into immutable public evidence banks."""
 import argparse
 from datetime import date
 import hashlib
@@ -101,8 +101,8 @@ def compile_manifest(path, pdf_python=None):
     questions = manifest["questions"]
     topics = manifest["topics"]
     require(set(election) == {"id", "name", "date", "constituencies"}, "Unknown election fields")
-    for rows, keys in [(parties, {"id", "name", "constituencyIds"}), (questions, {"id", "topicId", "familyId", "text", "level"}), (topics, {"id", "name", "budget"})]:
-        require(all(set(row) == keys for row in rows), "Unknown public fields")
+    for rows, keys, optional in [(parties, {"id", "name", "constituencyIds"}, set()), (questions, {"id", "topicId", "familyId", "text", "level"}, {"help"}), (topics, {"id", "name", "budget"}, set())]:
+        require(all(keys <= set(row) <= keys | optional for row in rows), "Unknown public fields")
         ids = [r["id"] for r in rows]
         require(ids and len(ids) == len(set(ids)) and all(ID.fullmatch(i) for i in ids), "Invalid or duplicate IDs")
     scopes = {c["id"] for c in election["constituencies"]}
@@ -113,6 +113,9 @@ def compile_manifest(path, pdf_python=None):
     for q in questions:
         require(q["topicId"] in topic_ids and ID.fullmatch(q["familyId"]) and q["level"] in {"general", "specific"}, "Invalid question contract")
         require(q["text"].strip() and len(q["text"]) <= 400, "Invalid question wording")
+        if "help" in q:
+            help_text = q["help"]
+            require(isinstance(help_text, str) and help_text.strip() and len(help_text.encode("utf-16-le", errors="surrogatepass")) // 2 <= 1200 and not re.search(r"[\x00-\x08\x0b\x0e-\x1f]", help_text), "Invalid question help")
     families = {}
     for q in questions:
         require(q["familyId"] not in families or families[q["familyId"]] == q["topicId"], "Family crosses topics")
@@ -142,6 +145,8 @@ def compile_manifest(path, pdf_python=None):
             document['publishedAtPrecision'] = 'unknown'
         document.update(text=text, textSha256=digest(text.encode()), extraction="native_text_v1")
         documents.append(document)
+        if kind != "synthetic":
+            continue
         offset = 0
         for line in text.splitlines(keepends=True):
             sentence = line.strip()
@@ -167,6 +172,8 @@ def compile_manifest(path, pdf_python=None):
                 position["citations"].append(citation)
             offset += len(line)
     bank = {"schemaVersion": 1, "engineVersion": "lean-fixed-budgets-v1", "compilerVersion": "literal-policy-rule-v1", "kind": kind, "asOf": manifest["asOf"], "election": election, "topics": topics, "questions": questions, "candidacies": parties, "documents": documents, "positions": positions, "interpretation": "derived_literal_rules", "limitations": ["Literal mappings are derived interpretations; source-exact matching does not certify semantics.", "Unsupported wording, numbers, conditions and ambiguous claims remain unknown."]}
+    if kind != "synthetic":
+        bank.update(compilerVersion="validated-authored-input-v1", interpretation="authored_positions_pending", limitations=["Real-source positions remain unknown until supplied as authored contextual interpretations.", "Source hashes, extraction and citation checks do not certify semantic correctness or author a position."])
     from grounded_positions import attach
     return attach(bank, manifest, path.parent, digest, require)
 

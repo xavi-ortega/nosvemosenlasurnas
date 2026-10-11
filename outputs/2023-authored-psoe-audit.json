@@ -1,0 +1,779 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T21:38:53.707995+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_common_psoe_variants_and_explicit_shared_reference_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-002",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+          "sha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+          "documentId": "psoe-preserved-objective",
+          "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+          "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/psoe-campaign-copy.json",
+          "sha256": "c2190fdcea1f000e0f33d75bcaf97de6ae30841fc2676c54711a9062f33bc717",
+          "documentId": "psoe-campaign-programme-copy",
+          "sourceSha256": "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7",
+          "extractionSha256": "23105e438b89a1a1b0f6a28e1d0ce6a3ba3232f4ccdd1a941afeeed2edb00f18"
+        },
+        {
+          "path": "outputs/2023-programme-notebooks/psoe-childhood-obesity-2022-2030.json",
+          "sha256": "4d9b4872d607a3f4b5fbefa3cd7eb35c6f6e62217ef4489c71098168eedfc6ab",
+          "documentId": "psoe-childhood-obesity-2022-2030",
+          "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+          "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80"
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 13,
+      "newDerivedMappings": 5,
+      "citedUncertainties": 53,
+      "previous8NumericMappingsExactlyPreserved": true,
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone desarrollar la contención de precios de la ley de vivienda, sin precisar aquí el precio máximo que plantea la pregunta.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone desarrollar la contención de precios de la ley de vivienda, sin precisar aquí el precio máximo que plantea la pregunta.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone probar jornadas más cortas en empresas industriales y concentrar la semana en cuatro días, sin fijar un máximo de 35 horas semanales.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone probar jornadas más cortas en empresas industriales y concentrar la semana en cuatro días, sin fijar un máximo de 35 horas semanales.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone ampliar la atención dental progresivamente, empezando por las personas mayores de 75 años.",
+          "authoredAnalysis": "Qualified support: progressive fillings/implants start75plus. Childhealthaccess183 is also explicit, but no universal adult dentistry entitlement is specified. Preserve the restricted initial population rather than immediate coverage for every patient.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Plantea un desmantelamiento ordenado y progresivo, sin precisar aquí si se permite o rechaza alargar la vida de las centrales antes de cerrarlas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Plantea un desmantelamiento ordenado y progresivo, sin precisar aquí si se permite o rechaza alargar la vida de las centrales antes de cerrarlas.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los incentivos fiscales para familias no establecen que las herencias de padres a hijos estén exentas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Los incentivos fiscales para familias no establecen que las herencias de padres a hijos estén exentas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone crear progresivamente suficientes plazas públicas gratuitas de 0 a 3 años para todas las familias.",
+          "authoredAnalysis": "Universal freepublicplaces are explicit; gradualcapacitycreation and voluntaryuse do not change eligibility or fee. No immediate rollout date or compulsory attendance inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La inversión en conexiones y transporte no establece limitar vuelos cuando haya una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. La inversión en conexiones y transporte no establece limitar vuelos cuando haya una alternativa adecuada en tren.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Defiende mantener la ley de eutanasia y el derecho que regula.",
+          "authoredAnalysis": "Explicitly guarantees defence of the enacted euthanasia law. The question preserves statutory conditions; no unconditional death assistance or eligibility widening inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Defiende renovar el órgano con el sistema actual de doble legitimación, sin precisar aquí quién debe elegir finalmente los miembros de origen judicial.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Defiende renovar el órgano con el sistema actual de doble legitimación, sin precisar aquí quién debe elegir finalmente los miembros de origen judicial.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone actualizar todas las pensiones según el índice de precios para mantener su poder adquisitivo.",
+          "authoredAnalysis": "Common sentence guarantees allpensions purchasingpower with IPC. The preceding constitutionalmechanism differs across campaignvariants and is not part of this question or value.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone debatir la adaptación del impuesto a partir de sus resultados, sin establecer mantenerlo de forma permanente.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone debatir la adaptación del impuesto a partir de sus resultados, sin establecer mantenerlo de forma permanente.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los incentivos fiscales no establecen eximir del impuesto sobre la renta todas las pensiones contributivas de jubilación.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Los incentivos fiscales no establecen eximir del impuesto sobre la renta todas las pensiones contributivas de jubilación.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone proteger la vivienda social frente a privatizaciones y fondos de inversión, sin precisar la prohibición de vender toda vivienda pública a cualquier entidad privada.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone proteger la vivienda social frente a privatizaciones y fondos de inversión, sin precisar la prohibición de vender toda vivienda pública a cualquier entidad privada.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reforzar la sanidad pública, sin establecer aumentar los acuerdos con centros privados.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone reforzar la sanidad pública, sin establecer aumentar los acuerdos con centros privados.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone garantizar acceso al aborto y a sus dos métodos en todas las comunidades, sin precisar aquí su realización en centros públicos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone garantizar acceso al aborto y a sus dos métodos en todas las comunidades, sin precisar aquí su realización en centros públicos.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas energéticas no establecen gestión pública de las centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas energéticas no establecen gestión pública de las centrales hidroeléctricas al caducar sus concesiones.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mejorar la desconexión digital, sin establecer una prohibición de todo contacto de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone mejorar la desconexión digital, sin establecer una prohibición de todo contacto de la empresa fuera del horario laboral.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "derived",
+          "value": 1,
+          "rationale": "El plan que adopta plantea becas de comedor para niños en situación de vulnerabilidad avanzando hacia la gratuidad, sin extenderla expresamente a todo el alumnado.",
+          "authoredAnalysis": "Explicit main-programme development of the named national plan; operative80 grants for vulnerable children advance toward free meals, not universal all-pupil entitlement.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Plantea eliminar todo el copago farmacéutico y, como medida concreta, mejorar las condiciones de las rentas bajas.",
+          "authoredAnalysis": "Totalelimination is a continuing objective197; targetedusercontribution reform204 is a nearer concrete measure, not an explicit permanent refusal of widerelimination. The question/help allowprogressiveimplementation. No repealdeadline inferred; both contexts disclosed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece el derecho a votar desde los dieciséis años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece el derecho a votar desde los dieciséis años.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Promueve reparar productos, sin establecer obligar a los fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Promueve reparar productos, sin establecer obligar a los fabricantes a facilitar piezas de recambio.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aprobar un estatuto de prácticas mediante acuerdo social, sin establecer aquí remunerar todas las prácticas que forman parte de los estudios.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone aprobar un estatuto de prácticas mediante acuerdo social, sin establecer aquí remunerar todas las prácticas que forman parte de los estudios.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone permisos por nacimiento de veinte semanas. El apoyo a seis meses de lactancia del plan que adopta no establece permisos de seis meses para cada progenitor.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone permisos por nacimiento de veinte semanas. El apoyo a seis meses de lactancia del plan que adopta no establece permisos de seis meses para cada progenitor.",
+          "citationCount": 4
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El plan que adopta plantea estudiar medidas fiscales sobre ciertos alimentos y bebidas, sin comprometerse a crear el impuesto específico que plantea esta pregunta.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. El plan que adopta plantea estudiar medidas fiscales sobre ciertos alimentos y bebidas, sin comprometerse a crear el impuesto específico que plantea esta pregunta.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone el uso terapéutico del cannabis, sin establecer despenalizar su cultivo y consumo propio sin ánimo de lucro.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone el uso terapéutico del cannabis, sin establecer despenalizar su cultivo y consumo propio sin ánimo de lucro.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone gratuidad de créditos del curso siguiente si se aprueban a la primera, sin establecer eliminar el recargo de las asignaturas repetidas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone gratuidad de créditos del curso siguiente si se aprueban a la primera, sin establecer eliminar el recargo de las asignaturas repetidas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Promueve actividad física y más tiempo escolar para ella, sin establecer tres horas semanales de la asignatura de Educación Física.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Promueve actividad física y más tiempo escolar para ella, sin establecer tres horas semanales de la asignatura de Educación Física.",
+          "citationCount": 3
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eximir de cuota a todos los autónomos con ingresos netos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece eximir de cuota a todos los autónomos con ingresos netos inferiores al salario mínimo.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los incentivos fiscales para vivienda no establecen eximir del impuesto sobre el valor añadido la compra de la primera vivienda habitual.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Los incentivos fiscales para vivienda no establecen eximir del impuesto sobre el valor añadido la compra de la primera vivienda habitual.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir la compraventa de todos los animales de compañía.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir la compraventa de todos los animales de compañía.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece retirar financiación pública a espectáculos taurinos con muerte del animal.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece retirar financiación pública a espectáculos taurinos con muerte del animal.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone mantener una actividad de caza más sostenible; se opone a prohibir la caza en todo el territorio.",
+          "authoredAnalysis": "Direct support for continuing sustainable hunting rejects a blanket nationwide prohibition. Existing hunting and population-management conditions retained.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mantener suministros durante una reclamación, sin establecer una prohibición permanente de cortes a todos los hogares vulnerables.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone mantener suministros durante una reclamación, sin establecer una prohibición permanente de cortes a todos los hogares vulnerables.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una prestación de 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece una prestación de 20.000 euros a cada joven al cumplir 23 años.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Vincula el salario mínimo al 60% del salario medio, sin establecer subidas anuales superiores a los precios.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Vincula el salario mínimo al 60% del salario medio, sin establecer subidas anuales superiores a los precios.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La apertura de datos no establece formatos abiertos para todos los documentos de la Administración.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. La apertura de datos no establece formatos abiertos para todos los documentos de la Administración.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Rechaza la gestación subrogada y propone medidas legislativas contra ella, preservando los derechos de los menores.",
+          "authoredAnalysis": "Explicit blanketopposition follows domesticnullity158 and continues with legislative/Europeanprohibition159. Childinterests/adoption safeguards do not create a domesticaltruistic exception. Campaignmoralclaims are not neutral questionhelp.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El plan que adopta plantea menús adaptados por salud o motivos culturales, sin establecer una opción vegetariana por preferencia en todos los comedores.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. El plan que adopta plantea menús adaptados por salud o motivos culturales, sin establecer una opción vegetariana por preferencia en todos los comedores.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone libros escolares gratuitos, sin establecer permisos para que cualquiera los copie y comparta.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone libros escolares gratuitos, sin establecer permisos para que cualquiera los copie y comparta.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone atención presencial sin cita previa obligatoria y puntos de todas las administraciones en municipios pequeños, manteniendo la alternativa presencial.",
+          "authoredAnalysis": "Explicit new in-person administrative access with no mandatory appointment; all-administration presence in small municipalities supplements the general accessible-administration pledge, not a restriction of the basic in-person alternative.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas fiscales no establecen bajar al 10% o menos el impuesto sobre servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas fiscales no establecen bajar al 10% o menos el impuesto sobre servicios veterinarios para animales de compañía.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Promueve la reparación, sin establecer el derecho a elegir un taller independiente del fabricante.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Promueve la reparación, sin establecer el derecho a elegir un taller independiente del fabricante.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El desarrollo de la normativa de residuos y envases no establece expresamente un depósito que se recupere al devolver envases de bebidas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. El desarrollo de la normativa de residuos y envases no establece expresamente un depósito que se recupere al devolver envases de bebidas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone acceso gratuito a preservativos y anticonceptivos para las personas jóvenes.",
+          "authoredAnalysis": "Freeaccess explicit; unspecifiedyouthage and widerdistributionpoints do not authorise a numericalagecutoff or restrict the question to condoms.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las reformas farmacéuticas no establecen una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las reformas farmacéuticas no establecen una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone conectividad ultrarrápida con opciones asequibles, sin establecer una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone conectividad ultrarrápida con opciones asequibles, sin establecer una conexión básica gratuita para todas las personas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La protección ambiental y del acceso al agua no establece gestión pública de todo el suministro.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. La protección ambiental y del acceso al agua no establece gestión pública de todo el suministro.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reconocer el acceso universal a atención temprana antes de los seis años, sin establecer expresamente que toda esa atención sea pública y gratuita.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone reconocer el acceso universal a atención temprana antes de los seis años, sin establecer expresamente que toda esa atención sea pública y gratuita.",
+          "citationCount": 4
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de conciliación no establecen el derecho a reducir jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas de conciliación no establecen el derecho a reducir jornada por cuidados hasta los 16 años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas sobre conexiones aéreas no establecen una tasa creciente según la frecuencia de los viajes en avión.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas sobre conexiones aéreas no establecen una tasa creciente según la frecuencia de los viajes en avión.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir la publicidad y el patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir la publicidad y el patrocinio de combustibles fósiles.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir criar animales para obtener sus pieles.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir criar animales para obtener sus pieles.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir el uso del glifosato.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir todas las ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir todas las ayudas públicas directas a medios privados.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone eliminar los tribunales especiales por razón del cargo para hechos ajenos al desempeño del cargo, sin extender la supresión a todos los casos.",
+          "authoredAnalysis": "Qualified support: aforamiento removal expressly covers only acts unrelated to the official activity; no general abolition inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar las firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece eliminar las firmas de apoyo para candidaturas al Congreso sin representación.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone un registro público de grupos de interés y sus actividades, sin establecer una ficha para cada propuesta de ley con sus negociadores e intermediarios.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone un registro público de grupos de interés y sus actividades, sin establecer una ficha para cada propuesta de ley con sus negociadores e intermediarios.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mejorar la atención de salud mental y la ayuda psicológica a pacientes con ciertas enfermedades, sin establecer expresamente la psicoterapia como servicio público.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone mejorar la atención de salud mental y la ayuda psicológica a pacientes con ciertas enfermedades, sin establecer expresamente la psicoterapia como servicio público.",
+          "citationCount": 3
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los compromisos de defensa no establecen apoyar el tratado internacional de prohibición de armas nucleares.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Los compromisos de defensa no establecen apoyar el tratado internacional de prohibición de armas nucleares.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El plan que adopta propone una norma nacional sobre anuncios de alimentos con mucho azúcar, sal o grasa dirigidos a menores, en medios digitales y tradicionales.",
+          "authoredAnalysis": "Explicit main-programme development of the named national plan; operative27 national child-directed high-calorie/sugar/fat/salt food-marketing rules across online/offline media. Consultation/implementation conditions retained.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eximir de cuota durante todo el primer año a quienes comiencen como autónomos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece eximir de cuota durante todo el primer año a quienes comiencen como autónomos.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas del impuesto sobre la renta no establecen ajustar sus tramos o cantidades para descontar la subida de precios.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas del impuesto sobre la renta no establecen ajustar sus tramos o cantidades para descontar la subida de precios.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reforzar los bonos de luz y calefacción, sin precisar ayudas pagadas directamente a la persona consumidora.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone reforzar los bonos de luz y calefacción, sin precisar ayudas pagadas directamente a la persona consumidora.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone trabajo voluntario hasta los 72 años en especialidades con escasez de personal, sin precisar que la medida cubra a médicos de familia y pediatras de atención primaria.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone trabajo voluntario hasta los 72 años en especialidades con escasez de personal, sin precisar que la medida cubra a médicos de familia y pediatras de atención primaria.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de acceso y métodos de aborto no establecen aquí una posición específica sobre la autorización de quien tenga la responsabilidad legal de una menor.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas de acceso y métodos de aborto no establecen aquí una posición específica sobre la autorización de quien tenga la responsabilidad legal de una menor.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone recibir ciertas prestaciones en un máximo de treinta días, sin establecer citas para prestaciones en quince días naturales.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone recibir ciertas prestaciones en un máximo de treinta días, sin establecer citas para prestaciones en quince días naturales.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone supervisión de algoritmos y autoridades de inteligencia artificial, sin establecer que toda decisión pública que valore casos individuales deba tomarla una persona.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone supervisión de algoritmos y autoridades de inteligencia artificial, sin establecer que toda decisión pública que valore casos individuales deba tomarla una persona.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar la inversión en defensa según compromisos internacionales, sin fijar expresamente el 2% de la economía en esta propuesta.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone aumentar la inversión en defensa según compromisos internacionales, sin fijar expresamente el 2% de la economía en esta propuesta.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone avales del 20% de la hipoteca para menores de 35 años que compren su primera vivienda habitual.",
+          "authoredAnalysis": "Common text in both PSOE variants supports mortgage guarantees for under-35 buyers of a first habitual home, with a 20% loan guarantee and a 2.5-billion-euro facility. This is narrower than the question; it does not promise the PP 95% financing threshold or include age 35.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone prestaciones de crianza e incentivos familiares, sin establecer cobro desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone prestaciones de crianza e incentivos familiares, sin establecer cobro desde el quinto mes de embarazo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que el diagnóstico de esclerosis lateral amiotrófica baste para reconocer la dependencia.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece que el diagnóstico de esclerosis lateral amiotrófica baste para reconocer la dependencia.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas familiares no establecen la bonificación del 45% en cotizaciones de personal del hogar para familias numerosas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las medidas familiares no establecen la bonificación del 45% en cotizaciones de personal del hogar para familias numerosas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone actividades extraescolares y refuerzo educativo, sin vincular expresamente tutorías adicionales al aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone actividades extraescolares y refuerzo educativo, sin vincular expresamente tutorías adicionales al aprendizaje perdido durante la pandemia.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La atención presencial y la simplificación de trámites no establecen intermediarios que actúen en nombre de quienes necesiten ayuda.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. La atención presencial y la simplificación de trámites no establecen intermediarios que actúen en nombre de quienes necesiten ayuda.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone servicios básicos y conexiones en el medio rural, sin establecer transporte a demanda y a precio reducido hacia el municipio de referencia.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone servicios básicos y conexiones en el medio rural, sin establecer transporte a demanda y a precio reducido hacia el municipio de referencia.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir alimentar animales por la fuerza para producir alimentos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir alimentar animales por la fuerza para producir alimentos.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir petardos y fuegos artificiales, también en fiestas populares.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. No establece prohibir petardos y fuegos artificiales, también en fiestas populares.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone repositorios abiertos y avanzar hacia publicación con acceso abierto, sin precisar en este texto libre acceso a todos los resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone repositorios abiertos y avanzar hacia publicación con acceso abierto, sin precisar en este texto libre acceso a todos los resultados financiados con dinero público.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las reformas electorales no establecen una circunscripción única para elegir el Congreso en toda España.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Las reformas electorales no establecen una circunscripción única para elegir el Congreso en toda España.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone debates electorales obligatorios, sin establecer el mismo tiempo de vídeos en medios públicos para todas las candidaturas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related goals do not establish the exact displayed mechanism, quantity, actor, scope, financing or entitlement; silence remains unscored. Propone debates electorales obligatorios, sin establecer el mismo tiempo de vídeos en medios públicos para todas las candidaturas.",
+          "citationCount": 1
+        }
+      ]
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 400,
+  "explicitMatrixCells": 5120,
+  "defaultNumericMappings": 202,
+  "scopedNumericMappings": 7,
+  "totalNumericMappings": 209,
+  "independentAnswerCases": 1045,
+  "limitations": [
+    "Both272page programme variants previously fully read; only common policy meanings used. No new full reading, PDF or120page shared-reference reading counted.",
+    "Shared government source is bound to a separate direct PSOE adoption on mainPDF183; no inheritance of PP-derived values. PSC excluded from48PSOEterritories.",
+    "Five new positions preserve targeted vulnerable-child meals, child-advertising consultation/scope and non-official-act aforamiento exception. All previous204numeric mappings, including eight PSOE mappings, remain exact.",
+    "Full law endorsement/diagnosis/general strategy and missing quantities/actors/modalities remain unscored. Judicial double-legitimacy phrasing is not an explicit parliamentary-selection statement; prescription-copay aspiration and targeted reforms retain earlier interpretation.",
+    "Reference current-primary historical identity is recorded; exact pre-vote shared-reference bytes and wider territorial/source-family/full-corpus/final-release/production/publication acceptance remain open."
+  ]
+}

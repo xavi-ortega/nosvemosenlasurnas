@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T15:34:10.239686+00:00",
+  "recordedAt": "2026-10-11T15:50:09.110434+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -454,12 +454,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone derogar la ley de vivienda y rechaza expresamente sus controles de precios del alquiler.",
+          "authoredAnalysis": "PDF11 explicitly names price controls in the repeal rationale. This independently establishes rejection of the ceiling; repeal alone never negates every other provision. Publisher impact claims are not adopted.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 17043,
+              "end": 17317,
+              "quote": "Derogar la Llei 12/2023, de 24 de maig, pel dret a l’habitatge, per invasió\n     competencial, per suposar un atac frontal a la propietat privada, pels greus\n     perjudicis que generen els controls de preus i pel seu negatiu impacte sobre\n     l’oferta de pisos de lloguer.",
+              "contextStart": 17026,
+              "contextEnd": 20151,
+              "contextSha256": "c8f6531d9d8ff5b9cec9eb77fc9343021eb4a6be3b56b38ebdaac69c53720b22"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-019",
@@ -1160,10 +1179,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -1831,10 +1852,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -2511,10 +2534,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-019",
@@ -3128,12 +3153,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone que los ciudadanos de Cataluña no paguen el impuesto de sucesiones y donaciones.",
+          "authoredAnalysis": "PDF24 abolition includes parent-child inheritances but explicitly limits the beneficiary scope to citizens of Catalonia. Qualified+1 preserves that territorial restriction, absent from the unrestricted question, rather than scoring universal Spanish abolition.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 53241,
+              "end": 53351,
+              "quote": "Treballarem per a que els ciutadans de Catalunya no hagin de pagar l’impost\n    sobre successions i donacions.",
+              "contextStart": 52294,
+              "contextEnd": 55549,
+              "contextSha256": "a5ace8fbeea7b15fa86a618e06305b9f90576d03083620a81d9f3d8bef854145"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -3769,10 +3813,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -4338,10 +4384,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -4952,10 +5000,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -5564,12 +5614,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un consejo de justicia catalán, sin precisar aquí quién elige a los vocales judiciales del consejo general.",
+          "authoredAnalysis": "A decentralised council chaired by the Catalan high court president does not establish national judicial-member electoral method.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 33,
+              "printedPage": 33,
+              "start": 79527,
+              "end": 79738,
+              "quote": "Reclamarem l’establiment del Consell de Justícia de Catalunya, òrgan\n     desconcentrat del Consell General del Poder Judicial i presidit pel president del\n     Tribunal Superior de Justícia de Catalunya (TSJC).",
+              "contextStart": 77765,
+              "contextEnd": 79964,
+              "contextSha256": "cf78085cc5a6847d20500a2366765b2d0bdcd42844ec72f2c9b4e82799c107ad"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -6213,12 +6282,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende mantener el poder adquisitivo de las pensiones, sin concretar aquí cómo se actualizarían según los precios.",
+          "authoredAnalysis": "Purchasing-power adequacy is an objective; no explicit cost-of-living or consumer-price indexation rule is supplied. Minimum/widow/orphan improvement and40-year early-retirement coefficients are separate.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 8987,
+              "end": 10038,
+              "quote": "PENSIONS.        GARANTIR        EL  MANTENIMENT DEL PODER ADQUISITIU\n •   És l’Estat l’administració     que   avui  manté  la competència en matèria de\n     pensions. En aquest sentit el PDeCAT - Espai CiU seguirà pel manteniment del\n     poder adquisitiu de les pensions i per la viabilitat futura del sistema.\n •   El manteniment del poder adquisitiu de les pensions ha de ser compatible amb\n     la millora gradual de les pensions mínimes, de les d’orfenesa i de les de viduïtat.\n •   Els treballadors amb llargues carreres de cotització que tenen la mala sort\n     d’estar a l’atur en els anys previs a la jubilació han de poder corregir parcialment\n     les fortes penalitzacions que s’apliquen a la seva pensió.\n •   Seguirem defensant l’adequació del sistema de pensions de manera acordada,\n     en el sí dels Pactes de Toledo i amb l’acord dels agents socials.\n •   Treballarem per la supressió dels coeficients reductors en la prestació de\n     jubilació de les persones que han cotitzat 40 anys o més i es jubilen de forma\n     anticipada.",
+              "contextStart": 7616,
+              "contextEnd": 10399,
+              "contextSha256": "bfdb1ae38217a2726afdcd800bb36b13097ce4808ec7609f3401f423613d285a"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -6864,12 +6952,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone eliminar el impuesto de solidaridad sobre las grandes fortunas.",
+          "authoredAnalysis": "PDF24 explicitly abolishes the specific personal solidarity large-fortunes levy. Separate wealth, capital-income and inheritance bullets are not conflated with it.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "start": 53091,
+              "end": 53236,
+              "quote": "Proposem eliminar l’Impost temporal de Solidaritat de les Grans Fortunes i reduir\n    el gravamen estatal de l’IRPF sobre les rendes del capital.",
+              "contextStart": 52294,
+              "contextEnd": 55549,
+              "contextSha256": "a5ace8fbeea7b15fa86a618e06305b9f90576d03083620a81d9f3d8bef854145"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -7453,10 +7560,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -8049,12 +8158,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar la vivienda pública y recuperar ayudas si se venden viviendas protegidas por encima del precio fijado, sin precisar una prohibición de vender la pública.",
+          "authoredAnalysis": "Protected subsidised stock can have private ownership; the clawback does not establish either a general private-sale permission or ban for publicly owned housing.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 18538,
+              "end": 19118,
+              "quote": "Incentivar que els pisos de protecció oficial continuïn complint la seva funció\n    social quan perdin la seva condició a través d’haver de retornar la subvenció\n    més els interessos corresponents en cas de posar-se a la venda o en lloguer a\n    un preu superior al fixat per als habitatges de protecció oficial.\n•   Donar suport econòmic perquè la Generalitat i les administracions locals puguin\n    ampliar les seves possibilitats de fer efectiu el dret de tanteig i retracte en\n    cas d’execucions hipotecàries, amb la finalitat d’incrementar el parc públic\n    d’habitatge.",
+              "contextStart": 17026,
+              "contextEnd": 20151,
+              "contextSha256": "c8f6531d9d8ff5b9cec9eb77fc9343021eb4a6be3b56b38ebdaac69c53720b22"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -8726,12 +8854,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone evitar impuestos adicionales a la sanidad privada, sin concretar más acuerdos para atender a pacientes de la pública.",
+          "authoredAnalysis": "Private-health taxation and claimed public savings do not establish expanded publicly financed provider agreements.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 14641,
+              "end": 14862,
+              "quote": "Evitar gravar la sanitat privada amb impostos extres, ja que ajuda a\n     descongestionar la sanitat pública, li redueix despesa i implicaria una doble\n     imposició pels ciutadans que també fan ús de la sanitat privada.",
+              "contextStart": 14361,
+              "contextEnd": 17025,
+              "contextSha256": "333a19e4086ebf9576d04f20f090f73b60038c26e334a8cea242dd3099dbdad4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-019",
@@ -9359,10 +9506,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -9928,12 +10077,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone negociar la recuperación pública de centrales del Pirineo de Lleida, sin fijar que ocurra al caducar sus concesiones.",
+          "authoredAnalysis": "Named Endesa Lleida Pyrenean plants and a negotiated recovery society do not specify the expiry trigger in the question. Neither geography nor trigger is broadened.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 16,
+              "printedPage": 16,
+              "start": 31471,
+              "end": 31701,
+              "quote": "Compromís de negociar amb la Confederació Hidrogràfica de l’Ebre i el govern\n     espanyol la creació d’una societat per recuperar la gestió i titularitat pública de\n     les centrals hidroelèctriques d’Endesa al Pirineu lleidatà.",
+              "contextStart": 29663,
+              "contextEnd": 32492,
+              "contextSha256": "aedc204f65c24cebd19547a7ead235f40d324b4e676b2c4a1a0ee0261191c498"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -10492,10 +10660,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -11090,10 +11260,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -11705,10 +11877,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -12299,10 +12473,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -12895,10 +13071,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -13491,12 +13669,47 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reformar contratos de prácticas y dar becas remuneradas para volver a estudiar, sin precisar el pago de todas las prácticas curriculares.",
+          "authoredAnalysis": "Second-chance scholarships for unemployed/out-of-education young people and training employment contracts differ from all curricular internships.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 7359,
+              "end": 7558,
+              "quote": "Establir beques de “segona oportunitat”, remunerades, per a joves sense\n       treball i sense estudis, que promoguin el seu retorn al sistema educatiu i\n       condicionades als resultats acadèmics.",
+              "contextStart": 4828,
+              "contextEnd": 7615,
+              "contextSha256": "6fad42069745286d23335ef2b0f0b05e1552f9918daf75f69f96e0f631142626"
+            },
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 7786,
+              "end": 7917,
+              "quote": "Impulsar la reforma dels contractes en pràctiques i de formació i aprenentatge\n       per facilitar primeres experiències laborals.",
+              "contextStart": 7616,
+              "contextEnd": 10399,
+              "contextSha256": "bfdb1ae38217a2726afdcd800bb36b13097ce4808ec7609f3401f423613d285a"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -14098,12 +14311,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone 32 semanas de permiso para el progenitor de hogares monoparentales, sin extender esa duración a todos los permisos.",
+          "authoredAnalysis": "The explicit32-week single-parent condition does not establish a general six-month extension for both maternity and paternity leave. No universal pledge or opposition is invented.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 23924,
+              "end": 24048,
+              "quote": "Treballar per tal que el progenitor d’una llar monoparental disposi de 32\n    setmanes de baixa per maternitat o paternitat.",
+              "contextStart": 22954,
+              "contextEnd": 25765,
+              "contextSha256": "de4c0adb25f1ba458c7acf3f66766ea96ba61220a8a0a2d9203c7d712e5cffa4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -14672,10 +14904,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -15235,10 +15469,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -15796,12 +16032,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más financiación universitaria y gestionar las becas en Cataluña, sin precisar el precio de repetir una asignatura.",
+          "authoredAnalysis": "University funding and scholarship management differ from abolishing repeat-enrolment tuition surcharges.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 36121,
+              "end": 36761,
+              "quote": "LES UNIVERSITATS, FONAMENT DE LA SOCIETAT DEL CONEIXEMENT\n •   Més recursos per part de l’Estat. La inversió en universitats avui representa el\n     0,40% del PIB, s’ha d’incrementar fins al 0,60% del PIB en cinc anys, tenint en\n     compte que països de dimensió mitjana semblant a Catalunya –Àustria,\n     Dinamarca, Suècia, Finlàndia, Escòcia, Irlanda– hi destinen al voltant de l’1% del\n     PIB.\n •   Reclamarem el traspàs a la Generalitat de la gestió del sistema estatal de beques\n     que opera a Catalunya, tal com han determinat diverses sentències del Tribunal\n     Constitucional, incomplertes pels diferents governs de l’Estat.",
+              "contextStart": 35069,
+              "contextEnd": 38143,
+              "contextSha256": "2f21566a11e566121b6328baef32e98dcdc8bd6a36c9fe512908b51b468e8d2b"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -16378,10 +16633,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -16956,12 +17213,47 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cuota cero para autónomos con ingresos inferiores al salario mínimo, sin precisar si ese umbral usa ingresos netos.",
+          "authoredAnalysis": "PDF28 uses ingressos without net/gross definition; the separate preceding net-return RMI goal does not attach net income to the SMI threshold. PDF7 youth exception also permits a minimum contribution. Exact net-income rubric therefore remains unscored.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 64827,
+              "end": 65286,
+              "quote": "Flexibilitzar   la  regulació     del  treball autònom adaptant-lo als nous temps\n          econòmics i tecnològics, i ajustant la pressió fiscal al mínim possible fins que\n          el projecte no entri en la seva fase de consolidació, és a dir, a garantir un\n          rendiment net equiparable a la Renda Mínima d’Inserció (RMI).\n      –   Establir una tarifa zero per a autònoms no habituals i per a aquells que tenen\n          ingressos inferiors al SMI.",
+              "contextStart": 64205,
+              "contextEnd": 67351,
+              "contextSha256": "cee67ffaa9cf059a7611d921af18a96f47f52ff0150616703f63f0d2ed463704"
+            },
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 7,
+              "printedPage": 7,
+              "start": 7925,
+              "end": 8154,
+              "quote": "Afavorir l’autoocupació dels joves. Mentre els seus ingressos siguin inferiors al\n       salari mínim    han   d’estar  exempts     de   cotització a la Seguretat Social com\n       autònoms, o bé aportar una cotització de mínims.",
+              "contextStart": 7616,
+              "contextEnd": 10399,
+              "contextSha256": "bfdb1ae38217a2726afdcd800bb36b13097ce4808ec7609f3401f423613d285a"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -17519,12 +17811,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone bajar el impuesto de terrenos para construir alquiler social, sin precisar una exención al comprar la primera vivienda.",
+          "authoredAnalysis": "Land transfers destined for social rental construction differ from first habitual-home buyer VAT exemption.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 17323,
+              "end": 17600,
+              "quote": "Plantejar al govern de l’Estat la reducció de l’IVA aplicat a les cessions de\n     terreny destinades a la construcció de pisos de lloguer social, del 21% actual al\n     tipus reduït del 10%, amb la finalitat de facilitar la seva construcció i minorar el\n     preu del lloguer.",
+              "contextStart": 17026,
+              "contextEnd": 20151,
+              "contextSha256": "c8f6531d9d8ff5b9cec9eb77fc9343021eb4a6be3b56b38ebdaac69c53720b22"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -18084,10 +18395,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -18664,10 +18977,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -19261,10 +19576,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -19840,12 +20157,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un fondo para evitar cortes de luz y gas a personas vulnerables, sin precisar una prohibición permanente para todos los suministros básicos.",
+          "authoredAnalysis": "Budget-backed guarantee for electricity/gas differs from an explicit permanent legal prohibition encompassing basic utilities. Water and permanent ban mechanism are not established.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 31,
+              "printedPage": 31,
+              "start": 74997,
+              "end": 75351,
+              "quote": "Impulsarem la creació d’un fons de garantia per a la protecció dels\n       consumidors vulnerables amb càrrec als Pressupostos Generals de l’Estat i la\n       transferència de la seva gestió a la Generalitat la qual cosa permetrà que no es\n       produeixin talls de subministrament elèctrics o de gas a les persones amb\n       vulnerabilitat energètica.",
+              "contextStart": 73785,
+              "contextEnd": 75629,
+              "contextSha256": "6a3f00aba4bb525b5fb9d82470a7445e0699a022ec148ec4b8d331db16a4dea0"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -20422,10 +20758,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -20985,10 +21323,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -21585,10 +21925,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -22210,12 +22552,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone estudiar la gestación subrogada, sin fijar si mantendría su prohibición o la permitiría.",
+          "authoredAnalysis": "An explicit study is neither support nor opposition nor intermediate numeric neutrality.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 24304,
+              "end": 24417,
+              "quote": "Proposem estudiar amb rigor des de la seva vessant bioètica, jurídica i\n    administrativa la gestació subrogada.",
+              "contextStart": 22954,
+              "contextEnd": 25765,
+              "contextSha256": "de4c0adb25f1ba458c7acf3f66766ea96ba61220a8a0a2d9203c7d712e5cffa4"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -22766,10 +23127,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -23329,10 +23692,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -23981,10 +24346,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -24596,10 +24963,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25176,10 +25545,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25756,10 +26127,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -26339,10 +26712,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -26902,10 +27277,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -27497,12 +27874,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una ayuda digital para personas con vulnerabilidad económica y más cobertura, sin ofrecer una conexión gratuita para todas.",
+          "authoredAnalysis": "Targeted digital subsidy and universal coverage expansion do not establish zero price for everybody.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 19,
+              "printedPage": 19,
+              "start": 38572,
+              "end": 39508,
+              "quote": "LLUITAR CONTRA LA BRETXA DIGITAL\n •   Reclamarem al govern central la creació d’un bo social digital per aquelles\n     persones en una situació de vulnerabilitat econòmica, tal com ja succeeix en el\n     subministrament elèctric i en el del gas.\n\n\n TECNOLOGIES DE LA COMUNICACIÓ I LA INFORMACIÓ\n •   Plantejar al govern central la realització dels canvis normatius necessaris per\n     afavorir la competència i garantir l’abaratiment dels serveis de\n     telecomunicacions, especialment de la banda ampla i l’augment de les velocitats\n     de servei.\n •   Crear un fons pel finançament de l’accés universal per a l’extensió de cobertura\n     de banda ampla de nova generació i el desplegament de xarxes d’alta i molt alta\n     velocitat en zones en què no existeix oferta i en què no estigui prevista a curt\n     termini. Aquest fons haurà de tenir els recursos suficients per complir amb els\n     objectius de l’Agenda Digital Europea.",
+              "contextStart": 38144,
+              "contextEnd": 40857,
+              "contextSha256": "d6a3dbe2cb074e8b9c3f65ffc4f800f5cbf6c84e1217058b96cb70f170d6133f"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -28146,10 +28542,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -28729,10 +29127,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -29292,10 +29692,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -29873,10 +30275,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -30436,10 +30840,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -31017,10 +31423,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -31580,10 +31988,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -32143,10 +32553,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -32706,10 +33118,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -33269,10 +33683,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -33847,12 +34263,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone evaluar las normas y reforzar la transparencia, sin concretar una ficha de quién negocia cada ley.",
+          "authoredAnalysis": "Public procurement visibility, policy evaluation and party-finance transparency are not an individual legislative negotiation/influence record.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 33,
+              "printedPage": 33,
+              "start": 77782,
+              "end": 78202,
+              "quote": "TRANSPARÈNCIA\n  •    Avaluarem la reformada llei de contractes per determinar si s’ajusta als\n       objectius de visibilitat i transparència en els processos d’adjudicació de\n       concursos d’obres i serveis.\n  •    Demanarem el retiment de comptes i l’avaluació de les normatives que\n       s’aprovin i de les   polítiques    que  es   duguin   a  terme,   així com sobre el\n       compliment dels objectius marcats.",
+              "contextStart": 77765,
+              "contextEnd": 79964,
+              "contextSha256": "cf78085cc5a6847d20500a2366765b2d0bdcd42844ec72f2c9b4e82799c107ad"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -34412,10 +34847,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -34993,10 +35430,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -35573,10 +36012,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -36135,12 +36576,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una cuota reducida durante dos años al iniciar la actividad, sin precisar una exención completa el primer año.",
+          "authoredAnalysis": "A reduced two-year tariff is not an explicit zero first-year charge or explicit rejection of such a charge.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 28,
+              "printedPage": 28,
+              "start": 65297,
+              "end": 65589,
+              "quote": "Regular una tarifa plana reduïda durant dos anys per a col·lectius de\n          treballadors autònoms que iniciïn una activitat o bé donin continuïtat a una\n          activitat per successió empresarial, o bé per treballadores autònomes que\n          es reincorporen després de la maternitat.",
+              "contextStart": 64205,
+              "contextEnd": 67351,
+              "contextSha256": "cee67ffaa9cf059a7611d921af18a96f47f52ff0150616703f63f0d2ed463704"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -36735,12 +37195,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone revisar el impuesto sobre los sueldos, sin concretar un ajuste por la subida de los precios.",
+          "authoredAnalysis": "Review/rebalancing wage-income taxation and reducing pressure do not identify an inflation-deflation/indexation mechanism.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 23,
+              "printedPage": 23,
+              "start": 51745,
+              "end": 51974,
+              "quote": "També cal revisar i reequilibrar la fiscalitat que grava les rendes del treball a\n     l’impost sobre la renda, ja que són les que suporten el gruix de la pressió fiscal,\n     amb uns tipus impositius que arriben a ser excessius.",
+              "contextStart": 49086,
+              "contextEnd": 52293,
+              "contextSha256": "8c984800ec100d44e7762b3072d420f60d0fc4c770e19087893fcc753430a32d"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -37299,12 +37778,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cambios en las ayudas de luz y calefacción, sin precisar un pago directo a la persona consumidora.",
+          "authoredAnalysis": "Eligibility/funding/guarantee administration does not identify a direct recipient payment rather than bill discount.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 31,
+              "printedPage": 31,
+              "start": 74328,
+              "end": 75351,
+              "quote": "Reclamarem que per ser beneficiari del bo social elèctric o del bo social tèrmic\n       s’hagi d’incloure l’Indicador de Renda de Suficiència de Catalunya com a índex\n       de referència.\n   •   Demanarem ampliar els beneficiaris del bo social elèctric i del bo social tèrmic\n       a les entitats socials titulars dels subministraments d’habitatges destinades a\n       la inclusió de persones vulnerables i a altres col·lectius que avui n’estan\n       exclosos.\n   •   Reclamarem que, mentre sigui l’Estat qui reguli el bo social elèctric, sigui\n       l’administració encarregada d’assumir el seu finançament, tal com succeeix\n       amb el bo social tèrmic.\n   •   Impulsarem la creació d’un fons de garantia per a la protecció dels\n       consumidors vulnerables amb càrrec als Pressupostos Generals de l’Estat i la\n       transferència de la seva gestió a la Generalitat la qual cosa permetrà que no es\n       produeixin talls de subministrament elèctrics o de gas a les persones amb\n       vulnerabilitat energètica.",
+              "contextStart": 73785,
+              "contextEnd": 75629,
+              "contextSha256": "6a3f00aba4bb525b5fb9d82470a7445e0699a022ec148ec4b8d331db16a4dea0"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -37865,10 +38363,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -38446,10 +38946,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -39010,10 +39512,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -39574,10 +40078,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -40190,10 +40696,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -40790,10 +41298,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -41352,12 +41862,31 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar prestaciones por crianza, sin precisar que comiencen en el quinto mes de embarazo.",
+          "authoredAnalysis": "Under18 child-care benefits and tax deductions have no fifth-pregnancy-month trigger.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 5078,
+              "end": 5404,
+              "quote": "Reclamar a l’Estat la modificació de la regulació de l’Ingrés Mínim Vital per fer-\n       lo plenament compatible amb prestacions específiques de criança, d’import\n       superior a les vigents de la Seguretat Social per fill a càrrec i que puguin ser\n       percebudes per una majoria de famílies amb fills menors de 18 anys.",
+              "contextStart": 4828,
+              "contextEnd": 7615,
+              "contextSha256": "6fad42069745286d23335ef2b0f0b05e1552f9918daf75f69f96e0f631142626"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -41918,10 +42447,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -42482,10 +43013,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -43046,10 +43579,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -43610,10 +44145,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -44174,10 +44711,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -44755,10 +45294,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -45319,10 +45860,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -45881,12 +46424,47 @@
         },
         {
           "candidacyId": "boe-2023-017",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más financiación y colaboración en investigación, sin precisar acceso libre a todos los resultados financiados públicamente.",
+          "authoredAnalysis": "Decentralised funding, matching funds and knowledge transfer do not establish a universal open-access result requirement.",
+          "citations": [
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 36952,
+              "end": 38087,
+              "quote": "LA RECERCA         PER INNOVAR I ESTIMULAR EL CREIXEMENT ECONÒMIC\n •   Pressionarem davant l’administració de l’Estat per a descentralitzar la recerca i\n     la innovació. Avui la gran majoria de les persones que formen part dels consells\n     assessors en matèria de recerca i innovació dels que disposa el Govern de\n     l’Estat, estan domiciliades a Madrid, la qual cosa centralitza l’activitat\n     investigadora.\n •   Treballarem per aconseguir que els centres tecnològics disposin de l’estabilitat\n     financera, massa crítica i capacitat investigadora per tal d’establir línies\n     d’investigació consorciades i de llarg termini amb les pimes.\n •   Impulsarem un model d’innovació que prioritzi el finançament de les línies de\n     recerca que contribueixin a la millora de la competitivitat de les empreses\n     industrials i a la generació de llocs de treball de qualitat.\n •   Treballarem per una política de recerca i innovació destinada a crear una nova\n     indústria del coneixement, amb prou fons per subvencionar projectes d’alt risc\n     tecnològic empresarial que arrosseguin finançament privat a través de matching",
+              "contextStart": 35069,
+              "contextEnd": 38143,
+              "contextSha256": "2f21566a11e566121b6328baef32e98dcdc8bd6a36c9fe512908b51b468e8d2b"
+            },
+            {
+              "documentId": "pdecat-primary-cdn",
+              "sourceUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+              "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+              "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+              "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+              "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+              "pdfPage": 19,
+              "printedPage": 19,
+              "start": 38149,
+              "end": 38568,
+              "quote": "funds. Aquesta és la política que segueixen tots els països capdavanters en\n     innovació, on l’estat assumeix una part importat del risc tecnològic a canvi que\n     les petites i mitjanes empreses creixin i generin llocs de treball.\n •   Treballarem per aconseguir beneficis fiscals a la inversió i reinversió en\n     activitats vinculades al sistema de recerca i coneixement i a la transferència de\n     coneixement.",
+              "contextStart": 38144,
+              "contextEnd": 40857,
+              "contextSha256": "d6a3dbe2cb074e8b9c3f65ffc4f800f5cbf6c84e1217058b96cb70f170d6133f"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -46464,10 +47042,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -47028,10 +47608,12 @@
           "candidacyId": "boe-2023-017",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "En este programa de PDeCAT-EspaiCiU no hemos encontrado una propuesta concreta sobre esta medida.",
+          "authoredAnalysis": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentId": "pdecat-primary-cdn"
         },
         {
           "candidacyId": "boe-2023-018",

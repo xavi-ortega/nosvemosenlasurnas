@@ -2486,8 +2486,8 @@
           "votes": 2311
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "specific_2023_publisher_chain_verified",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "pdecat-primary-cdn",
         "pdecat-preserved-beteve"
@@ -2495,7 +2495,7 @@
       "ballotAliases": [
         "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU (PDeCAT-E-CiU)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_four_pdecat_espaiciu_congress_ballots_verified",
       "ballotRecordIds": [
         "congress-barcelona-16",
         "congress-girona-13",
@@ -2504,7 +2504,29 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/pdecat.json"
-      ]
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "pdecat-primary-cdn",
+          "pdecat-preserved-beteve"
+        ],
+        "ballotRecordIds": [
+          "congress-barcelona-16",
+          "congress-girona-13",
+          "congress-lleida-13",
+          "congress-tarragona-15"
+        ],
+        "provenance": "outputs/2023-pdecat-source-provenance.json",
+        "rationale": "Original publisher catalogue explicitly labels23July2023 PDeCAT#espaiciu programme and links exact cachedV2 PDF. Pre-election original homepage names all four heads; original programme introduction covers general-election representatives."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T15:50:09.110434+00:00",
+        "report": "outputs/2023-authored-pdecat-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 3,
+        "ambiguousCells": 19,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-018",
@@ -5189,7 +5211,7 @@
       "retrievedAt": "2026-10-11T07:43:38.597288+00:00",
       "resolvedUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_specific_2023_publisher_chain_and_four_ballots_verified",
       "file": "storage/app/election-sources/2023-congress/pdecat-primary-cdn.pdf",
       "sha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
       "bytes": 481870,
@@ -5200,8 +5222,9 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/pdecat.json"
+      "analysisStatus": "full_document_read_specific_mappings_pending",
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+      "provenanceEvidence": "outputs/2023-pdecat-source-provenance.json"
     },
     {
       "id": "pdecat-preserved-beteve",
@@ -5210,7 +5233,7 @@
       "retrievedAt": "2026-10-11T07:43:38.597338+00:00",
       "resolvedUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-pdecat-eleccions-generals-2023-190723.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_specific_2023_publisher_chain_and_four_ballots_verified",
       "file": "storage/app/election-sources/2023-congress/pdecat-preserved-beteve.pdf",
       "sha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
       "bytes": 481870,
@@ -5221,8 +5244,9 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/pdecat.json"
+      "analysisStatus": "full_document_read_specific_mappings_pending",
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+      "provenanceEvidence": "outputs/2023-pdecat-source-provenance.json"
     },
     {
       "id": "teruel-existe",
@@ -8422,15 +8446,172 @@
       "retrievedAt": "2026-10-11T15:29:43.906546+00:00",
       "status": "publication_retrieval_failed",
       "error": "HTTP Error 404: NOT FOUND"
+    },
+    {
+      "id": "pdecat-23j-primary-announcement",
+      "url": "https://www.partitdemocrata.cat/noticies/el-pdecat-concorrera-a-les-proximes-eleccions-espanyoles-del-23-de-juliol-del-2023/",
+      "retrievedAt": "2026-10-11T15:42:06.698131+00:00",
+      "resolvedUrl": "https://partitdemocrata.cat/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": "Sun, 11 Oct 2026 07:04:30 GMT",
+      "status": "excluded_unrelated_current_domain_redirect",
+      "file": "storage/app/election-sources/2023-congress/pdecat-23j-primary-announcement-publication-54c10621202c.html",
+      "sha256": "54c10621202c853c5c92e42a4d9a3de9e1f13ee71192eaeb9f6d0301b9e6277e",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-23j-primary-announcement-publication-54c10621202c.txt",
+      "textSha256": "f73aa2420ccc362359dd8f06b58c245727140e48942f3ed02e4ecadf181c61c3",
+      "links": [],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": false,
+      "programmeReading": false,
+      "authoredAnalysis": "The live domain redirected to unrelated casino material; excluded from election evidence. No external casino link followed."
+    },
+    {
+      "id": "pdecat-23j-beteve-publication",
+      "url": "https://beteve.cat/politica/programa-pdecat-eleccions-generals-2023/",
+      "retrievedAt": "2026-10-11T15:42:06.698476+00:00",
+      "resolvedUrl": "https://beteve.cat/politica/programa-pdecat-eleccions-generals-2023/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pdecat-23j-beteve-publication-publication-c29c6ae41b44.html",
+      "sha256": "c29c6ae41b44f8fd6983ad8173a2dc7138814181ec35c6227142ba87b396d9e8",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-23j-beteve-publication-publication-c29c6ae41b44.txt",
+      "textSha256": "e1b09a2e316020cc6b73aa910cd7f343b04759d4712b63bcb9a930c85b00354d",
+      "links": [
+        "https://beteve.cat/agenda/festa-major-corts-programa/",
+        "https://beteve.cat/eleccions-generals-2023/",
+        "https://beteve.cat/politica/calendari-eleccions-generals-2023-espanya-dates-clau/",
+        "https://beteve.cat/politica/com-saber-on-votar-28-maig-eleccions-municipals-2023/",
+        "https://beteve.cat/politica/com-saber-tocat-mesa-electoral-eleccions-municipals-2023/",
+        "https://beteve.cat/politica/decidir-23-j-qui-votar-eleccions-generals-2023/",
+        "https://beteve.cat/politica/eleccions-generals-2023-espanya-que-sap-data-quan-votara-quin-calendari/",
+        "https://beteve.cat/politica/enquestes-eleccions-generals-2023-espanya-barcelona/",
+        "https://beteve.cat/politica/llista-pdecat-eleccions-generals-2023-espanya-barcelona/",
+        "https://beteve.cat/politica/llistes-eleccions-generals-2023-barcelona/",
+        "https://beteve.cat/politica/on-votar-barcelona-eleccions-generals-2023-mapa-colegis-electorals/",
+        "https://beteve.cat/politica/programa-erc-eleccions-generals-2023/",
+        "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
+        "https://beteve.cat/politica/programa-sumar-eleccions-generals-2023/",
+        "https://beteve.cat/politica/relacio-catalunya-espanya-centra-debat-eleccions-generals-2023/",
+        "https://beteve.cat/politica/vot-correu-eleccions-generals-2023-espanya/",
+        "https://beteve.cat/programacio/",
+        "https://img.beteve.cat/wp-content/uploads/2023/07/programa-pdecat-eleccions-generals-2023-190723.pdf"
+      ],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
+    },
+    {
+      "id": "pdecat-primary-homepage",
+      "url": "https://www.partitdemocrata.cat/",
+      "retrievedAt": "2026-10-11T15:42:06.698548+00:00",
+      "resolvedUrl": "https://partitdemocrata.cat/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": "Sun, 11 Oct 2026 07:04:30 GMT",
+      "status": "excluded_unrelated_current_domain_redirect",
+      "file": "storage/app/election-sources/2023-congress/pdecat-primary-homepage-publication-54c10621202c.html",
+      "sha256": "54c10621202c853c5c92e42a4d9a3de9e1f13ee71192eaeb9f6d0301b9e6277e",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-primary-homepage-publication-54c10621202c.txt",
+      "textSha256": "f73aa2420ccc362359dd8f06b58c245727140e48942f3ed02e4ecadf181c61c3",
+      "links": [],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": false,
+      "programmeReading": false,
+      "authoredAnalysis": "The live domain redirected to unrelated casino material; excluded from election evidence. No external casino link followed."
+    },
+    {
+      "id": "pdecat-primary-july-homepage",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.partitdemocrata.cat/",
+      "retrievedAt": "2026-10-11T15:42:35.569779+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230719110851id_/https://www.partitdemocrata.cat/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pdecat-primary-july-homepage-publication-4de2a8e5b6dc.html",
+      "sha256": "4de2a8e5b6dcec7bb0b8bafd7e8296c97a0fd702a23bcc9a96d5d5c9bd4b1112",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-primary-july-homepage-publication-4de2a8e5b6dc.txt",
+      "textSha256": "ee50d88bc88261c0c09034601d0d4f81018033fe039e0e5ebec6460568cb187c",
+      "links": [
+        "https://web.archive.org/noticies/el-pdecat-comencar-a-impulsar-lespai-ciu-fitxa-roger-montanola-com-a-cap-de-llista-per-a-les-eleccions-estatals-del-23-j"
+      ],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
+    },
+    {
+      "id": "pdecat-23j-primary-announcement-archive",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.partitdemocrata.cat/noticies/el-pdecat-concorrera-a-les-proximes-eleccions-espanyoles-del-23-de-juliol-del-2023/",
+      "retrievedAt": "2026-10-11T15:42:35.570089+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230726051149id_/https://www.partitdemocrata.cat/noticies/el-pdecat-concorrera-a-les-proximes-eleccions-espanyoles-del-23-de-juliol-del-2023/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pdecat-23j-primary-announcement-archive-publication-aa7b6ec328da.html",
+      "sha256": "aa7b6ec328da7951492059c12a49690ed4797c7462ec27af255290d55fe30506",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-23j-primary-announcement-archive-publication-aa7b6ec328da.txt",
+      "textSha256": "abf704c4c9ac186af7e83ecfdafe28a6fc536451f7040fa189dc6ac2970705c7",
+      "links": [
+        "https://web.archive.org/accounts/login/?next=/noticies/el-pdecat-concorrera-a-les-proximes-eleccions-espanyoles-del-23-de-juliol-del-2023",
+        "https://web.archive.org/accounts/signup/?next=/noticies/el-pdecat-concorrera-a-les-proximes-eleccions-espanyoles-del-23-de-juliol-del-2023"
+      ],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
+    },
+    {
+      "id": "pdecat-july-programme-catalogue",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.partitdemocrata.cat/programes-electorals/",
+      "retrievedAt": "2026-10-11T15:43:28.545702+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230726051135id_/https://www.partitdemocrata.cat/programes-electorals/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pdecat-july-programme-catalogue-publication-0d74e4d76d79.html",
+      "sha256": "0d74e4d76d7985ff09e9c7ac1410d544e621db00c31c6123fd86e0272f2ac048",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-july-programme-catalogue-publication-0d74e4d76d79.txt",
+      "textSha256": "b1df9f7f7641c9f662ccd8a85c87284f00ba48f4d2d066ca5ba4034b2cc67c72",
+      "links": [
+        "https://media.timtul.com/media/pdecat/Programa%20Electoral%20Eleccions%20Generals%2010%20novembre%202019_20191114101701.pdf",
+        "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+        "https://media.timtul.com/media/pdecat/Programa-electoral-2021_20210219091052.pdf"
+      ],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
+    },
+    {
+      "id": "pdecat-july-brand-announcement",
+      "url": "https://web.archive.org/web/20230720000000id_/https://www.partitdemocrata.cat/noticies/el-pdecat-comencar-a-impulsar-lespai-ciu-fitxa-roger-montanola-com-a-cap-de-llista-per-a-les-eleccions-estatals-del-23-j",
+      "retrievedAt": "2026-10-11T15:43:28.546092+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230716102646id_/https://www.partitdemocrata.cat/noticies/el-pdecat-comencar-a-impulsar-lespai-ciu-fitxa-roger-montanola-com-a-cap-de-llista-per-a-les-eleccions-estatals-del-23-j/",
+      "mediaType": "text/html; charset=utf-8",
+      "lastModified": null,
+      "status": "publication_acquired_full_native_text_read_provenance_only",
+      "file": "storage/app/election-sources/2023-congress/pdecat-july-brand-announcement-publication-e3670fcc4d42.html",
+      "sha256": "e3670fcc4d424bace63f8f6860cf50abb26fbc84cf6298ccf1183dff6e34d48f",
+      "textFile": "storage/app/election-sources/2023-congress/pdecat-july-brand-announcement-publication-e3670fcc4d42.txt",
+      "textSha256": "92ef0f5c9c90d891229d7747be1b2bcbed087284147baf4abd8b661b889e88dd",
+      "links": [
+        "https://web.archive.org/accounts/login/?next=/noticies/el-pdecat-comencar-a-impulsar-lespai-ciu-fitxa-roger-montanola-com-a-cap-de-llista-per-a-les-eleccions-estatals-del-23-j",
+        "https://web.archive.org/accounts/signup/?next=/noticies/el-pdecat-comencar-a-impulsar-lespai-ciu-fitxa-roger-montanola-com-a-cap-de-llista-per-a-les-eleccions-estatals-del-23-j"
+      ],
+      "candidacyId": "boe-2023-017",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Directly read complete native publication text. Used only to establish programme publication/election/ballot provenance, not to author policy positions from news or retrospective achievements."
     }
   ],
   "authoredDraftSummary": {
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 151,
-    "independentAnswerCases": 755,
-    "browserRentCases": 80,
+    "scoredDraftMappings": 154,
+    "independentAnswerCases": 770,
+    "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
     "matrix": "outputs/2023-authored-issue-matrix.json",
@@ -8438,9 +8619,9 @@
     "calibration": "outputs/2023-authored-calibration.json",
     "browserVerification": "outputs/2023-authored-progressive-verification.json",
     "sourceCorrectnessCertified": false,
-    "browserProgressivePaths": 14,
+    "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "c0475f7ec8ab7988f7c92c95b4c2d9acfed2ab4ffaa5ee3619934b69a94b05e3",
+    "latestBrowserDraftSha256": "1278c07dc4bd6c2ed8b77f96e2b23030cd80b5264d595ffe1cf7391d50327850",
     "previousBrowserVerification": "outputs/2023-authored-80-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -8452,15 +8633,24 @@
     ],
     "latestBrowserRentCases": 10,
     "latestBrowserProgressivePaths": 2,
-    "latestBrowserVerification": "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-cup-jxg-unidossi-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-pdecat-runtime-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pdecat-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
-    "fixedComparisonCohortVerification": "outputs/2023-authored-cup-jxg-unidossi-verification.json",
-    "fixedComparisonBrowserVerification": "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
+    "fixedComparisonCohortVerification": "outputs/2023-authored-pdecat-verification.json",
+    "fixedComparisonBrowserVerification": "outputs/2023-authored-pdecat-runtime-verification.json",
     "latestDraftSha256": "c0475f7ec8ab7988f7c92c95b4c2d9acfed2ab4ffaa5ee3619934b69a94b05e3",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
-    "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json"
+    "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
+    "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
+    "newPdecatAuditedCells": 80,
+    "latestAuthoredDraftSha256": "1278c07dc4bd6c2ed8b77f96e2b23030cd80b5264d595ffe1cf7391d50327850",
+    "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
+    "newPdecatDerivedMappings": 3,
+    "newPdecatCitedUncertainties": 19,
+    "latestPdecatBrowserPaths": 30,
+    "exhaustionVerification": "outputs/quiz-2023-exhaustion-verification.json",
+    "newPdecatFixedComparisonEligible": false
   }
 }

@@ -44,6 +44,7 @@ test('ten-plus-five, exhaustion and deliberate finish preserve private request/D
     await page.getByRole('button', { name: 'Responder cinco más' }).click(); await answer(page, 5);
     await page.getByRole('button', { name: 'Responder cinco más' }).click(); await hidden(page);
     await expect(page.locator('#app')).toContainText('No hay otro bloque de cinco');
+    await expect(page.getByRole('button', { name: 'Responder cinco más' })).toHaveCount(0);
     await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
     await expect(page.getByRole('heading', { name: 'Tus coincidencias, con contexto' })).toBeVisible();
     await expect(page.locator('#app')).toContainText('Candidatura ficticia Alba');
@@ -52,6 +53,33 @@ test('ten-plus-five, exhaustion and deliberate finish preserve private request/D
     expect(requests.every(r => r.body === null && new URL(r.url).search === '')).toBe(true);
     expect(await context.cookies()).toEqual([]);
     expect(await page.evaluate(() => [localStorage.length, sessionStorage.length])).toEqual([0, 0]);
+});
+
+
+test('thirty answered questions remove continuation while keeping review and deliberate finish', async ({ page }) => {
+    await page.route('**/api/bank', async route => {
+        const response = await route.fetch();
+        const bank = await response.json();
+        for (const question of [...bank.questions]) {
+            const id = `${question.id}-extra`;
+            bank.questions.push({ ...question, id, familyId: `${question.familyId}-extra` });
+            for (const positions of Object.values(bank.positions) as Record<string, unknown>[]) positions[id] = positions[question.id];
+        }
+        const body = JSON.stringify(bank);
+        await route.fulfill({ response, body, headers: { ...response.headers(), 'x-evidence-sha256': createHash('sha256').update(body).digest('hex') } });
+    });
+    await start(page); await answer(page, 10);
+    for (let block = 0; block < 4; block++) {
+        await page.getByRole('button', { name: 'Responder cinco más' }).click();
+        await answer(page, 5);
+    }
+
+    await expect(page.locator('#app')).toContainText('Preguntas presentadas: 30');
+    await expect(page.getByRole('button', { name: 'Responder cinco más' })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Revisar respuestas', exact: true })).toBeVisible();
+    await hidden(page);
+    await page.getByRole('button', { name: 'Terminar y ver resultados' }).click();
+    await expect(page.getByRole('heading', { name: 'Tus coincidencias, con contexto' })).toBeVisible();
 });
 
 test('missing evidence yields partial comparisons without ranking; edits conceal results again', async ({ page }) => {

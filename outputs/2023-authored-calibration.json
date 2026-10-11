@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T15:34:10.239686+00:00",
+  "recordedAt": "2026-10-11T15:50:09.110434+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -178,6 +178,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "sourceExpectedValue": -2,
+          "sourceReason": "PDF11 explicitly names price controls in the repeal rationale. This independently establishes rejection of the ceiling; repeal alone never negates every other provision. Publisher impact claims are not adopted.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -258,11 +291,6 @@
         },
         {
           "candidacyId": "boe-2023-016",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-017",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -1948,6 +1976,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "sourceExpectedValue": 1,
+          "sourceReason": "PDF24 abolition includes parent-child inheritances but explicitly limits the beneficiary scope to citizens of Catalonia. Qualified+1 preserves that territorial restriction, absent from the unrestricted question, rather than scoring universal Spanish abolition.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -2023,11 +2084,6 @@
         },
         {
           "candidacyId": "boe-2023-016",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-017",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -3575,7 +3631,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -3992,7 +4048,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -4343,6 +4399,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-017",
+          "sourceExpectedValue": -2,
+          "sourceReason": "PDF24 explicitly abolishes the specific personal solidarity large-fortunes levy. Separate wealth, capital-income and inheritance bullets are not conflated with it.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -4403,11 +4492,6 @@
         },
         {
           "candidacyId": "boe-2023-016",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-017",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -5136,7 +5220,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -5637,7 +5721,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-019",
@@ -6382,7 +6466,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -8576,7 +8660,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -8942,7 +9026,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -9932,7 +10016,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -10594,7 +10678,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -10925,7 +11009,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -12333,7 +12417,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -13746,7 +13830,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -16860,7 +16944,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -20557,7 +20641,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -21909,7 +21993,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -22296,7 +22380,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -22627,7 +22711,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -22958,7 +23042,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -23289,7 +23373,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -23620,7 +23704,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -23951,7 +24035,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -24310,7 +24394,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -24669,7 +24753,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25000,7 +25084,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25331,7 +25415,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25662,7 +25746,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -25993,7 +26077,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -26324,7 +26408,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -26655,7 +26739,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -26986,7 +27070,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -27317,7 +27401,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -27648,7 +27732,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -27979,7 +28063,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",
@@ -28310,7 +28394,7 @@
         {
           "candidacyId": "boe-2023-017",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-018",

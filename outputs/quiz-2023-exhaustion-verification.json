@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T15:57:38.590148+00:00",
+  "status": "local_fixture_regressions_and_actual_2023_draft_browser_passed",
+  "electionId": "es-congress-2023-07-23",
+  "draftSha256": "1278c07dc4bd6c2ed8b77f96e2b23030cd80b5264d595ffe1cf7391d50327850",
+  "releaseEligible": false,
+  "defect": "Continue button remained present after unsuccessful extension and at thirty; repeated clicks returned the same exhausted checkpoint.",
+  "change": "Remove continuation after exhaustion and immediately at the thirty-question queue limit; retain review/back/reset and explicit finish.",
+  "evidence": [
+    ".tools/authored-local-runtime-verification/exhaustion-before-fix.log",
+    ".tools/authored-local-runtime-verification/exhaustion-after-fix.log",
+    "outputs/2023-authored-pdecat-values-browser-verification.json",
+    "outputs/2023-authored-pdecat-runtime-verification.json"
+  ],
+  "actual": {
+    "beforeFixFailedRegressions": 4,
+    "afterFixPassedRegressions": 4,
+    "pdecatBrowserSessions": 10,
+    "newCitedFiveAnswerPaths": 30,
+    "pdecatPriorityQuestions": 15,
+    "defaultPathsToThirty": 2,
+    "apiInterceptionInActualDraft": false,
+    "publicPointerChanged": false,
+    "metricsEnabled": false
+  },
+  "uiSourceSha256": {
+    "resources/js/app.ts": "a7c284cb0e967e9c72a1c3ca27e12eb3b80c9e262166a3d44115e68593b9c2c7",
+    "tests/Browser/public-journeys.spec.ts": "996e0afdfe0a4ddddc61a5d874b76b91e2d2c24ee0917dc8fbbb05e735a9ecb0"
+  },
+  "limitations": [
+    "Regressions use internal fixtures; actual PDeCAT cited/privacy paths use the unmodified fixed loopback API bank. Neither certifies complete corpus or actual hosting.",
+    "The initially unbounded actual-data harness encountered this genuine repeated-empty-extension path and was interrupted. It now stops after failed extension and asserts that continuation disappeared."
+  ]
+}

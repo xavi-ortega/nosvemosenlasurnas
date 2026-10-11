@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T15:50:09.110434+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "70fabb3ec6cd3a1a47c7940c2f5bf42333bbf416c81e307216f6a8d4962d706f",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-017",
+      "documentId": "pdecat-primary-cdn",
+      "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+      "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+      "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+      "provenance": "outputs/2023-pdecat-source-provenance.json",
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "derived",
+          "value": -2,
+          "sourceReason": "PDF11 explicitly names price controls in the repeal rationale. This independently establishes rejection of the ceiling; repeal alone never negates every other provision. Publisher impact claims are not adopted.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "derived",
+          "value": 1,
+          "sourceReason": "PDF24 abolition includes parent-child inheritances but explicitly limits the beneficiary scope to citizens of Catalonia. Qualified+1 preserves that territorial restriction, absent from the unrestricted question, rather than scoring universal Spanish abolition.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "A decentralised council chaired by the Catalan high court president does not establish national judicial-member electoral method.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Purchasing-power adequacy is an objective; no explicit cost-of-living or consumer-price indexation rule is supplied. Minimum/widow/orphan improvement and40-year early-retirement coefficients are separate.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "derived",
+          "value": -2,
+          "sourceReason": "PDF24 explicitly abolishes the specific personal solidarity large-fortunes levy. Separate wealth, capital-income and inheritance bullets are not conflated with it.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Protected subsidised stock can have private ownership; the clawback does not establish either a general private-sale permission or ban for publicly owned housing.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Private-health taxation and claimed public savings do not establish expanded publicly financed provider agreements.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Named Endesa Lleida Pyrenean plants and a negotiated recovery society do not specify the expiry trigger in the question. Neither geography nor trigger is broadened.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Second-chance scholarships for unemployed/out-of-education young people and training employment contracts differ from all curricular internships.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "The explicit32-week single-parent condition does not establish a general six-month extension for both maternity and paternity leave. No universal pledge or opposition is invented.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "University funding and scholarship management differ from abolishing repeat-enrolment tuition surcharges.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "PDF28 uses ingressos without net/gross definition; the separate preceding net-return RMI goal does not attach net income to the SMI threshold. PDF7 youth exception also permits a minimum contribution. Exact net-income rubric therefore remains unscored.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Land transfers destined for social rental construction differ from first habitual-home buyer VAT exemption.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Budget-backed guarantee for electricity/gas differs from an explicit permanent legal prohibition encompassing basic utilities. Water and permanent ban mechanism are not established.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "An explicit study is neither support nor opposition nor intermediate numeric neutrality.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Targeted digital subsidy and universal coverage expansion do not establish zero price for everybody.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Public procurement visibility, policy evaluation and party-finance transparency are not an individual legislative negotiation/influence record.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "A reduced two-year tariff is not an explicit zero first-year charge or explicit rejection of such a charge.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Review/rebalancing wage-income taxation and reducing pressure do not identify an inflation-deflation/indexation mechanism.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Eligibility/funding/guarantee administration does not identify a direct recipient payment rather than bill discount.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Under18 child-care benefits and tax deductions have no fifth-pregnancy-month trigger.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Decentralised funding, matching funds and knowledge transfer do not establish a universal open-access result requirement.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct comparison of the specific complete programme with the exact authored proposition did not establish the required measure, mechanism and scope. Absence does not imply opposition or neutrality; no unacquired supplement or other-election material is substituted.",
+          "citationCount": 0
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Every existing proposition was directly compared with the specific complete35-page PDeCAT programme; an unavailable supplement or wider source family is not certified.",
+    "Qualified inheritance support retains the Catalonia restriction; its rubric explicitly covers territorial qualifications. The three existing universal mappings remain+2.",
+    "Price-control rejection is explicit; no blanket law-repeal inference, absent mechanism, study, silence or party-family inheritance becomes a score.",
+    "The bank, complete corpus, remaining pair audits and publication are unfinished. Automatic structural/calibration checks do not certify semantic truth."
+  ]
+}

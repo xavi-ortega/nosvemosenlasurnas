@@ -225,7 +225,9 @@ function renderCheckpoint(exhausted = false): void {
     if (!root || !session) return;
     const stage = e('section', '', 'quiz-stage quiz-checkpoint');
     stage.append(progress(), e('h2', t('checkpoint')), p(exhausted ? 'exhausted' : 'checkpoint_description'));
-    stage.append(actions(button('finish', finish, true), button('more', () => { if (session!.extend()) renderQuestion(); else renderCheckpoint(true); })));
+    const choices = actions(button('finish', finish, true));
+    if (!exhausted && session.progress().total < 30) choices.append(button('more', () => { if (session!.extend()) renderQuestion(); else renderCheckpoint(true); }));
+    stage.append(choices);
     const back = button('back', () => { lastNextClickAt = -Infinity; if (session!.previous()) renderQuestion(); }); back.disabled = !session.canGoBack();
     stage.append(actions(back, button('review', renderReview), button('reset', reset)));
     showQuiz(sampleNotice(), stage);

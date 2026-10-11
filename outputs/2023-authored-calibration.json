@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T20:34:46.377621+00:00",
+  "recordedAt": "2026-10-11T20:43:38.737720+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -293,7 +293,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -1366,6 +1366,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit basic dental portfolio financing expansion; +2 under the existing portfolio-expansion rubric, no unlimited treatment inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -1606,11 +1639,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -1944,6 +1972,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Existing reactors retained only while no better generation system exists, a substantive replacement condition beyond ordinary regulatory authorisation; +1, not unconditional +2.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -2206,11 +2267,6 @@
           "candidacyId": "boe-2023-058",
           "expectedScored": false,
           "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
-          "expectedScored": false,
-          "reason": "unknown"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -2390,6 +2446,39 @@
               "answer": 2,
               "expectedOverlap": 0.75,
               "expectedRelationship": "close"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Whole inheritance-tax abolition directly includes the narrower parent-child inheritance exemption; +2. Donation/income taxes are not inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
             }
           ]
         }
@@ -2662,11 +2751,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -3182,7 +3266,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -3766,6 +3850,39 @@
               "expectedRelationship": "opposed"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit support for euthanasia; +2 under the current-right retention rubric. No unsupported new eligibility inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -4038,11 +4155,6 @@
           "candidacyId": "boe-2023-058",
           "expectedScored": false,
           "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
-          "expectedScored": false,
-          "reason": "unknown"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -4163,6 +4275,39 @@
           "candidacyId": "boe-2023-032",
           "sourceExpectedValue": 2,
           "sourceReason": "Propone que jueces y magistrados elijan al Consejo General del Poder Judicial, lo que incluye la elección de sus miembros de origen judicial.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Judges explicitly select the council, necessarily including its judicial-origin seats; +2. No additional candidate/quota rule invented.",
           "sourceContextReopened": true,
           "answerCases": [
             {
@@ -4466,11 +4611,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -4930,7 +5070,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -5416,7 +5556,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -5818,7 +5958,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -5934,6 +6074,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Broad State public rental stock cannot be sold to the private sector; +2. Vulnerable occupant work/training conditions are preserved in context but concern eligibility, not the ownership prohibition.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -6214,11 +6387,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -6818,7 +6986,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -7276,7 +7444,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -7650,7 +7818,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -8454,7 +8622,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -8884,7 +9052,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "method": "Expected values and arithmetic cases authored from source context and a literal independent table; not calculated by the matching implementation.",
@@ -10976,7 +11144,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -11348,7 +11516,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -11720,7 +11888,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -12092,7 +12260,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -12492,7 +12660,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -12864,7 +13032,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -12945,6 +13113,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit commercial companion-animal sale prohibition, +2. The trading ban does not prohibit noncommercial adoption; no inferred prohibition on keeping animals.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -13230,11 +13431,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -13636,7 +13832,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -14092,7 +14288,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -14492,7 +14688,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -15608,7 +15804,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -15920,6 +16116,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": -1,
+          "sourceReason": "A specific physical-inability exception legalises surrogacy for a restricted group. -1 preserves that narrower exception rather than asserting unrestricted legalisation; exact restriction is shown in the public rationale.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -16170,11 +16399,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -16626,7 +16850,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -16998,7 +17222,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -17398,7 +17622,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -17826,7 +18050,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -18307,6 +18531,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit deposit/devolution/recovery implementation, +2. No amount or points of return inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -18592,11 +18849,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -19398,7 +19650,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -19770,7 +20022,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -20198,7 +20450,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -20570,7 +20822,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -21714,7 +21966,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -21795,6 +22047,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit suppression of fur farms; +2 for the stated breeding/exploitation activity, not a prohibition on preexisting clothes.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -22075,11 +22360,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -22458,7 +22738,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -22858,7 +23138,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -22944,6 +23224,39 @@
           "candidacyId": "boe-2023-009",
           "sourceExpectedValue": 2,
           "sourceReason": "Explicit total abolition of special jurisdiction by public office. Royal inviolability in non-institutional acts is separately addressed and does not qualify this abolition.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit judicial aforamiento elimination includes office-based different courts, +2. No verdict or removal of fair-trial guarantees inferred.",
           "sourceContextReopened": true,
           "answerCases": [
             {
@@ -23252,11 +23565,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -23711,6 +24019,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Explicit agendas/lobby records and reports with approved laws identify actors/documents/effects. +1 preserves the final-approved-stage restriction; no report for every draft at every stage inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -23996,11 +24337,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "unknown"
         }
@@ -24402,7 +24738,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -25174,7 +25510,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -25546,7 +25882,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -25974,7 +26310,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -26346,7 +26682,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -26718,7 +27054,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -27090,7 +27426,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -27462,7 +27798,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -27834,7 +28170,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -28234,7 +28570,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         }
       ],
       "constituencyCases": [
@@ -28634,7 +28970,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -29006,7 +29342,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         }
       ],
       "constituencyCases": [
@@ -29378,7 +29714,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -29750,7 +30086,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         }
       ],
       "constituencyCases": [
@@ -30122,7 +30458,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -30494,7 +30830,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -30866,7 +31202,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -31238,7 +31574,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -31610,7 +31946,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         }
       ],
       "constituencyCases": [
@@ -31982,7 +32318,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [
@@ -32035,6 +32371,39 @@
           "candidacyId": "boe-2023-013",
           "sourceExpectedValue": 2,
           "sourceReason": "Section 3.8.2.2 explicitly proposes one district in the general-election Congress-seat context. The question isolates district scope from the same bullet’s threshold and allocation changes. The publisher’s retrospective seat calculation is not treated as an independent oracle.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
+        },
+        {
+          "candidacyId": "boe-2023-059",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit single district for general elections; in this Congress candidacy context +2. No electoral threshold/seat-allocation formula inferred.",
           "sourceContextReopened": true,
           "answerCases": [
             {
@@ -32348,11 +32717,6 @@
         },
         {
           "candidacyId": "boe-2023-058",
-          "expectedScored": false,
-          "reason": "not_yet_authored"
-        },
-        {
-          "candidacyId": "boe-2023-059",
           "expectedScored": false,
           "reason": "not_yet_authored"
         }
@@ -32726,7 +33090,7 @@
         {
           "candidacyId": "boe-2023-059",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         }
       ],
       "constituencyCases": [

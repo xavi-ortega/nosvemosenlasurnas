@@ -1,0 +1,770 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T20:43:38.737720+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_archived_draft_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-059",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+          "sha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+          "documentId": "fuerza-published-document-archive",
+          "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+          "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El borrador de 2023 propone estudiar la eficacia de limitar alquileres, sin comprometerse a poner un precio máximo obligatorio.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una jornada máxima de 35 horas manteniendo el sueldo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone ampliar la financiación de la atención dental con una cartera básica de servicios.",
+          "authoredAnalysis": "Explicit basic dental portfolio financing expansion; +2 under the existing portfolio-expansion rubric, no unlimited treatment inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "derived",
+          "value": 1,
+          "rationale": "El borrador de 2023 propone mantener las centrales nucleares existentes mientras no haya un sistema de generación mejor.",
+          "authoredAnalysis": "Existing reactors retained only while no better generation system exists, a substantive replacement condition beyond ordinary regulatory authorisation; +1, not unconditional +2.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone suprimir el impuesto de sucesiones, incluyendo las herencias de padres a hijos.",
+          "authoredAnalysis": "Whole inheritance-tax abolition directly includes the narrower parent-child inheritance exemption; +2. Donation/income taxes are not inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone educación gratuita desde la guardería, sin concretar que todas las familias que lo soliciten obtengan una plaza de 0 a 3 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece limitar vuelos dentro de España cuando haya una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 apoya la eutanasia.",
+          "authoredAnalysis": "Explicit support for euthanasia; +2 under the current-right retention rubric. No unsupported new eligibility inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone que los jueces elijan a su órgano de gobierno.",
+          "authoredAnalysis": "Judges explicitly select the council, necessarily including its judicial-origin seats; +2. No additional candidate/quota rule invented.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone una pensión mínima estatal y aportaciones privadas, sin establecer la actualización de las pensiones públicas según los precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El tipo único del impuesto sobre la renta no establece la regla para un impuesto específico sobre grandes fortunas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El tipo único del impuesto sobre la renta no concreta una exención para las pensiones de jubilación contributivas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone que las viviendas públicas se dediquen al alquiler y no puedan venderse al sector privado.",
+          "authoredAnalysis": "Broad State public rental stock cannot be sold to the private sector; +2. Vulnerable occupant work/training conditions are preserved in context but concern eligibility, not the ownership prohibition.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Revisar la gestión privada de hospitales y revertirla en ciertos casos no establece aumentar los acuerdos públicos con centros privados para atender pacientes.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Apoya el aborto dentro de los plazos legales, sin concretar su realización en centros de la sanidad pública.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La participación pública en redes eléctricas no establece gestión pública de centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La gratuidad de la educación no concreta comedor gratis para todo el alumnado de las etapas obligatorias.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La financiación de fármacos de referencia no establece eliminar el copago de medicamentos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece el derecho al voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece remunerar las prácticas que forman parte de los estudios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece permisos por nacimiento de seis meses o más.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los cambios de tipos del impuesto sobre el valor añadido no establecen un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone autorizar el consumo recreativo de cannabis en ciertos espacios, sin concretar el cultivo propio sin ánimo de lucro.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone educación universitaria gratuita, sin concretar la regla del precio al repetir una asignatura.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reforma educativa no establece tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone cotizar solo cuando hay beneficios y de forma progresiva, sin eximir a todos los autónomos con ingresos netos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los cambios de tipos del impuesto sobre el valor añadido no concretan una exención para la primera vivienda habitual.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Explicit commercial companion-animal sale prohibition, +2. The trading ban does not prohibit noncommercial adoption; no inferred prohibition on keeping animals.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Prohibir tradiciones con maltrato animal no concreta la financiación pública de espectáculos taurinos con muerte del animal.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de bienestar animal no establecen prohibir la caza en toda España.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Regular los precios del agua y la electricidad no establece prohibir permanentemente cortes de suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece dar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone publicar ciertos datos en formatos reutilizables y abiertos, sin extender esa regla a todos los documentos de la Administración.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "derived",
+          "value": -1,
+          "rationale": "El borrador de 2023 permitiría la gestación subrogada a quienes no puedan tener hijos por limitaciones físicas; plantea una excepción a la prohibición general.",
+          "authoredAnalysis": "A specific physical-inability exception legalises surrogacy for a restricted group. -1 preserves that narrower exception rather than asserting unrestricted legalisation; exact restriction is shown in the public rationale.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reforma educativa no concreta una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La gratuidad educativa no establece libros de texto con permiso para copiarlos y compartirlos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El objetivo de ofrecer casi todos los trámites en internet no garantiza una vía presencial ni establece eliminarla.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los nuevos tipos del impuesto sobre el valor añadido no concretan el aplicado a servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece el derecho a reparar aparatos en talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone implantar un sistema de depósito y devolución de envases.",
+          "authoredAnalysis": "Explicit deposit/devolution/recovery implementation, +2. No amount or points of return inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece anticonceptivos gratuitos para las personas jóvenes.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El anexo sin terminar menciona fabricación nacionalizada de medicamentos, sin concretar una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La digitalización administrativa no establece una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La regulación estatal del precio del agua no determina que la gestión del suministro sea pública.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La gratuidad educativa y la atención psicológica no concretan atención pública y gratuita al desarrollo de menores de seis años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de generación eléctrica no establecen prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone suprimir las granjas de animales criados para obtener pieles.",
+          "authoredAnalysis": "Explicit suppression of fur farms; +2 for the stated breeding/exploitation activity, not a prohibition on preexisting clothes.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La investigación agrícola no establece prohibir el glifosato.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Controlar la publicidad institucional no establece prohibir ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone eliminar los tribunales distintos por razón del cargo público.",
+          "authoredAnalysis": "Explicit judicial aforamiento elimination includes office-based different courts, +2. No verdict or removal of fair-trial guarantees inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "derived",
+          "value": 1,
+          "rationale": "El borrador de 2023 propone informes públicos de influencias junto a las normas aprobadas; no concreta esa ficha para todas las propuestas durante su elaboración.",
+          "authoredAnalysis": "Explicit agendas/lobby records and reports with approved laws identify actors/documents/effects. +1 preserves the final-approved-stage restriction; no report for every draft at every stage inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone mejorar la atención psicológica y psiquiátrica pública, sin concretar la psicoterapia entre sus servicios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece apoyar el tratado internacional que prohíbe las armas nucleares.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Calificar productos por su nutrición no establece restricciones a la publicidad de alimentos poco saludables dirigida a menores.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Cotizar cuando hay beneficios no establece una exención general de cuota durante el primer año.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El tipo único del impuesto sobre la renta no establece descontar el efecto de la subida de precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reducir impuestos de electricidad no establece ayudas pagadas directamente a hogares vulnerables.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las mejoras de personal sanitario no establecen permitir trabajar hasta los 72 años en atención primaria.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Apoyar el aborto dentro de plazos legales no concreta la autorización de responsables legales para menores.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Digitalizar trámites no establece un máximo de quince días naturales para citas de prestaciones.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Aplicar inteligencia artificial en administraciones no establece quién tomaría las decisiones discrecionales sobre cada caso.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un gasto en seguridad y defensa del 2% de la economía.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de vivienda pública no establecen avales estatales para hipotecas de jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece cobrar la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las mejoras sanitarias no establecen reconocer la dependencia al diagnosticar esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece la bonificación de hasta el 45% en cotizaciones de personal del hogar para familias numerosas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La reforma educativa no establece tutorías para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La digitalización no concreta intermediarios que hagan trámites en nombre de quien necesite ayuda.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La fiscalidad rural diferenciada no establece transporte a demanda, precio reducido y municipio de referencia.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las medidas de bienestar animal no establecen prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Difundir resultados científicos no establece acceso libre a todos los resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone una circunscripción electoral única para las elecciones generales.",
+          "authoredAnalysis": "Explicit single district for general elections; in this Congress candidacy context +2. No electoral threshold/seat-allocation formula inferred.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La transparencia sobre publicidad institucional no establece igual tiempo para vídeos electorales de todos los partidos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citationCount": 1
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 13,
+      "newDerivedMappings": 13,
+      "citedUncertainties": 48,
+      "qualifiedMappings": {
+        "extend-existing-nuclear": 1,
+        "retain-surrogacy-ban": -1,
+        "public-legislative-influence-record": 1
+      }
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 400,
+  "explicitMatrixCells": 5120,
+  "defaultNumericMappings": 192,
+  "scopedNumericMappings": 7,
+  "totalNumericMappings": 199,
+  "independentAnswerCases": 995,
+  "limitations": [
+    "Retained full 25-section archived draft and notebook reused; every section/context and unfinished annex reopened. No new programme/notebook/reading count.",
+    "The programme expressly remains a multi-legislature unfinished draft with X/XX placeholders. It is linked from the June 22/July 11 dated Valladolid Congress campaign publication, whose retained capture and embedded-document copy are July 27, four days after voting. Exact pre-vote bytes are not certified.",
+    "The current published document has two later clauses absent in the archived 2023 copy; they remain excluded. No failed Castellón/Ciudad Real list is added to ballot eligibility.",
+    "Thirteen directly authored draft mappings added, including conditional existing-nuclear support +1, restricted surrogacy exception -1, and final-approved-law influence footprint +1. No unconditional broader claim inferred.",
+    "Universal nursery place availability, self-employed exemption for every below-minimum wage earner, nonprofit self-cultivation, open formats for all public documents, public pharmaceutical company and psychotherapy remain unscored.",
+    "Automatic literal and calibration checks do not prove semantic/historical truth. Full corpus/source-family/final-release/production privacy/publication acceptance remains open."
+  ]
+}

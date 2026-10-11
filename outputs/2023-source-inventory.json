@@ -4895,15 +4895,15 @@
           "votes": 115
         }
       ],
-      "programmeSearchStatus": "primary_23j_programme_or_coalition_agreement_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "dated_valladolid_campaign_adoption_postvote_capture_full_draft_read_audited",
+      "analysisStatus": "specific_complete_archived_draft_80_cell_bank_audit",
       "programmeIds": [
         "fuerza-published-document-archive"
       ],
       "ballotAliases": [
         "FUERZA CÍVICA (FUERZA CÍVICA)"
       ],
-      "programmeApplicabilityStatus": "document_specific_campaign_evidence_recorded_qualifications_pending_scoring",
+      "programmeApplicabilityStatus": "unfinished_draft_linked_by_campaign_postvote_capture_prevote_bytes_uncertified",
       "ballotRecordIds": [
         "congress-valladolid-7"
       ],
@@ -4918,6 +4918,16 @@
           "congress-valladolid-7"
         ],
         "rationale": "ValladolidCongress campaignarticleJune22/July11linkedprogramme wrapper archivedJuly27withactualGoogleembeddedpublishedID; July27document fullyread, draftstatusretained; lateraddedclausesexcluded."
+      },
+      "programmeApplicabilityNote": "The complete 25-section unfinished multi-legislature draft is linked by the June 22/July 11 dated Valladolid Congress campaign article. Retained wrapper and embedded document were captured July 27, four days after voting; exact pre-vote bytes remain uncertified. Current-only clauses excluded; only congress-valladolid-7 eligible. No new reading/programme/notebook counted.",
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T20:54:16.600072+00:00",
+        "report": "outputs/2023-authored-fuerza-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 13,
+        "newDerivedMappings": 13,
+        "citedUncertainties": 48,
+        "widerProgrammeFamilyCertified": false
       }
     }
   ],
@@ -8066,7 +8076,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
       "mediaType": "text/html; charset=utf-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "archived_july2023_campaign_linked_unfinished_programme_fully_read_bank_audited",
       "file": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.html",
       "sha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
       "textFile": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.txt",
@@ -8075,9 +8085,12 @@
       "transportFile": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-publication-34b910161b8a.html",
       "transportSha256": "34b910161b8abb2133fccb13028eefba9059fd82c54d53e169811a3d9c76168d",
       "transportEncoding": "gzip",
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "specific_complete_25_section_draft_80_cell_bank_audit",
       "candidacyId": "boe-2023-059",
-      "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json"
+      "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+      "applicableBallotRecordIds": [
+        "congress-valladolid-7"
+      ]
     },
     {
       "id": "unidad-castellana-secondary-primary",
@@ -9715,8 +9728,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5120,
-    "scoredDraftMappings": 186,
-    "independentAnswerCases": 930,
+    "scoredDraftMappings": 199,
+    "independentAnswerCases": 995,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9727,7 +9740,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "47e50b6ea9ca9a3d8686fbd2a159e5d47a8775460460f16d751e675b99eb3274",
+    "latestBrowserDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9738,20 +9751,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 32,
-    "latestBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-frente-verification.json",
+    "latestBrowserProgressivePaths": 62,
+    "latestBrowserVerification": "outputs/2023-authored-fuerza-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-fuerza-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "47e50b6ea9ca9a3d8686fbd2a159e5d47a8775460460f16d751e675b99eb3274",
+    "latestDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "47e50b6ea9ca9a3d8686fbd2a159e5d47a8775460460f16d751e675b99eb3274",
+    "latestAuthoredDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9854,7 +9867,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 400,
-    "defaultScoredDraftMappings": 179,
+    "defaultScoredDraftMappings": 192,
     "scopedScoredDraftMappings": 7,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9980,7 +9993,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 4318312,
+    "bankBytes": 4506737,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -9992,7 +10005,20 @@
     "latestFrenteCitedUnscoredPaths": 12,
     "frenteFixedComparisonEligible": true,
     "allPrevious180NumericMappingsUnchanged": true,
-    "comparisonCohortFrenteAddedInEligibleScopes": true
+    "comparisonCohortFrenteAddedInEligibleScopes": true,
+    "fuerzaBankAudit": "outputs/2023-authored-fuerza-audit.json",
+    "fuerzaVerification": "outputs/2023-authored-fuerza-verification.json",
+    "fuerzaBrowserVerification": "outputs/2023-authored-fuerza-browser-verification.json",
+    "fuerzaValladolidBrowserVerification": "outputs/2023-authored-fuerza-valladolid-browser-verification.json",
+    "newFuerzaAuditedCells": 80,
+    "newFuerzaDerivedMappings": 13,
+    "newFuerzaCitedUncertainties": 48,
+    "latestFuerzaBrowserSessions": 62,
+    "latestFuerzaCitedAnswerPaths": 140,
+    "latestFuerzaCitedUnscoredPaths": 18,
+    "fuerzaFixedComparisonEligible": true,
+    "allPrevious186NumericMappingsUnchanged": true,
+    "comparisonCohortFuerzaAddedOnlyInEligibleScopes": true
   },
-  "recordedAt": "2026-10-11T20:39:10.714033+00:00"
+  "recordedAt": "2026-10-11T20:54:16.600072+00:00"
 }

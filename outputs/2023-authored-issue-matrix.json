@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T20:34:46.377621+00:00",
+  "recordedAt": "2026-10-11T20:43:38.737720+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -255,10 +255,10 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "El documento plantea estudiar esta medida, sin comprometerse a aplicarla.",
-          "authoredAnalysis": "Explicit effectivenessstudy in unfinisheddraft; unknown rather thanneutral/support.",
+          "rationale": "El borrador de 2023 propone estudiar la eficacia de limitar alquileres, sin comprometerse a poner un precio máximo obligatorio.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [
             {
               "documentId": "fuerza-published-document-archive",
@@ -269,14 +269,21 @@
               "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
               "pdfPage": null,
               "printedPage": null,
+              "htmlSection": 10,
               "start": 16427,
-              "end": 16510,
-              "quote": "Se estudiará la efectividad de limitar el precio del alquiler por parte del estado.",
+              "end": 16488,
+              "quote": "Se estudiará la efectividad de limitar el precio del alquiler",
               "contextStart": 15760,
-              "contextEnd": 17772,
-              "contextSha256": "64c96069f70d6d6010770e45be16051911a73e968f611ca062e9850b946be545"
+              "contextEnd": 17704,
+              "contextSha256": "dd07954d4aa99edd8867fc3139f610c322e1dcc2aa6971e3748d97a5f2e5534e",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
             }
-          ]
+          ],
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -2323,10 +2330,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No establece una jornada máxima de 35 horas manteniendo el sueldo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -3534,12 +3545,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone ampliar la financiación de la atención dental con una cartera básica de servicios.",
+          "authoredAnalysis": "Explicit basic dental portfolio financing expansion; +2 under the existing portfolio-expansion rubric, no unlimited treatment inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 26275,
+              "end": 26353,
+              "quote": "Avanzar en la financiación de la asistencia bucodental con una cartera básica.",
+              "contextStart": 26275,
+              "contextEnd": 26353,
+              "contextSha256": "8ed90356a4770b33bf3b2e0f309954f731291177981bf37a3480d3228a5663b2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -4661,12 +4695,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "El borrador de 2023 propone mantener las centrales nucleares existentes mientras no haya un sistema de generación mejor.",
+          "authoredAnalysis": "Existing reactors retained only while no better generation system exists, a substantive replacement condition beyond ordinary regulatory authorisation; +1, not unconditional +2.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 9976,
+              "end": 10036,
+              "quote": "Mientras no exista un mejor sistema de generación de energía",
+              "contextStart": 9961,
+              "contextEnd": 10301,
+              "contextSha256": "6a6410b31e4d0572c2deebcfd017b673532b191dbd05741a840faed0d7ea513f",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -5650,12 +5707,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone suprimir el impuesto de sucesiones, incluyendo las herencias de padres a hijos.",
+          "authoredAnalysis": "Whole inheritance-tax abolition directly includes the narrower parent-child inheritance exemption; +2. Donation/income taxes are not inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 8,
+              "start": 11574,
+              "end": 11611,
+              "quote": "Supresión del impuesto de sucesiones.",
+              "contextStart": 11571,
+              "contextEnd": 12603,
+              "contextSha256": "d4e5a6759872fbc2586dd4e96153f616feb80bbd0c30dd537eb46c1da34c5e5d",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -6795,12 +6875,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone educación gratuita desde la guardería, sin concretar que todas las familias que lo soliciten obtengan una plaza de 0 a 3 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -7916,10 +8019,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece limitar vuelos dentro de España cuando haya una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -8865,12 +8972,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 apoya la eutanasia.",
+          "authoredAnalysis": "Explicit support for euthanasia; +2 under the current-right retention rubric. No unsupported new eligibility inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 26363,
+              "end": 26405,
+              "quote": "Apoyo a la ley de plazos y a la eutanasia.",
+              "contextStart": 26359,
+              "contextEnd": 26405,
+              "contextSha256": "9238b105e3fc6fee10f731cecd735dd79e017f9f9ea159ce99ee9433e75d04d3",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -9852,12 +9982,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone que los jueces elijan a su órgano de gobierno.",
+          "authoredAnalysis": "Judges explicitly select the council, necessarily including its judicial-origin seats; +2. No additional candidate/quota rule invented.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 16,
+              "start": 31320,
+              "end": 31361,
+              "quote": "El CGPJ deberá ser elegido por los jueces",
+              "contextStart": 30506,
+              "contextEnd": 32204,
+              "contextSha256": "836b9d9737ff7bded11c0f3df2d7a681e68b1e9b11f60b49919832f94a19aa61",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -10983,12 +11136,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una pensión mínima estatal y aportaciones privadas, sin establecer la actualización de las pensiones públicas según los precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 21,
+              "start": 38143,
+              "end": 38187,
+              "quote": "una pensión mínima garantizada por el estado",
+              "contextStart": 37161,
+              "contextEnd": 38619,
+              "contextSha256": "f636fcfbe2acce95cbe369c96e87cad1636f0536171c10edaa58d856b1032656",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -11954,12 +12130,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El tipo único del impuesto sobre la renta no establece la regla para un impuesto específico sobre grandes fortunas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -12899,12 +13098,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El tipo único del impuesto sobre la renta no concreta una exención para las pensiones de jubilación contributivas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -13959,12 +14181,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone que las viviendas públicas se dediquen al alquiler y no puedan venderse al sector privado.",
+          "authoredAnalysis": "Broad State public rental stock cannot be sold to the private sector; +2. Vulnerable occupant work/training conditions are preserved in context but concern eligibility, not the ownership prohibition.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 10,
+              "start": 16271,
+              "end": 16365,
+              "quote": "El parque público de vivienda se dedicará al alquiler y no podrá ser vendido al sector privado",
+              "contextStart": 15760,
+              "contextEnd": 17704,
+              "contextSha256": "dd07954d4aa99edd8867fc3139f610c322e1dcc2aa6971e3748d97a5f2e5534e",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -15095,12 +15340,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Revisar la gestión privada de hospitales y revertirla en ciertos casos no establece aumentar los acuerdos públicos con centros privados para atender pacientes.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 23369,
+              "end": 23419,
+              "quote": "Examinar las gestiones privadas de los hospitales.",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -16079,12 +16347,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Apoya el aborto dentro de los plazos legales, sin concretar su realización en centros de la sanidad pública.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 26363,
+              "end": 26405,
+              "quote": "Apoyo a la ley de plazos y a la eutanasia.",
+              "contextStart": 26359,
+              "contextEnd": 26405,
+              "contextSha256": "9238b105e3fc6fee10f731cecd735dd79e017f9f9ea159ce99ee9433e75d04d3",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -17117,12 +17408,53 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La participación pública en redes eléctricas no establece gestión pública de centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 7037,
+              "end": 7081,
+              "quote": "El estado mantendrá una participación mínima",
+              "contextStart": 6128,
+              "contextEnd": 7183,
+              "contextSha256": "cb19ce8396c6f07c2d82341eb84d23ba435cc48a8a82aa89cb57d545ffc663ed",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            },
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 9976,
+              "end": 10036,
+              "quote": "Mientras no exista un mejor sistema de generación de energía",
+              "contextStart": 9961,
+              "contextEnd": 10301,
+              "contextSha256": "6a6410b31e4d0572c2deebcfd017b673532b191dbd05741a840faed0d7ea513f",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -18057,10 +18389,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -19008,12 +19344,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La gratuidad de la educación no concreta comedor gratis para todo el alumnado de las etapas obligatorias.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -20017,12 +20376,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La financiación de fármacos de referencia no establece eliminar el copago de medicamentos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 24050,
+              "end": 24112,
+              "quote": "Establecer fármacos de referencia para determinadas patologías",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -20918,10 +21300,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho al voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -21801,10 +22187,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -22872,10 +23262,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece remunerar las prácticas que forman parte de los estudios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -23948,10 +24342,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece permisos por nacimiento de seis meses o más.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -24795,12 +25193,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los cambios de tipos del impuesto sobre el valor añadido no establecen un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -25625,12 +26046,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone autorizar el consumo recreativo de cannabis en ciertos espacios, sin concretar el cultivo propio sin ánimo de lucro.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 17,
+              "start": 33633,
+              "end": 33660,
+              "quote": "Se autorizará su uso lúdico",
+              "contextStart": 32206,
+              "contextEnd": 33803,
+              "contextSha256": "c6fc16b9532adaaf0576ee4989412e107211d2624ebbc745cb7adaf6ffc1d705",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -26509,12 +26953,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone educación universitaria gratuita, sin concretar la regla del precio al repetir una asignatura.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -27463,12 +27930,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma educativa no establece tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -28574,12 +29064,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cotizar solo cuando hay beneficios y de forma progresiva, sin eximir a todos los autónomos con ingresos netos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -29650,12 +30163,53 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los cambios de tipos del impuesto sobre el valor añadido no concretan una exención para la primera vivienda habitual.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            },
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 10,
+              "start": 16271,
+              "end": 16365,
+              "quote": "El parque público de vivienda se dedicará al alquiler y no podrá ser vendido al sector privado",
+              "contextStart": 15760,
+              "contextEnd": 17704,
+              "contextSha256": "dd07954d4aa99edd8867fc3139f610c322e1dcc2aa6971e3748d97a5f2e5534e",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -30518,12 +31072,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Explicit commercial companion-animal sale prohibition, +2. The trading ban does not prohibit noncommercial adoption; no inferred prohibition on keeping animals.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 36753,
+              "end": 36809,
+              "quote": "Prohibición de la compraventa de animales como compañía.",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -31420,12 +31997,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Prohibir tradiciones con maltrato animal no concreta la financiación pública de espectáculos taurinos con muerte del animal.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 37090,
+              "end": 37155,
+              "quote": "Prohibición de tradiciones que impliquen maltrato a los animales.",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -32322,12 +32922,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de bienestar animal no establecen prohibir la caza en toda España.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 37090,
+              "end": 37155,
+              "quote": "Prohibición de tradiciones que impliquen maltrato a los animales.",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -33279,12 +33902,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Regular los precios del agua y la electricidad no establece prohibir permanentemente cortes de suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 21,
+              "start": 37707,
+              "end": 37780,
+              "quote": "Los precios de los servicios básicos como agua, electricidad se regularán",
+              "contextStart": 37161,
+              "contextEnd": 38619,
+              "contextSha256": "f636fcfbe2acce95cbe369c96e87cad1636f0536171c10edaa58d856b1032656",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -34237,10 +34883,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece dar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -35171,10 +35821,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece que el salario mínimo suba cada año más que los precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -36021,12 +36675,53 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone publicar ciertos datos en formatos reutilizables y abiertos, sin extender esa regla a todos los documentos de la Administración.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 22,
+              "start": 39453,
+              "end": 39521,
+              "quote": "Publicación de la ejecución presupuestaria en formatos reutilizables",
+              "contextStart": 38621,
+              "contextEnd": 40928,
+              "contextSha256": "8842f0a48746bdd4d3db499d4d223534287e72bf651f21305be8b7c73353d5db",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            },
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 23369,
+              "end": 23419,
+              "quote": "Examinar las gestiones privadas de los hospitales.",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -36971,12 +37666,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -1,
+          "rationale": "El borrador de 2023 permitiría la gestación subrogada a quienes no puedan tener hijos por limitaciones físicas; plantea una excepción a la prohibición general.",
+          "authoredAnalysis": "A specific physical-inability exception legalises surrogacy for a restricted group. -1 preserves that narrower exception rather than asserting unrestricted legalisation; exact restriction is shown in the public rationale.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 21,
+              "start": 37855,
+              "end": 37892,
+              "quote": "Se permitirá los vientres de alquiler",
+              "contextStart": 37161,
+              "contextEnd": 38619,
+              "contextSha256": "f636fcfbe2acce95cbe369c96e87cad1636f0536171c10edaa58d856b1032656",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -37803,12 +38521,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma educativa no concreta una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -38667,12 +39408,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La gratuidad educativa no establece libros de texto con permiso para copiarlos y compartirlos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -39815,12 +40579,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El objetivo de ofrecer casi todos los trámites en internet no garantiza una vía presencial ni establece eliminarla.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5296,
+              "end": 5344,
+              "quote": "Objetivo de que el 99% de los servicios públicos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -40769,12 +41556,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los nuevos tipos del impuesto sobre el valor añadido no concretan el aplicado a servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -41584,10 +42394,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho a reparar aparatos en talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -42377,12 +43191,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone implantar un sistema de depósito y devolución de envases.",
+          "authoredAnalysis": "Explicit deposit/devolution/recovery implementation, +2. No amount or points of return inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 36146,
+              "end": 36233,
+              "quote": "Estamos a favor de la implantación de un Sistema de Depósito, Devolución y Recuperación",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -43211,10 +44048,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece anticonceptivos gratuitos para las personas jóvenes.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -44091,12 +44932,53 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El anexo sin terminar menciona fabricación nacionalizada de medicamentos, sin concretar una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 25,
+              "start": 42924,
+              "end": 43004,
+              "quote": "Salud general. Fabricación nacionalizada medicamentos y equipación sin patentes.",
+              "contextStart": 42192,
+              "contextEnd": 44923,
+              "contextSha256": "82d325875032146cdfc6fce07b9f6d9247df9bbc21c258b0c6b1bf0a1f481d62",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            },
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 24050,
+              "end": 24112,
+              "quote": "Establecer fármacos de referencia para determinadas patologías",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -45164,12 +46046,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La digitalización administrativa no establece una conexión básica gratuita para todas las personas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5296,
+              "end": 5344,
+              "quote": "Objetivo de que el 99% de los servicios públicos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -46270,12 +47175,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La regulación estatal del precio del agua no determina que la gestión del suministro sea pública.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 21,
+              "start": 37707,
+              "end": 37780,
+              "quote": "Los precios de los servicios básicos como agua, electricidad se regularán",
+              "contextStart": 37161,
+              "contextEnd": 38619,
+              "contextSha256": "f636fcfbe2acce95cbe369c96e87cad1636f0536171c10edaa58d856b1032656",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -47297,12 +48225,53 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La gratuidad educativa y la atención psicológica no concretan atención pública y gratuita al desarrollo de menores de seis años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            },
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 25962,
+              "end": 26031,
+              "quote": "Modificación del actual modelo de atención psicológica y psiquiátrica",
+              "contextStart": 25962,
+              "contextEnd": 26273,
+              "contextSha256": "1f80babda2cd5a27113daf70d28178061ad264eeb36dcf4f89e4481674efbbaf",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -48344,10 +49313,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -49227,10 +50200,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -50039,12 +51016,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de generación eléctrica no establecen prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 6,
+              "start": 9976,
+              "end": 10036,
+              "quote": "Mientras no exista un mejor sistema de generación de energía",
+              "contextStart": 9961,
+              "contextEnd": 10301,
+              "contextSha256": "6a6410b31e4d0572c2deebcfd017b673532b191dbd05741a840faed0d7ea513f",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -50925,12 +51925,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone suprimir las granjas de animales criados para obtener pieles.",
+          "authoredAnalysis": "Explicit suppression of fur farms; +2 for the stated breeding/exploitation activity, not a prohibition on preexisting clothes.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 36930,
+              "end": 36965,
+              "quote": "Supresión de las granjas peleteras.",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -51792,12 +52815,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La investigación agrícola no establece prohibir el glifosato.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 25,
+              "start": 42924,
+              "end": 43004,
+              "quote": "Salud general. Fabricación nacionalizada medicamentos y equipación sin patentes.",
+              "contextStart": 42192,
+              "contextEnd": 44923,
+              "contextSha256": "82d325875032146cdfc6fce07b9f6d9247df9bbc21c258b0c6b1bf0a1f481d62",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -52713,12 +53759,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Controlar la publicidad institucional no establece prohibir ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 22,
+              "start": 40076,
+              "end": 40133,
+              "quote": "Control y transparencia sobre la publicidad institucional",
+              "contextStart": 38621,
+              "contextEnd": 40928,
+              "contextSha256": "8842f0a48746bdd4d3db499d4d223534287e72bf651f21305be8b7c73353d5db",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -53579,12 +54648,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone eliminar los tribunales distintos por razón del cargo público.",
+          "authoredAnalysis": "Explicit judicial aforamiento elimination includes office-based different courts, +2. No verdict or removal of fair-trial guarantees inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 19,
+              "start": 35642,
+              "end": 35697,
+              "quote": "Desaparición de los aforamientos judiciales y fiscales.",
+              "contextStart": 35292,
+              "contextEnd": 35781,
+              "contextSha256": "4e08b58f319f6a2c4ce4b3d89fc74b24b3c4a09327c81275d454955c42096e6c",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -54395,10 +55487,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eliminar firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -55328,12 +56424,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "El borrador de 2023 propone informes públicos de influencias junto a las normas aprobadas; no concreta esa ficha para todas las propuestas durante su elaboración.",
+          "authoredAnalysis": "Explicit agendas/lobby records and reports with approved laws identify actors/documents/effects. +1 preserves the final-approved-stage restriction; no report for every draft at every stage inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 22,
+              "start": 38820,
+              "end": 38911,
+              "quote": "Publicación, junto a cada ley, decreto-ley, decreto o normativa autonómica y local aprobada",
+              "contextStart": 38621,
+              "contextEnd": 39093,
+              "contextSha256": "6a00cc6ff142f345003604c282385f85083be8ff07d21062a2eb505a0b7b8ff3",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -56455,12 +57574,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar la atención psicológica y psiquiátrica pública, sin concretar la psicoterapia entre sus servicios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 25962,
+              "end": 26031,
+              "quote": "Modificación del actual modelo de atención psicológica y psiquiátrica",
+              "contextStart": 25962,
+              "contextEnd": 26273,
+              "contextSha256": "1f80babda2cd5a27113daf70d28178061ad264eeb36dcf4f89e4481674efbbaf",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -57411,10 +58553,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece apoyar el tratado internacional que prohíbe las armas nucleares.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -58204,12 +59350,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Calificar productos por su nutrición no establece restricciones a la publicidad de alimentos poco saludables dirigida a menores.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 25,
+              "start": 42924,
+              "end": 43004,
+              "quote": "Salud general. Fabricación nacionalizada medicamentos y equipación sin patentes.",
+              "contextStart": 42192,
+              "contextEnd": 44923,
+              "contextSha256": "82d325875032146cdfc6fce07b9f6d9247df9bbc21c258b0c6b1bf0a1f481d62",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -59245,12 +60414,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Cotizar cuando hay beneficios no establece una exención general de cuota durante el primer año.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -60359,12 +61551,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El tipo único del impuesto sobre la renta no establece descontar el efecto de la subida de precios.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 3738,
+              "end": 3783,
+              "quote": "El pago de la Seguridad Social para autónomos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -61364,12 +62579,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reducir impuestos de electricidad no establece ayudas pagadas directamente a hogares vulnerables.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 3,
+              "start": 7037,
+              "end": 7081,
+              "quote": "El estado mantendrá una participación mínima",
+              "contextStart": 6128,
+              "contextEnd": 7183,
+              "contextSha256": "cb19ce8396c6f07c2d82341eb84d23ba435cc48a8a82aa89cb57d545ffc663ed",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -62301,12 +63539,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las mejoras de personal sanitario no establecen permitir trabajar hasta los 72 años en atención primaria.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 23369,
+              "end": 23419,
+              "quote": "Examinar las gestiones privadas de los hospitales.",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -63219,12 +64480,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Apoyar el aborto dentro de plazos legales no concreta la autorización de responsables legales para menores.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 14,
+              "start": 26363,
+              "end": 26405,
+              "quote": "Apoyo a la ley de plazos y a la eutanasia.",
+              "contextStart": 26359,
+              "contextEnd": 26405,
+              "contextSha256": "9238b105e3fc6fee10f731cecd735dd79e017f9f9ea159ce99ee9433e75d04d3",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -64153,12 +65437,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Digitalizar trámites no establece un máximo de quince días naturales para citas de prestaciones.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5296,
+              "end": 5344,
+              "quote": "Objetivo de que el 99% de los servicios públicos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -65087,12 +66394,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Aplicar inteligencia artificial en administraciones no establece quién tomaría las decisiones discrecionales sobre cada caso.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 25,
+              "start": 43866,
+              "end": 43945,
+              "quote": "Aplicación extensiva de la inteligencia artificial en nuestras administraciones",
+              "contextStart": 42192,
+              "contextEnd": 44923,
+              "contextSha256": "82d325875032146cdfc6fce07b9f6d9247df9bbc21c258b0c6b1bf0a1f481d62",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -66010,10 +67340,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece un gasto en seguridad y defensa del 2% de la economía.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -67016,12 +68350,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de vivienda pública no establecen avales estatales para hipotecas de jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 10,
+              "start": 16271,
+              "end": 16365,
+              "quote": "El parque público de vivienda se dedicará al alquiler y no podrá ser vendido al sector privado",
+              "contextStart": 15760,
+              "contextEnd": 17704,
+              "contextSha256": "dd07954d4aa99edd8867fc3139f610c322e1dcc2aa6971e3748d97a5f2e5534e",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -67973,10 +69330,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece cobrar la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -68944,12 +70305,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las mejoras sanitarias no establecen reconocer la dependencia al diagnosticar esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 13,
+              "start": 23369,
+              "end": 23419,
+              "quote": "Examinar las gestiones privadas de los hospitales.",
+              "contextStart": 22559,
+              "contextEnd": 25918,
+              "contextSha256": "88b1613e1d00374aee7b15bdaa3f4962996816a6dff92a11dfd3f8f2f16885e2",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -69869,10 +71253,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece la bonificación de hasta el 45% en cotizaciones de personal del hogar para familias numerosas.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -70774,12 +72162,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma educativa no establece tutorías para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 12,
+              "start": 20001,
+              "end": 20059,
+              "quote": "Educación gratuita desde la guardería hasta la universidad",
+              "contextStart": 19997,
+              "contextEnd": 22557,
+              "contextSha256": "874060138ed98b06706ac33b19651212fae54f89fd95b9a953a3ec5071f9d67b",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -71781,12 +73192,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La digitalización no concreta intermediarios que hagan trámites en nombre de quien necesite ayuda.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 2,
+              "start": 5296,
+              "end": 5344,
+              "quote": "Objetivo de que el 99% de los servicios públicos",
+              "contextStart": 820,
+              "contextEnd": 6126,
+              "contextSha256": "ebfadfaf9f7f76de5e29c2dd0dfe4c4d57646dd0ae6f0152124ff1defc8947bb",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -72924,12 +74358,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La fiscalidad rural diferenciada no establece transporte a demanda, precio reducido y municipio de referencia.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 23,
+              "start": 41924,
+              "end": 41950,
+              "quote": "Apoyo a la España vaciada.",
+              "contextStart": 40930,
+              "contextEnd": 42094,
+              "contextSha256": "1729bd10c2beac7dd4704f7844ee6853bd13dc30c13ea8b92b41701f05c0295d",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -73862,12 +75319,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de bienestar animal no establecen prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 20,
+              "start": 37090,
+              "end": 37155,
+              "quote": "Prohibición de tradiciones que impliquen maltrato a los animales.",
+              "contextStart": 35783,
+              "contextEnd": 37159,
+              "contextSha256": "f4e4cce2bae96cc40bed895b35eb642fb5d6844372ddc36598440b99bb9bf7de",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -74679,10 +76159,14 @@
           "candidacyId": "boe-2023-059",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -75682,12 +77166,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Difundir resultados científicos no establece acceso libre a todos los resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 11,
+              "start": 18883,
+              "end": 18959,
+              "quote": "Dar a conocer y difundir la importancia de la investigación y sus resultados",
+              "contextStart": 17706,
+              "contextEnd": 19995,
+              "contextSha256": "1cfdc4cdb64bf16673224dd1a173265447229b1ea5b559163d298b2266c69cda",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -76686,12 +78193,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El borrador de 2023 propone una circunscripción electoral única para las elecciones generales.",
+          "authoredAnalysis": "Explicit single district for general elections; in this Congress candidacy context +2. No electoral threshold/seat-allocation formula inferred.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 18,
+              "start": 34605,
+              "end": 34665,
+              "quote": "Circunscripción electoral única en las elecciones generales.",
+              "contextStart": 33805,
+              "contextEnd": 35290,
+              "contextSha256": "dda0c4f0fa3671b5d18836c1235ce10c273f7dbd231c2558ace34ad5c18cf332",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [
@@ -77624,12 +79154,35 @@
         },
         {
           "candidacyId": "boe-2023-059",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La transparencia sobre publicidad institucional no establece igual tiempo para vídeos electorales de todos los partidos.",
+          "authoredAnalysis": "Direct proposition-specific comparison against all 25 retained HTML sections, including unfinished annex. Related objectives, generic gratuity/digitalisation, price control, and unspecified mechanisms/timing do not establish the exact proposition. Absence is unscored, never neutral/opposed.",
+          "citations": [
+            {
+              "documentId": "fuerza-published-document-archive",
+              "sourceUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
+              "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+              "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+              "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+              "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+              "pdfPage": null,
+              "printedPage": null,
+              "htmlSection": 22,
+              "start": 40076,
+              "end": 40133,
+              "quote": "Control y transparencia sobre la publicidad institucional",
+              "contextStart": 38621,
+              "contextEnd": 40928,
+              "contextSha256": "8842f0a48746bdd4d3db499d4d223534287e72bf651f21305be8b7c73353d5db",
+              "provenanceEvidence": "outputs/2023-fuerza-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_archived_draft_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "fuerza-published-document-archive"
+          ]
         }
       ],
       "constituencyCells": [

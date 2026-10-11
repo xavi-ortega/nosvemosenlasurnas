@@ -4506,20 +4506,29 @@
         }
       ],
       "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_full_corpus_release_pending",
       "programmeIds": [
         "palenciatierraviva"
       ],
       "ballotAliases": [
         "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA (GITV)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_primary_triptic_single_Palencia_Tierra_Viva_Congress_ballot",
       "ballotRecordIds": [
         "congress-palencia-12"
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/palenciatierraviva.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T18:17:07.484716+00:00",
+        "report": "outputs/2023-authored-palenciatierraviva-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 1,
+        "newDerivedMappings": 1,
+        "ambiguousCells": 17,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-053",
@@ -5609,14 +5618,32 @@
       "sha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
       "bytes": 699045,
       "extraction": {
-        "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
-        "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "file": "storage/app/election-sources/2023-congress/palenciatierraviva-policy-visual-transcription.txt",
+        "sha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6",
         "pageCount": 6,
-        "method": "pypdf_native_layout_v1",
-        "readStatus": "full_document_read_recorded_in_authored_notebook"
+        "method": "direct_visual_policy_page_transcription_v1",
+        "readStatus": "full_original_visual_read_policy_page_transcription_checked",
+        "transcribedPages": [
+          2
+        ],
+        "fullDocumentExtraction": false
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json"
+      "analysisStatus": "full_original_visual_read_specific_bank_audited_partial_corpus",
+      "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json",
+      "extractionHistory": [
+        {
+          "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
+          "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+          "pageCount": 6,
+          "method": "pypdf_native_layout_v1",
+          "readStatus": "full_document_read_recorded_in_authored_notebook"
+        }
+      ],
+      "questionBankAudit": "outputs/2023-authored-palenciatierraviva-audit.json",
+      "currentOriginalBytesVerified": true,
+      "applicableBallotRecordIds": [
+        "congress-palencia-12"
+      ]
     },
     {
       "id": "adelante",
@@ -9280,8 +9307,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4720,
-    "scoredDraftMappings": 160,
-    "independentAnswerCases": 800,
+    "scoredDraftMappings": 161,
+    "independentAnswerCases": 805,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9292,31 +9319,28 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
+    "latestBrowserDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
-      15,
-      20,
-      25,
-      30
+      15
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 6,
-    "latestBrowserVerification": "outputs/2023-authored-soriaya-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-soriaya-verification.json",
+    "latestBrowserProgressivePaths": 12,
+    "latestBrowserVerification": "outputs/2023-authored-palenciatierraviva-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-palenciatierraviva-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
+    "latestDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "2f42d93b7a115ceeb6f013591988369c5cbfc1fd45b4b5f642158af81289af13",
+    "latestAuthoredDraftSha256": "7f89c746efab9f4710d614f9ff33bb337371a968036da123cd81e2b19f105cc2",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9404,6 +9428,18 @@
     "latestSoriayaBrowserSessions": 6,
     "latestSoriayaCitedUnscoredPaths": 18,
     "soriayaFixedComparisonEligible": false,
-    "htmlCitationLocatorVerification": "tests/Browser/public-journeys.spec.ts"
+    "htmlCitationLocatorVerification": "tests/Browser/public-journeys.spec.ts",
+    "palenciatierravivaBankAudit": "outputs/2023-authored-palenciatierraviva-audit.json",
+    "newPalenciatierravivaAuditedCells": 80,
+    "newPalenciatierravivaDerivedMappings": 1,
+    "newPalenciatierravivaCitedUncertainties": 17,
+    "palenciatierravivaVerification": "outputs/2023-authored-palenciatierraviva-verification.json",
+    "palenciatierravivaValuesBrowserVerification": "outputs/2023-authored-palenciatierraviva-values-browser-verification.json",
+    "palenciatierravivaUnknownsBrowserVerification": "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
+    "latestPalenciatierravivaContextualCitations": 18,
+    "latestPalenciatierravivaBrowserSessions": 12,
+    "latestPalenciatierravivaCitedAnswerPaths": 10,
+    "latestPalenciatierravivaCitedUnscoredPaths": 4,
+    "palenciatierravivaFixedComparisonEligible": false
   }
 }

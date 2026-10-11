@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T18:17:07.484716+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-052",
+  "status": "primary_explicit_23j_triptic_with_checked_visual_policy_transcription",
+  "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json",
+  "notebookSha256": "1445108781d3569272fcc1d205bda092f4ff62b7759062b06fce57864601b4f2",
+  "currentOriginalVerification": [
+    {
+      "url": "https://palenciatierraviva.es/wp-content/uploads/2023/07/Triptico.pdf",
+      "resolvedUrl": "https://palenciatierraviva.es/wp-content/uploads/2023/07/Triptico.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 699045,
+      "sha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+      "file": ".tools/palenciatierraviva-bank-audit/current-original.pdf",
+      "recordedAt": "2026-10-11T18:14:11.578385+00:00",
+      "retainedOriginalBytesEqual": true
+    },
+    {
+      "url": "https://palenciatierraviva.es/generales_23j/",
+      "resolvedUrl": "https://palenciatierraviva.es/generales_23j/",
+      "mediaType": "text/html",
+      "bytes": 221846,
+      "sha256": "91b6a8361e9d3a563dbbb05f1240cd1dc5c4e36aa42cf008a1b291bf7672fa70",
+      "file": ".tools/palenciatierraviva-bank-audit/current-publication.html",
+      "recordedAt": "2026-10-11T18:14:12.037971+00:00"
+    }
+  ],
+  "transcriptionProvenance": {
+    "recordedAt": "2026-10-11T18:17:07.484716+00:00",
+    "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+    "previousExtraction": {
+      "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
+      "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+      "pageCount": 6,
+      "method": "pypdf_native_layout_v1",
+      "readStatus": "full_document_read_recorded_in_authored_notebook"
+    },
+    "transcriptionFile": "storage/app/election-sources/2023-congress/palenciatierraviva-policy-visual-transcription.txt",
+    "transcriptionSha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6",
+    "method": "direct_visual_policy_page_transcription_v1",
+    "originalPagesVisuallyReread": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "transcribedPdfPages": [
+      2
+    ],
+    "transcriptionFullDocument": false,
+    "paragraphCount": 5,
+    "spellingPreserved": [
+      "DESGRABACIÓN",
+      "si no"
+    ],
+    "normalization": "Tracking spaces, original line wrapping and end-of-line word splits joined; paragraph boundaries retained. No wording correction or invented source text.",
+    "nonPolicyPages": "Original pages 1 and 3-6 read visually but not transcribed; empty slots preserve original PDF numbering. No full-document extraction claim.",
+    "previousNotebookSha256": "16ac3fb321df5d10662882530be0f07d38069b439e0ec94b915393f35f7722c1"
+  },
+  "applicableBallotRecordIds": [
+    "congress-palencia-12"
+  ],
+  "newCompleteNotebookCount": 0,
+  "newDistinctPdfByteCount": 0,
+  "publicPointerChanged": false,
+  "limitations": [
+    "All six original image pages reread visually. Only all five policy paragraphs on page 2 are manually transcribed and checked; no full-document native extraction or OCR claim.",
+    "Current primary 699,045-byte PDF exactly matches retained original. Cover explicitly identifies 23 July 2023; page 5 separates Congress and Senate candidates. Primary campaign page links this exact PDF. Exact archived pre-vote bytes/day remain uncertified.",
+    "Hunting defence preserves environmental respect; no specific permit regime, species, unregulated methods or national licence is inferred.",
+    "Territorial fiscal reductions do not establish national exemptions or inflation adjustment. Only the Palencia Tierra Viva ballot applies, never Vamos Palencia or Senate rows.",
+    "Reopening the same programme adds no notebook, page count or distinct PDF. Full corpus/source-family/public-release acceptance remain open."
+  ]
+}

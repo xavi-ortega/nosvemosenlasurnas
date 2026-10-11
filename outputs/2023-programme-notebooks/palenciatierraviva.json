@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "documentId": "palenciatierraviva",
   "candidacyId": "boe-2023-052",
-  "recordedAt": "2026-10-11T07:56:04.078911+00:00",
+  "recordedAt": "2026-10-11T18:17:07.484716+00:00",
   "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
-  "extractionSha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
-  "extraction": "pypdf_native_layout_v1",
+  "extractionSha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6",
+  "extraction": "direct_visual_policy_page_transcription_v1",
   "pageCount": 6,
   "fullDocumentRead": true,
-  "readingMode": "Direct visual sequential reading of all six original image-based pages; native extraction contains only five form-feed bytes.",
+  "readingMode": "Direct sequential visual rereading of all six original image pages, plus manually checked transcription of all five policy paragraphs on original PDF page 2. Other pages remain visual-only; not full-document native extraction.",
   "coverage": [
     {
       "pdfPage": 1,
@@ -16,7 +16,10 @@
     },
     {
       "pdfPage": 2,
-      "authoredAnalysis": "Entire policy panel read visually: special reduced territorial tax treatment/free zones; possibility of deduction/reinvestment of 20% of income tax; VAT relief for individuals who start businesses or settle locally. Rail integration, definitive Palencia rail burial and compensation for transit territories; farm modernisation/research/fair prices and small-medium livestock/forest management; hunting and fishing within environmental respect; special small-administration statute and bureaucracy reduction. Percentage wording remains ambiguous."
+      "authoredAnalysis": "Entire policy panel read visually: special reduced territorial tax treatment/free zones; possibility of deduction/reinvestment of 20% of income tax; VAT relief for individuals who start businesses or settle locally. Rail integration, definitive Palencia rail burial and compensation for transit territories; farm modernisation/research/fair prices and small-medium livestock/forest management; hunting and fishing within environmental respect; special small-administration statute and bureaucracy reduction. Percentage wording remains ambiguous.",
+      "start": 1,
+      "end": 1383,
+      "policyParagraphsTranscribed": 5
     },
     {
       "pdfPage": 3,
@@ -39,54 +42,109 @@
     {
       "pdfPage": 2,
       "printedPage": null,
-      "quote": "ZONAS FRANCAS",
-      "start": null,
-      "end": null,
-      "analysis": "Territorial free zones.",
-      "conditionsAndContext": "Special treatment for this territory; no automatic nationwide measure.",
+      "quote": "Una FISCALIDAD REDUCIDA y especial para estos territorios. Creación de ZONAS FRANCAS. Posibilidad de DESGRABACIÓN y REINVERSIÓN de un 20% del IRPF. Facilidades fiscales y REDUCCIÓN del IVA para las personas físicas que emprenden aquí o que quieren asentarse en el territorio.",
+      "start": 59,
+      "end": 334,
+      "analysis": "Territorial fiscal incentives.",
+      "conditionsAndContext": "20% deduction/reinvestment mechanism unspecified; not inflation indexation or a blanket rate/exemption.",
       "numericPosition": null,
-      "locatorType": "original_visual_page"
+      "locatorType": "original_visual_page_checked_transcription"
     },
     {
       "pdfPage": 2,
       "printedPage": null,
-      "quote": "DESGRABACIÓN y REINVERSIÓN",
-      "start": null,
-      "end": null,
-      "analysis": "Income-tax treatment.",
-      "conditionsAndContext": "Source spelling retained. The 20% provision is not precise enough to infer a general 20% tax cut.",
+      "quote": "Que el AVE sea una oportunidad y algo verdaderamente vertebrador. Solución definitiva del SOTERRAMIENTO del tren en la capital y una compensación al territorio de paso y una posibilidad para asentar población.",
+      "start": 354,
+      "end": 563,
+      "analysis": "Local railway works and territorial compensation.",
+      "conditionsAndContext": "High-speed rail and burial/compensation are not flight restrictions or rural on-demand fares.",
       "numericPosition": null,
-      "locatorType": "original_visual_page"
+      "locatorType": "original_visual_page_checked_transcription"
     },
     {
       "pdfPage": 2,
       "printedPage": null,
-      "quote": "REDUCCIÓN del IVA",
-      "start": null,
-      "end": null,
-      "analysis": "VAT reduction.",
-      "conditionsAndContext": "Individuals undertaking activity here or settling in the territory; no specified VAT rate.",
+      "quote": "POTENCIAR Y REVITALIZAR el sector agroganadero. Puesta en valor de nuestros productos. Promover la MODERNIZACIÓN y la INVESTIGACIÓN en el campo para la mejora de cultivos. PROTEGER e INCENTIVAR el sector ganadero. HACER CUMPLIR la justicia en los precios de los productos, APOYAR a los pequeños y medianos ganaderos, así como realizar una verdadera gestión forestal.",
+      "start": 586,
+      "end": 952,
+      "analysis": "Farm modernisation, prices, livestock and forest support.",
+      "conditionsAndContext": "Research support does not establish open results; livestock support does not define feeding regulation.",
       "numericPosition": null,
-      "locatorType": "original_visual_page"
+      "locatorType": "original_visual_page_checked_transcription"
     },
     {
       "pdfPage": 2,
       "printedPage": null,
-      "quote": "la caza y la pesca",
-      "start": null,
-      "end": null,
-      "analysis": "Rural hunting/fishing.",
-      "conditionsAndContext": "Promotion paired with respect for the environment; no unqualified removal of protections.",
+      "quote": "DEFENSA Y PROMOCIÓN DE LAS ACTIVIDADES RURALES EN EL MEDIO NATURAL. Reivindicar la importancia de sectores como la caza y la pesca, pero no desde el enfrentamiento si no desde el respeto al medio ambiente.",
+      "start": 975,
+      "end": 1180,
+      "analysis": "Explicit rural activity defence including hunting and fishing.",
+      "conditionsAndContext": "Respect for the environment remains explicit. No species, seasons, permit design or nationwide licensing measure is stated.",
       "numericPosition": null,
-      "locatorType": "original_visual_page"
+      "locatorType": "original_visual_page_checked_transcription"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "ESTATUTO especial para las pequeñas administraciones y municipios con el reconocimiento de nuestra excepcionalidad y la REDUCCIÓN DE LA BUROCRACIA.",
+      "start": 1204,
+      "end": 1351,
+      "analysis": "Special small-municipality administration statute.",
+      "conditionsAndContext": "Bureaucracy reduction does not specify channels, intermediaries, AI decision rules or appointments.",
+      "numericPosition": null,
+      "locatorType": "original_visual_page_checked_transcription"
     }
   ],
   "provenanceStatus": "primary_party_original_explicit_general_election_23_july_2023_and_congress_candidates",
   "scoringReady": false,
   "uncertainties": [
-    "Native extraction is empty; visual quotations need a checked transcription/locator artifact before bundle release.",
-    "Deduction/reinvestment of 20% of income tax has unresolved mechanism/base; never translate it into a blanket tax-rate cut.",
-    "Do not inherit this local programme to other parties or territories."
+    "Only the complete policy page was transcribed; other original pages are visually read. Original empty native extraction is preserved.",
+    "20% deduction/reinvestment mechanism/base remains unspecified; no general rate cut, inflation adjustment or fiscal exemption inferred.",
+    "The environmental condition of hunting defence is retained; no specific species, licences, methods or protections are invented.",
+    "Wider programme-family/source corpus remains open. Only Palencia Tierra Viva applies; no Vamos Palencia inheritance."
   ],
-  "authorship": "Direct agent-authored semantic notebook; code only verifies supplied excerpts and hashes. No generated questions or numeric positions."
+  "authorship": "Direct agent-authored semantic notebook; code only verifies supplied excerpts and hashes. No generated questions or numeric positions.",
+  "previousExtractions": [
+    {
+      "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
+      "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+      "pageCount": 6,
+      "method": "pypdf_native_layout_v1",
+      "readStatus": "full_document_read_recorded_in_authored_notebook"
+    }
+  ],
+  "transcriptionProvenance": {
+    "recordedAt": "2026-10-11T18:17:07.484716+00:00",
+    "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+    "previousExtraction": {
+      "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
+      "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+      "pageCount": 6,
+      "method": "pypdf_native_layout_v1",
+      "readStatus": "full_document_read_recorded_in_authored_notebook"
+    },
+    "transcriptionFile": "storage/app/election-sources/2023-congress/palenciatierraviva-policy-visual-transcription.txt",
+    "transcriptionSha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6",
+    "method": "direct_visual_policy_page_transcription_v1",
+    "originalPagesVisuallyReread": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "transcribedPdfPages": [
+      2
+    ],
+    "transcriptionFullDocument": false,
+    "paragraphCount": 5,
+    "spellingPreserved": [
+      "DESGRABACIÓN",
+      "si no"
+    ],
+    "normalization": "Tracking spaces, original line wrapping and end-of-line word splits joined; paragraph boundaries retained. No wording correction or invented source text.",
+    "nonPolicyPages": "Original pages 1 and 3-6 read visually but not transcribed; empty slots preserve original PDF numbering. No full-document extraction claim.",
+    "previousNotebookSha256": "16ac3fb321df5d10662882530be0f07d38069b439e0ec94b915393f35f7722c1"
+  }
 }

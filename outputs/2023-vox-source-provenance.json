@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T21:52:55.120592+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-003",
+  "source": {
+    "documentId": "vox-campaign-30mb",
+    "url": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+    "resolvedUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+    "sha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+    "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+    "pdfPages": 178,
+    "explicitElectionLabelPdfPage": 3
+  },
+  "primaryAttempts": [
+    {
+      "url": "https://www.voxespana.es/programa/programa-electoral-Vox",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=https%3A%2F%2Fvotaabascal.es%2Fassets%2Fpdf%2FPrograma-VOX-2023.pdf&timestamp=20230723",
+      "resolvedUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fvotaabascal.es%2Fassets%2Fpdf%2FPrograma-VOX-2023.pdf&timestamp=20230723",
+      "status": 200,
+      "bytes": 117,
+      "sha256": "f53394ab8a72e9dc0b70b8424a68997c9eb508bcfdcf8d7c059acbd9e0b75757",
+      "file": ".tools/vox-bank-audit/provenance-1.raw",
+      "bodyJson": {
+        "url": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+        "archived_snapshots": {},
+        "timestamp": "20230723"
+      }
+    },
+    {
+      "url": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.voxespana.es%2Fprograma%2Fprograma-electoral-Vox&timestamp=20230723",
+      "resolvedUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.voxespana.es%2Fprograma%2Fprograma-electoral-Vox&timestamp=20230723",
+      "status": 200,
+      "bytes": 118,
+      "sha256": "dc0b20a6803fcbd254a89630b485d5257829751bf9318b6246cac0915f922d46",
+      "file": ".tools/vox-bank-audit/provenance-2.raw",
+      "bodyJson": {
+        "url": "https://www.voxespana.es/programa/programa-electoral-Vox",
+        "archived_snapshots": {},
+        "timestamp": "20230723"
+      }
+    }
+  ],
+  "territorialApplicability": {
+    "congressScopes": 51,
+    "excludedScopes": [
+      "santacruzdetenerife"
+    ],
+    "officialNotProclaimed": true
+  },
+  "reusedFullReadingNotebook": "outputs/2023-programme-notebooks/vox.json",
+  "newUniqueReadings": 0,
+  "newDownloads": 0,
+  "originalPagesVisuallyReopened": [
+    9,
+    41,
+    75,
+    127,
+    151
+  ],
+  "bankAuditComplete": true,
+  "sourceFamilyComplete": false,
+  "preVoteExactBytesCertified": false,
+  "limitations": [
+    "Previously recorded complete178page programme reused, with five original pages visually reopened. No new full reading, PDF or programme owner counted.",
+    "Current primary campaign original directly labels23July2023; applicable to51Congress scopes. Santa Cruz de Tenerife has no proclaimed VOX ballot. Primary publication now403 and archive availability returned no snapshots; pre-vote identity remains uncertified.",
+    "Four new mappings preserve all13previous VOX and209default/scoped numeric mappings. SAREB ownership exception, savings-only inflation adjustment and fiscal/credit bullfighting support retain scope/mechanism.",
+    "Judicial designation-or-proposal is not treated as explicit final judicial selection. Municipal free nurseries are not a universal0–3education entitlement; expenses-or-pay is not guaranteed all-curricular remuneration.",
+    "Carta de Madrid external reference/version remains unresolved and unscored. Full source-family/corpus/final UI/release/production/privacy/publication acceptance remains open."
+  ]
+}

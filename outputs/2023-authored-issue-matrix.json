@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T21:38:53.707995+00:00",
+  "recordedAt": "2026-10-11T21:52:55.120592+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -1611,12 +1611,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas laborales no fijan una jornada máxima de 35 horas semanales manteniendo el sueldo.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas laborales no fijan una jornada máxima de 35 horas semanales manteniendo el sueldo.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 25,
+              "printedPage": 25,
+              "htmlSection": null,
+              "start": 43191,
+              "end": 43227,
+              "quote": "el respeto de su horario y descansos",
+              "contextStart": 41813,
+              "contextEnd": 43799,
+              "contextSha256": "8ac71fc48ae2730af8de03cf0c8ce7ce856522366222e78357cc854cbb84f511",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -6117,12 +6140,53 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone guarderías municipales gratuitas y cheques escolares, sin precisar una plaza de educación infantil gratuita de 0 a 3 años para todas las familias.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone guarderías municipales gratuitas y cheques escolares, sin precisar una plaza de educación infantil gratuita de 0 a 3 años para todas las familias.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 164,
+              "printedPage": 164,
+              "htmlSection": null,
+              "start": 232967,
+              "end": 233072,
+              "quote": "garantizar guarderías\n       gratuitas   abiertas   hasta   el   horario   de   comercios   y   oficinas.",
+              "contextStart": 232783,
+              "contextEnd": 234945,
+              "contextSha256": "f34c01164bfc310cf0a3bee87c1faa5e53ae42fb654be39afa10455d59fdf9d1",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            },
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 33,
+              "printedPage": 33,
+              "htmlSection": null,
+              "start": 52509,
+              "end": 52545,
+              "quote": "a través de un        cheque escolar",
+              "contextStart": 50749,
+              "contextEnd": 52753,
+              "contextSha256": "6eae9de6aff91a243e9a7687a02304d141d837e28971586ac8d4091ae1efa99f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -7315,12 +7379,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar las conexiones ferroviarias, sin establecer limitar vuelos cuando exista una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone mejorar las conexiones ferroviarias, sin establecer limitar vuelos cuando exista una alternativa adecuada en tren.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 148,
+              "printedPage": 148,
+              "htmlSection": null,
+              "start": 213139,
+              "end": 213537,
+              "quote": "314.   Reforzaremos las       infraestructuras de transporte            en la Es-\n       paña rural abandonada por los sucesivos gobiernos para\n       garantizar la rápida conexión de cualquier núcleo rural con\n       servicios públicos básicos como centros sanitarios o educa                  -\n       tivos. Además, se debe       frenar la imposición de peajes           en las\n       autopistas.",
+              "contextStart": 212321,
+              "contextEnd": 214079,
+              "contextSha256": "22b15deaf17037986e8a223e9d3abdac95f07315dcfe0667b8486fd3176224a3",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -9333,8 +9420,8 @@
           "candidacyId": "boe-2023-003",
           "status": "ambiguous",
           "value": null,
-          "rationale": "Propone que los miembros sean designados o propuestos por jueces y magistrados, sin distinguir la decisión final para cada puesto.",
-          "authoredAnalysis": "Heading supports judge selection, but operative designation-or-proposal leaves final selection ambiguous for the exact judicial-origin proposition; no invented qualified numerical mapping.",
+          "rationale": "Afirma que los jueces deben elegir a los jueces, pero su mecanismo permite designar o proponer miembros, sin precisar la elección final de los de origen judicial.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Afirma que los jueces deben elegir a los jueces, pero su mecanismo permite designar o proponer miembros, sin precisar la elección final de los de origen judicial.",
           "citations": [
             {
               "documentId": "vox-campaign-30mb",
@@ -9352,6 +9439,11 @@
               "contextEnd": 186648,
               "contextSha256": "7564b406d536cad4dd24636118610bbdb42be30424de9e300a70fac10096054f"
             }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
           ]
         },
         {
@@ -10515,12 +10607,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La exención fiscal de pensiones y la sostenibilidad del sistema no establecen actualizar todas las pensiones según el coste de la vida.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La exención fiscal de pensiones y la sostenibilidad del sistema no establecen actualizar todas las pensiones según el coste de la vida.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 75,
+              "printedPage": 75,
+              "htmlSection": null,
+              "start": 109390,
+              "end": 109463,
+              "quote": "las pensiones contributi         -\n           vas estarán exentas de IRPF",
+              "contextStart": 107741,
+              "contextEnd": 109591,
+              "contextSha256": "592f48a6c83ba52efb5821067bdfe4b788d8da7a86a73c849b0965360185282f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -11594,12 +11709,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone suprimir el impuesto sobre el patrimonio, sin precisar aquí qué hacer con el impuesto específico sobre grandes fortunas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone suprimir el impuesto sobre el patrimonio, sin precisar aquí qué hacer con el impuesto específico sobre grandes fortunas.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 77,
+              "printedPage": 77,
+              "htmlSection": null,
+              "start": 112697,
+              "end": 112822,
+              "quote": "Suprimiremos el Impuesto sobre el Patrimonio, el Im                             -\n       puesto sobre Sucesiones y Donaciones",
+              "contextStart": 111747,
+              "contextEnd": 114198,
+              "contextSha256": "25b401525c14c78379e6efbbdf371528f12cdb70313fe1c9b4dcf5b34d7449b4",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -13715,12 +13853,53 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -1,
+          "rationale": "Propone vivienda social pública en propiedad o alquiler con opción de compra, pero conserva la titularidad de los activos de la SAREB destinados a cesión temporal.",
+          "authoredAnalysis": "Qualified rejection of a blanket permanent-public-ownership rule: new public social homes allow ownership/rent-to-buy by families; specific SAREB temporary-use assets expressly retain ownership. Neither universal private sale nor universal sale ban inferred.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "htmlSection": null,
+              "start": 62878,
+              "end": 63187,
+              "quote": "69.    Impulsaremos la construcción viviendas sociales                     públicas\n       en régimen de propiedad o arrendamiento con opción a\n       compra para garantizar que los jóvenes y familias puedan\n       adquirir un hogar, especialmente aquellos con menos re                        -\n       cursos.",
+              "contextStart": 62277,
+              "contextEnd": 64422,
+              "contextSha256": "8d7cc7b48b4e5cc5a752ad387d6e23923dfddb796a075f90df0f75172d231bb7",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            },
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "htmlSection": null,
+              "start": 63190,
+              "end": 64027,
+              "quote": "70.    Fomentaremos la colaboración entre la Administración Pú                       -\n       blica y las entidades privadas a efectos de             aumentar el par       -\n       que         de         viviendas         de         protección         oficial. Movilizaremos el\n       suelo público perteneciente a la Administración General del\n       Estado y los organismos de ella dependientes para la pro                      -\n       moción de vivienda en alquiler social. Habilitaremos una pla                  -\n       taforma auditada de peticiones para que, manteniendo la\n       SAREB la titularidad de los activos, sean los Ayuntamientos\n       los que soliciten a la SAREB, en función de la demanda y las\n       necesidades habitacionales, la cesión temporal de los activos\n       y el suelo urbanizable para alquiler social.",
+              "contextStart": 62277,
+              "contextEnd": 64422,
+              "contextSha256": "8d7cc7b48b4e5cc5a752ad387d6e23923dfddb796a075f90df0f75172d231bb7",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -17010,12 +17189,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las propuestas energéticas no establecen gestión pública de las centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las propuestas energéticas no establecen gestión pública de las centrales hidroeléctricas al caducar sus concesiones.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 117,
+              "printedPage": 117,
+              "htmlSection": null,
+              "start": 173504,
+              "end": 173590,
+              "quote": "promoveremos la extensión de\n      la vida útil de las centrales nucleares existentes.",
+              "contextStart": 172416,
+              "contextEnd": 174280,
+              "contextSha256": "8533eb2404b35b8fadb4de9519b738a8241ed9c3883316d353c0b50e09d1c340",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -18226,12 +18428,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone respetar el horario y descansos de los becarios, sin establecer una prohibición de contacto con todo el personal fuera del horario laboral.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone respetar el horario y descansos de los becarios, sin establecer una prohibición de contacto con todo el personal fuera del horario laboral.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 25,
+              "printedPage": 25,
+              "htmlSection": null,
+              "start": 43191,
+              "end": 43227,
+              "quote": "el respeto de su horario y descansos",
+              "contextStart": 41813,
+              "contextEnd": 43799,
+              "contextSha256": "8ac71fc48ae2730af8de03cf0c8ce7ce856522366222e78357cc854cbb84f511",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -19263,12 +19488,53 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ayudas fiscales y becas para comedor según circunstancias familiares, sin establecer gratuidad para todo el alumnado de etapas obligatorias.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone ayudas fiscales y becas para comedor según circunstancias familiares, sin establecer gratuidad para todo el alumnado de etapas obligatorias.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "htmlSection": null,
+              "start": 53964,
+              "end": 54373,
+              "quote": "5 7.   Ampliaremos el       sistema de apoyo a las familias           para la edu    -\n       cación de sus hijos con medidas fiscales en función del núme                  -\n       ro de hijos para el     comedor y transporte escolar           , materiales,\n       uniforme o actividades extraescolares. Fomentaremos igual                     -\n       mente medidas de         conciliación familiar y laboral.",
+              "contextStart": 52754,
+              "contextEnd": 54808,
+              "contextSha256": "507b1dc2960b946550d1719df352e7253b3a95a44f1fd39f35da97fb9cb6ad0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            },
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 162,
+              "printedPage": 162,
+              "htmlSection": null,
+              "start": 229939,
+              "end": 230299,
+              "quote": "346.  Incluiremos bonificaciones    fiscales    para    familias    numero        -\n      sas, préstamos sin intereses o avales bancarios para parejas\n      jóvenes con hijos, becas escolares al comedor y transporte,\n      ayudas deportivas y beneficios en el acceso a servicios públi               -\n      cos en colaboración con el resto de administraciones.",
+              "contextStart": 229025,
+              "contextEnd": 230814,
+              "contextSha256": "b8be77faa16b5969432fa89a8abff6da7a5ff365047589afe3f5867c2d643645",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -20280,12 +20546,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La ampliación de servicios sanitarios no establece eliminar el copago de todos los medicamentos cubiertos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La ampliación de servicios sanitarios no establece eliminar el copago de todos los medicamentos cubiertos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 87510,
+              "end": 87644,
+              "quote": "Incluiremos en la cartera de servicios las prestaciones re                 -\n      lacionadas con la salud bucodental y oftalmológica.",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -21313,10 +21602,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece permitir votar desde los dieciséis años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece permitir votar desde los dieciséis años.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -22204,10 +22497,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece obligar a los fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece obligar a los fabricantes a facilitar piezas de recambio.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -23102,12 +23399,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone compensación suficiente de gastos o salario para becarios, sin precisar remuneración de todas las prácticas curriculares ni una regla solo de gastos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone compensación suficiente de gastos o salario para becarios, sin precisar remuneración de todas las prácticas curriculares ni una regla solo de gastos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 25,
+              "printedPage": 25,
+              "htmlSection": null,
+              "start": 43191,
+              "end": 43227,
+              "quote": "el respeto de su horario y descansos",
+              "contextStart": 41813,
+              "contextEnd": 43799,
+              "contextSha256": "8ac71fc48ae2730af8de03cf0c8ce7ce856522366222e78357cc854cbb84f511",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -24333,12 +24653,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de conciliación no establecen permisos por nacimiento de seis meses para cada progenitor.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas de conciliación no establecen permisos por nacimiento de seis meses para cada progenitor.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 164,
+              "printedPage": 164,
+              "htmlSection": null,
+              "start": 232967,
+              "end": 233072,
+              "quote": "garantizar guarderías\n       gratuitas   abiertas   hasta   el   horario   de   comercios   y   oficinas.",
+              "contextStart": 232783,
+              "contextEnd": 234945,
+              "contextSha256": "f34c01164bfc310cf0a3bee87c1faa5e53ae42fb654be39afa10455d59fdf9d1",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -25472,12 +25815,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma fiscal no establece un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La reforma fiscal no establece un impuesto específico sobre bebidas azucaradas.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "htmlSection": null,
+              "start": 111469,
+              "end": 111530,
+              "quote": "el tipo reducido al 8% y el\n             tipo general al 18%.",
+              "contextStart": 109592,
+              "contextEnd": 111746,
+              "contextSha256": "5f908accb1271c05349cf56c94dd8dc00c534a31c67b4c6147ea64d608dc8a5d",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -26303,12 +26669,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas contra las adicciones no establecen despenalizar el cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas contra las adicciones no establecen despenalizar el cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 86774,
+              "end": 87077,
+              "quote": "112.  Reforzaremos la Estrategia Nacional de Salud Mental, re                    -\n      forzando la prevención.          Serán áreas prioritarias la preven        -\n      ción del suicidio y conductas autolíticas, los trastornos ali              -\n      mentarios y de autismo, así como las adicciones.",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -27205,12 +27594,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone becas para que la falta de recursos no impida estudiar, sin establecer eliminar el recargo por repetir asignaturas universitarias.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone becas para que la falta de recursos no impida estudiar, sin establecer eliminar el recargo por repetir asignaturas universitarias.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "htmlSection": null,
+              "start": 53425,
+              "end": 53818,
+              "quote": "55.    Ningún español debe quedarse sin poder estudiar por falta\n       de recursos económicos          . Se mejorará el    sistema de becas        en\n       las etapas universitaria y preuniversitaria para que la educa                 -\n       ción sea un verdadero ascensor social en el que la situación\n       económica no sea un obstáculo para el esfuerzo, el mérito y\n       la capacidad.",
+              "contextStart": 52754,
+              "contextEnd": 54808,
+              "contextSha256": "507b1dc2960b946550d1719df352e7253b3a95a44f1fd39f35da97fb9cb6ad0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -28270,12 +28682,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone actualizar contenidos escolares, sin establecer tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone actualizar contenidos escolares, sin establecer tres horas semanales de Educación Física.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 35,
+              "printedPage": 35,
+              "htmlSection": null,
+              "start": 55783,
+              "end": 56398,
+              "quote": "62.   Actualizaremos los currículos educativos                , garantizando el\n      acompañamiento y la           exigencia en la adquisición de conte            -\n      nidos sobre las materias fundamentales, con base en                  eviden-\n      cias       científicas. La educación será un instrumento esencial\n      para la formación integral         de los alumnos y el     fortalecimiento\n      de los lazos nacionales       . Los currículos serán     comunes a todas\n      las regiones y tendrán en cuenta la realidad cultural, lingüísti              -\n      ca, histórica o geográfica de cada región.",
+              "contextStart": 54809,
+              "contextEnd": 56939,
+              "contextSha256": "bad9c5f1cb1dc12537473c42be745b9a90f36b1df3f88518112ce1c6a479f2e7",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -31589,12 +32024,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Suprimir el organismo de derechos de los animales no establece permitir o prohibir la compraventa de todos los animales de compañía.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Suprimir el organismo de derechos de los animales no establece permitir o prohibir la compraventa de todos los animales de compañía.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 150,
+              "printedPage": 150,
+              "htmlSection": null,
+              "start": 217235,
+              "end": 217309,
+              "quote": "una licencia única de caza en\n                todo el territorio nacional.",
+              "contextStart": 215895,
+              "contextEnd": 217880,
+              "contextSha256": "4493e4025267795c6beec2ccfe9a2bb4a65da1a8f0768a6e6d7628f7a62fac66",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -32517,12 +32975,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone apoyo fiscal y crediticio a la tauromaquia y los espectáculos taurinos, sin excluir los que terminan con la muerte del animal.",
+          "authoredAnalysis": "Explicit government fiscal and credit support for tauromaquia and bullfighting, without excluding its lethal performances, rejects withdrawing all public financial support. No grant amount, lending institution or factual ecological prediction inferred.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 151,
+              "printedPage": 151,
+              "htmlSection": null,
+              "start": 218493,
+              "end": 218589,
+              "quote": "medidas fiscales y crediticias la tauroma              -\n      quia y los espectáculos taurinos.",
+              "contextStart": 217881,
+              "contextEnd": 219464,
+              "contextSha256": "42636e0597a5b2f3b4bba6f010981a77a8cd3cc949f9ad534e6bac73cdc63543",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -34389,12 +34870,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir impuestos sobre suministros del hogar, sin establecer una prohibición permanente de cortes a hogares vulnerables.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone reducir impuestos sobre suministros del hogar, sin establecer una prohibición permanente de cortes a hogares vulnerables.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 78,
+              "printedPage": 78,
+              "htmlSection": null,
+              "start": 115294,
+              "end": 115576,
+              "quote": "154.   A su vez, aplicaremos una           reducción progresiva de im            -\n       puestos y gravámenes que pesan sobre los               suministros del\n       hogar familiar y, especialmente, sobre las familias numero                -\n       sas (electricidad, agua, gas…).",
+              "contextStart": 114199,
+              "contextEnd": 116242,
+              "contextSha256": "bb5fc8df124af51ca4dae1fedd4069b439cc916c562d200fc530861b65415a0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -35430,12 +35934,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los apoyos a familias y parejas jóvenes con hijos no establecen pagar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Los apoyos a familias y parejas jóvenes con hijos no establecen pagar 20.000 euros a cada joven al cumplir 23 años.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 162,
+              "printedPage": 162,
+              "htmlSection": null,
+              "start": 229939,
+              "end": 230299,
+              "quote": "346.  Incluiremos bonificaciones    fiscales    para    familias    numero        -\n      sas, préstamos sin intereses o avales bancarios para parejas\n      jóvenes con hijos, becas escolares al comedor y transporte,\n      ayudas deportivas y beneficios en el acceso a servicios públi               -\n      cos en colaboración con el resto de administraciones.",
+              "contextStart": 229025,
+              "contextEnd": 230814,
+              "contextSha256": "b8be77faa16b5969432fa89a8abff6da7a5ff365047589afe3f5867c2d643645",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -36439,12 +36966,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Usa el salario mínimo como umbral para la cuota de autónomos, sin establecer subidas anuales del salario mínimo superiores a los precios.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Usa el salario mínimo como umbral para la cuota de autónomos, sin establecer subidas anuales del salario mínimo superiores a los precios.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 23,
+              "printedPage": 23,
+              "htmlSection": null,
+              "start": 39238,
+              "end": 39395,
+              "quote": "la        exoneración de la cuota          a aquellos cu    -\n      yos ingresos netos no lleguen al          Salario Mínimo Interpro        -\n      fesional",
+              "contextStart": 37871,
+              "contextEnd": 39819,
+              "contextSha256": "1524edde061000dd25e8db7d6d14792a3f8308f40da8cff7a83ef47e2a98236e",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -37372,12 +37922,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La accesibilidad digital no establece usar formatos abiertos para todos los documentos públicos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La accesibilidad digital no establece usar formatos abiertos para todos los documentos públicos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -39363,12 +39936,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los apoyos al comedor escolar no establecen una opción vegetariana para quien la prefiera.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Los apoyos al comedor escolar no establecen una opción vegetariana para quien la prefiera.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "htmlSection": null,
+              "start": 53964,
+              "end": 54373,
+              "quote": "5 7.   Ampliaremos el       sistema de apoyo a las familias           para la edu    -\n       cación de sus hijos con medidas fiscales en función del núme                  -\n       ro de hijos para el     comedor y transporte escolar           , materiales,\n       uniforme o actividades extraescolares. Fomentaremos igual                     -\n       mente medidas de         conciliación familiar y laboral.",
+              "contextStart": 52754,
+              "contextEnd": 54808,
+              "contextSha256": "507b1dc2960b946550d1719df352e7253b3a95a44f1fd39f35da97fb9cb6ad0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -40230,12 +40826,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone medidas fiscales para material escolar, sin establecer libros gratuitos con permiso para copiarlos y compartirlos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone medidas fiscales para material escolar, sin establecer libros gratuitos con permiso para copiarlos y compartirlos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 34,
+              "printedPage": 34,
+              "htmlSection": null,
+              "start": 53964,
+              "end": 54373,
+              "quote": "5 7.   Ampliaremos el       sistema de apoyo a las familias           para la edu    -\n       cación de sus hijos con medidas fiscales en función del núme                  -\n       ro de hijos para el     comedor y transporte escolar           , materiales,\n       uniforme o actividades extraescolares. Fomentaremos igual                     -\n       mente medidas de         conciliación familiar y laboral.",
+              "contextStart": 52754,
+              "contextEnd": 54808,
+              "contextSha256": "507b1dc2960b946550d1719df352e7253b3a95a44f1fd39f35da97fb9cb6ad0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -41251,12 +41870,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone garantizar siempre una alternativa presencial en los trámites, además de atención sin cita previa en todas las administraciones.",
+          "authoredAnalysis": "Explicit universal accessible digital administration always retains in-person alternative, reinforced by all-administration in-person/no-prior-appointment measure7 and repeated ordinary-procedure measure140.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -42413,12 +43055,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir los tipos generales del impuesto, sin precisar un tipo del 10% o menos para servicios veterinarios de animales de compañía.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone reducir los tipos generales del impuesto, sin precisar un tipo del 10% o menos para servicios veterinarios de animales de compañía.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "htmlSection": null,
+              "start": 111469,
+              "end": 111530,
+              "quote": "el tipo reducido al 8% y el\n             tipo general al 18%.",
+              "contextStart": 109592,
+              "contextEnd": 111746,
+              "contextSha256": "5f908accb1271c05349cf56c94dd8dc00c534a31c67b4c6147ea64d608dc8a5d",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -43351,10 +44016,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho a elegir un taller independiente del fabricante.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece el derecho a elegir un taller independiente del fabricante.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -44198,10 +44867,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un depósito recuperable al devolver envases de bebidas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece un depósito recuperable al devolver envases de bebidas.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -45013,12 +45686,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las propuestas sanitarias no establecen anticonceptivos gratuitos para jóvenes.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las propuestas sanitarias no establecen anticonceptivos gratuitos para jóvenes.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 87510,
+              "end": 87644,
+              "quote": "Incluiremos en la cartera de servicios las prestaciones re                 -\n      lacionadas con la salud bucodental y oftalmológica.",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -45878,12 +46574,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone fortalecer la industria sanitaria y de medicamentos, sin establecer una empresa pública que los investigue y produzca.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone fortalecer la industria sanitaria y de medicamentos, sin establecer una empresa pública que los investigue y produzca.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 59,
+              "printedPage": 59,
+              "htmlSection": null,
+              "start": 89181,
+              "end": 89629,
+              "quote": "118.  Defenderemos nuestra           soberanía sanitaria y fortalecere          -\n      mos la industria nacional de tecnología sanitaria y me                    -\n      dicamentos para mejorar la respuesta sanitaria.                  Reforza-\n      remos la AEMPS , acabando con el infierno burocrático y\n      el caos normativo autonómico, que expulsan a nuestras in                  -\n      dustrias y disuaden la inversión industrial en España.",
+              "contextStart": 88527,
+              "contextEnd": 90554,
+              "contextSha256": "68b4324ce8de96b5a2a983b40e2fd2ef4d84ada9e1598e08f4e297a6e0ad4d2d",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -46904,12 +47623,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La accesibilidad de trámites digitales no establece conexión básica gratuita a internet para todas las personas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La accesibilidad de trámites digitales no establece conexión básica gratuita a internet para todas las personas.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -48109,12 +48851,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone interconectar cuencas y garantizar acceso al agua, sin establecer gestión pública de todo el suministro.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone interconectar cuencas y garantizar acceso al agua, sin establecer gestión pública de todo el suministro.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 109,
+              "printedPage": 109,
+              "htmlSection": null,
+              "start": 161836,
+              "end": 161873,
+              "quote": "la interconexión de todas las cuencas",
+              "contextStart": 161110,
+              "contextEnd": 163238,
+              "contextSha256": "c55a80e9e9346e75310d2e8ff79eb7413ef0ad40cfb879f2142c27f931fdeca4",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -49317,12 +50082,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un modelo común de atención temprana y ampliar ciertos casos después de los seis años, sin precisar carácter público y gratuito de toda la atención antes de esa edad.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone un modelo común de atención temprana y ampliar ciertos casos después de los seis años, sin precisar carácter público y gratuito de toda la atención antes de esa edad.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 66,
+              "printedPage": 66,
+              "htmlSection": null,
+              "start": 98043,
+              "end": 98227,
+              "quote": "ampliaremos el servicio\n      de AT para niños mayores de seis años               para aquellos casos\n      en los que el facultativo, especialista o pediatra lo estimen\n      oportuno",
+              "contextStart": 97067,
+              "contextEnd": 99108,
+              "contextSha256": "0c73c2ced1901c86b5e46eb41b9c30a74f35df4fa7c68aa7a0119555c762f7af",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -50414,12 +51202,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de conciliación no establecen reducción de jornada por cuidados hasta los dieciséis años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas de conciliación no establecen reducción de jornada por cuidados hasta los dieciséis años.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 164,
+              "printedPage": 164,
+              "htmlSection": null,
+              "start": 232967,
+              "end": 233072,
+              "quote": "garantizar guarderías\n       gratuitas   abiertas   hasta   el   horario   de   comercios   y   oficinas.",
+              "contextStart": 232783,
+              "contextEnd": 234945,
+              "contextSha256": "f34c01164bfc310cf0a3bee87c1faa5e53ae42fb654be39afa10455d59fdf9d1",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -51495,10 +52306,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa que aumente con la frecuencia de los viajes en avión.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece una tasa que aumente con la frecuencia de los viajes en avión.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -52320,12 +53135,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas energéticas no establecen permitir o prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas energéticas no establecen permitir o prohibir publicidad y patrocinio de combustibles fósiles.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 117,
+              "printedPage": 117,
+              "htmlSection": null,
+              "start": 173504,
+              "end": 173590,
+              "quote": "promoveremos la extensión de\n      la vida útil de las centrales nucleares existentes.",
+              "contextStart": 172416,
+              "contextEnd": 174280,
+              "contextSha256": "8533eb2404b35b8fadb4de9519b738a8241ed9c3883316d353c0b50e09d1c340",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -53222,12 +54060,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas sobre animales y caza no establecen permitir o prohibir criar animales para obtener pieles.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas sobre animales y caza no establecen permitir o prohibir criar animales para obtener pieles.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 150,
+              "printedPage": 150,
+              "htmlSection": null,
+              "start": 217235,
+              "end": 217309,
+              "quote": "una licencia única de caza en\n                todo el territorio nacional.",
+              "contextStart": 215895,
+              "contextEnd": 217880,
+              "contextSha256": "4493e4025267795c6beec2ccfe9a2bb4a65da1a8f0768a6e6d7628f7a62fac66",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -54142,12 +55003,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas agrícolas no establecen permitir o prohibir específicamente el glifosato.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas agrícolas no establecen permitir o prohibir específicamente el glifosato.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 149,
+              "printedPage": 149,
+              "htmlSection": null,
+              "start": 215443,
+              "end": 215531,
+              "quote": "para que los ganaderos y agricultores no sigan\n      vendiendo sus productos a pérdidas.",
+              "contextStart": 214080,
+              "contextEnd": 215894,
+              "contextSha256": "7bf089c8832ed6d9b6ea541a2b587b35e0284590e76274d8861daa54f74b33f2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -55982,12 +56866,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma judicial no establece suprimir los tribunales específicos por razón del cargo público.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La reforma judicial no establece suprimir los tribunales específicos por razón del cargo público.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 127,
+              "printedPage": 127,
+              "htmlSection": null,
+              "start": 185713,
+              "end": 185833,
+              "quote": "todos los miembros del CGPJ sean designados o pro                   -\n      puestos por los propios jueces y magistrados",
+              "contextStart": 184794,
+              "contextEnd": 186648,
+              "contextSha256": "7564b406d536cad4dd24636118610bbdb42be30424de9e300a70fac10096054f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -56884,10 +57791,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eliminar las firmas exigidas a partidos sin representación para presentar candidaturas al Congreso.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece eliminar las firmas exigidas a partidos sin representación para presentar candidaturas al Congreso.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -57770,12 +58681,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone informes sobre el impacto familiar de las normas, sin establecer una ficha de negociadores e intermediarios de cada ley.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone informes sobre el impacto familiar de las normas, sin establecer una ficha de negociadores e intermediarios de cada ley.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 66,
+              "printedPage": 66,
+              "htmlSection": null,
+              "start": 98481,
+              "end": 98927,
+              "quote": "134.  Incluiremos en los preceptivos informes de impacto de fa                    -\n      milia un nuevo epígrafe de            impacto en las personas con\n      discapacidad. Dicho informe, con el nuevo añadido, será de\n      carácter obligatorio y exigible para cumplir con la calidad\n      normativa. Todas las leyes deberán adjuntar el informe de\n      impacto de familia -incluyendo el nuevo epígrafe- para su\n      tramitación y aprobación.",
+              "contextStart": 97067,
+              "contextEnd": 99108,
+              "contextSha256": "0c73c2ced1901c86b5e46eb41b9c30a74f35df4fa7c68aa7a0119555c762f7af",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -58859,12 +59793,53 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reforzar salud mental y acompañamiento psicológico, sin precisar la psicoterapia como servicio de la sanidad pública.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone reforzar salud mental y acompañamiento psicológico, sin precisar la psicoterapia como servicio de la sanidad pública.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 86774,
+              "end": 87077,
+              "quote": "112.  Reforzaremos la Estrategia Nacional de Salud Mental, re                    -\n      forzando la prevención.          Serán áreas prioritarias la preven        -\n      ción del suicidio y conductas autolíticas, los trastornos ali              -\n      mentarios y de autismo, así como las adicciones.",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            },
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 172,
+              "printedPage": 172,
+              "htmlSection": null,
+              "start": 243802,
+              "end": 244389,
+              "quote": "372.  Abordaremos decididamente el grave problema social del\n      suicidio cuya incidencia no deja de aumentar.                Fomentare-\n      mos una cultura de la vida y del cuidado y atenderemos a\n      las causas del suicidio para ponerles remedio. Para ello, im               -\n      pulsaremos la      elaboración de un informe sobre el suicidio\n      para profundizar en sus causas          , y garantizar el mejor acom       -\n      pañamiento sanitario, psicológico y social a las personas que\n      se encuentran en una situación límite de salud mental, pres                -",
+              "contextStart": 242286,
+              "contextEnd": 244433,
+              "contextSha256": "a5bf2abb894c14c93f03b0445d4bcbbbaa5694bcb6ae94610909ed50b3b4e607",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -60056,12 +61031,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de defensa no establecen apoyar el tratado de prohibición de armas nucleares.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas de defensa no establecen apoyar el tratado de prohibición de armas nucleares.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 93,
+              "printedPage": 93,
+              "htmlSection": null,
+              "start": 140777,
+              "end": 140813,
+              "quote": "Aumentaremos la inversión en Defensa",
+              "contextStart": 140627,
+              "contextEnd": 142777,
+              "contextSha256": "9c7ec221102b686004f451ef4d0a98837a137925a4c708043a5388fe0fd8addf",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -61046,12 +62044,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Promueve hábitos saludables, sin establecer restricciones a anuncios de alimentos poco saludables dirigidos a menores.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Promueve hábitos saludables, sin establecer restricciones a anuncios de alimentos poco saludables dirigidos a menores.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 68,
+              "printedPage": 68,
+              "htmlSection": null,
+              "start": 102353,
+              "end": 102669,
+              "quote": "143.  Promoveremos un estilo de vida saludable                , que proporcio     -\n      ne a los miembros de las familias las herramientas necesa                   -\n      rias para ser libres y no caer en      adicciones, cuyas consecuen          -\n      cias para la persona y su familia pueden ser devastadoras.",
+              "contextStart": 101076,
+              "contextEnd": 102724,
+              "contextSha256": "f7d22b060643949eed5cdb3c5faf0435fa9452108becf3c9ba565bc885f78321",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-005",
@@ -61845,12 +62866,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone exención por ingresos inferiores al salario mínimo, sin establecer una exención general por comenzar la actividad durante el primer año.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone exención por ingresos inferiores al salario mínimo, sin establecer una exención general por comenzar la actividad durante el primer año.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 23,
+              "printedPage": 23,
+              "htmlSection": null,
+              "start": 39238,
+              "end": 39395,
+              "quote": "la        exoneración de la cuota          a aquellos cu    -\n      yos ingresos netos no lleguen al          Salario Mínimo Interpro        -\n      fesional",
+              "contextStart": 37871,
+              "contextEnd": 39819,
+              "contextSha256": "1524edde061000dd25e8db7d6d14792a3f8308f40da8cff7a83ef47e2a98236e",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -63005,12 +64049,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone actualizar automáticamente el cálculo fiscal del ahorro para descontar la inflación; no extiende expresamente esta regla a todas las rentas.",
+          "authoredAnalysis": "Explicit automatic inflation adjustment of taxable savings; substantive income-category restriction retained instead of extrapolating to all income-tax calculations.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 75,
+              "printedPage": 75,
+              "htmlSection": null,
+              "start": 109194,
+              "end": 109552,
+              "quote": "148.4     El ahorro dejará de tributar         por su falso incremento\n           provocado por la       inflación incluyendo tablas de ac           -\n           tualización automática; y         las pensiones contributi         -\n           vas estarán exentas de IRPF          por justicia con quienes\n           han tributado durante toda su vida laboral.",
+              "contextStart": 107741,
+              "contextEnd": 109591,
+              "contextSha256": "592f48a6c83ba52efb5821067bdfe4b788d8da7a86a73c849b0965360185282f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -64167,12 +65234,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reducir impuestos sobre suministros no establece pagar directamente a consumidores vulnerables ayudas de luz y calefacción.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Reducir impuestos sobre suministros no establece pagar directamente a consumidores vulnerables ayudas de luz y calefacción.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 78,
+              "printedPage": 78,
+              "htmlSection": null,
+              "start": 115294,
+              "end": 115576,
+              "quote": "154.   A su vez, aplicaremos una           reducción progresiva de im            -\n       puestos y gravámenes que pesan sobre los               suministros del\n       hogar familiar y, especialmente, sobre las familias numero                -\n       sas (electricidad, agua, gas…).",
+              "contextStart": 114199,
+              "contextEnd": 116242,
+              "contextSha256": "bb5fc8df124af51ca4dae1fedd4069b439cc916c562d200fc530861b65415a0f",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -65203,12 +66293,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reforzar atención primaria y mejorar las condiciones laborales, sin fijar que médicos de familia y pediatras puedan trabajar hasta los 72 años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone reforzar atención primaria y mejorar las condiciones laborales, sin fijar que médicos de familia y pediatras puedan trabajar hasta los 72 años.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 57,
+              "printedPage": 57,
+              "htmlSection": null,
+              "start": 85131,
+              "end": 85438,
+              "quote": "107.  Incremento de la inversión en Atención Primaria, con\n      potenciación de la atención rural            , de las zonas más sa       -\n      turadas. Se debe potenciar la atención presencial y la do                -\n      miciliaria. La digitalización debe aplicarse para disminuir\n      la burocracia.",
+              "contextStart": 84609,
+              "contextEnd": 86485,
+              "contextSha256": "0086b3c35c7cade602c9e030e54f30fadad65025dabcd4cc3258f2ff09f0c6c2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -66205,12 +67318,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La propuesta de derogar la ley del aborto no precisa un sistema de autorización de responsables legales para menores que aborten.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La propuesta de derogar la ley del aborto no precisa un sistema de autorización de responsables legales para menores que aborten.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 170,
+              "printedPage": 170,
+              "htmlSection": null,
+              "start": 239382,
+              "end": 239437,
+              "quote": "la\n             posibilidad de escuchar el latido fetal",
+              "contextStart": 238515,
+              "contextEnd": 240246,
+              "contextSha256": "7a90118324930cae47fd60499ce5452d8d87155d5fb6ca29c5275da7fe0a8203",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -67100,12 +68236,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La alternativa presencial no establece citas para prestaciones estatales en quince días naturales.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. La alternativa presencial no establece citas para prestaciones estatales en quince días naturales.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -68136,12 +69295,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas digitales no establecen que personas tomen todas las decisiones públicas que requieren valorar cada caso con ayuda de inteligencia artificial.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas digitales no establecen que personas tomen todas las decisiones públicas que requieren valorar cada caso con ayuda de inteligencia artificial.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -69064,12 +70246,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone aumentar la inversión en defensa, sin fijar el objetivo del 2% de la economía.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone aumentar la inversión en defensa, sin fijar el objetivo del 2% de la economía.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 93,
+              "printedPage": 93,
+              "htmlSection": null,
+              "start": 140777,
+              "end": 140813,
+              "quote": "Aumentaremos la inversión en Defensa",
+              "contextStart": 140627,
+              "contextEnd": 142777,
+              "contextSha256": "9c7ec221102b686004f451ef4d0a98837a137925a4c708043a5388fe0fd8addf",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -70025,12 +71230,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone avales bancarios para parejas jóvenes con hijos, sin precisar hipotecas estatales para personas de hasta 35 años.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone avales bancarios para parejas jóvenes con hijos, sin precisar hipotecas estatales para personas de hasta 35 años.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 162,
+              "printedPage": 162,
+              "htmlSection": null,
+              "start": 229939,
+              "end": 230299,
+              "quote": "346.  Incluiremos bonificaciones    fiscales    para    familias    numero        -\n      sas, préstamos sin intereses o avales bancarios para parejas\n      jóvenes con hijos, becas escolares al comedor y transporte,\n      ayudas deportivas y beneficios en el acceso a servicios públi               -\n      cos en colaboración con el resto de administraciones.",
+              "contextStart": 229025,
+              "contextEnd": 230814,
+              "contextSha256": "b8be77faa16b5969432fa89a8abff6da7a5ff365047589afe3f5867c2d643645",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -71116,12 +72344,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone deducciones por nacimiento o adopción, sin establecer una prestación desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone deducciones por nacimiento o adopción, sin establecer una prestación desde el quinto mes de embarazo.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "htmlSection": null,
+              "start": 110349,
+              "end": 110800,
+              "quote": "148.7    Aprobaremos una          nueva deducción por nacimien             -\n                to o adopción en el IRPF          , por un importe de 1.200\n                euros para el primer hijo, 1.600 euros por el segun               -\n                do, 2.500 por el tercero y 2.750 por el cuarto hijo en\n                adelante, con la posibilidad de cobro de manera an                -\n                ticipada a través de la Agencia Tributaria.",
+              "contextStart": 109592,
+              "contextEnd": 111746,
+              "contextSha256": "5f908accb1271c05349cf56c94dd8dc00c534a31c67b4c6147ea64d608dc8a5d",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -72081,12 +73332,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone investigar enfermedades como la esclerosis lateral amiotrófica, sin establecer reconocimiento automático de dependencia al diagnosticarla.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone investigar enfermedades como la esclerosis lateral amiotrófica, sin establecer reconocimiento automático de dependencia al diagnosticarla.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 86486,
+              "end": 86771,
+              "quote": "111.  Promoveremos la investigación médica, con independen                       -\n      cia de la rentabilidad comercial          , de personas con enferme        -\n      dades raras, enfermedades crónicas, y especialmente en las\n      neurodegenerativas (ELA , EM, Alzheimer, etc. ).",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -73102,12 +74376,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone deducir gastos laborales de asistencia en el hogar, sin precisar una bonificación del 45% en cotizaciones para familias numerosas.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone deducir gastos laborales de asistencia en el hogar, sin precisar una bonificación del 45% en cotizaciones para familias numerosas.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 76,
+              "printedPage": 76,
+              "htmlSection": null,
+              "start": 110063,
+              "end": 110339,
+              "quote": "148.6    Los costes laborales derivados de la contratación de\n                asistencia en el hogar y personal sanitario de ayu                -\n                da a las familias,      igualmente,     los gastos escolares\n                reducirán la base imponible del IRPF.",
+              "contextStart": 109592,
+              "contextEnd": 111746,
+              "contextSha256": "5f908accb1271c05349cf56c94dd8dc00c534a31c67b4c6147ea64d608dc8a5d",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -74037,12 +75334,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas educativas no establecen tutorías adicionales para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas educativas no establecen tutorías adicionales para recuperar aprendizaje perdido durante la pandemia.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 35,
+              "printedPage": 35,
+              "htmlSection": null,
+              "start": 55783,
+              "end": 56398,
+              "quote": "62.   Actualizaremos los currículos educativos                , garantizando el\n      acompañamiento y la           exigencia en la adquisición de conte            -\n      nidos sobre las materias fundamentales, con base en                  eviden-\n      cias       científicas. La educación será un instrumento esencial\n      para la formación integral         de los alumnos y el     fortalecimiento\n      de los lazos nacionales       . Los currículos serán     comunes a todas\n      las regiones y tendrán en cuenta la realidad cultural, lingüísti              -\n      ca, histórica o geográfica de cada región.",
+              "contextStart": 54809,
+              "contextEnd": 56939,
+              "contextSha256": "bad9c5f1cb1dc12537473c42be745b9a90f36b1df3f88518112ce1c6a479f2e7",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -74992,12 +76312,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone simplificar trámites y ofrecer atención presencial, sin establecer intermediarios que actúen en nombre de quienes necesiten ayuda.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone simplificar trámites y ofrecer atención presencial, sin establecer intermediarios que actúen en nombre de quienes necesiten ayuda.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 100167,
+              "end": 100246,
+              "quote": "sin perjuicio de         proporcionar siempre una\n      alternativa presencial.",
+              "contextStart": 99109,
+              "contextEnd": 101075,
+              "contextSha256": "b80f9e818f376bbfbb57806996e45b9af05264864d3bdd01a3fb4f6c55677db2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -76047,12 +77390,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone conexiones rápidas de pueblos con servicios básicos, sin precisar transporte a demanda y precio reducido al municipio de referencia.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Propone conexiones rápidas de pueblos con servicios básicos, sin precisar transporte a demanda y precio reducido al municipio de referencia.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 148,
+              "printedPage": 148,
+              "htmlSection": null,
+              "start": 213139,
+              "end": 213537,
+              "quote": "314.   Reforzaremos las       infraestructuras de transporte            en la Es-\n       paña rural abandonada por los sucesivos gobiernos para\n       garantizar la rápida conexión de cualquier núcleo rural con\n       servicios públicos básicos como centros sanitarios o educa                  -\n       tivos. Además, se debe       frenar la imposición de peajes           en las\n       autopistas.",
+              "contextStart": 212321,
+              "contextEnd": 214079,
+              "contextSha256": "22b15deaf17037986e8a223e9d3abdac95f07315dcfe0667b8486fd3176224a3",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -77223,12 +78589,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas agrarias no establecen permitir o prohibir alimentar animales por la fuerza para producir alimentos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas agrarias no establecen permitir o prohibir alimentar animales por la fuerza para producir alimentos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 149,
+              "printedPage": 149,
+              "htmlSection": null,
+              "start": 215443,
+              "end": 215531,
+              "quote": "para que los ganaderos y agricultores no sigan\n      vendiendo sus productos a pérdidas.",
+              "contextStart": 214080,
+              "contextEnd": 215894,
+              "contextSha256": "7bf089c8832ed6d9b6ea541a2b587b35e0284590e76274d8861daa54f74b33f2",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -78180,10 +79569,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece permitir o prohibir petardos y fuegos artificiales en las fiestas populares.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece permitir o prohibir petardos y fuegos artificiales en las fiestas populares.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -78992,12 +80385,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El impulso a la investigación médica no establece acceso libre a los resultados de todas las investigaciones financiadas con dinero público.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. El impulso a la investigación médica no establece acceso libre a los resultados de todas las investigaciones financiadas con dinero público.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 86486,
+              "end": 86771,
+              "quote": "111.  Promoveremos la investigación médica, con independen                       -\n      cia de la rentabilidad comercial          , de personas con enferme        -\n      dades raras, enfermedades crónicas, y especialmente en las\n      neurodegenerativas (ELA , EM, Alzheimer, etc. ).",
+              "contextStart": 86486,
+              "contextEnd": 88526,
+              "contextSha256": "2bc1b18fbe0e33da6601dfe731a93bc98e4fe3f85c6ff6b91279e7351bac7835",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -80123,10 +81539,14 @@
           "candidacyId": "boe-2023-003",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece una circunscripción única para elegir el Congreso en toda España.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. No establece una circunscripción única para elegir el Congreso en toda España.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",
@@ -81195,12 +82615,35 @@
         },
         {
           "candidacyId": "boe-2023-003",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas sobre medios no establecen el mismo tiempo de vídeos electorales para todos los partidos en medios públicos.",
+          "authoredAnalysis": "Direct full-bank cross-reference: related policies do not establish the exact displayed actor, mechanism, amount, eligibility or modality. Las medidas sobre medios no establecen el mismo tiempo de vídeos electorales para todos los partidos en medios públicos.",
+          "citations": [
+            {
+              "documentId": "vox-campaign-30mb",
+              "sourceUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+              "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+              "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+              "notebook": "outputs/2023-programme-notebooks/vox.json",
+              "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+              "pdfPage": 157,
+              "printedPage": 157,
+              "htmlSection": null,
+              "start": 224045,
+              "end": 224147,
+              "quote": "Prohibición de las ayudas directas públicas a medios priva                  -\n      dos de información",
+              "contextStart": 223281,
+              "contextEnd": 225324,
+              "contextSha256": "f748f6fc21a6b05c2f4eba6a96473e01d85611d116a9959d82906a557f878055",
+              "provenanceEvidence": "outputs/2023-vox-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_vox_programme_80_cell_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "vox-campaign-30mb"
+          ]
         },
         {
           "candidacyId": "boe-2023-004",

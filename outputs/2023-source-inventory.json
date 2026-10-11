@@ -937,14 +937,14 @@
         }
       ],
       "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_178_page_programme_80_cell_bank_audit",
       "programmeIds": [
         "vox-campaign-30mb"
       ],
       "ballotAliases": [
         "VOX (VOX)"
       ],
-      "programmeApplicabilityStatus": "document_specific_national_vox_2023_scope_verified_not_scoring_ready",
+      "programmeApplicabilityStatus": "explicit_national_vox_23j2023_congress_51_scopes_santa_cruz_not_proclaimed",
       "ballotRecordIds": [
         "congress-albacete-7",
         "congress-alicante-7",
@@ -1059,6 +1059,15 @@
           "congress-melilla-3"
         ],
         "rationale": "National VOX programme explicitly23July2023 in original cover and23J2023 backcover;51final Congress ballots reconciled. BOE-A-2023-15066 Santa Cruz de Tenerife Congress entry7 explicitly No proclamada; retained outside final choices."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T22:01:09.199631+00:00",
+        "report": "outputs/2023-authored-vox-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 17,
+        "newDerivedMappings": 4,
+        "citedUncertainties": 55,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5782,9 +5791,10 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_document_reading_specific_vox_bank_audit_recorded",
       "notebook": "outputs/2023-programme-notebooks/vox.json",
-      "electionApplicability": "Original primary campaign PDF covers explicitly23J2023 and23July2023. National programme matches51final VOX Congress ballots. Santa Cruz de Tenerife is officially not proclaimed."
+      "electionApplicability": "Original primary campaign PDF covers explicitly23J2023 and23July2023. National programme matches51final VOX Congress ballots. Santa Cruz de Tenerife is officially not proclaimed.",
+      "bankAudit": "outputs/2023-authored-vox-audit.json"
     },
     {
       "id": "cup-primary",
@@ -10123,8 +10133,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5120,
-    "scoredDraftMappings": 209,
-    "independentAnswerCases": 1045,
+    "scoredDraftMappings": 213,
+    "independentAnswerCases": 1065,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10135,7 +10145,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "409355db7fe5a8f0f9766c5ec497d1e1a7276ef373370c63132bab5be856549c",
+    "latestBrowserDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10146,20 +10156,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 96,
-    "latestBrowserVerification": "outputs/2023-authored-psoe-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-psoe-verification.json",
+    "latestBrowserProgressivePaths": 124,
+    "latestBrowserVerification": "outputs/2023-authored-vox-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-vox-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "409355db7fe5a8f0f9766c5ec497d1e1a7276ef373370c63132bab5be856549c",
+    "latestDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "409355db7fe5a8f0f9766c5ec497d1e1a7276ef373370c63132bab5be856549c",
+    "latestAuthoredDraftSha256": "7424f6ca72fdcc88c86b25518860d0b06ceafe8e457fbbf1e5c58b1e889192d4",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10262,7 +10272,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 400,
-    "defaultScoredDraftMappings": 202,
+    "defaultScoredDraftMappings": 206,
     "scopedScoredDraftMappings": 7,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -10388,7 +10398,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 4872140,
+    "bankBytes": 5033686,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10460,7 +10470,24 @@
     "psoeFixedComparisonEligible": true,
     "psoeTerritories": 48,
     "pscTerritoriesExcluded": 4,
-    "allPrevious204NumericMappingsUnchanged": true
+    "allPrevious204NumericMappingsUnchanged": true,
+    "voxBankAudit": "outputs/2023-authored-vox-audit.json",
+    "voxVerification": "outputs/2023-authored-vox-verification.json",
+    "voxBrowserVerification": "outputs/2023-authored-vox-browser-verification.json",
+    "voxAdditionsBrowserVerification": "outputs/2023-authored-vox-additions-browser-verification.json",
+    "newVoxAuditedCells": 80,
+    "newVoxDerivedMappings": 4,
+    "totalVoxDerivedMappings": 17,
+    "newVoxCitedUncertainties": 55,
+    "latestVoxBrowserSessions": 124,
+    "latestVoxCitedAnswerPaths": 178,
+    "latestVoxCitedUnscoredPaths": 18,
+    "latestVoxScreenshotsReviewedThroughOverviews": 46,
+    "latestVoxOverviewFilesInspected": 20,
+    "voxFixedComparisonEligible": true,
+    "voxTerritories": 51,
+    "voxNotProclaimedTerritoriesExcluded": 1,
+    "allPrevious209NumericMappingsUnchanged": true
   },
-  "recordedAt": "2026-10-11T21:48:37.844138+00:00"
+  "recordedAt": "2026-10-11T22:01:09.199631+00:00"
 }

@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T18:42:46.616143+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_complete_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-022",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/pcte.json",
+          "sha256": "842c073d921a7959326b2a0a387beb287a284298c28ce4a6461268b8aed0555b",
+          "documentId": "pcte",
+          "sourceSha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
+          "extractionSha256": "fa1ce59f1a89bcd231e79ba69f2cd9cbefb1d3f5fd0b689a55b296af6da18f4a"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Rent limitation affects owner returns; no exact threshold/instrument invented. Wider residential scope includes the asked high-price areas.",
+          "rationale": "Propone limitar de forma efectiva los alquileres, sin fijar una cantidad concreta.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Aspirationalmaximum35 withconcrete salary-preservationdemandpage11 jointlyread; twooriginalcontexts required.",
+          "rationale": "Propone un máximo de 35 horas semanales y reducir la jornada sin pérdida de salario.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Explicit programme proposal in the next-legislature opposition campaign document matches the exact existing question/rubric.",
+          "rationale": "Propone ampliar los servicios de la sanidad pública a la atención bucodental completa.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Usar el conjunto de fuentes energéticas no concreta prolongar la vida de las centrales nucleares existentes.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una exención del impuesto de sucesiones para herencias de padres a hijos.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "El sistema educativo público y gratuito no concreta plazas de 0 a 3 años para todas las familias.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La red pública incluye transporte aéreo; no establece restricciones a vuelos con alternativa en tren.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece mantener el derecho a la eutanasia en las condiciones legales.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece la elección por jueces de miembros judiciales del órgano de gobierno de la justicia.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece actualizar pensiones según el coste de la vida.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece un impuesto específico permanente a grandes fortunas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una exención del impuesto sobre la renta para pensiones contributivas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Expropiar viviendas de bancos y fondos no establece una prohibición posterior de venta de vivienda pública.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "derived",
+          "value": -2,
+          "sourceReason": "Explicit programme proposal in the next-legislature opposition campaign document matches the exact existing question/rubric.",
+          "rationale": "Defiende excluir todas las empresas privadas de la sanidad, por lo que se opone a aumentar acuerdos sanitarios con ellas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La defensa de derechos sexuales y reproductivos no concreta prestar el aborto en centros sanitarios públicos.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La propiedad estatal de las empresas energéticas no concreta el paso a gestión pública cuando caduquen concesiones hidroeléctricas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir contactos empresariales fuera del horario laboral.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La gratuidad de la enseñanza no establece comedor escolar gratuito para todo el alumnado obligatorio.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "El sistema sanitario gratuito se formula como objetivo general; no concreta eliminar el copago de los medicamentos financiados.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece el voto a los dieciséis y diecisiete años.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una obligación de facilitar piezas de recambio.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Propone que todas las prácticas tengan carácter laboral, pero este texto no concreta su remuneración. No se deduce un importe ni un contrato específico.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Propone ampliar permisos por nacimiento y cuidado, pero no establece una duración de seis meses para maternidad y paternidad.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece un impuesto específico sobre bebidas azucaradas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Rechaza legalizar nuevas drogas sin concretar el cannabis ni las sanciones al cultivo y consumo propio sin ánimo de lucro.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La enseñanza gratuita no concreta el precio de matrículas repetidas universitarias.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Las instalaciones deportivas públicas gratuitas no establecen tres horas semanales de Educación Física escolar.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una exención de cuota para autónomos con ingresos netos por debajo del salario mínimo.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una exención del IVA al comprar la primera vivienda habitual.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir compraventa de animales de compañía.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece el fin de financiación pública de espectáculos taurinos con muerte del animal.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir la caza en todo el territorio español.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Defiende prohibir cortes de suministros básicos junto a la protección de familias trabajadoras. No concreta qué hogares quedarían protegidos ni una garantía permanente por vulnerabilidad.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece entregar 20.000 euros a todos los jóvenes al cumplir 23 años.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una subida anual del salario mínimo superior a la inflación.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece formatos abiertos para documentos administrativos.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "derived",
+          "value": 2,
+          "sourceReason": "Explicit programme proposal in the next-legislature opposition campaign document matches the exact existing question/rubric.",
+          "rationale": "Propone seguir considerando ilegal la gestación subrogada, por lo que apoya mantener su prohibición.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una opción vegetariana en todos los comedores escolares.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La enseñanza gratuita no concreta libros escolares que cualquiera pueda copiar y compartir.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece que todos los trámites administrativos puedan realizarse en persona.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece bajar al 10% o menos el IVA de servicios veterinarios de animales de compañía.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece el derecho a reparar en un taller independiente.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece un sistema de depósito y devolución de envases de bebidas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La defensa de derechos sexuales y reproductivos no concreta anticonceptivos gratuitos para jóvenes.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "El objetivo de sanidad pública no establece crear una empresa pública que produzca medicamentos y vacunas.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una conexión básica gratuita para todas las personas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece titularidad pública de la gestión de agua de consumo.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La atención sanitaria integral no concreta un servicio público y gratuito para menores de seis años con dificultades del desarrollo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La ampliación de permisos no establece reducción de jornada por cuidados hasta los 16 años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir publicidad y patrocinio de combustibles fósiles.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir criar animales para obtener pieles.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Defender un ente público de radio y televisión no establece prohibir ayudas directas a medios privados.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La rendición de cuentas de cargos públicos no elimina tribunales específicos por razón del cargo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece eliminar firmas de apoyo a candidaturas sin representación.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La rendición de cuentas no establece una ficha de intermediación para cada propuesta de ley.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Propone una red de atención psicológica, sin concretar la psicoterapia como servicio de la sanidad pública.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Salir de la OTAN y cerrar bases extranjeras no establece apoyo al tratado de prohibición de armas nucleares.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece restricciones a publicidad de alimentos poco saludables dirigida a menores.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece exención de cuota durante el primer año de trabajo autónomo.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece ajustar el impuesto sobre la renta por inflación.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La propiedad estatal del sector energético no concreta pagos directos de ayudas de luz y calefacción al consumidor vulnerable.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prolongar el trabajo de médicos y pediatras de atención primaria hasta los 72 años.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Los derechos sexuales y reproductivos no concretan autorización de responsables legales para el aborto de una menor.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece citas de prestaciones estatales en un máximo de 15 días naturales.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece que personas tomen las decisiones públicas discrecionales aunque usen inteligencia artificial.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Salir de la OTAN y cerrar bases extranjeras no determina el porcentaje de gasto nacional en defensa. La mención al 2% describe la política anterior, sin establecer una alternativa concreta sobre ese objetivo.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Expropiar vivienda de bancos y fondos no establece avales hipotecarios a jóvenes de hasta 35 años.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una prestación por hijo desde el quinto mes de embarazo.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece reconocer dependencia automáticamente con el diagnóstico de esclerosis lateral amiotrófica.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una bonificación de hasta el 45% en cotizaciones de empleados del hogar para familias numerosas.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece tutorías para recuperar aprendizaje escolar perdido durante la pandemia.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece intermediarios administrativos que hagan trámites por quienes necesitan ayuda.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "La red pública local y regional no establece transporte a demanda y a precio reducido al municipio de referencia.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir alimentación forzada de animales para producir alimentos.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "Terminar con monopolios de editoriales científicas no establece por sí mismo acceso libre a todos los resultados de investigación financiada públicamente.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "unknown",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "No establece una única circunscripción nacional para el Congreso.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "sourceReason": "Direct24page programme reading does not establish the exact proposition, mechanism and conditions. Preserve distinction between aspirations, immediate struggle proposals and diagnosis. No inferred numeric neutrality, ideological position or unacquired Manifesto-Programme inheritance.",
+          "rationale": "El ente público de radio y televisión no establece igual tiempo para vídeos electorales de todas las candidaturas.",
+          "citationCount": 1
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 5,
+      "newDerivedMappings": 3,
+      "citedUncertainties": 31
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 160,
+  "explicitMatrixCells": 4880,
+  "defaultNumericMappings": 164,
+  "scopedNumericMappings": 1,
+  "totalNumericMappings": 165,
+  "independentAnswerCases": 825,
+  "limitations": [
+    "Fulldocument reread does not add a notebook,page or distinctPDF. Exact pre-vote archive byte identity remains uncertified.",
+    "Aspirations, immediate struggle proposals and attributed diagnosis remain distinct. Separate referred Manifesto-Programme not inherited without acquisition/reading.",
+    "Labour status of internships does not establish explicit remuneration here; psychological care does not specify psychotherapy; no numeric position invented.",
+    "The utility prohibition text leaves scope/permanent vulnerability criteria unclear, so it remains cited/unscored. NATOexit does not determine the national2%defence target.",
+    "Existing rental/workweek numeric mappings and exact contextual citations preserved. All80decisions directly compared against the exact authored question/rubric.",
+    "Complete corpus/source-family/release acceptance remain open."
+  ]
+}

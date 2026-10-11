@@ -3293,7 +3293,7 @@
         }
       ],
       "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
       "programmeIds": [
         "pcte"
       ],
@@ -3341,7 +3341,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/pcte.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T18:48:46.832164+00:00",
+        "report": "outputs/2023-authored-pcte-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 5,
+        "newDerivedMappings": 3,
+        "ambiguousCells": 31,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-023",
@@ -5303,7 +5312,7 @@
       "retrievedAt": "2026-10-11T07:36:24.582403+00:00",
       "resolvedUrl": "https://www.pcte.es/wp-content/uploads/2023/07/PROGRAMA%20DE%20LUCHA%202023-2027.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_23j_campaign_opposition_programme_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/pcte.pdf",
       "sha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
       "bytes": 2492669,
@@ -5314,8 +5323,9 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/pcte.json"
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/pcte.json",
+      "electionApplicability": "Primary23Jcampaign page links exactJuly2023programme. Physicalpage3explicitly presents the document as an opposition programme for the government elected23July, with aspirations and immediate struggle proposals distinct. No unrelated Manifesto-Programme imported."
     },
     {
       "id": "recortes-cero",
@@ -9325,8 +9335,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4880,
-    "scoredDraftMappings": 162,
-    "independentAnswerCases": 810,
+    "scoredDraftMappings": 165,
+    "independentAnswerCases": 825,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9337,31 +9347,30 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
+    "latestBrowserDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
       15,
       20,
-      25,
-      30
+      25
     ],
     "latestBrowserRentCases": 0,
-    "latestBrowserProgressivePaths": 26,
-    "latestBrowserVerification": "outputs/2023-authored-ev-leon-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-ev-leon-verification.json",
+    "latestBrowserProgressivePaths": 12,
+    "latestBrowserVerification": "outputs/2023-authored-pcte-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pcte-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
+    "latestDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "d70f996e97582d58166bc268542bfdf02eb04b37bfba7c8c22436a3b299bec35",
+    "latestAuthoredDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9464,7 +9473,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 160,
-    "defaultScoredDraftMappings": 161,
+    "defaultScoredDraftMappings": 164,
     "scopedScoredDraftMappings": 1,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9480,7 +9489,20 @@
     "latestUplTerritoryBrowserSessions": 6,
     "latestUplCitedUnknownPaths": 6,
     "latestUplOtherScopeUnknownPaths": 12,
-    "allPrevious161MappingsUnchanged": true
+    "allPrevious161MappingsUnchanged": true,
+    "pcteBankAudit": "outputs/2023-authored-pcte-audit.json",
+    "pcteVerification": "outputs/2023-authored-pcte-verification.json",
+    "pcteValuesBrowserVerification": "outputs/2023-authored-pcte-values-browser-verification.json",
+    "pcteUnknownsBrowserVerification": "outputs/2023-authored-pcte-unknowns-browser-verification.json",
+    "newPcteAuditedCells": 80,
+    "newPcteDerivedMappings": 3,
+    "newPcteCitedUncertainties": 31,
+    "latestPcteBrowserSessions": 12,
+    "latestPcteCitedAnswerPaths": 50,
+    "latestPcteNewCitedAnswerPaths": 30,
+    "latestPcteCitedUnscoredPaths": 6,
+    "pcteFixedComparisonEligible": false,
+    "allPrevious162MappingsUnchanged": true
   },
   "recordedAt": "2026-10-11T18:33:08.683841+00:00"
 }

@@ -3720,7 +3720,7 @@
           "votes": 2902
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3764,7 +3764,7 @@
           "votes": 1917
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3786,7 +3786,7 @@
           "votes": 1843
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3834,7 +3834,7 @@
           "votes": 1698
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3860,7 +3860,7 @@
           "votes": 791
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -3883,17 +3883,37 @@
           "votes": 1446
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_23j_programme_and_campaign_annexes_acquired_fully_read",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "autonomos-23j",
+        "autonomos-23j-diptych",
+        "autonomos-23j-decalogue"
+      ],
       "ballotAliases": [
         "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_alicante_campaign_adoption_verified_not_scoring_ready",
       "ballotRecordIds": [
         "congress-alicante-3"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/autonomos-23j.json",
+        "outputs/2023-programme-notebooks/autonomos-23j-diptych.json",
+        "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json"
+      ],
+      "applicabilityEvidence": {
+        "publicationId": "autonomos-july-campaign-archive",
+        "downloadIds": [
+          8003,
+          8010,
+          8014
+        ],
+        "ballotRecordIds": [
+          "congress-alicante-3"
+        ],
+        "rationale": "CompleteJuly21campaignpage and exactdownloadanchors verified forCongress/Alicante only;2022decalogue expressly adopted. No unrecoveredPDFbyte-snapshot equivalence asserted."
+      }
     },
     {
       "id": "boe-2023-042",
@@ -3905,7 +3925,7 @@
           "votes": 1442
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
       "analysisStatus": "not_started",
       "programmeIds": [],
       "ballotAliases": [
@@ -5536,15 +5556,79 @@
       },
       "notebook": "outputs/2023-programme-notebooks/recortes-23j-archived.json",
       "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "autonomos-23j",
+      "url": "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8003",
+      "publicationUrl": "https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T11:40:35.696342+00:00",
+      "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2023/07/PARTIDO-AUTONOMOS-PROGRAMA-ELECCIONES-GENERALES-23J.pdf",
+      "mediaType": "application/pdf",
+      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "file": "storage/app/election-sources/2023-congress/autonomos-23j.pdf",
+      "sha256": "c2ab91d3e7d35a5cd9f94d75d0990e657d0699c30720a5929b62f366eb187aa5",
+      "bytes": 15129223,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/autonomos-23j.txt",
+        "sha256": "9cef897196a7fd608174ea455e319176077a06e881f0772b3533a95352efc510",
+        "pageCount": 57,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "autonomos-23j-diptych",
+      "url": "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8010",
+      "publicationUrl": "https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T11:40:35.696664+00:00",
+      "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2023/07/diptico-PARTIDO-AUTONOMOS.pdf",
+      "mediaType": "application/pdf",
+      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "file": "storage/app/election-sources/2023-congress/autonomos-23j-diptych.pdf",
+      "sha256": "43a7565a95dd6d1c33922c5bf2b0ddc9a14444786123f5ae771abce11358888e",
+      "bytes": 1040975,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/autonomos-23j-diptych.txt",
+        "sha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+        "pageCount": 3,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook",
+        "warning": "Rotated text discovered. Output will be incomplete.\nRotated text discovered. Output will be incomplete.\nRotated text discovered. Output will be incomplete.\n"
+      },
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j-diptych.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
+    },
+    {
+      "id": "autonomos-23j-decalogue",
+      "url": "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8014",
+      "publicationUrl": "https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T11:40:35.696761+00:00",
+      "resolvedUrl": "https://www.partidoautonomos.es/wp-content/uploads/2022/05/Decalogo_a4_plegable.pdf",
+      "mediaType": "application/pdf",
+      "status": "primary_campaign_offered_document_complete_read_not_scoring_ready",
+      "file": "storage/app/election-sources/2023-congress/autonomos-23j-decalogue.pdf",
+      "sha256": "ef7d54cc63217d1c4727858b2868b46c3baf21a954c2c71a0ab80ac14caf50bc",
+      "bytes": 1121156,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/autonomos-23j-decalogue.txt",
+        "sha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+        "pageCount": 2,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json",
+      "analysisStatus": "full_document_read_not_scoring_ready"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 35,
+    "programmeFilesDownloaded": 38,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 36
+    "programmeDocumentsFullyRead": 39
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -6213,6 +6297,125 @@
       ],
       "analysisStatus": "complete_publication_text_and_links_directly_read",
       "applicabilityNote": "July 12 2023 archived national campaign context. Homepage offers the exact political programme under DESCARGA NUESTRO PROGRAMA and links the general-election campaign page; campaign page discusses election participation and national polling-station support. This is campaign adoption evidence; the document remains a political programme, not rewritten as an election-specific promise."
+    },
+    {
+      "id": "ph-current-catalogue",
+      "url": "https://partidohumanista.es/",
+      "retrievedAt": "2026-10-11T11:39:08.590138+00:00",
+      "resolvedUrl": "https://partidohumanista.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/ph-current-catalogue-publication-42f4faa7fe95.html",
+      "sha256": "42f4faa7fe95547b03b99d8f38fffd9ca01799d844218d573c84e18cac1ca45b",
+      "textFile": "storage/app/election-sources/2023-congress/ph-current-catalogue-publication-42f4faa7fe95.txt",
+      "textSha256": "21c7eeb6b1a1887d5aa2516300160e07ae828f20ab1370cdb80905bf21c06d24",
+      "links": [
+        "https://partidohumanista.es/index.php/programa-europeas/",
+        "https://partidohumanista.es/wp-content/uploads/2024/05/Programa-elecciones-europeas-2024_ok.pdf"
+      ],
+      "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+      "applicabilityNote": "Current European2024programme links cannot substitute for23J2023Congress."
+    },
+    {
+      "id": "vamos-palencia-current-catalogue",
+      "url": "https://vamospalencia.es/",
+      "retrievedAt": "2026-10-11T11:39:08.590459+00:00",
+      "resolvedUrl": "https://vamospalencia.es/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/vamos-palencia-current-catalogue-publication-d9b2bd1e17bc.html",
+      "sha256": "d9b2bd1e17bc9e982276532c98eadd5f2f14c363a9296d157b4087c35e8c1375",
+      "textFile": "storage/app/election-sources/2023-congress/vamos-palencia-current-catalogue-publication-d9b2bd1e17bc.txt",
+      "textSha256": "12e74dc270a82d5cbdee4a5eda2323e28ddac4668900ac94d29e0596d41c8853",
+      "links": [
+        "https://vamospalencia.es/programa-electoral-vamos-palencia-2026-2030/",
+        "https://vamospalencia.es/programa-electoral/",
+        "https://vamospalencia.es/wp-content/uploads/2023/06/ACUERDO-GOBERNANZA-2027.pdf",
+        "https://www.instagram.com/vamospalencia2023/"
+      ],
+      "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+      "applicabilityNote": "Visible links identify municipal2023-2027 and current2026 programme. No verified23JCongressadoption; these are not substitutions."
+    },
+    {
+      "id": "zamora-si-current-catalogue",
+      "url": "https://www.zamorasi.com/",
+      "retrievedAt": "2026-10-11T11:39:08.590553+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.zamorasi.com'. (_ssl.c:1000)>"
+    },
+    {
+      "id": "autonomos-23j-publication",
+      "url": "https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T11:39:50.715908+00:00",
+      "resolvedUrl": "https://www.partidoautonomos.es/elecciones-generales/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_directly_read_campaign_links_verified",
+      "file": "storage/app/election-sources/2023-congress/autonomos-23j-publication-publication-a4a6972fcde3.html",
+      "sha256": "a4a6972fcde37377648df51f527c5f581e8d417803f3c38f0786582dd4839497",
+      "textFile": "storage/app/election-sources/2023-congress/autonomos-23j-publication-publication-a4a6972fcde3.txt",
+      "textSha256": "999924bccb34353ce367117f3fd501e9454f9f40ec2599bafbbc15bc84f1ca02",
+      "links": [
+        "https://www.partidoautonomos.es/23-julio-el-dia-de-las-elecciones-generales/",
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8003",
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8010",
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8014",
+        "https://www.partidoautonomos.es/resultado-de-las-elecciones-generales-23-j/"
+      ],
+      "analysisStatus": "complete_publication_text_and_download_links_directly_read",
+      "applicabilityNote": "Full campaign page and actual anchors read. July21 2023 archive offers programme8003, diptych8010 and decalogue8014; Congress candidate Lydia Cañedo in Alicante. Current PDFs are not assumed byte-identical to an unrecovered2023PDFsnapshot."
+    },
+    {
+      "id": "vamos-palencia-programme-catalogue",
+      "url": "https://vamospalencia.es/programa-electoral/",
+      "retrievedAt": "2026-10-11T11:39:50.716207+00:00",
+      "resolvedUrl": "https://vamospalencia.es/programa-electoral/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/vamos-palencia-programme-catalogue-publication-457bd643d3a3.html",
+      "sha256": "457bd643d3a31c07c13f522bd744de04a3b7960e03ecf6edf8d1ede451098e92",
+      "textFile": "storage/app/election-sources/2023-congress/vamos-palencia-programme-catalogue-publication-457bd643d3a3.txt",
+      "textSha256": "9091d9eb85f44f2ec62bcab7720a678424a34d0b7799a6d40c36c0f632bde8ec",
+      "links": [
+        "https://vamospalencia.es/programa-electoral-vamos-palencia-2026-2030/",
+        "https://vamospalencia.es/programa-electoral/",
+        "https://vamospalencia.es/wp-content/uploads/2023/05/Programa-Electoral-2023-_-¡Vamos-Palencia.pdf",
+        "https://vamospalencia.es/wp-content/uploads/2023/06/ACUERDO-GOBERNANZA-2027.pdf",
+        "https://www.instagram.com/vamospalencia2023/"
+      ],
+      "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+      "applicabilityNote": "Visible links identify municipal2023-2027 and current2026 programme. No verified23JCongressadoption; these are not substitutions."
+    },
+    {
+      "id": "zamora-si-bare-domain",
+      "url": "https://zamorasi.com/",
+      "retrievedAt": "2026-10-11T11:39:50.716287+00:00",
+      "status": "publication_retrieval_failed",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'zamorasi.com'. (_ssl.c:1000)>"
+    },
+    {
+      "id": "autonomos-july-campaign-archive",
+      "url": "https://web.archive.org/web/20230715000000id_/https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T11:42:54.661150+00:00",
+      "resolvedUrl": "https://web.archive.org/web/20230721215700id_/https://www.partidoautonomos.es/elecciones-generales/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_directly_read_campaign_links_verified",
+      "file": "storage/app/election-sources/2023-congress/autonomos-july-campaign-archive-publication-41864be187a4.html",
+      "sha256": "41864be187a438061285a658584d8f2d0621463e48d655fef7379a70bd540cf8",
+      "textFile": "storage/app/election-sources/2023-congress/autonomos-july-campaign-archive-publication-41864be187a4.txt",
+      "textSha256": "658f259aa87731f5cac2ef13ceaf498213e2f311c819a6f9cfa67e45fb13ec6a",
+      "links": [
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8003",
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8010",
+        "https://www.partidoautonomos.es/?sdm_process_download=1&download_id=8014",
+        "https://www.partidoautonomos.es/recogida-de-avales-para-las-elecciones-generales-del-23j/"
+      ],
+      "analysisStatus": "complete_publication_text_and_download_links_directly_read",
+      "applicabilityNote": "Full campaign page and actual anchors read. July21 2023 archive offers programme8003, diptych8010 and decalogue8014; Congress candidate Lydia Cañedo in Alicante. Current PDFs are not assumed byte-identical to an unrecovered2023PDFsnapshot."
     }
   ]
 }

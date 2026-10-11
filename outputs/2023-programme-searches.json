@@ -1295,6 +1295,90 @@
       "status": "23j_congress_senate_publication_and_four_congress_ballots_confirmed",
       "acquisitionId": "erc-july",
       "limitations": "Primary article dated 6 July 2023 was read fully. PDF has language-revision notice and internal editorial anomalies; no claim of corrected later version. Do not inherit future Republic commitments or Senate-only EH Bildu coalition into current Congress mappings."
+    },
+    {
+      "recordedAt": "2026-10-11T10:28:55.547786+00:00",
+      "candidacyId": "boe-2023-007",
+      "query": "Reopen primary campaign/election paths and contemporaneous preserved programme publication after full reading",
+      "url": "https://janhihaprou.cat/",
+      "observationKind": "bounded_publication_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "junts-preserved-abc",
+      "actual": {
+        "recordedAt": "2026-10-11T10:28:55.547786+00:00",
+        "url": "https://janhihaprou.cat/",
+        "status": "retrieval_failed",
+        "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+      },
+      "limitations": "Primary source/version chain still pending. Beteve publication fully read through web tool and identifies23J2023; linkedPDF bytes not reconciled. URL failure is not evidence of no programme."
+    },
+    {
+      "recordedAt": "2026-10-11T10:28:55.747746+00:00",
+      "candidacyId": "boe-2023-007",
+      "query": "Reopen primary campaign/election paths and contemporaneous preserved programme publication after full reading",
+      "url": "https://web.junts.cat/eleccions-generals/",
+      "observationKind": "bounded_publication_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "junts-preserved-abc",
+      "actual": {
+        "recordedAt": "2026-10-11T10:28:55.747746+00:00",
+        "url": "https://web.junts.cat/eleccions-generals/",
+        "status": "retrieval_failed",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "limitations": "Primary source/version chain still pending. Beteve publication fully read through web tool and identifies23J2023; linkedPDF bytes not reconciled. URL failure is not evidence of no programme."
+    },
+    {
+      "recordedAt": "2026-10-11T10:29:00.985714+00:00",
+      "candidacyId": "boe-2023-007",
+      "query": "Reopen primary campaign/election paths and contemporaneous preserved programme publication after full reading",
+      "url": "https://web.junts.cat/eleccions-generals-23j/",
+      "observationKind": "bounded_publication_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "junts-preserved-abc",
+      "actual": {
+        "recordedAt": "2026-10-11T10:29:00.985714+00:00",
+        "url": "https://web.junts.cat/eleccions-generals-23j/",
+        "status": "retrieval_failed",
+        "error": "HTTP Error 404: Not Found"
+      },
+      "limitations": "Primary source/version chain still pending. Beteve publication fully read through web tool and identifies23J2023; linkedPDF bytes not reconciled. URL failure is not evidence of no programme."
+    },
+    {
+      "recordedAt": "2026-10-11T10:29:02.187017+00:00",
+      "candidacyId": "boe-2023-007",
+      "query": "Reopen primary campaign/election paths and contemporaneous preserved programme publication after full reading",
+      "url": "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
+      "observationKind": "bounded_publication_retrieval",
+      "status": "200",
+      "acquisitionId": "junts-preserved-abc",
+      "actual": {
+        "recordedAt": "2026-10-11T10:29:02.187017+00:00",
+        "url": "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
+        "status": 200,
+        "resolvedUrl": "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
+        "bytes": 302208,
+        "mediaType": "text/html; charset=UTF-8",
+        "sha256": "2d0f9b6dec2273cba129bc790fb2840bf936d365befd89986be60356d1b600c8",
+        "file": ".tools/junts-reading/9b65dc72c4fe.html"
+      },
+      "limitations": "Primary source/version chain still pending. Beteve publication fully read through web tool and identifies23J2023; linkedPDF bytes not reconciled. URL failure is not evidence of no programme."
+    },
+    {
+      "recordedAt": "2026-10-11T10:29:48.060411+00:00",
+      "candidacyId": "boe-2023-007",
+      "query": "Reconcile original Congress candidate labels and final official Junts ballot aliases",
+      "url": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+      "observationKind": "full_original_read_and_official_ballot_reconciliation",
+      "status": "four_congress_ballots_confirmed_primary_version_pending",
+      "acquisitionId": "junts-preserved-abc",
+      "ballotRecordIds": [
+        "congress-barcelona-10",
+        "congress-girona-8",
+        "congress-lleida-8",
+        "congress-tarragona-11"
+      ],
+      "limitations": "Coalition statement and internalJuly2023date establishedition; exact primary pre-election version remainsunresolved. Separate members not inherited."
     }
   ]
 }

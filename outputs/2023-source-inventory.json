@@ -21,7 +21,8 @@
     "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown.",
     "VOX178-page programme fully read including all381numbered measures/submeasures and every historical-action list,32original cover/low-native-text visual pages.70supplied literal excerpts checked; all positions null. Earlier VAT motions distinguished from current pledges; repeated chapter policies do not pad the future bank.",
     "Adelante Andalucía85-page programme, sixpage image-only decálogo with13numberedcommitments and linked18pageindustrystrategy fullyread. Main64andstrategy8nativeexcerptsoffsetsverified;12decálogovisualexcerptsfulltranscriptionpending. Preserve retirement62vs64 conflict, territorialrentcapvsfamilyhomelesscap, and olderstrategyversion conditions. No numericposition released.",
-    "ERC 132-page original fully read, including complete index, all three levels, references and published language-revision notice/back cover; nine original visual pages and 102 native literal anchors checked. Current regional rent-price powers, future-state numerical designs, qualified meat/flight/tax proposals and source editorial errors remain separately qualified. No numeric positions or real questions released."
+    "ERC 132-page original fully read, including complete index, all three levels, references and published language-revision notice/back cover; nine original visual pages and 102 native literal anchors checked. Current regional rent-price powers, future-state numerical designs, qualified meat/flight/tax proposals and source editorial errors remain separately qualified. No numeric positions or real questions released.",
+    "Junts preserved151-page original fully read, including complete index, all grievances/current/future-state qualifications, references and image-only candidate/back-cover pages. Fourteen original visuals,100 native literal excerpts and1 visual label recorded. Primary campaign domain DNS failure and two404party paths remain unresolved; Beteve linked copy not yet byte/version-reconciled. No scoring positions or real questions released."
   ],
   "candidacies": [
     {
@@ -1370,8 +1371,8 @@
           "votes": 40791
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "preserved_programme_fully_read_primary_version_reconciliation_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "junts-preserved-abc"
       ],
@@ -1380,14 +1381,30 @@
         "JUNTS PER CATALUNYA-JUNTS (J x CAT-JUNTS)",
         "JUNTS PER CATALUNYA-JUNTS (JxCAT-JUNTS)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "internal_23j2023_four_congress_labels_verified_primary_version_pending",
       "ballotRecordIds": [
         "congress-barcelona-10",
         "congress-girona-8",
         "congress-lleida-8",
         "congress-tarragona-11"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/junts.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "junts-preserved-abc"
+        ],
+        "ballotRecordIds": [
+          "congress-barcelona-10",
+          "congress-girona-8",
+          "congress-lleida-8",
+          "congress-tarragona-11"
+        ],
+        "publicationUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+        "publicationDate": null,
+        "rationale": "Original coalition/date and Congress candidate labels reconcile four final official ballots. August2023 host URL and separately linked Beteve copy need exact source/version reconciliation. No member-programme or Senate identity inheritance."
+      }
     },
     {
       "id": "boe-2023-008",
@@ -4389,8 +4406,33 @@
         "sha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
         "pageCount": 151,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/junts.json",
+      "electionApplicability": "Internal 23 July coalition statement, 5 July 2023 reference and original Congress candidate labels identify Barcelona, Girona, Lleida and Tarragona. ABC preserved original; primary publication chain and exact pre-election version remain unresolved.",
+      "originalVisualPagesRead": [
+        1,
+        6,
+        7,
+        8,
+        90,
+        91,
+        98,
+        103,
+        129,
+        135,
+        144,
+        149,
+        150,
+        151
+      ],
+      "applicableBallotRecordIds": [
+        "congress-barcelona-10",
+        "congress-girona-8",
+        "congress-lleida-8",
+        "congress-tarragona-11"
+      ]
     },
     {
       "id": "ehbildu-preserved-newtral",
@@ -5125,7 +5167,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 30
+    "programmeDocumentsFullyRead": 31
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

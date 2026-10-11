@@ -17,7 +17,8 @@
     "Three further complete readings: PUM+J 39 pages, Por Ávila 20 pages, Nueva Canarias 36 pages including La Palma annex. Literal offsets/hashes checked; no numeric mappings/real question release. Nueva Canarias input-size/NUL preparation limitations remain explicit.",
     "Four additional complete notebooks: PNV 52 pages, Jaén 45 pages, UPL-León 8 pages, Soria 73 measures/nine HTML sections. All unscored; Jaén annex 1/external adopted model and UPL Zamora/vintage follow-up remain open.",
     "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release.",
-    "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open."
+    "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open.",
+    "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown."
   ],
   "candidacies": [
     {
@@ -1715,8 +1716,8 @@
           "votes": 160
         }
       ],
-      "programmeSearchStatus": "downloaded_not_analysed",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
         "pacma"
       ],
@@ -1724,7 +1725,7 @@
         "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
         "PARTIT ANIMALISTA AMB EL MEDI AMBIENT (PACMA)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "document_specific_national_pacma_2023_scope_verified_not_scoring_ready",
       "ballotRecordIds": [
         "congress-albacete-4",
         "congress-alicante-10",
@@ -1778,7 +1779,68 @@
         "congress-zaragoza-12",
         "congress-melilla-6"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pacma.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "pacma"
+        ],
+        "ballotRecordIds": [
+          "congress-albacete-4",
+          "congress-alicante-10",
+          "congress-almeria-7",
+          "congress-alava-7",
+          "congress-asturias-4",
+          "congress-avila-5",
+          "congress-badajoz-7",
+          "congress-baleares-8",
+          "congress-barcelona-3",
+          "congress-bizkaia-12",
+          "congress-burgos-9",
+          "congress-caceres-10",
+          "congress-cadiz-8",
+          "congress-cantabria-7",
+          "congress-castellon-4",
+          "congress-ciudadreal-6",
+          "congress-cordoba-8",
+          "congress-acoruna-11",
+          "congress-cuenca-4",
+          "congress-gipuzkoa-6",
+          "congress-girona-11",
+          "congress-granada-6",
+          "congress-guadalajara-6",
+          "congress-huelva-8",
+          "congress-huesca-12",
+          "congress-jaen-4",
+          "congress-leon-10",
+          "congress-lleida-5",
+          "congress-lugo-9",
+          "congress-madrid-6",
+          "congress-malaga-5",
+          "congress-murcia-13",
+          "congress-navarra-9",
+          "congress-ourense-8",
+          "congress-palencia-10",
+          "congress-laspalmas-10",
+          "congress-pontevedra-5",
+          "congress-larioja-8",
+          "congress-salamanca-8",
+          "congress-santacruzdetenerife-8",
+          "congress-segovia-8",
+          "congress-sevilla-4",
+          "congress-soria-8",
+          "congress-tarragona-14",
+          "congress-teruel-13",
+          "congress-toledo-5",
+          "congress-valencia-8",
+          "congress-valladolid-3",
+          "congress-zamora-11",
+          "congress-zaragoza-12",
+          "congress-melilla-6"
+        ],
+        "rationale": "Primary national PACMA PDF explicitly23J2023 in cover/introduction. Registry records51final Congress ballots underSpanish/CatalanPACMAaliases including restoredTeruel; excludedCeuta record not silently reintroduced."
+      }
     },
     {
       "id": "boe-2023-014",
@@ -4116,8 +4178,11 @@
         "sha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
         "pageCount": 76,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pacma.json",
+      "electionApplicability": "Primary July2023 PDF; original visual cover explicitly23J/General Elections2023, introduction dates2023 and23July. National programme applies to51final PACMA Congress ballots, restoredTeruel included."
     },
     {
       "id": "psoe",
@@ -4881,7 +4946,7 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 24
+    "programmeDocumentsFullyRead": 25
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

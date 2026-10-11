@@ -19,7 +19,8 @@
     "BNG main programme68pages and easy-reading companion16pages fully read individually; 62 additional supplied literal excerpts checked. Summary omissions and AP53 cheaper-toll wording never substitute for main programme policy conditions; original arrendadoras wording preserved. No numeric mapping or real release.",
     "Complete PP112page programme reading through365measures and all visual pages;54literal excerpts checked. Whole-law repeal/review, pension indexing, workweek and transgender procedures remain unscored where precise policy is unspecified. External23Januaryinstitutional plan follow-up open.",
     "PACMA complete76-page programme fully read including all visual dividers/backcover;47supplied native literal excerpts checked. Immutable extraction retained despite large horizontal whitespace. Specific rent cap/nuclear calendar/registration and other unsupported details remain unknown.",
-    "VOX178-page programme fully read including all381numbered measures/submeasures and every historical-action list,32original cover/low-native-text visual pages.70supplied literal excerpts checked; all positions null. Earlier VAT motions distinguished from current pledges; repeated chapter policies do not pad the future bank."
+    "VOX178-page programme fully read including all381numbered measures/submeasures and every historical-action list,32original cover/low-native-text visual pages.70supplied literal excerpts checked; all positions null. Earlier VAT motions distinguished from current pledges; repeated chapter policies do not pad the future bank.",
+    "Adelante Andalucía85-page programme, sixpage image-only decálogo with13numberedcommitments and linked18pageindustrystrategy fullyread. Main64andstrategy8nativeexcerptsoffsetsverified;12decálogovisualexcerptsfulltranscriptionpending. Preserve retirement62vs64 conflict, territorialrentcapvsfamilyhomelesscap, and olderstrategyversion conditions. No numericposition released."
   ],
   "candidacies": [
     {
@@ -3105,19 +3106,39 @@
           "votes": 9191
         }
       ],
-      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
-      "analysisStatus": "not_started",
+      "programmeSearchStatus": "primary_2023_programme_and_decalogue_fully_read_linked_strategy_scope_pending_not_scoring_ready",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
       "programmeIds": [
-        "adelante"
+        "adelante",
+        "adelante-decalogue-verified-large-original",
+        "adelante-industrial-linked-plan"
       ],
       "ballotAliases": [
         "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "23j_campaign_programme_and_decalogue_cadiz_scope_verified_linked_2022_strategy_reuse_pending",
       "ballotRecordIds": [
         "congress-cadiz-4"
       ],
-      "notebooks": []
+      "notebooks": [
+        "outputs/2023-programme-notebooks/adelante-decalogue.json",
+        "outputs/2023-programme-notebooks/adelante-industrial-plan.json",
+        "outputs/2023-programme-notebooks/adelante.json"
+      ],
+      "applicabilityEvidence": {
+        "documentIds": [
+          "adelante",
+          "adelante-decalogue-verified-large-original"
+        ],
+        "linkedStrategyDocumentIds": [
+          "adelante-industrial-linked-plan"
+        ],
+        "ballotRecordIds": [
+          "congress-cadiz-4"
+        ],
+        "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+        "rationale": "Primarygeneral23Jcampaignpage links fullprogramme and decálogo and identifies CongresscandidatePilarGonzález; finalofficialregistry has singleCádizCongressballot. FullPDF has explicitCádiz annex. Linked2022industrystrategy has separatedate/reusequalifier; nocandidateinheritance."
+      }
     },
     {
       "id": "boe-2023-026",
@@ -4815,8 +4836,11 @@
         "sha256": "038aba726b16910342995781e75e490b80cb31bf78f5c767dc546ecb3c5d420c",
         "pageCount": 85,
         "method": "pypdf_native_layout_v1",
-        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
-      }
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/adelante.json",
+      "electionApplicability": "Primary campaign page explicitlygeneral23J and CongresscandidatePilarGonzález linksJuly2023original; programme has Cádiz-specific annex. SinglefinalCádizCongressballot; originalcoveritselfdoesnotstateyear."
     },
     {
       "id": "adelante-decalogue",
@@ -5003,15 +5027,74 @@
       "notebook": "outputs/2023-programme-notebooks/bng-easy-read.json",
       "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
       "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
+    },
+    {
+      "id": "adelante-decalogue-retry",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T09:51:53.374419+00:00",
+      "resolvedUrl": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 52428801,
+      "firstBytesHex": "255044462d312e340d25e2e3cfd30d0a",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF"
+    },
+    {
+      "id": "adelante-industrial-linked-plan",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2022/06/Plan-industrial-sostenible-Andalucia_AA.pdf",
+      "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T09:51:54.015655+00:00",
+      "resolvedUrl": "https://adelanteandalucia.org/wp-content/uploads/2022/06/Plan-industrial-sostenible-Andalucia_AA.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 6886202,
+      "firstBytesHex": "255044462d312e360d25e2e3cfd30d0a",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/adelante-industrial-linked-plan-7e2d167a67cf.pdf",
+      "sha256": "7e2d167a67cfe9756168495507b2b1df11ea3a0e5d81298ac4d4e28c82b3d9f3",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/adelante-industrial-linked-plan-7e2d167a67cf.txt",
+        "sha256": "544bcef27cbe9b6f93ff796a2407208a2bde9eefbb3ec593f2feeaeddf32b4a9",
+        "pageCount": 18,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/adelante-industrial-plan.json",
+      "electionApplicability": "2022datedstrategy linked as principalproposal in primary23Jcampaignpage. Reusechainrecorded; exact2023adoption/questionscope requirescross-reference; neverunlabelledother-electionreplacement."
+    },
+    {
+      "id": "adelante-decalogue-verified-large-original",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T09:53:04.208607+00:00",
+      "byteLimit": 104857600,
+      "resolvedUrl": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "mediaType": "application/pdf",
+      "lastModified": "Mon, 10 Jul 2023 12:26:39 GMT",
+      "bytes": 81999502,
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/adelante-decalogue-92e43831a0a9.pdf",
+      "sha256": "92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/adelante-decalogue-92e43831a0a9.txt",
+        "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "pageCount": 6,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/adelante-decalogue.json",
+      "electionApplicability": "Primary23Jcampaignpublication and July2023URL/LastModified10July2023, originalcovernamesCongresscandidatePilarGonzález. Siximagepages/all13numberedcommitments visuallyread."
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 29,
+    "programmeFilesDownloaded": 31,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 26
+    "programmeDocumentsFullyRead": 29
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",

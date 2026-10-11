@@ -1255,6 +1255,36 @@
       "observationKind": "official_applicability_cross_check",
       "status": "51final_congress_ballots_santa_cruz_explicitly_not_proclaimed",
       "limitations": "Original Congressional entry7 explicitly states No proclamada. National programme is not grounds to add an excluded ballot; no source correctness inferred from recollection."
+    },
+    {
+      "recordedAt": "2026-10-11T09:51:53.374419+00:00",
+      "candidacyId": "boe-2023-025",
+      "query": "Retrieve original linked by primary23JCongresscampaignpublication",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "observationKind": "bounded_primary_linked_document_retrieval",
+      "status": "retrieval_failed",
+      "acquisitionId": "adelante-decalogue-retry",
+      "limitations": "50MiB+1readlimitexceeded, PDFmagicpresent. SubsequentHEADcontentlength81999502and100MiBboundedretryverifiedactualoriginal; not proof of unavailablePDF."
+    },
+    {
+      "recordedAt": "2026-10-11T09:51:54.015655+00:00",
+      "candidacyId": "boe-2023-025",
+      "query": "Retrieve original linked by primary23JCongresscampaignpublication",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2022/06/Plan-industrial-sostenible-Andalucia_AA.pdf",
+      "observationKind": "bounded_primary_linked_document_retrieval",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "acquisitionId": "adelante-industrial-linked-plan",
+      "limitations": "Originalbytes/hashretained; download/nativeextractionalone doesnotestablishsemantics or applicablecurrentposition. Strategyhas2022uploaddate, reusedlinkfrom23Jpage."
+    },
+    {
+      "recordedAt": "2026-10-11T09:53:04.208607+00:00",
+      "candidacyId": "boe-2023-025",
+      "query": "Retrieve original linked by primary23JCongresscampaignpublication",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "observationKind": "bounded_primary_linked_document_retrieval",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "acquisitionId": "adelante-decalogue-verified-large-original",
+      "limitations": "Originalbytes/hashretained; download/nativeextractionalone doesnotestablishsemantics or applicablecurrentposition. Strategyhas2022uploaddate, reusedlinkfrom23Jpage."
     }
   ]
 }

@@ -240,17 +240,19 @@
           "votes": 13446
         }
       ],
-      "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "primary_2023_programme_and_two_explicitly_adopted_references_fully_read_audited",
+      "analysisStatus": "specific_complete_main_and_two_adopted_references_80_cell_bank_audit",
       "programmeIds": [
-        "pp"
+        "pp",
+        "pp-institutional-quality-2023",
+        "childhood-obesity-2022-2030"
       ],
       "ballotAliases": [
         "PARTIDO POPULAR (PP)",
         "PARTIDO POPULAR/PARTIT POPULAR (PP)",
         "PARTIT POPULAR/PARTIDO POPULAR (PP)"
       ],
-      "programmeApplicabilityStatus": "document_specific_national_pp_2023_scope_verified_not_scoring_ready",
+      "programmeApplicabilityStatus": "document_specific_national_pp_2023_scope_and_explicit_adoption_verified_prevote_bytes_uncertified",
       "ballotRecordIds": [
         "congress-albacete-3",
         "congress-alicante-5",
@@ -306,7 +308,9 @@
         "congress-melilla-1"
       ],
       "notebooks": [
-        "outputs/2023-programme-notebooks/pp.json"
+        "outputs/2023-programme-notebooks/pp.json",
+        "outputs/2023-programme-notebooks/pp-institutional-quality-2023.json",
+        "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json"
       ],
       "applicabilityEvidence": {
         "documentIds": [
@@ -367,6 +371,15 @@
           "congress-melilla-1"
         ],
         "rationale": "PrimaryJuly2023PDFvisual23Jcover/date introduction and2023reference, nationalPPprogramme. Registry confirms52PPCongressballots underSpanish/Catalanparty-name aliases; noUPNinheritance."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T21:23:50.807873+00:00",
+        "report": "outputs/2023-authored-pp-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 25,
+        "newDerivedMappings": 5,
+        "citedUncertainties": 34,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5115,12 +5128,27 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_document_reading_specific_80_cell_pp_bank_audit_recorded",
       "notebook": "outputs/2023-programme-notebooks/pp.json",
       "electionApplicability": "Primary PP July2023 PDF; visual23Jgeneral-election cover, July23introduction and2023consular text; national PP Congress52constituencies.",
       "preparationLimitations": [
         "Institutional-quality plan23January2023 externally endorsed onPDF67 not yet acquired/read; no silent inheritance of external policy."
-      ]
+      ],
+      "externalReferenceFollowup": {
+        "documentId": "pp-institutional-quality-2023",
+        "notebook": "outputs/2023-programme-notebooks/pp-institutional-quality-2023.json",
+        "status": "complete_direct_external_document_reading",
+        "previousPreparationLimitationsRetained": true
+      },
+      "externalReferenceFollowups": [
+        {
+          "documentId": "childhood-obesity-2022-2030",
+          "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+          "status": "complete_direct_external_document_reading",
+          "previousPreparationLimitationsRetained": true
+        }
+      ],
+      "bankAudit": "outputs/2023-authored-pp-audit.json"
     },
     {
       "id": "vox",
@@ -6868,15 +6896,167 @@
         "congress-teruel-10"
       ],
       "electionApplicability": "Original general-election 2023 cover, pages 3-4 next 23 July/Cortes Generales/Aragón Existe candidates; primary candidate announcement expressly identifies both Huesca/Zaragoza Congress lists. Separate Teruel source retained."
+    },
+    {
+      "id": "pp-institutional-quality-2023",
+      "url": "https://www.pp.es/wp-content/uploads/2023/01/plan_de_calidad_institucional_pp.pdf",
+      "resolvedUrl": "https://www.pp.es/wp-content/uploads/2023/01/plan_de_calidad_institucional_pp.pdf",
+      "retrievedAt": "2026-10-11T20:48:35.244145+00:00",
+      "mediaType": "application/pdf",
+      "file": "storage/app/election-sources/2023-congress/pp-institutional-quality-2023.pdf",
+      "sha256": "f47c2e2f7e38f0b90908342af5d841fbdf6ebb4b2e0306cdf3fb3c46d4f6429d",
+      "bytes": 470721,
+      "status": "explicitly_adopted_primary_document_fully_read_specific_pp_bank_audited",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pp-institutional-quality-2023.txt",
+        "sha256": "5c2368f3e50c3aa7a7c59991f1f8c53dc3a8535d6ed7803133c6096822e39bc6",
+        "pageCount": 30,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "complete_document_reading_specific_80_cell_pp_bank_audit_recorded",
+      "notebook": "outputs/2023-programme-notebooks/pp-institutional-quality-2023.json",
+      "applicableBallotRecordIds": [
+        "congress-albacete-3",
+        "congress-alicante-5",
+        "congress-almeria-5",
+        "congress-alava-5",
+        "congress-asturias-3",
+        "congress-avila-3",
+        "congress-badajoz-3",
+        "congress-baleares-2",
+        "congress-barcelona-4",
+        "congress-bizkaia-5",
+        "congress-burgos-8",
+        "congress-caceres-3",
+        "congress-cadiz-3",
+        "congress-cantabria-4",
+        "congress-castellon-3",
+        "congress-ciudadreal-3",
+        "congress-cordoba-3",
+        "congress-acoruna-3",
+        "congress-cuenca-5",
+        "congress-gipuzkoa-4",
+        "congress-girona-3",
+        "congress-granada-3",
+        "congress-guadalajara-5",
+        "congress-huelva-1",
+        "congress-huesca-4",
+        "congress-jaen-3",
+        "congress-leon-3",
+        "congress-lleida-3",
+        "congress-lugo-3",
+        "congress-madrid-3",
+        "congress-malaga-1",
+        "congress-murcia-3",
+        "congress-navarra-6",
+        "congress-ourense-4",
+        "congress-palencia-4",
+        "congress-laspalmas-1",
+        "congress-pontevedra-2",
+        "congress-larioja-3",
+        "congress-salamanca-3",
+        "congress-santacruzdetenerife-1",
+        "congress-segovia-2",
+        "congress-sevilla-3",
+        "congress-soria-3",
+        "congress-tarragona-8",
+        "congress-teruel-5",
+        "congress-toledo-3",
+        "congress-valencia-3",
+        "congress-valladolid-4",
+        "congress-zamora-4",
+        "congress-zaragoza-4",
+        "congress-ceuta-1",
+        "congress-melilla-1"
+      ],
+      "electionApplicability": "Retained July2023Congress nationalPPprogramme PDF67 expressly keeps the January23 Cadiz plan fully applicable; primary January23article links originalPDF. No independent candidacy or second PP programme owner counted.",
+      "bankAudit": "outputs/2023-authored-pp-audit.json"
+    },
+    {
+      "id": "childhood-obesity-2022-2030",
+      "url": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+      "resolvedUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+      "retrievedAt": "2026-10-11T21:06:10.737638+00:00",
+      "mediaType": "application/pdf",
+      "file": "storage/app/election-sources/2023-congress/childhood-obesity-2022-2030.pdf",
+      "sha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+      "bytes": 12361602,
+      "status": "explicitly_adopted_primary_document_fully_read_specific_pp_bank_audited",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/childhood-obesity-2022-2030.txt",
+        "sha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+        "pageCount": 120,
+        "method": "pypdf_native_plain_all_orientations_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "complete_document_reading_specific_80_cell_pp_bank_audit_recorded",
+      "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+      "applicableBallotRecordIds": [
+        "congress-albacete-3",
+        "congress-alicante-5",
+        "congress-almeria-5",
+        "congress-alava-5",
+        "congress-asturias-3",
+        "congress-avila-3",
+        "congress-badajoz-3",
+        "congress-baleares-2",
+        "congress-barcelona-4",
+        "congress-bizkaia-5",
+        "congress-burgos-8",
+        "congress-caceres-3",
+        "congress-cadiz-3",
+        "congress-cantabria-4",
+        "congress-castellon-3",
+        "congress-ciudadreal-3",
+        "congress-cordoba-3",
+        "congress-acoruna-3",
+        "congress-cuenca-5",
+        "congress-gipuzkoa-4",
+        "congress-girona-3",
+        "congress-granada-3",
+        "congress-guadalajara-5",
+        "congress-huelva-1",
+        "congress-huesca-4",
+        "congress-jaen-3",
+        "congress-leon-3",
+        "congress-lleida-3",
+        "congress-lugo-3",
+        "congress-madrid-3",
+        "congress-malaga-1",
+        "congress-murcia-3",
+        "congress-navarra-6",
+        "congress-ourense-4",
+        "congress-palencia-4",
+        "congress-laspalmas-1",
+        "congress-pontevedra-2",
+        "congress-larioja-3",
+        "congress-salamanca-3",
+        "congress-santacruzdetenerife-1",
+        "congress-segovia-2",
+        "congress-sevilla-3",
+        "congress-soria-3",
+        "congress-tarragona-8",
+        "congress-teruel-5",
+        "congress-toledo-3",
+        "congress-valencia-3",
+        "congress-valladolid-4",
+        "congress-zamora-4",
+        "congress-zaragoza-4",
+        "congress-ceuta-1",
+        "congress-melilla-1"
+      ],
+      "electionApplicability": "PP retained2023Congress nationalprogramme PDF55measure171 expressly pledges action to implement measures in this2022-2030plan. No independent party or automatic other-list inheritance.",
+      "bankAudit": "outputs/2023-authored-pp-audit.json"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 44,
+    "programmeFilesDownloaded": 46,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 53
+    "programmeDocumentsFullyRead": 55
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -9728,8 +9908,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5120,
-    "scoredDraftMappings": 199,
-    "independentAnswerCases": 995,
+    "scoredDraftMappings": 204,
+    "independentAnswerCases": 1020,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9740,7 +9920,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
+    "latestBrowserDraftSha256": "0be772c0dc6c3c8ecc0081c0d5d57d8616a5c0f3123427953a2ed752ecc27ce5",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9751,20 +9931,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 62,
-    "latestBrowserVerification": "outputs/2023-authored-fuerza-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-fuerza-verification.json",
+    "latestBrowserProgressivePaths": 40,
+    "latestBrowserVerification": "outputs/2023-authored-pp-adopted-reference-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pp-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
+    "latestDraftSha256": "0be772c0dc6c3c8ecc0081c0d5d57d8616a5c0f3123427953a2ed752ecc27ce5",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "1a92a54dab1f6d6bea64c7704512a4873b6218b4fd47b5e6813d0f7fc84d2667",
+    "latestAuthoredDraftSha256": "0be772c0dc6c3c8ecc0081c0d5d57d8616a5c0f3123427953a2ed752ecc27ce5",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9867,7 +10047,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 400,
-    "defaultScoredDraftMappings": 192,
+    "defaultScoredDraftMappings": 197,
     "scopedScoredDraftMappings": 7,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9993,7 +10173,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 4506737,
+    "bankBytes": 4667909,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10018,7 +10198,38 @@
     "latestFuerzaCitedUnscoredPaths": 18,
     "fuerzaFixedComparisonEligible": true,
     "allPrevious186NumericMappingsUnchanged": true,
-    "comparisonCohortFuerzaAddedOnlyInEligibleScopes": true
+    "comparisonCohortFuerzaAddedOnlyInEligibleScopes": true,
+    "ppBankAudit": "outputs/2023-authored-pp-audit.json",
+    "ppVerification": "outputs/2023-authored-pp-verification.json",
+    "ppBrowserVerification": "outputs/2023-authored-pp-browser-verification.json",
+    "ppAdoptedReferenceBrowserVerification": "outputs/2023-authored-pp-adopted-reference-browser-verification.json",
+    "newPpAuditedCells": 80,
+    "newPpDerivedMappings": 5,
+    "newPpCitedUncertainties": 34,
+    "totalPpDerivedMappings": 25,
+    "latestPpBrowserSessions": 194,
+    "latestPpCitedAnswerPaths": 250,
+    "latestPpCitedUnscoredPaths": 28,
+    "latestPpScreenshotsVisuallyInspected": 62,
+    "ppBrowserBankAttribution": [
+      {
+        "draftSha256": "5e6810e535fa704f3598addbabb53507d99eaa675fec9b02ea44daff6d3ffba3",
+        "browserSessions": 154,
+        "citedNumericPaths": 220,
+        "citedUnscoredPaths": 16,
+        "screenshotsVisuallyInspected": 44
+      },
+      {
+        "draftSha256": "0be772c0dc6c3c8ecc0081c0d5d57d8616a5c0f3123427953a2ed752ecc27ce5",
+        "browserSessions": 40,
+        "citedNumericPaths": 30,
+        "citedUnscoredPaths": 12,
+        "screenshotsVisuallyInspected": 18
+      }
+    ],
+    "ppFixedComparisonEligible": true,
+    "allPrevious199NumericMappingsUnchanged": true,
+    "fixedComparisonSubsetUnchanged": true
   },
-  "recordedAt": "2026-10-11T20:54:16.600072+00:00"
+  "recordedAt": "2026-10-11T21:23:50.807873+00:00"
 }

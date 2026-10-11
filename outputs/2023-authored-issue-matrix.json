@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T20:43:38.737720+00:00",
+  "recordedAt": "2026-10-11T21:16:18.108617+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -207,8 +207,8 @@
           "candidacyId": "boe-2023-001",
           "status": "ambiguous",
           "value": null,
-          "rationale": "Su propuesta de derogar la ley de vivienda no aclara por sí sola esta medida concreta.",
-          "authoredAnalysis": "Whole-law repeal cannot determine stance on everyprovision; complete measure90 read acrossPDF33–34.",
+          "rationale": "Propone derogar la ley de vivienda, sin concretar una posición sobre el precio máximo del alquiler que plantea esta pregunta.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [
             {
               "documentId": "pp",
@@ -219,14 +219,22 @@
               "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
               "pdfPage": 34,
               "printedPage": 32,
+              "htmlSection": null,
               "start": 78597,
               "end": 78631,
               "quote": "Derogaremos la ley\n    de vivienda",
-              "contextStart": 75449,
+              "contextStart": 78428,
               "contextEnd": 80000,
-              "contextSha256": "634d9ee2f62294a7cd9a8a78a32473b9a75bb5c20113a0103f10a8713e1a85d5"
+              "contextSha256": "b17565f4bf252634dc17459056206b5bbe53621b214a437d75846e538a8a8158",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
             }
-          ]
+          ],
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit"
         },
         {
           "candidacyId": "boe-2023-041",
@@ -1514,12 +1522,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone flexibilidad y un banco de horas sin cambiar las horas trabajadas ni el salario, sin fijar una jornada máxima de 35 horas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 53,
+              "printedPage": 51,
+              "htmlSection": null,
+              "start": 127448,
+              "end": 127505,
+              "quote": "sin\n     afectar ni a las horas trabajadas ni al salario.",
+              "contextStart": 125279,
+              "contextEnd": 128034,
+              "contextSha256": "89bd8161aa7cab57cfa577af79fa57d6bbe5af5ca23beb58155e5a26ce81baa8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -2620,12 +2652,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "El plan que adopta propone ampliar la atención dental pública para niños y adolescentes, sin extender expresamente esa ampliación a todas las edades.",
+          "authoredAnalysis": "+1: operative19 expressly expands SNS dental portfolio for children/adolescents with nutrition/hygiene purpose. The exact rubric reserves+1 for specified limited group; no all-age/all-treatment/free-private dentistry inference.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 55,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 131129,
+              "end": 131162,
+              "quote": "Plan Estratégico Nacional para la",
+              "contextStart": 130819,
+              "contextEnd": 134594,
+              "contextSha256": "df0c97aa88414ef9589d01cd142fd2961eda02cb874f498ee285f586ceea27a7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 53,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 93172,
+              "end": 93340,
+              "quote": "Ampliar la cartera de salud bucodental del SNS en la población \ninfantojuvenil para prevenir y tratar alteraciones derivadas de \nuna alimentación e higiene inadecuadas.",
+              "contextStart": 91709,
+              "contextEnd": 94181,
+              "contextSha256": "5ac126284fd7eaf823616068202624ce73a9a3efbaccdfeb711d3fcab4fce46c",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -4985,12 +5060,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma fiscal no concreta eliminar el impuesto de las herencias de padres a hijos.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 23,
+              "printedPage": 21,
+              "htmlSection": null,
+              "start": 47774,
+              "end": 47826,
+              "quote": "REALIZAREMOS UNA REFORMA INTEGRAL DEL SISTEMA FISCAL",
+              "contextStart": 46824,
+              "contextEnd": 49807,
+              "contextSha256": "ea95a68025b06ab5085dc0329273efb35ab4cdcf696497c1f37bf05a4ec07711",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -7109,12 +7208,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La inversión en trenes no establece limitar vuelos cuando exista una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 33,
+              "printedPage": 31,
+              "htmlSection": null,
+              "start": 77521,
+              "end": 77552,
+              "quote": "coste reducido para el usuario.",
+              "contextStart": 75449,
+              "contextEnd": 78427,
+              "contextSha256": "822fe67325ec3ebb840729b0aa69a5067f66f043ae88f12ed1fd3fe48e041f22",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -8234,8 +8357,8 @@
           "candidacyId": "boe-2023-001",
           "status": "ambiguous",
           "value": null,
-          "rationale": "Propone revisar la ley de eutanasia teniendo en cuenta al Comité de Bioética, sin concretar qué derechos cambiaría.",
-          "authoredAnalysis": "Review is not repeal or a clear retained-right commitment; no numeric stance inferred.",
+          "rationale": "Propone revisar la ley de eutanasia, sin concretar mantener o eliminar el derecho que plantea esta pregunta.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [
             {
               "documentId": "pp",
@@ -8245,15 +8368,23 @@
               "notebook": "outputs/2023-programme-notebooks/pp.json",
               "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
               "pdfPage": 48,
-              "printedPage": null,
-              "start": 112602,
+              "printedPage": 46,
+              "htmlSection": null,
+              "start": 112619,
               "end": 112638,
-              "quote": "revisaremos\n     la Ley de Eutanasia",
+              "quote": "la Ley de Eutanasia",
               "contextStart": 110241,
               "contextEnd": 114056,
-              "contextSha256": "950af401c3994b4da64a2eb3bb83edc29be7db2afd3a4fe7c3b52daf6d40c516"
+              "contextSha256": "950af401c3994b4da64a2eb3bb83edc29be7db2afd3a4fe7c3b52daf6d40c516",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
             }
-          ]
+          ],
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -10234,12 +10365,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Garantiza la revalorización dentro del Pacto de Toledo, sin concretar la actualización anual según los precios.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 20,
+              "printedPage": 18,
+              "htmlSection": null,
+              "start": 38480,
+              "end": 38500,
+              "quote": "DEL PACTO DE TOLEDO.",
+              "contextStart": 38475,
+              "contextEnd": 41240,
+              "contextSha256": "b08ea457021a5f9b7dd229d23a57093e21a6baec084a249502f85fc5cde9a779",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -12347,12 +12502,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La simplificación del impuesto sobre la renta no concreta eximir las pensiones de jubilación contributivas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 23,
+              "printedPage": 21,
+              "htmlSection": null,
+              "start": 47774,
+              "end": 47826,
+              "quote": "REALIZAREMOS UNA REFORMA INTEGRAL DEL SISTEMA FISCAL",
+              "contextStart": 46824,
+              "contextEnd": 49807,
+              "contextSha256": "ea95a68025b06ab5085dc0329273efb35ab4cdcf696497c1f37bf05a4ec07711",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -13315,12 +13494,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone vivienda social y alquiler asequible sobre suelo público, sin establecer que las viviendas públicas no puedan venderse a empresas privadas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 34,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 79631,
+              "end": 79655,
+              "quote": "PROMOVEREMOS LA VIVIENDA",
+              "contextStart": 78428,
+              "contextEnd": 80000,
+              "contextSha256": "b17565f4bf252634dc17459056206b5bbe53621b214a437d75846e538a8a8158",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -14507,12 +14710,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma sanitaria no establece aumentar acuerdos con centros privados para atender pacientes con financiación pública.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 46,
+              "printedPage": 44,
+              "htmlSection": null,
+              "start": 104297,
+              "end": 104341,
+              "quote": "APROBAREMOS UNA NUEVA LEY GENERAL DE SANIDAD",
+              "contextStart": 102555,
+              "contextEnd": 106156,
+              "contextSha256": "42ee4dfe69e7e1d48a85b08c030199a94e1b0da2846eb10652a58834516616b8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -15582,12 +15809,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La propuesta de autorización previa para menores no concreta realizar el aborto en centros de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 47,
+              "printedPage": 45,
+              "htmlSection": null,
+              "start": 106686,
+              "end": 106700,
+              "quote": "CONSENTIMIENTO",
+              "contextStart": 106157,
+              "contextEnd": 110240,
+              "contextSha256": "39915e844ae244f12054ce50dfc66c844f6c62c463663581501468ca10f64ef8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -16485,12 +16736,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas energéticas no establecen gestión pública de centrales hidroeléctricas al caducar sus concesiones.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 38,
+              "printedPage": 36,
+              "htmlSection": null,
+              "start": 90657,
+              "end": 90685,
+              "quote": "LA EXTENSIÓN DE LA VIDA ÚTIL",
+              "contextStart": 87171,
+              "contextEnd": 90979,
+              "contextSha256": "1380412e5fd7d97369865d5335b03bf627be0271e40ea98f54cec44b5ce732f0",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -17652,12 +17927,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La flexibilidad horaria no establece prohibir contactos de la empresa fuera del horario laboral.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 53,
+              "printedPage": 51,
+              "htmlSection": null,
+              "start": 127448,
+              "end": 127505,
+              "quote": "sin\n     afectar ni a las horas trabajadas ni al salario.",
+              "contextStart": 125279,
+              "contextEnd": 128034,
+              "contextSha256": "89bd8161aa7cab57cfa577af79fa57d6bbe5af5ca23beb58155e5a26ce81baa8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -18602,12 +18901,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "El plan que adopta propone ampliar las becas comedor para infancia vulnerable y avanzar hacia la gratuidad del servicio; no lo establece para todo el alumnado.",
+          "authoredAnalysis": "+1: operative80 expressly progresses toward free meal service for vulnerable children with broader nonterm access. Exact rubric+1 covers documented restricted group. School offer75 and annex110 recommendations do not establish universal free compulsory-stage meals or a guaranteed implementation date.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 55,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 131129,
+              "end": 131162,
+              "quote": "Plan Estratégico Nacional para la",
+              "contextStart": 130819,
+              "contextEnd": 134594,
+              "contextSha256": "df0c97aa88414ef9589d01cd142fd2961eda02cb874f498ee285f586ceea27a7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 62,
+              "printedPage": 62,
+              "htmlSection": null,
+              "start": 113839,
+              "end": 114013,
+              "quote": "Garantizar la extensión de las becas comedor a la infancia en \nsituación de vulnerabilidad, avanzando hacia la gratuidad del \nservicio y la ampliación a periodos no lectivos.",
+              "contextStart": 112418,
+              "contextEnd": 114987,
+              "contextSha256": "2b27d12db53babff90f75bd5163db2168f75f6a691b64f348df5be7d034b3c65",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -19578,12 +19920,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma de financiación y compra de medicamentos no establece eliminar progresivamente el copago.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 47,
+              "printedPage": 45,
+              "htmlSection": null,
+              "start": 108141,
+              "end": 108163,
+              "quote": "RESERVA ESTRATÉGICA DE",
+              "contextStart": 106157,
+              "contextEnd": 110240,
+              "contextSha256": "39915e844ae244f12054ce50dfc66c844f6c62c463663581501468ca10f64ef8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -20637,10 +21003,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho al voto desde los dieciséis años.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -21498,10 +21869,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece obligar a fabricantes a facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -22329,12 +22705,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Promueve prácticas en empresas, sin establecer remunerar las que forman parte de los estudios.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 51,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 121673,
+              "end": 121706,
+              "quote": "a través de prácticas en empresas",
+              "contextStart": 119107,
+              "contextEnd": 123095,
+              "contextSha256": "8af3a2baab06d13105c154fdf021f647bd9b383c0ca7e0dc3a0d94096ee52391",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -23458,12 +23858,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas de conciliación y apoyo a la lactancia durante seis meses no establecen seis meses de permiso por nacimiento para cada progenitor.",
+          "authoredAnalysis": "Unknown: adopted14 facilitates six-month exclusive breastfeeding; paid birth leave entitlement/duration for each parent is not established.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 53,
+              "printedPage": 51,
+              "htmlSection": null,
+              "start": 126864,
+              "end": 126879,
+              "quote": "LOS PERMISOS DE",
+              "contextStart": 125279,
+              "contextEnd": 128034,
+              "contextSha256": "89bd8161aa7cab57cfa577af79fa57d6bbe5af5ca23beb58155e5a26ce81baa8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 52,
+              "printedPage": 52,
+              "htmlSection": null,
+              "start": 91337,
+              "end": 91354,
+              "quote": "lactancia materna",
+              "contextStart": 89297,
+              "contextEnd": 91708,
+              "contextSha256": "33c0ce308bdcf35aaca86de9ae96868e6f3937cfadb13e5cda02ebdfd4e71b21",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -24531,12 +24974,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El plan que adopta plantea estudiar subidas de impuestos sobre ciertos alimentos y bebidas, sin comprometerse a crear el impuesto específico que plantea esta pregunta.",
+          "authoredAnalysis": "Unknown: operative9 is a study of fiscal implementation, not a definite new sweetened-drink levy. Priority85/evidence105/WHO107 do not override that narrower operative commitment.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 55,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 131129,
+              "end": 131162,
+              "quote": "Plan Estratégico Nacional para la",
+              "contextStart": 130819,
+              "contextEnd": 134594,
+              "contextSha256": "df0c97aa88414ef9589d01cd142fd2961eda02cb874f498ee285f586ceea27a7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 52,
+              "printedPage": 52,
+              "htmlSection": null,
+              "start": 89563,
+              "end": 89582,
+              "quote": "mediante el estudio",
+              "contextStart": 89297,
+              "contextEnd": 91708,
+              "contextSha256": "33c0ce308bdcf35aaca86de9ae96868e6f3937cfadb13e5cda02ebdfd4e71b21",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -25334,10 +25820,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece despenalizar el cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -26185,12 +26676,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La ampliación de becas no establece eliminar el recargo al repetir una asignatura universitaria.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 51,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 122493,
+              "end": 122536,
+              "quote": "GARANTIZAREMOS UN SISTEMA NACIONAL DE BECAS",
+              "contextStart": 119107,
+              "contextEnd": 123095,
+              "contextSha256": "8af3a2baab06d13105c154fdf021f647bd9b383c0ca7e0dc3a0d94096ee52391",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -27148,8 +27663,8 @@
           "candidacyId": "boe-2023-001",
           "status": "ambiguous",
           "value": null,
-          "rationale": "Propone llegar a tres horas lectivas, pero esta cita no precisa que sean cada semana.",
-          "authoredAnalysis": "Measure 359 expands primary/secondary sessions and curriculum hours, but the complete page does not explicitly supply weekly frequency. Do not silently add the missing unit.",
+          "rationale": "Propone al menos tres horas lectivas de Educación Física y más actividad escolar, sin concretar expresamente tres horas de la asignatura cada semana.",
+          "authoredAnalysis": "Unknown: main three lective hours lacks weekly frequency; adopted66 increases curricular/nonformal activity and WHO daily activity targets, not precise weekly subject hours.",
           "citations": [
             {
               "documentId": "pp",
@@ -27160,15 +27675,41 @@
               "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
               "pdfPage": 109,
               "printedPage": 107,
+              "htmlSection": null,
               "start": 243184,
               "end": 243221,
               "quote": "como mínimo, las tres horas lectivas.",
               "contextStart": 241710,
               "contextEnd": 244578,
-              "contextSha256": "fe176819443f98e6d64b3fb348a4c609905ff5a579d265097fe38a46e1f676bf"
+              "contextSha256": "fe176819443f98e6d64b3fb348a4c609905ff5a579d265097fe38a46e1f676bf",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "htmlSection": null,
+              "start": 111002,
+              "end": 111052,
+              "quote": "Incrementar el tiempo previsto de actividad física",
+              "contextStart": 110055,
+              "contextEnd": 112417,
+              "contextSha256": "5a0515e484dc2d3c1958ce8829225c36abb471d9ac1c18ecded603e0c622466c",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -28123,12 +28664,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La cuota cero durante el primer año y el aplazamiento de cuotas no establecen eximir a todos los autónomos con ingresos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 20,
+              "printedPage": 18,
+              "htmlSection": null,
+              "start": 39666,
+              "end": 39705,
+              "quote": "NUEVOS AUTÓNOMOS DURANTE EL PRIMER AÑO.",
+              "contextStart": 38475,
+              "contextEnd": 41240,
+              "contextSha256": "b08ea457021a5f9b7dd229d23a57093e21a6baec084a249502f85fc5cde9a779",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -29274,12 +29839,54 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las medidas fiscales y de vivienda no establecen eximir de impuesto sobre el valor añadido la primera vivienda habitual.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 23,
+              "printedPage": 21,
+              "htmlSection": null,
+              "start": 47774,
+              "end": 47826,
+              "quote": "REALIZAREMOS UNA REFORMA INTEGRAL DEL SISTEMA FISCAL",
+              "contextStart": 46824,
+              "contextEnd": 49807,
+              "contextSha256": "ea95a68025b06ab5085dc0329273efb35ab4cdcf696497c1f37bf05a4ec07711",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 34,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 79631,
+              "end": 79655,
+              "quote": "PROMOVEREMOS LA VIVIENDA",
+              "contextStart": 78428,
+              "contextEnd": 80000,
+              "contextSha256": "b17565f4bf252634dc17459056206b5bbe53621b214a437d75846e538a8a8158",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -30376,10 +30983,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -31293,10 +31905,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece retirar financiación pública a espectáculos taurinos con muerte del animal.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -32162,12 +32779,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone mantener y apoyar la caza sostenible; se opone a que la caza deje de estar permitida en toda España.",
+          "authoredAnalysis": "Explicit permitted sustainable hunting is directly inconsistent with a general nationwide hunting prohibition. -2 under the exact rubric; safety/environmental regulation remains possible and no blanket unregulated hunting inferred.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 31,
+              "printedPage": 29,
+              "htmlSection": null,
+              "start": 70592,
+              "end": 70615,
+              "quote": "APOYAREMOS LA ACTIVIDAD",
+              "contextStart": 69442,
+              "contextEnd": 72587,
+              "contextSha256": "e7cb273f421fe0a6b13da5cd74de1b12b6e30f7c72639b4e0e616d2dbfb7d362",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -33065,12 +33706,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ayudas energéticas directas no establecen prohibir permanentemente cortes de suministros a hogares vulnerables.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 38,
+              "printedPage": 36,
+              "htmlSection": null,
+              "start": 90657,
+              "end": 90685,
+              "quote": "LA EXTENSIÓN DE LA VIDA ÚTIL",
+              "contextStart": 87171,
+              "contextEnd": 90979,
+              "contextSha256": "1380412e5fd7d97369865d5335b03bf627be0271e40ea98f54cec44b5ce732f0",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -34097,10 +34762,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece dar 20.000 euros a cada joven al cumplir 23 años.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -35055,12 +35725,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La actualización del salario mínimo mediante diálogo social no fija aumentos anuales superiores a los precios.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 19,
+              "printedPage": 17,
+              "htmlSection": null,
+              "start": 37144,
+              "end": 37176,
+              "quote": "ACTUALIZAREMOS EL SALARIO MÍNIMO",
+              "contextStart": 35416,
+              "contextEnd": 38474,
+              "contextSha256": "689fb98b63a156026c2a4602c455c0dfb5a2cf88c40e18c134e285077e09045b",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -35939,12 +36633,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La transparencia y reutilización de datos no establece formatos abiertos para todos los documentos de la Administración.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 90,
+              "printedPage": 88,
+              "htmlSection": null,
+              "start": 203144,
+              "end": 203166,
+              "quote": "reutilización de datos",
+              "contextStart": 201173,
+              "contextEnd": 204194,
+              "contextSha256": "ea8f1bacaa23e9941a041f9758ad8dea45954f4dd95267b09498fe19a199f76c",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -36914,10 +37632,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener o eliminar la prohibición de gestación subrogada.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -37859,12 +38582,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El plan que adopta prevé menús adaptados por salud o motivos culturales, sin concretar una opción vegetariana para quien la prefiera en todos los comedores.",
+          "authoredAnalysis": "Unknown: operative81 protects health/cultural requirements, not express universal vegetarian preference; no assumption that every cultural menu implies the exact option.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 55,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 131129,
+              "end": 131162,
+              "quote": "Plan Estratégico Nacional para la",
+              "contextStart": 130819,
+              "contextEnd": 134594,
+              "contextSha256": "df0c97aa88414ef9589d01cd142fd2961eda02cb874f498ee285f586ceea27a7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 62,
+              "printedPage": 62,
+              "htmlSection": null,
+              "start": 114017,
+              "end": 114133,
+              "quote": "Garantizar la disponibilidad de menús adaptados para el \nalumnado que lo requiera por motivos de salud o culturales.",
+              "contextStart": 112418,
+              "contextEnd": 114987,
+              "contextSha256": "2b27d12db53babff90f75bd5163db2168f75f6a691b64f348df5be7d034b3c65",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -38677,12 +39443,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las becas y ayudas al estudio no establecen libros de texto gratuitos con permiso para copiarlos y compartirlos.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 51,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 122493,
+              "end": 122536,
+              "quote": "GARANTIZAREMOS UN SISTEMA NACIONAL DE BECAS",
+              "contextStart": 119107,
+              "contextEnd": 123095,
+              "contextSha256": "8af3a2baab06d13105c154fdf021f647bd9b383c0ca7e0dc3a0d94096ee52391",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -39648,12 +40438,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone recuperar la atención presencial en la Administración General del Estado; no extiende expresamente esa garantía a todas las administraciones.",
+          "authoredAnalysis": "Measure289 expressly recovers in-person access in the General State Administration. +1 preserves that substantive institution scope rather than asserting all territorial administrations/all procedures. Digital and in-person channels coexist.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 87,
+              "printedPage": 85,
+              "htmlSection": null,
+              "start": 196452,
+              "end": 196498,
+              "quote": "Recuperaremos la atención personal, presencial",
+              "contextStart": 194733,
+              "contextEnd": 197393,
+              "contextSha256": "5097754e78f4889f7c30730b69c4d38d50864e634bd04b9c8c357cff2f9d9fa6",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -40815,12 +41629,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reforma fiscal no concreta reducir el impuesto sobre el valor añadido de servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 23,
+              "printedPage": 21,
+              "htmlSection": null,
+              "start": 47774,
+              "end": 47826,
+              "quote": "REALIZAREMOS UNA REFORMA INTEGRAL DEL SISTEMA FISCAL",
+              "contextStart": 46824,
+              "contextEnd": 49807,
+              "contextSha256": "ea95a68025b06ab5085dc0329273efb35ab4cdcf696497c1f37bf05a4ec07711",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -41723,10 +42561,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece el derecho a reparar aparatos en talleres independientes del fabricante.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -42540,10 +43383,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece implantar un depósito reembolsable al devolver envases de bebidas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -43332,10 +44180,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece anticonceptivos gratuitos para personas jóvenes.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -44166,12 +45019,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La reserva estratégica de medicamentos y la reforma de sus compras no establecen una empresa pública que investigue y produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 47,
+              "printedPage": 45,
+              "htmlSection": null,
+              "start": 108141,
+              "end": 108163,
+              "quote": "RESERVA ESTRATÉGICA DE",
+              "contextStart": 106157,
+              "contextEnd": 110240,
+              "contextSha256": "39915e844ae244f12054ce50dfc66c844f6c62c463663581501468ca10f64ef8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -45143,12 +46020,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La ayuda para usar servicios digitales no establece una conexión básica gratuita a internet para todas las personas.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 91,
+              "printedPage": 89,
+              "htmlSection": null,
+              "start": 206969,
+              "end": 206993,
+              "quote": "conocimientos y/o medios",
+              "contextStart": 204195,
+              "contextEnd": 207903,
+              "contextSha256": "0dd41b8325b887a4a33cbbbc99611ae8e18fb1364a3e05ed176da3a9b7d843d9",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -46299,12 +47200,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una autoridad nacional del agua, sin establecer gestión pública de todo el suministro.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 37,
+              "printedPage": 35,
+              "htmlSection": null,
+              "start": 86180,
+              "end": 86207,
+              "quote": "Autoridad Nacional del Agua",
+              "contextStart": 84049,
+              "contextEnd": 87170,
+              "contextSha256": "942f0c3f453275dc2924378e641a5bc3f0641d0e44fc537c07312cd2e8502a9e",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -47385,12 +48310,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acceso universal a la atención temprana antes de los seis años, sin concretar que toda esa atención sea pública y gratuita.",
+          "authoredAnalysis": "Unknown: mainPPmeasure and adopted20 establish universal early access/coordination but do not expressly establish every public/free condition of the exact proposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 61,
+              "printedPage": 59,
+              "htmlSection": null,
+              "start": 143635,
+              "end": 143674,
+              "quote": "UNIVERSALIZAREMOS LA ATENCIÓN TEMPR ANA",
+              "contextStart": 143033,
+              "contextEnd": 145820,
+              "contextSha256": "819f7c04f86e76374c55c95544141c6ab2335b3772c422690014b922d6d031c7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 53,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 93346,
+              "end": 93422,
+              "quote": "Garantizar el acceso universal a un sistema de atención \ntemprana (0-6 años)",
+              "contextStart": 91709,
+              "contextEnd": 94181,
+              "contextSha256": "5ac126284fd7eaf823616068202624ce73a9a3efbaccdfeb711d3fcab4fce46c",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -48453,12 +49421,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los permisos de conciliación no establecen la reducción de jornada por cuidados hasta los 16 años.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 53,
+              "printedPage": 51,
+              "htmlSection": null,
+              "start": 126864,
+              "end": 126879,
+              "quote": "LOS PERMISOS DE",
+              "contextStart": 125279,
+              "contextEnd": 128034,
+              "contextSha256": "89bd8161aa7cab57cfa577af79fa57d6bbe5af5ca23beb58155e5a26ce81baa8",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -49504,10 +50496,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa creciente por frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -50320,10 +51317,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -51211,10 +52213,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir criar animales para obtener sus pieles.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -52120,10 +53127,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir el glifosato.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -53010,10 +54022,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -53898,12 +54915,36 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las reformas judiciales y del tribunal constitucional no establecen eliminar tribunales diferentes por razón del cargo público.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 75,
+              "printedPage": 73,
+              "htmlSection": null,
+              "start": 170428,
+              "end": 170471,
+              "quote": "REFORZAREMOS LAS GARANTÍAS DE INDEPENDENCIA",
+              "contextStart": 169701,
+              "contextEnd": 172405,
+              "contextSha256": "5b7c8ebf5d0ae4392367c1c35b4991e02086d914d903e1680d851b686af3e679",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -54789,10 +55830,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eliminar firmas de apoyo para candidaturas al Congreso sin representación.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -56617,12 +57663,73 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone detección y atención temprana de problemas de salud mental y una estrategia sanitaria, sin concretar la psicoterapia como servicio público.",
+          "authoredAnalysis": "Unknown: adopted106 early mental-health care and main mental-health/psychologist proposals do not specify psychotherapy as a public-service modality.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 49,
+              "printedPage": 47,
+              "htmlSection": null,
+              "start": 114295,
+              "end": 114340,
+              "quote": "una nueva Estrategia Nacional en Salud Mental",
+              "contextStart": 114057,
+              "contextEnd": 115967,
+              "contextSha256": "cbdd10eb6b2cff9e8f24f455e10eb3b9babe3d854b70b0ab7a93512b272d64db",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 63,
+              "printedPage": 61,
+              "htmlSection": null,
+              "start": 150044,
+              "end": 150071,
+              "quote": "los servicios de psicólogos",
+              "contextStart": 148787,
+              "contextEnd": 151574,
+              "contextSha256": "64dcf601167123282e3754e342acac299ad58d2d0fe7fdb29049d3d7585259bd",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 122906,
+              "end": 122962,
+              "quote": "Incorporar procedimientos de detección y atención precoz",
+              "contextStart": 121288,
+              "contextEnd": 123396,
+              "contextSha256": "40e3e66d26897a76218708fd89cd1a55dd1ac93973ee66b32e3a759cfadf0466",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -57786,10 +58893,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece apoyar el tratado internacional que prohíbe las armas nucleares.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -58688,12 +59800,55 @@
         },
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "El plan que adopta propone una norma nacional sobre anuncios de alimentos con muchas calorías, azúcar, sal o grasas dirigidos a menores, también en internet.",
+          "authoredAnalysis": "+2: operative27 establishes national child-directed unhealthy-food marketing regulation across all online/offline media/platforms; protective purpose and annex107 restriction correspondence establish the shown proposition. Consultation is an implementation process, not an age/content exception. No food-sale/adult-ad ban inferred.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 55,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 131129,
+              "end": 131162,
+              "quote": "Plan Estratégico Nacional para la",
+              "contextStart": 130819,
+              "contextEnd": 134594,
+              "contextSha256": "df0c97aa88414ef9589d01cd142fd2961eda02cb874f498ee285f586ceea27a7",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            },
+            {
+              "documentId": "childhood-obesity-2022-2030",
+              "sourceUrl": "https://www.comisionadopobrezainfantil.gob.es/sites/default/files/2023-01/Plan_obesidad_Completo_DIGITAL_paginas_1_0.pdf",
+              "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+              "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+              "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+              "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "htmlSection": null,
+              "start": 95581,
+              "end": 95971,
+              "quote": "Establecer una normativa nacional, en diálogo con los \ndistintos ministerios implicados y consultando a los sectores \nafectados, que regule el marketing dirigido a público infantil \nde alimentos y bebidas altos en calorías, azúcares, sal o \ngrasas, incluyendo la publicidad y promoción de productos \naplicada en todos los medios on y offine y plataformas de \ncomunicación o entretenimiento.",
+              "contextStart": 94182,
+              "contextEnd": 97157,
+              "contextSha256": "c156fcb2f128ccaf67b14a1688a0217fa2761494720c879bf8500406279d5958",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_two_adopted_references_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023",
+            "childhood-obesity-2022-2030"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -74544,10 +75699,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -75488,10 +76648,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -76251,12 +77416,36 @@
       "cells": [
         {
           "candidacyId": "boe-2023-001",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El refuerzo de la investigación universitaria no establece acceso libre a todos los resultados financiados con dinero público.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
+          "citations": [
+            {
+              "documentId": "pp",
+              "sourceUrl": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+              "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+              "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+              "notebook": "outputs/2023-programme-notebooks/pp.json",
+              "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+              "pdfPage": 52,
+              "printedPage": 50,
+              "htmlSection": null,
+              "start": 123725,
+              "end": 123737,
+              "quote": "Reforzaremos",
+              "contextStart": 123096,
+              "contextEnd": 125278,
+              "contextSha256": "6f1e709a201c4b1a91359b04074c606ff55abcd9ab443514252e42249ef1d5fb",
+              "provenanceEvidence": "outputs/2023-pp-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -77352,10 +78541,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "Las medidas de elección de alcaldes y del Senado no establecen una circunscripción única para todo el Congreso.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",
@@ -78396,10 +79590,15 @@
           "candidacyId": "boe-2023-001",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "La independencia de los medios públicos no establece igual tiempo de vídeos electorales para todos los partidos.",
+          "authoredAnalysis": "Direct comparison with the full retained112-page notebook and complete adopted30-page institutional reference. Related goals, whole-law reform, external-plan mentions, unspecified timing/service mechanism and unmentioned conditions do not establish the exact proposition. Unknown is never neutral or opposition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_main_and_adopted_reference_80_cell_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "pp",
+            "pp-institutional-quality-2023"
+          ]
         },
         {
           "candidacyId": "boe-2023-002",

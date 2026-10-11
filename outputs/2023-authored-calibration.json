@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T20:43:38.737720+00:00",
+  "recordedAt": "2026-10-11T21:16:18.108617+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -754,7 +754,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -1399,14 +1399,42 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "sourceExpectedValue": 1,
+          "sourceReason": "+1: operative19 expressly expands SNS dental portfolio for children/adolescents with nutrition/hygiene purpose. The exact rubric reserves+1 for specified limited group; no all-age/all-treatment/free-private dentistry inference.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-005",
           "expectedScored": false,
@@ -2492,7 +2520,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -3388,7 +3416,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -4800,7 +4828,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -5678,7 +5706,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -6113,7 +6141,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -6741,7 +6769,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -7174,7 +7202,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -7533,7 +7561,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -7907,7 +7935,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -8341,14 +8369,42 @@
               "expectedRelationship": "close"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "sourceExpectedValue": 1,
+          "sourceReason": "+1: operative80 expressly progresses toward free meal service for vulnerable children with broader nonterm access. Exact rubric+1 covers documented restricted group. School offer75 and annex110 recommendations do not establish universal free compulsory-stage meals or a guaranteed implementation date.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
@@ -8777,7 +8833,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-003",
@@ -10072,7 +10128,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -10464,7 +10520,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -10859,7 +10915,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -11603,7 +11659,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -12380,7 +12436,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -12747,7 +12803,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -14012,14 +14068,42 @@
               "expectedRelationship": "opposed"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "sourceExpectedValue": -2,
+          "sourceReason": "Explicit permitted sustainable hunting is directly inconsistent with a general nationwide hunting prohibition. -2 under the exact rubric; safety/environmental regulation remains possible and no blanket unregulated hunting inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
@@ -14408,7 +14492,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -15147,7 +15231,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -15519,7 +15603,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -16565,7 +16649,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -16937,7 +17021,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -17336,14 +17420,42 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Measure289 expressly recovers in-person access in the General State Administration. +1 preserves that substantive institution scope rather than asserting all territorial administrations/all procedures. Digital and in-person channels coexist.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
@@ -17775,7 +17887,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -19365,7 +19477,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -19737,7 +19849,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -20175,7 +20287,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -20537,7 +20649,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -20909,7 +21021,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -23291,7 +23403,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -24458,7 +24570,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -25219,14 +25331,42 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-001",
+          "sourceExpectedValue": 2,
+          "sourceReason": "+2: operative27 establishes national child-directed unhealthy-food marketing regulation across all online/offline media/platforms; protective purpose and annex107 restriction correspondence establish the shown proposition. Consultation is an implementation process, not an age/content exception. No food-sale/adult-ad ban inferred.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
-        {
-          "candidacyId": "boe-2023-001",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
         {
           "candidacyId": "boe-2023-002",
           "expectedScored": false,
@@ -31289,7 +31429,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -31661,7 +31801,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -32033,7 +32173,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -32438,7 +32578,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-002",
@@ -32805,7 +32945,7 @@
         {
           "candidacyId": "boe-2023-001",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-002",

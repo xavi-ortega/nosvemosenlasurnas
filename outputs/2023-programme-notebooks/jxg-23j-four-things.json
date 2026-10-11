@@ -2,16 +2,16 @@
   "schemaVersion": 1,
   "documentId": "jxg-23j-four-things-archive",
   "candidacyId": "boe-2023-044",
-  "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+  "recordedAt": "2026-10-11T14:59:32.988861+00:00",
   "sourceSha256": "b4bd9d4aeea940129e58f1dce4c46a8a6bd987a132be17e54fd1d0d730f67371",
   "extractionSha256": "ffea37c759e7d0d31fba3952d7b628d51e62818b828b6ecf5d32bba7347890fc",
   "extraction": "stdlib_htmlparser_visible_text_v1",
   "format": "html",
   "sectionCount": 6,
-  "fullDocumentRead": false,
+  "fullDocumentRead": true,
   "fullNativeTextRead": true,
-  "readingMode": "Complete native article directly read in full, including all four policy sections, introduction, ending and surrounding interface. Exact original/extraction hashes and literal offsets checked. Embedded visual assets are not inspected; no full original-reading claim.",
-  "provenanceStatus": "primary_july7_2023_programme_preserved_july10_2023_visual_completion_pending",
+  "readingMode": "Entire native article directly read, all six ranges and all four policy sections, opening, closing and surrounding interface; both original embedded electoral visuals directly read in native Chrome and original bytes/hash retained afterward. No automated semantic authoring.",
+  "provenanceStatus": "primary_july7_2023_programme_preserved_july10_2023_complete_article_read",
   "originalUrl": "https://juntosxgranada.es/te-voy-a-decir-cuatro-cosas/",
   "publishedAt": "2023-07-07",
   "archiveCapture": "2023-07-10T16:35:06Z",
@@ -61,7 +61,7 @@
       "heading": "Closing and external assets",
       "start": 12705,
       "end": 20640,
-      "authoredAnalysis": "All closing campaign invitation, sharing/other articles/navigation/footer/cookie texts read. External assets include an Acrobat screenshot and campaign image; neither was visually read. No linked PDF programme or substantive footnote identified. Original completion stays pending."
+      "authoredAnalysis": "Complete closing, sharing, other articles, navigation, footer and cookie text read. Embedded election cover and emblem now directly read in full; neither adds a policy clause. Cover refers to a 20-reasons item, whose separate full original remains unresolved; the article is not proof of that booklet completeness."
     }
   ],
   "excerpts": [
@@ -137,9 +137,39 @@
     }
   ],
   "uncertainties": [
-    "Embedded Acrobat screenshot and campaign image not visually inspected; available browser inventory is empty and web image reader failed.",
     "Published article claims on job creation, efficiency, costs and regional comparisons are not independently proved.",
-    "Question/citation/calibration authoring remains separate; the municipal programme is not inherited."
+    "Question/citation/calibration authoring remains separate; the municipal programme is not inherited.",
+    "The electoral cover references 20 reasons. The bounded 2023 primary-PDF archive index contains five files, including municipal 28M material and forms, but no verified 23J booklet. Neither archive absence nor booklet equivalence is certified."
   ],
-  "authorship": "Direct complete native reading and English authored analysis with exact original quotations; no generated semantic summaries or numeric decisions."
+  "authorship": "Direct complete article and embedded visual reading with English authored analysis and exact original quotations. Original/offset/hash validation is deterministic; no generated question or numeric position.",
+  "embeddedVisualAssets": [
+    {
+      "id": "jxg-23j-electoral-cover",
+      "url": "https://web.archive.org/web/20230708083324im_/https://juntosxgranada.es/wp-content/uploads/2023/06/Screenshot_20230623_230953_Adobe-Acrobat.jpg",
+      "retrievedAt": "2026-10-11T14:57:14.537964+00:00",
+      "purpose": "Retain original provenance bytes for source assets already directly read in the native browser; no display fallback.",
+      "resolvedUrl": "https://web.archive.org/web/20230708083324im_/https://juntosxgranada.es/wp-content/uploads/2023/06/Screenshot_20230623_230953_Adobe-Acrobat.jpg",
+      "mediaType": "image/jpeg",
+      "status": "source_asset_retained_after_direct_visual_read",
+      "file": "storage/app/election-sources/2023-congress/jxg-23j-electoral-cover-addc9fa85a27.jpg",
+      "sha256": "addc9fa85a2725821c1b8b64e579c1b30f428676b795516d0eb98b15bc6e8067",
+      "bytes": 344331,
+      "authoredVisualAnalysis": "Directly read complete 1113x1573 electoral cover in native Chrome: Congress building, JxG identity, general-election label, 20-reasons heading and QR. No policy clauses or footnotes. The referenced wider booklet is not acquired or presumed identical to the four-section article.",
+      "fullVisualRead": true
+    },
+    {
+      "id": "jxg-23j-campaign-emblem",
+      "url": "https://web.archive.org/web/20230606195807im_/https://juntosxgranada.es/wp-content/uploads/2023/06/logo_EG23cp1.png",
+      "retrievedAt": "2026-10-11T14:57:14.538161+00:00",
+      "purpose": "Retain original provenance bytes for source assets already directly read in the native browser; no display fallback.",
+      "resolvedUrl": "https://web.archive.org/web/20230606195807im_/https://juntosxgranada.es/wp-content/uploads/2023/06/logo_EG23cp1.png",
+      "mediaType": "image/png",
+      "status": "source_asset_retained_after_direct_visual_read",
+      "file": "storage/app/election-sources/2023-congress/jxg-23j-campaign-emblem-ff34eda43f5d.png",
+      "sha256": "ff34eda43f5df2aedf8be58ac385faad1ba8bbe9aa6568dcdfe3b37af21241fe",
+      "bytes": 234020,
+      "authoredVisualAnalysis": "Directly read complete 600x600 campaign emblem in native Chrome: pomegranate, JxG and 23J election label. No policy clauses or footnotes.",
+      "fullVisualRead": true
+    }
+  ]
 }

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "documentId": "palenciatierraviva",
+  "candidacyId": "boe-2023-052",
+  "recordedAt": "2026-10-11T07:56:04.078911+00:00",
+  "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+  "extractionSha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+  "extraction": "pypdf_native_layout_v1",
+  "pageCount": 6,
+  "fullDocumentRead": true,
+  "readingMode": "Direct visual sequential reading of all six original image-based pages; native extraction contains only five form-feed bytes.",
+  "coverage": [
+    {
+      "pdfPage": 1,
+      "authoredAnalysis": "Original cover visually read: general election 23 July 2023 and Palencia Tierra Viva identity."
+    },
+    {
+      "pdfPage": 2,
+      "authoredAnalysis": "Entire policy panel read visually: special reduced territorial tax treatment/free zones; possibility of deduction/reinvestment of 20% of income tax; VAT relief for individuals who start businesses or settle locally. Rail integration, definitive Palencia rail burial and compensation for transit territories; farm modernisation/research/fair prices and small-medium livestock/forest management; hunting and fishing within environmental respect; special small-administration statute and bureaucracy reduction. Percentage wording remains ambiguous."
+    },
+    {
+      "pdfPage": 3,
+      "authoredAnalysis": "Four electoral reasons and appeal for local representation: capital/province identity, dissatisfaction with party interests, ethics and youth opportunities. These campaign claims do not establish additional scored policy instruments."
+    },
+    {
+      "pdfPage": 4,
+      "authoredAnalysis": "Publisher/local organisation identity and independence/diversity statement, president name and facsimile signature. No additional policy or formal source-review approval."
+    },
+    {
+      "pdfPage": 5,
+      "authoredAnalysis": "Original Congress and Senate candidate lists visually read; identifies applicable Congress candidacy and separates Senate identities."
+    },
+    {
+      "pdfPage": 6,
+      "authoredAnalysis": "Contact/back panel and organisation logo; no further proposal, annex or footnote."
+    }
+  ],
+  "claims": [
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "ZONAS FRANCAS",
+      "start": null,
+      "end": null,
+      "analysis": "Territorial free zones.",
+      "conditionsAndContext": "Special treatment for this territory; no automatic nationwide measure.",
+      "numericPosition": null,
+      "locatorType": "original_visual_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "DESGRABACIÓN y REINVERSIÓN",
+      "start": null,
+      "end": null,
+      "analysis": "Income-tax treatment.",
+      "conditionsAndContext": "Source spelling retained. The 20% provision is not precise enough to infer a general 20% tax cut.",
+      "numericPosition": null,
+      "locatorType": "original_visual_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "REDUCCIÓN del IVA",
+      "start": null,
+      "end": null,
+      "analysis": "VAT reduction.",
+      "conditionsAndContext": "Individuals undertaking activity here or settling in the territory; no specified VAT rate.",
+      "numericPosition": null,
+      "locatorType": "original_visual_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "la caza y la pesca",
+      "start": null,
+      "end": null,
+      "analysis": "Rural hunting/fishing.",
+      "conditionsAndContext": "Promotion paired with respect for the environment; no unqualified removal of protections.",
+      "numericPosition": null,
+      "locatorType": "original_visual_page"
+    }
+  ],
+  "provenanceStatus": "primary_party_original_explicit_general_election_23_july_2023_and_congress_candidates",
+  "scoringReady": false,
+  "uncertainties": [
+    "Native extraction is empty; visual quotations need a checked transcription/locator artifact before bundle release.",
+    "Deduction/reinvestment of 20% of income tax has unresolved mechanism/base; never translate it into a blanket tax-rate cut.",
+    "Do not inherit this local programme to other parties or territories."
+  ],
+  "authorship": "Direct agent-authored semantic notebook; code only verifies supplied excerpts and hashes. No generated questions or numeric positions."
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "documentId": "almerienses",
+  "candidacyId": "boe-2023-048",
+  "recordedAt": "2026-10-11T07:56:04.078911+00:00",
+  "sourceSha256": "a701772abfd3776228cc5989453bc0719a90142f2c3d2b239e768b2a12699233",
+  "extractionSha256": "e2d8f0723a71e708300844646e5d6dcf3a0217f079fbc4f385bdd1f80ac9471b",
+  "extraction": "pypdf_native_layout_v1",
+  "pageCount": 2,
+  "fullDocumentRead": true,
+  "readingMode": "Direct reading of both complete extracted pages followed by visual reading of both original rendered pages and all 33 numbered measures.",
+  "coverage": [
+    {
+      "pdfPage": 1,
+      "authoredAnalysis": "Cover and three programme pillars: territorial recognition, State infrastructure/services investment, agriculture and economic diversification; no additional numbered measure."
+    },
+    {
+      "pdfPage": 2,
+      "authoredAnalysis": "All 33 numbered proposals read in original columns. Measures 1-8: settlement-related tax reduction in depopulated areas, basic services within 20 minutes, rural connectivity, archaeological heritage, Los Millares recognition, Laujar convent rehabilitation, Palomares radioactive cleanup and forest recovery. Measures 9-17: Mediterranean rail by 2026 and station/burial, Poniente-Nijar-Bajo Andarax commuter rail, Guadix-Almendricos reopening, three ports investment, public-service flights to Madrid/Barcelona and resident discounts, plus named A7/A92/N341 works. Measures 18-23: more police/Guardia Civil, local judges rank, immigration appointment administration, family farming, prevent below-cost sales/import/relabel abuses and agroindustry. Measures 24-33: named desalination plants, Tajo-Segura committed flow, Balsa del Sapo works, coastal regeneration, environmental/cultural tourism, advanced services, agricultural manufacturing and cinema infrastructure. No annex/footnote on either page."
+    }
+  ],
+  "claims": [
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "20 minutos.",
+      "start": 3175,
+      "end": 3186,
+      "analysis": "Basic-service travel-time target.",
+      "conditionsAndContext": "Healthcare, education and social services in Almeria; not a universal national travel guarantee.",
+      "numericPosition": null,
+      "locatorType": "native_text_offset_and_pdf_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "precios reducidos",
+      "start": 7742,
+      "end": 7759,
+      "analysis": "Resident flight discounts.",
+      "conditionsAndContext": "Almeria residents; references island/enclave regimes without naming an exact discount percentage.",
+      "numericPosition": null,
+      "locatorType": "native_text_offset_and_pdf_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "presión ﬁscal",
+      "start": 1270,
+      "end": 1283,
+      "analysis": "Settlement-oriented tax relief.",
+      "conditionsAndContext": "Families and businesses in the most depopulated areas; no named tax rate or blanket nationwide reduction.",
+      "numericPosition": null,
+      "locatorType": "native_text_offset_and_pdf_page"
+    },
+    {
+      "pdfPage": 2,
+      "printedPage": null,
+      "quote": "Tajo-Segura.",
+      "start": 4517,
+      "end": 4529,
+      "analysis": "Restore committed water transfer.",
+      "conditionsAndContext": "Named PHN flow commitment; neither volume nor unconditional inter-basin policy inferred.",
+      "numericPosition": null,
+      "locatorType": "native_text_offset_and_pdf_page"
+    }
+  ],
+  "provenanceStatus": "primary_party_pdf_and_10_july_2023_publication_explicit_general_election_23_july",
+  "scoringReady": false,
+  "uncertainties": [
+    "PDF itself does not state the election date; contemporary primary publication supplies date/application.",
+    "No numerical discount rate or tax-rate schedule is given.",
+    "Proposals apply to Almeria; no automatic extension to other territorial parties."
+  ],
+  "authorship": "Direct agent-authored semantic notebook; code only verifies supplied excerpts and hashes. No generated questions or numeric positions."
+}

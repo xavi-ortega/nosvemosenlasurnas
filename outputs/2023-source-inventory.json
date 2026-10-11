@@ -10,7 +10,8 @@
   "notes": [
     "Official result-table denominations are not yet deduplicated programme owners or final candidacy records. Preserve territorial/coalition distinctions until documented applicability permits sharing.",
     "Cross-check proclaimed lists, corrections, withdrawals and final result corrections before certifying complete coverage. Results/vote totals are for roster reconciliation only and must never weight the quiz.",
-    "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions."
+    "Official roster reconciliation: 584 original Congress entries, 35 initially non-proclaimed, one restored (PACMA Teruel) by BOE-A-2023-15828, 550 final ballot choices and 34 excluded records retained. Exact 550 candidature/constituency pairs equal the 59 result denominations across 52 constituencies; roster aggregation does not authorise shared programme positions.",
+    "Acquired document IDs do not automatically establish election/territorial/coalition applicability. The BNG supplementary document was read visually because native text is incomplete. Main programme remains unread."
   ],
   "candidacies": [
     {
@@ -491,9 +492,11 @@
           "votes": 6943
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "psoe-preserved-objective"
+      ],
       "ballotAliases": [
         "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
         "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE (PSOE)",
@@ -764,9 +767,11 @@
           "votes": 4359
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "vox-campaign-30mb"
+      ],
       "ballotAliases": [
         "VOX (VOX)"
       ],
@@ -1169,9 +1174,11 @@
           "votes": 55461
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "erc-july"
+      ],
       "ballotAliases": [
         "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)"
       ],
@@ -1205,9 +1212,11 @@
           "votes": 40791
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "junts-preserved-abc"
+      ],
       "ballotAliases": [
         "JUNTS (JUNTS)",
         "JUNTS PER CATALUNYA-JUNTS (J x CAT-JUNTS)",
@@ -1243,9 +1252,11 @@
           "votes": 58954
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "preserved_pdf_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "ehbildu-preserved-newtral"
+      ],
       "ballotAliases": [
         "EUSKAL HERRIA BILDU (EH Bildu)"
       ],
@@ -1255,6 +1266,9 @@
         "congress-bizkaia-1",
         "congress-gipuzkoa-1",
         "congress-navarra-1"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/ehbildu.json"
       ]
     },
     {
@@ -1275,9 +1289,11 @@
           "votes": 85026
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "pnv"
+      ],
       "ballotAliases": [
         "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)"
       ],
@@ -1310,9 +1326,12 @@
           "votes": 53828
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "document_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "bng",
+        "bng-decalogue"
+      ],
       "ballotAliases": [
         "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
         "BLOQUE NACIONALISTA GALEGO (BNG)"
@@ -1323,6 +1342,9 @@
         "congress-lugo-6",
         "congress-ourense-6",
         "congress-pontevedra-8"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/bng-decalogue.json"
       ]
     },
     {
@@ -1339,16 +1361,22 @@
           "votes": 82805
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "document_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "cc-manifesto"
+      ],
       "ballotAliases": [
         "COALICIÓN CANARIA (CCa)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_manifesto_CC_Canary_ballots_no_CCD_inheritance",
       "ballotRecordIds": [
         "congress-laspalmas-5",
         "congress-santacruzdetenerife-4"
+      ],
+      "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+      "notebooks": [
+        "outputs/2023-programme-notebooks/coalicion-canaria.json"
       ]
     },
     {
@@ -1361,15 +1389,21 @@
           "votes": 52188
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "primary_pdf_acquired",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "upn"
+      ],
       "ballotAliases": [
         "UNIÓN DEL PUEBLO NAVARRO (UPN)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_general_election_primary_UPN_Navarra_only",
       "ballotRecordIds": [
         "congress-navarra-5"
+      ],
+      "notebook": "outputs/2023-programme-notebooks/upn.json",
+      "notebooks": [
+        "outputs/2023-programme-notebooks/upn.json"
       ]
     },
     {
@@ -1668,18 +1702,25 @@
           "votes": 8700
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "document_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "cup-primary",
+        "cup-preserved-lasexta"
+      ],
       "ballotAliases": [
         "CANDIDATURA D'UNITAT POPULAR-PER LA RUPTURA (CUP-PR)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "primary_explicit_23j_congress_CUP_PR_four_Catalan_constituencies",
       "ballotRecordIds": [
         "congress-barcelona-12",
         "congress-girona-9",
         "congress-lleida-9",
         "congress-tarragona-10"
+      ],
+      "notebook": "outputs/2023-programme-notebooks/cup.json",
+      "notebooks": [
+        "outputs/2023-programme-notebooks/cup.json"
       ]
     },
     {
@@ -1996,9 +2037,12 @@
           "votes": 2311
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "pdecat-primary-cdn",
+        "pdecat-preserved-beteve"
+      ],
       "ballotAliases": [
         "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU (PDeCAT-E-CiU)"
       ],
@@ -2452,9 +2496,11 @@
           "votes": 40
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "pumj"
+      ],
       "ballotAliases": [
         "BIDEZKO MUNDURANTZ (PUM+J)",
         "POR UN MUNDO MAIS XUSTO (PUM+J)",
@@ -2550,9 +2596,11 @@
           "votes": 7780
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "document_acquired_applicability_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "teruel-existe"
+      ],
       "ballotAliases": [
         "ARAGÓN EXISTE - COALICIÓN EXISTE (EXISTE)",
         "TERUEL EXISTE-Coalición EXISTE (EXISTE)"
@@ -2702,9 +2750,11 @@
           "votes": 561
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "document_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "pcte"
+      ],
       "ballotAliases": [
         "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
         "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO LANGILEEN ALDERDI KOMUNISTA (PCTE/ELAK)",
@@ -2746,6 +2796,9 @@
         "congress-valladolid-12",
         "congress-zamora-12",
         "congress-zaragoza-7"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/pcte.json"
       ]
     },
     {
@@ -2800,9 +2853,11 @@
           "votes": 9191
         }
       ],
-      "programmeSearchStatus": "pending",
+      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
       "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeIds": [
+        "adelante"
+      ],
       "ballotAliases": [
         "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)"
       ],
@@ -2997,9 +3052,11 @@
           "votes": 1056
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "document_acquired_applicability_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "caminando-preserved-i28"
+      ],
       "ballotAliases": [
         "CAMINANDO JUNTOS (CJ)"
       ],
@@ -3015,6 +3072,10 @@
         "congress-segovia-6",
         "congress-sevilla-7",
         "congress-valencia-11"
+      ],
+      "notebook": "outputs/2023-programme-notebooks/caminando-juntos.json",
+      "notebooks": [
+        "outputs/2023-programme-notebooks/caminando-juntos.json"
       ]
     },
     {
@@ -3109,9 +3170,11 @@
           "votes": 272
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "falange-primary"
+      ],
       "ballotAliases": [
         "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
         "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)"
@@ -3129,6 +3192,9 @@
         "congress-valencia-4",
         "congress-valladolid-8",
         "congress-zaragoza-10"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/falange.json"
       ]
     },
     {
@@ -3481,15 +3547,20 @@
           "votes": 874
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "almerienses"
+      ],
       "ballotAliases": [
         "ALMERIENSES-REGIONALISTAS PRO ALMERÍA (ALM)"
       ],
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-almeria-4"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/almerienses.json"
       ]
     },
     {
@@ -3581,15 +3652,20 @@
           "votes": 366
         }
       ],
-      "programmeSearchStatus": "pending",
-      "analysisStatus": "not_started",
-      "programmeIds": [],
+      "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
+      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeIds": [
+        "palenciatierraviva"
+      ],
       "ballotAliases": [
         "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA (GITV)"
       ],
       "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
       "ballotRecordIds": [
         "congress-palencia-12"
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/palenciatierraviva.json"
       ]
     },
     {
@@ -3811,7 +3887,14 @@
       "sha256": "d5ccdac0d20f1b93a5f703f180d086041bd988835072dd5cb5d1378bf0195820",
       "bytes": 2567339,
       "mediaType": "application/pdf",
-      "retrievedAt": "2026-10-11T06:13:50.600979+00:00"
+      "retrievedAt": "2026-10-11T06:13:50.600979+00:00",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/sumar.txt",
+        "sha256": "140b13f8b05825120102a43f7b5e3f2521417f7df6cde02ca9fd7e602c0c9d21",
+        "pageCount": 182,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "vox",
@@ -3827,7 +3910,14 @@
       "file": "storage/app/election-sources/2023-congress/pp.pdf",
       "sha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
       "bytes": 8214497,
-      "retrievedAt": "2026-10-11T06:16:17.816994+00:00"
+      "retrievedAt": "2026-10-11T06:16:17.816994+00:00",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pp.txt",
+        "sha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+        "pageCount": 112,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "vox",
@@ -3843,7 +3933,14 @@
       "file": "storage/app/election-sources/2023-congress/pacma.pdf",
       "sha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
       "bytes": 1123643,
-      "retrievedAt": "2026-10-11T06:16:17.537435+00:00"
+      "retrievedAt": "2026-10-11T06:16:17.537435+00:00",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pacma.txt",
+        "sha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+        "pageCount": 76,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "psoe",
@@ -3890,7 +3987,14 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/erc-july.pdf",
       "sha256": "455e0629d90ef63ab59c43c35d67cdd739165958587e3242eb5b6e4914afe991",
-      "bytes": 1261619
+      "bytes": 1261619,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/erc-july.txt",
+        "sha256": "d7d23847d698684a5bb5fc991b2a9f50c4b2b03e4baf288930980a74cdbe1a74",
+        "pageCount": 132,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "upn",
@@ -3902,7 +4006,16 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/upn.pdf",
       "sha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
-      "bytes": 628803
+      "bytes": 628803,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/upn.txt",
+        "sha256": "6c3524d25f07bfae05f23a795c68c71fb8c38e0a4737040973e4b4818280f867",
+        "pageCount": 6,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/upn.json"
     },
     {
       "id": "junts-preserved-abc",
@@ -3914,7 +4027,14 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/junts-preserved-abc.pdf",
       "sha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
-      "bytes": 6579528
+      "bytes": 6579528,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/junts-preserved-abc.txt",
+        "sha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+        "pageCount": 151,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "ehbildu-preserved-newtral",
@@ -3926,7 +4046,18 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.pdf",
       "sha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
-      "bytes": 64872
+      "bytes": 64872,
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/ehbildu.json",
+      "textSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+      "pageCount": 16,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.txt",
+        "sha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+        "pageCount": 16,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      }
     },
     {
       "id": "pnv",
@@ -3938,7 +4069,14 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/pnv.pdf",
       "sha256": "46fec3a017cdc5c4e506fa5e228b97690071d5a03dfd3d8128392aa20f57d132",
-      "bytes": 3602932
+      "bytes": 3602932,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pnv.txt",
+        "sha256": "9f2b300764933ee8d83391a925cbc849d75549324834a61a305e4e4b48c75950",
+        "pageCount": 52,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "bng",
@@ -3950,7 +4088,14 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/bng.pdf",
       "sha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
-      "bytes": 396842
+      "bytes": 396842,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/bng.txt",
+        "sha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+        "pageCount": 68,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
     },
     {
       "id": "bng-decalogue",
@@ -3962,7 +4107,16 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/bng-decalogue.pdf",
       "sha256": "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3",
-      "bytes": 946734
+      "bytes": 946734,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/bng-decalogue.txt",
+        "sha256": "ab91a61c1d9705d98fe46ee5d1b910217d10510067b7ba5417146d28b6bffb95",
+        "pageCount": 4,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json"
     },
     {
       "id": "cc-manifesto",
@@ -3974,7 +4128,16 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/cc-manifesto.pdf",
       "sha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
-      "bytes": 219682
+      "bytes": 219682,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/cc-manifesto.txt",
+        "sha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+        "pageCount": 14,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json"
     },
     {
       "id": "pcte",
@@ -3986,7 +4149,16 @@
       "status": "downloaded_applicability_pending_not_analysed",
       "file": "storage/app/election-sources/2023-congress/pcte.pdf",
       "sha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
-      "bytes": 2492669
+      "bytes": 2492669,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pcte.txt",
+        "sha256": "fa1ce59f1a89bcd231e79ba69f2cd9cbefb1d3f5fd0b689a55b296af6da18f4a",
+        "pageCount": 24,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/pcte.json"
     },
     {
       "id": "recortes-cero",
@@ -3997,14 +4169,386 @@
       "mediaType": "text/html; charset=UTF-8",
       "status": "retrieval_failed",
       "error": "Response is not a bounded PDF: text/html; charset=UTF-8"
+    },
+    {
+      "id": "pumj",
+      "url": "https://www.porunmundomasjusto.es/wp-content/uploads/2023/07/Programa-Electoral-Por-Un-Mundo-Mas-Justo-Elecciones-Generales-2023.pdf",
+      "publicationUrl": "https://www.porunmundomasjusto.es/",
+      "retrievedAt": "2026-10-11T07:42:00.721816+00:00",
+      "resolvedUrl": "https://www.porunmundomasjusto.es/wp-content/uploads/2023/07/Programa-Electoral-Por-Un-Mundo-Mas-Justo-Elecciones-Generales-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/pumj.pdf",
+      "sha256": "3ecd58b5c3ee42cdbaf005025bbe3c2c73bd58b7267212a82be126e1553fe34e",
+      "bytes": 7458720,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pumj.txt",
+        "sha256": "2624abd20b905e9883cd59ba93a742592ee481f5c5dabbdae73456076baf3bdb",
+        "pageCount": 39,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "psoe-preserved-objective",
+      "url": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "publicationUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "retrievedAt": "2026-10-11T07:43:38.596882+00:00",
+      "resolvedUrl": "https://theobjective.com/wp-content/uploads/2023/07/PROGRAMA_ELECTORAL-GENERALES-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/psoe-preserved-objective.pdf",
+      "sha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+      "bytes": 6619452,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/psoe-preserved-objective.txt",
+        "sha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+        "pageCount": 272,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "vox-campaign",
+      "url": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+      "publicationUrl": "https://www.voxespana.es/programa/programa-electoral-Vox",
+      "retrievedAt": "2026-10-11T07:43:38.597214+00:00",
+      "resolvedUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: application/pdf"
+    },
+    {
+      "id": "pdecat-primary-cdn",
+      "url": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+      "publicationUrl": "https://beteve.cat/politica/programa-pdecat-eleccions-generals-2023/",
+      "retrievedAt": "2026-10-11T07:43:38.597288+00:00",
+      "resolvedUrl": "https://media.timtul.com/media/pdecat/Programa%2BElectoral%2B%2BGenerals%2B2023%2BV2_20230717123748.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/pdecat-primary-cdn.pdf",
+      "sha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+      "bytes": 481870,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pdecat-primary-cdn.txt",
+        "sha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+        "pageCount": 35,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "pdecat-preserved-beteve",
+      "url": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-pdecat-eleccions-generals-2023-190723.pdf",
+      "publicationUrl": "https://beteve.cat/politica/programa-pdecat-eleccions-generals-2023/",
+      "retrievedAt": "2026-10-11T07:43:38.597338+00:00",
+      "resolvedUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-pdecat-eleccions-generals-2023-190723.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/pdecat-preserved-beteve.pdf",
+      "sha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+      "bytes": 481870,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/pdecat-preserved-beteve.txt",
+        "sha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+        "pageCount": 35,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "teruel-existe",
+      "url": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf",
+      "publicationUrl": "https://teruelexiste.info/programa-elecciones-generales-23j/",
+      "retrievedAt": "2026-10-11T07:43:38.897168+00:00",
+      "resolvedUrl": "https://teruelexiste.info/wp-content/uploads/2023/07/Programa_23J-2023-_Teruel_Existe_-elecciones-generales.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/teruel-existe.pdf",
+      "sha256": "1443b068f97f23b455cbf16dd192e21b0656d8b23e4755fb6572d98fc6930d14",
+      "bytes": 392336,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/teruel-existe.txt",
+        "sha256": "d3a99ceffaf2031f58a24143e9c9ef6b480abce22875f28c08020fdd79da01d6",
+        "pageCount": 29,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "compromis-sumar",
+      "url": "https://sumar.compromis.net/docs/programa-cas.pdf",
+      "publicationUrl": "https://sumar.compromis.net/cas",
+      "retrievedAt": "2026-10-11T07:43:38.985007+00:00",
+      "resolvedUrl": "https://sumar.compromis.net/docs/programa-cas.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/compromis-sumar.pdf",
+      "sha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+      "bytes": 542885,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/compromis-sumar.txt",
+        "sha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+        "pageCount": 13,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "cup-preserved-lasexta",
+      "url": "https://www.lasexta.com/documents/2023/07/12/D47C2BD0-8B64-47E1-A2BB-3E540E34138D/programaelectoralcup.pdf",
+      "publicationUrl": "https://www.lasexta.com/elecciones/generales/buscador-consulta-aqui-programa-cada-partido-que-presenta-estas-elecciones-generales-23j_2023071264aeb48ef7868800013fae32.html",
+      "retrievedAt": "2026-10-11T07:45:19.704437+00:00",
+      "resolvedUrl": "https://www.lasexta.com/documents/2023/07/12/D47C2BD0-8B64-47E1-A2BB-3E540E34138D/programaelectoralcup.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/cup-preserved-lasexta.pdf",
+      "sha256": "cadc3b68e128640dd263d499cace2c8266d7971984cb26f4aa7ba8f42c621a16",
+      "bytes": 4822692,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/cup-preserved-lasexta.txt",
+        "sha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4",
+        "pageCount": 12,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "vox-preserved-lasexta",
+      "url": "https://www.lasexta.com/documents/2023/07/07/382F5DE1-3F3F-4B19-8F78-4EBCF6BBAD46/programa_vox_060723.pdf",
+      "publicationUrl": "https://www.lasexta.com/elecciones/generales/buscador-consulta-aqui-programa-cada-partido-que-presenta-estas-elecciones-generales-23j_2023071264aeb48ef7868800013fae32.html",
+      "retrievedAt": "2026-10-11T07:45:19.704729+00:00",
+      "resolvedUrl": "https://www.lasexta.com/documents/2023/07/07/382F5DE1-3F3F-4B19-8F78-4EBCF6BBAD46/programa_vox_060723.pdf",
+      "mediaType": "application/pdf",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: application/pdf"
+    },
+    {
+      "id": "ehbildu-preserved-lasexta",
+      "url": "https://www.lasexta.com/documents/2023/07/12/4B5C6260-7FA1-497B-A049-89AB63C4B8D4/programaelectoralbildu_1.pdf",
+      "publicationUrl": "https://www.lasexta.com/elecciones/generales/buscador-consulta-aqui-programa-cada-partido-que-presenta-estas-elecciones-generales-23j_2023071264aeb48ef7868800013fae32.html",
+      "retrievedAt": "2026-10-11T07:45:19.704830+00:00",
+      "resolvedUrl": "https://www.lasexta.com/documents/2023/07/12/4B5C6260-7FA1-497B-A049-89AB63C4B8D4/programaelectoralbildu_1.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-lasexta.pdf",
+      "sha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
+      "bytes": 64872,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/ehbildu-preserved-lasexta.txt",
+        "sha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+        "pageCount": 16,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "caminando-preserved-i28",
+      "url": "https://iniciativa2028.es/wp-content/uploads/2023/07/4-Caminando-Juntos-programa-23J.pdf",
+      "publicationUrl": "https://iniciativa2028.es/programa-electoral-de-caminando-juntos/",
+      "retrievedAt": "2026-10-11T07:45:19.704912+00:00",
+      "resolvedUrl": "https://iniciativa2028.es/wp-content/uploads/2023/07/4-Caminando-Juntos-programa-23J.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/caminando-preserved-i28.pdf",
+      "sha256": "eeb4b4d21551840355d169c46a515cbc4f93a4b37acccb4b6c317a732c437103",
+      "bytes": 244571,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/caminando-preserved-i28.txt",
+        "sha256": "708dce749b4b9216c1f5354704aa81b24d1e74ea950779106e54799d5425f39c",
+        "pageCount": 2,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/caminando-juntos.json"
+    },
+    {
+      "id": "falange",
+      "url": "https://falange.es/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+      "publicationUrl": "https://falange.es/",
+      "retrievedAt": "2026-10-11T07:45:19.854644+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "vox-campaign-30mb",
+      "url": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+      "resolvedUrl": "https://votaabascal.es/assets/pdf/Programa-VOX-2023.pdf",
+      "publicationUrl": "https://www.voxespana.es/programa/programa-electoral-Vox",
+      "retrievedAt": "2026-10-11T07:46:25.951437+00:00",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/vox-campaign-30mb.pdf",
+      "sha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+      "bytes": 30052378,
+      "mediaType": "application/pdf",
+      "researchByteLimit": 33554432,
+      "notes": "Earlier 20 MiB acquisition failed because the actual original has 30,052,378 bytes. Bounded 32 MiB read-only research acquisition; existing application importer limits are unchanged.",
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/vox-campaign-30mb.txt",
+        "sha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+        "pageCount": 178,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "cup-primary",
+      "url": "https://cup.cat/wp-content/uploads/2023/07/AF_Programa-electoral_Congres-2023.pdf",
+      "publicationUrl": "https://cup.cat/plantem-cara/",
+      "retrievedAt": "2026-10-11T07:49:08.348257+00:00",
+      "resolvedUrl": "https://cup.cat/wp-content/uploads/2023/07/AF_Programa-electoral_Congres-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/cup-primary.pdf",
+      "sha256": "cadc3b68e128640dd263d499cace2c8266d7971984cb26f4aa7ba8f42c621a16",
+      "bytes": 4822692,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/cup-primary.txt",
+        "sha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4",
+        "pageCount": 12,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/cup.json"
+    },
+    {
+      "id": "poravila",
+      "url": "https://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.59.pdf",
+      "publicationUrl": "https://poravila.es/candidaturas-23j",
+      "retrievedAt": "2026-10-11T07:49:08.348596+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "almerienses",
+      "url": "https://www.proalmerienses.es/wp-content/uploads/2023/07/Programa_23J.pdf",
+      "publicationUrl": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+      "retrievedAt": "2026-10-11T07:49:08.348687+00:00",
+      "resolvedUrl": "https://www.proalmerienses.es/wp-content/uploads/2023/07/Programa_23J.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/almerienses.pdf",
+      "sha256": "a701772abfd3776228cc5989453bc0719a90142f2c3d2b239e768b2a12699233",
+      "bytes": 820660,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/almerienses.txt",
+        "sha256": "e2d8f0723a71e708300844646e5d6dcf3a0217f079fbc4f385bdd1f80ac9471b",
+        "pageCount": 2,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/almerienses.json"
+    },
+    {
+      "id": "palenciatierraviva",
+      "url": "https://palenciatierraviva.es/wp-content/uploads/2023/07/Triptico.pdf",
+      "publicationUrl": "https://palenciatierraviva.es/generales_23j/",
+      "retrievedAt": "2026-10-11T07:49:08.348759+00:00",
+      "resolvedUrl": "https://palenciatierraviva.es/wp-content/uploads/2023/07/Triptico.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/palenciatierraviva.pdf",
+      "sha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+      "bytes": 699045,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/palenciatierraviva.txt",
+        "sha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+        "pageCount": 6,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json"
+    },
+    {
+      "id": "adelante",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/programa-23J-3ed-comprimido.pdf",
+      "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T07:49:08.602688+00:00",
+      "resolvedUrl": "https://adelanteandalucia.org/wp-content/uploads/2023/07/programa-23J-3ed-comprimido.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/adelante.pdf",
+      "sha256": "73557c309e0cb04172a2cb7f815d7cc4d71aed99454e559753c7e7be13ceaf78",
+      "bytes": 16015457,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/adelante.txt",
+        "sha256": "038aba726b16910342995781e75e490b80cb31bf78f5c767dc546ecb3c5d420c",
+        "pageCount": 85,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "not_read_unless_individual_notebook_records_full_coverage"
+      }
+    },
+    {
+      "id": "adelante-decalogue",
+      "url": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T07:49:08.662673+00:00",
+      "resolvedUrl": "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+      "mediaType": "application/pdf",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: application/pdf"
+    },
+    {
+      "id": "falange-primary",
+      "url": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+      "publicationUrl": "https://lafalange.org/",
+      "retrievedAt": "2026-10-11T07:49:08.666681+00:00",
+      "resolvedUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+      "mediaType": "application/pdf",
+      "status": "downloaded_applicability_pending_not_analysed",
+      "file": "storage/app/election-sources/2023-congress/falange-primary.pdf",
+      "sha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+      "bytes": 410814,
+      "extraction": {
+        "file": "storage/app/election-sources/2023-congress/falange-primary.txt",
+        "sha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+        "pageCount": 21,
+        "method": "pypdf_native_layout_v1",
+        "readStatus": "full_document_read_recorded_in_authored_notebook"
+      },
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "notebook": "outputs/2023-programme-notebooks/falange.json"
+    },
+    {
+      "id": "poravila-observed-http",
+      "url": "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.59.pdf",
+      "publicationUrl": "https://poravila.es/candidaturas-23j",
+      "retrievedAt": "2026-10-11T07:54:52.795605+00:00",
+      "status": "retrieval_failed",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "recortes-cero-primary",
+      "url": "https://recortescero.es/wp-content/uploads/2023/07/PROG.-23J.pdf",
+      "publicationUrl": "https://recortescero.es/nueva-home",
+      "retrievedAt": "2026-10-11T07:54:52.795936+00:00",
+      "resolvedUrl": "https://recortesceroes.wordpress.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: text/html; charset=UTF-8"
+    },
+    {
+      "id": "recortes-cero-primary-v05",
+      "url": "https://recortescero.es/wp-content/uploads/2023/07/PROG.-23J_05.pdf",
+      "publicationUrl": "https://recortescero.es/nueva-home",
+      "retrievedAt": "2026-10-11T07:54:52.796022+00:00",
+      "resolvedUrl": "https://recortesceroes.wordpress.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "status": "retrieval_failed",
+      "error": "Response is not a bounded PDF: text/html; charset=UTF-8"
     }
   ],
   "summary": {
     "officialDenominations": 59,
-    "programmeFilesDownloaded": 12,
+    "programmeFilesDownloaded": 24,
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
-    "completeCorpusCertified": false
+    "completeCorpusCertified": false,
+    "programmeDocumentsFullyRead": 10
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -4013,5 +4557,241 @@
     "finalBallotCount": 550,
     "notProclaimedCount": 34,
     "resultDenominationCount": 59
-  }
+  },
+  "publicationAcquisitions": [
+    {
+      "id": "poravila",
+      "url": "https://poravila.es/candidaturas-23j",
+      "retrievedAt": "2026-10-11T07:47:43.861554+00:00",
+      "resolvedUrl": "https://poravila.es/candidaturas-23j",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/poravila-publication-f7766d762c69.html",
+      "sha256": "f7766d762c69d9e3357776b806a35e3e5c0c19067d38004decd7ad9567d97184",
+      "textFile": "storage/app/election-sources/2023-congress/poravila-publication-f7766d762c69.txt",
+      "textSha256": "9eb44b329c9cf7292b1a4e94a2dc3d8db6f3153a6f46d418bc7b3dd79690b60c",
+      "links": [
+        "http://poravila.es/wp-content/uploads/2023/07/XAV_programaCortesGenerales2023actualizado3dejulio23.59.pdf"
+      ]
+    },
+    {
+      "id": "soriaya",
+      "url": "https://soriaya.org/partido/",
+      "retrievedAt": "2026-10-11T07:47:43.861853+00:00",
+      "resolvedUrl": "https://soriaya.org/partido/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/soriaya-publication-4336fd25da01.html",
+      "sha256": "4336fd25da01a8ec10044803d15d679d09cb32d095c70e6efa61478e483f7327",
+      "textFile": "storage/app/election-sources/2023-congress/soriaya-publication-4336fd25da01.txt",
+      "textSha256": "9e536faf61a6398c0728cca14a3f7f4d45edf599b78fb09cf42b7bbc314c7d93",
+      "links": [
+        "https://soriaya.org/soria-ya-lanza-una-campana-para-financiar-su-candidatura-a-las-elecciones-del-23-j/",
+        "https://soriaya.org/wp-content/uploads/2023/03/FichaInteractiva-2.pdf",
+        "https://soriaya.org/wp-content/uploads/2023/07/0c4073b6-c712-4b61-8bc3-2586147ba07e.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/23c6d612-8db0-420e-95ae-8217779b828e.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/61a65fbb-1350-4126-b1ed-579c6136199f.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/8281ac41-4478-4bf8-8f41-ec1d164fbfe2.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/8ece84c5-a45d-4093-a1a7-306d13512d94.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/Candidatos23J.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/SYA_2022_ABR_MEMORIA.pdf",
+        "https://soriaya.org/wp-content/uploads/2023/07/b3f13d6b-010c-4ec1-886b-8b8d2144b40e.jpg",
+        "https://soriaya.org/wp-content/uploads/2023/07/candidatos2.jpg",
+        "https://soriaya.org/wp-content/uploads/2024/06/G72867757_2023_ABR_MEMORIA-30-1.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/09/2024-09-30-Codigo-etico-conducta-Soria-Ya.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/09/2024-09-30-Estatutos-partido-politico-Soria-YA.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/09/2024-09-30-Instrucciones-de-contratacion-del-Partido-Politico-Soria-Ya.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/09/2024-09-30-Protocolo-publicidad-activa-Soria-Ya.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/10/2024-09-30-Certificado-donaciones-superiores-a-25000-euros.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/10/2024-09-30-Certificado-retribuciones-cargos-del-partido.pdf",
+        "https://soriaya.org/wp-content/uploads/2024/10/G72867757_2023_INFORME-CONTROL-31-1.pdf",
+        "https://soriaya.org/wp-content/uploads/2025/07/G72867757_2024_ABR_MEMORIA-30-1.pdf"
+      ]
+    },
+    {
+      "id": "viaburgalesa",
+      "url": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+      "retrievedAt": "2026-10-11T07:47:43.861953+00:00",
+      "resolvedUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.html",
+      "sha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+      "textFile": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.txt",
+      "textSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+      "links": [
+        "https://www.facebook.com/viaburgalesa2023",
+        "https://www.viaburgalesa.es/programa/",
+        "https://www.viaburgalesa.es/wp-content/uploads/2024/04/Programa-Electoral-Burgos-Municipales2023.pdf",
+        "https://www.viaburgalesa.es/wp-content/uploads/2024/04/Programa-Electoral-Palacios-de-la-Sierra-Municipales2023.pdf",
+        "https://www.viaburgalesa.es/wp-content/uploads/2024/04/Programa-Electoral-Rabe-de-las-Calzadas-Municipales2023.pdf",
+        "https://www.viaburgalesa.es/wp-content/uploads/2025/07/Prioridades-Via-Burgalesa-2022.pdf",
+        "https://www.viaburgalesa.es/wp-content/uploads/2025/11/PROGRAMA-ELECTORAL-Quintanaduenas2023.pdf"
+      ]
+    },
+    {
+      "id": "partidoautonomos",
+      "url": "https://www.partidoautonomos.es/elecciones-generales/",
+      "retrievedAt": "2026-10-11T07:47:43.862054+00:00",
+      "resolvedUrl": "https://www.partidoautonomos.es/elecciones-generales/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/partidoautonomos-publication-a4a6972fcde3.html",
+      "sha256": "a4a6972fcde37377648df51f527c5f581e8d417803f3c38f0786582dd4839497",
+      "textFile": "storage/app/election-sources/2023-congress/partidoautonomos-publication-a4a6972fcde3.txt",
+      "textSha256": "999924bccb34353ce367117f3fd501e9454f9f40ec2599bafbbc15bc84f1ca02",
+      "links": [
+        "https://www.partidoautonomos.es/23-julio-el-dia-de-las-elecciones-generales/",
+        "https://www.partidoautonomos.es/resultado-de-las-elecciones-generales-23-j/"
+      ]
+    },
+    {
+      "id": "almerienses",
+      "url": "https://www.proalmerienses.es/category/programa/",
+      "retrievedAt": "2026-10-11T07:47:44.178033+00:00",
+      "resolvedUrl": "https://www.proalmerienses.es/category/programa/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/almerienses-publication-6c099d76e522.html",
+      "sha256": "6c099d76e52212792b2e7eed0e70c7cdea991196dfd5cbf3a2957dee61560a75",
+      "textFile": "storage/app/election-sources/2023-congress/almerienses-publication-6c099d76e522.txt",
+      "textSha256": "3b66904e9e45d22b719c09938f036f32e1d523229979602eaea6374406bb098a",
+      "links": [
+        "https://www.proalmerienses.es/category/elecciones-23j/",
+        "https://www.proalmerienses.es/category/programa-almeria/",
+        "https://www.proalmerienses.es/category/programa-el-ejido/",
+        "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+        "https://www.proalmerienses.es/programa-electoral-para-almeria/",
+        "https://www.proalmerienses.es/programa-electoral-para-el-ejido/",
+        "https://www.proalmerienses.es/wp-content/uploads/2023/07/Programa_23J.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/04/Programa_Almerienses_Andaluzas_2026-FINAL-VERSION.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/AF-traz-razones-almerienses-2026.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/Cartel-Electoral-Juanjo-Cano.pdf"
+      ]
+    },
+    {
+      "id": "palenciatierraviva",
+      "url": "https://palenciatierraviva.es/generales_23j/",
+      "retrievedAt": "2026-10-11T07:47:45.042359+00:00",
+      "resolvedUrl": "https://palenciatierraviva.es/generales_23j/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/palenciatierraviva-publication-d6b768f05979.html",
+      "sha256": "d6b768f05979eb38b6676e0bdbbb9449a0f86d7ec2982adb59f3d39b0c8584c7",
+      "textFile": "storage/app/election-sources/2023-congress/palenciatierraviva-publication-d6b768f05979.txt",
+      "textSha256": "b5b56c63ced7e199a369ccb74bae8bc210ef096f754ddf75e75e23a9c0463b25",
+      "links": [
+        "https://palenciatierraviva.es/category/programa/",
+        "https://palenciatierraviva.es/generales_23j/",
+        "https://palenciatierraviva.es/generales_23j/page/2/?et_blog",
+        "https://palenciatierraviva.es/matabuena-primer-premio-belenes-2023/",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/Triptico.pdf",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/fugo2_web.jpg",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/fungo3_web.jpg",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/furgo1_web.jpg",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/furgo4_web.jpg",
+        "https://palenciatierraviva.es/wp-content/uploads/2023/07/nuestro_mensaje.mp3"
+      ]
+    },
+    {
+      "id": "adelante",
+      "url": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "retrievedAt": "2026-10-11T07:47:45.256937+00:00",
+      "resolvedUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/adelante-publication-ba0f93edcc70.html",
+      "sha256": "ba0f93edcc703d373a8320d60bb927c4616e4f72114ac395471fad0490b79e58",
+      "textFile": "storage/app/election-sources/2023-congress/adelante-publication-ba0f93edcc70.txt",
+      "textSha256": "7bd268c4cbf091d6653095edf8943e770f25053b58ac76bc5680e802b241dcd3",
+      "links": [
+        "https://adelanteandalucia.org/programa/",
+        "https://adelanteandalucia.org/wp-content/uploads/2022/06/Plan-industrial-sostenible-Andalucia_AA.pdf",
+        "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
+        "https://adelanteandalucia.org/wp-content/uploads/2023/07/programa-23J-3ed-comprimido.pdf"
+      ]
+    },
+    {
+      "id": "cup",
+      "url": "https://cup.cat/plantem-cara/",
+      "retrievedAt": "2026-10-11T07:47:45.573618+00:00",
+      "resolvedUrl": "https://cup.cat/plantem-cara/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/cup-publication-387e10c2586f.html",
+      "sha256": "387e10c2586f0743c3b5c81766f72b257f4689149d288946429f356f421ea8ed",
+      "textFile": "storage/app/election-sources/2023-congress/cup-publication-387e10c2586f.txt",
+      "textSha256": "4fdb94db005fc32719d3f5a2509afada093cf44f5af41d3aba921a5ac604e4a8",
+      "links": [
+        "https://cup.cat/manifestsuport23j/",
+        "https://cup.cat/wp-content/uploads/2023/07/AF_Programa-electoral_Congres-2023.pdf",
+        "https://cup.cat/wp-content/uploads/2023/07/CARD_Generic.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/CARD_Generic_Ecologisme.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/CARD_Generic_Independencia.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/CARD_Generic_Socialisme.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/POST_Generic.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Ecologisme.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Feminisme.jpg",
+        "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Independencia.jpg"
+      ]
+    },
+    {
+      "id": "almerienses-23j",
+      "url": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+      "retrievedAt": "2026-10-11T07:55:08.420744+00:00",
+      "resolvedUrl": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/almerienses-23j-publication-94a0e3c70b5f.html",
+      "sha256": "94a0e3c70b5f7cb719b6e38177f26d5bdb49015289d95b50ee1c958b1c71e236",
+      "textFile": "storage/app/election-sources/2023-congress/almerienses-23j-publication-94a0e3c70b5f.txt",
+      "textSha256": "f07a744315028d3be8fa6e8aa17de4af06a2f1872e084a29b8ba6eaf6d43af13",
+      "links": [
+        "https://www.proalmerienses.es/category/elecciones-23j/",
+        "https://www.proalmerienses.es/category/programa-almeria/",
+        "https://www.proalmerienses.es/category/programa-el-ejido/",
+        "https://www.proalmerienses.es/wp-content/uploads/2023/07/Programa_23J.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/04/Programa_Almerienses_Andaluzas_2026-FINAL-VERSION.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/AF-traz-razones-almerienses-2026.pdf",
+        "https://www.proalmerienses.es/wp-content/uploads/2026/05/Cartel-Electoral-Juanjo-Cano.pdf"
+      ]
+    },
+    {
+      "id": "psoe-23j",
+      "url": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "retrievedAt": "2026-10-11T07:55:08.421079+00:00",
+      "resolvedUrl": "https://www.psoe.es/actualidad/noticias-actualidad/programa-electoral-del-psoe-para-el-23j/",
+      "mediaType": "text/html",
+      "lastModified": null,
+      "status": "empty_publication_extraction_not_election_evidence",
+      "file": "storage/app/election-sources/2023-congress/psoe-23j-publication-d02032286070.html",
+      "sha256": "d02032286070b4dd9d8fbd985a7bdca8af8edf52b89ff177db3bfcb2c8a9c43d",
+      "textFile": "storage/app/election-sources/2023-congress/psoe-23j-publication-d02032286070.txt",
+      "textSha256": "9c8d0d8dc8633ab1a8324bcd19679616729360171fde33812b12c335938f45dc",
+      "links": []
+    },
+    {
+      "id": "recortes-23j",
+      "url": "https://recortescero.es/nueva-home",
+      "retrievedAt": "2026-10-11T07:55:08.421168+00:00",
+      "resolvedUrl": "https://recortesceroes.wordpress.com/",
+      "mediaType": "text/html; charset=UTF-8",
+      "lastModified": null,
+      "status": "publication_acquired_not_semantically_read",
+      "file": "storage/app/election-sources/2023-congress/recortes-23j-publication-7417b23ffbf6.html",
+      "sha256": "7417b23ffbf66b403b7967d2351fef36a3c4bc399c0491212023bd8b0490ba7a",
+      "textFile": "storage/app/election-sources/2023-congress/recortes-23j-publication-7417b23ffbf6.txt",
+      "textSha256": "cb9179c07083636550f62dab375d9e2a3540a26e99c3ab564ada345fecf9c09f",
+      "links": []
+    }
+  ]
 }

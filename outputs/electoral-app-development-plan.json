@@ -707,14 +707,19 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-source-inventory.json",
+            "outputs/2023-programme-searches.json"
+          ],
+          "progressNote": "Partial progress only; full acquisition, archival/applicability closure and complete individual corpus reading are unfinished. Ten document notebooks, including supplements, are structurally checked; zero released real questions."
         },
         {
           "id": "Q005",
           "sequence": 5,
           "phaseId": "QP1",
           "subject": "data: close missing-source and extraction gaps explicitly",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q004"
           ],
@@ -753,14 +758,19 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-source-inventory.json",
+            "outputs/2023-programme-searches.json"
+          ],
+          "progressNote": "Partial progress only; full acquisition, archival/applicability closure and complete individual corpus reading are unfinished. Ten document notebooks, including supplements, are structurally checked; zero released real questions."
         },
         {
           "id": "Q006",
           "sequence": 6,
           "phaseId": "QP2",
           "subject": "data: read each available programme in full and author notes",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q005"
           ],
@@ -799,7 +809,12 @@
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "progressEvidence": [
+            "outputs/2023-programme-reading-verification.json",
+            "outputs/2023-programme-notebooks"
+          ],
+          "progressNote": "Partial progress only; full acquisition, archival/applicability closure and complete individual corpus reading are unfinished. Ten document notebooks, including supplements, are structurally checked; zero released real questions."
         },
         {
           "id": "Q007",
@@ -2046,7 +2061,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T07:33:56.115026+00:00",
+  "revisedAt": "2026-10-11T07:59:55.820247+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
@@ -2465,5 +2480,18 @@
     },
     "currentProductNotChanged": true,
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
+  },
+  "implementationProgress": {
+    "recordedAt": "2026-10-11T07:59:55.820247+00:00",
+    "sourceSummary": {
+      "officialDenominations": 59,
+      "programmeFilesDownloaded": 24,
+      "programmesFullyAnalysed": 0,
+      "releasedRealQuestions": 0,
+      "completeCorpusCertified": false,
+      "programmeDocumentsFullyRead": 10
+    },
+    "evidence": "outputs/2023-programme-reading-verification.json",
+    "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending"
   }
 }

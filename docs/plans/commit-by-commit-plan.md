@@ -49,7 +49,7 @@ Dependencies: Q003
 
 ## Q005 data: close missing-source and extraction gaps explicitly
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q004
 
@@ -61,7 +61,7 @@ Dependencies: Q004
 
 ## Q006 data: read each available programme in full and author notes
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q005
 

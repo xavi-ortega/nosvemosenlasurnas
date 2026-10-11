@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T18:42:46.616143+00:00",
+  "recordedAt": "2026-10-11T18:53:41.077993+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -752,12 +752,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone fijar un precio máximo al alquiler de viviendas, sin concretar el importe ni limitarlo a ciertas zonas.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 28632,
+              "end": 28694,
+              "quote": "Fijación  de un  precio  máximo    de  alquiler de  viviendas.",
+              "contextStart": 27390,
+              "contextEnd": 28694,
+              "contextSha256": "cc5fa1239110e3c82ba667f06f9fd9515896fdf78631334c63d1055bcf4da095",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -1665,12 +1687,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Controlar y pagar las horas extra no establece reducir la jornada máxima a 35 horas sin pérdida de sueldo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 14,
+              "printedPage": 14,
+              "start": 34155,
+              "end": 34284,
+              "quote": "Control  exhaustivo   de  las horas  extra, limitándolas   y justificándolas,  y pago  de  las\n        mismas   según   convenio.",
+              "contextStart": 33315,
+              "contextEnd": 34616,
+              "contextSha256": "1b7bdc79a65f02149021c15febd16ed352e5d1827932a31c29fa9685c4dbc795",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -2604,12 +2648,51 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone incluir tratamientos dentales en la sanidad pública, pero reserva los servicios de bienestar a españoles. El apoyo a la ampliación tiene esa restricción de acceso.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 23377,
+              "end": 23744,
+              "quote": "Incluir los  tratamientos    bucodentales     y oftalmológicos    en  el  Sistema   de  Salud\n        Pública,  ya  que   constituyen    una   verdadera    necesidad    para  el conjunto    de  la\n        sociedad.    No  se  puede    consentir    que   alguien   que  no   pueda    permitirse   un\n        dentista  privado   o un oftalmólogo    quede   desamparado.",
+              "contextStart": 22816,
+              "contextEnd": 23744,
+              "contextSha256": "50d9283bb0165e0dd87c63253ad21a4296f11b661f032e51786db856f7b24328",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            },
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 3,
+              "printedPage": 3,
+              "start": 2274,
+              "end": 2861,
+              "quote": "También   y  sobre  todo,  para  restaurar   la soberanía   de  la nación,  se requieren   opciones\nque  representen    una  visión de  la existencia  que  vaya  más   allá de su  alcance  económico\nen términos    de  recursos.  Dominar    y definir  nuestro   destino   no  se hace  cuadrando     un\nExcel. Para  ello, proponemos      normas    que  permitan    a todos   los españoles    acceder   de\nforma  exclusiva  a los servicios  ofrecidos   por el Estado   del bienestar  en  los ámbitos   de  la\neducación,   lasanidad,   lasayudas   económicas    o  lasayudas   a la vivienda.",
+              "contextStart": 2274,
+              "contextEnd": 2861,
+              "contextSha256": "527b0a2c769710de3a2e06791ed4282b9933faaecee9d4c454cf9d2ede776b6c",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -3538,12 +3621,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone anular el plan de cierre de las centrales nucleares existentes y mantenerlas en funcionamiento. La construcción de nuevas centrales es una propuesta separada.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 14,
+              "printedPage": 14,
+              "start": 32269,
+              "end": 32504,
+              "quote": "En  este sentido,   freno  de  todo  proyecto   de  “transición  energética”,   anulando    el\n        plan   de   cierre  de   nucleares,   proyectando      nuevas    y  reactivando    centrales\n        térmicas   aún  no dinamitadas.",
+              "contextStart": 31853,
+              "contextEnd": 33302,
+              "contextSha256": "70d0085702751cce632f583d96c38e2d96d045f3c7b789b2a59a81e34f9ebe05",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -4406,12 +4511,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La revisión progresiva del impuesto según la situación de cada contribuyente no concreta una exención para herencias de padres a hijos.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 20189,
+              "end": 20412,
+              "quote": "Revisión   del  Impuesto     de   Sucesiones    y  Donaciones,     estableciendo    también\n        criterios  de progresividad,    ajustándose    el cobro   del impuesto    a  la situación  de\n        cada  sujeto  pasivo.",
+              "contextStart": 20181,
+              "contextEnd": 21418,
+              "contextSha256": "86821fa6209c51d789e2ffa41f456a60eb04a86481b5647f1224311ee4314eed",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -5243,12 +5370,51 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación gratuita desde las primeras etapas no concreta plazas de 0 a 3 años para todas las familias. Además, reserva los servicios de bienestar a españoles.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 23991,
+              "end": 24175,
+              "quote": "Se garantizará   una  justa  inversión  que  asegure   una  educación    nacional  gratuita  y\n        de  calidad, desde   sus primeras   etapas   hasta los estudios   universitarios.",
+              "contextStart": 23759,
+              "contextEnd": 25869,
+              "contextSha256": "d9fea071eedf20ca62e8cfa3acf08f773b042866c9ceec4949c52cbd4b05d502",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            },
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 3,
+              "printedPage": 3,
+              "start": 2274,
+              "end": 2861,
+              "quote": "También   y  sobre  todo,  para  restaurar   la soberanía   de  la nación,  se requieren   opciones\nque  representen    una  visión de  la existencia  que  vaya  más   allá de su  alcance  económico\nen términos    de  recursos.  Dominar    y definir  nuestro   destino   no  se hace  cuadrando     un\nExcel. Para  ello, proponemos      normas    que  permitan    a todos   los españoles    acceder   de\nforma  exclusiva  a los servicios  ofrecidos   por el Estado   del bienestar  en  los ámbitos   de  la\neducación,   lasanidad,   lasayudas   económicas    o  lasayudas   a la vivienda.",
+              "contextStart": 2274,
+              "contextEnd": 2861,
+              "contextSha256": "527b0a2c769710de3a2e06791ed4282b9933faaecee9d4c454cf9d2ede776b6c",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -6108,12 +6274,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reforzar trenes y carreteras no establece limitar vuelos cuando exista una alternativa adecuada en tren.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 19,
+              "printedPage": 19,
+              "start": 45843,
+              "end": 45981,
+              "quote": "Inversión  decidida   en  elrefuerzo   de las líneas  de transporte   por  carretera  y tren,\n        especialmente     en zonas  rurales.",
+              "contextStart": 45835,
+              "contextEnd": 47875,
+              "contextSha256": "de960cbadb94881cf829fc7d77432767398ecf0a35cf1e26f470e295886f0cd5",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -6959,12 +7147,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone eliminar las leyes que permiten la eutanasia, por lo que se opone a mantener ese derecho.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 18157,
+              "end": 18427,
+              "quote": "La  vida humana     no  es  negociable.   Ilegalizaremos    todas  las leyes  que  permiten\n        hoy  arrebatarla,  tales  como   las del aborto  y la eutanasia.   A su  vez, se legislará en\n        pro  de garantizar   que  lavida, una  vez  garantizada,   es digna.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -7726,12 +7936,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone que jueces y magistrados elijan al Consejo General del Poder Judicial, lo que incluye la elección de sus miembros de origen judicial.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 17,
+              "printedPage": 17,
+              "start": 41203,
+              "end": 41289,
+              "quote": "Elección  del  Consejo   General   del Poder  Judicial  por los jueces  y magistrados.",
+              "contextStart": 40529,
+              "contextEnd": 42581,
+              "contextSha256": "24171a3f80660024514c899837f07207bb999c53a1e44aa92c04ef9778402750",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -8617,12 +8849,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La defensa del sistema público de pensiones no establece actualizarlas según el coste de la vida.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 17514,
+              "end": 18148,
+              "quote": "Ante   las  dramáticas    cifras  de  natalidad,   los  falangistas    no  creemos     en  las\n        soluciones    progresistas    de  importación     de   inmigrantes    para   “pagarnos     las\n        pensiones”.    Defendemos      que   no   hay  nadie   mejor    para  sostener    el sistema\n        público   de   pensiones    que   los propios    hijos  y nietos   de   los que   gozan    del\n        descanso    de la jubilación.  Por  ello, pondremos     en marcha    planes  de  ayuda   a las\n        familias,  con  preponderancia     de  las numerosas,    a través  de  incentivos   fiscales y\n        ayudas   directas.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -9422,10 +9676,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener un impuesto específico sobre las grandes fortunas personales.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -10161,12 +10419,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La bajada general del impuesto sobre la renta no establece eximir las pensiones contributivas de jubilación.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 20421,
+              "end": 20607,
+              "quote": "Bajada   progresiva  del  Impuesto    sobre  la Renta  de  las Personas   Físicas. Nada  más\n        injusto  que  gravar  a los trabajadores   españoles   en  sus quehaceres    diarios.",
+              "contextStart": 20181,
+              "contextEnd": 21418,
+              "contextSha256": "86821fa6209c51d789e2ffa41f456a60eb04a86481b5647f1224311ee4314eed",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -10975,12 +11255,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Expropiar viviendas de bancos para vivienda protegida o alquiler social no establece prohibir su posterior venta al sector privado.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 28254,
+              "end": 28478,
+              "quote": "Expropiación     de   las  viviendas   vacías   necesarias    a   las entidades     bancarias,\n        sacándolas    de   nuevo   al  mercado     como    viviendas   de  protección    oficial  o  de\n        alquiler  social.",
+              "contextStart": 27390,
+              "contextEnd": 28694,
+              "contextSha256": "cc5fa1239110e3c82ba667f06f9fd9515896fdf78631334c63d1055bcf4da095",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -11926,12 +12228,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone poner fin a la externalización y privatización sanitaria. La posibilidad de intervenir centros privados no es una propuesta de aumentar acuerdos con ellos.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 22001,
+              "end": 22319,
+              "quote": "Poner   fin  a las  prácticas  de   externalización   y  privatización   de  la  sanidad.   La\n        cobertura    sanitaria   debe   estar   asegurada     por  el  Estado,   teniendo     este  la\n        capacidad    de   intervenir   la sanidad    privada   siempre    que   las necesidades     lo\n        demanden.",
+              "contextStart": 21430,
+              "contextEnd": 22666,
+              "contextSha256": "3f8ab78569779dc33bfa5b2ee57c5ee3129b3562ea4c94a1d91a727e4f321cf9",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -12743,12 +13067,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone eliminar las leyes que permiten el aborto, sin definir dónde se realizaría un aborto permitido por la ley. No se deduce una postura sobre esa decisión concreta de prestación sanitaria.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 18157,
+              "end": 18427,
+              "quote": "La  vida humana     no  es  negociable.   Ilegalizaremos    todas  las leyes  que  permiten\n        hoy  arrebatarla,  tales  como   las del aborto  y la eutanasia.   A su  vez, se legislará en\n        pro  de garantizar   que  lavida, una  vez  garantizada,   es digna.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -13581,12 +13927,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Nacionalizar el sector energético no concreta el paso a gestión pública al caducar concesiones hidroeléctricas.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 14,
+              "printedPage": 14,
+              "start": 32578,
+              "end": 32718,
+              "quote": "Nacionalización     de  la  producción,     transporte    y  distribución   de   la  energía,\n        acabando    con  elactual  oligopolio.",
+              "contextStart": 31853,
+              "contextEnd": 33302,
+              "contextSha256": "70d0085702751cce632f583d96c38e2d96d045f3c7b789b2a59a81e34f9ebe05",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -14312,12 +14680,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Limitar y pagar las horas extra no establece prohibir contactos empresariales fuera del horario de trabajo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 14,
+              "printedPage": 14,
+              "start": 34155,
+              "end": 34284,
+              "quote": "Control  exhaustivo   de  las horas  extra, limitándolas   y justificándolas,  y pago  de  las\n        mismas   según   convenio.",
+              "contextStart": 33315,
+              "contextEnd": 34616,
+              "contextSha256": "1b7bdc79a65f02149021c15febd16ed352e5d1827932a31c29fa9685c4dbc795",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -15083,12 +15473,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación gratuita no establece comedor escolar gratuito para todo el alumnado obligatorio.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 23991,
+              "end": 24175,
+              "quote": "Se garantizará   una  justa  inversión  que  asegure   una  educación    nacional  gratuita  y\n        de  calidad, desde   sus primeras   etapas   hasta los estudios   universitarios.",
+              "contextStart": 23759,
+              "contextEnd": 25869,
+              "contextSha256": "d9fea071eedf20ca62e8cfa3acf08f773b042866c9ceec4949c52cbd4b05d502",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -15890,10 +16302,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eliminar el copago de los medicamentos financiados por la sanidad pública.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -16601,12 +17017,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El rechazo del sistema de partidos no concreta la edad para votar en elecciones.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 7068,
+              "end": 7392,
+              "quote": "Somos   falangistas,  por  loque  creemos    que  otro  método   de  organización   humana\n        es posible.  No  creemos    en  lademocracia     liberal de partidos,  en  la que  se estafa\n        descaradamente      al pueblo,   en  pos  de  intereses   meramente     privados,   alejados\n        del interés  de España.",
+              "contextStart": 7060,
+              "contextEnd": 7700,
+              "contextSha256": "6c152befd45d9e797d7aaf9b7a098accaf4a96056db5e861c05190e3f5ea2722",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -17299,12 +17737,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Declarar la vida útil y ampliar la garantía de los productos no establece facilitar piezas de recambio.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 43206,
+              "end": 43541,
+              "quote": "Obligación   a  la declaración   por  parte  del fabricante   de  la vida  útildel  producto\n        ofrecido   y la ampliación    de  garantía  a  la misma,   combatiendo      así los casos   de\n        obsolescencia      programada,       especialmente      implementados        en    productos\n        informáticos   y electrónicos.",
+              "contextStart": 43198,
+              "contextEnd": 43875,
+              "contextSha256": "5b5b072b1aed780bb05257d624a61bf77aa03ae7251b90128f5b0cecbb9fbb29",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -18170,12 +18630,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone que las prácticas se limiten al periodo curricular necesario y que sean remuneradas dignamente, sin fijar aquí una cantidad.",
+          "authoredAnalysis": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 35164,
+              "end": 35507,
+              "quote": "Prohibición    de  las becarías   más   allá  del  período   curricular   necesario,   siendo\n        remuneradas      dignamente.    Fomento     de  la contratación    de  trabajadores    que  se\n        incorporan    por  primera   vez  al mundo    laboral  a  través  de  cuotas   obligatorias  e\n        incentivos   fiscales y económicos.",
+              "contextStart": 34765,
+              "contextEnd": 35687,
+              "contextSha256": "6e7c0c67a2ccef07a0493bdd38a58757c87100251387924848dc6d96e0a209e1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -19006,12 +19488,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El derecho a la conciliación por cuidados no establece permisos de maternidad y paternidad de seis meses.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 35516,
+              "end": 35687,
+              "quote": "Obligación,   por  Ley,  al derecho   a  la conciliación  de  los  trabajadores   españoles,\n        especialmente     en tareas  referentes   a los cuidados   familiares.",
+              "contextStart": 34765,
+              "contextEnd": 35687,
+              "contextSha256": "6e7c0c67a2ccef07a0493bdd38a58757c87100251387924848dc6d96e0a209e1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -19739,12 +20243,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Fomentar una nutrición sana no establece un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 17,
+              "printedPage": 17,
+              "start": 42822,
+              "end": 42916,
+              "quote": "Fomento    de  una  nutrición  sana  y equilibrada   para  el conjunto   del pueblo   español.",
+              "contextStart": 42594,
+              "contextEnd": 43048,
+              "contextSha256": "ef9af2ec7de3a6e848e5b3d253ca21bf20623ec2903f81770d402b9569823cf1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -20438,12 +20964,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Perseguir el tráfico de drogas no concreta las sanciones al cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 20,
+              "printedPage": 20,
+              "start": 48538,
+              "end": 48856,
+              "quote": "Persecución     implacable    del  tráfico  de   drogas.   Militarización    de  las  aguas\n        fronterizas  con   Marruecos,    promulgando     y aplicando    una  Ley  de  Fugas  a  toda\n        aquella  embarcación     que  no se  detenga   ante  las advertencias   de  laGuardia   Civil\n        o de  laArmada.",
+              "contextStart": 48439,
+              "contextEnd": 49227,
+              "contextSha256": "c3f6ecf6bf93db1dea03c93df233517b5b25a00d317ea3fec15f06d22a6d46eb",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -21172,12 +21720,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación gratuita hasta la universidad no concreta las matrículas de asignaturas repetidas.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 23991,
+              "end": 24175,
+              "quote": "Se garantizará   una  justa  inversión  que  asegure   una  educación    nacional  gratuita  y\n        de  calidad, desde   sus primeras   etapas   hasta los estudios   universitarios.",
+              "contextStart": 23759,
+              "contextEnd": 25869,
+              "contextSha256": "d9fea071eedf20ca62e8cfa3acf08f773b042866c9ceec4949c52cbd4b05d502",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -21905,12 +22475,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone aumentar las horas de actividades deportivas, pero no fija tres horas semanales de Educación Física.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 26028,
+              "end": 26380,
+              "quote": "Aumento     de  horas   lectivas  en  actividades   deportivas   y  en  fomento    de  hábitos\n        saludables.   Introducción,    en  las  asignaturas   de  educación     física, de  disciplinas\n        deportivas    que  llevan   implícitas  el aprendizaje    de  valores   como   el  respeto,   el\n        coraje,  la disciplina o el autocontrol.",
+              "contextStart": 26020,
+              "contextEnd": 27376,
+              "contextSha256": "0f6947ea26d8696c5c8c9e9e5ea667efd7b207d7f5fad9894dccd77d675de42c",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -22726,12 +23318,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las cuotas justas, proporcionales y flexibles no establecen una exención por ingresos inferiores al salario mínimo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 34933,
+              "end": 35155,
+              "quote": "Eliminación    de  trabas  burocráticas    y flexibilización  en  el  pago   de  cuotas  para\n        autónomos,     siendo   estas   justas  y proporcionales.     Acabar   de  una   vez  con  los\n        falsos autónomos.",
+              "contextStart": 34765,
+              "contextEnd": 35687,
+              "contextSha256": "6e7c0c67a2ccef07a0493bdd38a58757c87100251387924848dc6d96e0a209e1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -23565,10 +24179,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece eximir del impuesto sobre el valor añadido la compra de la primera vivienda habitual.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -24280,10 +24898,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la compraventa de animales de compañía.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -24977,12 +25599,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone patrocinio público de festejos taurinos, pero no concreta si se refiere a espectáculos en los que muere el animal. Esa condición de la pregunta no queda establecida.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 16,
+              "printedPage": 16,
+              "start": 38991,
+              "end": 39155,
+              "quote": "Protección   especial  y promoción     de la tauromaquia,    facilitando  la celebración   de\n        festejos  con  elpatrocinio   de la Administración    Pública.",
+              "contextStart": 37363,
+              "contextEnd": 39514,
+              "contextSha256": "08c815f651120f8950410b605734d3c51d645a09933ef2dbaa7ba6cf4b02c29f",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -25715,10 +26359,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir la caza de animales en todo el territorio español.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -26484,12 +27132,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Regular precios de bienes y servicios esenciales y ayudar a familias no establece prohibir permanentemente cortes de suministros por vulnerabilidad.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 19432,
+              "end": 19830,
+              "quote": "Regulación    tarifaria  e impositiva    que  afecten   al  precio  de   bienes   y servicios\n        esenciales.  Se  intervendrá   a través  de eliminación   o  bajada\n\n\n                                                             9\f                                  EleccionesGenerales2023ProgramaElectoralGeneral\n\n\n        de  impuestos,   regulación   de márgenes,    ayudas   a familias, etc.",
+              "contextStart": 18459,
+              "contextEnd": 20017,
+              "contextSha256": "ff4e5317f7b71447563fbcb673aa65c1da424f10bbd2ab6ac5bde980dcc01cd2",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -27223,10 +27893,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece entregar 20.000 euros a todos los jóvenes al cumplir 23 años.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -28005,10 +28679,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece que el salario mínimo suba anualmente más que la inflación.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -28707,10 +29385,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece formatos abiertos para los documentos administrativos.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -29494,10 +30176,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece mantener la prohibición de la gestación subrogada.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -30157,12 +30843,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Fomentar una nutrición sana no establece una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 17,
+              "printedPage": 17,
+              "start": 42822,
+              "end": 42916,
+              "quote": "Fomento    de  una  nutrición  sana  y equilibrada   para  el conjunto   del pueblo   español.",
+              "contextStart": 42594,
+              "contextEnd": 43048,
+              "contextSha256": "ef9af2ec7de3a6e848e5b3d253ca21bf20623ec2903f81770d402b9569823cf1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -30890,12 +31598,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La educación gratuita no concreta libros de texto que cualquiera pueda copiar y compartir.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 23991,
+              "end": 24175,
+              "quote": "Se garantizará   una  justa  inversión  que  asegure   una  educación    nacional  gratuita  y\n        de  calidad, desde   sus primeras   etapas   hasta los estudios   universitarios.",
+              "contextStart": 23759,
+              "contextEnd": 25869,
+              "contextSha256": "d9fea071eedf20ca62e8cfa3acf08f773b042866c9ceec4949c52cbd4b05d502",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -31751,10 +32481,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece que todos los trámites administrativos puedan realizarse en persona.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -32552,10 +33286,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece bajar al 10% o menos el impuesto de los servicios veterinarios para animales de compañía.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -33249,12 +33987,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La vida útil declarada y la garantía ampliada no establecen libertad para reparar en talleres independientes.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 43206,
+              "end": 43541,
+              "quote": "Obligación   a  la declaración   por  parte  del fabricante   de  la vida  útildel  producto\n        ofrecido   y la ampliación    de  garantía  a  la misma,   combatiendo      así los casos   de\n        obsolescencia      programada,       especialmente      implementados        en    productos\n        informáticos   y electrónicos.",
+              "contextStart": 43198,
+              "contextEnd": 43875,
+              "contextSha256": "5b5b072b1aed780bb05257d624a61bf77aa03ae7251b90128f5b0cecbb9fbb29",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -33933,10 +34693,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece un sistema de depósito y devolución de envases de bebidas.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -34652,10 +35416,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece anticonceptivos gratuitos para jóvenes.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -35366,12 +36134,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone nacionalizar la industria farmacéutica y fomentar investigación y fabricación. No concreta crear la empresa pública de medicamentos y vacunas que plantea la pregunta.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 22496,
+              "end": 22942,
+              "quote": "Aumentar     la inversión  en  I+D+I   en investigaciones    biosanitarias,   y potenciar   la\n        fabricación   nacional   de  todo   el  material   necesario   para\n\n\n                                                            10\f                                  EleccionesGenerales2023ProgramaElectoralGeneral\n\n\n        dicho   sector,  incluyendo    la nacionalización    de  la industria  farmacéutica     como\n        sector  esencial.",
+              "contextStart": 21430,
+              "contextEnd": 23744,
+              "contextSha256": "34e64999550f1e1970b4b0dc77bcb7cff379f9fa5536dcedf933740459eedd51",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -36172,10 +36962,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece conexión básica gratuita a internet para todas las personas.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -37125,12 +37919,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El plan hidrológico no establece titularidad pública de la gestión del suministro de agua de consumo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 14,
+              "printedPage": 14,
+              "start": 32513,
+              "end": 32569,
+              "quote": "Proyección   de  un  Plan Hidrológico   Nacional   real.",
+              "contextStart": 31853,
+              "contextEnd": 33302,
+              "contextSha256": "70d0085702751cce632f583d96c38e2d96d045f3c7b789b2a59a81e34f9ebe05",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -37931,12 +38747,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Dignificar la educación especial no concreta atención pública y gratuita a menores de seis años con dificultades del desarrollo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 11,
+              "printedPage": 11,
+              "start": 24184,
+              "end": 24470,
+              "quote": "Dignificación   de los estudios   de  Formación    Profesional,  creándose    Universidades\n        Laborales   que  doten   a  dichos  estudios   de  laespecificidad   e  independencia     que\n        necesitan   para  desarrollar  la docencia,  así como   de  laEducación    Especial.",
+              "contextStart": 23759,
+              "contextEnd": 25869,
+              "contextSha256": "d9fea071eedf20ca62e8cfa3acf08f773b042866c9ceec4949c52cbd4b05d502",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -38769,12 +39607,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La conciliación por cuidados no concreta reducir jornada para cuidar a hijos hasta los 16 años.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 35516,
+              "end": 35687,
+              "quote": "Obligación,   por  Ley,  al derecho   a  la conciliación  de  los  trabajadores   españoles,\n        especialmente     en tareas  referentes   a los cuidados   familiares.",
+              "contextStart": 34765,
+              "contextEnd": 35687,
+              "contextSha256": "6e7c0c67a2ccef07a0493bdd38a58757c87100251387924848dc6d96e0a209e1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -39488,10 +40348,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece una tasa creciente según la frecuencia de viajes en avión.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -40153,10 +41017,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir publicidad y patrocinio comercial de combustibles fósiles.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -40836,10 +41704,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir criar animales para obtener pieles.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -41519,10 +42391,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -42235,10 +43111,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece prohibir ayudas directas a medios de comunicación privados.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -42949,12 +43829,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El control de fondos públicos por interventores no establece eliminar tribunales especiales por razón del cargo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 36176,
+              "end": 36415,
+              "quote": "Luchar   realmente,     de  una   vez  por  todas,   contra   la  corrupción,   a  través   de\n        mecanismos      tales como    un  organismo    independiente     de  Interventores    para   el\n        control  de  lasarcas  públicas.",
+              "contextStart": 35723,
+              "contextEnd": 37182,
+              "contextSha256": "0fb6f063602670bbe91247eaea4b67abadfbed23e7bc92095f10c40a01d50e9d",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -43614,12 +44516,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El rechazo del sistema de partidos no establece eliminar las firmas para presentar candidaturas al Congreso.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 7068,
+              "end": 7392,
+              "quote": "Somos   falangistas,  por  loque  creemos    que  otro  método   de  organización   humana\n        es posible.  No  creemos    en  lademocracia     liberal de partidos,  en  la que  se estafa\n        descaradamente      al pueblo,   en  pos  de  intereses   meramente     privados,   alejados\n        del interés  de España.",
+              "contextStart": 7060,
+              "contextEnd": 7700,
+              "contextSha256": "6c152befd45d9e797d7aaf9b7a098accaf4a96056db5e861c05190e3f5ea2722",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -44364,12 +45288,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El control de fondos públicos no establece una ficha de intermediación para cada propuesta de ley.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 36176,
+              "end": 36415,
+              "quote": "Luchar   realmente,     de  una   vez  por  todas,   contra   la  corrupción,   a  través   de\n        mecanismos      tales como    un  organismo    independiente     de  Interventores    para   el\n        control  de  lasarcas  públicas.",
+              "contextStart": 35723,
+              "contextEnd": 37182,
+              "contextSha256": "0fb6f063602670bbe91247eaea4b67abadfbed23e7bc92095f10c40a01d50e9d",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -45187,10 +46133,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No establece incluir psicoterapia en la cartera de la sanidad pública.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -45952,12 +46902,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La salida de organizaciones supranacionales no establece una decisión concreta sobre el tratado de prohibición de armas nucleares.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 6,
+              "printedPage": 6,
+              "start": 9387,
+              "end": 9913,
+              "quote": "Cómo    hemos   defendido    siempre,   los falangistas  creemos    en  la total y  absoluta\n        soberanía   de  laNación   española   frente  a cualquier  elemento    foráneo.  Es  por ello\n        que  defendemos,     sin medias   tintas, elabandono     inmediato   de  lasorganizaciones\n        supranacionales    tales como    laOTAN,   el FMI  o las actuales  UE  u ONU,   y retirarnos\n        de  todos  aquellos   tratados  internacionales    que  limiten  nuestra  autonomía     en la\n        toma   de decisiones.",
+              "contextStart": 9379,
+              "contextEnd": 10705,
+              "contextSha256": "1f6b9a1433a8c2269cd7e11b97c45fd9d1f4781ca601258e30514118eaac76db",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -46651,12 +47623,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La promoción de una alimentación sana no establece restricciones a anuncios dirigidos a menores.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 17,
+              "printedPage": 17,
+              "start": 42822,
+              "end": 42916,
+              "quote": "Fomento    de  una  nutrición  sana  y equilibrada   para  el conjunto   del pueblo   español.",
+              "contextStart": 42594,
+              "contextEnd": 43048,
+              "contextSha256": "ef9af2ec7de3a6e848e5b3d253ca21bf20623ec2903f81770d402b9569823cf1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -47439,12 +48433,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las cuotas proporcionales y flexibles no establecen una exención durante el primer año de trabajo autónomo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "start": 34933,
+              "end": 35155,
+              "quote": "Eliminación    de  trabas  burocráticas    y flexibilización  en  el  pago   de  cuotas  para\n        autónomos,     siendo   estas   justas  y proporcionales.     Acabar   de  una   vez  con  los\n        falsos autónomos.",
+              "contextStart": 34765,
+              "contextEnd": 35687,
+              "contextSha256": "6e7c0c67a2ccef07a0493bdd38a58757c87100251387924848dc6d96e0a209e1",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -48296,12 +49312,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Bajar el impuesto sobre la renta no establece ajustarlo para descontar la inflación.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 20421,
+              "end": 20607,
+              "quote": "Bajada   progresiva  del  Impuesto    sobre  la Renta  de  las Personas   Físicas. Nada  más\n        injusto  que  gravar  a los trabajadores   españoles   en  sus quehaceres    diarios.",
+              "contextStart": 20181,
+              "contextEnd": 21418,
+              "contextSha256": "86821fa6209c51d789e2ffa41f456a60eb04a86481b5647f1224311ee4314eed",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -49147,12 +50185,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Regular tarifas e impuestos de servicios esenciales no establece pagar directamente ayudas energéticas a personas vulnerables.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 19432,
+              "end": 19830,
+              "quote": "Regulación    tarifaria  e impositiva    que  afecten   al  precio  de   bienes   y servicios\n        esenciales.  Se  intervendrá   a través  de eliminación   o  bajada\n\n\n                                                             9\f                                  EleccionesGenerales2023ProgramaElectoralGeneral\n\n\n        de  impuestos,   regulación   de márgenes,    ayudas   a familias, etc.",
+              "contextStart": 18459,
+              "contextEnd": 20017,
+              "contextSha256": "ff4e5317f7b71447563fbcb673aa65c1da424f10bbd2ab6ac5bde980dcc01cd2",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -49848,12 +50908,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Mejorar la atención primaria no establece que sus médicos y pediatras puedan trabajar hasta los 72 años.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 10,
+              "printedPage": 10,
+              "start": 21622,
+              "end": 21992,
+              "quote": "Como    servicio esencial  que  es, se garantizará   una  justa inversión   en sanidad,   que\n        asegure   una  óptima   atención   a todos  los españoles   y poniendo    especial  atención\n        en  los estamentos    más   denostados    hoy  (atención   primaria,  listas de espera   para\n        pruebas   diagnósticas   e intervenciones    quirúrgicas,  etc.).",
+              "contextStart": 21430,
+              "contextEnd": 22666,
+              "contextSha256": "3f8ab78569779dc33bfa5b2ee57c5ee3129b3562ea4c94a1d91a727e4f321cf9",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -50632,12 +51714,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "La propuesta de eliminar las leyes que permiten el aborto no concreta un requisito de autorización parental para abortos de menores permitidos por la ley.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 18157,
+              "end": 18427,
+              "quote": "La  vida humana     no  es  negociable.   Ilegalizaremos    todas  las leyes  que  permiten\n        hoy  arrebatarla,  tales  como   las del aborto  y la eutanasia.   A su  vez, se legislará en\n        pro  de garantizar   que  lavida, una  vez  garantizada,   es digna.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -51352,10 +52456,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece citas para prestaciones estatales en un máximo de 15 días naturales.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -52120,10 +53228,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece que personas tomen las decisiones públicas discrecionales aunque utilicen inteligencia artificial.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -52957,12 +54069,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone aumentar el presupuesto de defensa, sin fijar el objetivo del 2% de la economía. La salida de la OTAN no determina por sí sola esa cifra.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "start": 44124,
+              "end": 44297,
+              "quote": "Aumento      del  presupuesto     destinado     a  la  defensa   de   la  nación   española.\n        Dotación   a nuestro   Ejército de  condiciones   y materiales   dignos.",
+              "contextStart": 43888,
+              "contextEnd": 45644,
+              "contextSha256": "929fb93fdd8d13962158fda8fda612e1ae8ca6d2922e8e1482a58fad8cd7836a",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -53765,12 +54899,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las hipotecas públicas a familias y trabajadores no establecen avales a jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 12,
+              "printedPage": 12,
+              "start": 27770,
+              "end": 28071,
+              "quote": "Lucha    contra    la  especulación,    encargando      al  Instituto   de   Crédito    de   las\n        concesiones    hipotecarias   a las familias  y trabajadores    españoles,   e ilegalizando   la\n        participación   de  los fondos  buitre  de  inversión  como    tenedores   de  propiedades.",
+              "contextStart": 27390,
+              "contextEnd": 28694,
+              "contextSha256": "cc5fa1239110e3c82ba667f06f9fd9515896fdf78631334c63d1055bcf4da095",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -54498,12 +55654,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Las ayudas a familias no establecen una prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 17514,
+              "end": 18148,
+              "quote": "Ante   las  dramáticas    cifras  de  natalidad,   los  falangistas    no  creemos     en  las\n        soluciones    progresistas    de  importación     de   inmigrantes    para   “pagarnos     las\n        pensiones”.    Defendemos      que   no   hay  nadie   mejor    para  sostener    el sistema\n        público   de   pensiones    que   los propios    hijos  y nietos   de   los que   gozan    del\n        descanso    de la jubilación.  Por  ello, pondremos     en marcha    planes  de  ayuda   a las\n        familias,  con  preponderancia     de  las numerosas,    a través  de  incentivos   fiscales y\n        ayudas   directas.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -55284,10 +56462,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece reconocer dependencia automáticamente con el diagnóstico de esclerosis lateral amiotrófica.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -55965,12 +57147,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Los incentivos a familias numerosas no establecen una bonificación de hasta el 45% por empleados del hogar.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 9,
+              "printedPage": 9,
+              "start": 17514,
+              "end": 18148,
+              "quote": "Ante   las  dramáticas    cifras  de  natalidad,   los  falangistas    no  creemos     en  las\n        soluciones    progresistas    de  importación     de   inmigrantes    para   “pagarnos     las\n        pensiones”.    Defendemos      que   no   hay  nadie   mejor    para  sostener    el sistema\n        público   de   pensiones    que   los propios    hijos  y nietos   de   los que   gozan    del\n        descanso    de la jubilación.  Por  ello, pondremos     en marcha    planes  de  ayuda   a las\n        familias,  con  preponderancia     de  las numerosas,    a través  de  incentivos   fiscales y\n        ayudas   directas.",
+              "contextStart": 17219,
+              "contextEnd": 18427,
+              "contextSha256": "b44160ecf4a1f52b715595db5285a0b85371af313b0333dc982790e3ea05ec08",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -56670,10 +57874,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece tutorías adicionales para recuperar aprendizaje perdido durante la pandemia.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -57425,10 +58633,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No establece intermediarios que realicen trámites en nombre de quienes necesiten ayuda.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -58294,12 +59506,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Reforzar carreteras y trenes rurales no concreta transporte a demanda y a precio reducido al municipio de referencia.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 19,
+              "printedPage": 19,
+              "start": 45843,
+              "end": 45981,
+              "quote": "Inversión  decidida   en  elrefuerzo   de las líneas  de transporte   por  carretera  y tren,\n        especialmente     en zonas  rurales.",
+              "contextStart": 45835,
+              "contextEnd": 47875,
+              "contextSha256": "de960cbadb94881cf829fc7d77432767398ecf0a35cf1e26f470e295886f0cd5",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -59115,10 +60349,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -59798,10 +61036,14 @@
           "candidacyId": "boe-2023-032",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -60600,12 +61842,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Invertir el 2% de la economía en investigación no establece acceso libre a los resultados financiados públicamente.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 13,
+              "printedPage": 13,
+              "start": 29661,
+              "end": 29823,
+              "quote": "Apuesta   decidida   por  elI+D  en  laindustria  española,   invirtiendo   directamente    un\n        2%  del  PIB en  investigación,  desarrollo   e innovación.",
+              "contextStart": 28870,
+              "contextEnd": 30468,
+              "contextSha256": "e842546955470f0601d785fedb45e56c204aba452acda63cc3aac9708c124c12",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -61401,12 +62665,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El modelo político propuesto no establece elegir el Congreso en una única circunscripción nacional.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 7068,
+              "end": 7392,
+              "quote": "Somos   falangistas,  por  loque  creemos    que  otro  método   de  organización   humana\n        es posible.  No  creemos    en  lademocracia     liberal de partidos,  en  la que  se estafa\n        descaradamente      al pueblo,   en  pos  de  intereses   meramente     privados,   alejados\n        del interés  de España.",
+              "contextStart": 7060,
+              "contextEnd": 7700,
+              "contextSha256": "6c152befd45d9e797d7aaf9b7a098accaf4a96056db5e861c05190e3f5ea2722",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",
@@ -62168,12 +63454,34 @@
         },
         {
           "candidacyId": "boe-2023-032",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "El modelo político propuesto no establece igual tiempo para vídeos electorales de todos los partidos en los medios públicos.",
+          "authoredAnalysis": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position.",
+          "citations": [
+            {
+              "documentId": "falange-primary",
+              "sourceUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
+              "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+              "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+              "notebook": "outputs/2023-programme-notebooks/falange.json",
+              "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+              "pdfPage": 5,
+              "printedPage": 5,
+              "start": 7068,
+              "end": 7392,
+              "quote": "Somos   falangistas,  por  loque  creemos    que  otro  método   de  organización   humana\n        es posible.  No  creemos    en  lademocracia     liberal de partidos,  en  la que  se estafa\n        descaradamente      al pueblo,   en  pos  de  intereses   meramente     privados,   alejados\n        del interés  de España.",
+              "contextStart": 7060,
+              "contextEnd": 7700,
+              "contextSha256": "6c152befd45d9e797d7aaf9b7a098accaf4a96056db5e861c05190e3f5ea2722",
+              "provenanceEvidence": "outputs/2023-falange-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_specific_complete_document_bank_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "falange-primary"
+          ]
         },
         {
           "candidacyId": "boe-2023-033",

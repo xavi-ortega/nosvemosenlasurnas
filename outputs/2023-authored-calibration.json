@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T18:42:46.616143+00:00",
+  "recordedAt": "2026-10-11T18:53:41.077993+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -211,6 +211,39 @@
               "expectedRelationship": "opposed"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Propone fijar un precio máximo al alquiler de viviendas, sin concretar el importe ni limitarlo a ciertas zonas.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -346,11 +379,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -804,7 +832,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -1229,6 +1257,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Propone incluir tratamientos dentales en la sanidad pública, pero reserva los servicios de bienestar a españoles. El apoyo a la ampliación tiene esa restricción de acceso.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -1344,11 +1405,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -1676,6 +1732,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Propone anular el plan de cierre de las centrales nucleares existentes y mantenerlas en funcionamiento. La construcción de nuevas centrales es una propuesta separada.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -1806,11 +1895,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -2256,7 +2340,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -2736,7 +2820,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -3114,7 +3198,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -3374,6 +3458,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": -2,
+          "sourceReason": "Propone eliminar las leyes que permiten la eutanasia, por lo que se opone a mantener ese derecho.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -3514,11 +3631,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -3747,6 +3859,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Propone que jueces y magistrados elijan al Consejo General del Poder Judicial, lo que incluye la elección de sus miembros de origen judicial.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -3892,11 +4037,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -4332,7 +4472,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -5177,7 +5317,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -5550,7 +5690,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -5975,6 +6115,39 @@
               "expectedRelationship": "opposed"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": -2,
+          "sourceReason": "Propone poner fin a la externalización y privatización sanitaria. La posibilidad de intervenir centros privados no es una propuesta de aumentar acuerdos con ellos.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -6090,11 +6263,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -6530,7 +6698,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -6880,7 +7048,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -7230,7 +7398,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -7636,7 +7804,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -8448,7 +8616,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -8826,7 +8994,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -9053,6 +9221,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-032",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Propone que las prácticas se limiten al periodo curricular necesario y que sean remuneradas dignamente, sin fijar aquí una cantidad.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -9198,11 +9399,6 @@
         },
         {
           "candidacyId": "boe-2023-031",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-032",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -9582,7 +9778,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -9958,7 +10154,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -10306,7 +10502,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -10654,7 +10850,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -11002,7 +11198,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -11350,7 +11546,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -12422,7 +12618,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -13202,7 +13398,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -15082,7 +15278,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -15430,7 +15626,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -16586,7 +16782,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -17658,7 +17854,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -18410,7 +18606,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -18758,7 +18954,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -19106,7 +19302,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -21250,7 +21446,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -21598,7 +21794,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -21946,7 +22142,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -22698,7 +22894,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -23046,7 +23242,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -23394,7 +23590,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -23798,7 +23994,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -24146,7 +24342,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -24494,7 +24690,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -24842,7 +25038,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -25190,7 +25386,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -25538,7 +25734,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -25914,7 +26110,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -26290,7 +26486,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -26638,7 +26834,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -26986,7 +27182,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -27334,7 +27530,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -27682,7 +27878,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -28030,7 +28226,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -28378,7 +28574,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -28726,7 +28922,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -29074,7 +29270,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -29422,7 +29618,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -29770,7 +29966,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",
@@ -30118,7 +30314,7 @@
         {
           "candidacyId": "boe-2023-032",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-033",

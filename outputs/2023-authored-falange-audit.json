@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T18:53:41.077993+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "partial_corpus_specific_complete_document_bank_audit",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-032",
+      "notebooks": [
+        {
+          "path": "outputs/2023-programme-notebooks/falange.json",
+          "sha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+          "documentId": "falange-primary",
+          "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+          "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881"
+        }
+      ],
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone fijar un precio máximo al alquiler de viviendas, sin concretar el importe ni limitarlo a ciertas zonas.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Controlar y pagar las horas extra no establece reducir la jornada máxima a 35 horas sin pérdida de sueldo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone incluir tratamientos dentales en la sanidad pública, pero reserva los servicios de bienestar a españoles. El apoyo a la ampliación tiene esa restricción de acceso.",
+          "citationCount": 2,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone anular el plan de cierre de las centrales nucleares existentes y mantenerlas en funcionamiento. La construcción de nuevas centrales es una propuesta separada.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La revisión progresiva del impuesto según la situación de cada contribuyente no concreta una exención para herencias de padres a hijos.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La educación gratuita desde las primeras etapas no concreta plazas de 0 a 3 años para todas las familias. Además, reserva los servicios de bienestar a españoles.",
+          "citationCount": 2,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reforzar trenes y carreteras no establece limitar vuelos cuando exista una alternativa adecuada en tren.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone eliminar las leyes que permiten la eutanasia, por lo que se opone a mantener ese derecho.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone que jueces y magistrados elijan al Consejo General del Poder Judicial, lo que incluye la elección de sus miembros de origen judicial.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La defensa del sistema público de pensiones no establece actualizarlas según el coste de la vida.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece mantener un impuesto específico sobre las grandes fortunas personales.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La bajada general del impuesto sobre la renta no establece eximir las pensiones contributivas de jubilación.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Expropiar viviendas de bancos para vivienda protegida o alquiler social no establece prohibir su posterior venta al sector privado.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone poner fin a la externalización y privatización sanitaria. La posibilidad de intervenir centros privados no es una propuesta de aumentar acuerdos con ellos.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone eliminar las leyes que permiten el aborto, sin definir dónde se realizaría un aborto permitido por la ley. No se deduce una postura sobre esa decisión concreta de prestación sanitaria.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Nacionalizar el sector energético no concreta el paso a gestión pública al caducar concesiones hidroeléctricas.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Limitar y pagar las horas extra no establece prohibir contactos empresariales fuera del horario de trabajo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La educación gratuita no establece comedor escolar gratuito para todo el alumnado obligatorio.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eliminar el copago de los medicamentos financiados por la sanidad pública.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El rechazo del sistema de partidos no concreta la edad para votar en elecciones.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Declarar la vida útil y ampliar la garantía de los productos no establece facilitar piezas de recambio.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone que las prácticas se limiten al periodo curricular necesario y que sean remuneradas dignamente, sin fijar aquí una cantidad.",
+          "citationCount": 1,
+          "sourceReason": "Directly authored match to the exact question and rubric, with original qualifications and complete contextual source citations retained."
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El derecho a la conciliación por cuidados no establece permisos de maternidad y paternidad de seis meses.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Fomentar una nutrición sana no establece un impuesto específico sobre bebidas azucaradas.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Perseguir el tráfico de drogas no concreta las sanciones al cultivo y consumo propio de cannabis sin ánimo de lucro.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La educación gratuita hasta la universidad no concreta las matrículas de asignaturas repetidas.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar las horas de actividades deportivas, pero no fija tres horas semanales de Educación Física.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las cuotas justas, proporcionales y flexibles no establecen una exención por ingresos inferiores al salario mínimo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece eximir del impuesto sobre el valor añadido la compra de la primera vivienda habitual.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir la compraventa de animales de compañía.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone patrocinio público de festejos taurinos, pero no concreta si se refiere a espectáculos en los que muere el animal. Esa condición de la pregunta no queda establecida.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir la caza de animales en todo el territorio español.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Regular precios de bienes y servicios esenciales y ayudar a familias no establece prohibir permanentemente cortes de suministros por vulnerabilidad.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece entregar 20.000 euros a todos los jóvenes al cumplir 23 años.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que el salario mínimo suba anualmente más que la inflación.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece formatos abiertos para los documentos administrativos.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece mantener la prohibición de la gestación subrogada.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Fomentar una nutrición sana no establece una opción vegetariana en todos los comedores escolares.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La educación gratuita no concreta libros de texto que cualquiera pueda copiar y compartir.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que todos los trámites administrativos puedan realizarse en persona.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece bajar al 10% o menos el impuesto de los servicios veterinarios para animales de compañía.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La vida útil declarada y la garantía ampliada no establecen libertad para reparar en talleres independientes.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece un sistema de depósito y devolución de envases de bebidas.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece anticonceptivos gratuitos para jóvenes.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone nacionalizar la industria farmacéutica y fomentar investigación y fabricación. No concreta crear la empresa pública de medicamentos y vacunas que plantea la pregunta.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece conexión básica gratuita a internet para todas las personas.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El plan hidrológico no establece titularidad pública de la gestión del suministro de agua de consumo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Dignificar la educación especial no concreta atención pública y gratuita a menores de seis años con dificultades del desarrollo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La conciliación por cuidados no concreta reducir jornada para cuidar a hijos hasta los 16 años.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece una tasa creciente según la frecuencia de viajes en avión.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir publicidad y patrocinio comercial de combustibles fósiles.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir criar animales para obtener pieles.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir el uso del glifosato.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir ayudas directas a medios de comunicación privados.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El control de fondos públicos por interventores no establece eliminar tribunales especiales por razón del cargo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El rechazo del sistema de partidos no establece eliminar las firmas para presentar candidaturas al Congreso.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El control de fondos públicos no establece una ficha de intermediación para cada propuesta de ley.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece incluir psicoterapia en la cartera de la sanidad pública.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La salida de organizaciones supranacionales no establece una decisión concreta sobre el tratado de prohibición de armas nucleares.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La promoción de una alimentación sana no establece restricciones a anuncios dirigidos a menores.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las cuotas proporcionales y flexibles no establecen una exención durante el primer año de trabajo autónomo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Bajar el impuesto sobre la renta no establece ajustarlo para descontar la inflación.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Regular tarifas e impuestos de servicios esenciales no establece pagar directamente ayudas energéticas a personas vulnerables.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Mejorar la atención primaria no establece que sus médicos y pediatras puedan trabajar hasta los 72 años.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "La propuesta de eliminar las leyes que permiten el aborto no concreta un requisito de autorización parental para abortos de menores permitidos por la ley.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece citas para prestaciones estatales en un máximo de 15 días naturales.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece que personas tomen las decisiones públicas discrecionales aunque utilicen inteligencia artificial.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone aumentar el presupuesto de defensa, sin fijar el objetivo del 2% de la economía. La salida de la OTAN no determina por sí sola esa cifra.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las hipotecas públicas a familias y trabajadores no establecen avales a jóvenes de hasta 35 años.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Las ayudas a familias no establecen una prestación por hijo desde el quinto mes de embarazo.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece reconocer dependencia automáticamente con el diagnóstico de esclerosis lateral amiotrófica.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Los incentivos a familias numerosas no establecen una bonificación de hasta el 45% por empleados del hogar.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece tutorías adicionales para recuperar aprendizaje perdido durante la pandemia.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece intermediarios que realicen trámites en nombre de quienes necesiten ayuda.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Reforzar carreteras y trenes rurales no concreta transporte a demanda y a precio reducido al municipio de referencia.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir alimentar por la fuerza a animales para producir alimentos.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No establece prohibir petardos y fuegos artificiales.",
+          "citationCount": 0,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Invertir el 2% de la economía en investigación no establece acceso libre a los resultados financiados públicamente.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El modelo político propuesto no establece elegir el Congreso en una única circunscripción nacional.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "El modelo político propuesto no establece igual tiempo para vídeos electorales de todos los partidos en los medios públicos.",
+          "citationCount": 1,
+          "sourceReason": "Direct comparison of all 21 programme pages with this exact proposition does not establish its mechanism, scope and conditions. Related policies, broad goals and ideological labels do not supply a numeric position."
+        }
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 7,
+      "newDerivedMappings": 7,
+      "citedUncertainties": 46
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 160,
+  "explicitMatrixCells": 4880,
+  "defaultNumericMappings": 171,
+  "scopedNumericMappings": 1,
+  "totalNumericMappings": 172,
+  "independentAnswerCases": 860,
+  "limitations": [
+    "Complete 21-page native reread and 12 original page inspections add no notebook/page/distinct-PDF count. Exact archived pre-vote bytes remain uncertified.",
+    "Public dental expansion is qualified +1: page 3 explicitly restricts welfare-service access to Spaniards; page 11 supplies the actual dental proposal.",
+    "Private healthcare intervention is distinct from a service agreement. Nationalising pharmaceuticals does not establish creation of the exact public medicine/vaccine company.",
+    "Public bullfighting sponsorship does not explicitly establish the lethal-event scope; it remains cited and unscored. Abortion illegality does not establish the separate conditional service-location or parental-consent decisions.",
+    "Immediate and phased EU-exit timetables in the programme conflict; no timetable or nuclear-treaty position is inferred.",
+    "Political rhetoric and accusations remain attributed original source text, never factual question premises. Full corpus/source-family/release acceptance remains open."
+  ]
+}

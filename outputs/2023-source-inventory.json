@@ -3844,7 +3844,7 @@
         }
       ],
       "programmeSearchStatus": "acquired_document_scope_and_reading_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
       "programmeIds": [
         "falange-primary"
       ],
@@ -3868,7 +3868,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/falange.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T19:00:31.812759+00:00",
+        "report": "outputs/2023-authored-falange-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 7,
+        "newDerivedMappings": 7,
+        "ambiguousCells": 46,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-033",
@@ -5704,11 +5713,11 @@
     {
       "id": "falange-primary",
       "url": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
-      "publicationUrl": "https://lafalange.org/",
+      "publicationUrl": "https://lafalange.org/programa-electoral-de-fe-de-las-jons-la-falange-para-las-elecciones-generales-del-23-de-julio/",
       "retrievedAt": "2026-10-11T07:49:08.666681+00:00",
       "resolvedUrl": "https://lafalange.org/wp-content/uploads/2023/07/Programa-electoral-FE-de-las-JONS.-ELECCIONES-GENERALES-23-JULIO-2023.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "downloaded_23j_primary_campaign_programme_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/falange-primary.pdf",
       "sha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
       "bytes": 410814,
@@ -5719,8 +5728,22 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/falange.json"
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/falange.json",
+      "applicableBallotRecordIds": [
+        "congress-avila-10",
+        "congress-castellon-5",
+        "congress-guadalajara-7",
+        "congress-madrid-10",
+        "congress-murcia-7",
+        "congress-palencia-9",
+        "congress-sevilla-11",
+        "congress-toledo-8",
+        "congress-valencia-4",
+        "congress-valladolid-8",
+        "congress-zaragoza-10"
+      ],
+      "electionApplicability": "Primary publisher campaign article explicitly dated 16 July 2023 names FE de las JONS / LA FALANGE and links the byte-identical retained programme. Cover and introduction identify the 2023 general election and 23J; final Congress registry reconciles eleven FE de las JONS ballot variants. No other Falange organization or election is inherited."
     },
     {
       "id": "poravila-observed-http",
@@ -9335,8 +9358,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 4880,
-    "scoredDraftMappings": 165,
-    "independentAnswerCases": 825,
+    "scoredDraftMappings": 172,
+    "independentAnswerCases": 860,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -9347,30 +9370,31 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
+    "latestBrowserDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
       10,
       15,
       20,
-      25
+      25,
+      30
     ],
     "latestBrowserRentCases": 0,
     "latestBrowserProgressivePaths": 12,
-    "latestBrowserVerification": "outputs/2023-authored-pcte-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-pcte-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-falange-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-falange-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
+    "latestDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "ae2f891ed63ae643acd92bbf6ac68c29f9f2bb24f48bf027e9ddaebacf464005",
+    "latestAuthoredDraftSha256": "d3ae289ad1bfb100c6193dbd318471882a084e1789c95f12ca9ee60ace654173",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9473,7 +9497,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 160,
-    "defaultScoredDraftMappings": 164,
+    "defaultScoredDraftMappings": 171,
     "scopedScoredDraftMappings": 1,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -9502,7 +9526,19 @@
     "latestPcteNewCitedAnswerPaths": 30,
     "latestPcteCitedUnscoredPaths": 6,
     "pcteFixedComparisonEligible": false,
-    "allPrevious162MappingsUnchanged": true
+    "allPrevious162MappingsUnchanged": true,
+    "falangeBankAudit": "outputs/2023-authored-falange-audit.json",
+    "falangeVerification": "outputs/2023-authored-falange-verification.json",
+    "falangeValuesBrowserVerification": "outputs/2023-authored-falange-values-browser-verification.json",
+    "falangeUnknownsBrowserVerification": "outputs/2023-authored-falange-unknowns-browser-verification.json",
+    "newFalangeAuditedCells": 80,
+    "newFalangeDerivedMappings": 7,
+    "newFalangeCitedUncertainties": 46,
+    "latestFalangeBrowserSessions": 12,
+    "latestFalangeCitedAnswerPaths": 70,
+    "latestFalangeCitedUnscoredPaths": 6,
+    "falangeFixedComparisonEligible": false,
+    "allPrevious165MappingsUnchanged": true
   },
   "recordedAt": "2026-10-11T18:33:08.683841+00:00"
 }

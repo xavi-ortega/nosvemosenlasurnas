@@ -1,170 +1,187 @@
-# Nos Vemos en las Urnas · Lean development plan
+# Nos Vemos en las Urnas: a useful private quiz for the 2023 Congress election
 
-lean-v1.1.0
+quiz-2023-v2.0.0
 
-Build a useful public service: cite and compare supplied electoral programmes, run a short progressive quiz locally, explain policy overlaps only after explicit finish, and collect narrowly scoped voluntary privacy-protected aggregate feedback. Remove the editorial backoffice and mandatory human-review/language machinery.
+Build a quiz for ordinary Spanish users based explicitly on the 23 July 2023 Congress election. Acquire the complete official candidacy corpus, read available programmes in full one by one, cross-reference policies and directly author a larger balanced question bank. Correct and prove the full answer/citation/scoring path, then replace the basic UI with an accessible smooth quiz. Defer programme-comparison screens, metrics expansion and optional languages. This is a new acceptance baseline, not a claim that the existing synthetic implementation satisfies the request.
 
-## 1. Product and deliberate cuts
+## 1. Confirmed 2023 quiz scope
 
-A free public service with two primary entry points: compare programmes or take the quiz.
+One useful private quiz for ordinary users; all real Congress candidacies.
 
-- The owner supplies electoral documents. Visitors can explore public sources without taking the quiz, or answer a short quiz and explicitly request results. Both journeys share the same versioned evidence.
-- Keep citations, inclusion, privacy, honest scoring, accessibility and working CI. Remove editorial accounts, MFA/invitations, reviewer identities/qualifications, approval quorums, adjudication, review queues and staff audit workflows.
-- No recruited panels, mandatory external fluent/legal/security reviewer roster, human calibration studies, multi-operator cryptography project or regional-language launch programme. Automated checks do not become claims of perfect correctness.
-- No runtime model service, Rubix ML, voter classifier, recommendation optimizer, electoral forecasts, voter registration/account, party-specific analytics, demographics or intended-vote collection.
-- Cut the old 180-step sequence to 30 coherent commits, with 28 core steps and two optional extensions. The authorized scaffold restart preserves existing work in the verified private external backup.
+- The owner confirmed the 23 July 2023 general election and Congress. Label every intro/result/export as the 2023 edition, never as current political evidence.
+- Q001-Q030 supersede the previous L sequence for this iteration. Preserve the earlier engineering evidence, but do not reuse completed labels as proof of real-source correctness.
+- Programme-comparison screens, aggregate-feedback expansion and optional languages are deferred. Keep a compact source/evidence disclosure that supports the quiz.
+- No new accounts, backoffice, reviewer/quorum programme, runtime AI, scheduler, repository restart or history rewrite.
 
-## 2. Public journeys
+## 2. Everyday-user quiz journey
 
-The comparison tool and quiz must each be useful on their own.
+Understand a practical question, answer comfortably and receive an explanation.
 
-- Home: two clear actions, what the service measures, how sources work, privacy in one plain paragraph, and the source release date.
-- Comparison: browse all in-scope candidacies, select two or more, search topics and see exact proposals, differences, overlap and evidence gaps. Provide a table on wide screens and readable cards on phones.
-- Quiz: explain local processing and reload behavior, optional local constituency selection, balanced questions, skip/unsure, optional topic priorities and edit. After ten presented questions offer finish, five more, review or exit. Presentation count and scored-answer count differ.
-- Before explicit finish, withhold personalised party identities, scores by party, ranking and selected result citations from DOM/accessibility/title/export surfaces. An unnamed highest comparable overlap may appear only when enough shared answers exist; never call it certainty.
-- Results: explain per-party policy overlap, shared evidence coverage, ties and limitations; show agreements/disagreements with cited programme passages for answered questions. Unanswered-topic exploration is public information, not a guessed preference.
-- After results, a person may knowingly refine answers, compare sources, reset, deliberately export a local file, or optionally contribute feedback. Finish never opts into metrics. No pressure to reach 100%.
+- One concrete decision per question; one affirmative grammatical proposition whose positive answer always means agreeing with that exact proposition.
+- Spanish statement normally 12-25 words; if a longer statement is necessary preserve meaning and explain why. No unexplained acronym, double negation, two policies or leading moral label.
+- Optional neutral explanation, normally 25-45 words, describes what the proposal means; use everyday money/work/home/school/health/transport examples only when they preserve actual conditions.
+- Explain essential terms at first use (for example, the income tax on earnings); do not silently broaden a targeted tax into all taxes or a regional rule into all of Spain.
+- No unsupported impact forecast, guaranteed cheaper rent, inflation estimate or assertion that an opinion is correct. Plain-language examples are not proof of policy effects.
+- No party names, logos or ideological answer labels while answering. Original-language quotations and party identity become available in result evidence after deliberate finish.
+- No technical methodology/hashes/uncertainty tables in the main journey; retain source and method details behind clearly named optional disclosures.
+- Start with a short Spanish explanation of the observed proposal overlap, not a voting instruction or a personality/ideology classification.
+- Show three understandable cited agreements and three disagreements when available, each with Your answer / What the programme proposes / How they relate. Do not fabricate six examples when evidence is absent.
+- Distinguish a disagreement on one proposal from total overlap across other proposals. A top overall result may disagree with the user on rent caps; label that disagreement explicitly.
+- Explain missing evidence as We could not find a clear position in this programme, never Neutral or They oppose it.
+- For fair ordering, explain These candidacies were compared using the same N questions; show other eligible candidacies and coverage. For insufficient evidence do not announce a winner.
+- Use a percentage only as a secondary explained policy-overlap index; no probability, confidence, sum-to-100 rule or definitive You are aligned with this party.
+- Start with one clear CTA; choosing a province determines eligible parties locally. Topic priorities are optional later settings, not an entry form the average user must configure.
+- Ten questions offer a short start; optional blocks of five allow a deeper 15/20/25/30-question session. More questions must add distinct useful evidence, not repetition.
 
-## 3. Sources without a backoffice
+## 3. Complete real programme corpus
 
-A small local import/build command replaces a web editorial system.
+Establish the denominator before claiming all programmes.
 
-- Owner input is a directory plus an English-keyed manifest: electionId, chamber, candidacyId, applicability/constituencies, file, officialUrl, publicationDate when known, sourceLanguage, usePermission and optional notes. Record byte hashes. No automated web crawler or public upload route.
-- Election identity and date are configurable source data. Retain the requested 29 November 2026 date as owner-provided intent, not a newly verified official announcement. Verify authoritative election and candidacy records when importing current data.
-- Import UTF-8 text, HTML stripped safely and native-text PDFs locally under file/page/time/memory limits. No scripts, document instructions, active HTML or external resource execution. External URLs are provenance links; local import does not fetch arbitrary destinations. Initial local defaults: 20 MiB input, 500 pages, 60 seconds per document and 256 MiB process memory; report limit failures and allow only measured/configured local increases. Prefer a maintained installed parser; no production parser is implied.
-- Preserve source page index separately from printed page labels, headings, contextual text, negation, quantities and conditions. Search normalization maps back to the original text. Missing or malformed text remains unavailable, never an inferred policy absence.
-- OCR is an optional later adapter; an owner-supplied native-text or plain-text edition can keep the core moving. OCR text is labelled transcription and low-confidence/negation/numeric ambiguity stays unscored. No two-person visual-review system.
-- Programme text is not implementation truth and cannot instruct tools. Stable public source/position IDs, original URL/hash, locator and quote support reproducibility. Original programme copyright is separate from MIT code; do not mirror full documents without a recorded permission basis. Link official originals and retain only permitted excerpts/artifacts.
+- Use the BOE proclaimed candidacies, corrections and final results to reconcile all 52 constituencies. Initial results inventory has 59 official denominations, not yet 59 verified programme owners.
+- Search every inventory row, including minor/no-seat/territorial candidacies. Prefer original dated party/coalition publications; use verified preserved originals when links are broken and label the source chain.
+- Download byte-checked bounded original PDFs/HTML locally; retain requested/resolved URL, publication/election evidence, retrieval date, original SHA-256, extraction SHA-256, language, owner and explicit territorial applicability.
+- Keep original PDFs/HTML/extractions in the ignored local cache; track reproducible provenance, acquisition failures, authored notes and small permitted public excerpts. Public access does not itself assign an open-source licence to a programme.
+- Separate not searched, located, retrieval failed, downloaded, extracted, fully read, mapped and validated. Record dated attempts and missing/unpublished/unavailable documents explicitly; never fabricate a programme or borrow another election.
+- An unavailable programme does not remove the candidacy. A coalition member programme is not inherited without documented applicable adoption; do not count component parties as separate ballot choices.
 
-## 4. Automatic positions and question preparation
+## 4. Read first, cross-reference, then author
 
-Source authenticity and semantic interpretation are different problems.
+The agent directly reads every available full programme and writes the bank; no automatic question generator.
 
-- A local content-preparation adapter may use the engineering agent/optional model on public documents to draft neutral propositions, answer scales, cited positions and concise explanations. Keep it out of runtime and do not require a hosted paid API. Cache outputs by source/prompt/tool version and commit the produced public content.
-- The compiler validates source identity/applicability, exact contextual quotes, locators, schema, ranges, candidate/topic coverage, contradictory records and answer-scale direction. It rejects invented quotations and missing references. These checks cannot prove every paraphrase or political interpretation correct.
-- Each mapping records propositionId, topicId, familyId, partyPosition (-2 to 2 or null), reasonCode, rationale, citationIds, interpretationOrigin and preparationVersion. Exact quotations are authoritative excerpts; summaries/mappings are explicitly derived interpretations. Evidence uncertainty is not voter uncertainty.
-- No standing human approval, accounts, attestations or quorum is required. Failed or ambiguous automation marks a position unknown and reports a local actionable error; it does not fill a gap from historical manifestos, coalition members, general knowledge or a model opinion.
-- Question drafts use one concrete policy proposition, short Spanish, labelled choices including neutral/unsure/skip, balanced specificity and preserved conditions. Avoid loaded terms, compound tradeoffs, double negation and caricatures of party positions. Generic and detailed banks are generated from the actual documents, not hardcoded to last election.
-- Public content/rubrics remain inspectable in Git and the methodology. Corrections update a cited mapping and append a small public change record; a public issue/contact link can accept reports without building an application ticketing system. No promise of infallible automated truth.
+- For each document, read all sections/page ranges, including annexes and footnotes; write an individual issue notebook with exact quotes, PDF and printed page, conditions, scope, rationale and unknowns. A download, extraction or keyword hit is not a completed reading.
+- Cross-reference individual notebooks into an issue matrix before finalising question wording. For every candidature/question pair explicitly record support, opposition, qualified position, unknown or conflict with source references.
+- Author a target bank of 80 distinct everyday Spanish questions; release at least 60 supported questions across at least ten topics. No padding, duplicate policies, silent unsupported values or paraphrased source quotes.
+- State an explicit question-specific scale rubric: +2 means clear agreement with the exact shown proposition, -2 clear opposition; +/-1 only with a justified qualified stance; 0 only explicitly evidenced intermediate/neutral position, never silence or a conflict.
+- Every scored mapping retains contextual quotation, party/programme identity, page/range, rationale and rubric. Preserve negation, quantities, exceptions and territorial applicability. Treat whole-law repeal versus one provision carefully; do not infer a stance on every clause from a broad slogan.
+- Automate extraction, hashing, schema/quote validation and selection among already authored question IDs only. No scheduled/model/keyword generator may create questions, help texts or numeric positions for the release. Existing literal fixtures are engineering tests only.
 
-## 5. Small transparent matching engine
+## 5. Verify meaning and arithmetic together
 
-The runtime is deterministic arithmetic, with no ML.
+Trace the full result instead of guessing a global sign correction.
 
-- Use numeric agreement scale -2,-1,0,1,2. Unsure/skip have no numeric value. For answer a and cited position p, similarity = 1 - abs(a-p)/4. Party overlap = 100 * sum(w * similarity)/sum(w) for the disclosed scored set. Scores are independent and do not sum to 100.
-- Weights are release-defined topic and question-family budgets, with optional explicit user topic priorities (0,1,2) kept locally. Divide each family budget across its declared question items; do not let a long topic or repeated variants gain accidental weight. Freeze the bank and weight definition for a session.
-- For a ranking or highest-overlap checkpoint, use the same answered propositions and weights for every candidacy in the disclosed comparison cohort. The default cohort includes all applicable supplied candidacies. A deliberately selected narrower cohort is prominently labelled; other candidacies remain visible.
-- Initial conservative display threshold: eight numeric answers, four topics, and at least 60% of answered positive weight shared across the cohort. Missing sources stay visible. If the threshold fails, show cited comparisons and separately labelled partial overlaps/coverage without ordering or declaring a winner. These are engineering heuristics, not statistically calibrated confidence.
-- Display overlap, response/evidence coverage and question count separately. A 60% overlap says that the observed weighted answers align by that index; it does not mean 60% probability that the person prefers that party. More answers can lower the index.
-- Keep the existing v1 reference as a historical arithmetic oracle. Implement the final browser engine against the simpler explicit weight contract and pin its version. Test exact examples, unknown/zero weights, ties, common-denominator fairness, permutation invariance and locale invariance. No elaborate completion bounds or robust-leader certification is required.
+- Canonical labels run -2 Strongly disagree through +2 Strongly agree in an explicit ordered array. Verify browser-visible order, chosen value, stored state, authored direction, source value and result explanation.
+- Retain deterministic similarity 1-abs(answer-position)/4 unless a documented defect justifies a versioned change. Independent expected cases: -2 versus +2 = 0; -2 versus -2 = 1; 0 versus +/-2 = 0.5.
+- Build an independent semantic calibration ledger for every released question and mapping, with source-grounded expected support/opposition and calculation cases. Do not calculate expected answers by calling the same implementation under test.
+- Test all five user answers, inverse phrasing, qualifications, missing/conflicting data, skip/unsure, edited answers, ties, duplicates and weighting. Rent-cap strongly disagree versus a supporting party must be marked a disagreement even if that party has the highest aggregate overlap.
+- Use fixed topic/family budgets and an eligible constituency cohort determined independently of answers. Rank only parties sharing identical scored propositions and weights above the declared minimums; disclose the fixed comparison subset and preserve other eligible candidacies.
+- Never convert silence to neutral, compare differently covered partial scores in one leaderboard, silently discard small parties, label overlap a probability or split 100 percent among parties.
 
-## 6. Progressive question order
+## 6. Larger authored bank, comfortable sessions
 
-Start useful and get more specific without pretending to read minds.
+Selection chooses existing questions; it does not generate content.
 
-- Start with ten general questions covering the released topics, one per family where possible, selected by a documented balanced order. Do not force scoring if enough comparable evidence does not exist.
-- For continuation, prioritize uncovered positive-weight topics/families first, then specificity. Among eligible remaining questions, compute D(q)=(max party position-min party position)/4 on the close-profile common-evidence cohort, U(t)=1-answered numeric bank weight in topic t/total positive released topic weight, and score(q)=topicPriority*(0.6*U(t)+0.4*D(q))/burden(q). Default burdens: general=1, specific=1.5; all values/version are published. Unsupported numeric spread is zero. Stable question ID breaks equal scores.
-- Define close profiles as within ten observed index points of the current highest comparable index. If comparison is insufficient, consider the full cohort. Never remove parties from results or infer an answer; stable question IDs and party renaming/order do not change semantic selection.
-- Limit a family to two presented questions per session by default; score its declared items using the fixed family budget, without double-counting alternate wording of the same proposition. An edit resets derived selection; already presented questions remain in local history. Identical profiles or no discrimination are legitimate outcomes.
-- If the selector fails or exceeds its CPU budget, use the balanced remaining order with the same scoring contract. Bank exhaustion offers explicit finish/exit; it never reveals automatically. There is no prediction probability or target of reaching 100%.
+- Initial ten questions balance distinct topics and policy families. Optional five-question blocks use unseen authored questions, improve coverage and cap redundancy.
+- Exercise actual constituency cohorts, including missing-programme candidacies, so a minor unknown party does not silently disappear or force a misleading full ranking. Insufficient fair evidence gets an honest unranked outcome.
+- Keep unsure/skip separate from the neutral numerical answer. Allow revisiting/editing; explain more answers may change results in either direction.
+- No race, countdown, correct-answer feedback or completion-forced result. Retain deliberate finish, frozen release per session, local reset and explicit local export.
 
-## 7. Private quiz boundary
+## 7. A modern readable quiz stage
 
-The server distributes public content; it does not receive a visitor profile.
+A concrete interaction design, not a skin on the old form.
 
-- Serve the same complete public election bank for everyone. Filter constituency/candidacies, calculate scores and choose questions in the browser. Do not fetch party/question-specific data in response to answers or private selection.
-- No quiz session API, cookies, localStorage, default IndexedDB, answer persistence, URL/hash encoding, telemetry, replay, advertising scripts, crash payloads or support dumps containing answers, priorities, scope, scores or next-question IDs.
-- A local download is deliberate, clearly explains its political contents and stays on the device. Restart clears memory. Shared links may reference only public sources/topics with no personal selections or result.
-- Network operators still process connection metadata; privacy copy says so. Configure app, reverse proxy, host error reporting and backups consistently. No claim that local matching makes all HTTP traffic anonymous.
-- Metrics are a separate voluntary flow described below. They never reuse or upload the full quiz vector and never include party affinity or voting intention.
+- Quiz stage inspired by the clear one-question interaction of Kahoot, with a calm credible civic identity. No trivia right/wrong, speed score, countdown, competitive leaderboard or party-coloured answer buttons.
+- Palette: ink #182235, canvas #F4F7FB, surface #FFFFFF, action #3449A4, muted #526078, selected #176B71
+- Reuse the existing locally served font assets after inspecting them; strong readable sans headings, body 18px on mobile, line height 1.5-1.65, bounded line lengths; no third-party font request or dependency changes.
+- Compact persistent edition/progress line; topic name; one large question; optional What does this mean? help.
+- Five equally prominent labelled agreement choices in a stable disagree-to-agree order; separate unsure and skip controls. Native radio group, no hover-only controls.
+- Back/edit and one primary Continue action remain clear; selection has an immediate visible state, but no automatic advancement.
+- Checkpoint after ten: See my result or Five more questions; always explicit finish. Result page has plain-language agreement/difference evidence and a quiet source disclosure.
+- Short 160-220ms opacity/transform transitions between questions and clear selected-state feedback; no layout jump, double submission or lost focus. prefers-reduced-motion removes movement and preserves feedback.
+- 44px minimum touch targets, visible keyboard focus, radio keyboard semantics, text contrast at least 4.5:1, control/focus contrast at least 3:1; 320px reflow and 200/400% zoom; never encode direction only by colour. Verify the actual palette in each state.
+- Inspect actual desktop/mobile screenshots for intro/question/help/selected/checkpoint/results/loading/error states and perform keyboard/reduced-motion checks; no design task is complete from CSS or descriptions alone.
 
-## 8. Agreement metrics with a bounded privacy design
+## 8. Preserve the private quiz boundary
 
-Measure voluntary contributions, not voters or the electorate.
+A simpler interface must preserve local processing.
 
-- Two purposes: (1) whether the result broadly fits the person (yes/no/unsure, with no party/score), and (2) agreement/neutral/disagreement with one randomly sampled public policy proposition. Present the latter as a separate short survey, independently of answered quiz topics, with optional refusal.
-- The proposition is sampled uniformly from a small fixed public survey bank, independently of the profile. Select one proposition per opt-in visit and never automatically copy a quiz answer. Record its question/wording version. Topic labels aggregate fixed propositions and cannot be treated as universal agreement with a broad topic.
-- Before sending, apply documented three-category randomized response using crypto.getRandomValues and epsilon=1: report the real category with probability exp(1)/(exp(1)+2), otherwise uniformly one of the other two. Thus raw agreement and result-fit values never leave the device. A maximum of two reports per visit gives epsilon=2 composition for that visit; repeat visits are not a lifetime bound.
-- One stateless POST endpoint accepts only metricId, public surveyVersion/propositionId as applicable, protocolVersion and one randomized category. Never send answers, score, party, constituency, demographics, persistent IDs, precise client time or a shared report/session identifier. Schema rejects extra fields and oversized bodies. Submission is best-effort: one attempt per chosen metric per visit, with no automatic retry or durable retry queue. A failed/lost acknowledgement is skipped; do not inflate counts or compose unrecorded privacy budget through repeated independent randomization.
-- Increment SQLite counters atomically by server-selected week, survey version, metric/proposition and reported category. Do not retain individual event rows or request bodies. Disable body/IP/access telemetry for this route throughout the stack; ordinary transient connection metadata is still present. Keep only counters for the election and a bounded retention period.
-- Estimate each category fraction from reported fraction r: estimate=(r-1/(exp(1)+2))/((exp(1)-1)/(exp(1)+2)). Build multinomial-compatible uncertainty from reported counts; do not disguise clipping, sampling noise or impossible noisy estimates. Suppress public values below 500 contributions or above ten percentage points of interval half-width. Topic summaries use equal proposition weight only when all included propositions have adequate coverage; disclose that set. For display, use the three-category constrained multinomial maximum-likelihood estimate on the simplex, retain the unbounded inverse estimate in methodology/report diagnostics, and transform simultaneous Wilson intervals on the reported categories (95% family confidence, Bonferroni z≈2.394) through the same affine inverse. Label constraints/noise; do not present clipped values as certainty. A reported interval wholly outside the protocol-feasible probability range flags unreliable data and suppresses that snapshot. The sampling model assumes independent honest randomized contributions, which the public endpoint cannot guarantee.
-- Publish closed weekly static reports, with sample size, uncertainty, survey wording and method. No party/vote charts, demographic/constituency cuts, real-time counter API or arbitrary filters. Result-fit counters have no party dimension. Do not sort topics whose uncertainty overlaps into a confident league table.
-- Without identities, unique people and strict one-person-one-vote cannot be established. Counters describe opt-in contributions and can be biased/abused. Use bounded payloads, concurrency/global request budgets and automatic collection pause on anomalies; avoid accounts, fingerprinting or retained IP hashes as a workaround.
-- Randomization and aggregation reduce disclosure; they do not alone prove legal anonymity or remove political-opinion rules. Treat this as privacy-protected aggregate feedback, with truthful notice and clear opt-in. Validate the actual host/proxy/log flow and applicable Spanish legal basis before enabling collection; no mandatory consultant/staff review workflow is introduced. If that flow cannot meet the documented boundary, disable this endpoint while the free quiz/comparison remain available.
-- Prepare and test this small branch before documents arrive. Live collection and any public statistical report require the launch action to explicitly include their flags/actual flow; do not activate them from a passing synthetic test.
+- Fetch the same fixed public versioned bank for everyone. Province, answers, priorities, adaptive state, results and finished state stay only in browser memory by default.
+- No personalised API, party/result URL, answer telemetry, persistent identifier, raw request log or remote crash payload containing private state. Help content and scoring remain local.
+- Do not embed third-party video, analytics, fonts or programme viewers in the answering journey. Explicit original-source links after finish may open the external publisher with no referrer.
+- Finish is not collection consent. Preserve the optional feedback implementation disabled and defer its product work.
 
-## 9. Language and inclusive interface
+## 9. Deferred optional feedback
 
-Spanish is the complete initial UI; translations are optional content work.
+Accuracy and usefulness of the quiz come first.
 
-- Original code, file/route/schema/API/translation keys, reason codes, comments, tests and developer docs are English. Product copy, errors, accessibility labels, privacy/help, insights and exports are Spanish. Use existing lang/es catalogs and APP_LOCALE/APP_FALLBACK_LOCALE=es.
-- Reuse the existing small dictionary/key/placeholder checks; do not build more translation bureaucracy or spend cycles translating unused admin screens. No admin surface is in scope. Missing keys must have a safe Spanish fallback rather than an exception string.
-- Catalan, Basque and Galician are optional later packs, not a core dependency. Use the same IDs/scales/rubrics, complete the enabled public surface and test meaning/score parity. AI can draft translations; no mandated human certification or reviewer service. If a translation is uncertain, keep that pack disabled and disclose its status.
-- Original official quotations/proper names remain exact, including their original language. Any translated paraphrase is separately labelled and the original remains reachable. Do not score a different meaning across locales.
-- Use the modern UI foundations already prepared where useful: clear hierarchy, readable text, restrained motion, fast feedback, mobile comparison cards, no party-dominant visual bias. Native controls, visible focus, keyboard flow, screen-reader labels, contrast, reduced motion, zoom/reflow and generous targets are acceptance checks.
-- Automated browser/axe checks plus a short reproducible keyboard/mobile checklist are enough for this project workflow; no recruited mixed-age research programme or named assistive-device panel is a launch prerequisite. Do not claim universal accessibility certification from automated tests.
+- Do not expand, enable or present optional feedback as a core quiz dependency. Preserve the bounded counters and separate consent design for a later iteration.
+- Any future activation still excludes raw quiz answers/party/scores/district/identifiers, requires actual hosted privacy/log/notice checks and remains part of explicit PUBLIC-LAUNCH approval.
 
-## 10. Minimal infrastructure and free access
+## 10. Plain Spanish and inclusive interface
 
-Start with one small PHP host; Node and source processing run at build time.
+No politics or economics prerequisite.
 
-- Laravel/Blade/Tailwind plus focused TypeScript, existing Boost/skills for development only. Serve immutable compressed JSON and local assets from the same host. No runtime Node process, Redis, PostgreSQL, persistent extraction worker, queue cluster, Elasticsearch, third-party analytics, external font dependency or hosted model.
-- Use SQLite only for aggregate counters/operational data that genuinely need storage, with transactions, WAL/busy-timeout where supported and concurrency tests. Source content lives in versioned files; do not recreate the editorial database as a content CMS. If counters become a bottleneck, batch/report less first and add infrastructure only after measurement.
-- Build/import on the owner/developer machine or a bounded CI job, then deploy the generated data/assets. Production contains the web runtime, immutable bundles and counter DB; no OCR tooling, Boost/MCP, source-upload endpoint or development fixtures.
-- Initial working budget: one supported PHP host with roughly 1 vCPU/1 GiB RAM and persistent disk. This is a starting target to measure, not a throughput guarantee or a provider price. TLS, compressed caching, daily encrypted off-host backup of counters/config and immutable release files, and one restore command are sufficient.
-- Free means no charge to visitors. Hosting/domain/backups still have owner costs; choose the existing/cheapest adequate host using a current quote before any purchase. The preferred .es domain remains unverified/unpurchased. No provider, cloud product, Valet or paid analytics is mandated.
-- Proposed budgets: initial compressed assets <=300 KiB, complete evidence/quiz bank <=5 MiB compressed, local selection/scoring <=100 ms p95 on a declared mid-range/mobile test profile. Loading readiness has a separate measured target. Respect actual cold-load timings; optimize measured bottlenecks rather than building a distributed platform.
+- All public questions, explanations, buttons, errors, privacy/help and local export labels are Spanish. Original code/routes/keys/comments/tests/developer docs are English. Keep lang/es semantic keys and es default/fallback.
+- Audit every authored question for one concrete decision, unexplained jargon, leading framing and loss of source conditions. Short help explains meaning without advertising an answer or inventing impacts.
+- Original quotations/proper names remain exact. Translated source explanations are labelled paraphrases, with the original accessible after finish.
+- Optional ca/gl/eu remain deferred; enabled translations later preserve IDs/scales/citation meaning and scores, with incomplete packs disabled.
+- Native controls, keyboard/focus, contrast, reduced motion, mobile reflow and Spanish screen-reader names are required. Existing automated checks plus a practical reproducible walkthrough are sufficient; no recruited certification panel.
 
-## 11. Checks, publication and operation
+## 11. Reuse the lean app
 
-Keep checks that protect a real public service; remove staff and certification machinery.
+Source work is local; quiz execution stays small.
 
-- Every implementation commit still passes python3 scripts/check-staged.py on its exact staged tree, including required local CI and preserved security hooks. No --no-verify or failed/skipped/unavailable checks. Hosted checks for the actual pushed revision remain separate; no automatic push is authorized.
-- Meaningful regression coverage: import/citation corruption and parser limits; unsupported/conflicting evidence; exact score examples and common-denominator invariants; browser-local requests/storage; explicit result reveal; source links; mobile/keyboard/axe; metric payload/noise/counter races/refusal/failure; schema/hash/update/withdrawal; backup/restore.
-- One actual public-launch approval remains for concrete external action/costs/domain/release and any metric/statistic activation included in it. Prepare that packet only after the implementation and applicable tests are reviewable. No separate blueprint, methodology, human quorum, language panel or backoffice gates.
-- Owner source provision is an input, not a staff approval process. Local source-independent engineering can continue before current documents arrive. Build complete synthetic journeys first; current publication needs actual compatible documents and candidacy metadata.
-- Pin sessions to a bundle. Routine releases do not change answers silently; a fixed public withdrawal check can invalidate a compromised release and offer restart. Atomic switch and one-command rollback retain a change history. Degrade to comparison/quoted evidence when scoring is unavailable; metric failures never block either core journey.
-- Prepare a simple release checklist/runbook: configured domain/TLS, original-source permissions, non-dev production assets, actual traffic/log/storage probe, basic load, counter backup/restore, previous-bundle rollback and one owner/contact route. No on-call roster, staff capacity matrix or enterprise RPO contract.
-- Keep supplied plans and historical/synthetic fixtures labelled by election/purpose. Future election updates replace content/bank mappings through the same tools, not a new editorial application. Future maintenance is ongoing operation, not a task an agent can certify forever complete.
+- Reuse Laravel/Blade/Tailwind v4/TypeScript, immutable public bundles, hashes, release withdrawal and local matching. No dependency change, additional runtime worker/model or database infrastructure is required by this plan.
+- Retain SQLite feedback counters disabled; no new paid analytics or hosting purchase. Keep original source cache excluded from Git and public assets.
+- Measure full real-bank size against existing public payload limits; compact excerpt-only citations without deleting context essential to the interpretation. No answer-dependent fetches.
 
-## 12. Reuse prepared work and retire the old scope
+## 12. Real-source and user-visible acceptance
 
-The owner explicitly authorized a one-time unpublished local restart after a verified complete external backup.
+Passing synthetic CI does not certify the 2023 edition.
 
-- The original scaffold commit remains unchanged; unpublished implementation commits and prepared files are preserved in the private external backup.
-- Retain useful CI fixes, canonical skills and the standalone cleanup intent. Remove superseded auth/backoffice, approval machinery and historical planning from the active tree.
-- Do not rewrite remote history, push, change identity/signing, delete backups or real documents, deploy, purchase or activate collection.
-- Implement and verify eligible lean tasks; actual current sources and hosted launch evidence remain separate inputs.
+- Completion requires a reconciled full candidacy inventory; an acquisition/missing record for every row; full authored readings for every used programme; a crossed issue matrix; at least sixty useful validated questions; and audited mappings/citations.
+- A missing programme remains explicitly missing and unscored. All available programme texts must be analysed before calling corpus analysis complete; never claim every programme was downloaded if some are unavailable.
+- Independently checked rent and inverse cases, exact quotation/range/page checks and browser label-to-result regressions are release blockers. Fix defects before recording completion.
+- Verify actual mobile/desktop states, keyboard, reduced motion, no-party-reveal-before-finish, answer editing and network/storage privacy. Record the ordinary-user walkthrough and revise confusing copy.
+- Run existing required CI/security/dependency audits and the exact staged tree gate before every commit. Keep local test evidence distinct from hosted checks and production readiness.
+- Prepare a concrete 2023 release/host/cost/privacy/rollback packet before PUBLIC-LAUNCH; do not publish, activate collection or push automatically.
+
+## 13. Future programmes are a separate edition
+
+Replace evidence deliberately when new programmes arrive.
+
+- Preserve the 2023 edition with its sources, question meaning and corrections. New election metadata, candidacies, programmes and authored semantic readings produce a new release, not a date substitution.
+- Reuse a question only if its exact proposition/rubric remains applicable and every new scored position has new applicable citations; never inherit party values automatically.
+- Pin existing sessions to their original edition; correction/withdrawal and rollback use immutable hashes. Programme comparison, metrics expansion and optional translations remain later work.
+
+## 14. How loop engineer proceeds
+
+Work one inspectable increment at a time with factual evidence.
+
+- Read docs/loop-engineer.md, the canonical plan and outputs/quiz-2023-scope-revision.json. Keep the old implementation session paused; no scheduler or task message is started.
+- For source tasks select one pending inventory document, acquire/extract/read it fully and save its individual notes. Continue across documents and turns until every available programme has been read; do not mark the parent complete after one party.
+- After individual readings, cross-check each issue across programmes, author and calibrate questions, then implement the quiz design. Independent source retries and design preparation may proceed when a particular link is unavailable.
+- Record actual commands, original/source hashes, reading page ranges, authored artefacts, defect fixes and tests in work/execution-journal.jsonl. Status changes require the actual acceptance evidence.
+- Preserve working/index/history and use direct main commits only after all required staged checks. No new reset, history rewrite, branches, worktrees, identity changes or automatic push.
 
 ## Progress
 
-- L001 · chore: restart from verified scaffold and restore CI · completed
-- L002 · refactor: keep a stateless public app and retire editorial runtime · completed
-- L003 · feat: accept owner source manifests and candidacy coverage · completed
-- L004 · feat: extract native programme text locally · completed
-- L005 · feat: validate exact contextual citations · completed
-- L006 · feat: compile grounded programme positions automatically · completed
-- L007 · feat: build and verify immutable public bundles · completed
-- L008 · feat: browse and search cited programmes · completed
-- L009 · feat: compare programme proposals locally · completed
-- L010 · feat: open original contextual evidence · completed
-- L011 · feat: explain coverage and support bundle corrections · completed
-- L012 · feat: prepare balanced current-source question banks · completed
-- L013 · feat: calculate deterministic browser-local policy overlaps · completed
-- L014 · feat: choose balanced informative follow-up questions · completed
-- L015 · feat: expose honest overlap and evidence coverage · completed
-- L016 · feat: build the private questionnaire state machine · completed
-- L017 · feat: offer ten-question checkpoints and five more · completed
-- L018 · feat: reveal cited results after deliberate finish · completed
-- L019 · feat: polish the fast accessible public experience · completed
-- L020 · test: verify local reset export and private quiz traffic · completed
-- L021 · feat: add voluntary randomized feedback on fit and policies · completed
-- L022 · feat: store bounded aggregate counters in SQLite · completed
-- L023 · feat: report aggregate agreement with uncertainty · completed
-- L024 · test: verify metric privacy refusal failures and limits · completed
-- L025 · data: import supplied current programmes and regenerate the bank · blocked
-- L026 · chore: prepare one-host deployment backup and rollback · completed
-- L027 · test: verify complete release candidate and recovery · blocked
-- L028 · docs: prepare the single concrete public launch action · blocked
-- L029 · feat: optionally import image-only programmes with local OCR · planned
-- L030 · feat: optionally translate the public interface · planned
+- Q001 · docs: adopt the 2023 quiz and everyday-user contract · completed
+- Q002 · fix: order answer labels and reproduce the rent direction path · planned
+- Q003 · data: reconcile every 23J Congress candidacy · planned
+- Q004 · data: acquire and hash every available 2023 programme · planned
+- Q005 · data: close missing-source and extraction gaps explicitly · planned
+- Q006 · data: read each available programme in full and author notes · planned
+- Q007 · data: cross-reference proposals into an authored issue matrix · planned
+- Q008 · data: author a larger bank of everyday Spanish questions · planned
+- Q009 · data: write question rubrics and cited party positions · planned
+- Q010 · test: audit every question for meaning and everyday usefulness · planned
+- Q011 · feat: compile authored real-source bundles without question generation · planned
+- Q012 · test: calibrate the full five-answer scoring surface · planned
+- Q013 · fix: compare eligible parties on the same evidence and weights · planned
+- Q014 · feat: select balanced authored questions and useful follow-ups · planned
+- Q015 · fix: explain agreements differences and aggregate results correctly · planned
+- Q016 · test: validate citations editions and correction behavior · planned
+- Q017 · design: specify and review the quiz visual system · planned
+- Q018 · feat: make the test the primary entry point · planned
+- Q019 · feat: build the accessible single-question experience · planned
+- Q020 · feat: add smooth transitions without losing private state · planned
+- Q021 · feat: make deeper quiz checkpoints clear and optional · planned
+- Q022 · feat: present understandable cited results · planned
+- Q023 · feat: complete Spanish help errors privacy and local export · planned
+- Q024 · test: verify actual mobile keyboard motion and readability · planned
+- Q025 · test: verify the real-data quiz privacy boundary · planned
+- Q026 · test: verify the complete 2023 corpus and release candidate · planned
+- Q027 · chore: prove 2023 bundle recovery and rollback · planned
+- Q028 · docs: prepare the concrete 2023 public release packet · planned
+- Q029 · docs: record deferred comparison feedback and translation scope · planned
+- Q030 · feat: prepare separate future-programme edition updates · planned

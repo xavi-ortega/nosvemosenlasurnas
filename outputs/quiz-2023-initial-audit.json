@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T06:23:56.059873+00:00",
+  "revision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
+  "scope": "Initial read-only audit; no browser journey or complete semantic source audit has been performed.",
+  "findings": [
+    {
+      "id": "A01",
+      "status": "confirmed",
+      "file": "resources/evidence/current.json",
+      "finding": "The active public release is synthetic: four fictional candidacies, two fictional districts and twenty questions. No real 2023 programme positions have been released."
+    },
+    {
+      "id": "A02",
+      "status": "confirmed",
+      "file": "resources/js/app.ts",
+      "finding": "Object.entries(answerKeys) enumerates integer keys 0,1,2 before -2,-1. The rendered scale therefore starts neutral/agree/strongly agree, then strongly disagree/disagree. Use an explicit ordered array and test visible label/value order.",
+      "verification": "node --input-type=module; Object.entries on the exact answer key map",
+      "observedValues": [
+        0,
+        1,
+        2,
+        -2,
+        -1,
+        "unsure",
+        "skip"
+      ]
+    },
+    {
+      "id": "A03",
+      "status": "isolated_arithmetic_verified_full_journey_pending",
+      "file": "resources/js/matching.ts",
+      "questionId": "housing-2",
+      "finding": "The isolated rent-cap example does not reproduce a global sign inversion: answer -2 versus supporting position +2 gives similarity 0; versus opposing position -2 gives similarity 1. Single-question partial overlaps are 0 for alpha/beta and 100 for gamma. This does not validate other mappings, the aggregate or the browser journey.",
+      "verification": "node --experimental-strip-types imports parseBank/similarity/match and the active hashed bank",
+      "actual": {
+        "answer": -2,
+        "supportPosition": 2,
+        "oppositionPosition": -2,
+        "similarityToSupport": 0,
+        "similarityToOpposition": 1
+      }
+    },
+    {
+      "id": "A04",
+      "status": "confirmed",
+      "file": "resources/js/app.ts",
+      "finding": "Result details present every numerically answered question under cited agreements and differences. They show a party stance and the user label but no per-question match/difference/contribution. Users cannot readily distinguish a disagreement from the overall result. Explain both separately, never call every cited stance an agreement."
+    },
+    {
+      "id": "A05",
+      "status": "confirmed",
+      "file": "scripts/prepare_sources.py",
+      "finding": "The existing literal compiler recognises exact synthetic Apoyamos/Rechazamos prefixes. It is not a semantic reading of real programmes. grounded_positions.py validates submitted ranges/schema; it does not prove the numeric interpretation. Real questions and mappings require documented agent reading and authored rationales."
+    },
+    {
+      "id": "A06",
+      "status": "partial_source_inspection_only",
+      "finding": "Native extraction confirms downloaded PDFs have 112 pages (PP), 182 (Sumar), 76 (PACMA). Initial housing-page inspection is not a full analysis. PDF page index and printed page number differ, so retain both. No party value is inferred from this inspection."
+    }
+  ],
+  "nextChecks": [
+    "Trace visible answer label through submitted value, stored answer, authored proposition direction, cited party position, weighted contribution and rendered explanation.",
+    "Independently validate every released 2023 mapping against the full source context; do not apply a blanket arithmetic sign reversal."
+  ]
+}

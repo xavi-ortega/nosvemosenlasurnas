@@ -3,12 +3,13 @@ description: Spanish public UI and optional translations; all original code and 
 alwaysApply: true
 ---
 
-# Lean language policy
+# Quiz language policy
 
-- Read AGENTS.md and docs/plans/project-language-policy.md.
+- Read AGENTS.md, outputs/quiz-2023-scope-revision.json and docs/plans/project-language-policy.md.
 - Spanish public UI includes errors, accessibility, help/privacy, insights and exports; code/keys/routes/schema/comments/tests/docs are English.
 - Use lang/es semantic catalogs and es default/fallback. Keep existing key/placeholder/browser checks; no raw errors or missing keys.
 - ca/gl/eu are optional later complete public packs, not core blockers. No mandatory human/fluent certification or quorum. Disable incomplete/uncertain packs.
 - Original source quotations/names remain exact; label translated paraphrases separately with access to the original.
 - Locale changes preserve semantic question/answer IDs, scales, weights, scores and citations. Private state stays local.
+- Write the quiz for ordinary people without political/economic prerequisites: one concrete everyday decision, short neutral help, explained essential terms, preserved source conditions and simple cited agreements/differences. No analyst dashboard, leading moral labels or invented policy impacts.
 - No admin language work, reviewer roster or expanded language-governance platform.

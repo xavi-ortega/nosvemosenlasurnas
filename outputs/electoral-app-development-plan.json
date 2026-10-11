@@ -1,235 +1,258 @@
 {
   "schemaVersion": 2,
-  "planVersion": "lean-v1.1.0",
-  "title": "Nos Vemos en las Urnas · Lean development plan",
-  "subtitle": "Free comparison and private quiz · owner-supplied sources · minimal infrastructure",
-  "summary": "Build a useful public service: cite and compare supplied electoral programmes, run a short progressive quiz locally, explain policy overlaps only after explicit finish, and collect narrowly scoped voluntary privacy-protected aggregate feedback. Remove the editorial backoffice and mandatory human-review/language machinery.",
-  "status": "Authorized scaffold restart; local implementation in progress; no public launch approval.",
+  "planVersion": "quiz-2023-v2.0.0",
+  "title": "Nos Vemos en las Urnas: a useful private quiz for the 2023 Congress election",
+  "subtitle": "Real programmes, directly authored questions, verified meaning and a modern readable quiz",
+  "summary": "Build a quiz for ordinary Spanish users based explicitly on the 23 July 2023 Congress election. Acquire the complete official candidacy corpus, read available programmes in full one by one, cross-reference policies and directly author a larger balanced question bank. Correct and prove the full answer/citation/scoring path, then replace the basic UI with an accessible smooth quiz. Defer programme-comparison screens, metrics expansion and optional languages. This is a new acceptance baseline, not a claim that the existing synthetic implementation satisfies the request.",
+  "status": "plan_verified_implementation_pending",
   "createdAt": "2026-10-09T12:36:11.963155+00:00",
-  "scopeRevision": "outputs/lean-scope-revision.json",
+  "scopeRevision": "outputs/quiz-2023-scope-revision.json",
   "baseline": [
-    "Spanish public UI; English original code/docs",
-    "30 commit steps; 28 core and two optional",
-    "One PHP app, static bundles and SQLite counters; no runtime ML"
+    "30 new Q001-Q030 increments with explicit acceptance; L001-L030 are retained historical progress only",
+    "Confirmed scope: every applicable candidacy in all 52 Congress constituencies for 23 July 2023",
+    "Real public edition; synthetic fixtures remain internal tests only",
+    "Source download and semantic analysis are separate statuses; 3 files downloaded, 0 complete readings, 0 released real questions at this planning baseline",
+    "One PHP app, fixed public bank, private browser-memory answers; no runtime model or new infrastructure"
   ],
   "sections": [
     {
       "id": "scope",
-      "title": "1. Product and deliberate cuts",
-      "lead": "A free public service with two primary entry points: compare programmes or take the quiz.",
+      "title": "1. Confirmed 2023 quiz scope",
+      "lead": "One useful private quiz for ordinary users; all real Congress candidacies.",
       "items": [
-        "The owner supplies electoral documents. Visitors can explore public sources without taking the quiz, or answer a short quiz and explicitly request results. Both journeys share the same versioned evidence.",
-        "Keep citations, inclusion, privacy, honest scoring, accessibility and working CI. Remove editorial accounts, MFA/invitations, reviewer identities/qualifications, approval quorums, adjudication, review queues and staff audit workflows.",
-        "No recruited panels, mandatory external fluent/legal/security reviewer roster, human calibration studies, multi-operator cryptography project or regional-language launch programme. Automated checks do not become claims of perfect correctness.",
-        "No runtime model service, Rubix ML, voter classifier, recommendation optimizer, electoral forecasts, voter registration/account, party-specific analytics, demographics or intended-vote collection.",
-        "Cut the old 180-step sequence to 30 coherent commits, with 28 core steps and two optional extensions. The authorized scaffold restart preserves existing work in the verified private external backup."
+        "The owner confirmed the 23 July 2023 general election and Congress. Label every intro/result/export as the 2023 edition, never as current political evidence.",
+        "Q001-Q030 supersede the previous L sequence for this iteration. Preserve the earlier engineering evidence, but do not reuse completed labels as proof of real-source correctness.",
+        "Programme-comparison screens, aggregate-feedback expansion and optional languages are deferred. Keep a compact source/evidence disclosure that supports the quiz.",
+        "No new accounts, backoffice, reviewer/quorum programme, runtime AI, scheduler, repository restart or history rewrite."
       ]
     },
     {
       "id": "journeys",
-      "title": "2. Public journeys",
-      "lead": "The comparison tool and quiz must each be useful on their own.",
+      "title": "2. Everyday-user quiz journey",
+      "lead": "Understand a practical question, answer comfortably and receive an explanation.",
       "items": [
-        "Home: two clear actions, what the service measures, how sources work, privacy in one plain paragraph, and the source release date.",
-        "Comparison: browse all in-scope candidacies, select two or more, search topics and see exact proposals, differences, overlap and evidence gaps. Provide a table on wide screens and readable cards on phones.",
-        "Quiz: explain local processing and reload behavior, optional local constituency selection, balanced questions, skip/unsure, optional topic priorities and edit. After ten presented questions offer finish, five more, review or exit. Presentation count and scored-answer count differ.",
-        "Before explicit finish, withhold personalised party identities, scores by party, ranking and selected result citations from DOM/accessibility/title/export surfaces. An unnamed highest comparable overlap may appear only when enough shared answers exist; never call it certainty.",
-        "Results: explain per-party policy overlap, shared evidence coverage, ties and limitations; show agreements/disagreements with cited programme passages for answered questions. Unanswered-topic exploration is public information, not a guessed preference.",
-        "After results, a person may knowingly refine answers, compare sources, reset, deliberately export a local file, or optionally contribute feedback. Finish never opts into metrics. No pressure to reach 100%."
+        "One concrete decision per question; one affirmative grammatical proposition whose positive answer always means agreeing with that exact proposition.",
+        "Spanish statement normally 12-25 words; if a longer statement is necessary preserve meaning and explain why. No unexplained acronym, double negation, two policies or leading moral label.",
+        "Optional neutral explanation, normally 25-45 words, describes what the proposal means; use everyday money/work/home/school/health/transport examples only when they preserve actual conditions.",
+        "Explain essential terms at first use (for example, the income tax on earnings); do not silently broaden a targeted tax into all taxes or a regional rule into all of Spain.",
+        "No unsupported impact forecast, guaranteed cheaper rent, inflation estimate or assertion that an opinion is correct. Plain-language examples are not proof of policy effects.",
+        "No party names, logos or ideological answer labels while answering. Original-language quotations and party identity become available in result evidence after deliberate finish.",
+        "No technical methodology/hashes/uncertainty tables in the main journey; retain source and method details behind clearly named optional disclosures.",
+        "Start with a short Spanish explanation of the observed proposal overlap, not a voting instruction or a personality/ideology classification.",
+        "Show three understandable cited agreements and three disagreements when available, each with Your answer / What the programme proposes / How they relate. Do not fabricate six examples when evidence is absent.",
+        "Distinguish a disagreement on one proposal from total overlap across other proposals. A top overall result may disagree with the user on rent caps; label that disagreement explicitly.",
+        "Explain missing evidence as We could not find a clear position in this programme, never Neutral or They oppose it.",
+        "For fair ordering, explain These candidacies were compared using the same N questions; show other eligible candidacies and coverage. For insufficient evidence do not announce a winner.",
+        "Use a percentage only as a secondary explained policy-overlap index; no probability, confidence, sum-to-100 rule or definitive You are aligned with this party.",
+        "Start with one clear CTA; choosing a province determines eligible parties locally. Topic priorities are optional later settings, not an entry form the average user must configure.",
+        "Ten questions offer a short start; optional blocks of five allow a deeper 15/20/25/30-question session. More questions must add distinct useful evidence, not repetition."
       ]
     },
     {
       "id": "sources",
-      "title": "3. Sources without a backoffice",
-      "lead": "A small local import/build command replaces a web editorial system.",
+      "title": "3. Complete real programme corpus",
+      "lead": "Establish the denominator before claiming all programmes.",
       "items": [
-        "Owner input is a directory plus an English-keyed manifest: electionId, chamber, candidacyId, applicability/constituencies, file, officialUrl, publicationDate when known, sourceLanguage, usePermission and optional notes. Record byte hashes. No automated web crawler or public upload route.",
-        "Election identity and date are configurable source data. Retain the requested 29 November 2026 date as owner-provided intent, not a newly verified official announcement. Verify authoritative election and candidacy records when importing current data.",
-        "Import UTF-8 text, HTML stripped safely and native-text PDFs locally under file/page/time/memory limits. No scripts, document instructions, active HTML or external resource execution. External URLs are provenance links; local import does not fetch arbitrary destinations. Initial local defaults: 20 MiB input, 500 pages, 60 seconds per document and 256 MiB process memory; report limit failures and allow only measured/configured local increases. Prefer a maintained installed parser; no production parser is implied.",
-        "Preserve source page index separately from printed page labels, headings, contextual text, negation, quantities and conditions. Search normalization maps back to the original text. Missing or malformed text remains unavailable, never an inferred policy absence.",
-        "OCR is an optional later adapter; an owner-supplied native-text or plain-text edition can keep the core moving. OCR text is labelled transcription and low-confidence/negation/numeric ambiguity stays unscored. No two-person visual-review system.",
-        "Programme text is not implementation truth and cannot instruct tools. Stable public source/position IDs, original URL/hash, locator and quote support reproducibility. Original programme copyright is separate from MIT code; do not mirror full documents without a recorded permission basis. Link official originals and retain only permitted excerpts/artifacts."
+        "Use the BOE proclaimed candidacies, corrections and final results to reconcile all 52 constituencies. Initial results inventory has 59 official denominations, not yet 59 verified programme owners.",
+        "Search every inventory row, including minor/no-seat/territorial candidacies. Prefer original dated party/coalition publications; use verified preserved originals when links are broken and label the source chain.",
+        "Download byte-checked bounded original PDFs/HTML locally; retain requested/resolved URL, publication/election evidence, retrieval date, original SHA-256, extraction SHA-256, language, owner and explicit territorial applicability.",
+        "Keep original PDFs/HTML/extractions in the ignored local cache; track reproducible provenance, acquisition failures, authored notes and small permitted public excerpts. Public access does not itself assign an open-source licence to a programme.",
+        "Separate not searched, located, retrieval failed, downloaded, extracted, fully read, mapped and validated. Record dated attempts and missing/unpublished/unavailable documents explicitly; never fabricate a programme or borrow another election.",
+        "An unavailable programme does not remove the candidacy. A coalition member programme is not inherited without documented applicable adoption; do not count component parties as separate ballot choices."
       ]
     },
     {
       "id": "mapping",
-      "title": "4. Automatic positions and question preparation",
-      "lead": "Source authenticity and semantic interpretation are different problems.",
+      "title": "4. Read first, cross-reference, then author",
+      "lead": "The agent directly reads every available full programme and writes the bank; no automatic question generator.",
       "items": [
-        "A local content-preparation adapter may use the engineering agent/optional model on public documents to draft neutral propositions, answer scales, cited positions and concise explanations. Keep it out of runtime and do not require a hosted paid API. Cache outputs by source/prompt/tool version and commit the produced public content.",
-        "The compiler validates source identity/applicability, exact contextual quotes, locators, schema, ranges, candidate/topic coverage, contradictory records and answer-scale direction. It rejects invented quotations and missing references. These checks cannot prove every paraphrase or political interpretation correct.",
-        "Each mapping records propositionId, topicId, familyId, partyPosition (-2 to 2 or null), reasonCode, rationale, citationIds, interpretationOrigin and preparationVersion. Exact quotations are authoritative excerpts; summaries/mappings are explicitly derived interpretations. Evidence uncertainty is not voter uncertainty.",
-        "No standing human approval, accounts, attestations or quorum is required. Failed or ambiguous automation marks a position unknown and reports a local actionable error; it does not fill a gap from historical manifestos, coalition members, general knowledge or a model opinion.",
-        "Question drafts use one concrete policy proposition, short Spanish, labelled choices including neutral/unsure/skip, balanced specificity and preserved conditions. Avoid loaded terms, compound tradeoffs, double negation and caricatures of party positions. Generic and detailed banks are generated from the actual documents, not hardcoded to last election.",
-        "Public content/rubrics remain inspectable in Git and the methodology. Corrections update a cited mapping and append a small public change record; a public issue/contact link can accept reports without building an application ticketing system. No promise of infallible automated truth."
+        "For each document, read all sections/page ranges, including annexes and footnotes; write an individual issue notebook with exact quotes, PDF and printed page, conditions, scope, rationale and unknowns. A download, extraction or keyword hit is not a completed reading.",
+        "Cross-reference individual notebooks into an issue matrix before finalising question wording. For every candidature/question pair explicitly record support, opposition, qualified position, unknown or conflict with source references.",
+        "Author a target bank of 80 distinct everyday Spanish questions; release at least 60 supported questions across at least ten topics. No padding, duplicate policies, silent unsupported values or paraphrased source quotes.",
+        "State an explicit question-specific scale rubric: +2 means clear agreement with the exact shown proposition, -2 clear opposition; +/-1 only with a justified qualified stance; 0 only explicitly evidenced intermediate/neutral position, never silence or a conflict.",
+        "Every scored mapping retains contextual quotation, party/programme identity, page/range, rationale and rubric. Preserve negation, quantities, exceptions and territorial applicability. Treat whole-law repeal versus one provision carefully; do not infer a stance on every clause from a broad slogan.",
+        "Automate extraction, hashing, schema/quote validation and selection among already authored question IDs only. No scheduled/model/keyword generator may create questions, help texts or numeric positions for the release. Existing literal fixtures are engineering tests only."
       ]
     },
     {
       "id": "matching",
-      "title": "5. Small transparent matching engine",
-      "lead": "The runtime is deterministic arithmetic, with no ML.",
+      "title": "5. Verify meaning and arithmetic together",
+      "lead": "Trace the full result instead of guessing a global sign correction.",
       "items": [
-        "Use numeric agreement scale -2,-1,0,1,2. Unsure/skip have no numeric value. For answer a and cited position p, similarity = 1 - abs(a-p)/4. Party overlap = 100 * sum(w * similarity)/sum(w) for the disclosed scored set. Scores are independent and do not sum to 100.",
-        "Weights are release-defined topic and question-family budgets, with optional explicit user topic priorities (0,1,2) kept locally. Divide each family budget across its declared question items; do not let a long topic or repeated variants gain accidental weight. Freeze the bank and weight definition for a session.",
-        "For a ranking or highest-overlap checkpoint, use the same answered propositions and weights for every candidacy in the disclosed comparison cohort. The default cohort includes all applicable supplied candidacies. A deliberately selected narrower cohort is prominently labelled; other candidacies remain visible.",
-        "Initial conservative display threshold: eight numeric answers, four topics, and at least 60% of answered positive weight shared across the cohort. Missing sources stay visible. If the threshold fails, show cited comparisons and separately labelled partial overlaps/coverage without ordering or declaring a winner. These are engineering heuristics, not statistically calibrated confidence.",
-        "Display overlap, response/evidence coverage and question count separately. A 60% overlap says that the observed weighted answers align by that index; it does not mean 60% probability that the person prefers that party. More answers can lower the index.",
-        "Keep the existing v1 reference as a historical arithmetic oracle. Implement the final browser engine against the simpler explicit weight contract and pin its version. Test exact examples, unknown/zero weights, ties, common-denominator fairness, permutation invariance and locale invariance. No elaborate completion bounds or robust-leader certification is required."
+        "Canonical labels run -2 Strongly disagree through +2 Strongly agree in an explicit ordered array. Verify browser-visible order, chosen value, stored state, authored direction, source value and result explanation.",
+        "Retain deterministic similarity 1-abs(answer-position)/4 unless a documented defect justifies a versioned change. Independent expected cases: -2 versus +2 = 0; -2 versus -2 = 1; 0 versus +/-2 = 0.5.",
+        "Build an independent semantic calibration ledger for every released question and mapping, with source-grounded expected support/opposition and calculation cases. Do not calculate expected answers by calling the same implementation under test.",
+        "Test all five user answers, inverse phrasing, qualifications, missing/conflicting data, skip/unsure, edited answers, ties, duplicates and weighting. Rent-cap strongly disagree versus a supporting party must be marked a disagreement even if that party has the highest aggregate overlap.",
+        "Use fixed topic/family budgets and an eligible constituency cohort determined independently of answers. Rank only parties sharing identical scored propositions and weights above the declared minimums; disclose the fixed comparison subset and preserve other eligible candidacies.",
+        "Never convert silence to neutral, compare differently covered partial scores in one leaderboard, silently discard small parties, label overlap a probability or split 100 percent among parties."
       ]
     },
     {
       "id": "adaptive",
-      "title": "6. Progressive question order",
-      "lead": "Start useful and get more specific without pretending to read minds.",
+      "title": "6. Larger authored bank, comfortable sessions",
+      "lead": "Selection chooses existing questions; it does not generate content.",
       "items": [
-        "Start with ten general questions covering the released topics, one per family where possible, selected by a documented balanced order. Do not force scoring if enough comparable evidence does not exist.",
-        "For continuation, prioritize uncovered positive-weight topics/families first, then specificity. Among eligible remaining questions, compute D(q)=(max party position-min party position)/4 on the close-profile common-evidence cohort, U(t)=1-answered numeric bank weight in topic t/total positive released topic weight, and score(q)=topicPriority*(0.6*U(t)+0.4*D(q))/burden(q). Default burdens: general=1, specific=1.5; all values/version are published. Unsupported numeric spread is zero. Stable question ID breaks equal scores.",
-        "Define close profiles as within ten observed index points of the current highest comparable index. If comparison is insufficient, consider the full cohort. Never remove parties from results or infer an answer; stable question IDs and party renaming/order do not change semantic selection.",
-        "Limit a family to two presented questions per session by default; score its declared items using the fixed family budget, without double-counting alternate wording of the same proposition. An edit resets derived selection; already presented questions remain in local history. Identical profiles or no discrimination are legitimate outcomes.",
-        "If the selector fails or exceeds its CPU budget, use the balanced remaining order with the same scoring contract. Bank exhaustion offers explicit finish/exit; it never reveals automatically. There is no prediction probability or target of reaching 100%."
+        "Initial ten questions balance distinct topics and policy families. Optional five-question blocks use unseen authored questions, improve coverage and cap redundancy.",
+        "Exercise actual constituency cohorts, including missing-programme candidacies, so a minor unknown party does not silently disappear or force a misleading full ranking. Insufficient fair evidence gets an honest unranked outcome.",
+        "Keep unsure/skip separate from the neutral numerical answer. Allow revisiting/editing; explain more answers may change results in either direction.",
+        "No race, countdown, correct-answer feedback or completion-forced result. Retain deliberate finish, frozen release per session, local reset and explicit local export."
+      ]
+    },
+    {
+      "id": "design",
+      "title": "7. A modern readable quiz stage",
+      "lead": "A concrete interaction design, not a skin on the old form.",
+      "items": [
+        "Quiz stage inspired by the clear one-question interaction of Kahoot, with a calm credible civic identity. No trivia right/wrong, speed score, countdown, competitive leaderboard or party-coloured answer buttons.",
+        "Palette: ink #182235, canvas #F4F7FB, surface #FFFFFF, action #3449A4, muted #526078, selected #176B71",
+        "Reuse the existing locally served font assets after inspecting them; strong readable sans headings, body 18px on mobile, line height 1.5-1.65, bounded line lengths; no third-party font request or dependency changes.",
+        "Compact persistent edition/progress line; topic name; one large question; optional What does this mean? help.",
+        "Five equally prominent labelled agreement choices in a stable disagree-to-agree order; separate unsure and skip controls. Native radio group, no hover-only controls.",
+        "Back/edit and one primary Continue action remain clear; selection has an immediate visible state, but no automatic advancement.",
+        "Checkpoint after ten: See my result or Five more questions; always explicit finish. Result page has plain-language agreement/difference evidence and a quiet source disclosure.",
+        "Short 160-220ms opacity/transform transitions between questions and clear selected-state feedback; no layout jump, double submission or lost focus. prefers-reduced-motion removes movement and preserves feedback.",
+        "44px minimum touch targets, visible keyboard focus, radio keyboard semantics, text contrast at least 4.5:1, control/focus contrast at least 3:1; 320px reflow and 200/400% zoom; never encode direction only by colour. Verify the actual palette in each state.",
+        "Inspect actual desktop/mobile screenshots for intro/question/help/selected/checkpoint/results/loading/error states and perform keyboard/reduced-motion checks; no design task is complete from CSS or descriptions alone."
       ]
     },
     {
       "id": "privacy",
-      "title": "7. Private quiz boundary",
-      "lead": "The server distributes public content; it does not receive a visitor profile.",
+      "title": "8. Preserve the private quiz boundary",
+      "lead": "A simpler interface must preserve local processing.",
       "items": [
-        "Serve the same complete public election bank for everyone. Filter constituency/candidacies, calculate scores and choose questions in the browser. Do not fetch party/question-specific data in response to answers or private selection.",
-        "No quiz session API, cookies, localStorage, default IndexedDB, answer persistence, URL/hash encoding, telemetry, replay, advertising scripts, crash payloads or support dumps containing answers, priorities, scope, scores or next-question IDs.",
-        "A local download is deliberate, clearly explains its political contents and stays on the device. Restart clears memory. Shared links may reference only public sources/topics with no personal selections or result.",
-        "Network operators still process connection metadata; privacy copy says so. Configure app, reverse proxy, host error reporting and backups consistently. No claim that local matching makes all HTTP traffic anonymous.",
-        "Metrics are a separate voluntary flow described below. They never reuse or upload the full quiz vector and never include party affinity or voting intention."
+        "Fetch the same fixed public versioned bank for everyone. Province, answers, priorities, adaptive state, results and finished state stay only in browser memory by default.",
+        "No personalised API, party/result URL, answer telemetry, persistent identifier, raw request log or remote crash payload containing private state. Help content and scoring remain local.",
+        "Do not embed third-party video, analytics, fonts or programme viewers in the answering journey. Explicit original-source links after finish may open the external publisher with no referrer.",
+        "Finish is not collection consent. Preserve the optional feedback implementation disabled and defer its product work."
       ]
     },
     {
       "id": "metrics",
-      "title": "8. Agreement metrics with a bounded privacy design",
-      "lead": "Measure voluntary contributions, not voters or the electorate.",
+      "title": "9. Deferred optional feedback",
+      "lead": "Accuracy and usefulness of the quiz come first.",
       "items": [
-        "Two purposes: (1) whether the result broadly fits the person (yes/no/unsure, with no party/score), and (2) agreement/neutral/disagreement with one randomly sampled public policy proposition. Present the latter as a separate short survey, independently of answered quiz topics, with optional refusal.",
-        "The proposition is sampled uniformly from a small fixed public survey bank, independently of the profile. Select one proposition per opt-in visit and never automatically copy a quiz answer. Record its question/wording version. Topic labels aggregate fixed propositions and cannot be treated as universal agreement with a broad topic.",
-        "Before sending, apply documented three-category randomized response using crypto.getRandomValues and epsilon=1: report the real category with probability exp(1)/(exp(1)+2), otherwise uniformly one of the other two. Thus raw agreement and result-fit values never leave the device. A maximum of two reports per visit gives epsilon=2 composition for that visit; repeat visits are not a lifetime bound.",
-        "One stateless POST endpoint accepts only metricId, public surveyVersion/propositionId as applicable, protocolVersion and one randomized category. Never send answers, score, party, constituency, demographics, persistent IDs, precise client time or a shared report/session identifier. Schema rejects extra fields and oversized bodies. Submission is best-effort: one attempt per chosen metric per visit, with no automatic retry or durable retry queue. A failed/lost acknowledgement is skipped; do not inflate counts or compose unrecorded privacy budget through repeated independent randomization.",
-        "Increment SQLite counters atomically by server-selected week, survey version, metric/proposition and reported category. Do not retain individual event rows or request bodies. Disable body/IP/access telemetry for this route throughout the stack; ordinary transient connection metadata is still present. Keep only counters for the election and a bounded retention period.",
-        "Estimate each category fraction from reported fraction r: estimate=(r-1/(exp(1)+2))/((exp(1)-1)/(exp(1)+2)). Build multinomial-compatible uncertainty from reported counts; do not disguise clipping, sampling noise or impossible noisy estimates. Suppress public values below 500 contributions or above ten percentage points of interval half-width. Topic summaries use equal proposition weight only when all included propositions have adequate coverage; disclose that set. For display, use the three-category constrained multinomial maximum-likelihood estimate on the simplex, retain the unbounded inverse estimate in methodology/report diagnostics, and transform simultaneous Wilson intervals on the reported categories (95% family confidence, Bonferroni z≈2.394) through the same affine inverse. Label constraints/noise; do not present clipped values as certainty. A reported interval wholly outside the protocol-feasible probability range flags unreliable data and suppresses that snapshot. The sampling model assumes independent honest randomized contributions, which the public endpoint cannot guarantee.",
-        "Publish closed weekly static reports, with sample size, uncertainty, survey wording and method. No party/vote charts, demographic/constituency cuts, real-time counter API or arbitrary filters. Result-fit counters have no party dimension. Do not sort topics whose uncertainty overlaps into a confident league table.",
-        "Without identities, unique people and strict one-person-one-vote cannot be established. Counters describe opt-in contributions and can be biased/abused. Use bounded payloads, concurrency/global request budgets and automatic collection pause on anomalies; avoid accounts, fingerprinting or retained IP hashes as a workaround.",
-        "Randomization and aggregation reduce disclosure; they do not alone prove legal anonymity or remove political-opinion rules. Treat this as privacy-protected aggregate feedback, with truthful notice and clear opt-in. Validate the actual host/proxy/log flow and applicable Spanish legal basis before enabling collection; no mandatory consultant/staff review workflow is introduced. If that flow cannot meet the documented boundary, disable this endpoint while the free quiz/comparison remain available.",
-        "Prepare and test this small branch before documents arrive. Live collection and any public statistical report require the launch action to explicitly include their flags/actual flow; do not activate them from a passing synthetic test."
+        "Do not expand, enable or present optional feedback as a core quiz dependency. Preserve the bounded counters and separate consent design for a later iteration.",
+        "Any future activation still excludes raw quiz answers/party/scores/district/identifiers, requires actual hosted privacy/log/notice checks and remains part of explicit PUBLIC-LAUNCH approval."
       ]
     },
     {
       "id": "language",
-      "title": "9. Language and inclusive interface",
-      "lead": "Spanish is the complete initial UI; translations are optional content work.",
+      "title": "10. Plain Spanish and inclusive interface",
+      "lead": "No politics or economics prerequisite.",
       "items": [
-        "Original code, file/route/schema/API/translation keys, reason codes, comments, tests and developer docs are English. Product copy, errors, accessibility labels, privacy/help, insights and exports are Spanish. Use existing lang/es catalogs and APP_LOCALE/APP_FALLBACK_LOCALE=es.",
-        "Reuse the existing small dictionary/key/placeholder checks; do not build more translation bureaucracy or spend cycles translating unused admin screens. No admin surface is in scope. Missing keys must have a safe Spanish fallback rather than an exception string.",
-        "Catalan, Basque and Galician are optional later packs, not a core dependency. Use the same IDs/scales/rubrics, complete the enabled public surface and test meaning/score parity. AI can draft translations; no mandated human certification or reviewer service. If a translation is uncertain, keep that pack disabled and disclose its status.",
-        "Original official quotations/proper names remain exact, including their original language. Any translated paraphrase is separately labelled and the original remains reachable. Do not score a different meaning across locales.",
-        "Use the modern UI foundations already prepared where useful: clear hierarchy, readable text, restrained motion, fast feedback, mobile comparison cards, no party-dominant visual bias. Native controls, visible focus, keyboard flow, screen-reader labels, contrast, reduced motion, zoom/reflow and generous targets are acceptance checks.",
-        "Automated browser/axe checks plus a short reproducible keyboard/mobile checklist are enough for this project workflow; no recruited mixed-age research programme or named assistive-device panel is a launch prerequisite. Do not claim universal accessibility certification from automated tests."
+        "All public questions, explanations, buttons, errors, privacy/help and local export labels are Spanish. Original code/routes/keys/comments/tests/developer docs are English. Keep lang/es semantic keys and es default/fallback.",
+        "Audit every authored question for one concrete decision, unexplained jargon, leading framing and loss of source conditions. Short help explains meaning without advertising an answer or inventing impacts.",
+        "Original quotations/proper names remain exact. Translated source explanations are labelled paraphrases, with the original accessible after finish.",
+        "Optional ca/gl/eu remain deferred; enabled translations later preserve IDs/scales/citation meaning and scores, with incomplete packs disabled.",
+        "Native controls, keyboard/focus, contrast, reduced motion, mobile reflow and Spanish screen-reader names are required. Existing automated checks plus a practical reproducible walkthrough are sufficient; no recruited certification panel."
       ]
     },
     {
       "id": "infrastructure",
-      "title": "10. Minimal infrastructure and free access",
-      "lead": "Start with one small PHP host; Node and source processing run at build time.",
+      "title": "11. Reuse the lean app",
+      "lead": "Source work is local; quiz execution stays small.",
       "items": [
-        "Laravel/Blade/Tailwind plus focused TypeScript, existing Boost/skills for development only. Serve immutable compressed JSON and local assets from the same host. No runtime Node process, Redis, PostgreSQL, persistent extraction worker, queue cluster, Elasticsearch, third-party analytics, external font dependency or hosted model.",
-        "Use SQLite only for aggregate counters/operational data that genuinely need storage, with transactions, WAL/busy-timeout where supported and concurrency tests. Source content lives in versioned files; do not recreate the editorial database as a content CMS. If counters become a bottleneck, batch/report less first and add infrastructure only after measurement.",
-        "Build/import on the owner/developer machine or a bounded CI job, then deploy the generated data/assets. Production contains the web runtime, immutable bundles and counter DB; no OCR tooling, Boost/MCP, source-upload endpoint or development fixtures.",
-        "Initial working budget: one supported PHP host with roughly 1 vCPU/1 GiB RAM and persistent disk. This is a starting target to measure, not a throughput guarantee or a provider price. TLS, compressed caching, daily encrypted off-host backup of counters/config and immutable release files, and one restore command are sufficient.",
-        "Free means no charge to visitors. Hosting/domain/backups still have owner costs; choose the existing/cheapest adequate host using a current quote before any purchase. The preferred .es domain remains unverified/unpurchased. No provider, cloud product, Valet or paid analytics is mandated.",
-        "Proposed budgets: initial compressed assets <=300 KiB, complete evidence/quiz bank <=5 MiB compressed, local selection/scoring <=100 ms p95 on a declared mid-range/mobile test profile. Loading readiness has a separate measured target. Respect actual cold-load timings; optimize measured bottlenecks rather than building a distributed platform."
+        "Reuse Laravel/Blade/Tailwind v4/TypeScript, immutable public bundles, hashes, release withdrawal and local matching. No dependency change, additional runtime worker/model or database infrastructure is required by this plan.",
+        "Retain SQLite feedback counters disabled; no new paid analytics or hosting purchase. Keep original source cache excluded from Git and public assets.",
+        "Measure full real-bank size against existing public payload limits; compact excerpt-only citations without deleting context essential to the interpretation. No answer-dependent fetches."
       ]
     },
     {
       "id": "quality",
-      "title": "11. Checks, publication and operation",
-      "lead": "Keep checks that protect a real public service; remove staff and certification machinery.",
+      "title": "12. Real-source and user-visible acceptance",
+      "lead": "Passing synthetic CI does not certify the 2023 edition.",
       "items": [
-        "Every implementation commit still passes python3 scripts/check-staged.py on its exact staged tree, including required local CI and preserved security hooks. No --no-verify or failed/skipped/unavailable checks. Hosted checks for the actual pushed revision remain separate; no automatic push is authorized.",
-        "Meaningful regression coverage: import/citation corruption and parser limits; unsupported/conflicting evidence; exact score examples and common-denominator invariants; browser-local requests/storage; explicit result reveal; source links; mobile/keyboard/axe; metric payload/noise/counter races/refusal/failure; schema/hash/update/withdrawal; backup/restore.",
-        "One actual public-launch approval remains for concrete external action/costs/domain/release and any metric/statistic activation included in it. Prepare that packet only after the implementation and applicable tests are reviewable. No separate blueprint, methodology, human quorum, language panel or backoffice gates.",
-        "Owner source provision is an input, not a staff approval process. Local source-independent engineering can continue before current documents arrive. Build complete synthetic journeys first; current publication needs actual compatible documents and candidacy metadata.",
-        "Pin sessions to a bundle. Routine releases do not change answers silently; a fixed public withdrawal check can invalidate a compromised release and offer restart. Atomic switch and one-command rollback retain a change history. Degrade to comparison/quoted evidence when scoring is unavailable; metric failures never block either core journey.",
-        "Prepare a simple release checklist/runbook: configured domain/TLS, original-source permissions, non-dev production assets, actual traffic/log/storage probe, basic load, counter backup/restore, previous-bundle rollback and one owner/contact route. No on-call roster, staff capacity matrix or enterprise RPO contract.",
-        "Keep supplied plans and historical/synthetic fixtures labelled by election/purpose. Future election updates replace content/bank mappings through the same tools, not a new editorial application. Future maintenance is ongoing operation, not a task an agent can certify forever complete."
+        "Completion requires a reconciled full candidacy inventory; an acquisition/missing record for every row; full authored readings for every used programme; a crossed issue matrix; at least sixty useful validated questions; and audited mappings/citations.",
+        "A missing programme remains explicitly missing and unscored. All available programme texts must be analysed before calling corpus analysis complete; never claim every programme was downloaded if some are unavailable.",
+        "Independently checked rent and inverse cases, exact quotation/range/page checks and browser label-to-result regressions are release blockers. Fix defects before recording completion.",
+        "Verify actual mobile/desktop states, keyboard, reduced motion, no-party-reveal-before-finish, answer editing and network/storage privacy. Record the ordinary-user walkthrough and revise confusing copy.",
+        "Run existing required CI/security/dependency audits and the exact staged tree gate before every commit. Keep local test evidence distinct from hosted checks and production readiness.",
+        "Prepare a concrete 2023 release/host/cost/privacy/rollback packet before PUBLIC-LAUNCH; do not publish, activate collection or push automatically."
       ]
     },
     {
       "id": "migration",
-      "title": "12. Reuse prepared work and retire the old scope",
-      "lead": "The owner explicitly authorized a one-time unpublished local restart after a verified complete external backup.",
+      "title": "13. Future programmes are a separate edition",
+      "lead": "Replace evidence deliberately when new programmes arrive.",
       "items": [
-        "The original scaffold commit remains unchanged; unpublished implementation commits and prepared files are preserved in the private external backup.",
-        "Retain useful CI fixes, canonical skills and the standalone cleanup intent. Remove superseded auth/backoffice, approval machinery and historical planning from the active tree.",
-        "Do not rewrite remote history, push, change identity/signing, delete backups or real documents, deploy, purchase or activate collection.",
-        "Implement and verify eligible lean tasks; actual current sources and hosted launch evidence remain separate inputs."
+        "Preserve the 2023 edition with its sources, question meaning and corrections. New election metadata, candidacies, programmes and authored semantic readings produce a new release, not a date substitution.",
+        "Reuse a question only if its exact proposition/rubric remains applicable and every new scored position has new applicable citations; never inherit party values automatically.",
+        "Pin existing sessions to their original edition; correction/withdrawal and rollback use immutable hashes. Programme comparison, metrics expansion and optional translations remain later work."
+      ]
+    },
+    {
+      "id": "execution",
+      "title": "14. How loop engineer proceeds",
+      "lead": "Work one inspectable increment at a time with factual evidence.",
+      "items": [
+        "Read docs/loop-engineer.md, the canonical plan and outputs/quiz-2023-scope-revision.json. Keep the old implementation session paused; no scheduler or task message is started.",
+        "For source tasks select one pending inventory document, acquire/extract/read it fully and save its individual notes. Continue across documents and turns until every available programme has been read; do not mark the parent complete after one party.",
+        "After individual readings, cross-check each issue across programmes, author and calibrate questions, then implement the quiz design. Independent source retries and design preparation may proceed when a particular link is unavailable.",
+        "Record actual commands, original/source hashes, reading page ranges, authored artefacts, defect fixes and tests in work/execution-journal.jsonl. Status changes require the actual acceptance evidence.",
+        "Preserve working/index/history and use direct main commits only after all required staged checks. No new reset, history rewrite, branches, worktrees, identity changes or automatic push."
       ]
     }
   ],
   "requirements": [
     {
       "id": "R01",
-      "title": "Free consumer service",
-      "acceptance": "No paywall, visitor account, backoffice, ads, partisan funding features or runtime AI dependency."
+      "title": "Useful quiz without prerequisites",
+      "acceptance": "The main journey uses concrete everyday Spanish, one decision per question, short neutral help and understandable reasons; no analyst dashboard, account or paywall."
     },
     {
       "id": "R02",
-      "title": "Owner-supplied current sources",
-      "acceptance": "The owner supplies the source files and provenance manifest. Election/chamber/applicability and missing candidacies are explicit. Historical samples never become current evidence."
+      "title": "Complete 2023 coverage",
+      "acceptance": "All 23J Congress candidacies are reconciled across 52 constituencies, with acquisition attempts, applicability, provenance and explicit missing records; no four-party shortcut."
     },
     {
       "id": "R03",
-      "title": "Exact citations and honest interpretation",
-      "acceptance": "Every displayed source claim and scored position has a contextual locator. Automated interpretations are identified as interpretations; ambiguous, conflicting or unsupported positions are unknown."
+      "title": "Direct reading and authored evidence",
+      "acceptance": "Every used programme is read in full by the agent; questions and numeric mappings are directly authored after cross-reference, with exact context and no automatic generator."
     },
     {
       "id": "R04",
-      "title": "Useful public comparison",
-      "acceptance": "Browse programmes, search topics, select candidacies locally, compare promises with citations and visible coverage. No question answering is required."
+      "title": "Quiz-first scope",
+      "acceptance": "The home and primary journey are the quiz. Standalone programme-comparison screens and metrics expansion are deferred; keep only source disclosures needed to explain results."
     },
     {
       "id": "R05",
       "title": "Private deterministic matching",
-      "acceptance": "Answers, priorities, constituency, scores and adaptive state stay in browser memory by default. Independent policy overlaps are not vote predictions or confidence probabilities."
+      "acceptance": "Private answers/province/priorities/results remain in browser memory; same fixed public bank; no personalised API, telemetry or default persistence."
     },
     {
       "id": "R06",
-      "title": "Short progressive quiz",
-      "acceptance": "Ten balanced starter questions, optional five-question blocks, skip/unsure and edit. Reveal party results only on explicit finish. More answers can raise or lower overlap."
+      "title": "Larger balanced bank",
+      "acceptance": "Target 80 distinct useful questions, release at least 60 across ten or more topics; ten starters then optional five-question blocks and explicit finish; no padding."
     },
     {
       "id": "R07",
-      "title": "Fair evidence and question weights",
-      "acceptance": "Do not rank different evidence sets. Preserve candidacies, unknowns and ties. Fixed topic/family budgets limit redundant questions and leading wording."
+      "title": "Correct semantic direction and fair scoring",
+      "acceptance": "Every released mapping passes source-to-rubric calibration; visible answers are ordered -2 through +2; disclose comparable sets/unknowns and distinguish individual disagreement from aggregate overlap."
     },
     {
       "id": "R08",
-      "title": "Clear Spanish and inclusive design",
-      "acceptance": "Spanish v1, English original code/docs, responsive accessible fast UI. Optional regional translations preserve meaning and scoring; no reviewer workforce or language-certification gates."
+      "title": "Modern readable accessible design",
+      "acceptance": "One-question stage, equally readable choices, short smooth reduced-motion-safe transitions, clear selected/focus states and verified phone/keyboard/zoom/contrast behavior."
     },
     {
       "id": "R09",
-      "title": "Relevant voluntary aggregate feedback",
-      "acceptance": "Include result-fit feedback and agreement with policy propositions. Separate opt-in, randomized limited contributions, counters only, uncertainty and honest sample/anonymity limits."
+      "title": "No optional collection dependency",
+      "acceptance": "Feedback stays disabled and deferred; no quiz-data reuse or live collection. Preserve separate consent/privacy requirements for later."
     },
     {
       "id": "R10",
-      "title": "Cheap operational footprint",
-      "acceptance": "One Laravel deployment with static bundles and SQLite counters. Build/import locally. No mandatory Redis, PostgreSQL, queue worker, object-store split, ML service or analytics provider."
+      "title": "Lean reused architecture",
+      "acceptance": "One existing Laravel app, static excerpt-only bank and local source prep; no runtime model/new service/infrastructure/dependency expansion."
     },
     {
       "id": "R11",
-      "title": "Reproducible updates and recovery",
-      "acceptance": "Validate schema/hashes, pin sessions, atomically switch bundles, support correction/withdrawal and restore the previous release plus counters."
+      "title": "Explicit edition and corrections",
+      "acceptance": "2023 labels, exact programme locators, frozen sessions, small corrections/withdrawals/rollback and separate newly analysed future editions."
     },
     {
       "id": "R12",
-      "title": "Meaningful checks and disciplined commits",
-      "acceptance": "Retain all required exact-staged CI checks and security hooks; no bypass. Work directly on main, preserve existing work, record actual checks and keep production claims separate."
+      "title": "Evidence and commit discipline",
+      "acceptance": "Actual acceptance evidence and required tests; exact staged CI before each main commit; no bypass/push/reset/history rewrite or revival of the old loop."
     }
   ],
   "project": {
@@ -238,17 +261,32 @@
     "domainStatus": "unverified_unpurchased",
     "publicPrice": "free",
     "runtime": "Laravel/Blade/Tailwind/TypeScript; no runtime model",
-    "plannedElectionDate": "2026-11-29",
-    "electionDateAuthority": "user_intent_pending_current_official_source"
+    "plannedElectionDate": "2023-07-23",
+    "electionDateAuthority": "owner_confirmed_23J_Congress_and_official_BOE_2023_records",
+    "publicEdition": "Elecciones generales 2023 · Congreso",
+    "productFocus": "quiz_first",
+    "programmeComparison": "deferred",
+    "futureEditionPolicy": "New programme reading and candidacy reconciliation produce a separate version; never relabel 2023 positions as current."
   },
   "sourcePreparation": {
-    "ownerSupplied": true,
+    "ownerSupplied": false,
     "backofficeRequired": false,
     "humanApprovalQuorum": 0,
-    "automaticInterpretationsLabelled": true,
+    "automaticInterpretationsLabelled": false,
     "unknownUnscored": true,
     "runtimeModelRequired": false,
-    "historicalSamplesAllowed": true
+    "historicalSamplesAllowed": false,
+    "agentAcquisitionAuthorized": true,
+    "interpretationsLabelled": true,
+    "questionGeneration": "prohibited",
+    "authoringMode": "agent_direct_full_programme_reading_and_cross_reference",
+    "positionGeneration": "direct_authored_mapping_with_evidence_and_rationale",
+    "deterministicExtractionAndValidationAllowed": true,
+    "historicalEditionAllowed": true,
+    "completeCorpusRequired": true,
+    "localCache": "storage/app/election-sources/2023-congress",
+    "inventory": "outputs/2023-source-inventory.json",
+    "readings": "Authored per-programme records keyed to original byte/text hashes and complete page ranges; no automatic summaries substituted for reading."
   },
   "languagePolicy": {
     "default": "es",
@@ -279,9 +317,28 @@
       2
     ],
     "weights": "fixed_topic_family_question_budgets_with_local_user_priorities",
-    "adaptivePolicy": "balanced_then_close_profile_spread_v1",
-    "selectionFormula": "topicPriority*(0.6*unansweredTopicWeightFraction+0.4*closeProfilePositionSpread)/burden",
-    "maximumPresentedPerFamily": 2
+    "adaptivePolicy": "authored_question_bank_local_balanced_coverage_with_no_automatic_wording_generation",
+    "selectionFormula": "Retain the existing local selector only after real-bank coverage, family balance, burden and fairness checks. Selection may choose existing authored IDs; it must never create or rewrite a question.",
+    "maximumPresentedPerFamily": 2,
+    "questionBankTarget": 80,
+    "minimumReleaseBankQuestions": 60,
+    "questionCountPolicy": "Target 80 distinct useful questions; at least 60 evidence-supported released questions across 10 or more topics. Never pad with repetitions or invent positions to reach a quota. Report a quality shortfall and keep work open.",
+    "questionAuthoring": "direct_agent_authored_not_generated",
+    "introductoryTechnicalKnowledgeRequired": false,
+    "defaultPrioritySetup": false,
+    "answerOrder": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "unsureIsNeutral": false,
+    "skipIsNeutral": false,
+    "perQuestionExplanationRequired": true,
+    "cohortPolicy": "Constituency defines eligible candidacies independently of answers. Rank only a disclosed fixed evidence-qualified subset on exactly the same answered propositions and weights; keep all other eligible candidacies visible with coverage and explicit limitations, never silently drop them. If no fair subset exists show unranked cited results.",
+    "maximumSuggestedSessionQuestions": 30,
+    "continuationPolicy": "Ten balanced starter questions, deliberate finish or five more; continue in five-question blocks through 15/20/25/30 while useful unseen evidence exists. A larger authored bank is not a requirement to answer every question."
   },
   "metricsDesign": {
     "inScope": true,
@@ -301,7 +358,9 @@
     "publicMaximumIntervalHalfWidth": 0.1,
     "uniquePeopleClaimed": false,
     "anonymityGuaranteed": false,
-    "actualHostFlowRequiredBeforeActivation": true
+    "actualHostFlowRequiredBeforeActivation": true,
+    "iterationStatus": "deferred_quiz_first_preserve_disabled_implementation",
+    "iterationPolicy": "No feedback expansion or live collection in this iteration. Preserve the separately voluntary protocol and security boundaries; future activation still requires actual hosted privacy/notice checks and explicit approval."
   },
   "infrastructure": {
     "topology": "one_php_host_static_bundles_sqlite",
@@ -325,16 +384,21 @@
       "nonEditorialMetricsEnabled": false
     },
     "singlePublicActionApproval": "PUBLIC-LAUNCH",
-    "capabilityIsolation": "Metrics and optional translations never block independently passing comparison/quiz.",
+    "capabilityIsolation": "Deferred comparison/metrics/translations do not block independently passing 2023 quiz.",
     "metricActivationDependencies": [
-      "L024"
+      "PUBLIC-LAUNCH",
+      "actual_host_privacy_and_notice_verification"
     ],
-    "metricWorkIds": [
+    "metricWorkIds": [],
+    "legacyMetricWorkIds": [
       "L021",
       "L022",
       "L023",
       "L024"
-    ]
+    ],
+    "currentIteration": "quiz_only_metrics_disabled",
+    "realQuestionBankRequired": true,
+    "syntheticPublicFallbackAllowed": false
   },
   "executionPlan": {
     "policy": {
@@ -351,7 +415,14 @@
         "deferred"
       ],
       "continueIndependentWork": true,
-      "evidence": "Actual commands/artifact hashes; local engineering does not certify production; preserve historical reports."
+      "evidence": "Actual commands/artifact hashes; local engineering does not certify production; preserve historical reports.",
+      "activeTaskPrefix": "Q",
+      "noAutomaticQuestionGeneration": true,
+      "fullProgrammeReadingRequired": true,
+      "noSourceBasedCompletionFromSyntheticTests": true,
+      "questionBankSelectionIsNotGeneration": true,
+      "oldImplementationSessionPaused": true,
+      "noSchedulerStarted": true
     },
     "approvalGates": [
       {
@@ -364,1632 +435,1598 @@
       }
     ],
     "commitPlan": {
-      "version": "lean-commits-v1.0.0",
+      "version": "quiz-2023-commits-v2.0.0",
       "phases": [
         {
-          "id": "LP0",
-          "title": "Lean foundation",
+          "id": "QP0",
+          "title": "New acceptance baseline and reported defect",
           "commitIds": [
-            "L001",
-            "L002"
+            "Q001",
+            "Q002"
           ]
         },
         {
-          "id": "LP1",
-          "title": "Owner sources and public bundles",
+          "id": "QP1",
+          "title": "All real 2023 candidacies and source acquisition",
           "commitIds": [
-            "L003",
-            "L004",
-            "L005",
-            "L006",
-            "L007"
+            "Q003",
+            "Q004",
+            "Q005"
           ]
         },
         {
-          "id": "LP2",
-          "title": "Comparison tool",
+          "id": "QP2",
+          "title": "Full reading, cross-reference and direct question authorship",
           "commitIds": [
-            "L008",
-            "L009",
-            "L010",
-            "L011"
+            "Q006",
+            "Q007",
+            "Q008",
+            "Q009",
+            "Q010",
+            "Q011"
           ]
         },
         {
-          "id": "LP3",
-          "title": "Private progressive quiz",
+          "id": "QP3",
+          "title": "Meaning, scoring, fair evidence and citations",
           "commitIds": [
-            "L012",
-            "L013",
-            "L014",
-            "L015",
-            "L016",
-            "L017",
-            "L018",
-            "L019",
-            "L020"
+            "Q012",
+            "Q013",
+            "Q014",
+            "Q015",
+            "Q016"
           ]
         },
         {
-          "id": "LP4",
-          "title": "Voluntary aggregate metrics",
+          "id": "QP4",
+          "title": "Modern everyday-user quiz",
           "commitIds": [
-            "L021",
-            "L022",
-            "L023",
-            "L024"
+            "Q017",
+            "Q018",
+            "Q019",
+            "Q020",
+            "Q021",
+            "Q022",
+            "Q023",
+            "Q024"
           ]
         },
         {
-          "id": "LP5",
-          "title": "Current data and one-host release",
+          "id": "QP5",
+          "title": "Real release verification and reviewable public action",
           "commitIds": [
-            "L025",
-            "L026",
-            "L027",
-            "L028"
+            "Q025",
+            "Q026",
+            "Q027",
+            "Q028"
           ]
         },
         {
-          "id": "LP6",
-          "title": "Optional extensions",
+          "id": "QP6",
+          "title": "Deliberate deferrals and future edition preparation",
           "commitIds": [
-            "L029",
-            "L030"
+            "Q029",
+            "Q030"
           ]
         }
       ],
       "commits": [
         {
-          "id": "L001",
+          "id": "Q001",
           "sequence": 1,
-          "phaseId": "LP0",
-          "subject": "chore: restart from verified scaffold and restore CI",
+          "phaseId": "QP0",
+          "subject": "docs: adopt the 2023 quiz and everyday-user contract",
           "status": "completed",
           "dependsOn": [],
           "requirementIds": [
             "R01",
-            "R10",
+            "R04",
             "R12"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
+          "evidenceClass": "engineering_on_authored_real_data",
           "optional": false,
           "pathScopes": [
             "outputs",
-            "docs/plans",
             "docs/loop-engineer.md",
+            "docs/plans",
             "AGENTS.md",
             ".ai/guidelines",
             ".cursor/rules",
-            ".agents/skills",
-            "scripts/execution.py",
-            "tests/Tooling"
+            ".gitignore",
+            "work/execution-journal.jsonl"
           ],
           "skills": [],
           "deliverables": [
-            "Verified complete private backup outside repository and one-time unpublished local restart.",
-            "Selective CI repairs, mandatory staged-tree gate, current lean contracts and restart guidance."
+            "New owner revision, canonical plan, loop guidance and retained prior progress.",
+            "Initial source inventory and actual audit evidence."
           ],
           "acceptanceCriteria": [
-            "Remote main remains the unchanged initial scaffold. Complete backup includes history, index, all working and ignored files and passes byte/hash/Git checks.",
-            "Every new commit passes exact staged CI; no prior product task is marked complete from obsolete history."
+            "No new implementation task inherits a synthetic completed status. All generated views and guidance agree on 2023/manual authorship/quiz first."
           ],
           "verification": [
-            "Full backup comparison, git fsck and bundle verify; live remote-main check.",
-            "Exact staged CI and hook-preservation tests."
+            "npm run docs:build; npm run check:plans; exact staged CI before commit."
           ],
           "reuseCandidates": [
-            "C001-C007 planning infrastructure"
+            "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [
-            "work/execution-journal.jsonl",
-            "tests/Tooling/test_commit_checks.py"
+            "outputs/quiz-2023-scope-revision.json",
+            "outputs/quiz-2023-initial-audit.json",
+            "outputs/2023-source-inventory.json",
+            "docs/loop-engineer.md",
+            "work/execution-journal.jsonl"
           ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L002",
+          "id": "Q002",
           "sequence": 2,
-          "phaseId": "LP0",
-          "subject": "refactor: keep a stateless public app and retire editorial runtime",
-          "status": "completed",
+          "phaseId": "QP0",
+          "subject": "fix: order answer labels and reproduce the rent direction path",
+          "status": "planned",
           "dependsOn": [
-            "L001"
+            "Q001"
           ],
           "requirementIds": [
-            "R01",
-            "R10",
+            "R07",
             "R12"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app",
-            "bootstrap",
-            "config",
-            "routes",
-            "database",
-            "composer.json",
-            "composer.lock",
-            "tests",
-            "scripts/check-ci.py"
-          ],
-          "skills": [
-            "laravel-best-practices",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Public-only route/provider/config baseline; retire unused backoffice code and dependencies after inventory.",
-            "Coherent removal of obsolete auth/review tests alongside their features, keeping relevant public/security checks.",
-            "Preserve ade3970 cleanup as a distinct verified commit in rebuilt history."
-          ],
-          "acceptanceCriteria": [
-            "No visitor/editor auth, review queues, staffed approval gate, server quiz state or production OCR worker.",
-            "Do not destructively drop existing non-synthetic DB data; preserve and classify prepared uncommitted work."
-          ],
-          "verification": [
-            "Public/error/stateless browser and PHP smoke tests; route/dependency audit.",
-            "Full staged CI before the removal commit; no check weakening for surviving capabilities."
-          ],
-          "reuseCandidates": [
-            "Existing Laravel scaffold and public contracts"
-          ],
-          "completionEvidence": [
-            "tests/Feature/PublicBootstrapTest.php",
-            "tests/Tooling/test_commit_checks.py",
-            "scripts/check-repository.py"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L003",
-          "sequence": 3,
-          "phaseId": "LP1",
-          "subject": "feat: accept owner source manifests and candidacy coverage",
-          "status": "completed",
-          "dependsOn": [
-            "L002"
-          ],
-          "requirementIds": [
-            "R02",
-            "R03"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app/Console",
-            "app",
-            "outputs",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "laravel-best-practices",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Versioned file/provenance/election/candidacy manifest and local import command."
-          ],
-          "acceptanceCriteria": [
-            "Reject wrong election, duplicate identities, escaped paths and missing applicability.",
-            "All supplied/official scoped candidacies remain visible, including missing programmes; dates are configurable."
-          ],
-          "verification": [
-            "Manifest/path/encoding/election fixtures including omitted and territorial candidacies."
-          ],
-          "reuseCandidates": [
-            "C008-C013 election/source identities"
-          ],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "tests/Tooling/test_source_preparation.py"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L004",
-          "sequence": 4,
-          "phaseId": "LP1",
-          "subject": "feat: extract native programme text locally",
-          "status": "completed",
-          "dependsOn": [
-            "L003"
-          ],
-          "requirementIds": [
-            "R02",
-            "R03",
-            "R10"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app/Console",
-            "app",
-            "config",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Bounded text/HTML/native-PDF extraction with original page text and normalization offsets."
-          ],
-          "acceptanceCriteria": [
-            "No runtime downloads/uploads/worker or executed HTML. Input errors are reported without fabricated text.",
-            "Preserve Unicode, headings, negation, numbers, page labels and source hashes. Image-only sources report unavailable text."
-          ],
-          "verification": [
-            "Native/local parser fixtures: columns, script HTML, malformed/huge documents, ligatures, source hash changes and timeout."
-          ],
-          "reuseCandidates": [
-            "Prepared C045-C047 extraction/layout code after removing review dependencies"
-          ],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "scripts/grounded_positions.py",
-            "scripts/manage_releases.py",
-            "tests/Tooling/test_grounded_releases.py",
-            "tests/Feature/ReleaseApplicabilityTest.php",
-            "tests/Browser/public-journeys.spec.ts",
-            "outputs/historical-parser-trial.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L005",
-          "sequence": 5,
-          "phaseId": "LP1",
-          "subject": "feat: validate exact contextual citations",
-          "status": "completed",
-          "dependsOn": [
-            "L004"
-          ],
-          "requirementIds": [
-            "R03"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app",
-            "resources/js",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Immutable citation IDs, page/section/offset locators, original/context quotation and link policy."
-          ],
-          "acceptanceCriteria": [
-            "Exact quotes resolve to original retained text; search normalization never creates a quotation.",
-            "Reject unsafe URLs/markup, corrupt bytes and mismatched source/election. Missing original or uncertain transcription is labelled."
-          ],
-          "verification": [
-            "Unicode range/negation/quantity/context/locator/link and corrupt source tests."
-          ],
-          "reuseCandidates": [
-            "CitationResolver and prepared source-range tests"
-          ],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "scripts/grounded_positions.py",
-            "scripts/manage_releases.py",
-            "tests/Tooling/test_grounded_releases.py",
-            "tests/Feature/ReleaseApplicabilityTest.php",
-            "tests/Browser/public-journeys.spec.ts",
-            "outputs/historical-parser-trial.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L006",
-          "sequence": 6,
-          "phaseId": "LP1",
-          "subject": "feat: compile grounded programme positions automatically",
-          "status": "completed",
-          "dependsOn": [
-            "L005"
-          ],
-          "requirementIds": [
-            "R02",
-            "R03",
-            "R07"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app/Console",
-            "app",
-            "resources",
-            "outputs",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Local preparation adapter and position/rationale/citation schema, deterministic content compiler.",
-            "Record preparation tool/prompt/source versions; compiled public content is inspectable."
-          ],
-          "acceptanceCriteria": [
-            "No human attestations or staff queue. Automatic interpretation is labelled and uncertainty stays null.",
-            "Reject invented quotes, unsupported mappings, cross-election/coalition leakage, contradictions and invalid scales. Semantic checks are not a claim of perfect truth."
-          ],
-          "verification": [
-            "Grounded/contradictory/ambiguous/off-topic/negated and hostile-document synthetic cases.",
-            "Reproduce compiled output from retained prepared content and validate every scored citation."
-          ],
-          "reuseCandidates": [
-            "Position/proposition schemas; remove ReviewLedger requirements"
-          ],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "scripts/grounded_positions.py",
-            "scripts/manage_releases.py",
-            "tests/Tooling/test_grounded_releases.py",
-            "tests/Feature/ReleaseApplicabilityTest.php",
-            "tests/Browser/public-journeys.spec.ts",
-            "outputs/historical-parser-trial.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L007",
-          "sequence": 7,
-          "phaseId": "LP1",
-          "subject": "feat: build and verify immutable public bundles",
-          "status": "completed",
-          "dependsOn": [
-            "L006"
-          ],
-          "requirementIds": [
-            "R03",
-            "R05",
-            "R11"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app",
-            "resources/js",
-            "public",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Content schema, stable IDs and sorted versioned JSON/manifest/hashes, fixed public bank and active pointer."
-          ],
-          "acceptanceCriteria": [
-            "No private data or dev fixtures in a production bundle; compiler supports synthetic local builds separately.",
-            "Browser validates compatibility/hash before scoring; session bank remains pinned."
-          ],
-          "verification": [
-            "Reproducibility, malformed schema/hash, mismatched assets/data and atomic pointer tests."
-          ],
-          "reuseCandidates": [
-            "C014-C019 public release contracts and fixtures"
-          ],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "scripts/grounded_positions.py",
-            "scripts/manage_releases.py",
-            "tests/Tooling/test_grounded_releases.py",
-            "tests/Feature/ReleaseApplicabilityTest.php",
-            "tests/Browser/public-journeys.spec.ts",
-            "outputs/historical-parser-trial.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L008",
-          "sequence": 8,
-          "phaseId": "LP2",
-          "subject": "feat: browse and search cited programmes",
-          "status": "completed",
-          "dependsOn": [
-            "L007"
-          ],
-          "requirementIds": [
-            "R01",
-            "R04",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/views",
-            "resources/js",
-            "resources/css",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "inclusive-interface-review",
-            "frontend-design",
-            "tailwindcss-development",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Spanish programme/topic catalogue, coverage states and local text search."
-          ],
-          "acceptanceCriteria": [
-            "Useful without quiz; missing sources/candidacies are visible.",
-            "Safe source rendering with keyboard/mobile/empty/loading/error states and no account."
-          ],
-          "verification": [
-            "Catalogue/search/citation/coverage browser flows; XSS and no-personal-state network assertions."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L009",
-          "sequence": 9,
-          "phaseId": "LP2",
-          "subject": "feat: compare programme proposals locally",
-          "status": "completed",
-          "dependsOn": [
-            "L008"
-          ],
-          "requirementIds": [
-            "R04",
-            "R05",
-            "R07",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
+          "evidenceClass": "engineering_on_authored_real_data",
           "optional": false,
           "pathScopes": [
             "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Local candidacy/constituency/topic selection and readable comparison cards/table."
-          ],
-          "acceptanceCriteria": [
-            "Every difference/overlap shows cited propositions and unknowns, not invented absence.",
-            "Same public bundle fetched independent of selection; filters do not leak personal scope."
-          ],
-          "verification": [
-            "Two/many/missing/territorial candidacy browser cases, mobile reflow, keyboard and no selection traffic/storage."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L010",
-          "sequence": 10,
-          "phaseId": "LP2",
-          "subject": "feat: open original contextual evidence",
-          "status": "completed",
-          "dependsOn": [
-            "L009"
-          ],
-          "requirementIds": [
-            "R03",
-            "R04",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Citation drawer/reader with source metadata, context, original-language quote and official link."
-          ],
-          "acceptanceCriteria": [
-            "Readable exact text and accessible return focus; escaped content and safe new-tab behavior.",
-            "Summaries/translations never replace the source quote. Reader failures leave comparison usable."
-          ],
-          "verification": [
-            "Original-source parity, labelled translation, malicious text, broken link and keyboard reader checks."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L011",
-          "sequence": 11,
-          "phaseId": "LP2",
-          "subject": "feat: explain coverage and support bundle corrections",
-          "status": "completed",
-          "dependsOn": [
-            "L010"
-          ],
-          "requirementIds": [
-            "R03",
-            "R04",
-            "R11"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app/Console",
-            "resources",
-            "lang/es",
-            "outputs",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Plain methodology/coverage pages, local append-only change/withdrawal file and correction command."
-          ],
-          "acceptanceCriteria": [
-            "Explain interpretation and limited evidence; no claim that a supplied PDF proves a mapping.",
-            "Correct/rebuild bundle without staff workflow; withdrawn releases invalidate scoring while keeping source history."
-          ],
-          "verification": [
-            "Correction/withdrawal/session-version browser checks and rollback rehearsal."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "scripts/prepare_sources.py",
-            "scripts/grounded_positions.py",
-            "scripts/manage_releases.py",
-            "tests/Tooling/test_grounded_releases.py",
-            "tests/Feature/ReleaseApplicabilityTest.php",
-            "tests/Browser/public-journeys.spec.ts",
-            "outputs/historical-parser-trial.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L012",
-          "sequence": 12,
-          "phaseId": "LP3",
-          "subject": "feat: prepare balanced current-source question banks",
-          "status": "completed",
-          "dependsOn": [
-            "L006"
-          ],
-          "requirementIds": [
-            "R03",
-            "R06",
-            "R07",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
             "app",
-            "resources",
-            "outputs",
-            "tests"
-          ],
-          "skills": [
-            "electoral-evidence",
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "General/specific question bank, stable scales and topic/family budgets; Spanish question content separated from arithmetic."
-          ],
-          "acceptanceCriteria": [
-            "Questions are one concrete neutral proposition; unsure/skip are distinct from neutral.",
-            "Budget/family duplicate and source applicability checks; no requirement to inherit historical wording."
-          ],
-          "verification": [
-            "Bank coverage/range/weight/duplicate/citation and neutral wording lint fixtures; label semantic lint limits."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/matching.ts",
-            "resources/js/questionnaire.ts",
-            "tests/Tooling/matching.test.ts"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L013",
-          "sequence": 13,
-          "phaseId": "LP3",
-          "subject": "feat: calculate deterministic browser-local policy overlaps",
-          "status": "completed",
-          "dependsOn": [
-            "L007",
-            "L012"
-          ],
-          "requirementIds": [
-            "R05",
-            "R07"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/js",
+            "lang",
+            "scripts",
             "tests",
             "outputs"
           ],
           "skills": [
             "private-matching",
-            "testing-best-practices"
+            "inclusive-interface-review"
           ],
           "deliverables": [
-            "Pure TypeScript engine with similarity, fixed budgets, priorities, missing evidence and same-set comparisons."
+            "Explicit disagree-to-agree array and a browser regression for displayed label/value order.",
+            "Reproduction record for the reported rent scenario through answer, stored state, party stance, score and visible explanation."
           ],
           "acceptanceCriteria": [
-            "Formula and zero-denominator behavior match plan; ties/partial evidence remain honest.",
-            "No ML/network/persistence or score probability. Common evidence gates control ordering."
+            "Strong disagreement with a supported proposition is per-question disagreement. No blanket sign flip unless independently reproduced.",
+            "Existing fixtures stay internal; this repair does not certify real programmes."
           ],
           "verification": [
-            "Independent exact examples, zero/ignored/unsure, common-denominator, permutation and locale invariants."
+            "Affected engine and browser tests with independent expected values and exact label assertions."
           ],
           "reuseCandidates": [
-            "Historical matching-engine.mjs arithmetic only"
+            "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [
-            "resources/js/matching.ts",
-            "resources/js/questionnaire.ts",
-            "tests/Tooling/matching.test.ts"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L014",
-          "sequence": 14,
-          "phaseId": "LP3",
-          "subject": "feat: choose balanced informative follow-up questions",
-          "status": "completed",
+          "id": "Q003",
+          "sequence": 3,
+          "phaseId": "QP1",
+          "subject": "data: reconcile every 23J Congress candidacy",
+          "status": "planned",
           "dependsOn": [
-            "L013"
+            "Q001"
           ],
           "requirementIds": [
-            "R05",
-            "R06",
-            "R07"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/js",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Small local coverage/spread/priority/burden selector with stable ID ties and balanced fallback."
-          ],
-          "acceptanceCriteria": [
-            "General ten-topic start then optional specific blocks; no forced 100% or hidden candidate removal.",
-            "Edits recompute selection and family limits; exhaustion/errors do not reveal results."
-          ],
-          "verification": [
-            "Balanced breadth, close/identical profiles, reordering, family redundancy, fallback and edited-answer cases."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/matching.ts",
-            "resources/js/questionnaire.ts",
-            "tests/Tooling/matching.test.ts"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L015",
-          "sequence": 15,
-          "phaseId": "LP3",
-          "subject": "feat: expose honest overlap and evidence coverage",
-          "status": "completed",
-          "dependsOn": [
-            "L013"
-          ],
-          "requirementIds": [
-            "R05",
-            "R07"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/js",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Separate overlap/coverage/count diagnostics and conservative common-evidence threshold."
-          ],
-          "acceptanceCriteria": [
-            "Eight numeric answers/four topics/60% shared answered weight before broad ordering; otherwise cited partial results.",
-            "A percentage is overlap only; it can fall as answers arrive. All candidacies/unknowns and denominator remain visible."
-          ],
-          "verification": [
-            "Threshold edges, skipped questions, different evidence sets, ties and minority-candidacy coverage."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L016",
-          "sequence": 16,
-          "phaseId": "LP3",
-          "subject": "feat: build the private questionnaire state machine",
-          "status": "completed",
-          "dependsOn": [
-            "L014",
-            "L015"
-          ],
-          "requirementIds": [
-            "R05",
-            "R06",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Preparation/answer/checkpoint/explicit finish/refinement/reset/exit states entirely in browser memory."
-          ],
-          "acceptanceCriteria": [
-            "Safe loading/hash/error behavior; back/edit and skip preserve semantic IDs.",
-            "No personalised results in pre-finish DOM, a11y, titles, URLs or notifications."
-          ],
-          "verification": [
-            "State transitions, errors, edits/reset, reload behavior and pre-finish result leakage browser tests."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/matching.ts",
-            "resources/js/questionnaire.ts",
-            "tests/Tooling/matching.test.ts"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L017",
-          "sequence": 17,
-          "phaseId": "LP3",
-          "subject": "feat: offer ten-question checkpoints and five more",
-          "status": "completed",
-          "dependsOn": [
-            "L016"
-          ],
-          "requirementIds": [
-            "R06",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Neutral checkpoints with finish/continue/review/exit and optional unnamed highest comparable overlap."
-          ],
-          "acceptanceCriteria": [
-            "No confidence claim, premature party reveal, automatic finish or penalized refusal.",
-            "Presentation count differs from answered weight; insufficient evidence gets plain text, not a fabricated number."
-          ],
-          "verification": [
-            "Ten-plus-five, many skips, bank exhaustion, no common evidence, keyboard/reduced-motion checks."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L018",
-          "sequence": 18,
-          "phaseId": "LP3",
-          "subject": "feat: reveal cited results after deliberate finish",
-          "status": "completed",
-          "dependsOn": [
-            "L011",
-            "L017"
-          ],
-          "requirementIds": [
-            "R03",
-            "R05",
-            "R06",
-            "R07",
-            "R08"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "electoral-evidence",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Party overlaps/ties, coverage and answered-topic agreement/disagreement with exact citations and refinement action."
-          ],
-          "acceptanceCriteria": [
-            "Results use pinned release and same-set ordering rules; no voting intention/probability or inferred unanswered beliefs.",
-            "Explicit finish required even after exhaustion; refinement acknowledges already seen parties."
-          ],
-          "verification": [
-            "Reveal/non-reveal, score-citation parity, partial/tie/unknown, withdrawal and informed-refinement flows."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L019",
-          "sequence": 19,
-          "phaseId": "LP3",
-          "subject": "feat: polish the fast accessible public experience",
-          "status": "completed",
-          "dependsOn": [
-            "L009",
-            "L018"
-          ],
-          "requirementIds": [
-            "R04",
-            "R06",
-            "R08",
-            "R10"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "frontend-design",
-            "tailwindcss-development",
-            "inclusive-interface-review",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Coherent modern home/comparison/quiz/results; responsive controls, focus, text/contrast and restrained motion."
-          ],
-          "acceptanceCriteria": [
-            "Spanish public/error/accessibility/help strings; no effort on unused admin languages.",
-            "Keyboard/axe/reflow/reduced-motion and declared asset/cold-load/local-CPU budgets pass; no invented participant certification."
-          ],
-          "verification": [
-            "Public browser flows at mobile/desktop, axe, keyboard checklist and measured build/CPU/load budgets."
-          ],
-          "reuseCandidates": [
-            "Prepared C026-C032 public design foundations"
-          ],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L020",
-          "sequence": 20,
-          "phaseId": "LP3",
-          "subject": "test: verify local reset export and private quiz traffic",
-          "status": "completed",
-          "dependsOn": [
-            "L019"
-          ],
-          "requirementIds": [
-            "R05",
-            "R06",
-            "R12"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/js",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Explicit local export, clear-file warning, complete reset and automated whole-journey privacy assertions."
-          ],
-          "acceptanceCriteria": [
-            "Exports never reveal unfinished results or upload a profile.",
-            "No private state in requests/URLs/cookies/storage/errors; comparison and result/source navigation use public assets only."
-          ],
-          "verification": [
-            "Intercept actual browser traffic/storage across answer/edit/finish/refine/export/exit/restart and failure flows."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/app.ts",
-            "tests/Browser/public-journeys.spec.ts",
-            "tests/Feature/PublicJourneyTest.php",
-            "outputs/local-public-verification.json"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L021",
-          "sequence": 21,
-          "phaseId": "LP4",
-          "subject": "feat: add voluntary randomized feedback on fit and policies",
-          "status": "completed",
-          "dependsOn": [
-            "L018"
-          ],
-          "requirementIds": [
-            "R05",
-            "R09"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "resources/js",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Separate opt-in result-fit and random public policy survey, fixed schema and epsilon=1 randomized response per metric."
-          ],
-          "acceptanceCriteria": [
-            "Never reuse quiz answers or include party/scores/scope. Refusal/failure leaves core usable.",
-            "crypto RNG, category mapping and per-visit composition are explicit; repeat visits are not falsely bounded or unique voters."
-          ],
-          "verification": [
-            "Deterministic injected-RNG branches, distribution/estimator fixtures, consent/no-consent and independent survey selection."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/feedback.ts",
-            "app/Http/Controllers/FeedbackController.php",
-            "app/FeedbackCounters.php",
-            "app/FeedbackEstimator.php",
-            "tests/Feature/FeedbackTest.php",
-            "tests/Feature/FeedbackReportTest.php",
-            "tests/Feature/FeedbackConcurrencyTest.php",
-            "tests/Browser/feedback.spec.ts",
-            "docs/tooling.md"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L022",
-          "sequence": 22,
-          "phaseId": "LP4",
-          "subject": "feat: store bounded aggregate counters in SQLite",
-          "status": "completed",
-          "dependsOn": [
-            "L021"
-          ],
-          "requirementIds": [
-            "R09",
-            "R10"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "app",
-            "routes",
-            "config",
-            "database",
-            "tests"
-          ],
-          "skills": [
-            "laravel-best-practices",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "Stateless strict-schema aggregate endpoint and atomic weekly categorical counters only."
-          ],
-          "acceptanceCriteria": [
-            "Reject profile fields/free text/IDs/oversize/unknown versions; no raw event rows/body logging or Laravel session.",
-            "WAL/locking/busy timeout measured on intended SQLite setup; counter failure safely skips contributions."
-          ],
-          "verification": [
-            "HTTP schema/no-cookie/error/body logging and parallel counter updates/retries/global budget tests."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/feedback.ts",
-            "app/Http/Controllers/FeedbackController.php",
-            "app/FeedbackCounters.php",
-            "app/FeedbackEstimator.php",
-            "tests/Feature/FeedbackTest.php",
-            "tests/Feature/FeedbackReportTest.php",
-            "tests/Feature/FeedbackConcurrencyTest.php",
-            "tests/Browser/feedback.spec.ts",
-            "docs/tooling.md"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L023",
-          "sequence": 23,
-          "phaseId": "LP4",
-          "subject": "feat: report aggregate agreement with uncertainty",
-          "status": "completed",
-          "dependsOn": [
-            "L022"
-          ],
-          "requirementIds": [
-            "R09",
+            "R02",
             "R11"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
+          "evidenceClass": "real_source_semantics",
           "optional": false,
           "pathScopes": [
-            "app/Console",
             "resources",
-            "lang/es",
-            "tests"
-          ],
-          "skills": [
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "CLI report estimator and closed-week static snapshots with survey wording, counts, uncertainty and suppression."
-          ],
-          "acceptanceCriteria": [
-            "Minimum 500 contributions and <=10pp interval half-width; no demographic/party/geography/real-time filtering.",
-            "Equal-proposition topic summaries disclose coverage; statistical overlap/negative noise and voluntary/bot bias remain explicit."
-          ],
-          "verification": [
-            "Known randomized counts, small cells, impossible estimates, intervals, incomplete topics and snapshot differencing boundaries."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/feedback.ts",
-            "app/Http/Controllers/FeedbackController.php",
-            "app/FeedbackCounters.php",
-            "app/FeedbackEstimator.php",
-            "tests/Feature/FeedbackTest.php",
-            "tests/Feature/FeedbackReportTest.php",
-            "tests/Feature/FeedbackConcurrencyTest.php",
-            "tests/Browser/feedback.spec.ts",
-            "docs/tooling.md"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L024",
-          "sequence": 24,
-          "phaseId": "LP4",
-          "subject": "test: verify metric privacy refusal failures and limits",
-          "status": "completed",
-          "dependsOn": [
-            "L020",
-            "L023"
-          ],
-          "requirementIds": [
-            "R05",
-            "R09",
-            "R12"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
+            "app",
+            "lang",
+            "scripts",
             "tests",
-            "docs",
-            "config",
-            "resources"
-          ],
-          "skills": [
-            "private-matching",
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "End-to-end metric schema/log/storage inventory, anomaly pause and documented host-probe commands."
-          ],
-          "acceptanceCriteria": [
-            "Raw local selections do not appear outside browser; payloads contain only approved randomized symbols/public IDs.",
-            "Default collection disabled until actual launch flow passes; no claim of guaranteed anonymity/unique people or election prediction."
-          ],
-          "verification": [
-            "Opt-in/refusal/retries/outage/malicious payload/aggregate concurrency browser+HTTP tests; no production collection."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "resources/js/feedback.ts",
-            "app/Http/Controllers/FeedbackController.php",
-            "app/FeedbackCounters.php",
-            "app/FeedbackEstimator.php",
-            "tests/Feature/FeedbackTest.php",
-            "tests/Feature/FeedbackReportTest.php",
-            "tests/Feature/FeedbackConcurrencyTest.php",
-            "tests/Browser/feedback.spec.ts",
-            "docs/tooling.md"
-          ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
-        },
-        {
-          "id": "L025",
-          "sequence": 25,
-          "phaseId": "LP5",
-          "subject": "data: import supplied current programmes and regenerate the bank",
-          "status": "blocked",
-          "dependsOn": [
-            "L007",
-            "L011",
-            "L012"
-          ],
-          "requirementIds": [
-            "R02",
-            "R03",
-            "R07"
-          ],
-          "gateIds": [],
-          "externalInputIds": [
-            "owner_current_programmes_and_manifest"
-          ],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "outputs",
-            "resources",
-            "docs"
+            "outputs"
           ],
           "skills": [
             "electoral-evidence"
           ],
           "deliverables": [
-            "Real owner-supplied current manifests/programmes, coverage and grounded compiled questions/positions."
+            "Complete proclaimed/corrected/final Congress registry for all 52 constituencies.",
+            "Stable candidature/coalition/party aliases and programme applicability owners."
           ],
           "acceptanceCriteria": [
-            "No human-review workforce; automated compiler outputs are cited and labelled.",
-            "Actual dates/candidacies/election/permissions checked against supplied authoritative records; no silent historical fallback."
+            "Reconcile the initial 59 result denominations with proclamations, withdrawals and corrections; no unexplained omitted row or inherited coalition programme.",
+            "Seat share is never an inclusion threshold or matching weight."
           ],
           "verification": [
-            "Real-source import/compiler/citation checks and inspect generated coverage/error report; keep provenance."
+            "Compare official source records and hashes; check constituency/alias coverage and withdrawn-list handling."
           ],
-          "reuseCandidates": [],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
-          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L026",
-          "sequence": 26,
-          "phaseId": "LP5",
-          "subject": "chore: prepare one-host deployment backup and rollback",
-          "status": "completed",
+          "id": "Q004",
+          "sequence": 4,
+          "phaseId": "QP1",
+          "subject": "data: acquire and hash every available 2023 programme",
+          "status": "planned",
           "dependsOn": [
-            "L002",
-            "L007"
+            "Q003"
           ],
           "requirementIds": [
+            "R02",
+            "R03"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Per-candidacy acquisition ledger and bounded originals/extractions in ignored local cache.",
+            "Primary publication or verified archive provenance; party, date, chamber, language, applicability and original/text hashes."
+          ],
+          "acceptanceCriteria": [
+            "Search every registry row and any applicable territorial annex; downloaded PDF must be actual PDF, not a 200-status error page.",
+            "No full copyrighted/source cache committed or synthetic programme substituted. Download/extract is not analysis completion."
+          ],
+          "verification": [
+            "Check originals, resolved URLs, election applicability, file magic, hashes and native extraction completeness."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q005",
+          "sequence": 5,
+          "phaseId": "QP1",
+          "subject": "data: close missing-source and extraction gaps explicitly",
+          "status": "planned",
+          "dependsOn": [
+            "Q004"
+          ],
+          "requirementIds": [
+            "R02",
+            "R03"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Dated failed searches/retries, archived-original verification and missing/unpublished/withdrawn statuses.",
+            "Page-complete extraction or optional bounded local OCR for any required available programme."
+          ],
+          "acceptanceCriteria": [
+            "Every registry row has either verified source acquisition or a documented unresolved/no-programme record; no silent exclusions.",
+            "Unknown/OCR-uncertain text is unscored; continue reading other ready documents."
+          ],
+          "verification": [
+            "Verify every registry row against acquisition status; manually inspect problematic original pages and locator fidelity."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q006",
+          "sequence": 6,
+          "phaseId": "QP2",
+          "subject": "data: read each available programme in full and author notes",
+          "status": "planned",
+          "dependsOn": [
+            "Q005"
+          ],
+          "requirementIds": [
+            "R01",
+            "R03"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "One issue notebook per programme, covering every page/section/annex and its original hash.",
+            "Exact claims/context/locators, conditions, quantities, jurisdiction and unexplained or contradictory passages."
+          ],
+          "acceptanceCriteria": [
+            "Execute a per-document reading loop until every available programme is fully covered. No generated summary, keyword list or extraction marks a document read.",
+            "Do not mark this task complete while any available document remains unanalysed; missing source rows remain visible and separate."
+          ],
+          "verification": [
+            "Reopen each notebook against original page ranges, headings/footnotes and source/extraction hash; check full coverage."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q007",
+          "sequence": 7,
+          "phaseId": "QP2",
+          "subject": "data: cross-reference proposals into an authored issue matrix",
+          "status": "planned",
+          "dependsOn": [
+            "Q006"
+          ],
+          "requirementIds": [
+            "R02",
+            "R03",
+            "R07"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Cross-programme topic/proposal matrix including every eligible candidacy and explicit unknown/conflict status.",
+            "Separate party-policy disagreement from different measures/scopes and document all coalition applicability."
+          ],
+          "acceptanceCriteria": [
+            "Complete individual reading before synthesising issues. Silence is unknown, never opposed or neutral.",
+            "Whole-law repeal does not automatically prove opposition to every individual provision."
+          ],
+          "verification": [
+            "Source-by-source matrix audit, missing-cell check and independent polarity/context review."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q008",
+          "sequence": 8,
+          "phaseId": "QP2",
+          "subject": "data: author a larger bank of everyday Spanish questions",
+          "status": "planned",
+          "dependsOn": [
+            "Q007"
+          ],
+          "requirementIds": [
+            "R01",
+            "R03",
+            "R06"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Target 80 directly written distinct questions, with neutral short help and family/topic IDs.",
+            "Practical housing, work, taxes, health, education, care, transport/energy, environment/rural, rights/security and institutions/territorial decisions supported by the matrix."
+          ],
+          "acceptanceCriteria": [
+            "At least 60 evidence-supported release questions across ten or more topics; no jargon, double policy, leading labels, repeated paraphrases or padded invented positions.",
+            "Questions/help are authored directly after programme comparison; no model/keyword generation pipeline."
+          ],
+          "verification": [
+            "Read every statement/help against plain-language checklist and original matrix; record rejected/revised drafts."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q009",
+          "sequence": 9,
+          "phaseId": "QP2",
+          "subject": "data: write question rubrics and cited party positions",
+          "status": "planned",
+          "dependsOn": [
+            "Q008"
+          ],
+          "requirementIds": [
+            "R03",
+            "R07"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Question-specific -2..+2 rubrics and authored value/status/rationale/citations for all matrix pairs.",
+            "PDF/printed-page distinction and exact contextual ranges with original-language quotations."
+          ],
+          "acceptanceCriteria": [
+            "Positive means agreement with the exact question, irrespective of ideology or wording in the programme. Zero requires an actual intermediate stance.",
+            "Qualified, ambiguous, conflicting, unsupported or absent policy is never forced into a score."
+          ],
+          "verification": [
+            "Independent source/rubric calibration records, boundary/context/hash checks and all five answer cases."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q010",
+          "sequence": 10,
+          "phaseId": "QP2",
+          "subject": "test: audit every question for meaning and everyday usefulness",
+          "status": "planned",
+          "dependsOn": [
+            "Q009"
+          ],
+          "requirementIds": [
+            "R01",
+            "R03",
+            "R06",
+            "R07"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "real_source_semantics",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "electoral-evidence"
+          ],
+          "deliverables": [
+            "Final wording/help audit and complete semantic calibration ledger for each released question and scored mapping.",
+            "Source-based rent-control and opposite-wording examples; corrections with reasons."
+          ],
+          "acceptanceCriteria": [
+            "Original source conditions survive simplification; help explains terms without invented consequences or persuasive framing.",
+            "Every mapping has an independent expected relationship; no expected result derived by calling the scoring implementation."
+          ],
+          "verification": [
+            "Re-read entire relevant source paragraphs/pages and rubric; check disagreement/support reversal, caveats and absence."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q011",
+          "sequence": 11,
+          "phaseId": "QP2",
+          "subject": "feat: compile authored real-source bundles without question generation",
+          "status": "planned",
+          "dependsOn": [
+            "Q010"
+          ],
+          "requirementIds": [
+            "R03",
             "R10",
             "R11"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
+          "evidenceClass": "real_source_semantics",
           "optional": false,
           "pathScopes": [
-            "docs",
+            "resources",
+            "app",
+            "lang",
             "scripts",
-            "config",
-            "tests"
+            "tests",
+            "outputs"
           ],
           "skills": [
-            "laravel-best-practices",
-            "testing-best-practices"
+            "electoral-evidence"
           ],
           "deliverables": [
-            "Portable Laravel/static/SQLite production template, local build/import workflow, encrypted backup and restore/rollback commands."
+            "Real 2023 authored-bank input and deterministic extraction/schema/citation validation.",
+            "Synthetic release isolated to test fixtures and explicit non-ready handling when real evidence is missing."
           ],
           "acceptanceCriteria": [
-            "No paid provisioning or deployment in this commit; no Boost/dev/parser/worker in public runtime.",
-            "TLS/caching/log/DB permissions and backup retention documented for one host; existing source/counter data preserved.",
-            "Source-only/core deployment remains independently preparable. Include counter backup/concurrency checks when L022 exists; otherwise keep collection disabled and record the missing metric branch."
+            "No literal/automatic semantic inference creates released questions or numeric mappings; build checks only the authored input.",
+            "Public release has actual parties and 2023 labels; no fictional data fallback or full raw documents in payload."
           ],
           "verification": [
-            "Production-mode local smoke, SQLite backup during writes, restore/hash/previous-bundle and missing-disk checks."
+            "Real manifest compilation and known validation failures; deterministic byte/hash reproduction and source locator checks."
           ],
-          "reuseCandidates": [],
-          "completionEvidence": [
-            "scripts/prepare_runtime.py",
-            "scripts/local_recovery.py",
-            "scripts/encrypt-backup.php",
-            "tests/Feature/LocalRecoveryTest.php",
-            "tests/Fixtures/recovery_contract.py",
-            "outputs/local-recovery-verification.json",
-            "docs/tooling.md"
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L027",
-          "sequence": 27,
-          "phaseId": "LP5",
-          "subject": "test: verify complete release candidate and recovery",
-          "status": "blocked",
+          "id": "Q012",
+          "sequence": 12,
+          "phaseId": "QP3",
+          "subject": "test: calibrate the full five-answer scoring surface",
+          "status": "planned",
           "dependsOn": [
-            "L020",
-            "L025",
-            "L026"
+            "Q002",
+            "Q011"
           ],
           "requirementIds": [
-            "R03",
-            "R05",
-            "R08",
-            "R09",
-            "R10",
-            "R11",
-            "R12"
+            "R07"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
+          "evidenceClass": "engineering_on_authored_real_data",
           "optional": false,
           "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
             "tests",
-            "docs",
             "outputs"
           ],
           "skills": [
-            "testing-best-practices",
             "private-matching",
-            "electoral-evidence",
             "inclusive-interface-review"
           ],
           "deliverables": [
-            "Coherent actual-source local release candidate and scoped test/load/privacy/citation/recovery report."
+            "Independent per-question extrema/intermediate matrix and browser answer-value-result path regressions.",
+            "Unknown/conflict/skip/unsure/edit/negative phrasing tests."
           ],
           "acceptanceCriteria": [
-            "All applicable current-source/quiz/comparison/privacy/a11y/security/asset checks pass for the exact core candidate. Include metric checks only when L024 has passed and collection is proposed; otherwise explicitly keep collection disabled.",
-            "Synthetic passes do not substitute for actual hosted proxy/log/TLS evidence; remaining host facts are clearly listed."
+            "Rent-cap disagreement never receives a positive per-question overlap with a clearly supporting position.",
+            "Numeric labels, rubric direction, stored answer and result explanation agree for every released question."
           ],
           "verification": [
-            "Full unchanged CI, representative full bank browser journeys, real source parity, bounded load and restore/rollback."
+            "Run affected engine/property and end-to-end tests against the authored 2023 bank and independent oracle ledger."
           ],
-          "reuseCandidates": [],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
-          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L028",
-          "sequence": 28,
-          "phaseId": "LP5",
-          "subject": "docs: prepare the single concrete public launch action",
-          "status": "blocked",
-          "dependsOn": [
-            "L027"
-          ],
-          "requirementIds": [
-            "R01",
-            "R09",
-            "R10",
-            "R11",
-            "R12"
-          ],
-          "gateIds": [],
-          "externalInputIds": [],
-          "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": false,
-          "pathScopes": [
-            "docs",
-            "outputs"
-          ],
-          "skills": [
-            "testing-best-practices"
-          ],
-          "deliverables": [
-            "One launch packet with exact release/domain/provider/quote, public and metric flags, host probe results/remaining inputs and rollback."
-          ],
-          "acceptanceCriteria": [
-            "No fabricated user approval and no publication/purchase/live collection within packet preparation.",
-            "One owner action approves only the named scope/costs; metrics may stay disabled without blocking quiz/comparison. No staffing gates.",
-            "A passing core packet does not require L021-L024 completion. Metric activation additionally requires L024 evidence and the actual hosted flow/notice; incomplete metrics are visibly disabled, never silently certified."
-          ],
-          "verification": [
-            "Check packet hashes/config against candidate; hosted probes only on already authorized infrastructure.",
-            "If no host is authorized, mark actual flow pending and supply reproducible commands; do not claim launch-ready."
-          ],
-          "reuseCandidates": [],
-          "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle.",
-          "blocker": "Current programmes/applicability/candidacy manifest not yet available. Actual provider/domain/costs/operator/log/TLS/privacy flow and concrete launch approval remain pending."
-        },
-        {
-          "id": "L029",
-          "sequence": 29,
-          "phaseId": "LP6",
-          "subject": "feat: optionally import image-only programmes with local OCR",
+          "id": "Q013",
+          "sequence": 13,
+          "phaseId": "QP3",
+          "subject": "fix: compare eligible parties on the same evidence and weights",
           "status": "planned",
           "dependsOn": [
-            "L004",
-            "L005"
+            "Q012"
           ],
           "requirementIds": [
             "R02",
-            "R03",
-            "R10"
+            "R05",
+            "R07"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": true,
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
           "pathScopes": [
+            "resources",
             "app",
-            "config",
+            "lang",
+            "scripts",
             "tests",
-            "docs"
+            "outputs"
           ],
           "skills": [
-            "electoral-evidence",
-            "testing-best-practices"
+            "private-matching",
+            "inclusive-interface-review"
           ],
           "deliverables": [
-            "Optional bounded local OCR/transcription adapter, model/tool versions and quality flags."
+            "Constituency cohort and fixed disclosed evidence-qualified comparison subset.",
+            "Visible missing-source parties, ties and unranked insufficient-evidence behavior."
           ],
           "acceptanceCriteria": [
-            "No production OCR service, staff visual attestations or forced scanned-source adoption.",
-            "Keep original page images/links where permitted; uncertain negation/numbers/conditions unscored. Label OCR rather than claiming source-exact parity."
+            "No different-set partial score leaderboard or answer-dependent exclusion; unknown minor candidacy does not disappear.",
+            "Ordering has at least eight numeric shared questions, four topics and 60 percent shared answered weight, or honestly stays unranked."
           ],
           "verification": [
-            "Real local OCR quality/limits on permitted samples and low-confidence/quantity/negation failures."
+            "Complete actual constituency-cohort matrix; sparse/no-programme/coalition cases; invariance to question order and duplicate-family inflation."
           ],
           "reuseCandidates": [
-            "Prepared OCR machinery stripped of reviewer requirements only if simpler than replacement"
+            "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         },
         {
-          "id": "L030",
-          "sequence": 30,
-          "phaseId": "LP6",
-          "subject": "feat: optionally translate the public interface",
+          "id": "Q014",
+          "sequence": 14,
+          "phaseId": "QP3",
+          "subject": "feat: select balanced authored questions and useful follow-ups",
           "status": "planned",
           "dependsOn": [
-            "L019"
+            "Q013"
           ],
           "requirementIds": [
+            "R06",
+            "R07"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "Balanced authored starter bank and unseen five-question continuation blocks.",
+            "Family redundancy controls, topic coverage, burden and useful stop conditions."
+          ],
+          "acceptanceCriteria": [
+            "Select only authored IDs; no auto-generated/reworded question. Continued questions add distinct evidence without targeting a preselected party.",
+            "Ten initial questions and optional blocks support 15/20/25/30; exhausted evidence prompts explicit finish, not automatic reveal."
+          ],
+          "verification": [
+            "Real-bank balance/coverage checks, deterministic fallback, exhaustion and missing-source cohort tests."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q015",
+          "sequence": 15,
+          "phaseId": "QP3",
+          "subject": "fix: explain agreements differences and aggregate results correctly",
+          "status": "planned",
+          "dependsOn": [
+            "Q013"
+          ],
+          "requirementIds": [
+            "R01",
+            "R07"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "Per-question relationship and contribution model linked to user answer and programme position.",
+            "A top total overlap may still show disagreement on a specific issue; unknowns have no agreement claim."
+          ],
+          "acceptanceCriteria": [
+            "Distinguish same/proximate/opposed and unknown consistently; never title all supporting-party citations as personal agreements.",
+            "Overlaps are independent, not probabilities or a vote recommendation."
+          ],
+          "verification": [
+            "Rent and mixed-answer aggregate regressions with independently calculated contributions and rendered explanations."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q016",
+          "sequence": 16,
+          "phaseId": "QP3",
+          "subject": "test: validate citations editions and correction behavior",
+          "status": "planned",
+          "dependsOn": [
+            "Q011",
+            "Q015"
+          ],
+          "requirementIds": [
+            "R03",
+            "R11"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "All released quote/context/page/range/hash/applicability audit and original-source links.",
+            "Pinned 2023 edition, corrections/withdrawal and old-session behavior."
+          ],
+          "acceptanceCriteria": [
+            "Every scored/visible claim resolves to the applicable programme and original context, with PDF/printed page correctly labelled.",
+            "No late or other-election source substitutes for 23J evidence."
+          ],
+          "verification": [
+            "Full released-bank citation validation, intentionally invalid range/hash/party/edition cases and release pin/withdrawal browser checks."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q017",
+          "sequence": 17,
+          "phaseId": "QP4",
+          "subject": "design: specify and review the quiz visual system",
+          "status": "planned",
+          "dependsOn": [
+            "Q001"
+          ],
+          "requirementIds": [
+            "R01",
             "R08"
           ],
           "gateIds": [],
           "externalInputIds": [],
           "requiredExternalStates": [],
-          "evidenceClass": "synthetic_engineering",
-          "optional": true,
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
           "pathScopes": [
-            "lang",
             "resources",
-            "tests"
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
           ],
           "skills": [
+            "frontend-design",
+            "tailwindcss-development",
             "inclusive-interface-review",
-            "testing-best-practices"
+            "private-matching"
           ],
           "deliverables": [
-            "Optional complete ca/gl/eu public packs with original quotations preserved and identical semantic IDs."
+            "Concrete intro/question/help/selected/checkpoint/result/error/loading layouts, palette, type and motion rules.",
+            "Mobile and desktop prototypes prepared for the actual long Spanish question/help content."
           ],
           "acceptanceCriteria": [
-            "No formal fluent reviewer/quorum gate; uncertainty is disclosed and incomplete/uncertain packs stay disabled.",
-            "No admin translations or impact on scores, weights, citations, consent and private state."
+            "One question is dominant, all five choices readable, reliable neutral colours and one next action; no competitive speed/trivia metaphors.",
+            "No design completion from a generic template description; inspect concrete states and contrast before implementation."
           ],
           "verification": [
-            "Enabled key/placeholder and public-browser coverage, semantic/score/selection parity; keep existing checks."
+            "Review prototype screenshots/wireframes against audience contract, contrast and 320px/zoom/reduced-motion targets."
           ],
-          "reuseCandidates": [],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
           "completionEvidence": [],
-          "rollback": "Revert the bounded change while preserving existing data and the previous public bundle."
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q018",
+          "sequence": 18,
+          "phaseId": "QP4",
+          "subject": "feat: make the test the primary entry point",
+          "status": "planned",
+          "dependsOn": [
+            "Q017"
+          ],
+          "requirementIds": [
+            "R01",
+            "R04",
+            "R08"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "2023-labelled intro, short privacy explanation, local province selector and clear start CTA.",
+            "Programme-comparison navigation deferred; optional priorities do not block starting."
+          ],
+          "acceptanceCriteria": [
+            "Average user can begin without knowing economic terms or configuring ten topic weights.",
+            "No public fictional parties or misleading current-election message; source readiness failure is explicit."
+          ],
+          "verification": [
+            "Phone/keyboard intro and start tests, safe error/loading and 2023 copy checks."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q019",
+          "sequence": 19,
+          "phaseId": "QP4",
+          "subject": "feat: build the accessible single-question experience",
+          "status": "planned",
+          "dependsOn": [
+            "Q014",
+            "Q018"
+          ],
+          "requirementIds": [
+            "R01",
+            "R06",
+            "R08"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Large question stage, ordered radio choices, selected state, neutral help and progress.",
+            "Separate unsure/skip, clear continue/back and edit behavior."
+          ],
+          "acceptanceCriteria": [
+            "No auto-advance, colour-only meaning, unexplained acronym or party reveal while answering.",
+            "Stable label-value mapping, 44px targets, keyboard radio semantics, focus and Spanish labels."
+          ],
+          "verification": [
+            "Browser choice order/value, focus, help/selection, missing answer and keyboard/mobile states."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q020",
+          "sequence": 20,
+          "phaseId": "QP4",
+          "subject": "feat: add smooth transitions without losing private state",
+          "status": "planned",
+          "dependsOn": [
+            "Q019"
+          ],
+          "requirementIds": [
+            "R05",
+            "R08"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Short opacity/transform question transitions, reduced-motion variant and guarded navigation.",
+            "Answer editing/back/repeated-click behavior preserves stable session state."
+          ],
+          "acceptanceCriteria": [
+            "No double advancement, focus loss, layout jump, lost answer or private-state request. Reduced motion avoids movement."
+          ],
+          "verification": [
+            "Normal/reduced-motion browser navigation, rapid clicks, edit/back/reset and request/storage inspection."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q021",
+          "sequence": 21,
+          "phaseId": "QP4",
+          "subject": "feat: make deeper quiz checkpoints clear and optional",
+          "status": "planned",
+          "dependsOn": [
+            "Q020"
+          ],
+          "requirementIds": [
+            "R01",
+            "R06"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Ten-question checkpoint and five-more/finish/review choices through thirty when supported.",
+            "Plain messages for unsure answers, exhausted useful evidence and insufficient comparable coverage."
+          ],
+          "acceptanceCriteria": [
+            "No promise that more answers means a higher percentage; no forced result or completion timer.",
+            "Finish is always explicit; review updates the result and invalidates previous personalised display."
+          ],
+          "verification": [
+            "Ten/fifteen/twenty/thirty paths, exhausted and all-unsure cases, edit and finish reveal tests."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q022",
+          "sequence": 22,
+          "phaseId": "QP4",
+          "subject": "feat: present understandable cited results",
+          "status": "planned",
+          "dependsOn": [
+            "Q015",
+            "Q016",
+            "Q021"
+          ],
+          "requirementIds": [
+            "R01",
+            "R02",
+            "R07",
+            "R08"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Readable overall explanation, up to three grounded agreements and disagreements, other eligible parties and missing information.",
+            "Secondary policy-overlap number, same-question explanation, short source disclosures and exact original links."
+          ],
+          "acceptanceCriteria": [
+            "An everyday user can explain why the result appeared without opening methodology. No analyst table, personality label, false winner or voting instruction.",
+            "Each result item distinguishes user answer, source proposal and relationship; original names/quotes remain exact."
+          ],
+          "verification": [
+            "Real rent disagreement and aggregate result screenshot/browser tests; unknowns, ties, small parties, sparse evidence and source-link checks."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q023",
+          "sequence": 23,
+          "phaseId": "QP4",
+          "subject": "feat: complete Spanish help errors privacy and local export",
+          "status": "planned",
+          "dependsOn": [
+            "Q022"
+          ],
+          "requirementIds": [
+            "R01",
+            "R05",
+            "R08",
+            "R11"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Complete everyday Spanish explanatory/help/error/edition copy and deliberate local export.",
+            "Safe translation-key fallbacks, original-language quotation disclosure and clear reload/reset behavior."
+          ],
+          "acceptanceCriteria": [
+            "No raw exception/unresolved key, technical hash in the main flow or implied persistence.",
+            "Export explains sensitive contents and pins source/question/engine version; no upload or public result link."
+          ],
+          "verification": [
+            "Spanish catalog checks, error/help/export/reset tests and no private remote payload."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q024",
+          "sequence": 24,
+          "phaseId": "QP4",
+          "subject": "test: verify actual mobile keyboard motion and readability",
+          "status": "planned",
+          "dependsOn": [
+            "Q023"
+          ],
+          "requirementIds": [
+            "R01",
+            "R08"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "frontend-design",
+            "tailwindcss-development",
+            "inclusive-interface-review",
+            "private-matching"
+          ],
+          "deliverables": [
+            "Desktop/phone screenshots of every principal state and recorded ordinary-user task walkthrough.",
+            "Axe, keyboard, visible focus, contrast, reduced motion, 320px and 200/400 percent zoom results with fixes."
+          ],
+          "acceptanceCriteria": [
+            "All principal controls are readable/reachable and wording/help/result is understandable without prior policy knowledge.",
+            "No completion based on automated accessibility alone; record practical walkthrough limitations honestly."
+          ],
+          "verification": [
+            "Existing browser/axe suite plus reproducible keyboard/mobile/reflow checklist and visual inspection of real rendered states."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q025",
+          "sequence": 25,
+          "phaseId": "QP5",
+          "subject": "test: verify the real-data quiz privacy boundary",
+          "status": "planned",
+          "dependsOn": [
+            "Q024"
+          ],
+          "requirementIds": [
+            "R05",
+            "R09",
+            "R10"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "Complete public-fetch/private-state traffic, storage, DOM pre-finish and local export audit.",
+            "Deferred disabled feedback and no third-party embedding/font/analytics."
+          ],
+          "acceptanceCriteria": [
+            "No answer/province/party/result/progress transmitted or persisted by default; no party result reveal before finish.",
+            "Same bank URL/hash across user paths; no current source assumptions or feedback side effects."
+          ],
+          "verification": [
+            "Browser request/body/URL/storage tests, reset/reload/cross-tab and active-release checks with actual 2023 bank."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q026",
+          "sequence": 26,
+          "phaseId": "QP5",
+          "subject": "test: verify the complete 2023 corpus and release candidate",
+          "status": "planned",
+          "dependsOn": [
+            "Q016",
+            "Q025"
+          ],
+          "requirementIds": [
+            "R02",
+            "R03",
+            "R06",
+            "R07",
+            "R12"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "Coverage/reading/matrix/question/calibration/citation completion report and all required CI/security/audit results.",
+            "Ready/missing corpus counts and a complete release manifest, without synthetic completion claims."
+          ],
+          "acceptanceCriteria": [
+            "At least sixty distinct validated useful questions; every used document fully read; every inventory row has a truthful source/unknown status; every scored mapping calibrated.",
+            "Unresolved semantic/sign/citation defects block readiness. Unavailable programmes remain visible, and absent complete acquisition may never be described as all downloaded."
+          ],
+          "verification": [
+            "Run existing complete local CI and exact staged checks; reconcile acquisition/analysis/rubric artefacts and actual browser outcomes."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q027",
+          "sequence": 27,
+          "phaseId": "QP5",
+          "subject": "chore: prove 2023 bundle recovery and rollback",
+          "status": "planned",
+          "dependsOn": [
+            "Q026"
+          ],
+          "requirementIds": [
+            "R11",
+            "R12"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "Verified local real-bundle backup, withdrawal/correction and restore drill.",
+            "Keep prepared runtime recovery utilities and signed history; no reset."
+          ],
+          "acceptanceCriteria": [
+            "Restore prior immutable edition and source links correctly without private answer persistence.",
+            "Local rehearsal is not an actual host privacy or public-launch certification."
+          ],
+          "verification": [
+            "Existing recovery suite and explicit real-bundle restore/hash drill."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q028",
+          "sequence": 28,
+          "phaseId": "QP5",
+          "subject": "docs: prepare the concrete 2023 public release packet",
+          "status": "planned",
+          "dependsOn": [
+            "Q027"
+          ],
+          "requirementIds": [
+            "R02",
+            "R09",
+            "R11",
+            "R12"
+          ],
+          "gateIds": [],
+          "externalInputIds": [
+            "actual_host_cost_and_launch_authority"
+          ],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "outputs",
+            "docs/loop-engineer.md",
+            "docs/plans"
+          ],
+          "skills": [],
+          "deliverables": [
+            "Reviewable exact 2023 release/domain/provider/cost/privacy/log/source/rollback packet.",
+            "Metrics disabled, no automatic push/publication and truthful missing-programme limitations."
+          ],
+          "acceptanceCriteria": [
+            "Actual host and costs are verified before requesting PUBLIC-LAUNCH. No agent approval or published-ready claim from local synthetic checks."
+          ],
+          "verification": [
+            "Packet artefact/hash/actual evidence review; do not deploy or purchase."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q029",
+          "sequence": 29,
+          "phaseId": "QP6",
+          "subject": "docs: record deferred comparison feedback and translation scope",
+          "status": "planned",
+          "dependsOn": [
+            "Q026"
+          ],
+          "requirementIds": [
+            "R04",
+            "R09",
+            "R12"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "outputs",
+            "docs/loop-engineer.md",
+            "docs/plans"
+          ],
+          "skills": [],
+          "deliverables": [
+            "Small deferred backlog preserving existing useful code without distracting from quiz readiness.",
+            "Programme comparison and optional collection/translation activation explicitly outside this iteration."
+          ],
+          "acceptanceCriteria": [
+            "Do not discard useful source/recovery/privacy utilities or expand the test into a backoffice/governance project."
+          ],
+          "verification": [
+            "Canonical plan and product/navigation scope parity; disabled-feedback verification."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+        },
+        {
+          "id": "Q030",
+          "sequence": 30,
+          "phaseId": "QP6",
+          "subject": "feat: prepare separate future-programme edition updates",
+          "status": "planned",
+          "dependsOn": [
+            "Q027"
+          ],
+          "requirementIds": [
+            "R02",
+            "R03",
+            "R11"
+          ],
+          "gateIds": [],
+          "externalInputIds": [],
+          "requiredExternalStates": [],
+          "evidenceClass": "engineering_on_authored_real_data",
+          "optional": false,
+          "pathScopes": [
+            "resources",
+            "app",
+            "lang",
+            "scripts",
+            "tests",
+            "outputs"
+          ],
+          "skills": [
+            "private-matching",
+            "inclusive-interface-review"
+          ],
+          "deliverables": [
+            "New-election import checklist and versioned candidacy/question compatibility boundaries.",
+            "Archived 2023 edition, corrections and pinned sessions remain reproducible."
+          ],
+          "acceptanceCriteria": [
+            "Every future programme must be acquired/read/cross-referenced and its positions authored anew; no inherited values or automatic generation.",
+            "Preparation does not wait for or fabricate future programmes, nor change 2023 labels."
+          ],
+          "verification": [
+            "Edition isolation/rollback contract checks and a clearly non-public migration rehearsal; real future sources remain an external input."
+          ],
+          "reuseCandidates": [
+            "Existing lean implementation and required checks where they actually satisfy this increment"
+          ],
+          "completionEvidence": [],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
         }
-      ],
-      "summaryCounts": {
-        "total": 30,
-        "core": 28,
-        "optional": 2
-      },
-      "progressPolicy": "Each L ID is a bounded commit-sized deliverable. Do not mark completed from older C IDs without verifying its changed acceptance. Future maintenance is a reusable tool/runbook, not permanent completion."
+      ]
     },
     "externalInputs": {
-      "owner_current_programmes_and_manifest": {
+      "unavailable_2023_programmes": {
+        "status": "search_in_progress",
+        "description": "Agent acquisition is authorized. Search and document every official candidacy; ask the owner for genuinely unavailable originals only after concrete attempted URLs/archive verification are recorded. Continue independent document readings/UI engineering."
+      },
+      "actual_host_cost_and_launch_authority": {
         "status": "pending",
-        "description": "Owner will collect programmes as published, including official party websites; historical documents may support labelled local trials only. Current election/candidacy/applicability/provenance records remain pending."
+        "description": "Only concrete public release depends on actual host/cost/privacy and owner PUBLIC-LAUNCH approval; no current/future source wait blocks the historical 2023 edition."
+      },
+      "future_programmes": {
+        "status": "future_separate_edition",
+        "description": "Prepare isolated update support; no future document or hypothetical election date is a prerequisite for the 2023 quiz."
       }
     }
   },
   "risks": [
     {
       "id": "K01",
-      "title": "Automated semantic error",
-      "mitigation": "Exact context, explicit interpretation labels, unknown/conflict handling and public corrections; no promise that source matching proves every interpretation."
+      "title": "Semantic or polarity error",
+      "mitigation": "Direct full reading, explicit rubric, original context, independent calibration and browser answer-to-result tests; no perfect-truth claim."
     },
     {
       "id": "K02",
-      "title": "Insufficient comparable evidence",
-      "mitigation": "Keep candidacies and coverage; same-set scoring or cited partial comparison without broad ranking."
+      "title": "Incomplete minor-party or territorial source coverage",
+      "mitigation": "Reconcile all official lists/corrections, search every row, record archive provenance and keep missing candidacies visible/unscored."
     },
     {
       "id": "K03",
-      "title": "Feedback disclosure or unreliable statistics",
-      "mitigation": "Separate sampled/noisy contributions, no profile/IDs/event log, bounded counters, uncertainty/suppression and actual hosted flow; no guarantee of anonymity or representative people."
+      "title": "Confusing or leading everyday wording",
+      "mitigation": "Audit every question/help for one concrete decision, explained terms and preserved source conditions; verify the practical phone/keyboard journey."
     },
     {
       "id": "K04",
-      "title": "Overbuilt prepared code",
-      "mitigation": "Reconcile useful utilities and tests, remove unused runtime/admin machinery coherently; preserve history and existing non-synthetic data."
+      "title": "Beautiful UI conceals weak evidence",
+      "mitigation": "UI completion cannot complete source/semantic tasks; real-party release requires readings, matrix, calibrations and exact citations."
     },
     {
       "id": "K05",
-      "title": "Small-host contention or source availability",
-      "mitigation": "Static bundles/cache first, measure SQLite concurrency and payload budgets; comparison remains useful when quiz/metrics unavailable."
+      "title": "Sparse evidence prevents fair ranking",
+      "mitigation": "Same-question/weight disclosed comparison subset and unranked insufficient evidence; no forced winner or minor-party deletion."
+    },
+    {
+      "id": "K06",
+      "title": "Historical edition mistaken for current advice",
+      "mitigation": "2023 labels on intro/results/export and separate future programme reading/releases."
     }
   ],
   "sources": [
     {
-      "label": "AEPD: anonymous data definition",
-      "url": "https://www.aepd.es/preguntas-frecuentes/0-conceptos-basicos/FAQ-0005-sobre-los-datos-anonimizados",
-      "note": "Anonymous means a person is not identifiable; names/identifiers alone do not settle this."
+      "label": "BOE proclaimed 23J candidacies",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-15066",
+      "note": "Official baseline; reconcile subsequent corrections/withdrawals."
     },
     {
-      "label": "WP29 Opinion 05/2014 via AEPD",
-      "url": "https://www.aepd.es/documento/wp216-es.pdf",
-      "note": "Aggregation/noise techniques have limitations; assess singling-out, linkage and inference. Not a certification of the proposed protocol."
+      "label": "BOE final Congress and Senate results",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-18907",
+      "note": "Congress tables supply the initial complete-denomination inventory; vote totals must not weight matching."
     },
     {
-      "label": "LOPDGDD Article 9",
-      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673#a9",
-      "note": "Spanish ideology-related personal-data restrictions matter to the actual metric flow; consent alone is not a general bypass."
+      "label": "BOE candidacy correction 4 July",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-15548",
+      "note": "Required registry reconciliation input."
+    },
+    {
+      "label": "BOE candidacy correction 7 July",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-15828",
+      "note": "Includes PACMA proclamation correction in Teruel."
+    },
+    {
+      "label": "SUMAR original 2023 programme",
+      "url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
+      "note": "Downloaded and hashed; complete reading not yet performed."
+    },
+    {
+      "label": "PP original 2023 programme",
+      "url": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
+      "note": "Downloaded and hashed; complete reading not yet performed."
+    },
+    {
+      "label": "PACMA original 2023 programme",
+      "url": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+      "note": "Downloaded and hashed; complete reading not yet performed."
     }
   ],
   "restart": {
@@ -1999,5 +2036,424 @@
     "backupManifestSha256": "be734361c04845af677d6de6fe95f8b4ea24f52bb69f8e6b88f40084be49b837",
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
+  },
+  "revisedAt": "2026-10-11T06:23:56.059873+00:00",
+  "previousIteration": {
+    "planVersion": "lean-v1.1.0",
+    "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
+    "tasks": [
+      {
+        "id": "L001",
+        "subject": "chore: restart from verified scaffold and restore CI",
+        "status": "completed",
+        "completionEvidence": [
+          "work/execution-journal.jsonl",
+          "tests/Tooling/test_commit_checks.py"
+        ]
+      },
+      {
+        "id": "L002",
+        "subject": "refactor: keep a stateless public app and retire editorial runtime",
+        "status": "completed",
+        "completionEvidence": [
+          "tests/Feature/PublicBootstrapTest.php",
+          "tests/Tooling/test_commit_checks.py",
+          "scripts/check-repository.py"
+        ]
+      },
+      {
+        "id": "L003",
+        "subject": "feat: accept owner source manifests and candidacy coverage",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "tests/Tooling/test_source_preparation.py"
+        ]
+      },
+      {
+        "id": "L004",
+        "subject": "feat: extract native programme text locally",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "scripts/grounded_positions.py",
+          "scripts/manage_releases.py",
+          "tests/Tooling/test_grounded_releases.py",
+          "tests/Feature/ReleaseApplicabilityTest.php",
+          "tests/Browser/public-journeys.spec.ts",
+          "outputs/historical-parser-trial.json"
+        ]
+      },
+      {
+        "id": "L005",
+        "subject": "feat: validate exact contextual citations",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "scripts/grounded_positions.py",
+          "scripts/manage_releases.py",
+          "tests/Tooling/test_grounded_releases.py",
+          "tests/Feature/ReleaseApplicabilityTest.php",
+          "tests/Browser/public-journeys.spec.ts",
+          "outputs/historical-parser-trial.json"
+        ]
+      },
+      {
+        "id": "L006",
+        "subject": "feat: compile grounded programme positions automatically",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "scripts/grounded_positions.py",
+          "scripts/manage_releases.py",
+          "tests/Tooling/test_grounded_releases.py",
+          "tests/Feature/ReleaseApplicabilityTest.php",
+          "tests/Browser/public-journeys.spec.ts",
+          "outputs/historical-parser-trial.json"
+        ]
+      },
+      {
+        "id": "L007",
+        "subject": "feat: build and verify immutable public bundles",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "scripts/grounded_positions.py",
+          "scripts/manage_releases.py",
+          "tests/Tooling/test_grounded_releases.py",
+          "tests/Feature/ReleaseApplicabilityTest.php",
+          "tests/Browser/public-journeys.spec.ts",
+          "outputs/historical-parser-trial.json"
+        ]
+      },
+      {
+        "id": "L008",
+        "subject": "feat: browse and search cited programmes",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L009",
+        "subject": "feat: compare programme proposals locally",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L010",
+        "subject": "feat: open original contextual evidence",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L011",
+        "subject": "feat: explain coverage and support bundle corrections",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_sources.py",
+          "scripts/grounded_positions.py",
+          "scripts/manage_releases.py",
+          "tests/Tooling/test_grounded_releases.py",
+          "tests/Feature/ReleaseApplicabilityTest.php",
+          "tests/Browser/public-journeys.spec.ts",
+          "outputs/historical-parser-trial.json"
+        ]
+      },
+      {
+        "id": "L012",
+        "subject": "feat: prepare balanced current-source question banks",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/matching.ts",
+          "resources/js/questionnaire.ts",
+          "tests/Tooling/matching.test.ts"
+        ]
+      },
+      {
+        "id": "L013",
+        "subject": "feat: calculate deterministic browser-local policy overlaps",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/matching.ts",
+          "resources/js/questionnaire.ts",
+          "tests/Tooling/matching.test.ts"
+        ]
+      },
+      {
+        "id": "L014",
+        "subject": "feat: choose balanced informative follow-up questions",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/matching.ts",
+          "resources/js/questionnaire.ts",
+          "tests/Tooling/matching.test.ts"
+        ]
+      },
+      {
+        "id": "L015",
+        "subject": "feat: expose honest overlap and evidence coverage",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L016",
+        "subject": "feat: build the private questionnaire state machine",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/matching.ts",
+          "resources/js/questionnaire.ts",
+          "tests/Tooling/matching.test.ts"
+        ]
+      },
+      {
+        "id": "L017",
+        "subject": "feat: offer ten-question checkpoints and five more",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L018",
+        "subject": "feat: reveal cited results after deliberate finish",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L019",
+        "subject": "feat: polish the fast accessible public experience",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L020",
+        "subject": "test: verify local reset export and private quiz traffic",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/app.ts",
+          "tests/Browser/public-journeys.spec.ts",
+          "tests/Feature/PublicJourneyTest.php",
+          "outputs/local-public-verification.json"
+        ]
+      },
+      {
+        "id": "L021",
+        "subject": "feat: add voluntary randomized feedback on fit and policies",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/feedback.ts",
+          "app/Http/Controllers/FeedbackController.php",
+          "app/FeedbackCounters.php",
+          "app/FeedbackEstimator.php",
+          "tests/Feature/FeedbackTest.php",
+          "tests/Feature/FeedbackReportTest.php",
+          "tests/Feature/FeedbackConcurrencyTest.php",
+          "tests/Browser/feedback.spec.ts",
+          "docs/tooling.md"
+        ]
+      },
+      {
+        "id": "L022",
+        "subject": "feat: store bounded aggregate counters in SQLite",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/feedback.ts",
+          "app/Http/Controllers/FeedbackController.php",
+          "app/FeedbackCounters.php",
+          "app/FeedbackEstimator.php",
+          "tests/Feature/FeedbackTest.php",
+          "tests/Feature/FeedbackReportTest.php",
+          "tests/Feature/FeedbackConcurrencyTest.php",
+          "tests/Browser/feedback.spec.ts",
+          "docs/tooling.md"
+        ]
+      },
+      {
+        "id": "L023",
+        "subject": "feat: report aggregate agreement with uncertainty",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/feedback.ts",
+          "app/Http/Controllers/FeedbackController.php",
+          "app/FeedbackCounters.php",
+          "app/FeedbackEstimator.php",
+          "tests/Feature/FeedbackTest.php",
+          "tests/Feature/FeedbackReportTest.php",
+          "tests/Feature/FeedbackConcurrencyTest.php",
+          "tests/Browser/feedback.spec.ts",
+          "docs/tooling.md"
+        ]
+      },
+      {
+        "id": "L024",
+        "subject": "test: verify metric privacy refusal failures and limits",
+        "status": "completed",
+        "completionEvidence": [
+          "resources/js/feedback.ts",
+          "app/Http/Controllers/FeedbackController.php",
+          "app/FeedbackCounters.php",
+          "app/FeedbackEstimator.php",
+          "tests/Feature/FeedbackTest.php",
+          "tests/Feature/FeedbackReportTest.php",
+          "tests/Feature/FeedbackConcurrencyTest.php",
+          "tests/Browser/feedback.spec.ts",
+          "docs/tooling.md"
+        ]
+      },
+      {
+        "id": "L025",
+        "subject": "data: import supplied current programmes and regenerate the bank",
+        "status": "blocked",
+        "completionEvidence": []
+      },
+      {
+        "id": "L026",
+        "subject": "chore: prepare one-host deployment backup and rollback",
+        "status": "completed",
+        "completionEvidence": [
+          "scripts/prepare_runtime.py",
+          "scripts/local_recovery.py",
+          "scripts/encrypt-backup.php",
+          "tests/Feature/LocalRecoveryTest.php",
+          "tests/Fixtures/recovery_contract.py",
+          "outputs/local-recovery-verification.json",
+          "docs/tooling.md"
+        ]
+      },
+      {
+        "id": "L027",
+        "subject": "test: verify complete release candidate and recovery",
+        "status": "blocked",
+        "completionEvidence": []
+      },
+      {
+        "id": "L028",
+        "subject": "docs: prepare the single concrete public launch action",
+        "status": "blocked",
+        "completionEvidence": []
+      },
+      {
+        "id": "L029",
+        "subject": "feat: optionally import image-only programmes with local OCR",
+        "status": "planned",
+        "completionEvidence": []
+      },
+      {
+        "id": "L030",
+        "subject": "feat: optionally translate the public interface",
+        "status": "planned",
+        "completionEvidence": []
+      }
+    ],
+    "interpretation": "Prior statuses describe reported local engineering work with synthetic fixtures. They do not complete any new real-source, semantic-calibration, everyday-usefulness or design acceptance requirement. Preserve code and signed history; do not restart the repository."
+  },
+  "electionScope": {
+    "id": "es-congress-2023-07-23",
+    "date": "2023-07-23",
+    "chamber": "congress",
+    "constituencyCount": 52,
+    "coverage": "All applicable real candidacies, including those without seats or a located programme. Distinguish official territorial/coalition labels; document any shared-programme applicability.",
+    "inventory": "outputs/2023-source-inventory.json",
+    "inventoryComplete": false,
+    "initialOfficialDenominations": 59,
+    "exclude": [
+      "2023 municipal and autonomous elections",
+      "Senate candidate-specific ballots",
+      "Hypothetical future election dates",
+      "Post-election conduct or vote shares as a source of policy positions"
+    ]
+  },
+  "audienceDesign": {
+    "audience": "A person who does not regularly follow politics or economics, using a phone, without prerequisite knowledge. Respectful adult language; no condescension.",
+    "questionContract": [
+      "One concrete decision per question; one affirmative grammatical proposition whose positive answer always means agreeing with that exact proposition.",
+      "Spanish statement normally 12-25 words; if a longer statement is necessary preserve meaning and explain why. No unexplained acronym, double negation, two policies or leading moral label.",
+      "Optional neutral explanation, normally 25-45 words, describes what the proposal means; use everyday money/work/home/school/health/transport examples only when they preserve actual conditions.",
+      "Explain essential terms at first use (for example, the income tax on earnings); do not silently broaden a targeted tax into all taxes or a regional rule into all of Spain.",
+      "No unsupported impact forecast, guaranteed cheaper rent, inflation estimate or assertion that an opinion is correct. Plain-language examples are not proof of policy effects.",
+      "No party names, logos or ideological answer labels while answering. Original-language quotations and party identity become available in result evidence after deliberate finish.",
+      "No technical methodology/hashes/uncertainty tables in the main journey; retain source and method details behind clearly named optional disclosures."
+    ],
+    "resultContract": [
+      "Start with a short Spanish explanation of the observed proposal overlap, not a voting instruction or a personality/ideology classification.",
+      "Show three understandable cited agreements and three disagreements when available, each with Your answer / What the programme proposes / How they relate. Do not fabricate six examples when evidence is absent.",
+      "Distinguish a disagreement on one proposal from total overlap across other proposals. A top overall result may disagree with the user on rent caps; label that disagreement explicitly.",
+      "Explain missing evidence as We could not find a clear position in this programme, never Neutral or They oppose it.",
+      "For fair ordering, explain These candidacies were compared using the same N questions; show other eligible candidacies and coverage. For insufficient evidence do not announce a winner.",
+      "Use a percentage only as a secondary explained policy-overlap index; no probability, confidence, sum-to-100 rule or definitive You are aligned with this party."
+    ],
+    "usefulnessAcceptance": [
+      "Without opening methodology, the user can understand what decision each question asks about, choose unsure without penalty, edit an answer and explain why a shown result appeared.",
+      "Complete a reproducible phone/keyboard walkthrough of start, question help, answer, back/edit, checkpoint, finish, result difference, missing evidence and original citation. Fix any step requiring analyst knowledge.",
+      "Audit every released question and help text using this contract, with recorded revisions; a readability number or passing screenshot alone is not semantic validation."
+    ]
+  },
+  "visualDesign": {
+    "direction": "Quiz stage inspired by the clear one-question interaction of Kahoot, with a calm credible civic identity. No trivia right/wrong, speed score, countdown, competitive leaderboard or party-coloured answer buttons.",
+    "palette": {
+      "ink": "#182235",
+      "canvas": "#F4F7FB",
+      "surface": "#FFFFFF",
+      "action": "#3449A4",
+      "muted": "#526078",
+      "selected": "#176B71"
+    },
+    "typography": "Reuse the existing locally served font assets after inspecting them; strong readable sans headings, body 18px on mobile, line height 1.5-1.65, bounded line lengths; no third-party font request or dependency changes.",
+    "questionLayout": [
+      "Compact persistent edition/progress line; topic name; one large question; optional What does this mean? help.",
+      "Five equally prominent labelled agreement choices in a stable disagree-to-agree order; separate unsure and skip controls. Native radio group, no hover-only controls.",
+      "Back/edit and one primary Continue action remain clear; selection has an immediate visible state, but no automatic advancement.",
+      "Checkpoint after ten: See my result or Five more questions; always explicit finish. Result page has plain-language agreement/difference evidence and a quiet source disclosure."
+    ],
+    "wireframe": "[2023 edition | progress]\n[topic]\n[one clear question]\n[What does this mean?]\n[strongly disagree] [disagree] [neutral] [agree] [strongly agree]\n[unsure] [skip]\n[back]                              [continue]",
+    "motion": "Short 160-220ms opacity/transform transitions between questions and clear selected-state feedback; no layout jump, double submission or lost focus. prefers-reduced-motion removes movement and preserves feedback.",
+    "accessibility": "44px minimum touch targets, visible keyboard focus, radio keyboard semantics, text contrast at least 4.5:1, control/focus contrast at least 3:1; 320px reflow and 200/400% zoom; never encode direction only by colour. Verify the actual palette in each state.",
+    "performance": "Reuse the fixed bank architecture and local fonts. Measure release payload and mobile interaction in the existing budget checks; animate transform/opacity and avoid blocking work per answer.",
+    "acceptance": "Inspect actual desktop/mobile screenshots for intro/question/help/selected/checkpoint/results/loading/error states and perform keyboard/reduced-motion checks; no design task is complete from CSS or descriptions alone."
+  },
+  "initialEvidence": {
+    "audit": "outputs/quiz-2023-initial-audit.json",
+    "inventory": "outputs/2023-source-inventory.json",
+    "sourceSummary": {
+      "officialDenominations": 59,
+      "programmeFilesDownloaded": 3,
+      "programmesFullyAnalysed": 0,
+      "releasedRealQuestions": 0,
+      "completeCorpusCertified": false
+    },
+    "currentProductNotChanged": true,
+    "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   }
 }

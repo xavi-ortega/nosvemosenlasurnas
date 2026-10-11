@@ -1,22 +1,30 @@
-# Lean progressive questionnaire
+# Directly authored progressive questionnaire
 
-## 2. Public journeys
+## 2. Everyday-user quiz journey
 
-The comparison tool and quiz must each be useful on their own.
+Understand a practical question, answer comfortably and receive an explanation.
 
-- Home: two clear actions, what the service measures, how sources work, privacy in one plain paragraph, and the source release date.
-- Comparison: browse all in-scope candidacies, select two or more, search topics and see exact proposals, differences, overlap and evidence gaps. Provide a table on wide screens and readable cards on phones.
-- Quiz: explain local processing and reload behavior, optional local constituency selection, balanced questions, skip/unsure, optional topic priorities and edit. After ten presented questions offer finish, five more, review or exit. Presentation count and scored-answer count differ.
-- Before explicit finish, withhold personalised party identities, scores by party, ranking and selected result citations from DOM/accessibility/title/export surfaces. An unnamed highest comparable overlap may appear only when enough shared answers exist; never call it certainty.
-- Results: explain per-party policy overlap, shared evidence coverage, ties and limitations; show agreements/disagreements with cited programme passages for answered questions. Unanswered-topic exploration is public information, not a guessed preference.
-- After results, a person may knowingly refine answers, compare sources, reset, deliberately export a local file, or optionally contribute feedback. Finish never opts into metrics. No pressure to reach 100%.
+- One concrete decision per question; one affirmative grammatical proposition whose positive answer always means agreeing with that exact proposition.
+- Spanish statement normally 12-25 words; if a longer statement is necessary preserve meaning and explain why. No unexplained acronym, double negation, two policies or leading moral label.
+- Optional neutral explanation, normally 25-45 words, describes what the proposal means; use everyday money/work/home/school/health/transport examples only when they preserve actual conditions.
+- Explain essential terms at first use (for example, the income tax on earnings); do not silently broaden a targeted tax into all taxes or a regional rule into all of Spain.
+- No unsupported impact forecast, guaranteed cheaper rent, inflation estimate or assertion that an opinion is correct. Plain-language examples are not proof of policy effects.
+- No party names, logos or ideological answer labels while answering. Original-language quotations and party identity become available in result evidence after deliberate finish.
+- No technical methodology/hashes/uncertainty tables in the main journey; retain source and method details behind clearly named optional disclosures.
+- Start with a short Spanish explanation of the observed proposal overlap, not a voting instruction or a personality/ideology classification.
+- Show three understandable cited agreements and three disagreements when available, each with Your answer / What the programme proposes / How they relate. Do not fabricate six examples when evidence is absent.
+- Distinguish a disagreement on one proposal from total overlap across other proposals. A top overall result may disagree with the user on rent caps; label that disagreement explicitly.
+- Explain missing evidence as We could not find a clear position in this programme, never Neutral or They oppose it.
+- For fair ordering, explain These candidacies were compared using the same N questions; show other eligible candidacies and coverage. For insufficient evidence do not announce a winner.
+- Use a percentage only as a secondary explained policy-overlap index; no probability, confidence, sum-to-100 rule or definitive You are aligned with this party.
+- Start with one clear CTA; choosing a province determines eligible parties locally. Topic priorities are optional later settings, not an entry form the average user must configure.
+- Ten questions offer a short start; optional blocks of five allow a deeper 15/20/25/30-question session. More questions must add distinct useful evidence, not repetition.
 
-## 6. Progressive question order
+## 6. Larger authored bank, comfortable sessions
 
-Start useful and get more specific without pretending to read minds.
+Selection chooses existing questions; it does not generate content.
 
-- Start with ten general questions covering the released topics, one per family where possible, selected by a documented balanced order. Do not force scoring if enough comparable evidence does not exist.
-- For continuation, prioritize uncovered positive-weight topics/families first, then specificity. Among eligible remaining questions, compute D(q)=(max party position-min party position)/4 on the close-profile common-evidence cohort, U(t)=1-answered numeric bank weight in topic t/total positive released topic weight, and score(q)=topicPriority*(0.6*U(t)+0.4*D(q))/burden(q). Default burdens: general=1, specific=1.5; all values/version are published. Unsupported numeric spread is zero. Stable question ID breaks equal scores.
-- Define close profiles as within ten observed index points of the current highest comparable index. If comparison is insufficient, consider the full cohort. Never remove parties from results or infer an answer; stable question IDs and party renaming/order do not change semantic selection.
-- Limit a family to two presented questions per session by default; score its declared items using the fixed family budget, without double-counting alternate wording of the same proposition. An edit resets derived selection; already presented questions remain in local history. Identical profiles or no discrimination are legitimate outcomes.
-- If the selector fails or exceeds its CPU budget, use the balanced remaining order with the same scoring contract. Bank exhaustion offers explicit finish/exit; it never reveals automatically. There is no prediction probability or target of reaching 100%.
+- Initial ten questions balance distinct topics and policy families. Optional five-question blocks use unseen authored questions, improve coverage and cap redundancy.
+- Exercise actual constituency cohorts, including missing-programme candidacies, so a minor unknown party does not silently disappear or force a misleading full ranking. Insufficient fair evidence gets an honest unranked outcome.
+- Keep unsure/skip separate from the neutral numerical answer. Allow revisiting/editing; explain more answers may change results in either direction.
+- No race, countdown, correct-answer feedback or completion-forced result. Retain deliberate finish, frozen release per session, local reset and explicit local export.

@@ -1,22 +1,21 @@
-# Lean matching specification
+# 2023 quiz matching specification
 
-## 5. Small transparent matching engine
+## 5. Verify meaning and arithmetic together
 
-The runtime is deterministic arithmetic, with no ML.
+Trace the full result instead of guessing a global sign correction.
 
-- Use numeric agreement scale -2,-1,0,1,2. Unsure/skip have no numeric value. For answer a and cited position p, similarity = 1 - abs(a-p)/4. Party overlap = 100 * sum(w * similarity)/sum(w) for the disclosed scored set. Scores are independent and do not sum to 100.
-- Weights are release-defined topic and question-family budgets, with optional explicit user topic priorities (0,1,2) kept locally. Divide each family budget across its declared question items; do not let a long topic or repeated variants gain accidental weight. Freeze the bank and weight definition for a session.
-- For a ranking or highest-overlap checkpoint, use the same answered propositions and weights for every candidacy in the disclosed comparison cohort. The default cohort includes all applicable supplied candidacies. A deliberately selected narrower cohort is prominently labelled; other candidacies remain visible.
-- Initial conservative display threshold: eight numeric answers, four topics, and at least 60% of answered positive weight shared across the cohort. Missing sources stay visible. If the threshold fails, show cited comparisons and separately labelled partial overlaps/coverage without ordering or declaring a winner. These are engineering heuristics, not statistically calibrated confidence.
-- Display overlap, response/evidence coverage and question count separately. A 60% overlap says that the observed weighted answers align by that index; it does not mean 60% probability that the person prefers that party. More answers can lower the index.
-- Keep the existing v1 reference as a historical arithmetic oracle. Implement the final browser engine against the simpler explicit weight contract and pin its version. Test exact examples, unknown/zero weights, ties, common-denominator fairness, permutation invariance and locale invariance. No elaborate completion bounds or robust-leader certification is required.
+- Canonical labels run -2 Strongly disagree through +2 Strongly agree in an explicit ordered array. Verify browser-visible order, chosen value, stored state, authored direction, source value and result explanation.
+- Retain deterministic similarity 1-abs(answer-position)/4 unless a documented defect justifies a versioned change. Independent expected cases: -2 versus +2 = 0; -2 versus -2 = 1; 0 versus +/-2 = 0.5.
+- Build an independent semantic calibration ledger for every released question and mapping, with source-grounded expected support/opposition and calculation cases. Do not calculate expected answers by calling the same implementation under test.
+- Test all five user answers, inverse phrasing, qualifications, missing/conflicting data, skip/unsure, edited answers, ties, duplicates and weighting. Rent-cap strongly disagree versus a supporting party must be marked a disagreement even if that party has the highest aggregate overlap.
+- Use fixed topic/family budgets and an eligible constituency cohort determined independently of answers. Rank only parties sharing identical scored propositions and weights above the declared minimums; disclose the fixed comparison subset and preserve other eligible candidacies.
+- Never convert silence to neutral, compare differently covered partial scores in one leaderboard, silently discard small parties, label overlap a probability or split 100 percent among parties.
 
-## 7. Private quiz boundary
+## 8. Preserve the private quiz boundary
 
-The server distributes public content; it does not receive a visitor profile.
+A simpler interface must preserve local processing.
 
-- Serve the same complete public election bank for everyone. Filter constituency/candidacies, calculate scores and choose questions in the browser. Do not fetch party/question-specific data in response to answers or private selection.
-- No quiz session API, cookies, localStorage, default IndexedDB, answer persistence, URL/hash encoding, telemetry, replay, advertising scripts, crash payloads or support dumps containing answers, priorities, scope, scores or next-question IDs.
-- A local download is deliberate, clearly explains its political contents and stays on the device. Restart clears memory. Shared links may reference only public sources/topics with no personal selections or result.
-- Network operators still process connection metadata; privacy copy says so. Configure app, reverse proxy, host error reporting and backups consistently. No claim that local matching makes all HTTP traffic anonymous.
-- Metrics are a separate voluntary flow described below. They never reuse or upload the full quiz vector and never include party affinity or voting intention.
+- Fetch the same fixed public versioned bank for everyone. Province, answers, priorities, adaptive state, results and finished state stay only in browser memory by default.
+- No personalised API, party/result URL, answer telemetry, persistent identifier, raw request log or remote crash payload containing private state. Help content and scoring remain local.
+- Do not embed third-party video, analytics, fonts or programme viewers in the answering journey. Explicit original-source links after finish may open the external publisher with no referrer.
+- Finish is not collection consent. Preserve the optional feedback implementation disabled and defer its product work.

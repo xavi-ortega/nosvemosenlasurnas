@@ -23,8 +23,8 @@ def render():
     generated = {
         "docs/plans/development-plan.md": development,
         "docs/plans/commit-by-commit-plan.md": commits,
-        "docs/plans/matching-algorithm-specification.md": "# Lean matching specification\n\n" + section_text(["matching", "privacy"]) + "\n",
-        "docs/plans/adaptive-questionnaire-specification.md": "# Lean progressive questionnaire\n\n" + section_text(["journeys", "adaptive"]) + "\n",
+        "docs/plans/matching-algorithm-specification.md": "# 2023 quiz matching specification\n\n" + section_text(["matching", "privacy"]) + "\n",
+        "docs/plans/adaptive-questionnaire-specification.md": "# Directly authored progressive questionnaire\n\n" + section_text(["journeys", "adaptive"]) + "\n",
         "docs/plans/project-language-policy.md": "# Project language policy\n\n" + section_text(["language"]) + "\n",
         "outputs/electoral-app-development-plan.html": '<!doctype html><html lang="en"><meta charset="utf-8"><title>Active development plan</title><style>body{max-width:80ch;margin:3rem auto;padding:1rem;font:16px/1.6 system-ui}pre{white-space:pre-wrap}</style><body><pre>' + html.escape(development) + '</pre></body></html>\n',
     }

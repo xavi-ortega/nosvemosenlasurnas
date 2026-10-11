@@ -3026,8 +3026,8 @@
           "votes": 40
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "primary_23j_congress_programme_acquired_and_specific_bank_audited",
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
       "programmeIds": [
         "pumj"
       ],
@@ -3037,7 +3037,7 @@
         "POR UN MUNDO MAS JUSTO (PUM+J)",
         "POR UN MUNDO MÁS JUSTO (PUM+J)"
       ],
-      "programmeApplicabilityStatus": "requires_document_specific_evidence_for_each_ballot_alias",
+      "programmeApplicabilityStatus": "explicit_23j_all_40_proclaimed_congress_constituencies_verified",
       "ballotRecordIds": [
         "congress-albacete-5",
         "congress-almeria-3",
@@ -3082,7 +3082,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/pumj.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T19:55:37.672917+00:00",
+        "report": "outputs/2023-authored-pumj-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 1,
+        "newDerivedMappings": 0,
+        "ambiguousCells": 69,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-020",
@@ -3385,7 +3394,14 @@
       "ballotRecordIds": [
         "congress-navarra-4"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "latestSourceSearchFollowup": {
+        "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+        "evidence": "outputs/2023-programme-searches.json",
+        "status": "full_primary_23j_programme_unresolved",
+        "newProgrammesAcquired": 0,
+        "absenceCertified": false
+      }
     },
     {
       "id": "boe-2023-024",
@@ -3957,7 +3973,14 @@
       "ballotRecordIds": [
         "congress-madrid-7"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "latestSourceSearchFollowup": {
+        "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+        "evidence": "outputs/2023-programme-searches.json",
+        "status": "full_primary_23j_programme_unresolved",
+        "newProgrammesAcquired": 0,
+        "absenceCertified": false
+      }
     },
     {
       "id": "boe-2023-035",
@@ -3980,7 +4003,14 @@
         "congress-huelva-4"
       ],
       "notebooks": [],
-      "programmeApplicabilityNote": "Primary June 20 Congress announcement and July 20 homepage verified. June 19 programme catalogue shows only explicit municipal 2023 items; homepage also links Andalusian 2022 material. These do not establish a 23J programme, which may have been published later."
+      "programmeApplicabilityNote": "Primary June 20 Congress announcement and July 20 homepage verified. June 19 programme catalogue shows only explicit municipal 2023 items; homepage also links Andalusian 2022 material. These do not establish a 23J programme, which may have been published later.",
+      "latestSourceSearchFollowup": {
+        "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+        "evidence": "outputs/2023-programme-searches.json",
+        "status": "full_primary_23j_programme_unresolved",
+        "newProgrammesAcquired": 0,
+        "absenceCertified": false
+      }
     },
     {
       "id": "boe-2023-036",
@@ -4024,7 +4054,14 @@
       "ballotRecordIds": [
         "congress-zamora-10"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "latestSourceSearchFollowup": {
+        "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+        "evidence": "outputs/2023-programme-searches.json",
+        "status": "full_primary_23j_programme_unresolved",
+        "newProgrammesAcquired": 0,
+        "absenceCertified": false
+      }
     },
     {
       "id": "boe-2023-038",
@@ -5384,7 +5421,7 @@
       "retrievedAt": "2026-10-11T07:42:00.721816+00:00",
       "resolvedUrl": "https://www.porunmundomasjusto.es/wp-content/uploads/2023/07/Programa-Electoral-Por-Un-Mundo-Mas-Justo-Elecciones-Generales-2023.pdf",
       "mediaType": "application/pdf",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "primary_2023_congress_programme_fully_read_specific_bank_audited",
       "file": "storage/app/election-sources/2023-congress/pumj.pdf",
       "sha256": "3ecd58b5c3ee42cdbaf005025bbe3c2c73bd58b7267212a82be126e1553fe34e",
       "bytes": 7458720,
@@ -5395,8 +5432,51 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/pumj.json"
+      "analysisStatus": "specific_complete_document_80_cell_bank_audit",
+      "notebook": "outputs/2023-programme-notebooks/pumj.json",
+      "applicableBallotRecordIds": [
+        "congress-albacete-5",
+        "congress-almeria-3",
+        "congress-alava-6",
+        "congress-asturias-6",
+        "congress-avila-4",
+        "congress-badajoz-5",
+        "congress-bizkaia-10",
+        "congress-burgos-4",
+        "congress-caceres-4",
+        "congress-cadiz-7",
+        "congress-ciudadreal-4",
+        "congress-cordoba-10",
+        "congress-cuenca-6",
+        "congress-gipuzkoa-10",
+        "congress-granada-10",
+        "congress-guadalajara-3",
+        "congress-huelva-5",
+        "congress-huesca-10",
+        "congress-jaen-7",
+        "congress-leon-12",
+        "congress-lugo-5",
+        "congress-madrid-8",
+        "congress-malaga-4",
+        "congress-navarra-12",
+        "congress-ourense-3",
+        "congress-palencia-5",
+        "congress-laspalmas-4",
+        "congress-larioja-11",
+        "congress-salamanca-7",
+        "congress-segovia-9",
+        "congress-sevilla-8",
+        "congress-soria-4",
+        "congress-teruel-4",
+        "congress-toledo-4",
+        "congress-valencia-7",
+        "congress-valladolid-6",
+        "congress-zamora-7",
+        "congress-zaragoza-9",
+        "congress-ceuta-7",
+        "congress-melilla-7"
+      ],
+      "electionApplicability": "Cover explicitly General Elections 2023; Congress 23J tables on PDF pages 9/11/13/15 name all 40 proclaimed Congress constituencies, including bilingual ballot aliases. Senate tables are separate and do not extend Congress scope."
     },
     {
       "id": "psoe-preserved-objective",
@@ -9478,7 +9558,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 25,
-    "latestBrowserDraftSha256": "c413a8f6b515fa892c5fd32c8eec785c7f1afd0244e37d63c3ccc355ded6f4f7",
+    "latestBrowserDraftSha256": "219f16378b183a8e17534ba958911441dfa75a793ba6abe5724ac877df362f29",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9489,19 +9569,19 @@
     ],
     "latestBrowserRentCases": 0,
     "latestBrowserProgressivePaths": 6,
-    "latestBrowserVerification": "outputs/2023-authored-3edad-values-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-3edad-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-pumj-values-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pumj-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "c413a8f6b515fa892c5fd32c8eec785c7f1afd0244e37d63c3ccc355ded6f4f7",
+    "latestDraftSha256": "219f16378b183a8e17534ba958911441dfa75a793ba6abe5724ac877df362f29",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "c413a8f6b515fa892c5fd32c8eec785c7f1afd0244e37d63c3ccc355ded6f4f7",
+    "latestAuthoredDraftSha256": "219f16378b183a8e17534ba958911441dfa75a793ba6abe5724ac877df362f29",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9683,7 +9763,18 @@
     "thirdAgeFixedComparisonEligible": false,
     "allPrevious175MappingsUnchanged": true,
     "allNumericResultsUnchanged": true,
-    "htmlCitationWhitespacePresentationCorrected": true
+    "htmlCitationWhitespacePresentationCorrected": true,
+    "pumjBankAudit": "outputs/2023-authored-pumj-audit.json",
+    "pumjVerification": "outputs/2023-authored-pumj-verification.json",
+    "pumjValuesBrowserVerification": "outputs/2023-authored-pumj-values-browser-verification.json",
+    "pumjUnknownsBrowserVerification": "outputs/2023-authored-pumj-unknowns-browser-verification.json",
+    "newPumjAuditedCells": 80,
+    "newPumjDerivedMappings": 0,
+    "newPumjCitedUncertainties": 69,
+    "latestPumjBrowserSessions": 6,
+    "latestPumjCitedAnswerPaths": 4,
+    "latestPumjCitedUnscoredPaths": 14,
+    "pumjFixedComparisonEligible": false
   },
-  "recordedAt": "2026-10-11T19:40:25.398954+00:00"
+  "recordedAt": "2026-10-11T19:55:37.672917+00:00"
 }

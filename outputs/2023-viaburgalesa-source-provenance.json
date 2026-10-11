@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-11T17:36:10.208852+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-038",
+  "status": "primary_retrospective_2023_programme_with_unresolved_text_identity",
+  "programme": {
+    "documentId": "viaburgalesa-national-2023-html",
+    "url": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+    "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+    "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+    "nationalSectionCount": 20,
+    "fullNativePageRead": true,
+    "lastUpdateNotice": "2026-02-13",
+    "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json"
+  },
+  "applicableBallotRecordIds": [
+    "congress-burgos-5"
+  ],
+  "archiveAttempts": [
+    {
+      "recordedAt": "2026-10-11T17:33:17.171657+00:00",
+      "targetUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+      "requestUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.viaburgalesa.es%2Fconsulta-los-programas-anteriores%2F&timestamp=20230722",
+      "purpose": "Look for original programme bytes at or before the 23J election.",
+      "httpStatus": 200,
+      "resolvedUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.viaburgalesa.es%2Fconsulta-los-programas-anteriores%2F&timestamp=20230722",
+      "response": {
+        "url": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+        "archived_snapshots": {},
+        "timestamp": "20230722"
+      },
+      "responseSha256": "b85b7a3fce675b07945f6143067a8ff9866520acec43b756b833adb5bc12f735"
+    },
+    {
+      "recordedAt": "2026-10-11T17:33:17.171657+00:00",
+      "targetUrl": "https://www.viaburgalesa.es/programa/",
+      "requestUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.viaburgalesa.es%2Fprograma%2F&timestamp=20230722",
+      "purpose": "Look for original programme bytes at or before the 23J election.",
+      "httpStatus": 200,
+      "resolvedUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fwww.viaburgalesa.es%2Fprograma%2F&timestamp=20230722",
+      "response": {
+        "url": "https://www.viaburgalesa.es/programa/",
+        "archived_snapshots": {},
+        "timestamp": "20230722"
+      },
+      "responseSha256": "8ff54068774c891c134549cc55134cf7d014e700b1d8d52195d5e1879854f8b8"
+    },
+    {
+      "recordedAt": "2026-10-11T17:33:17.171657+00:00",
+      "targetUrl": "https://viaburgalesa.org/programa/",
+      "requestUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fviaburgalesa.org%2Fprograma%2F&timestamp=20230722",
+      "purpose": "Look for original programme bytes at or before the 23J election.",
+      "httpStatus": 200,
+      "resolvedUrl": "https://archive.org/wayback/available?url=https%3A%2F%2Fviaburgalesa.org%2Fprograma%2F&timestamp=20230722",
+      "response": {
+        "url": "https://viaburgalesa.org/programa/",
+        "archived_snapshots": {},
+        "timestamp": "20230722"
+      },
+      "responseSha256": "54870ad7ade05e82ff604a10441d88c610b07b9ee0941f4571c7e790e1bc6244"
+    }
+  ],
+  "ancillaryActivityReport": {
+    "url": "https://www.viaburgalesa.es/wp-content/uploads/2024/07/MEMORIA-ACTIVIDADES-COALICION-VIA-BURGALESA-2023.pdf",
+    "webExtractedPagesRead": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "claimedBodyDate": "2024-04-30",
+    "explicitElectionDate": "2023-07-23",
+    "policyScoringPermitted": false,
+    "originalDownloadStatus": "two_bounded_attempts_timed_out",
+    "originalSourceSha256": null,
+    "annexPresentInFourDisplayedPages": false
+  },
+  "publicPointerChanged": false,
+  "limitations": [
+    "Complete national2023 section and entire surrounding primary page directly reread; municipal2023 and regional2022 programme links are excluded.",
+    "The page explicitly says updatedFebruary13,2026. Three actual archive availability requests returned no snapshot; this does not certify absence elsewhere or 23J text identity.",
+    "All Vía Burgalesa cells stay unscored. Only the proclaimed Burgos ballot congress-burgos-5 is relevant; do not inherit positions from other España Vaciada lists.",
+    "The four-page retrospective 2023 activity report was read as web-extracted text for candidacy provenance only. Two bounded original-download attempts timed out; no original hash, native notebook or visual full-reading claim is made for it. Its referenced April30,2024 annex is not contained in the displayed four pages.",
+    "Whole text, contextual citations and date notice are preserved; undefined bonuses, transfer-tax/VAT differences, public reservoir/domestic supply distinctions and provincial/Congress election boundaries remain uncertain.",
+    "All 157 existing numeric mappings and 785 independent answer cases remain unchanged. Corpus and public-release acceptance remain open."
+  ]
+}

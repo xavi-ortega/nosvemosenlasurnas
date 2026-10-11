@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T17:27:49.602152+00:00",
+  "recordedAt": "2026-10-11T17:36:10.208852+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -739,12 +739,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar planes y parques públicos de vivienda, sin precisar límites al precio del alquiler. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "National housing-plan expansion does not establish a binding residential rent ceiling. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 13416,
+              "end": 13808,
+              "quote": "La vivienda es un problema realimente grave tanto en el entorno urbano como en el rural. vía burgalesa aboga por mejorar en incrementar los planes de vivienda nacionales, aumentando los umbrales para acceder a esas viviendas, mejorando los porcentajes de cofinanciación a los Ayuntamiento e incentivando con más transferencias la creación de parques públicos de viviendas para el mundo rural.",
+              "contextStart": 13401,
+              "contextEnd": 13808,
+              "contextSha256": "3d7cbf8f8883c4dde9f7e228babb43f8fb762a0ba57b2513c324fe94df2ec0e7"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -1532,10 +1569,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -2341,12 +2382,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone medidas para disponer de más médicos rurales, sin concretar la ampliación de servicios dentales públicos. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "The health section specifies medical training/rural workforce, not a dental-service portfolio. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 16296,
+              "end": 16994,
+              "quote": "La sanidad es uno de los pilares fundamentales de nuestro país, si bien la disparidad entre territorios pone de manifiesto la fortuna de nacer o no en un territorio. Esta disparidad es inasumible para vía burgalesa, y queremos ponerla freno y revertirla. Por todo, ello instaremos al Gobierno Central para que haga reconsiderar a la Junta de Castilla y León su postura\nsobre la facultad de medicina en Burgos. Además para revertir la falta de médicos en el medio rural exigiremos la implantación de un complemento de ruralidad para los médicos que presten sus servicios en el medio rural y que supondrá un incremento del 10% de sus retribuciones y la obtención de más puntos de cara a la oposición.",
+              "contextStart": 16282,
+              "contextEnd": 16994,
+              "contextSha256": "8b895b346c279a255fcb16888c5df874906526caf82c9132bd0a1fc1deb4fa47"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -3082,12 +3160,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende una transición hacia renovables, sin concretar qué haría con la vida útil de centrales nucleares existentes. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "A renewable transition with local production/training conditions does not explicitly extend or terminate nuclear operating life. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 7002,
+              "end": 7843,
+              "quote": "El calentamiento global es una realidad que nos afecta a todos y a la que debemos dar respuesta, y la respuesta no es otra que el apoyo decidido a las energías renovables y una transición justa hacia las mismas. Ahora bien, desde vía burgalesa, entendemos que dicha transición, ligada al aumento de potencia instalada procedente de energías renovables tiene que contar con la opinión y la colaboración de los territorios. Así mismo, exigiremos que esta instalación de energías renovables en los pueblos de nuestra provincia este unido a la instalación y creación de industria e infraestructura anexa, para la producción, mantenimiento y reciclaje de todo lo necesario para esos parques renovables. En resumen, no solo poner las placas o los molinos, sino poner los centros de formación, reciclaje y transformación en esos mismos territorios.",
+              "contextStart": 6806,
+              "contextEnd": 8404,
+              "contextSha256": "e7b6b22bb0d38c3e2329a0074dc9894c2f02210f9cfa38f3a57ba0661f4ca23e"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -3826,10 +3941,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -4552,12 +4671,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone educación infantil gratuita con mayor apoyo rural, sin precisar la edad de 0 a 3 años ni el acceso de todas las familias. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Free early education is named among natality measures, but age range and universal entitlement are unestablished. Greater rural preference must not be removed. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 10611,
+              "end": 10881,
+              "quote": "Así pues, apoyaremos y exigiremos medidas efectivas para aumentar la natalidad, con discriminaciones positivas mayores en el mundo rural, tales como aumenta de los permisos por maternidad y paternidad, ayudas económicas directas, gratuidad de la educación infantil, etc.",
+              "contextStart": 10264,
+              "contextEnd": 11132,
+              "contextSha256": "73c6648bb74045cad30b574d608281b0729d4a251eac17a82b8306087436bd37"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -5191,12 +5347,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reabrir el tren directo Madrid-Burgos y ampliar infraestructuras, sin concretar restricciones a vuelos con alternativa en tren. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Named railway investments do not restrict domestic air service. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 2936,
+              "end": 3310,
+              "quote": "Apertura del Tren Directo Madrid-Burgos, necesario para incluirnos como nodo logístico en al corredor atlántico, y eje necesario para la efectiva utilización del corredor central (Algeciras-Irún). 13 millones retirar la barredora del túnel de Somosierra allí desde 2011, más electrificar la vía aún sin cuantificar.\n\nAVE Burgos-Vitoria: Pendientes de ejecutar 1500 millones.",
+              "contextStart": 1800,
+              "contextEnd": 3997,
+              "contextSha256": "8e40c5549695c58de6508548164e4c2f5b7e86d9a94ed8cb5d6b38421b51f86a"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -5885,10 +6078,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -6594,10 +6791,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -7393,10 +7594,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -8139,10 +8344,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -8770,10 +8979,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -9489,12 +9702,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone crear más vivienda pública rural, sin concretar una prohibición permanente de venderla. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Increasing public housing stock does not prohibit future private disposal. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 13416,
+              "end": 13808,
+              "quote": "La vivienda es un problema realimente grave tanto en el entorno urbano como en el rural. vía burgalesa aboga por mejorar en incrementar los planes de vivienda nacionales, aumentando los umbrales para acceder a esas viviendas, mejorando los porcentajes de cofinanciación a los Ayuntamiento e incentivando con más transferencias la creación de parques públicos de viviendas para el mundo rural.",
+              "contextStart": 13401,
+              "contextEnd": 13808,
+              "contextSha256": "3d7cbf8f8883c4dde9f7e228babb43f8fb762a0ba57b2513c324fe94df2ec0e7"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -10266,10 +10516,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -10958,10 +11212,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -11651,12 +11909,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone recuperar gestión pública del agua embalsada, sin concretar el traspaso de centrales hidroeléctricas al caducar concesiones. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Reservoir management is distinct from electricity generating assets and a concession-expiry rule. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 15761,
+              "end": 16280,
+              "quote": "Así mismo, en lo relativo a los planes hidrológicos, además de obligar a la inmediata finalización de la presa de Castrovido, plantearemos la necesidad de aumentar el agua embalsada, la recuperación de la gestión pública de la misma, no dependiente de eléctricas o empresas privadas e instaremos a la mejoras necesarias para los embalses de la provincia de Burgos. Por último, exigiremos financiación directa por parte del Estado, incrementado su colaboración en la mejora de los ciclos de abastecimiento y saneamiento.",
+              "contextStart": 15257,
+              "contextEnd": 16280,
+              "contextSha256": "22172a376f90b274934336a8cb068f3ef66109ec83045fc581e15c7c6c9da604"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -12259,10 +12554,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -12921,10 +13220,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -13617,10 +13920,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -14255,10 +14562,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -14895,10 +15206,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -15638,12 +15953,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar la formación profesional rural, sin concretar la remuneración de todas las prácticas curriculares en empresas. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Student thresholds and mixed/flexible rural vocational provision do not set internship pay. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 8884,
+              "end": 9277,
+              "quote": "Igualmente, entendemos que el futuro de nuestro mundo rural tiene que ir ligado a la Formación Profesional, de esta manera exigiéremos un comportamiento activo por parte del Ministerio de Educación para la efectiva instalación y ampliación de la FP en el mundo rural, bajando el número de alumnos necesarios e implementando formulas mixtas y flexibles para garantizar el éxito de la formación.",
+              "contextStart": 8406,
+              "contextEnd": 9277,
+              "contextSha256": "9579c3cf857d97611b1a6eed412c722202c43f4bb2bfb602d235e070fa84d1ac"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -16314,12 +16666,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar permisos de maternidad y paternidad, sin concretar una duración de al menos seis meses. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Longer leave has no six-month minimum duration. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 10611,
+              "end": 10881,
+              "quote": "Así pues, apoyaremos y exigiremos medidas efectivas para aumentar la natalidad, con discriminaciones positivas mayores en el mundo rural, tales como aumenta de los permisos por maternidad y paternidad, ayudas económicas directas, gratuidad de la educación infantil, etc.",
+              "contextStart": 10264,
+              "contextEnd": 11132,
+              "contextSha256": "73c6648bb74045cad30b574d608281b0729d4a251eac17a82b8306087436bd37"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -16941,10 +17330,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -17565,10 +17958,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -18189,10 +18586,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -18830,10 +19231,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -19573,12 +19978,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Menciona bonificaciones del 100% durante cuatro años, sin precisar la cuota ni una exención por ingresos inferiores al salario mínimo. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "The object of the one-hundred-percent bonus is unestablished. Do not invent a Social Security contribution waiver or minimum-wage income threshold. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 17020,
+              "end": 17353,
+              "quote": "Desde vía burgalesa abogamos por una reducción de la carga fiscal y burocrática para autónomos y PYMES, intentado emular el modelo de gestión de Estonia, apostando por tramites digitales sencillos y efectivos, rebaja de tributación de autónomos, ligada a la facturación real, bonificaciones del 100% durante los 4 primeros años, etc…",
+              "contextStart": 16996,
+              "contextEnd": 17353,
+              "contextSha256": "69b01a61c82cc1e7c7af67eb12351bdba30addda154c9a45e9841f46ed3aa549"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -20250,12 +20692,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone deducciones de otro impuesto para primeras residencias en pueblos despoblados, sin concretar exención del IVA. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "The named transfer-tax deduction is not VAT, applies below 250000 euros in depopulated municipalities, and is not a general zero-tax first-home rule. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 12799,
+              "end": 12967,
+              "quote": "2.- Deducciones del Impuesto de Transmisiones Patrimoniales para compraventa de viviendas como primera residencia por debajo de 250.000 euros en municipios despoblados.",
+              "contextStart": 12241,
+              "contextEnd": 12967,
+              "contextSha256": "43c0f2c7f10830506d52b1eae083b3a14f6f62a69ed004c6a922843ec197c5b3"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -20859,10 +21338,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -21500,10 +21983,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -22178,10 +22665,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -22857,10 +23348,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -23516,12 +24011,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ayudas para aumentar la natalidad, sin concretar una transferencia de 20.000 euros a todas las personas de 23 años. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Natality aid is distinct from an unconditional age-twenty-three capital endowment. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 10611,
+              "end": 10881,
+              "quote": "Así pues, apoyaremos y exigiremos medidas efectivas para aumentar la natalidad, con discriminaciones positivas mayores en el mundo rural, tales como aumenta de los permisos por maternidad y paternidad, ayudas económicas directas, gratuidad de la educación infantil, etc.",
+              "contextStart": 10264,
+              "contextEnd": 11132,
+              "contextSha256": "73c6648bb74045cad30b574d608281b0729d4a251eac17a82b8306087436bd37"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -24159,10 +24691,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -24803,10 +25339,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -25515,10 +26055,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -26122,10 +26666,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -26746,10 +27294,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -27493,12 +28045,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone trámites digitales sencillos para autónomos y pequeñas empresas, sin concretar atención presencial para todos los trámites. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Digital simplification does not retain or remove universal in-person public filing. Neither support nor opposition is inferred. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 17020,
+              "end": 17353,
+              "quote": "Desde vía burgalesa abogamos por una reducción de la carga fiscal y burocrática para autónomos y PYMES, intentado emular el modelo de gestión de Estonia, apostando por tramites digitales sencillos y efectivos, rebaja de tributación de autónomos, ligada a la facturación real, bonificaciones del 100% durante los 4 primeros años, etc…",
+              "contextStart": 16996,
+              "contextEnd": 17353,
+              "contextSha256": "69b01a61c82cc1e7c7af67eb12351bdba30addda154c9a45e9841f46ed3aa549"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -28171,10 +28760,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -28795,10 +29388,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -29419,10 +30016,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -30046,10 +30647,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -30687,10 +31292,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -31413,12 +32022,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone conexión rural de al menos 100 megas, sin concretar que sea gratuita para todas las personas. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Minimum rural connectivity is neither universal free access nor a defined price. The text leaves the internet unit imprecise. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 11846,
+              "end": 12239,
+              "quote": "Es decir, que en nuestros pueblos haya una conexión a internet mínima de 100 megas; estemos a menos de 30 minutos de servicios básicos, como la sanidad o educación; y a menos de 30 minutos de una vía de alta capacidad o tren. Para ello, nos comprometemos a luchar para mejorar la conectividad, las infraestructuras necesarias, la ordenación sanitaria y educativa para cumplir con estos ratios.",
+              "contextStart": 11696,
+              "contextEnd": 12239,
+              "contextSha256": "06a8f67497c6c46e4a10fa4718526b851f10078cbd058fe23039d46aa599749e"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -32175,12 +32821,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone recuperar la gestión pública del agua embalsada, sin precisar la gestión pública de todo el suministro doméstico. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Reservoir-water management and funding supply/sanitation cycles do not clearly prescribe every domestic supply operator. Preserve the reservoir and Burgos scope. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 15761,
+              "end": 16280,
+              "quote": "Así mismo, en lo relativo a los planes hidrológicos, además de obligar a la inmediata finalización de la presa de Castrovido, plantearemos la necesidad de aumentar el agua embalsada, la recuperación de la gestión pública de la misma, no dependiente de eléctricas o empresas privadas e instaremos a la mejoras necesarias para los embalses de la provincia de Burgos. Por último, exigiremos financiación directa por parte del Estado, incrementado su colaboración en la mejora de los ciclos de abastecimiento y saneamiento.",
+              "contextStart": 15257,
+              "contextEnd": 16280,
+              "contextSha256": "22172a376f90b274934336a8cb068f3ef66109ec83045fc581e15c7c6c9da604"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -32873,12 +33556,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende servicios públicos de calidad, sin concretar atención gratuita al desarrollo infantil para menores de seis años. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "General quality and cost-based funding do not define this early-development service, age range or zero patient charge. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 5571,
+              "end": 5851,
+              "quote": "Defensa de los servicios públicos de calidad tanto en el ámbito rural como urbano. Exigiéremos que los criterios de asistencia no se fijen por el número de asistidos sino por el coste real de dichos servicios, así como el estándar de calidad mínimo exigible en todo el territorio.",
+              "contextStart": 4969,
+              "contextEnd": 5851,
+              "contextSha256": "28cea4232485d5c0eb3d18022360d3df05fbc6d849196b43b95dd525c220817c"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -33536,10 +34256,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -34161,10 +34885,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -34768,10 +35496,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -35393,10 +36125,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -36000,10 +36736,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -36624,10 +37364,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -37265,10 +38009,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -37872,10 +38620,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -38547,10 +39299,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -39206,12 +39962,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone medidas para disponer de más médicos rurales, sin concretar la psicoterapia como prestación pública. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Rural doctor remuneration and a medicine faculty do not specify public clinical psychotherapy provision. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 16296,
+              "end": 16994,
+              "quote": "La sanidad es uno de los pilares fundamentales de nuestro país, si bien la disparidad entre territorios pone de manifiesto la fortuna de nacer o no en un territorio. Esta disparidad es inasumible para vía burgalesa, y queremos ponerla freno y revertirla. Por todo, ello instaremos al Gobierno Central para que haga reconsiderar a la Junta de Castilla y León su postura\nsobre la facultad de medicina en Burgos. Además para revertir la falta de médicos en el medio rural exigiremos la implantación de un complemento de ruralidad para los médicos que presten sus servicios en el medio rural y que supondrá un incremento del 10% de sus retribuciones y la obtención de más puntos de cara a la oposición.",
+              "contextStart": 16282,
+              "contextEnd": 16994,
+              "contextSha256": "8b895b346c279a255fcb16888c5df874906526caf82c9132bd0a1fc1deb4fa47"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -39833,10 +40626,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -40457,10 +41254,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -41167,12 +41968,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Menciona bonificaciones del 100% durante cuatro años, sin precisar que cubran la cuota de los autónomos. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "A four-year undefined tax/bonus reference does not establish full first-year Social Security fee exemption. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 17020,
+              "end": 17353,
+              "quote": "Desde vía burgalesa abogamos por una reducción de la carga fiscal y burocrática para autónomos y PYMES, intentado emular el modelo de gestión de Estonia, apostando por tramites digitales sencillos y efectivos, rebaja de tributación de autónomos, ligada a la facturación real, bonificaciones del 100% durante los 4 primeros años, etc…",
+              "contextStart": 16996,
+              "contextEnd": 17353,
+              "contextSha256": "69b01a61c82cc1e7c7af67eb12351bdba30addda154c9a45e9841f46ed3aa549"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -41864,12 +42702,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone deducciones del impuesto sobre la renta por residencia rural, sin concretar su ajuste por inflación. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "A residence-based twenty-percent deduction below 50000-euro income is not inflation adjustment of brackets or allowances. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 12657,
+              "end": 12796,
+              "quote": "1.- Deducciones en el Impuesto sobre Personas Físicas del 20% por residencia habitual en zonas despobladas (ingresos inferiores a 50.000€).",
+              "contextStart": 12241,
+              "contextEnd": 12967,
+              "contextSha256": "43c0f2c7f10830506d52b1eae083b3a14f6f62a69ed004c6a922843ec197c5b3"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -42542,10 +43417,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -43148,12 +44027,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone incentivos para médicos rurales, sin concretar que puedan continuar trabajando hasta los 72 años. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "A rural salary supplement and exam credit do not set an extended retirement age. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 16706,
+              "end": 16994,
+              "quote": "Además para revertir la falta de médicos en el medio rural exigiremos la implantación de un complemento de ruralidad para los médicos que presten sus servicios en el medio rural y que supondrá un incremento del 10% de sus retribuciones y la obtención de más puntos de cara a la oposición.",
+              "contextStart": 16282,
+              "contextEnd": 16994,
+              "contextSha256": "8b895b346c279a255fcb16888c5df874906526caf82c9132bd0a1fc1deb4fa47"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -43792,10 +44708,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -44415,12 +45335,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone simplificar las normas administrativas, sin concretar citas para prestaciones en un máximo de 15 días naturales. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Regulatory reduction supplies no public appointment deadline. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 9792,
+              "end": 10262,
+              "quote": "Desde vía burgalesa entendemos que las administraciones no tiene que ser un obstáculo para ello exigiremos el adelgazamiento y racionalización de la normativa administrativas en todas sus ramas, además exigiremos que se haga efectiva una diferencia sobre las obligaciones legales y administrativas que tienen que soportar los ayuntamientos, para que el trabajo en las administraciones locales no sea responder a otras administración sino facilitar la vida a los vecinos.",
+              "contextStart": 9279,
+              "contextEnd": 10262,
+              "contextSha256": "8446d4f675c32dd73b5f76de64efa1a2327905a5eb260a9866030d257e2298b0"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -45057,12 +46014,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone simplificar las normas administrativas, sin concretar qué decisiones deben seguir tomando personas cuando se use inteligencia artificial. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Regulatory simplification is distinct from human decision authority over case-specific discretionary decisions. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 9792,
+              "end": 10262,
+              "quote": "Desde vía burgalesa entendemos que las administraciones no tiene que ser un obstáculo para ello exigiremos el adelgazamiento y racionalización de la normativa administrativas en todas sus ramas, además exigiremos que se haga efectiva una diferencia sobre las obligaciones legales y administrativas que tienen que soportar los ayuntamientos, para que el trabajo en las administraciones locales no sea responder a otras administración sino facilitar la vida a los vecinos.",
+              "contextStart": 9279,
+              "contextEnd": 10262,
+              "contextSha256": "8446d4f675c32dd73b5f76de64efa1a2327905a5eb260a9866030d257e2298b0"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -45773,10 +46767,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -46469,12 +47467,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar el acceso a planes de vivienda, sin concretar avales estatales de hipotecas para jóvenes. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Plan thresholds and municipal co-finance are not State mortgage guarantees or a thirty-five-year age rule. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 13416,
+              "end": 13808,
+              "quote": "La vivienda es un problema realimente grave tanto en el entorno urbano como en el rural. vía burgalesa aboga por mejorar en incrementar los planes de vivienda nacionales, aumentando los umbrales para acceder a esas viviendas, mejorando los porcentajes de cofinanciación a los Ayuntamiento e incentivando con más transferencias la creación de parques públicos de viviendas para el mundo rural.",
+              "contextStart": 13401,
+              "contextEnd": 13808,
+              "contextSha256": "3d7cbf8f8883c4dde9f7e228babb43f8fb762a0ba57b2513c324fe94df2ec0e7"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -47094,12 +48129,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ayudas para aumentar la natalidad, sin concretar una prestación desde el quinto mes de embarazo. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Natality cash support has no pregnancy month or defined child-benefit eligibility. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 10611,
+              "end": 10881,
+              "quote": "Así pues, apoyaremos y exigiremos medidas efectivas para aumentar la natalidad, con discriminaciones positivas mayores en el mundo rural, tales como aumenta de los permisos por maternidad y paternidad, ayudas económicas directas, gratuidad de la educación infantil, etc.",
+              "contextStart": 10264,
+              "contextEnd": 11132,
+              "contextSha256": "73c6648bb74045cad30b574d608281b0729d4a251eac17a82b8306087436bd37"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -47754,10 +48826,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -48362,10 +49438,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -48990,10 +50070,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -49650,12 +50734,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone simplificar las normas administrativas, sin concretar intermediarios que hagan trámites en nombre de las personas. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Reduced municipal reporting and easier rules do not create authorised citizen representatives. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 9792,
+              "end": 10262,
+              "quote": "Desde vía burgalesa entendemos que las administraciones no tiene que ser un obstáculo para ello exigiremos el adelgazamiento y racionalización de la normativa administrativas en todas sus ramas, además exigiremos que se haga efectiva una diferencia sobre las obligaciones legales y administrativas que tienen que soportar los ayuntamientos, para que el trabajo en las administraciones locales no sea responder a otras administración sino facilitar la vida a los vecinos.",
+              "contextStart": 9279,
+              "contextEnd": 10262,
+              "contextSha256": "8446d4f675c32dd73b5f76de64efa1a2327905a5eb260a9866030d257e2298b0"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -50327,12 +51448,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acceso cercano a servicios y vías de transporte, sin concretar transporte a demanda y a precio reducido. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "Thirty-minute proximity does not define a demand-responsive passenger service or fare. Do not replace this text with another election’s thirty-kilometre formulation. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 11846,
+              "end": 12239,
+              "quote": "Es decir, que en nuestros pueblos haya una conexión a internet mínima de 100 megas; estemos a menos de 30 minutos de servicios básicos, como la sanidad o educación; y a menos de 30 minutos de una vía de alta capacidad o tren. Para ello, nos comprometemos a luchar para mejorar la conectividad, las infraestructuras necesarias, la ordenación sanitaria y educativa para cumplir con estos ratios.",
+              "contextStart": 11696,
+              "contextEnd": 12239,
+              "contextSha256": "06a8f67497c6c46e4a10fa4718526b851f10078cbd058fe23039d46aa599749e"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -50988,10 +52146,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -51596,10 +52758,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -52308,10 +53474,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -52982,12 +54152,49 @@
         },
         {
           "candidacyId": "boe-2023-038",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cambiar la elección de diputados provinciales, sin concretar una circunscripción única para el Congreso. La página se actualizó en 2026; no hemos confirmado su versión electoral.",
+          "authoredAnalysis": "The institution is a provincial deputation, not Congress. Do not transfer its election reform across chambers. The national2023 label is retrospective and the page update is February13,2026; exact 23J text identity is not confirmed.",
+          "citations": [
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 6304,
+              "end": 6636,
+              "quote": "Modificación de la Leyes electorales y de Régimen Local para cambiar el sistema de elección de los Diputados Provinciales donde se primen los votos de los pueblos y entidades de menos de 20.000 habitantes, frente a las de más de 20.000 habitantes y sobre todo que deje de ser un reparto de sillones dentro de los partidos políticos.",
+              "contextStart": 5853,
+              "contextEnd": 8404,
+              "contextSha256": "86220dc811d83ec3b3a64c5ca912c703c8d2b1df6eac193e69c28c5829cdd04f"
+            },
+            {
+              "documentId": "viaburgalesa-national-2023-html",
+              "sourceUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
+              "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+              "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+              "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+              "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+              "pdfPage": null,
+              "printedPage": null,
+              "start": 18451,
+              "end": 18483,
+              "quote": "Última actualización: 13/02/2026",
+              "contextStart": 18451,
+              "contextEnd": 18483,
+              "contextSha256": "45e80523f393b85f0fd06a14b2364e53bb0ca94e828346a7557714a3acfe6134"
+            }
+          ],
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",
@@ -53609,10 +54816,14 @@
           "candidacyId": "boe-2023-038",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No hemos podido confirmar una propuesta concreta sobre esta medida en el texto histórico de Vía Burgalesa, cuya versión electoral sigue pendiente.",
+          "authoredAnalysis": "All twenty national2023 sections and the full surrounding page were directly reread. This exact proposition, mechanism and scope is unestablished; retrospective 2026 page does not resolve 23J identity. Other affiliated or other-election programmes are not inherited.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_specific_document_bank_audit_with_source_date_limits",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "viaburgalesa-national-2023-html"
+          ]
         },
         {
           "candidacyId": "boe-2023-039",

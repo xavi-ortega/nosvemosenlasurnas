@@ -3964,7 +3964,7 @@
         }
       ],
       "programmeSearchStatus": "pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_document_bank_audited_source_vintage_pending",
       "programmeIds": [
         "viaburgalesa-national-2023-html"
       ],
@@ -3977,7 +3977,16 @@
       ],
       "notebooks": [
         "outputs/2023-programme-notebooks/viaburgalesa.json"
-      ]
+      ],
+      "questionBankAudit": {
+        "recordedAt": "2026-10-11T17:36:10.208852+00:00",
+        "report": "outputs/2023-authored-viaburgalesa-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "newDerivedMappings": 0,
+        "ambiguousCells": 27,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-039",
@@ -6457,8 +6466,12 @@
         "https://www.viaburgalesa.es/wp-content/uploads/2025/07/Prioridades-Via-Burgalesa-2022.pdf",
         "https://www.viaburgalesa.es/wp-content/uploads/2025/11/PROGRAMA-ELECTORAL-Quintanaduenas2023.pdf"
       ],
-      "analysisStatus": "full_document_read_not_scoring_ready",
-      "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json"
+      "analysisStatus": "specific_complete_document_bank_audited_source_vintage_pending",
+      "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+      "questionBankAudit": "outputs/2023-authored-viaburgalesa-audit.json",
+      "applicableBallotRecordIds": [
+        "congress-burgos-5"
+      ]
     },
     {
       "id": "partidoautonomos",
@@ -9200,7 +9213,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 80,
-    "latestBrowserDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
+    "latestBrowserDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -9212,19 +9225,19 @@
     ],
     "latestBrowserRentCases": 0,
     "latestBrowserProgressivePaths": 6,
-    "latestBrowserVerification": "outputs/2023-authored-upn-runtime-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-upn-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-viaburgalesa-runtime-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-viaburgalesa-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
+    "latestDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "25c638eb1833e46726a731fe2ab2a483c63d99f83b0cae828051a5d5348e9b5a",
+    "latestAuthoredDraftSha256": "2c7e1250410b1bd559408d453ec3309b56bb5388d0a153063bbbb5e3582ed78b",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -9271,6 +9284,16 @@
     "upnRuntimeVerification": "outputs/2023-authored-upn-runtime-verification.json",
     "latestUpnBrowserSessions": 6,
     "latestUpnCitedUnscoredPaths": 18,
-    "upnFixedComparisonEligible": false
+    "upnFixedComparisonEligible": false,
+    "viaburgalesaBankAudit": "outputs/2023-authored-viaburgalesa-audit.json",
+    "newViaburgalesaAuditedCells": 80,
+    "newViaburgalesaDerivedMappings": 0,
+    "newViaburgalesaCitedUncertainties": 27,
+    "viaburgalesaVerification": "outputs/2023-authored-viaburgalesa-verification.json",
+    "viaburgalesaRuntimeVerification": "outputs/2023-authored-viaburgalesa-runtime-verification.json",
+    "latestViaburgalesaBrowserSessions": 6,
+    "latestViaburgalesaCitedUnscoredPaths": 12,
+    "viaburgalesaSourceVintageConfirmed": false,
+    "viaburgalesaFixedComparisonEligible": false
   }
 }

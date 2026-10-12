@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-12T07:33:05.559640+00:00",
+  "recordedAt": "2026-10-12T07:47:50.561277+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -474,12 +474,55 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone movilizar viviendas y fomentar contratos largos, sin concretar un límite obligatorio al alquiler.",
+          "authoredAnalysis": "Housing stock and long contracts do not establish binding rent-price regulation. Original says landlords, not tenants.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "htmlSection": null,
+              "start": 36624,
+              "end": 36740,
+              "quote": "Impulsar a protección das persoas arrendadoras\n     fomentando, entre outros, contratos máis longos\n     e estábeis.",
+              "contextStart": 36619,
+              "contextEnd": 36740,
+              "contextSha256": "24fae9676f5b40b094cedbe7a71c91adea353cc180a2e84828d8163b5c6c8f50",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            },
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "htmlSection": null,
+              "start": 37217,
+              "end": 37567,
+              "quote": "Incorporar nos programas estatais de vivenda medidas\n     e recursos para mobilizar a vivenda baleira cara á súa\n     ocupación e cara ao aluguer accesíbel, de xeito negociado\n     coas administracións competentes en materia de\n     vivenda e ordenación territorial e atendendo a un reparto\n     que considere a incidencia territorial deste fenómeno.",
+              "contextStart": 37212,
+              "contextEnd": 37567,
+              "contextSha256": "bdab7744263eb4302011f6b793f11e3296676e3c87f38958ce9c9c74d902bf42",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -1481,7 +1524,14 @@
               "contextEnd": 40892,
               "contextSha256": "9f28543459e7312a3d3424a382f1e6c8aeaa9622260e676bd48321877cd5b72a"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-022",
@@ -2710,7 +2760,14 @@
               "contextEnd": 101096,
               "contextSha256": "43283327f62f2e84a59016a4ffe790e1d3c02ff000ceeff9db92b5464ca7d2e8"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -4174,12 +4231,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Habla de inspeccionar un vertedero de residuos nucleares, sin fijar la duración de las centrales.",
+          "authoredAnalysis": "Nuclear-waste dumping inspection is not a reactor-operating-lifetime proposal.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 156061,
+              "end": 156274,
+              "quote": "demanda dun programa permanente de inspección\n          e seguimento do estado e seguridade do vertedoiro\n          de 140.000 toneladas de residuos nucleares na Foxa\n          Atlántica, a 600 km da costa galega.",
+              "contextStart": 156051,
+              "contextEnd": 156274,
+              "contextSha256": "80a08cb9a8d4ca3994d4175236ab951f261acaa9ae96bd7236354b216c922259",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -5362,10 +5444,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una exención general para herencias de padres a hijos.",
+          "authoredAnalysis": "Progressive tax proposals do not specify an unlimited parent-child inheritance exemption.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -6434,12 +6522,73 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone educación pública, universal y gratuita de cero a dieciocho años y financiar escuelas infantiles gratuitas en Galicia.",
+          "authoredAnalysis": "Complete current-State education section explicitly offers universal free0–18 education, including0–3; Galician jurisdiction and current-State/basic-law context retained. No future independent-State prerequisite imposed.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 31,
+              "printedPage": 31,
+              "htmlSection": null,
+              "start": 84504,
+              "end": 85091,
+              "quote": "A educación, como piar básico na construción dunha\nsociedade galega xusta, solidaria e igualitaria, está no\ncelme das políticas do BNG. Consideramos que os poderes\npúblicos teñen que garantir unha educación pública,\nuniversal e gratuíta de 0 a 18 anos que contribúa para formar\npersoas críticas e libres, para a transformación social,\npara a normalización lingüística, para valorar e coñecer a\nnosa cultura e historia e para o desenvolvemento integral\nda Galiza. Cremos nun ensino integrador e coeducativo,\ndemocrático e feminista, que faga da equidade social o seu\nelemento vertebrador.",
+              "contextStart": 84504,
+              "contextEnd": 85091,
+              "contextSha256": "236e54072d6371941eae3ae0464da5f23fdba0a53fd87a0947ed37c992c2cb39",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            },
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 88182,
+              "end": 88588,
+              "quote": "Promover un modelo educativo fundamentado no dereito\n     universal á educación de todos e todas as galegas de\n     0 a 18 anos e obrigatoria de 3 a 18 anos, sustentado\n     nunha única rede de ensino, a pública, con servizos\n     complementarios, con libros de texto, material escolar e\n     actividades extraescolares gratuítas. Un ensino público,\n     galego, laico, coeducativo, gratuíto e democrático.",
+              "contextStart": 86915,
+              "contextEnd": 88588,
+              "contextSha256": "cb3bef513a5bbb46df670865e8e60f365e62e1cfe0834a8bf547225c5e74c1b4",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            },
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "htmlSection": null,
+              "start": 65515,
+              "end": 65807,
+              "quote": "Impulso de políticas de apoio á conciliación persoal e\nde coidados incluíndo a compensación económica das\nreducións de xornada, a garantía de ingresos en períodos\nde excedencia e a achega económica da Administración\nXeral do Estado no financiamento da gratuidade das escolas\ninfantís galegas.",
+              "contextStart": 65515,
+              "contextEnd": 65807,
+              "contextSha256": "47966640c92dbee9e2ad828c408635ee56051393b22a79ca08e234c02cdbb733",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -7652,10 +7801,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una limitación de vuelos internos cuando exista una alternativa en tren.",
+          "authoredAnalysis": "Rail investment and airport transfers do not impose domestic-flight restrictions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -8831,10 +8986,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una postura concreta sobre conservar el derecho legal a la eutanasia.",
+          "authoredAnalysis": "Universal healthcare is not an explicit legal euthanasia entitlement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -9792,10 +9953,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer quién elegiría a los miembros judiciales del órgano de gobierno de los jueces.",
+          "authoredAnalysis": "Democratic and justice reform does not determine selection of the judicial council members.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -10748,7 +10915,14 @@
               "contextEnd": 46550,
               "contextSha256": "21c1305949d5f57f7fd1692af071c7af4cbc150956c7a5f0ed76023af9129ad9"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -12180,8 +12354,13 @@
               "contextSha256": "8829630a00f68fc258a497db6b10bebc4655d0c78a00646cb0c05d66929aef0f"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -13299,12 +13478,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducir la tributación de los ingresos del trabajo, sin concretar una exención para las pensiones.",
+          "authoredAnalysis": "A reduction in work-income taxation is not a contributory retirement-pension exemption.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 39,
+              "printedPage": 39,
+              "htmlSection": null,
+              "start": 106622,
+              "end": 106819,
+              "quote": "Estabelecer distintos tipos de gravame en función\n    da natureza dos rendementos, minorando a\n    tributación polos ingresos do traballo e aumentando a\n    correspondente aos derivados do capital.",
+              "contextStart": 106618,
+              "contextEnd": 106819,
+              "contextSha256": "f7abc2cd38f09ea650c2263998dc21c493cd134d044ffbc5542c783d08d76842",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -14458,12 +14662,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone evitar la venta y privatización del patrimonio público de suelo y vivienda, permitiendo su cesión a otras administraciones.",
+          "authoredAnalysis": "Explicit avoidance of alienation/privatisation applies generally to public housing/land, especially named State entities. A public-to-public territorial transfer does not permit private sale.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "htmlSection": null,
+              "start": 36830,
+              "end": 37094,
+              "quote": "Evitar a degradación, o alleamento e a privatización do\n     patrimonio público do solo e da vivenda, nomeadamente\n     de entidades estatais como AdIF, INVIEd ou Portos do\n     Estado, procurando o seu uso como vivendas e espazos\n     públicos e a cesión ás CCAA.",
+              "contextStart": 36825,
+              "contextEnd": 37094,
+              "contextSha256": "7a5b309391fb8d9ccc2e8efb1f710fde1b22e5aec169a32c616976c2ccb213f7",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -17126,8 +17355,13 @@
               "contextSha256": "f1d2f22227e5fab466d07da72bdc29648414d68097cb9f36e7e042ed4fbe3387"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -18276,10 +18510,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta concreta sobre prestar abortos legales en centros públicos.",
+          "authoredAnalysis": "Universal healthcare and feminist rights do not specify public abortion delivery.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -19323,8 +19563,13 @@
               "contextSha256": "33ac0228752b96ac7864f52e5aa94067c34e742838bb0d471f04405058ab8b86"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -20518,10 +20763,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de contactar con trabajadores fuera de su horario.",
+          "authoredAnalysis": "Working-time and bargaining rights do not establish an absolute out-of-hours contact ban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -21603,12 +21854,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende educación y servicios complementarios gratuitos, sin concretar un comedor gratuito para todo el alumnado obligatorio.",
+          "authoredAnalysis": "General complementary services wording and free educational materials do not explicitly establish the complete school-meal eligibility/payment mechanism.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 88182,
+              "end": 88588,
+              "quote": "Promover un modelo educativo fundamentado no dereito\n     universal á educación de todos e todas as galegas de\n     0 a 18 anos e obrigatoria de 3 a 18 anos, sustentado\n     nunha única rede de ensino, a pública, con servizos\n     complementarios, con libros de texto, material escolar e\n     actividades extraescolares gratuítas. Un ensino público,\n     galego, laico, coeducativo, gratuíto e democrático.",
+              "contextStart": 88177,
+              "contextEnd": 88588,
+              "contextSha256": "b529064d5edead1895aff276229250330fc1abad8bff1c152eb2bc88e67e5d7c",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -22494,7 +22770,14 @@
               "contextEnd": 101096,
               "contextSha256": "43283327f62f2e84a59016a4ffe790e1d3c02ff000ceeff9db92b5464ca7d2e8"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -25013,7 +25296,14 @@
               "contextEnd": 168792,
               "contextSha256": "663e905944d21ba64999005e02e9b2093b6bf07605ed98e5e3cdc347cfdc9b3b"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -26074,10 +26364,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una obligación de facilitar piezas de recambio.",
+          "authoredAnalysis": "Circular economy does not supply manufacturer spare-parts obligations.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -26803,7 +27099,14 @@
               "contextEnd": 168792,
               "contextSha256": "663e905944d21ba64999005e02e9b2093b6bf07605ed98e5e3cdc347cfdc9b3b"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -28377,12 +28680,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone compensar reducciones de jornada y excedencias de cuidados, sin fijar seis meses de permiso por nacimiento.",
+          "authoredAnalysis": "Care-hour compensation and leave-income protection are separate from a six-month birth-leave minimum for both parents.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "htmlSection": null,
+              "start": 65515,
+              "end": 65807,
+              "quote": "Impulso de políticas de apoio á conciliación persoal e\nde coidados incluíndo a compensación económica das\nreducións de xornada, a garantía de ingresos en períodos\nde excedencia e a achega económica da Administración\nXeral do Estado no financiamento da gratuidade das escolas\ninfantís galegas.",
+              "contextStart": 65515,
+              "contextEnd": 65807,
+              "contextSha256": "47966640c92dbee9e2ad828c408635ee56051393b22a79ca08e234c02cdbb733",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -29530,10 +29858,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "General environmental and indirect-tax policies do not create this product tax.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -30411,10 +30745,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la despenalización del cultivo y consumo propio de cannabis sin lucro.",
+          "authoredAnalysis": "General civil rights do not determine criminal treatment of cannabis self-use.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -31347,10 +31687,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer que repetir una asignatura conserve el mismo precio de matrícula.",
+          "authoredAnalysis": "University competencies and funding do not specify the repeat-tuition surcharge.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -32444,10 +32790,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un mínimo de tres horas semanales de Educación Física obligatoria.",
+          "authoredAnalysis": "Sports equality and competencies do not prescribe mandatory curriculum hours.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -33520,12 +33872,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cotizaciones de autónomos progresivas según ingresos reales, sin concretar una exención por debajo del salario mínimo.",
+          "authoredAnalysis": "Progressive real-income contributions do not guarantee a zero fee below a net-income threshold.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 18,
+              "printedPage": 18,
+              "htmlSection": null,
+              "start": 44763,
+              "end": 44911,
+              "quote": "Incrementar a progresividade do novo sistema de\n     cotización das traballadoras e traballadores autónomos\n     en función dos seus ingresos reais.",
+              "contextStart": 44758,
+              "contextEnd": 44911,
+              "contextSha256": "82d11ea1376c910c4f2baf388199308cf16535d7f78d7b9ca9e4087e8d16c5b4",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -34771,12 +35148,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone rebajas de impuestos para bienes esenciales, sin fijar una exención por comprar la primera vivienda.",
+          "authoredAnalysis": "Essential-goods VAT reduction is not a first-new-home exemption.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 40,
+              "printedPage": 40,
+              "htmlSection": null,
+              "start": 108887,
+              "end": 109033,
+              "quote": "Reducir a imposición do IVE de bens e servizos\n    esenciais, así como os bens de carácter cultural, para que\n    tributen no tramo superreducido.",
+              "contextStart": 108883,
+              "contextEnd": 109033,
+              "contextSha256": "9db52f9d472615a68046630794b78f60604d2ba2fdb83d4085c252b46a0b0461",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -35951,10 +36353,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de comprar y vender animales de compañía.",
+          "authoredAnalysis": "Biodiversity protection does not determine companion-animal commercial ownership rules.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -36940,10 +37348,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el fin de la financiación pública de espectáculos taurinos donde muere el animal.",
+          "authoredAnalysis": "No directly supported lethal-bullfighting public-funding rule in the complete three-document family.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -37930,10 +38344,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de la caza en toda España.",
+          "authoredAnalysis": "Biodiversity and environmental precaution do not establish a universal hunting ban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -39009,8 +39429,13 @@
               "contextSha256": "33ac0228752b96ac7864f52e5aa94067c34e742838bb0d471f04405058ab8b86"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -40083,12 +40508,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone destinar fondos a políticas juveniles, sin un pago de 20.000 euros para cada joven a los 23 años.",
+          "authoredAnalysis": "One percent of State budget for youth policies is not an individual universal endowment.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 63,
+              "printedPage": 63,
+              "htmlSection": null,
+              "start": 166943,
+              "end": 167163,
+              "quote": "Destinar 1 % dos Orzamentos Xerais do Estado (PGE) a\n    políticas para a mocidade, transferindo os fondos ás\n    comunidades autónomas para que estas poidan deseñar\n    políticas adaptadas aos intereses da súa mocidade.",
+              "contextStart": 166939,
+              "contextEnd": 167163,
+              "contextSha256": "954376132c8b8f7e077716d38c59e89a1963a804a0e1ce71462a5cd798d10ce9",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -41230,12 +41680,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un salario mínimo del 60% del salario medio, sin fijar una subida anual superior a la inflación.",
+          "authoredAnalysis": "Average-wage target is different from an annual above-CPI rule. Main/decalogue/easy-reading summaries retained separately.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 16,
+              "printedPage": 16,
+              "htmlSection": null,
+              "start": 39914,
+              "end": 40048,
+              "quote": "Incremento do Salario Mínimo Interprofesional até o\n     situar no 60 % do salario medio, tal e como fixa a Carta\n     Social Europea.",
+              "contextStart": 39909,
+              "contextEnd": 40048,
+              "contextSha256": "33bca21578b046d9e767dc1bd127413788eb4fe218666f0eb6fcea470637d46d",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -42180,10 +42655,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una obligación de usar formatos documentales abiertos.",
+          "authoredAnalysis": "Archive digitisation and administration access do not require vendor-independent document formats.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -43221,8 +43702,13 @@
               "contextSha256": "ab67a38d13f2ada153cb818cde24fb06089e0e89ec0aea9f556cbcef48083ec7"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -44297,10 +44783,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Free public education does not define school-menu choices.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -45218,12 +45710,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone libros escolares gratuitos, sin concretar permiso para copiarlos y compartirlos libremente.",
+          "authoredAnalysis": "Free textbooks/materials do not establish an open licence or freely copyable publicly produced books.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 88182,
+              "end": 88588,
+              "quote": "Promover un modelo educativo fundamentado no dereito\n     universal á educación de todos e todas as galegas de\n     0 a 18 anos e obrigatoria de 3 a 18 anos, sustentado\n     nunha única rede de ensino, a pública, con servizos\n     complementarios, con libros de texto, material escolar e\n     actividades extraescolares gratuítas. Un ensino público,\n     galego, laico, coeducativo, gratuíto e democrático.",
+              "contextStart": 88177,
+              "contextEnd": 88588,
+              "contextSha256": "b529064d5edead1895aff276229250330fc1abad8bff1c152eb2bc88e67e5d7c",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -46290,8 +46807,13 @@
               "contextSha256": "f72519ad208cef0a229cee01e95c23dcbc04f1aaa820b5358739976c88d9fa79"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -47508,10 +48030,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un impuesto veterinario del 10% o menos.",
+          "authoredAnalysis": "Essential-service tax language does not name companion-animal veterinary VAT or a numerical rate.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -48441,10 +48969,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el derecho a reparar aparatos en un taller independiente.",
+          "authoredAnalysis": "Circular economy does not establish independent-repair access to parts, tools or information.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -49355,12 +49889,55 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone compostaje y economía circular, sin concretar un depósito reembolsable por envases de bebidas.",
+          "authoredAnalysis": "Waste/circular-economy proposals do not specify a beverage-container return deposit.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 58,
+              "printedPage": 58,
+              "htmlSection": null,
+              "start": 157360,
+              "end": 157525,
+              "quote": "En materia de residuos e contaminación dos solos,\n      impulso de políticas de redución, recuperación e\n      reciclaxe de residuos e priorización da compostaxe dos",
+              "contextStart": 157354,
+              "contextEnd": 157525,
+              "contextSha256": "fe6d48c4fa6b585b30400d57523040dc7237aed8936d15797070eec25e624bf0",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            },
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 59,
+              "printedPage": 59,
+              "htmlSection": null,
+              "start": 158358,
+              "end": 158688,
+              "quote": "biorresiduos (primando os tratamentos de proximidade)\n       coa correspondente transferencia de recursos ás\n       entidades locais. desenvolvemento de plans de\n       recuperación de solos contaminados, nomeadamente os\n       contaminados por lindano e por outros materiais tóxicos\n       procedentes de actividades industriais.",
+              "contextStart": 158351,
+              "contextEnd": 158688,
+              "contextSha256": "dffd2c0db4d1cec3c1e82e3af654cc12b79beda12c6fcf115faab5e232b9523f",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -50279,10 +50856,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el acceso gratuito de jóvenes a los anticonceptivos necesarios.",
+          "authoredAnalysis": "Equality and healthcare coverage do not specify free youth contraceptive eligibility.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -51174,12 +51757,55 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone intervenir en el precio de medicamentos y financiar investigación, sin crear una empresa pública que los produzca.",
+          "authoredAnalysis": "Drug-price participation, rational spending and research resources do not create a public medicine/vaccine manufacturer.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 35,
+              "printedPage": 35,
+              "htmlSection": null,
+              "start": 96553,
+              "end": 96900,
+              "quote": "Aumentar o financiamento da sanidade pública, até\n     como mínimo a media de investimento por habitante\n     da UE, co incremento do valor dos parámetros de\n     dispersión e envellecemento da poboación, asegurando\n     maior racionalidade no gasto farmacéutico e\n     garantindo a participación galega na fixación do prezo\n     dos medicamentos.",
+              "contextStart": 96548,
+              "contextEnd": 96900,
+              "contextSha256": "221aaf5ac5453d0ec74d5f559d24a61a603c6275784951c77433a36d33da2109",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            },
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 36,
+              "printedPage": 36,
+              "htmlSection": null,
+              "start": 99396,
+              "end": 99661,
+              "quote": "Dotarnos de capacidade normativa e financeira para\n     asegurarmos a capacidade docente e investigadora do\n     sistema educativo e sanitario en saúde, con coordinación\n     entre a Universidade e o SERGAS, así como con\n     estabilización do persoal investigador.",
+              "contextStart": 99391,
+              "contextEnd": 99661,
+              "contextSha256": "20ec61aea61a830833e4aaae622ed17cfaa698235e71f72cbc44344336d73c31",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -52236,10 +52862,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una conexión básica gratuita a internet para todas las personas.",
+          "authoredAnalysis": "Digital access and archival digitisation do not establish a universal free connection.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -53540,12 +54172,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone transferir competencias sobre aguas, sin fijar que entidades públicas presten todo el suministro.",
+          "authoredAnalysis": "Water jurisdiction and estuary sanitation are distinct from public utility-provider ownership.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 56,
+              "printedPage": 56,
+              "htmlSection": null,
+              "start": 150879,
+              "end": 151232,
+              "quote": "En materia competencial, traspaso á Galiza de todas as\n     competencias en materia de ambiente; nomeadamente\n     as seguintes: Costas, Ordenación e Xestión do Litoral e\n     do Medio Mariño, Salvamento Marítimo e loita contra a\n     contaminación, meteoroloxía, centros de investigación,\n     portos de interese xeral e bacías hidrográficas; e reforma",
+              "contextStart": 150874,
+              "contextEnd": 151232,
+              "contextSha256": "e98533854950ca299587862645323b871d2956262fe5369238a0c62870a06882",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -54732,10 +55389,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer atención temprana pública y gratuita para menores de seis años.",
+          "authoredAnalysis": "General rehabilitation and disability services do not specify early-development care, age and payment conditions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -55931,12 +56594,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone compensar reducciones de jornada por cuidados, sin fijar la edad del hijo en menos de dieciséis años.",
+          "authoredAnalysis": "Care-hour income compensation lacks the precise child-age extension.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "htmlSection": null,
+              "start": 65515,
+              "end": 65807,
+              "quote": "Impulso de políticas de apoio á conciliación persoal e\nde coidados incluíndo a compensación económica das\nreducións de xornada, a garantía de ingresos en períodos\nde excedencia e a achega económica da Administración\nXeral do Estado no financiamento da gratuidade das escolas\ninfantís galegas.",
+              "contextStart": 65515,
+              "contextEnd": 65807,
+              "contextSha256": "47966640c92dbee9e2ad828c408635ee56051393b22a79ca08e234c02cdbb733",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -57003,12 +57691,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone fiscalidad ambiental en el transporte, sin una tasa creciente según la frecuencia de vuelos.",
+          "authoredAnalysis": "Environmental transport taxation is not a frequency-sensitive flight levy.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 41,
+              "printedPage": 41,
+              "htmlSection": null,
+              "start": 110964,
+              "end": 111217,
+              "quote": "Estabelecer un sistema de fiscalidade ambiental nos\n    ámbitos da enerxía, o transporte, a contaminación e os\n    recursos naturais, cuxa finalidade, máis que recadatoria,\n    sexa a modificación de condutas que inciden\n    negativamente sobre o medio.",
+              "contextStart": 110960,
+              "contextEnd": 111217,
+              "contextSha256": "255a9d43c63cfa3d2936c32ea068d9ce2c341dd25d12db0d1e79480f16859727",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -57865,10 +58578,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Reduced fossil consumption does not establish a commercial promotion ban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -58883,10 +59602,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de criar animales para obtener pieles.",
+          "authoredAnalysis": "Habitat/biodiversity protection does not establish a fur-production prohibition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -59841,10 +60566,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición del glifosato.",
+          "authoredAnalysis": "Environmental precaution and agricultural fertiliser reform do not prohibit this named herbicide.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -60783,12 +61514,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone condiciones para recibir fondos públicos en los medios, sin prohibir todas las ayudas directas a medios privados.",
+          "authoredAnalysis": "A gender-treatment funding code applies to public/private media but does not resolve an across-the-board ban on direct grants.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 24,
+              "printedPage": 24,
+              "htmlSection": null,
+              "start": 65809,
+              "end": 66140,
+              "quote": "Impulsar medidas dirixidas a eliminar calquera forma\nde discriminación por razón de xénero e de sexismo nos\nmedios de comunicación, tanto públicos como privados,\npromovendo un tratamento informativo adecuado da\nviolencia machista entre as que se incluirá un código\nético que deberá ser cumprido para a obtención de\nfondos públicos.",
+              "contextStart": 65809,
+              "contextEnd": 66140,
+              "contextSha256": "c7e6ca1c6f83e4efa267971e276c8d18eef0bf349b8ffa9c70271a42a643834e",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -61806,10 +62562,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el fin de los tribunales especiales por razón de cargo.",
+          "authoredAnalysis": "Public-official incompatibilities and anti-fraud disqualification are not office-based special-jurisdiction rules.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -62826,12 +63588,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reformar el sistema electoral, sin concretar la eliminación de firmas para candidaturas sin representación.",
+          "authoredAnalysis": "Representation thresholds and ballot handling differ from nomination endorsement signatures.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 29,
+              "printedPage": 29,
+              "htmlSection": null,
+              "start": 79166,
+              "end": 79944,
+              "quote": "Reforma estrutural da normativa electoral:\n    implantación do método proporcional directo (cota\n    hare); estabelecemento da Galiza como circunscrición\n    electoral; eliminación das porcentaxes mínimas do 5 %\n    para conseguir representación; obrigatoriedade do voto\n    secreto en cabina; prohibición de reparto de papeletas;\n    garantía de igualdade entre partidos políticos respecto\n    do acceso, da difusión e da presenza nos debates en\n    campaña electoral en horario de máxima audiencia. Así\n    mesmo, exixiremos o cumprimento do estabelecido na\n    d  A7 da lei de pesca, introducida grazas a unha emenda\n    do BNG, que exixe ao Goberno remitir ás Cortes unha\n    proposta para garantir o voto telemático das e dos\n    mariñeiros embarcados nas frotas de altura.",
+              "contextStart": 79162,
+              "contextEnd": 79944,
+              "contextSha256": "18bb78e8d0c95412da253570dfcd45db6845c693ec5632d0ab075359b96943d7",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -63826,10 +64613,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una ficha pública de quién intervino en cada propuesta de ley.",
+          "authoredAnalysis": "Procurement transparency and revolving-door restrictions are distinct from legislative influence records.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -64973,12 +65766,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone recursos para la salud mental juvenil, sin concretar la inclusión de psicoterapia en la cartera pública.",
+          "authoredAnalysis": "Youth mental-health prevention/action funding does not specify public psychotherapy delivery.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 64,
+              "printedPage": 64,
+              "htmlSection": null,
+              "start": 168805,
+              "end": 169002,
+              "quote": "Impulso dun plan de prevención e actuación para\n            a saúde mental dirixido á mocidade, destinando\n            recursos económicos e materiais suficientes para o\n            seu tratamento.",
+              "contextStart": 168793,
+              "contextEnd": 169002,
+              "contextSha256": "b1d9ed6844cb44c7ff2ecfa6f539c96b4ae3151b9efa235392a243641fbc5c0b",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -66201,10 +67019,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el apoyo al tratado internacional de prohibición de armas nucleares.",
+          "authoredAnalysis": "Pacifism, NATO exit and military-budget policies do not establish a named treaty commitment.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -67242,10 +68066,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una restricción de publicidad alimentaria dirigida a menores.",
+          "authoredAnalysis": "Gambling advertisements are a different product category; no nutrient-based food-advertising rule inferred.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -68161,10 +68991,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una exención de cuota durante el primer año de actividad autónoma.",
+          "authoredAnalysis": "Real-income contribution progressivity does not establish a start-up-year fee exemption.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -69436,8 +70272,13 @@
               "contextSha256": "3d33ce5efd154760b864ff36cc0ebd94c73d5be29fb23178667af471142856b4"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -70738,12 +71579,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone superar las carencias del bono social, sin concretar un pago directo de las ayudas a cada consumidor.",
+          "authoredAnalysis": "Replacing the social-bonus formulation does not specify direct consumer payment of electricity/heating assistance.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 50,
+              "printedPage": 50,
+              "htmlSection": null,
+              "start": 133916,
+              "end": 134174,
+              "quote": "Impulso da consideración da electricidade como\n     ben básico para a poboación, garantindo o acceso da\n     poboación cun mecanismo que supere a formulación\n     do bono social e as súas carencias, e prohibindo\n     definitivamente os cortes de subministro.",
+              "contextStart": 133911,
+              "contextEnd": 134174,
+              "contextSha256": "51143945d544188c3f5402a9a717dd0be592f76a3b4ed9e0b81ee1e3e4df6081",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -71816,12 +72682,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone jubilación anticipada y parcial en sanidad, sin resolver la continuidad voluntaria hasta los 72 años.",
+          "authoredAnalysis": "Earlier/partial healthcare-worker retirement is not explicit opposition to optional extended work by the exact specialists.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 36,
+              "printedPage": 36,
+              "htmlSection": null,
+              "start": 99919,
+              "end": 100263,
+              "quote": "Levar a cabo as medidas normativas necesarias para\n     garantir coa maior urxencia o dereito do persoal\n     estatutario dos servizos de saúde á xubilación anticipada\n     e parcial, atendendo á realidade específica do persoal\n     estatutario e funcionario dos servizos de saúde, así como\n     tomando en consideración as súas singularidades.",
+              "contextStart": 99914,
+              "contextEnd": 100263,
+              "contextSha256": "248267c3602947f3d2b9bd329cf88482ed3bb3d8414af260c2fc66df5ee89dec",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -72895,10 +73786,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una exigencia o retirada de autorización legal para abortar siendo menor.",
+          "authoredAnalysis": "Feminist equality and health access do not determine the exact minor consent requirement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -73881,12 +74778,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone atención presencial sin cita, sin fijar un plazo máximo de quince días para las citas de prestaciones.",
+          "authoredAnalysis": "Removing appointments for in-person access is different from a guaranteed maximum booked-appointment delay.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 19,
+              "printedPage": 19,
+              "htmlSection": null,
+              "start": 47650,
+              "end": 47817,
+              "quote": "Garantir a atención presencial sen cita previa en todas as\n     oficinas da Administración, facilitando a accesibilidade\n     aos servizos públicos cando sexa preciso.",
+              "contextStart": 47645,
+              "contextEnd": 47817,
+              "contextSha256": "679b2b8040858034b4648d8a3264c196a48604fdc82688b70a025fe97f4688eb",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -74993,10 +75915,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer quién tomaría las decisiones públicas que requieren valorar cada caso.",
+          "authoredAnalysis": "AI-enabled gender-violence regulation does not decide administrative discretionary authority.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -76053,8 +76981,13 @@
               "contextSha256": "2bde0366d9abe7a7783f0b84a049f633e6c8ad7541c00c07d8b4257ae02ffbd9"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ]
         },
         {
           "candidacyId": "boe-2023-011",
@@ -77124,10 +78057,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer un aval hipotecario para jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Youth public-housing priority and rental assistance are different from mortgage guarantees.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -78273,10 +79212,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer el cobro de la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Family recognition/care-income support does not establish this pregnancy-start trigger.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -79365,12 +80310,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acceso directo al 33% de discapacidad al diagnosticar una enfermedad neurodegenerativa, sin equipararlo a dependencia por ELA.",
+          "authoredAnalysis": "Disability percentage and dependency recognition are distinct legal/support concepts. Do not rename a 33-percent disability threshold as automatic ALS dependency.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 15,
+              "printedPage": 15,
+              "htmlSection": null,
+              "start": 36018,
+              "end": 36133,
+              "quote": "Estabelecer o acceso directo ao 33 % xunto co diagnóstico\n     para as persoas con enfermidades neurodexenerativas.",
+              "contextStart": 36013,
+              "contextEnd": 36133,
+              "contextSha256": "cd1d5ce54652c797216faaed34487dcb48916c29af8bfcb0a34fd061b45dbfa7",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -80446,10 +81416,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una bonificación de hasta el 45% por contratar personal del hogar en familias numerosas.",
+          "authoredAnalysis": "Family/care policies do not supply the exact contribution discount and eligible family class.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -81455,10 +82431,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer un programa estatal de tutorías para recuperar aprendizaje perdido en la pandemia.",
+          "authoredAnalysis": "Education resources and curricular competence do not establish extraordinary pandemic recovery tutoring.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -82537,10 +83519,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer intermediarios que hagan trámites en nombre del ciudadano.",
+          "authoredAnalysis": "Accessible in-person offices do not imply representatives authorized to act on another person's behalf.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -83648,12 +84636,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone transporte público y descuentos, sin un servicio rural a demanda hacia el municipio de referencia.",
+          "authoredAnalysis": "Named railway integration/fare cuts and metropolitan local rail are distinct from on-demand rural reference-town transport.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 53,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 141464,
+              "end": 141771,
+              "quote": "Incrementar as frecuencias e mellorar os horarios das\n     conexións ferroviarias na Galiza, especialmente na liña\n     do AVANt                                                                                , así como rebaixar os prezos e estabelecer\n     bonificacións para as persoas usuarias frecuentes.",
+              "contextStart": 141459,
+              "contextEnd": 141771,
+              "contextSha256": "2f80063423c700ed97d0c0a9e197f06538364da52f728f4a846a1d12b66ac0e5",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -84903,10 +85916,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No se ha podido establecer una prohibición de alimentar animales por la fuerza para producir alimentos.",
+          "authoredAnalysis": "Agricultural/food-chain policies do not supply the exact animal-production practice ban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -85895,10 +86914,16 @@
           "candidacyId": "boe-2023-010",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No se ha podido establecer una prohibición general de petardos y fuegos artificiales.",
+          "authoredAnalysis": "Environmental precaution does not establish a universal pyrotechnics prohibition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-011",
@@ -86835,12 +87860,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone transparencia e integridad en la ciencia, sin concretar acceso libre a los resultados financiados públicamente.",
+          "authoredAnalysis": "Research integrity, funding and stable jobs do not establish public free-read access to results.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 46,
+              "printedPage": 46,
+              "htmlSection": null,
+              "start": 123861,
+              "end": 124192,
+              "quote": "Promover a transparencia, a integridade, a\n         diversidade e a inclusión no ámbito científico\n         e investigador a través de políticas activas que\n         sancionen condutas fraudulentas, persigan o acoso\n         sexual ou calquera irregularidade nos concursos\n         públicos, así como garantir unha inclusión plena.",
+              "contextStart": 123852,
+              "contextEnd": 124192,
+              "contextSha256": "5ea7b5c5c34f3451fc8f026f93f0e7f1ffc4b87b0952450c314af975a7648199",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -88036,12 +89086,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone Galicia como circunscripción electoral, sin precisar aquí el sistema completo de elección del Congreso.",
+          "authoredAnalysis": "The reform passage lacks an explicit Congress-only chamber scope and a complete district scheme. Preserve its source five-percent threshold rather than silently converting it to Congress law.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 29,
+              "printedPage": 29,
+              "htmlSection": null,
+              "start": 79166,
+              "end": 79944,
+              "quote": "Reforma estrutural da normativa electoral:\n    implantación do método proporcional directo (cota\n    hare); estabelecemento da Galiza como circunscrición\n    electoral; eliminación das porcentaxes mínimas do 5 %\n    para conseguir representación; obrigatoriedade do voto\n    secreto en cabina; prohibición de reparto de papeletas;\n    garantía de igualdade entre partidos políticos respecto\n    do acceso, da difusión e da presenza nos debates en\n    campaña electoral en horario de máxima audiencia. Así\n    mesmo, exixiremos o cumprimento do estabelecido na\n    d  A7 da lei de pesca, introducida grazas a unha emenda\n    do BNG, que exixe ao Goberno remitir ás Cortes unha\n    proposta para garantir o voto telemático das e dos\n    mariñeiros embarcados nas frotas de altura.",
+              "contextStart": 79162,
+              "contextEnd": 79944,
+              "contextSha256": "18bb78e8d0c95412da253570dfcd45db6845c693ec5632d0ab075359b96943d7",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",
@@ -89255,12 +90330,37 @@
         },
         {
           "candidacyId": "boe-2023-010",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone igualdad de acceso y presencia en debates, sin concretar el mismo tiempo para vídeos electorales.",
+          "authoredAnalysis": "Debate/peak-time access equality differs from equal-duration allocation of public-media campaign spots.",
+          "citations": [
+            {
+              "documentId": "bng",
+              "sourceUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+              "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+              "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+              "notebook": "outputs/2023-programme-notebooks/bng.json",
+              "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+              "pdfPage": 29,
+              "printedPage": 29,
+              "htmlSection": null,
+              "start": 79166,
+              "end": 79944,
+              "quote": "Reforma estrutural da normativa electoral:\n    implantación do método proporcional directo (cota\n    hare); estabelecemento da Galiza como circunscrición\n    electoral; eliminación das porcentaxes mínimas do 5 %\n    para conseguir representación; obrigatoriedade do voto\n    secreto en cabina; prohibición de reparto de papeletas;\n    garantía de igualdade entre partidos políticos respecto\n    do acceso, da difusión e da presenza nos debates en\n    campaña electoral en horario de máxima audiencia. Así\n    mesmo, exixiremos o cumprimento do estabelecido na\n    d  A7 da lei de pesca, introducida grazas a unha emenda\n    do BNG, que exixe ao Goberno remitir ás Cortes unha\n    proposta para garantir o voto telemático das e dos\n    mariñeiros embarcados nas frotas de altura.",
+              "contextStart": 79162,
+              "contextEnd": 79944,
+              "contextSha256": "18bb78e8d0c95412da253570dfcd45db6845c693ec5632d0ab075359b96943d7",
+              "provenanceEvidence": "outputs/2023-bng-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_three_document_bng_80_question_audit",
+          "auditedDocumentIds": [
+            "bng",
+            "bng-decalogue",
+            "bng-easy-read"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-011",

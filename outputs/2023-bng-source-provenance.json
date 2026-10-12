@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T07:47:50.561277+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "candidacyId": "boe-2023-010",
+  "status": "three_primary_originals_reacquired_complete_readings_reused_specific_bank_locally_verified",
+  "acquisitions": [
+    {
+      "id": "bng-programme-catalogue",
+      "requestedUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "retrievedAt": "2026-10-12T07:25:36.594737+00:00",
+      "statusCode": 200,
+      "resolvedUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+      "mediaType": "text/html",
+      "bytes": 134612,
+      "sha256": "312d47ccb1b7d913b9f0ea3853ec5f50382e2ca1d3961f5f723ea8e7f633006e",
+      "status": "downloaded_verified",
+      "file": ".tools/bng-bank-audit/bng-programme-catalogue.html"
+    },
+    {
+      "id": "bng",
+      "requestedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+      "retrievedAt": "2026-10-12T07:25:36.751331+00:00",
+      "statusCode": 200,
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_programa.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 396842,
+      "sha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+      "identicalToPreservedOriginal": true,
+      "preservedFile": "storage/app/election-sources/2023-congress/bng.pdf",
+      "status": "downloaded_verified",
+      "file": ".tools/bng-bank-audit/bng.pdf"
+    },
+    {
+      "id": "bng-decalogue",
+      "requestedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_decalogo.pdf",
+      "retrievedAt": "2026-10-12T07:25:36.822277+00:00",
+      "statusCode": 200,
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/05/23_bng_xerais_decalogo.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 946734,
+      "sha256": "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3",
+      "identicalToPreservedOriginal": true,
+      "preservedFile": "storage/app/election-sources/2023-congress/bng-decalogue.pdf",
+      "status": "downloaded_verified",
+      "file": ".tools/bng-bank-audit/bng-decalogue.pdf"
+    },
+    {
+      "id": "bng-easy-read",
+      "requestedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/12/Programa%20BNG%20LF.pdf",
+      "retrievedAt": "2026-10-12T07:25:36.982945+00:00",
+      "statusCode": 200,
+      "resolvedUrl": "https://www.bng.gal/media/bnggaliza/files/2023/07/12/Programa%20BNG%20LF.pdf",
+      "mediaType": "application/pdf",
+      "bytes": 4524440,
+      "sha256": "7d55070f9910d5ff4b63eaf313d2cfd79bbc7e8b4cd648b39b37027ddf45f17d",
+      "identicalToPreservedOriginal": true,
+      "preservedFile": "storage/app/election-sources/2023-congress/bng-easy-read.pdf",
+      "status": "downloaded_verified",
+      "file": ".tools/bng-bank-audit/bng-easy-read.pdf"
+    }
+  ],
+  "primaryPublicationUrl": "https://www.bng.gal/estaticas/programas-eleitorais.html",
+  "applicableCongressRecords": [
+    "congress-acoruna-5",
+    "congress-lugo-6",
+    "congress-ourense-6",
+    "congress-pontevedra-8"
+  ],
+  "fullReadingNotebooks": [
+    "outputs/2023-programme-notebooks/bng.json",
+    "outputs/2023-programme-notebooks/bng-decalogue.json",
+    "outputs/2023-programme-notebooks/bng-easy-read.json"
+  ],
+  "newUniqueProgrammeOwners": 0,
+  "newUniqueReadings": 0,
+  "pagesPreviouslyRead": 88,
+  "sourceFamilyCertified": false,
+  "bankAudit": "outputs/2023-authored-bng-audit.json",
+  "limitations": [
+    "The 68-page main programme, four-page image-based decalogue and 16-page easy-read adaptation were fully read previously. This audit reuses those readings and current byte-identical primary originals; no new document, page or owner count.",
+    "Two new numeric mappings are directly grounded in the complete current-State education section and public property retention clause. Twelve existing numeric and two cited ambiguous mappings retain their exact values, rationales and citations.",
+    "Free textbooks do not imply open licences; disability percentage on diagnosis does not establish ALS dependency; minimum wage relative to average earnings does not establish annual above-inflation indexing.",
+    "Youth mental-health resources do not specify public psychotherapy; in-person attention does not guarantee offline completion of all transactions; Galicia district wording does not supply a complete Congress-specific electoral scheme.",
+    "Public-to-public housing transfers do not imply privatisation. Galician policy and four proclaimed Congress ballots are explicit; no automatic inheritance by another candidacy.",
+    "The main programme’s AP53 toll abolition and summary documents’ cheaper-toll wording remain distinct source statements. No question in this bank resolves that difference.",
+    "Assembly, literal citation validation, all independent calibration cases, 53 scopes with seven profiles and 48 real browser sessions passed. These bounded checks do not certify entire-corpus semantic infallibility, final-interface, production-host or public-launch acceptance."
+  ],
+  "bankAuditComplete": true,
+  "specificBankVerification": "outputs/2023-authored-bng-verification.json",
+  "specificBankBrowserVerification": "outputs/2023-authored-bng-browser-verification.json",
+  "draftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+  "questionCount": 80,
+  "derivedMappings": 14,
+  "newDerivedMappings": 2,
+  "citedUncertainties": 28
+}

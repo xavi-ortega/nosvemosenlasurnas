@@ -1759,8 +1759,8 @@
           "votes": 53828
         }
       ],
-      "programmeSearchStatus": "document_acquired_applicability_pending",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "three_primary_23j2023_programme_documents_fully_read_specific_bank_reconciled",
+      "analysisStatus": "specific_complete_three_document_80_cell_bank_audit_locally_verified",
       "programmeIds": [
         "bng",
         "bng-decalogue",
@@ -1796,6 +1796,15 @@
           "congress-pontevedra-8"
         ],
         "rationale": "Primary BNG 2023 general-election publication and originals identify BNG/Galicia; easy-reading page4 specifies 23 July 2023 and pages5-7 distinguish Congress/Senate. Registry confirms the four BNG Congress ballots. No coalition extension."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-12T08:33:09.923192+00:00",
+        "report": "outputs/2023-authored-bng-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 14,
+        "newDerivedMappings": 2,
+        "citedUncertainties": 28,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5447,10 +5456,11 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/bng.json",
       "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
-      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date.",
+      "bankAudit": "outputs/2023-authored-bng-audit.json"
     },
     {
       "id": "bng-decalogue",
@@ -5470,10 +5480,11 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json",
       "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
-      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date.",
+      "bankAudit": "outputs/2023-authored-bng-audit.json"
     },
     {
       "id": "cc-manifesto",
@@ -6281,10 +6292,11 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/bng-easy-read.json",
       "electionApplicability": "BNG primary catalogue labels these documents general elections 2023; full programme cover plus adapted introduction explicitly confirms 23 July 2023. Applies to BNG Congress ballots in all four Galician constituencies; no other candidacy inheritance.",
-      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date."
+      "publicationDateEvidence": "Primary source URL under July 2023; no HTTP retrieval timestamp treated as publication date.",
+      "bankAudit": "outputs/2023-authored-bng-audit.json"
     },
     {
       "id": "adelante-decalogue-retry",
@@ -10329,8 +10341,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5230,
-    "scoredDraftMappings": 325,
-    "independentAnswerCases": 1625,
+    "scoredDraftMappings": 327,
+    "independentAnswerCases": 1635,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10341,7 +10353,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+    "latestBrowserDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10352,20 +10364,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 4,
-    "latestBrowserVerification": "outputs/2023-authored-junts-correction-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-junts-verification.json",
+    "latestBrowserProgressivePaths": 48,
+    "latestBrowserVerification": "outputs/2023-authored-bng-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-bng-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+    "latestDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+    "latestAuthoredDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10468,7 +10480,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 510,
-    "defaultScoredDraftMappings": 214,
+    "defaultScoredDraftMappings": 216,
     "scopedScoredDraftMappings": 111,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -10594,7 +10606,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 5082802,
+    "bankBytes": 5110856,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10783,7 +10795,21 @@
       }
     ],
     "juntsFixedComparisonEligible": false,
-    "juntsTerritories": 4
+    "juntsTerritories": 4,
+    "bngBankAudit": "outputs/2023-authored-bng-audit.json",
+    "bngVerification": "outputs/2023-authored-bng-verification.json",
+    "bngBrowserVerification": "outputs/2023-authored-bng-browser-verification.json",
+    "newBngAuditedCells": 80,
+    "totalBngDerivedMappings": 14,
+    "newBngDerivedMappings": 2,
+    "bngCitedUncertaintyCells": 28,
+    "latestBngBrowserSessions": 48,
+    "latestBngCitedAnswerPaths": 40,
+    "latestBngCitedUnscoredPaths": 12,
+    "latestBngScreenshotsReviewedThroughOverviews": 20,
+    "latestBngOverviewFilesInspected": 10,
+    "bngFixedComparisonEligible": true,
+    "bngTerritories": 4
   },
-  "recordedAt": "2026-10-12T07:41:38.559182+00:00"
+  "recordedAt": "2026-10-12T08:33:09.923192+00:00"
 }

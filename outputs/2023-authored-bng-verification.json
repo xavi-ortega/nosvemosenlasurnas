@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T07:48:35.341Z",
+  "electionId": "es-congress-2023-07-23",
+  "draftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+  "previousDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+  "status": "specific_three_document_bng_audit_local_arithmetic_verification_partial_corpus",
+  "releaseEligible": false,
+  "questions": 80,
+  "topics": 10,
+  "candidacies": 59,
+  "constituencies": 52,
+  "bankBytes": 5110856,
+  "bankByteLimit": 5242880,
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 510,
+  "totalExplicitCells": 5230,
+  "defaultNumericMappings": 216,
+  "scopedNumericMappings": 111,
+  "totalNumericMappings": 327,
+  "independentAnswerCases": 1635,
+  "bngDefaultMappings": 14,
+  "bngNewMappings": 2,
+  "bngCitedUncertainties": 28,
+  "comparisonCohortUnchanged": true,
+  "rankingAvailable": false,
+  "cohortChecks": [
+    {
+      "constituencyId": "all",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": true,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": true,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "acoruna",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": true,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": true,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "alava",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "albacete",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "alicante",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "almeria",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "asturias",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "avila",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "badajoz",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "baleares",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "barcelona",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "bizkaia",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "burgos",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "caceres",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "cadiz",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "cantabria",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "castellon",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "ceuta",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "ciudadreal",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "cordoba",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "cuenca",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "gipuzkoa",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "girona",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "granada",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "guadalajara",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "huelva",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "huesca",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "jaen",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "larioja",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "laspalmas",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "leon",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "lleida",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "lugo",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": true,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": true,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "madrid",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "malaga",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "melilla",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "murcia",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "navarra",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "ourense",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": true,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": true,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "palencia",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "pontevedra",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": true,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": true,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "salamanca",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "santacruzdetenerife",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "segovia",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "sevilla",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "soria",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "tarragona",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "teruel",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "toledo",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "valencia",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "valladolid",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "zamora",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    },
+    {
+      "constituencyId": "zaragoza",
+      "profilesChecked": 7,
+      "bngTerritoriallyEligible": false,
+      "comparisonCohortUnchanged": true,
+      "bngHasFourteenFamilies": false,
+      "otherCandidateRowsUnchanged": true,
+      "allEligibleCandidaciesRetained": true,
+      "rankingUnavailable": true
+    }
+  ],
+  "publicPointerChanged": false,
+  "limitations": [
+    "The 68-page main programme, four-page image-based decalogue and 16-page easy-read adaptation were fully read previously. This audit reuses those readings and current byte-identical primary originals; no new document, page or owner count.",
+    "Two new numeric mappings are directly grounded in the complete current-State education section and public property retention clause. Twelve existing numeric and two cited ambiguous mappings retain their exact values, rationales and citations.",
+    "Free textbooks do not imply open licences; disability percentage on diagnosis does not establish ALS dependency; minimum wage relative to average earnings does not establish annual above-inflation indexing.",
+    "Youth mental-health resources do not specify public psychotherapy; in-person attention does not guarantee offline completion of all transactions; Galicia district wording does not supply a complete Congress-specific electoral scheme.",
+    "Public-to-public housing transfers do not imply privatisation. Galician policy and four proclaimed Congress ballots are explicit; no automatic inheritance by another candidacy.",
+    "The main programme’s AP53 toll abolition and summary documents’ cheaper-toll wording remain distinct source statements. No question in this bank resolves that difference.",
+    "Assembly, literal citation validation, all independent calibration cases, 53 scopes with seven profiles and 48 real browser sessions passed. These bounded checks do not certify entire-corpus semantic infallibility, final-interface, production-host or public-launch acceptance."
+  ]
+}

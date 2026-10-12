@@ -1,0 +1,776 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T07:47:50.561277+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "complete_specific_three_document_bng_80_question_bank_audit_locally_verified",
+  "releaseEligible": false,
+  "questionBankSha256": "0f7a65f5123707faacea98fa31e33f88d9f46ad91929df9d383056c9cf82046c",
+  "auditedQuestionIds": [
+    "rent-price-cap",
+    "shorter-workweek",
+    "public-dental-care",
+    "extend-existing-nuclear",
+    "family-inheritance-exemption",
+    "free-early-education",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "judges-select-council-members",
+    "pensions-cost-of-living",
+    "permanent-large-fortunes-tax",
+    "retirement-pension-income-tax-exemption",
+    "retain-public-housing-ownership",
+    "more-private-healthcare-agreements",
+    "public-abortion-care",
+    "public-hydro-on-expiry",
+    "no-work-contact-outside-hours",
+    "free-compulsory-school-meals",
+    "phase-out-prescription-copay",
+    "voting-age-sixteen",
+    "available-repair-parts",
+    "paid-curricular-internships",
+    "birth-leave-at-least-six-months",
+    "sugary-drink-tax",
+    "nonprofit-cannabis-selfuse",
+    "no-repeat-tuition-surcharge",
+    "three-hours-school-pe",
+    "waive-low-income-self-employed-fee",
+    "first-home-vat-exemption",
+    "ban-companion-animal-sale",
+    "end-public-funding-lethal-bullfighting",
+    "ban-hunting",
+    "protect-vulnerable-household-utilities",
+    "universal-youth-twenty-thousand",
+    "minimum-wage-above-inflation",
+    "open-public-document-formats",
+    "retain-surrogacy-ban",
+    "school-vegetarian-menu-option",
+    "free-shareable-school-textbooks",
+    "keep-in-person-public-services",
+    "lower-veterinary-vat",
+    "choose-independent-repair-shop",
+    "drink-container-deposit-return",
+    "free-youth-contraceptives",
+    "public-pharmaceutical-company",
+    "free-basic-internet",
+    "public-water-management",
+    "free-public-early-development-care",
+    "child-care-hours-until-sixteen",
+    "frequent-flight-levy",
+    "ban-fossil-fuel-advertising",
+    "ban-fur-animal-breeding",
+    "ban-glyphosate-use",
+    "ban-direct-aid-private-media",
+    "end-office-based-special-courts",
+    "remove-unrepresented-party-endorsements",
+    "public-legislative-influence-record",
+    "public-psychotherapy-care",
+    "support-nuclear-weapons-ban-treaty",
+    "restrict-unhealthy-food-child-ads",
+    "free-first-year-self-employed-fee",
+    "adjust-income-tax-for-inflation",
+    "direct-vulnerable-household-energy-aid",
+    "primary-care-doctors-work-until-seventy-two",
+    "prior-authorization-for-minor-abortion",
+    "benefit-appointment-within-fifteen-days",
+    "human-discretionary-public-decisions",
+    "defence-spending-two-percent",
+    "public-young-home-mortgage-guarantees",
+    "child-benefit-from-fifth-pregnancy-month",
+    "als-dependency-recognition-at-diagnosis",
+    "large-family-household-worker-contribution-bonus",
+    "extra-school-pandemic-recovery-tutoring",
+    "administrative-intermediaries-for-citizens",
+    "low-cost-rural-on-demand-transport",
+    "ban-food-production-force-feeding",
+    "ban-fireworks-and-firecrackers",
+    "open-publicly-funded-research-results",
+    "single-national-congress-constituency",
+    "equal-public-media-election-video-time"
+  ],
+  "documents": [
+    {
+      "candidacyId": "boe-2023-010",
+      "documentIds": [
+        "bng",
+        "bng-decalogue",
+        "bng-easy-read"
+      ],
+      "auditedCellCount": 80,
+      "derivedMappings": 14,
+      "newDerivedMappings": 2,
+      "previousNumericMappingsPreserved": 12,
+      "citedUncertainties": 28,
+      "auditedCells": [
+        {
+          "questionId": "rent-price-cap",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone movilizar viviendas y fomentar contratos largos, sin concretar un límite obligatorio al alquiler.",
+          "authoredAnalysis": "Housing stock and long contracts do not establish binding rent-price regulation. Original says landlords, not tenants.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "shorter-workweek",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone implantar una jornada de 35 horas semanales sin reducción salarial.",
+          "authoredAnalysis": "OriginalGalician fullbullet explicit35senreduciónsalarial; originalquote retained.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-dental-care",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone ampliar los servicios públicos de salud, incluida la atención dental.",
+          "authoredAnalysis": "OriginalGalician portfolioexpansion forcurrentlyuncovered/partlyfinanced dentalcare; scope andregionalfunding preserved.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "extend-existing-nuclear",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Habla de inspeccionar un vertedero de residuos nucleares, sin fijar la duración de las centrales.",
+          "authoredAnalysis": "Nuclear-waste dumping inspection is not a reactor-operating-lifetime proposal.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "family-inheritance-exemption",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una exención general para herencias de padres a hijos.",
+          "authoredAnalysis": "Progressive tax proposals do not specify an unlimited parent-child inheritance exemption.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-early-education",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone educación pública, universal y gratuita de cero a dieciocho años y financiar escuelas infantiles gratuitas en Galicia.",
+          "authoredAnalysis": "Complete current-State education section explicitly offers universal free0–18 education, including0–3; Galician jurisdiction and current-State/basic-law context retained. No future independent-State prerequisite imposed.",
+          "citationCount": 3
+        },
+        {
+          "questionId": "rail-alternative-flight-limits",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una limitación de vuelos internos cuando exista una alternativa en tren.",
+          "authoredAnalysis": "Rail investment and airport transfers do not impose domestic-flight restrictions.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-euthanasia-right",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una postura concreta sobre conservar el derecho legal a la eutanasia.",
+          "authoredAnalysis": "Universal healthcare is not an explicit legal euthanasia entitlement.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "judges-select-council-members",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer quién elegiría a los miembros judiciales del órgano de gobierno de los jueces.",
+          "authoredAnalysis": "Democratic and justice reform does not determine selection of the judicial council members.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "pensions-cost-of-living",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone actualizar las pensiones cada año conforme a la subida real del índice de precios de consumo.",
+          "authoredAnalysis": "Original Galician bullet explicitly annual actual IPC; no separate minimum/age policy assigned.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "permanent-large-fortunes-tax",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone mantener el impuesto sobre grandes fortunas, con menos exenciones, mayor progresividad y gestión transferida a Galicia.",
+          "authoredAnalysis": "The permanence commitment begins on page 40 and continues on page 41 with large fortunes, bank and energy profits. Only the personal large-fortune tax is scored here; Galician administration and proposed progression are retained.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retirement-pension-income-tax-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reducir la tributación de los ingresos del trabajo, sin concretar una exención para las pensiones.",
+          "authoredAnalysis": "A reduction in work-income taxation is not a contributory retirement-pension exemption.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "retain-public-housing-ownership",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone evitar la venta y privatización del patrimonio público de suelo y vivienda, permitiendo su cesión a otras administraciones.",
+          "authoredAnalysis": "Explicit avoidance of alienation/privatisation applies generally to public housing/land, especially named State entities. A public-to-public territorial transfer does not permit private sale.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "more-private-healthcare-agreements",
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone que la titularidad, financiación, gestión y prestación de la sanidad se realicen con entidades exclusivamente públicas.",
+          "authoredAnalysis": "The operative basic-health-law proposal explicitly reserves ownership, funding, management and provision to exclusively public entities. That directly rejects publicly financed private-provider expansion; no stance is inferred merely from a law-repeal title.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-abortion-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una propuesta concreta sobre prestar abortos legales en centros públicos.",
+          "authoredAnalysis": "Universal healthcare and feminist rights do not specify public abortion delivery.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-hydro-on-expiry",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone recuperar concesiones de embalses para una empresa pública gallega, sin fijar aquí que el cambio se produzca al caducar.",
+          "authoredAnalysis": "The programme proposes recovering reservoir concessions and transferring them to Galicia for a public energy company. It does not specify the question’s expiry trigger or universal hydroelectric scope; public-energy keywords do not generate a position.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "no-work-contact-outside-hours",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de contactar con trabajadores fuera de su horario.",
+          "authoredAnalysis": "Working-time and bargaining rights do not establish an absolute out-of-hours contact ban.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-compulsory-school-meals",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Defiende educación y servicios complementarios gratuitos, sin concretar un comedor gratuito para todo el alumnado obligatorio.",
+          "authoredAnalysis": "General complementary services wording and free educational materials do not explicitly establish the complete school-meal eligibility/payment mechanism.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "phase-out-prescription-copay",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone cambiar la participación económica en los medicamentos para acabar con el modelo de copagos.",
+          "authoredAnalysis": "FullGalicianparagraph specifies pharmaceutical prestation and end of model. Not a free-retail-drug claim.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "voting-age-sixteen",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone que las personas de dieciséis y diecisiete años puedan votar en las distintas elecciones.",
+          "authoredAnalysis": "Fullbullet grants16/17across electoral calls, not a local-only youth consultation.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "available-repair-parts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una obligación de facilitar piezas de recambio.",
+          "authoredAnalysis": "Circular economy does not supply manufacturer spare-parts obligations.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "paid-curricular-internships",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone garantizar el pago de las prácticas y que sean una experiencia de formación y aprendizaje.",
+          "authoredAnalysis": "Fullbullet allstudentplacements includes curricular subset; no blanket worker-substitution proposal.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "birth-leave-at-least-six-months",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone compensar reducciones de jornada y excedencias de cuidados, sin fijar seis meses de permiso por nacimiento.",
+          "authoredAnalysis": "Care-hour compensation and leave-income protection are separate from a six-month birth-leave minimum for both parents.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "sugary-drink-tax",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "General environmental and indirect-tax policies do not create this product tax.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "nonprofit-cannabis-selfuse",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer la despenalización del cultivo y consumo propio de cannabis sin lucro.",
+          "authoredAnalysis": "General civil rights do not determine criminal treatment of cannabis self-use.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "no-repeat-tuition-surcharge",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer que repetir una asignatura conserve el mismo precio de matrícula.",
+          "authoredAnalysis": "University competencies and funding do not specify the repeat-tuition surcharge.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "three-hours-school-pe",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer un mínimo de tres horas semanales de Educación Física obligatoria.",
+          "authoredAnalysis": "Sports equality and competencies do not prescribe mandatory curriculum hours.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "waive-low-income-self-employed-fee",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone cotizaciones de autónomos progresivas según ingresos reales, sin concretar una exención por debajo del salario mínimo.",
+          "authoredAnalysis": "Progressive real-income contributions do not guarantee a zero fee below a net-income threshold.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "first-home-vat-exemption",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone rebajas de impuestos para bienes esenciales, sin fijar una exención por comprar la primera vivienda.",
+          "authoredAnalysis": "Essential-goods VAT reduction is not a first-new-home exemption.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-companion-animal-sale",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de comprar y vender animales de compañía.",
+          "authoredAnalysis": "Biodiversity protection does not determine companion-animal commercial ownership rules.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "end-public-funding-lethal-bullfighting",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el fin de la financiación pública de espectáculos taurinos donde muere el animal.",
+          "authoredAnalysis": "No directly supported lethal-bullfighting public-funding rule in the complete three-document family.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-hunting",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de la caza en toda España.",
+          "authoredAnalysis": "Biodiversity and environmental precaution do not establish a universal hunting ban.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "protect-vulnerable-household-utilities",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone prohibir definitivamente los cortes de electricidad; este apartado no extiende la prohibición a todos los suministros básicos.",
+          "authoredAnalysis": "The source makes electricity a basic good for the population and definitively prohibits disconnections. The broad population includes vulnerable households, but only the electrical supply is explicit; the question’s other basic utilities are not silently inherited.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "universal-youth-twenty-thousand",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone destinar fondos a políticas juveniles, sin un pago de 20.000 euros para cada joven a los 23 años.",
+          "authoredAnalysis": "One percent of State budget for youth policies is not an individual universal endowment.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "minimum-wage-above-inflation",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone un salario mínimo del 60% del salario medio, sin fijar una subida anual superior a la inflación.",
+          "authoredAnalysis": "Average-wage target is different from an annual above-CPI rule. Main/decalogue/easy-reading summaries retained separately.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "open-public-document-formats",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una obligación de usar formatos documentales abiertos.",
+          "authoredAnalysis": "Archive digitisation and administration access do not require vendor-independent document formats.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "retain-surrogacy-ban",
+          "status": "derived",
+          "value": 2,
+          "rationale": "Se opone a legalizar la gestación para otras personas y propone impedir que se practique mediante terceros países.",
+          "authoredAnalysis": "The BNG explicitly opposes legalization and regulation of surrogacy and circumvention through other countries. No altruistic exception is inferred; the publisher’s moral labels remain only in the original quotation.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "school-vegetarian-menu-option",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Free public education does not define school-menu choices.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-shareable-school-textbooks",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone libros escolares gratuitos, sin concretar permiso para copiarlos y compartirlos libremente.",
+          "authoredAnalysis": "Free textbooks/materials do not establish an open licence or freely copyable publicly produced books.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "keep-in-person-public-services",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Garantiza atención presencial sin cita en todas las oficinas, pero no precisa que todos los trámites puedan completarse sin internet.",
+          "authoredAnalysis": "In-person attention at all administrative offices is not an explicit guarantee of offline completion of every procedure. The same attention-versus-completion distinction used for other programmes is retained; no opposition or neutral value is invented.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "lower-veterinary-vat",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer un impuesto veterinario del 10% o menos.",
+          "authoredAnalysis": "Essential-service tax language does not name companion-animal veterinary VAT or a numerical rate.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "choose-independent-repair-shop",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el derecho a reparar aparatos en un taller independiente.",
+          "authoredAnalysis": "Circular economy does not establish independent-repair access to parts, tools or information.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "drink-container-deposit-return",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone compostaje y economía circular, sin concretar un depósito reembolsable por envases de bebidas.",
+          "authoredAnalysis": "Waste/circular-economy proposals do not specify a beverage-container return deposit.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-youth-contraceptives",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el acceso gratuito de jóvenes a los anticonceptivos necesarios.",
+          "authoredAnalysis": "Equality and healthcare coverage do not specify free youth contraceptive eligibility.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-pharmaceutical-company",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone intervenir en el precio de medicamentos y financiar investigación, sin crear una empresa pública que los produzca.",
+          "authoredAnalysis": "Drug-price participation, rational spending and research resources do not create a public medicine/vaccine manufacturer.",
+          "citationCount": 2
+        },
+        {
+          "questionId": "free-basic-internet",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una conexión básica gratuita a internet para todas las personas.",
+          "authoredAnalysis": "Digital access and archival digitisation do not establish a universal free connection.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-water-management",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone transferir competencias sobre aguas, sin fijar que entidades públicas presten todo el suministro.",
+          "authoredAnalysis": "Water jurisdiction and estuary sanitation are distinct from public utility-provider ownership.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "free-public-early-development-care",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer atención temprana pública y gratuita para menores de seis años.",
+          "authoredAnalysis": "General rehabilitation and disability services do not specify early-development care, age and payment conditions.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-care-hours-until-sixteen",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone compensar reducciones de jornada por cuidados, sin fijar la edad del hijo en menos de dieciséis años.",
+          "authoredAnalysis": "Care-hour income compensation lacks the precise child-age extension.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "frequent-flight-levy",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone fiscalidad ambiental en el transporte, sin una tasa creciente según la frecuencia de vuelos.",
+          "authoredAnalysis": "Environmental transport taxation is not a frequency-sensitive flight levy.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-fossil-fuel-advertising",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Reduced fossil consumption does not establish a commercial promotion ban.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fur-animal-breeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de criar animales para obtener pieles.",
+          "authoredAnalysis": "Habitat/biodiversity protection does not establish a fur-production prohibition.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-glyphosate-use",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición del glifosato.",
+          "authoredAnalysis": "Environmental precaution and agricultural fertiliser reform do not prohibit this named herbicide.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-direct-aid-private-media",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone condiciones para recibir fondos públicos en los medios, sin prohibir todas las ayudas directas a medios privados.",
+          "authoredAnalysis": "A gender-treatment funding code applies to public/private media but does not resolve an across-the-board ban on direct grants.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "end-office-based-special-courts",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el fin de los tribunales especiales por razón de cargo.",
+          "authoredAnalysis": "Public-official incompatibilities and anti-fraud disqualification are not office-based special-jurisdiction rules.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "remove-unrepresented-party-endorsements",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone reformar el sistema electoral, sin concretar la eliminación de firmas para candidaturas sin representación.",
+          "authoredAnalysis": "Representation thresholds and ballot handling differ from nomination endorsement signatures.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-legislative-influence-record",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una ficha pública de quién intervino en cada propuesta de ley.",
+          "authoredAnalysis": "Procurement transparency and revolving-door restrictions are distinct from legislative influence records.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "public-psychotherapy-care",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone recursos para la salud mental juvenil, sin concretar la inclusión de psicoterapia en la cartera pública.",
+          "authoredAnalysis": "Youth mental-health prevention/action funding does not specify public psychotherapy delivery.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "support-nuclear-weapons-ban-treaty",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el apoyo al tratado internacional de prohibición de armas nucleares.",
+          "authoredAnalysis": "Pacifism, NATO exit and military-budget policies do not establish a named treaty commitment.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "restrict-unhealthy-food-child-ads",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una restricción de publicidad alimentaria dirigida a menores.",
+          "authoredAnalysis": "Gambling advertisements are a different product category; no nutrient-based food-advertising rule inferred.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "free-first-year-self-employed-fee",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una exención de cuota durante el primer año de actividad autónoma.",
+          "authoredAnalysis": "Real-income contribution progressivity does not establish a start-up-year fee exemption.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "adjust-income-tax-for-inflation",
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone ajustar las tarifas del impuesto sobre la renta a la inflación de Galicia.",
+          "authoredAnalysis": "The source explicitly deflates income-tax tariffs using the Galician inflation rate. This regional price-index condition is absent from the general question, so the mapping is qualified rather than a national-index or automatic-annual promise.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "direct-vulnerable-household-energy-aid",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone superar las carencias del bono social, sin concretar un pago directo de las ayudas a cada consumidor.",
+          "authoredAnalysis": "Replacing the social-bonus formulation does not specify direct consumer payment of electricity/heating assistance.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "primary-care-doctors-work-until-seventy-two",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone jubilación anticipada y parcial en sanidad, sin resolver la continuidad voluntaria hasta los 72 años.",
+          "authoredAnalysis": "Earlier/partial healthcare-worker retirement is not explicit opposition to optional extended work by the exact specialists.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "prior-authorization-for-minor-abortion",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una exigencia o retirada de autorización legal para abortar siendo menor.",
+          "authoredAnalysis": "Feminist equality and health access do not determine the exact minor consent requirement.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "benefit-appointment-within-fifteen-days",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone atención presencial sin cita, sin fijar un plazo máximo de quince días para las citas de prestaciones.",
+          "authoredAnalysis": "Removing appointments for in-person access is different from a guaranteed maximum booked-appointment delay.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "human-discretionary-public-decisions",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer quién tomaría las decisiones públicas que requieren valorar cada caso.",
+          "authoredAnalysis": "AI-enabled gender-violence regulation does not decide administrative discretionary authority.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "defence-spending-two-percent",
+          "status": "derived",
+          "value": -2,
+          "rationale": "Propone anular el compromiso de elevar el gasto militar al 2% de la economía estatal y dedicar esos fondos a gasto social.",
+          "authoredAnalysis": "The source explicitly annuls the Spanish government’s two-percent-of-GDP military-spending commitment. It opposes the target directly; this is not an inference from opposition to an alliance or one military operation.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "public-young-home-mortgage-guarantees",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer un aval hipotecario para jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Youth public-housing priority and rental assistance are different from mortgage guarantees.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "child-benefit-from-fifth-pregnancy-month",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer el cobro de la prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Family recognition/care-income support does not establish this pregnancy-start trigger.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "als-dependency-recognition-at-diagnosis",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone acceso directo al 33% de discapacidad al diagnosticar una enfermedad neurodegenerativa, sin equipararlo a dependencia por ELA.",
+          "authoredAnalysis": "Disability percentage and dependency recognition are distinct legal/support concepts. Do not rename a 33-percent disability threshold as automatic ALS dependency.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "large-family-household-worker-contribution-bonus",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una bonificación de hasta el 45% por contratar personal del hogar en familias numerosas.",
+          "authoredAnalysis": "Family/care policies do not supply the exact contribution discount and eligible family class.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "extra-school-pandemic-recovery-tutoring",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer un programa estatal de tutorías para recuperar aprendizaje perdido en la pandemia.",
+          "authoredAnalysis": "Education resources and curricular competence do not establish extraordinary pandemic recovery tutoring.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "administrative-intermediaries-for-citizens",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer intermediarios que hagan trámites en nombre del ciudadano.",
+          "authoredAnalysis": "Accessible in-person offices do not imply representatives authorized to act on another person's behalf.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "low-cost-rural-on-demand-transport",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone transporte público y descuentos, sin un servicio rural a demanda hacia el municipio de referencia.",
+          "authoredAnalysis": "Named railway integration/fare cuts and metropolitan local rail are distinct from on-demand rural reference-town transport.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "ban-food-production-force-feeding",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición de alimentar animales por la fuerza para producir alimentos.",
+          "authoredAnalysis": "Agricultural/food-chain policies do not supply the exact animal-production practice ban.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "ban-fireworks-and-firecrackers",
+          "status": "unknown",
+          "value": null,
+          "rationale": "No se ha podido establecer una prohibición general de petardos y fuegos artificiales.",
+          "authoredAnalysis": "Environmental precaution does not establish a universal pyrotechnics prohibition.",
+          "citationCount": 0
+        },
+        {
+          "questionId": "open-publicly-funded-research-results",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone transparencia e integridad en la ciencia, sin concretar acceso libre a los resultados financiados públicamente.",
+          "authoredAnalysis": "Research integrity, funding and stable jobs do not establish public free-read access to results.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "single-national-congress-constituency",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone Galicia como circunscripción electoral, sin precisar aquí el sistema completo de elección del Congreso.",
+          "authoredAnalysis": "The reform passage lacks an explicit Congress-only chamber scope and a complete district scheme. Preserve its source five-percent threshold rather than silently converting it to Congress law.",
+          "citationCount": 1
+        },
+        {
+          "questionId": "equal-public-media-election-video-time",
+          "status": "ambiguous",
+          "value": null,
+          "rationale": "Propone igualdad de acceso y presencia en debates, sin concretar el mismo tiempo para vídeos electorales.",
+          "authoredAnalysis": "Debate/peak-time access equality differs from equal-duration allocation of public-media campaign spots.",
+          "citationCount": 1
+        }
+      ],
+      "notebooks": [
+        "outputs/2023-programme-notebooks/bng.json",
+        "outputs/2023-programme-notebooks/bng-decalogue.json",
+        "outputs/2023-programme-notebooks/bng-easy-read.json"
+      ],
+      "applicableConstituencyIds": [
+        "acoruna",
+        "lugo",
+        "ourense",
+        "pontevedra"
+      ]
+    }
+  ],
+  "defaultMatrixCells": 4720,
+  "scopedMatrixCells": 510,
+  "totalExplicitCells": 5230,
+  "defaultNumericMappings": 216,
+  "scopedNumericMappings": 111,
+  "totalNumericMappings": 327,
+  "independentAnswerCases": 1635,
+  "limitations": [
+    "The 68-page main programme, four-page image-based decalogue and 16-page easy-read adaptation were fully read previously. This audit reuses those readings and current byte-identical primary originals; no new document, page or owner count.",
+    "Two new numeric mappings are directly grounded in the complete current-State education section and public property retention clause. Twelve existing numeric and two cited ambiguous mappings retain their exact values, rationales and citations.",
+    "Free textbooks do not imply open licences; disability percentage on diagnosis does not establish ALS dependency; minimum wage relative to average earnings does not establish annual above-inflation indexing.",
+    "Youth mental-health resources do not specify public psychotherapy; in-person attention does not guarantee offline completion of all transactions; Galicia district wording does not supply a complete Congress-specific electoral scheme.",
+    "Public-to-public housing transfers do not imply privatisation. Galician policy and four proclaimed Congress ballots are explicit; no automatic inheritance by another candidacy.",
+    "The main programme’s AP53 toll abolition and summary documents’ cheaper-toll wording remain distinct source statements. No question in this bank resolves that difference.",
+    "Assembly, literal citation validation, all independent calibration cases, 53 scopes with seven profiles and 48 real browser sessions passed. These bounded checks do not certify entire-corpus semantic infallibility, final-interface, production-host or public-launch acceptance."
+  ],
+  "draftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+  "browserVerification": "outputs/2023-authored-bng-browser-verification.json"
+}

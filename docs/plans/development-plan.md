@@ -162,6 +162,7 @@ First-iteration completion remains historical; the next application changes are 
 - The proposed interface leads with ordered horizontal 0-100% bars, separate proposal/source detail, 20 + 10 questions and an anonymous maximum at checkpoints.
 - Add a public topic-led Programas 2023 page and edition-labelled top navigation; the 2026 quiz will be a separate future page.
 - Keep source/territorial applicability, original evidence and privacy; preserve the old engine/version while implementing the new documented-affinity-v2 candidate.
+- The contextual-reading-v1 interaction contract specifies one nonmodal desktop reader, a narrow full-width view, inline optional quotations, exact in-memory return context and a focused public programme-comparison workspace; R005-R008 require actual UX01-UX10 acceptance.
 
 ## Progress
 

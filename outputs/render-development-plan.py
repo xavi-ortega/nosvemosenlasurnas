@@ -8,6 +8,27 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 CANVAS = Path("/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx")
 
+def render_interactions(design):
+    """Render the authored interaction contract; do not synthesize product evidence."""
+    blocks = ["## Interaction blueprint\n\n" + design["revision"] + " · " + design["status"] + "\n\n" + design["principle"]]
+    blocks.append("### Surface policy\n\n" + "\n".join("- **" + item["title"] + "**: " + item["policy"] for item in design["surfacePolicies"]))
+    for flow in design["flows"]:
+        lines = ["### " + flow["title"], flow["goal"] + " Entry: " + flow["entryRequirement"]]
+        walk = flow["walkthrough"]
+        lines.append("Start: " + flow["start"] + ". Primary path: " + " → ".join(walk["actionIds"]) + ". Maximum navigation/disclosure clicks: " + str(walk["maximumClicks"]) + ". " + walk["note"])
+        for node in flow["nodes"]:
+            lines.append("#### " + node["title"] + " (" + node["id"] + ")")
+            lines.append("Wide surface: " + node["desktopSurface"] + ". Narrow surface: " + node["mobileSurface"] + ". Context: " + node["retainedContext"])
+            lines.append("Visible content (Spanish UI examples):\n\n" + "\n".join("- " + item for item in node["visible"]))
+            lines.append("Actions:\n\n" + "\n".join("- **" + action["label"] + "** (" + action["kind"] + "; " + action.get("target", "external verified source") + "): " + action["effect"] for action in node["actions"]))
+        blocks.append("\n\n".join(lines))
+    blocks.append("### Return, focus and privacy\n\n" + "\n".join("- " + rule for rule in design["navigationContract"]["rules"]))
+    blocks.append("### Responsive layout sketches\n\n" + "\n\n".join("#### " + item["title"] + "\n\n```text\n" + item["layout"] + "\n```\n\n" + item["notes"] for item in design["wireframes"]))
+    blocks.append("### Failure and pending states\n\n" + "\n\n".join("- **" + item["id"] + "** (" + item["surface"] + "): Spanish copy: “" + item["copy"] + "” " + item["recovery"] for item in design["states"]))
+    blocks.append("### Planned acceptance walkthroughs\n\nThese scenarios require actual application evidence during R005-R008. Planning graph or canvas checks do not complete them.\n\n" + "\n\n".join("- **" + item["id"] + " " + item["title"] + "** (" + item["flowId"] + "). Steps: " + item["steps"] + " Expected: " + item["expected"] for item in design["acceptanceScenarios"]))
+    blocks.append("### Primary UX references\n\nThe application choices are this plan's design decisions, informed by the following guidance.\n\n" + "\n".join("- [" + item["title"] + "](" + item["url"] + "): " + item["appliedDecision"] for item in design["references"]))
+    return "\n\n".join(blocks)
+
 def render():
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
@@ -35,7 +56,7 @@ def render():
         second_tasks = "\n\n".join("### " + item["id"] + " " + item["subject"] + "\n\nStatus: " + item["status"] + ". Depends on: " + (", ".join(item["dependsOn"]) or "none") + ". Estimated share of implementation effort: " + str(item["estimatedEffortWeight"]) + "%.\n\n" + "\n".join("- " + line for line in item["deliverables"]) + "\n\nAcceptance:\n\n" + "\n".join("- " + line for line in item["acceptanceCriteria"]) + "\n\nVerification:\n\n" + "\n".join("- " + line for line in item["verification"]) for item in second["tasks"])
         research = json.loads((ROOT / second["research"]).read_text())
         citations = "[Official September 2026 CIS catalogue](" + research["source"]["catalogueUrl"] + "), [results PDF](" + research["source"]["resultUrl"] + ") (questions 18R/19R, PDF pages 11/12, printed pages 7/8), [technical sheet](" + research["source"]["methodUrl"] + ") (fieldwork 1-4 September 2026, 4,042 interviews)."
-        generated[second["humanPlan"]] = "# " + second["title"] + "\n\n" + second["planVersion"] + " · Planning complete; application implementation has not started.\n\n" + second["summary"] + "\n\n" + second_sections + "\n\n## Concrete first-20 editorial proposal\n\nPending evidence, migration-gap and taxonomy review; these are existing authored questions, not a newly released order.\n\n" + starters + "\n\n## Implementation sequence\n\n" + second_tasks + "\n\n## Decisions to finalize during implementation\n\n" + "\n".join("- " + item for item in second["planningDecisionsStillToResolve"]) + "\n\n## Verified research sources\n\n" + citations + "\n\nSee " + second["research"] + " for hashes, exact measures, visual verification and limitations. Survey salience orders historical questions; it does not update 2023 party positions.\n"
+        generated[second["humanPlan"]] = "# " + second["title"] + "\n\n" + second["planVersion"] + " · Planning complete; application implementation has not started.\n\n" + second["summary"] + "\n\n" + second_sections + "\n\n" + render_interactions(second["interactionDesign"]) + "\n\n## Concrete first-20 editorial proposal\n\nPending evidence, migration-gap and taxonomy review; these are existing authored questions, not a newly released order.\n\n" + starters + "\n\n## Implementation sequence\n\n" + second_tasks + "\n\n## Decisions to finalize during implementation\n\n" + "\n".join("- " + item for item in second["planningDecisionsStillToResolve"]) + "\n\n## Verified research sources\n\n" + citations + "\n\nSee " + second["research"] + " for hashes, exact measures, visual verification and limitations. Survey salience orders historical questions; it does not update 2023 party positions.\n"
     for name, content in generated.items():
         path = ROOT / name
         if args.check:

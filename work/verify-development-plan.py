@@ -58,3 +58,64 @@ if "nextIteration" in p:
     assert research["source"]["interviews"] == 4042
     assert all(0 <= item["percent"] <= 100 for group in ["nationalConcerns", "personalConcerns"] for item in research[group]["items"])
     print("Second-iteration plan, authored starters and owner-revised scoring/inclusion boundaries passed.")
+
+    design = second["interactionDesign"]
+    surfaces = {item["id"] for item in design["surfacePolicies"]}
+    assert len(surfaces) == len(design["surfacePolicies"])
+    assert design["readerContract"]["maximumConcurrentReaders"] == 1
+    assert design["readerContract"]["modal"] is False
+    assert design["readerContract"]["backgroundRemainsOperable"] is True
+    navigation = design["navigationContract"]
+    assert navigation["privateStateLocation"] == "memory_only"
+    assert navigation["personalizedDataInUrlAllowed"] is False
+    assert navigation["personalizedDataInHistoryStateAllowed"] is False
+    assert navigation["refreshRestoresPrivateState"] is False
+    flow_ids = {flow["id"] for flow in design["flows"]}
+    assert len(flow_ids) == len(design["flows"])
+    for flow in design["flows"]:
+        nodes = {node["id"]: node for node in flow["nodes"]}
+        assert len(nodes) == len(flow["nodes"])
+        assert flow["start"] in nodes
+        action_ids = set()
+        for node in nodes.values():
+            assert node["desktopSurface"] in surfaces and node["mobileSurface"] in surfaces
+            assert node["visible"] and node["retainedContext"] and node["actions"]
+            assert node["desktopSurface"] != "dialog" and node["mobileSurface"] != "dialog"
+            if node["desktopSurface"] == "nonmodal-reader":
+                assert node["mobileSurface"] == "full-view"
+            for action in node["actions"]:
+                assert action["id"] not in action_ids
+                action_ids.add(action["id"])
+                assert action["label"] and action["effect"]
+                assert action["kind"] in {"navigate", "return", "disclose", "external", "finish", "extend"}
+                if action["kind"] == "external":
+                    assert "target" not in action
+                else:
+                    assert action["target"] in nodes
+        def reachable(start):
+            visited, pending = set(), [start]
+            while pending:
+                current = pending.pop()
+                if current in visited:
+                    continue
+                visited.add(current)
+                pending.extend(action["target"] for action in nodes[current]["actions"] if "target" in action)
+            return visited
+        assert reachable(flow["start"]) == set(nodes), "Unreachable flow screen: " + flow["id"]
+        assert all(flow["start"] in reachable(node_id) for node_id in nodes), "Missing return path: " + flow["id"]
+        current = flow["start"]
+        walk = flow["walkthrough"]
+        for action_id in walk["actionIds"]:
+            matches = [action for action in nodes[current]["actions"] if action["id"] == action_id]
+            assert len(matches) == 1 and "target" in matches[0], "Disconnected click walkthrough: " + flow["id"]
+            current = matches[0]["target"]
+        assert current == walk["destination"]
+        assert len(walk["actionIds"]) <= walk["maximumClicks"]
+    scenarios = design["acceptanceScenarios"]
+    assert len({item["id"] for item in scenarios}) == len(scenarios)
+    assert all(item["flowId"] in flow_ids and item["steps"] and item["expected"] for item in scenarios)
+    states = design["states"]
+    assert len({item["id"] for item in states}) == len(states)
+    assert all(item["surface"] in surfaces and item["copy"] and item["recovery"] for item in states)
+    assert all(item["url"].startswith("https://") for item in design["references"])
+    print("Interaction graph reachability, connected walkthroughs, return paths and local-navigation boundaries passed.")

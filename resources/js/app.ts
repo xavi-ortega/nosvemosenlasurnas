@@ -191,6 +191,11 @@ function renderQuestion(): void {
     const question = session.current();
     if (!question) { renderCheckpoint(); return; }
     const card = e('section', '', 'quiz-stage quiz-card'); card.dataset.questionId = question.id;
+    const suppressRepeatedClick = (event: MouseEvent) => {
+        if (event.detail > 1 && performance.now() - lastNextClickAt < 180) { event.preventDefault(); event.stopImmediatePropagation(); focusHeading(); }
+    };
+    card.addEventListener('mousedown', suppressRepeatedClick, true);
+    card.addEventListener('click', suppressRepeatedClick, true);
     const state = session.progress();
     const stageProgress = e('div', '', 'progress');
     stageProgress.append(e('span', `${t('question')} ${state.current} ${t('of')} ${state.total}`), e('span', bank.topics.find(topic => topic.id === question.topicId)!.name));

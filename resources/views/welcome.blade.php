@@ -1,5 +1,6 @@
 <x-layout :title="__('public.home_title')" page="home">
     <section class="hero">
+        <p class="edition">{{ __('public.edition_2023') }}</p>
         <h1>{{ __('public.home_title') }}</h1>
         <p class="hero-description">{{ __('public.home_description') }}</p>
         @if($release !== null)

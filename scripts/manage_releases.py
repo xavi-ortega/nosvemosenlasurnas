@@ -18,7 +18,7 @@ def manage(directory, action, sha, reason):
     if hashlib.sha256(data).hexdigest() != sha:
         raise ValueError('Release hash mismatch')
     bank = json.loads(data)
-    if bank.get('schemaVersion') != 1 or bank.get('engineVersion') != 'lean-fixed-budgets-v1':
+    if bank.get('schemaVersion') != 1 or bank.get('engineVersion') not in ['lean-fixed-budgets-v1', 'documented-affinity-v2']:
         raise ValueError('Unsupported release contract')
     if action == 'withdraw':
         if sha in state['withdrawn']:

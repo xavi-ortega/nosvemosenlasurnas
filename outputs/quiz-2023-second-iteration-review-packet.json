@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T12:08:52.480066+00:00",
+  "planVersion": "quiz-2023-iteration-2-v1.1.0",
+  "status": "local_acceptance_complete",
+  "publicLaunchApproved": false,
+  "collectionEnabled": false,
+  "runtime": {
+    "baseUrl": "http://127.0.0.1:8767",
+    "directory": ".tools/iteration-2-runtime",
+    "developmentOnly": true,
+    "bankSha256": "8bf67e8c47be37a8e4127771f6e606185adf70b05c37f566ea19bd062035a408",
+    "assetManifestSha256": "17172cee0a3a6aae3d31fcf0cc32be8205d5976b3c7f49ebfe447a2d7d5b6fe1",
+    "publicRepositoryPointerChanged": false,
+    "candidateMetadataSha256": "a961ee381257c3afa91439a6bacb44f079c9529477783d8803511a04deda59ea"
+  },
+  "historicalBaseline": {
+    "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+    "engineRetained": true,
+    "sourceAndPositionCompilationEquality": true
+  },
+  "inventory": {
+    "candidacies": 59,
+    "profiles": 63,
+    "constituencies": 52,
+    "ballotScopes": 550,
+    "questions": 80,
+    "initialQuestions": 20,
+    "extensionQuestions": 10,
+    "topics": 10,
+    "missingProgrammes": 21,
+    "citationDocuments": 45,
+    "verifiedOfficialLinks": 31,
+    "officialLinkExceptions": 14
+  },
+  "artifacts": [
+    "outputs/quiz-2023-second-iteration-content-decisions.json",
+    "outputs/quiz-2023-second-iteration-source-links.json",
+    "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+    "outputs/quiz-2023-second-iteration-recovery.json",
+    "docs/plans/second-iteration-plan.md",
+    "docs/plans/second-iteration-review.md",
+    "outputs/quiz-2023-second-iteration-verification.json"
+  ],
+  "affectedChecks": {
+    "engineTests": 38,
+    "phpRouteTests": 1,
+    "phpRouteAssertions": 29,
+    "staticAnalysisErrors": 0,
+    "toolingRecoveryTests": 1,
+    "lint": "passed",
+    "typecheck": "passed",
+    "sourceRecompilation": "passed",
+    "docsPlans": "passed"
+  },
+  "exactStagedGate": {
+    "status": "passed",
+    "validatedAcceptanceTree": "c11ea944a7b5b51c81c1eb9de0b1baf0ddc1d9e7",
+    "verificationManifest": "outputs/quiz-2023-second-iteration-verification.json",
+    "finalRecordTreeRequiresAnotherExactGateAndCommitHook": true
+  },
+  "limitations": [
+    "21 candidacies have no located programme and remain visible with zero documented contribution, never a fabricated neutral position.",
+    "14 citation documents lack a currently verified official URL; exceptions and preserved provenance remain visible. Bounded signatures and retained full-document provenance do not certify every live byte or universal availability.",
+    "Migration remains an explicit question-bank gap; no substitute or generated political position was added.",
+    "CSS zoom and viewport reflow are verified; native browser toolbar zoom has no separate acceptance claim.",
+    "Host, domain, production log/privacy flow and PUBLIC-LAUNCH remain pending; no deployment, purchase, collection or push occurred."
+  ],
+  "taskStatus": {
+    "R001": "completed",
+    "R002": "completed",
+    "R003": "completed",
+    "R004": "completed",
+    "R005": "completed",
+    "R006": "completed",
+    "R007": "completed",
+    "R008": "completed"
+  }
+}

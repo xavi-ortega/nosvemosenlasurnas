@@ -1,6 +1,6 @@
 # Second iteration: clear documented affinity and thematic 2023 programmes
 
-quiz-2023-iteration-2-v1.1.0 · Planning complete; application implementation has not started.
+quiz-2023-iteration-2-v1.1.0 · Application status: completed. Implementation complete: true.
 
 Plan the next local iteration around ordered horizontal affinity bars, a contextual programme reader and deliberate proposal/source exploration. Keep twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Add a public thematic comparison journey and an optional focused reading workspace. This is the historical 2023 edition; application implementation remains pending.
 
@@ -147,7 +147,7 @@ Prove the new denominator and journey independently using the real 2023 bank.
 
 ## Interaction blueprint
 
-contextual-reading-v1 · planned_interaction_contract
+contextual-reading-v1 · implemented_and_locally_verified
 
 Lead with a short overview, keep relevant context visible and disclose optional evidence through deliberate named actions.
 
@@ -588,9 +588,9 @@ The application choices are this plan's design decisions, informed by the follow
 - [WCAG Reflow](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html): Full-width narrow reader and proposal-grouped stacked comparison at 320 CSS px/400% zoom.
 - [WCAG Focus not obscured](https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html): Headers, bounded reader and sticky controls cannot cover keyboard focus.
 
-## Concrete first-20 editorial proposal
+## Concrete first-20 editorial order
 
-Pending evidence, migration-gap and taxonomy review; these are existing authored questions, not a newly released order.
+Versioned editorial order accepted for the local bank; see the recorded content decisions.
 
 1. El Estado debería poner un precio máximo al alquiler de viviendas en zonas con precios muy altos. (housing; rent-price-cap). Housing salience; concrete rental decision.
 2. El impuesto sobre la renta debería ajustarse para descontar el efecto de la subida de los precios. (taxes; adjust-income-tax-for-inflation). Economic concern; one concrete earnings-tax decision, not a proxy for all economic worries.
@@ -617,7 +617,7 @@ Pending evidence, migration-gap and taxonomy review; these are existing authored
 
 ### R001 Lock documented-affinity semantics and all-candidacy profile identity
 
-Status: planned. Depends on: none. Estimated share of implementation effort: 15%.
+Status: completed. Depends on: none. Estimated share of implementation effort: 15%.
 
 - New metric/profile specification and independent expected-case ledger.
 - Audit national/scoped profiles and current topic taxonomy; preserve applicability.
@@ -635,7 +635,7 @@ Verification:
 
 ### R002 Finalize trend-based balanced starters and useful ten-question blocks
 
-Status: planned. Depends on: R001. Estimated share of implementation effort: 12%.
+Status: completed. Depends on: R001. Estimated share of implementation effort: 12%.
 
 - Versioned editorial order, first-20 IDs and rationales.
 - Directly authored migration/gap correction only when full applicable evidence supports it.
@@ -653,7 +653,7 @@ Verification:
 
 ### R003 Publish verified official-source links into the local candidate bank
 
-Status: planned. Depends on: R001. Estimated share of implementation effort: 10%.
+Status: completed. Depends on: R001. Estimated share of implementation effort: 10%.
 
 - Official publisher versus preserved-original URL fields and validation.
 - Citation-link audit across every used document.
@@ -671,7 +671,7 @@ Verification:
 
 ### R004 Implement the versioned zero-contribution score across all profiles
 
-Status: planned. Depends on: R001. Estimated share of implementation effort: 15%.
+Status: completed. Depends on: R001. Estimated share of implementation effort: 15%.
 
 - documented-affinity-v2 engine, coverage and anonymous maximum.
 - Updated local exports and independent regression coverage.
@@ -689,7 +689,7 @@ Verification:
 
 ### R005 Implement the simple 20 + 10 quiz and anonymous checkpoint
 
-Status: planned. Depends on: R002, R004. Estimated share of implementation effort: 12%.
+Status: completed. Depends on: R002, R004. Estimated share of implementation effort: 12%.
 
 - Edition-labelled entry, question progression and two-action checkpoint.
 - No candidacy/province exclusion or topic-zero setting.
@@ -710,7 +710,7 @@ Verification:
 
 ### R006 Build horizontal result bars and proposal-led details
 
-Status: planned. Depends on: R003, R004. Estimated share of implementation effort: 12%.
+Status: completed. Depends on: R003, R004. Estimated share of implementation effort: 12%.
 
 - Ordered 0-100 result chart with coverage and missing labels.
 - Shared single nonmodal reader, mobile full-view and inline citation disclosure with official links and exact return context.
@@ -730,7 +730,7 @@ Verification:
 
 ### R007 Add the public thematic 2023 programme comparison and edition menu
 
-Status: planned. Depends on: R002, R003, R006. Estimated share of implementation effort: 10%.
+Status: completed. Depends on: R002, R003, R006. Estimated share of implementation effort: 10%.
 
 - Programas 2023 topic/proposal/programme flow with fixed public bank.
 - Edition navigation and public generic routes preserving local in-memory quiz state.
@@ -751,7 +751,7 @@ Verification:
 
 ### R008 Verify the full real-bank local iteration and prepare its review packet
 
-Status: planned. Depends on: R005, R006, R007. Estimated share of implementation effort: 14%.
+Status: completed. Depends on: R005, R006, R007. Estimated share of implementation effort: 14%.
 
 - Real 2023 candidate acceptance, screenshots/walkthrough and recovery/version evidence.
 - Synchronized plans, journal and local review packet.
@@ -769,12 +769,9 @@ Verification:
 - Final ordinary-user journey, source links, local privacy, recovery and rollback.
 - UX10 request/history/storage audit and generic-result refresh; assert source readers are nonmodal and no private navigation state is serialized.
 
-## Decisions to finalize during implementation
+## Implementation decisions
 
-- Semantic grouping and names for the four territorial-profile variants, using retained original context.
-- Supported migration decision and starter replacement if full 2023 source evidence permits it; no invented question.
-- Topic-taxonomy corrections and consequent engine/version calibration before freezing the first 20.
-- Verified official source URL availability for every citation document; visible exceptions where the official publication is lost.
+All implementation decisions are recorded in the local review packet; unavailable official sources remain explicit exceptions.
 
 ## Verified research sources
 

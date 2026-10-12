@@ -371,7 +371,12 @@ if (root && page === 'insights') {
 } else if (root && page === 'feedback') {
     root.replaceChildren(); if (feedback) renderFeedback(root, feedback, t); else root.append(p('collection_disabled'));
 } else if (root) {
-    void load().then(() => { if (page === 'comparison') renderComparison(); else if (page === 'sources') renderSources(); else renderSetup(); }).catch((error: unknown) => {
+    void load().then(async () => {
+        if (bank.engineVersion === 'documented-affinity-v2') {
+            const { mountIteration } = await import('./iteration-app.ts');
+            mountIteration(root, bank, releaseHash, t, page ?? 'home');
+        } else if (page === 'comparison') renderComparison(); else if (page === 'sources') renderSources(); else renderSetup();
+    }).catch((error: unknown) => {
         const unavailable = error instanceof Error && error.message === 'Bank unavailable.';
         root.replaceChildren(p(unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
     });

@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T12:08:52.480066+00:00",
+  "status": "real_runtime_walkthroughs_passed",
+  "baseUrl": "http://127.0.0.1:8767",
+  "bankSha256": "8bf67e8c47be37a8e4127771f6e606185adf70b05c37f566ea19bd062035a408",
+  "bankResponseIntercepted": false,
+  "reports": [
+    {
+      "path": ".tools/iteration-2-browser-report.json",
+      "sha256": "d413618adbe82ca64e05cd512d90b913758badd2f381595ccb65cfa43e6256e3",
+      "stats": {
+        "startTime": "2026-10-12T11:54:39.822Z",
+        "duration": 114129.704,
+        "expected": 18,
+        "skipped": 0,
+        "unexpected": 2,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".tools/iteration-2-priority-browser-report.json",
+      "sha256": "ea432546cf286bdad8cc49859dec4b036d68cde5542354562f02b9b60b60f5d6",
+      "stats": {
+        "startTime": "2026-10-12T11:59:25.869Z",
+        "duration": 12096.771,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".tools/iteration-2-source-browser-report.json",
+      "sha256": "80d00eefd19b19ac80feab8cad14c473cc290cb97bd016c4cd75135a737ec5f3",
+      "stats": {
+        "startTime": "2026-10-12T12:00:46.097Z",
+        "duration": 5303.054,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    {
+      "path": ".tools/iteration-2-final-reflow-browser-report.json",
+      "sha256": "2b66e081c24166ae9f7e08ac5adc89f53b0b6bdd6489626a6fab3d5091172e98",
+      "stats": {
+        "startTime": "2026-10-12T12:06:16.402Z",
+        "duration": 4134.599,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    }
+  ],
+  "acceptedCases": [
+    {
+      "title": "UX01 UX05: rent disagreement uses four actions, accessible single reader and exact quote",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 9803
+    },
+    {
+      "title": "UX02: closing a low result row restores exact origin focus and scroll",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 9135
+    },
+    {
+      "title": "UX03 UX09: public featured shortcut, all positions, source exceptions and search recovery",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 1687
+    },
+    {
+      "title": "UX04: two/three inline programmes, territorial conflict, source return and remove",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 1566
+    },
+    {
+      "title": "UX06: open long original context survives 320px, zoom-equivalent reflow and low height",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-final-reflow-browser-report.json",
+      "durationMs": 2495
+    },
+    {
+      "title": "local Spanish export agrees with all result bars and full useful-block exhaustion never auto-reveals",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 20542
+    },
+    {
+      "title": "optional positive importance keeps all twenty starter decisions and applies the same denominator",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-priority-browser-report.json",
+      "durationMs": 9176
+    },
+    {
+      "title": "UX07 UX10: generic menu/back preserves only live memory and private data never enters navigation or storage",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 4389
+    },
+    {
+      "title": "UX08: skipped topic has no maximum, review restores it, rapid extension adds exactly ten and edit hides results",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 12174
+    },
+    {
+      "title": "loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset states remain honest",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 16181
+    },
+    {
+      "title": "UX01 UX05: rent disagreement uses four actions, accessible single reader and exact quote",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 8449
+    },
+    {
+      "title": "UX02: closing a low result row restores exact origin focus and scroll",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 8171
+    },
+    {
+      "title": "UX03 UX09: public featured shortcut, all positions, source exceptions and search recovery",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 1536
+    },
+    {
+      "title": "UX04: two/three inline programmes, territorial conflict, source return and remove",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 1566
+    },
+    {
+      "title": "UX06: open long original context survives 320px, zoom-equivalent reflow and low height",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-final-reflow-browser-report.json",
+      "durationMs": 2800
+    },
+    {
+      "title": "local Spanish export agrees with all result bars and full useful-block exhaustion never auto-reveals",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 20494
+    },
+    {
+      "title": "optional positive importance keeps all twenty starter decisions and applies the same denominator",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-priority-browser-report.json",
+      "durationMs": 9089
+    },
+    {
+      "title": "UX07 UX10: generic menu/back preserves only live memory and private data never enters navigation or storage",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 4178
+    },
+    {
+      "title": "UX08: skipped topic has no maximum, review restores it, rapid extension adds exactly ten and edit hides results",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 12245
+    },
+    {
+      "title": "loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset states remain honest",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-browser-report.json",
+      "durationMs": 16283
+    },
+    {
+      "title": "intentional official-source navigation sends no referrer or personal state",
+      "project": "chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-source-browser-report.json",
+      "durationMs": 2112
+    },
+    {
+      "title": "intentional official-source navigation sends no referrer or personal state",
+      "project": "mobile-chromium",
+      "status": "passed",
+      "report": ".tools/iteration-2-source-browser-report.json",
+      "durationMs": 2282
+    }
+  ],
+  "acceptedCount": 22,
+  "uxScenarioIds": [
+    "UX01",
+    "UX02",
+    "UX03",
+    "UX04",
+    "UX05",
+    "UX06",
+    "UX07",
+    "UX08",
+    "UX09",
+    "UX10"
+  ],
+  "screenshots": [
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-focused-comparison.png",
+      "sha256": "d2c936e7c8f6e16c24ec11c4e2478ff3f9acf01742d630a21b68763ca35ed67a"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-pending-checkpoint.png",
+      "sha256": "4525a7287a7104b242db25915be3a888f2c41cf540ffdf0d15bf5b6db0eaf571"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-reader-1440.png",
+      "sha256": "4b20aec094a6c960b38a02c27bfc0a6f17be6b77e3ceebf4d771b4e295cc3114"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-reader-320.png",
+      "sha256": "12f50237fd9463f91d67f40459140fca694d27fdc2fc5b4bb25eafed69b13807"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-reader-360.png",
+      "sha256": "f3ffdd62962fde735db8dcb6735918fa311ebf3cb54cc29a7d23123d957c7a3a"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-reader-720.png",
+      "sha256": "48552c8c2de4643e34fc131008575381d89b4140a5f0dd1483443ceaac24da2c"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-rent-reader.png",
+      "sha256": "fe5ad917c56704c16f45541e320c29eecc9eaaf8c8f8c1bd11ae164441673959"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-results.png",
+      "sha256": "9eb2fefae6cb475168a81eaee1caf1df5d765c5b20cf0d72b2ad86d993ca5e33"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-source-exception.png",
+      "sha256": "25f1e08f85a3fb4c5ca4d5a3795ebbf771b0443d3009c118dafb0a13f5f918e8"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-zoom-200.png",
+      "sha256": "3fc98232c04f7a8ef39b82bb8a22fe66452d84eb49a71e1a303d5973f6e2abae"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-zoom-400.png",
+      "sha256": "2ce575c4417a7b6b6ef279c491c604ce8ed8e754395aaba4abccda73359fe5ad"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-focused-comparison.png",
+      "sha256": "2aeaf8fae17d98203e0876662debf34373c485f304e9efc4eb193317ca20e967"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-pending-checkpoint.png",
+      "sha256": "ee1d4038defcaed0e70124d264f6f203fc01352b12d6b8351b1ed4d3690a270f"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-reader-1440.png",
+      "sha256": "f39fddc9a44f8a0a8cdf4346f38a873d0ce7fac27e9f3e29b569ca6cc9633714"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-reader-320.png",
+      "sha256": "715999ee82e944973b20a4b7873eeb8a48e94d7ede5094a7033d3265306bdaa8"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-reader-360.png",
+      "sha256": "d584848bf009729ecb0a78de884a59ef375e292199bad197985f7ac0e2421f94"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-reader-720.png",
+      "sha256": "0edbd5a87beda8401f3a2fcd51e81c19ab50eb229b3fdbbbf9fac47169d0a5f7"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-rent-reader.png",
+      "sha256": "84586abaff1a6935be056d34f603c8edbfa473c40f8893abd5d8ce260a357ef4"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-results.png",
+      "sha256": "96283d0fd09aecd571f2969453275838784d31b03f25f5277fac90c707cae2b7"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-source-exception.png",
+      "sha256": "2fa31fd6d3acada00f455321ec21ba4607b3bb9b51c54f4a85ce443d9a45b0c4"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-zoom-200.png",
+      "sha256": "c41a4647240f5022410a91e11aa1bfb68ba877dcbafb4241b34f443f30d97cd2"
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-zoom-400.png",
+      "sha256": "15692ee7eb6eb952edd7ee6d9b306a515fd5f888ae84691c8668d9a6ed60a08f"
+    }
+  ],
+  "axeViolations": 0,
+  "privacy": {
+    "personalRequests": 0,
+    "fixedBankFetchesPerSession": 1,
+    "historyState": null,
+    "cookies": 0,
+    "localStorageKeys": 0,
+    "sessionStorageKeys": 0,
+    "indexedDbDatabases": 0,
+    "officialPopupReferrerAbsent": true,
+    "officialPopupOpenerNull": true
+  },
+  "testCorrections": [
+    "The optional topic importance locator now identifies the native combobox by its accessible role/name; the two initially failing desktop/mobile test cases passed in the targeted repeat."
+  ],
+  "scope": [
+    "Actual Chromium desktop and Pixel 7 mobile emulation against the local application serving the real bank.",
+    "200/400 percent CSS zoom, equivalent viewport reflow, 320/360/720px widths and low height; native browser toolbar zoom was unavailable.",
+    "Official source popup request captured and fulfilled by the test after the real user click; no external publisher request was needed to inspect referrer/opener. Live source HTTP checks are separately recorded.",
+    "Withdrawal/loading/failure branches deliberately override their public endpoint responses; ordinary bank reads and UX flows use the real runtime."
+  ]
+}

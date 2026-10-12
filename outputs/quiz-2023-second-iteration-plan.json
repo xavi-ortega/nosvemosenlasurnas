@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "planVersion": "quiz-2023-iteration-2-v1.1.0",
   "title": "Second iteration: clear documented affinity and thematic 2023 programmes",
-  "status": "planned",
+  "status": "completed",
   "recordedAt": "2026-10-12T11:08:03.102095+00:00",
   "authority": "Direct owner feedback in this chat on 2026-10-12, including missing positions as zero contribution, automatic all-candidacy inclusion, thematic programme comparison and edition-labelled navigation. The owner additionally requested deliberate UI/UX click flows, contextual side panels, mobile reading views and the same interaction care for topical programme comparison.",
   "baselineCommit": "69bc53b163be659c9ea43183f8578cf2a00692b4",
   "baselinePlanVersion": "quiz-2023-v2.0.0",
   "baselineBankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
   "summary": "Plan the next local iteration around ordered horizontal affinity bars, a contextual programme reader and deliberate proposal/source exploration. Keep twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Add a public thematic comparison journey and an optional focused reading workspace. This is the historical 2023 edition; application implementation remains pending.",
-  "applicationImplementationStarted": false,
+  "applicationImplementationStarted": true,
   "publicLaunchApproved": false,
   "liveCollectionEnabled": false,
   "research": "outputs/quiz-2023-second-iteration-research.json",
@@ -185,7 +185,7 @@
     "maximumCount": 80,
     "minimumExtensionTopics": 5,
     "maximumExtensionQuestionsPerTopic": 2,
-    "starterProposalStatus": "editorial_proposal_pending_evidence_and_taxonomy_review",
+    "starterProposalStatus": "accepted_local_order",
     "initialQuestionProposal": [
       {
         "order": 1,
@@ -363,17 +363,12 @@
     "knownOnlyHeadlineAllowed": false,
     "anonymousMaximumBeforeFinish": true
   },
-  "planningDecisionsStillToResolve": [
-    "Semantic grouping and names for the four territorial-profile variants, using retained original context.",
-    "Supported migration decision and starter replacement if full 2023 source evidence permits it; no invented question.",
-    "Topic-taxonomy corrections and consequent engine/version calibration before freezing the first 20.",
-    "Verified official source URL availability for every citation document; visible exceptions where the official publication is lost."
-  ],
+  "planningDecisionsStillToResolve": [],
   "tasks": [
     {
       "id": "R001",
       "subject": "Lock documented-affinity semantics and all-candidacy profile identity",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [],
       "deliverables": [
         "New metric/profile specification and independent expected-case ledger.",
@@ -389,12 +384,16 @@
         "Review the eight owner feedback requirements against the proposed contract."
       ],
       "estimatedEffortWeight": 15,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-content-decisions.json",
+        "tests/Tooling/documented-affinity.test.ts",
+        "outputs/quiz-2023-second-iteration-bank.json"
+      ]
     },
     {
       "id": "R002",
       "subject": "Finalize trend-based balanced starters and useful ten-question blocks",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R001"
       ],
@@ -412,12 +411,16 @@
         "Deterministic ordering/skip/edit/exhaustion cases."
       ],
       "estimatedEffortWeight": 12,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-content-decisions.json",
+        "tests/Tooling/documented-affinity.test.ts",
+        "outputs/quiz-2023-second-iteration-bank.json"
+      ]
     },
     {
       "id": "R003",
       "subject": "Publish verified official-source links into the local candidate bank",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R001"
       ],
@@ -435,12 +438,16 @@
         "Existing schema/hash/compiler checks; no automatic semantic generator."
       ],
       "estimatedEffortWeight": 10,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-content-decisions.json",
+        "tests/Tooling/documented-affinity.test.ts",
+        "outputs/quiz-2023-second-iteration-bank.json"
+      ]
     },
     {
       "id": "R004",
       "subject": "Implement the versioned zero-contribution score across all profiles",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R001"
       ],
@@ -458,12 +465,16 @@
         "Rent regression, weights, unknown/conflict, all-topic pending and tie cases."
       ],
       "estimatedEffortWeight": 15,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-content-decisions.json",
+        "tests/Tooling/documented-affinity.test.ts",
+        "outputs/quiz-2023-second-iteration-bank.json"
+      ]
     },
     {
       "id": "R005",
       "subject": "Implement the simple 20 + 10 quiz and anonymous checkpoint",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R002",
         "R004"
@@ -485,12 +496,16 @@
         "UX07/UX08 walkthroughs with retained answers, double activation and deliberate finish/edit."
       ],
       "estimatedEffortWeight": 12,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+        "tests/Browser/second-iteration.spec.ts",
+        "outputs/quiz-2023-second-iteration-review-packet.json"
+      ]
     },
     {
       "id": "R006",
       "subject": "Build horizontal result bars and proposal-led details",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R003",
         "R004"
@@ -511,12 +526,16 @@
         "UX01/UX02/UX05/UX06: real rent relationship, low row, keyboard and long-source resize."
       ],
       "estimatedEffortWeight": 12,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+        "tests/Browser/second-iteration.spec.ts",
+        "outputs/quiz-2023-second-iteration-review-packet.json"
+      ]
     },
     {
       "id": "R007",
       "subject": "Add the public thematic 2023 programme comparison and edition menu",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R002",
         "R003",
@@ -539,12 +558,16 @@
         "UX03/UX04/UX09: featured shortcut/back, all-position counts, territorial comparison and honest absent sources."
       ],
       "estimatedEffortWeight": 10,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+        "tests/Browser/second-iteration.spec.ts",
+        "outputs/quiz-2023-second-iteration-review-packet.json"
+      ]
     },
     {
       "id": "R008",
       "subject": "Verify the full real-bank local iteration and prepare its review packet",
-      "status": "planned",
+      "status": "completed",
       "dependsOn": [
         "R005",
         "R006",
@@ -566,20 +589,26 @@
         "UX10 request/history/storage audit and generic-result refresh; assert source readers are nonmodal and no private navigation state is serialized."
       ],
       "estimatedEffortWeight": 14,
-      "completionEvidence": []
+      "completionEvidence": [
+        "outputs/quiz-2023-second-iteration-verification.json",
+        "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+        "outputs/quiz-2023-second-iteration-recovery.json",
+        "docs/plans/second-iteration-review.md"
+      ]
     }
   ],
   "progress": {
     "planningComplete": true,
-    "implementationComplete": false,
-    "implementationCompletedTasks": 0,
+    "implementationComplete": true,
+    "implementationCompletedTasks": 8,
     "implementationTotalTasks": 8,
-    "implementationRemainingPercentEstimate": 100,
-    "estimateBasis": "Task weights are an implementation estimate summing to 100; progress requires actual acceptance and may change after source-gap/profile audits."
+    "implementationRemainingPercentEstimate": 0,
+    "estimateBasis": "R001-R008 local acceptance is evidenced by actual source/profile/arithmetic/browser/recovery checks and the full clean staged-tree gate. Final record-only updates are rechecked before the unsigned local commit.",
+    "verificationRemainingPercentEstimate": 0
   },
   "interactionDesign": {
     "revision": "contextual-reading-v1",
-    "status": "planned_interaction_contract",
+    "status": "implemented_and_locally_verified",
     "principle": "Lead with a short overview, keep relevant context visible and disclose optional evidence through deliberate named actions.",
     "surfacePolicies": [
       {
@@ -1467,5 +1496,8 @@
         "appliedDecision": "Headers, bounded reader and sticky controls cannot cover keyboard focus."
       }
     ]
-  }
+  },
+  "localReviewPacket": "outputs/quiz-2023-second-iteration-review-packet.json",
+  "localVerification": "outputs/quiz-2023-second-iteration-verification.json",
+  "localReview": "docs/plans/second-iteration-review.md"
 }

@@ -1,5 +1,6 @@
 import { bankForConstituency, balanced, followups, match, parseBank } from './matching.ts';
 import type { Answer, Answers, Bank, Priorities, Question } from './matching.ts';
+import { documentedBlock, documentedMatch } from './documented-affinity.ts';
 
 function freeze<T>(value: T): T {
     if (value !== null && typeof value === 'object') {
@@ -22,14 +23,17 @@ export class Questionnaire {
     revealed = false;
 
     constructor(bank: Bank, releaseHash: string, constituency: string = 'all', priorities: Priorities = {}) {
-        this.bank = freeze(bankForConstituency(parseBank(structuredClone(bank)), constituency));
+        const parsed = parseBank(structuredClone(bank));
+        const documented = bank.engineVersion === 'documented-affinity-v2';
+        if (documented && constituency !== 'all') throw new Error('All candidacies are included.');
+        this.bank = freeze(documented ? parsed : bankForConstituency(parsed, constituency));
         this.releaseHash = releaseHash;
         this.constituency = constituency;
         if (constituency !== 'all' && !bank.election.constituencies.some(c => c.id === constituency)) throw new Error('Invalid constituency.');
         this.cohort = bank.candidacies.filter(c => constituency === 'all' || c.constituencyIds.includes(constituency)).map(c => c.id);
         this.priorities = { ...priorities };
-        match(this.bank, {}, this.priorities, this.cohort);
-        this.queue = balanced(this.bank);
+        if (documented) documentedMatch(this.bank, {}, this.priorities); else match(this.bank, {}, this.priorities, this.cohort);
+        this.queue = documented ? this.bank.starterQuestionIds!.map(id => this.bank.questions.find(q => q.id === id)!) : balanced(this.bank);
     }
 
     current(): Question | undefined {
@@ -69,6 +73,12 @@ export class Questionnaire {
 
     extend(): boolean {
         if (this.current()) throw new Error('Checkpoint required.');
+        if (this.bank.engineVersion === 'documented-affinity-v2') {
+            const next = this.extension();
+            this.revealed = false;
+            if (next.length !== 10) return false;
+            this.queue.push(...next); return true;
+        }
         const remaining = Math.max(0, 30 - this.queue.length);
         const next = remaining === 0 ? [] : followups(this.bank, this.answers, this.presented, this.priorities, this.cohort, Math.min(5, remaining));
         this.revealed = false;
@@ -77,14 +87,19 @@ export class Questionnaire {
         return true;
     }
 
+    extension(): Question[] {
+        if (this.current() || this.queue.length >= Math.min(80, this.bank.questions.length)) return [];
+        return documentedBlock(this.bank, this.queue.map(q => q.id), this.answers);
+    }
+
     finish() {
         this.revealed = true;
-        return match(this.bank, this.answers, this.priorities, this.cohort);
+        return this.bank.engineVersion === 'documented-affinity-v2' ? documentedMatch(this.bank, this.answers, this.priorities) : match(this.bank, this.answers, this.priorities, this.cohort);
     }
 
     export() {
         if (!this.revealed) throw new Error('Explicit finish required before export.');
-        return { constituency: this.constituency, releaseHash: this.releaseHash, engineVersion: this.bank.engineVersion, electionId: this.bank.election.id, answers: { ...this.answers }, priorities: { ...this.priorities }, cohort: [...this.cohort], results: match(this.bank, this.answers, this.priorities, this.cohort) };
+        return { constituency: this.constituency, releaseHash: this.releaseHash, engineVersion: this.bank.engineVersion, electionId: this.bank.election.id, answers: { ...this.answers }, priorities: { ...this.priorities }, cohort: [...this.cohort], results: this.bank.engineVersion === 'documented-affinity-v2' ? documentedMatch(this.bank, this.answers, this.priorities) : match(this.bank, this.answers, this.priorities, this.cohort) };
     }
 
     reset(): void {

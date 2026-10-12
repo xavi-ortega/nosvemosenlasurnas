@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T12:08:52.480066+00:00",
+  "planVersion": "quiz-2023-iteration-2-v1.1.0",
+  "status": "local_acceptance_complete",
+  "bankSha256": "8bf67e8c47be37a8e4127771f6e606185adf70b05c37f566ea19bd062035a408",
+  "bankBytes": 5201533,
+  "acceptanceGate": {
+    "command": "python3 scripts/check-staged.py",
+    "status": "passed",
+    "validatedTree": "c11ea944a7b5b51c81c1eb9de0b1baf0ddc1d9e7",
+    "logPath": ".tools/iteration-2-acceptance-gate.log",
+    "logSha256": "e4354282f8f2696d6c9f76346d7bebd0338d0113dcee19a28bb47804a5ee573f",
+    "phpTests": 38,
+    "phpAssertions": 345,
+    "browserTests": 86,
+    "engineTests": 38,
+    "pythonToolingTests": 52,
+    "dependencyAudits": "passed",
+    "lint": "passed",
+    "staticAnalysisErrors": 0,
+    "typecheck": "passed",
+    "assets": "passed",
+    "planParity": "passed",
+    "sourceFixtures": "passed",
+    "referenceArithmetic": "passed",
+    "skillsIntegrity": "passed",
+    "actionlint": "passed",
+    "historyAndStagedGitleaks": "passed",
+    "snapshotMutationCheck": "passed",
+    "indexMutationCheck": "passed"
+  },
+  "realRuntimeBrowserAcceptance": "outputs/quiz-2023-second-iteration-browser-acceptance.json",
+  "sourceCompilation": "Original authored questions, documents, positions and territorial positions match fresh compilation exactly. Only second-bank metadata/topic taxonomy differ.",
+  "recovery": "outputs/quiz-2023-second-iteration-recovery.json",
+  "preservation": {
+    "oldEngine": true,
+    "oldBank": true,
+    "sourceBytes": true,
+    "publicRepositoryPointer": true,
+    "signedHistory": true,
+    "userJournalEntries": true
+  },
+  "finalCommitPolicy": {
+    "command": "git -c commit.gpgsign=false commit",
+    "mandatoryHookInstalled": true,
+    "finalRecordTreeMustBeCheckedAgain": true,
+    "noPush": true
+  },
+  "hostedResultsClaimed": false,
+  "publicLaunchApproved": false,
+  "collectionEnabled": false
+}

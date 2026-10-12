@@ -16,7 +16,9 @@ Route::get('/', function (PublicBank $bank): Response {
         $release = null;
     }
 
-    return response()->view('welcome', ['release' => $release])->withHeaders([
+    $view = ($release['engineVersion'] ?? null) === 'documented-affinity-v2' ? 'public.app' : 'welcome';
+
+    return response()->view($view, ['release' => $release, 'page' => 'home'])->withHeaders([
         'Content-Language' => app()->getLocale(),
         'Referrer-Policy' => 'no-referrer',
         'X-Content-Type-Options' => 'nosniff',
@@ -55,7 +57,7 @@ Route::get('/api/release-state', function (PublicBank $bank): Response {
     return response()->json(['sha256' => $state['sha256'], 'withdrawn' => $state['withdrawn']])->withHeaders(['Cache-Control' => 'no-store', 'Content-Language' => 'es']);
 })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('release-state');
 
-foreach (['comparison' => 'comparison', 'questionnaire' => 'quiz', 'sources' => 'sources'] as $path => $page) {
+foreach (['comparison' => 'comparison', 'questionnaire' => 'quiz', 'sources' => 'sources', 'programmes' => 'programmes', 'how-it-works' => 'method'] as $path => $page) {
     Route::view('/'.$path, 'public.app', ['page' => $page])
         ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
 }

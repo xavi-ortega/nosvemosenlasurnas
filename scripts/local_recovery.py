@@ -33,7 +33,7 @@ def evidence_state(directory):
     path = directory / (state['sha256'] + '.json')
     require(path.stat().st_size <= 5 * 1024 * 1024 and sha(path) == state['sha256'], 'Evidence hash mismatch')
     bank = json.loads(path.read_text())
-    require(bank['schemaVersion'] == 1 and bank['engineVersion'] == 'lean-fixed-budgets-v1' and bank['kind'] == state['kind'], 'Evidence version mismatch')
+    require(bank['schemaVersion'] == 1 and bank['engineVersion'] in ['lean-fixed-budgets-v1', 'documented-affinity-v2'] and bank['kind'] == state['kind'], 'Evidence version mismatch')
     return state, bank
 
 

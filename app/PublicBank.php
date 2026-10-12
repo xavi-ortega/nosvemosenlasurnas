@@ -65,7 +65,7 @@ class PublicBank
             throw new RuntimeException('Evidence integrity failure.');
         }
         $bank = json_decode($bytes, true, flags: JSON_THROW_ON_ERROR);
-        if (! is_array($bank) || ($bank['schemaVersion'] ?? null) !== 1 || ($bank['engineVersion'] ?? null) !== 'lean-fixed-budgets-v1' || ($bank['kind'] ?? null) !== $kind) {
+        if (! is_array($bank) || ($bank['schemaVersion'] ?? null) !== 1 || ! in_array($bank['engineVersion'] ?? null, ['lean-fixed-budgets-v1', 'documented-affinity-v2'], true) || ($bank['kind'] ?? null) !== $kind) {
             throw new RuntimeException('Evidence version mismatch.');
         }
 

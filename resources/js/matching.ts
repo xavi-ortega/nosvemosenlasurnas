@@ -5,14 +5,18 @@ export type Priorities = Record<string, 0 | 1 | 2>;
 export interface Question { id: string; topicId: string; familyId: string; text: string; help?: string; level: 'general' | 'specific' }
 export interface Citation { documentId: string; start: number; end: number; quote: string; context: string; locator: { page: number; line: number; section?: number } }
 export interface Position { status: 'derived' | 'unknown' | 'conflicting'; value: Scale | null; citations: Citation[]; rationale?: string }
+export interface ProgrammeProfile { id: string; candidacyId: string; name: string; constituencyIds: string[] }
 export interface Bank {
-    schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
+    schemaVersion: 1; engineVersion: 'lean-fixed-budgets-v1' | 'documented-affinity-v2'; compilerVersion: string; kind: 'synthetic' | 'historical' | 'current'; asOf: string;
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
     topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
     comparisonPolicy?: 'fixed-bank-evidence-v1'; draft?: boolean; releaseEligible?: boolean;
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
     documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string; mediaType?: 'application/pdf' | 'text/html' }[];
     positions: Record<string, Record<string, Position>>; constituencyPositions?: Record<string, Record<string, Record<string, Position>>>; interpretation: string; limitations: string[];
+    programmeProfiles?: ProgrammeProfile[];
+    ordering?: { version: string; researchDate: string; questionIds: string[]; rationale: string; migrationGap: string };
+    sourceLinks?: Record<string, { officialUrl: string | null; preservedUrl: string; status: 'official_verified' | 'official_unavailable'; publisher: string; checkedAt: string }>;
 }
 const idPattern = /^[a-z][a-z0-9_-]{0,63}$/;
 const isScale = (value: unknown): value is Scale => Number.isInteger(value) && typeof value === 'number' && value >= -2 && value <= 2;
@@ -24,7 +28,7 @@ const datePattern = /^\d{4}-\d{2}-\d{2}$/;
 export function parseBank(value: unknown): Bank {
     try {
         const b = value as Bank;
-        ensure(b && b.schemaVersion === 1 && b.engineVersion === 'lean-fixed-budgets-v1' && ['synthetic', 'historical', 'current'].includes(b.kind));
+        ensure(b && b.schemaVersion === 1 && ['lean-fixed-budgets-v1', 'documented-affinity-v2'].includes(b.engineVersion) && ['synthetic', 'historical', 'current'].includes(b.kind));
         ensure(b.comparisonPolicy === undefined || b.comparisonPolicy === 'fixed-bank-evidence-v1');
         ensure(b.draft === undefined || typeof b.draft === 'boolean');
         ensure(b.releaseEligible === undefined || typeof b.releaseEligible === 'boolean');
@@ -40,11 +44,37 @@ export function parseBank(value: unknown): Bank {
             familyTopics.set(q.familyId, q.topicId);
         }
         if (b.starterQuestionIds !== undefined) {
-            ensure(Array.isArray(b.starterQuestionIds) && b.starterQuestionIds.length === 10 && unique(b.starterQuestionIds));
+            const starterCount = b.engineVersion === 'documented-affinity-v2' ? 20 : 10;
+            ensure(Array.isArray(b.starterQuestionIds) && b.starterQuestionIds.length === starterCount && unique(b.starterQuestionIds));
             const starters = b.starterQuestionIds.map(id => b.questions.find(q => q.id === id));
-            ensure(starters.every(q => q !== undefined && q.level === 'general'));
-            ensure(new Set(starters.map(q => q!.familyId)).size === 10);
+            ensure(starters.every(q => q !== undefined && (b.engineVersion === 'documented-affinity-v2' || q.level === 'general')));
+            ensure(new Set(starters.map(q => q!.familyId)).size === starterCount);
             ensure(new Set(starters.map(q => q!.topicId)).size === Math.min(b.topics.length, 10));
+        }
+        if (b.engineVersion === 'documented-affinity-v2') {
+            ensure(b.programmeProfiles && unique(b.programmeProfiles.map(p => p.id)));
+            for (const candidate of b.candidacies) {
+                const profiles = b.programmeProfiles!.filter(p => p.candidacyId === candidate.id);
+                const scopes = profiles.flatMap(p => p.constituencyIds);
+                ensure(profiles.length > 0 && new Set(scopes).size === scopes.length && scopes.length === candidate.constituencyIds.length && scopes.every(s => candidate.constituencyIds.includes(s)));
+            }
+            ensure(b.programmeProfiles!.every(p => safeText(p.name) && b.candidacies.some(c => c.id === p.candidacyId) && p.constituencyIds.length > 0));
+            for (const profile of b.programmeProfiles!) {
+                const first = bankForConstituency(b, profile.constituencyIds[0]).positions[profile.candidacyId];
+                ensure(profile.constituencyIds.every(scope => JSON.stringify(bankForConstituency(b, scope).positions[profile.candidacyId]) === JSON.stringify(first)));
+            }
+            ensure(b.ordering && unique(b.ordering.questionIds) && b.ordering.questionIds.length === b.questions.length && b.ordering.questionIds.every(id => b.questions.some(q => q.id === id)));
+            ensure(b.sourceLinks && Object.keys(b.sourceLinks).length === b.documents.length);
+            for (const d of b.documents) {
+                const link = b.sourceLinks![d.id];
+                ensure(link && safeText(link.publisher) && link.preservedUrl === d.url && ['official_verified', 'official_unavailable'].includes(link.status));
+                ensure(link.status === 'official_verified' ? link.officialUrl !== null : link.officialUrl === null);
+                if (link.officialUrl !== null) {
+                    const url = new URL(link.officialUrl);
+                    ensure(url.protocol === 'https:' && !url.username && !url.password && !/[<>\s]/.test(link.officialUrl));
+                }
+            }
+            ensure(b.topics.every(topic => b.starterQuestionIds!.filter(id => b.questions.find(q => q.id === id)!.topicId === topic.id).length === 2));
         }
         ensure(Array.isArray(b.documents) && new Set(b.documents.map(d => d.id)).size === b.documents.length);
         for (const d of b.documents) {
@@ -86,7 +116,7 @@ export function parseBank(value: unknown): Bank {
                     ensure(Object.keys(overrides).every(id => b.questions.some(q => q.id === id)));
                     positions[candidate] = { ...b.positions[candidate], ...overrides };
                 }
-                parseBank({ ...b, positions, constituencyPositions: undefined });
+                parseBank({ ...b, engineVersion: 'lean-fixed-budgets-v1', starterQuestionIds: undefined, positions, constituencyPositions: undefined });
             }
         }
         ensure(safeText(b.interpretation) && Array.isArray(b.limitations) && b.limitations.every(safeText));

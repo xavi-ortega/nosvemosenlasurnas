@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T11:50:16.690780+00:00",
+  "bankSha256": "8bf67e8c47be37a8e4127771f6e606185adf70b05c37f566ea19bd062035a408",
+  "scope": {
+    "candidacies": 59,
+    "profiles": 63,
+    "constituencies": 52,
+    "ballots": 550
+  },
+  "profileGrouping": "Complete position/citation/rationale signatures compared only within each candidacy and its actual ballot scopes. All 550 scopes covered exactly once; no best-score selection.",
+  "profileDecisions": [
+    {
+      "candidacyId": "boe-2023-004",
+      "decision": "Valencian conflicts and scoped institutional mappings stay in Alicante/Castellón/Valencia; the national profile applies to the other 49 ballots."
+    },
+    {
+      "candidacyId": "boe-2023-020",
+      "decision": "León notebook remains an unknown profile separate from Zamora; neither inherits a provincial or other-election programme."
+    },
+    {
+      "candidacyId": "boe-2023-021",
+      "decision": "Teruel programme stays separate from Aragón Existe for Huesca/Zaragoza."
+    },
+    {
+      "candidacyId": "boe-2023-031",
+      "decision": "The León programme is separate from the other four unavailable territorial profiles."
+    }
+  ],
+  "taxonomyDecisions": [
+    {
+      "questionId": "ban-food-production-force-feeding",
+      "from": "energy",
+      "to": "rights",
+      "contextReopened": "PACMA page 27, animal-welfare section 1.4.2; explicit animal protection rather than energy policy."
+    },
+    {
+      "questionId": "child-benefit-from-fifth-pregnancy-month",
+      "from": "pensions",
+      "to": "rights",
+      "contextReopened": "PP page 53, objective supporting maternity/paternity and reconciliation; this is a child benefit, not a pension."
+    },
+    {
+      "questionId": "ban-fireworks-and-firecrackers",
+      "decision": "Retained under environment/energy after directly reading the full existing citation context: PACMA section 2.14 concerns acoustic pollution, human/animal welfare, smoke and wildfire risk."
+    },
+    {
+      "questionId": "retirement-pension-income-tax-exemption",
+      "decision": "Retained under pensions: the proposition targets contributory retirement income; tax instrument overlap is acknowledged. No double counting under taxes."
+    }
+  ],
+  "starterIds": [
+    "rent-price-cap",
+    "adjust-income-tax-for-inflation",
+    "shorter-workweek",
+    "public-psychotherapy-care",
+    "direct-vulnerable-household-energy-aid",
+    "free-early-education",
+    "public-legislative-influence-record",
+    "low-cost-rural-on-demand-transport",
+    "birth-leave-at-least-six-months",
+    "pensions-cost-of-living",
+    "retain-public-housing-ownership",
+    "permanent-large-fortunes-tax",
+    "minimum-wage-above-inflation",
+    "phase-out-prescription-copay",
+    "extend-existing-nuclear",
+    "free-compulsory-school-meals",
+    "keep-in-person-public-services",
+    "rail-alternative-flight-limits",
+    "retain-euthanasia-right",
+    "retirement-pension-income-tax-exemption"
+  ],
+  "orderingVersion": "editorial-2023-iteration-2-v1",
+  "trendRefresh": {
+    "date": "2026-10-12",
+    "latestSuccessfullyVerifiedStudy": "3577",
+    "result": "Official catalogue remains available; no newer October 2026 result was found in the bounded official search. No claim that no newer publication can exist."
+  },
+  "migrationDecision": "Explicit gap retained; no migration question or position was authored, no unrelated rights question substituted. Adding a supported migration decision remains future content work, not a prerequisite for the accepted existing twenty-question order.",
+  "sourceLinks": {
+    "total": 45,
+    "officialVerified": 31,
+    "explicitExceptions": 14,
+    "audit": "outputs/quiz-2023-second-iteration-source-links.json"
+  },
+  "scoreLedger": [
+    {
+      "case": "two exact and three unknown equal weights",
+      "affinity": 40,
+      "coverage": 40
+    },
+    {
+      "case": "one whole user topic skipped or unsure",
+      "affinity": null,
+      "coverage": null,
+      "maximum": null
+    },
+    {
+      "case": "strong rent disagreement against +2 rent support",
+      "proposalAffinity": 0,
+      "relationship": "opposed"
+    },
+    {
+      "case": "importance 2; two answers in family one, one in family two; other topic weight one",
+      "weights": [
+        0.5,
+        0.5,
+        1,
+        1
+      ],
+      "denominator": 3,
+      "one documented familyAffinity": 33.333333333333336
+    }
+  ],
+  "verification": {
+    "engineTests": 38,
+    "enginePassed": 38,
+    "phpRouteTests": 1,
+    "phpRouteAssertions": 29,
+    "desktopWalkthroughTests": 8,
+    "desktopPassed": 8,
+    "browserEvidence": "tests/Browser/second-iteration.spec.ts",
+    "sourceAndPositionHistoryPreserved": true,
+    "semanticGeneration": false,
+    "publicPointerChanged": false,
+    "metricsEnabled": false,
+    "publicLaunchApproved": false
+  }
+}

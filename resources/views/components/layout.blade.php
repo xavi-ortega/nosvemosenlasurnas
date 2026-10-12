@@ -14,8 +14,10 @@
     <header class="site-header">
         <a class="brand" href="{{ route('home') }}"><svg aria-hidden="true" viewBox="0 0 32 32" width="32" height="32"><path d="M4 12h24v16H4zM9 4h14v12H9z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m12 9 3 3 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Nos Vemos<br>en las Urnas</span></a>
         <nav aria-label="{{ __('public.main_navigation') }}" class="flex flex-wrap gap-2 sm:gap-5">
-            <a href="{{ route('questionnaire') }}">{{ __('public.take_quiz') }}</a>
-            <span class="edition">{{ __('public.edition_2023') }}</span>
+            <a href="{{ route('home') }}">{{ __('iteration.iteration_home') }}</a>
+            <a href="{{ route('questionnaire') }}">{{ __('iteration.iteration_quiz') }}</a>
+            <a href="{{ route('programmes') }}">{{ __('iteration.iteration_programmes') }}</a>
+            <a href="{{ route('how-it-works') }}">{{ __('iteration.iteration_method') }}</a>
         </nav>
     </header>
     <main id="content" tabindex="-1">{{ $slot }}</main>
@@ -29,6 +31,6 @@
         </nav>
     </footer>
     <script type="application/json" id="feedback-config">@json($feedbackConfig)</script>
-    <script type="application/json" id="public-messages">@json(__('public'))</script>
+    <script type="application/json" id="public-messages">@json(array_merge(__('public'), __('iteration')))</script>
 </body>
 </html>

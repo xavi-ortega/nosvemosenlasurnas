@@ -61,7 +61,7 @@ export function renderFeedback(target: HTMLElement, feedback: Feedback, t: (key:
         const send = element('button', t('feedback_send')); send.type = 'button';
         const refuse = element('button', t('feedback_refuse')); refuse.type = 'button';
         const status = element('p'); status.setAttribute('role', 'status');
-        const showStatus = (key: string) => { const message = element('p', t(key)); message.setAttribute('role', 'status'); message.tabIndex = -1; card.replaceChildren(message); message.focus(); };
+        const showStatus = (key: string) => { card.replaceChildren(status); status.textContent = t(key); };
         card.append(choices, consentLabel, send, refuse, status);
         refuse.addEventListener('click', () => showStatus('feedback_refused'));
         send.addEventListener('click', () => {

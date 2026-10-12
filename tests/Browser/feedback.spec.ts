@@ -28,6 +28,7 @@ test('disabled collection and refusal never post; feedback failure leaves the co
     await expect(page.locator('#app')).toContainText('Elige una valoración y marca');
     await page.getByRole('button', { name: 'No participar' }).click();
     await expect(page.locator('#app')).toContainText('No has enviado ninguna valoración');
+    await expect(page.getByRole('status')).not.toBeFocused();
     expect(posts).toEqual([]);
     await page.getByRole('link', { name: 'Hacer el cuestionario', exact: true }).click();
     await expect(page.getByRole('button', { name: 'Empezar las diez preguntas' })).toBeVisible();
@@ -48,10 +49,12 @@ test('opt-in sends at most two bounded randomized reports without quiz fields, i
     expect(payloads).toEqual([]);
     await fit.getByRole('checkbox').check(); await fit.getByRole('button', { name: 'Enviar categoría aleatorizada' }).click();
     await expect(page.getByRole('status').filter({ hasText: 'Categoría recibida' })).toBeVisible();
+    await expect(page.getByRole('status').filter({ hasText: 'Categoría recibida' })).not.toBeFocused();
     const policy = page.getByRole('heading', { name: '¿Estás de acuerdo con esta propuesta pública elegida al azar?' }).locator('..');
     await policy.getByRole('radio', { name: 'De acuerdo', exact: true }).check();
     await policy.getByRole('checkbox').check(); await policy.getByRole('button', { name: 'Enviar categoría aleatorizada' }).click();
     await expect(page.getByRole('status').filter({ hasText: 'No se ha podido confirmar el envío' })).toBeVisible();
+    await expect(page.getByRole('status').filter({ hasText: 'No se ha podido confirmar el envío' })).not.toBeFocused();
     expect(payloads).toHaveLength(2);
     expect(Object.keys(payloads[0]).sort()).toEqual(['category', 'metricId', 'protocolVersion']);
     expect(Object.keys(payloads[1]).sort()).toEqual(['category', 'metricId', 'propositionId', 'protocolVersion', 'surveyVersion']);

@@ -23,7 +23,7 @@
             <a href="{{ route('how-it-works') }}">{{ __('iteration.iteration_method') }}</a>
         </nav>
     </header>
-    <main id="content" tabindex="-1">{{ $slot }}</main>
+    <main id="content">{{ $slot }}</main>
     <footer class="site-footer">
         <p>{{ __('public.free') }}</p>
         <nav class="flex flex-wrap gap-4" aria-label="{{ __('public.privacy') }}">

@@ -4,6 +4,7 @@ import { Feedback, renderFeedback } from './feedback.ts';
 import type { FeedbackConfig } from './feedback.ts';
 import { Questionnaire } from './questionnaire.ts';
 import { reserveLoadingSpace, startLoading } from './loading.ts';
+import { focusFirstControl } from './focus.ts';
 
 const dictionary = document.getElementById('public-messages');
 const messages: Record<string, string> = dictionary ? JSON.parse(dictionary.textContent ?? '{}') : {};
@@ -11,6 +12,12 @@ const t = (key: string): string => messages[key] ?? messages.generic_error ?? 'N
 const feedbackNode = document.getElementById('feedback-config');
 let feedback: Feedback | null = null;
 try { if (feedbackNode) feedback = new Feedback(JSON.parse(feedbackNode.textContent ?? '{}') as FeedbackConfig); } catch { /* Optional feedback cannot block the core. */ }
+document.querySelector('.skip-link')?.addEventListener('click', event => {
+    event.preventDefault();
+    const content = document.getElementById('content'); content?.scrollIntoView({ block: 'start' });
+    if (!focusFirstControl(content)) focusFirstControl(document.querySelector('.site-footer'));
+    (document.activeElement as HTMLElement)?.scrollIntoView({ block: 'nearest' });
+});
 const root = document.getElementById('app');
 if (root) reserveLoadingSpace(root);
 const page = document.body.dataset.page;
@@ -28,12 +35,12 @@ const button = (key: string, action: () => void | Promise<void>, primary = false
     control.addEventListener('keydown', event => { if (event.repeat && ['Enter', ' '].includes(event.key)) event.preventDefault(); });
     control.addEventListener('click', () => {
         if (!control.isConnected || control.disabled) return;
-        if (key === 'next' && performance.now() - lastNextClickAt < 180 && control.closest<HTMLElement>('.quiz-stage')?.dataset.interacted !== 'true') { focusHeading(); return; }
+        if (key === 'next' && performance.now() - lastNextClickAt < 180 && control.closest<HTMLElement>('.quiz-stage')?.dataset.interacted !== 'true') { focusQuizControl(); return; }
         void action();
     }); return control;
 };
 const actions = (...buttons: HTMLButtonElement[]) => { const group = e('div', '', 'actions'); group.append(...buttons); return group; };
-const focusHeading = () => { const heading = root?.querySelector('h2') ?? document.getElementById('page-title'); if (heading) { heading.tabIndex = -1; heading.focus(); } };
+const focusQuizControl = () => focusFirstControl(root, ['input[type=radio]:checked', 'input[type=radio]']);
 const answerKeys: Record<string, string> = { '-2': 'answer_negative_2', '-1': 'answer_negative_1', '0': 'answer_neutral', '1': 'answer_positive_1', '2': 'answer_positive_2', unsure: 'unsure', skip: 'skip' };
 const answerOrder = ['-2', '-1', '0', '1', '2', 'unsure', 'skip'] as const;
 const parseAnswer = (value: string): Answer => value === 'unsure' || value === 'skip' ? value : Number(value) as Scale;
@@ -150,7 +157,7 @@ function showQuiz(...nodes: HTMLElement[]): void {
         stage.classList.add('state-enter');
     }
     quizRendered = true;
-    focusHeading();
+    focusQuizControl();
 }
 function renderSetup(): void {
     if (!root) return;
@@ -174,7 +181,7 @@ function renderSetup(): void {
     showQuiz(sampleNotice(), stage);
 }
 function answerControls(question: Question, current: Answer | undefined, onChange?: (value: Answer) => void): HTMLFieldSetElement {
-    const fieldset = e('fieldset'); fieldset.append(e('legend', t('opinion')));
+    const fieldset = e('fieldset'); fieldset.setAttribute('aria-label', question.text); fieldset.append(e('legend', t('opinion')));
     const main = e('div', '', 'answers'); const other = e('div', '', 'other-answers');
     for (const value of answerOrder) {
         const key = answerKeys[value];
@@ -192,7 +199,7 @@ function renderQuestion(): void {
     if (!question) { renderCheckpoint(); return; }
     const card = e('section', '', 'quiz-stage quiz-card'); card.dataset.questionId = question.id;
     const suppressRepeatedClick = (event: MouseEvent) => {
-        if (event.detail > 1 && performance.now() - lastNextClickAt < 180) { event.preventDefault(); event.stopImmediatePropagation(); focusHeading(); }
+        if (event.detail > 1 && performance.now() - lastNextClickAt < 180) { event.preventDefault(); event.stopImmediatePropagation(); focusQuizControl(); }
     };
     card.addEventListener('mousedown', suppressRepeatedClick, true);
     card.addEventListener('click', suppressRepeatedClick, true);
@@ -230,7 +237,7 @@ async function finish(): Promise<void> {
         if (!Array.isArray(state.withdrawn)) throw new Error('Invalid release state.');
         if (session !== activeSession) return;
         if (state.withdrawn.includes(activeSession.releaseHash)) { restore(); root.append(p('withdrawn', 'error')); return; }
-        activeSession.finish(); renderResults(); focusHeading();
+        activeSession.finish(); renderResults(); focusQuizControl();
     } catch {
         if (session === activeSession) {
             restore(); const error = root.querySelector<HTMLElement>('.release-error') ?? p('release_check_failed', 'error release-error');
@@ -261,7 +268,7 @@ function renderReview(): void {
     for (const id of session.presented) {
         const q = bank.questions.find(q => q.id === id)!; const section = e('section', '', 'source-card'); section.append(e('h3', q.text), answerControls(q, session.answers[id], value => session!.edit(id, value))); root.append(section);
     }
-    root.append(actions(button('back_checkpoint', () => renderCheckpoint()), button('reset', reset))); focusHeading();
+    root.append(actions(button('back_checkpoint', () => renderCheckpoint()), button('reset', reset))); focusQuizControl();
 }
 function exportResults(): void {
     if (!session?.revealed || !window.confirm(t('export_warning'))) return;

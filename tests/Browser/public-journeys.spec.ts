@@ -209,7 +209,7 @@ test('quiz entry keeps priorities optional and back preserves answers across blo
     await page.screenshot({ path: testInfo.outputPath('selected.png'), fullPage: true });
     await page.getByRole('button', { name: 'Continuar', exact: true }).dblclick();
     await expect(page.locator('.progress')).toContainText('Pregunta 2 de 10');
-    await expect(page.locator('.question-title')).toBeFocused();
+    await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeFocused();
     await answer(page, 9);
     await page.screenshot({ path: testInfo.outputPath('checkpoint.png'), fullPage: true });
     await page.getByRole('button', { name: 'Responder cinco más' }).click();

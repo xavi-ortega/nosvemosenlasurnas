@@ -1,3 +1,5 @@
+import { focusControl } from './focus.ts';
+
 export function reserveLoadingSpace(target: HTMLElement): void {
     const style = getComputedStyle(target);
     const padding = parseFloat(style.paddingTop) + parseFloat(style.paddingBottom) + parseFloat(style.borderTopWidth) + parseFloat(style.borderBottomWidth);
@@ -21,7 +23,7 @@ export function startLoading(target: HTMLElement, label: string): () => void {
     return () => {
         if (skeleton.parentElement === target) {
             target.replaceChildren(...original);
-            if (focused) requestAnimationFrame(() => { if (focused.isConnected && target.contains(focused)) focused.focus({ preventScroll: true }); });
+            if (focused) requestAnimationFrame(() => { if (focused.isConnected && target.contains(focused)) focusControl(focused); });
         }
         target.removeAttribute('aria-busy');
     };

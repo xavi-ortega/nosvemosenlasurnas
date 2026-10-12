@@ -3,6 +3,7 @@ import { documentedMatch, profilePosition } from './documented-affinity.ts';
 import { relationship, similarity } from './matching.ts';
 import type { Answer, Bank, Position, ProgrammeProfile, Question } from './matching.ts';
 import { startLoading } from './loading.ts';
+import { focusControl, focusFirstControl } from './focus.ts';
 
 type Section = 'home' | 'quiz' | 'programmes' | 'method';
 type Translate = (key: string) => string;
@@ -22,7 +23,6 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     };
     const button = (key: string, callback: (control: HTMLButtonElement) => void | Promise<void>, primary = false) => action(t(key), callback, primary);
     const actions = (...nodes: HTMLElement[]) => { const group = element('div', '', 'actions'); group.append(...nodes); return group; };
-    const focus = (node: HTMLElement | null) => { if (node) { node.tabIndex = -1; node.focus({ preventScroll: true }); } };
     const profile = (id: string) => bank.programmeProfiles!.find(p => p.id === id)!;
     const topicName = (id: string) => bank.topics.find(topic => topic.id === id)!.name;
     const scopeNames = (p: ProgrammeProfile) => p.constituencyIds.map(id => bank.election.constituencies.find(c => c.id === id)!.name).join(', ');
@@ -70,7 +70,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         else if (!view(next).childElementCount) {
             if (next === 'quiz') renderQuiz(); else if (next === 'programmes') renderProgrammes(); else renderMethod();
         }
-        requestAnimationFrame(() => { window.scrollTo(0, scrolls.get(next) ?? 0); if (!view(next).contains(document.activeElement)) focus(view(next).querySelector<HTMLElement>('h2')); });
+        requestAnimationFrame(() => { window.scrollTo(0, scrolls.get(next) ?? 0); if (!view(next).contains(document.activeElement)) focusFirstControl(view(next), next === 'quiz' ? ['input[type=radio]:checked', 'input[type=radio]'] : []); });
     };
     document.addEventListener('click', event => {
         const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a');
@@ -103,7 +103,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         dialog.addEventListener('cancel', event => { event.preventDefault(); close(); }); document.body.append(dialog); dialog.showModal();
     }
     function answerControls(q: Question, onChange: (answer: Answer) => void, onConfirm?: (answer: Answer) => void): HTMLFieldSetElement {
-        const group = element('fieldset'); group.append(element('legend', t('opinion')));
+        const group = element('fieldset'); group.setAttribute('aria-label', q.text); group.append(element('legend', t('opinion')));
         let navigatingAnswers = false;
         group.addEventListener('keyup', event => { if (event.key.startsWith('Arrow')) navigatingAnswers = false; });
         const choices = element('div', '', 'answers'); const other = element('div', '', 'other-answers');
@@ -167,7 +167,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             await animate(next, [{ transform: `translateX(${-offset}rem)`, opacity: 0 }, { transform: 'translateX(0)', opacity: 1 }], 160);
             if (current() && performance.now() < answerUnlockAt) await new Promise(resolve => window.setTimeout(resolve, answerUnlockAt - performance.now()));
         } finally {
-            if (quizMotion === active) cancelQuizMotion();
+            if (quizMotion === active) { cancelQuizMotion(); if (session === activeSession && section === 'quiz') focusFirstControl(view('quiz'), ['input[type=radio]:checked', 'input[type=radio]']); }
         }
     }
     function renderQuiz(reviewTopic?: string, transitioning = false): void {
@@ -175,10 +175,10 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         const page = view('quiz'); page.replaceChildren();
         const stage = element('section', '', 'quiz-stage'); stage.classList.toggle('state-enter', !transitioning && !root.hasAttribute('aria-busy')); page.append(stage);
         stage.addEventListener('pointerdown', event => {
-            if (performance.now() < answerUnlockAt && !(event.target as Element).closest('.quiz-navigation button')) { event.preventDefault(); focus(stage.querySelector('h2')); }
+            if (performance.now() < answerUnlockAt && !(event.target as Element).closest('.quiz-navigation button')) { event.preventDefault(); }
         }, true);
         if (!session || quizView === 'setup') {
-            stage.classList.add('quiz-intro'); stage.append(element('h2', t('iteration_quiz')), paragraph('iteration_intro'), paragraph('iteration_version', 'quiet'), actions(button('iteration_start', startQuiz, true)), paragraph('quiz_reload', 'quiet')); focus(stage.querySelector('h2')); return;
+            stage.classList.add('quiz-intro'); stage.append(element('h2', t('iteration_quiz')), paragraph('iteration_intro'), paragraph('iteration_version', 'quiet'), actions(button('iteration_start', startQuiz, true)), paragraph('quiz_reload', 'quiet')); focusFirstControl(stage); return;
         }
         if (quizView === 'results' && session.revealed) { renderResults(page); return; }
         if (quizView === 'review') {
@@ -195,7 +195,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
                 item.append(element('h3', q.text), answerControls(q, value => { session!.edit(id, value); invalidatePersonalReading(); })); stage.append(item);
             }
             stage.append(actions(button('back_checkpoint', () => { quizView = 'checkpoint'; renderQuiz(); })));
-            if (reviewTopic) requestAnimationFrame(() => { const q = bank.questions.find(q => q.topicId === reviewTopic && session!.presented.includes(q.id)); const heading = stage.querySelector<HTMLElement>('[data-question-id="' + q?.id + '"] h3'); heading?.scrollIntoView(); focus(heading ?? stage.querySelector('h2')); });
+            if (reviewTopic) requestAnimationFrame(() => { const q = bank.questions.find(q => q.topicId === reviewTopic && session!.presented.includes(q.id)); const item = stage.querySelector<HTMLElement>('[data-question-id="' + q?.id + '"]'); item?.scrollIntoView(); focusFirstControl(item ?? stage, ['input[type=radio]:checked', 'input[type=radio]']); });
         } else if (quizView === 'question' && session.current()) {
             const q = session.current()!; stage.classList.add('quiz-card'); stage.dataset.questionId = q.id;
             const state = session.progress(); const navigation = element('div', '', 'quiz-navigation flex flex-wrap items-center justify-between gap-3');
@@ -224,7 +224,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             const review = actions(button('review', () => { quizView = 'review'; renderQuiz(); })); review.classList.add('secondary-actions'); stage.append(review);
         }
         if (quizView !== 'checkpoint') { const reset = actions(button('iteration_clear', control => resetDialog(control))); reset.classList.add('secondary-actions', 'quiz-reset'); stage.append(reset); }
-        focus(stage.querySelector('h2'));
+        if (!transitioning) focusFirstControl(stage, ['input[type=radio]:checked', 'input[type=radio]']);
         if (quizView === 'question') requestAnimationFrame(() => stage.scrollIntoView({ block: 'start' }));
     }
     async function finish(): Promise<void> {
@@ -256,8 +256,8 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         let rootOpener: HTMLElement | null = null; let rootScroll = 0;
         const restore = (opener: HTMLElement, pageScroll: number) => requestAnimationFrame(() => {
             window.scrollTo(0, pageScroll);
-            if (opener.isConnected) opener.focus({ preventScroll: true });
-            else { focus(origin.querySelector('h2')); origin.append(paragraph('iteration_origin_changed', 'quiet')); }
+            if (opener.isConnected) focusControl(opener);
+            else { focusFirstControl(origin); origin.append(paragraph('iteration_origin_changed', 'quiet')); }
         });
         const close = () => { reader.replaceChildren(); reader.hidden = true; layout.classList.remove('has-reader'); stack.splice(0); if (rootOpener) restore(rootOpener, rootScroll); };
         const back = () => {
@@ -269,7 +269,8 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             else stack.push({ nodes: [...reader.childNodes], opener, pageScroll: window.scrollY, readerScroll: reader.scrollTop });
             const title = element('h2', heading); title.id = 'reader-heading'; reader.setAttribute('aria-labelledby', title.id);
             reader.replaceChildren(actions(button(backKey, back), button('iteration_close_reader', close)), title, ...nodes); reader.hidden = false; layout.classList.add('has-reader'); reader.scrollTop = 0;
-            focus(title); title.scrollIntoView({ block: 'nearest' });
+            for (const control of reader.querySelectorAll('.actions button')) control.setAttribute('aria-describedby', title.id);
+            focusFirstControl(reader); reader.querySelector('button')?.scrollIntoView({ block: 'nearest' });
         };
         reader.addEventListener('keydown', event => { if (event.key === 'Escape' && reader.contains(document.activeElement)) { event.preventDefault(); close(); } });
         return { origin, open, close };
@@ -339,7 +340,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             item.append(heading, value, bar, metadata, button('iteration_open_programme', opener => programmeReader(layout, p, opener))); rows.append(item);
         }
         origin.append(rows, actions(button('iteration_result_topics', () => { overlay = true; views.delete('programmes'); publicMode = 'catalogue'; show('programmes', true); }), button('review', () => { session!.revealed = false; invalidatePersonalReading(); quizView = 'review'; renderQuiz(); }), button('export', exportResults), button('iteration_clear', resetDialog)));
-        focus(origin.querySelector('h2'));
+        focusFirstControl(origin);
     }
     function exportResults(): void {
         if (!session?.revealed || !window.confirm(t('export_warning'))) return;
@@ -348,7 +349,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     }
     function returnPublic(mode: typeof publicMode): void {
         publicMode = mode; renderProgrammes();
-        requestAnimationFrame(() => { window.scrollTo(0, programmeOriginScroll); const candidate = programmeOrigin?.dataset.returnId ? view('programmes').querySelector<HTMLElement>('[data-return-id="' + programmeOrigin.dataset.returnId + '"]') : null; if (candidate) candidate.focus({ preventScroll: true }); else focus(view('programmes').querySelector('h2')); });
+        requestAnimationFrame(() => { window.scrollTo(0, programmeOriginScroll); const candidate = programmeOrigin?.dataset.returnId ? view('programmes').querySelector<HTMLElement>('[data-return-id="' + programmeOrigin.dataset.returnId + '"]') : null; if (candidate) candidate.focus({ preventScroll: true }); else focusFirstControl(view('programmes')); });
     }
     function openPublicQuestion(q: Question, opener: HTMLButtonElement, from: 'catalogue' | 'topic'): void {
         programmeOrigin = opener; programmeOrigin.dataset.returnId = q.id; programmeOriginScroll = window.scrollY; publicOrigin = from; publicQuestion = q.id; publicMode = 'positions'; publicFilter = 'all'; renderProgrammes();
@@ -416,7 +417,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             const selections = element('div', '', 'actions'); const output = element('div');
             const update = () => {
                 selections.replaceChildren(); output.replaceChildren();
-                for (const id of selected) selections.append(action(t('iteration_remove') + ': ' + profile(id).name, () => { const scroll = window.scrollY; selected.delete(id); layout.close(); update(); notice.textContent = interpolate('iteration_selection_count', { count: selected.size }); requestAnimationFrame(() => { window.scrollTo(0, scroll); focus(origin.querySelector('h2')); }); }));
+                for (const id of selected) selections.append(action(t('iteration_remove') + ': ' + profile(id).name, () => { const scroll = window.scrollY; selected.delete(id); layout.close(); update(); notice.textContent = interpolate('iteration_selection_count', { count: selected.size }); requestAnimationFrame(() => { window.scrollTo(0, scroll); focusFirstControl(origin); }); }));
                 if (selected.size < 2) { output.append(paragraph('iteration_select_two')); return; }
                 for (const topic of bank.topics) {
                     const group = element('section'); group.append(element('h3', topic.name));
@@ -430,7 +431,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             };
             origin.append(notice, selections, output); update();
         }
-        focus(origin.querySelector('h2'));
+        focusFirstControl(origin);
     }
     const keepFocusedContentVisible = () => { const active = document.activeElement as HTMLElement; if (active?.closest('.programme-reader')) requestAnimationFrame(() => active.scrollIntoView({ block: 'nearest' })); };
     const resizing = new ResizeObserver(keepFocusedContentVisible); resizing.observe(root);

@@ -71,13 +71,14 @@ test('confirmed answers remain visibly selected before forward motion and Back r
     expect(forward.some(sample => sample.id === first && sample.x < -.5)).toBe(true);
     expect(forward.some(sample => sample.id === second && sample.x > .5)).toBe(true);
     expect(forward.some(sample => sample.overflow)).toBe(false);
-    await expect(page.locator('.quiz-card h2')).toBeFocused();
+    await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeFocused();
 
     const back = await observeQuestionMotion(page, () => page.getByRole('button', { name: 'Atrás', exact: true }).click());
     expect(back.some(sample => sample.id === second && sample.x > .5)).toBe(true);
     expect(back.some(sample => sample.id === first && sample.x < -.5)).toBe(true);
     expect(back.some(sample => sample.overflow)).toBe(false);
     await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeChecked();
+    await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeFocused();
 });
 
 test('reduced motion preserves visible confirmation and automatic advancement without animated movement', async ({ page }) => {
@@ -88,7 +89,43 @@ test('reduced motion preserves visible confirmation and automatic advancement wi
     expect(samples.filter(sample => sample.id === first && sample.checked === 'unsure').length).toBeGreaterThan(2);
     expect(samples.some(sample => sample.x !== 0 || sample.moving)).toBe(false);
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
-    await expect(page.locator('.quiz-card h2')).toBeFocused();
+    await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeFocused();
+});
+
+test('quiz, reader and skip navigation focus only interactive controls', async ({ page }) => {
+    await page.addInitScript(() => {
+        const state = window as typeof window & { textFocusTargets: string[] }; state.textFocusTargets = [];
+        document.addEventListener('focusin', event => {
+            const target = event.target;
+            if (target instanceof HTMLElement && !target.matches('a[href], button, input, select, textarea, summary')) state.textFocusTargets.push(target.tagName);
+        });
+    });
+    await page.goto('/questionnaire');
+    const startControl = page.getByRole('button', { name: 'Empezar el test', exact: true });
+    await expect(startControl).toBeFocused();
+    const skip = page.getByRole('link', { name: 'Saltar al contenido', exact: true });
+    await skip.focus(); await page.keyboard.press('Enter'); await expect(startControl).toBeFocused();
+    await page.keyboard.press('Enter');
+    const negative = page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true });
+    await expect(negative).toBeFocused();
+    await expect(page.locator('.quiz-card fieldset')).toHaveAccessibleName(bank.questions.find(q => q.id === bank.starterQuestionIds![0])!.text);
+    await page.keyboard.press('Space');
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', bank.starterQuestionIds![1]);
+    await expect(negative).toBeFocused();
+    await page.getByRole('button', { name: 'Atrás', exact: true }).click();
+    await expect(negative).toBeChecked(); await expect(negative).toBeFocused();
+
+    const navigation = page.getByRole('navigation', { name: 'Navegación principal' });
+    await navigation.getByRole('link', { name: 'Programas 2023', exact: true }).click();
+    const featured = page.getByRole('button', { name: bank.questions.find(q => q.id === 'rent-price-cap')!.text, exact: true });
+    await expect(featured).toBeFocused(); await featured.click();
+    const opener = page.locator('.position-row').first().getByRole('button'); await opener.click();
+    await expect(reader(page).getByRole('button', { name: 'Volver a las posiciones', exact: true })).toBeFocused();
+    await page.keyboard.press('Escape'); await expect(opener).toBeFocused();
+    await navigation.getByRole('link', { name: 'Cómo funciona', exact: true }).click();
+    await skip.focus(); await page.keyboard.press('Enter');
+    await expect(page.getByRole('navigation', { name: 'Privacidad', exact: true }).getByRole('link', { name: 'Privacidad', exact: true })).toBeFocused();
+    expect(await page.evaluate(() => (window as typeof window & { textFocusTargets: string[] }).textFocusTargets)).toEqual([]);
 });
 
 test('navigation and reset cancel pending advancement without losing a selected answer or restoring cleared state', async ({ page }) => {
@@ -168,7 +205,7 @@ test('simple entry has one start action, no selection form and one choice advanc
     await choice.scrollIntoViewIfNeeded(); const box = (await choice.boundingBox())!;
     await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 2);
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
-    await expect(page.locator('.quiz-card h2')).toBeFocused();
+    await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeFocused();
     await expect(page.locator('.quiz-navigation').getByRole('button', { name: 'Atrás', exact: true })).toBeVisible();
     const back = (await page.getByRole('button', { name: 'Atrás', exact: true }).boundingBox())!;
     const answers = (await page.locator('.answers').boundingBox())!;
@@ -209,7 +246,7 @@ test('UX01 UX05: rent disagreement uses four actions, accessible single reader a
     await screenshot(page, 'results', info.project.name);
     const p = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-004' && p.constituencyIds.includes('madrid'))!;
     const opener = programmeRow(page, p.id).getByRole('button'); await opener.focus(); await page.keyboard.press('Enter');
-    await expect(reader(page).getByRole('heading', { name: p.name, exact: true })).toBeFocused();
+    await expect(reader(page).getByRole('button', { name: 'Volver a resultados', exact: true })).toBeFocused();
     await expect(page.locator('[aria-modal="true"], [inert]')).toHaveCount(0);
     await reader(page).getByRole('button', { name: 'Vivienda', exact: true }).click();
     const rent = reader(page).locator('[data-question-id="rent-price-cap"]');

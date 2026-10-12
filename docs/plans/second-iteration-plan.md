@@ -130,7 +130,7 @@ A quiet civic interface whose visual emphasis is the affinity chart.
 - Inspect compact overview, unknown-heavy overview, party/topic/proposal details, checkpoint, public comparison, loading/error and mobile states. Automation supports a practical walkthrough; no recruited approval panel is required.
 - Use pages for discovery and sustained comparison, one contextual nonmodal side reader for detail, native inline disclosure for optional quote/context, and a confirmation dialog only for a genuinely interrupting action such as clearing answers.
 - Reader width target 360-440 CSS px with a chart/list area of at least 520px and a 24px gap. Activate the side layout only when content fits; at 320px and 400% zoom use a full-width view. Retain selection on resize. At low viewport height prefer a full view if heading, close/back and useful reading area cannot fit.
-- A side reader is an aside/labelled region, never aria-modal or an inert background. Focus its heading on intentional open, retain ordinary Tab access to the chart, and restore the opener on close. Escape closes only while focus is in the reader. Mobile full views move focus to their heading and return it on back.
+- A side reader is an aside/labelled region, never aria-modal or an inert background. Focus its back control on intentional open, retain ordinary Tab access to the chart, and restore the opener on close. Escape closes only while focus is in the reader. Mobile full views use the same control focus. Static headings, paragraphs, status messages and containers never receive programmatic focus; answer groups retain their question as an accessible name.
 - Page body uses the page scrollbar; the desktop reader may have one bounded reading scrollbar, with no extra nested source scroll. No sticky element may cover focus or remove the back/close control. Long names and quotations wrap; page-level horizontal scrolling is prohibited.
 - Methodology is a separate readable page linked by Cómo se calcula. A short missing-data explanation belongs beside the chart; technical hashes and formulas remain optional. Do not put several competing actions on every result row.
 
@@ -181,7 +181,7 @@ Visible content (Spanish UI examples):
 
 Actions:
 
-- **Ver propuestas del programa** (navigate; programme-reader): Open the single reader; focus its heading.
+- **Ver propuestas del programa** (navigate; programme-reader): Open the single reader; focus its back control.
 - **Explorar coincidencias por tema** (navigate; result-topic-index): Open a topic-first results view after finish.
 
 #### Propuestas del programa (programme-reader)
@@ -487,7 +487,7 @@ Actions:
 ### Return, focus and privacy
 
 - Opening a reader records the invoking element, logical row/proposal ID, scroll position and actual origin only in memory. Return uses the actual origin, including featured shortcuts and topic-first entry; graph return targets illustrate the default path.
-- Opening/replacing detail moves focus to its labelled heading; closing returns focus to the invoking control. Optional native quote disclosure keeps focus on its summary. If the opener disappeared after an edit/filter/version event, focus the origin heading and explain the change.
+- Opening/replacing detail moves focus to its back control with the reader title as accessible context; closing returns focus to the invoking control. Optional native quote disclosure keeps focus on its summary. If the opener disappeared after an edit/filter/version event, focus an available origin control and explain the change. Question transitions focus the restored selected radio or first answer after controls unlock. Skip navigation reaches an available content control, or the footer on a text-only page. Status updates remain live announcements without taking focus.
 - Resize retains selected programme/topic/proposal and open quote state, with no unsolicited focus move. A keyboard-focused element must remain visible; remove redundant scroll containers when switching to full-view.
 - Top-menu and browser Back/Forward traverse only generic edition sections in the same document and restore retained in-memory views. Reader depth does not add history entries; its on-screen back/close is the explicit detail return. Do not intercept Back to trap a visitor or promise preservation after refresh/document exit.
 - Generic route/history metadata contains no party selection, answers, importance, affinity, progress, finish flag, reading query or private result identifier. No serialize/restore in sessionStorage, localStorage, IndexedDB, cookies or history.state.
@@ -569,7 +569,7 @@ These scenarios require actual application evidence during R005-R008. Planning g
 
 - **UX04 Keep proposals together in a focused comparison** (focused-comparison). Steps: Select two/three common programmes, compare their positions, open one source, remove a programme and attempt a fourth. Expected: Two/three comparison limit is inline; preserve proposal scroll and remaining choices; mobile stacks programmes by proposal. No change to quiz inclusion or scores.
 
-- **UX05 Use reader by keyboard without a modal** (result-exploration). Steps: Tab to a result action, open reader, move between reader and chart, disclose quote, use reader-scoped Escape and reopen. Expected: Heading focused on open, origin operable, no aria-modal/inert/focus trap; return focuses opener. Escape outside reader does not close unrelated UI; all controls remain visible.
+- **UX05 Use reader by keyboard without a modal** (result-exploration). Steps: Tab to a result action, open reader, move between reader and chart, disclose quote, use reader-scoped Escape and reopen. Expected: Back control focused on open with reader-title context, origin operable, no aria-modal/inert/focus trap; return focuses opener. Escape outside reader does not close unrelated UI; all controls remain visible. Static text never receives focus.
 
 - **UX06 Resize with a long citation open** (topic-comparison). Steps: Open long source context, resize desktop to 320px, test 200/400% zoom and low-height desktop, then restore width. Expected: Same programme/topic/proposal/quote stays selected; full-view at content-fit limits, no page horizontal scrolling or obscured focus/back control. No third nested scrollbar.
 

@@ -7611,7 +7611,10 @@
     "programmesFullyAnalysed": 0,
     "releasedRealQuestions": 0,
     "completeCorpusCertified": false,
-    "programmeDocumentsFullyRead": 56
+    "programmeDocumentsFullyRead": 56,
+    "programmeNotebookFiles": 59,
+    "programmeUniqueOriginalsFullyRead": 56,
+    "programmeCountInterpretation": "47 historically acquired PDF programme files; complete readings also include HTML programmes, adopted references, preserved variants and annexes. These are different denominators, not all 59 candidacies with a complete programme."
   },
   "localCachePolicy": "Original files are retained under the gitignored storage/app/election-sources/2023-congress directory. Track this manifest, retrieval outcomes and authored evidence; do not commit cached PDFs, HTML or extraction output.",
   "registry": "outputs/2023-candidacy-registry.json",
@@ -7648,7 +7651,7 @@
       "resolvedUrl": "https://soriaya.org/partido/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/soriaya-publication-4336fd25da01.html",
       "sha256": "4336fd25da01a8ec10044803d15d679d09cb32d095c70e6efa61478e483f7327",
       "textFile": "storage/app/election-sources/2023-congress/soriaya-publication-4336fd25da01.txt",
@@ -7674,7 +7677,11 @@
         "https://soriaya.org/wp-content/uploads/2024/10/2024-09-30-Certificado-retribuciones-cargos-del-partido.pdf",
         "https://soriaya.org/wp-content/uploads/2024/10/G72867757_2023_INFORME-CONTROL-31-1.pdf",
         "https://soriaya.org/wp-content/uploads/2025/07/G72867757_2024_ABR_MEMORIA-30-1.pdf"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Complete normalized native publication read in preceding continuation: all 73 23J measures duplicate the already fully read programme; later 2026 navigation/biographies and unrelated footer excluded. No new unique programme.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "viaburgalesa",
@@ -7683,7 +7690,7 @@
       "resolvedUrl": "https://www.viaburgalesa.es/consulta-los-programas-anteriores/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_fully_read_not_scoring_ready_archive_vintage_pending",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.html",
       "sha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
       "textFile": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.txt",
@@ -7702,6 +7709,9 @@
       "questionBankAudit": "outputs/2023-authored-viaburgalesa-audit.json",
       "applicableBallotRecordIds": [
         "congress-burgos-5"
+      ],
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/viaburgalesa.json"
       ]
     },
     {
@@ -7711,7 +7721,7 @@
       "resolvedUrl": "https://www.partidoautonomos.es/elecciones-generales/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/partidoautonomos-publication-a4a6972fcde3.html",
       "sha256": "a4a6972fcde37377648df51f527c5f581e8d417803f3c38f0786582dd4839497",
       "textFile": "storage/app/election-sources/2023-congress/partidoautonomos-publication-a4a6972fcde3.txt",
@@ -7719,7 +7729,11 @@
       "links": [
         "https://www.partidoautonomos.es/23-julio-el-dia-de-las-elecciones-generales/",
         "https://www.partidoautonomos.es/resultado-de-las-elecciones-generales-23-j/"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire native 23J Alicante campaign/candidate publication read; linked programme, diptych and decalogue have separate complete notebooks. Campaign page does not substitute for programme reading.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "almerienses",
@@ -7728,7 +7742,7 @@
       "resolvedUrl": "https://www.proalmerienses.es/category/programa/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/almerienses-publication-6c099d76e522.html",
       "sha256": "6c099d76e52212792b2e7eed0e70c7cdea991196dfd5cbf3a2957dee61560a75",
       "textFile": "storage/app/election-sources/2023-congress/almerienses-publication-6c099d76e522.txt",
@@ -7744,7 +7758,11 @@
         "https://www.proalmerienses.es/wp-content/uploads/2026/04/Programa_Almerienses_Andaluzas_2026-FINAL-VERSION.pdf",
         "https://www.proalmerienses.es/wp-content/uploads/2026/05/AF-traz-razones-almerienses-2026.pdf",
         "https://www.proalmerienses.es/wp-content/uploads/2026/05/Cartel-Electoral-Juanjo-Cano.pdf"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire mixed programme-category native text read. Later 2026 and municipal documents excluded; 23J programme is separately fully read.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "palenciatierraviva",
@@ -7753,7 +7771,7 @@
       "resolvedUrl": "https://palenciatierraviva.es/generales_23j/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/palenciatierraviva-publication-d6b768f05979.html",
       "sha256": "d6b768f05979eb38b6676e0bdbbb9449a0f86d7ec2982adb59f3d39b0c8584c7",
       "textFile": "storage/app/election-sources/2023-congress/palenciatierraviva-publication-d6b768f05979.txt",
@@ -7769,7 +7787,11 @@
         "https://palenciatierraviva.es/wp-content/uploads/2023/07/furgo1_web.jpg",
         "https://palenciatierraviva.es/wp-content/uploads/2023/07/furgo4_web.jpg",
         "https://palenciatierraviva.es/wp-content/uploads/2023/07/nuestro_mensaje.mp3"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire 23J candidates, programme-link, campaign/news/audio publication read. Later news excluded; linked tríptico is separately fully read.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "adelante",
@@ -7778,7 +7800,7 @@
       "resolvedUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/adelante-publication-ba0f93edcc70.html",
       "sha256": "ba0f93edcc703d373a8320d60bb927c4616e4f72114ac395471fad0490b79e58",
       "textFile": "storage/app/election-sources/2023-congress/adelante-publication-ba0f93edcc70.txt",
@@ -7788,7 +7810,11 @@
         "https://adelanteandalucia.org/wp-content/uploads/2022/06/Plan-industrial-sostenible-Andalucia_AA.pdf",
         "https://adelanteandalucia.org/wp-content/uploads/2023/07/Decalogo-Adelante-Andalucia-Generales.pdf",
         "https://adelanteandalucia.org/wp-content/uploads/2023/07/programa-23J-3ed-comprimido.pdf"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire 23J programme landing native text read. Main programme, decalogue and linked 2022 industry document each have a separate complete notebook.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "cup",
@@ -7797,7 +7823,7 @@
       "resolvedUrl": "https://cup.cat/plantem-cara/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/cup-publication-387e10c2586f.html",
       "sha256": "387e10c2586f0743c3b5c81766f72b257f4689149d288946429f356f421ea8ed",
       "textFile": "storage/app/election-sources/2023-congress/cup-publication-387e10c2586f.txt",
@@ -7813,7 +7839,11 @@
         "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Ecologisme.jpg",
         "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Feminisme.jpg",
         "https://cup.cat/wp-content/uploads/2023/07/POST_Generic_Independencia.jpg"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire Plantem Cara campaign/candidacy publication native text read. Biographies and campaign rhetoric do not create numeric positions; applicable programme separately fully read.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "almerienses-23j",
@@ -7822,7 +7852,7 @@
       "resolvedUrl": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/almerienses-23j-publication-94a0e3c70b5f.html",
       "sha256": "94a0e3c70b5f7cb719b6e38177f26d5bdb49015289d95b50ee1c958b1c71e236",
       "textFile": "storage/app/election-sources/2023-congress/almerienses-23j-publication-94a0e3c70b5f.txt",
@@ -7835,7 +7865,11 @@
         "https://www.proalmerienses.es/wp-content/uploads/2026/04/Programa_Almerienses_Andaluzas_2026-FINAL-VERSION.pdf",
         "https://www.proalmerienses.es/wp-content/uploads/2026/05/AF-traz-razones-almerienses-2026.pdf",
         "https://www.proalmerienses.es/wp-content/uploads/2026/05/Cartel-Electoral-Juanjo-Cano.pdf"
-      ]
+      ],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire July 10 publication with all 33 measures read. Native extraction is identical to separately analysed specific-publication text; no additional unique reading claimed.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "psoe-23j",
@@ -7858,12 +7892,16 @@
       "resolvedUrl": "https://recortesceroes.wordpress.com/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/recortes-23j-publication-7417b23ffbf6.html",
       "sha256": "7417b23ffbf66b403b7967d2351fef36a3c4bc399c0491212023bd8b0490ba7a",
       "textFile": "storage/app/election-sources/2023-congress/recortes-23j-publication-7417b23ffbf6.txt",
       "textSha256": "cb9179c07083636550f62dab375d9e2a3540a26e99c3ab564ada345fecf9c09f",
-      "links": []
+      "links": [],
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire current WordPress landing native text read; no complete 23J programme here. Applicable 48-page archive separately fully read; separately indexed 53-page variant remains unacquired.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "poravila-july-publication",
@@ -7886,11 +7924,15 @@
       "retrievedAt": "2026-10-11T08:41:19.339209+00:00",
       "resolvedUrl": "https://www.nuevacanariasbc.org/programa/",
       "mediaType": "text/html; charset=UTF-8",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-programmes-100a89c4731f.html",
       "sha256": "100a89c4731f9ce00f602f16768b367b670acae218b0259917976cc1b890311c",
       "textFile": "storage/app/election-sources/2023-congress/nuevacanarias-july-programmes-100a89c4731f.txt",
-      "textSha256": "db5a2e2fdd8e5aae2465d8a62d4c3ac613b6e7f3e6154b8b24f5c3ff9aeacb49"
+      "textSha256": "db5a2e2fdd8e5aae2465d8a62d4c3ac613b6e7f3e6154b8b24f5c3ff9aeacb49",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire catalogue native text read: July 23 2023 programme distinguished from regional 2023 and European 2024. Applicable original separately fully read.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "nuevacanarias-july-announcement",
@@ -7898,11 +7940,15 @@
       "retrievedAt": "2026-10-11T08:41:20.801248+00:00",
       "resolvedUrl": "https://www.nuevacanariasbc.org/blog/2023/07/06/luis-campos-advierte-de-que-si-nc-no-esta-en-madrid-volara-el-75-de-bonificacion-aerea-y-maritima/",
       "mediaType": "text/html; charset=UTF-8",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/nuevacanarias-july-announcement-5b876ad4b81c.html",
       "sha256": "5b876ad4b81c892222ff6c84000131261ab258748b24552e28b59dd4160a271e",
       "textFile": "storage/app/election-sources/2023-congress/nuevacanarias-july-announcement-5b876ad4b81c.txt",
-      "textSha256": "2f12625365a5e8dbf9b22963ea238cc8638c4c6130aeca5bf28a1ddde6e65601"
+      "textSha256": "2f12625365a5e8dbf9b22963ea238cc8638c4c6130aeca5bf28a1ddde6e65601",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire July 6 programme-launch publication native text read. Congress/Senate and 100-measure claims are provenance, not a replacement programme or verified outcome.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "geroabai-transparency",
@@ -7910,11 +7956,15 @@
       "retrievedAt": "2026-10-11T08:41:21.998389+00:00",
       "resolvedUrl": "https://geroabai.eus/es/transparencia",
       "mediaType": "text/html; charset=UTF-8",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/geroabai-transparency-31c9fbe14e38.html",
       "sha256": "31c9fbe14e388cff05da2945aaa1ca8ee93f632585cce82b8a53d292462abbf6",
       "textFile": "storage/app/election-sources/2023-congress/geroabai-transparency-31c9fbe14e38.txt",
-      "textSha256": "4efcadb83e9712fd134f0de8d16e2ac94c554a93dbcc2b5be640b82d78531d99"
+      "textSha256": "4efcadb83e9712fd134f0de8d16e2ac94c554a93dbcc2b5be640b82d78531d99",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire transparency catalogue native text read. Regional/municipal 2023, August agreement and 2019/2015 national sources excluded; none substitute for July 2023 Congress.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "frenteobrero-current-programme-excluded",
@@ -7922,11 +7972,15 @@
       "retrievedAt": "2026-10-11T08:41:23.444336+00:00",
       "resolvedUrl": "https://frenteobrero.es/nuestro-programa-2/",
       "mediaType": "text/html; charset=UTF-8",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_full_native_text_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/frenteobrero-current-programme-excluded-a07deacc3039.html",
       "sha256": "a07deacc30398814c79b9504b278699a575baa09dc286c03f7ddb3a8ac23be19",
       "textFile": "storage/app/election-sources/2023-congress/frenteobrero-current-programme-excluded-a07deacc3039.txt",
-      "textSha256": "c953b5059059e84659cfc25dbd6e0a606ffed547ed27f8b8afddcad6d2200cb1"
+      "textSha256": "c953b5059059e84659cfc25dbd6e0a606ffed547ed27f8b8afddcad6d2200cb1",
+      "fullNativePublicationTextRead": true,
+      "programmeReading": false,
+      "authoredAnalysis": "Entire current ten-point political page native text read. Modified October 7 2026; excluded from 2023 evidence. Applicable historical original separately fully read.",
+      "readingReconciledAt": "2026-10-12T09:20:28.272793+00:00"
     },
     {
       "id": "pnv-23j-publication",
@@ -7953,7 +8007,7 @@
       "resolvedUrl": "https://soriaya.org/programa-electoral-de-soria-ya-2023/",
       "retrievedAt": "2026-10-11T08:59:43.818322+00:00",
       "mediaType": "text/html",
-      "status": "downloaded_applicability_pending_not_analysed",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.html",
       "sha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
       "bytes": 168297,
@@ -7977,7 +8031,10 @@
           "notebookSha256": "7a07b340e4442a93f847dcdd36cfac4b6f96e0e9ad9de16013708273f45fee47"
         }
       ],
-      "questionBankAudit": "outputs/2023-authored-soriaya-audit.json"
+      "questionBankAudit": "outputs/2023-authored-soriaya-audit.json",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/soriaya.json"
+      ]
     },
     {
       "id": "soriaya-2023-publication",
@@ -8448,7 +8505,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230727134106id_/https://fuerzacivica.es/programa/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/fuerza-archive-programme-decoded-publication-1beef8a6faea.html",
       "sha256": "1beef8a6faeadfed3f60e011ee917ac620eb207ab1a06d8e38c8f5f03ca617e4",
       "textFile": "storage/app/election-sources/2023-congress/fuerza-archive-programme-decoded-publication-1beef8a6faea.txt",
@@ -8469,7 +8526,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230727134104id_/https://fuerzacivica.es/fuerza-civica-en-las-elecciones-generales-del-23-de-julio/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/fuerza-archive-23j-publication-eb8e5cee2bdf.html",
       "sha256": "eb8e5cee2bdf8d2e2288ccb61be6ba9771fa517d81c67dbd4c711d327e12ff7a",
       "textFile": "storage/app/election-sources/2023-congress/fuerza-archive-23j-publication-eb8e5cee2bdf.txt",
@@ -8554,7 +8611,7 @@
       "resolvedUrl": "https://unidadcastellana.wordpress.com/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/unidad-castellana-primary-publication-6a3c4e570f84.html",
       "sha256": "6a3c4e570f8454d68e5ead203e9b2fd8d32af6c8703260450f6be08c1f11017f",
       "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-primary-publication-6a3c4e570f84.txt",
@@ -8591,7 +8648,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230720014946id_/https://republicavalenciana.org/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/evb-republica-july-archive-publication-346813d238ca.html",
       "sha256": "346813d238caf14720464e4a48081ed9d49f5047d18df40e58f5dba4a9451bc8",
       "textFile": "storage/app/election-sources/2023-congress/evb-republica-july-archive-publication-346813d238ca.txt",
@@ -8607,7 +8664,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230720023707id_/https://3edad.org/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "archived_23j_campaign_homepage_fully_read_specific_bank_audited",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.html",
       "sha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
       "textFile": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.txt",
@@ -8622,7 +8679,10 @@
         "congress-larioja-2",
         "congress-segovia-4"
       ],
-      "electionApplicability": "July 20 2023 primary homepage capture explicitly labels 23 July general elections; national ten-point programme applies to La Rioja and Segovia Congress lists. Provincial leaflet measures remain Segovia-only."
+      "electionApplicability": "July 20 2023 primary homepage capture explicitly labels 23 July general elections; national ten-point programme applies to La Rioja and Segovia Congress lists. Provincial leaflet measures remain Segovia-only.",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/3edad-23j-campaign.json"
+      ]
     },
     {
       "id": "evb-programme-primary",
@@ -8631,7 +8691,7 @@
       "resolvedUrl": "https://republicavalenciana.org/evb-programa",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/evb-programme-primary-publication-90251e9dc8e4.html",
       "sha256": "90251e9dc8e4b358502dd2fbbbb4f36065a3b87b11a0baca81dacbb8dd16cb92",
       "textFile": "storage/app/election-sources/2023-congress/evb-programme-primary-publication-90251e9dc8e4.txt",
@@ -8650,7 +8710,7 @@
       "resolvedUrl": "https://republicavalenciana.org/candidatura/generals-2023",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/evb-candidacy-primary-publication-12c79cb1fd56.html",
       "sha256": "12c79cb1fd56b5bb71f9e3524866f581785ce93f1a9860ca0ab283eeb3902030",
       "textFile": "storage/app/election-sources/2023-congress/evb-candidacy-primary-publication-12c79cb1fd56.txt",
@@ -8670,7 +8730,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230905104130id_/https://3edad.org/programas-electorales/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/3edad-programmes-july-decoded-publication-1719192abe2c.html",
       "sha256": "1719192abe2c484fb46381aae8e4a22c4c568efc727805309150e63df3dc176f",
       "textFile": "storage/app/election-sources/2023-congress/3edad-programmes-july-decoded-publication-1719192abe2c.txt",
@@ -8694,7 +8754,7 @@
       "resolvedUrl": "https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
       "mediaType": "text/html; charset=utf-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/fuerza-published-document-publication-72c855dbaca8.html",
       "sha256": "72c855dbaca8c8f90d5c9da4545ffe83f4bfdc07f252af4d62d40fd2d3b70084",
       "textFile": "storage/app/election-sources/2023-congress/fuerza-published-document-publication-72c855dbaca8.txt",
@@ -8710,7 +8770,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230921115437id_/https://republicavalenciana.org/evb-programa",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/evb-programme-july-archive-publication-2b83921441a1.html",
       "sha256": "2b83921441a1512ebbb73e5b97256a7f97cd1db4904793f7038915589eeb9302",
       "textFile": "storage/app/election-sources/2023-congress/evb-programme-july-archive-publication-2b83921441a1.txt",
@@ -8728,7 +8788,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230816091100id_/https://republicavalenciana.org/candidatura",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.html",
       "sha256": "83b8a1e803132fb9492d6856f25aedfef58511c48d9db36a26dc10e60fe0ec21",
       "textFile": "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.txt",
@@ -8746,7 +8806,10 @@
       ],
       "analysisStatus": "full_document_read_not_scoring_ready",
       "candidacyId": "boe-2023-042",
-      "notebook": "outputs/2023-programme-notebooks/evb-23j-agreement.json"
+      "notebook": "outputs/2023-programme-notebooks/evb-23j-agreement.json",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/evb-23j-agreement.json"
+      ]
     },
     {
       "id": "por-mi-region-july-archive",
@@ -8755,7 +8818,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230708160431id_/https://pormiregion.es/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/por-mi-region-july-archive-decoded-publication-3b5e0d64c8ff.html",
       "sha256": "3b5e0d64c8ff8511e79b1f6967e247502fab0e19c93ed993aa3b5e417a02a3f6",
       "textFile": "storage/app/election-sources/2023-congress/por-mi-region-july-archive-decoded-publication-3b5e0d64c8ff.txt",
@@ -8779,7 +8842,7 @@
       "resolvedUrl": "https://3edad.org/folleto-de-la-candidatura-en-segovia/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/3edad-segovia-brochure-page-publication-7f2d5dca2eab.html",
       "sha256": "7f2d5dca2eabcd12f6f228849b435540f6549eb3854ec06dd5cae1341380e84e",
       "textFile": "storage/app/election-sources/2023-congress/3edad-segovia-brochure-page-publication-7f2d5dca2eab.txt",
@@ -8795,7 +8858,7 @@
       "resolvedUrl": "https://3edad.org/nuevo-folleto-de-3-edad-en-accion/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/3edad-general-brochure-page-publication-8a7a6f7954a6.html",
       "sha256": "8a7a6f7954a6db5862cc828992fc59ee8657b5f6f0a88197ac06432313897784",
       "textFile": "storage/app/election-sources/2023-congress/3edad-general-brochure-page-publication-8a7a6f7954a6.txt",
@@ -8811,7 +8874,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230727134108id_/https://docs.google.com/document/d/e/2PACX-1vTDGNMDTn5hAOeaaVsM8g1FdtXeiKFS4loow8fAJKXE-5ZuJJhK4gE5GkPZvsDknhdSDVnTYHhNjpl2/pub?embedded=true",
       "mediaType": "text/html; charset=utf-8",
       "lastModified": null,
-      "status": "archived_july2023_campaign_linked_unfinished_programme_fully_read_bank_audited",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.html",
       "sha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
       "textFile": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.txt",
@@ -8825,6 +8888,9 @@
       "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
       "applicableBallotRecordIds": [
         "congress-valladolid-7"
+      ],
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/fuerza-23j-archived.json"
       ]
     },
     {
@@ -8834,7 +8900,7 @@
       "resolvedUrl": "https://unidadcastellana.jimdofree.com/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/unidad-castellana-secondary-primary-publication-c323bc9eb718.html",
       "sha256": "c323bc9eb71882ffcce6fd162bc2d5693fdc74dc54e9d397e07742a56a558ee5",
       "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-secondary-primary-publication-c323bc9eb718.txt",
@@ -8853,7 +8919,7 @@
       "resolvedUrl": "https://unidadcastellana.jimdofree.com/programas-electorales/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/unidad-castellana-programme-catalogue-publication-ee2945bab56f.html",
       "sha256": "ee2945bab56fec234b233b96df7eb0def8343c6f9ab10e5ff8d7a74630b76904",
       "textFile": "storage/app/election-sources/2023-congress/unidad-castellana-programme-catalogue-publication-ee2945bab56f.txt",
@@ -8946,7 +9012,7 @@
       "resolvedUrl": "https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/escanos-programme-current-followup-publication-7e4797264766.html",
       "sha256": "7e4797264766526a5f87c36ab53e0fa90d1c67c0e5eb25c7a0d678c9cdce2a41",
       "textFile": "storage/app/election-sources/2023-congress/escanos-programme-current-followup-publication-7e4797264766.txt",
@@ -8964,7 +9030,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230522231730id_/https://escanos.org/conocenos/programa-electoral-de-escanos-en-blanco/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.html",
       "sha256": "6b209fc6297e464ade02a6abad2e5b82eca95c254c531b63bf90e7f97692180a",
       "textFile": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.txt",
@@ -8980,7 +9046,10 @@
       "transportEncoding": "gzip",
       "candidacyId": "boe-2023-026",
       "notebook": "outputs/2023-programme-notebooks/escanos-2023-programme.json",
-      "analysisStatus": "full_document_read_not_scoring_ready"
+      "analysisStatus": "full_document_read_not_scoring_ready",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/escanos-2023-programme.json"
+      ]
     },
     {
       "id": "escanos-home-july-followup",
@@ -8989,7 +9058,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230723144406id_/https://escanos.org/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/escanos-home-july-followup-publication-bc9038a0edeb.html",
       "sha256": "bc9038a0edeb2a934535d9dbc14d28c4da01d460dcfffe4645f22b003c8cdec9",
       "textFile": "storage/app/election-sources/2023-congress/escanos-home-july-followup-publication-bc9038a0edeb.txt",
@@ -9047,7 +9116,7 @@
       "resolvedUrl": "https://commons.wikimedia.org/wiki/File:Navarra-congreso-castellano.pdf",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": "Sun, 27 Sep 2026 12:29:58 GMT",
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/geroa-commons-description-followup-publication-b5418d0df60d.html",
       "sha256": "b5418d0df60ddc3365e8fbc4f3135206ebf356d40fb7d1ba24e8ac3f11a4b6e7",
       "textFile": "storage/app/election-sources/2023-congress/geroa-commons-description-followup-publication-b5418d0df60d.txt",
@@ -9089,7 +9158,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230605000120id_/https://escanos.org/conocenos/manifiesto-de-escanos-en-blanco/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.html",
       "sha256": "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5",
       "textFile": "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.txt",
@@ -9102,7 +9171,10 @@
       "notebook": "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
       "analysisStatus": "full_document_read_not_scoring_ready",
       "resolvedPublisherPdfLead": "https://escanos.org/wp-content/uploads/2022/12/EB_manifiesto_es_v3.pdf",
-      "leadCorrection": "Relative PDF href resolved against original publisher; retained source bytes/initial observed lead unchanged."
+      "leadCorrection": "Relative PDF href resolved against original publisher; retained source bytes/initial observed lead unchanged.",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/escanos-2023-manifesto.json"
+      ]
     },
     {
       "id": "escanos-news-july-followup",
@@ -9111,7 +9183,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230716110709id_/https://escanos.org/noticias/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/escanos-news-july-followup-publication-5023376f64e6.html",
       "sha256": "5023376f64e6a88147d10f70399f3762bb0519f73f9f2fcd5a961d3bfbfabcf4",
       "textFile": "storage/app/election-sources/2023-congress/escanos-news-july-followup-publication-5023376f64e6.txt",
@@ -9430,7 +9502,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230712213036id_/https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/unidossi-23j-programme-archive-publication-e41abd6118d8.html",
       "sha256": "e41abd6118d892793c16ac1aaced216ea2443b8421583725e2d585d1646cc0db",
       "textFile": "storage/app/election-sources/2023-congress/unidossi-23j-programme-archive-publication-e41abd6118d8.txt",
@@ -9456,7 +9528,10 @@
         "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Funidossi.es%252F2023%252F07%252F12%252Fprograma-unidos-si-elecciones-generales-2023%252F"
       ],
       "readingStatus": "fully_read_not_scoring_ready",
-      "readingNotebook": "outputs/2023-programme-notebooks/unidossi-23j-programme.json"
+      "readingNotebook": "outputs/2023-programme-notebooks/unidossi-23j-programme.json",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/unidossi-23j-programme.json"
+      ]
     },
     {
       "id": "ccd-july-news-archive",
@@ -9837,7 +9912,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230712213036id_/https://unidossi.es/2023/07/12/programa-unidos-si-elecciones-generales-2023/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "byte_identical_previously_fully_read_programme_no_new_variant",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/unidossi-programme-july19-archive-publication-e41abd6118d8.html",
       "sha256": "e41abd6118d892793c16ac1aaced216ea2443b8421583725e2d585d1646cc0db",
       "textFile": "storage/app/election-sources/2023-congress/unidossi-programme-july19-archive-publication-e41abd6118d8.txt",
@@ -9862,7 +9937,10 @@
         "https://widgets.wp.com/likes/master.html?ver=20230309#ver=20230309&lang=es&lang_ver=1685691064&origin=https://unidossi.es",
         "https://wordpress.com/log-in?redirect_to=https%3A%2F%2Fr-login.wordpress.com%2Fremote-login.php%3Faction%3Dlink%26back%3Dhttps%253A%252F%252Funidossi.es%252F2023%252F07%252F12%252Fprograma-unidos-si-elecciones-generales-2023%252F"
       ],
-      "analysis": "Requested July19 archive resolves July12 and has exactly the previously read UNIDOS SI programme hash; July14 revised content not acquired."
+      "analysis": "Requested July19 archive resolves July12 and has exactly the previously read UNIDOS SI programme hash; July14 revised content not acquired.",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/unidossi-23j-programme.json"
+      ]
     },
     {
       "id": "psc-23j-memory-publication",
@@ -9942,7 +10020,7 @@
       "resolvedUrl": "https://web.archive.org/web/20230710163506id_/https://juntosxgranada.es/te-voy-a-decir-cuatro-cosas/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "23j_programme_complete_article_read_scoring_pending",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.html",
       "sha256": "b4bd9d4aeea940129e58f1dce4c46a8a6bd987a132be17e54fd1d0d730f67371",
       "textFile": "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.txt",
@@ -9980,6 +10058,9 @@
           "authoredVisualAnalysis": "Directly read complete 600x600 campaign emblem in native Chrome: pomegranate, JxG and 23J election label. No policy clauses or footnotes.",
           "fullVisualRead": true
         }
+      ],
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/jxg-23j-four-things.json"
       ]
     },
     {
@@ -10029,7 +10110,7 @@
       "resolvedUrl": "https://unidadcastellana.jimdofree.com/actualidad/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/unidadcastellana-primary-news-followup-publication-26401f99219f.html",
       "sha256": "26401f99219f930a8ebd243e17d1ebaaa35620ac8d26ebde4c62e5d86f353ef0",
       "textFile": "storage/app/election-sources/2023-congress/unidadcastellana-primary-news-followup-publication-26401f99219f.txt",
@@ -10050,7 +10131,7 @@
       "resolvedUrl": "https://web.archive.org/web/20190401202331id_/https://unidadcastellana.jimdofree.com/actualidad/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_not_semantically_read",
+      "status": "publication_acquired_prior_complete_native_read_scope_recorded",
       "file": "storage/app/election-sources/2023-congress/unidadcastellana-primary-july-archive-followup-publication-6afde3cc7d1c.html",
       "sha256": "6afde3cc7d1c8e8898538b4488cd0bfd8a0424d09a844b37655ba7010201e556",
       "textFile": "storage/app/election-sources/2023-congress/unidadcastellana-primary-july-archive-followup-publication-6afde3cc7d1c.txt",
@@ -10265,7 +10346,7 @@
       "resolvedUrl": "https://www.proalmerienses.es/programa-electoral-de-almerienses-para-el-23-de-julio/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "primary_dated_23j_complete_programme_publication_fully_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.html",
       "sha256": "b29f0f71c180516cc1b78b7ee32bb4669782812016c08e78520a6786578536df",
       "textFile": "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.txt",
@@ -10281,7 +10362,10 @@
       ],
       "candidacyId": "boe-2023-048",
       "fullNativePublicationTextRead": true,
-      "authoredAnalysis": "Complete primary July10 2023 article and all33 reproduced programme measures read in sequence, cross-checked against the previously fully read two-page original. Current2026 navigation/footer and other-election links excluded from political evidence; exact pre-vote HTML bytes not certified."
+      "authoredAnalysis": "Complete primary July10 2023 article and all33 reproduced programme measures read in sequence, cross-checked against the previously fully read two-page original. Current2026 navigation/footer and other-election links excluded from political evidence; exact pre-vote HTML bytes not certified.",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/almerienses-23j-publication.json"
+      ]
     },
     {
       "id": "caminando-primary-programme-followup",
@@ -10343,7 +10427,7 @@
       "resolvedUrl": "https://web.archive.org/web/20231129092857id_/https://caminando-juntos.org/programa/",
       "mediaType": "text/html; charset=UTF-8",
       "lastModified": null,
-      "status": "publication_acquired_complete_native_text_read",
+      "status": "publication_acquired_complete_programme_notebook_retained",
       "file": "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.html",
       "sha256": "5e39e394b51f21a1c0cca7fcb9ff969d6ba49ab007c8050c42556d392802c737",
       "textFile": "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.txt",
@@ -10353,7 +10437,10 @@
       ],
       "fullNativePublicationTextRead": true,
       "programmeReading": true,
-      "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time."
+      "authoredAnalysis": "Entire retained native publication text read. Navigation, newsletters, endorsements, cookies and retrospective news are excluded from scored policy evidence. Requested capture time is distinguished from resolved capture time.",
+      "readingEvidence": [
+        "outputs/2023-programme-notebooks/caminando-2023-primary-programme.json"
+      ]
     },
     {
       "id": "jaen-adopted-model-primary",
@@ -10999,5 +11086,5 @@
     "latestFinalTwoScreenshotsReviewedThroughOverviews": 36,
     "latestFinalTwoOverviewFilesInspected": 18
   },
-  "recordedAt": "2026-10-12T09:08:07.245780+00:00"
+  "recordedAt": "2026-10-12T09:20:28.272793+00:00"
 }

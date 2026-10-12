@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:27:16.967403+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "current_real_bank_authenticated_local_recovery_passed",
+  "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+  "uniqueCompleteOriginalsBackedUp": 56,
+  "sourceComponentsAndNotesBackedUp": 187,
+  "totalPreservedSourceBytes": 346165420,
+  "shards": [
+    {
+      "shard": 1,
+      "sourceBytes": 52428728,
+      "sourceFiles": 8,
+      "encryptedArchiveSha256": "6b75e51fba2c6d56758b1fd2832f2749055cb0a98ff1678dd6c09639e3e9de96",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 2,
+      "sourceBytes": 52428645,
+      "sourceFiles": 7,
+      "encryptedArchiveSha256": "e17218ca747aab6ff96208b133d5d958546b0f0dd80e4c440f73bbc5241ffef0",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 3,
+      "sourceBytes": 52427525,
+      "sourceFiles": 7,
+      "encryptedArchiveSha256": "9e7827782cb4fc4031df3cc7f72f39fcd1bd1f5fee8dade064c7369077379a4e",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 4,
+      "sourceBytes": 52428341,
+      "sourceFiles": 6,
+      "encryptedArchiveSha256": "4c87b722ae619fbc6480768c285c9adfdb65b889ad1a93ebed061341f4e553a2",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 5,
+      "sourceBytes": 52428171,
+      "sourceFiles": 6,
+      "encryptedArchiveSha256": "39aad4dc049bf3863846c934413198b67e59154c45c96000801a192a9ed747ae",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 6,
+      "sourceBytes": 52428099,
+      "sourceFiles": 9,
+      "encryptedArchiveSha256": "e1814a0cab5f520e78f8b722b7152a683120181144d2d81e34b681bae1af6475",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    },
+    {
+      "shard": 7,
+      "sourceBytes": 31595911,
+      "sourceFiles": 144,
+      "encryptedArchiveSha256": "7378a4c44d704e6e1161f322a221d4e9a027fd2d0b90dfaa93320f6c7b9e2d77",
+      "restoredManifestEqual": true,
+      "restoredEvidenceHash": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+    }
+  ],
+  "completeRestoredOriginalAndExtractionHashesVerified": true,
+  "originals": {
+    "92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b": {
+      "documentId": "adelante-decalogue-verified-large-original",
+      "originalComponents": [
+        ".tools/local-final-recovery-v3/source-chunks/92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b-part-1.bin",
+        ".tools/local-final-recovery-v3/source-chunks/92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b-part-2.bin",
+        ".tools/local-final-recovery-v3/source-chunks/92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b-part-3.bin",
+        ".tools/local-final-recovery-v3/source-chunks/92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b-part-4.bin",
+        ".tools/local-final-recovery-v3/source-chunks/92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b-part-5.bin"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/adelante-decalogue-92e43831a0a9.txt",
+      "extractionSha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62"
+    },
+    "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2": {
+      "documentId": "psoe-preserved-objective",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/psoe-preserved-objective.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/psoe-preserved-objective.txt",
+      "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de"
+    },
+    "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119": {
+      "documentId": "junts-preserved-abc",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/junts-preserved-abc.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/junts-preserved-abc.txt",
+      "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934"
+    },
+    "455e0629d90ef63ab59c43c35d67cdd739165958587e3242eb5b6e4914afe991": {
+      "documentId": "erc-july",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/erc-july.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/erc-july.txt",
+      "extractionSha256": "d7d23847d698684a5bb5fc991b2a9f50c4b2b03e4baf288930980a74cdbe1a74"
+    },
+    "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711": {
+      "documentId": "pcte",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pcte.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pcte.txt",
+      "extractionSha256": "fa1ce59f1a89bcd231e79ba69f2cd9cbefb1d3f5fd0b689a55b296af6da18f4a"
+    },
+    "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf": {
+      "documentId": "compromis-sumar",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/compromis-sumar.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/compromis-sumar-visible-policy.txt",
+      "extractionSha256": "8847058056745f9ec1252e6f61618e7e8e420d6778f742e896621ce581f66156"
+    },
+    "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d": {
+      "documentId": "pacma",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pacma.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pacma.txt",
+      "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c"
+    },
+    "787d50b11e61a033867429ed913bf622892bccfe91425cfeff029c6afd7c7742": {
+      "documentId": "aragon-existe-23j",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/aragon-existe-23j.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/aragon-existe-23j.txt",
+      "extractionSha256": "483be20dceedb56e04dd55109bce93fa842cb76690b8ce4aae91f34bfa3ea176"
+    },
+    "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31": {
+      "documentId": "vox-campaign-30mb",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/vox-campaign-30mb.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/vox-campaign-30mb.txt",
+      "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1"
+    },
+    "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712": {
+      "documentId": "frente-political-documents-2023",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/frente-political-documents-2023.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/frente-political-documents-2023.txt",
+      "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003"
+    },
+    "a701772abfd3776228cc5989453bc0719a90142f2c3d2b239e768b2a12699233": {
+      "documentId": "almerienses",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/almerienses.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/almerienses.txt",
+      "extractionSha256": "e2d8f0723a71e708300844646e5d6dcf3a0217f079fbc4f385bdd1f80ac9471b"
+    },
+    "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb": {
+      "documentId": "jaen-adopted-model-primary-http",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-http.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/jaen-adopted-model-primary-http.txt",
+      "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817"
+    },
+    "d5ccdac0d20f1b93a5f703f180d086041bd988835072dd5cb5d1378bf0195820": {
+      "documentId": "sumar",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/sumar.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/sumar.txt",
+      "extractionSha256": "140b13f8b05825120102a43f7b5e3f2521417f7df6cde02ca9fd7e602c0c9d21"
+    },
+    "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd": {
+      "documentId": "bng",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/bng.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/bng.txt",
+      "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0"
+    },
+    "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da": {
+      "documentId": "jaenmerecemas-july",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/jaenmerecemas-july.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/jaenmerecemas-july.txt",
+      "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b"
+    },
+    "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3": {
+      "documentId": "bng-decalogue",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/bng-decalogue.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/bng-decalogue.txt",
+      "extractionSha256": "ab91a61c1d9705d98fe46ee5d1b910217d10510067b7ba5417146d28b6bffb95"
+    },
+    "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26": {
+      "documentId": "palenciatierraviva",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/palenciatierraviva.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/palenciatierraviva-policy-visual-transcription.txt",
+      "extractionSha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6"
+    },
+    "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f": {
+      "documentId": "fuerza-published-document-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/fuerza-published-document-archive-decoded-publication-c2631246b5f9.txt",
+      "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c"
+    },
+    "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6": {
+      "documentId": "upn",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/upn.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/upn.txt",
+      "extractionSha256": "6c3524d25f07bfae05f23a795c68c71fb8c38e0a4737040973e4b4818280f867"
+    },
+    "1443b068f97f23b455cbf16dd192e21b0656d8b23e4755fb6572d98fc6930d14": {
+      "documentId": "teruel-existe",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/teruel-existe.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/teruel-existe.txt",
+      "extractionSha256": "d3a99ceffaf2031f58a24143e9c9ef6b480abce22875f28c08020fdd79da01d6"
+    },
+    "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305": {
+      "documentId": "poravila-primary-july",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/poravila-primary-july.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/poravila-primary-july.txt",
+      "extractionSha256": "902ab07cbcdf6bc3a9e5156f0777fdf48fdb239fbe583051f776e8f71f850e07"
+    },
+    "807fe363958c1ec1cc8a03fa145d9b354ab393143991550463d9456e58ac8de7": {
+      "documentId": "jaen-model-annex-m2-primary",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/jaen-model-annex-m2-primary.txt",
+      "extractionSha256": "c3d51ca930260732a8befd1916604b66cb5e3db5d0d22be053537eeca373121c"
+    },
+    "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7": {
+      "documentId": "psoe-campaign-programme-copy",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/psoe-campaign-programme-copy.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/psoe-campaign-programme-copy.txt",
+      "extractionSha256": "23105e438b89a1a1b0f6a28e1d0ce6a3ba3232f4ccdd1a941afeeed2edb00f18"
+    },
+    "c2ab91d3e7d35a5cd9f94d75d0990e657d0699c30720a5929b62f366eb187aa5": {
+      "documentId": "autonomos-23j",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/autonomos-23j.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/autonomos-23j.txt",
+      "extractionSha256": "9cef897196a7fd608174ea455e319176077a06e881f0772b3533a95352efc510"
+    },
+    "6e9feef4de1c57e17cd0be8047b06691eb1ab5a1b05b0fd7dac0ab0e852df19c": {
+      "documentId": "ev-leon-23j",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/ev-leon-23j.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/ev-leon-23j.txt",
+      "extractionSha256": "2b35df19849f178b497dd6758caddfa8dcedca7faf57a6c0840ba9461689afbb"
+    },
+    "eeb4b4d21551840355d169c46a515cbc4f93a4b37acccb4b6c317a732c437103": {
+      "documentId": "caminando-preserved-i28",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/caminando-preserved-i28.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/caminando-preserved-i28.txt",
+      "extractionSha256": "708dce749b4b9216c1f5354704aa81b24d1e74ea950779106e54799d5425f39c"
+    },
+    "e41abd6118d892793c16ac1aaced216ea2443b8421583725e2d585d1646cc0db": {
+      "documentId": "unidossi-23j-programme-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/unidossi-23j-programme-archive-publication-e41abd6118d8.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/unidossi-23j-programme-archive-publication-e41abd6118d8.txt",
+      "extractionSha256": "394645266a69fa24882e6bb9c74678704b3ae1dadc9e8a168eeb87674910662b"
+    },
+    "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3": {
+      "documentId": "pdecat-primary-cdn",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pdecat-primary-cdn.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pdecat-primary-cdn.txt",
+      "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2"
+    },
+    "b29f0f71c180516cc1b78b7ee32bb4669782812016c08e78520a6786578536df": {
+      "documentId": "almerienses-23j-specific-publication",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/almerienses-23j-specific-publication-publication-b29f0f71c180.txt",
+      "extractionSha256": "f07a744315028d3be8fa6e8aa17de4af06a2f1872e084a29b8ba6eaf6d43af13"
+    },
+    "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33": {
+      "documentId": "cc-manifesto",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/cc-manifesto.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/cc-manifesto.txt",
+      "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5"
+    },
+    "ef7d54cc63217d1c4727858b2868b46c3baf21a954c2c71a0ab80ac14caf50bc": {
+      "documentId": "autonomos-23j-decalogue",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/autonomos-23j-decalogue.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/autonomos-23j-decalogue.txt",
+      "extractionSha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977"
+    },
+    "cadc3b68e128640dd263d499cace2c8266d7971984cb26f4aa7ba8f42c621a16": {
+      "documentId": "cup-primary",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/cup-preserved-lasexta.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/cup-preserved-lasexta.txt",
+      "extractionSha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4"
+    },
+    "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b": {
+      "documentId": "junts-beteve-programme",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/junts-beteve-programme-7f73e138b602.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/junts-beteve-programme-7f73e138b602.txt",
+      "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0"
+    },
+    "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e": {
+      "documentId": "nuevacanarias-july",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-1.bin",
+        "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-2.bin",
+        "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-3.bin",
+        "storage/app/election-sources/2023-congress/nuevacanarias-july-original-part-4.bin"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/nuevacanarias-july.txt",
+      "extractionSha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f"
+    },
+    "d191a570aecad31947aa33c58772e3913ad394d6d0ccdc1b70335daf5533d02a": {
+      "documentId": "escanos-manifesto-annex",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/escanos-manifesto-annex-d191a570aeca.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/escanos-manifesto-annex-d191a570aeca.txt",
+      "extractionSha256": "a95026e765ba7f5497c54196e965b4ceffaed532d10a14b9b734c9e02c3576a5"
+    },
+    "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a": {
+      "documentId": "3edad-july-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/3edad-july-archive-publication-c0031df1bd88.txt",
+      "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4"
+    },
+    "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea": {
+      "documentId": "psoe-childhood-obesity-2022-2030",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/childhood-obesity-2022-2030.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/childhood-obesity-2022-2030.txt",
+      "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80"
+    },
+    "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401": {
+      "documentId": "falange-primary",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/falange-primary.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/falange-primary.txt",
+      "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881"
+    },
+    "43a7565a95dd6d1c33922c5bf2b0ddc9a14444786123f5ae771abce11358888e": {
+      "documentId": "autonomos-23j-diptych",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/autonomos-23j-diptych.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/autonomos-23j-diptych.txt",
+      "extractionSha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb"
+    },
+    "b4bd9d4aeea940129e58f1dce4c46a8a6bd987a132be17e54fd1d0d730f67371": {
+      "documentId": "jxg-23j-four-things-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/jxg-23j-four-things-archive-publication-b4bd9d4aeea9.txt",
+      "extractionSha256": "ffea37c759e7d0d31fba3952d7b628d51e62818b828b6ecf5d32bba7347890fc"
+    },
+    "6b209fc6297e464ade02a6abad2e5b82eca95c254c531b63bf90e7f97692180a": {
+      "documentId": "escanos-programme-july-followup",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/escanos-programme-july-followup-decoded-publication-6b209fc6297e.txt",
+      "extractionSha256": "b14155751cb53fde6e450e89ff800faf6cb27a2c65a1bead625d32311a464d7f"
+    },
+    "dc9389610068a71d760d2efd2b47fa0926cca6ee9ede02fec14d1d678a0d2313": {
+      "documentId": "upl-leon-july",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/upl-leon-july.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/upl-leon-july.txt",
+      "extractionSha256": "d9112976af63932520cca26ee821a114d2c5d0bd62b12f64bcb1e339ba99a9cc"
+    },
+    "f47c2e2f7e38f0b90908342af5d841fbdf6ebb4b2e0306cdf3fb3c46d4f6429d": {
+      "documentId": "pp-institutional-quality-2023",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pp-institutional-quality-2023.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pp-institutional-quality-2023.txt",
+      "extractionSha256": "5c2368f3e50c3aa7a7c59991f1f8c53dc3a8535d6ed7803133c6096822e39bc6"
+    },
+    "7e2d167a67cfe9756168495507b2b1df11ea3a0e5d81298ac4d4e28c82b3d9f3": {
+      "documentId": "adelante-industrial-linked-plan",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/adelante-industrial-linked-plan-7e2d167a67cf.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/adelante-industrial-linked-plan-7e2d167a67cf.txt",
+      "extractionSha256": "544bcef27cbe9b6f93ff796a2407208a2bde9eefbb3ec593f2feeaeddf32b4a9"
+    },
+    "0492c7ae1cb30662799f2975160699f960d15f375e7f8d74f0feb850987293bb": {
+      "documentId": "recortes-23j-archived",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/recortes-23j-archived.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/recortes-23j-archived.txt",
+      "extractionSha256": "f2a6009305090562c4cde8319d87e627f96a6cb2f90877c985f1556d0c8ce798"
+    },
+    "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79": {
+      "documentId": "soriaya-2023-programme-html",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/soriaya-2023-programme-html.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/soriaya-2023-programme-paragraphs.txt",
+      "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2"
+    },
+    "7d55070f9910d5ff4b63eaf313d2cfd79bbc7e8b4cd648b39b37027ddf45f17d": {
+      "documentId": "bng-easy-read",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/bng-easy-read.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/bng-easy-read.txt",
+      "extractionSha256": "06b4e7cab1d4082994447b73631beac7be21bec9d5546f49ad5eeca6c2fc31c2"
+    },
+    "83b8a1e803132fb9492d6856f25aedfef58511c48d9db36a26dc10e60fe0ec21": {
+      "documentId": "evb-info-july-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/evb-info-july-archive-publication-83b8a1e80313.txt",
+      "extractionSha256": "f1dbb799477219a29091a103e2e3074780b6f609545c13ae64fad9beeeadaf49"
+    },
+    "5e39e394b51f21a1c0cca7fcb9ff969d6ba49ab007c8050c42556d392802c737": {
+      "documentId": "caminando-july-programme-archive",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/caminando-july-programme-archive-publication-5e39e394b51f.txt",
+      "extractionSha256": "2d1d9974d3275da6d471b03b053bfc363b05ff3d3ac42609095dd69c51827072"
+    },
+    "3ecd58b5c3ee42cdbaf005025bbe3c2c73bd58b7267212a82be126e1553fe34e": {
+      "documentId": "pumj",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pumj.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pumj.txt",
+      "extractionSha256": "2624abd20b905e9883cd59ba93a742592ee481f5c5dabbdae73456076baf3bdb"
+    },
+    "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5": {
+      "documentId": "escanos-manifesto-july-followup",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/escanos-manifesto-july-followup-publication-676ebdb8b6cb.txt",
+      "extractionSha256": "e34d04bb7a7364d311153e0967f13ed9a69400bb4db2fe52c74c5db415185c04"
+    },
+    "73557c309e0cb04172a2cb7f815d7cc4d71aed99454e559753c7e7be13ceaf78": {
+      "documentId": "adelante",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/adelante.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/adelante.txt",
+      "extractionSha256": "038aba726b16910342995781e75e490b80cb31bf78f5c767dc546ecb3c5d420c"
+    },
+    "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465": {
+      "documentId": "ehbildu-preserved-newtral",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/ehbildu-preserved-newtral.txt",
+      "extractionSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc"
+    },
+    "46fec3a017cdc5c4e506fa5e228b97690071d5a03dfd3d8128392aa20f57d132": {
+      "documentId": "pnv",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pnv.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pnv.txt",
+      "extractionSha256": "9f2b300764933ee8d83391a925cbc849d75549324834a61a305e4e4b48c75950"
+    },
+    "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7": {
+      "documentId": "viaburgalesa-national-2023-html",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.html"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/viaburgalesa-publication-260bfdc84d50.txt",
+      "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39"
+    },
+    "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108": {
+      "documentId": "pp",
+      "originalComponents": [
+        "storage/app/election-sources/2023-congress/pp.pdf"
+      ],
+      "extraction": "storage/app/election-sources/2023-congress/pp.txt",
+      "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9"
+    }
+  },
+  "sourceChunkReassemblyVerified": true,
+  "rollbackToPriorImmutableBankPassed": true,
+  "withdrawalPassed": true,
+  "withdrawnReactivationRejected": true,
+  "immutableBytesPreserved": true,
+  "productionDraftRejected": true,
+  "publicPointerSha256Before": "03e1b1d449e9bce03d895e4300ee05b5821822587e4b4338ea605c7a93cf5bbb",
+  "publicPointerSha256After": "03e1b1d449e9bce03d895e4300ee05b5821822587e4b4338ea605c7a93cf5bbb",
+  "publicPointerChanged": false,
+  "collectionEnabled": false,
+  "publicLaunchApproved": false,
+  "limitations": [
+    "Authenticated backup and fresh restore cover all 56 retained complete original hashes, corresponding native extractions, all 59 notebooks and authored registry/matrix/calibration records. Large sources preserve verified ordered chunks rather than weakening the 64 MiB per-archive bound.",
+    "Private encrypted archives and key remain local, ignored and permission restricted. This is not an off-device disaster backup or production-host restore.",
+    "Catalogue/news/excluded/unavailable sources beyond the complete notebook corpus are preserved in the original cache but not included in this bounded recovery set.",
+    "Correction rehearsal changes only a local limitation note and never authors/inherits new positions; live local-runtime and repository public pointers remain unchanged."
+  ]
+}

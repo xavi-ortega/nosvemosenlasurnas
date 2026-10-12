@@ -4,7 +4,7 @@
   "title": "Nos Vemos en las Urnas: a useful private quiz for the 2023 Congress election",
   "subtitle": "Real programmes, directly authored questions, verified meaning and a modern readable quiz",
   "summary": "Build a quiz for ordinary Spanish users based explicitly on the 23 July 2023 Congress election. Acquire the complete official candidacy corpus, read available programmes in full one by one, cross-reference policies and directly author a larger balanced question bank. Correct and prove the full answer/citation/scoring path, then replace the basic UI with an accessible smooth quiz. Defer programme-comparison screens, metrics expansion and optional languages. This is a new acceptance baseline, not a claim that the existing synthetic implementation satisfies the request.",
-  "status": "implementation_in_progress",
+  "status": "local_implementation_complete_public_launch_pending",
   "createdAt": "2026-10-09T12:36:11.963155+00:00",
   "scopeRevision": "outputs/quiz-2023-scope-revision.json",
   "baseline": [
@@ -668,7 +668,7 @@
           "sequence": 4,
           "phaseId": "QP1",
           "subject": "data: acquire and hash every available 2023 programme",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q003"
           ],
@@ -792,7 +792,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -851,14 +858,15 @@
             "outputs/2023-palenciatierraviva-source-provenance.json",
             "outputs/2023-nuevacanarias-preparation.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q005",
           "sequence": 5,
           "phaseId": "QP1",
           "subject": "data: close missing-source and extraction gaps explicitly",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q004"
           ],
@@ -989,7 +997,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1038,14 +1053,15 @@
             "outputs/2023-palenciatierraviva-source-provenance.json",
             "outputs/2023-nuevacanarias-preparation.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q006",
           "sequence": 6,
           "phaseId": "QP2",
           "subject": "data: read each available programme in full and author notes",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q005"
           ],
@@ -1155,7 +1171,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1199,14 +1222,15 @@
             "outputs/2023-authored-cc-verification.json",
             "outputs/2023-authored-cc-values-browser-verification.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q007",
           "sequence": 7,
           "phaseId": "QP2",
           "subject": "data: cross-reference proposals into an authored issue matrix",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q006"
           ],
@@ -1346,7 +1370,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1422,14 +1453,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q008",
           "sequence": 8,
           "phaseId": "QP2",
           "subject": "data: author a larger bank of everyday Spanish questions",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q007"
           ],
@@ -1507,7 +1539,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1536,14 +1575,15 @@
             "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
             "outputs/2023-authored-cup-values-browser-verification.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q009",
           "sequence": 9,
           "phaseId": "QP2",
           "subject": "data: write question rubrics and cited party positions",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q008"
           ],
@@ -1682,7 +1722,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1751,14 +1798,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q010",
           "sequence": 10,
           "phaseId": "QP2",
           "subject": "test: audit every question for meaning and everyday usefulness",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q009"
           ],
@@ -1899,7 +1947,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -1975,14 +2030,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q011",
           "sequence": 11,
           "phaseId": "QP2",
           "subject": "feat: compile authored real-source bundles without question generation",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q010"
           ],
@@ -2122,7 +2178,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -2182,14 +2245,15 @@
             "outputs/2023-palenciatierraviva-source-provenance.json",
             "outputs/2023-nuevacanarias-preparation.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q012",
           "sequence": 12,
           "phaseId": "QP3",
           "subject": "test: calibrate the full five-answer scoring surface",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q002",
             "Q011"
@@ -2329,7 +2393,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -2405,14 +2476,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q013",
           "sequence": 13,
           "phaseId": "QP3",
           "subject": "fix: compare eligible parties on the same evidence and weights",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q012"
           ],
@@ -2553,7 +2625,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -2617,14 +2696,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q014",
           "sequence": 14,
           "phaseId": "QP3",
           "subject": "feat: select balanced authored questions and useful follow-ups",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q013"
           ],
@@ -2764,7 +2844,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -2827,14 +2914,15 @@
             "outputs/2023-authored-cc-verification.json",
             "outputs/2023-authored-cc-values-browser-verification.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q015",
           "sequence": 15,
           "phaseId": "QP3",
           "subject": "fix: explain agreements differences and aggregate results correctly",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q013"
           ],
@@ -2975,7 +3063,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -3020,14 +3115,15 @@
             "outputs/2023-authored-cc-verification.json",
             "outputs/2023-authored-cc-values-browser-verification.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q016",
           "sequence": 16,
           "phaseId": "QP3",
           "subject": "test: validate citations editions and correction behavior",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q011",
             "Q015"
@@ -3169,7 +3265,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -3233,14 +3336,15 @@
             "outputs/2023-palenciatierraviva-source-provenance.json",
             "outputs/2023-nuevacanarias-preparation.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q017",
           "sequence": 17,
           "phaseId": "QP4",
           "subject": "design: specify and review the quiz visual system",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q001"
           ],
@@ -3281,21 +3385,30 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
             "outputs/quiz-2023-visual-system.json",
             "outputs/quiz-2023-design-prototype.html",
             "outputs/quiz-2023-design-review.json"
           ],
-          "progressNote": "Eleven concrete local fixture states reviewed with browser/axe/reflow/keyboard checks. Real authored copy and app integration remain pending; no real-data design completion claimed."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q018",
           "sequence": 18,
           "phaseId": "QP4",
           "subject": "feat: make the test the primary entry point",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q017"
           ],
@@ -3337,21 +3450,30 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
             "outputs/quiz-2023-app-verification.json",
             "tests/Browser/public-journeys.spec.ts",
             "tests/Tooling/matching.test.ts"
           ],
-          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q019",
           "sequence": 19,
           "phaseId": "QP4",
           "subject": "feat: build the accessible single-question experience",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q014",
             "Q018"
@@ -3394,21 +3516,30 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
             "outputs/quiz-2023-app-verification.json",
             "tests/Browser/public-journeys.spec.ts",
             "tests/Tooling/matching.test.ts"
           ],
-          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q020",
           "sequence": 20,
           "phaseId": "QP4",
           "subject": "feat: add smooth transitions without losing private state",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q019"
           ],
@@ -3448,21 +3579,30 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
             "outputs/quiz-2023-app-verification.json",
             "tests/Browser/public-journeys.spec.ts",
             "tests/Tooling/matching.test.ts"
           ],
-          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q021",
           "sequence": 21,
           "phaseId": "QP4",
           "subject": "feat: make deeper quiz checkpoints clear and optional",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q020"
           ],
@@ -3503,7 +3643,15 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
             "outputs/quiz-2023-app-verification.json",
@@ -3525,14 +3673,15 @@
             "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
             "outputs/2023-authored-caminando-values-browser-verification.json"
           ],
-          "progressNote": "Independent local engineering implemented and checked with explicit synthetic fixtures. Real authored bank, all52 application options and source-grounded acceptance remain pending. Reproduced continuation after exhausted or30-question checkpoint; four desktop/mobile regressions fail before repair and pass after. Review/back/reset and explicit finish retained. Actual priority path safely ends at15 without automatic reveal. Specific complete-document audit covers all80 propositions for Almerienses, EVB and Escaños:240 cells,12 cited uncertainties, no new scores. Six actual desktop/mobile30question journeys show original citations and unscored candidates with empty storage and fixed GET-only traffic. Source-family completeness and real release acceptance remain open. Actual507cd108draft contains155mappings and775independent five-answer cases. NewCJsurrogacy regulation is interpreted as opposition to retaining the domestic ban; no commercial/altruistic model inferred. Ten actual desktop/mobile five-answer20question paths and four entirely-unscoredUPL/PorÁvila30question paths passed cited explanations, export, all eligible rows and fixedGET-only/empty-storage privacy. All52cohorts/sevenprofiles retain the fixed qualified set. No release or production-host certification."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q022",
           "sequence": 22,
           "phaseId": "QP4",
           "subject": "feat: present understandable cited results",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q015",
             "Q016",
@@ -3679,10 +3828,17 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals.",
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
           "progressEvidence": [
             "outputs/2023-authored-local-runtime-verification.json",
             "resources/js/app.ts",
@@ -3699,14 +3855,15 @@
             "outputs/2023-authored-three-small-verification.json",
             "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
             "outputs/2023-authored-caminando-values-browser-verification.json"
-          ]
+          ],
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q023",
           "sequence": 23,
           "phaseId": "QP4",
           "subject": "feat: complete Spanish help errors privacy and local export",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q022"
           ],
@@ -3851,10 +4008,17 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals.",
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
           "progressEvidence": [
             "outputs/2023-authored-local-walkthrough-verification.json",
             "lang/es/public.php",
@@ -3870,14 +4034,15 @@
             "outputs/2023-authored-three-small-verification.json",
             "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
             "outputs/2023-authored-caminando-values-browser-verification.json"
-          ]
+          ],
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q024",
           "sequence": 24,
           "phaseId": "QP4",
           "subject": "test: verify actual mobile keyboard motion and readability",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q023"
           ],
@@ -4020,23 +4185,31 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals.",
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
           "progressEvidence": [
             "outputs/2023-authored-local-walkthrough-verification.json",
             "outputs/2023-authored-erc-runtime-verification.json",
             "outputs/2023-authored-erc-verification.json",
             "outputs/2023-authored-cup-values-browser-verification.json"
-          ]
+          ],
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q025",
           "sequence": 25,
           "phaseId": "QP5",
           "subject": "test: verify the real-data quiz privacy boundary",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q024"
           ],
@@ -4178,10 +4351,17 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals.",
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
           "progressEvidence": [
             "outputs/2023-authored-local-runtime-verification.json",
             "outputs/2023-authored-local-walkthrough-verification.json",
@@ -4203,14 +4383,15 @@
             "outputs/2023-authored-three-small-verification.json",
             "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
             "outputs/2023-authored-caminando-values-browser-verification.json"
-          ]
+          ],
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q026",
           "sequence": 26,
           "phaseId": "QP5",
           "subject": "test: verify the complete 2023 corpus and release candidate",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "Q016",
             "Q025"
@@ -4253,15 +4434,25 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "localDeliverablesComplete": true,
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification."
         },
         {
           "id": "Q027",
           "sequence": 27,
           "phaseId": "QP5",
           "subject": "chore: prove 2023 bundle recovery and rollback",
-          "status": "in_progress",
+          "status": "completed",
           "dependsOn": [
             "Q026"
           ],
@@ -4402,7 +4593,14 @@
             "outputs/2023-authored-final-two-audit.json",
             "outputs/2023-authored-final-two-verification.json",
             "outputs/2023-authored-final-two-browser-verification.json",
-            "outputs/2023-final-corpus-reconciliation.json"
+            "outputs/2023-final-corpus-reconciliation.json",
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
           ],
           "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
           "progressEvidence": [
@@ -4439,14 +4637,15 @@
             "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
             "outputs/2023-palenciatierraviva-source-provenance.json"
           ],
-          "progressNote": "Latest unpublished draft e5f20cc2: 80 questions, ten topics, 5,230 explicit cells, 332 numeric records and 1,660 independent cases; zero not-yet-authored default cells. Recortes retains three values; Adelante retains six and adds four conditioned positions. Fuerza fur-farm suppression is corrected to ambiguous/unscored consistently with Junts. Twenty-one missing-programme candidacies retain 1,680 explicit unknown cells and dated searches. All 53 scopes with seven profiles checked; 80 desktop/mobile sessions verify 80 numeric and 20 unscored cited paths. Thirty-six screenshots inspected through 18 bounded overviews. Remaining local work: corpus-family reconciliation, entire-bank wording/semantic acceptance, principal-state UI/privacy walkthrough, final manifest/recovery/packet and future-edition rehearsal. Host/domain deferred by owner choice; no publication or collection. Historical 56-notebook labels need reconciliation: 59 notebook files correspond to 56 unique original hashes; duplicate readings are not new originals."
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification.",
+          "localDeliverablesComplete": true
         },
         {
           "id": "Q028",
           "sequence": 28,
           "phaseId": "QP5",
           "subject": "docs: prepare the concrete 2023 public release packet",
-          "status": "planned",
+          "status": "in_progress",
           "dependsOn": [
             "Q027"
           ],
@@ -4482,15 +4681,21 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "completionEvidence": [
+            "outputs/2023-local-review-packet.json",
+            "outputs/2023-local-release-verification.json"
+          ],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "localDeliverablesComplete": true,
+          "externalWorkDeferredByOwner": true,
+          "progressNote": "Concrete current local review packet complete. Provider/domain/cost, actual hosted privacy/log/source-permission checks and PUBLIC-LAUNCH intentionally deferred by owner choice; no launch approval requested."
         },
         {
           "id": "Q029",
           "sequence": 29,
           "phaseId": "QP6",
           "subject": "docs: record deferred comparison feedback and translation scope",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "Q026"
           ],
@@ -4523,15 +4728,25 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "localDeliverablesComplete": true,
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification."
         },
         {
           "id": "Q030",
           "sequence": 30,
           "phaseId": "QP6",
           "subject": "feat: prepare separate future-programme edition updates",
-          "status": "planned",
+          "status": "completed",
           "dependsOn": [
             "Q027"
           ],
@@ -4571,8 +4786,18 @@
           "reuseCandidates": [
             "Existing lean implementation and required checks where they actually satisfy this increment"
           ],
-          "completionEvidence": [],
-          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history."
+          "completionEvidence": [
+            "outputs/2023-local-source-family-acceptance.json",
+            "outputs/2023-local-question-bank-acceptance.json",
+            "outputs/2023-local-final-browser-acceptance.json",
+            "outputs/2023-local-final-recovery-acceptance.json",
+            "outputs/2023-future-edition-boundary-verification.json",
+            "outputs/2023-deferred-capabilities.json",
+            "outputs/2023-local-release-verification.json"
+          ],
+          "rollback": "Revert this bounded increment or restore the previous immutable release; preserve sources, authored notes, user work and signed history.",
+          "localDeliverablesComplete": true,
+          "progressNote": "Locally accepted current 2023 real bank: 80 useful questions, ten topics, 5,230 explicit cells, 332 numeric records, 1,660 independent cases, current desktop/mobile/keyboard/privacy walkthrough, source-family reconciliation and authenticated restore. Missing programmes/variants/annexes remain explicit unscored gaps; no universal acquisition, semantic infallibility or public/production certification."
         }
       ]
     },
@@ -4647,17 +4872,17 @@
     {
       "label": "SUMAR original 2023 programme",
       "url": "https://movimientosumar.es/wp-content/uploads/2023/07/Un-Programa-para-ti.pdf",
-      "note": "Downloaded and hashed; complete reading not yet performed."
+      "note": "Retained full reading and source-specific bank audit recorded in the final local source-family and question-bank acceptance; public/source-rights/host launch remains separate."
     },
     {
       "label": "PP original 2023 programme",
       "url": "https://www.pp.es/wp-content/uploads/2023/07/programa_electoral_pp_23j_feijoo_2023.pdf",
-      "note": "Downloaded, hashed and112pages fully read with54supplied literal excerpts; cross-reference and scoring remain pending."
+      "note": "Retained full reading and source-specific bank audit recorded in the final local source-family and question-bank acceptance; public/source-rights/host launch remains separate."
     },
     {
       "label": "PACMA original 2023 programme",
       "url": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
-      "note": "Downloaded, hashed and76pages fully read with47supplied literal excerpts; cross-reference and scoring remain pending."
+      "note": "Retained full reading and source-specific bank audit recorded in the final local source-family and question-bank acceptance; public/source-rights/host launch remains separate."
     }
   ],
   "restart": {
@@ -4668,7 +4893,7 @@
     "authority": "Explicit user request of 2026-10-09",
     "remoteRewritingAuthorized": false
   },
-  "revisedAt": "2026-10-11T23:04:33.693243+00:00",
+  "revisedAt": "2026-10-12T09:31:07.408679+00:00",
   "previousIteration": {
     "planVersion": "lean-v1.1.0",
     "baselineRevision": "5003e2ebfe884745caae8150d7c6c689329a67ea",
@@ -5025,7 +5250,7 @@
       "Hypothetical future election dates",
       "Post-election conduct or vote shares as a source of policy positions"
     ],
-    "inventoryInterpretation": "Roster complete: 550 final ballots; programme acquisition, per-alias applicability and semantic reading remain incomplete."
+    "inventoryInterpretation": "Complete official roster: 550 final Congress ballots in 52 constituencies and 59 result denominations. Retained used-source readings/mappings are locally accepted; 21 missing-programme candidacies and unavailable variant/annex/adoption gaps remain explicit, visible and unscored."
   },
   "audienceDesign": {
     "audience": "A person who does not regularly follow politics or economics, using a phone, without prerequisite knowledge. Respectful adult language; no condescension.",
@@ -5089,17 +5314,20 @@
     "managedPlanningView": "/Users/xavi.ortega/.cursor/projects/empty-window/canvases/electoral-app-development-plan.canvas.tsx"
   },
   "implementationProgress": {
-    "recordedAt": "2026-10-12T09:08:07.245780+00:00",
+    "recordedAt": "2026-10-12T09:31:07.408679+00:00",
     "sourceSummary": {
       "officialDenominations": 59,
       "programmeFilesDownloaded": 47,
       "programmesFullyAnalysed": 0,
       "releasedRealQuestions": 0,
       "completeCorpusCertified": false,
-      "programmeDocumentsFullyRead": 56
+      "programmeDocumentsFullyRead": 56,
+      "programmeNotebookFiles": 59,
+      "programmeUniqueOriginalsFullyRead": 56,
+      "programmeCountInterpretation": "47 historically acquired PDF programme files; complete readings also include HTML programmes, adopted references, preserved variants and annexes. These are different denominators, not all 59 candidacies with a complete programme."
     },
     "evidence": "outputs/2023-programme-reading-verification.json",
-    "activePublicBank": "synthetic_internal_fixture_real_2023_release_pending",
+    "activePublicBank": "repository_public_pointer_preserved_no_public_launch",
     "uiEvidence": "outputs/quiz-2023-app-verification.json",
     "authoredDraftSummary": {
       "authoredDraftQuestions": 80,
@@ -5603,7 +5831,12 @@
       "latestFinalTwoCitedAnswerPaths": 80,
       "latestFinalTwoCitedUnscoredPaths": 20,
       "latestFinalTwoScreenshotsReviewedThroughOverviews": 36,
-      "latestFinalTwoOverviewFilesInspected": 18
+      "latestFinalTwoOverviewFilesInspected": 18,
+      "localBankAccepted": true,
+      "wordingReviewComplete": true,
+      "allAuthoredCellsExplicit": true,
+      "localBrowserAcceptance": "outputs/2023-local-final-browser-acceptance.json",
+      "localRecoveryAcceptance": "outputs/2023-local-final-recovery-acceptance.json"
     },
     "localRealDraftReview": {
       "baseUrl": "http://127.0.0.1:8766",
@@ -5616,158 +5849,14 @@
       "progressionPaths": 2,
       "walkthroughSurfaces": 2,
       "evidence": [
-        "outputs/2023-authored-local-runtime-verification.json",
-        "outputs/2023-authored-local-walkthrough-verification.json",
-        "outputs/2023-authored-erc-verification.json",
-        "outputs/2023-authored-erc-runtime-verification.json",
-        "outputs/2023-authored-cup-jxg-unidossi-audit.json",
-        "outputs/2023-authored-cup-jxg-unidossi-verification.json",
-        "outputs/2023-authored-cup-jxg-unidossi-runtime-verification.json",
-        "outputs/2023-authored-cup-values-browser-verification.json",
-        "outputs/2023-authored-three-minor-audit.json",
-        "outputs/2023-authored-three-minor-verification.json",
-        "outputs/2023-authored-three-minor-runtime-verification.json",
-        "outputs/2023-programme-notebooks/almerienses-23j-publication.json",
-        "outputs/2023-authored-three-small-audit.json",
-        "outputs/2023-three-small-source-provenance.json",
-        "outputs/2023-authored-three-small-verification.json",
-        "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-        "outputs/2023-authored-caminando-values-browser-verification.json",
-        "outputs/2023-authored-pnv-audit.json",
-        "outputs/2023-pnv-source-provenance.json",
-        "outputs/2023-authored-pnv-verification.json",
-        "outputs/2023-authored-pnv-values-browser-verification.json",
-        "outputs/2023-authored-upn-audit.json",
-        "outputs/2023-upn-source-provenance.json",
-        "outputs/2023-authored-upn-verification.json",
-        "outputs/2023-authored-upn-runtime-verification.json",
-        "outputs/2023-authored-viaburgalesa-audit.json",
-        "outputs/2023-viaburgalesa-source-provenance.json",
-        "outputs/2023-authored-viaburgalesa-verification.json",
-        "outputs/2023-authored-viaburgalesa-runtime-verification.json",
-        "outputs/2023-authored-ehbildu-audit.json",
-        "outputs/2023-ehbildu-source-provenance.json",
-        "outputs/2023-authored-ehbildu-verification.json",
-        "outputs/2023-authored-ehbildu-values-browser-verification.json",
-        "outputs/2023-authored-cc-audit.json",
-        "outputs/2023-cc-source-provenance.json",
-        "outputs/2023-authored-cc-verification.json",
-        "outputs/2023-authored-cc-values-browser-verification.json",
-        "outputs/2023-authored-soriaya-audit.json",
-        "outputs/2023-authored-soriaya-verification.json",
-        "outputs/2023-authored-soriaya-runtime-verification.json",
-        "outputs/2023-soriaya-source-provenance.json",
-        "outputs/2023-authored-palenciatierraviva-audit.json",
-        "outputs/2023-authored-palenciatierraviva-verification.json",
-        "outputs/2023-authored-palenciatierraviva-values-browser-verification.json",
-        "outputs/2023-authored-palenciatierraviva-unknowns-browser-verification.json",
-        "outputs/2023-palenciatierraviva-source-provenance.json",
-        "outputs/2023-authored-ev-leon-audit.json",
-        "outputs/2023-ev-leon-source-provenance.json",
-        "outputs/2023-authored-ev-leon-verification.json",
-        "outputs/2023-authored-ev-leon-browser-verification.json",
-        "outputs/2023-authored-upl-territory-browser-verification.json",
-        "outputs/2023-authored-pcte-audit.json",
-        "outputs/2023-pcte-source-provenance.json",
-        "outputs/2023-authored-pcte-verification.json",
-        "outputs/2023-authored-pcte-values-browser-verification.json",
-        "outputs/2023-authored-pcte-unknowns-browser-verification.json",
-        "outputs/2023-authored-falange-audit.json",
-        "outputs/2023-falange-source-provenance.json",
-        "outputs/2023-authored-falange-verification.json",
-        "outputs/2023-authored-falange-values-browser-verification.json",
-        "outputs/2023-authored-falange-unknowns-browser-verification.json",
-        "outputs/2023-authored-autonomos-audit.json",
-        "outputs/2023-autonomos-source-provenance.json",
-        "outputs/2023-authored-autonomos-verification.json",
-        "outputs/2023-authored-autonomos-values-browser-verification.json",
-        "outputs/2023-authored-autonomos-unknowns-browser-verification.json",
-        "outputs/2023-authored-nuevacanarias-audit.json",
-        "outputs/2023-nuevacanarias-source-provenance.json",
-        "outputs/2023-authored-nuevacanarias-verification.json",
-        "outputs/2023-authored-nuevacanarias-values-browser-verification.json",
-        "outputs/2023-authored-nuevacanarias-unknowns-browser-verification.json",
-        "outputs/2023-authored-3edad-audit.json",
-        "outputs/2023-3edad-source-provenance.json",
-        "outputs/2023-authored-3edad-verification.json",
-        "outputs/2023-authored-3edad-values-browser-verification.json",
-        "outputs/2023-authored-3edad-unknowns-browser-verification.json",
-        "outputs/2023-authored-pumj-audit.json",
-        "outputs/2023-pumj-source-provenance.json",
-        "outputs/2023-authored-pumj-verification.json",
-        "outputs/2023-authored-pumj-values-browser-verification.json",
-        "outputs/2023-authored-pumj-unknowns-browser-verification.json",
-        "outputs/2023-authored-teruel-audit.json",
-        "outputs/2023-teruel-source-provenance.json",
-        "outputs/2023-authored-teruel-verification.json",
-        "outputs/2023-authored-teruel-scopes-browser-verification.json",
-        "outputs/2023-authored-teruel-unknowns-browser-verification.json",
-        "outputs/2023-authored-aragon-audit.json",
-        "outputs/2023-aragon-source-provenance.json",
-        "outputs/2023-authored-aragon-verification.json",
-        "outputs/2023-authored-aragon-scopes-browser-verification.json",
-        "outputs/2023-authored-aragon-unknowns-browser-verification.json",
-        "outputs/2023-programme-notebooks/aragon-existe-23j.json",
-        "outputs/2023-programme-reading-verification.json",
-        "outputs/2023-authored-frente-audit.json",
-        "outputs/2023-frente-source-provenance.json",
-        "outputs/2023-authored-frente-verification.json",
-        "outputs/2023-authored-frente-browser-verification.json",
-        "outputs/2023-authored-fuerza-audit.json",
-        "outputs/2023-fuerza-source-provenance.json",
-        "outputs/2023-authored-fuerza-verification.json",
-        "outputs/2023-authored-fuerza-browser-verification.json",
-        "outputs/2023-authored-fuerza-valladolid-browser-verification.json",
-        "outputs/2023-authored-pp-audit.json",
-        "outputs/2023-pp-source-provenance.json",
-        "outputs/2023-authored-pp-verification.json",
-        "outputs/2023-authored-pp-browser-verification.json",
-        "outputs/2023-authored-pp-adopted-reference-browser-verification.json",
-        "outputs/2023-programme-notebooks/pp-institutional-quality-2023.json",
-        "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
-        "outputs/quiz-2023-citation-presentation-verification.json",
-        "resources/js/app.ts",
-        "resources/css/app.css",
-        "lang/es/public.php",
-        "tests/Browser/public-journeys.spec.ts",
-        "outputs/2023-authored-psoe-audit.json",
-        "outputs/2023-psoe-source-provenance.json",
-        "outputs/2023-authored-psoe-verification.json",
-        "outputs/2023-authored-psoe-browser-verification.json",
-        "outputs/2023-authored-psoe-additions-browser-verification.json",
-        "outputs/2023-programme-notebooks/psoe-childhood-obesity-2022-2030.json",
-        "outputs/2023-authored-vox-audit.json",
-        "outputs/2023-vox-source-provenance.json",
-        "outputs/2023-authored-vox-verification.json",
-        "outputs/2023-authored-vox-browser-verification.json",
-        "outputs/2023-authored-vox-additions-browser-verification.json",
-        "outputs/2023-authored-sumar-audit.json",
-        "outputs/2023-sumar-source-provenance.json",
-        "outputs/2023-authored-sumar-verification.json",
-        "outputs/2023-authored-sumar-browser-verification.json",
-        "outputs/2023-authored-sumar-conflicts-browser-verification.json",
-        "outputs/2023-programme-notebooks/compromis-sumar-visible-citations.json",
-        "outputs/2023-authored-erc-bank-audit.json",
-        "outputs/2023-erc-bank-source-provenance.json",
-        "outputs/2023-authored-erc-bank-verification.json",
-        "outputs/2023-authored-erc-bank-browser-verification.json",
-        "outputs/2023-authored-junts-audit.json",
-        "outputs/2023-junts-bank-source-provenance.json",
-        "outputs/2023-authored-junts-verification.json",
-        "outputs/2023-authored-junts-browser-verification.json",
-        "outputs/2023-authored-junts-correction-browser-verification.json",
-        "outputs/2023-authored-bng-audit.json",
-        "outputs/2023-bng-source-provenance.json",
-        "outputs/2023-authored-bng-verification.json",
-        "outputs/2023-authored-bng-browser-verification.json",
-        "outputs/2023-authored-pacma-audit.json",
-        "outputs/2023-pacma-source-provenance.json",
-        "outputs/2023-authored-pacma-verification.json",
-        "outputs/2023-authored-pacma-browser-verification.json",
-        "outputs/2023-authored-final-two-audit.json",
-        "outputs/2023-authored-final-two-verification.json",
-        "outputs/2023-authored-final-two-browser-verification.json",
-        "outputs/2023-final-corpus-reconciliation.json"
+        "outputs/2023-local-source-family-acceptance.json",
+        "outputs/2023-local-question-bank-acceptance.json",
+        "outputs/2023-local-final-browser-acceptance.json",
+        "outputs/2023-local-final-recovery-acceptance.json",
+        "outputs/2023-future-edition-boundary-verification.json",
+        "outputs/2023-deferred-capabilities.json",
+        "outputs/2023-local-release-verification.json",
+        "outputs/2023-local-review-packet.json"
       ],
       "newCitedPositionBrowserCases": 20,
       "latestThreeMinorBrowserPaths": 6,
@@ -5880,7 +5969,8 @@
       "latestFinalTwoCitedAnswerPaths": 80,
       "latestFinalTwoCitedUnscoredPaths": 20,
       "latestFinalTwoScreenshotsReviewedThroughOverviews": 36,
-      "latestFinalTwoOverviewFilesInspected": 18
+      "latestFinalTwoOverviewFilesInspected": 18,
+      "status": "final_local_real_bank_acceptance_complete"
     },
     "latestSourceReading": {
       "documentIds": [
@@ -5964,6 +6054,15 @@
       "collectionEnabled": false,
       "localWorkContinues": true,
       "recordedAt": "2026-10-12T07:41:38.559182+00:00"
+    },
+    "localAcceptance": {
+      "complete": true,
+      "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+      "verificationManifest": "outputs/2023-local-release-verification.json",
+      "reviewPacket": "outputs/2023-local-review-packet.json",
+      "localWorkRemainingPercent": 0,
+      "externalLaunchDeferredByOwner": true,
+      "fullCorpusAcquisitionCertified": false
     }
   }
 }

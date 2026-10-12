@@ -1,0 +1,742 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:23:03.964Z",
+  "electionId": "es-congress-2023-07-23",
+  "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+  "status": "actual_2023_local_walkthrough_and_bounded_visual_inspection_passed",
+  "publicPointerChanged": false,
+  "publicLaunchApproved": false,
+  "collectionEnabled": false,
+  "normalMotion": {
+    "name": "state-enter",
+    "duration": "0.18s"
+  },
+  "cases": [
+    {
+      "surface": "desktop",
+      "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+      "principalStatesPassed": true,
+      "checkpoints": [
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "keyboardArrowsAndFocusPassed": true,
+      "minimum44pxTargetsPassed": true,
+      "reflowWidthsAndZoom": [
+        [
+          320,
+          1
+        ],
+        [
+          1280,
+          2
+        ],
+        [
+          1280,
+          4
+        ]
+      ],
+      "cssZoomApproximation": true,
+      "normalCoreApiInterception": false,
+      "rapidNextAndFinishPassed": true,
+      "backEditUnsureSkipPassed": true,
+      "rentDisagreementAtHighAggregatePassed": true,
+      "exportedAnswersAndEditionPassed": true,
+      "crossTabResetReloadLeavePassed": true,
+      "requestPrivacyPassed": true,
+      "storageEmpty": true,
+      "cookiesEmpty": true,
+      "axeViolations": 0,
+      "pageErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/release-state",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/release-state",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/privacy",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "surface": "mobile",
+      "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+      "principalStatesPassed": true,
+      "checkpoints": [
+        10,
+        15,
+        20,
+        25,
+        30
+      ],
+      "keyboardArrowsAndFocusPassed": true,
+      "minimum44pxTargetsPassed": true,
+      "reflowWidthsAndZoom": [
+        [
+          320,
+          1
+        ],
+        [
+          1280,
+          2
+        ],
+        [
+          1280,
+          4
+        ]
+      ],
+      "cssZoomApproximation": true,
+      "normalCoreApiInterception": false,
+      "rapidNextAndFinishPassed": true,
+      "backEditUnsureSkipPassed": true,
+      "rentDisagreementAtHighAggregatePassed": true,
+      "exportedAnswersAndEditionPassed": true,
+      "crossTabResetReloadLeavePassed": true,
+      "requestPrivacyPassed": true,
+      "storageEmpty": true,
+      "cookiesEmpty": true,
+      "axeViolations": 0,
+      "pageErrors": [],
+      "requests": [
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/release-state",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/release-state",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/privacy",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/questionnaire",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-nV1F_sBD.css",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/build/assets/app-Aa9_0X9U.js",
+          "method": "GET",
+          "body": null
+        },
+        {
+          "url": "http://127.0.0.1:8766/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ]
+    },
+    {
+      "state": "loading",
+      "scope": "Explicit simulated network/control response on actual loaded bank; no production or universal privacy certification.",
+      "passed": true
+    },
+    {
+      "state": "error",
+      "scope": "Explicit simulated network/control response on actual loaded bank; no production or universal privacy certification.",
+      "passed": true
+    },
+    {
+      "state": "withdrawn",
+      "scope": "Explicit simulated network/control response on actual loaded bank; no production or universal privacy certification.",
+      "passed": true
+    },
+    {
+      "state": "release-state-outage",
+      "scope": "Explicit simulated network/control response on actual loaded bank; no production or universal privacy certification.",
+      "passed": true
+    },
+    {
+      "state": "session-pin",
+      "scope": "Explicit simulated network/control response on actual loaded bank; no production or universal privacy certification.",
+      "passed": true
+    },
+    {
+      "state": "all-unsure",
+      "all59CandidatesVisible": true,
+      "noRanking": true,
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": ".tools/local-final-acceptance/desktop-intro.png",
+      "sha256": "0b845e5287fb15a029f6ae026ed9026923f2436c71bd9b490ea85c62d2a05d45",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-question.png",
+      "sha256": "8206b255bc23bfb5dbd0212646a058aa21246cc6109fc9b81f048a3c7785f761",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-answer-required.png",
+      "sha256": "1c92cb9ca8042c311d45ddc8fd58ebdaa489b8cf2b2c02c81163cddd77906bd2",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-help.png",
+      "sha256": "28c54c7024cacfeee4178cc7cbbc0d4f9303a99e5786911b6658c3fb48c0c3e7",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-selected-focus.png",
+      "sha256": "3c1fd38b335876c3b9e4a64581d3ff53ecf70198f89948bae532e80e6e2927bd",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-reflow-320-1.png",
+      "sha256": "9ada682930925ff5c1778eb81e1fcf57c5bde3a52fe957292b0c8051a1aee022",
+      "viewport": {
+        "width": 320,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-reflow-1280-2.png",
+      "sha256": "f3c445de4a92e3e187e6c405e8719e27f53efdbf422a7e33fadb2017b53d3663",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-reflow-1280-4.png",
+      "sha256": "32ab98c802fec8bc2c091d7d8221e1dce53eaa7269260d67b781ca72424bc57c",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-checkpoint-10.png",
+      "sha256": "a6e12aaffde7e3b1d0f0583594034bce12f072e3b591d64dc2147b8f1d932fae",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-checkpoint-15.png",
+      "sha256": "4c015f94a31086834e8fd0bb252fd64af9a721d060dfa40ceb54ff515c436482",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-checkpoint-20.png",
+      "sha256": "0c0e8509c7504a3457b45651924a917120928c302a36705fdd2c727d8a761694",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-checkpoint-25.png",
+      "sha256": "2c82da76c9c99de713a2cd76d535ff1a56d6535039a46230c80ad6129f3e396b",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-checkpoint-30.png",
+      "sha256": "83ed1a20a5a8f7c41f464311d047785737f153d02022b6b6624cf6e668dbe9a9",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-results.png",
+      "sha256": "039af3ba0c062507eee40e3f178a278dae2d695e7c759e43bccc18c03dacb231",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-rent-disagreement.png",
+      "sha256": "039af3ba0c062507eee40e3f178a278dae2d695e7c759e43bccc18c03dacb231",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-intro.png",
+      "sha256": "064b7e235deed2e1ac1a7a8093f598fc31bef138ea2781cac3ee60746df75546",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-question.png",
+      "sha256": "b64dd6a3f1449f30a8a2f14ca2ba26d5776543a45727afa65e2f2e88850f362b",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-answer-required.png",
+      "sha256": "b9072ce3718a223c2efcd480f21f57f556bd52ed9ab680bafa8f75c4a1957045",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-help.png",
+      "sha256": "be7e8623ef3e22823e16fa69c8473eb352bfb51ee69d8e2bd91a73eabb253286",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-selected-focus.png",
+      "sha256": "43404bbab1a0807590677fe1e7d4e219d87d0126f8951c9fbb439a3c7a86d398",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-reflow-320-1.png",
+      "sha256": "819ee1fccfcbad889bdcd93cfb61c9b930a2000a5d51faabb0bcca16ae61f7fe",
+      "viewport": {
+        "width": 320,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-reflow-1280-2.png",
+      "sha256": "b86e20d8814b06aec0e5c124d3ec0ffa6ccc40712f87c9c6f6df3cc546ae04ff",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-reflow-1280-4.png",
+      "sha256": "dba9c10a8864a46b3bc7e1128241b6ccdd42a52b0cf0f4a2c6b85e4fdf327dd6",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-checkpoint-10.png",
+      "sha256": "0a75a3fe4ce9d0ba46e7b7b8ccaf2fba8702545480112684b83a77d1b1aaecd6",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-checkpoint-15.png",
+      "sha256": "d32531f315c3af7afd32728dcbdd379f8a8b4b9cecd36cb3acde1a4efee79693",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-checkpoint-20.png",
+      "sha256": "0a75a3fe4ce9d0ba46e7b7b8ccaf2fba8702545480112684b83a77d1b1aaecd6",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-checkpoint-25.png",
+      "sha256": "0a75a3fe4ce9d0ba46e7b7b8ccaf2fba8702545480112684b83a77d1b1aaecd6",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-checkpoint-30.png",
+      "sha256": "6ab05da656181989e9d50111bf2f45e4cc3d09bb811b18caaac25b74489ca1bf",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-results.png",
+      "sha256": "8eaf6b790324cdbe6632951e723435d9459fd55c73c1f0dbb93aee74aca99c0e",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-rent-disagreement.png",
+      "sha256": "8eaf6b790324cdbe6632951e723435d9459fd55c73c1f0dbb93aee74aca99c0e",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-loading.png",
+      "sha256": "0aa7aa01e31bd9ad6200b60003bda418496d4d760e1b2203caa259f9b362c5cb",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-network-error.png",
+      "sha256": "2ca0aae51309e65df47bb42f71ad5945edc2800d5e982476ec61063290535fc9",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-withdrawn.png",
+      "sha256": "867fbd3422d2079f77d1de433882982ddc09e48042080b123913ceac532b40cd",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-release-state-outage.png",
+      "sha256": "0018228f53ff8cb9a95be833e31027faa3d6c08f1b21570b6a92d638351707e4",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport only; DOM assertions cover complete contexts and controls beyond screenshot bounds."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-focused-rent.png",
+      "sha256": "e303cb3a6f0c75f290bfdaf8f3cf8c3f52f5f61dc88457e8b27e23cb0afa4619",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport focused on the cited proposal or state; omitted content not visually certified."
+    },
+    {
+      "path": ".tools/local-final-acceptance/mobile-focused-rent.png",
+      "sha256": "29d5baaf133a155916de48f208106c273e99475d8d5b19eeb6fc8c80a6ec9b7c",
+      "viewport": {
+        "width": 320,
+        "height": 844
+      },
+      "scope": "Viewport focused on the cited proposal or state; omitted content not visually certified."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-loading.png",
+      "sha256": "f80a914487d7f8a16540ac9a802edb08f9eb17e07f263e211161b2350e922e52",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport focused on the cited proposal or state; omitted content not visually certified."
+    },
+    {
+      "path": ".tools/local-final-acceptance/desktop-error.png",
+      "sha256": "f68bd38181484b082105157baa50cfb5b94737b5159c5426e9928b2adc0353f5",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "scope": "Viewport focused on the cited proposal or state; omitted content not visually certified."
+    }
+  ],
+  "limitations": [
+    "Agent-operated Chromium desktop/mobile walkthrough, no recruited usability study or universal accessibility certification.",
+    "CSS zoom approximates reflow; it does not cover every browser/OS text-zoom combination.",
+    "Simulated network/withdrawal/state/pinning cases are explicitly distinguished from normal actual-bank traffic.",
+    "Screenshots show bounded viewport regions; complete native controls and citation contexts are verified separately in DOM.",
+    "Host, proxy, logs, domain and cost are unselected; local privacy checks do not certify a production environment."
+  ],
+  "visualReview": {
+    "screenshotsInspected": 38,
+    "overviewSheetsInspected": 11,
+    "separatelyInspectedScreenshots": 4,
+    "scope": "All 34 initial viewport captures inspected through 11 overview sheets; supplemental focused source/top-of-proposal and desktop loading/error captures inspected separately. Viewport bounds retained. Omitted regions not visually certified; exact full contexts and native controls independently asserted in DOM.",
+    "findings": [
+      "Dominant one-question hierarchy, readable ordered choices, clear selected/focus state and reachable actions.",
+      "At 320 px and CSS zoom 200/400 percent content reflows with vertical scrolling; no horizontal scroll.",
+      "Checkpoints remain explicit; 30-question limit removes continuation.",
+      "Source disclosures show long original context separately; everyday agreement/disagreement appears before it.",
+      "Spanish loading/error/withdrawal/outage text exposes no exception or private state."
+    ],
+    "limitations": [
+      "Agent-operated visual/keyboard walkthrough, no universal certification or recruited study.",
+      "Screenshots originally labelled rent-disagreement show result heading rather than the entire long rent section; additional focused captures document the proposal separately."
+    ]
+  },
+  "contrastReview": [
+    {
+      "role": "body",
+      "foreground": "#173c69",
+      "background": "#f1f5fa",
+      "ratio": 10.16639629826452,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "control text",
+      "foreground": "#173c69",
+      "background": "#ffffff",
+      "ratio": 11.130195391296194,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "muted/help",
+      "foreground": "#435c78",
+      "background": "#f1f5fa",
+      "ratio": 6.308203316170588,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "primary text",
+      "foreground": "#ffffff",
+      "background": "#173c69",
+      "ratio": 11.130195391296194,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "selected text",
+      "foreground": "#173c69",
+      "background": "#e8f4f2",
+      "ratio": 9.886579132303533,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "error",
+      "foreground": "#9e2633",
+      "background": "#f1f5fa",
+      "ratio": 6.902644593603778,
+      "required": 4.5,
+      "passed": true
+    },
+    {
+      "role": "focus",
+      "foreground": "#006b61",
+      "background": "#ffffff",
+      "ratio": 6.410860099588776,
+      "required": 3,
+      "passed": true
+    },
+    {
+      "role": "focus on selected",
+      "foreground": "#006b61",
+      "background": "#e8f4f2",
+      "ratio": 5.6945519330483645,
+      "required": 3,
+      "passed": true
+    }
+  ],
+  "uiSourceSha256": {
+    "resources/js/app.ts": "1c58ecca03faebf61ceea1fe7ba39358063c822a4b856ffc16edceb4b38c7dd4",
+    "resources/js/matching.ts": "858367d3769ee4a882e23a3c5c0eb5454380c51a4a9ed2a72d5289c25414f351",
+    "resources/js/questionnaire.ts": "cb5089d0c3ba7e112e9244c9d20a72f7a93bfa612b24c9da70286215c341a53f",
+    "resources/css/app.css": "e820c43b209c9c29cc037e20975cd1cbff6e573082928acd107bf037c0f6e93f",
+    "lang/es/public.php": "26784d6c7cd79c18be8b13cc10adf51761976216c94ee18e389ff08f3c94a45a"
+  }
+}

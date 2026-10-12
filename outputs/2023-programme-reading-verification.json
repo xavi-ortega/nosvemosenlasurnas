@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "recordedAt": "2026-10-11T23:04:33.693243+00:00",
+  "recordedAt": "2026-10-12T09:20:28.272793+00:00",
   "electionId": "es-congress-2023-07-23",
   "scope": "Original-byte/text hashes, declared complete PDF-page or HTML-section coverage and supplied literal offsets. This verifies structure, not semantic correctness, complete corpus, territorial applicability, archival vintage or released mappings.",
   "documents": [
@@ -3610,7 +3610,7 @@
   ],
   "summary": {
     "fullyReadVisualAnnexImages": 4,
-    "fullyReadDocumentNotebooks": 56,
+    "fullyReadDocumentNotebooks": 59,
     "coveredPdfPages": 2854,
     "coveredHtmlSections": 98,
     "nativeLiteralExcerptsChecked": 1805,
@@ -3618,7 +3618,9 @@
     "semanticCorrectnessCertified": false,
     "completeCorpusCertified": false,
     "releasedRealQuestions": 0,
-    "additionalIllustrativePostersVisuallyRead": 3
+    "additionalIllustrativePostersVisuallyRead": 3,
+    "fullyReadUniqueOriginals": 56,
+    "coveredPdfPagesAcrossNotebookFiles": 3023
   },
   "sharedSourceApplicabilityRecords": [
     {
@@ -3632,6 +3634,540 @@
       "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
       "adoptionPdfPage": 183,
       "candidacyId": "boe-2023-002"
+    }
+  ],
+  "countingPolicy": "59 retained complete notebook files describe 56 unique original hashes. Compromís, Nueva Canarias and the separately attributed shared childhood-obesity source are duplicate-original notebooks. Deduplicated counts preserve the historical 2,854 pages and 98 HTML sections. Background M5 chapter pages and unread mirrors are excluded.",
+  "notebookFileReconciliation": [
+    {
+      "notebook": "outputs/2023-programme-notebooks/3edad-23j-campaign.json",
+      "notebookSha256": "d99f2d0ddcef4fe39e1651f7def38be35b664f1d7ad5cf8ed0063fc82c10f77f",
+      "documentId": "3edad-july-archive",
+      "sourceSha256": "c0031df1bd88e74985c883945142e6a954a01298b7e69bde7cb46b62af165f6a",
+      "extractionSha256": "5edff8e3b69991ebe89c4974a8bf5081351940ef6a5eb74f04c0a0657a4032d4",
+      "pageCount": 0,
+      "sectionCount": 12
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/adelante-decalogue.json",
+      "notebookSha256": "8ffba4ad4f5c1754ac606e4f173927d4de9dfe9000015d067ab5cafe0846ed08",
+      "documentId": "adelante-decalogue-verified-large-original",
+      "sourceSha256": "92e43831a0a9bf5eacc57fa9f12c0b5212b24a1ccc5e6ed5742a1990788c294b",
+      "extractionSha256": "2e9faebbd47a57f8d00d2f73a2e412bbf5353a95a112f2278b24f69ee5d14b62",
+      "pageCount": 6,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/adelante-industrial-plan.json",
+      "notebookSha256": "5620ff42d5f13f1f1fec2b18758a74176a8f31704b538e9372d6a956bdcad942",
+      "documentId": "adelante-industrial-linked-plan",
+      "sourceSha256": "7e2d167a67cfe9756168495507b2b1df11ea3a0e5d81298ac4d4e28c82b3d9f3",
+      "extractionSha256": "544bcef27cbe9b6f93ff796a2407208a2bde9eefbb3ec593f2feeaeddf32b4a9",
+      "pageCount": 18,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/adelante.json",
+      "notebookSha256": "07d220a337fc351cf4dcfd1b5c0cb48d385f3509a270af46aafc146259efd61d",
+      "documentId": "adelante",
+      "sourceSha256": "73557c309e0cb04172a2cb7f815d7cc4d71aed99454e559753c7e7be13ceaf78",
+      "extractionSha256": "038aba726b16910342995781e75e490b80cb31bf78f5c767dc546ecb3c5d420c",
+      "pageCount": 85,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/almerienses-23j-publication.json",
+      "notebookSha256": "a7b6710d469a6aad947aa4143112d7fa846e44e2985c6308f19a72000d48953c",
+      "documentId": "almerienses-23j-specific-publication",
+      "sourceSha256": "b29f0f71c180516cc1b78b7ee32bb4669782812016c08e78520a6786578536df",
+      "extractionSha256": "f07a744315028d3be8fa6e8aa17de4af06a2f1872e084a29b8ba6eaf6d43af13",
+      "pageCount": 0,
+      "sectionCount": 8
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/almerienses.json",
+      "notebookSha256": "26ac418abb305b8e60c3706578e0d226e30cf6a4246e4e0b6dd63b587c71d412",
+      "documentId": "almerienses",
+      "sourceSha256": "a701772abfd3776228cc5989453bc0719a90142f2c3d2b239e768b2a12699233",
+      "extractionSha256": "e2d8f0723a71e708300844646e5d6dcf3a0217f079fbc4f385bdd1f80ac9471b",
+      "pageCount": 2,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/aragon-existe-23j.json",
+      "notebookSha256": "c3c4428569ad50d6de0b47379ae52eb2b2babdcaa460be4f012ab9bb7dc7633c",
+      "documentId": "aragon-existe-23j",
+      "sourceSha256": "787d50b11e61a033867429ed913bf622892bccfe91425cfeff029c6afd7c7742",
+      "extractionSha256": "483be20dceedb56e04dd55109bce93fa842cb76690b8ce4aae91f34bfa3ea176",
+      "pageCount": 29,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j-decalogue.json",
+      "notebookSha256": "4e785a25960ce5103561ff2022e804de07c8f67c36cd3e58d44b8a31319b94d3",
+      "documentId": "autonomos-23j-decalogue",
+      "sourceSha256": "ef7d54cc63217d1c4727858b2868b46c3baf21a954c2c71a0ab80ac14caf50bc",
+      "extractionSha256": "ef6cbd2161eaea7943ce8693b9824d23d1793ffb1c0fca05b600d3899b44c977",
+      "pageCount": 2,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j-diptych.json",
+      "notebookSha256": "2463730b6a4fcec0b0d98e4a70057a9bf81eaf3de97c3c4db031465da81d1ac0",
+      "documentId": "autonomos-23j-diptych",
+      "sourceSha256": "43a7565a95dd6d1c33922c5bf2b0ddc9a14444786123f5ae771abce11358888e",
+      "extractionSha256": "7060584c3e59f0b2f12f34aa0b40faadf4aa5790a0459f3319852bcd63262cbb",
+      "pageCount": 3,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/autonomos-23j.json",
+      "notebookSha256": "f334a76da31ba5ffd1c0a7b500a4b0268b63585a575570f08d6072e8f8393bc4",
+      "documentId": "autonomos-23j",
+      "sourceSha256": "c2ab91d3e7d35a5cd9f94d75d0990e657d0699c30720a5929b62f366eb187aa5",
+      "extractionSha256": "9cef897196a7fd608174ea455e319176077a06e881f0772b3533a95352efc510",
+      "pageCount": 57,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/bng-decalogue.json",
+      "notebookSha256": "e9c92defc0a7bcd53f62f9a90bb2554d98ba9b1ddcfccd90f8832c7340216de4",
+      "documentId": "bng-decalogue",
+      "sourceSha256": "e7968977cb2daca9b1e94a36701b2316d76bff3d2c9d5b8a16d3667574800cd3",
+      "extractionSha256": "ab91a61c1d9705d98fe46ee5d1b910217d10510067b7ba5417146d28b6bffb95",
+      "pageCount": 4,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/bng-easy-read.json",
+      "notebookSha256": "87d674c95698a08fbb79ba45870d6d7a8eb919105d3c31befbe9db8715991888",
+      "documentId": "bng-easy-read",
+      "sourceSha256": "7d55070f9910d5ff4b63eaf313d2cfd79bbc7e8b4cd648b39b37027ddf45f17d",
+      "extractionSha256": "06b4e7cab1d4082994447b73631beac7be21bec9d5546f49ad5eeca6c2fc31c2",
+      "pageCount": 16,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/bng.json",
+      "notebookSha256": "965c044e42bee1128582953579dd39e9245adc04a6a09be201b02988b23a8d2c",
+      "documentId": "bng",
+      "sourceSha256": "b8994deec0bbc45cdcbef5d7c5395cabf30b0509706303c3d8e76058c48eebfd",
+      "extractionSha256": "7b178981ce62f727e5c0aa6ba4e28a286910ff149bab8fe6761a4d665778cec0",
+      "pageCount": 68,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/caminando-2023-primary-programme.json",
+      "notebookSha256": "971a431702574b881475156f592cab58c2596f5ac835c23f7102fc78316d2786",
+      "documentId": "caminando-july-programme-archive",
+      "sourceSha256": "5e39e394b51f21a1c0cca7fcb9ff969d6ba49ab007c8050c42556d392802c737",
+      "extractionSha256": "2d1d9974d3275da6d471b03b053bfc363b05ff3d3ac42609095dd69c51827072",
+      "pageCount": 0,
+      "sectionCount": 6
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/caminando-juntos.json",
+      "notebookSha256": "333531904ba52cf9ba6809becc737baab24bc78767a3da4ada4ebc4dd1e7b600",
+      "documentId": "caminando-preserved-i28",
+      "sourceSha256": "eeb4b4d21551840355d169c46a515cbc4f93a4b37acccb4b6c317a732c437103",
+      "extractionSha256": "708dce749b4b9216c1f5354704aa81b24d1e74ea950779106e54799d5425f39c",
+      "pageCount": 2,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/childhood-obesity-2022-2030.json",
+      "notebookSha256": "a5e109c0ca9741804295029eb1f89aa93a09f43ebe2dcdd923bb0cbe955ed4ce",
+      "documentId": "childhood-obesity-2022-2030",
+      "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+      "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+      "pageCount": 120,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/coalicion-canaria.json",
+      "notebookSha256": "c3c043d29184b1104df2e97c688c40933e9274fd31e046cc8d9e2dfb5eb77e51",
+      "documentId": "cc-manifesto",
+      "sourceSha256": "ebcac3e6b17012c77d1a761041dc1615c2b28a527666a1467db66e4b82b49c33",
+      "extractionSha256": "4aa343244a527ada56a3344b5feb082d4fa52851fcbb749661cb15866441cca5",
+      "pageCount": 14,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/compromis-sumar-visible-citations.json",
+      "notebookSha256": "8918c1f2e309667e6416df51ec6b4f0f06a64481828fa47348b805f2f797eea4",
+      "documentId": "compromis-sumar",
+      "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+      "extractionSha256": "8847058056745f9ec1252e6f61618e7e8e420d6778f742e896621ce581f66156",
+      "pageCount": 13,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/compromis-sumar.json",
+      "notebookSha256": "850bc9fe1806d5e15b33a67f5cff50d065771fa535b802134b0e3f453e2ae3ee",
+      "documentId": "compromis-sumar",
+      "sourceSha256": "4b35a640f1c70c966f707f0da38948ac8598ec9fe54dba6d4b09638a0fc3eeaf",
+      "extractionSha256": "dbbecdf48dc6e0e05879098bf619fe0b32673f20ed5926a7c300a846a75457de",
+      "pageCount": 13,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/cup.json",
+      "notebookSha256": "b891aa2fd07d4a7b23f19a385d1d5afb553fb23897c4c62eda8673eb12650f47",
+      "documentId": "cup-primary",
+      "sourceSha256": "cadc3b68e128640dd263d499cace2c8266d7971984cb26f4aa7ba8f42c621a16",
+      "extractionSha256": "de621bb25a634221332297450d813777d6f6d6225e8b55e27a989b949046efc4",
+      "pageCount": 12,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/ehbildu.json",
+      "notebookSha256": "3533dbf1a9a026e1480fc2f51d1792baaf010ae09e34e54c529fc6fd2995705e",
+      "documentId": "ehbildu-preserved-newtral",
+      "sourceSha256": "6634c0786c1e771c61c1a65e549dfde0d4581d09e19949466e931c96a9642465",
+      "extractionSha256": "6c6ee7e1473ed6d442b0893ada29ca9aa5c307ae205b3019c10631a533443bcc",
+      "pageCount": 16,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/erc.json",
+      "notebookSha256": "2b91077c14965651f40e7f9d397456b3e586ada1b74a079befafc33851923c9a",
+      "documentId": "erc-july",
+      "sourceSha256": "455e0629d90ef63ab59c43c35d67cdd739165958587e3242eb5b6e4914afe991",
+      "extractionSha256": "d7d23847d698684a5bb5fc991b2a9f50c4b2b03e4baf288930980a74cdbe1a74",
+      "pageCount": 132,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-manifesto.json",
+      "notebookSha256": "3cebf73764643a214e388b4bd3322f6d1e268a2230434bcd1e0c3febb4f5f88e",
+      "documentId": "escanos-manifesto-july-followup",
+      "sourceSha256": "676ebdb8b6cb83d9782c3bfcd0ae0f0923e1449e8e2a7b231567dfdc723473d5",
+      "extractionSha256": "e34d04bb7a7364d311153e0967f13ed9a69400bb4db2fe52c74c5db415185c04",
+      "pageCount": 0,
+      "sectionCount": 1
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-2023-programme.json",
+      "notebookSha256": "485b2544827c4ff0d5cf482b3c64acd8a37cc5ceb82b167101a1a22019a9f95e",
+      "documentId": "escanos-programme-july-followup",
+      "sourceSha256": "6b209fc6297e464ade02a6abad2e5b82eca95c254c531b63bf90e7f97692180a",
+      "extractionSha256": "b14155751cb53fde6e450e89ff800faf6cb27a2c65a1bead625d32311a464d7f",
+      "pageCount": 0,
+      "sectionCount": 1
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/escanos-manifesto-annex.json",
+      "notebookSha256": "4383e3c8fd34ae94db6d4415b818099d703ccb5b6ce0d32680ed6c4685b01dea",
+      "documentId": "escanos-manifesto-annex",
+      "sourceSha256": "d191a570aecad31947aa33c58772e3913ad394d6d0ccdc1b70335daf5533d02a",
+      "extractionSha256": "a95026e765ba7f5497c54196e965b4ceffaed532d10a14b9b734c9e02c3576a5",
+      "pageCount": 1,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/ev-leon-23j.json",
+      "notebookSha256": "092f29abf5c52adbd9390a4964e444f104a736106044d782a8cdd55fc7d89846",
+      "documentId": "ev-leon-23j",
+      "sourceSha256": "6e9feef4de1c57e17cd0be8047b06691eb1ab5a1b05b0fd7dac0ab0e852df19c",
+      "extractionSha256": "2b35df19849f178b497dd6758caddfa8dcedca7faf57a6c0840ba9461689afbb",
+      "pageCount": 19,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/evb-23j-agreement.json",
+      "notebookSha256": "3db8a907f3d134357433e71f1ecf42d2cfa3eb11123206e32375b76df22132b5",
+      "documentId": "evb-info-july-archive",
+      "sourceSha256": "83b8a1e803132fb9492d6856f25aedfef58511c48d9db36a26dc10e60fe0ec21",
+      "extractionSha256": "f1dbb799477219a29091a103e2e3074780b6f609545c13ae64fad9beeeadaf49",
+      "pageCount": 0,
+      "sectionCount": 4
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/falange.json",
+      "notebookSha256": "382908f5feb65da7621e3af1a90979a62bbae43bd963aed4429bc9480f8aed9e",
+      "documentId": "falange-primary",
+      "sourceSha256": "6ce887a7ae0312698328ee727f31b1638053edc8861a72728592f243c2ff5401",
+      "extractionSha256": "55d449b440c10293a0674ecc9001fd7fc52f34c04ec86b8f66296ec3004a0881",
+      "pageCount": 21,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/frente-political-documents-2023.json",
+      "notebookSha256": "d7bd1f9c10c9ad40f10a1649d4ec3c3fb21d40623c24222afa72d8bc6840c1a3",
+      "documentId": "frente-political-documents-2023",
+      "sourceSha256": "d24effe9cfca37d84318415fdfb161f5a94dac72ebfb2e210f3ff29059e03712",
+      "extractionSha256": "b241cae19f80d1bdbd206a2515a199fb1963df85c416c605c1ef978bf5291003",
+      "pageCount": 87,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/fuerza-23j-archived.json",
+      "notebookSha256": "10ae27467740c183b588f3b604c490c4ca761e628f5a78e6d89ce73a34ac2b15",
+      "documentId": "fuerza-published-document-archive",
+      "sourceSha256": "c2631246b5f91cd5af8563795bae6a03b0d3b096bd537c6869d4f6ec5be7f64f",
+      "extractionSha256": "1d9bd5d2187f846a96f90a72d88ce6cc61d059aff83d9b0c6aef7d4dbe5c6d3c",
+      "pageCount": 0,
+      "sectionCount": 25
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/jaen-adopted-model.json",
+      "notebookSha256": "fcaf147f6508666b638ffd09978a15a6c170ebd45c081c38ab513bc922f09a89",
+      "documentId": "jaen-adopted-model-primary-http",
+      "sourceSha256": "c0479f2f5823a1c4018a8102563646c9ad1448eebf72690ed817b1ca95fe01fb",
+      "extractionSha256": "cc4d2571f283e1b37b9d91cddb8206e1c540b9a3dab379a7e7f57f7817b47817",
+      "pageCount": 342,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/jaen-model-annex-m2.json",
+      "notebookSha256": "2c04dc5bab4ce552df3710c0cb42e3a847a9c86792ba50aa6892c1db240319a2",
+      "documentId": "jaen-model-annex-m2-primary",
+      "sourceSha256": "807fe363958c1ec1cc8a03fa145d9b354ab393143991550463d9456e58ac8de7",
+      "extractionSha256": "c3d51ca930260732a8befd1916604b66cb5e3db5d0d22be053537eeca373121c",
+      "pageCount": 16,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/jaenmerecemas.json",
+      "notebookSha256": "1b5fe0eeb27bafb02a7fa5a4b150cc04f18a4301dce38580ffd5c34e9d368358",
+      "documentId": "jaenmerecemas-july",
+      "sourceSha256": "79fea0f9b3ffc88b406fd868e5ff088a14a2ee6025c091b4ff7bbd18930855da",
+      "extractionSha256": "c333e369932791f72f058bddc41b712cb7ddb357265f1c078dfca91b90ed702b",
+      "pageCount": 45,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+      "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+      "documentId": "junts-beteve-programme",
+      "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+      "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+      "pageCount": 148,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/junts.json",
+      "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+      "documentId": "junts-preserved-abc",
+      "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+      "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+      "pageCount": 151,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/jxg-23j-four-things.json",
+      "notebookSha256": "16b76c7e28e0c90adfd8f5f6272cda3aaae88673c24d1e1652ac5320af17dbb0",
+      "documentId": "jxg-23j-four-things-archive",
+      "sourceSha256": "b4bd9d4aeea940129e58f1dce4c46a8a6bd987a132be17e54fd1d0d730f67371",
+      "extractionSha256": "ffea37c759e7d0d31fba3952d7b628d51e62818b828b6ecf5d32bba7347890fc",
+      "pageCount": 0,
+      "sectionCount": 6
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/nuevacanarias-native-plain-visual-corrections.json",
+      "notebookSha256": "f4269e20bb24db6b6ba67b3a3d9e98d236a7e0c62f32f29b8fa59b77792f20cd",
+      "documentId": "nuevacanarias-july",
+      "sourceSha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
+      "extractionSha256": "37a6bab549fe4ec134acea6cc509493a02525cb39962f9d098a84f434a6fb040",
+      "pageCount": 36,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/nuevacanarias.json",
+      "notebookSha256": "96f70570efc649647e1bea7db14fb08bb603b71cef8bd1a97b6e02cbff3d8da6",
+      "documentId": "nuevacanarias-july",
+      "sourceSha256": "93322de422f1cb247d8350c8c3170c5f6cdf9f172f01405145db10ef3aca1c0e",
+      "extractionSha256": "942dd48dd41cae13f60295888bb5f3069a21f2237ccf719a9b68c33789800d6f",
+      "pageCount": 36,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pacma.json",
+      "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+      "documentId": "pacma",
+      "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+      "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+      "pageCount": 76,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/palenciatierraviva.json",
+      "notebookSha256": "1445108781d3569272fcc1d205bda092f4ff62b7759062b06fce57864601b4f2",
+      "documentId": "palenciatierraviva",
+      "sourceSha256": "ff2ba57c6ce6cf0d6d52a445ac51d6f387681f8dae24c8b4c3f13c31d0443b26",
+      "extractionSha256": "80ffc80b35faa4cd69abb095fa8ee6426851afed8fd56485de5df6010a825cc6",
+      "pageCount": 6,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pcte.json",
+      "notebookSha256": "842c073d921a7959326b2a0a387beb287a284298c28ce4a6461268b8aed0555b",
+      "documentId": "pcte",
+      "sourceSha256": "c070ba0633cfafdd827c8ee11c26361391137cef30e52348de8d3dd23e259711",
+      "extractionSha256": "fa1ce59f1a89bcd231e79ba69f2cd9cbefb1d3f5fd0b689a55b296af6da18f4a",
+      "pageCount": 24,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pdecat.json",
+      "notebookSha256": "a38064f6b119c9f35121d343636dd2672cfe85c37b98111647b830425c6e91a8",
+      "documentId": "pdecat-primary-cdn",
+      "sourceSha256": "fe7708fa851bef547bbecac4f3159c430f61cf27710023e9dd12a686ee0ed4c3",
+      "extractionSha256": "63b2c80a28045baecf3ccbc5d84686e88a19e36700c07f22a92a092bafef70c2",
+      "pageCount": 35,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pnv.json",
+      "notebookSha256": "61656bf1e548284e7e4933e8a684feb7c83068b0ac8199b3fdd7f2c917d8eb1b",
+      "documentId": "pnv",
+      "sourceSha256": "46fec3a017cdc5c4e506fa5e228b97690071d5a03dfd3d8128392aa20f57d132",
+      "extractionSha256": "9f2b300764933ee8d83391a925cbc849d75549324834a61a305e4e4b48c75950",
+      "pageCount": 52,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/poravila.json",
+      "notebookSha256": "14a64e9183b1ee9ea93af2b3b47daffdb954590b68f03d4859f604ffaab38c32",
+      "documentId": "poravila-primary-july",
+      "sourceSha256": "930160826adee7d5278eb102d5157163c1090508d44920e9726378745b86e305",
+      "extractionSha256": "902ab07cbcdf6bc3a9e5156f0777fdf48fdb239fbe583051f776e8f71f850e07",
+      "pageCount": 20,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pp-institutional-quality-2023.json",
+      "notebookSha256": "73103802be3ca7ea6f1b7418d36ac246a9adbe8029dcf6361892b674a79c8161",
+      "documentId": "pp-institutional-quality-2023",
+      "sourceSha256": "f47c2e2f7e38f0b90908342af5d841fbdf6ebb4b2e0306cdf3fb3c46d4f6429d",
+      "extractionSha256": "5c2368f3e50c3aa7a7c59991f1f8c53dc3a8535d6ed7803133c6096822e39bc6",
+      "pageCount": 30,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pp.json",
+      "notebookSha256": "8f7602f453ffd8d16de869aeffd2625cc7215e8a5e6b27d7abcb98fde4d8abed",
+      "documentId": "pp",
+      "sourceSha256": "c93baafc88bdcb33adcd7e8be9dc309b09056362183ad7b7767f3d5134313108",
+      "extractionSha256": "8ca6372835ef6e7f298030f70aa0c02de3a373fa19a73d7fe6544c688d2f30f9",
+      "pageCount": 112,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/psoe-campaign-copy.json",
+      "notebookSha256": "c2190fdcea1f000e0f33d75bcaf97de6ae30841fc2676c54711a9062f33bc717",
+      "documentId": "psoe-campaign-programme-copy",
+      "sourceSha256": "fb504a6891ad2afc236634bc8fed9c95e10e75cad5b302526dfabb5d1d647cd7",
+      "extractionSha256": "23105e438b89a1a1b0f6a28e1d0ce6a3ba3232f4ccdd1a941afeeed2edb00f18",
+      "pageCount": 272,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/psoe-childhood-obesity-2022-2030.json",
+      "notebookSha256": "4d9b4872d607a3f4b5fbefa3cd7eb35c6f6e62217ef4489c71098168eedfc6ab",
+      "documentId": "psoe-childhood-obesity-2022-2030",
+      "sourceSha256": "c924b48de6e5ed594c985b7a44ea0a0e311d308ad3ed3d42498b3acfd62ae9ea",
+      "extractionSha256": "e579eda98c793fc4e34dd7c87bcecacb785903d3888d4eb70c96b4c416d90a80",
+      "pageCount": 120,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/psoe-preserved-objective.json",
+      "notebookSha256": "72a6ac39929f5c7211168503c8448822955efff413f3ffcde062531cc3511557",
+      "documentId": "psoe-preserved-objective",
+      "sourceSha256": "02d4972a848250fec9b8b2cffc5aaa78733acb0ac010e79ce1787161f91a42f2",
+      "extractionSha256": "b5f7ad3f2ef4da4b4ff8cbec4c8874150e1fa9f059a8bf8e695087a7907d56de",
+      "pageCount": 272,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/pumj.json",
+      "notebookSha256": "f033147ef428262030e85e9ee6eff253059335e2191b4b936996f347d70f168a",
+      "documentId": "pumj",
+      "sourceSha256": "3ecd58b5c3ee42cdbaf005025bbe3c2c73bd58b7267212a82be126e1553fe34e",
+      "extractionSha256": "2624abd20b905e9883cd59ba93a742592ee481f5c5dabbdae73456076baf3bdb",
+      "pageCount": 39,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/recortes-23j-archived.json",
+      "notebookSha256": "0e79d0181874f41cbd2d7dd5738cfe1123af931be6760dc167d78126dfdb8f9f",
+      "documentId": "recortes-23j-archived",
+      "sourceSha256": "0492c7ae1cb30662799f2975160699f960d15f375e7f8d74f0feb850987293bb",
+      "extractionSha256": "f2a6009305090562c4cde8319d87e627f96a6cb2f90877c985f1556d0c8ce798",
+      "pageCount": 48,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/soriaya.json",
+      "notebookSha256": "33479b057452d89280d8b335ea59f295829ef13e299528cc3dd65aafe3c850ba",
+      "documentId": "soriaya-2023-programme-html",
+      "sourceSha256": "9e20f4a58982a15be84df13764a360936529a5f357df007a87bf5d7b27e14a79",
+      "extractionSha256": "1bf5f5049f61bda2dc8b2e017992cd1f4bbd7d3cde8fb3da035b48594f739eb2",
+      "pageCount": 0,
+      "sectionCount": 9
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/sumar.json",
+      "notebookSha256": "42e1d3bd8f6f57500eee65d14e1ff6c64c3e380130947dffad4b780ac623545f",
+      "documentId": "sumar",
+      "sourceSha256": "d5ccdac0d20f1b93a5f703f180d086041bd988835072dd5cb5d1378bf0195820",
+      "extractionSha256": "140b13f8b05825120102a43f7b5e3f2521417f7df6cde02ca9fd7e602c0c9d21",
+      "pageCount": 182,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/teruel-existe.json",
+      "notebookSha256": "69e239e24bfb1af8d743f0084fd0b529b8161902b80ffa7b2af85b2788dae0a3",
+      "documentId": "teruel-existe",
+      "sourceSha256": "1443b068f97f23b455cbf16dd192e21b0656d8b23e4755fb6572d98fc6930d14",
+      "extractionSha256": "d3a99ceffaf2031f58a24143e9c9ef6b480abce22875f28c08020fdd79da01d6",
+      "pageCount": 29,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/unidossi-23j-programme.json",
+      "notebookSha256": "c526c94a8d5cafe4b3908b9bff5d87260fa82a489b797e32c80f80127531d212",
+      "documentId": "unidossi-23j-programme-archive",
+      "sourceSha256": "e41abd6118d892793c16ac1aaced216ea2443b8421583725e2d585d1646cc0db",
+      "extractionSha256": "394645266a69fa24882e6bb9c74678704b3ae1dadc9e8a168eeb87674910662b",
+      "pageCount": 0,
+      "sectionCount": 6
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/upl-leon.json",
+      "notebookSha256": "197c699c6b9c33287f8b19d5c027f50e9de813bc8aada528ed2a99d2929168f2",
+      "documentId": "upl-leon-july",
+      "sourceSha256": "dc9389610068a71d760d2efd2b47fa0926cca6ee9ede02fec14d1d678a0d2313",
+      "extractionSha256": "d9112976af63932520cca26ee821a114d2c5d0bd62b12f64bcb1e339ba99a9cc",
+      "pageCount": 8,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/upn.json",
+      "notebookSha256": "1eee782ef533111d50de57c3c9b9a433ac5698e21b54d20125c04ab316c28e65",
+      "documentId": "upn",
+      "sourceSha256": "6bbf12c4fe8acc17d8deb2ddc68a89cbee9e07ec70472ed7463655e8a59e15d6",
+      "extractionSha256": "6c3524d25f07bfae05f23a795c68c71fb8c38e0a4737040973e4b4818280f867",
+      "pageCount": 6,
+      "sectionCount": 0
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/viaburgalesa.json",
+      "notebookSha256": "01cf32b24621c75cbb1cef0ecb9b2856667719fa26b1bb5f856f5c14beed474d",
+      "documentId": "viaburgalesa-national-2023-html",
+      "sourceSha256": "260bfdc84d50e30075478dad8f9a36286c42863c97016fb17354281858b636d7",
+      "extractionSha256": "a5ca25d2c521be07046eec310503cb480ae34cb75dcaa6ab5b53b80384bf8d39",
+      "pageCount": 0,
+      "sectionCount": 20
+    },
+    {
+      "notebook": "outputs/2023-programme-notebooks/vox.json",
+      "notebookSha256": "cf93892081cb543ad5f283e4f909e8f1409f4d74ddbe20dcb2e779e3e4e75779",
+      "documentId": "vox-campaign-30mb",
+      "sourceSha256": "4573922e4bf755a428cdd528662c67dd71842317595e7d9a5bbe6b5886507d31",
+      "extractionSha256": "af43ae9597d0c889cb78e730b932e02e3279203224943efd9e6c88d1e11b3da1",
+      "pageCount": 178,
+      "sectionCount": 0
     }
   ]
 }

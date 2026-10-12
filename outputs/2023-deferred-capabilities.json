@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:31:07.408679+00:00",
+  "status": "quiz_first_deferrals_preserved",
+  "currentEdition": "es-congress-2023-07-23",
+  "backlog": [
+    {
+      "capability": "Standalone programme comparison",
+      "state": "deferred",
+      "preservedUtilities": [
+        "resources/js/matching.ts",
+        "scripts/prepare_sources.py",
+        "scripts/manage_releases.py"
+      ],
+      "activation": "Separate owner-authorized product iteration with actual evidence and UI/privacy checks."
+    },
+    {
+      "capability": "Voluntary randomized aggregate feedback expansion",
+      "state": "deferred_disabled",
+      "preservedUtilities": [
+        "resources/js/feedback.ts",
+        "app/FeedbackCounters.php",
+        "app/FeedbackEstimator.php"
+      ],
+      "activation": "Separate purpose/notice/host-log/basis checks and explicit approval; never reuse quiz answers."
+    },
+    {
+      "capability": "Catalan/Basque/Galician public packs",
+      "state": "deferred_disabled",
+      "activation": "Complete optional surface and score/ID/rubric/citation parity; keep uncertain/incomplete packs disabled."
+    }
+  ],
+  "currentFlags": {
+    "collectionEnabled": false,
+    "programmeComparisonPrimaryNavigation": false,
+    "spanishCompleteInitialSurface": true
+  },
+  "noSchedulerStarted": true,
+  "noBackofficeAdded": true,
+  "privacyEvidence": "outputs/2023-local-final-browser-acceptance.json"
+}

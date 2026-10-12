@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:31:07.408679+00:00",
+  "planVersion": "quiz-2023-v2.0.0",
+  "electionId": "es-congress-2023-07-23",
+  "status": "local_real_2023_quiz_verified_public_release_pending",
+  "localEngineeringAcceptanceComplete": true,
+  "publicReleaseEligible": false,
+  "publicLaunchApproved": false,
+  "bank": {
+    "path": ".tools/authored-quiz-preview/bank.json",
+    "sha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+    "bytes": 5169671,
+    "byteLimit": 5242880,
+    "questions": 80,
+    "topics": 10,
+    "candidacyDenominations": 59,
+    "constituencies": 52,
+    "explicitDefaultCells": 4720,
+    "explicitScopedCells": 510,
+    "numericMappings": 332,
+    "independentAnswerCases": 1660,
+    "pendingAuthorshipCells": 0,
+    "rankingAvailableInVerifiedScopes": false
+  },
+  "corpus": {
+    "fullNotebookFiles": 59,
+    "uniqueFullyReadOriginals": 56,
+    "deduplicatedPdfPages": 2854,
+    "deduplicatedHtmlSections": 98,
+    "missingProgrammeCandidacies": 21,
+    "explicitMissingProgrammeUnknownCells": 1680,
+    "completeCorpusCertified": false,
+    "missingCandidacies": [
+      {
+        "id": "boe-2023-005",
+        "name": "Partit dels Socialistes de Catalunya (PSC-PSOE) (PSC)",
+        "status": "primary_23j_memory_excerpt_observed_full_adoption_source_unresolved"
+      },
+      {
+        "id": "boe-2023-023",
+        "name": "Geroa Bai (GBAI).",
+        "status": "congress_ballot_pack_excluded_23J_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-029",
+        "name": "Bloque Extremeño (BQEX)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-033",
+        "name": "Partido Aragonés (PAR)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-034",
+        "name": "Partido Humanista (PH)",
+        "status": "archived_access_challenges_current_2024_european_programme_excluded_23J_unresolved"
+      },
+      {
+        "id": "boe-2023-035",
+        "name": "Por Huelva (XH)",
+        "status": "primary_23j_announcement_and_catalogue_recovered_full_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-036",
+        "name": "Vamos Palencia (VP)",
+        "status": "searched_primary_23j_programme_unresolved_not_absence_certified"
+      },
+      {
+        "id": "boe-2023-037",
+        "name": "Zamora Sí (Zsi)",
+        "status": "searched_primary_23j_programme_unresolved_not_absence_certified"
+      },
+      {
+        "id": "boe-2023-039",
+        "name": "Por Mi Región (POR MI REGIÓN)",
+        "status": "searched_primary_archive_23j_programme_unresolved_not_absence_certified"
+      },
+      {
+        "id": "boe-2023-040",
+        "name": "Ahora Canarias-Partido Comunista del Pueblo Canario (AHORA CANARIAS-PCPC)",
+        "status": "searched_primary_23j_programme_unresolved_not_absence_certified"
+      },
+      {
+        "id": "boe-2023-043",
+        "name": "Coalición por Melilla (CpM)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-045",
+        "name": "España Vaciada-Partido Castellano-Tierra Comunera (EV-PCAS-TC)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-046",
+        "name": "Partido Regionalista del País Leonés (PREPAL)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-047",
+        "name": "Somos Cáceres (Somos Cc)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-049",
+        "name": "Federación de los Independientes de Aragón (FIA)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-051",
+        "name": "Unidad Castellana (Ud.Ca)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-053",
+        "name": "Partido Unionista Estado de España (PUEDE)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-054",
+        "name": "Entre Veïns Catalunya (EVR)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-055",
+        "name": "Libres (LB)",
+        "status": "primary_catalogue_followup_2023_congress_programme_unresolved"
+      },
+      {
+        "id": "boe-2023-057",
+        "name": "Referéndum Sistema Dinero (+RDS+)",
+        "status": "followup_search_no_verified_primary_23j_programme_yet"
+      },
+      {
+        "id": "boe-2023-058",
+        "name": "Coalición de Centro Democrático (CCD)",
+        "status": "wrong_election_proposals_excluded_23j_congress_programme_unresolved"
+      }
+    ]
+  },
+  "reproduction": {
+    "byteIdentical": true,
+    "command": "python3 scripts/assemble_authored_quiz.py --output .tools/local-final-acceptance/reproduced-bank.json",
+    "log": ".tools/local-final-acceptance/reproduction.log",
+    "sha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d"
+  },
+  "browser": {
+    "actualBankPrincipalStateWalkthroughPassed": true,
+    "screenshotsInspected": 38,
+    "normalCoreApiInterception": false,
+    "simulatedFailureStatesClearlyLabelled": true,
+    "localStorageSessionStorageCookiesEmpty": true,
+    "fixedPublicGetsOnly": true,
+    "explicitFinish": true,
+    "exportResetReloadCrossTabPassed": true,
+    "renderedRentStrongDisagreementVersusSumarSupport": {
+      "userAnswer": -2,
+      "partyValue": 2,
+      "proposalOverlapPercent": 0,
+      "relationship": "opposed"
+    }
+  },
+  "recovery": {
+    "authenticatedShards": 7,
+    "all56OriginalHashesRestored": true,
+    "all59NotebooksAndAuthoredRecordsRestored": true,
+    "chunkReassemblyVerified": true,
+    "rollbackWithdrawalPassed": true,
+    "localOnlyNoOffDeviceBackupClaimed": true
+  },
+  "requiredCommitGate": {
+    "command": "python3 scripts/check-staged.py",
+    "exactFinalIndexRequired": true,
+    "installedHookPreserved": true,
+    "allJobs": [
+      "php",
+      "frontend",
+      "integrity",
+      "security"
+    ],
+    "failuresSkippedOrUnavailableChecksBlockCommit": true,
+    "logs": [
+      ".tools/local-final-acceptance/check-staged.log",
+      ".tools/local-final-acceptance/commit.log"
+    ],
+    "hostedResultsSeparate": true
+  },
+  "artifacts": {
+    "outputs/2023-local-source-family-acceptance.json": "ff754d706fe690bfa619e638be1a675dd941f6f8e6798fff2d028cb3c60b0bc7",
+    "outputs/2023-local-question-bank-acceptance.json": "4ce7dac312188eaae326ed3642c88cb403533805363b89333e3b66c2ef9d98b1",
+    "outputs/2023-local-final-browser-acceptance.json": "5e2c2f54b892c6db0aa28e45565d6dc21d0e034187772ea56b3f11dc02530267",
+    "outputs/2023-local-final-recovery-acceptance.json": "1a70cc2053574bef0783174ea78c591c0b7f8081b7d24172fa4b5660a362fe5b",
+    "outputs/2023-future-edition-boundary-verification.json": "eee77417f8f5e17de8581c486b93dfcbe8164ccd242bd298f2a41818f8d642f1",
+    "outputs/2023-deferred-capabilities.json": "090ad652190a590175338f7ae4ecba640fa6c152a4127ec5d4b637a639adadb3",
+    "outputs/2023-candidacy-registry.json": "c176932210ca3ce5a340970ce842f39961c03186a8142f0e4db866f1887ab73f",
+    "outputs/2023-programme-reading-verification.json": "78ae588667b12bed215f6bf25e6c09e429211542f16aadcd73cdebdc9457a8cd",
+    "outputs/2023-source-inventory.json": "0097f7ed4020caf7f7d4a0c9686e4b17a40f44bc37bde16b0f3175db9b83e060",
+    "outputs/2023-authored-question-bank.json": "eb96db2d0d16a264bcf365f975bb8d6b614edaa7ea3a66ce67f6b3f8bdcca83a",
+    "outputs/2023-authored-issue-matrix.json": "79eb02850ace58b887755b45d3d4364d0fab90d14426961ea042a821728b0f3e",
+    "outputs/2023-authored-calibration.json": "f609381c63d2e06b792954324d58e6c44115843fa53aa1ef45388fc84e2e9649",
+    "outputs/2023-authored-final-two-verification.json": "3cb9e9a4761df9ce1a02ef6d3a599ba35874e5eb434c742d82ee5dbf9025ea6d",
+    "outputs/2023-authored-final-two-browser-verification.json": "1712a92f36032776f6878183cd9f6c481b3512d623080c8f38f87879376404b0",
+    "scripts/assemble_authored_quiz.py": "ed6892e4f606971924bc038f081906240f11628449c58f51f8f6f53fda8aaeeb",
+    "tests/Tooling/test_authored_quiz.py": "a1e3429e4a3ae740af4035e4156d52d3130bfc026b97bb720ce71b4ae77fb29c"
+  },
+  "limitations": [
+    "Twenty-one candidacies lack an acquired applicable complete programme; missing variants/annex identities/adoption and ambiguous positions remain visible and unscored. All historical programmes were not universally acquired.",
+    "Literal/arithmetic checks and direct source review do not guarantee interpretation infallibility.",
+    "Sparse common evidence produces cited unranked comparisons, never an invented winner or probability.",
+    "This local development candidate remains unpublished and production preparation remains blocked. Actual provider/domain/cost/host privacy/log/source permissions and PUBLIC-LAUNCH are separate."
+  ]
+}

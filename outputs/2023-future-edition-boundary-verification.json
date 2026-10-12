@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:31:07.408679+00:00",
+  "status": "separate_edition_boundary_verified_no_future_sources_created",
+  "archivedElectionId": "es-congress-2023-07-23",
+  "archivedBankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+  "futureProgrammesAcquired": 0,
+  "futurePositionsAuthored": 0,
+  "checks": {
+    "allInputsRelabelledElectionIdRejected": true,
+    "dateOnlyRelabelRejected": true,
+    "combinedRelabelRejected": true,
+    "existing2023BankRemainsByteIdentical": true,
+    "immutableCorrectionRollbackAndWithdrawalVerified": true
+  },
+  "testEvidence": {
+    "command": "python3 -m unittest discover -s tests/Tooling -p test_authored_quiz.py",
+    "testsPassed": 23,
+    "log": ".tools/local-final-acceptance/edition-tests.log",
+    "logSha256": "c3c1fcd01b5cb541bf5c929d0ebf7079860e1fc33c2db1e7d1c7291d1289850f",
+    "testSource": "tests/Tooling/test_authored_quiz.py",
+    "compiler": "scripts/assemble_authored_quiz.py"
+  },
+  "newEditionChecklist": [
+    "Confirm date/chamber/territories and reconcile the fresh official registry.",
+    "Acquire each applicable programme/annex with original URLs, byte hashes and missing-source searches.",
+    "Read every used document in full, one by one; preserve exact context, caveats and source-specific applicability.",
+    "Cross-reference fresh policies and directly author question/rubric/value/citation records; never inherit 2023 values, silence or coalition adoption.",
+    "Calibrate all five answers and verify actual browser meaning/privacy/selection/evidence before local acceptance.",
+    "Compile a separately versioned new edition using an explicitly scoped compiler; the 2023-only compiler rejects relabelled inputs.",
+    "Preserve 2023 immutable snapshots, corrections, pinned sessions and authenticated restore/rollback.",
+    "Prepare concrete provider/domain/cost/host privacy/source permission evidence and request PUBLIC-LAUNCH only for the final external action."
+  ],
+  "limitations": [
+    "The negative test uses labelled hypothetical unread input only, never a future programme or public bundle.",
+    "This checklist does not acquire, fabricate or certify a future election."
+  ]
+}

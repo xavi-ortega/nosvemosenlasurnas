@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:31:07.408679+00:00",
+  "status": "local_review_packet_complete_external_launch_deferred_by_owner",
+  "edition": "Elecciones generales 2023 · Congreso",
+  "bankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+  "localRuntime": {
+    "path": ".tools/authored-local-runtime",
+    "developmentOnly": true,
+    "runningLoopback": "http://127.0.0.1:8766/questionnaire",
+    "existingServerReused": true
+  },
+  "verificationManifest": {
+    "path": "outputs/2023-local-release-verification.json",
+    "sha256": "e82e29f34b85c325cf38eafa341654a28a28bbe55cb6a093a354f3548f500166"
+  },
+  "hosting": {
+    "provider": null,
+    "domain": null,
+    "domainPurchased": false,
+    "costVerified": false,
+    "ownerInstruction": "Hosting and domain are not selected; finish the local version first.",
+    "externalWorkDeferred": true
+  },
+  "privacy": {
+    "localBoundaryVerified": true,
+    "collectionEnabled": false,
+    "actualHostProxyLogFlowVerified": false,
+    "feedbackExpansionDeferred": true
+  },
+  "publication": {
+    "approvalGate": "PUBLIC-LAUNCH",
+    "approved": false,
+    "requested": false,
+    "pushed": false,
+    "deployed": false,
+    "paidServicesPurchased": false,
+    "publicPointerChanged": false,
+    "productionCandidatePrepared": false
+  },
+  "sourceRights": {
+    "fullRawOriginalsInPublicPayload": false,
+    "originalLinksPreserved": true,
+    "blanketPublicationPermissionCertified": false,
+    "sourceSpecificReviewBeforePublicLaunch": true
+  },
+  "rollback": {
+    "evidence": "outputs/2023-local-final-recovery-acceptance.json",
+    "authenticatedLocalRestorePassed": true,
+    "actualHostRestoreNotClaimed": true
+  },
+  "remainingExternalInputs": [
+    "Select provider and domain, verify actual cost and operational configuration.",
+    "Verify actual host/proxy/CDN/log/backup data flow and truthful privacy notice.",
+    "Reconcile source-specific public quotation/permission limitations for the exact candidate.",
+    "Prepare an independently scoped finished production bundle and review exact PUBLIC-LAUNCH action."
+  ],
+  "noUserInputNeededForCompletedLocalScope": true
+}

@@ -62,6 +62,7 @@ def assemble(root):
     registry = load_json(root / "outputs/2023-candidacy-registry.json")
     election_id = inventory["electionId"]
     require(all(item["electionId"] == election_id for item in [authored, matrix, registry]), "Authored election mismatch")
+    require(election_id == "es-congress-2023-07-23" and inventory["electionDate"] == "2023-07-23", "The 2023 authored compiler cannot relabel another edition")
     require(authored["releaseEligible"] is False and matrix["releaseEligible"] is False, "This command assembles drafts only")
     policy = authored.get("comparisonPolicy")
     require(policy is None or policy == "fixed-bank-evidence-v1", "Invalid comparison policy")

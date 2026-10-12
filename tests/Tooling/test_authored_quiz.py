@@ -34,14 +34,14 @@ class AuthoredQuizTest(unittest.TestCase):
         cells = [{"candidacyId": "fixture-a", "status": "derived", "value": 2, "rationale": "Propuesta ficticia.", "citations": [citation]},
                  {"candidacyId": "fixture-b", "status": "unknown", "value": None, "rationale": "Sin interpretación.", "citations": []}]
         files = {
-            "2023-authored-question-bank.json": {"electionId": "fixture-election", "releaseEligible": False, "questions": [question]},
-            "2023-authored-issue-matrix.json": {"electionId": "fixture-election", "releaseEligible": False,
+            "2023-authored-question-bank.json": {"electionId": "es-congress-2023-07-23", "releaseEligible": False, "questions": [question]},
+            "2023-authored-issue-matrix.json": {"electionId": "es-congress-2023-07-23", "releaseEligible": False,
                 "candidacyIds": ["fixture-a", "fixture-b"], "issues": [{"id": question["id"], "topicId": "housing", "familyId": "fixture-family", "cells": cells}]},
-            "2023-source-inventory.json": {"electionId": "fixture-election", "electionDate": "2023-07-23",
+            "2023-source-inventory.json": {"electionId": "es-congress-2023-07-23", "electionDate": "2023-07-23",
                 "candidacies": [{"id": "fixture-a", "officialName": "Primera ficticia"}, {"id": "fixture-b", "officialName": "Segunda ficticia"}],
                 "acquisitions": [{"file": "source.txt", "sha256": sha, "textFile": "source.txt",
                     "url": citation["sourceUrl"], "recordedAt": "2026-10-11T00:00:00Z"}]},
-            "2023-candidacy-registry.json": {"electionId": "fixture-election", "constituencyCount": 1,
+            "2023-candidacy-registry.json": {"electionId": "es-congress-2023-07-23", "constituencyCount": 1,
                 "records": [{"id": "congress-test-1", "status": "proclaimed", "resultDenominationId": "fixture-a", "constituency": "Test"},
                             {"id": "congress-test-2", "status": "proclaimed", "resultDenominationId": "fixture-b", "constituency": "Test"}]},
         }
@@ -151,6 +151,24 @@ class AuthoredQuizTest(unittest.TestCase):
 
             with self.assertRaisesRegex(ValueError, "unsafe authored extraction"):
                 assembler.assemble(root)
+
+    def test_cannot_relabel_inherited_2023_evidence_as_another_edition(self):
+        for changed in ["id", "date", "both"]:
+            with self.subTest(changed=changed), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory)
+                files = self.prepare(root)
+                if changed in {"id", "both"}:
+                    for document in files.values():
+                        document["electionId"] = "hypothetical-unread-edition"
+                if changed in {"date", "both"}:
+                    files["2023-source-inventory.json"]["electionDate"] = "2099-01-01"
+                for name, document in files.items():
+                    (root / "outputs" / name).write_text(json.dumps(document))
+
+                with self.assertRaisesRegex(ValueError, "cannot relabel another edition"):
+                    assembler.assemble(root)
+
+                self.assertFalse((root / "resources/evidence/current.json").exists())
 
     def test_assembles_exact_unicode_citations_and_missing_candidacy_without_source_text(self):
         with tempfile.TemporaryDirectory() as directory:

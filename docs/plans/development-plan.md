@@ -158,30 +158,30 @@ Work one inspectable increment at a time with factual evidence.
 - Q001 · docs: adopt the 2023 quiz and everyday-user contract · completed
 - Q002 · fix: order answer labels and reproduce the rent direction path · completed
 - Q003 · data: reconcile every 23J Congress candidacy · completed
-- Q004 · data: acquire and hash every available 2023 programme · in_progress
-- Q005 · data: close missing-source and extraction gaps explicitly · in_progress
-- Q006 · data: read each available programme in full and author notes · in_progress
-- Q007 · data: cross-reference proposals into an authored issue matrix · in_progress
-- Q008 · data: author a larger bank of everyday Spanish questions · in_progress
-- Q009 · data: write question rubrics and cited party positions · in_progress
-- Q010 · test: audit every question for meaning and everyday usefulness · in_progress
-- Q011 · feat: compile authored real-source bundles without question generation · in_progress
-- Q012 · test: calibrate the full five-answer scoring surface · in_progress
-- Q013 · fix: compare eligible parties on the same evidence and weights · in_progress
-- Q014 · feat: select balanced authored questions and useful follow-ups · in_progress
-- Q015 · fix: explain agreements differences and aggregate results correctly · in_progress
-- Q016 · test: validate citations editions and correction behavior · in_progress
-- Q017 · design: specify and review the quiz visual system · in_progress
-- Q018 · feat: make the test the primary entry point · in_progress
-- Q019 · feat: build the accessible single-question experience · in_progress
-- Q020 · feat: add smooth transitions without losing private state · in_progress
-- Q021 · feat: make deeper quiz checkpoints clear and optional · in_progress
-- Q022 · feat: present understandable cited results · in_progress
-- Q023 · feat: complete Spanish help errors privacy and local export · in_progress
-- Q024 · test: verify actual mobile keyboard motion and readability · in_progress
-- Q025 · test: verify the real-data quiz privacy boundary · in_progress
-- Q026 · test: verify the complete 2023 corpus and release candidate · planned
-- Q027 · chore: prove 2023 bundle recovery and rollback · in_progress
-- Q028 · docs: prepare the concrete 2023 public release packet · planned
-- Q029 · docs: record deferred comparison feedback and translation scope · planned
-- Q030 · feat: prepare separate future-programme edition updates · planned
+- Q004 · data: acquire and hash every available 2023 programme · completed
+- Q005 · data: close missing-source and extraction gaps explicitly · completed
+- Q006 · data: read each available programme in full and author notes · completed
+- Q007 · data: cross-reference proposals into an authored issue matrix · completed
+- Q008 · data: author a larger bank of everyday Spanish questions · completed
+- Q009 · data: write question rubrics and cited party positions · completed
+- Q010 · test: audit every question for meaning and everyday usefulness · completed
+- Q011 · feat: compile authored real-source bundles without question generation · completed
+- Q012 · test: calibrate the full five-answer scoring surface · completed
+- Q013 · fix: compare eligible parties on the same evidence and weights · completed
+- Q014 · feat: select balanced authored questions and useful follow-ups · completed
+- Q015 · fix: explain agreements differences and aggregate results correctly · completed
+- Q016 · test: validate citations editions and correction behavior · completed
+- Q017 · design: specify and review the quiz visual system · completed
+- Q018 · feat: make the test the primary entry point · completed
+- Q019 · feat: build the accessible single-question experience · completed
+- Q020 · feat: add smooth transitions without losing private state · completed
+- Q021 · feat: make deeper quiz checkpoints clear and optional · completed
+- Q022 · feat: present understandable cited results · completed
+- Q023 · feat: complete Spanish help errors privacy and local export · completed
+- Q024 · test: verify actual mobile keyboard motion and readability · completed
+- Q025 · test: verify the real-data quiz privacy boundary · completed
+- Q026 · test: verify the complete 2023 corpus and release candidate · completed
+- Q027 · chore: prove 2023 bundle recovery and rollback · completed
+- Q028 · docs: prepare the concrete 2023 public release packet · in_progress
+- Q029 · docs: record deferred comparison feedback and translation scope · completed
+- Q030 · feat: prepare separate future-programme edition updates · completed

@@ -37,7 +37,7 @@ Dependencies: Q001
 
 ## Q004 data: acquire and hash every available 2023 programme
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q003
 
@@ -49,7 +49,7 @@ Dependencies: Q003
 
 ## Q005 data: close missing-source and extraction gaps explicitly
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q004
 
@@ -61,7 +61,7 @@ Dependencies: Q004
 
 ## Q006 data: read each available programme in full and author notes
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q005
 
@@ -73,7 +73,7 @@ Dependencies: Q005
 
 ## Q007 data: cross-reference proposals into an authored issue matrix
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q006
 
@@ -85,7 +85,7 @@ Dependencies: Q006
 
 ## Q008 data: author a larger bank of everyday Spanish questions
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q007
 
@@ -97,7 +97,7 @@ Dependencies: Q007
 
 ## Q009 data: write question rubrics and cited party positions
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q008
 
@@ -109,7 +109,7 @@ Dependencies: Q008
 
 ## Q010 test: audit every question for meaning and everyday usefulness
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q009
 
@@ -121,7 +121,7 @@ Dependencies: Q009
 
 ## Q011 feat: compile authored real-source bundles without question generation
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q010
 
@@ -133,7 +133,7 @@ Dependencies: Q010
 
 ## Q012 test: calibrate the full five-answer scoring surface
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q002, Q011
 
@@ -145,7 +145,7 @@ Dependencies: Q002, Q011
 
 ## Q013 fix: compare eligible parties on the same evidence and weights
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q012
 
@@ -157,7 +157,7 @@ Dependencies: Q012
 
 ## Q014 feat: select balanced authored questions and useful follow-ups
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q013
 
@@ -169,7 +169,7 @@ Dependencies: Q013
 
 ## Q015 fix: explain agreements differences and aggregate results correctly
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q013
 
@@ -181,7 +181,7 @@ Dependencies: Q013
 
 ## Q016 test: validate citations editions and correction behavior
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q011, Q015
 
@@ -193,7 +193,7 @@ Dependencies: Q011, Q015
 
 ## Q017 design: specify and review the quiz visual system
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q001
 
@@ -205,7 +205,7 @@ Dependencies: Q001
 
 ## Q018 feat: make the test the primary entry point
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q017
 
@@ -217,7 +217,7 @@ Dependencies: Q017
 
 ## Q019 feat: build the accessible single-question experience
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q014, Q018
 
@@ -229,7 +229,7 @@ Dependencies: Q014, Q018
 
 ## Q020 feat: add smooth transitions without losing private state
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q019
 
@@ -240,7 +240,7 @@ Dependencies: Q019
 
 ## Q021 feat: make deeper quiz checkpoints clear and optional
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q020
 
@@ -252,7 +252,7 @@ Dependencies: Q020
 
 ## Q022 feat: present understandable cited results
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q015, Q016, Q021
 
@@ -264,7 +264,7 @@ Dependencies: Q015, Q016, Q021
 
 ## Q023 feat: complete Spanish help errors privacy and local export
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q022
 
@@ -276,7 +276,7 @@ Dependencies: Q022
 
 ## Q024 test: verify actual mobile keyboard motion and readability
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q023
 
@@ -288,7 +288,7 @@ Dependencies: Q023
 
 ## Q025 test: verify the real-data quiz privacy boundary
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q024
 
@@ -300,7 +300,7 @@ Dependencies: Q024
 
 ## Q026 test: verify the complete 2023 corpus and release candidate
 
-Status: planned
+Status: completed
 
 Dependencies: Q016, Q025
 
@@ -312,7 +312,7 @@ Dependencies: Q016, Q025
 
 ## Q027 chore: prove 2023 bundle recovery and rollback
 
-Status: in_progress
+Status: completed
 
 Dependencies: Q026
 
@@ -324,7 +324,7 @@ Dependencies: Q026
 
 ## Q028 docs: prepare the concrete 2023 public release packet
 
-Status: planned
+Status: in_progress
 
 Dependencies: Q027
 
@@ -335,7 +335,7 @@ Dependencies: Q027
 
 ## Q029 docs: record deferred comparison feedback and translation scope
 
-Status: planned
+Status: completed
 
 Dependencies: Q026
 
@@ -346,7 +346,7 @@ Dependencies: Q026
 
 ## Q030 feat: prepare separate future-programme edition updates
 
-Status: planned
+Status: completed
 
 Dependencies: Q027
 

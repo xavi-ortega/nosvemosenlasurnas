@@ -244,13 +244,24 @@
   "newPdfDocuments": 1,
   "newFullPdfPagesRead": 148,
   "preVoteArchivedBytesCertified": false,
-  "bankAuditComplete": false,
+  "bankAuditComplete": true,
   "releaseEligible": false,
   "limitations": [
     "Both complete programmes read separately;148and151pages have different bytes, text and pagination. No precedence inferred from uploadmonth, currentmetadata or PDFlength.",
     "Exact current-host originals preserved; pre-vote archived bytes are not certified. PrimarypartyURL404 is a failedacquisition, not a programme.",
     "Whitespace-only literal matching and technicaldiff are locator diagnostics, not semantic interpretation. Every future bankvalue requires question-specific full-context reconciliation/calibration.",
     "Historical/grievance statistics, legal allegations, placeholders and sourceyear/arithmetic anomalies remain attributed. Future-Stateconditions not inherited to currentCongresspromises.",
-    "Originalquotes preserve extraction linebreaks/footer/pagecrossings; publicreadability checked separately. No new numericpositions or publicbankpointer change."
-  ]
+    "Six directly authored numeric mappings reconciled across the two full readings; fur-farm closure remains ambiguous/null. Native quotations preserve page footers; no exact pre-vote byte or entire programme-family certification."
+  ],
+  "specificBankAudit": "outputs/2023-authored-junts-audit.json",
+  "specificBankVerification": "outputs/2023-authored-junts-verification.json",
+  "specificBankBrowserVerification": [
+    "outputs/2023-authored-junts-browser-verification.json",
+    "outputs/2023-authored-junts-correction-browser-verification.json"
+  ],
+  "questionCount": 80,
+  "derivedMappings": 6,
+  "citedUncertainties": 23,
+  "draftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+  "sourceFamilyCertified": false
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T22:46:15.638234+00:00",
+  "recordedAt": "2026-10-12T07:33:05.559640+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -365,12 +365,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Ofrece incentivos fiscales para alquilar por debajo de un índice; no concreta un tope obligatorio al precio.",
+          "authoredAnalysis": "Below-index tax incentives and Catalan housing powers do not establish a binding total-price cap. Both full housing sections read; never infer opposition from alternative incentives.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 95,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 365138,
+              "end": 365446,
+              "quote": "Limitar            les            reduccions            dels            rendiments            del            lloguer            a            l’IRPF            quan            els\n      lloguers es trobin per sota de l'Índex de Referència de Preus del Lloguer\n      que, a Catalunya, determini la Generalitat.",
+              "contextStart": 362303,
+              "contextEnd": 366563,
+              "contextSha256": "bec42dbea3d004c2032d60251683140b8153c25fc9e2cd6020b5b0ca609114fb",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -1681,10 +1705,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta de jornada máxima de 35 horas sin reducción salarial.",
+          "authoredAnalysis": "Employment quality and flexible reconciliation are not a maximum35hour unchanged-pay commitment.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-009",
@@ -2804,10 +2833,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No se ha podido establecer una ampliación concreta de la atención dental pública.",
+          "authoredAnalysis": "Universal healthcare and funding demands do not explicitly expand dentistry.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-009",
@@ -4048,12 +4082,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Habla del cierre de nucleares y de contratos eléctricos, sin concretar si ampliaría su vida útil.",
+          "authoredAnalysis": "Nuclear closure heading and auction/long-contract proposals do not determine operational-lifetime extension. Do not derive a deadline from heading.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 88,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 340427,
+              "end": 340594,
+              "quote": "Treure     a     la     nuclear     i     la     gran     hidràulica     de     la     subhasta     elèctrica     i     tancar\n             contractes a llarg termini.",
+              "contextStart": 340170,
+              "contextEnd": 340677,
+              "contextSha256": "2b1d461c4517d89fde2ec09c7b97edfc9a025d804a79e2e195b4f63c87bde0c5",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -5264,10 +5322,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una exención general para herencias de padres a hijos.",
+          "authoredAnalysis": "Fiscal principles and family-business succession do not give the exact parent-child inheritance exemption.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -6312,12 +6375,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone financiación pública estatal de la educación de cero a tres años, sin concretar una plaza gratuita universal.",
+          "authoredAnalysis": "State public financing0–3 differs from explicit universal free16–18 clause. Do not erase this distinction.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 114,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 442260,
+              "end": 442463,
+              "quote": "L’educació          dels          infants          de          0          a          3          anys          ha          de          tenir          finançament\n                            públic estatal",
+              "contextStart": 441470,
+              "contextEnd": 443023,
+              "contextSha256": "5171ed0728fb50b0482edb91277193df1ec9fad3a5300d86a1aba943fcd589ad",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -7492,10 +7579,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una limitación de vuelos internos cuando exista una alternativa ferroviaria.",
+          "authoredAnalysis": "Rail investments and airport decentralisation are not a domestic flight restriction.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -8682,10 +8774,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una postura concreta sobre mantener el derecho legal a la eutanasia.",
+          "authoredAnalysis": "Universal healthcare and dignity do not name the legal euthanasia entitlement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -9634,12 +9731,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone forzar la renovación del consejo judicial, sin concretar que los jueces elijan sus vocales.",
+          "authoredAnalysis": "Dismissing expired-mandate CGPJmembers/renewal is different from selecting judicial-origin representatives by judges.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 24,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 82312,
+              "end": 82548,
+              "quote": "Junts  ja  ha  presentat\n            una     iniciativa     per     modificar     la     LOPJ     de     forma     que     es     forci     la     renovació\n            del CGPJ destituint els seus membres quan finalitzin el seu mandat.",
+              "contextStart": 81757,
+              "contextEnd": 82548,
+              "contextSha256": "0851f4e36f9f305dd99569c2f78d8b546fb711f8143e7e9f0a608f288acc6834",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -10823,12 +10944,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende el poder adquisitivo de las pensiones y tener en cuenta el coste de vida territorial, sin concretar esa actualización según la subida de precios.",
+          "authoredAnalysis": "Purchasing-power aspiration and territorial living-cost calculation of benefit amounts do not explicitly supply temporal pension indexation to rising prices. Read both full pension sections; exact annual CPI mechanism not invented.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 100,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 382557,
+              "end": 383179,
+              "quote": "Vàrem contribuir a fer possible l’augment i revalorització de les pensions\n      com                     a                     nou                     marc                     normatiu                     en                     diferents                     reformes                     durant                     aquesta\n      legislatura              per              mantenir              el              seu              poder              adquisitiu              i              continuarem              sent\n      propositius per tal de que aquesta revalorització pugui continuar donant-\n      se en els propers anys.",
+              "contextStart": 382208,
+              "contextEnd": 386816,
+              "contextSha256": "c5bbfc43afbf3025268244d80bd5558dd0627f738fc4260f4077fb4af34f4675",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 100,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 384059,
+              "end": 384419,
+              "quote": "S’ha d’introduir un mecanisme que incorpori la variable “cost de la vida”\n      a  l’hora  de  calcular  els  imports  de  les  prestacions  podent  individualitzar\n      per     territori     quan     aquest     cost     de     vida     sigui     indicatiu.     Ho     hem     proposat\n      aquesta passada legislatura i ho continuarem posant sobre la taula.",
+              "contextStart": 382208,
+              "contextEnd": 386816,
+              "contextSha256": "c5bbfc43afbf3025268244d80bd5558dd0627f738fc4260f4077fb4af34f4675",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -11923,10 +12086,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta concreta de mantener el impuesto sobre las grandes fortunas.",
+          "authoredAnalysis": "Progressive taxation and taxing unproductive capital do not identify retention of this levy.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -13072,12 +13240,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar la fiscalidad de pensiones compatibles con el trabajo, sin eximir de renta todas las pensiones contributivas.",
+          "authoredAnalysis": "Tax improvement for work-compatible pensions is not universal contributory retirement pension IRPFexemption.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 100,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 382557,
+              "end": 383179,
+              "quote": "Vàrem contribuir a fer possible l’augment i revalorització de les pensions\n      com                     a                     nou                     marc                     normatiu                     en                     diferents                     reformes                     durant                     aquesta\n      legislatura              per              mantenir              el              seu              poder              adquisitiu              i              continuarem              sent\n      propositius per tal de que aquesta revalorització pugui continuar donant-\n      se en els propers anys.",
+              "contextStart": 382208,
+              "contextEnd": 386816,
+              "contextSha256": "c5bbfc43afbf3025268244d80bd5558dd0627f738fc4260f4077fb4af34f4675",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -14190,12 +14382,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ampliar el parque protegido, pero contempla que viviendas pierdan esa condición y se vendan devolviendo las ayudas.",
+          "authoredAnalysis": "Lasting protected park does not guarantee permanent public ownership; protection-loss clause permits above-limit sale/rent with subsidy/interest repayment. No blanket opposite value either.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 95,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 363787,
+              "end": 364363,
+              "quote": "Incentivar    que    els    pisos    de    protecció    oficial    continuïn    complint    la    seva\n      funció social quan perdin la seva condició a través d’haver de retornar la\n      subvenció          més          els          interessos          corresponents          en          cas          de          posar-se          a          la\n      venda           o           en           lloguer           a           un           preu           superior           al           fixat           per           als           habitatges           de\n      protecció oficial.",
+              "contextStart": 362303,
+              "contextEnd": 366563,
+              "contextSha256": "bec42dbea3d004c2032d60251683140b8153c25fc9e2cd6020b5b0ca609114fb",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -16812,12 +17028,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Defiende la variedad de proveedores sanitarios, sin concretar un aumento de acuerdos financiados públicamente con centros privados.",
+          "authoredAnalysis": "Mixed provider/competition defence is not an explicit increase of public-funded private treatment agreements.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 109,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 421850,
+              "end": 422365,
+              "quote": "La sanitat catalana és un model que cal reforçar i millorar però que, en essència,\nés    d’èxit    i,    per    tant,    s’ha    de    defensar.    I,    el    més    important,    que    compta    amb    el\nsuport                de                la                societat                civil                que                el                va                crear.                La                varietat                de                proveïdors,                la\ncompetitivitat, milloren els serveis.",
+              "contextStart": 421005,
+              "contextEnd": 422365,
+              "contextSha256": "a386209c695b700bb77d0a0f492c5eff99d004816ce228ff67e211cd6226cbf2",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -17979,10 +18219,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta concreta de prestar la interrupción legal del embarazo en centros sanitarios públicos.",
+          "authoredAnalysis": "Gender equality, universal health and contraception do not supply the abortion-provider mechanism.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -18964,12 +19209,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone recuperar concesiones para centrales reversibles de gestión pública, sin concretar la devolución al vencer cada concesión.",
+          "authoredAnalysis": "Public reversible hydro and CHEconcession recovery do not specify direct public operation upon expiry of every operation.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 88,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 338602,
+              "end": 339324,
+              "quote": "Potenciar                              la                              implantació                              renovable                              en                              tots                              els                              fonts:                              sistemes\n             d’autoproducció  per  autoconsum  però  també  gran  renovable  per  tal  de\n             poder               donar               compliment               a               la               PROENCAT i               recuperant               concessions\n             hidràuliques que gestiona la CHE per a poder repotenciar-les i convertir-\n             les via gestió pública en centrals hidroelèctriques reversibles.",
+              "contextStart": 338589,
+              "contextEnd": 340122,
+              "contextSha256": "77bdafa8ec5a89db013ca2b58ab944458c718775634024f4e133cd280282a5e0",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -20209,10 +20478,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de contactos laborales fuera del horario.",
+          "authoredAnalysis": "Reconciliation and work quality do not specify a no-contact outside-hours rule.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -21291,10 +21565,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la gratuidad de comedor para todo el alumnado de enseñanza obligatoria.",
+          "authoredAnalysis": "Tax-exempt emergency meal aid is not universal free compulsory-school meals.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -22354,10 +22633,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la eliminación progresiva de la aportación del paciente por medicamentos públicos.",
+          "authoredAnalysis": "Quicker incorporation of EUapproved medicines and emergency aid tax relief are not copay elimination.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -24784,12 +25068,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone reformar la ley electoral para reconocer el voto desde los dieciséis años.",
+          "authoredAnalysis": "Both copies explicitly extend electoral suffrage16–18 without restricting election class. New99/ABC102 full contexts reopened; dates remain2023proposals.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 99,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 379510,
+              "end": 380026,
+              "quote": "Avançar            cap            al            reconeixement            del            dret            de            vot            als            setze            anys.\n                         Instem el Govern a exigir a l'Estat una reforma de la LOREG per fer\n                         realitat       una equiparació́                   justa       de       drets       i       deures       de       les       persones\n                         joves d'entre 16 i 18 anys, estenent el dret a sufragi a aquesta edat.",
+              "contextStart": 379466,
+              "contextEnd": 380281,
+              "contextSha256": "b2d7edb183e891384c4460522a6a82c7128d41e84afaf6d66babdc580da71a8c",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 102,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 366455,
+              "end": 366513,
+              "quote": "Avançar cap al reconeixement del dret de vot a setze anys.",
+              "contextStart": 366414,
+              "contextEnd": 367120,
+              "contextSha256": "3b7456d4e5abcefa29778981819f3a77265edce7d1b0b5aafe7b71de90ec6177",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -25706,12 +26032,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Rechaza la obsolescencia programada, sin concretar la obligación de ofrecer piezas de repuesto.",
+          "authoredAnalysis": "Opposing planned obsolescence does not specify manufacturers spare-parts availability.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -26635,12 +26966,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone una remuneración digna para todo el alumnado en prácticas laborales y formativas.",
+          "authoredAnalysis": "Explicit all student work/training placements includes asked curricular placements under the authoredall-placement rubric. Distinct earlier nonlabour placement grants do not narrow this later all-student promise. New98/ABC101 full contexts reopened.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 98,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 376725,
+              "end": 377476,
+              "quote": "Garantir    que    l’Estatut    del    Becari,    aprovat    recentment,    esdevingui\n                        una                    cobertura                    real                    i                    efectiva                    pels                    joves                    que                    garanteixi                    una\n                        remuneració́ digna per tots aquells alumnes en practiques laborals\n                        i      formatives.      No      podem      desaprofitar      aquest      moment      per      blindar\n                        definitivament           els           drets           dels           i           les           estudiants           en practiques de\n                        Catalunya.",
+              "contextStart": 375972,
+              "contextEnd": 378257,
+              "contextSha256": "9450270558f16806c2fb47a551beaa3505f3f3fcce7a55ee716f01f95a365481",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 101,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 364051,
+              "end": 364684,
+              "quote": "Garantir    que    l’Estatut    del becari,    aprovat    recentment,    esdevingui\n                      una            cobertura            real            i            efectiva            per            als joves, que            garanteixi            una\n                      remuneració digna per tots aquells alumnes en pràctiques laborals\n                      i    formatives.    No    podem    desaprofitar    aquest    moment    per    blindar,\n                      definitivament,                els                          drets dels estudiants                          en pràctiques de\n                      Catalunya.",
+              "contextStart": 363293,
+              "contextEnd": 365458,
+              "contextSha256": "1e9ca99669fc463c17f6ad7ce343bc92745eedacbb89621864fbc21885b4f16f",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -27930,12 +28303,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone ampliar la protección durante permisos de maternidad y paternidad, sin fijar una duración mínima de seis meses.",
+          "authoredAnalysis": "Waiting-time removal and broader protection/leave categories do not specify both leave durations of at leastsixmonths.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -29112,10 +29490,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un impuesto específico sobre bebidas azucaradas.",
+          "authoredAnalysis": "General green/sectoral taxation does not identify sugary-drink levy.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -29971,10 +30354,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta de despenalizar producción y consumo de cannabis para uso propio sin lucro.",
+          "authoredAnalysis": "No exact nonprofit personal cannabis production/consumption decision established.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -30919,10 +31307,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la eliminación del recargo universitario por volver a matricularse de una asignatura.",
+          "authoredAnalysis": "University resources/autonomy/grants do not abolish repeat-registration surcharge.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -32011,10 +32404,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una garantía de tres horas semanales de educación física escolar.",
+          "authoredAnalysis": "Sports promotion and funding do not define three weekly compulsory-school PEhours.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -33046,12 +33444,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone cuota cero con ingresos bajos, por ejemplo inferiores al salario mínimo, sin precisar aquí que se calculen después de los gastos.",
+          "authoredAnalysis": "Actual-income progressive contributions and belowSMIexample do not explicitly define net income after expenses, as required by exact question/rubric. Nonhabitual exception and lowincome groups retained; no universal free fee or absent-policy opposition.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 69,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 259959,
+              "end": 260188,
+              "quote": "Establir        una        tarifa        zero        per        a        autònoms        no        habituals        i        per        aquells        que\n           tenen ingressos baixos, per exemple ingressos inferiors al SMI.",
+              "contextStart": 259604,
+              "contextEnd": 262935,
+              "contextSha256": "7f67eef9ead78734c5844bb1d702fbe28c1dca96ccf65d17c43b69a954b1e3c1",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -34294,10 +34716,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la eliminación del IVA por comprar la primera vivienda habitual.",
+          "authoredAnalysis": "Rental development VAT and first-home mortgage guarantees do not remove purchase VAT.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -35484,10 +35911,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de la compraventa comercial de animales de compañía.",
+          "authoredAnalysis": "Animal welfare improvements do not establish companion-animal sales prohibition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -36447,12 +36879,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone retirar la consideración de patrimonio cultural a la tauromaquia, sin concretar el fin de toda financiación pública de espectáculos con muerte del animal.",
+          "authoredAnalysis": "Culturalheritagestatus repeal does not explicitly end every subsidy for lethal shows.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 146,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 569153,
+              "end": 569350,
+              "quote": "Proposarem           la           derogació           de           la           declaració           de           la           tauromàquia           com           a\n             patrimoni cultural.",
+              "contextStart": 565608,
+              "contextEnd": 569604,
+              "contextSha256": "e307a38efff693a043eadca7c351bf732a6980df3826f81e705e00f94d0a36ed",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -37432,12 +37888,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone ampliar la protección de perros de caza, sin establecer una prohibición general de cazar.",
+          "authoredAnalysis": "Huntingdogwelfarelawcoverage is neither a nationwide hunting ban nor an explicit rejection of one.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -38480,12 +38941,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone un fondo para evitar cortes de luz y gas a personas vulnerables, sin precisar una prohibición permanente de todos los suministros básicos.",
+          "authoredAnalysis": "Fund preventing vulnerableelectricity/gascuts omits explicit permanent legal duration and water. No broader guarantee inferred.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 96,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 370703,
+              "end": 371338,
+              "quote": "Crear                      un                      fons                      de                      garantia                      per                      a                      la                      protecció                      dels                      consumidors\n      vulnerables    amb    càrrec    als    Pressupostos    Generals    de    l’Estat    i    transferir\n      la  seva  gestió  a  la  Generalitat  que  permeti  que  no  es  produeixin  talls  de\n      subministrament         elèctrics         o         de         gas         a         les         persones         amb         vulnerabilitat\n      energètica.",
+              "contextStart": 366651,
+              "contextEnd": 371338,
+              "contextSha256": "e426ed3b555ff11071977e8815ca4ed862c1cd1587a72cf142e419ea64d7e93a",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-009",
@@ -39560,10 +40045,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una transferencia universal de 20.000 euros a los veintitrés años.",
+          "authoredAnalysis": "Emancipation rent/grants/guarantees are different from age23universal20kcapital transfer.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -40631,12 +41121,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone elevar el salario mínimo y poder fijarlo en Cataluña, sin concretar una subida anual superior a la inflación.",
+          "authoredAnalysis": "Immediate1319 and conditional full-fiscal-resource Catalan1400–1500 progression do not specify annual aboveinflation rule.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 63,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 234801,
+              "end": 235288,
+              "quote": "Considerem                 que      un      Govern      català      que      administrés      la      totalitat      dels\n            recursos fiscals generats a Catalunya ha de poder determinar un SMI\n            català, en funció del nostre cost de la vida. Aquest SMI català podria\n            partir  dels  1.319€/mes  de  l’actual  salari  mitjà  europeu  per  ap                                                   ropar-se\n            progressivament cap els 1.400 – 1500 euros/mes.",
+              "contextStart": 233988,
+              "contextEnd": 235288,
+              "contextSha256": "af98634b2134047d12841a6a165ea1c05b54acb5ec7e0ad5d9a2299d630c368f",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -41626,10 +42140,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el uso obligatorio de estándares abiertos para documentos administrativos.",
+          "authoredAnalysis": "Interoperability/open government/data governance do not specify issued/requested electronic document formats.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -42621,12 +43140,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone debatir una posible regulación y aclarar la situación de menores nacidos en otros países; no fija una postura firme sobre mantener la prohibición.",
+          "authoredAnalysis": "Regulatory debate/overseas child status is not blanket domestic legalisation or retaining prohibition.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 93,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 355253,
+              "end": 355869,
+              "quote": "Avançar      en      el      debat      sobre      la possibilitat      de      regulació      de      la      maternitat\n           subrogada.    En    especial    urgeix    clarificar    la    situació    jurídica    dels    menors\n           concebuts       a       través       de       maternitat       subrogada       a       altres       països,       tenint       en\n           compte        la        necessitat        del        menor        de        disposar        d’uns        pares        legals        i        d’un\n           estatus civil clarament definits, i la igualtat i llibertat reproductiva.",
+              "contextStart": 354797,
+              "contextEnd": 355869,
+              "contextSha256": "27aa41b507b091afd6a1a674ed03ee787981aa393a0682069520ab3e05046e3b",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -43714,10 +44257,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una opción vegetariana en todos los comedores escolares.",
+          "authoredAnalysis": "Gradual plantbasedfoodsystem support does not establish school-menu choice in all canteens.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -44632,10 +45180,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer acceso gratuito a libros escolares con licencia para copiarlos y compartirlos.",
+          "authoredAnalysis": "School financing and open science are distinct from textbook price/distribution licences.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -45688,12 +46241,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone reducir la brecha digital, sin concretar que todos los trámites mantengan atención presencial.",
+          "authoredAnalysis": "Digitalinclusion/access do not explicitly preserve in-person administrative channel against mandatory substitution.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-009",
@@ -46891,12 +47449,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone aliviar gastos veterinarios y critica que no se reduzca su IVA, sin fijar un tipo máximo del 10 %.",
+          "authoredAnalysis": "Veterinary IRPFdeduction and lowerVATrationale omit the requiredatmost10percent rate.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -47838,10 +48401,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el derecho a elegir talleres independientes para reparar productos.",
+          "authoredAnalysis": "EVretrofit/workshoptransition and planned-obsolescence criticism do not supply general independentrepair access.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -48710,12 +49278,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone implantar el depósito y retorno de envases después de evaluar y probar su viabilidad.",
+          "authoredAnalysis": "Both versions expressly support implementation subject to viability evaluation/testing, substantivecondition absent from shownquestion; qualified+1 rather than unconditional+2. New144/ABC147fullcontexts reopened.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 144,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 558381,
+              "end": 558640,
+              "quote": "Impulsar                sistemes                de                devolució,                dipòsit                i                retorn                (SDDR)                d’envasos,\n            després d’avaluar i testar la seva viabilitat d’implantació.",
+              "contextStart": 557778,
+              "contextEnd": 560677,
+              "contextSha256": "8110552cd207fe9849a478f9ffda4e03fcfa1148f2544cbbaed1974d47bff454",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 147,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 539414,
+              "end": 539688,
+              "quote": "Impulsar                  sistemes                  de                  devolució,                  dipòsit                  i                  retorn                  (SDDR)                  d’envasos\n            després d’avaluar i testar la seva viabilitat d’implantació.",
+              "contextStart": 538866,
+              "contextEnd": 541845,
+              "contextSha256": "80ddd2b15fcac2691e1cd624d216c71ac804de80f928179ff0f48a085c13fa2a",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -49573,12 +50183,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone acceso gratuito a anticonceptivos hormonales y preservativos para personas de hasta treinta años.",
+          "authoredAnalysis": "Both youth sections expressly free universal access through30forsexual/reproductive health. Question does not specify age or any brand; no invented all-age guarantee. New98–99/ABC102fullcontexts reopened.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 98,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 378302,
+              "end": 378893,
+              "quote": "Garantir l’accés gratuït universal a productes d’higiene menstrual,\n                        anticonceptius           hormonals           i           preservatius,           entre           altres,           per           a           les\n\n\n                                                         Janhihaprou.                  cat\f                         persones          de          fins          a          30          anys          per          tal          de          millorar          la          salut          sexual          i\n                         reproductiva entre els joves.",
+              "contextStart": 378259,
+              "contextEnd": 379464,
+              "contextSha256": "35e71267eec36fab43bb70df64a6c74467b1833048e91531c4288895f3734a72",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 102,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 365572,
+              "end": 365870,
+              "quote": "Garantir l’accés gratuït universal a productes d’higiene menstrual,\n                       anticonceptius           hormonals           i           preservatius,           entre           altres,           per           a           les\n                       persones    de    fins    a trenta anys",
+              "contextStart": 365549,
+              "contextEnd": 366412,
+              "contextSha256": "1bd539d6c7205e2d18e5f972f1ec689f9d5bf4193d687131cf3a7b17f3bcedd4",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -50467,10 +51119,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la creación de una empresa pública que investigue y fabrique medicamentos y vacunas.",
+          "authoredAnalysis": "Medicines access/research support not State-owned manufacturer.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -51537,12 +52194,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone cobertura y un bono social de telecomunicaciones, sin concretar una conexión básica gratuita para toda la población.",
+          "authoredAnalysis": "Socialvoucher/disabilitydigital subsidies and universalcoverage are not universalfreebasicinternet.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -52788,12 +53450,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone gestionar cuencas y garantizar el ciclo del agua, sin concretar una gestión exclusivamente pública del suministro.",
+          "authoredAnalysis": "Basinpowers/access/investment and concessionmodel innovation do not define public-only watersupply entitymanagement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -54025,10 +54692,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer atención temprana pública gratuita para menores de seis años.",
+          "authoredAnalysis": "Child/disability/universalhealth goals omit exactearlydevelopmentage and freepublicservice.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -55166,12 +55838,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone reducciones de jornada para cuidados, sin precisar el límite de dieciséis años para los hijos.",
+          "authoredAnalysis": "Nontransferable parental reducedhours and employerrebate omit age16qualification.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 112,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 433038,
+              "end": 433348,
+              "quote": "Implementar         el         dret/deure         de         tenir         cura         per         consanguinitat         i         que         les\n           reduccions de jornada laboral siguin un dret intransferible per a ambdós\n           progenitors, que puguin gaudir cadascun i de manera no simultània.",
+              "contextStart": 432867,
+              "contextEnd": 434043,
+              "contextSha256": "bdd58288d45eda729410b9074cfbf1fb8b6a952de6a816b68a9f345b08a8e8e8",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -56269,10 +56965,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un impuesto sobre vuelos que aumente con la frecuencia de los viajes.",
+          "authoredAnalysis": "Airporttaxes and greenfiscal principles do not identify frequency-progressive flightlevy.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -57124,10 +57825,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de publicidad y patrocinio de combustibles fósiles.",
+          "authoredAnalysis": "Decarbonisation and audiovisualrules do not ban fossilcommercialadvertising.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -58098,12 +58804,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Apoya el cierre de las granjas de pieles, pero no concreta una prohibición general de toda cría y explotación para obtenerlas.",
+          "authoredAnalysis": "Both versions support fur-farm closure. This does not explicitly establish the question-specific general breeding/exploitation prohibition, including future operations. Consistent with the independently corrected ERC disappearance formulation, retain both citations as unscored uncertainty.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 147,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 571778,
+              "end": 572176,
+              "quote": "Recolzarem     el     tancament     de     les     granges     pelleteres     i     de     producció     de\n             foie        gras,        per        tractar-se        de        dues        activitats        no        imprescindibles        i        d'una\n             extrema crueltat en la seva producció, seguint la tendència de prohibició\n             d'alguns Estats de la Unió Europea.",
+              "contextStart": 570101,
+              "contextEnd": 573040,
+              "contextSha256": "477e427c78d613da693a9a136d378dc22c4ff6e3734d7bb144db35a7f69dba1d",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 150,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 552800,
+              "end": 552888,
+              "quote": "tancament   de   les   granges   pelleteres   i   de   producció\n           de foie-gras",
+              "contextStart": 551302,
+              "contextEnd": 553932,
+              "contextSha256": "ba582653fdefbd4d421ebb0d79197a02350f1029e4dca746c0524a32d2c902af",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -59053,10 +59801,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición del uso de glifosato.",
+          "authoredAnalysis": "Agricultural/chemical/biodiversity principles do not specify this herbicideban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -59992,10 +60745,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de ayudas públicas directas a medios privados.",
+          "authoredAnalysis": "Publicaudiovisual/language support is not directaidprivate-mediaban.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -60991,10 +61749,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la supresión de fueros judiciales especiales por ocupar un cargo público.",
+          "authoredAnalysis": "TSJC/ConstitutionalCourt/CourtAuditors reforms and guarantees do not abolishoffice-basedaforamiento.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -62025,10 +62788,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la eliminación de firmas exigidas a partidos sin representación para presentar candidaturas.",
+          "authoredAnalysis": "Congressdebate/electoraldisqualification reform not candidacyendorsements removal.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -63001,10 +63769,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un registro público de negociaciones e intermediación para cada propuesta legislativa.",
+          "authoredAnalysis": "Opengovernment/participation does not specify proposal-stage influence record.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -64143,12 +64916,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "Propone financiar un teléfono de salud mental, sin concretar la psicoterapia dentro de la sanidad pública.",
+          "authoredAnalysis": "Mentalhealthphoneline payment is not public psychotherapyservice inclusion.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -65383,10 +66161,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer apoyo al Tratado sobre la Prohibición de las Armas Nucleares.",
+          "authoredAnalysis": "EUdefence/arms-exporthumanrights and NATOUkraineassistance do not establish TPNWsupport.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -66419,10 +67202,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una restricción específica de publicidad de alimentos poco saludables dirigida a menores.",
+          "authoredAnalysis": "Sexistadvertising/minorpornprotection are differentcontent/scope from unhealthyfoodchildads.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -67295,12 +68083,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone una tarifa reducida durante dos años para nuevos autónomos, sin establecer la exención total del primer año.",
+          "authoredAnalysis": "Reduced2yearstartingfee differs from fullyfreefirstyear; lowerincomezerorate cannot be inherited byallnewworkers.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 69,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 259959,
+              "end": 260188,
+              "quote": "Establir        una        tarifa        zero        per        a        autònoms        no        habituals        i        per        aquells        que\n           tenen ingressos baixos, per exemple ingressos inferiors al SMI.",
+              "contextStart": 259604,
+              "contextEnd": 262935,
+              "contextSha256": "7f67eef9ead78734c5844bb1d702fbe28c1dca96ccf65d17c43b69a954b1e3c1",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -68525,12 +69337,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 2,
+          "rationale": "Propone ajustar a la inflación las escalas de todos los impuestos, incluido el impuesto sobre la renta.",
+          "authoredAnalysis": "Explicit all-taxscales inflationadjustment includesIRPF, framed in transitionalStatefiscalchanges and surroundingpersonal-incometaxparagraph. New58/ABC60fullcontexts reopened; no broad unrelatedtaxabolition.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 58,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 214004,
+              "end": 214348,
+              "quote": "Compromís de deflactar les escales impositives de tots els impostos a la\n     inflació,                    alhora                    reformar                    la                    tributació                    dels autònoms                    eliminant                    les\n     rigideses actuals en relació a la exclusivitat dels actuals.",
+              "contextStart": 212238,
+              "contextEnd": 216012,
+              "contextSha256": "866f3364cdda710800993a7b58007f19c58f668c579f6c98d2d6a5eb83d0534d",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 60,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 205797,
+              "end": 205883,
+              "quote": "Compromís de deflactar les escales impositives de tots els impostos a la\n     inflació",
+              "contextStart": 203696,
+              "contextEnd": 207598,
+              "contextSha256": "f23dd8090b6c05ef9cac8c2176c72a0fa7356b52408a197d34f02e909c8a9d36",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -69775,12 +70629,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone fondos y precios básicos asequibles, sin concretar sustituir los bonos de luz y calefacción por pagos directos.",
+          "authoredAnalysis": "Basicpricebands and guarantee/financeinstruments not socialvoucherreplacement withdirectpayments.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 96,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 370703,
+              "end": 371338,
+              "quote": "Crear                      un                      fons                      de                      garantia                      per                      a                      la                      protecció                      dels                      consumidors\n      vulnerables    amb    càrrec    als    Pressupostos    Generals    de    l’Estat    i    transferir\n      la  seva  gestió  a  la  Generalitat  que  permeti  que  no  es  produeixin  talls  de\n      subministrament         elèctrics         o         de         gas         a         les         persones         amb         vulnerabilitat\n      energètica.",
+              "contextStart": 366651,
+              "contextEnd": 371338,
+              "contextSha256": "e426ed3b555ff11071977e8815ca4ed862c1cd1587a72cf142e419ea64d7e93a",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -70883,10 +71761,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer jubilación activa hasta los 72 años para especialistas de atención primaria.",
+          "authoredAnalysis": "MoreMIR/professionreform/generalpensionworkcompatibility do not specify profession/age72.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -71955,10 +72838,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer autorización parental previa para la interrupción del embarazo de una menor.",
+          "authoredAnalysis": "Youthsexualhealth andminorprotection do not define abortionparentalconsent.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -72938,10 +73826,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer un plazo de quince días para citas de prestaciones de la Administración estatal.",
+          "authoredAnalysis": "Efficientcitizen-centredadministration gives no exactbenefitappointmentdeadline.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -74041,12 +74934,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "Propone regular usos de inteligencia artificial, sin reservar expresamente las decisiones administrativas discrecionales a personas.",
+          "authoredAnalysis": "AIregister/datarestrictions/bias andjudicialtraining not explicit humanfinal discretionrequirement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -75057,12 +75955,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone defensa europea y presupuestos transparentes, sin fijar un objetivo de gasto del 2 % del PIB.",
+          "authoredAnalysis": "EUarmy/lawful transparentarmsbudgets/NATOUkrainecommitments do not supply exactnationalGDP2percenttarget.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 132,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 513618,
+              "end": 513932,
+              "quote": "Cal   una   triple actuació   que   ha   d’incloure   necessàriament   l’impuls   d’una\n             més alta interrelació amb els exèrcits dels països membres de la UE amb\n             l'objectiu enfortir la política comú de seguretat i defensa i d’avançar cap\n             a la consolidació d’un exèrcit europeu.",
+              "contextStart": 513605,
+              "contextEnd": 515555,
+              "contextSha256": "1806a76a3f1fbe255324e98d7efd2ead4501b72193f7b096cc180dcd24747445",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -76106,12 +77028,54 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone avales del Instituto de Crédito Oficial para jóvenes de hasta 35 años que compren su primera vivienda.",
+          "authoredAnalysis": "Both full youthhousingsections constrainpublicICOentryguarantees tofirsthomeandageupto35. First-homeeligibility narrows shownanyhomeproposition,qualified+1 consistentwithexistingnarrowfirst-homecases; do not inventpercentage. New98/ABC101reopened.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 98,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 375180,
+              "end": 375520,
+              "quote": "Adaptar  des  de  l’Institut  de Crèdit Oficial  (ICO)  les  condicions  de\n                        finançament hipotecari per a joves de fins a 35 anys per accedir al\n                        seu       primer       habitatge,       impulsant       un       programa       d'avals       a       l'entrada\n                        hipotecària.",
+              "contextStart": 374475,
+              "contextEnd": 375970,
+              "contextSha256": "60cf14132e76a70564e4ba33da05c6a5419589c4546787f31484d2aad4e578b0",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            },
+            {
+              "documentId": "junts-preserved-abc",
+              "sourceUrl": "https://static.abc.es/documentos/08/2023/Programa-Electoral-Junts-per-Catalunya-23J.pdf",
+              "sourceSha256": "48e3eeddfbeebc8ea0f56327ecd83eb7c67803ed1aa4df8ed84f8b8e98b48119",
+              "extractionSha256": "9245e09fdfa9c112b43d3fd7fd4307c8d4c7917cfd03726c2d82ad6e66e59934",
+              "notebook": "outputs/2023-programme-notebooks/junts.json",
+              "notebookSha256": "28733e960c44f3240f7fd9489ada66f5f80eee5800fa45e6fc98b963029bdc63",
+              "pdfPage": 101,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 362828,
+              "end": 362916,
+              "quote": "impulsant    un    programa    d'avals    a\n                      l'entrada hipotecària.",
+              "contextStart": 361656,
+              "contextEnd": 363291,
+              "contextSha256": "fb29c90d7d40f349750249e1e7198d7a431a107fcb1c17e7f9b40e6072b50f6c",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -77269,10 +78233,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer el inicio de la prestación por hijo en el quinto mes de embarazo.",
+          "authoredAnalysis": "Childbenefit increase/futureuniversality andmaternitytaxrelief give no pregnancyfifthmonthtrigger.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -78320,12 +79289,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone más prestaciones para personas con ELA, sin concretar el reconocimiento de dependencia al diagnosticarse.",
+          "authoredAnalysis": "ALSresources/energyvulnerabilityforrespiratorequipment do not define diagnosticdependencyrecognition.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 110,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 425901,
+              "end": 426808,
+              "quote": "Reactivar                              les                              iniciatives                              legislatives                              destinades                              a                              reclamar                              més\n             prestacions            pels            malalts            d’ELA            i            altres            malalties            amb            un            alt            grau            de\n             dependència,   aportant   més   recursos   des   dels ministeris   de   Sanitat   i   de\n             Drets Socials i aconseguint que se’ls consideri, en els casos de necessitat\n             de                 respiradors                 o                 aparells                 de                 gran                 consum                 energètic,                 consumidors\n             vulnerables d’electricitat.",
+              "contextStart": 424640,
+              "contextEnd": 427363,
+              "contextSha256": "010064a0b292f39240f88eefddca2c75d4e9923e22cc4258bba2754d51a1a6d5",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -79411,12 +80404,17 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "Propone apoyar a familias y reconocer derechos laborales del servicio doméstico, sin concretar esa bonificación de hasta el 45 %.",
+          "authoredAnalysis": "Family/loneparentbonus andhouseholdworkerunemployment rights are not exactlargefamily45percentemployerbonus.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -80417,10 +81415,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer tutoría escolar extraordinaria para recuperar aprendizajes perdidos durante la pandemia.",
+          "authoredAnalysis": "General schoolresources/teachertraining andCOVIDchildinequality diagnosis not extraordinarypandemicrecoverytutoring.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -81460,10 +82463,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una habilitación general de intermediarios para realizar trámites por la ciudadanía.",
+          "authoredAnalysis": "Singlebusinesswindow/procuratorjudicialcommunication andsimplification do not define broadcitizenadministrativeintermediarypermission.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -82585,10 +83593,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer transporte barato a demanda entre pueblos pequeños y municipios de referencia.",
+          "authoredAnalysis": "Regionaltransportfinance/rail andaccessibility are not specifiedruralondemandserviceandprice.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -83829,12 +84842,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Apoya cerrar granjas de foie gras, sin formular aquí una prohibición general de alimentar por la fuerza para producir alimentos.",
+          "authoredAnalysis": "Namedfoiegrasfarmclosure does not supply generaleveryfoodproductionforce-feedinglegalrule; do not invent productionmethod claim.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 147,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 571778,
+              "end": 572176,
+              "quote": "Recolzarem     el     tancament     de     les     granges     pelleteres     i     de     producció     de\n             foie        gras,        per        tractar-se        de        dues        activitats        no        imprescindibles        i        d'una\n             extrema crueltat en la seva producció, seguint la tendència de prohibició\n             d'alguns Estats de la Unió Europea.",
+              "contextStart": 570101,
+              "contextEnd": 573040,
+              "contextSha256": "477e427c78d613da693a9a136d378dc22c4ff6e3734d7bb144db35a7f69dba1d",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -84797,12 +85834,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone priorizar pirotecnia silenciosa, sin establecer una prohibición general de petardos y fuegos artificiales.",
+          "authoredAnalysis": "Silentpyrotechnicpriority norm is not allfireworksban.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 146,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 566249,
+              "end": 566847,
+              "quote": "Pacificació     de     l'ús     de     la     pirotècnica,     mitjançant     un     canvi     normatiu     que\n             prioritzi                           l'ús                           de                           pirotècnica                           insonora,                           evitant                           els                           perjudicis                           que\n             s'ocasionen          a          animals          de          companyia,          fauna          silvestre,          i          persones          amb\n             determinades malalties.",
+              "contextStart": 565608,
+              "contextEnd": 569604,
+              "contextSha256": "e307a38efff693a043eadca7c351bf732a6980df3826f81e705e00f94d0a36ed",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -85681,12 +86742,36 @@
         },
         {
           "candidacyId": "boe-2023-007",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone seguir principios de ciencia y acceso abiertos, sin concretar el acceso gratuito a resultados de toda investigación financiada públicamente.",
+          "authoredAnalysis": "Broadparticipation under open-science/accessprinciples does not identify publiclyfundedresearchresults obligation and freeconsultation scope required by exactrubric.",
+          "citations": [
+            {
+              "documentId": "junts-beteve-programme",
+              "sourceUrl": "https://img.beteve.cat/wp-content/uploads/2023/07/programa-junts-per-catalunya-eleccions-generals-2023.pdf",
+              "sourceSha256": "7f73e138b6020f9a12ff260f7baeb3aa2807b60903e91052435f7e0ded7d938b",
+              "extractionSha256": "74c130ea1bcbb311743baf25e430969c2c5a0f2750826e4cf7c6a2ca205614e0",
+              "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
+              "notebookSha256": "738badc7e0d40803c7b0321728b54f91f45f90df91787bac08051db436341a67",
+              "pdfPage": 117,
+              "printedPage": null,
+              "htmlSection": null,
+              "start": 456216,
+              "end": 456337,
+              "quote": "Incrementar la participació de la societat en ciència, seguint els principis\n            de Ciència Oberta i Accés Obert.",
+              "contextStart": 454981,
+              "contextEnd": 456449,
+              "contextSha256": "2a1aec4d7351b8c204df88b95c337ae2f7cbb757608c1e33791cf15ad1602903",
+              "provenanceEvidence": "outputs/2023-junts-bank-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -86863,10 +87948,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No se ha podido establecer una circunscripción única estatal para elegir el Congreso.",
+          "authoredAnalysis": "Electoralage/localpowers/institutionreforms do not propose singleCongressdistrict.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",
@@ -88127,10 +89217,15 @@
           "candidacyId": "boe-2023-007",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; no absence, neutrality or opposition finding is claimed.",
+          "rationale": "No se ha podido establecer el mismo tiempo de vídeos electorales en medios públicos para todos los partidos registrados.",
+          "authoredAnalysis": "Catalanpublicmedia/languagequotas andrepresentation rights do not specify equalpartycampaignvideoairtime.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_two_copy_junts_80_question_audit",
+          "sourceContextReopened": false,
+          "auditedDocumentIds": [
+            "junts-preserved-abc",
+            "junts-beteve-programme"
+          ]
         },
         {
           "candidacyId": "boe-2023-008",

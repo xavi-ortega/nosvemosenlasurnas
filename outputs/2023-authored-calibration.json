@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T22:46:15.638234+00:00",
+  "recordedAt": "2026-10-12T07:33:05.559640+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -313,7 +313,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -2054,7 +2054,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -3044,7 +3044,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -4390,7 +4390,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -4881,7 +4881,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -5787,7 +5787,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -6217,7 +6217,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -8535,7 +8535,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -9332,7 +9332,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -12693,6 +12693,39 @@
             }
           ],
           "sourceContextReopened": true
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Both copies explicitly extend electoral suffrage16–18 without restricting election class. New99/ABC102 full contexts reopened; dates remain2023proposals.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -12713,11 +12746,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-007",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -13121,7 +13149,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -13558,6 +13586,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit all student work/training placements includes asked curricular placements under the authoredall-placement rubric. Distinct earlier nonlabour placement grants do not narrow this later all-student promise. New98/ABC101 full contexts reopened.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -13583,11 +13644,6 @@
         },
         {
           "candidacyId": "boe-2023-005",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
-          "candidacyId": "boe-2023-007",
           "expectedScored": false,
           "reason": "unknown"
         },
@@ -13981,7 +14037,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -15897,7 +15953,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -17097,7 +17153,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -17619,7 +17675,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -18042,7 +18098,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -18776,7 +18832,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -19779,7 +19835,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -21083,7 +21139,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -21511,7 +21567,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -22280,6 +22336,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Both versions expressly support implementation subject to viability evaluation/testing, substantivecondition absent from shownquestion; qualified+1 rather than unconditional+2. New144/ABC147fullcontexts reopened.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -22312,11 +22401,6 @@
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -22713,6 +22797,39 @@
               "expectedRelationship": "same"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Both youth sections expressly free universal access through30forsexual/reproductive health. Question does not specify age or any brand; no invented all-age guarantee. New98–99/ABC102fullcontexts reopened.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -22735,11 +22852,6 @@
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -23478,7 +23590,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -23916,7 +24028,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -24650,7 +24762,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -25825,11 +25937,6 @@
           "reason": "unknown"
         },
         {
-          "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "unknown"
-        },
-        {
           "candidacyId": "boe-2023-008",
           "expectedScored": false,
           "reason": "unknown"
@@ -26081,6 +26188,11 @@
         },
         {
           "candidacyId": "boe-2023-006",
+          "reason": "ambiguous",
+          "expectedScored": false
+        },
+        {
+          "candidacyId": "boe-2023-007",
           "reason": "ambiguous",
           "expectedScored": false
         }
@@ -28329,7 +28441,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "unknown"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-009",
@@ -29524,7 +29636,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -29964,6 +30076,39 @@
               "expectedRelationship": "close"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 2,
+          "sourceReason": "Explicit all-taxscales inflationadjustment includesIRPF, framed in transitionalStatefiscalchanges and surroundingpersonal-incometaxparagraph. New58/ABC60fullcontexts reopened; no broad unrelatedtaxabolition.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "different"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -29986,11 +30131,6 @@
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "not_yet_authored"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -30352,7 +30492,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -30724,7 +30864,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -31096,7 +31236,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -31468,7 +31608,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -31840,7 +31980,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -32245,7 +32385,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -32614,6 +32754,39 @@
               "expectedRelationship": "close"
             }
           ]
+        },
+        {
+          "candidacyId": "boe-2023-007",
+          "sourceExpectedValue": 1,
+          "sourceReason": "Both full youthhousingsections constrainpublicICOentryguarantees tofirsthomeandageupto35. First-homeeligibility narrows shownanyhomeproposition,qualified+1 consistentwithexistingnarrowfirst-homecases; do not inventpercentage. New98/ABC101reopened.",
+          "sourceContextReopened": true,
+          "answerCases": [
+            {
+              "answer": -2,
+              "expectedOverlap": 0.25,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": -1,
+              "expectedOverlap": 0.5,
+              "expectedRelationship": "opposed"
+            },
+            {
+              "answer": 0,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            },
+            {
+              "answer": 1,
+              "expectedOverlap": 1,
+              "expectedRelationship": "same"
+            },
+            {
+              "answer": 2,
+              "expectedOverlap": 0.75,
+              "expectedRelationship": "close"
+            }
+          ]
         }
       ],
       "unknownCases": [
@@ -32636,11 +32809,6 @@
           "candidacyId": "boe-2023-006",
           "expectedScored": false,
           "reason": "ambiguous"
-        },
-        {
-          "candidacyId": "boe-2023-007",
-          "expectedScored": false,
-          "reason": "not_yet_authored"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -33012,7 +33180,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -33384,7 +33552,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -33756,7 +33924,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -34128,7 +34296,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -34500,7 +34668,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -34872,7 +35040,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -35249,7 +35417,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -35621,7 +35789,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -35993,7 +36161,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "ambiguous"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -36398,7 +36566,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",
@@ -36867,7 +37035,7 @@
         {
           "candidacyId": "boe-2023-007",
           "expectedScored": false,
-          "reason": "not_yet_authored"
+          "reason": "unknown"
         },
         {
           "candidacyId": "boe-2023-008",

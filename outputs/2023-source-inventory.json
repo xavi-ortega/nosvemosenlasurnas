@@ -1594,8 +1594,8 @@
           "votes": 40791
         }
       ],
-      "programmeSearchStatus": "two_preserved_23j2023_copies_fully_read_question_version_reconciliation_pending",
-      "analysisStatus": "two_full_document_notebooks_available_bank_audit_pending",
+      "programmeSearchStatus": "two_preserved_23j2023_copies_fully_read_specific_bank_reconciled",
+      "analysisStatus": "specific_complete_two_copy_80_cell_bank_audit_locally_verified",
       "programmeIds": [
         "junts-preserved-abc",
         "junts-beteve-programme"
@@ -1630,6 +1630,15 @@
         "publicationUrl": "https://beteve.cat/politica/programa-junts-eleccions-generals-2023/",
         "publicationDate": "2023-07-19",
         "rationale": "Dated July19 publication links148pageprogramme. InternalJuly23coalition/fourCongresslabels reconcile official ballots.151pageABCcopy separately retained/fully read. No version precedence or exact pre-vote-byte certification; no member/Senate inheritance."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-12T07:41:38.559182+00:00",
+        "report": "outputs/2023-authored-junts-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 6,
+        "newDerivedMappings": 6,
+        "citedUncertainties": 23,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5332,7 +5341,7 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/junts.json",
       "electionApplicability": "Internal 23 July coalition statement, 5 July 2023 reference and original Congress candidate labels identify Barcelona, Girona, Lleida and Tarragona. ABC preserved original; primary publication chain and exact pre-election version remain unresolved.",
       "originalVisualPagesRead": [
@@ -5356,7 +5365,8 @@
         "congress-girona-8",
         "congress-lleida-8",
         "congress-tarragona-11"
-      ]
+      ],
+      "bankAudit": "outputs/2023-authored-junts-audit.json"
     },
     {
       "id": "ehbildu-preserved-newtral",
@@ -7407,7 +7417,7 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_bank_audit_pending",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/junts-beteve-programme.json",
       "originalVisualPagesRead": [
         1,
@@ -7421,7 +7431,8 @@
         "congress-lleida-8",
         "congress-tarragona-11"
       ],
-      "electionApplicability": "Beteve July19,2023 dated publication links this programme forJuly23Congress; internal coalition/date plus visually read fourCongresslead labels. Current-host bytes not proven pre-vote archived."
+      "electionApplicability": "Beteve July19,2023 dated publication links this programme forJuly23Congress; internal coalition/date plus visually read fourCongresslead labels. Current-host bytes not proven pre-vote archived.",
+      "bankAudit": "outputs/2023-authored-junts-audit.json"
     }
   ],
   "summary": {
@@ -10318,8 +10329,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5230,
-    "scoredDraftMappings": 319,
-    "independentAnswerCases": 1595,
+    "scoredDraftMappings": 325,
+    "independentAnswerCases": 1625,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10330,7 +10341,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "31427a5adbc7a8cff619943ca9c7b832a335bfafb189b684cd0d50814eaccd7e",
+    "latestBrowserDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10341,20 +10352,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 30,
-    "latestBrowserVerification": "outputs/2023-authored-erc-bank-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-erc-bank-verification.json",
+    "latestBrowserProgressivePaths": 4,
+    "latestBrowserVerification": "outputs/2023-authored-junts-correction-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-junts-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "31427a5adbc7a8cff619943ca9c7b832a335bfafb189b684cd0d50814eaccd7e",
+    "latestDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "31427a5adbc7a8cff619943ca9c7b832a335bfafb189b684cd0d50814eaccd7e",
+    "latestAuthoredDraftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10457,7 +10468,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 510,
-    "defaultScoredDraftMappings": 208,
+    "defaultScoredDraftMappings": 214,
     "scopedScoredDraftMappings": 111,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -10583,7 +10594,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 4961998,
+    "bankBytes": 5082802,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10738,7 +10749,41 @@
     "latestErcCitedUnscoredPaths": 12,
     "latestErcScreenshotsReviewedThroughOverviews": 16,
     "latestErcOverviewFilesInspected": 8,
-    "rankingAvailable": false
+    "rankingAvailable": false,
+    "juntsBankAudit": "outputs/2023-authored-junts-audit.json",
+    "juntsVerification": "outputs/2023-authored-junts-verification.json",
+    "juntsBrowserVerification": "outputs/2023-authored-junts-browser-verification.json",
+    "juntsCorrectionBrowserVerification": "outputs/2023-authored-junts-correction-browser-verification.json",
+    "newJuntsAuditedCells": 80,
+    "newJuntsDerivedMappings": 6,
+    "juntsCitedUncertaintyCells": 23,
+    "latestJuntsBrowserSessions": 154,
+    "latestJuntsRetainedCitedAnswerPaths": 120,
+    "latestJuntsCitedUnscoredPaths": 16,
+    "latestJuntsScreenshotsReviewedThroughOverviews": 44,
+    "latestJuntsOverviewFilesInspected": 22,
+    "juntsBrowserBankAttribution": [
+      {
+        "draftSha256": "c3556d3adb8cafa0f28208ce1e18db650d6a234a096c4c796f1a7da32837182f",
+        "browserSessions": 150,
+        "citedNumericPaths": 140,
+        "citedUnscoredPaths": 12,
+        "screenshotsReviewedThroughOverviews": 40,
+        "report": "outputs/2023-authored-junts-browser-verification.json",
+        "supersededFurNumericPaths": 20
+      },
+      {
+        "draftSha256": "248bcfdfd57c1b79afc4a8470263dd8bfe146a45b0923f3dc0b60ffa6d011c4e",
+        "browserSessions": 4,
+        "citedNumericPaths": 0,
+        "citedUnscoredPaths": 4,
+        "screenshotsReviewedThroughOverviews": 4,
+        "report": "outputs/2023-authored-junts-correction-browser-verification.json",
+        "supersededFurNumericPaths": 0
+      }
+    ],
+    "juntsFixedComparisonEligible": false,
+    "juntsTerritories": 4
   },
-  "recordedAt": "2026-10-11T23:04:33.693243+00:00"
+  "recordedAt": "2026-10-12T07:41:38.559182+00:00"
 }

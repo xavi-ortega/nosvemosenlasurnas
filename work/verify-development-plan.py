@@ -170,6 +170,47 @@ if p.get("nextIteration", {}).get("activeRefinement"):
         walk = flow["walkthrough"]
         assert walk[0] == flow["start"]
         assert all(any(action["target"] == destination for action in nodes[origin]["actions"]) for origin, destination in zip(walk, walk[1:]))
+    if cleanup.get("referenceResearch"):
+        from urllib.parse import urlparse
+        research_path = root / cleanup["referenceResearch"]
+        research_bytes = research_path.read_bytes()
+        research = json.loads(research_bytes)
+        assert cleanup["referenceResearchSha256"] == hashlib.sha256(research_bytes).hexdigest()
+        assert reference["referenceResearch"] == cleanup["referenceResearch"]
+        assert research["sourceRole"] == "ux_references_only_not_electoral_evidence"
+        assert research["sourceBankSha256"] == bank_hash
+        assert research["status"] == "completed_bounded_reference_review"
+        assert research["applicationImplementationStarted"] is False
+        assert research["publicLaunchApproved"] is False and research["liveCollectionEnabled"] is False
+        sources = research["sources"]
+        assert sources and all(urlparse(source["url"]).scheme == "https" and urlparse(source["url"]).netloc for source in sources.values())
+        assert all(source["title"] for source in sources.values())
+        decision_ids = {item["id"] for item in research["decisions"]}
+        assert len(decision_ids) == len(research["decisions"])
+        assert set(cleanup["referenceDecisionIds"]) == decision_ids
+        acceptance_section = next(item for item in cleanup["sections"] if item["id"] == "acceptance")
+        acceptance_ids = set(re.findall(r"\| (A\d{2}) \|", acceptance_section["content"]))
+        assert acceptance_ids == {f"A{number:02d}" for number in range(1, 39)}
+        for decision in research["decisions"]:
+            assert decision["change"] and decision["constraint"] and decision["disposition"]
+            assert decision["sourceIds"] and set(decision["sourceIds"]) <= set(sources)
+            assert decision["taskIds"] and set(decision["taskIds"]) <= seen
+            assert decision["flowIds"] and set(decision["flowIds"]) <= flow_ids
+            assert decision["acceptanceIds"] and set(decision["acceptanceIds"]) <= acceptance_ids
+        evidence_levels = set(research["method"]["evidenceLevels"])
+        surface_levels = {"browser_observed", "browser_observed_partial", "official_documentation_only", "not_inspected", "not_applicable", "not_reached", "blocked", "control_observed_content_not_reached", "markup_behind_consent"}
+        assert len({site["id"] for site in research["sites"]}) == len(research["sites"])
+        for site in research["sites"]:
+            assert site["name"] and site["edition"] and site["critique"] and site["limits"]
+            assert site["sourceIds"] and set(site["sourceIds"]) <= set(sources)
+            assert set(site["decisionIds"]) <= decision_ids
+            assert set(site["surfaceEvidence"].values()) <= surface_levels
+            assert site["observations"]
+            for observation in site["observations"]:
+                assert observation["claim"] and observation["level"] in evidence_levels
+                assert observation["sourceIds"] and set(observation["sourceIds"]) <= set(site["sourceIds"])
+        assert research["prototypeScope"]
+        print("Reference research hashes, evidence levels and task/flow/acceptance links passed.")
     prototype_path = root / cleanup["prototype"]
     prototype = prototype_path.read_text()
     match = re.search(r'<script id="programme-data" type="application/json">(.*?)</script>', prototype, re.S)

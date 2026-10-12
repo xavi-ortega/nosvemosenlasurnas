@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "planVersion": "ui-ux-cleanup-2023-v1.0.0",
+  "planVersion": "ui-ux-cleanup-2023-v1.1.0",
   "title": "Whole-site UI and UX cleanup: understandable journeys for everyday visitors",
   "status": "planned_application_stage",
-  "recordedAt": "2026-10-12T21:32:49.607584+00:00",
-  "authority": "Direct owner requests in this chat on 12 October 2026: redesign programme comparison, simplify every non-quiz text, make the entire site didactic/easy to understand/interpret/access/use, deeply review UI/spacing and UX/navigation, and prepare a very detailed next-stage loop-engineering plan.",
+  "recordedAt": "2026-10-12T22:08:19.404Z",
+  "authority": "Direct owner requests in this chat on 12 October 2026: redesign programme comparison, simplify every non-quiz text, make the entire site didactic/easy to understand/interpret/access/use, deeply review UI/spacing and UX/navigation, and prepare a very detailed next-stage loop-engineering plan. The subsequent owner request authorizes reviewing political-affinity websites and improving this same plan with verified references.",
   "baselineCommit": "8077957",
   "baseline": "outputs/ui-ux-cleanup-baseline.json",
   "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
@@ -17,7 +17,7 @@
   "publicLaunchApproved": false,
   "liveCollectionEnabled": false,
   "preservesCompletedIterations": true,
-  "summary": "A full-site next-stage plan, grounded in actual route/rendering defects. Task-led navigation, short plain Spanish, useful didactic interaction, parallel programme comparison, interpretable results, practical help and reliable source/return flows. Includes a real-data comparison prototype; application work is separately planned and no new bank/source/score semantics are authorized by this UI stage.",
+  "summary": "A full-site next-stage plan grounded in actual route defects and seven political-tool references with explicit observation limits. Plain Spanish, task-led entry, proposal search, bounded parallel comparison, result-to-comparison transfer, didactic explanations and exact return. The original real-bank prototype is preserved; new reference-driven interactions and U004-U016 application work remain planned. Sources, questions, arithmetic and private-session rules are unchanged.",
   "sections": [
     {
       "id": "outcome",
@@ -35,6 +35,11 @@
       "content": "Use the following perspectives as walkthrough constraints, not fictional research findings:\n\n- A person with little political knowledge wants to start without choosing parties, understand a percentage, and check one everyday proposal.\n- A person who already knows two formations wants to compare them directly, change a selection and verify a source without doing a test.\n- A person who cares about one issue wants to start with that topic, discover positions across all formations and keep missing information visible.\n- A person reading slowly or using enlarged text needs one task at a time, short sentences, generous line height and stable controls.\n- A person using touch, keyboard or assistive technology needs equivalent actions, visible location, labelled controls and reliable focus/return.\n- A person entering through a saved old link needs a truthful current destination, not a contradictory explanation or a blank/dead page.\n\nFor every screen complete a five-question review using only visible content: **where am I, what is the main task, what do the labels mean, what changed after my action, how can I undo or return?** Missing answers are defects, even when axe and functional tests pass. Record the actual text/action that provides each answer.\n\nFor each percentage/example, record an everyday paraphrase and the mathematically precise interpretation. They must agree. A reader must be able to explain that missing information is not opposition, 0% confirmed overlap is not “opposes every opinion”, and equal displayed percentages may be rounded. Preserve access to the 2023 date without repeating a long election warning on every row.\n\nA practical agent walkthrough and optional informal owner feedback are sufficient to iterate locally; no recruited panel, certification or formal approval quorum is introduced. This does not justify claiming proven family-wide usability."
     },
     {
+      "id": "reference-review",
+      "title": "Political-tool research and concrete design decisions",
+      "content": "The owner asked for political-affinity websites as context. The bounded review covers Wahl-O-Mat, StemWijzer, smartvote International, iSideWith, Vote Compass, EU&I 2024 and RTVE's 23J comparator. Read outputs/ui-ux-cleanup-reference-research.json for dated primary URLs, observed versus documented surfaces, failed traversals and B01-B10 decisions.\n\nElectoral matching references help assess what follows a result; RTVE supplies a Spanish topic-first comparison task; radar/map tools expose the need to explain every additional measurement. Popularity, institutional affiliation and a screenshot are not proof of usability. Result features in this review were established through official documentation; no personalized result dashboard was exercised. Browser inspections covered entry/questions/review/selection, a partial database and RTVE comparison. Blocked and incomplete paths remain explicit.\n\n**Keep:** direct start, visible progress, optional nearby help, public browsing and comparisons from results. **Adapt:** tuning becomes single-question review followed by deliberate finish; detailed matrices become one topic and six proposals; party profiles become compact verified 2023 source factsheets. **Reject for this stage:** obligatory party/location selection, close-result contests, ideology maps, opinion feeds, personalized share links and third-party collection.\n\nThe revision closes specific v1.0 gaps: result-to-comparison transfer was not connected; a signed-opposition filter missed qualified same-direction differences; own-answer overlays were underspecified; topic browsing lacked proposal search; equal totals lacked a concrete explanation; source-directory and revision returns were vague. The generated decision matrix maps every change to existing U tasks, connected flows and A01-A38 cases.\n\nThe original comparison prototype and its report/screenshots are unchanged. During U009/U010/U012 sketch and exercise the additions at wide and narrow sizes before completing their application slice. This research supplies design decisions, not completion of application work or new electoral evidence."
+    },
+    {
       "id": "architecture",
       "title": "Information architecture, routes and persistent orientation",
       "content": "```text\nInicio\n  Hacer el test → preguntas → decisión de terminar → resultado\n  Comparar programas → selección → tema → propuesta → fuente\n  Explorar un tema → propuestas → posturas → fuente\n\nResultado → qué coincide / qué difiere / qué falta\n          → propuesta con tu respuesta → fuente → mismo resultado\n          → revisar respuesta → volver a confirmar resultado\n\nCómo funciona → explicación breve → ejemplo → detalle opcional\nAyuda → resolver una duda concreta → volver al recorrido\nFuentes → buscar una formación → documento / información ausente\nPie → privacidad / accesibilidad / información del proyecto\n```\n\nKeep the primary header small: **Inicio / Hacer el test / Programas / Cómo funciona**. Mark the current section. Within Programas show two routes immediately: **Comparar programas / Explorar un tema**. Do not require a hover-only mega-menu, a hamburger at widths where ordinary links fit, or an introductory page whose only purpose is another click.\n\nUse the existing routes as the starting point. `/questionnaire` remains the test, `/programmes` the programme entry, `/how-it-works` the current explanation. `/method` must resolve to the same current explanation; `/comparison` enters comparison selection; `/sources` must have the promised useful source journey or become an explicitly labelled alias. Decide exact alias/redirect behavior during U004 after route and session tests; use named Laravel routes and preserve public bookmarks.\n\nThe content hierarchy is **section → topic → proposal → source**, with a visible local return naming its destination. Avoid putting a technical “method” page beside “how it works” as if they were separate concepts. No 2026 menu entry until that edition has a usable evidence-backed destination.\n\nPublic section/topic/proposal identifiers may use non-personalized navigation only after privacy tests prove no selected formation, answer, result or completion data is added. Default implementation keeps detailed state in memory; do not introduce personalized URLs or history state. Browser Back navigates public sections consistently; visible Back restores local detail context. Hard reload starts a new private session and public direct links work without one.\n\nKeep active quiz answers when visiting another section within the same document and show **Volver a mi test**. Do not imply that a hard reload or following an external source will preserve private answers. External documents open in a new tab with clear Spanish naming and no opener/referrer leakage."
@@ -47,47 +52,47 @@
     {
       "id": "didactic",
       "title": "Didactic interaction rather than an encyclopedia",
-      "content": "Every interactive element must help a concrete task. Add interaction where it reduces confusion, not for entertainment or to maximize clicks. Reuse the quiz's focused stage and immediate feedback as principles without turning opinion into a right/wrong game.\n\n- Home presents two useful choices and explains the 2023 edition in one line. No preliminary party chooser for the quiz.\n- Programme selection shows what has changed after a checkbox click, the remaining slots and the direct compare action. Search is a local tool, not another page.\n- Comparison shows one proposal axis and selected programmes together. Topic change keeps the programmes; replacing a programme keeps the topic and active proposal when possible.\n- Each result explains **tu respuesta / lo que propone / por qué coincide o difiere / lo que falta** in separate visible pieces. A person can move to another example and back without redoing a test.\n- “Cómo funciona” offers an optional miniature example with three states: information agrees, information differs, information is missing. Use unnamed illustrative tiles, clearly labelled **“Ejemplo para entender el cálculo”**, five decisions of equal weight, and deterministic reference arithmetic. Do not show simulated political programmes or fictional party scores. The example has buttons **Ver una coincidencia / Ver una diferencia / Ver qué pasa si falta información** and a textual equivalent; no drag gesture is required.\n- Topic browsing asks **“¿Qué tema te interesa?”** then **“¿Qué propuesta quieres consultar?”**. Each item explains the next destination. It must not unload 59 programme essays at the top level.\n- Sources begin with the everyday explanation and an original quote. **Leer el contexto original** opens the full passage only when requested. No raw hash or methodological warning dominates that first view.\n- Help is a task list: **No entiendo mi porcentaje / Quiero comparar dos programas / Quiero cambiar una respuesta / Qué ocurre si falta un programa / Qué se guarda de mí**. Each answer ends with a useful internal return/action.\n- Missing/loading/error states say what happened and offer an action. They do not strand a person with an unhelpful technical sentence.\n\nProgressive disclosure must not hide a qualification that changes a party's meaning, a missing-programme status, a pending percentage or download privacy implications. A disclosure is optional supporting detail, not a way to bury inconvenient evidence."
+      "content": "Every interactive element must help a concrete task. Add interaction where it reduces confusion, not for entertainment or to maximize clicks. Reuse the quiz's focused stage and immediate feedback as principles without turning opinion into a right/wrong game.\n\n- Home presents two useful choices and explains the 2023 edition in one line. No preliminary party chooser for the quiz.\n- Programme selection shows what has changed after a checkbox click, the remaining slots and the direct compare action. Search is a local tool, not another page.\n- Comparison shows one proposal axis and selected programmes together. Topic change keeps the programmes; replacing a programme keeps the topic and active proposal when possible.\n- Each result explains **tu respuesta / lo que propone / por qué coincide o difiere / lo que falta** in separate visible pieces. A person can move to another example and back without redoing a test.\n- “Cómo funciona” offers an optional miniature example with three states: information agrees, information differs, information is missing. Use unnamed illustrative tiles, clearly labelled **“Ejemplo para entender el cálculo”**, five decisions of equal weight, and deterministic reference arithmetic. Do not show simulated political programmes or fictional party scores. The example has buttons **Ver una coincidencia / Ver una diferencia / Ver qué pasa si falta información** and a textual equivalent; no drag gesture is required.\n- Topic browsing asks **“¿Qué tema te interesa?”** then **“¿Qué propuesta quieres consultar?”**. Each item explains the next destination. It must not unload 59 programme essays at the top level.\n- Sources begin with the everyday explanation and an original quote. **Leer el contexto original** opens the full passage only when requested. No raw hash or methodological warning dominates that first view.\n- Help is a task list: **No entiendo mi porcentaje / Quiero comparar dos programas / Quiero cambiar una respuesta / Qué ocurre si falta un programa / Qué se guarda de mí**. Each answer ends with a useful internal return/action.\n- Missing/loading/error states say what happened and offer an action. They do not strand a person with an unhelpful technical sentence.\n\nProgressive disclosure must not hide a qualification that changes a party's meaning, a missing-programme status, a pending percentage or download privacy implications. A disclosure is optional supporting detail, not a way to bury inconvenient evidence.\n\nB07 places explanation at the point of confusion. An unfamiliar word opens a short neutral disclosure by touch/click/keyboard; closing it preserves question, answer and focus origin. Do not copy party-position reveal into our answering stage. Public proposal reading remains separately accessible through Programas; personalized relations stay behind deliberate finish. Support native zoom/assistive reading without compulsory video/audio, narration dependencies, provider permissions or competing account/collection gates."
     },
     {
       "id": "home-method",
       "title": "Screen contract: home, navigation and current explanation",
-      "content": "**Home.** Proposed headline: **“Descubre qué propuestas coinciden contigo”**. Intro: **“Responde preguntas sobre temas cotidianos o compara los programas por tu cuenta.”** Edition: **“Programas de las generales de 2023.”** Primary: **Empezar el test**. Secondary: **Comparar programas**. Nearby reassurance: **“Gratis y sin cuenta. Tus respuestas se quedan en esta página.”** Short loss notice remains visible before starting: **“Al recargar se borran.”** If a session exists, replace start with **Volver a mi test** and retain state. No oversized repeated “Inicio” block.\n\nOn 1280×720 and 390×844 the main task and programme alternative must appear without scrolling after loading. The page must not claim a completion time without measurement. No current-election wording or party recommendation.\n\n**Navigation.** Header uses native links with active section names and generous hit areas. At narrow widths use a compact two-row navigation if it fits; otherwise a real labelled Menu button with expanded state, focusable links and close/escape behavior. Prefer the simpler existing visible-link pattern. Do not obscure content with a tall fixed header.\n\n**How it works.** First visible content: **“Comparamos tus respuestas con lo que dicen los programas de 2023.”** Three short points: **“Usamos las mismas reglas para todas las formaciones.” / “Si falta información, no cuenta como coincidencia.” / “El resultado ayuda a explorar propuestas; tú decides tu voto.”** Then the optional example, **De dónde salen las preguntas**, **Qué ocurre si falta información**, **Ver el cálculo completo**, **Consultar las fuentes**. Detailed editorial CIS ordering and migration-bank gaps belong in the relevant source/method explanation, not comparison entry.\n\n`/method` and `/how-it-works` must tell the same current story. The old threshold/common-cohort method remains in historical engineering records and never appears as active visitor help. Verify this by following every header/footer/direct legacy link, not just searching source files."
+      "content": "**Home.** Proposed headline: **“Descubre qué propuestas coinciden contigo”**. Intro: **“Responde preguntas sobre temas cotidianos o compara los programas por tu cuenta.”** Edition: **“Programas de las generales de 2023.”** Primary: **Empezar el test**. Secondary: **Comparar programas**. Nearby reassurance: **“Gratis y sin cuenta. Tus respuestas se quedan en esta página.”** Short loss notice remains visible before starting: **“Al recargar se borran.”** If a session exists, replace start with **Volver a mi test** and retain state. No oversized repeated “Inicio” block.\n\nOn 1280×720 and 390×844 the main task and programme alternative must appear without scrolling after loading. The page must not claim a completion time without measurement. No current-election wording or party recommendation.\n\n**Navigation.** Header uses native links with active section names and generous hit areas. At narrow widths use a compact two-row navigation if it fits; otherwise a real labelled Menu button with expanded state, focusable links and close/escape behavior. Prefer the simpler existing visible-link pattern. Do not obscure content with a tall fixed header.\n\n**How it works.** First visible content: **“Comparamos tus respuestas con lo que dicen los programas de 2023.”** Three short points: **“Usamos las mismas reglas para todas las formaciones.” / “Si falta información, no cuenta como coincidencia.” / “El resultado ayuda a explorar propuestas; tú decides tu voto.”** Then the optional example, **De dónde salen las preguntas**, **Qué ocurre si falta información**, **Ver el cálculo completo**, **Consultar las fuentes**. Detailed editorial CIS ordering and migration-bank gaps belong in the relevant source/method explanation, not comparison entry.\n\n`/method` and `/how-it-works` must tell the same current story. The old threshold/common-cohort method remains in historical engineering records and never appears as active visitor help. Verify this by following every header/footer/direct legacy link, not just searching source files.\n\nAdd a selectable second example clearly labelled **“Ejemplo sin partidos reales”** for equal totals with different agreements. Five equally weighted decisions use extreme agreement/opposition and one missing position. Example A agrees on 1/2, differs on 3/4 and lacks 5; B differs on 1/2, agrees on 3/4 and also lacks 5. Both display 40% confirmed overlap and 80% available information under this simplified common denominator. Rows, labels and a text equivalent make the reason inspectable. These are unnamed illustrative sets, not simulated parties or the real quiz's per-topic weights. Preserve the existing agree/differ/missing example and optional exact current method. Keyboard selection never changes quiz answers. Implementation and arithmetic verification remain U007 work."
     },
     {
       "id": "comparison",
       "title": "Screen contract: selection and comparison",
-      "content": "The included standalone prototype makes this journey reviewable with the complete existing 59-formation/80-proposal bank. It is a design prototype, not a replacement application or final copy migration.\n\n**Selection.** Start at **“¿Qué programas quieres comparar?”** with **“Elige dos o tres formaciones y mira qué proponen sobre vivienda, salud, empleo y otros temas.”** No preselected major party. Search accepts full names and official abbreviations without a remote query. Keep all 59 alphabetically; do not promote only parties with seats. A native checkbox label includes the exact official name and simple programme availability. At three selected, explain **“Ya tienes tres. Quita una para elegir otra.”** Keep checked controls usable; disable or reject additional choices with an announced reason. Selected summary offers remove controls and **Comparar 2/3 programas**, disabled below two. Search does not clear selection; clearing it restores all 59.\n\n**Comparison.** Desktop uses a native table with proposal row headers and 2–3 programme columns. Formation names are stated in the header rather than in every cell. Every cell shows support/opposition/intermediate/unknown and its authored rationale. Qualified +1/−1 retains the qualification visibly. Unknowns must not have a red rejection icon or a zero stance.\n\nOn mobile, each proposal has a compact same-proposal overview with all selected formations and stance labels visible together. Full explanations follow in labelled blocks; source actions remain directly available. No swipe-only programme carousel, horizontal scrolling as the normal route, or collapse hiding every other party. Some scrolling remains necessary to read full conditions; it is bounded to one topic and one page rather than 80 questions.\n\nWide theme rail becomes a native topic select when width cannot support a rail plus three readable columns. A topic contains its actual authored count: education 7, employment 8, energy 10, health 10, housing 4, institutions 15, pensions 2, rights 14, taxes 7, transport 3. Page six proposals at a time without inventing/padding content. Show **Propuestas X–Y de Z**, Previous and Next; selected programmes survive page/topic changes.\n\nDefault shows all proposals, including gaps. Optional **“Con posturas a favor y en contra”** means at least one authored positive and one authored negative cell among the selected formations, not inferred political disagreement from missing evidence. Empty state: **“No hay posturas a favor y en contra documentadas para esta selección y este tema.”** Add **“Puede faltar información.”** and **Ver todas las propuestas**. Do not label equal numeric values as identical whole programmes.\n\nChanging programmes uses a reversible selection draft. **Volver sin cambiar** discards the draft. Confirming preserves topic, filter and active proposal/page if still meaningful; announce when a filter leaves no proposals. No accidental one-programme comparison after removing a selection. Place a clear **Añadir otro programa** path instead."
+      "content": "The included standalone prototype makes this journey reviewable with the complete existing 59-formation/80-proposal bank. It is a design prototype, not a replacement application or final copy migration.\n\n**Selection.** Start at **“¿Qué programas quieres comparar?”** with **“Elige dos o tres formaciones y mira qué proponen sobre vivienda, salud, empleo y otros temas.”** No preselected major party. Search accepts full names and official abbreviations without a remote query. Keep all 59 alphabetically; do not promote only parties with seats. A native checkbox label includes the exact official name and simple programme availability. At three selected, explain **“Ya tienes tres. Quita una para elegir otra.”** Keep checked controls usable; disable or reject additional choices with an announced reason. Selected summary offers remove controls and **Comparar 2/3 programas**, disabled below two. Search does not clear selection; clearing it restores all 59.\n\n**Comparison.** Desktop uses a native table with proposal row headers and 2–3 programme columns. Formation names are stated in the header rather than in every cell. Every cell shows support/opposition/intermediate/unknown and its authored rationale. Qualified +1/−1 retains the qualification visibly. Unknowns must not have a red rejection icon or a zero stance.\n\nOn mobile, each proposal has a compact same-proposal overview with all selected formations and stance labels visible together. Full explanations follow in labelled blocks; source actions remain directly available. No swipe-only programme carousel, horizontal scrolling as the normal route, or collapse hiding every other party. Some scrolling remains necessary to read full conditions; it is bounded to one topic and one page rather than 80 questions.\n\nWide theme rail becomes a native topic select when width cannot support a rail plus three readable columns. A topic contains its actual authored count: education 7, employment 8, energy 10, health 10, housing 4, institutions 15, pensions 2, rights 14, taxes 7, transport 3. Page six proposals at a time without inventing/padding content. Show **Propuestas X–Y de Z**, Previous and Next; selected programmes survive page/topic changes.\n\nDefault shows all proposals, including gaps. Replace signed-opposition-only discovery with a native **Mostrar** control: **Todas las propuestas / Posturas distintas / Información que falta**. “Posturas distintas” requires at least two documented numeric values that differ among the selected formations; +1 versus +2 qualifies, as does -2 versus +2. “Información que falta” includes any selected formation with an unscored position or absent common programme. Mixed rows may qualify for both views: these are overlapping views, not exclusive political groups. Unknown never becomes coded zero. Counts describe the active topic/view, never a new affinity denominator.\n\nAn empty differences view says **“No hay posturas distintas documentadas en este tema para estos programas.”**, **“Puede faltar información.”** and **Ver todas las propuestas**. Equal values do not imply identical policies or programmes: preserve each qualifier, including those in equal-value rows. An optional same-value description explicitly refers to the authored scale. Two unknowns never count as agreement. The prototype retains the earlier signed-opposition filter; U009 needs fresh evidence for this replacement.\n\nChanging programmes uses a reversible selection draft. **Volver sin cambiar** discards the draft. Confirming preserves topic, filter and active proposal/page if still meaningful; announce when a filter leaves no proposals. No accidental one-programme comparison after removing a selection. Place a clear **Añadir otro programa** path instead.\n\n**From a result (B02).** F08 transfers the exact two/three formations explicitly chosen by the visitor into this same workspace. There is no duplicate comparator or highest-party default. From a result example, open that proposal's topic/page and preserve its ID. **Volver a mis resultados** restores the result search/page/opener. Public browsing reaches the same comparison without answering anything.\n\n**Optional own-answer line (B04).** Standalone comparison offers an unchecked **Mostrar mis respuestas** only if a current deliberately revealed result exists. Explicit **Comparar con mis respuestas** from a revealed result requests this overlay. Render the visitor answer once per proposal, separate from programme columns; no party colour or fourth programme column. Distinguish opinion, unsure, skipped and not asked. Non-opinion/unasked responses have no inferred relation. It adds no topic score, ideology projection or ranking. Editing removes all personal overlays and old percentages until deliberate finish again; public comparison stays usable."
     },
     {
       "id": "topic-reader",
       "title": "Screen contract: topic exploration, sources and reading",
-      "content": "**Topic-first.** Entry gives ten named topic choices, then a searchable list of actual proposals in that topic. A proposal opens grouped positions across all 59 formations: **A favor / Postura intermedia / En contra / No podemos confirmar su postura** with counts and alphabetical members. A short initial overview gives the groups and counts; people can jump to a group with ordinary links or filter/search locally. Missing evidence is included by default and recoverable after any filter. Add a formation to the same comparison selection without losing the active proposal; once two are selected **Comparar estos programas** lands on that proposal in the topic, not at a random earlier page.\n\n**Reading.** One source action opens the selected formation and proposal with its interpretation and exact original citation. Prefer a dedicated full-width reading view for the comparison journey, including desktop: it preserves comfortable comparison columns rather than squeezing three programmes beside a side panel. Keep the current nonmodal result reader only when its content-width budget remains adequate; otherwise use the same full-width surface. Do not introduce stacked dialogs or two simultaneous readers. The prototype demonstrates full-width source reading at every size.\n\nSource view names the proposal, formation, 2023 edition and location. It shows **Cómo entendemos esta propuesta**, the authored rationale, the quote, optional **Leer el contexto original**, and **Abrir programa oficial (otra pestaña)**. If the official URL is unavailable, label the preserved copy honestly. Some originals are not Spanish: keep exact originals with an explicitly labelled authored Spanish explanation, never relabel a translation as a quotation.\n\nMultiple citations remain accessible and numbered; contradictory or qualified evidence cannot be reduced to one favourable snippet. Hash/offset/provenance detail is under **Origen del documento**. A missing programme offers **Volver a la comparación** and a clear missing-source explanation without a disabled “Ver fuente” masquerading as available evidence.\n\nReturn restores selected formations, topic, filter, page, search, active proposal, scroll position and the invoking control. On resize choose the corresponding visible mobile/desktop opener by semantic identity, not a stale DOM reference. If the origin disappeared, return to its nearest valid interactive control and explain the change. Never focus headings, paragraphs, main, row containers or live status text."
+      "content": "**Topic-first.** Entry gives ten named topic choices, then a searchable list of actual proposals in that topic. A proposal opens grouped positions across all 59 formations: **A favor / Postura intermedia / En contra / No podemos confirmar su postura** with counts and alphabetical members. A short initial overview gives the groups and counts; people can jump to a group with ordinary links or filter/search locally. Missing evidence is included by default and recoverable after any filter. Add a formation to the same comparison selection without losing the active proposal; once two are selected **Comparar estos programas** lands on that proposal in the topic, not at a random earlier page.\n\n**Reading.** One source action opens the selected formation and proposal with its interpretation and exact original citation. Prefer a dedicated full-width reading view for the comparison journey, including desktop: it preserves comfortable comparison columns rather than squeezing three programmes beside a side panel. Keep the current nonmodal result reader only when its content-width budget remains adequate; otherwise use the same full-width surface. Do not introduce stacked dialogs or two simultaneous readers. The prototype demonstrates full-width source reading at every size.\n\nSource view names the proposal, formation, 2023 edition and location. It shows **Cómo entendemos esta propuesta**, the authored rationale, the quote, optional **Leer el contexto original**, and **Abrir programa oficial (otra pestaña)**. If the official URL is unavailable, label the preserved copy honestly. Some originals are not Spanish: keep exact originals with an explicitly labelled authored Spanish explanation, never relabel a translation as a quotation.\n\nMultiple citations remain accessible and numbered; contradictory or qualified evidence cannot be reduced to one favourable snippet. Hash/offset/provenance detail is under **Origen del documento**. A missing programme offers **Volver a la comparación** and a clear missing-source explanation without a disabled “Ver fuente” masquerading as available evidence.\n\nReturn restores selected formations, topic, filter, page, search, active proposal, scroll position and the invoking control. On resize choose the corresponding visible mobile/desktop opener by semantic identity, not a stale DOM reference. If the origin disappeared, return to its nearest valid interactive control and explain the change. Never focus headings, paragraphs, main, row containers or live status text.\n\n**Find a proposal without knowing the topic (B01).** Offer **Buscar una propuesta** beside the ten-topic entry. Search the already loaded 80 authored questions/proposals/help using case/diacritic normalization. Extra search labels must be directly authored in U005; never generate positions or policy summaries. Results show proposal, topic and count in six-item pages. Empty search shows the topics, not 80 essays. No hits offers **Borrar búsqueda** and **Ver temas**. A result opens that proposal's all-formation positions directly; choosing two/three programmes transfers to the same comparison row. Return restores query/page/proposal opener and live quiz progress. Query text remains in memory, never in URL, storage or requests."
     },
     {
       "id": "results",
       "title": "Screen contract: understandable and useful results",
-      "content": "Keep the accepted horizontal bars, common denominator and every formation. Improve the first view around interpretation rather than an 59-row scroll task.\n\n1. Headline **“Tus coincidencias con los programas de 2023”** and a short explanation of what the percentage includes. Keep the 2023 label and deliberate finish boundary.\n2. A readable first group of results with exact official names, **Coincidencia confirmada**, separate **Información disponible**, and source availability. Search and **Ver todas las 59 formaciones** expose the full ordered result set; state **Mostrando X de 59**. Paging/filtering does not change scores, weights or ranking. Unknown programmes remain in the full set with an explicit label, not quietly removed.\n3. For a chosen result show three clearly named routes: **En qué coincides / En qué difieres / Qué no sabemos**. Each shows a concrete authored proposal, your answer, the programme's position and the reason for the relationship. Preserve qualifiers and display disagreements independently of the overall result.\n4. One action opens that proposal's explanation; **Ver la fuente** is then one action. Do not force result → entire programme → topic → proposal before reading the cited example.\n5. **Revisar mis respuestas** returns to the chosen topic/question. Editing invalidates the revealed personalized view until another deliberate finish; never display stale percentages or automatic reveal.\n6. **Descargar mis resultados** states that the file contains personal political answers and remains on the device. Prepare a readable Spanish local export using current existing dependencies; retain the existing complete JSON export as a technical option if useful. This is a format/presentation task, not permission to transmit an export or change its content semantics.\n\nWhen a topic lacks an opinion response use **“Falta una respuesta en algunos temas para calcular el total.”** List useful named actions **Responder una pregunta de [tema]**. Offer to inspect available proposals without fabricating a global percentage. “No lo tengo claro” is a valid choice, not a failing grade. No trophy, winner, confetti, voting instruction, default expanded political profile or probability language.\n\nA 0% row with no available programme must say that we could not confirm overlap because information is missing; it must not say “no coincides”. Use neutral visual treatment and preserve the same numeric contract. Equal rounded percentages keep the exact ordering and explain ties only where relevant."
+      "content": "Keep the accepted horizontal bars, common denominator and every formation. Improve the first view around interpretation rather than an 59-row scroll task.\n\n1. Headline **“Tus coincidencias con los programas de 2023”** and a short explanation of what the percentage includes. Keep the 2023 label and deliberate finish boundary.\n2. A readable first group of results with exact official names, **Coincidencia confirmada**, separate **Información disponible**, and source availability. Search and **Ver todas las 59 formaciones** expose the full ordered result set; state **Mostrando X de 59**. Paging/filtering does not change scores, weights or ranking. Unknown programmes remain in the full set with an explicit label, not quietly removed.\n3. For a chosen result show three clearly named routes: **En qué coincides / En qué difieres / Qué no sabemos**. Each shows a concrete authored proposal, your answer, the programme's position and the reason for the relationship. Preserve qualifiers and display disagreements independently of the overall result.\n4. One action opens that proposal's explanation; **Ver la fuente** is then one action. Do not force result → entire programme → topic → proposal before reading the cited example.\n5. **Revisar mis respuestas** returns to the chosen topic/question. Editing invalidates the revealed personalized view until another deliberate finish; never display stale percentages or automatic reveal.\n6. **Descargar mis resultados** states that the file contains personal political answers and remains on the device. Prepare a readable Spanish local export using current existing dependencies; retain the existing complete JSON export as a technical option if useful. This is a format/presentation task, not permission to transmit an export or change its content semantics.\n\nWhen a topic lacks an opinion response use **“Falta una respuesta en algunos temas para calcular el total.”** List useful named actions **Responder una pregunta de [tema]**. Offer to inspect available proposals without fabricating a global percentage. “No lo tengo claro” is a valid choice, not a failing grade. No trophy, winner, confetti, voting instruction, default expanded political profile or probability language.\n\nA 0% row with no available programme must say that we could not confirm overlap because information is missing; it must not say “no coincides”. Use neutral visual treatment and preserve the same numeric contract. Equal rounded percentages keep the exact ordering and explain ties only where relevant.\n\n**A useful next task (B02).** Each result row has a native unchecked **Comparar [formación]** control. A compact selected summary shows choices/removal and **Comparar programas**, disabled below two. The ranked list keeps its existing order; selections/search never alter scores. At three choices explain how to replace one. No highest-bar defaults or required choice just to read results. Enter the shared workspace in one action after choices. Source/comparison return restores result page/search, chosen IDs, scroll and invoking control; mobile summaries cannot hide focus.\n\n**Close or surprising results (B06).** **Entender este resultado** says **“El porcentaje resume las propuestas que has respondido. Dos resultados parecidos pueden coincidir contigo en cosas distintas.”** Its action leads to the chosen formation's examples or F08 for an explicitly chosen pair. A zero caused by missing information leads to **Qué no sabemos**, not an empty differences view. No statistical significance claim, automatic tie-break questions or winner when rounded percentages coincide. Exact arithmetic and ordering remain unchanged.\n\n**Reconsider one answer (B05).** **Revisar esta respuesta** opens that previously answered question only. Preserve the question set, other answers, answer ordering and public comparison snapshot. Editing invalidates all personalized scores/examples/overlays; the question stage has no party identities. **Volver a ver mi resultado** is deliberate finish under the existing completeness rule. If a required topic lacks an opinion, show the current pending state and review action. Never rerun starter selection, fill a skip silently or force replay of the whole test."
     },
     {
       "id": "help-privacy",
       "title": "Screen contract: help, privacy, accessibility and old links",
-      "content": "Help should answer a task, not describe implementation. Reuse native disclosures with a concise answer and one useful destination. Keep help reachable from the relevant view without clearing quiz/comparison state.\n\nPrivacy first layer: **“Tus respuestas no se envían al servidor. Se borran al recargar o cerrar esta página.”** Then separate practical answers: **Qué se guarda / Qué pasa al descargar / Qué pasa al abrir un programa / Qué datos técnicos puede ver el alojamiento**. Preserve the truthful network/hosting limitation and the fact that a public launch has not been approved; do not claim guaranteed anonymity. Do not display deferred randomized-response formulas as the first privacy paragraph when collection is disabled. Its full future protocol stays preserved separately; any visitor notice must truthfully say collection is off.\n\nAccessibility gives concrete usage guidance: keyboard, text enlargement, motion preference, sources without doing the test and how to recover from an unavailable link. Do not confuse practical support with certification. Link back to the origin from inside the running app; a direct server-rendered visit still has useful Home/Test/Programmes navigation and content when JavaScript is unavailable.\n\nA source directory allows formation search, exact common-programme links, availability and optional provenance. It is distinct from comparing programme positions. Links labelled **Fuentes** must reach this useful task rather than a silently duplicated programme catalogue.\n\nFor /feedback and /insights keep collection disabled, remove primary prompts and provide a short honest direct-route state: **“Las valoraciones no están disponibles en esta edición.” / “Puedes hacer el test o consultar programas.”** Preserve protocol/code/history rather than delete it. Error pages 404/419/429/500/503 provide short Spanish messages and a useful return/retry, never exception strings or raw translation keys. Re-check developer/local setup messages separately; they must not leak into public copy."
+      "content": "Help should answer a task, not describe implementation. Reuse native disclosures with a concise answer and one useful destination. Keep help reachable from the relevant view without clearing quiz/comparison state.\n\nPrivacy first layer: **“Tus respuestas no se envían al servidor. Se borran al recargar o cerrar esta página.”** Then separate practical answers: **Qué se guarda / Qué pasa al descargar / Qué pasa al abrir un programa / Qué datos técnicos puede ver el alojamiento**. Preserve the truthful network/hosting limitation and the fact that a public launch has not been approved; do not claim guaranteed anonymity. Do not display deferred randomized-response formulas as the first privacy paragraph when collection is disabled. Its full future protocol stays preserved separately; any visitor notice must truthfully say collection is off.\n\nAccessibility gives concrete usage guidance: keyboard, text enlargement, motion preference, sources without doing the test and how to recover from an unavailable link. Do not confuse practical support with certification. Link back to the origin from inside the running app; a direct server-rendered visit still has useful Home/Test/Programmes navigation and content when JavaScript is unavailable.\n\nA source directory allows formation search, exact common-programme links, availability and optional provenance. It is distinct from comparing programme positions. Links labelled **Fuentes** must reach this useful task rather than a silently duplicated programme catalogue.\n\nFor /feedback and /insights keep collection disabled, remove primary prompts and provide a short honest direct-route state: **“Las valoraciones no están disponibles en esta edición.” / “Puedes hacer el test o consultar programas.”** Preserve protocol/code/history rather than delete it. Error pages 404/419/429/500/503 provide short Spanish messages and a useful return/retry, never exception strings or raw translation keys. Re-check developer/local setup messages separately; they must not leak into public copy.\n\n**Formation factsheet (B09).** A compact public source-directory destination shows official name, **Generales de 2023**, programme found/missing, where it stood and named original-document access. Constituencies may be a disclosure; missing programme remains visible. Offer **Ver sus propuestas**, **Añadir a la comparación** and an exact local return where useful. Addition updates a selection draft and never silently replaces a third formation or starts a test. Facts link to the existing inventory/programme evidence. All 59 are searchable alphabetically; PSC does not inherit PSOE. No biography, seat-based prominence or ideological verdict from reference websites."
     },
     {
       "id": "visual",
       "title": "Visual system, spacing and content-driven breakpoints",
-      "content": "Use the existing Avenir Next → Segoe UI → Arial fallback without a font dependency. The prototype's civic palette is cool and neutral: ink #192e34, muted #52666e, action #185b64, background #f4f7f8, paper #ffffff, structural border #d4dfe2. The memorable element is the comparison itself: one shared proposal axis, equal programme treatment. No decorative card wall, party-coloured responses, gradients, giant disclaimers or uniformly heavy buttons.\n\n| Token | Proposed rule | Verification |\n| --- | --- | --- |\n| Root | 1rem = user browser default; 1.0625 multiplier only on ≥100rem wide comfortable desktops | Never shrink root based on viewport or override browser font settings |\n| Body | 1rem, line-height 1.55–1.65; supporting labels ≥0.875rem | Political conditions and action names stay readable, not fine print |\n| Main heading | clamp(1.8rem, 1.3rem + 2vw, 3rem), low-height desktop cap about 2.25rem | Avoid clipped MacBook first-screen actions |\n| Subheading | clamp(1.45rem, 1.1rem + 1vw, 2rem) | Clear hierarchy without repeated display headings |\n| Text width | 55–72ch for prose; comparison cells ≥14rem desired at three columns | Preserve readable parallel columns; switch layout before squeezing |\n| Spacing | 0.25/0.5/0.75/1/1.5/2/3rem scale | Separate explanation blocks; consistent group and section gaps |\n| Controls | min 2.75rem target, ≥0.5rem separation where adjacent | Borders never hug buttons; container padding ≥1rem narrow, 1.5rem wide |\n| Layout | Max 88rem, outer gutters 1rem narrow / 2rem wide | No huge empty margins that starve table columns |\n| Focus | High contrast visible outline with offset | Only links, buttons, native inputs, selects and disclosure summaries |\n\nAt ≤40rem simplify masthead and use 1rem gutters; at ≤60rem use mobile proposal sections and stack selection summary before the list; at ≤75rem replace the topic rail with a native select; at ≥100rem modestly expand typography. Low-height desktops ≤46rem reduce heading/outer spacing, not body text. These are starting content-fit thresholds, tested at 320, 390, 768, 1024, 1280 and 1512 CSS pixels and 200/400% zoom. Two selected columns can retain a table when their width budget fits; choose breakpoints from actual content, not device names.\n\nPrefer intrinsic minmax/grid/flex, clamp with rem limits, logical properties, container queries where supported by the installed toolchain, and native controls. Do not use viewport-only type, fixed text heights, overflow hidden that truncates meaning, or JavaScript resizing for font sizes. Test longer official names, three selected formations, qualified rationale, original non-Spanish text and long quotes.\n\nMotion responds to an action: short 120–180ms opacity or contained transform without horizontal overflow, preserve stable controls and cancel on new navigation. Respect reduced motion. Preserve the accepted quiz transition rather than redesign it gratuitously. Loading placeholders reserve the actual screen geometry and never show a focusable fake control or a prominent technical loading banner."
+      "content": "Use the existing Avenir Next → Segoe UI → Arial fallback without a font dependency. The prototype's civic palette is cool and neutral: ink #192e34, muted #52666e, action #185b64, background #f4f7f8, paper #ffffff, structural border #d4dfe2. The memorable element is the comparison itself: one shared proposal axis, equal programme treatment. No decorative card wall, party-coloured responses, gradients, giant disclaimers or uniformly heavy buttons.\n\n| Token | Proposed rule | Verification |\n| --- | --- | --- |\n| Root | 1rem = user browser default; 1.0625 multiplier only on ≥100rem wide comfortable desktops | Never shrink root based on viewport or override browser font settings |\n| Body | 1rem, line-height 1.55–1.65; supporting labels ≥0.875rem | Political conditions and action names stay readable, not fine print |\n| Main heading | clamp(1.8rem, 1.3rem + 2vw, 3rem), low-height desktop cap about 2.25rem | Avoid clipped MacBook first-screen actions |\n| Subheading | clamp(1.45rem, 1.1rem + 1vw, 2rem) | Clear hierarchy without repeated display headings |\n| Text width | 55–72ch for prose; comparison cells ≥14rem desired at three columns | Preserve readable parallel columns; switch layout before squeezing |\n| Spacing | 0.25/0.5/0.75/1/1.5/2/3rem scale | Separate explanation blocks; consistent group and section gaps |\n| Controls | min 2.75rem target, ≥0.5rem separation where adjacent | Borders never hug buttons; container padding ≥1rem narrow, 1.5rem wide |\n| Layout | Max 88rem, outer gutters 1rem narrow / 2rem wide | No huge empty margins that starve table columns |\n| Focus | High contrast visible outline with offset | Only links, buttons, native inputs, selects and disclosure summaries |\n\nAt ≤40rem simplify masthead and use 1rem gutters; at ≤60rem use mobile proposal sections and stack selection summary before the list; at ≤75rem replace the topic rail with a native select; at ≥100rem modestly expand typography. Low-height desktops ≤46rem reduce heading/outer spacing, not body text. These are starting content-fit thresholds, tested at 320, 390, 768, 1024, 1280 and 1512 CSS pixels and 200/400% zoom. Two selected columns can retain a table when their width budget fits; choose breakpoints from actual content, not device names.\n\nPrefer intrinsic minmax/grid/flex, clamp with rem limits, logical properties, container queries where supported by the installed toolchain, and native controls. Do not use viewport-only type, fixed text heights, overflow hidden that truncates meaning, or JavaScript resizing for font sizes. Test longer official names, three selected formations, qualified rationale, original non-Spanish text and long quotes.\n\nMotion responds to an action: short 120–180ms opacity or contained transform without horizontal overflow, preserve stable controls and cancel on new navigation. Respect reduced motion. Preserve the accepted quiz transition rather than redesign it gratuitously. Loading placeholders reserve the actual screen geometry and never show a focusable fake control or a prominent technical loading banner.\n\nRTVE's dated 390px inspection illustrates a specific risk: topic icons/selectors overlapped and two prose columns were difficult to scan. It is not a general accessibility finding. Give our proposal search, result selection and answer overlay intrinsic wrapping and visible text labels. Understanding must not depend on party logos, chart coordinates or two narrow prose columns. At enlarged text use the compact shared stance overview plus complete conditions instead of shrinking type to preserve a desktop grid."
     },
     {
       "id": "wireframes",
       "title": "Layout sketches and criticism before implementation",
-      "content": "```text\nHome                         Comparison selection\n[brand] [small navigation]   [brand] [small navigation]\nOne useful heading           Which programmes?\nTwo short lines              Short explanation\n[Start test] [Programmes]     [Search................] [Selected 2/3]\n2023 / privacy reassurance   [ ] exact formation     [remove]\n                             [ ] programme status    [Compare]\n\nWide comparison\n[title + selected programmes]               [Change programmes]\n[topic rail]  Topic                         [filter]\n              Proposal | Programme A | Programme B | Programme C\n              question | stance      | stance      | stance\n                       | conditions  | conditions  | conditions\n                       | source      | source      | source\n              [Previous] Proposals X–Y of Z [Next]\n\nNarrow comparison\n[compact header]\n[title / selected] [Change]\n[Topic select] [Filter]\nProposal in ordinary language\nA stance | B stance | C stance  (all visible together)\n[source] | [source] | [source]\nA: full explanation / conditions\nB: full explanation / conditions\nC: full explanation / conditions\n[Previous] X–Y of Z [Next]\n\nSource reading\n[Back to named origin]\nformation / proposal / 2023\ninterpretation      exact quotation + page\nconditions          [Read original context]\n                    [Open original / preserved copy]\n                    [Provenance details]\n\nResult\nUseful headline + short percentage explanation\n[Search formation] [See all 59]\nformation | confirmed overlap | information available\n[Matches] [Differences] [Missing information]\nproposal: your answer / programme / explanation / source\n[Review responses] [Download] [Return]\n```\n\nInitial critique: putting source reading beside a three-column table recreates the cramped layout; use full-width source reading for comparison. Repeating full formation names and full-width buttons in every mobile block obscures comparison; a small shared overview precedes complete explanations. Compressing all text to make 80 proposals fit would hide meaning; bound the task instead. A decorative lesson/card on every page would recreate an encyclopedia; add the smallest contextual example that resolves confusion.\n\nSecond critique of the first prototype: horizontal stage translation briefly created mobile overflow, and the narrow header consumed too much of the first screen. Remove that translation, shorten prototype chrome and show all three stance labels together before the long explanations. Record subsequent actual inspection rather than call these choices validated in advance."
+      "content": "```text\nHome                         Comparison selection\n[brand] [small navigation]   [brand] [small navigation]\nOne useful heading           Which programmes?\nTwo short lines              Short explanation\n[Start test] [Programmes]     [Search................] [Selected 2/3]\n2023 / privacy reassurance   [ ] exact formation     [remove]\n                             [ ] programme status    [Compare]\n\nWide comparison\n[title + selected programmes]               [Change programmes]\n[topic rail]  Topic                         [filter]\n              Proposal | Programme A | Programme B | Programme C\n              question | stance      | stance      | stance\n                       | conditions  | conditions  | conditions\n                       | source      | source      | source\n              [Previous] Proposals X–Y of Z [Next]\n\nNarrow comparison\n[compact header]\n[title / selected] [Change]\n[Topic select] [Filter]\nProposal in ordinary language\nA stance | B stance | C stance  (all visible together)\n[source] | [source] | [source]\nA: full explanation / conditions\nB: full explanation / conditions\nC: full explanation / conditions\n[Previous] X–Y of Z [Next]\n\nSource reading\n[Back to named origin]\nformation / proposal / 2023\ninterpretation      exact quotation + page\nconditions          [Read original context]\n                    [Open original / preserved copy]\n                    [Provenance details]\n\nResult\nUseful headline + short percentage explanation\n[Search formation] [See all 59]\nformation | confirmed overlap | information available\n[Matches] [Differences] [Missing information]\nproposal: your answer / programme / explanation / source\n[Review responses] [Download] [Return]\n```\n\nInitial critique: putting source reading beside a three-column table recreates the cramped layout; use full-width source reading for comparison. Repeating full formation names and full-width buttons in every mobile block obscures comparison; a small shared overview precedes complete explanations. Compressing all text to make 80 proposals fit would hide meaning; bound the task instead. A decorative lesson/card on every page would recreate an encyclopedia; add the smallest contextual example that resolves confusion.\n\nSecond critique of the first prototype: horizontal stage translation briefly created mobile overflow, and the narrow header consumed too much of the first screen. Remove that translation, shorten prototype chrome and show all three stance labels together before the long explanations. Record subsequent actual inspection rather than call these choices validated in advance.\n\nReference additions remain planned:\n\n```text\nProgramme entry                    Revealed result\n[Compare] [Explore topics]         [Search] [Showing X of 59]\n[Search proposal..........]        [ ] formation | overlap | information\n[six/page counted results]         [chosen 2/3 + remove] [Compare]\nproposal / topic / open                      |\n          |                        Shared comparison workspace\nAll formation positions            [Back to my results] [Change]\n[choose 2/3] [source]               [Topic] [Show: all/different/gaps]\n          |                        [Show my answers: optional]\nSame proposal comparison           proposal + all programme conditions\n                                   own answer only if requested\n                                   [Source] -> same named origin\n```\n\nCritique: avoid three control bars consuming the mobile first screen. Keep selection and its action together, the own-answer option secondary and result return consistent. A proposal never requires a catalogue detour; text/rows never become pseudo-buttons."
     },
     {
       "id": "state",
       "title": "State, return, keyboard and privacy contract",
-      "content": "Keep all private state in memory only: quiz answers/priorities/progress/reveal, selected formations, search, comparison topic/filter/page, source origin, scroll and opener identity. The fixed public bank and ordinary static assets are the only data needed for this stage. Do not send personalized analytics, persist localStorage/sessionStorage/IndexedDB, add cookies or hide selections in URLs/history state.\n\n| Transition | Retain | Reset | Focus / viewport |\n| --- | --- | --- | --- |\n| Home → test | Current live session if present | Only a deliberately confirmed new test | Start/resume or first answer; one question visible |\n| Search formation | Selected IDs and source availability | Search results only | Keep caret; announce result count politely |\n| Confirm comparison | Selection, previous topic and active proposal where valid | Only invalid page/filter context, with explanation | Comparison's first real control; scroll to intended proposal when entering from it |\n| Topic change | Selected IDs, explicit filter | Page to zero; active proposal replaced | Keep topic control; announce proposal count |\n| Next proposal page | Selected IDs, topic, filter | Row subset only | Stable pagination/filter control, not text heading |\n| Edit selection | Draft, original selection and workspace snapshot | Search may start clear | Search input; explicit cancel available |\n| Cancel selection | Restore original selection and workspace | Discard draft | Change-programmes control; restore exact scroll |\n| Source open | All origin context plus semantic opener | Previous reader, never accumulate panels | Reader Back button with proposal description |\n| Source return / resize | Same proposal/formation identity, selection and scroll | None unless origin is no longer valid | Corresponding visible opener, nearest real control fallback |\n| Result → proposal/source | Revealed result and result-list search/page | Nothing political | Detail Back/source controls; no focus on prose |\n| Edit quiz answer | Session answers and question identity | Invalidate revealed result / personal overlays | Native answer control; result requires deliberate finish again |\n| Help/privacy → return | Original screen state while same document lives | No reset | Invoking help/privacy link or next valid control |\n| Hard reload / close | Public bank only | All private session state | Clear new-entry view; no secret recovery state |\n\nUse native table, fieldset/legend, radio/checkbox semantics and links for destinations. Do not turn static cells into an ARIA grid or make text blocks tabbable. Disclosures have real summaries, buttons have specific names and disabled actions have visible reasons. Search redraws never steal focus or reset the caret. Tab order matches reading order at every breakpoint.\n\nNo sticky header/footer may obscure focus. Selection summaries may be sticky only if height fits the viewport and the next controls remain reachable. Original-source opening is user-driven, names the new tab and preserves the app. Personal overlays stay opt-in and only available after deliberate finish; opening public programmes never reveals results automatically."
+      "content": "Keep all private state in memory only: quiz answers/priorities/progress/reveal, selected formations, search, comparison topic/filter/page, source origin, scroll and opener identity. The fixed public bank and ordinary static assets are the only data needed for this stage. Do not send personalized analytics, persist localStorage/sessionStorage/IndexedDB, add cookies or hide selections in URLs/history state.\n\n| Transition | Retain | Reset | Focus / viewport |\n| --- | --- | --- | --- |\n| Home → test | Current live session if present | Only a deliberately confirmed new test | Start/resume or first answer; one question visible |\n| Search formation | Selected IDs and source availability | Search results only | Keep caret; announce result count politely |\n| Confirm comparison | Selection, previous topic and active proposal where valid | Only invalid page/filter context, with explanation | Comparison's first real control; scroll to intended proposal when entering from it |\n| Topic change | Selected IDs, explicit filter | Page to zero; active proposal replaced | Keep topic control; announce proposal count |\n| Next proposal page | Selected IDs, topic, filter | Row subset only | Stable pagination/filter control, not text heading |\n| Edit selection | Draft, original selection and workspace snapshot | Search may start clear | Search input; explicit cancel available |\n| Cancel selection | Restore original selection and workspace | Discard draft | Change-programmes control; restore exact scroll |\n| Source open | All origin context plus semantic opener | Previous reader, never accumulate panels | Reader Back button with proposal description |\n| Source return / resize | Same proposal/formation identity, selection and scroll | None unless origin is no longer valid | Corresponding visible opener, nearest real control fallback |\n| Result → proposal/source | Revealed result and result-list search/page | Nothing political | Detail Back/source controls; no focus on prose |\n| Edit quiz answer | Session answers and question identity | Invalidate revealed result / personal overlays | Native answer control; result requires deliberate finish again |\n| Help/privacy → return | Original screen state while same document lives | No reset | Invoking help/privacy link or next valid control |\n| Hard reload / close | Public bank only | All private session state | Clear new-entry view; no secret recovery state |\n\nUse native table, fieldset/legend, radio/checkbox semantics and links for destinations. Do not turn static cells into an ARIA grid or make text blocks tabbable. Disclosures have real summaries, buttons have specific names and disabled actions have visible reasons. Search redraws never steal focus or reset the caret. Tab order matches reading order at every breakpoint.\n\nNo sticky header/footer may obscure focus. Selection summaries may be sticky only if height fits the viewport and the next controls remain reachable. Original-source opening is user-driven, names the new tab and preserves the app. Personal overlays stay opt-in and only available after deliberate finish; opening public programmes never reveals results automatically.\n\nReference-driven state additions:\n\n| Transition | Retain | Reset | Focus / viewport |\n| --- | --- | --- | --- |\n| Proposal search → positions → return | Query/page/proposal, comparison draft, quiz | Reading view only | Same result control/scroll; caret retained on search updates |\n| Result → comparison | Current revealed session, result search/page/scroll/opener, chosen IDs/proposal | Previous reader | First workspace control or intended proposal opener |\n| Comparison → result | Ordered bars/search/page and chosen IDs | Reader | Same result action and scroll |\n| Enable own-answer line | Topic/filter/page, current finished session version | No score/weights | Overlay checkbox retains focus |\n| Edit a cited answer | Other answers, authored question set, public workspace | Every personal bar/example/overlay and prior reveal token | Answer control; explicit finish again |\n\nUse the existing live-session invalidation with a version token so a deferred return/render cannot resurrect stale personal views. No persistent drafts. Missing/withdrawn bank follows existing fail-closed rules. Meaningful implementation regressions must cover these transitions."
     },
     {
       "id": "states",
@@ -95,19 +100,24 @@
       "content": "| State | First-layer Spanish copy | Recovery / retained context |\n| --- | --- | --- |\n| Bank loading | Screen-shaped skeleton, polite hidden status only | Reserve headings, controls and first content rows; no layout jump |\n| Bank failed | No hemos podido abrir los programas. | Volver a intentar; useful server-rendered help remains reachable |\n| No search result | No encontramos una formación con ese nombre. | Borrar búsqueda; selected programmes unchanged |\n| One selected | Elige un programa más para comparar. | Selection/search remain usable; compare stays disabled |\n| Three selected | Ya tienes tres. Quita una para elegir otra. | Checked/remove controls stay usable; no disappearing selection |\n| No common programme | No hemos encontrado su programa de 2023. | Visible formation, honest detail, no substituted evidence |\n| Unknown position | No podemos confirmar su postura sobre esta propuesta. | Preserve authored reason and any useful contextual citations |\n| Conflicting position | El programa no permite atribuir una postura clara. | Explain the actual conflict in detail; do not score it as neutral |\n| Filter empty | No hay propuestas con estas condiciones. | Ver todas; state what the filter does and why evidence may be absent |\n| Official source unavailable | El enlace oficial ya no está disponible. | Clearly labelled preserved copy if one exists; exact quote remains readable |\n| Percentage pending | Falta una respuesta en algunos temas para calcular el total. | Named review actions; inspect available proposals without invented total |\n| Release check failed | No hemos podido comprobar esta edición. | Reintentar; live answers kept only in this page |\n| Release withdrawn | Esta edición se ha retirado. | Explain why results unavailable, clear/reload action, public current entry |\n| Delete answers | ¿Borrar tus respuestas? | Real labelled dialog; keep/cancel primary; Escape returns to opener |\n| Download | El archivo contiene tus respuestas y se guarda en tu dispositivo. | Explicit download/cancel; no automatic download |\n| Deferred metrics | Las valoraciones no están disponibles en esta edición. | Test/programmes exits; no collection attempts |\n| Unsupported private resume | Al recargar se han borrado las respuestas. | Fresh entry; no promise of recovery or background persistence |\n\nIntentional user disclosures may increase document height; this is different from unexpected loading layout shift. Skeleton dimensions follow each new layout rather than old strings. Retry states must not duplicate listeners, selected formations or quiz answers. Test 503, missing source and keyboard-only cancel alongside successful states."
     },
     {
+      "id": "task-budgets",
+      "title": "Attention, navigation budgets and pre-implementation critique",
+      "content": "Use concrete navigation targets to expose detours. These are design targets, not measured visitor speed or guarantees. Count destination/disclosure actions after the stated starting state, including nested panels. Record query keystrokes, checkbox choices, reading and scrolling separately. Never meet a target by auto-selecting, silently opening views or discarding context.\n\n| Start and intent | Navigation/disclosure budget | Return |\n| --- | --- | --- |\n| New home → first quiz question | 1 start action; no party/location prerequisite | Resume preserves question |\n| Programme entry → known proposal positions | At most 2: open search and then its result; no required topic choice | Same query/page/opener |\n| Revealed result, two/three chosen → comparison | 1 compare action after choices | 1 named return to same result context |\n| Result row → cited quote for chosen relation | At most 2: example then source | No catalogue/topic detour |\n| Comparison → quote → same proposal | 1 source action, 1 return; context is one optional disclosure | Same opener/page/filter/scroll |\n| Example → revise answered proposal | 1 review action; finish is separately deliberate | Current result or honest pending state |\n| Equal totals → understand different agreements | 1 contextual example/disclosure | Same result; answers unchanged |\n\nRecord list page/total counts, search recovery and minor-formation reachability. Measure action placement at 390×844 and 1280×720; inspect 320px and low height for reachability instead of forcing all text above the fold. No unsupported “five-minute test” promise. U015 records actual action sequences and justified deviations; theory alone does not pass.\n\nBefore U009/U010/U012 sketch and exercise F08, new filters and proposal search with real bank data at wide/narrow sizes; critique a simpler alternative. Reuse the shared workspace/native controls/contextual explanation. The unchanged U003 prototype does not cover these additions."
+    },
+    {
       "id": "loop",
       "title": "Loop engineering: bounded build, inspect, critique, repeat",
-      "content": "Each implementation task uses this loop and records evidence; a task cannot be completed merely because code exists or automated assertions are green.\n\n1. **Observe the exact starting state.** Reproduce the defect with the real 2023 bank, named viewport, route and interaction. Save a bounded screenshot and state description, not a speculative design diagnosis.\n2. **Write the task contract.** Define visitor goal, starting state, visible meaning, primary/secondary actions, retained state, return path, unknown/error states and privacy boundary. Check the relevant screen/flow/copy entries in this plan.\n3. **Sketch and challenge.** Compare at least the proposed layout with the simplest alternative. Identify how a novice completes the task and whether important text is hidden, too dense, repetitive or mislabeled. Revise before application code.\n4. **Build a vertical slice.** Finish entry → useful content → explanation/source → return on wide and narrow layouts. Reuse existing Laravel/Blade/Tailwind/TypeScript components and dependencies; apply relevant skills and installed-version docs. Do not implement only the beautiful entry while leaving its destination as a text dump.\n5. **Check correctness first.** Real authored conditions, all formations, current score contract, alias consistency, no personal network/storage and meaningful functional tests. Any false implication is a blocking defect even if the layout is attractive.\n6. **Inspect actual rendering.** At minimum 1280×720 MacBook-sized, 1512×850 wide, 390×844 mobile and 320×568 narrow; also 1024×320 low-height, 200/400% zoom, reduced motion, keyboard and relevant pending/error state. Review screenshots with real long names/qualifications. Do not infer good UX merely from no overflow.\n7. **Perform the five-question comprehension review.** Complete the task without referring to source code, this plan or hidden developer explanations. Record which visible phrase explains each meaning and which control gives the next/return step. If it requires jargon, unexplained counts or a hidden action, reopen the design.\n8. **Critique and refine.** Record defect, severity, visible evidence, proposed correction and its outcome. Re-run only affected checks/screens after changing it. Never weaken a check to mark a design accepted.\n9. **Close the slice.** Document before/after, actual commands/screenshots, limitations and checked bank hash in the execution journal. Synchronize task status, generated human plans and the existing managed planning view. Run the exact staged-tree gate before any commit.\n\nUse a defect ledger with IDs, screen/flow, severity (P0 misleading/correctness/privacy, P1 blocked task/unreadable, P2 avoidable friction, P3 cosmetic), reproduction, proposed change and verified outcome. P0/P1 block slice acceptance; P2 needs an explicit resolution or justified deferral. Do not let a superficial polish task close an inaccessible route.\n\nThis plan creates no scheduler, recruited study, parallel agents, branch, worktree, dependency purchase or external publication. Continue independent eligible tasks when one source/host/optional issue is blocked. Work on main; do not rewrite history, reset source evidence or push."
+      "content": "Each implementation task uses this loop and records evidence; a task cannot be completed merely because code exists or automated assertions are green.\n\n1. **Observe the exact starting state.** Reproduce the defect with the real 2023 bank, named viewport, route and interaction. Save a bounded screenshot and state description, not a speculative design diagnosis.\n2. **Write the task contract.** Define visitor goal, starting state, visible meaning, primary/secondary actions, retained state, return path, unknown/error states and privacy boundary. Check the relevant screen/flow/copy entries in this plan.\n3. **Sketch and challenge.** Cite the relevant B decision and its evidence level. Compare at least the proposed layout with the simplest alternative. Identify how a novice completes the task and whether important text is hidden, too dense, repetitive or mislabeled. Revise before application code.\n4. **Build a vertical slice.** Finish entry → useful content → explanation/source → return on wide and narrow layouts. Reuse existing Laravel/Blade/Tailwind/TypeScript components and dependencies; apply relevant skills and installed-version docs. Do not implement only the beautiful entry while leaving its destination as a text dump.\n5. **Check correctness first.** Real authored conditions, all formations, current score contract, alias consistency, no personal network/storage and meaningful functional tests. Any false implication is a blocking defect even if the layout is attractive.\n6. **Inspect actual rendering.** At minimum 1280×720 MacBook-sized, 1512×850 wide, 390×844 mobile and 320×568 narrow; also 1024×320 low-height, 200/400% zoom, reduced motion, keyboard and relevant pending/error state. Review screenshots with real long names/qualifications. Do not infer good UX merely from no overflow.\n7. **Perform the five-question comprehension review.** Complete the task without referring to source code, this plan or hidden developer explanations. Record which visible phrase explains each meaning and which control gives the next/return step. If it requires jargon, unexplained counts or a hidden action, reopen the design.\n8. **Critique and refine.** Record defect, severity, visible evidence, proposed correction and its outcome. Re-run only affected checks/screens after changing it. Never weaken a check to mark a design accepted.\n9. **Close the slice.** Document before/after, actual commands/screenshots, limitations and checked bank hash in the execution journal. Synchronize task status, generated human plans and the existing managed planning view. Run the exact staged-tree gate before any commit.\n\nUse a defect ledger with IDs, screen/flow, severity (P0 misleading/correctness/privacy, P1 blocked task/unreadable, P2 avoidable friction, P3 cosmetic), reproduction, proposed change and verified outcome. P0/P1 block slice acceptance; P2 needs an explicit resolution or justified deferral. Do not let a superficial polish task close an inaccessible route.\n\nThis plan creates no scheduler, recruited study, parallel agents, branch, worktree, dependency purchase or external publication. Continue independent eligible tasks when one source/host/optional issue is blocked. Work on main; do not rewrite history, reset source evidence or push.\n\nA borrowed pattern needs a source/evidence level, visitor problem, adopt/adapt/reject decision, compatibility check, screen/return contract and falsifiable acceptance case. Reject patterns needing new sources, ideological models or political-data collection in this stage. Record failures of our adaptation as defects; reference popularity never overrides actual rendering or the five-question review."
     },
     {
       "id": "acceptance",
       "title": "Acceptance matrix and evidence required to finish the stage",
-      "content": "| ID | Practical walkthrough | Required result |\n| --- | --- | --- |\n| A01 | First visit on 390×844 and 1280×720 | Start/test and programmes choice visible without scrolling; edition and loss notice understandable |\n| A02 | Existing test → programmes → help → test | Live answers preserved within document; resume obvious; no result reveal |\n| A03 | Search an official minor-party name/abbreviation and clear search | All 59 available; selection and input caret preserved |\n| A04 | Select two, add a third, attempt fourth, remove and replace | Visible feedback, no lost selection, no accidental one-programme workspace |\n| A05 | Choose PP, PSOE and Sumar on rent cap | PP/PSOE remain unknown, Sumar supports; unknown is not opposition |\n| A06 | Compare nuclear life extension PP/VOX/Sumar | Authored positive/negative values appear under the same proposal; conditions remain readable |\n| A07 | Compare public dental care and mortgage guarantees | Qualified PSOE positions visibly retain actual conditions; no blanket equivalence |\n| A08 | Select PSC with no confirmed common programme | One PSC entry, no inheritance of PSOE positions; missing programme visible |\n| A09 | Change topic and next/previous page in a 15-proposal topic | Exact counts, six/page, selection intact, intended scroll and native controls |\n| A10 | Narrow comparison with three programmes | All three stance labels together before explanation; no swipe/hidden party requirement or horizontal overflow |\n| A11 | Open quote, expand original context, return; resize while reading | Same semantic proposal/opener, page/filter/selection and scroll retained; no heading/text focus |\n| A12 | Start by topic, open proposal, search positions, add two programmes | Reach same comparison proposal without losing topic/search context |\n| A13 | Filter opposed stances where none are documented | Honest empty state and one action to all; unknown does not imply agreement |\n| A14 | Finish test deliberately and explain a bar | Correct current score, separate weighted evidence coverage, no vote probability/winner claim |\n| A15 | Find a formation beyond initial results and a 0% missing programme | Full 59 reachable with count/search; missing evidence not framed as total disagreement |\n| A16 | Result → difference → source → same result | At most two local disclosure/navigation actions to the quote; same ordered list and focus restored |\n| A17 | Unsure/skip leave a topic without an opinion | Pending total with concrete review action, no invented neutral response |\n| A18 | Edit a response after seeing results | Old personalized views invalidated, result requires deliberate finish again |\n| A19 | Follow /method, /how-it-works and all footer/header aliases | Same active explanation; no ten-plus-five/cohort-threshold contradiction |\n| A20 | Method miniature examples by keyboard | Correct deterministic unnamed example, clear missing-information effect and text equivalent |\n| A21 | Help/privacy/accessibility from a task and via direct URL | Practical short first layer, exact detail accessible, useful return, no session corruption |\n| A22 | Source unavailable, bank 503, release-check failure and withdrawn edition | Spanish actionable states, no raw exception/key; local answers retained only as specified |\n| A23 | Loading and layout screenshots under throttled delivery | Screen-shaped skeletons; reserved controls/content; no giant loading banner or unexpected jump |\n| A24 | Keyboard, reduced motion, 320px, 200/400% and 1024×320 | All controls reachable/named, visible focus never obscured, readable conditions, no clipping |\n| A25 | Record traffic/storage across quiz/results/comparison/help/download | Fixed public bank; no personalized bodies/URLs/history or browser persistence; download explicit |\n| A26 | Legacy feedback/insights/404 routes | Truthful unavailable/direct-link recovery; metrics remain disabled |\n| A27 | Copy review of every reachable active message and exported labels | No unexplained engineering jargon/stale algorithm text; exact source quotes/names retained |\n| A28 | Local developer setup and compiled snapshot | Existing composer dev workflow and build preview still work; no owner-server changes required |\n\nCollect baseline/after screenshots, actual action sequences, a source-bank hash, copy inventory, route alias results, practical keyboard/zoom notes and meaningful tests. Existing automated browser/PHP/engine/tooling/security checks remain mandatory at commit. Add tests for newly changed navigation/state/arithmetic boundaries; pure typography/copy changes need visual review rather than mirrored implementation tests.\n\nThe internal quality target is no unexpected layout shift in the loaded above-the-fold task, with CLS ≤0.1 as a performance target when measurements become available; this document does not claim measured production Core Web Vitals. Measure actual bank parse/loading and interaction response on the local build; do not assert performance from an empty mock or install dependencies merely to obtain a score.\n\nStage completion requires U004–U016 application evidence, no open P0/P1 defects and a coherent local review packet. Prototype checks only complete U003. Local completion never approves public launch, hosting/log privacy, collection or present-day electoral evidence."
+      "content": "| ID | Practical walkthrough | Required result |\n| --- | --- | --- |\n| A01 | First visit on 390×844 and 1280×720 | Start/test and programmes choice visible without scrolling; edition and loss notice understandable |\n| A02 | Existing test → programmes → help → test | Live answers preserved within document; resume obvious; no result reveal |\n| A03 | Search an official minor-party name/abbreviation and clear search | All 59 available; selection and input caret preserved |\n| A04 | Select two, add a third, attempt fourth, remove and replace | Visible feedback, no lost selection, no accidental one-programme workspace |\n| A05 | Choose PP, PSOE and Sumar on rent cap | PP/PSOE remain unknown, Sumar supports; unknown is not opposition |\n| A06 | Compare nuclear life extension PP/VOX/Sumar | Authored positive/negative values appear under the same proposal; conditions remain readable |\n| A07 | Compare public dental care and mortgage guarantees | Qualified PSOE positions visibly retain actual conditions; no blanket equivalence |\n| A08 | Select PSC with no confirmed common programme | One PSC entry, no inheritance of PSOE positions; missing programme visible |\n| A09 | Change topic and next/previous page in a 15-proposal topic | Exact counts, six/page, selection intact, intended scroll and native controls |\n| A10 | Narrow comparison with three programmes | All three stance labels together before explanation; no swipe/hidden party requirement or horizontal overflow |\n| A11 | Open quote, expand original context, return; resize while reading | Same semantic proposal/opener, page/filter/selection and scroll retained; no heading/text focus |\n| A12 | Start by topic, open proposal, search positions, add two programmes | Reach same comparison proposal without losing topic/search context |\n| A13 | Filter distinct documented values where none qualify | Honest empty state and one action to all; unknown does not imply agreement |\n| A14 | Finish test deliberately and explain a bar | Correct current score, separate weighted evidence coverage, no vote probability/winner claim |\n| A15 | Find a formation beyond initial results and a 0% missing programme | Full 59 reachable with count/search; missing evidence not framed as total disagreement |\n| A16 | Result → difference → source → same result | At most two local disclosure/navigation actions to the quote; same ordered list and focus restored |\n| A17 | Unsure/skip leave a topic without an opinion | Pending total with concrete review action, no invented neutral response |\n| A18 | Edit a response after seeing results | Old personalized views invalidated, result requires deliberate finish again |\n| A19 | Follow /method, /how-it-works and all footer/header aliases | Same active explanation; no ten-plus-five/cohort-threshold contradiction |\n| A20 | Method miniature examples by keyboard | Correct deterministic unnamed example, clear missing-information effect and text equivalent |\n| A21 | Help/privacy/accessibility from a task and via direct URL | Practical short first layer, exact detail accessible, useful return, no session corruption |\n| A22 | Source unavailable, bank 503, release-check failure and withdrawn edition | Spanish actionable states, no raw exception/key; local answers retained only as specified |\n| A23 | Loading and layout screenshots under throttled delivery | Screen-shaped skeletons; reserved controls/content; no giant loading banner or unexpected jump |\n| A24 | Keyboard, reduced motion, 320px, 200/400% and 1024×320 | All controls reachable/named, visible focus never obscured, readable conditions, no clipping |\n| A25 | Record traffic/storage across quiz/results/comparison/help/download | Fixed public bank; no personalized bodies/URLs/history or browser persistence; download explicit |\n| A26 | Legacy feedback/insights/404 routes | Truthful unavailable/direct-link recovery; metrics remain disabled |\n| A27 | Copy review of every reachable active message and exported labels | No unexplained engineering jargon/stale algorithm text; exact source quotes/names retained |\n| A28 | Local developer setup and compiled snapshot | Existing composer dev workflow and build preview still work; no owner-server changes required |\n| A29 | Result → select two/three → comparison → source → same result | One compare action after choices; no preselection/order change; exact IDs/search/page/scroll/opener restored |\n| A30 | Own-answer overlay before/after finish, on unasked/unsure/skipped, then after edit | Hidden before finish, explicitly requested after; honest response states; immediate edit invalidation |\n| A31 | Filter +1/+2, opposite/equal codes, mixed/all unknown rows | Qualified differences included; gaps independent; equal codes not identical policies; unchanged score denominator |\n| A32 | Search known proposal without test or topic choice; clear/no-hit and return | All 80 indexed; bounded counted results and same proposal; no query traffic/storage/URL |\n| A33 | Equal-total five-decision unnamed example by keyboard | Both 40% overlap/80% information, different agreement sets; no real-party or real-weight implication |\n| A34 | Unexpected/close/rounded-equal/missing result help | Evidence routes and honest gaps; no winner, automatic tie-break, probability or ideology claim |\n| A35 | Example → edit its answered question → deliberate finish; then remove topic opinion | Question set/other answers retained; no party on question stage; current result or pending, no stale overlays |\n| A36 | Open/close unfamiliar-term explanation by touch/keyboard with an answer selected | Neutral short meaning, control focus/return and unchanged answer; no hover-only access or party priming |\n| A37 | Find minor formation or PSC factsheet from task; add to comparison or return | All 59, exact 2023 availability/scope/original actions; no silent replacement/biography/inheritance |\n| A38 | Review borrowed visuals, outbound paths, source facts and optional interactions | Only current overlap/information and 23J evidence; no ideological map, opinion feed, personalized share or account/collection gate |\n\nCollect baseline/after screenshots, actual action sequences, a source-bank hash, copy inventory, route alias results, practical keyboard/zoom notes and meaningful tests. Existing automated browser/PHP/engine/tooling/security checks remain mandatory at commit. Add tests for newly changed navigation/state/arithmetic boundaries; pure typography/copy changes need visual review rather than mirrored implementation tests.\n\nThe internal quality target is no unexpected layout shift in the loaded above-the-fold task, with CLS ≤0.1 as a performance target when measurements become available; this document does not claim measured production Core Web Vitals. Measure actual bank parse/loading and interaction response on the local build; do not assert performance from an empty mock or install dependencies merely to obtain a score.\n\nStage completion requires U004–U016 application evidence, no open P0/P1 defects and a coherent local review packet. Prototype checks only complete U003. Local completion never approves public launch, hosting/log privacy, collection or present-day electoral evidence."
     },
     {
       "id": "change-map",
       "title": "Implementation map, decisions and completion packet",
-      "content": "Map each bounded task to the existing application before editing. Read path-matching project rules and relevant frontend/accessibility/Laravel/testing skills. Do not replace the application scaffold to obtain a cleaner visual result.\n\n| Area | Existing files to inspect/reuse | Change boundary |\n| --- | --- | --- |\n| Routing and aliases | routes/web.php, resources/views/components/layout.blade.php | Current destination meaning, named routes, SSR/direct links; no new session persistence |\n| Shared entry and loading | resources/views/public/app.blade.php, components/loading-skeleton.blade.php | One useful heading, task-shaped skeleton and no generic disclaimer block |\n| All app journeys | resources/js/iteration-app.ts, focus.ts | Extend coherent section/local-view state and semantic return; split reusable view pieces only within existing structure when justified |\n| Visual foundations | resources/css/app.css | Shared rem type/spacing, intrinsic width budgets and existing Tailwind toolchain; no dependency change |\n| Public copy | lang/es/iteration.php, public.php, site.php, errors.php | Active semantic keys and meaning ledger; exact quotations/proper names unchanged |\n| Static help and errors | resources/views/public/information.blade.php, resources/views/errors/message.blade.php | Useful first layer, full accurate detail, useful direct-route recovery |\n| Results/calculation | resources/js/iteration-app.ts and current matching/questionnaire modules | Presentation/example arithmetic only; existing bank weights/values/selection remain unchanged |\n| Verification | tests/Browser/second-iteration.spec.ts and relevant existing public/feature/tooling tests | Reuse established fixtures; add only distinct state/navigation regression value |\n| Planning parity | outputs/render-development-plan.py, work/verify-development-plan.py, existing managed planning view | Honest U-task evidence; completed Q/R records preserved |\n\nResolve these implementation decisions in the stated slice, with actual content-fit evidence: alias redirect versus same-document route entry (U004), plain labels and weighted-coverage definition (U005/U012), table width threshold for two versus three programmes (U006/U009), cancellation draft and context restoration (U008), result reader full-width fallback (U011), readable local export with installed tools (U012), and practical help as a preserved local view versus direct server page (U013). No decision is a reason to seek a new blueprint or approval for ordinary local work.\n\nThe comparison prototype's source contents are deliberately unchanged; its compact packaging deduplicates complete exact citations without truncating them. It covers selection, comparison, topic browsing and source/return, not home/results/privacy redesign. The low-height 1024×320 observation requires ordinary scrolling for the entry action; all controls remain reachable. Do not claim every viewport fits a full task on one screen.\n\nU015's packet must include a route list, every active screen/state and copy key reviewed, completed A01-A28 outcomes, defect ledger, desktop/mobile/zoom/keyboard screenshots, no-personalized-traffic/storage trace, exact bank hash and affected test commands. U016 supplies the local preview, main commit, rollback using preserved history and explicit remaining host/launch limitations. No completed status is inferred from scheduled time, a generated checklist or this prototype alone. Meaningful commands/artifacts go into work/execution-journal.jsonl.\n"
+      "content": "Map each bounded task to the existing application before editing. Read path-matching project rules and relevant frontend/accessibility/Laravel/testing skills. Do not replace the application scaffold to obtain a cleaner visual result.\n\n| Area | Existing files to inspect/reuse | Change boundary |\n| --- | --- | --- |\n| Routing and aliases | routes/web.php, resources/views/components/layout.blade.php | Current destination meaning, named routes, SSR/direct links; no new session persistence |\n| Shared entry and loading | resources/views/public/app.blade.php, components/loading-skeleton.blade.php | One useful heading, task-shaped skeleton and no generic disclaimer block |\n| All app journeys | resources/js/iteration-app.ts, focus.ts | Extend coherent section/local-view state and semantic return; split reusable view pieces only within existing structure when justified |\n| Visual foundations | resources/css/app.css | Shared rem type/spacing, intrinsic width budgets and existing Tailwind toolchain; no dependency change |\n| Public copy | lang/es/iteration.php, public.php, site.php, errors.php | Active semantic keys and meaning ledger; exact quotations/proper names unchanged |\n| Static help and errors | resources/views/public/information.blade.php, resources/views/errors/message.blade.php | Useful first layer, full accurate detail, useful direct-route recovery |\n| Results/calculation | resources/js/iteration-app.ts and current matching/questionnaire modules | Presentation/example arithmetic only; existing bank weights/values/selection remain unchanged |\n| Verification | tests/Browser/second-iteration.spec.ts and relevant existing public/feature/tooling tests | Reuse established fixtures; add only distinct state/navigation regression value |\n| Planning parity | outputs/render-development-plan.py, work/verify-development-plan.py, existing managed planning view | Honest U-task evidence; completed Q/R records preserved |\n\nResolve these implementation decisions in the stated slice, with actual content-fit evidence: alias redirect versus same-document route entry (U004), plain labels and weighted-coverage definition (U005/U012), table width threshold for two versus three programmes (U006/U009), cancellation draft and context restoration (U008), result reader full-width fallback (U011), readable local export with installed tools (U012), and practical help as a preserved local view versus direct server page (U013). No decision is a reason to seek a new blueprint or approval for ordinary local work.\n\nThe comparison prototype's source contents are deliberately unchanged; its compact packaging deduplicates complete exact citations without truncating them. It covers selection, comparison, topic browsing and source/return, not home/results/privacy redesign. The low-height 1024×320 observation requires ordinary scrolling for the entry action; all controls remain reachable. Do not claim every viewport fits a full task on one screen.\n\nU015's packet must include a route list, every active screen/state and copy key reviewed, completed A01-A38 outcomes, defect ledger, desktop/mobile/zoom/keyboard screenshots, no-personalized-traffic/storage trace, exact bank hash and affected test commands. U016 supplies the local preview, main commit, rollback using preserved history and explicit remaining host/launch limitations. No completed status is inferred from scheduled time, a generated checklist or this prototype alone. Meaningful commands/artifacts go into work/execution-journal.jsonl.\n"
     }
   ],
   "flows": [
@@ -315,6 +325,11 @@
               "label": "Elegir tema",
               "target": "proposals",
               "retains": "selection"
+            },
+            {
+              "label": "Buscar una propuesta",
+              "target": "search",
+              "retains": "live quiz and comparison draft"
             }
           ]
         },
@@ -352,6 +367,11 @@
               "label": "Volver a propuestas",
               "target": "proposals",
               "retains": "topic/search"
+            },
+            {
+              "label": "Volver a la búsqueda",
+              "target": "search",
+              "retains": "origin query/page/opener when entered from search"
             }
           ]
         },
@@ -376,6 +396,22 @@
               "retains": "same proposal"
             }
           ]
+        },
+        {
+          "id": "search",
+          "goal": "Find an authored proposal without knowing its topic",
+          "actions": [
+            {
+              "label": "Consultar posturas",
+              "target": "positions",
+              "retains": "query/page and exact proposal ID"
+            },
+            {
+              "label": "Ver temas",
+              "target": "topics",
+              "retains": "query and comparison draft"
+            }
+          ]
         }
       ],
       "walkthrough": [
@@ -387,6 +423,10 @@
         "workspace",
         "positions",
         "proposals",
+        "topics",
+        "search",
+        "positions",
+        "search",
         "topics"
       ]
     },
@@ -703,6 +743,130 @@
         "check",
         "task"
       ]
+    },
+    {
+      "id": "F08",
+      "title": "Compare from a revealed result and return",
+      "start": "result",
+      "nodes": [
+        {
+          "id": "result",
+          "goal": "Read the current result, or identify required unanswered topics when the total is pending",
+          "actions": [
+            {
+              "label": "Comparar programas",
+              "target": "workspace",
+              "retains": "explicit IDs and result search/page/scroll/opener",
+              "when": "a current result has been deliberately revealed"
+            },
+            {
+              "label": "Comparar con mis respuestas",
+              "target": "workspace",
+              "retains": "explicit IDs and current deliberate personal overlay",
+              "when": "a current result has been deliberately revealed"
+            },
+            {
+              "label": "Ver en qué difieres",
+              "target": "example",
+              "retains": "result row/proposal/relation",
+              "when": "a current result has been deliberately revealed"
+            },
+            {
+              "label": "Responder un tema pendiente",
+              "target": "review",
+              "retains": "same question set and current answers; no personalized total",
+              "when": "the total is pending because a required topic lacks an opinion"
+            }
+          ]
+        },
+        {
+          "id": "workspace",
+          "goal": "Read selected programmes with optional current own answers",
+          "actions": [
+            {
+              "label": "Ver fuente",
+              "target": "source",
+              "retains": "proposal/topic/filter/page and both origins"
+            },
+            {
+              "label": "Cambiar programas",
+              "target": "edit",
+              "retains": "original workspace/result snapshot and draft"
+            },
+            {
+              "label": "Volver a mis resultados",
+              "target": "result",
+              "retains": "exact result search/page/opener and selected IDs"
+            }
+          ]
+        },
+        {
+          "id": "source",
+          "goal": "Verify one quote",
+          "actions": [
+            {
+              "label": "Volver a la comparación",
+              "target": "workspace",
+              "retains": "semantic opener and scroll"
+            }
+          ]
+        },
+        {
+          "id": "edit",
+          "goal": "Change programmes without altering answers",
+          "actions": [
+            {
+              "label": "Comparar programas",
+              "target": "workspace",
+              "retains": "confirmed IDs/topic/proposal and result origin"
+            },
+            {
+              "label": "Volver sin cambiar",
+              "target": "workspace",
+              "retains": "discard draft; restore snapshot"
+            }
+          ]
+        },
+        {
+          "id": "example",
+          "goal": "Inspect a relation or reconsider its answered proposal",
+          "actions": [
+            {
+              "label": "Revisar esta respuesta",
+              "target": "review",
+              "retains": "same authored question set; invalidate every personal result"
+            },
+            {
+              "label": "Volver a resultados",
+              "target": "result",
+              "retains": "same row/search/page/opener"
+            }
+          ]
+        },
+        {
+          "id": "review",
+          "goal": "Review one answer without party identities",
+          "actions": [
+            {
+              "label": "Volver a ver mi resultado",
+              "target": "result",
+              "retains": "new explicit finish; current completeness rule"
+            }
+          ]
+        }
+      ],
+      "walkthrough": [
+        "result",
+        "workspace",
+        "source",
+        "workspace",
+        "edit",
+        "workspace",
+        "result",
+        "example",
+        "review",
+        "result"
+      ]
     }
   ],
   "tasks": [
@@ -736,7 +900,8 @@
       "size": "large",
       "status": "completed",
       "deliverables": [
-        "Current information architecture, all screen contracts, F01-F07 flows, state matrix, plain-copy decisions, A01-A28 walkthroughs"
+        "Current information architecture, all screen contracts, F01-F08 flows, state matrix, plain-copy decisions, A01-A38 walkthroughs",
+        "B01-B10 reference decisions, F08 transfer, F03 search, navigation budgets and A29-A38."
       ],
       "acceptanceCriteria": [
         "Every main destination has useful content, return, failure and privacy rules; quiz contracts preserved"
@@ -745,7 +910,8 @@
         "Plan graph/reachability checks; full canonical/human/managed-view synchronization"
       ],
       "completionEvidence": [
-        "outputs/ui-ux-cleanup-loop-plan.json"
+        "outputs/ui-ux-cleanup-loop-plan.json",
+        "outputs/ui-ux-cleanup-reference-research.json"
       ]
     },
     {
@@ -781,13 +947,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Named route map; header/footer/section state; current method and useful source directory destination"
+        "Named route map; header/footer/section state; current method and useful source directory destination",
+        "Proposal-search and factsheet route meaning; result/comparison return map."
       ],
       "acceptanceCriteria": [
         "D07/D12/D14/D15 resolved; F01/F05 accessible; no session or personalized URL leakage"
       ],
       "verification": [
-        "A02/A19/A21/A26; existing route/browser/session tests"
+        "A02/A19/A21/A26; existing route/browser/session tests",
+        "B01/B02/B09 routes/state without private history or URLs."
       ]
     },
     {
@@ -800,14 +968,16 @@
       "status": "planned",
       "deliverables": [
         "All active Spanish copy inventory; concise task/meaning/proof layers; consistent names and exports",
-        "Directly authored plain UI summaries for displayed programme rationales, with unchanged numeric values, visible conditions and access to the full existing interpretation/citations."
+        "Directly authored plain UI summaries for displayed programme rationales, with unchanged numeric values, visible conditions and access to the full existing interpretation/citations.",
+        "Contextual term/result help and precise differences/gaps filter language."
       ],
       "acceptanceCriteria": [
         "Meaning preserved; no unreachable stale explanation accidentally exposed; originals exact"
       ],
       "verification": [
         "A27 plus reading actual screens aloud and recorded five-question reviews",
-        "Check every display summary against its existing authored rationale and source context; explicit bank-hash/ID linkage and no dropped qualification."
+        "Check every display summary against its existing authored rationale and source context; explicit bank-hash/ID linkage and no dropped qualification.",
+        "B03/B06/B07 meanings, qualifiers and equal-code caveat in actual screens."
       ]
     },
     {
@@ -819,13 +989,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "CSS tokens; responsive layout budgets; consistent action hierarchy/targets/disclosures/skeleton geometry"
+        "CSS tokens; responsive layout budgets; consistent action hierarchy/targets/disclosures/skeleton geometry",
+        "Responsive result selection, proposal search and own-answer line."
       ],
       "acceptanceCriteria": [
         "MacBook, mobile, long names and zoom readable; no prose focus or border crowding"
       ],
       "verification": [
-        "A23/A24 visual and keyboard checks; existing assets/lint/type checks"
+        "A23/A24 visual and keyboard checks; existing assets/lint/type checks",
+        "B10 real long names and zoom; no crowded sticky chrome or narrow prose columns."
       ]
     },
     {
@@ -839,13 +1011,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Task-led first screen; resume; unnamed interactive method example and exact optional calculation"
+        "Task-led first screen; resume; unnamed interactive method example and exact optional calculation",
+        "Unnamed equal-total/different-agreement example."
       ],
       "acceptanceCriteria": [
         "Main choices above fold; F01; example explains missing information without invented party evidence"
       ],
       "verification": [
-        "A01/A02/A19/A20; exact reference arithmetic if demonstration logic changes"
+        "A01/A02/A19/A20; exact reference arithmetic if demonstration logic changes",
+        "A33 simplified exact 40/80 arithmetic; no real-party/weight implication or quiz mutation."
       ]
     },
     {
@@ -860,7 +1034,8 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Alphabetical local search, 2/3 slots, disabled reasons, missing programme labels, edit draft and cancel"
+        "Alphabetical local search, 2/3 slots, disabled reasons, missing programme labels, edit draft and cancel",
+        "Reuse bounded selection when entered from a result or formation factsheet."
       ],
       "acceptanceCriteria": [
         "All 59 formations; no preselection; search preserves selected IDs; return restores workspace"
@@ -878,13 +1053,15 @@
       "size": "large",
       "status": "planned",
       "deliverables": [
-        "One topic, exact counts, six/page, desktop semantic table, mobile parallel overview with full conditions, honest filters"
+        "One topic, exact counts, six/page, desktop semantic table, mobile parallel overview with full conditions, honest filters",
+        "B02-B04 shared result transfer, different-values/gaps views and own-answer line."
       ],
       "acceptanceCriteria": [
         "D01-D05 resolved; same proposal compared; no inferred unknown agreement; no text truncation"
       ],
       "verification": [
-        "A05-A10/A13/A24; real-bank screenshots and source semantics"
+        "A05-A10/A13/A24; real-bank screenshots and source semantics",
+        "A29-A31; sketch/exercise additions before app acceptance; unchanged score/positions."
       ]
     },
     {
@@ -897,13 +1074,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Topic → proposal → grouped/searched positions → same-proposal comparison"
+        "Topic → proposal → grouped/searched positions → same-proposal comparison",
+        "All-80 proposal search with count/page/no-hit/return and transfer."
       ],
       "acceptanceCriteria": [
         "All formations/groups reachable; selection transfer retains active proposal and source return"
       ],
       "verification": [
-        "A12/A13; F03 actual connected walkthrough"
+        "A12/A13; F03 actual connected walkthrough",
+        "A32 memory-only query; all unscored formations still reachable."
       ]
     },
     {
@@ -916,13 +1095,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Full-width comparison reader; coherent result reader width policy; exact quotes/context/links/provenance"
+        "Full-width comparison reader; coherent result reader width policy; exact quotes/context/links/provenance",
+        "Comparison source return preserving result and workspace origins."
       ],
       "acceptanceCriteria": [
         "One reader; missing/official-unavailable honest; restore semantic origin through resize"
       ],
       "verification": [
-        "A07/A11/A16/A22; keyboard/resize/long-quote regressions"
+        "A07/A11/A16/A22; keyboard/resize/long-quote regressions",
+        "A29/A30/A35; resize/deferred callbacks cannot revive stale personal views."
       ]
     },
     {
@@ -937,13 +1118,15 @@
       "size": "large",
       "status": "planned",
       "deliverables": [
-        "Plain overlap/coverage presentation; complete searchable 59 results; matches/differences/missing examples; explicit local export"
+        "Plain overlap/coverage presentation; complete searchable 59 results; matches/differences/missing examples; explicit local export",
+        "Native result comparison choices, close-result help and one-answer review."
       ],
       "acceptanceCriteria": [
         "Identical arithmetic/order/weights; zero missing programme not opposition; no old/stale reveal"
       ],
       "verification": [
-        "A14-A18/A25; existing engine + affected browser/export tests"
+        "A14-A18/A25; existing engine + affected browser/export tests",
+        "A29/A30/A34/A35; current explicit finish, question set, weights/order preserved."
       ]
     },
     {
@@ -958,13 +1141,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Short practical help/privacy/accessibility; directory; direct alias/unavailable/error recovery"
+        "Short practical help/privacy/accessibility; directory; direct alias/unavailable/error recovery",
+        "Compact 2023 factsheets and neutral contextual terms."
       ],
       "acceptanceCriteria": [
         "Return to origin works; no new metric collection; exact technical detail stays accessible"
       ],
       "verification": [
-        "A19/A21/A22/A26/A27; server-rendered/direct-link/no-JS checks"
+        "A19/A21/A22/A26/A27; server-rendered/direct-link/no-JS checks",
+        "A36/A37; all 59, original scope and useful direct/return actions."
       ]
     },
     {
@@ -980,13 +1165,15 @@
       "size": "medium",
       "status": "planned",
       "deliverables": [
-        "Stable skeletons; retry/pending/withdrawn states; safe delete/download; consistent keyboard/reduced-motion feedback"
+        "Stable skeletons; retry/pending/withdrawn states; safe delete/download; consistent keyboard/reduced-motion feedback",
+        "Integrate search/comparison/overlay/revision state invalidation."
       ],
       "acceptanceCriteria": [
         "All state-matrix rules and useful failure exits pass; no raw keys/exceptions or lost session"
       ],
       "verification": [
-        "A02/A17/A18/A22-A26; delayed bank/release tests"
+        "A02/A17/A18/A22-A26; delayed bank/release tests",
+        "A30/A32/A35/A36 under pending/error; no hidden private persistence."
       ]
     },
     {
@@ -998,13 +1185,15 @@
       "size": "large",
       "status": "planned",
       "deliverables": [
-        "A01-A28 actual application evidence, active-copy ledger, screenshots, defect ledger, privacy trace"
+        "A01-A38 actual application evidence, active-copy ledger, screenshots, defect ledger, privacy trace",
+        "B01-B10 adaptation critique, actual task budgets and A29-A38 application evidence."
       ],
       "acceptanceCriteria": [
         "No P0/P1; five questions answerable from every screen; any P2 deferral justified with a useful task path"
       ],
       "verification": [
-        "Relevant browser/PHP/engine checks; all required clean staged-tree checks; no synthetic usability claim"
+        "Relevant browser/PHP/engine checks; all required clean staged-tree checks; no synthetic usability claim",
+        "Observation/documentation/inference distinguished; no reference popularity or old prototype as new acceptance."
       ]
     },
     {
@@ -1016,13 +1205,15 @@
       "size": "small",
       "status": "planned",
       "deliverables": [
-        "Before/after results, active plan statuses, real command evidence, bank hash, preserved history, local preview and limitations"
+        "Before/after results, active plan statuses, real command evidence, bank hash, preserved history, local preview and limitations",
+        "Reference-review hash/version and honest added-flow acceptance packet."
       ],
       "acceptanceCriteria": [
         "All implementation evidence exists; no unchanged task called newly implemented; publication remains unapproved"
       ],
       "verification": [
-        "npm run docs:build/check:plans; exact staged-tree gate before commit; compiled and dev local preview"
+        "npm run docs:build/check:plans; exact staged-tree gate before commit; compiled and dev local preview",
+        "Research/canonical/human/managed parity; bank and completed history preserved."
       ]
     }
   ],
@@ -1051,6 +1242,41 @@
       "title": "WCAG 2.2: Focus Not Obscured",
       "url": "https://www.w3.org/WAI/WCAG22/Understanding/focus-not-obscured-minimum.html",
       "decision": "Sticky controls and navigation must not hide keyboard focus."
+    },
+    {
+      "title": "bpb: Wahl-O-Mat 2025 FAQ",
+      "url": "https://www.bpb.de/themen/wahl-o-mat/bundestagswahl-2025/558464/haeufig-gestellte-fragen-zum-wahl-o-mat/",
+      "decision": "B decisions: B02, B03, B04, B05, B06, B10. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "ProDemos: StemWijzer FAQ",
+      "url": "https://source.stemwijzer.nl/faq/",
+      "decision": "B decisions: B01, B06, B07, B10. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "smartvote International methodology",
+      "url": "https://demo.smartvote.org/en/wiki/demo-methodology",
+      "decision": "B decisions: B01, B08, B09. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "RTVE: comparing the 23J programmes",
+      "url": "https://www.rtve.es/noticias/20230712/comparar-programas-electorales-partidos-elecciones-generales/2451786.shtml",
+      "decision": "B decisions: B01, B03, B09, B10. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "iSideWith editorial standards",
+      "url": "https://secure.isidewith.com/editorial-standards/",
+      "decision": "B decisions: B07, B08, B10. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "Vote Compass methodology",
+      "url": "https://files.voxpoplabs.com/votecompass/methodology.pdf",
+      "decision": "B decisions: B06, B08, B10. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
+    },
+    {
+      "title": "EU&I introduction and FAQ",
+      "url": "https://euandi.eu/",
+      "decision": "B decisions: B01, B08. Evidence limits in outputs/ui-ux-cleanup-reference-research.json."
     }
   ],
   "prototypeDataContract": {
@@ -1067,7 +1293,8 @@
     "No production application changes in the planning/prototype increment.",
     "No re-authorship of the bank or new source acquisition required for this UI plan.",
     "No deployment, push, collection, scheduler, delegation or new dependencies.",
-    "Prototype inspection proves selected local flows, not completion of every site task or broad usability."
+    "Prototype inspection proves selected local flows, not completion of every site task or broad usability.",
+    "Reference additions remain planned. Original prototype/report do not verify them; foreign tools supply UX context only, never electoral positions."
   ],
   "preparationMaintenance": [
     {
@@ -1078,5 +1305,19 @@
       ],
       "scope": "Small regression repair to the previously accepted interactive-focus behavior; whole-site redesign application tasks remain planned."
     }
-  ]
+  ],
+  "referenceResearch": "outputs/ui-ux-cleanup-reference-research.json",
+  "referenceDecisionIds": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B08",
+    "B09",
+    "B10"
+  ],
+  "referenceResearchSha256": "2d2f8c7d16126f3c67da447a073ec403203888e75ba66cf7b1323936511ad354"
 }

@@ -358,6 +358,6 @@ Dependencies: Q027
 
 ## Active next-stage refinement
 
-Whole-site UI and UX cleanup: understandable journeys for everyday visitors. Status: planned_application_stage. A full-site next-stage plan, grounded in actual route/rendering defects. Task-led navigation, short plain Spanish, useful didactic interaction, parallel programme comparison, interpretable results, practical help and reliable source/return flows. Includes a real-data comparison prototype; application work is separately planned and no new bank/source/score semantics are authorized by this UI stage.
+Whole-site UI and UX cleanup: understandable journeys for everyday visitors. Status: planned_application_stage. A full-site next-stage plan grounded in actual route defects and seven political-tool references with explicit observation limits. Plain Spanish, task-led entry, proposal search, bounded parallel comparison, result-to-comparison transfer, didactic explanations and exact return. The original real-bank prototype is preserved; new reference-driven interactions and U004-U016 application work remain planned. Sources, questions, arithmetic and private-session rules are unchanged.
 
 Read docs/plans/ui-ux-cleanup-loop-plan.md and outputs/ui-ux-cleanup-loop-plan.json. Completed Q/R evidence is preserved; U tasks have separate acceptance.

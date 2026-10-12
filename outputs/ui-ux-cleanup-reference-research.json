@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 1,
+  "researchVersion": "ui-ux-reference-review-2023-v1.0.0",
+  "recordedAt": "2026-10-12T22:08:19.404Z",
+  "localReviewDate": "2026-10-13",
+  "status": "completed_bounded_reference_review",
+  "purpose": "Improve the active whole-site UI/UX plan through observed public journeys and official documentation with explicit adoption decisions.",
+  "sourceRole": "ux_references_only_not_electoral_evidence",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "method": {
+    "selection": "Purposive sample of six affinity tools and one Spanish programme comparator; no ranking, exhaustive market survey or usability study.",
+    "inspection": "Official web search/reader plus fresh isolated Playwright contexts. Browser integration unavailable; owner browser profile never used.",
+    "fixturePolicy": "No owner opinions, login, email or saved result. Wahl-O-Mat alone received uniform synthetic neutral responses to inspect weighting/selection.",
+    "evidenceLevels": [
+      "browser_observed",
+      "official_documentation",
+      "inference"
+    ],
+    "artifactPolicy": "Raw text and screenshots stay in ignored .tools/affinity-reference-research; this record contains original paraphrases, source URLs, limits and our design decisions.",
+    "verificationLimits": "No site certified accessible/private/accurate. Blocked and unfinished traversals remain explicit; documented results never relabelled as observed."
+  },
+  "sources": {
+    "wm-ui": {
+      "title": "Wahl-O-Mat Bundestagswahl 2025",
+      "url": "https://www.wahl-o-mat.de/bundestagswahl2025/"
+    },
+    "wm-faq": {
+      "title": "bpb: Wahl-O-Mat 2025 FAQ",
+      "url": "https://www.bpb.de/themen/wahl-o-mat/bundestagswahl-2025/558464/haeufig-gestellte-fragen-zum-wahl-o-mat/"
+    },
+    "sw-ui": {
+      "title": "StemWijzer Tweede Kamer 2025",
+      "url": "https://tweedekamer2025.stemwijzer.nl/"
+    },
+    "sw-faq": {
+      "title": "ProDemos: StemWijzer FAQ",
+      "url": "https://source.stemwijzer.nl/faq/"
+    },
+    "sv-home": {
+      "title": "smartvote International demo",
+      "url": "https://demo.smartvote.org/en/home"
+    },
+    "sv-method": {
+      "title": "smartvote International methodology",
+      "url": "https://demo.smartvote.org/en/wiki/demo-methodology"
+    },
+    "rtve-ui": {
+      "title": "RTVE: 23J programme comparator",
+      "url": "https://www.rtve.es/noticias/elecciones-generales/comparador-programas-electorales/"
+    },
+    "rtve-guide": {
+      "title": "RTVE: comparing the 23J programmes",
+      "url": "https://www.rtve.es/noticias/20230712/comparar-programas-electorales-partidos-elecciones-generales/2451786.shtml"
+    },
+    "isw-ui": {
+      "title": "iSideWith political quiz",
+      "url": "https://secure.isidewith.com/political-quiz"
+    },
+    "isw-faq": {
+      "title": "iSideWith FAQ",
+      "url": "https://secure.isidewith.com/faqs/"
+    },
+    "isw-editorial": {
+      "title": "iSideWith editorial standards",
+      "url": "https://secure.isidewith.com/editorial-standards/"
+    },
+    "vc-home": {
+      "title": "Vote Compass official overview",
+      "url": "https://votecompass.com/"
+    },
+    "vc-method": {
+      "title": "Vote Compass methodology",
+      "url": "https://files.voxpoplabs.com/votecompass/methodology.pdf"
+    },
+    "eu-home": {
+      "title": "EU&I introduction and FAQ",
+      "url": "https://euandi.eu/"
+    }
+  },
+  "sites": [
+    {
+      "id": "wahlomat",
+      "name": "Wahl-O-Mat",
+      "edition": "German Bundestag 2025",
+      "kind": "electoral_matching",
+      "sourceIds": [
+        "wm-ui",
+        "wm-faq"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "question": "browser_observed",
+        "review": "browser_observed",
+        "result": "official_documentation_only",
+        "comparison": "official_documentation_only",
+        "mobile": "not_inspected"
+      },
+      "observations": [
+        {
+          "claim": "Direct start; one statement with three choices, separate skip and progress. The synthetic fixture reached weighting review and party selection.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "wm-ui"
+          ]
+        },
+        {
+          "claim": "The FAQ describes result tuning, comparison of up to three parties, statement explanations grouped by position and party-specific reading. Equal percentages can conceal different agreements.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "wm-faq"
+          ]
+        }
+      ],
+      "critique": "Useful paths after results. Its oversized inspected masthead uses substantial question space; seat-based ordering and party-selection prerequisites do not fit our full-set results.",
+      "limits": "Result tools were documented, not exercised. No general accessibility or privacy audit.",
+      "decisionIds": [
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B10"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "fixture": "Uniform synthetic neutral answers; no owner opinions, account or saved result.",
+        "artifacts": [
+          ".tools/affinity-reference-research/wahlomat-entry.png",
+          ".tools/affinity-reference-research/wahlomat-question.png",
+          ".tools/affinity-reference-research/wahlomat-weighting.png",
+          ".tools/affinity-reference-research/wahlomat-party-selection.png"
+        ]
+      }
+    },
+    {
+      "id": "stemwijzer",
+      "name": "StemWijzer",
+      "edition": "Netherlands Tweede Kamer 2025; current FAQ also covers municipal 2026",
+      "kind": "electoral_matching",
+      "sourceIds": [
+        "sw-ui",
+        "sw-faq"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "question": "browser_observed",
+        "help": "control_observed_content_not_reached",
+        "result": "official_documentation_only",
+        "mobile": "browser_observed"
+      },
+      "observations": [
+        {
+          "claim": "The question shows progress, learn-more and party-position controls and a marked unfamiliar term. Desktop and mobile question screens were inspected.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "sw-ui"
+          ]
+        },
+        {
+          "claim": "The FAQ describes a result matrix and optional additional statements for some close results, and separates position answers from issue importance.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "sw-faq"
+          ]
+        }
+      ],
+      "critique": "Contextual help is useful. Party-position reveal during answering would break our identity boundary. Extra questions must not manufacture a winner.",
+      "limits": "No answers/results submitted. Opening learn-more timed out; expanded help is not claimed.",
+      "decisionIds": [
+        "B01",
+        "B06",
+        "B07",
+        "B10"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "mobileViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "fixture": "No opinions entered.",
+        "artifacts": [
+          ".tools/affinity-reference-research/stemwijzer-edition.png",
+          ".tools/affinity-reference-research/stemwijzer-question.png",
+          ".tools/affinity-reference-research/stemwijzer-question-mobile.png"
+        ]
+      }
+    },
+    {
+      "id": "smartvote",
+      "name": "smartvote International",
+      "edition": "Public demonstration; not a current election source",
+      "kind": "electoral_matching_demo",
+      "sourceIds": [
+        "sv-home",
+        "sv-method"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "database": "browser_observed_partial",
+        "question": "not_reached",
+        "result": "not_inspected",
+        "visualisations": "official_documentation_only",
+        "mobile": "not_inspected"
+      },
+      "observations": [
+        {
+          "claim": "Home, Matching and Database are separate; the homepage explains three stages. The inspected database had candidate/party tabs and an election selector, but remained an initial loading shell.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "sv-home"
+          ]
+        },
+        {
+          "claim": "Methodology distinguishes matching from radar and political-map projections with selected questions and dimensions.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "sv-method"
+          ]
+        }
+      ],
+      "critique": "Independent public browsing transfers well. Our factsheets need programme facts, not a candidate database or newly invented radar axes.",
+      "limits": "Terms accepted only in an isolated demo without login/opinions. Start-now timed out; no questionnaire/result/profile detail claimed.",
+      "decisionIds": [
+        "B01",
+        "B08",
+        "B09"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "fixture": "Fresh isolated context; no political answers.",
+        "artifacts": [
+          ".tools/affinity-reference-research/smartvote-entry.png",
+          ".tools/affinity-reference-research/smartvote-database.png"
+        ]
+      }
+    },
+    {
+      "id": "rtve",
+      "name": "RTVE programme comparator",
+      "edition": "Spanish Congress general election 23 July 2023",
+      "kind": "programme_comparison_not_affinity_test",
+      "sourceIds": [
+        "rtve-ui",
+        "rtve-guide"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "comparison": "browser_observed",
+        "mobile": "browser_observed",
+        "documentLinks": "browser_observed",
+        "result": "not_applicable"
+      },
+      "observations": [
+        {
+          "claim": "Choose topics, then programmes; read parallel topic summaries with full-programme links. Housing with PSOE and PP was exercised after rejecting cookies.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "rtve-ui"
+          ]
+        },
+        {
+          "claim": "At 390px in this inspection, topic icons and party selectors overlapped and two prose columns became difficult to scan. Desktop programme headings remained visible.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "rtve-ui"
+          ]
+        }
+      ],
+      "critique": "Topic-first and parallel reading are useful. A desktop-column copy would reproduce the observed narrow-layout weakness. Our complete formation/citation scope remains distinct.",
+      "limits": "A comparator, not matching evidence. Its summaries were not audited or imported into our electoral bank.",
+      "decisionIds": [
+        "B01",
+        "B03",
+        "B09",
+        "B10"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "mobileViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "fixture": "Housing and two programmes only for layout inspection.",
+        "artifacts": [
+          ".tools/affinity-reference-research/rtve-comparison.png",
+          ".tools/affinity-reference-research/rtve-comparison-mobile.png"
+        ]
+      }
+    },
+    {
+      "id": "isidewith",
+      "name": "iSideWith",
+      "edition": "Public 2026 political quiz",
+      "kind": "multi_election_issue_matching",
+      "sourceIds": [
+        "isw-ui",
+        "isw-faq",
+        "isw-editorial"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "question": "markup_behind_consent",
+        "help": "official_documentation_only",
+        "result": "not_inspected",
+        "mobile": "not_inspected"
+      },
+      "observations": [
+        {
+          "claim": "A terms/privacy modal covered entry. Underlying quiz markup showed topic groups, learn-more, alternative stances and show-more questions.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "isw-ui"
+          ]
+        },
+        {
+          "claim": "FAQ explains stance alternatives and importance; editorial standards describe candidate/party/ideology matching and voluntary-response polling.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "isw-faq",
+            "isw-editorial"
+          ]
+        }
+      ],
+      "critique": "Contextual explanation transfers. Long forms and stats/discussion controls compete with the novice task; additional stance generation, ideology labels and polling do not fit this bank.",
+      "limits": "Consent not accepted; no answers, result or expanded stance flow exercised.",
+      "decisionIds": [
+        "B07",
+        "B08",
+        "B10"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "fixture": "No opinions or consent.",
+        "artifacts": [
+          ".tools/affinity-reference-research/isidewith-entry.png"
+        ]
+      }
+    },
+    {
+      "id": "votecompass",
+      "name": "Vote Compass",
+      "edition": "Official overview and published methodology",
+      "kind": "electoral_matching_and_ideological_projection",
+      "sourceIds": [
+        "vc-home",
+        "vc-method"
+      ],
+      "surfaceEvidence": {
+        "entry": "browser_observed",
+        "question": "not_inspected",
+        "result": "official_documentation_only",
+        "mobile": "not_inspected"
+      },
+      "observations": [
+        {
+          "claim": "Overview separates editions, explains survey-to-results and advertises a dashboard and social comparison.",
+          "level": "browser_observed",
+          "sourceIds": [
+            "vc-home"
+          ]
+        },
+        {
+          "claim": "Methodology distinguishes alignment bars from ideological projections and weighting. Policy alignment is not a voting prediction.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "vc-method"
+          ]
+        }
+      ],
+      "critique": "Explain each measure separately. Profile sharing and copied ideological charts fall outside our privacy/scoring scope.",
+      "limits": "Results supported by published documentation, not a completed live dashboard. No privacy assurance transferred.",
+      "decisionIds": [
+        "B06",
+        "B08",
+        "B10"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "fixture": "Overview only.",
+        "artifacts": [
+          ".tools/affinity-reference-research/votecompass-entry.png"
+        ]
+      }
+    },
+    {
+      "id": "euandi",
+      "name": "EU&I 2024",
+      "edition": "European Parliament 2024, including Spanish country entry",
+      "kind": "electoral_matching",
+      "sourceIds": [
+        "eu-home"
+      ],
+      "surfaceEvidence": {
+        "entry": "official_documentation_only",
+        "question": "not_inspected",
+        "result": "not_inspected",
+        "mobile": "not_inspected",
+        "interactiveBrowser": "blocked"
+      },
+      "observations": [
+        {
+          "claim": "Official introduction describes 30 statements, country selection, and comparison within a country or across Europe.",
+          "level": "official_documentation",
+          "sourceIds": [
+            "eu-home"
+          ]
+        }
+      ],
+      "critique": "Scope needs clear naming. Our single historical Congress edition does not require a country/constituency gate or European source substitution.",
+      "limits": "Web reader retrieved introduction; isolated browser was blocked and methodology link failed. No visual or interactive result conclusion.",
+      "decisionIds": [
+        "B01",
+        "B08"
+      ],
+      "inspection": {
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "fixture": "No interaction.",
+        "artifacts": []
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "B01",
+      "title": "Find a proposal without doing the test",
+      "disposition": "strengthen",
+      "sourceIds": [
+        "sw-ui",
+        "sv-home",
+        "rtve-ui",
+        "eu-home"
+      ],
+      "change": "Local all-80 proposal search; count/page/no-hit recovery and same-proposal transfer.",
+      "taskIds": [
+        "U004",
+        "U007",
+        "U010"
+      ],
+      "flowIds": [
+        "F01",
+        "F03"
+      ],
+      "acceptanceIds": [
+        "A01",
+        "A12",
+        "A32"
+      ],
+      "constraint": "No prerequisite party/location, stored query or personalized request."
+    },
+    {
+      "id": "B02",
+      "title": "Compare two/three programmes from a revealed result",
+      "disposition": "add",
+      "sourceIds": [
+        "wm-faq"
+      ],
+      "change": "Unchecked result-row choices, bounded selection summary, explicit workspace entry and exact result return.",
+      "taskIds": [
+        "U008",
+        "U009",
+        "U011",
+        "U012"
+      ],
+      "flowIds": [
+        "F04",
+        "F08"
+      ],
+      "acceptanceIds": [
+        "A29"
+      ],
+      "constraint": "No top-party preselection, order/score change or recommendation."
+    },
+    {
+      "id": "B03",
+      "title": "Find documented differences and missing information",
+      "disposition": "replace_narrow_filter_contract",
+      "sourceIds": [
+        "wm-faq",
+        "rtve-ui"
+      ],
+      "change": "All / different documented values / information missing views; +1/+2 count, mixed rows can appear in both views.",
+      "taskIds": [
+        "U005",
+        "U009",
+        "U010"
+      ],
+      "flowIds": [
+        "F02",
+        "F03",
+        "F08"
+      ],
+      "acceptanceIds": [
+        "A07",
+        "A13",
+        "A31"
+      ],
+      "constraint": "Equal values do not imply identical conditions; gaps never become zero/opposition; no affinity recomputation."
+    },
+    {
+      "id": "B04",
+      "title": "See your own answer beside programme positions after finish",
+      "disposition": "specify",
+      "sourceIds": [
+        "wm-faq"
+      ],
+      "change": "Compact explicitly requested own-answer line, with truthful unsure/skip/unasked and version invalidation.",
+      "taskIds": [
+        "U009",
+        "U012",
+        "U014"
+      ],
+      "flowIds": [
+        "F08"
+      ],
+      "acceptanceIds": [
+        "A30"
+      ],
+      "constraint": "Hidden before finish; off by default; no personalized URL/fetch or fourth-party column."
+    },
+    {
+      "id": "B05",
+      "title": "Reconsider one answered proposal",
+      "disposition": "adapt_not_live_tuning",
+      "sourceIds": [
+        "wm-faq"
+      ],
+      "change": "Direct review from example; preserve question set and other answers; invalidate personal views; finish deliberately again.",
+      "taskIds": [
+        "U012",
+        "U014"
+      ],
+      "flowIds": [
+        "F04",
+        "F08"
+      ],
+      "acceptanceIds": [
+        "A18",
+        "A35"
+      ],
+      "constraint": "No live tuning while answering, rerun starters, altered weights or automatic reveal."
+    },
+    {
+      "id": "B06",
+      "title": "Explain equal, close and surprising totals",
+      "disposition": "add_didactic_detail",
+      "sourceIds": [
+        "wm-faq",
+        "sw-faq",
+        "vc-method"
+      ],
+      "change": "Unnamed equal-total example with different agreements; result help leads to evidence and comparison.",
+      "taskIds": [
+        "U007",
+        "U012",
+        "U013"
+      ],
+      "flowIds": [
+        "F04",
+        "F05"
+      ],
+      "acceptanceIds": [
+        "A20",
+        "A33",
+        "A34"
+      ],
+      "constraint": "No tie-breaking contest, ideological prediction, precision promise or changed 20 + 10 journey."
+    },
+    {
+      "id": "B07",
+      "title": "Explain an unfamiliar word where it appears",
+      "disposition": "strengthen",
+      "sourceIds": [
+        "sw-ui",
+        "sw-faq",
+        "isw-ui",
+        "isw-faq"
+      ],
+      "change": "Short neutral touch/click/keyboard definition and exact return; audit in copy ledger.",
+      "taskIds": [
+        "U005",
+        "U007",
+        "U013",
+        "U014"
+      ],
+      "flowIds": [
+        "F01",
+        "F05"
+      ],
+      "acceptanceIds": [
+        "A27",
+        "A36"
+      ],
+      "constraint": "No hover-only access, party priming, new answer or changed authored meaning."
+    },
+    {
+      "id": "B08",
+      "title": "Keep one interpretable calculation and a private session",
+      "disposition": "reject_incompatible_extensions",
+      "sourceIds": [
+        "sv-method",
+        "isw-editorial",
+        "vc-home",
+        "vc-method",
+        "eu-home"
+      ],
+      "change": "Retain overlap plus evidence information; exclude radar/ideology maps, profile sharing, opinion feeds and collection/account gates.",
+      "taskIds": [
+        "U012",
+        "U013",
+        "U015"
+      ],
+      "flowIds": [
+        "F04",
+        "F07"
+      ],
+      "acceptanceIds": [
+        "A14",
+        "A25",
+        "A38"
+      ],
+      "constraint": "References are UX context only; no foreign positions or second matching model."
+    },
+    {
+      "id": "B09",
+      "title": "Offer a small verified formation factsheet",
+      "disposition": "specify_existing_directory",
+      "sourceIds": [
+        "wm-faq",
+        "sv-home",
+        "rtve-ui"
+      ],
+      "change": "Official name, 2023 availability, constituency facts, original document and useful topic/comparison/return actions.",
+      "taskIds": [
+        "U010",
+        "U011",
+        "U013"
+      ],
+      "flowIds": [
+        "F03",
+        "F06"
+      ],
+      "acceptanceIds": [
+        "A08",
+        "A22",
+        "A37"
+      ],
+      "constraint": "All 59; no seat priority, biography/verdict, inheritance or default programme essay."
+    },
+    {
+      "id": "B10",
+      "title": "Bound attention and navigation on narrow screens",
+      "disposition": "strengthen_with_task_budgets",
+      "sourceIds": [
+        "wm-ui",
+        "sw-ui",
+        "rtve-ui",
+        "isw-ui",
+        "vc-home"
+      ],
+      "change": "Concrete navigation/disclosure budgets; bounded lists and actual real-text narrow/low-height/zoom critique.",
+      "taskIds": [
+        "U006",
+        "U009",
+        "U012",
+        "U015"
+      ],
+      "flowIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F08"
+      ],
+      "acceptanceIds": [
+        "A01",
+        "A16",
+        "A24",
+        "A29",
+        "A32"
+      ],
+      "constraint": "Never meet budgets by hiding conditions, shrinking type, consent gating or claiming measured speed."
+    }
+  ],
+  "planGapsResolved": [
+    "Result-to-comparison was not a connected acceptance flow.",
+    "Signed-opposition-only filter missed qualified same-direction differences.",
+    "Own-answer overlays lacked a precise screen/invalidation contract.",
+    "Topic-first browsing lacked proposal search.",
+    "Equal totals lacked an example of different agreement sets.",
+    "Revision from a cited example and factsheet returns needed bounded paths."
+  ],
+  "retainedStrengths": [
+    "Direct quiz start and accepted answer/transition behavior",
+    "Memory-only private state and deliberate result reveal",
+    "All 59 with missing common programmes visible",
+    "Exact 80-question bank/citations/calculation",
+    "One-topic comparison and semantic source return"
+  ],
+  "prototypeScope": "Original comparison prototype unchanged. Added result transfer, overlays, revised filters, search and examples remain planned and need their own sketch/prototype and application evidence.",
+  "applicationImplementationStarted": false,
+  "publicLaunchApproved": false,
+  "liveCollectionEnabled": false
+}

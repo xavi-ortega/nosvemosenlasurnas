@@ -29,6 +29,33 @@ def render_interactions(design):
     blocks.append("### Primary UX references\n\nThe application choices are this plan's design decisions, informed by the following guidance.\n\n" + "\n".join("- [" + item["title"] + "](" + item["url"] + "): " + item["appliedDecision"] for item in design["references"]))
     return "\n\n".join(blocks)
 
+def render_reference_review(research):
+    """Render evidence levels and actionable adaptation decisions from the dated review."""
+    sources = research["sources"]
+    blocks = ["### Reference evidence and limitations", research["method"]["selection"] + " " + research["method"]["verificationLimits"]]
+    for site in research["sites"]:
+        lines = ["#### " + site["name"] + " — " + site["edition"]]
+        lines.append("Inspected surfaces: " + "; ".join(key + ": " + value for key, value in site["surfaceEvidence"].items()) + ".")
+        for observation in site["observations"]:
+            citations = ", ".join("[" + sources[source_id]["title"] + "](" + sources[source_id]["url"] + ")" for source_id in observation["sourceIds"])
+            lines.append("- **" + observation["level"] + "**: " + observation["claim"] + " " + citations)
+        lines.append("Our design assessment: " + site["critique"])
+        lines.append("Limits: " + site["limits"])
+        blocks.append("\n\n".join(lines))
+    blocks.append("### Decisions to implement, adapt or reject")
+    for decision in research["decisions"]:
+        citations = ", ".join("[" + sources[source_id]["title"] + "](" + sources[source_id]["url"] + ")" for source_id in decision["sourceIds"])
+        blocks.append("\n\n".join([
+            "#### " + decision["id"] + " " + decision["title"],
+            "Decision: " + decision["disposition"] + ". " + decision["change"],
+            "Tasks: " + ", ".join(decision["taskIds"]) + ". Flows: " + ", ".join(decision["flowIds"]) + ". Acceptance: " + ", ".join(decision["acceptanceIds"]) + ".",
+            "Compatibility boundary: " + decision["constraint"],
+            "Reference context: " + citations + ". These are our adaptations, not usability findings from those sites.",
+        ]))
+    blocks.append("Prototype boundary: " + research["prototypeScope"])
+    return "\n\n".join(blocks)
+
+
 def render():
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
@@ -68,12 +95,16 @@ def render():
         generated["outputs/electoral-app-development-plan.html"] = '<!doctype html><html lang="en"><meta charset="utf-8"><title>Active development plan</title><style>body{max-width:80ch;margin:3rem auto;padding:1rem;font:16px/1.6 system-ui}pre{white-space:pre-wrap}</style><body><pre>' + html.escape(generated["docs/plans/development-plan.md"]) + '</pre></body></html>\n'
     if refinement:
         blocks = ["# " + refinement["title"], refinement["planVersion"] + " · " + refinement["status"], refinement["summary"], "Application implementation started: " + str(refinement["applicationImplementationStarted"]).lower() + ". Complete: " + str(refinement["applicationImplementationComplete"]).lower() + ". Public launch and collection remain unapproved/disabled.", "Baseline: " + refinement["baseline"] + ". Prototype: " + refinement["prototype"] + ". Source bank SHA-256: " + refinement["sourceBankSha256"] + "."]
-        blocks.extend("## " + item["title"] + "\n\n" + item["content"] for item in refinement["sections"])
+        for item in refinement["sections"]:
+            blocks.append("## " + item["title"] + "\n\n" + item["content"])
+            if item["id"] == "reference-review":
+                research = json.loads((ROOT / refinement["referenceResearch"]).read_text())
+                blocks.append(render_reference_review(research))
         blocks.append("## Connected navigation and return graphs")
         for flow in refinement["flows"]:
             lines = ["### " + flow["id"] + " " + flow["title"], "Start: " + flow["start"] + ". Walkthrough: " + " → ".join(flow["walkthrough"]) + "."]
             for node in flow["nodes"]:
-                lines.append("- **" + node["id"] + "**: " + node["goal"] + ". " + "; ".join("“" + action["label"] + "” → " + action["target"] + " (retain " + action["retains"] + ")" for action in node["actions"]))
+                lines.append("- **" + node["id"] + "**: " + node["goal"] + ". " + "; ".join("“" + action["label"] + "” → " + action["target"] + " (retain " + action["retains"] + ")" + ("; available when " + action["when"] if action.get("when") else "") for action in node["actions"]))
             blocks.append("\n\n".join(lines))
         blocks.append("## Bounded implementation tasks")
         for task in refinement["tasks"]:
@@ -107,7 +138,10 @@ def render():
         if refinement and "const cleanup = " in text:
             start = text.index("const cleanup = ") + len("const cleanup = ")
             end = text.index("\n};", start) + 2
-            text = text[:start] + json.dumps(refinement, ensure_ascii=False, indent=2) + text[end:]
+            view = {**refinement}
+            if refinement.get("referenceResearch"):
+                view["referenceResearchData"] = json.loads((ROOT / refinement["referenceResearch"]).read_text())
+            text = text[:start] + json.dumps(view, ensure_ascii=False, indent=2) + text[end:]
         canvas.write_text(text)
     print("Active plan parity passed." if args.check else "Active plans rendered; existing managed view synchronized.")
 

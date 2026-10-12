@@ -2094,8 +2094,8 @@
           "votes": 160
         }
       ],
-      "programmeSearchStatus": "primary_2023_programme_acquired_fully_read_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "programmeSearchStatus": "primary_23j2023_programme_document_fully_read_specific_bank_reconciled",
+      "analysisStatus": "specific_complete_full_programme_80_cell_bank_audit_locally_verified",
       "programmeIds": [
         "pacma"
       ],
@@ -2218,6 +2218,15 @@
           "congress-melilla-6"
         ],
         "rationale": "Primary national PACMA PDF explicitly23J2023 in cover/introduction. Registry records51final Congress ballots underSpanish/CatalanPACMAaliases including restoredTeruel; excludedCeuta record not silently reintroduced."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-12T08:42:57.373956+00:00",
+        "report": "outputs/2023-authored-pacma-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 23,
+        "newDerivedMappings": 2,
+        "citedUncertainties": 21,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -5233,9 +5242,10 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/pacma.json",
-      "electionApplicability": "Primary July2023 PDF; original visual cover explicitly23J/General Elections2023, introduction dates2023 and23July. National programme applies to51final PACMA Congress ballots, restoredTeruel included."
+      "electionApplicability": "Primary July2023 PDF; original visual cover explicitly23J/General Elections2023, introduction dates2023 and23July. National programme applies to51final PACMA Congress ballots, restoredTeruel included.",
+      "bankAudit": "outputs/2023-authored-pacma-audit.json"
     },
     {
       "id": "psoe",
@@ -10341,8 +10351,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5230,
-    "scoredDraftMappings": 327,
-    "independentAnswerCases": 1635,
+    "scoredDraftMappings": 329,
+    "independentAnswerCases": 1645,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10353,7 +10363,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+    "latestBrowserDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10365,19 +10375,19 @@
     ],
     "latestBrowserRentCases": 2,
     "latestBrowserProgressivePaths": 48,
-    "latestBrowserVerification": "outputs/2023-authored-bng-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-bng-verification.json",
+    "latestBrowserVerification": "outputs/2023-authored-pacma-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-pacma-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+    "latestDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "4751b12e24502803db6fd08d4cf98776f29d8dd6e037fc051456bbc0f59ea091",
+    "latestAuthoredDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10480,7 +10490,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 510,
-    "defaultScoredDraftMappings": 216,
+    "defaultScoredDraftMappings": 218,
     "scopedScoredDraftMappings": 111,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -10606,7 +10616,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 5110856,
+    "bankBytes": 5148732,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10809,7 +10819,21 @@
     "latestBngScreenshotsReviewedThroughOverviews": 20,
     "latestBngOverviewFilesInspected": 10,
     "bngFixedComparisonEligible": true,
-    "bngTerritories": 4
+    "bngTerritories": 4,
+    "pacmaBankAudit": "outputs/2023-authored-pacma-audit.json",
+    "pacmaVerification": "outputs/2023-authored-pacma-verification.json",
+    "pacmaBrowserVerification": "outputs/2023-authored-pacma-browser-verification.json",
+    "newPacmaAuditedCells": 80,
+    "totalPacmaDerivedMappings": 23,
+    "newPacmaDerivedMappings": 2,
+    "pacmaCitedUncertaintyCells": 21,
+    "latestPacmaBrowserSessions": 48,
+    "latestPacmaCitedAnswerPaths": 40,
+    "latestPacmaCitedUnscoredPaths": 12,
+    "latestPacmaScreenshotsReviewedThroughOverviews": 20,
+    "latestPacmaOverviewFilesInspected": 10,
+    "pacmaFixedComparisonEligible": true,
+    "pacmaTerritories": 51
   },
-  "recordedAt": "2026-10-12T08:33:09.923192+00:00"
+  "recordedAt": "2026-10-12T08:42:57.373956+00:00"
 }

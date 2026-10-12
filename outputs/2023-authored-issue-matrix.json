@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-12T07:47:50.561277+00:00",
+  "recordedAt": "2026-10-12T08:38:52.029328+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -569,12 +569,53 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone alquileres sociales y critica la demora de desahucios, sin concretar un límite obligatorio de precios.",
+          "authoredAnalysis": "Affordable social rents and eviction-delay criticism do not establish a binding private-rent ceiling or opposition to every housing-law provision.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 65,
+              "printedPage": 65,
+              "htmlSection": null,
+              "start": 287214,
+              "end": 287347,
+              "quote": "Es necesario facilitar el acceso a un hogar tanto a jóvenes como a mayores y frenar esa subida en el coste\ny alquiler de la vivienda.",
+              "contextStart": 287214,
+              "contextEnd": 287347,
+              "contextSha256": "677ccbc04e7df79b216249f95c34a567b02887e9abde32069464e78016c9bb22",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            },
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 65,
+              "printedPage": 65,
+              "htmlSection": null,
+              "start": 287777,
+              "end": 288248,
+              "quote": "La inmensa mayoría de los inquilinos no quiere permanecer meses y meses en una vivienda que no puede\npagar. Lo que quieren es poder pagar la vivienda que necesitan para vivir. Es decir, que la renta sea\nasequible para su nivel de ingresos, y retrasar la recuperación de las viviendas en casos de impago, no\nayuda a bajar los precios del alquiler. Puede suponer un parche momentáneo pero conduce a una\nreducción de la oferta y, por tanto, a una cronificación del problema.",
+              "contextStart": 287777,
+              "contextEnd": 288248,
+              "contextSha256": "8c5a175630f93067524d0b0c54f7dfffd7300393fbcf5aa6bf041590a91110d0",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -1859,10 +1900,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
+          "rationale": "No se ha podido establecer una jornada máxima de 35 horas sin reducción salarial.",
+          "authoredAnalysis": "Conciliation and job creation do not specify the exact weekly hours and salary-maintenance rule.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -2641,7 +2686,12 @@
               "contextEnd": 248637,
               "contextSha256": "1e07bedf98c83867fef6cc52dc59d4288db6da9ff5f3e284bbff015cadc255bd"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-008",
@@ -4325,12 +4375,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numericmapping has been authored for this pair. This draftstatus does notassert programme silence/nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Critica la energía nuclear y propone renovables, sin resolver expresamente la prolongación de las centrales existentes.",
+          "authoredAnalysis": "Nuclear criticism and renewable transition do not determine the existing-reactor extension trigger.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 31,
+              "printedPage": 31,
+              "htmlSection": null,
+              "start": 177732,
+              "end": 178812,
+              "quote": "El modelo energético basado en el uso masivo de los combustibles fósiles y la energía nuclear, es\n   insostenible, está provocando daños irreversibles al medioambiente y conlleva riesgos y catástrofes\n   evitables.\n\n   Los combustibles fósiles (petróleo, gas y carbón) producen un gran impacto ambiental por sí mismos,\n   poseen una gran toxicidad y afectan negativamente al cambio climático, pero también aumentan la carga\n   ambiental de otros materiales que requieren de mucha energía, como los minerales metálicos.\n\n   Frente a los grandes retos del cambio climático, la pobreza energética y la dependencia exterior, es cada\n   vez más urgente adoptar políticas activas que permitan y fomenten la transición a un modelo energético\n   sostenible.\n\n   El Partido Animalista apuesta por avanzar hacia un modelo más eficiente y autosuficiente, con una\n   política energética que fomente las energías ren            ovables frente a la dependencia de la fósil, manteniendo\n   la seguridad en el abastecimiento y permitiendo la entrega de energía al consumidor a precios asequibles.",
+              "contextStart": 177729,
+              "contextEnd": 178812,
+              "contextSha256": "acc68da2919618f743b4becefdea08152ffa84974dc4fa3e110c224053a4605c",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -5502,10 +5575,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una exención general de impuestos por heredar de padres a hijos.",
+          "authoredAnalysis": "Tax-fraud enforcement does not establish this unlimited family inheritance exemption.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -6652,12 +6729,53 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone educación universal de 0 a 3 años y plazas públicas suficientes, sin vincular expresamente todas esas plazas a la gratuidad.",
+          "authoredAnalysis": "The complete education passage separates real gratuity, universal 0–3 education and sufficient public places. It does not explicitly guarantee free places for every applicant in the exact stage.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "htmlSection": null,
+              "start": 250727,
+              "end": 251292,
+              "quote": "Un  Pacto de Estado por la Educación                   es imprescindible desde muchos enfoques. El primero y más\nimportante, el derecho a una educación de calidad, pero, además, por la necesidad de contribuir a la\ncohesión social, a través de una educación equitativa e inclusiva, acabar con el fracaso y el abandono\nescolar, garantizar la suficiencia y estabilidad de los recursos en el sistema educativo, avanzar en la\ngratuidad real, promover la educación universal de 0 a 3 años y poder educar valores, derechos y\nresponsabilidades como ciudadanos y ciudadanas.",
+              "contextStart": 250727,
+              "contextEnd": 251292,
+              "contextSha256": "11f754e344f5437b2b5abde9d96a6ed474aeef6e05b8d5cb2f75c78570c43391",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            },
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "htmlSection": null,
+              "start": 251542,
+              "end": 251617,
+              "quote": "Asignación de plazas públicas suficientes para niños y niñas de 0 a 3 años.",
+              "contextStart": 251389,
+              "contextEnd": 252051,
+              "contextSha256": "352aad003a495303fe1f9bb7f7ca84645a5003c7fe3170285f79509d7943ba5e",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -7892,10 +8010,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una limitación de vuelos internos cuando exista alternativa en tren.",
+          "authoredAnalysis": "Rail freight and cleaner mobility are not domestic-flight restrictions based on train alternatives.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -9061,10 +9183,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una postura concreta sobre conservar el derecho legal a la eutanasia.",
+          "authoredAnalysis": "Animal euthanasia exceptions and universal human healthcare are not the human legal euthanasia entitlement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -9994,10 +10120,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer quién elegiría a los miembros judiciales del órgano de gobierno de los jueces.",
+          "authoredAnalysis": "Democratic reform and corruption prevention do not supply this judicial selection procedure.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -11247,10 +11377,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una actualización anual de las pensiones según el coste de la vida.",
+          "authoredAnalysis": "Elderly care and residential places do not state an actual-CPI pension-indexing formula.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -12407,12 +12541,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone combatir el fraude de grandes fortunas, sin concretar la permanencia de un impuesto sobre ellas.",
+          "authoredAnalysis": "A statement about who commits tax fraud does not create a permanent wealth tax.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 67,
+              "printedPage": 67,
+              "htmlSection": null,
+              "start": 293747,
+              "end": 293838,
+              "quote": "La mayor parte de la evasión fiscal la cometen las grandes fortunas y las grandes empresas.",
+              "contextStart": 293435,
+              "contextEnd": 293838,
+              "contextSha256": "68b8294ba5e8bbf971813951ba7980b3281121d4c71bf12b7a75d39bdc0a9ae5",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -13557,10 +13714,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer que las pensiones de jubilación queden exentas del impuesto sobre la renta.",
+          "authoredAnalysis": "Tax-fraud enforcement is different from exempting contributory pensions from income tax.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -14739,12 +14900,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone vivienda social para compra y alquiler, sin precisar una prohibición de venta del patrimonio público.",
+          "authoredAnalysis": "Social-housing purchase and rental language does not identify stock ownership or explicitly permit or prohibit private sale of existing public housing.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 65,
+              "printedPage": 65,
+              "htmlSection": null,
+              "start": 288613,
+              "end": 288811,
+              "quote": "En España necesitamos ya una gran dotación de vivienda social, tanto para compra como para alquiler                            ,\ndestinadas a garantizar un techo a todos los ciudadanos y ciudadanas.",
+              "contextStart": 288613,
+              "contextEnd": 288811,
+              "contextSha256": "fadc0ea4315bf05fff239274ede0765f4b7a6a6ad310ab26ef8576b4155d9225",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -17114,7 +17298,12 @@
               "contextEnd": 238592,
               "contextSha256": "51c5b8b1e82509729f7932ca6eb7c56c78e550e19a73270643138c87d9fee055"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-015",
@@ -18601,10 +18790,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una propuesta concreta de prestar abortos legales en centros públicos.",
+          "authoredAnalysis": "Public universal healthcare does not identify legal abortion provision in public centres.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -19633,12 +19826,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone pequeñas instalaciones hidroeléctricas, sin concretar la gestión pública de concesiones al caducar.",
+          "authoredAnalysis": "Small-hydro generation support does not determine ownership at expiry of existing concessions.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 32,
+              "printedPage": 32,
+              "htmlSection": null,
+              "start": 180848,
+              "end": 181010,
+              "quote": "Promover el autoconsumo, la generación distribuida y comunitaria de energía fotovoltaica,\n         eólica y la recuperación de pequeños s           altos de agua.",
+              "contextStart": 180313,
+              "contextEnd": 181164,
+              "contextSha256": "6b8e7541af4321379fa6706ddc09bbdf6243ec655847651e8473e667b40294bb",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -20804,10 +21020,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición de contactar con trabajadores fuera de su horario.",
+          "authoredAnalysis": "Flexible schedules and telework do not establish an out-of-hours contact prohibition.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -21931,12 +22151,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone comedor escolar gratuito para niños y niñas de familias en situación de vulnerabilidad.",
+          "authoredAnalysis": "Free school menus are explicit only for vulnerable families, a restricted subset of the question’s universal pupil group.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 54,
+              "printedPage": 54,
+              "htmlSection": null,
+              "start": 251910,
+              "end": 252051,
+              "quote": "Transporte y menú escolar gratuito para los niños y niñas de familias e                          n situación de\n              vulnerabilidad.",
+              "contextStart": 251389,
+              "contextEnd": 252051,
+              "contextSha256": "352aad003a495303fe1f9bb7f7ca84645a5003c7fe3170285f79509d7943ba5e",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -23014,12 +23257,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Se opone al copago sanitario, sin precisar en este apartado el copago de medicamentos financiados públicamente.",
+          "authoredAnalysis": "The whole opposition-to-copay section discusses healthcare service access without naming pharmaceutical contributions. Do not turn a broad heading into a precise drug-payment rule.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 50,
+              "printedPage": 50,
+              "htmlSection": null,
+              "start": 237195,
+              "end": 237438,
+              "quote": "Un sistema de salud pública, por definición, debe garantizar una sanidad de calidad y sin costes adicionales\npara una ciudadanía que ya la financia a través de sus impuestos y con el porcentaje de sus salarios\ndestinados a la Seguridad Social.",
+              "contextStart": 237166,
+              "contextEnd": 237438,
+              "contextSha256": "1d78d86e9e648de1956adf4efcec41f9e516d7a3374f2e277e6854f321e332db",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -25463,10 +25729,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el derecho a votar desde los dieciséis años.",
+          "authoredAnalysis": "Electoral district, endorsement and media reforms do not change the voting age.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -26221,7 +26491,12 @@
               "contextEnd": 206991,
               "contextSha256": "5fb466428696c4f1b16ba18ebb7e5227bc24c9b62008cf1ccc27f83850c778d4"
             }
-          ]
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -27457,10 +27732,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer el pago de todas las prácticas curriculares de estudiantes.",
+          "authoredAnalysis": "Youth employment and secondary-school career guidance do not create a paid-placement requirement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -28757,12 +29036,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone permisos para cuidados y conciliación, sin fijar seis meses de permiso por nacimiento para cada progenitor.",
+          "authoredAnalysis": "Family illness, death and care leave are distinct from six months of birth leave for both parents.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "htmlSection": null,
+              "start": 274645,
+              "end": 275449,
+              "quote": "Del sistema laboral: introduciendo la igualdad de oportunidades en el empleo. Se debe\n              promover     que las empresas apliquen políticas de igualdad e implanten medidas de\n              conciliación   laboral, personal y familiar entre sus plantillas, como permitir a sus trabajadores\n              adaptar la duración y distribución de la jornada laboral                   en función de sus circunstancias\n              personales y familiares, o ejercer el teletrabajo. Se debe fomentar e incentivar la creación de\n              guarderías en los propios centros de trabajo, tanto para el cuidado de niños como de\n              animales de compañía, así como de permisos retribuidos en casos de fallecimiento,\n              accidente o enfermedad grave de familiares, incluidos los animales",
+              "contextStart": 274612,
+              "contextEnd": 276567,
+              "contextSha256": "c47c343e98928f6a1c9ab0461bed4f1b641f61be5036ba083ce5956107b5a0ce",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -29899,10 +30201,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un impuesto específico a las bebidas azucaradas.",
+          "authoredAnalysis": "An emissions-based levy on animal food is a different product and tax base.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -30786,10 +31092,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la despenalización del cultivo y consumo propio de cannabis sin lucro.",
+          "authoredAnalysis": "Drug-use prevention and alternative youth leisure do not determine self-use criminal law.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -31745,10 +32055,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer que repetir una asignatura mantenga el mismo precio de matrícula.",
+          "authoredAnalysis": "General real-gratuity goals do not specify repeat-course university enrolment prices.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -32865,10 +33179,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un mínimo de tres horas semanales de Educación Física obligatoria.",
+          "authoredAnalysis": "Healthy exercise education and youth sports access do not set compulsory curriculum hours.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -33949,12 +34267,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone créditos sin intereses y ventajas fiscales para nuevas empresas, sin eximir de cuota por ingresos inferiores al salario mínimo.",
+          "authoredAnalysis": "Conditional business credit and general tax bonuses do not supply a net-income contribution exemption.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 64,
+              "printedPage": 64,
+              "htmlSection": null,
+              "start": 284181,
+              "end": 284435,
+              "quote": "Por ello, proponemos la creación de un fondo de financiación destinado a facilitar el acceso de\nautónomos/as y pymes a líneas de crédito a interés cero, para apoyar el desarrollo de proyectos\norientados a la consecución de alguno de los siguientes fines:",
+              "contextStart": 284181,
+              "contextEnd": 284435,
+              "contextSha256": "5653ec751ed0218e85d60dd8d697a1dfcbc1f5ff93036a9cfba22953b08c78a9",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -35227,10 +35568,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una exención de IVA al comprar la primera vivienda.",
+          "authoredAnalysis": "Social-housing expansion does not establish an exact first-new-home VAT exemption.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -36172,7 +36517,11 @@
               "contextSha256": "a38d5f3334ccae66f2fa53784e02696b4377ea2fe9d5692ec871dfe7d945447d"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -37181,7 +37530,11 @@
               "contextSha256": "279baa3ea6e5536961eda6d1bc1898e59c114aeefeaaa5815b7b11184028e7ed"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -38113,7 +38466,11 @@
               "contextSha256": "d349a3341807ec3e310926110376f70a1aac0d4365d449c4f803562cc238dbbf"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-003",
@@ -39482,12 +39839,53 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone tarifas sociales y un mínimo de agua gratuito, sin establecer una prohibición permanente de cortar todos los suministros básicos.",
+          "authoredAnalysis": "Access guarantees, social tariffs and a restricted free water volume do not explicitly prohibit all utility disconnections permanently.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 49,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 232785,
+              "end": 232899,
+              "quote": "Desde PACMA defendemos que se garantice el acceso a estos servicios a las personas en situación de\nvulnerabilidad.",
+              "contextStart": 232785,
+              "contextEnd": 232899,
+              "contextSha256": "cdd3274da868dc3bae564c448473ee586ca87b8555647dd6e1f3f99cd4433e1a",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            },
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 49,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 233078,
+              "end": 233562,
+              "quote": "el establecimiento de un precio social en los suministros básicos para los hogares con poder\n              adquisitivo reducido y familias o personas en riesgo de exclusión social.\n         -                                              el establecimiento de un mínimo vital de agua de determinados metros cúbicos por persona\n              y mes, sin coste para las personas usuarias que se encuentren en situación de exclusión social\n              o insolvencia económica acreditada.",
+              "contextStart": 233022,
+              "contextEnd": 233562,
+              "contextSha256": "b2adf20af1134384f2900be2793a065e83461b4e1b4def3864169d5eb7eee827",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -40587,10 +40985,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer un pago universal de 20.000 euros a los jóvenes al cumplir 23 años.",
+          "authoredAnalysis": "Youth culture, leisure and support programmes are not an individual universal endowment.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -41776,10 +42178,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una subida anual del salario mínimo superior a la inflación.",
+          "authoredAnalysis": "Employment equality and quality do not set an annual above-inflation minimum-wage rule.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -42455,7 +42861,11 @@
               "contextSha256": "2d29af64cca2aa209577414200bbb5826d382ec48d198c333002a90baba34f29"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -43740,10 +44150,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una postura concreta sobre mantener la prohibición de la gestación para otras personas.",
+          "authoredAnalysis": "Equal recognition of diverse families does not determine surrogacy legality.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -44528,7 +44942,11 @@
               "contextSha256": "54cb1649db2c9f431b15ca6dac9ee0f34477668435de19417e392d139d9b1a66"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -45512,7 +45930,11 @@
               "contextSha256": "4284b06bfb3d9fa2a64a988075692cdabd52af8d41dc2b9cab10aed0a3c6ddac"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -46843,12 +47265,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone formar en nuevas tecnologías y reducir la brecha digital, sin garantizar que todos los trámites puedan completarse sin internet.",
+          "authoredAnalysis": "Digital inclusion and training are not an explicit guarantee of offline completion of every public procedure.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 70,
+              "printedPage": 70,
+              "htmlSection": null,
+              "start": 305514,
+              "end": 305742,
+              "quote": "Impulso de programas formativos gratuitos dirigidos a las personas mayores y a las\n              personas en riesgo de exclusión social              , con la finalidad de aprender a utilizar las nuevas\n              tecnologías.",
+              "contextStart": 305192,
+              "contextEnd": 306028,
+              "contextSha256": "4c15d7c57192869a0e27834f6e11d9356cfb272df1cb1f4bac0e6056eda911bc",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -47832,7 +48277,11 @@
               "contextSha256": "b13781b714e2fc3b762e69be1132551820024ebb9537f31edd158a683fdaa01d"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -48795,7 +49244,11 @@
               "contextSha256": "5fb466428696c4f1b16ba18ebb7e5227bc24c9b62008cf1ccc27f83850c778d4"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-004",
@@ -49706,7 +50159,11 @@
               "contextSha256": "5fb466428696c4f1b16ba18ebb7e5227bc24c9b62008cf1ccc27f83850c778d4"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -50897,10 +51354,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer acceso gratuito de jóvenes a los anticonceptivos necesarios.",
+          "authoredAnalysis": "Sexual education and public health do not state this medicine/product eligibility and payment policy.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -51854,10 +52315,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer la creación de una empresa pública que produzca medicamentos y vacunas.",
+          "authoredAnalysis": "Public research funding and vaccine research references do not create a pharmaceutical manufacturer.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -52918,12 +53383,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
-          "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "status": "derived",
+          "value": 1,
+          "rationale": "Propone puntos de acceso gratuito a internet para personas en riesgo de exclusión social.",
+          "authoredAnalysis": "Free connection access is explicit at public access points for people at risk of social exclusion, not a universal household tariff or all-person guarantee.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 70,
+              "printedPage": 70,
+              "htmlSection": null,
+              "start": 305206,
+              "end": 305329,
+              "quote": "Fomento de la instalación de puntos de acceso a internet gratuito para personas en riesgo\n              de exclusión social",
+              "contextStart": 305192,
+              "contextEnd": 306028,
+              "contextSha256": "4c15d7c57192869a0e27834f6e11d9356cfb272df1cb1f4bac0e6056eda911bc",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -53938,7 +54426,11 @@
               "contextSha256": "fe94780a5f50406795f58fb0efe58795adafc233f4c63f98e1f71ab8ce84c66e"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -55428,12 +55920,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone atención temprana de 0 a 6 años en el ámbito educativo, sin precisar aquí que toda la prestación sea pública y gratuita.",
+          "authoredAnalysis": "The school-inclusion proposal identifies ages and resources but does not expressly establish the exact universal public/free service-entitlement conditions.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 55,
+              "printedPage": 55,
+              "htmlSection": null,
+              "start": 255217,
+              "end": 255505,
+              "quote": "Medidas para garantizar la atención temprana a menores con discapacidad y sus familias,\n              destinando recursos a la detección precoz, el diagnóstico y la atención de trastornos del\n              desarrollo o situaciones de riesgo en la población infantil de 0 a 6 años de edad.",
+              "contextStart": 255166,
+              "contextEnd": 255726,
+              "contextSha256": "db2df715a5967df232dd163131c735c5e1a73a8cc2a8a6dd51336492078c93ae",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -56671,12 +57186,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone adaptar horarios a las circunstancias familiares, sin fijar la reducción por cuidado de hijos hasta los dieciséis años.",
+          "authoredAnalysis": "General employer conciliation flexibility lacks the exact statutory child-age threshold.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "htmlSection": null,
+              "start": 274645,
+              "end": 275449,
+              "quote": "Del sistema laboral: introduciendo la igualdad de oportunidades en el empleo. Se debe\n              promover     que las empresas apliquen políticas de igualdad e implanten medidas de\n              conciliación   laboral, personal y familiar entre sus plantillas, como permitir a sus trabajadores\n              adaptar la duración y distribución de la jornada laboral                   en función de sus circunstancias\n              personales y familiares, o ejercer el teletrabajo. Se debe fomentar e incentivar la creación de\n              guarderías en los propios centros de trabajo, tanto para el cuidado de niños como de\n              animales de compañía, así como de permisos retribuidos en casos de fallecimiento,\n              accidente o enfermedad grave de familiares, incluidos los animales",
+              "contextStart": 274612,
+              "contextEnd": 276567,
+              "contextSha256": "c47c343e98928f6a1c9ab0461bed4f1b641f61be5036ba083ce5956107b5a0ce",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -57770,10 +58308,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una tasa que aumente según la frecuencia de vuelos.",
+          "authoredAnalysis": "Climate levies on animal products and renewable mobility do not establish flight-frequency taxation.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -58617,12 +59159,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone abandonar combustibles fósiles, sin concretar una prohibición de su publicidad y patrocinio.",
+          "authoredAnalysis": "Energy transition is distinct from a commercial advertising and sponsorship prohibition.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 31,
+              "printedPage": 31,
+              "htmlSection": null,
+              "start": 177732,
+              "end": 178812,
+              "quote": "El modelo energético basado en el uso masivo de los combustibles fósiles y la energía nuclear, es\n   insostenible, está provocando daños irreversibles al medioambiente y conlleva riesgos y catástrofes\n   evitables.\n\n   Los combustibles fósiles (petróleo, gas y carbón) producen un gran impacto ambiental por sí mismos,\n   poseen una gran toxicidad y afectan negativamente al cambio climático, pero también aumentan la carga\n   ambiental de otros materiales que requieren de mucha energía, como los minerales metálicos.\n\n   Frente a los grandes retos del cambio climático, la pobreza energética y la dependencia exterior, es cada\n   vez más urgente adoptar políticas activas que permitan y fomenten la transición a un modelo energético\n   sostenible.\n\n   El Partido Animalista apuesta por avanzar hacia un modelo más eficiente y autosuficiente, con una\n   política energética que fomente las energías ren            ovables frente a la dependencia de la fósil, manteniendo\n   la seguridad en el abastecimiento y permitiendo la entrega de energía al consumidor a precios asequibles.",
+              "contextStart": 177729,
+              "contextEnd": 178812,
+              "contextSha256": "acc68da2919618f743b4becefdea08152ffa84974dc4fa3e110c224053a4605c",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -59389,7 +59954,11 @@
               "contextSha256": "9ad13eafee17ce606146e77d647bc5158c3c981f1f1a0a6a75d781ff06ec8cda"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -60404,7 +60973,11 @@
               "contextSha256": "2fe04f5530a4e4f2a83eb6b13dd342834d922d56b080c97950ebe12eafc8395f"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -61576,10 +62149,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una prohibición general de ayudas directas a medios privados.",
+          "authoredAnalysis": "Equal public-media campaign access does not prohibit all direct grants to private media.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -62345,7 +62922,11 @@
               "contextSha256": "7bc64018ae8d452074e324592563072e87cc09a4d2d976d49fc18c56ff94b79c"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -63447,7 +64028,11 @@
               "contextSha256": "f7091db2da9f0ede8a172b88e3417a3cf74e7e04fe6bf55f405e2de842331725"
             }
           ],
-          "reviewStatus": "directly_authored_context_reopened"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-001",
@@ -64652,12 +65237,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone publicar agendas políticas y mejorar la transparencia, sin una ficha de quién influyó en cada ley.",
+          "authoredAnalysis": "Meeting agendas and general institutional transparency are different from a per-bill legislative influence record.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 68,
+              "printedPage": 68,
+              "htmlSection": null,
+              "start": 296425,
+              "end": 296765,
+              "quote": "Ley de Transparencia efectiva, que prevea una transparencia en la actuación pública,\n              garantizando el pleno acceso de la ciudadanía a la información                 , eliminando las barreras de\n              entradas para solicitarla y publicando las agendas de los/as políticos/as para saber con quién\n              se reúnen.",
+              "contextStart": 296213,
+              "contextEnd": 298615,
+              "contextSha256": "2cc074394492bbcf73b49634e2dd7ab4743b9bb3ab6470186c12219b2b245f03",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -65876,12 +66484,53 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone mejorar la atención de salud mental y apoyos psicológicos, sin concretar psicoterapia en la cartera sanitaria pública.",
+          "authoredAnalysis": "Mental-health care and psychosocial support for specific groups do not explicitly include clinical psychotherapy as a public healthcare service.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 53,
+              "printedPage": 53,
+              "htmlSection": null,
+              "start": 247053,
+              "end": 247120,
+              "quote": "Mejora de la atención a las personas con problemas de salud mental.",
+              "contextStart": 246121,
+              "contextEnd": 247278,
+              "contextSha256": "c00952bb487cb133e370a9fc37e4d41345bd3b8161cf04a9beb7264b27779896",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            },
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 73,
+              "printedPage": 73,
+              "htmlSection": null,
+              "start": 316328,
+              "end": 316638,
+              "quote": "Impulso para el desarrollo de programas, servicios, campañas y/o actividades de apoyo\n               psicológico y social dirigidos a LGTBI+                  con objeto de ayudarles a enfrentar y superar la\n               LGTBfobia, así como de apoyar a las personas trans a lo largo del proceso de transición.",
+              "contextStart": 314994,
+              "contextEnd": 317025,
+              "contextSha256": "4a621c50065638703ad71a1746f8c134dcaa565fab65fa8ca6b4bb458da84f5f",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -67077,10 +67726,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer apoyo al tratado internacional de prohibición de armas nucleares.",
+          "authoredAnalysis": "Nuclear-energy criticism does not establish a nuclear-weapons treaty commitment.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -68107,10 +68760,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta postura todavía no tiene una interpretación documentada para esta pregunta.",
-          "authoredAnalysis": "No numeric mapping has been authored for this pair. This draft status does not assert programme silence or nonexistence.",
+          "rationale": "No se ha podido establecer una restricción de publicidad de alimentos dirigida a menores.",
+          "authoredAnalysis": "Food information and institutional animal-food promotion rules do not establish the specific child-targeted nutrient advertising restriction.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -69047,12 +69704,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ventajas fiscales para nuevas empresas, sin concretar un primer año libre de cuota de autónomos.",
+          "authoredAnalysis": "New-enterprise tax bonuses do not establish a first-year Social Security fee waiver.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 64,
+              "printedPage": 64,
+              "htmlSection": null,
+              "start": 284986,
+              "end": 285094,
+              "quote": "Promulgar una política de mayores bonificaciones fiscales para las empresas de nueva\n              creación.",
+              "contextStart": 284947,
+              "contextEnd": 286117,
+              "contextSha256": "7a89ec2d376f3b88cbac7b1e37fe4ea2c7afe696888930ab2c886ef53ecf5b91",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -70344,10 +71024,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer el ajuste de las tarifas del impuesto sobre la renta a la inflación.",
+          "authoredAnalysis": "Fiscal fraud control does not create tariff deflation.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -71656,12 +72340,53 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone acuerdos con suministradoras y tarifas sociales, sin un pago directo de ayuda energética al consumidor.",
+          "authoredAnalysis": "Supplier agreements and social tariffs do not specify direct cash energy assistance to users.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 49,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 232901,
+              "end": 233020,
+              "quote": "Para ello, proponemos que se impulsen convenios con las compañías suministradoras de estos servicios,\ncon medidas como:",
+              "contextStart": 232901,
+              "contextEnd": 233020,
+              "contextSha256": "68e85ba120207f5c523cf7665a612ee2ffb04eefbb127801a593f421a92d901f",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            },
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 49,
+              "printedPage": 49,
+              "htmlSection": null,
+              "start": 233078,
+              "end": 233562,
+              "quote": "el establecimiento de un precio social en los suministros básicos para los hogares con poder\n              adquisitivo reducido y familias o personas en riesgo de exclusión social.\n         -                                              el establecimiento de un mínimo vital de agua de determinados metros cúbicos por persona\n              y mes, sin coste para las personas usuarias que se encuentren en situación de exclusión social\n              o insolvencia económica acreditada.",
+              "contextStart": 233022,
+              "contextEnd": 233562,
+              "contextSha256": "b2adf20af1134384f2900be2793a065e83461b4e1b4def3864169d5eb7eee827",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -72744,10 +73469,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer que médicos de atención primaria puedan trabajar voluntariamente hasta los 72 años.",
+          "authoredAnalysis": "Healthcare staffing and waiting-list measures do not supply this specialist and age-specific option.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -73844,10 +74573,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una exigencia o retirada de autorización legal para abortar siendo menor.",
+          "authoredAnalysis": "General equality and healthcare policies do not determine the precise minor-abortion authorization requirement.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -74840,10 +75573,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer una garantía de cita para prestaciones en un máximo de quince días.",
+          "authoredAnalysis": "Administrative transparency does not set benefit-office appointment deadlines.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -75956,10 +76693,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer quién tomaría decisiones públicas que requieren valorar cada caso.",
+          "authoredAnalysis": "Civil-service merit selection and transparency do not identify authority for algorithmic discretionary decisions.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -77019,10 +77760,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer apoyo u oposición al gasto de defensa del 2% de la economía.",
+          "authoredAnalysis": "Environmental and social priorities do not determine the numerical defence-spending target.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -78115,10 +78860,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer un aval público de hipotecas para jóvenes de hasta 35 años.",
+          "authoredAnalysis": "Affordable social housing is distinct from first-home mortgage guarantees.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -79253,10 +80002,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer el cobro de una prestación por hijo desde el quinto mes de embarazo.",
+          "authoredAnalysis": "Family economic support does not specify this pregnancy-month payment trigger.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -80405,10 +81158,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer el reconocimiento de dependencia por ELA en el momento del diagnóstico.",
+          "authoredAnalysis": "General disability rights and unspecified CERMI endorsement do not provide an explicit ALS dependency trigger.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -81455,12 +82212,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone ayudas para contratar cuidados familiares, sin fijar el 45% de bonificación para personal del hogar en familias numerosas.",
+          "authoredAnalysis": "Care-worker support lacks the exact contribution rate and large-family eligibility.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 61,
+              "printedPage": 61,
+              "htmlSection": null,
+              "start": 275919,
+              "end": 276567,
+              "quote": "Del sistema de recursos sociales: las leyes deben prever la elaboración de planes de apoyo a\n              las familias  , donde se contemplen ayudas económicas y servicios                como centros de atención\n              socioeducativa y ludotecas           para niños y niñas        menores de 3 años, aulas matinales,\n              comedores escolares, actividades extraescolares, centros residenciales de día y programas\n              de estancia diurna para personas mayores y/o dependientes, centros de atención y\n              cuidado para animales, y ayudas para la contratación de personal para el cuidado de\n              familiares.",
+              "contextStart": 274612,
+              "contextEnd": 276567,
+              "contextSha256": "c47c343e98928f6a1c9ab0461bed4f1b641f61be5036ba083ce5956107b5a0ce",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -82489,10 +83269,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer un programa estatal de tutorías para recuperar aprendizaje perdido en la pandemia.",
+          "authoredAnalysis": "General educational support and pandemic health response do not establish that extraordinary tutoring programme.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -83560,10 +84344,14 @@
           "candidacyId": "boe-2023-013",
           "status": "unknown",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
+          "rationale": "No se ha podido establecer intermediarios que hagan trámites en nombre del ciudadano.",
+          "authoredAnalysis": "Information guides and free digital training do not authorize representatives to transact for other people.",
           "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": false
         },
         {
           "candidacyId": "boe-2023-014",
@@ -84713,12 +85501,35 @@
         },
         {
           "candidacyId": "boe-2023-013",
-          "status": "unknown",
+          "status": "ambiguous",
           "value": null,
-          "rationale": "Esta propuesta todavía no tiene una interpretación documentada para esta candidatura.",
-          "authoredAnalysis": "This pair has not yet been directly authored; this is not a finding of absence, neutrality or opposition.",
-          "citations": [],
-          "reviewStatus": "not_yet_authored"
+          "rationale": "Propone transporte público y movilidad sostenible, sin un servicio rural a demanda hacia el municipio de referencia.",
+          "authoredAnalysis": "Public transport and cleaner mobility do not define the rural on-demand route, request and reduced-cost mechanism.",
+          "citations": [
+            {
+              "documentId": "pacma",
+              "sourceUrl": "https://pacma.es/wp-content/uploads/2023/07/PACMA_PE_GENERALES_23J23.pdf",
+              "sourceSha256": "88e3f492dc2c6bcb0b904525d494313d63dad8ece524215156a88ab1d1b5b07d",
+              "extractionSha256": "189e37da3444d4581fa80db931aaebe6251a36cd140a73be39456a95f61c251c",
+              "notebook": "outputs/2023-programme-notebooks/pacma.json",
+              "notebookSha256": "cf3696b6b6424283791e34d6fd58236fdb7269f582d77164388cd09bae58fdbf",
+              "pdfPage": 33,
+              "printedPage": 33,
+              "htmlSection": null,
+              "start": 183571,
+              "end": 183934,
+              "quote": "Para impulsar una movilidad más limpia, respetuosa con la salud y el medio ambiente, apostamos por\npromover el desplazamiento peatonal, el uso del transporte público, de vehículos eléctricos y de\nmedios no motorizados, como la bicicleta           , como medio de locomoción sostenible y saludable, así como\nel uso del ferrocarril para el transporte de mercancías.",
+              "contextStart": 183571,
+              "contextEnd": 183934,
+              "contextSha256": "5b04c6927fdc6f7b85f44a69c900296ba956df65d7edaa8566c202b379d37a5c",
+              "provenanceEvidence": "outputs/2023-pacma-source-provenance.json"
+            }
+          ],
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "auditedDocumentIds": [
+            "pacma"
+          ],
+          "sourceContextReopened": true
         },
         {
           "candidacyId": "boe-2023-014",
@@ -85977,8 +86788,11 @@
               "contextSha256": "7bdc43c217c5a778860b0b9b91fbc912da0f1230a7a4b1b3d7f3d52300219e70"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pacma"
+          ]
         },
         {
           "candidacyId": "boe-2023-014",
@@ -86975,8 +87789,11 @@
               "contextSha256": "2f9a06042283b357201ac7eda49044a9cadca385db9943519ad552352c3e35f2"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pacma"
+          ]
         },
         {
           "candidacyId": "boe-2023-014",
@@ -87976,8 +88793,11 @@
               "contextSha256": "d47bb1d30ee177f75488c83476fa96a093b9e7cb95ba7fcdb66034051072cf81"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pacma"
+          ]
         },
         {
           "candidacyId": "boe-2023-014",
@@ -89185,8 +90005,11 @@
               "contextSha256": "f7091db2da9f0ede8a172b88e3417a3cf74e7e04fe6bf55f405e2de842331725"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pacma"
+          ]
         },
         {
           "candidacyId": "boe-2023-014",
@@ -90412,8 +91235,11 @@
               "contextSha256": "f7091db2da9f0ede8a172b88e3417a3cf74e7e04fe6bf55f405e2de842331725"
             }
           ],
-          "reviewStatus": "direct_full_context_authored",
-          "sourceContextReopened": true
+          "reviewStatus": "direct_complete_full_programme_pacma_80_question_audit",
+          "sourceContextReopened": true,
+          "auditedDocumentIds": [
+            "pacma"
+          ]
         },
         {
           "candidacyId": "boe-2023-014",

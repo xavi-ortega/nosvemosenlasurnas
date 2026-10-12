@@ -16,6 +16,7 @@ def render():
     plan = json.loads((ROOT / "outputs/electoral-app-development-plan.json").read_text())
     sections = {item["id"]: item for item in plan["sections"]}
     tasks = plan["executionPlan"]["commitPlan"]["commits"]
+    second = json.loads((ROOT / plan["nextIteration"]["plan"]).read_text()) if "nextIteration" in plan else None
     def section_text(keys):
         return "\n\n".join("## " + sections[key]["title"] + "\n\n" + sections[key]["lead"] + "\n\n" + "\n".join("- " + line for line in sections[key]["items"]) for key in keys)
     development = "# " + plan["title"] + "\n\n" + plan["planVersion"] + "\n\n" + plan["summary"] + "\n\n" + section_text(sections) + "\n\n## Progress\n\n" + "\n".join("- " + task["id"] + " · " + task["subject"] + " · " + task["status"] for task in tasks) + "\n"
@@ -28,6 +29,13 @@ def render():
         "docs/plans/project-language-policy.md": "# Project language policy\n\n" + section_text(["language"]) + "\n",
         "outputs/electoral-app-development-plan.html": '<!doctype html><html lang="en"><meta charset="utf-8"><title>Active development plan</title><style>body{max-width:80ch;margin:3rem auto;padding:1rem;font:16px/1.6 system-ui}pre{white-space:pre-wrap}</style><body><pre>' + html.escape(development) + '</pre></body></html>\n',
     }
+    if second:
+        second_sections = "\n\n".join("## " + item["title"] + "\n\n" + item["lead"] + "\n\n" + "\n".join("- " + line for line in item["items"]) for item in second["sections"])
+        starters = "\n".join(str(item["order"]) + ". " + item["text"] + " (" + item["topicId"] + "; " + item["questionId"] + "). " + item["rationale"] for item in second["questionnaire"]["initialQuestionProposal"])
+        second_tasks = "\n\n".join("### " + item["id"] + " " + item["subject"] + "\n\nStatus: " + item["status"] + ". Depends on: " + (", ".join(item["dependsOn"]) or "none") + ". Estimated share of implementation effort: " + str(item["estimatedEffortWeight"]) + "%.\n\n" + "\n".join("- " + line for line in item["deliverables"]) + "\n\nAcceptance:\n\n" + "\n".join("- " + line for line in item["acceptanceCriteria"]) + "\n\nVerification:\n\n" + "\n".join("- " + line for line in item["verification"]) for item in second["tasks"])
+        research = json.loads((ROOT / second["research"]).read_text())
+        citations = "[Official September 2026 CIS catalogue](" + research["source"]["catalogueUrl"] + "), [results PDF](" + research["source"]["resultUrl"] + ") (questions 18R/19R, PDF pages 11/12, printed pages 7/8), [technical sheet](" + research["source"]["methodUrl"] + ") (fieldwork 1-4 September 2026, 4,042 interviews)."
+        generated[second["humanPlan"]] = "# " + second["title"] + "\n\n" + second["planVersion"] + " · Planning complete; application implementation has not started.\n\n" + second["summary"] + "\n\n" + second_sections + "\n\n## Concrete first-20 editorial proposal\n\nPending evidence, migration-gap and taxonomy review; these are existing authored questions, not a newly released order.\n\n" + starters + "\n\n## Implementation sequence\n\n" + second_tasks + "\n\n## Decisions to finalize during implementation\n\n" + "\n".join("- " + item for item in second["planningDecisionsStillToResolve"]) + "\n\n## Verified research sources\n\n" + citations + "\n\nSee " + second["research"] + " for hashes, exact measures, visual verification and limitations. Survey salience orders historical questions; it does not update 2023 party positions.\n"
     for name, content in generated.items():
         path = ROOT / name
         if args.check:
@@ -41,7 +49,13 @@ def render():
         text = canvas.read_text()
         start = text.index("const plan = ") + len("const plan = ")
         end = text.index("\n};", start) + 2
-        canvas.write_text(text[:start] + json.dumps(plan, ensure_ascii=False, indent=2) + text[end:])
+        text = text[:start] + json.dumps(plan, ensure_ascii=False, indent=2) + text[end:]
+        if second and "const iteration = " in text:
+            start = text.index("const iteration = ") + len("const iteration = ")
+            end = text.index("\n};", start) + 2
+            view = {**second, "trend": json.loads((ROOT / second["research"]).read_text())["personalConcerns"]}
+            text = text[:start] + json.dumps(view, ensure_ascii=False, indent=2) + text[end:]
+        canvas.write_text(text)
     print("Active plan parity passed." if args.check else "Active plans rendered; existing managed view synchronized.")
 
 if __name__ == "__main__":

@@ -2,6 +2,10 @@
 
 Read AGENTS.md, outputs/quiz-2023-scope-revision.json and the canonical quiz-2023-v2.0.0 plan, including its audience, source, matching, questionnaire and design contracts. The owner explicitly confirmed the 23 July 2023 Congress election. Q001-Q030 supersede the previous L/C implementation sequence. Preserve its useful code and evidence, but no synthetic completion status completes real-source acceptance. Keep the prior implementation chat paused. This document does not start a scheduler or another chat.
 
+## Second iteration planning
+
+The owner feedback of 12 October 2026 is recorded in outputs/quiz-2023-second-iteration-plan.json, with verified research in outputs/quiz-2023-second-iteration-research.json and a generated human plan in docs/plans/second-iteration-plan.md. Read these before second-iteration work. R001-R008 are planned; current application behavior and Q001-Q030 acceptance remain first-iteration evidence. The next version changes the shared-denominator metric so absent party positions contribute zero, automatically includes all candidacies, uses 20 + 10 questions, leads with horizontal result bars and adds thematic programme comparison. These owner changes supersede the earlier matching/selection/journey assumptions for the next implementation, while preserving sources, territorial applicability, local privacy and publication boundaries. Present the edition as Cuestionario 2023; a later 2026 edition has separate evidence and menu pages.
+
 ## Product outcome
 
 A useful quiz for an ordinary Spanish person who does not follow politics or economics. Use real parties and programmes, directly authored everyday questions and honest cited agreement/difference explanations. Design a modern readable one-question experience with smooth transitions, clear choices and reduced-motion/keyboard/mobile support. Programme-comparison screens, feedback expansion and optional languages are later work. Keep live metrics disabled.

@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T09:57:29.640874+00:00",
+  "purpose": "Editorial ordering research for the second iteration; no political position or questionnaire was generated.",
+  "source": {
+    "publisher": "Centro de Investigaciones Sociológicas",
+    "studyId": "3577",
+    "title": "Barómetro de septiembre 2026",
+    "catalogueUrl": "https://datos.gob.es/es/catalogo/ea0040772-barometro-de-septiembre-2026",
+    "studyUrl": "https://www.cis.es/es/estudios/barometro-de-septiembre-2026",
+    "catalogueCreatedAt": "2026-09-23T06:00:00Z",
+    "fieldworkFrom": "2026-09-01",
+    "fieldworkTo": "2026-09-04",
+    "interviews": 4042,
+    "mode": "CATI",
+    "population": "Spanish population aged 18 and over; national scope",
+    "resultUrl": "https://www.cis.es/documents/20117/14250083/es3577mar.pdf",
+    "resultSha256": "a15df5203ac6859d5bcea35298c6496c5d4cda09736d28b5d4157568feff490a",
+    "resultBytes": 420060,
+    "methodUrl": "https://www.cis.es/documents/20117/14250083/FT3577.pdf",
+    "methodSha256": "5c0015cc24443f663adec7783bfecc01b0cb558077732a534dc7e009ee254b2b"
+  },
+  "nationalConcerns": {
+    "question": "18R",
+    "pdfPage": 11,
+    "printedPage": 7,
+    "measure": "Percentage mentioning the issue among up to three spontaneous concerns; TOTAL column, not first mention alone",
+    "items": [
+      {
+        "id": "housing",
+        "label": "La vivienda",
+        "percent": 37.5
+      },
+      {
+        "id": "economy",
+        "label": "La crisis económica, los problemas de índole económica",
+        "percent": 21.6
+      },
+      {
+        "id": "migration",
+        "label": "La inmigración",
+        "percent": 19.7
+      },
+      {
+        "id": "government",
+        "label": "El Gobierno y partidos o políticos/as concretos/as",
+        "percent": 18.8
+      },
+      {
+        "id": "politics",
+        "label": "Los problemas políticos en general",
+        "percent": 13.9
+      },
+      {
+        "id": "employment-quality",
+        "label": "Los problemas relacionados con la calidad del empleo",
+        "percent": 13.7
+      },
+      {
+        "id": "unemployment",
+        "label": "El paro",
+        "percent": 11.5
+      },
+      {
+        "id": "health",
+        "label": "La sanidad",
+        "percent": 11.1
+      },
+      {
+        "id": "education",
+        "label": "La educación",
+        "percent": 6.2
+      },
+      {
+        "id": "climate",
+        "label": "El cambio climático",
+        "percent": 5.5
+      }
+    ]
+  },
+  "personalConcerns": {
+    "question": "19R",
+    "pdfPage": 12,
+    "printedPage": 8,
+    "measure": "Percentage mentioning the issue among up to three spontaneous personal concerns; TOTAL column",
+    "items": [
+      {
+        "id": "economy",
+        "label": "La crisis económica, los problemas de índole económica",
+        "percent": 30.1
+      },
+      {
+        "id": "housing",
+        "label": "La vivienda",
+        "percent": 27.9
+      },
+      {
+        "id": "health",
+        "label": "La sanidad",
+        "percent": 20.1
+      },
+      {
+        "id": "employment-quality",
+        "label": "Los problemas relacionados con la calidad del empleo",
+        "percent": 16.4
+      },
+      {
+        "id": "migration",
+        "label": "La inmigración",
+        "percent": 12.6
+      },
+      {
+        "id": "education",
+        "label": "La educación",
+        "percent": 7.7
+      },
+      {
+        "id": "climate",
+        "label": "El cambio climático",
+        "percent": 7.4
+      },
+      {
+        "id": "taxes",
+        "label": "La subida de los impuestos",
+        "percent": 5.7
+      },
+      {
+        "id": "pensions",
+        "label": "Las pensiones",
+        "percent": 3.4
+      }
+    ]
+  },
+  "earlierContext": {
+    "sourceUrl": "https://www.cis.es/es/w/vivienda-preocupacion-barometro-abril-2026",
+    "publishedAt": "2026-04-23",
+    "housingNationalPercent": 41.3,
+    "use": "Evidence that housing salience persists across verified snapshots; no claim of a complete monthly trend series."
+  },
+  "limitations": [
+    "This is the latest official snapshot successfully read in this planning pass, not a certification that no newer study exists.",
+    "Issues overlap; multi-response percentages do not sum to 100. Do not sum employment and unemployment percentages as if they were disjoint.",
+    "CIS concern categories do not uniquely map to programme questions. The final ordering is explicitly editorial.",
+    "Migration is salient but has no directly authored question in the current 80-question bank. Reopen applicable full source contexts and directly author a supported decision before representing it; never substitute an unrelated rights question.",
+    "Current concern data only orders the historical 2023 edition; it never updates 2023 political positions."
+  ],
+  "verification": {
+    "downloadAndExtraction": "Official PDFs downloaded via urllib using bundled Python/pypdf after web fetch returned 403; byte signatures and SHA-256 verified.",
+    "visualInspection": "Both full relevant table pages rendered with pdftoppm and inspected at 1400px; row labels, TOTAL columns and footers agree with extraction.",
+    "localSources": [
+      ".tools/second-plan-research/september-2026-results.pdf",
+      ".tools/second-plan-research/september-2026-method.pdf"
+    ],
+    "localTableImages": [
+      ".tools/second-plan-research/problems-11.png",
+      ".tools/second-plan-research/problems-12.png"
+    ]
+  }
+}

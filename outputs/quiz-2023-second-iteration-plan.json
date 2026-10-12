@@ -1,0 +1,560 @@
+{
+  "schemaVersion": 1,
+  "planVersion": "quiz-2023-iteration-2-v1.0.0",
+  "title": "Second iteration: clear documented affinity and thematic 2023 programmes",
+  "status": "planned",
+  "recordedAt": "2026-10-12T09:57:29.640874+00:00",
+  "authority": "Direct owner feedback in this chat on 2026-10-12, including missing positions as zero contribution, automatic all-candidacy inclusion, thematic programme comparison and edition-labelled navigation.",
+  "baselineCommit": "69bc53b163be659c9ea43183f8578cf2a00692b4",
+  "baselinePlanVersion": "quiz-2023-v2.0.0",
+  "baselineBankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
+  "summary": "Plan the next local iteration around an ordered horizontal affinity chart, proposal-led evidence, official links, twenty balanced starters and ten-question extensions. Replace evidence-only normalization with the owner-requested zero-contribution shared denominator, include every candidacy, and add a separate public programme-by-topic journey. The product is the historical 2023 edition; later election editions are separate pages.",
+  "applicationImplementationStarted": false,
+  "publicLaunchApproved": false,
+  "liveCollectionEnabled": false,
+  "research": "outputs/quiz-2023-second-iteration-research.json",
+  "humanPlan": "docs/plans/second-iteration-plan.md",
+  "sections": [
+    {
+      "id": "intent",
+      "title": "Second iteration scope",
+      "lead": "A result that can be understood at a glance, with evidence available through a separate proposal journey.",
+      "items": [
+        "Owner requests recorded on 12 October 2026 authorize this planning increment. This file is an implementation-ready proposal; no second-iteration application change is complete.",
+        "The accepted owner changes replace 10 + 5 with 20 + 10, include all candidacies without a chooser, treat missing party positions as zero documented contribution within the common denominator, and add a thematic programme page.",
+        "Keep the first iteration, its signed/unsigned history, 2023 source notebooks, public pointer and local acceptance records intact. Q001-Q030 retain their actual first-iteration statuses.",
+        "Present the product as Cuestionario 2023. Publication state and internal validation state are separate metadata; do not present the quiz as a public draft or confuse local completion with a deployed release.",
+        "The future Cuestionario 2026 is a separate menu entry once its own evidence-backed edition exists. Do not publish a dead link, reuse 2023 positions, or treat current surveys as 2026 programme evidence.",
+        "Metrics and optional translations remain deferred and disabled. No accounts, new dependencies, purchases, push, deployment or scheduler is part of this plan."
+      ]
+    },
+    {
+      "id": "scoring",
+      "title": "Documented affinity on a shared denominator",
+      "lead": "An absent position contributes zero matching evidence; it is never encoded as a neutral party stance.",
+      "items": [
+        "Use similarity 1 - abs(answer - position) / 4 only for a directly authored numeric party position. Unknown, conflicting, missing-programme and unverified cells contribute 0 to the numerator and retain their weight in the denominator.",
+        "Use ten fixed positive topic budgets. Within each topic, distribute its budget over the numeric answers actually supplied, with equal policy-family budgets and equal weights inside a family. The same answer universe, topic weights and denominator apply to every candidacy/profile before sorting.",
+        "Topic contribution = sum(weight * documented similarity) / sum(weight of the numeric answers in that topic). Overall affinity = 100 * sum(topic budget * topic contribution) / sum(all topic budgets). A missing programme can therefore have 0% documented affinity without any inferred political disagreement.",
+        "The complete aggregate requires at least one numeric answer in every active topic. If all questions in a topic are skipped/unsure, leave the overall percentage pending and offer a clear path to review that topic; show available proposal/topic detail without fabricating the user stance. Do not silently treat user uncertainty as a negative answer or a zero party contribution.",
+        "Every topic starts enabled with weight 1. Optional importance, if retained after the simple entry flow, uses Normal / Me importa especialmente (1 / 2); no topic-zero setting may remove a theme. Importance changes the shared denominator for all parties, including zero contributions for missing important positions.",
+        "Coverage = weighted share with a documented party position. Evidence coverage is distinct from affinity and visible beside each bar. Affinity cannot exceed coverage under this contract; neither is confidence, a voting probability, a unique-voter statistic or a known-only score.",
+        "Version this as documented-affinity-v2. The old common-intersection threshold and comparisonCohort leaderboard are superseded for this edition. Keep the old engine/reference and historical acceptance as historical evidence; do not weaken old tests or silently relabel its scores.",
+        "Partial known-only overlap must leave the primary result/checkpoint entirely. Retain it only if an explicitly named optional method view needs it; it must never substitute for the headline score."
+      ]
+    },
+    {
+      "id": "candidacies",
+      "title": "All candidacies, including territorial ones",
+      "lead": "Inclusion is automatic; ballot eligibility and programme applicability are information.",
+      "items": [
+        "Remove the quiz candidacy/constituency exclusion mechanism. Every real 2023 candidacy is included in the fixed bank, scoring, maximum calculation and result list. There is no party-selection screen and no hidden evidence-qualified subset.",
+        "Preserve all 59 reconciled denominations, 52 constituencies and 550 ballot records. Missing programmes remain visible with 0 documented contribution and a Sin programa localizado label, not an opposition label.",
+        "Audit programme variants before implementation. A mechanical scan of applicable constituency profiles currently finds four denominations with two different profiles each (Sumar, UPL, Coalición Existe, España Vaciada): 63 distinct applicable profiles across 59 denominations. This is a planning observation, not certification of final semantic grouping.",
+        "Recommended national presentation: score every distinct applicable programme profile and label its territorial scope; merge truly identical profiles for display. Keep distinct territorial variants as clearly named rows tied to their common denomination, not extra parties. Never choose the most favourable variant or impose one territory on all.",
+        "Show a plain count of candidacies and explain variant rows once. Original coalition identities remain exact. Do not combine members into invented choices or propagate a scoped quotation outside its applicability.",
+        "A future optional province context can highlight ballot availability without removing rows or changing who is included. It is not required to start the quiz."
+      ]
+    },
+    {
+      "id": "overview",
+      "title": "Compact visual result overview",
+      "lead": "Names, horizontal bars and percentages lead; full analysis opens on request.",
+      "items": [
+        "Use one horizontal axis from 0 to 100%, fixed for all rows, with quiet ticks at 0 / 25 / 50 / 75 / 100. Order all programme rows by unrounded documented affinity descending; exact ties share a visual tie label and stable alphabetical order. Explain rounding when distinct underlying scores display the same percentage; do not fabricate an exact tie.",
+        "Each row contains the official name (and territory when needed), a neutral single-colour bar, the percentage as text, a short evidence-coverage label, and a clearly named link to proposal detail. No quotations or three-agreement/three-difference blocks render in the overview.",
+        "All rows remain accessible in the ordered result list. Collapsing a long list for readability must say how many rows are hidden and must never change scoring or inclusion. Default plan: a single scrollable list, not an arbitrary top-three winner panel.",
+        "A single sentence explains the measure: Coincidencia con las propuestas que hemos podido documentar. Missing information contributes no coincidence; display Sin postura documentada separately from disagreement.",
+        "A 0% bar needs a visible zero marker/text; missing programmes do not resemble a documented 100% disagreement. Coverage can appear as a compact n / N data label rather than a competing progress chart.",
+        "Keep edition and answer/topic count nearby. Methodology, export, review and reset become quiet secondary actions. The chart is a navigable list with visible text values, not a progressbar announcing completion.",
+        "Preserve negative rent-control relation in the detailed proposal even when aggregate affinity ranks that programme first. Never infer agreement from its total score."
+      ]
+    },
+    {
+      "id": "proposal-flow",
+      "title": "Evidence through proposals",
+      "lead": "Choose a programme, then a topic or proposal, then inspect its exact source.",
+      "items": [
+        "Primary flow: result chart → programme detail → topic/proposal list → proposal detail → source/context. A second entry from results opens Explorar por tema, using the same detail components.",
+        "Programme detail begins with a compact affinity/coverage summary and topic list. Within a topic, show concise decisions tagged Coincides / Difieres / Sin postura documentada; the user chooses which to open.",
+        "Proposal detail shows Tu respuesta, Qué proponía el programa de 2023, and the precise agreement/difference relation, followed by Ver cita y fuente. Keep no-answer cases separate.",
+        "Original quotation, page/section, conditions, authored interpretation and full context are one optional disclosure. Preserve exact text and link to the official publication beside the quotation.",
+        "Back navigation restores the same chart row/topic, scroll and focus in memory. Edition-only routes are public; never put user answers, party affinity, progress or personalized result IDs in URLs.",
+        "The same programme/topic detail is usable from the public comparison page without answers; personalized relation labels appear there only after explicit quiz finish and are never persisted."
+      ]
+    },
+    {
+      "id": "links",
+      "title": "Official source links",
+      "lead": "Every citation has a meaningful source link and truthful provenance.",
+      "items": [
+        "Audit all 45 citation document records plus the preserved source registry; carry a verified official programme URL or official campaign landing page independently of the exact archived/mirrored evidence URL.",
+        "Use the original official programme URL when available; an official page publishing the programme is sufficient. Page-level PDF anchoring is optional and must not be invented.",
+        "For a preserved original, provide Fuente oficial and Copia conservada as distinct links where both are verified. Preserve the SHA-256 and exact evidence locator; never call a mirror official or substitute a newer programme for a dead 2023 URL.",
+        "If no official source can be verified, state Fuente oficial no localizada and keep the verified provenance link. This exception is visible and remains an acquisition task; do not fabricate a link to satisfy the UI.",
+        "Use descriptive Spanish link names including publisher/document/year, visible external-link behaviour, HTTPS validation and no referrer. No automatic third-party fetch, embedded viewer or opener access.",
+        "Citation source links are present in proposal details, public comparison details and deliberate local exports. No citation body is orphaned from its document record."
+      ]
+    },
+    {
+      "id": "journey",
+      "title": "20 questions, then ten more",
+      "lead": "A simple checkpoint describes the current result without disclosing party identity.",
+      "items": [
+        "Begin with 20 distinct questions spanning every released core category: two per each of the current ten topics, with different policy families. The initial 20 replace the old ten starter IDs.",
+        "Checkpoints occur at 20, 30, 40, 50, 60, 70 and 80 when a full ten-question block adds useful unseen evidence. Eighty is an upper bound from this bank, not a completion target; stop earlier when useful balanced questions are exhausted. Never pad or offer an unlabeled smaller block.",
+        "Exactly two main checkpoint actions: Ver mi resultado and Responder 10 más. Review lives in one quiet link; reset/export are outside the checkpoint action cluster.",
+        "When all ten topics have a numeric answer and some documented weighted evidence exists, show only the highest documented affinity, without names/logos/source clues. Example template: Tu mayor coincidencia hasta ahora es del :percent. Puedes ver el resultado o responder 10 preguntas más para explorar otras propuestas. Follow with Puede subir o bajar.",
+        "The maximum is max of all profile scores computed with documented-affinity-v2, not the first alphabetical row or the old partialIndex. A rounded tie remains anonymous. This is the best observed value now, not the maximum theoretically attainable affinity.",
+        "If every score is zero because evidence is missing, say Todavía no hemos podido confirmar coincidencias con estas respuestas; distinguish this from documented disagreement. If a topic has no numeric answer, report topic coverage and provide review instead of an invented maximum.",
+        "No identity-specific score, citation, ranked row or personalized name enters the answering DOM before deliberate finish. Anonymous maximum disclosure is the owner-authorized exception. Exhaustion never automatically reveals results.",
+        "Keep native answer order, optional help, back/edit, skip and unsure. Progress reads Pregunta 7 de 20, then Pregunta 21 de 30; it describes the current agreed block, not an obligation to reach 80."
+      ]
+    },
+    {
+      "id": "ordering",
+      "title": "Editorial salience with guaranteed breadth",
+      "lead": "Concern research orders questions within diversity constraints; it never adjusts matching weights.",
+      "items": [
+        "Use outputs/quiz-2023-second-iteration-research.json, based on the September 2026 official CIS study 3577 (4,042 interviews, fieldwork 1-4 September). Housing and economic issues lead national concerns; health is particularly prominent personally. Keep national and personal columns separate.",
+        "The concrete initial-20 proposal below cycles through all ten topics once, then a second time. It is an editorial selection among already authored IDs, not a machine-generated question bank or a direct survey-ranking transformation.",
+        "Migration (19.7% among national concerns) is a genuine content gap. Add or replace a suitable directly authored question only after reopening complete applicable source context, preserving exceptions and verifying mappings. Do not claim the starter bank covers it today.",
+        "Review topic taxonomy before locking starter IDs: several current energy questions concern animals, and the pension bank includes a child benefit. Correct labels/weights only through a versioned semantic review; do not hide these gaps behind a quota count.",
+        "For each later ten, prioritize underrepresented topics and unseen families first, then useful documented evidence, then authored editorial salience. Aim for at least five topics, cap two questions per topic, and use a stable ID tie break; if a full useful block cannot satisfy these rules, stop and offer finish.",
+        "A party-leading adaptation must not select questions to increase a current winner score. Under the new zero-contribution rule, missingness must not make a candidate disappear from next-question decisions.",
+        "Store ordering version, research date, authored rationale and starter IDs in the immutable bank; pin them for the session. Refresh research locally before implementation/release if newer official data is available. No runtime trends request or private-answer transmission.",
+        "Salience is opinionated and disclosed in Cómo elegimos las preguntas. It has no claim to objective political importance, and it does not remove lower-salience categories."
+      ]
+    },
+    {
+      "id": "comparison",
+      "title": "Programmes by topic in the top menu",
+      "lead": "A second public journey reuses the complete preserved 2023 analysis.",
+      "items": [
+        "Menu proposal: Inicio / Cuestionario 2023 / Programas 2023 / Cómo funciona. Future Cuestionario 2026 and Programas 2026 appear only when that separate edition exists.",
+        "Programas 2023 starts with readable topic choices. Selecting a topic opens a list of concrete proposals, each with programme positions, contextual qualifications and missing information. Start with the released authored proposal matrix; preserve the broader notebooks as a provenance/research layer.",
+        "A proposal opens all candidacy/profile positions grouped as A favor / Posición intermedia / En contra / Sin postura documentada, only according to that exact question rubric. Qualified +1 support and -1 opposition retain their direction and a visible Con condiciones label with the exact restriction. Every candidacy is accounted for. No silence-to-neutral inference or semantic generation from notebook keywords.",
+        "Provide programme-detail and official-source links from each position. Desktop can offer a focused side-by-side view of a few programmes on explicit request; mobile uses readable programme rows. A reading filter may change visible content, never questionnaire inclusion.",
+        "Do not render a 59-column spreadsheet or dump entire notebooks into the public page. Topic → proposal → programme/source is the default path. Missing documents and uncovered policies stay explicit.",
+        "Reuse edition-aware generic public routes, current fixed bank and accessible components. Keep quiz state in memory while moving between quiz/results/comparison in the app shell, using generic paths without personalized URL data. Refresh starts a fresh session; no default browser persistence.",
+        "The comparison page is usable without taking the quiz and never reveals unfinished personalized results. Shared source data is public; a personalized overlay is opt-in navigation after finish, not an API request."
+      ]
+    },
+    {
+      "id": "design",
+      "title": "Visual and accessible design",
+      "lead": "A quiet civic interface whose visual emphasis is the affinity chart.",
+      "items": [
+        "Retain the established civic palette: ink #182235, background #F4F7FB, surface #FFFFFF, action #3449A4, muted #526078, selected #176B71. Use one neutral bar fill and structural dividers; no party colours, gradients or decorative card wall.",
+        "Reuse locally served font assets. Keep names and percentages aligned, plain Spanish captions, body text at least 18px on mobile where appropriate, and a bounded reading width for proposal details.",
+        "Desktop chart row: name/territory → bar → numeric percentage/coverage → detail link. Mobile: name and percentage on the first line, full-width bar below, coverage and detail action on the third. No horizontal document-level overflow.",
+        "One visual list with an accessible textual equivalent; chart marks are decorative when their name/value are already text. Do not misuse progressbar/meter as political certainty. Maintain 0-100 axes and legibility for 0, 100, equal rounded values and long names.",
+        "Visible keyboard focus, native controls, 44px targets, text contrast 4.5:1, controls/focus contrast 3:1, 320px reflow, 200/400% zoom and reduced motion. Navigation restores focus/scroll and does not announce every chart row as a live update.",
+        "Inspect compact overview, unknown-heavy overview, party/topic/proposal details, checkpoint, public comparison, loading/error and mobile states. Automation supports a practical walkthrough; no recruited approval panel is required."
+      ]
+    },
+    {
+      "id": "verification",
+      "title": "Acceptance and migration",
+      "lead": "Prove the new denominator and journey independently using the real 2023 bank.",
+      "items": [
+        "Independent arithmetic oracle: five equal-weight numeric answers, two exact documented matches and three unknowns = 40% affinity / 40% coverage. Explicit party value 0 versus user +2 gives 50% for that proposition; an unknown party value contributes 0%, never 50%.",
+        "Other cases: complete agreement 100%; complete documented opposition 0%; missing programme 0 with missing-source label; ambiguity/conflict 0; topic importance 2 doubles its budget for every party; user skip/unsure never becomes a numeric opinion.",
+        "Verify ten-topic total and family weighting without calling the implementation under test. Adding a new topic answer must not implicitly increase the topic budget. Editing may raise or lower scores; unknown never increases the numerator; 0 <= affinity <= coverage <= 100.",
+        "Browser regressions: all 59 denominations and every audited profile included automatically, no candidacy chooser; first 20 cover all ten topics; +10 exactly once per activation; identities hidden until finish; max computed from the new metric; sorted bars agree with export and proposal relationship.",
+        "Recheck the rent case, official-link association, citation context, navigation/back, mobile/keyboard/reduced motion, no personalized traffic/URLs/storage and edition/session pinning. New comparison must not trigger programme fetches depending on answers.",
+        "Create a new immutable engine/bank version and candidate acceptance records. Keep the old byte-identical bank, engine, recovery evidence and release pointer until the new version passes applicable checks. Updating the UI label alone is not deployment eligibility.",
+        "Regenerate plans, run docs:build/check:plans and affected checks. Before any local commit run scripts/check-staged.py on the exact staged tree and keep hooks. Use unsigned commits per owner; work on main, no automatic push.",
+        "Second iteration is locally complete only after real-bank scoring, journey, programme-comparison and visual/privacy acceptance. PUBLIC-LAUNCH remains deferred until concrete hosting/domain/cost/source-rights/privacy artifacts and explicit owner authorization."
+      ]
+    }
+  ],
+  "questionnaire": {
+    "initialCount": 20,
+    "extensionCount": 10,
+    "maximumCount": 80,
+    "minimumExtensionTopics": 5,
+    "maximumExtensionQuestionsPerTopic": 2,
+    "starterProposalStatus": "editorial_proposal_pending_evidence_and_taxonomy_review",
+    "initialQuestionProposal": [
+      {
+        "order": 1,
+        "questionId": "rent-price-cap",
+        "topicId": "housing",
+        "familyId": "rental-price-regulation",
+        "text": "El Estado debería poner un precio máximo al alquiler de viviendas en zonas con precios muy altos.",
+        "rationale": "Housing salience; concrete rental decision."
+      },
+      {
+        "order": 2,
+        "questionId": "adjust-income-tax-for-inflation",
+        "topicId": "taxes",
+        "familyId": "income-tax-inflation-adjustment",
+        "text": "El impuesto sobre la renta debería ajustarse para descontar el efecto de la subida de los precios.",
+        "rationale": "Economic concern; one concrete earnings-tax decision, not a proxy for all economic worries."
+      },
+      {
+        "order": 3,
+        "questionId": "shorter-workweek",
+        "topicId": "employment",
+        "familyId": "maximum-weekly-hours",
+        "text": "La jornada laboral máxima debería bajar a 35 horas semanales o menos, manteniendo el mismo sueldo.",
+        "rationale": "Employment-quality concern; a distinct working-time decision."
+      },
+      {
+        "order": 4,
+        "questionId": "public-psychotherapy-care",
+        "topicId": "health",
+        "familyId": "public-psychotherapy-service-coverage",
+        "text": "La sanidad pública debería incluir la psicoterapia entre sus servicios para quienes la necesitan.",
+        "rationale": "Personal health concern; concrete public-care provision."
+      },
+      {
+        "order": 5,
+        "questionId": "direct-vulnerable-household-energy-aid",
+        "topicId": "energy",
+        "familyId": "direct-household-energy-payment",
+        "text": "Las ayudas de luz y calefacción para hogares vulnerables deberían pagarse directamente a la persona consumidora.",
+        "rationale": "Everyday energy support; editorial relevance, not a direct CIS category equivalence."
+      },
+      {
+        "order": 6,
+        "questionId": "free-early-education",
+        "topicId": "education",
+        "familyId": "early-education-access",
+        "text": "Todas las familias deberían poder acceder gratis a una plaza de educación infantil de 0 a 3 años.",
+        "rationale": "Education and family access; a different topic from health/work."
+      },
+      {
+        "order": 7,
+        "questionId": "public-legislative-influence-record",
+        "topicId": "institutions",
+        "familyId": "public-legislative-lobby-footprint",
+        "text": "Cada propuesta de ley debería tener una ficha pública que muestre quién negoció o intermedió en su elaboración.",
+        "rationale": "Institutional transparency; a concrete proposal rather than attitudes toward named politicians."
+      },
+      {
+        "order": 8,
+        "questionId": "low-cost-rural-on-demand-transport",
+        "topicId": "transport",
+        "familyId": "rural-on-demand-local-transport",
+        "text": "Los pueblos pequeños deberían contar con transporte a demanda y a precio reducido hacia su municipio de referencia.",
+        "rationale": "Transport and territorial inclusion; topic quota despite lower survey salience."
+      },
+      {
+        "order": 9,
+        "questionId": "birth-leave-at-least-six-months",
+        "topicId": "rights",
+        "familyId": "birth-parent-leave-duration",
+        "text": "Los permisos de maternidad y paternidad deberían ampliarse hasta durar al menos seis meses.",
+        "rationale": "Rights and care; concrete parental leave."
+      },
+      {
+        "order": 10,
+        "questionId": "pensions-cost-of-living",
+        "topicId": "pensions",
+        "familyId": "pension-indexation",
+        "text": "Las pensiones públicas deberían actualizarse según lo que sube el coste de la vida.",
+        "rationale": "Pension purchasing power; completes the first ten-topic cycle."
+      },
+      {
+        "order": 11,
+        "questionId": "retain-public-housing-ownership",
+        "topicId": "housing",
+        "familyId": "public-housing-ownership",
+        "text": "Las viviendas públicas deberían conservarse sin poder venderse al sector privado.",
+        "rationale": "Second housing decision; different family from rent caps."
+      },
+      {
+        "order": 12,
+        "questionId": "permanent-large-fortunes-tax",
+        "topicId": "taxes",
+        "familyId": "large-fortunes-tax",
+        "text": "Se debería mantener un impuesto específico sobre las grandes fortunas de las personas.",
+        "rationale": "Second tax decision; different family from earnings-tax adjustment."
+      },
+      {
+        "order": 13,
+        "questionId": "minimum-wage-above-inflation",
+        "topicId": "employment",
+        "familyId": "minimum-wage-inflation-rule",
+        "text": "El salario mínimo debería subir cada año más que el aumento de los precios.",
+        "rationale": "Second employment decision; pay rather than working time."
+      },
+      {
+        "order": 14,
+        "questionId": "phase-out-prescription-copay",
+        "topicId": "health",
+        "familyId": "prescription-user-contribution",
+        "text": "Debería eliminarse el copago de los medicamentos que cubre la sanidad pública.",
+        "rationale": "Second health decision; medicine payments rather than psychotherapy."
+      },
+      {
+        "order": 15,
+        "questionId": "extend-existing-nuclear",
+        "topicId": "energy",
+        "familyId": "existing-nuclear-lifetime",
+        "text": "Se debería alargar la vida útil de las centrales nucleares que ya existen en España.",
+        "rationale": "Second energy decision; production rather than household aid."
+      },
+      {
+        "order": 16,
+        "questionId": "free-compulsory-school-meals",
+        "topicId": "education",
+        "familyId": "school-meal-funding",
+        "text": "El comedor escolar debería ser gratuito para todo el alumnado de las etapas obligatorias.",
+        "rationale": "Second education decision; school services rather than early education."
+      },
+      {
+        "order": 17,
+        "questionId": "keep-in-person-public-services",
+        "topicId": "institutions",
+        "familyId": "public-service-in-person-access",
+        "text": "Los trámites con la Administración deberían poder realizarse en persona, sin obligar a usar internet.",
+        "rationale": "Second institutional decision; access rather than legislative transparency."
+      },
+      {
+        "order": 18,
+        "questionId": "rail-alternative-flight-limits",
+        "topicId": "transport",
+        "familyId": "domestic-flight-limits",
+        "text": "Se deberían limitar los vuelos dentro de España cuando exista una alternativa adecuada en tren.",
+        "rationale": "Second transport decision; flights rather than rural mobility."
+      },
+      {
+        "order": 19,
+        "questionId": "retain-euthanasia-right",
+        "topicId": "rights",
+        "familyId": "euthanasia-law",
+        "text": "Debería mantenerse el derecho a solicitar la eutanasia en las condiciones previstas por la ley.",
+        "rationale": "Second rights decision; a separate family from parental leave."
+      },
+      {
+        "order": 20,
+        "questionId": "retirement-pension-income-tax-exemption",
+        "topicId": "pensions",
+        "familyId": "pension-income-tax",
+        "text": "La pensión de jubilación de quienes han cotizado debería estar exenta del impuesto sobre la renta.",
+        "rationale": "Second pension question under the current taxonomy; flag the pensions/tax overlap for editorial review."
+      }
+    ]
+  },
+  "scoreContract": {
+    "engineVersion": "documented-affinity-v2",
+    "missingPositionContribution": 0,
+    "missingPositionRetainedInDenominator": true,
+    "allCandidaciesIncluded": true,
+    "candidateSelectionAllowed": false,
+    "minimumNumericAnswersPerTopicForOverall": 1,
+    "topicImportanceOptions": [
+      1,
+      2
+    ],
+    "knownOnlyHeadlineAllowed": false,
+    "anonymousMaximumBeforeFinish": true
+  },
+  "planningDecisionsStillToResolve": [
+    "Semantic grouping and names for the four territorial-profile variants, using retained original context.",
+    "Supported migration decision and starter replacement if full 2023 source evidence permits it; no invented question.",
+    "Topic-taxonomy corrections and consequent engine/version calibration before freezing the first 20.",
+    "Verified official source URL availability for every citation document; visible exceptions where the official publication is lost."
+  ],
+  "tasks": [
+    {
+      "id": "R001",
+      "subject": "Lock documented-affinity semantics and all-candidacy profile identity",
+      "status": "planned",
+      "dependsOn": [],
+      "deliverables": [
+        "New metric/profile specification and independent expected-case ledger.",
+        "Audit national/scoped profiles and current topic taxonomy; preserve applicability."
+      ],
+      "acceptanceCriteria": [
+        "Unknown/conflict/missing cells contribute zero and remain in the same denominator for every programme.",
+        "All denominations/territorial variants included without user selection; no favourable-variant merge.",
+        "User-unanswered topics are distinct from absent party positions."
+      ],
+      "verification": [
+        "Independent weighted calculations and all-profile/source audit.",
+        "Review the eight owner feedback requirements against the proposed contract."
+      ],
+      "estimatedEffortWeight": 15,
+      "completionEvidence": []
+    },
+    {
+      "id": "R002",
+      "subject": "Finalize trend-based balanced starters and useful ten-question blocks",
+      "status": "planned",
+      "dependsOn": [
+        "R001"
+      ],
+      "deliverables": [
+        "Versioned editorial order, first-20 IDs and rationales.",
+        "Directly authored migration/gap correction only when full applicable evidence supports it."
+      ],
+      "acceptanceCriteria": [
+        "First 20 span every core topic twice using distinct families.",
+        "Later ten span at least five topics with at most two per topic; exhaustion stops honestly.",
+        "Current trends change order only, not 2023 evidence or score weights."
+      ],
+      "verification": [
+        "Real bank topic/family/coverage audit and editorial reread.",
+        "Deterministic ordering/skip/edit/exhaustion cases."
+      ],
+      "estimatedEffortWeight": 12,
+      "completionEvidence": []
+    },
+    {
+      "id": "R003",
+      "subject": "Publish verified official-source links into the local candidate bank",
+      "status": "planned",
+      "dependsOn": [
+        "R001"
+      ],
+      "deliverables": [
+        "Official publisher versus preserved-original URL fields and validation.",
+        "Citation-link audit across every used document."
+      ],
+      "acceptanceCriteria": [
+        "Every quotation has a verified official link or an explicit documented unavailable exception.",
+        "No substituted newer source, mislabeled mirror or broken document association.",
+        "Payload remains within existing bounds; privacy and referrer policy preserved."
+      ],
+      "verification": [
+        "Real-source link/provenance checks and quote-to-document associations.",
+        "Existing schema/hash/compiler checks; no automatic semantic generator."
+      ],
+      "estimatedEffortWeight": 10,
+      "completionEvidence": []
+    },
+    {
+      "id": "R004",
+      "subject": "Implement the versioned zero-contribution score across all profiles",
+      "status": "planned",
+      "dependsOn": [
+        "R001"
+      ],
+      "deliverables": [
+        "documented-affinity-v2 engine, coverage and anonymous maximum.",
+        "Updated local exports and independent regression coverage."
+      ],
+      "acceptanceCriteria": [
+        "All profiles share the same topic/family answer denominator and inclusion policy.",
+        "Affinity never exceeds coverage; unknown never reads as neutral or opposed.",
+        "No old partialIndex/common-cohort result survives as the new headline."
+      ],
+      "verification": [
+        "Meaningful engine tests and independent real-bank arithmetic/citation calibration.",
+        "Rent regression, weights, unknown/conflict, all-topic pending and tie cases."
+      ],
+      "estimatedEffortWeight": 15,
+      "completionEvidence": []
+    },
+    {
+      "id": "R005",
+      "subject": "Implement the simple 20 + 10 quiz and anonymous checkpoint",
+      "status": "planned",
+      "dependsOn": [
+        "R002",
+        "R004"
+      ],
+      "deliverables": [
+        "Edition-labelled entry, question progression and two-action checkpoint.",
+        "No candidacy/province exclusion or topic-zero setting."
+      ],
+      "acceptanceCriteria": [
+        "20 questions initially and exactly ten more when useful; no auto reveal.",
+        "Anonymous maximum uses new metric and sufficient topic/answer evidence.",
+        "No personalized identity enters pre-finish DOM or network/storage."
+      ],
+      "verification": [
+        "Affected browser journey/keyboard/privacy tests and actual mobile checkpoints.",
+        "Fast clicks, edit/back, skip/unsure, refresh and exhaustion."
+      ],
+      "estimatedEffortWeight": 12,
+      "completionEvidence": []
+    },
+    {
+      "id": "R006",
+      "subject": "Build horizontal result bars and proposal-led details",
+      "status": "planned",
+      "dependsOn": [
+        "R003",
+        "R004"
+      ],
+      "deliverables": [
+        "Ordered 0-100 result chart with coverage and missing labels.",
+        "Party/topic/proposal/citation flow using shared components."
+      ],
+      "acceptanceCriteria": [
+        "Overview contains no full quote or programme-analysis wall.",
+        "Every row is readable on mobile, keyboard accessible and linked to detailed proposals.",
+        "All identities/variants are accounted for; zero and ties are honest."
+      ],
+      "verification": [
+        "Actual real-bank visual review at 320px and desktop; 200/400% zoom.",
+        "Chart/export/detail parity, a11y and independent rent relation."
+      ],
+      "estimatedEffortWeight": 12,
+      "completionEvidence": []
+    },
+    {
+      "id": "R007",
+      "subject": "Add the public thematic 2023 programme comparison and edition menu",
+      "status": "planned",
+      "dependsOn": [
+        "R002",
+        "R003",
+        "R006"
+      ],
+      "deliverables": [
+        "Programas 2023 topic/proposal/programme flow with fixed public bank.",
+        "Edition navigation and public generic routes preserving local in-memory quiz state."
+      ],
+      "acceptanceCriteria": [
+        "Comparison works without the quiz, includes all candidacies and distinguishes missing evidence.",
+        "No 59-column default table, pasted notebook wall or personalized fetch.",
+        "Cuestionario 2023 is the visible product label; 2026 remains a separate future edition."
+      ],
+      "verification": [
+        "Public comparison navigation/keyboard/mobile states and link validation.",
+        "Unfinished-state privacy, no persistence and edition routing tests."
+      ],
+      "estimatedEffortWeight": 10,
+      "completionEvidence": []
+    },
+    {
+      "id": "R008",
+      "subject": "Verify the full real-bank local iteration and prepare its review packet",
+      "status": "planned",
+      "dependsOn": [
+        "R005",
+        "R006",
+        "R007"
+      ],
+      "deliverables": [
+        "Real 2023 candidate acceptance, screenshots/walkthrough and recovery/version evidence.",
+        "Synchronized plans, journal and local review packet."
+      ],
+      "acceptanceCriteria": [
+        "All second-iteration behaviours pass real-bank acceptance; old bank/history/source data preserved.",
+        "Metrics remain disabled and PUBLIC-LAUNCH is not agent-approved.",
+        "No task completed solely from a mock chart or synthetic data."
+      ],
+      "verification": [
+        "Required affected checks, docs:build/check:plans and exact-index commit gate.",
+        "Final ordinary-user journey, source links, local privacy, recovery and rollback."
+      ],
+      "estimatedEffortWeight": 14,
+      "completionEvidence": []
+    }
+  ],
+  "progress": {
+    "planningComplete": true,
+    "implementationComplete": false,
+    "implementationCompletedTasks": 0,
+    "implementationTotalTasks": 8,
+    "implementationRemainingPercentEstimate": 100,
+    "estimateBasis": "Task weights are an implementation estimate summing to 100; progress requires actual acceptance and may change after source-gap/profile audits."
+  }
+}

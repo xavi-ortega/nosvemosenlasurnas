@@ -153,6 +153,16 @@ Work one inspectable increment at a time with factual evidence.
 - Record actual commands, original/source hashes, reading page ranges, authored artefacts, defect fixes and tests in work/execution-journal.jsonl. Status changes require the actual acceptance evidence.
 - Preserve working/index/history and use direct main commits only after all required staged checks. No new reset, history rewrite, branches, worktrees, identity changes or automatic push.
 
+## 14. Second iteration planned from owner feedback
+
+First-iteration completion remains historical; the next application changes are planned, not implemented.
+
+- Read outputs/quiz-2023-second-iteration-plan.json and docs/plans/second-iteration-plan.md before second-iteration work. R001-R008 are planned and do not replace Q completion evidence.
+- The owner revised the next metric: missing party positions contribute zero and stay in the common denominator; all candidacies are always included without a selector.
+- The proposed interface leads with ordered horizontal 0-100% bars, separate proposal/source detail, 20 + 10 questions and an anonymous maximum at checkpoints.
+- Add a public topic-led Programas 2023 page and edition-labelled top navigation; the 2026 quiz will be a separate future page.
+- Keep source/territorial applicability, original evidence and privacy; preserve the old engine/version while implementing the new documented-affinity-v2 candidate.
+
 ## Progress
 
 - Q001 · docs: adopt the 2023 quiz and everyday-user contract · completed

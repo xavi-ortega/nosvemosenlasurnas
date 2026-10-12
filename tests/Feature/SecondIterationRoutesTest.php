@@ -24,7 +24,9 @@ class SecondIterationRoutesTest extends TestCase
             }
             $this->getJson('/api/bank')->assertOk()->assertHeader('X-Evidence-Sha256', $sha)
                 ->assertHeaderMissing('Set-Cookie')->assertJsonPath('engineVersion', 'documented-affinity-v2')
-                ->assertJsonCount(63, 'programmeProfiles')->assertJsonCount(20, 'starterQuestionIds');
+                ->assertJsonCount(59, 'programmeProfiles')->assertJsonCount(20, 'starterQuestionIds')
+                ->assertJsonPath('programmePolicy', 'common-election-programme-v1')
+                ->assertJsonMissingPath('constituencyPositions');
             $this->app->detectEnvironment(fn (): string => 'production');
             $this->getJson('/api/bank')->assertServiceUnavailable()->assertHeaderMissing('Set-Cookie');
         } finally {

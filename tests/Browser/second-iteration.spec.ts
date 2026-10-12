@@ -204,7 +204,7 @@ test('UX01 UX05: rent disagreement uses four actions, accessible single reader a
     await expect(page.locator('#app')).not.toContainText('Sumar');
     await expect(page.locator('#app')).toContainText('Tu mayor coincidencia');
     await finish(page);
-    await expect(page.locator('.affinity-row')).toHaveCount(63);
+    await expect(page.locator('.affinity-row')).toHaveCount(59);
     await expect(page.locator('.affinity-row details, .affinity-row blockquote')).toHaveCount(0);
     await screenshot(page, 'results', info.project.name);
     const p = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-004' && p.constituencyIds.includes('madrid'))!;
@@ -244,10 +244,10 @@ test('UX03 UX09: public featured shortcut, all positions, source exceptions and 
     await page.goto('/programmes');
     const featured = page.getByRole('button', { name: bank.questions.find(q => q.id === 'rent-price-cap')!.text, exact: true });
     await featured.click();
-    await expect(page.locator('.position-row')).toHaveCount(63);
+    await expect(page.locator('.position-row')).toHaveCount(59);
     const missing = bank.programmeProfiles!.find(p => !bank.documents.some(d => d.candidacyId === p.candidacyId))!;
     await page.locator('.position-row[data-profile-id="' + missing.id + '"]').getByRole('button').click();
-    await expect(reader(page)).toContainText('Sin programa localizado'); await expect(reader(page).getByRole('link')).toHaveCount(0);
+    await expect(reader(page)).toContainText('Sin programa común del 23J localizado'); await expect(reader(page).getByRole('link')).toHaveCount(0);
     await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click();
     const sourceException = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-002')!;
     await page.locator('.position-row[data-profile-id="' + sourceException.id + '"]').getByRole('button').click();
@@ -261,7 +261,7 @@ test('UX03 UX09: public featured shortcut, all positions, source exceptions and 
     await page.getByRole('button', { name: 'Quitar filtros' }).click(); await expect(page.getByLabel('Buscar una propuesta')).toHaveValue('');
 });
 
-test('UX04: two/three inline programmes, territorial conflict, source return and remove', async ({ page }, info) => {
+test('UX04: two/three common programmes, selected national position, source return and remove', async ({ page }, info) => {
     await page.goto('/programmes'); await page.getByRole('button', { name: 'Elegir programas para leer juntos' }).click();
     const ids = ['boe-2023-002', 'boe-2023-003', 'boe-2023-004'];
     for (const id of ids) { const p = bank.programmeProfiles!.find(p => p.candidacyId === id && (id !== 'boe-2023-004' || p.constituencyIds.includes('valencia')))!; await page.getByRole('checkbox', { name: p.name, exact: true }).check(); }
@@ -270,9 +270,12 @@ test('UX04: two/three inline programmes, territorial conflict, source return and
     await page.getByRole('button', { name: 'Leer la comparación' }).click();
     const housing = page.locator('.comparison-proposal[data-question-id="retain-public-housing-ownership"]');
     await expect(housing.locator('.comparison-summaries > section')).toHaveCount(3);
-    await expect(housing).toContainText('Posiciones contradictorias');
+    await expect(housing).not.toContainText('Posiciones contradictorias');
+    await expect(housing.locator('.comparison-summaries > section').last()).toContainText('Apoyo a la propuesta');
     const opener = housing.getByRole('button', { name: 'Ver propuesta y fuente' }).last(); await opener.click();
-    await expect(reader(page)).toContainText('Comunitat Valenciana'); await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click(); await expect(opener).toBeFocused();
+    await expect(reader(page)).toContainText('Sumar (SUMAR)');
+    await expect(reader(page)).not.toContainText('Comunitat Valenciana');
+    await expect(reader(page)).toContainText('Propone prohibir la venta de viviendas públicas'); await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click(); await expect(opener).toBeFocused();
     await screenshot(page, 'focused-comparison', info.project.name);
     await page.getByRole('button', { name: /^Quitar programa/ }).first().click();
     await expect(page.locator('.comparison-proposal').first().locator('.comparison-summaries > section')).toHaveCount(2);
@@ -329,7 +332,13 @@ test('local Spanish export agrees with all result bars and full useful-block exh
     const download = await downloaded; const path = await download.path();
     const data = JSON.parse(readFileSync(path!, 'utf8')) as { engineVersion: string; answerDetails: { answerLabel: string }[]; results: { rows: { id: string; affinity: number; coverage: number }[] }; labels: { coverage: string } };
     expect(data.engineVersion).toBe('documented-affinity-v2'); expect(data.labels.coverage).toBe('Cobertura documentada'); expect(data.answerDetails).toHaveLength(total);
-    expect(data.results.rows).toHaveLength(63);
+    expect(data.results.rows).toHaveLength(59);
+    const evidence = JSON.parse(readFileSync(path!, 'utf8')) as Bank & { programmes: { candidacyId: string }[] };
+    expect(evidence.programmePolicy).toBe('common-election-programme-v1');
+    expect(evidence.constituencyPositions).toBeUndefined();
+    expect(new Set(evidence.programmes.map(p => p.candidacyId)).size).toBe(59);
+    expect(evidence.documents.every(d => d.programmeRole === 'common_election_programme')).toBe(true);
+    expect(evidence.documents.some(d => d.id === 'compromis-sumar' || d.id.includes('childhood-obesity'))).toBe(false);
     for (const row of data.results.rows) {
         const value = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 }).format(row.affinity) + ' %';
         await expect(programmeRow(page, row.id).locator('.affinity-value')).toHaveText(value);
@@ -344,7 +353,7 @@ test('optional positive importance keeps all twenty starter decisions and applie
     await housingImportance.selectOption('2');
     expect(await housingImportance.locator('option').allTextContents()).toEqual(['Normal', 'Me importa especialmente']);
     await page.getByRole('button', { name: 'Volver al punto de decisión', exact: true }).click(); await finish(page);
-    await expect(page.locator('.affinity-row')).toHaveCount(63);
+    await expect(page.locator('.affinity-row')).toHaveCount(59);
     page.once('dialog', dialog => dialog.accept());
     const downloaded = page.waitForEvent('download'); await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
     const file = await (await downloaded).path(); const result = JSON.parse(readFileSync(file!, 'utf8'));
@@ -383,13 +392,13 @@ test('UX07 UX10: generic menu/back preserves only live memory and private data n
     await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas' })).toHaveCount(0);
     await page.getByRole('button', { name: bank.questions[0].text, exact: true }).click(); await expect(page.locator('.proposal-relation')).toHaveCount(0);
     await page.goBack(); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', question!);
-    await page.goForward(); await expect(page.locator('.position-row')).toHaveCount(63);
+    await page.goForward(); await expect(page.locator('.position-row')).toHaveCount(59);
     const state = await page.evaluate(async () => ({ history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases(), url: location.pathname + location.search + location.hash }));
     expect(state).toEqual({ history: null, local: [], session: [], databases: [], url: '/programmes' });
     expect(await context.cookies()).toEqual([]);
     expect(requests.filter(r => {
         const url = new URL(r.url);
-        const publicDevelopmentModule = ['localhost', '127.0.0.1'].includes(url.hostname) && url.pathname === '/resources/js/documented-affinity.ts' && !url.search;
+        const publicDevelopmentModule = ['localhost', '127.0.0.1'].includes(url.hostname) && url.pathname === '/resources/js/documented-affinity.ts' && (url.search === '' || /^\?t=\d+$/.test(url.search));
         return r.body || r.method !== 'GET' || (!publicDevelopmentModule && /answers|affinity|progress|questionId|profileId|importance|finish=/.test(r.url));
     })).toEqual([]);
     expect(requests.filter(r => new URL(r.url).pathname === '/api/bank')).toHaveLength(1);
@@ -430,7 +439,7 @@ test('delayed result checks keep checkpoint space and restore answers and contro
     await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeEnabled();
     await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeFocused();
     await page.unroute('**/api/release-state');
-    await finish(page); await expect(page.locator('.affinity-row')).toHaveCount(63);
+    await finish(page); await expect(page.locator('.affinity-row')).toHaveCount(59);
 });
 
 test('loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset states remain honest', async ({ page }) => {
@@ -444,7 +453,7 @@ test('loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset 
     await page.getByRole('button', { name: bank.questions[0].text, exact: true }).click(); await expect(page.locator('.proposal-relation').first()).toBeVisible();
     await page.getByRole('checkbox', { name: 'Mostrar mis respuestas' }).uncheck(); await expect(page.locator('.proposal-relation')).toHaveCount(0);
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cuestionario 2023', exact: true }).click();
-    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused(); await page.keyboard.press('Escape'); await expect(page.locator('.affinity-row')).toHaveCount(63);
+    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused(); await page.keyboard.press('Escape'); await expect(page.locator('.affinity-row')).toHaveCount(59);
     await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await page.getByRole('dialog').getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
     await page.route('**/api/bank', route => route.fulfill({ body: '{}', headers: { 'X-Evidence-Sha256': 'bad' } })); await page.reload(); await expect(page.locator('#app')).toContainText('No hemos podido cargar');
 });

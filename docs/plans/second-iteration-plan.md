@@ -1,8 +1,8 @@
 # Second iteration: clear documented affinity and thematic 2023 programmes
 
-quiz-2023-iteration-2-v1.1.0 · Application status: completed. Implementation complete: true.
+quiz-2023-iteration-2-v1.2.0 · Application status: completed. Implementation complete: true.
 
-Completed local second iteration with ordered horizontal affinity bars, a contextual programme reader, twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Owner follow-up simplifies entry to a short explanation and one start action, advances on confirmed answers and places Back above the question. Programme comparison remains available as a separate public journey. This is the historical 2023 edition; public launch and collection remain unapproved.
+Completed local second iteration with ordered horizontal affinity bars, a contextual programme reader, twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Owner follow-up simplifies entry to a short explanation and one start action, advances on confirmed answers and places Back above the question. Programme comparison remains available as a separate public journey. This is the historical 2023 edition; public launch and collection remain unapproved. Current source policy uses one entry for each of the 59 real formations and only its common 23J electoral programme. All 45 prior active sources were audited: 35 retained and ten excluded from current reading/scoring/export; all historical bytes and acceptance records remain preserved.
 
 ## Second iteration scope
 
@@ -30,14 +30,15 @@ An absent position contributes zero matching evidence; it is never encoded as a 
 
 ## All candidacies, including territorial ones
 
-Inclusion is automatic; ballot eligibility and programme applicability are information.
+One entry per real 23J Congress formation; only its common electoral programme is active evidence.
 
-- Remove the quiz candidacy/constituency exclusion mechanism. Every real 2023 candidacy is included in the fixed bank, scoring, maximum calculation and result list. There is no party-selection screen and no hidden evidence-qualified subset.
-- Preserve all 59 reconciled denominations, 52 constituencies and 550 ballot records. Missing programmes remain visible with 0 documented contribution and a Sin programa localizado label, not an opposition label.
-- Audit programme variants before implementation. A mechanical scan of applicable constituency profiles currently finds four denominations with two different profiles each (Sumar, UPL, Coalición Existe, España Vaciada): 63 distinct applicable profiles across 59 denominations. This is a planning observation, not certification of final semantic grouping.
-- Recommended national presentation: score every distinct applicable programme profile and label its territorial scope; merge truly identical profiles for display. Keep distinct territorial variants as clearly named rows tied to their common denomination, not extra parties. Never choose the most favourable variant or impose one territory on all.
-- Show a plain count of candidacies and explain variant rows once. Original coalition identities remain exact. Do not combine members into invented choices or propagate a scoped quotation outside its applicability.
-- A future optional province context can highlight ballot availability without removing rows or changing who is included. It is not required to start the quiz.
+- Include all 59 reconciled formations, 52 constituencies and 550 proclaimed Congress ballot records automatically, without a party/province chooser.
+- The owner clarification supersedes the earlier 63-profile presentation: use exactly one entry per formation, with its exact official name and actual ballot scope. Territorial parties that contested the general election remain eligible.
+- Use only the common electoral programme for the 23 July 2023 general election. Exclude provincial supplements, other-election programmes, unrelated political texts, external government plans and coalition paperwork.
+- Sumar uses its already directly authored joint common programme for all 52 ballot scopes. The Compromis-Sumar supplement is retained historically and excluded from active evidence; no member-party programme is inherited.
+- No common programme is established across all ballot scopes for UPL, Coalicion Existe and Espana Vaciada. Do not promote Leon, Teruel or Huesca/Zaragoza documents or merge their measures into a new common programme. Keep each formation once with unknown positions.
+- A formation without a located common programme remains visible with zero documented contribution and a Sin programa común del 23J localizado label. Zero evidence never means opposition or a neutral position.
+- The complete candidacy/source decisions are recorded in outputs/quiz-2023-second-iteration-content-decisions.json under commonProgrammeRevision. Previous 63-profile acceptance is historical evidence, not current acceptance.
 
 ## Compact visual result overview
 
@@ -67,7 +68,7 @@ Choose a programme, then a topic or proposal, then inspect its exact source.
 
 Every citation has a meaningful source link and truthful provenance.
 
-- Audit all 45 citation document records plus the preserved source registry; carry a verified official programme URL or official campaign landing page independently of the exact archived/mirrored evidence URL.
+- Audit all 45 prior citation documents and all 59 candidacies against the common-programme-only policy. Current bank includes 35 document records, with 23 verified official links and twelve explicit exceptions. Historical sources and the original full-reading notebooks remain intact.
 - Use the original official programme URL when available; an official page publishing the programme is sufficient. Page-level PDF anchoring is optional and must not be invented.
 - For a preserved original, provide Fuente oficial and Copia conservada as distinct links where both are verified. Preserve the SHA-256 and exact evidence locator; never call a mirror official or substitute a newer programme for a dead 2023 URL.
 - If no official source can be verified, state Fuente oficial no localizada and keep the verified provenance link. This exception is visible and remains an acquisition task; do not fabricate a link to satisfy the UI.
@@ -105,14 +106,14 @@ Concern research orders questions within diversity constraints; it never adjusts
 
 ## Programmes by topic in the top menu
 
-A second public journey reuses the complete preserved 2023 analysis.
+A separate public journey reuses the same selected common 23J programmes as scoring and local exports.
 
 - Menu: Inicio / Cuestionario 2023 / Programas 2023 / Cómo funciona. Separate 2026 entries appear only when independently prepared; edition context remains visible throughout.
 - Programas 2023 begins with a small Temas destacados section and an always-findable full topic index. Featured links use dated editorial salience, backed authored proposals and explicit Programas del 23 de julio de 2023 context; current concern research never changes programme positions.
-- Public reading flow: topic index → concrete proposal list → all candidacy/profile positions → contextual programme/source reader. A featured proposal can bypass the topic index. Preserve its actual entry point on return.
-- On the proposal page, group positions by the exact authored rubric: A favor / Posición intermedia / En contra / Sin postura documentada. Display counts accounting for every profile. Qualified +/-1 keeps its direction and the essential restriction, not just a Con condiciones badge.
+- Public reading flow: topic index → concrete proposal list → all formation positions → contextual programme/source reader. A featured proposal can bypass the topic index. Preserve its actual entry point on return.
+- On the proposal page, group positions by the exact authored rubric: A favor / Posición intermedia / En contra / Sin postura documentada. Display counts accounting for every formation. Qualified +/-1 keeps its direction and the essential restriction, not just a Con condiciones badge.
 - Use concise rows, plain in-topic search and descriptive Ver propuesta y fuente actions. Default view includes all positions; explicit reading filters show counts and a Quitar filtros action and never alter quiz inclusion.
-- Comparar programas opens inline reading selection, with two or three clearly named programmes and territorial variants. A separate workspace aligns their short summaries by concrete proposal; on mobile stack the programmes within each proposal. Full context opens the same reader. No 59-column table or party-switching tabs that force recall.
+- Comparar programas opens inline reading selection, with two or three clearly named common electoral programmes. A separate workspace aligns their short summaries by concrete proposal; on mobile stack the programmes within each proposal. Full context opens the same reader. No 59-column table or party-switching tabs that force recall.
 - Adding/removing programmes and the three-programme limit use inline feedback. Explain Esta selección solo cambia lo que ves aquí; el cuestionario incluye todas las candidaturas. No selection dialog or entry prerequisite.
 - No-answer visitors receive complete public evidence. After finish, Mostrar mis respuestas may add local relation labels; it is off by default and removable in one action. Navigating during an unfinished quiz preserves in-memory progress without revealing any personalized party information.
 - Use the fixed public bank and generic edition-aware section routes. Same-document menu navigation and top-level browser Back preserve live memory. Refresh or leaving the document loses private quiz/reading state; explain this without secretly persisting it.
@@ -566,7 +567,7 @@ These scenarios require actual application evidence during R005-R008. Planning g
 
 - **UX03 Read featured and lower-salience topics without a quiz** (topic-comparison). Steps: Enter via featured proposal, return to catalogue, then choose a topic from the full index and inspect positions. Expected: Actual shortcut origin restored; all candidacies accounted for, current research distinguished from 2023 evidence. No empty featured card or quiz prerequisite.
 
-- **UX04 Keep proposals together in a focused comparison** (focused-comparison). Steps: Select two programmes and a territorial variant, compare, open one source, remove a programme and attempt a fourth. Expected: Two/three comparison limit is inline; preserve proposal scroll and remaining choices; mobile stacks programmes by proposal. No change to quiz inclusion or scores.
+- **UX04 Keep proposals together in a focused comparison** (focused-comparison). Steps: Select two/three common programmes, compare their positions, open one source, remove a programme and attempt a fourth. Expected: Two/three comparison limit is inline; preserve proposal scroll and remaining choices; mobile stacks programmes by proposal. No change to quiz inclusion or scores.
 
 - **UX05 Use reader by keyboard without a modal** (result-exploration). Steps: Tab to a result action, open reader, move between reader and chart, disclose quote, use reader-scoped Escape and reopen. Expected: Heading focused on open, origin operable, no aria-modal/inert/focus trap; return focuses opener. Escape outside reader does not close unrelated UI; all controls remain visible.
 
@@ -628,7 +629,7 @@ Status: completed. Depends on: none. Estimated share of implementation effort: 1
 Acceptance:
 
 - Unknown/conflict/missing cells contribute zero and remain in the same denominator for every programme.
-- All denominations/territorial variants included without user selection; no favourable-variant merge.
+- All real formations included once without user selection; only their common electoral programme, no provincial substitution.
 - User-unanswered topics are distinct from absent party positions.
 
 Verification:
@@ -751,7 +752,7 @@ Verification:
 
 - Public comparison navigation/keyboard/mobile states and link validation.
 - Unfinished-state privacy, no persistence and edition routing tests.
-- UX03/UX04/UX09: featured shortcut/back, all-position counts, territorial comparison and honest absent sources.
+- UX03/UX04/UX09: featured shortcut/back, all-position counts, common-programme comparison and honest absent sources.
 
 ### R008 Verify the full real-bank local iteration and prepare its review packet
 

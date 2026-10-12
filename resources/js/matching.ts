@@ -11,8 +11,9 @@ export interface Bank {
     election: { id: string; name: string; date: string; constituencies: { id: string; name: string }[] };
     topics: { id: string; name: string; budget: number }[]; questions: Question[]; starterQuestionIds?: string[];
     comparisonPolicy?: 'fixed-bank-evidence-v1'; draft?: boolean; releaseEligible?: boolean;
+    programmePolicy?: 'common-election-programme-v1';
     candidacies: { id: string; name: string; constituencyIds: string[] }[];
-    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string; mediaType?: 'application/pdf' | 'text/html' }[];
+    documents: { id: string; candidacyId: string; electionId: string; kind: Bank['kind']; url: string; sha256: string; textSha256: string; publishedAt: string | null; retrievedAt: string; validFrom: string; validUntil: string; extraction: string; mediaType?: 'application/pdf' | 'text/html'; programmeRole?: 'common_election_programme' }[];
     positions: Record<string, Record<string, Position>>; constituencyPositions?: Record<string, Record<string, Record<string, Position>>>; interpretation: string; limitations: string[];
     programmeProfiles?: ProgrammeProfile[];
     ordering?: { version: string; researchDate: string; questionIds: string[]; rationale: string; migrationGap: string };
@@ -30,6 +31,11 @@ export function parseBank(value: unknown): Bank {
         const b = value as Bank;
         ensure(b && b.schemaVersion === 1 && ['lean-fixed-budgets-v1', 'documented-affinity-v2'].includes(b.engineVersion) && ['synthetic', 'historical', 'current'].includes(b.kind));
         ensure(b.comparisonPolicy === undefined || b.comparisonPolicy === 'fixed-bank-evidence-v1');
+        ensure(b.programmePolicy === undefined || b.programmePolicy === 'common-election-programme-v1');
+        if (b.programmePolicy === 'common-election-programme-v1') {
+            ensure(b.engineVersion === 'documented-affinity-v2' && b.constituencyPositions === undefined);
+            ensure(b.documents.every(d => d.programmeRole === 'common_election_programme'));
+        }
         ensure(b.draft === undefined || typeof b.draft === 'boolean');
         ensure(b.releaseEligible === undefined || typeof b.releaseEligible === 'boolean');
         ensure(safeText(b.election.name) && idPattern.test(b.election.id) && datePattern.test(b.election.date) && datePattern.test(b.asOf));
@@ -55,6 +61,7 @@ export function parseBank(value: unknown): Bank {
             ensure(b.programmeProfiles && unique(b.programmeProfiles.map(p => p.id)));
             for (const candidate of b.candidacies) {
                 const profiles = b.programmeProfiles!.filter(p => p.candidacyId === candidate.id);
+                ensure(b.programmePolicy === undefined || profiles.length === 1);
                 const scopes = profiles.flatMap(p => p.constituencyIds);
                 ensure(profiles.length > 0 && new Set(scopes).size === scopes.length && scopes.length === candidate.constituencyIds.length && scopes.every(s => candidate.constituencyIds.includes(s)));
             }

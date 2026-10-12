@@ -196,7 +196,8 @@ body[data-iteration="2"] .app-surface { container-type: inline-size; }
 .source-hash { overflow-wrap: anywhere; font-size: .875em; }
 .literal-source { border-top: 1px solid #b7c3d7; padding-top: .6rem; }
 .literal-source h4 { font-weight: 700; }
-dialog { max-width: min(600px, 90vw); border: 2px solid #526078; border-radius: 8px; padding: 1.5rem; }
+dialog { inset: 0; margin: auto; width: min(37.5rem, calc(100% - 2rem)); max-width: none; max-height: calc(100dvh - 2rem); overflow: auto; color: inherit; border: 2px solid #526078; border-radius: .75rem; padding: 1.5rem; }
+dialog .actions { margin-bottom: 0; }
 dialog::backdrop { background: rgb(24 34 53 / .4); }
 @media(min-height: 37.5em) {
     @container(min-width: 56.5rem) {

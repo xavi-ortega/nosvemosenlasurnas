@@ -39,6 +39,121 @@ async function screenshot(page: Page, name: string, project: string) {
 const programmeRow = (page: Page, id: string) => page.locator('.affinity-row[data-profile-id="' + id + '"]');
 const reader = (page: Page) => page.locator('.programme-reader:not([hidden])');
 
+type MotionSample = { time: number; id: string; checked: string | null; x: number; opacity: number; overflow: boolean; moving: boolean };
+type MotionWindow = typeof window & { quizMotionSamples: { active: boolean; samples: MotionSample[] } };
+async function observeQuestionMotion(page: Page, trigger: () => Promise<unknown>): Promise<MotionSample[]> {
+    await page.evaluate(() => {
+        const state = { active: true, samples: [] as MotionSample[] }; (window as MotionWindow).quizMotionSamples = state;
+        const sample = () => {
+            if (!state.active) return;
+            const stage = document.querySelector<HTMLElement>('.quiz-card');
+            if (stage) {
+                const style = getComputedStyle(stage);
+                state.samples.push({ time: performance.now(), id: stage.dataset.questionId!, checked: stage.querySelector<HTMLInputElement>('input:checked')?.value ?? null, x: style.transform === 'none' ? 0 : new DOMMatrixReadOnly(style.transform).m41, opacity: Number(style.opacity), overflow: document.documentElement.scrollWidth > innerWidth, moving: stage.getAnimations({ subtree: true }).some(animation => animation.playState === 'running') });
+            }
+            requestAnimationFrame(sample);
+        };
+        requestAnimationFrame(sample);
+    });
+    await trigger();
+    await expect(page.locator('.quiz-card input[type=radio]').first()).toBeEnabled();
+    return page.evaluate(() => { const state = (window as MotionWindow).quizMotionSamples; state.active = false; return state.samples; });
+}
+
+test('confirmed answers remain visibly selected before forward motion and Back reverses the direction', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'no-preference' }); await start(page);
+    const first = bank.starterQuestionIds![0]; const second = bank.starterQuestionIds![1];
+
+    const forward = await observeQuestionMotion(page, () => page.getByRole('radio', { name: 'Muy de acuerdo', exact: true }).click());
+    const confirmation = forward.filter(sample => sample.id === first && sample.checked === '2' && Math.abs(sample.x) < .1 && sample.opacity > .99);
+    expect(confirmation.length).toBeGreaterThan(2);
+    expect(confirmation.at(-1)!.time - confirmation[0].time).toBeGreaterThanOrEqual(60);
+    expect(forward.some(sample => sample.id === first && sample.x < -.5)).toBe(true);
+    expect(forward.some(sample => sample.id === second && sample.x > .5)).toBe(true);
+    expect(forward.some(sample => sample.overflow)).toBe(false);
+    await expect(page.locator('.quiz-card h2')).toBeFocused();
+
+    const back = await observeQuestionMotion(page, () => page.getByRole('button', { name: 'Atrás', exact: true }).click());
+    expect(back.some(sample => sample.id === second && sample.x > .5)).toBe(true);
+    expect(back.some(sample => sample.id === first && sample.x < -.5)).toBe(true);
+    expect(back.some(sample => sample.overflow)).toBe(false);
+    await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeChecked();
+});
+
+test('reduced motion preserves visible confirmation and automatic advancement without animated movement', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' }); await start(page);
+    const first = bank.starterQuestionIds![0]; const second = bank.starterQuestionIds![1];
+
+    const samples = await observeQuestionMotion(page, () => page.getByRole('radio', { name: 'No lo tengo claro', exact: true }).click());
+    expect(samples.filter(sample => sample.id === first && sample.checked === 'unsure').length).toBeGreaterThan(2);
+    expect(samples.some(sample => sample.x !== 0 || sample.moving)).toBe(false);
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+    await expect(page.locator('.quiz-card h2')).toBeFocused();
+});
+
+test('navigation and reset cancel pending advancement without losing a selected answer or restoring cleared state', async ({ page }) => {
+    await page.emulateMedia({ reducedMotion: 'reduce' }); await start(page); await page.clock.install();
+    const first = bank.starterQuestionIds![0];
+
+    await page.evaluate(() => {
+        document.querySelector<HTMLInputElement>('.quiz-card input[value="2"]')!.click();
+        [...document.querySelectorAll<HTMLAnchorElement>('.site-header a')].find(link => new URL(link.href).pathname === '/')!.click();
+    });
+    await page.clock.fastForward(1000);
+    await page.getByRole('button', { name: 'Volver a mi test', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeChecked();
+
+    await page.evaluate(() => {
+        document.querySelector<HTMLInputElement>('.quiz-card input[value="1"]')!.click();
+        document.querySelector<HTMLButtonElement>('.quiz-reset button')!.click();
+    });
+    await page.clock.fastForward(1000);
+    await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.getByRole('radio', { name: 'De acuerdo', exact: true })).toBeChecked();
+
+    await page.evaluate(() => {
+        document.querySelector<HTMLInputElement>('.quiz-card input[value="-2"]')!.click();
+        document.querySelector<HTMLButtonElement>('.quiz-reset button')!.click();
+    });
+    await page.getByRole('dialog').getByRole('button', { name: 'Borrar respuestas', exact: true }).click();
+    await page.clock.fastForward(1000);
+    await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
+    await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.locator('.quiz-card input:checked')).toHaveCount(0);
+});
+
+test('reset dialog is centered and contained on desktop, small screens and text zoom', async ({ page }) => {
+    await start(page);
+    const opener = page.getByRole('button', { name: 'Borrar respuestas', exact: true });
+    await opener.click(); const dialog = page.getByRole('dialog');
+
+    for (const viewport of [{ width: 1440, height: 1000 }, { width: 390, height: 700 }, { width: 320, height: 480 }, { width: 1024, height: 320 }]) {
+        await page.setViewportSize(viewport);
+        const box = (await dialog.boundingBox())!;
+        expect(Math.abs(box.x + box.width / 2 - viewport.width / 2)).toBeLessThanOrEqual(2);
+        expect(Math.abs(box.y + box.height / 2 - viewport.height / 2)).toBeLessThanOrEqual(2);
+        expect(box.x).toBeGreaterThanOrEqual(0); expect(box.y).toBeGreaterThanOrEqual(0);
+        expect(box.width).toBeLessThanOrEqual(viewport.width); expect(box.height).toBeLessThanOrEqual(viewport.height);
+        expect(await dialog.evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
+    }
+    await page.setViewportSize({ width: 1440, height: 1000 });
+    for (const zoom of ['200%', '400%']) {
+        await page.evaluate(value => { document.documentElement.style.zoom = value; }, zoom);
+        const box = (await dialog.boundingBox())!;
+        expect(Math.abs(box.x + box.width / 2 - 720)).toBeLessThanOrEqual(2);
+        expect(Math.abs(box.y + box.height / 2 - 500)).toBeLessThanOrEqual(2);
+        expect(await dialog.evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
+        await dialog.getByRole('button', { name: 'Borrar respuestas', exact: true }).scrollIntoViewIfNeeded();
+        await expect(dialog.getByRole('button', { name: 'Borrar respuestas', exact: true })).toBeInViewport();
+    }
+    await page.evaluate(() => { document.documentElement.style.zoom = ''; });
+    await page.keyboard.press('Escape'); await expect(opener).toBeFocused();
+});
+
 test('simple entry has one start action, no selection form and one choice advances exactly once', async ({ page }, info) => {
     await page.goto('/questionnaire');
     await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
@@ -76,6 +191,7 @@ test('keyboard choice waits for confirmation and homepage starts directly withou
     await page.keyboard.press('Space'); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
     await page.getByRole('button', { name: 'Atrás', exact: true }).click();
     await expect(page.getByRole('radio', { name: 'En desacuerdo', exact: true })).toBeChecked();
+    await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeEnabled();
     await page.getByRole('radio', { name: 'Muy de acuerdo', exact: true }).focus(); await page.keyboard.press('Enter');
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Inicio', exact: true }).click();

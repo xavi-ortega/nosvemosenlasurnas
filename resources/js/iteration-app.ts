@@ -32,6 +32,8 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     let quizView: 'setup' | 'question' | 'checkpoint' | 'review' | 'results' = 'setup';
     let finishing = false;
     let answerUnlockAt = 0;
+    let quizMotion: { animations: Set<Animation>; restore: () => void } | null = null;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let withdrawn = false;
     let overlay = false;
     const views = new Map<Section, HTMLElement>();
@@ -53,6 +55,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         if (overlay) { overlay = false; views.delete('programmes'); }
     };
     const show = (next: Section, push = false) => {
+        cancelQuizMotion();
         scrolls.set(section, window.scrollY); section = next;
         if (push && location.pathname !== routes[next]) history.pushState(null, '', routes[next]);
         root.replaceChildren(view(next));
@@ -92,6 +95,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         const page = view('method'); page.replaceChildren(element('h2', t('iteration_method')), paragraph('iteration_method_body'), paragraph('iteration_method_example'), paragraph('iteration_method_pending'), paragraph('privacy_short'), element('h3', t('iteration_question_order')), element('p', bank.ordering!.rationale), element('p', bank.ordering!.migrationGap), paragraph('iteration_official_note'));
     }
     function resetDialog(opener: HTMLElement): void {
+        cancelQuizMotion();
         const dialog = element('dialog'); const heading = element('h2', t('iteration_clear_title')); heading.id = 'reset-title'; dialog.setAttribute('aria-labelledby', heading.id);
         const close = () => { dialog.close(); dialog.remove(); opener.focus(); };
         const keep = button('iteration_keep', close, true); keep.autofocus = true;
@@ -124,9 +128,52 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         for (const id of result.pendingTopicIds) block.append(action(t('iteration_review_topic') + ': ' + topicName(id), () => { quizView = 'review'; renderQuiz(id); }));
         return block;
     }
-    function renderQuiz(reviewTopic?: string): void {
+    function cancelQuizMotion(): void {
+        const active = quizMotion; quizMotion = null; answerUnlockAt = 0;
+        active?.animations.forEach(animation => animation.cancel()); active?.restore();
+    }
+    async function moveQuiz(stage: HTMLElement, direction: 'forward' | 'back', advance: () => void, choice?: HTMLElement): Promise<void> {
+        if (quizMotion) return;
+        const activeSession = session;
+        const active = { animations: new Set<Animation>(), restore: () => {} }; quizMotion = active;
+        const current = () => quizMotion === active && session === activeSession && section === 'quiz';
+        const lock = (target: HTMLElement) => {
+            const controls = [...target.querySelectorAll<HTMLButtonElement | HTMLFieldSetElement>('.quiz-navigation button, fieldset, .quiz-checkpoint .actions button')].map(control => ({ control, disabled: control.disabled }));
+            controls.forEach(({ control }) => { control.disabled = true; });
+            active.restore = () => controls.forEach(({ control, disabled }) => { control.disabled = disabled; });
+        };
+        const animate = async (target: HTMLElement, frames: Keyframe[], duration: number) => {
+            if (reducedMotion.matches || typeof target.animate !== 'function') return;
+            const animation = target.animate(frames, { duration, easing: 'cubic-bezier(.22, 1, .36, 1)', fill: 'forwards' });
+            active.animations.add(animation);
+            try { await animation.finished; } catch { /* Cancellation ends the pending navigation. */ }
+        };
+        stage.classList.remove('state-enter'); lock(stage);
+        try {
+            if (choice) {
+                if (reducedMotion.matches || typeof choice.animate !== 'function') await new Promise(resolve => window.setTimeout(resolve, 120));
+                else await animate(choice, [
+                    { transform: 'scale(1)', boxShadow: '0 0 0 0 rgb(0 107 97 / 0)' },
+                    { transform: 'scale(.992)', boxShadow: '0 0 0 3px rgb(0 107 97 / .16)', offset: .4 },
+                    { transform: 'scale(1)', boxShadow: '0 0 0 0 rgb(0 107 97 / 0)' },
+                ], 120);
+                if (!current()) return;
+            }
+            const offset = direction === 'forward' ? -1 : 1;
+            await animate(stage, [{ transform: 'translateX(0)', opacity: 1 }, { transform: `translateX(${offset}rem)`, opacity: 0 }], 100);
+            if (!current()) return;
+            advance(); renderQuiz(undefined, true);
+            const next = view('quiz').querySelector<HTMLElement>('.quiz-stage')!; lock(next);
+            await animate(next, [{ transform: `translateX(${-offset}rem)`, opacity: 0 }, { transform: 'translateX(0)', opacity: 1 }], 160);
+            if (current() && performance.now() < answerUnlockAt) await new Promise(resolve => window.setTimeout(resolve, answerUnlockAt - performance.now()));
+        } finally {
+            if (quizMotion === active) cancelQuizMotion();
+        }
+    }
+    function renderQuiz(reviewTopic?: string, transitioning = false): void {
+        if (!transitioning) cancelQuizMotion();
         const page = view('quiz'); page.replaceChildren();
-        const stage = element('section', '', 'quiz-stage'); stage.classList.toggle('state-enter', !root.hasAttribute('aria-busy')); page.append(stage);
+        const stage = element('section', '', 'quiz-stage'); stage.classList.toggle('state-enter', !transitioning && !root.hasAttribute('aria-busy')); page.append(stage);
         stage.addEventListener('pointerdown', event => {
             if (performance.now() < answerUnlockAt && !(event.target as Element).closest('.quiz-navigation button')) { event.preventDefault(); focus(stage.querySelector('h2')); }
         }, true);
@@ -152,20 +199,17 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         } else if (quizView === 'question' && session.current()) {
             const q = session.current()!; stage.classList.add('quiz-card'); stage.dataset.questionId = q.id;
             const state = session.progress(); const navigation = element('div', '', 'quiz-navigation flex flex-wrap items-center justify-between gap-3');
-            const back = button('iteration_back_question', () => { answerUnlockAt = 0; if (session!.previous()) renderQuiz(); }); back.disabled = !session.canGoBack();
+            const back = button('iteration_back_question', () => moveQuiz(stage, 'back', () => { session!.previous(); })); back.disabled = !session.canGoBack();
             navigation.append(back, element('p', t('question') + ' ' + state.current + ' ' + t('of') + ' ' + state.total + ' · ' + topicName(q.topicId), 'progress'));
             stage.append(navigation, element('h2', q.text));
             if (q.help) { const help = element('details', '', 'question-help'); help.append(element('summary', t('question_help')), element('p', q.help)); stage.append(help); }
             const hint = paragraph('iteration_answer_hint', 'quiet answer-hint'); hint.id = 'answer-hint';
             const controls = answerControls(q, () => {}, value => {
-                if (performance.now() < answerUnlockAt || session!.current()?.id !== q.id) return;
-                controls.disabled = true; answerUnlockAt = performance.now() + 320;
-                session!.answer(value); invalidatePersonalReading(); if (!session!.current()) quizView = 'checkpoint'; renderQuiz();
+                if (quizMotion || performance.now() < answerUnlockAt || session!.current()?.id !== q.id) return;
+                session!.edit(q.id, value); invalidatePersonalReading(); answerUnlockAt = performance.now() + 320;
+                void moveQuiz(stage, 'forward', () => { session!.answer(value); if (!session!.current()) quizView = 'checkpoint'; }, controls.querySelector<HTMLInputElement>('input:checked')!.closest<HTMLElement>('.choice')!);
             });
             controls.setAttribute('aria-describedby', hint.id);
-            if (performance.now() < answerUnlockAt) {
-                controls.disabled = true; window.setTimeout(() => { if (controls.isConnected) controls.disabled = false; }, Math.max(0, answerUnlockAt - performance.now()));
-            }
             stage.append(hint, controls);
         } else {
             quizView = 'checkpoint'; const result = documentedMatch(bank, session.answers, session.priorities);
@@ -176,10 +220,6 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             const more = button('iteration_more', control => { control.disabled = true; if (session!.extend()) { quizView = 'question'; renderQuiz(); } }); more.disabled = !available;
             if (!available) stage.append(paragraph('iteration_exhausted'));
             const finishControl = button('iteration_finish', finish, true);
-            if (performance.now() < answerUnlockAt) {
-                finishControl.disabled = true; more.disabled = true;
-                window.setTimeout(() => { if (finishControl.isConnected) { finishControl.disabled = false; more.disabled = !available; } }, Math.max(0, answerUnlockAt - performance.now()));
-            }
             stage.append(actions(finishControl, more));
             const review = actions(button('review', () => { quizView = 'review'; renderQuiz(); })); review.classList.add('secondary-actions'); stage.append(review);
         }

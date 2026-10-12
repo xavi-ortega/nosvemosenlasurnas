@@ -1459,7 +1459,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_memory_excerpt_observed_full_adoption_source_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)"
@@ -1483,6 +1483,12 @@
         "finding": "Primary July12 culture chapter observed in the search reader. Culture and July17 rural primary-byte retrievals returned HTTP403; requested July2023 culture archive returned404. These excerpts/statements do not establish adoption of the complete PSOE programme. No acquired full source or numerical position added.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -2884,7 +2890,7 @@
         }
       ],
       "programmeSearchStatus": "archived_23j_variant_fully_read_main_version_gap_open",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_available_programme_80_cell_bank_audit_locally_verified",
       "programmeIds": [
         "recortes-23j-archived"
       ],
@@ -2949,7 +2955,16 @@
       "notebooks": [
         "outputs/2023-programme-notebooks/recortes-23j-archived.json"
       ],
-      "programmeApplicabilityNote": "Recovered 48-page PROG.-23J_05.pdf explicitly identifies 23J 2023 and Congress/Senate and is fully read. Separate indexed 53-page PROG.-23J.pdf not recovered; no byte-equivalence or annex-completeness claim."
+      "programmeApplicabilityNote": "Recovered 48-page PROG.-23J_05.pdf explicitly identifies 23J 2023 and Congress/Senate and is fully read. Separate indexed 53-page PROG.-23J.pdf not recovered; no byte-equivalence or annex-completeness claim.",
+      "questionBankAudit": {
+        "recordedAt": "2026-10-12T09:08:07.245780+00:00",
+        "report": "outputs/2023-authored-final-two-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 3,
+        "newDerivedMappings": 0,
+        "citedUncertainties": 5,
+        "widerProgrammeFamilyCertified": false
+      }
     },
     {
       "id": "boe-2023-019",
@@ -3495,7 +3510,7 @@
         }
       ],
       "programmeSearchStatus": "congress_ballot_pack_excluded_23J_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "GEROA BAI (GBAI)"
@@ -3511,6 +3526,12 @@
         "status": "full_primary_23j_programme_unresolved",
         "newProgrammesAcquired": 0,
         "absenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -3559,7 +3580,7 @@
         }
       ],
       "programmeSearchStatus": "primary_2023_programme_and_decalogue_fully_read_linked_strategy_scope_pending_not_scoring_ready",
-      "analysisStatus": "reading_in_progress_full_document_notebook_available_not_scoring_ready",
+      "analysisStatus": "specific_complete_available_programme_80_cell_bank_audit_locally_verified",
       "programmeIds": [
         "adelante",
         "adelante-decalogue-verified-large-original",
@@ -3590,6 +3611,15 @@
         ],
         "publicationUrl": "https://adelanteandalucia.org/programa-elecciones-23j/",
         "rationale": "Primarygeneral23Jcampaignpage links fullprogramme and decálogo and identifies CongresscandidatePilarGonzález; finalofficialregistry has singleCádizCongressballot. FullPDF has explicitCádiz annex. Linked2022industrystrategy has separatedate/reusequalifier; nocandidateinheritance."
+      },
+      "questionBankAudit": {
+        "recordedAt": "2026-10-12T09:08:07.245780+00:00",
+        "report": "outputs/2023-authored-final-two-audit.json",
+        "questionCount": 80,
+        "derivedMappings": 10,
+        "newDerivedMappings": 4,
+        "citedUncertainties": 3,
+        "widerProgrammeFamilyCertified": false
       }
     },
     {
@@ -3770,7 +3800,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "BLOQUE EXTREMEÑO (BQEX)"
@@ -3780,7 +3810,13 @@
         "congress-badajoz-9",
         "congress-caceres-9"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
+      }
     },
     {
       "id": "boe-2023-030",
@@ -4037,7 +4073,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIDO ARAGONÉS (PAR)"
@@ -4061,6 +4097,12 @@
         "finding": "PrimaryJuly7campaignpublication andJuly11homepage confirm23JCongress/SenateHuesca/Teruel/Zaragoza. Currentcatalogueis2026; archivedcatalogue resolves20221009andlists2019/2015/2011. May2023regionalprogramme notadoptedforCongress. Full23Jprogramme unresolved.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4074,7 +4116,7 @@
         }
       ],
       "programmeSearchStatus": "archived_access_challenges_current_2024_european_programme_excluded_23J_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIDO HUMANISTA (PH)"
@@ -4090,6 +4132,12 @@
         "status": "full_primary_23j_programme_unresolved",
         "newProgrammesAcquired": 0,
         "absenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4103,7 +4151,7 @@
         }
       ],
       "programmeSearchStatus": "primary_23j_announcement_and_catalogue_recovered_full_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "POR HUELVA (XH)"
@@ -4120,6 +4168,12 @@
         "status": "full_primary_23j_programme_unresolved",
         "newProgrammesAcquired": 0,
         "absenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4133,7 +4187,7 @@
         }
       ],
       "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "VAMOS PALENCIA (VP)"
@@ -4142,7 +4196,13 @@
       "ballotRecordIds": [
         "congress-palencia-7"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
+      }
     },
     {
       "id": "boe-2023-037",
@@ -4155,7 +4215,7 @@
         }
       ],
       "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "ZAMORA SÍ (Zsi)"
@@ -4171,6 +4231,12 @@
         "status": "full_primary_23j_programme_unresolved",
         "newProgrammesAcquired": 0,
         "absenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4219,7 +4285,7 @@
         }
       ],
       "programmeSearchStatus": "searched_primary_archive_23j_programme_unresolved_not_absence_certified",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "POR MI REGIÓN (POR MI REGIÓN)"
@@ -4228,7 +4294,13 @@
       "ballotRecordIds": [
         "congress-murcia-12"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
+      }
     },
     {
       "id": "boe-2023-040",
@@ -4245,7 +4317,7 @@
         }
       ],
       "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO (AHORA CANARIAS-PCPC)"
@@ -4255,7 +4327,13 @@
         "congress-laspalmas-11",
         "congress-santacruzdetenerife-10"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
+      }
     },
     {
       "id": "boe-2023-041",
@@ -4362,7 +4440,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "COALICIÓN POR MELILLA (CpM)"
@@ -4385,6 +4463,12 @@
         "finding": "July11/12primarycampaignpublications read: customsborder, firsthomehelp,600socialhomes and regulatinghousingprices. Lastwording doesnotexplicitlyidentifyrentalcaps. Full23Jprogramme unresolved; municipal28Mayprogrammeexcluded. RequestedJulyhomepage resolvesAugust20; housingarchive is averificationchallenge, notpublicationtext.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4443,7 +4527,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA (EV-PCAS-TC)"
@@ -4462,6 +4546,12 @@
         "finding": "June13primarypublication fullyread: explicitlyonlyBurgosCongress/Senate coalitionwithEspañaVaciadaBurgos. No adoption ofSumar/RecortesCero/memberprogrammes; coalitionattemptsfailed. Generalprinciplesandmunicipalarticles notafull23Jprogramme.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4483,7 +4573,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIDO REGIONALISTA DEL PAÍS LEONÉS (PREPAL)"
@@ -4507,6 +4597,12 @@
         "finding": "CurrentandJuly8preservedPREPAL.euhomepages read; transparency andstandingideario links, no23Jprogrammefound. OriginalsiteHTTP444/archive502. Gziptransferdecoded boundedly preservingoriginalandpriorunsafeextraction. Programmeunresolved, noassertedabsence.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4520,7 +4616,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "SOMOS CÁCERES (Somos Cc)"
@@ -4529,7 +4625,13 @@
       "ballotRecordIds": [
         "congress-caceres-7"
       ],
-      "notebooks": []
+      "notebooks": [],
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
+      }
     },
     {
       "id": "boe-2023-048",
@@ -4596,7 +4698,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN (F.I.A.)",
@@ -4620,6 +4722,12 @@
         "finding": "Completearchivedprogramme read: explicitlyELECCIONESAUTONOMICAS2023, excludedfromCongresswithoutadoption. Currenthomepage describesmunicipalistparty; July20homepage linksregionalprogramme. NoCongressnumericvalues.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4683,7 +4791,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "UNIDAD CASTELLANA (Ud.Ca)"
@@ -4703,6 +4811,12 @@
         "finding": "Both current and preserved primary news catalogues read in full as native text. The current catalogue contains 2022 pension opinion and 2019 Puertollano municipal articles; the archive resolved to April 2019. Neither establishes a 23J Congress programme. Embedded external media remain unreviewed; programme absence is not certified.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4751,7 +4865,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "PARTIDO UNIONISTA ESTADO DE ESPAÑA (PUEDE)"
@@ -4775,6 +4889,12 @@
         "finding": "Actual election-specific and primary-domain followup completed. Results establish roster/identity or other-election/secondary leads only. No verified full primary 23J programme acquired.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4788,7 +4908,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "ENTRE VEÏNS CATALUNYA (EVR)"
@@ -4812,6 +4932,12 @@
         "finding": "Actual election-specific and primary-domain followup completed. Results establish roster/identity or other-election/secondary leads only. No verified full primary 23J programme acquired.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4829,7 +4955,7 @@
         }
       ],
       "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "LIBRES (LB)"
@@ -4850,6 +4976,12 @@
         "finding": "Current2026homepageandcatalogue read: federationprogrammeindevelopment. Requested2023archive resolves20250711andremainsnotfullyread. Identity/adoption by2023LibresLBballotsnotverified; no inherited programme.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4909,7 +5041,7 @@
         }
       ],
       "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "REFERÉNDUM SISTEMA DINERO (+RDS+)"
@@ -4930,6 +5062,12 @@
         "finding": "Actual election-specific and primary-domain followup completed. Results establish roster/identity or other-election/secondary leads only. No verified full primary 23J programme acquired.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -4943,7 +5081,7 @@
         }
       ],
       "programmeSearchStatus": "wrong_election_proposals_excluded_23j_congress_programme_unresolved",
-      "analysisStatus": "not_started",
+      "analysisStatus": "no_verified_applicable_complete_programme_explicitly_unscored",
       "programmeIds": [],
       "ballotAliases": [
         "COALICIÓN DE CENTRO DEMOCRÁTICO (CCD)"
@@ -4965,6 +5103,12 @@
         "finding": "The July 19 primary homepage and both proposals pages were read completely. The proposals explicitly identify the 2019 European election; the requested July 2023 archive resolves to September 2024. They cannot establish a 23J Congress programme. The sole Ourense candidacy remains visible and unscored; programme absence is not certified.",
         "allEligibleBallotsRetained": true,
         "sourceAbsenceCertified": false
+      },
+      "questionBankAudit": {
+        "report": "outputs/2023-final-corpus-reconciliation.json",
+        "questionCount": 80,
+        "derivedMappings": 0,
+        "missingProgramme": true
       }
     },
     {
@@ -6049,9 +6193,10 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/adelante.json",
-      "electionApplicability": "Primary campaign page explicitlygeneral23J and CongresscandidatePilarGonzález linksJuly2023original; programme has Cádiz-specific annex. SinglefinalCádizCongressballot; originalcoveritselfdoesnotstateyear."
+      "electionApplicability": "Primary campaign page explicitlygeneral23J and CongresscandidatePilarGonzález linksJuly2023original; programme has Cádiz-specific annex. SinglefinalCádizCongressballot; originalcoveritselfdoesnotstateyear.",
+      "bankAudit": "outputs/2023-authored-final-two-audit.json"
     },
     {
       "id": "adelante-decalogue",
@@ -6339,9 +6484,10 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/adelante-industrial-plan.json",
-      "electionApplicability": "2022datedstrategy linked as principalproposal in primary23Jcampaignpage. Reusechainrecorded; exact2023adoption/questionscope requirescross-reference; neverunlabelledother-electionreplacement."
+      "electionApplicability": "2022datedstrategy linked as principalproposal in primary23Jcampaignpage. Reusechainrecorded; exact2023adoption/questionscope requirescross-reference; neverunlabelledother-electionreplacement.",
+      "bankAudit": "outputs/2023-authored-final-two-audit.json"
     },
     {
       "id": "adelante-decalogue-verified-large-original",
@@ -6363,9 +6509,10 @@
         "method": "pypdf_native_layout_v1",
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
-      "analysisStatus": "full_document_read_not_scoring_ready",
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
       "notebook": "outputs/2023-programme-notebooks/adelante-decalogue.json",
-      "electionApplicability": "Primary23Jcampaignpublication and July2023URL/LastModified10July2023, originalcovernamesCongresscandidatePilarGonzález. Siximagepages/all13numberedcommitments visuallyread."
+      "electionApplicability": "Primary23Jcampaignpublication and July2023URL/LastModified10July2023, originalcovernamesCongresscandidatePilarGonzález. Siximagepages/all13numberedcommitments visuallyread.",
+      "bankAudit": "outputs/2023-authored-final-two-audit.json"
     },
     {
       "id": "psoe-primary-programme-retry",
@@ -6620,7 +6767,8 @@
         "readStatus": "full_document_read_recorded_in_authored_notebook"
       },
       "notebook": "outputs/2023-programme-notebooks/recortes-23j-archived.json",
-      "analysisStatus": "full_document_read_not_scoring_ready"
+      "analysisStatus": "complete_full_reading_specific_80_question_bank_audit_locally_verified",
+      "bankAudit": "outputs/2023-authored-final-two-audit.json"
     },
     {
       "id": "autonomos-23j",
@@ -10351,8 +10499,8 @@
     "authoredDraftQuestions": 80,
     "authoredDraftTopics": 10,
     "explicitMatrixCells": 5230,
-    "scoredDraftMappings": 329,
-    "independentAnswerCases": 1645,
+    "scoredDraftMappings": 332,
+    "independentAnswerCases": 1660,
     "browserRentCases": 90,
     "releasedRealQuestions": 0,
     "releaseEligible": false,
@@ -10363,7 +10511,7 @@
     "sourceCorrectnessCertified": false,
     "browserProgressivePaths": 16,
     "latestBrowserQuestions": 30,
-    "latestBrowserDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
+    "latestBrowserDraftSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
     "previousBrowserVerification": "outputs/2023-authored-three-minor-runtime-verification.json",
     "allConstituencyGeneratedProfilesChecked": 52,
     "latestBrowserCheckpoints": [
@@ -10374,20 +10522,20 @@
       30
     ],
     "latestBrowserRentCases": 2,
-    "latestBrowserProgressivePaths": 48,
-    "latestBrowserVerification": "outputs/2023-authored-pacma-browser-verification.json",
-    "latestCohortVerification": "outputs/2023-authored-pacma-verification.json",
+    "latestBrowserProgressivePaths": 80,
+    "latestBrowserVerification": "outputs/2023-authored-final-two-browser-verification.json",
+    "latestCohortVerification": "outputs/2023-authored-final-two-verification.json",
     "comparisonPolicy": "fixed-bank-evidence-v1",
     "fixedComparisonCohortVerification": "outputs/2023-authored-three-small-verification.json",
     "fixedComparisonBrowserVerification": "outputs/2023-authored-three-small-unknowns-runtime-verification.json",
-    "latestDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
+    "latestDraftSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
     "specificDocumentBankAudit": "outputs/2023-authored-cup-jxg-unidossi-audit.json",
     "newSpecificDocumentAuditedCells": 240,
     "newCitedPositionBrowserCases": 20,
     "newCitedPositionBrowserVerification": "outputs/2023-authored-cup-values-browser-verification.json",
     "pdecatBankAudit": "outputs/2023-authored-pdecat-audit.json",
     "newPdecatAuditedCells": 80,
-    "latestAuthoredDraftSha256": "067b48e3433e9da1d32199a5067ec2fb1e4be229ea0792fc0552cb0591167944",
+    "latestAuthoredDraftSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
     "pdecatValuesBrowserVerification": "outputs/2023-authored-pdecat-values-browser-verification.json",
     "newPdecatDerivedMappings": 3,
     "newPdecatCitedUncertainties": 19,
@@ -10490,7 +10638,7 @@
     "palenciatierravivaFixedComparisonEligible": false,
     "defaultMatrixCells": 4720,
     "scopedMatrixCells": 510,
-    "defaultScoredDraftMappings": 218,
+    "defaultScoredDraftMappings": 221,
     "scopedScoredDraftMappings": 111,
     "evLeonBankAudit": "outputs/2023-authored-ev-leon-audit.json",
     "evLeonVerification": "outputs/2023-authored-ev-leon-verification.json",
@@ -10616,7 +10764,7 @@
     "allPrevious176NumericMappingsUnchanged": true,
     "previousTeruelAndOtherScopedCellsExactlyPreserved": true,
     "allOtherCandidateResultsUnchanged": true,
-    "bankBytes": 5148732,
+    "bankBytes": 5169671,
     "frenteBankAudit": "outputs/2023-authored-frente-audit.json",
     "frenteVerification": "outputs/2023-authored-frente-verification.json",
     "frenteBrowserVerification": "outputs/2023-authored-frente-browser-verification.json",
@@ -10833,7 +10981,23 @@
     "latestPacmaScreenshotsReviewedThroughOverviews": 20,
     "latestPacmaOverviewFilesInspected": 10,
     "pacmaFixedComparisonEligible": true,
-    "pacmaTerritories": 51
+    "pacmaTerritories": 51,
+    "finalTwoBankAudit": "outputs/2023-authored-final-two-audit.json",
+    "finalTwoVerification": "outputs/2023-authored-final-two-verification.json",
+    "finalTwoBrowserVerification": "outputs/2023-authored-final-two-browser-verification.json",
+    "recortesNumericMappings": 3,
+    "adelanteNumericMappings": 10,
+    "adelanteNewNumericMappings": 4,
+    "missingProgrammeCandidacies": 21,
+    "missingProgrammeCells": 1680,
+    "notYetAuthoredDefaultCells": 0,
+    "fuerzaFurNumericWithdrawn": true,
+    "finalTwoCitedUncertaintyCells": 8,
+    "latestFinalTwoBrowserSessions": 80,
+    "latestFinalTwoCitedAnswerPaths": 80,
+    "latestFinalTwoCitedUnscoredPaths": 20,
+    "latestFinalTwoScreenshotsReviewedThroughOverviews": 36,
+    "latestFinalTwoOverviewFilesInspected": 18
   },
-  "recordedAt": "2026-10-12T08:42:57.373956+00:00"
+  "recordedAt": "2026-10-12T09:08:07.245780+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "electionId": "es-congress-2023-07-23",
-  "recordedAt": "2026-10-11T18:17:07.484716+00:00",
+  "recordedAt": "2026-10-12T08:51:27.442906+00:00",
   "status": "partial_authored_draft",
   "releaseEligible": false,
   "limitations": [
@@ -125,13 +125,24 @@
       "level": "general",
       "scaleRubric": {
         "0": "Explicit intermediate position on flight limitation itself.",
-        "1": "Explicit limits only where rail also meets a specified duration threshold.",
-        "2": "Explicit domestic flight limits where rail is an alternative, without an additional duration threshold.",
+        "1": "Explicit limits only where rail also meets a specified duration or route-distance threshold.",
+        "2": "Explicit domestic flight limits where rail is an alternative, without an additional duration or route-distance threshold.",
         "-1": "Explicitly rejects broad limits while accepting a narrower specified limit.",
         "-2": "Explicitly rejects limits based on a rail alternative."
       },
       "issueMatrixId": "rail-alternative-flight-limits",
-      "authorship": "Directly written after the recorded cross-programme reading; no generator."
+      "authorship": "Directly written after the recorded cross-programme reading; no generator.",
+      "rubricRevision": {
+        "recordedAt": "2026-10-12T08:51:27.442906+00:00",
+        "previous": {
+          "0": "Explicit intermediate position on flight limitation itself.",
+          "1": "Explicit limits only where rail also meets a specified duration threshold.",
+          "2": "Explicit domestic flight limits where rail is an alternative, without an additional duration threshold.",
+          "-1": "Explicitly rejects broad limits while accepting a narrower specified limit.",
+          "-2": "Explicitly rejects limits based on a rail alternative."
+        },
+        "rationale": "The authored Adelante source uses a 600-km route-distance condition; Sumar uses a four-hour duration condition. Both narrow the general proposition and retain qualified +1. Existing source values unchanged."
+      }
     },
     {
       "id": "retain-euthanasia-right",

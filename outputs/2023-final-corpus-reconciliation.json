@@ -1,0 +1,2595 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T08:51:27.442906+00:00",
+  "electionId": "es-congress-2023-07-23",
+  "status": "bounded_acquisition_gaps_reconciled_no_universal_absence_certification",
+  "registry": "outputs/2023-candidacy-registry.json",
+  "registrySha256": "c176932210ca3ce5a340970ce842f39961c03186a8142f0e4db866f1887ab73f",
+  "programmeSearchLedger": "outputs/2023-programme-searches.json",
+  "searchLedgerSha256": "c5d860110b96d83797d8acb5cff05a8b18c954ba109bd18de9986426d4b22cf3",
+  "questionBankAudit": "outputs/2023-authored-final-two-audit.json",
+  "missingCandidacies": [
+    {
+      "candidacyId": "boe-2023-005",
+      "officialName": "Partit dels Socialistes de Catalunya (PSC-PSOE) (PSC)",
+      "programmeSearchStatus": "primary_23j_memory_excerpt_observed_full_adoption_source_unresolved",
+      "attempts": [
+        {
+          "index": 83,
+          "recordedAt": "2026-10-11T11:21:45.669907+00:00",
+          "candidacyId": "boe-2023-005",
+          "query": "Primary publications and bounded archive records for unresolved 23J programmes.",
+          "url": "https://www.socialistes.cat/es/historia/eleccions/generals/",
+          "observationKind": "bounded_actual_source_or_archive_catalogue_retrieval",
+          "status": "retrieval_failed",
+          "actual": {
+            "id": "psc-general-elections-history",
+            "url": "https://www.socialistes.cat/es/historia/eleccions/generals/",
+            "recordedAt": "2026-10-11T11:21:45.669907+00:00",
+            "status": "retrieval_failed",
+            "error": "HTTP Error 403: Forbidden"
+          },
+          "limitations": "Search/catalogue presence is not complete programme reading or confirmed election/territorial adoption. Empty archive results and absent extracted links do not prove historical nonexistence."
+        },
+        {
+          "index": 84,
+          "recordedAt": "2026-10-11T11:21:45.669988+00:00",
+          "candidacyId": "boe-2023-005",
+          "query": "Primary publications and bounded archive records for unresolved 23J programmes.",
+          "url": "https://www.socialistes.cat/?s=programa+23J",
+          "observationKind": "bounded_actual_source_or_archive_catalogue_retrieval",
+          "status": "retrieval_failed",
+          "actual": {
+            "id": "psc-programme-search",
+            "url": "https://www.socialistes.cat/?s=programa+23J",
+            "recordedAt": "2026-10-11T11:21:45.669988+00:00",
+            "status": "retrieval_failed",
+            "error": "HTTP Error 403: Forbidden"
+          },
+          "limitations": "Search/catalogue presence is not complete programme reading or confirmed election/territorial adoption. Empty archive results and absent extracted links do not prove historical nonexistence."
+        },
+        {
+          "index": 92,
+          "recordedAt": "2026-10-11T11:22:55.327039+00:00",
+          "candidacyId": "boe-2023-005",
+          "query": "Primary publications and bounded archive records for unresolved 23J programmes.",
+          "url": "https://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+          "observationKind": "bounded_actual_source_or_archive_catalogue_retrieval",
+          "status": "retrieval_failed",
+          "actual": {
+            "id": "psc-23j-memory-publication",
+            "url": "https://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+            "recordedAt": "2026-10-11T11:22:55.327039+00:00",
+            "status": "retrieval_failed",
+            "error": "HTTP Error 403: Forbidden"
+          },
+          "limitations": "Search/catalogue presence is not complete programme reading or confirmed election/territorial adoption. Empty archive results and absent extracted links do not prove historical nonexistence."
+        },
+        {
+          "index": 100,
+          "recordedAt": "2026-10-11T11:30:06.825493+00:00",
+          "candidacyId": "boe-2023-005",
+          "query": "23J2023 programme follow-up with election-specific source distinctions.",
+          "url": "https://www.socialistes.cat/actualitat/generals-23j-la-memoria-democratica-en-el-programa-electoral-socialista/",
+          "observationKind": "web_search_or_publication_observation",
+          "status": "source_follow_up_unresolved",
+          "observation": "Primary July 13 PSC 23J memory-programme chapter read through web tool. Local retrieval403; no primary raw-byte hash acquired.",
+          "limitations": "No acquired full programme or scored interpretation claimed for these observations."
+        },
+        {
+          "index": 101,
+          "recordedAt": "2026-10-11T11:30:06.825493+00:00",
+          "candidacyId": "boe-2023-005",
+          "query": "23J2023 programme follow-up with election-specific source distinctions.",
+          "url": "https://www.elnacional.cat/ca/eleccions/generals-2023/programes-electorals-catalunya-2023-eleccions-generals_1064277_102_amp.html",
+          "observationKind": "web_search_or_publication_observation",
+          "status": "source_follow_up_unresolved",
+          "observation": "Contemporary July 23 secondary article says PSC did not create a separate programme; further primary adoption reconciliation required.",
+          "limitations": "No acquired full programme or scored interpretation claimed for these observations."
+        },
+        {
+          "index": 168,
+          "candidacyId": "boe-2023-005",
+          "query": "site.socialistes.cat \"2023\" \"23\" \"programa\" \"pdf\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 169,
+          "candidacyId": "boe-2023-005",
+          "query": "site.socialistes.cat \"23J\" \"programa electoral\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 170,
+          "candidacyId": "boe-2023-005",
+          "query": "\"PSC\" \"23J\" \"programa\" \"pdf\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 171,
+          "candidacyId": "boe-2023-005",
+          "query": "site.socialistes.cat \"2023\" \"programa\" \"Batet\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 172,
+          "candidacyId": "boe-2023-005",
+          "query": "\"PSC\" \"23 juliol\" \"programa electoral\" filetype:pdf",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 173,
+          "candidacyId": "boe-2023-005",
+          "query": "\"programa\" \"juliol\" \"2023\" site:socialistes.cat",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 174,
+          "candidacyId": "boe-2023-005",
+          "query": "\"programa electoral\" \"generals\" \"2023\" site:socialistes.cat",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 221,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"2023\" \"23J\" \"programa\" filetype:pdf",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 222,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"eleccions generals\" \"2023\" \"programa electoral\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 223,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"Congrés\" \"23 de juliol\" \"programa\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 224,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"programa\" \"23-J\" \"2023\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 225,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"programa electoral\" \"juliol\" \"2023\" -Cardedeu -municipals",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 226,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat/wp-content/uploads/2023/07/ \"programa\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 227,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"programa del PSOE\" \"2023\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [],
+          "numericPositionAdded": false,
+          "observationScope": "Query retained from previous active-turn checkpoint. The batch found primary culture and rural campaign leads; the exact per-query result association was not retained, so none is asserted."
+        },
+        {
+          "index": 228,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"Generales 2023\" \"cultura\" \"programa\"",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [
+            {
+              "title": "Primary July12 culture chapter; no complete-programme adoption claim",
+              "url": "https://socialistes.cat/es/actualitat/generales-2023-la-cultura-en-el-programa-electoral-de-los-socialistas/"
+            }
+          ],
+          "numericPositionAdded": false,
+          "observationScope": "Executed in resumed turn; web open failed, search reader exposed indexed chapter text."
+        },
+        {
+          "index": 229,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"23J\" \"programa electoral\" PSOE",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [
+            {
+              "title": "Primary July12 culture chapter; no complete-programme adoption claim",
+              "url": "https://socialistes.cat/es/actualitat/generales-2023-la-cultura-en-el-programa-electoral-de-los-socialistas/"
+            }
+          ],
+          "numericPositionAdded": false,
+          "observationScope": "Executed in resumed turn; web open failed, search reader exposed indexed chapter text."
+        },
+        {
+          "index": 230,
+          "candidacyId": "boe-2023-005",
+          "query": "site:socialistes.cat \"2023\" \"23J\" \"programa\" filetype:pdf",
+          "recordedAt": "2026-10-11T15:31:08.700499+00:00",
+          "status": "actual_primary_followup_full_programme_adoption_unresolved",
+          "discoveredPages": [
+            {
+              "title": "Primary July12 culture chapter; no complete-programme adoption claim",
+              "url": "https://socialistes.cat/es/actualitat/generales-2023-la-cultura-en-el-programa-electoral-de-los-socialistas/"
+            }
+          ],
+          "numericPositionAdded": false,
+          "observationScope": "Executed in resumed turn; web open failed, search reader exposed indexed chapter text."
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-barcelona-1",
+        "congress-girona-1",
+        "congress-lleida-1",
+        "congress-tarragona-1"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-023",
+      "officialName": "Geroa Bai (GBAI).",
+      "programmeSearchStatus": "congress_ballot_pack_excluded_23J_programme_unresolved",
+      "attempts": [
+        {
+          "index": 1,
+          "candidacyId": "boe-2023-023",
+          "query": "\"Geroa Bai\" \"23 julio 2023\" \"programa\"",
+          "discoveredPages": [
+            {
+              "title": "Elecciones Generales 23 Julio 2023 - Ayuntamiento de Tafalla/Tafallako Udala",
+              "url": "https://www.tafalla.es/elecciones-generales-23-julio-2023/"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 48,
+          "candidacyId": "boe-2023-023",
+          "query": "Primary transparency catalogue follow-up",
+          "observationKind": "primary_publication_follow_up",
+          "discoveredPages": [
+            {
+              "title": "Geroa catalogue",
+              "url": "https://geroabai.eus/es/transparencia"
+            }
+          ],
+          "status": "23j_unresolved_catalogue_lists_may2023_and_older_editions",
+          "recordedAt": "2026-10-11T08:52:00.094699+00:00",
+          "limitations": "Observation is not scored policy or proof that unresolved 23J sources never existed."
+        },
+        {
+          "index": 55,
+          "candidacyId": "boe-2023-023",
+          "query": "\"23J\" \"programa\" domain:geroabai.eus; \"programa\" \"23J\" \"Geroa\" filetype:pdf",
+          "observationKind": "source_search_follow_up",
+          "status": "no_verified_23j_original_in_returned_results",
+          "limitations": "Municipal election information results do not substitute a23Jcandidacy programme.",
+          "recordedAt": "2026-10-11T09:30:54.115781+00:00"
+        },
+        {
+          "index": 102,
+          "recordedAt": "2026-10-11T11:30:06.825493+00:00",
+          "candidacyId": "boe-2023-023",
+          "query": "23J2023 programme follow-up with election-specific source distinctions.",
+          "url": "https://geroabai.eus/es/transparencia",
+          "observationKind": "web_search_or_publication_observation",
+          "status": "source_follow_up_unresolved",
+          "observation": "Repeated 23J queries returned primary transparency listing foral/municipal programmes and coalition candidate proclamation. No verified Congress 23J programme returned; do not substitute foral2023.",
+          "limitations": "No acquired full programme or scored interpretation claimed for these observations."
+        },
+        {
+          "index": 120,
+          "candidacyId": "boe-2023-023",
+          "query": "site.geroabai.eus \"2023\" \"programa\" \"generales\"",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 239,
+          "candidacyId": "boe-2023-023",
+          "query": "site:geroabai.eus \"23J\" \"programa\"",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Geroa Bai primary programme catalogue",
+              "url": "https://geroabai.eus/es/transparencia",
+              "scopeAssessment": "2023 foral/municipal documents and August government pact are not 23J Congress substitutes."
+            },
+            {
+              "title": "Geroa Bai primary July 1 2023 Congress campaign statement",
+              "url": "https://geroabai.eus/es/actualidad/geroa-bai-apuesta-por-llevar-al-estado-las-politicas-por-la-igualdad-la-coeducacion-y-la-ampliacion-de-derechos-de-las-personas-que-se-llevan-aplicando-en-navarra-desde-2015",
+              "scopeAssessment": "Primary pre-vote Congress campaign fragment; full programme not established. Not acquired/authored/scored in this increment."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 245,
+          "candidacyId": "boe-2023-023",
+          "query": "\"Geroa Bai\" programa \"julio\" 2023 congreso",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Geroa Bai primary programme catalogue",
+              "url": "https://geroabai.eus/es/transparencia",
+              "scopeAssessment": "2023 foral/municipal documents and August government pact are not 23J Congress substitutes."
+            },
+            {
+              "title": "Geroa Bai primary July 1 2023 Congress campaign statement",
+              "url": "https://geroabai.eus/es/actualidad/geroa-bai-apuesta-por-llevar-al-estado-las-politicas-por-la-igualdad-la-coeducacion-y-la-ampliacion-de-derechos-de-las-personas-que-se-llevan-aplicando-en-navarra-desde-2015",
+              "scopeAssessment": "Primary pre-vote Congress campaign fragment; full programme not established. Not acquired/authored/scored in this increment."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 248,
+          "candidacyId": "boe-2023-023",
+          "query": "site:geroabai.eus \"23 de julio\" \"programa\"",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Geroa Bai primary programme catalogue",
+              "url": "https://geroabai.eus/es/transparencia",
+              "scopeAssessment": "2023 foral/municipal documents and August government pact are not 23J Congress substitutes."
+            },
+            {
+              "title": "Geroa Bai primary July 1 2023 Congress campaign statement",
+              "url": "https://geroabai.eus/es/actualidad/geroa-bai-apuesta-por-llevar-al-estado-las-politicas-por-la-igualdad-la-coeducacion-y-la-ampliacion-de-derechos-de-las-personas-que-se-llevan-aplicando-en-navarra-desde-2015",
+              "scopeAssessment": "Primary pre-vote Congress campaign fragment; full programme not established. Not acquired/authored/scored in this increment."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 251,
+          "candidacyId": "boe-2023-023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "status": "bounded_primary_and_archive_followup_unresolved_not_absence_certified",
+          "httpAttempts": [
+            {
+              "id": "geroabai-transparency",
+              "requestedUrl": "https://geroabai.eus/es/transparencia",
+              "recordedAt": "2026-10-11T19:52:55.504249+00:00",
+              "status": 200,
+              "resolvedUrl": "https://geroabai.eus/es/transparencia",
+              "bytes": 86249,
+              "sha256": "31c9fbe14e388cff05da2945aaa1ca8ee93f632585cce82b8a53d292462abbf6",
+              "bodyComplete": true,
+              "retainedFile": ".tools/2023-source-gap-followup/geroabai-transparency.raw"
+            }
+          ],
+          "discoveredPages": [
+            {
+              "title": "Geroa Bai primary programme catalogue",
+              "url": "https://geroabai.eus/es/transparencia",
+              "scopeAssessment": "2023 foral/municipal documents and August government pact are not 23J Congress substitutes."
+            },
+            {
+              "title": "Geroa Bai primary July 1 2023 Congress campaign statement",
+              "url": "https://geroabai.eus/es/actualidad/geroa-bai-apuesta-por-llevar-al-estado-las-politicas-por-la-igualdad-la-coeducacion-y-la-ampliacion-de-derechos-de-las-personas-que-se-llevan-aplicando-en-navarra-desde-2015",
+              "scopeAssessment": "Primary pre-vote Congress campaign fragment; full programme not established. Not acquired/authored/scored in this increment."
+            }
+          ],
+          "limitations": [
+            "Archive availability empty object is not proof of no archived source. The humanist bounded index returns 50 collapsed entries and is not exhaustive.",
+            "Archive index links/campaign statements are leads, not a fully acquired/read applicable programme; errors/challenges never establish programme absence.",
+            "No unique programme/notebook/page count or numeric position added."
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-navarra-4"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-029",
+      "officialName": "Bloque Extremeño (BQEX)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 6,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"2023\" programa generales",
+          "discoveredPages": [
+            {
+              "title": "Disposición 18907 del BOE núm. 209 de 2023",
+              "url": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 104,
+          "recordedAt": "2026-10-11T11:30:06.825493+00:00",
+          "candidacyId": "boe-2023-029",
+          "query": "23J2023 programme follow-up with election-specific source distinctions.",
+          "url": "https://elecciones.generales23j.es/pdf/papeletas-descargables-cera/congreso/badajoz-congreso.pdf",
+          "observationKind": "web_search_or_publication_observation",
+          "status": "source_follow_up_unresolved",
+          "observation": "Search returned official Congress ballot and source registry, no programme. Ballot identity is not policy evidence.",
+          "limitations": "No acquired full programme or scored interpretation claimed for these observations."
+        },
+        {
+          "index": 122,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"23J\" programa",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 126,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"programa electoral\" julio",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 175,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"23J\" programa",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 176,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"programa\" 2023",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 177,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" web programa electoral julio",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 178,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" \"programa\" \"julio\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 179,
+          "candidacyId": "boe-2023-029",
+          "query": "\"Bloque Extremeño\" programa filetype:pdf",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-badajoz-9",
+        "congress-caceres-9"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-033",
+      "officialName": "Partido Aragonés (PAR)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 10,
+          "candidacyId": "boe-2023-033",
+          "query": "\"Partido Aragonés\" \"23J\" \"programa\"",
+          "discoveredPages": [
+            {
+              "title": "Elecciones 23J | Diario de campaña del 21 de julio",
+              "url": "https://www.rtve.es/noticias/20230703/elecciones-generales-2023-cronica-jornada-21-julio/2451125.shtml"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 105,
+          "recordedAt": "2026-10-11T11:30:06.825493+00:00",
+          "candidacyId": "boe-2023-033",
+          "query": "23J2023 programme follow-up with election-specific source distinctions.",
+          "url": "https://www.aragondigital.es/articulo/politica/el-par-se-reafirma-en-su-acto-central-como-la-voz-clara-e-independiente-de-aragon-en-madrid/20230721095256843274.html",
+          "observationKind": "web_search_or_publication_observation",
+          "status": "source_follow_up_unresolved",
+          "observation": "Dated23Jcampaign lead returned; original primary programme remains unresolved.",
+          "limitations": "No acquired full programme or scored interpretation claimed for these observations."
+        },
+        {
+          "index": 123,
+          "candidacyId": "boe-2023-033",
+          "query": "\"Partido Aragonés\" \"23J\" \"programa\"",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 124,
+          "candidacyId": "boe-2023-033",
+          "query": "site.partidoaragones.es \"julio\" \"2023\" programa",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 155,
+          "candidacyId": "boe-2023-033",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "par-current-catalogue",
+            "par-july-2023-archive",
+            "par-23j-campaign-primary",
+            "par-23j-campaign-archive",
+            "par-2023-programme-catalogue"
+          ],
+          "actualFinding": "PrimaryJuly7campaignpublication andJuly11homepage confirm23JCongress/SenateHuesca/Teruel/Zaragoza. Currentcatalogueis2026; archivedcatalogue resolves20221009andlists2019/2015/2011. May2023regionalprogramme notadoptedforCongress. Full23Jprogramme unresolved.",
+          "sourceAbsenceCertified": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-huesca-13",
+        "congress-teruel-7",
+        "congress-zaragoza-13"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-034",
+      "officialName": "Partido Humanista (PH)",
+      "programmeSearchStatus": "archived_access_challenges_current_2024_european_programme_excluded_23J_unresolved",
+      "attempts": [
+        {
+          "index": 11,
+          "candidacyId": "boe-2023-034",
+          "query": "\"Partido Humanista\" \"23J\" \"programa\"",
+          "discoveredPages": [
+            {
+              "title": "Portada de España del 11 de Junio de 2024 - Libertad Digital",
+              "url": "https://www.libertaddigital.com/espana/2024-06-11/"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 109,
+          "candidacyId": "boe-2023-034",
+          "query": "Direct primary catalogue/campaign retrieval and scope follow-up.",
+          "id": "ph-current-catalogue",
+          "url": "https://partidohumanista.es/",
+          "retrievedAt": "2026-10-11T11:39:08.590138+00:00",
+          "resolvedUrl": "https://partidohumanista.es/",
+          "mediaType": "text/html; charset=UTF-8",
+          "lastModified": null,
+          "status": "publication_acquired_not_semantically_read",
+          "file": "storage/app/election-sources/2023-congress/ph-current-catalogue-publication-42f4faa7fe95.html",
+          "sha256": "42f4faa7fe95547b03b99d8f38fffd9ca01799d844218d573c84e18cac1ca45b",
+          "textFile": "storage/app/election-sources/2023-congress/ph-current-catalogue-publication-42f4faa7fe95.txt",
+          "textSha256": "21c7eeb6b1a1887d5aa2516300160e07ae828f20ab1370cdb80905bf21c06d24",
+          "links": [
+            "https://partidohumanista.es/index.php/programa-europeas/",
+            "https://partidohumanista.es/wp-content/uploads/2024/05/Programa-elecciones-europeas-2024_ok.pdf"
+          ],
+          "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+          "applicabilityNote": "Current European2024programme links cannot substitute for23J2023Congress."
+        },
+        {
+          "index": 116,
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "candidacyId": "boe-2023-034",
+          "query": "\"Partido Humanista\" \"23J\" \"programa\" 2023",
+          "status": "search_results_no_verified_primary_23j_programme_yet",
+          "discoveredPages": []
+        },
+        {
+          "index": 240,
+          "candidacyId": "boe-2023-034",
+          "query": "site:partidohumanista.es \"2023\" \"programa\"",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Partido Humanista current homepage",
+              "url": "https://partidohumanista.es/",
+              "scopeAssessment": "2024 European programme links and 2026 news do not establish a 23J programme."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 246,
+          "candidacyId": "boe-2023-034",
+          "query": "\"Partido Humanista\" \"23J\" programa",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Partido Humanista current homepage",
+              "url": "https://partidohumanista.es/",
+              "scopeAssessment": "2024 European programme links and 2026 news do not establish a 23J programme."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 249,
+          "candidacyId": "boe-2023-034",
+          "query": "site:partidohumanista.es \"julio\" 2023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Partido Humanista current homepage",
+              "url": "https://partidohumanista.es/",
+              "scopeAssessment": "2024 European programme links and 2026 news do not establish a 23J programme."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 252,
+          "candidacyId": "boe-2023-034",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "status": "bounded_primary_and_archive_followup_unresolved_not_absence_certified",
+          "httpAttempts": [
+            {
+              "id": "humanist-home",
+              "requestedUrl": "https://partidohumanista.es/",
+              "recordedAt": "2026-10-11T19:52:55.504603+00:00",
+              "status": 200,
+              "resolvedUrl": "https://partidohumanista.es/",
+              "bytes": 56930,
+              "sha256": "2799cc1bcae6cf2946bb37b3a44e6c5e7bde1b153ef28502ac9d97930ab6b6f9",
+              "bodyComplete": true,
+              "retainedFile": ".tools/2023-source-gap-followup/humanist-home.raw"
+            },
+            {
+              "id": "humanist-archive-availability",
+              "requestedUrl": "https://archive.org/wayback/available?url=partidohumanista.es&timestamp=20230720",
+              "recordedAt": "2026-10-11T19:52:55.665608+00:00",
+              "status": 200,
+              "resolvedUrl": "https://archive.org/wayback/available?url=partidohumanista.es&timestamp=20230720",
+              "bytes": 81,
+              "sha256": "1eec68939d265cc9c2637607e70ec77ca5818502bbcac44d201c3f4314441ba1",
+              "bodyComplete": true,
+              "retainedFile": ".tools/2023-source-gap-followup/humanist-archive-availability.raw",
+              "availabilityResponse": {
+                "url": "partidohumanista.es",
+                "archived_snapshots": {},
+                "timestamp": "20230720"
+              }
+            },
+            {
+              "id": "humanist-cdx-2023",
+              "requestedUrl": "https://web.archive.org/cdx/search/cdx?url=%2A.partidohumanista.es%2F%2A&output=json&filter=statuscode%3A200&from=2023&to=2023&collapse=urlkey&limit=50",
+              "recordedAt": "2026-10-11T19:53:46.180810+00:00",
+              "status": 200,
+              "resolvedUrl": "https://web.archive.org/cdx/search/cdx?url=%2A.partidohumanista.es%2F%2A&output=json&filter=statuscode%3A200&from=2023&to=2023&collapse=urlkey&limit=50",
+              "bytes": 10768,
+              "sha256": "2b03ea73a58459474d0b1cc9c33a566d200d6ae6c9b62705fe5a1812e9f4f375",
+              "bodyComplete": true,
+              "retainedFile": ".tools/2023-source-gap-followup/humanist-cdx-2023.raw",
+              "archiveIndexResponse": [
+                [
+                  "urlkey",
+                  "timestamp",
+                  "original",
+                  "mimetype",
+                  "statuscode",
+                  "digest",
+                  "length"
+                ],
+                [
+                  "es,partidohumanista)/",
+                  "20230205201624",
+                  "https://www.partidohumanista.es/",
+                  "text/html",
+                  "200",
+                  "YU4TRC7F3VZNQJYJ7JILZYFAJPH4AO3Z",
+                  "12616"
+                ],
+                [
+                  "es,partidohumanista)/.well-known/gpc.json",
+                  "20230715083709",
+                  "http://www.partidohumanista.es/.well-known/gpc.json",
+                  "application/json",
+                  "200",
+                  "VRWUKCQW265V52IBJK4BGUOAWAISULR6",
+                  "789"
+                ],
+                [
+                  "es,partidohumanista)/.well-known/nodeinfo",
+                  "20230715115532",
+                  "https://www.partidohumanista.es/.well-known/nodeinfo",
+                  "text/html",
+                  "200",
+                  "GJRIJQP3BAV64JESHIN4PZKDGHLDT4UV",
+                  "734"
+                ],
+                [
+                  "es,partidohumanista)/.well-known/openid-configuration",
+                  "20230708121215",
+                  "http://www.partidohumanista.es/.well-known/openid-configuration",
+                  "text/html",
+                  "200",
+                  "PINPD7DYCZT5P2BQW5GJXJWFMYGO5JYP",
+                  "6544"
+                ],
+                [
+                  "es,partidohumanista)/.well-known/security.txt",
+                  "20230715195959",
+                  "https://www.partidohumanista.es/.well-known/security.txt",
+                  "text/plain",
+                  "200",
+                  "YOA3ZIUKIPTDY6GF4DFE6NAQCQUKG555",
+                  "757"
+                ],
+                [
+                  "es,partidohumanista)/.well-known/trust.txt",
+                  "20230715125212",
+                  "http://www.partidohumanista.es/.well-known/trust.txt",
+                  "text/plain",
+                  "200",
+                  "4EK3C7DVOXT4RKFHCIMMCVIGTFGZLBGX",
+                  "791"
+                ],
+                [
+                  "es,partidohumanista)/2-de-octubre-dia-internacional-de-la-no-violencia",
+                  "20230205194524",
+                  "https://www.partidohumanista.es/2-de-octubre-dia-internacional-de-la-no-violencia/",
+                  "text/html",
+                  "200",
+                  "6V3U7MQJDWETBXVVGYREN2VHRNAW7AWV",
+                  "8493"
+                ],
+                [
+                  "es,partidohumanista)/2-octubre-dia-internacional-la-no-violencia",
+                  "20230205204333",
+                  "https://www.partidohumanista.es/2-octubre-dia-internacional-la-no-violencia/",
+                  "text/html",
+                  "200",
+                  "NLILS63GCJJ32H67NDXD3DMUIX633V4C",
+                  "10527"
+                ],
+                [
+                  "es,partidohumanista)/25-noviembre-viii-congreso-del-ph-madrid",
+                  "20230205211758",
+                  "https://www.partidohumanista.es/25-noviembre-viii-congreso-del-ph-madrid/",
+                  "text/html",
+                  "200",
+                  "44BUIEDIQYNIKZN7EGB4ZNMDC2P7LRC6",
+                  "8127"
+                ],
+                [
+                  "es,partidohumanista)/3415-2",
+                  "20230331132742",
+                  "https://www.partidohumanista.es/3415-2/",
+                  "text/html",
+                  "200",
+                  "GB2BZWEQVXJC45OZULXWCVUBDTDZLHYF",
+                  "11768"
+                ],
+                [
+                  "es,partidohumanista)/3682-2",
+                  "20230331131916",
+                  "https://www.partidohumanista.es/3682-2/",
+                  "text/html",
+                  "200",
+                  "M3NCFZUPQJWKWYKJ7IR3M3Y7K4TQJYCN",
+                  "9418"
+                ],
+                [
+                  "es,partidohumanista)/3724-2",
+                  "20230331124319",
+                  "https://www.partidohumanista.es/3724-2/",
+                  "text/html",
+                  "200",
+                  "37SDFFJV5T65TA4RUXRYVFMCQKTUCROU",
+                  "9734"
+                ],
+                [
+                  "es,partidohumanista)/3840-2",
+                  "20231207010139",
+                  "https://www.partidohumanista.es/3840-2/",
+                  "text/html",
+                  "200",
+                  "SFGPSIZMNG2A44NBPLC54VU7N3VON3BX",
+                  "9789"
+                ],
+                [
+                  "es,partidohumanista)/8-marzo-dia-mujer-2017",
+                  "20230205213953",
+                  "https://www.partidohumanista.es/8-marzo-dia-mujer-2017/",
+                  "text/html",
+                  "200",
+                  "6KTZWQEXAFXS743VVV6ER5KJ6PZGP3B5",
+                  "8693"
+                ],
+                [
+                  "es,partidohumanista)/ablacion-y-violencia-de-genero",
+                  "20230331131632",
+                  "https://www.partidohumanista.es/ablacion-y-violencia-de-genero/",
+                  "text/html",
+                  "200",
+                  "2ORCAMIZ5RP2WMNGBWYJWTYFSD5OE2XA",
+                  "9561"
+                ],
+                [
+                  "es,partidohumanista)/abolicion-de-la-esclavitud-ya",
+                  "20230201155728",
+                  "https://www.partidohumanista.es/abolicion-de-la-esclavitud-ya/",
+                  "text/html",
+                  "200",
+                  "I4AWHFGN5UOVXF7N7M2FFTNBDZBNB7BZ",
+                  "11115"
+                ],
+                [
+                  "es,partidohumanista)/acompananos-el-viernes-14-de-julio-en-el-parque-de-la-vaguada-a-las-20hs",
+                  "20230921154511",
+                  "https://www.partidohumanista.es/acompananos-el-viernes-14-de-julio-en-el-parque-de-la-vaguada-a-las-20hs/",
+                  "text/html",
+                  "200",
+                  "765WIIECOQRHFDWIX6S7PLLMWJJ5QMPP",
+                  "9516"
+                ],
+                [
+                  "es,partidohumanista)/acto-de-campana-del-14-de-julio",
+                  "20230921164405",
+                  "https://www.partidohumanista.es/acto-de-campana-del-14-de-julio/",
+                  "text/html",
+                  "200",
+                  "CLSJESZNOLVYKR7PFDTGQCJSJ6VG7YJ4",
+                  "8615"
+                ],
+                [
+                  "es,partidohumanista)/acto-de-campana-del-partido-humanista",
+                  "20230205212147",
+                  "https://www.partidohumanista.es/acto-de-campana-del-partido-humanista/",
+                  "text/html",
+                  "200",
+                  "SFLLQBHLQAHVD2XUST7GTBL5SUC2CLTN",
+                  "9076"
+                ],
+                [
+                  "es,partidohumanista)/acto-de-campana-del-partido-humanista-2",
+                  "20230205204636",
+                  "https://www.partidohumanista.es/acto-de-campana-del-partido-humanista-2/",
+                  "text/html",
+                  "200",
+                  "BEBEXPBCN3Z4WMWZCOW4DPIAUACIT6VB",
+                  "10349"
+                ],
+                [
+                  "es,partidohumanista)/acto-de-campana-del-partido-humanista-en-madrid",
+                  "20230205211538",
+                  "https://www.partidohumanista.es/acto-de-campana-del-partido-humanista-en-madrid/",
+                  "text/html",
+                  "200",
+                  "RTT6ZPSN364APASNBTLOHNASP4A7LA6C",
+                  "10482"
+                ],
+                [
+                  "es,partidohumanista)/acto-de-final-de-campana-en-santander-en-el-colegio-el-sardinero-el-viernes-18-de-diciembre-a-las-1930",
+                  "20230201145909",
+                  "https://www.partidohumanista.es/acto-de-final-de-campana-en-santander-en-el-colegio-el-sardinero-el-viernes-18-de-diciembre-a-las-1930/",
+                  "text/html",
+                  "200",
+                  "IEJEQRX3PBKE3JQRYMGXH5FLKB6YYZJK",
+                  "8604"
+                ],
+                [
+                  "es,partidohumanista)/acto-en-alcala-de-henares",
+                  "20230205203251",
+                  "https://www.partidohumanista.es/acto-en-alcala-de-henares/",
+                  "text/html",
+                  "200",
+                  "5CAGGN4XQP5F6NIRB7YGZ72CBKNRZFNA",
+                  "7938"
+                ],
+                [
+                  "es,partidohumanista)/alto-a-la-masacre-en-gaza",
+                  "20230201150804",
+                  "https://www.partidohumanista.es/alto-a-la-masacre-en-gaza/",
+                  "text/html",
+                  "200",
+                  "6EE2QZQGPCSL67BOPPTAVN3IWW2A4WRV",
+                  "9684"
+                ],
+                [
+                  "es,partidohumanista)/apoyamos-y-adherimos-a-la-marcha-estatal-contra-las-violencias-machistas",
+                  "20230205195732",
+                  "https://www.partidohumanista.es/apoyamos-y-adherimos-a-la-marcha-estatal-contra-las-violencias-machistas/",
+                  "text/html",
+                  "200",
+                  "INGRX2X2FVMUGPPX674I3KBKIA2JOHKG",
+                  "8179"
+                ],
+                [
+                  "es,partidohumanista)/apoyo-del-partido-humanista-a-las-movilizaciones-del-1-de-junio-puebles-unidos-contra-la-troika",
+                  "20230201161253",
+                  "https://www.partidohumanista.es/apoyo-del-partido-humanista-a-las-movilizaciones-del-1-de-junio-puebles-unidos-contra-la-troika/",
+                  "text/html",
+                  "200",
+                  "ZOJAVFJEY7BU4QFVJG44DRLTZSX3UERM",
+                  "9019"
+                ],
+                [
+                  "es,partidohumanista)/apoyo-del-partido-humanista-a-las-movilizaciones-del-1-de-junio-puebles-unidos-contra-la-troika-2",
+                  "20230205202848",
+                  "https://www.partidohumanista.es/apoyo-del-partido-humanista-a-las-movilizaciones-del-1-de-junio-puebles-unidos-contra-la-troika-2/",
+                  "text/html",
+                  "200",
+                  "6ZIE4TKAV4BRI6SQBCLFOPRIH6AUXTV2",
+                  "9031"
+                ],
+                [
+                  "es,partidohumanista)/app-ads.txt",
+                  "20230715200337",
+                  "http://www.partidohumanista.es/app-ads.txt",
+                  "text/plain",
+                  "200",
+                  "U5M36I244ZCRN6JI4MKHVXII2TWHLR4G",
+                  "771"
+                ],
+                [
+                  "es,partidohumanista)/asesinado-en-honduras-julio-andres-pineda-activista-de-mundo-sin-guerras-y-sin-violencia",
+                  "20230201163201",
+                  "https://www.partidohumanista.es/asesinado-en-honduras-julio-andres-pineda-activista-de-mundo-sin-guerras-y-sin-violencia/",
+                  "text/html",
+                  "200",
+                  "FB6P2C5YVAVAWZLDC6GHABQZYPI365P7",
+                  "8711"
+                ],
+                [
+                  "es,partidohumanista)/author/ph2015",
+                  "20230206000044",
+                  "https://www.partidohumanista.es/author/ph2015/",
+                  "text/html",
+                  "200",
+                  "HUVTBWDYFYZUV5WK2CM537UR4PGS3DKA",
+                  "7901"
+                ],
+                [
+                  "es,partidohumanista)/author/ph2015/page/2",
+                  "20230331134642",
+                  "https://www.partidohumanista.es/author/ph2015/page/2/",
+                  "text/html",
+                  "200",
+                  "2GZDTRMRFWA4KFOA4VTOV34UB4ECEF2N",
+                  "7993"
+                ],
+                [
+                  "es,partidohumanista)/author/ph2015/page/3",
+                  "20230205195528",
+                  "https://www.partidohumanista.es/author/ph2015/page/3/",
+                  "text/html",
+                  "200",
+                  "5KSNBTH7LYQ3Q6HGRHNDTUCJZLKGCF2M",
+                  "7783"
+                ],
+                [
+                  "es,partidohumanista)/aviso-legal",
+                  "20230205202419",
+                  "https://www.partidohumanista.es/aviso-legal/",
+                  "text/html",
+                  "200",
+                  "7GXQHW3PW2WXKGRGLKJ5BSM26LBEX4JE",
+                  "10675"
+                ],
+                [
+                  "es,partidohumanista)/base-de-moron-el-gobierno-de-rajoy-se-somete-totalmente-a-los-intereses-de-washington",
+                  "20230205205449",
+                  "https://www.partidohumanista.es/base-de-moron-el-gobierno-de-rajoy-se-somete-totalmente-a-los-intereses-de-washington/",
+                  "text/html",
+                  "200",
+                  "PPYDYMUNBAUOGKHB5WJPBW5QOPLQATBS",
+                  "7780"
+                ],
+                [
+                  "es,partidohumanista)/base-de-moron-el-gobierno-del-pp-se-somete-a-la-politica-belicista-de-los-eeuu",
+                  "20230201162845",
+                  "https://www.partidohumanista.es/base-de-moron-el-gobierno-del-pp-se-somete-a-la-politica-belicista-de-los-eeuu/",
+                  "text/html",
+                  "200",
+                  "SFDZWCDWZRWCBAP3YRSXMU6FCGYUNLUY",
+                  "8580"
+                ],
+                [
+                  "es,partidohumanista)/bases-de-una-economia-humanista",
+                  "20230205211042",
+                  "https://www.partidohumanista.es/bases-de-una-economia-humanista/",
+                  "text/html",
+                  "200",
+                  "BOX6YDTYSSJMDWQZ3ZOLTDEBTLHV2GZ3",
+                  "7857"
+                ],
+                [
+                  "es,partidohumanista)/blog",
+                  "20230331120029",
+                  "https://www.partidohumanista.es/blog/",
+                  "text/html",
+                  "200",
+                  "IEL5R4EB2ZWRE3YE6CTNUEY5U64C7KGQ",
+                  "10110"
+                ],
+                [
+                  "es,partidohumanista)/blog/page/2?et_blog",
+                  "20230331134605",
+                  "https://www.partidohumanista.es/blog/page/2/?et_blog",
+                  "text/html",
+                  "200",
+                  "SAF3WQMZX5IQLE7F262LZI53D36OVZZF",
+                  "10380"
+                ],
+                [
+                  "es,partidohumanista)/blog/page/3?et_blog",
+                  "20230205212311",
+                  "https://www.partidohumanista.es/blog/page/3/?et_blog",
+                  "text/html",
+                  "200",
+                  "57XDHLPWM6E6VCCX7PGYBSB7NNE337KS",
+                  "10267"
+                ],
+                [
+                  "es,partidohumanista)/blog?et_blog",
+                  "20230205210612",
+                  "https://www.partidohumanista.es/blog/?et_blog",
+                  "text/html",
+                  "200",
+                  "3B23GBJKUDC6GAEUUCQERIHNV6UA7REV",
+                  "10111"
+                ],
+                [
+                  "es,partidohumanista)/campana-de-recogida-de-avales",
+                  "20230201150200",
+                  "https://www.partidohumanista.es/campana-de-recogida-de-avales/",
+                  "text/html",
+                  "200",
+                  "XN4ERNVIHXXH6PR22TTXT2FNNSXKYP2M",
+                  "9804"
+                ],
+                [
+                  "es,partidohumanista)/campana-en-vallecas",
+                  "20230201163716",
+                  "https://www.partidohumanista.es/campana-en-vallecas/",
+                  "text/html",
+                  "200",
+                  "4Z7VXI7DAL62L3PTVIBERPURCRCOQXQZ",
+                  "8208"
+                ],
+                [
+                  "es,partidohumanista)/carta-abierta-a-karim-khan-fiscal-jefe-de-la-corte-penal-internacional-netanyahu-y-haniya-deben-ser-procesados",
+                  "20231114154117",
+                  "https://www.partidohumanista.es/carta-abierta-a-karim-khan-fiscal-jefe-de-la-corte-penal-internacional-netanyahu-y-haniya-deben-ser-procesados/",
+                  "text/html",
+                  "200",
+                  "7IA57UMURSNIN2QUGLXAGXKGD4OOCUFC",
+                  "10695"
+                ],
+                [
+                  "es,partidohumanista)/carta-abierta-a-karim-khan-fiscal-jefe-de-la-corte-penal-internacional-netanyahu-y-haniya-deben-ser-procesados/feed",
+                  "20231121030943",
+                  "https://www.partidohumanista.es/carta-abierta-a-karim-khan-fiscal-jefe-de-la-corte-penal-internacional-netanyahu-y-haniya-deben-ser-procesados/feed/",
+                  "application/rss+xml",
+                  "200",
+                  "663HDOJWFFAZRAFOPXNQBJ24PXMVENCJ",
+                  "1380"
+                ],
+                [
+                  "es,partidohumanista)/category/acciones-callejeras",
+                  "20230205201225",
+                  "https://www.partidohumanista.es/category/acciones-callejeras/",
+                  "text/html",
+                  "200",
+                  "FUBDCHIJIQEPTLFKJYFA73MEHKQBAUKK",
+                  "7334"
+                ],
+                [
+                  "es,partidohumanista)/category/acciones-equipos-base",
+                  "20230201160516",
+                  "https://www.partidohumanista.es/category/acciones-equipos-base/",
+                  "text/html",
+                  "200",
+                  "TUJSC2UJDHJ4OFVXJK2JSE2ACWYVHBNE",
+                  "7245"
+                ],
+                [
+                  "es,partidohumanista)/category/articulos-destacados",
+                  "20230331134753",
+                  "https://www.partidohumanista.es/category/articulos-destacados/",
+                  "text/html",
+                  "200",
+                  "BE7DFC5VYNSJTWUPV427LZHPFQACVEPH",
+                  "8216"
+                ],
+                [
+                  "es,partidohumanista)/category/articulos-destacados/page/2",
+                  "20230205194436",
+                  "https://www.partidohumanista.es/category/articulos-destacados/page/2/",
+                  "text/html",
+                  "200",
+                  "3WMGI52UF4HJ5XMJZ3BTKZBFVPBYUBV4",
+                  "8058"
+                ],
+                [
+                  "es,partidohumanista)/category/blog",
+                  "20230331125408",
+                  "https://www.partidohumanista.es/category/blog/",
+                  "text/html",
+                  "200",
+                  "ZUUGYD3YIY2HD4ZF7U5UITMQUV4QAR5Q",
+                  "8014"
+                ],
+                [
+                  "es,partidohumanista)/category/blog-portada",
+                  "20230205201745",
+                  "https://www.partidohumanista.es/category/blog-portada/",
+                  "text/html",
+                  "200",
+                  "PZTCNJKHI7R2GDHKW52N2Y2HHBBY6HNW",
+                  "8187"
+                ]
+              ]
+            },
+            {
+              "id": "humanist-programme-cdx-2023",
+              "requestedUrl": "https://web.archive.org/cdx/search/cdx?url=%2A.partidohumanista.es%2F%2A&output=json&filter=statuscode%3A200&filter=original%3A.%2A%28program%7C2023%7Cgenerales%7C23j%29.%2A&from=2023&to=2023&collapse=urlkey&limit=100",
+              "recordedAt": "2026-10-11T19:54:54.183293+00:00",
+              "status": "request_failed",
+              "error": "The read operation timed out"
+            }
+          ],
+          "discoveredPages": [
+            {
+              "title": "Partido Humanista current homepage",
+              "url": "https://partidohumanista.es/",
+              "scopeAssessment": "2024 European programme links and 2026 news do not establish a 23J programme."
+            }
+          ],
+          "limitations": [
+            "Archive availability empty object is not proof of no archived source. The humanist bounded index returns 50 collapsed entries and is not exhaustive.",
+            "Archive index links/campaign statements are leads, not a fully acquired/read applicable programme; errors/challenges never establish programme absence.",
+            "No unique programme/notebook/page count or numeric position added."
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-madrid-7"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-035",
+      "officialName": "Por Huelva (XH)",
+      "programmeSearchStatus": "primary_23j_announcement_and_catalogue_recovered_full_programme_unresolved",
+      "attempts": [
+        {
+          "index": 12,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" programa generales 2023",
+          "discoveredPages": [
+            {
+              "title": "Huelva | Elecciones Generales 2023",
+              "url": "https://elecciones.generales23j.es/formaciones-politicas/candidaturas/proclamadas-senado/huelva"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 117,
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"23 julio\" \"programa\" 2023",
+          "status": "search_results_no_verified_primary_23j_programme_yet",
+          "discoveredPages": []
+        },
+        {
+          "index": 180,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"23\" \"2023\" programa electoral",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 181,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"programa\" generales julio",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 182,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" partido web oficial",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 183,
+          "candidacyId": "boe-2023-035",
+          "query": "\"porhuelva.es\"",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 184,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"www.\" partido",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 241,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"23J\" programa",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Por Huelva June 20 2023 Congress candidacy announcement reported by local press",
+              "url": "https://www.huelvahoy.com/articulo/huelva/huelva-registra-firmas-necesarias-presenta-candidatura-elecciones-generales/20230620103104274575.html",
+              "scopeAssessment": "Secondary lead only. Previously retained primary announcement and municipal/2022 catalogues remain preserved; no full 23J programme established."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 244,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" partido web programa 2023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Por Huelva June 20 2023 Congress candidacy announcement reported by local press",
+              "url": "https://www.huelvahoy.com/articulo/huelva/huelva-registra-firmas-necesarias-presenta-candidatura-elecciones-generales/20230620103104274575.html",
+              "scopeAssessment": "Secondary lead only. Previously retained primary announcement and municipal/2022 catalogues remain preserved; no full 23J programme established."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 250,
+          "candidacyId": "boe-2023-035",
+          "query": "\"Por Huelva\" \"programa\" \"generales\" 2023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Por Huelva June 20 2023 Congress candidacy announcement reported by local press",
+              "url": "https://www.huelvahoy.com/articulo/huelva/huelva-registra-firmas-necesarias-presenta-candidatura-elecciones-generales/20230620103104274575.html",
+              "scopeAssessment": "Secondary lead only. Previously retained primary announcement and municipal/2022 catalogues remain preserved; no full 23J programme established."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 253,
+          "candidacyId": "boe-2023-035",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "status": "bounded_primary_and_archive_followup_unresolved_not_absence_certified",
+          "httpAttempts": [
+            {
+              "id": "porhuelva-programme-cdx-2023",
+              "requestedUrl": "https://web.archive.org/cdx/search/cdx?url=%2A.porhuelva.es%2F%2A&output=json&filter=statuscode%3A200&filter=original%3A.%2A%28program%7C2023%7Cgenerales%7C23j%29.%2A&from=2023&to=2023&collapse=urlkey&limit=100",
+              "recordedAt": "2026-10-11T19:54:54.183599+00:00",
+              "status": "request_failed",
+              "error": "HTTP Error 503: Service Unavailable"
+            }
+          ],
+          "discoveredPages": [
+            {
+              "title": "Por Huelva June 20 2023 Congress candidacy announcement reported by local press",
+              "url": "https://www.huelvahoy.com/articulo/huelva/huelva-registra-firmas-necesarias-presenta-candidatura-elecciones-generales/20230620103104274575.html",
+              "scopeAssessment": "Secondary lead only. Previously retained primary announcement and municipal/2022 catalogues remain preserved; no full 23J programme established."
+            }
+          ],
+          "limitations": [
+            "Archive availability empty object is not proof of no archived source. The humanist bounded index returns 50 collapsed entries and is not exhaustive.",
+            "Archive index links/campaign statements are leads, not a fully acquired/read applicable programme; errors/challenges never establish programme absence.",
+            "No unique programme/notebook/page count or numeric position added."
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-huelva-4"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-036",
+      "officialName": "Vamos Palencia (VP)",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
+      "attempts": [
+        {
+          "index": 13,
+          "candidacyId": "boe-2023-036",
+          "query": "\"Vamos Palencia\" programa elecciones generales 2023",
+          "discoveredPages": [
+            {
+              "title": "Programa Electoral ¡Vamos Palencia! 2023/2027",
+              "url": "https://vamospalencia.es/programa-electoral/"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 110,
+          "candidacyId": "boe-2023-036",
+          "query": "Direct primary catalogue/campaign retrieval and scope follow-up.",
+          "id": "vamos-palencia-current-catalogue",
+          "url": "https://vamospalencia.es/",
+          "retrievedAt": "2026-10-11T11:39:08.590459+00:00",
+          "resolvedUrl": "https://vamospalencia.es/",
+          "mediaType": "text/html; charset=UTF-8",
+          "lastModified": null,
+          "status": "publication_acquired_not_semantically_read",
+          "file": "storage/app/election-sources/2023-congress/vamos-palencia-current-catalogue-publication-d9b2bd1e17bc.html",
+          "sha256": "d9b2bd1e17bc9e982276532c98eadd5f2f14c363a9296d157b4087c35e8c1375",
+          "textFile": "storage/app/election-sources/2023-congress/vamos-palencia-current-catalogue-publication-d9b2bd1e17bc.txt",
+          "textSha256": "12e74dc270a82d5cbdee4a5eda2323e28ddac4668900ac94d29e0596d41c8853",
+          "links": [
+            "https://vamospalencia.es/programa-electoral-vamos-palencia-2026-2030/",
+            "https://vamospalencia.es/programa-electoral/",
+            "https://vamospalencia.es/wp-content/uploads/2023/06/ACUERDO-GOBERNANZA-2027.pdf",
+            "https://www.instagram.com/vamospalencia2023/"
+          ],
+          "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+          "applicabilityNote": "Visible links identify municipal2023-2027 and current2026 programme. No verified23JCongressadoption; these are not substitutions."
+        },
+        {
+          "index": 113,
+          "candidacyId": "boe-2023-036",
+          "query": "Direct primary catalogue/campaign retrieval and scope follow-up.",
+          "id": "vamos-palencia-programme-catalogue",
+          "url": "https://vamospalencia.es/programa-electoral/",
+          "retrievedAt": "2026-10-11T11:39:50.716207+00:00",
+          "resolvedUrl": "https://vamospalencia.es/programa-electoral/",
+          "mediaType": "text/html; charset=UTF-8",
+          "lastModified": null,
+          "status": "publication_acquired_not_semantically_read",
+          "file": "storage/app/election-sources/2023-congress/vamos-palencia-programme-catalogue-publication-457bd643d3a3.html",
+          "sha256": "457bd643d3a31c07c13f522bd744de04a3b7960e03ecf6edf8d1ede451098e92",
+          "textFile": "storage/app/election-sources/2023-congress/vamos-palencia-programme-catalogue-publication-457bd643d3a3.txt",
+          "textSha256": "9091d9eb85f44f2ec62bcab7720a678424a34d0b7799a6d40c36c0f632bde8ec",
+          "links": [
+            "https://vamospalencia.es/programa-electoral-vamos-palencia-2026-2030/",
+            "https://vamospalencia.es/programa-electoral/",
+            "https://vamospalencia.es/wp-content/uploads/2023/05/Programa-Electoral-2023-_-¡Vamos-Palencia.pdf",
+            "https://vamospalencia.es/wp-content/uploads/2023/06/ACUERDO-GOBERNANZA-2027.pdf",
+            "https://www.instagram.com/vamospalencia2023/"
+          ],
+          "analysisStatus": "catalogue_scope_inspected_not_full_programme_read",
+          "applicabilityNote": "Visible links identify municipal2023-2027 and current2026 programme. No verified23JCongressadoption; these are not substitutions."
+        },
+        {
+          "index": 118,
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "candidacyId": "boe-2023-036",
+          "query": "\"Vamos Palencia\" \"23J\" \"programa\"",
+          "status": "secondary_campaign_leads_primary_programme_pending",
+          "discoveredPages": [
+            {
+              "url": "https://www.eldiario.es/castilla-y-leon/politica/palencia-presentara-elecciones-generales-responder-necesidades-provincia_1_10280810.html",
+              "title": "Election participation and provincial programme lead; municipal consultation not substituted"
+            }
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-palencia-7"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-037",
+      "officialName": "Zamora Sí (Zsi)",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
+      "attempts": [
+        {
+          "index": 14,
+          "candidacyId": "boe-2023-037",
+          "query": "\"Zamora Sí\" programa elecciones generales 2023",
+          "discoveredPages": [
+            {
+              "title": "BOE-A-2023-14733 Candidaturas presentadas para las elecciones al Congreso de los Diputados y al Senado, convocadas por Real Decreto 400/2023, de 29 de mayo.",
+              "url": "https://boe.es/diario_boe/txt.php?id=BOE-A-2023-14733"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 111,
+          "candidacyId": "boe-2023-037",
+          "query": "Direct primary catalogue/campaign retrieval and scope follow-up.",
+          "id": "zamora-si-current-catalogue",
+          "url": "https://www.zamorasi.com/",
+          "retrievedAt": "2026-10-11T11:39:08.590553+00:00",
+          "status": "publication_retrieval_failed",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.zamorasi.com'. (_ssl.c:1000)>"
+        },
+        {
+          "index": 114,
+          "candidacyId": "boe-2023-037",
+          "query": "Direct primary catalogue/campaign retrieval and scope follow-up.",
+          "id": "zamora-si-bare-domain",
+          "url": "https://zamorasi.com/",
+          "retrievedAt": "2026-10-11T11:39:50.716287+00:00",
+          "status": "publication_retrieval_failed",
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'zamorasi.com'. (_ssl.c:1000)>"
+        },
+        {
+          "index": 119,
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "candidacyId": "boe-2023-037",
+          "query": "\"Zamora Sí\" \"23J\" \"programa\"",
+          "status": "secondary_10_measure_campaign_lead_primary_programme_pending",
+          "discoveredPages": [
+            {
+              "url": "https://www.zamoranews.com/articulo/zamora/candidatos-zamora-presentan-programa-electoral-proximo-23j/20230711143639251623.html",
+              "title": "July 11 2023 presentation of ten campaign measures"
+            }
+          ]
+        },
+        {
+          "index": 242,
+          "candidacyId": "boe-2023-037",
+          "query": "\"Zamora Sí\" \"23\" \"julio\" \"programa\" 2023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Zamora Si July 11 2023 programme presentation reported by local press",
+              "url": "https://www.zamoranews.com/articulo/zamora/candidatos-zamora-presentan-programa-electoral-proximo-23j/20230711143639251623.html",
+              "scopeAssessment": "Secondary ten-idea lead, not a primary complete programme or scoring foundation."
+            },
+            {
+              "title": "Zamora Si July 11 2023 presentation described as twelve points",
+              "url": "https://zamora3punto0.com/la-lucha-por-la-fiscalidad-diferenciada-principal-reivindicacion-de-zamora-si/",
+              "scopeAssessment": "Secondary source lists twelve points; no silent merger with a ten-point report."
+            },
+            {
+              "title": "Zamora Si official-domain lead identified in 2023 local reporting",
+              "url": "https://www.zamorasi.com/",
+              "scopeAssessment": "Both www and root HTTPS requests fail certificate hostname validation; browser fetch returned 502. No TLS bypass."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 243,
+          "candidacyId": "boe-2023-037",
+          "query": "\"Zamora Sí\" \"web\" partido programa",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Zamora Si July 11 2023 programme presentation reported by local press",
+              "url": "https://www.zamoranews.com/articulo/zamora/candidatos-zamora-presentan-programa-electoral-proximo-23j/20230711143639251623.html",
+              "scopeAssessment": "Secondary ten-idea lead, not a primary complete programme or scoring foundation."
+            },
+            {
+              "title": "Zamora Si July 11 2023 presentation described as twelve points",
+              "url": "https://zamora3punto0.com/la-lucha-por-la-fiscalidad-diferenciada-principal-reivindicacion-de-zamora-si/",
+              "scopeAssessment": "Secondary source lists twelve points; no silent merger with a ten-point report."
+            },
+            {
+              "title": "Zamora Si official-domain lead identified in 2023 local reporting",
+              "url": "https://www.zamorasi.com/",
+              "scopeAssessment": "Both www and root HTTPS requests fail certificate hostname validation; browser fetch returned 502. No TLS bypass."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 247,
+          "candidacyId": "boe-2023-037",
+          "query": "site:zamorasi.com \"julio\" 2023",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "discoveredPages": [
+            {
+              "title": "Zamora Si July 11 2023 programme presentation reported by local press",
+              "url": "https://www.zamoranews.com/articulo/zamora/candidatos-zamora-presentan-programa-electoral-proximo-23j/20230711143639251623.html",
+              "scopeAssessment": "Secondary ten-idea lead, not a primary complete programme or scoring foundation."
+            },
+            {
+              "title": "Zamora Si July 11 2023 presentation described as twelve points",
+              "url": "https://zamora3punto0.com/la-lucha-por-la-fiscalidad-diferenciada-principal-reivindicacion-de-zamora-si/",
+              "scopeAssessment": "Secondary source lists twelve points; no silent merger with a ten-point report."
+            },
+            {
+              "title": "Zamora Si official-domain lead identified in 2023 local reporting",
+              "url": "https://www.zamorasi.com/",
+              "scopeAssessment": "Both www and root HTTPS requests fail certificate hostname validation; browser fetch returned 502. No TLS bypass."
+            }
+          ],
+          "status": "followup_leads_only_full_primary_23j_programme_unresolved",
+          "numericMappingsAuthored": 0
+        },
+        {
+          "index": 254,
+          "candidacyId": "boe-2023-037",
+          "recordedAt": "2026-10-11T19:56:24.823064+00:00",
+          "status": "bounded_primary_and_archive_followup_unresolved_not_absence_certified",
+          "httpAttempts": [
+            {
+              "id": "zamora-home",
+              "requestedUrl": "https://www.zamorasi.com/",
+              "recordedAt": "2026-10-11T19:52:55.504681+00:00",
+              "status": "request_failed",
+              "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.zamorasi.com'. (_ssl.c:1000)>"
+            },
+            {
+              "id": "zamora-archive-availability",
+              "requestedUrl": "https://archive.org/wayback/available?url=zamorasi.com&timestamp=20230720",
+              "recordedAt": "2026-10-11T19:52:55.934142+00:00",
+              "status": 200,
+              "resolvedUrl": "https://archive.org/wayback/available?url=zamorasi.com&timestamp=20230720",
+              "bytes": 74,
+              "sha256": "d7624da4f5afe2cdfd6c1a9d23e7073692e628508dcb5edcde004bf06a3619e8",
+              "bodyComplete": true,
+              "retainedFile": ".tools/2023-source-gap-followup/zamora-archive-availability.raw",
+              "availabilityResponse": {
+                "url": "zamorasi.com",
+                "archived_snapshots": {},
+                "timestamp": "20230720"
+              }
+            },
+            {
+              "id": "zamora-root-https",
+              "requestedUrl": "https://zamorasi.com/",
+              "recordedAt": "2026-10-11T19:53:46.180535+00:00",
+              "status": "request_failed",
+              "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'zamorasi.com'. (_ssl.c:1000)>"
+            },
+            {
+              "id": "zamora-cdx-2023",
+              "requestedUrl": "https://web.archive.org/cdx/search/cdx?url=%2A.zamorasi.com%2F%2A&output=json&filter=statuscode%3A200&from=2023&to=2023&collapse=urlkey&limit=50",
+              "recordedAt": "2026-10-11T19:53:46.180897+00:00",
+              "status": "request_failed",
+              "error": "The read operation timed out"
+            }
+          ],
+          "discoveredPages": [
+            {
+              "title": "Zamora Si July 11 2023 programme presentation reported by local press",
+              "url": "https://www.zamoranews.com/articulo/zamora/candidatos-zamora-presentan-programa-electoral-proximo-23j/20230711143639251623.html",
+              "scopeAssessment": "Secondary ten-idea lead, not a primary complete programme or scoring foundation."
+            },
+            {
+              "title": "Zamora Si July 11 2023 presentation described as twelve points",
+              "url": "https://zamora3punto0.com/la-lucha-por-la-fiscalidad-diferenciada-principal-reivindicacion-de-zamora-si/",
+              "scopeAssessment": "Secondary source lists twelve points; no silent merger with a ten-point report."
+            },
+            {
+              "title": "Zamora Si official-domain lead identified in 2023 local reporting",
+              "url": "https://www.zamorasi.com/",
+              "scopeAssessment": "Both www and root HTTPS requests fail certificate hostname validation; browser fetch returned 502. No TLS bypass."
+            }
+          ],
+          "limitations": [
+            "Archive availability empty object is not proof of no archived source. The humanist bounded index returns 50 collapsed entries and is not exhaustive.",
+            "Archive index links/campaign statements are leads, not a fully acquired/read applicable programme; errors/challenges never establish programme absence.",
+            "No unique programme/notebook/page count or numeric position added."
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-zamora-10"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-039",
+      "officialName": "Por Mi Región (POR MI REGIÓN)",
+      "programmeSearchStatus": "searched_primary_archive_23j_programme_unresolved_not_absence_certified",
+      "attempts": [
+        {
+          "index": 16,
+          "candidacyId": "boe-2023-039",
+          "query": "\"Por Mi Región\" programa generales 2023",
+          "discoveredPages": [
+            {
+              "title": "ELECCIONES A CORTES",
+              "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Murcia-Congreso_2023.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 127,
+          "candidacyId": "boe-2023-039",
+          "query": "\"Por Mi Región\" \"2023\" programa elecciones",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        },
+        {
+          "index": 138,
+          "candidacyId": "boe-2023-039",
+          "query": "Direct bounded primary publication/archive/actual embedded-document follow-up.",
+          "recordedAt": "2026-10-11T11:52:41.146689+00:00",
+          "status": "publication_retrieval_failed",
+          "publicationId": "por-mi-region-primary",
+          "url": "https://pormiregion.es/",
+          "resolvedUrl": null,
+          "sourceSha256": null,
+          "analysisStatus": "not_read_or_failed"
+        },
+        {
+          "index": 148,
+          "candidacyId": "boe-2023-039",
+          "query": "Direct bounded primary publication/archive/actual embedded-document follow-up.",
+          "recordedAt": "2026-10-11T11:53:36.953061+00:00",
+          "status": "publication_acquired_not_semantically_read",
+          "publicationId": "por-mi-region-july-archive",
+          "url": "https://web.archive.org/web/20230720000000id_/https://pormiregion.es/",
+          "resolvedUrl": "https://web.archive.org/web/20230708160431id_/https://pormiregion.es/",
+          "sourceSha256": "3b5e0d64c8ff8511e79b1f6967e247502fab0e19c93ed993aa3b5e417a02a3f6",
+          "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-murcia-12"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-040",
+      "officialName": "Ahora Canarias-Partido Comunista del Pueblo Canario (AHORA CANARIAS-PCPC)",
+      "programmeSearchStatus": "searched_primary_23j_programme_unresolved_not_absence_certified",
+      "attempts": [
+        {
+          "index": 17,
+          "candidacyId": "boe-2023-040",
+          "query": "\"Ahora Canarias\" \"PCPC\" \"2023\" programa",
+          "discoveredPages": [
+            {
+              "title": "Disposición 15066 del BOE núm. 152 de 2023",
+              "url": "https://www.boe.es/boe/dias/2023/06/27/pdfs/BOE-A-2023-15066.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.274Z"
+        },
+        {
+          "index": 128,
+          "candidacyId": "boe-2023-040",
+          "query": "\"Ahora Canarias\" \"PCPC\" \"programa electoral\" 2023",
+          "recordedAt": "2026-10-11T11:49:41.514755+00:00",
+          "status": "returned_results_no_new_verified_23j_original",
+          "discoveredPages": [],
+          "limitations": "Search returned unrelated elections, results or campaign leads; not proof that no programme exists. Previously recorded primary catalogues remain unresolved."
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-laspalmas-11",
+        "congress-santacruzdetenerife-10"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-043",
+      "officialName": "Coalición por Melilla (CpM)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 20,
+          "candidacyId": "boe-2023-043",
+          "query": "\"Coalición por Melilla\" programa generales julio 2023",
+          "discoveredPages": [
+            {
+              "title": "Coalición Por Melilla – Partido Político local de la ciudad de Melilla",
+              "url": "https://coalicionpormelilla.net/"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 156,
+          "candidacyId": "boe-2023-043",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "cpm-23j-housing-primary",
+            "cpm-23j-housing-archive",
+            "cpm-23j-border-primary",
+            "cpm-23j-vote-primary",
+            "cpm-current-primary",
+            "cpm-july-2023-archive"
+          ],
+          "actualFinding": "July11/12primarycampaignpublications read: customsborder, firsthomehelp,600socialhomes and regulatinghousingprices. Lastwording doesnotexplicitlyidentifyrentalcaps. Full23Jprogramme unresolved; municipal28Mayprogrammeexcluded. RequestedJulyhomepage resolvesAugust20; housingarchive is averificationchallenge, notpublicationtext.",
+          "sourceAbsenceCertified": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-melilla-5"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-045",
+      "officialName": "España Vaciada-Partido Castellano-Tierra Comunera (EV-PCAS-TC)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 22,
+          "candidacyId": "boe-2023-045",
+          "query": "\"España Vaciada\" \"Partido Castellano\" programa 23J",
+          "discoveredPages": [
+            {
+              "title": "Elecciones 2023 | PCAS-TC",
+              "url": "https://partidocastellano.org/elecciones-2023/"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 157,
+          "candidacyId": "boe-2023-045",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "ev-pcas-23j-position-primary",
+            "ev-pcas-elections-2023-primary"
+          ],
+          "actualFinding": "June13primarypublication fullyread: explicitlyonlyBurgosCongress/Senate coalitionwithEspañaVaciadaBurgos. No adoption ofSumar/RecortesCero/memberprogrammes; coalitionattemptsfailed. Generalprinciplesandmunicipalarticles notafull23Jprogramme.",
+          "sourceAbsenceCertified": false
+        },
+        {
+          "index": 163,
+          "candidacyId": "boe-2023-045",
+          "query": "site:partidocastellano.org \"23J\" programa 2023",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "actual_search_no_results_then_specific_primary_catalogue_followed",
+          "discoveredPages": [
+            {
+              "title": "Elecciones 2023",
+              "url": "https://partidocastellano.org/elecciones-2023/"
+            }
+          ]
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-burgos-11"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-046",
+      "officialName": "Partido Regionalista del País Leonés (PREPAL)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 23,
+          "candidacyId": "boe-2023-046",
+          "query": "\"PREPAL\" programa generales 2023",
+          "discoveredPages": [
+            {
+              "title": "La Voz de Galicia. Elecciones Generales 2023. Toro",
+              "url": "https://media.lavozdegalicia.es/elecciones2023/23J/municipio.php?id=49219"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 158,
+          "candidacyId": "boe-2023-046",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "prepal-current-primary",
+            "prepal-july-2023-archive",
+            "prepal-eu-http-primary",
+            "prepal-eu-primary",
+            "prepal-eu-july-2023-archive"
+          ],
+          "actualFinding": "CurrentandJuly8preservedPREPAL.euhomepages read; transparency andstandingideario links, no23Jprogrammefound. OriginalsiteHTTP444/archive502. Gziptransferdecoded boundedly preservingoriginalandpriorunsafeextraction. Programmeunresolved, noassertedabsence.",
+          "sourceAbsenceCertified": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-leon-4",
+        "congress-salamanca-4",
+        "congress-zamora-3"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-047",
+      "officialName": "Somos Cáceres (Somos Cc)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 24,
+          "candidacyId": "boe-2023-047",
+          "query": "\"Somos Cáceres\" \"programa\" \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "Raquel Iglesias: \"Nosotros somos el único soplo de aire fresco que puede traer el cambio que Cáceres necesita\" | Política | Actualidad | Cadena SER",
+              "url": "https://cadenaser.com/extremadura/2023/05/24/raquel-iglesias-nosotros-somos-el-unico-soplo-de-aire-fresco-que-puede-traer-el-cambio-que-caceres-necesita-ser-caceres/?outputType=amp"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 190,
+          "candidacyId": "boe-2023-047",
+          "query": "\"Somos Cáceres\" \"23J\" programa",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 191,
+          "candidacyId": "boe-2023-047",
+          "query": "\"Somos Cáceres\" \"programa\" generales 2023",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 192,
+          "candidacyId": "boe-2023-047",
+          "query": "\"Somos Cáceres\" partido web oficial",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 193,
+          "candidacyId": "boe-2023-047",
+          "query": "\"somoscaceres\" programa",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        },
+        {
+          "index": 194,
+          "candidacyId": "boe-2023-047",
+          "query": "\"Somos Cáceres\" \"https\" partido",
+          "recordedAt": "2026-10-11T14:43:24.656270+00:00",
+          "status": "actual_search_followup_primary_archives_recorded_separately",
+          "discoveredPages": [],
+          "observation": "Search returned electoral/campaign leads, wrong-election municipal material or unrelated pages. Actual primary archive acquisitions are recorded in inventory. No programme absence or source meaning is certified from snippets."
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-caceres-7"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-049",
+      "officialName": "Federación de los Independientes de Aragón (FIA)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 26,
+          "candidacyId": "boe-2023-049",
+          "query": "\"Federación de los Independientes de Aragón\" \"programa\" \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "Carlos Alcoba, cabeza de lista del Senado por la FIA",
+              "url": "https://www.eldiariodehuesca.com/actualidad/carlos-alcoba-cabeza-lista-senado-por-fia_10546_102.html"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 159,
+          "candidacyId": "boe-2023-049",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "fia-programme-primary",
+            "fia-programme-july-2023-archive",
+            "fia-primary-catalogue",
+            "fia-july-2023-archive"
+          ],
+          "actualFinding": "Completearchivedprogramme read: explicitlyELECCIONESAUTONOMICAS2023, excludedfromCongresswithoutadoption. Currenthomepage describesmunicipalistparty; July20homepage linksregionalprogramme. NoCongressnumericvalues.",
+          "sourceAbsenceCertified": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-huesca-2",
+        "congress-teruel-12",
+        "congress-zaragoza-14"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-051",
+      "officialName": "Unidad Castellana (Ud.Ca)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 28,
+          "candidacyId": "boe-2023-051",
+          "query": "\"Unidad Castellana\" programa generales 2023",
+          "discoveredPages": [
+            {
+              "title": "untitled",
+              "url": "https://www.bocm.es/boletin/CM_Orden_BOCM/2023/05/02/BOCM-20230502-5.PDF"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 139,
+          "candidacyId": "boe-2023-051",
+          "query": "Direct bounded primary publication/archive/actual embedded-document follow-up.",
+          "recordedAt": "2026-10-11T11:52:41.217432+00:00",
+          "status": "publication_acquired_not_semantically_read",
+          "publicationId": "unidad-castellana-primary",
+          "url": "https://unidadcastellana.wordpress.com/",
+          "resolvedUrl": "https://unidadcastellana.wordpress.com/",
+          "sourceSha256": "6a3c4e570f8454d68e5ead203e9b2fd8d32af6c8703260450f6be08c1f11017f",
+          "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+        },
+        {
+          "index": 152,
+          "candidacyId": "boe-2023-051",
+          "query": "Direct bounded primary publication/archive/actual embedded-document follow-up.",
+          "recordedAt": "2026-10-11T11:57:06.565118+00:00",
+          "status": "publication_acquired_not_semantically_read",
+          "publicationId": "unidad-castellana-secondary-primary",
+          "url": "https://unidadcastellana.jimdofree.com/",
+          "resolvedUrl": "https://unidadcastellana.jimdofree.com/",
+          "sourceSha256": "c323bc9eb71882ffcce6fd162bc2d5693fdc74dc54e9d397e07742a56a558ee5",
+          "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+        },
+        {
+          "index": 153,
+          "candidacyId": "boe-2023-051",
+          "query": "Direct bounded primary publication/archive/actual embedded-document follow-up.",
+          "recordedAt": "2026-10-11T11:57:47.742150+00:00",
+          "status": "publication_acquired_not_semantically_read",
+          "publicationId": "unidad-castellana-programme-catalogue",
+          "url": "https://unidadcastellana.jimdofree.com/programas-electorales/",
+          "resolvedUrl": "https://unidadcastellana.jimdofree.com/programas-electorales/",
+          "sourceSha256": "ee2945bab56fec234b233b96df7eb0def8343c6f9ab10e5ff8d7a74630b76904",
+          "analysisStatus": "complete_publication_text_directly_read_scope_recorded"
+        },
+        {
+          "index": 213,
+          "candidacyId": "boe-2023-051",
+          "query": "\"Unidad Castellana\" \"23J\" programa",
+          "discoveredPages": [
+            {
+              "title": "Primary news catalogue; requested 2023 archive resolves to 2019",
+              "url": "https://unidadcastellana.jimdofree.com/actualidad/"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 214,
+          "candidacyId": "boe-2023-051",
+          "query": "\"Unidad Castellana\" \"programa electoral\" 2023",
+          "discoveredPages": [
+            {
+              "title": "Primary news catalogue; requested 2023 archive resolves to 2019",
+              "url": "https://unidadcastellana.jimdofree.com/actualidad/"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 215,
+          "candidacyId": "boe-2023-051",
+          "query": "\"Unidad Castellana\" \"julio\" \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "Primary news catalogue; requested 2023 archive resolves to 2019",
+              "url": "https://unidadcastellana.jimdofree.com/actualidad/"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-valladolid-5"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-053",
+      "officialName": "Partido Unionista Estado de España (PUEDE)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 30,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista Estado de España\" programa 2023",
+          "discoveredPages": [
+            {
+              "title": "Disposición 18907 del BOE núm. 209 de 2023",
+              "url": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 195,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista Estado de España\" programa \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 196,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista\" \"programa\" Asturias",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 197,
+          "candidacyId": "boe-2023-053",
+          "query": "\"puede\" \"partidounionista\" Asturias",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 198,
+          "candidacyId": "boe-2023-053",
+          "query": "\"PUEDE\" \"23J\" \"programa\" Asturias",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 199,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista Estado de España\" sitio oficial",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 200,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista Estado de España\" \"www\"",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 201,
+          "candidacyId": "boe-2023-053",
+          "query": "\"Partido Unionista Estado de España\" \"Zapico\"",
+          "discoveredPages": [
+            {
+              "title": "23-X candidacy announcement; secondary lead only",
+              "url": "https://asturies.com/noticies/arranco-la-campana-eleutoral-de-les-estatales-del-23-x-con-once-candidatures-dos-menos-que"
+            },
+            {
+              "title": "2016 election programme discussion; excluded as2023substitute",
+              "url": "https://www.europapress.es/asturias/noticia-asturianistas-integran-up-puede-sera-unico-partido-solo-presenta-asturias-20160525195955.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-asturias-8"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-054",
+      "officialName": "Entre Veïns Catalunya (EVR)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 31,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns\" \"2023\" programa generales",
+          "discoveredPages": [
+            {
+              "title": "20.2.1. Elecciones Generales de 23 de Julio de 2023. Congreso. Resultados regionales.",
+              "url": "https://econet.carm.es/inicio/-/crem/anuario/actual/TomoI/pdf/R20.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 202,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns\" \"23J\" programa",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 203,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns Catalunya\" programa",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 204,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns Catalunya\" partido web",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 205,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns Catalunya\" \"programa\" -site:boe.es -site:rtve.es",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 206,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns Catalunya\" \"web\"",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 207,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns\" partit web Tarragona",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 208,
+          "candidacyId": "boe-2023-054",
+          "query": "\"Entre Veïns Catalunya\" \"programa electoral\" \"Senat\"",
+          "discoveredPages": [
+            {
+              "title": "Entre Veïns announces Senate suppression,July1,2023; secondary press attribution,not full primary programme",
+              "url": "https://reusdigital.cat/noticies/el-camp/entre-veins-proposa-la-supressio-del-senat"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-tarragona-6"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-055",
+      "officialName": "Libres (LB)",
+      "programmeSearchStatus": "primary_catalogue_followup_2023_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 32,
+          "candidacyId": "boe-2023-055",
+          "query": "\"Libres\" partido programa \"23 julio\" 2023",
+          "discoveredPages": [
+            {
+              "title": "Psoe | PDF",
+              "url": "https://es.scribd.com/document/1057186363/Psoe"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 160,
+          "candidacyId": "boe-2023-055",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "libres-current-primary",
+            "libres-july-2023-archive",
+            "libres-programme-catalogue"
+          ],
+          "actualFinding": "Current2026homepageandcatalogue read: federationprogrammeindevelopment. Requested2023archive resolves20250711andremainsnotfullyread. Identity/adoption by2023LibresLBballotsnotverified; no inherited programme.",
+          "sourceAbsenceCertified": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-almeria-8",
+        "congress-ceuta-5"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-057",
+      "officialName": "Referéndum Sistema Dinero (+RDS+)",
+      "programmeSearchStatus": "followup_search_no_verified_primary_23j_programme_yet",
+      "attempts": [
+        {
+          "index": 34,
+          "candidacyId": "boe-2023-057",
+          "query": "\"Referéndum Sistema Dinero\" programa 2023",
+          "discoveredPages": [
+            {
+              "title": "BOLETÍN OFICIAL DEL ESTADO",
+              "url": "https://www.historiaelectoral.com/e2023listas.pdf"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 209,
+          "candidacyId": "boe-2023-057",
+          "query": "\"Referéndum Sistema Dinero\" programa \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "Unknownparties23J; secondaryidentitylead,not programme",
+              "url": "https://www.65ymas.com/sociedad/politica/jubilados-autonomos-obreros-lobo-alberca-partidos-mas-desconocidos-23j_51552_102.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 210,
+          "candidacyId": "boe-2023-057",
+          "query": "\"Referéndum Sistema Dinero\" partido web",
+          "discoveredPages": [
+            {
+              "title": "Unknownparties23J; secondaryidentitylead,not programme",
+              "url": "https://www.65ymas.com/sociedad/politica/jubilados-autonomos-obreros-lobo-alberca-partidos-mas-desconocidos-23j_51552_102.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 211,
+          "candidacyId": "boe-2023-057",
+          "query": "\"Referéndum Sistema Dinero\" \"Alberto Saura\" programa",
+          "discoveredPages": [
+            {
+              "title": "Unknownparties23J; secondaryidentitylead,not programme",
+              "url": "https://www.65ymas.com/sociedad/politica/jubilados-autonomos-obreros-lobo-alberca-partidos-mas-desconocidos-23j_51552_102.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        },
+        {
+          "index": 212,
+          "candidacyId": "boe-2023-057",
+          "query": "\"Referéndum Sistema Dinero\" \"web\" partido",
+          "discoveredPages": [
+            {
+              "title": "Unknownparties23J; secondaryidentitylead,not programme",
+              "url": "https://www.65ymas.com/sociedad/politica/jubilados-autonomos-obreros-lobo-alberca-partidos-mas-desconocidos-23j_51552_102.html"
+            }
+          ],
+          "status": "actual_followup_no_new_verified_primary_23j_programme",
+          "recordedAt": "2026-10-11T14:59:32.988861+00:00",
+          "numericPositionAdded": false
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-murcia-10"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    },
+    {
+      "candidacyId": "boe-2023-058",
+      "officialName": "Coalición de Centro Democrático (CCD)",
+      "programmeSearchStatus": "wrong_election_proposals_excluded_23j_congress_programme_unresolved",
+      "attempts": [
+        {
+          "index": 35,
+          "candidacyId": "boe-2023-058",
+          "query": "\"Coalición de Centro Democrático\" programa \"generales\" \"2023\"",
+          "discoveredPages": [
+            {
+              "title": "Coalición de Centro Democrático",
+              "url": "https://es.wikipedia.org/wiki/Coalici%C3%B3n_de_Centro_Democr%C3%A1tico"
+            }
+          ],
+          "status": "initial_search_results_require_publication_archive_and_scope_review",
+          "recordedAt": "2026-10-11T07:46:50.275Z"
+        },
+        {
+          "index": 162,
+          "candidacyId": "boe-2023-058",
+          "query": "Follow actual primary/archived publication links from pending retrieval ledgers",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "dated_primary_followup_completed_programme_scope_not_fully_closed",
+          "publicationIds": [
+            "ccd-july-news-archive",
+            "ccd-primary-catalogue",
+            "ccd-july-2023-archive"
+          ],
+          "actualFinding": "July19primaryhomepage fullyread: standingpropuestas/manifiesto and2021news; no23Jprogrammeestablished. Currentcertificatemismatchandarchivedguessednewspath404recorded; notexhaustiveabsence.",
+          "sourceAbsenceCertified": false
+        },
+        {
+          "index": 164,
+          "candidacyId": "boe-2023-058",
+          "query": "site:ccd-centro.com \"2023\" \"23\" programa",
+          "recordedAt": "2026-10-11T13:44:03.795384+00:00",
+          "status": "actual_search_no_results_not_absence"
+        }
+      ],
+      "ballotRecordIds": [
+        "congress-ourense-5"
+      ],
+      "questionCount": 80,
+      "scoredMappings": 0,
+      "absenceCertified": false
+    }
+  ],
+  "uniqueVerifiedNewReadings": 0,
+  "limitations": [
+    "This reconciles the bounded locally available corpus, not universal archive completeness or programme nonexistence. Twenty-one candidacies retain 1,680 explicit unscored cells and dated acquisition attempts.",
+    "The complete 48-page Recortes 23J archived variant is reused; the separately indexed 53-page version remains unavailable in the recorded primary/archive checks. No equivalence or absent-annex claim is made.",
+    "Adelante has one final Cádiz Congress ballot. Its complete 85-page programme, six visual pages and linked 18-page 2022 strategy have previously complete notebooks. No external adopted-reference provision is automatically imported.",
+    "All prior nine numeric records for these two candidacies retain their exact values and citations. Four new Adelante mappings preserve explicit healthcare, distance, surrogacy and subsidy conditions.",
+    "Fuerza fur-farm suppression is withdrawn consistently with Junts. Original quotations, immutable snapshots and earlier verification evidence remain preserved.",
+    "Native source conditions and source irregularities remain exact. Automatic checks do not prove semantic infallibility. All 80 bounded real-browser sessions passed. Full-interface, corpus-family, recovery and final local-release acceptance remain pending.",
+    "Collection remains disabled. Hosting and domain are not selected by the owner. No PUBLIC-LAUNCH approval, deployment, push or purchase."
+  ]
+}

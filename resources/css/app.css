@@ -135,6 +135,12 @@ body[data-iteration="2"] .site-header a[aria-current="page"] { text-decoration-t
 body[data-iteration="2"] h2, body[data-iteration="2"] h3, body[data-iteration="2"] h4, body[data-iteration="2"] h5 { overflow-wrap: anywhere; }
 body[data-iteration="2"] .quiet { color: #526078; }
 body[data-iteration="2"] .quiz-stage { max-width: 820px; }
+body[data-iteration="2"] .quiz-navigation { margin-bottom: 1.5rem; }
+body[data-iteration="2"] .quiz-navigation .progress { margin: 0; }
+body[data-iteration="2"] .quiz-navigation button, body[data-iteration="2"] .quiz-reset button { border-color: transparent; background: transparent; padding-inline: .25rem; font-size: .95rem; min-height: 44px; }
+body[data-iteration="2"] .quiz-navigation button:not(:disabled) { text-decoration: underline; text-underline-offset: 4px; }
+body[data-iteration="2"] .answer-hint { font-size: .95rem; margin-bottom: .5rem; }
+body[data-iteration="2"] .quiz-reset { border-top: 1px solid #b7c3d7; padding-top: .5rem; }
 .iteration-hero { max-width: 18ch; font-size: clamp(2.6rem, 5vw, 4.5rem); }
 body[data-iteration="2"] .app-surface { container-type: inline-size; }
 .reading-origin { min-width: 0; }

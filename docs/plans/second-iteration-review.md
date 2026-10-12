@@ -6,6 +6,8 @@ Version: `quiz-2023-iteration-2-v1.1.0`. R001–R008 are completed with local ac
 
 The prepared development runtime is `.tools/iteration-2-runtime`. Open [the questionnaire](http://127.0.0.1:8767/questionnaire), [Programas 2023](http://127.0.0.1:8767/programmes), or [Cómo funciona](http://127.0.0.1:8767/how-it-works).
 
+The previous questionnaire address, [port 8766](http://127.0.0.1:8766/questionnaire), now serves the same second-iteration runtime. Its former runtime and historical bank remain preserved. The root local configuration also selects this prepared bank through `EVIDENCE_DIRECTORY`; no private environment file is committed.
+
 If the local server has stopped, run this from the repository root:
 
 ```sh
@@ -16,12 +18,13 @@ The runtime uses the real second bank with metrics disabled. The repository's pu
 
 ## Review the questionnaire
 
-1. Start twenty questions. Each of ten topics appears twice with distinct decision families. Optional importance uses positive weights only.
-2. At the checkpoint, choose **Ver mi resultado** or **Responder 10 más**. The anonymous maximum can rise or fall. A skipped whole topic leaves the global percentage pending.
-3. Finish deliberately to see all 59 candidacies as 63 territorial programme profiles. Bars share a 0–100 scale; affinity and documented coverage are separate.
-4. Open a programme, then **Vivienda**, the rental-price proposal, and **Ver cita literal y contexto**. Read the proposal-specific relationship separately from the overall percentage.
-5. Return or close the reader. It restores the invoking control and scroll. On desktop the origin stays usable; narrow or low-height layouts use a full reading view.
-6. Review an answer. Previous results disappear until another deliberate finish. Local export includes Spanish labels and all 63 profile scores. Refresh starts a new session.
+1. Read the short explanation and choose **Empezar el test**. There is no candidature, province or importance form before question one. Each of ten topics appears twice with distinct decision families.
+2. Click or tap an answer to advance immediately. **Atrás** sits above the question, beside progress, and preserves the previous answer. Keyboard arrows choose without advancing; Space or Enter confirms. Double activation advances once.
+3. At the checkpoint, choose **Ver mi resultado** or **Responder 10 más**. The anonymous maximum can rise or fall. A skipped whole topic leaves the global percentage pending. Optional positive importance is available in **Revisar respuestas**, with the same shared denominator.
+4. Finish deliberately to see all 59 candidacies as 63 territorial programme profiles. Bars share a 0–100 scale; affinity and documented coverage are separate.
+5. Open a programme, then **Vivienda**, the rental-price proposal, and **Ver cita literal y contexto**. Read the proposal-specific relationship separately from the overall percentage.
+6. Return or close the reader. It restores the invoking control and scroll. On desktop the origin stays usable; narrow or low-height layouts use a full reading view.
+7. Review an answer. Previous results disappear until another deliberate finish. Local export includes Spanish labels and all 63 profile scores. Refresh starts a new session. **Inicio** offers **Volver a mi test** while live answers exist.
 
 ## Review public programmes
 
@@ -32,6 +35,7 @@ The runtime uses the real second bank with metrics disabled. The repository's pu
 
 ## Verification evidence
 
+- The owner-requested entry/answer refinement passed 26 unique real-runtime desktop/mobile cases: 24 in the full run, then both corrected exhaustion cases in a targeted repeat. Four additional screenshot captures preserve the historical previews. Regression checks cover one-click progression, native keyboard confirmation, double-click protection, top Back, home resume and positive importance in review. See `outputs/quiz-2023-questionnaire-flow-refinement.json`.
 - 22 unique Chromium desktop/mobile cases passed against the prepared runtime serving the real bank. UX01–UX10 cover clicks, keyboard, reader focus/return, sources, comparison, skip/edit/extension/exhaustion, refresh and privacy. The first run's two priority-locator failures passed after correcting the test locator; this is recorded as a targeted repeat.
 - The rent-reader axe audit found zero violations. Long-source state survived 320/360/720px reflow, low height and 200/400% CSS zoom. Native browser toolbar zoom was unavailable and has no separate certification claim.
 - No private data entered URLs, `history.state`, cookies, browser storage or requests. One fixed public bank is fetched per session. A real official-link click produced a popup with no referrer and no opener; the test intercepted the publisher request to inspect it.

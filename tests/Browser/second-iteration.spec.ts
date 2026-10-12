@@ -16,14 +16,14 @@ test.beforeEach(async ({ page }) => {
 });
 async function start(page: Page) {
     await page.goto('/questionnaire');
-    await page.getByRole('button', { name: 'Empezar las 20 preguntas' }).click();
+    await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
 }
 async function answer(page: Page, count: number, skipPensions = false) {
     for (let i = 0; i < count; i++) {
         const id = await page.locator('.quiz-card').getAttribute('data-question-id');
         const q = bank.questions.find(q => q.id === id)!;
-        await page.getByRole('radio', { name: skipPensions && q.topicId === 'pensions' ? 'Prefiero no responder' : id === 'rent-price-cap' ? 'Muy en desacuerdo' : 'Muy de acuerdo', exact: true }).check();
-        await page.getByRole('button', { name: 'Continuar', exact: true }).click();
+        await page.locator('.quiz-card[data-question-id="' + id + '"]').getByRole('radio', { name: skipPensions && q.topicId === 'pensions' ? 'Prefiero no responder' : id === 'rent-price-cap' ? 'Muy en desacuerdo' : 'Muy de acuerdo', exact: true }).click();
+        await expect(page.locator('.quiz-card[data-question-id="' + id + '"]')).toHaveCount(0);
     }
 }
 async function finish(page: Page) {
@@ -32,11 +32,56 @@ async function finish(page: Page) {
 }
 async function screenshot(page: Page, name: string, project: string) {
     if (!process.env.ITERATION_CAPTURE) return;
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve(null)))));
     mkdirSync('outputs/quiz-2023-second-iteration-previews', { recursive: true });
-    await page.screenshot({ path: 'outputs/quiz-2023-second-iteration-previews/' + project + '-' + name + '.png', fullPage: false });
+    await page.screenshot({ path: 'outputs/quiz-2023-second-iteration-previews/' + project + '-' + name + '.png', fullPage: false, animations: 'disabled' });
 }
 const programmeRow = (page: Page, id: string) => page.locator('.affinity-row[data-profile-id="' + id + '"]');
 const reader = (page: Page) => page.locator('.programme-reader:not([hidden])');
+
+test('simple entry has one start action, no selection form and one choice advances exactly once', async ({ page }, info) => {
+    await page.goto('/questionnaire');
+    await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
+    await expect(page.locator('#app select, #app input')).toHaveCount(0);
+    await expect(page.locator('#app')).toContainText('Responde 20 preguntas sobre temas cotidianos');
+    await screenshot(page, 'simple-start', info.project.name);
+    await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
+    const first = bank.starterQuestionIds![0]; const second = bank.starterQuestionIds![1];
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.getByRole('button', { name: 'Continuar', exact: true })).toHaveCount(0);
+    const choice = page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true });
+    await choice.scrollIntoViewIfNeeded(); const box = (await choice.boundingBox())!;
+    await page.mouse.dblclick(box.x + box.width / 2, box.y + box.height / 2);
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+    await expect(page.locator('.quiz-card h2')).toBeFocused();
+    await expect(page.locator('.quiz-navigation').getByRole('button', { name: 'Atrás', exact: true })).toBeVisible();
+    const back = (await page.getByRole('button', { name: 'Atrás', exact: true }).boundingBox())!;
+    const answers = (await page.locator('.answers').boundingBox())!;
+    expect(back.y + back.height).toBeLessThan(answers.y);
+    await screenshot(page, 'automatic-answer', info.project.name);
+    await page.getByRole('button', { name: 'Atrás', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeChecked();
+    await page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+});
+
+test('keyboard choice waits for confirmation and homepage starts directly without losing a live test', async ({ page }) => {
+    await page.goto('/questionnaire');
+    await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Inicio', exact: true }).click();
+    await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
+    const first = bank.starterQuestionIds![0]; const second = bank.starterQuestionIds![1];
+    const choice = page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true }); await choice.focus();
+    await page.keyboard.press('ArrowRight'); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await page.keyboard.press('Space'); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+    await page.getByRole('button', { name: 'Atrás', exact: true }).click();
+    await expect(page.getByRole('radio', { name: 'En desacuerdo', exact: true })).toBeChecked();
+    await page.getByRole('radio', { name: 'Muy de acuerdo', exact: true }).focus(); await page.keyboard.press('Enter');
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+    await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Inicio', exact: true }).click();
+    await page.getByRole('button', { name: 'Volver a mi test', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
+});
 
 test('UX01 UX05: rent disagreement uses four actions, accessible single reader and exact quote', async ({ page }, info) => {
     await start(page); await answer(page, 20);
@@ -144,12 +189,15 @@ test('UX06: open long original context survives 320px, zoom-equivalent reflow an
 });
 
 test('local Spanish export agrees with all result bars and full useful-block exhaustion never auto-reveals', async ({ page }) => {
+    test.setTimeout(60_000);
     await start(page); await answer(page, 20);
+    await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeEnabled();
     let total = 20;
     while (await page.getByRole('button', { name: 'Responder 10 más', exact: true }).isEnabled()) {
         await page.getByRole('button', { name: 'Responder 10 más', exact: true }).click(); total += 10;
         await expect(page.locator('.quiz-card')).toContainText(String(total - 9) + ' de ' + total);
         await answer(page, 10);
+        await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeEnabled();
         await expect(page.locator('.affinity-row')).toHaveCount(0);
         if (total > 80) throw new Error('Question limit exceeded.');
     }
@@ -173,12 +221,13 @@ test('local Spanish export agrees with all result bars and full useful-block exh
 });
 
 test('optional positive importance keeps all twenty starter decisions and applies the same denominator', async ({ page }) => {
-    await page.goto('/questionnaire'); await page.getByText('Importancia de los temas (opcional)', { exact: true }).click();
+    await start(page); await answer(page, 20);
+    await page.getByRole('button', { name: 'Revisar respuestas', exact: true }).click();
+    await page.getByText('Importancia de los temas (opcional)', { exact: true }).click();
     const housingImportance = page.getByRole('combobox', { name: 'Vivienda', exact: true });
     await housingImportance.selectOption('2');
     expect(await housingImportance.locator('option').allTextContents()).toEqual(['Normal', 'Me importa especialmente']);
-    await page.getByRole('button', { name: 'Empezar las 20 preguntas' }).click();
-    await answer(page, 20); await finish(page);
+    await page.getByRole('button', { name: 'Volver al punto de decisión', exact: true }).click(); await finish(page);
     await expect(page.locator('.affinity-row')).toHaveCount(63);
     page.once('dialog', dialog => dialog.accept());
     const downloaded = page.waitForEvent('download'); await page.getByRole('button', { name: 'Descargar mis resultados' }).click();
@@ -225,7 +274,7 @@ test('UX07 UX10: generic menu/back preserves only live memory and private data n
     expect(requests.filter(r => r.body || r.method !== 'GET' || /answers|affinity|progress|questionId|profileId|importance|finish=/.test(r.url))).toEqual([]);
     expect(requests.filter(r => new URL(r.url).pathname === '/api/bank')).toHaveLength(1);
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cuestionario 2023', exact: true }).click();
-    await page.reload(); await expect(page.getByRole('button', { name: 'Empezar las 20 preguntas' })).toBeVisible();
+    await page.reload(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
 });
 
 test('UX08: skipped topic has no maximum, review restores it, rapid extension adds exactly ten and edit hides results', async ({ page }, info) => {
@@ -256,6 +305,6 @@ test('loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset 
     await page.getByRole('checkbox', { name: 'Mostrar mis respuestas' }).uncheck(); await expect(page.locator('.proposal-relation')).toHaveCount(0);
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cuestionario 2023', exact: true }).click();
     await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused(); await page.keyboard.press('Escape'); await expect(page.locator('.affinity-row')).toHaveCount(63);
-    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await page.getByRole('dialog').getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Empezar las 20 preguntas' })).toBeVisible();
+    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await page.getByRole('dialog').getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
     await page.route('**/api/bank', route => route.fulfill({ body: '{}', headers: { 'X-Evidence-Sha256': 'bad' } })); await page.reload(); await expect(page.locator('#app')).toContainText('No hemos podido cargar');
 });

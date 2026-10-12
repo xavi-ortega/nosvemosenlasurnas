@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-12T12:42:32.948566+00:00",
+  "planVersion": "quiz-2023-iteration-2-v1.1.0",
+  "status": "local_flow_acceptance_complete",
+  "baselineCommit": "e51f92ea16dfbc546214095af45174997a024c4d",
+  "ownerRequest": "Immediate answer progression, relocated Back and a simple start with no candidacy chooser.",
+  "changes": [
+    "Single Empezar el test entry with short everyday Spanish explanation.",
+    "Click/tap answers advance; arrows select and Space/Enter confirm.",
+    "Top Back retains the previous answer; guarded double activation advances once.",
+    "Optional positive importance is in review; Inicio resumes the live session."
+  ],
+  "bankSha256": "8bf67e8c47be37a8e4127771f6e606185adf70b05c37f566ea19bd062035a408",
+  "bankAndScoringChanged": false,
+  "realRuntimeAcceptance": {
+    "uniquePassedCases": 26,
+    "desktopAndMobile": true,
+    "fullRunPassed": 24,
+    "correctedExhaustionRepeatPassed": 2,
+    "skipped": 0,
+    "reports": [
+      {
+        "path": ".tools/quiz-auto-advance-full-browser.json",
+        "sha256": "9e6188b47e85c9868d7f5b818fe61d8943d689444d53162655af2c18559f407c",
+        "stats": {
+          "startTime": "2026-10-12T12:25:20.978Z",
+          "duration": 263103.21,
+          "expected": 12,
+          "skipped": 0,
+          "unexpected": 14,
+          "flaky": 0
+        }
+      },
+      {
+        "path": ".tools/quiz-auto-advance-full-browser-final.json",
+        "sha256": "c7f5985bd5df2891b2acd6b516ba073b07efec1dac022cbf4c79fa688d91ff70",
+        "stats": {
+          "startTime": "2026-10-12T12:30:42.785Z",
+          "duration": 114622.15100000001,
+          "expected": 14,
+          "skipped": 0,
+          "unexpected": 12,
+          "flaky": 0
+        }
+      },
+      {
+        "path": ".tools/quiz-auto-advance-real-browser-accepted.json",
+        "sha256": "7f5ab6270d1f910192344e9632463f60b6cfe3aeb87007cf7cff26dc0cc05a5b",
+        "stats": {
+          "startTime": "2026-10-12T12:33:33.213Z",
+          "duration": 107929.688,
+          "expected": 24,
+          "skipped": 0,
+          "unexpected": 2,
+          "flaky": 0
+        }
+      },
+      {
+        "path": ".tools/quiz-auto-advance-exhaustion-capture.json",
+        "sha256": "c1aa2c27cbabc82fedc7b742ae43c10c4adb2e871deda1839f861bf230aa7c4b",
+        "stats": {
+          "startTime": "2026-10-12T12:36:10.888Z",
+          "duration": 35953.309,
+          "expected": 4,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      }
+    ]
+  },
+  "observedAndResolvedIssues": [
+    "Chromium radio arrows emit synthetic clicks; distinguish arrow navigation from confirmation.",
+    "Confirming an already-selected radio needs explicit Space/Enter handling.",
+    "A second pointerdown could steal heading focus; prevent it during the short activation guard.",
+    "The former test helper retried check() after the answer control disappeared; use a scoped click and assert its old question is gone, including checkpoint transitions.",
+    "The exhaustion test must await the end of the activation guard before deciding whether another block is available."
+  ],
+  "screenshots": [
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-simple-start.png",
+      "sha256": "80264c7f1cdeaab462e5b5b541baf666c9d9df28db372158911a582bdca9efe3",
+      "visuallyInspected": true
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/chromium-automatic-answer.png",
+      "sha256": "cb0fef5401d26b7f5bc0c6456691bbd2acd62cfb7287bf6db13bc992d1eccb47",
+      "visuallyInspected": true
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-simple-start.png",
+      "sha256": "0252b129ce256415f6508ceff911ad2dcadaa74193d68ae9f3b18c863323f52d",
+      "visuallyInspected": true
+    },
+    {
+      "path": "outputs/quiz-2023-second-iteration-previews/mobile-chromium-automatic-answer.png",
+      "sha256": "c9cc26af471128caceb87a2311a83352a839b19dfdffa8c4eb1c61147b222a99",
+      "visuallyInspected": true
+    }
+  ],
+  "buildManifestSha256": "2ecb843e1347f32f81cc96785223e9f2f07951dd91a4d30ac2fd661d262e8026",
+  "localRuntime": {
+    "directory": ".tools/iteration-2-runtime",
+    "manifestVerifiedFiles": 75,
+    "manifestSha256": "9801a7254493872687a628a6c19a23a1cdd5c74b646c5ed65e6f28babd7feb9f",
+    "questionnaireUrls": [
+      "http://127.0.0.1:8766/questionnaire",
+      "http://127.0.0.1:8767/questionnaire"
+    ],
+    "bothServeExactBank": true,
+    "healthRoutes": [
+      "questionnaire",
+      "programmes",
+      "how-it-works",
+      "api/bank"
+    ],
+    "allHealthStatus": 200,
+    "responseCookies": false,
+    "rootConfig": "EVIDENCE_DIRECTORY selects the prepared second bank through config/evidence.php. Private .env is not committed.",
+    "historicalRuntimePreserved": true
+  },
+  "checksAlreadyPassed": [
+    "Pint dirty agent",
+    "TypeScript/lint/build",
+    "Affected PHP route test: 1 test, 29 assertions",
+    "docs:build",
+    "check:plans"
+  ],
+  "commitGateRequirement": {
+    "command": "python3 scripts/check-staged.py",
+    "exactFinalIndexRequired": true,
+    "mandatoryHookRetained": true,
+    "logPath": ".tools/quiz-auto-advance-staged-gate.log",
+    "commitMustRemainBlockedOnFailure": true
+  },
+  "publicLaunchApproved": false,
+  "collectionEnabled": false,
+  "publication": false,
+  "push": false
+}

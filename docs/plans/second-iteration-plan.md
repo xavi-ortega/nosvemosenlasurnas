@@ -2,7 +2,7 @@
 
 quiz-2023-iteration-2-v1.1.0 · Application status: completed. Implementation complete: true.
 
-Plan the next local iteration around ordered horizontal affinity bars, a contextual programme reader and deliberate proposal/source exploration. Keep twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Add a public thematic comparison journey and an optional focused reading workspace. This is the historical 2023 edition; application implementation remains pending.
+Completed local second iteration with ordered horizontal affinity bars, a contextual programme reader, twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Owner follow-up simplifies entry to a short explanation and one start action, advances on confirmed answers and places Back above the question. Programme comparison remains available as a separate public journey. This is the historical 2023 edition; public launch and collection remain unapproved.
 
 ## Second iteration scope
 
@@ -78,6 +78,9 @@ Every citation has a meaningful source link and truthful provenance.
 
 A simple checkpoint describes the current result without disclosing party identity.
 
+- Owner follow-up on 12 October: start with a short plain explanation and Empezar el test, opening question one directly. There is no initial selection form; Inicio resumes a live session through Volver a mi test.
+- A click/tap commits the answer and advances immediately, including unsure/skip. Native arrows choose; Space or Enter confirms. Guard double activation so it cannot answer another question or reveal results.
+- Atrás is above the question beside progress and preserves the prior answer. Optional positive topic importance is available in answer review rather than entry.
 - Begin with 20 distinct questions spanning every released core category: two per each of the current ten topics, with different policy families. The initial 20 replace the old ten starter IDs.
 - Checkpoints occur at 20, 30, 40, 50, 60, 70 and 80 when a full ten-question block adds useful unseen evidence. Eighty is an upper bound from this bank, not a completion target; stop earlier when useful balanced questions are exhausted. Never pad or offer an unlabeled smaller block.
 - Exactly two main checkpoint actions: Ver mi resultado and Responder 10 más. Review lives in one quiet link; reset/export are outside the checkpoint action cluster.
@@ -691,7 +694,7 @@ Verification:
 
 Status: completed. Depends on: R002, R004. Estimated share of implementation effort: 12%.
 
-- Edition-labelled entry, question progression and two-action checkpoint.
+- Edition-labelled simple entry with one start action and short explanation, immediate answer progression, top Back action and two-action checkpoint.
 - No candidacy/province exclusion or topic-zero setting.
 - Checkpoint/continuation, pending-topic and same-document menu-return states from the interaction contract.
 
@@ -701,6 +704,7 @@ Acceptance:
 - Anonymous maximum uses new metric and sufficient topic/answer evidence.
 - No personalized identity enters pre-finish DOM or network/storage.
 - Two main checkpoint actions; incomplete topics produce no fabricated anonymous max; public programme navigation cannot finish/reveal the quiz.
+- No pre-test selectors or Continue action; one answer activation advances exactly once. Keyboard confirmation, preserved Back answers and live-home resume work on desktop/mobile.
 
 Verification:
 

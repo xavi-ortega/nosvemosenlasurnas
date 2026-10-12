@@ -30,6 +30,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     let section: Section = initialPage === 'quiz' ? 'quiz' : ['programmes', 'comparison', 'sources'].includes(initialPage) ? 'programmes' : initialPage === 'method' ? 'method' : 'home';
     let quizView: 'setup' | 'question' | 'checkpoint' | 'review' | 'results' = 'setup';
     let finishing = false;
+    let answerUnlockAt = 0;
     let withdrawn = false;
     let overlay = false;
     const views = new Map<Section, HTMLElement>();
@@ -61,10 +62,11 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         for (const link of document.querySelectorAll<HTMLAnchorElement>('.site-header a')) {
             if (new URL(link.href).pathname === routes[next]) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
         }
-        if (!view(next).childElementCount) {
-            if (next === 'quiz') renderQuiz(); else if (next === 'programmes') renderProgrammes(); else if (next === 'home') renderHome(); else renderMethod();
+        if (next === 'home') renderHome();
+        else if (!view(next).childElementCount) {
+            if (next === 'quiz') renderQuiz(); else if (next === 'programmes') renderProgrammes(); else renderMethod();
         }
-        requestAnimationFrame(() => { window.scrollTo(0, scrolls.get(next) ?? 0); focus(view(next).querySelector<HTMLElement>('h2')); });
+        requestAnimationFrame(() => { window.scrollTo(0, scrolls.get(next) ?? 0); if (!view(next).contains(document.activeElement)) focus(view(next).querySelector<HTMLElement>('h2')); });
     };
     document.addEventListener('click', event => {
         const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a');
@@ -78,8 +80,12 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         if (next) show(next);
     });
 
+    function startQuiz(): void {
+        if (!session) { session = new Questionnaire(bank, releaseHash); quizView = 'question'; scrolls.delete('quiz'); renderQuiz(); }
+        show('quiz', true);
+    }
     function renderHome(): void {
-        const page = view('home'); page.replaceChildren(element('h2', t('home_title'), 'iteration-hero'), paragraph('home_description'), paragraph('iteration_version', 'quiet'), actions(button('iteration_quiz', () => show('quiz', true), true), button('iteration_programmes', () => show('programmes', true))), paragraph('privacy_short'));
+        const page = view('home'); page.replaceChildren(element('h2', t('home_title'), 'iteration-hero'), paragraph('iteration_intro'), paragraph('iteration_version', 'quiet'), actions(button(session ? 'iteration_resume' : 'iteration_start', startQuiz, true)), paragraph('quiz_reload', 'quiet'));
     }
     function renderMethod(): void {
         const page = view('method'); page.replaceChildren(element('h2', t('iteration_method')), paragraph('iteration_method_body'), paragraph('iteration_method_example'), paragraph('iteration_method_pending'), paragraph('privacy_short'), element('h3', t('iteration_question_order')), element('p', bank.ordering!.rationale), element('p', bank.ordering!.migrationGap), paragraph('iteration_official_note'));
@@ -91,13 +97,24 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         dialog.append(heading, paragraph('quiz_reload'), actions(keep, button('iteration_clear', () => { session?.reset(); session = null; overlay = false; views.delete('programmes'); quizView = 'setup'; dialog.close(); dialog.remove(); renderQuiz(); })));
         dialog.addEventListener('cancel', event => { event.preventDefault(); close(); }); document.body.append(dialog); dialog.showModal();
     }
-    function answerControls(q: Question, onChange: (answer: Answer) => void): HTMLFieldSetElement {
+    function answerControls(q: Question, onChange: (answer: Answer) => void, onConfirm?: (answer: Answer) => void): HTMLFieldSetElement {
         const group = element('fieldset'); group.append(element('legend', t('opinion')));
+        let navigatingAnswers = false;
+        group.addEventListener('keyup', event => { if (event.key.startsWith('Arrow')) navigatingAnswers = false; });
         const choices = element('div', '', 'answers'); const other = element('div', '', 'other-answers');
         for (const value of [-2, -1, 0, 1, 2, 'unsure', 'skip'] as Answer[]) {
             const label = element('label', '', 'choice'); const radio = element('input'); radio.type = 'radio'; radio.name = 'answer-' + q.id; radio.value = String(value); radio.autocomplete = 'off'; radio.checked = session?.answers[q.id] === value;
             label.append(radio, element('span', t(typeof value === 'number' ? value === 0 ? 'answer_neutral' : 'answer_' + (value > 0 ? 'positive_' : 'negative_') + Math.abs(value) : value)));
-            radio.addEventListener('change', () => onChange(value)); (typeof value === 'number' ? choices : other).append(label);
+            radio.addEventListener('change', () => onChange(value));
+            if (onConfirm) {
+                radio.addEventListener('click', () => { if (radio.isConnected && !group.disabled && !navigatingAnswers) onConfirm(value); });
+                radio.addEventListener('keydown', event => {
+                    if (event.key.startsWith('Arrow')) navigatingAnswers = true;
+                    else if (event.repeat && ['Enter', ' '].includes(event.key)) event.preventDefault();
+                    else if (['Enter', ' '].includes(event.key)) { event.preventDefault(); radio.click(); }
+                });
+            }
+            (typeof value === 'number' ? choices : other).append(label);
         }
         group.append(choices, other); return group;
     }
@@ -109,18 +126,22 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     function renderQuiz(reviewTopic?: string): void {
         const page = view('quiz'); page.replaceChildren();
         const stage = element('section', '', 'quiz-stage state-enter'); page.append(stage);
+        stage.addEventListener('pointerdown', event => {
+            if (performance.now() < answerUnlockAt && !(event.target as Element).closest('.quiz-navigation button')) { event.preventDefault(); focus(stage.querySelector('h2')); }
+        }, true);
         if (!session || quizView === 'setup') {
-            const priorities: Record<string, 1 | 2> = {};
-            const importance = element('details', '', 'priorities'); importance.append(element('summary', t('priorities')));
-            for (const topic of bank.topics) {
-                const label = element('label', topic.name, 'control'); const select = element('select'); select.autocomplete = 'off';
-                select.append(new Option(t('iteration_importance_1'), '1'), new Option(t('iteration_importance_2'), '2')); select.addEventListener('change', () => { priorities[topic.id] = Number(select.value) as 1 | 2; }); label.append(select); importance.append(label);
-            }
-            stage.classList.add('quiz-intro'); stage.append(element('h2', t('iteration_quiz')), paragraph('iteration_intro'), paragraph('iteration_version', 'quiet'), paragraph('quiz_reload'), actions(button('iteration_start', () => { session = new Questionnaire(bank, releaseHash, 'all', priorities); quizView = 'question'; renderQuiz(); }, true)), importance); focus(stage.querySelector('h2')); return;
+            stage.classList.add('quiz-intro'); stage.append(element('h2', t('iteration_quiz')), paragraph('iteration_intro'), paragraph('iteration_version', 'quiet'), actions(button('iteration_start', startQuiz, true)), paragraph('quiz_reload', 'quiet')); focus(stage.querySelector('h2')); return;
         }
         if (quizView === 'results' && session.revealed) { renderResults(page); return; }
         if (quizView === 'review') {
             session.revealed = false; invalidatePersonalReading(); stage.append(element('h2', t('review')), paragraph('quiz_reload'));
+            const importance = element('details', '', 'priorities'); importance.append(element('summary', t('priorities')));
+            for (const topic of bank.topics) {
+                const label = element('label', topic.name, 'control'); const select = element('select'); select.autocomplete = 'off';
+                select.append(new Option(t('iteration_importance_1'), '1'), new Option(t('iteration_importance_2'), '2')); select.value = String(session.priorities[topic.id] ?? 1);
+                select.addEventListener('change', () => { session!.priorities[topic.id] = Number(select.value) as 1 | 2; }); label.append(select); importance.append(label);
+            }
+            stage.append(importance);
             for (const id of session.presented) {
                 const q = bank.questions.find(q => q.id === id)!; const item = element('section', '', 'source-card'); item.dataset.questionId = id;
                 item.append(element('h3', q.text), answerControls(q, value => { session!.edit(id, value); invalidatePersonalReading(); })); stage.append(item);
@@ -129,15 +150,22 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             if (reviewTopic) requestAnimationFrame(() => { const q = bank.questions.find(q => q.topicId === reviewTopic && session!.presented.includes(q.id)); const heading = stage.querySelector<HTMLElement>('[data-question-id="' + q?.id + '"] h3'); heading?.scrollIntoView(); focus(heading ?? stage.querySelector('h2')); });
         } else if (quizView === 'question' && session.current()) {
             const q = session.current()!; stage.classList.add('quiz-card'); stage.dataset.questionId = q.id;
-            const state = session.progress(); stage.append(element('p', t('question') + ' ' + state.current + ' ' + t('of') + ' ' + state.total + ' · ' + topicName(q.topicId), 'progress'), element('h2', q.text));
+            const state = session.progress(); const navigation = element('div', '', 'quiz-navigation flex flex-wrap items-center justify-between gap-3');
+            const back = button('iteration_back_question', () => { answerUnlockAt = 0; if (session!.previous()) renderQuiz(); }); back.disabled = !session.canGoBack();
+            navigation.append(back, element('p', t('question') + ' ' + state.current + ' ' + t('of') + ' ' + state.total + ' · ' + topicName(q.topicId), 'progress'));
+            stage.append(navigation, element('h2', q.text));
             if (q.help) { const help = element('details', '', 'question-help'); help.append(element('summary', t('question_help')), element('p', q.help)); stage.append(help); }
-            let answer: Answer | undefined = session.answers[q.id];
-            const controls = answerControls(q, value => { answer = value; }); const error = element('p', '', 'error'); error.setAttribute('role', 'alert');
-            const back = button('back', () => { if (session!.previous()) renderQuiz(); }); back.disabled = !session.canGoBack();
-            stage.append(controls, error, actions(back, button('next', control => {
-                if (answer === undefined) { error.textContent = t('choose_answer'); return; }
-                control.disabled = true; session!.answer(answer); invalidatePersonalReading(); if (!session!.current()) quizView = 'checkpoint'; renderQuiz();
-            }, true)));
+            const hint = paragraph('iteration_answer_hint', 'quiet answer-hint'); hint.id = 'answer-hint';
+            const controls = answerControls(q, () => {}, value => {
+                if (performance.now() < answerUnlockAt || session!.current()?.id !== q.id) return;
+                controls.disabled = true; answerUnlockAt = performance.now() + 320;
+                session!.answer(value); invalidatePersonalReading(); if (!session!.current()) quizView = 'checkpoint'; renderQuiz();
+            });
+            controls.setAttribute('aria-describedby', hint.id);
+            if (performance.now() < answerUnlockAt) {
+                controls.disabled = true; window.setTimeout(() => { if (controls.isConnected) controls.disabled = false; }, Math.max(0, answerUnlockAt - performance.now()));
+            }
+            stage.append(hint, controls);
         } else {
             quizView = 'checkpoint'; const result = documentedMatch(bank, session.answers, session.priorities);
             stage.classList.add('quiz-checkpoint'); stage.append(element('h2', t('iteration_checkpoint')), element('p', interpolate('iteration_numeric', { answers: result.numericCount, topics: result.topicCount, total: bank.topics.length })));
@@ -146,11 +174,17 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             const available = session.extension().length === 10;
             const more = button('iteration_more', control => { control.disabled = true; if (session!.extend()) { quizView = 'question'; renderQuiz(); } }); more.disabled = !available;
             if (!available) stage.append(paragraph('iteration_exhausted'));
-            stage.append(actions(button('iteration_finish', finish, true), more));
+            const finishControl = button('iteration_finish', finish, true);
+            if (performance.now() < answerUnlockAt) {
+                finishControl.disabled = true; more.disabled = true;
+                window.setTimeout(() => { if (finishControl.isConnected) { finishControl.disabled = false; more.disabled = !available; } }, Math.max(0, answerUnlockAt - performance.now()));
+            }
+            stage.append(actions(finishControl, more));
             const review = actions(button('review', () => { quizView = 'review'; renderQuiz(); })); review.classList.add('secondary-actions'); stage.append(review);
         }
-        if (quizView !== 'checkpoint') { const reset = actions(button('iteration_clear', control => resetDialog(control))); reset.classList.add('secondary-actions'); stage.append(reset); }
+        if (quizView !== 'checkpoint') { const reset = actions(button('iteration_clear', control => resetDialog(control))); reset.classList.add('secondary-actions', 'quiz-reset'); stage.append(reset); }
         focus(stage.querySelector('h2'));
+        if (quizView === 'question') requestAnimationFrame(() => stage.scrollIntoView({ block: 'start' }));
     }
     async function finish(): Promise<void> {
         if (!session || finishing) return;

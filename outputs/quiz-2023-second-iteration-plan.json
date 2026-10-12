@@ -8,7 +8,7 @@
   "baselineCommit": "69bc53b163be659c9ea43183f8578cf2a00692b4",
   "baselinePlanVersion": "quiz-2023-v2.0.0",
   "baselineBankSha256": "e5f20cc29577629d3b93e3397d06a723d838b08d4f06461b53c336205f97a86d",
-  "summary": "Plan the next local iteration around ordered horizontal affinity bars, a contextual programme reader and deliberate proposal/source exploration. Keep twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Add a public thematic comparison journey and an optional focused reading workspace. This is the historical 2023 edition; application implementation remains pending.",
+  "summary": "Completed local second iteration with ordered horizontal affinity bars, a contextual programme reader, twenty balanced starters and ten-question extensions, the zero-contribution shared denominator and automatic inclusion of every candidacy. Owner follow-up simplifies entry to a short explanation and one start action, advances on confirmed answers and places Back above the question. Programme comparison remains available as a separate public journey. This is the historical 2023 edition; public launch and collection remain unapproved.",
   "applicationImplementationStarted": true,
   "publicLaunchApproved": false,
   "liveCollectionEnabled": false,
@@ -102,6 +102,9 @@
       "title": "20 questions, then ten more",
       "lead": "A simple checkpoint describes the current result without disclosing party identity.",
       "items": [
+        "Owner follow-up on 12 October: start with a short plain explanation and Empezar el test, opening question one directly. There is no initial selection form; Inicio resumes a live session through Volver a mi test.",
+        "A click/tap commits the answer and advances immediately, including unsure/skip. Native arrows choose; Space or Enter confirms. Guard double activation so it cannot answer another question or reveal results.",
+        "Atrás is above the question beside progress and preserves the prior answer. Optional positive topic importance is available in answer review rather than entry.",
         "Begin with 20 distinct questions spanning every released core category: two per each of the current ten topics, with different policy families. The initial 20 replace the old ten starter IDs.",
         "Checkpoints occur at 20, 30, 40, 50, 60, 70 and 80 when a full ten-question block adds useful unseen evidence. Eighty is an upper bound from this bank, not a completion target; stop earlier when useful balanced questions are exhausted. Never pad or offer an unlabeled smaller block.",
         "Exactly two main checkpoint actions: Ver mi resultado and Responder 10 más. Review lives in one quiet link; reset/export are outside the checkpoint action cluster.",
@@ -480,7 +483,7 @@
         "R004"
       ],
       "deliverables": [
-        "Edition-labelled entry, question progression and two-action checkpoint.",
+        "Edition-labelled simple entry with one start action and short explanation, immediate answer progression, top Back action and two-action checkpoint.",
         "No candidacy/province exclusion or topic-zero setting.",
         "Checkpoint/continuation, pending-topic and same-document menu-return states from the interaction contract."
       ],
@@ -488,7 +491,8 @@
         "20 questions initially and exactly ten more when useful; no auto reveal.",
         "Anonymous maximum uses new metric and sufficient topic/answer evidence.",
         "No personalized identity enters pre-finish DOM or network/storage.",
-        "Two main checkpoint actions; incomplete topics produce no fabricated anonymous max; public programme navigation cannot finish/reveal the quiz."
+        "Two main checkpoint actions; incomplete topics produce no fabricated anonymous max; public programme navigation cannot finish/reveal the quiz.",
+        "No pre-test selectors or Continue action; one answer activation advances exactly once. Keyboard confirmation, preserved Back answers and live-home resume work on desktop/mobile."
       ],
       "verification": [
         "Affected browser journey/keyboard/privacy tests and actual mobile checkpoints.",
@@ -499,7 +503,8 @@
       "completionEvidence": [
         "outputs/quiz-2023-second-iteration-browser-acceptance.json",
         "tests/Browser/second-iteration.spec.ts",
-        "outputs/quiz-2023-second-iteration-review-packet.json"
+        "outputs/quiz-2023-second-iteration-review-packet.json",
+        "outputs/quiz-2023-questionnaire-flow-refinement.json"
       ]
     },
     {
@@ -1499,5 +1504,22 @@
   },
   "localReviewPacket": "outputs/quiz-2023-second-iteration-review-packet.json",
   "localVerification": "outputs/quiz-2023-second-iteration-verification.json",
-  "localReview": "docs/plans/second-iteration-review.md"
+  "localReview": "docs/plans/second-iteration-review.md",
+  "ownerRefinements": [
+    {
+      "recordedDate": "2026-10-12",
+      "authority": "Direct owner request in this chat after the completed local second iteration.",
+      "scope": [
+        "Immediate advance after selecting an answer; no Continue button.",
+        "Back above the question, separate from answer controls.",
+        "No initial candidacy/province/importance form; one start button with short everyday Spanish explanation."
+      ],
+      "preserves": [
+        "20 + 10 question blocks and deliberate result reveal.",
+        "All candidacies, scoring weights, evidence and browser-local privacy.",
+        "Optional positive importance in answer review."
+      ],
+      "verification": "outputs/quiz-2023-questionnaire-flow-refinement.json"
+    }
+  ]
 }

@@ -1,0 +1,154 @@
+{
+  "recordedAt": "2026-10-12T21:39:36.715Z",
+  "prototypeSha256": "71749fc9123e43850a6e2dca36135188e6de6a0405964c324d6b8e2f670978c3",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "status": "passed_local_prototype_checks",
+  "applicationAcceptanceComplete": false,
+  "observations": [
+    {
+      "viewport": {
+        "width": 1512,
+        "height": 850
+      },
+      "entryActionTop": 530.40625,
+      "entryActionVisible": true,
+      "comparisonDocumentHeight": 1701,
+      "horizontalOverflow": false,
+      "axeViolations": 0,
+      "walkthroughs": [
+        "search and selection retention",
+        "three-selection limit",
+        "comparison with unknowns",
+        "source context and exact return",
+        "replace and cancel",
+        "15-proposal pagination",
+        "topic-first all 59",
+        "missing common programme",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "entryActionTop": 494.5625,
+      "entryActionVisible": true,
+      "comparisonDocumentHeight": 1784,
+      "horizontalOverflow": false,
+      "axeViolations": 0,
+      "walkthroughs": [
+        "search and selection retention",
+        "three-selection limit",
+        "comparison with unknowns",
+        "source context and exact return",
+        "replace and cancel",
+        "15-proposal pagination",
+        "topic-first all 59",
+        "missing common programme",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "entryActionTop": 385.796875,
+      "entryActionVisible": true,
+      "comparisonDocumentHeight": 3915,
+      "horizontalOverflow": false,
+      "axeViolations": 0,
+      "walkthroughs": [
+        "search and selection retention",
+        "three-selection limit",
+        "comparison with unknowns",
+        "source context and exact return",
+        "replace and cancel",
+        "15-proposal pagination",
+        "topic-first all 59",
+        "missing common programme",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "entryActionTop": 409.046875,
+      "entryActionVisible": true,
+      "comparisonDocumentHeight": 4490,
+      "horizontalOverflow": false,
+      "axeViolations": 0,
+      "walkthroughs": [
+        "search and selection retention",
+        "three-selection limit",
+        "comparison with unknowns",
+        "source context and exact return",
+        "replace and cancel",
+        "15-proposal pagination",
+        "topic-first all 59",
+        "missing common programme",
+        "reduced motion"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1024,
+        "height": 320
+      },
+      "entryActionTop": 494.5625,
+      "entryActionVisible": false,
+      "comparisonDocumentHeight": 1841,
+      "horizontalOverflow": false,
+      "axeViolations": 0,
+      "walkthroughs": [
+        "search and selection retention",
+        "three-selection limit",
+        "comparison with unknowns",
+        "source context and exact return",
+        "replace and cancel",
+        "15-proposal pagination",
+        "topic-first all 59",
+        "missing common programme",
+        "reduced motion"
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "externalAutomaticRequests": [],
+  "storage": {
+    "localStorage": 0,
+    "sessionStorage": 0,
+    "cookies": ""
+  },
+  "resizeReturn": "restored visible mobile source opener",
+  "limitations": [
+    "Only the comparison/topic/source prototype is implemented. The full-site application tasks U004-U016 remain planned.",
+    "Existing authored political rationales remain unchanged; final plain-language copy is a separate application task.",
+    "Local browser checks and axe do not prove broad family usability, source semantics or production readiness."
+  ],
+  "designIterations": [
+    {
+      "defect": "Whole-stage translation briefly caused horizontal overflow.",
+      "correction": "Use contained opacity transition; maintain contrast throughout animation.",
+      "outcome": "No overflow and zero axe violations across checked sizes."
+    },
+    {
+      "defect": "Narrow comparison initially showed only the first formation before the explanations.",
+      "correction": "Compact parallel stance/source overview for all selected formations, followed by unchanged conditions.",
+      "outcome": "All three positions present in one proposal overview; no swipe required."
+    },
+    {
+      "defect": "Sticky table headers could obscure a proposal when entering from topic exploration.",
+      "correction": "Semantic proposal scroll margins and matching mobile return opener.",
+      "outcome": "Connected topic/source/return paths passed, including resize."
+    },
+    {
+      "defect": "Prototype notice outside a landmark.",
+      "correction": "Integrate it into the semantic header.",
+      "outcome": "Zero axe violations for selection and comparison."
+    }
+  ]
+}

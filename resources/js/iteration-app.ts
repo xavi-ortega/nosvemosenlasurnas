@@ -70,7 +70,12 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         else if (!view(next).childElementCount) {
             if (next === 'quiz') renderQuiz(); else if (next === 'programmes') renderProgrammes(); else renderMethod();
         }
-        requestAnimationFrame(() => { window.scrollTo(0, scrolls.get(next) ?? 0); if (!view(next).contains(document.activeElement)) focusFirstControl(view(next), next === 'quiz' ? ['input[type=radio]:checked', 'input[type=radio]'] : []); });
+        const focusAtNavigation = document.activeElement;
+        requestAnimationFrame(() => {
+            if (section !== next || document.activeElement !== focusAtNavigation) return;
+            window.scrollTo(0, scrolls.get(next) ?? 0);
+            if (!view(next).contains(document.activeElement)) focusFirstControl(view(next), next === 'quiz' ? ['input[type=radio]:checked', 'input[type=radio]'] : []);
+        });
     };
     document.addEventListener('click', event => {
         const link = (event.target as HTMLElement).closest<HTMLAnchorElement>('a');

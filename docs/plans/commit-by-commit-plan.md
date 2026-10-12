@@ -355,3 +355,9 @@ Dependencies: Q027
 - Every future programme must be acquired/read/cross-referenced and its positions authored anew; no inherited values or automatic generation.
 - Preparation does not wait for or fabricate future programmes, nor change 2023 labels.
 - Edition isolation/rollback contract checks and a clearly non-public migration rehearsal; real future sources remain an external input.
+
+## Active next-stage refinement
+
+Whole-site UI and UX cleanup: understandable journeys for everyday visitors. Status: planned_application_stage. A full-site next-stage plan, grounded in actual route/rendering defects. Task-led navigation, short plain Spanish, useful didactic interaction, parallel programme comparison, interpretable results, practical help and reliable source/return flows. Includes a real-data comparison prototype; application work is separately planned and no new bank/source/score semantics are authorized by this UI stage.
+
+Read docs/plans/ui-ux-cleanup-loop-plan.md and outputs/ui-ux-cleanup-loop-plan.json. Completed Q/R evidence is preserved; U tasks have separate acceptance.

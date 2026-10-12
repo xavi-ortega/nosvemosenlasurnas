@@ -119,3 +119,72 @@ if "nextIteration" in p:
     assert all(item["surface"] in surfaces and item["copy"] and item["recovery"] for item in states)
     assert all(item["url"].startswith("https://") for item in design["references"])
     print("Interaction graph reachability, connected walkthroughs, return paths and local-navigation boundaries passed.")
+
+# Keep the next-stage plan honest and its prototype politically lossless.
+if p.get("nextIteration", {}).get("activeRefinement"):
+    import hashlib
+    import re
+    root = Path(__file__).resolve().parents[1]
+    reference = p["nextIteration"]["activeRefinement"]
+    cleanup = json.loads((root / reference["plan"]).read_text())
+    assert cleanup["planVersion"] == reference["planVersion"]
+    assert cleanup["preservesCompletedIterations"] is True
+    assert cleanup["publicLaunchApproved"] is False and cleanup["liveCollectionEnabled"] is False
+    if cleanup["status"] == "planned_application_stage":
+        assert cleanup["applicationImplementationStarted"] is False
+        assert cleanup["applicationImplementationComplete"] is False
+    bank_bytes = (root / cleanup["sourceBank"]).read_bytes()
+    bank_hash = hashlib.sha256(bank_bytes).hexdigest()
+    assert cleanup["sourceBankSha256"] == bank_hash
+    bank = json.loads(bank_bytes)
+    seen = set()
+    for task in cleanup["tasks"]:
+        assert task["id"] not in seen and set(task["dependsOn"]) <= seen
+        assert task["status"] in {"planned", "in_progress", "completed", "blocked"}
+        assert all(task[key] for key in ["deliverables", "acceptanceCriteria", "verification"])
+        if task["status"] == "completed":
+            assert task["completionEvidence"]
+            assert all((root / path).exists() for path in task["completionEvidence"] if not path.startswith(".tools/"))
+        seen.add(task["id"])
+    assert len({item["id"] for item in cleanup["sections"]}) == len(cleanup["sections"])
+    flow_ids = set()
+    for flow in cleanup["flows"]:
+        assert flow["id"] not in flow_ids
+        flow_ids.add(flow["id"])
+        nodes = {item["id"]: item for item in flow["nodes"]}
+        assert len(nodes) == len(flow["nodes"]) and flow["start"] in nodes
+        for node in nodes.values():
+            assert node["goal"] and node["actions"]
+            assert all(action["target"] in nodes and action["label"] and action["retains"] for action in node["actions"])
+        def cleanup_reachable(start):
+            visited, pending = set(), [start]
+            while pending:
+                current = pending.pop()
+                if current in visited:
+                    continue
+                visited.add(current)
+                pending.extend(action["target"] for action in nodes[current]["actions"])
+            return visited
+        assert cleanup_reachable(flow["start"]) == set(nodes)
+        assert all(flow["start"] in cleanup_reachable(node_id) for node_id in nodes)
+        walk = flow["walkthrough"]
+        assert walk[0] == flow["start"]
+        assert all(any(action["target"] == destination for action in nodes[origin]["actions"]) for origin, destination in zip(walk, walk[1:]))
+    prototype_path = root / cleanup["prototype"]
+    prototype = prototype_path.read_text()
+    match = re.search(r'<script id="programme-data" type="application/json">(.*?)</script>', prototype, re.S)
+    assert match, "Prototype must embed its complete fixed public data"
+    data = json.loads(match.group(1))
+    assert data["sourceBankSha256"] == bank_hash
+    for key in ["topics", "questions", "candidacies", "documents", "sourceLinks"]:
+        assert data[key] == bank[key], "Prototype altered bank field: " + key
+    restored = {party: {question: {**cell, "citations": [data["citations"][index] for index in cell["citations"]]} for question, cell in questions.items()} for party, questions in data["positions"].items()}
+    assert restored == bank["positions"], "Prototype political positions/citations must remain exact"
+    verification = json.loads((root / cleanup["verification"]).read_text())
+    assert verification["status"] == "passed_local_prototype_checks"
+    assert verification["applicationAcceptanceComplete"] is False
+    assert verification["prototypeSha256"] == hashlib.sha256(prototype_path.read_bytes()).hexdigest()
+    assert verification["sourceBankSha256"] == bank_hash
+    assert not verification["browserErrors"] and not verification["externalAutomaticRequests"]
+    assert all(not item["horizontalOverflow"] and item["axeViolations"] == 0 for item in verification["observations"])
+    print("Whole-site cleanup graph, task boundaries, exact programme/citation parity and prototype evidence passed.")

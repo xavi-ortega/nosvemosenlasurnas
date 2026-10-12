@@ -128,6 +128,29 @@ test('quiz, reader and skip navigation focus only interactive controls', async (
     expect(await page.evaluate(() => (window as typeof window & { textFocusTargets: string[] }).textFocusTargets)).toEqual([]);
 });
 
+test('deferred entry focus respects the skip link selected before the next frame', async ({ page }) => {
+    await page.addInitScript(() => {
+        const state = window as typeof window & { deferredEntryFrames: FrameRequestCallback[] };
+        state.deferredEntryFrames = [];
+        window.requestAnimationFrame = callback => { state.deferredEntryFrames.push(callback); return state.deferredEntryFrames.length; };
+    });
+    await page.goto('/questionnaire');
+    const startControl = page.getByRole('button', { name: 'Empezar el test', exact: true });
+    await expect(startControl).toBeFocused();
+    const skip = page.getByRole('link', { name: 'Saltar al contenido', exact: true });
+    await skip.focus();
+    await page.evaluate(() => {
+        const state = window as typeof window & { deferredEntryFrames: FrameRequestCallback[] };
+        state.deferredEntryFrames.splice(0).forEach(callback => callback(performance.now()));
+    });
+    await expect(skip).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(startControl).toBeFocused();
+    await expect(page.locator('.quiz-card')).toHaveCount(0);
+    await page.keyboard.press('Enter');
+    await expect(page.locator('.quiz-card')).toBeVisible();
+});
+
 test('navigation and reset cancel pending advancement without losing a selected answer or restoring cleared state', async ({ page }) => {
     await page.emulateMedia({ reducedMotion: 'reduce' }); await start(page); await page.clock.install();
     const first = bank.starterQuestionIds![0];

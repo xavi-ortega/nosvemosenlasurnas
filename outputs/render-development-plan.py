@@ -60,6 +60,31 @@ def render():
         ordering = "Versioned editorial order accepted for the local bank; see the recorded content decisions." if second["questionnaire"]["starterProposalStatus"] == "accepted_local_order" else "Pending evidence, migration-gap and taxonomy review; these are existing authored questions, not a newly released order."
         decisions = "\n".join("- " + item for item in second["planningDecisionsStillToResolve"]) or "All implementation decisions are recorded in the local review packet; unavailable official sources remain explicit exceptions."
         generated[second["humanPlan"]] = "# " + second["title"] + "\n\n" + second["planVersion"] + " · " + implementation + "\n\n" + second["summary"] + "\n\n" + second_sections + "\n\n" + render_interactions(second["interactionDesign"]) + "\n\n## Concrete first-20 editorial order\n\n" + ordering + "\n\n" + starters + "\n\n## Implementation sequence\n\n" + second_tasks + "\n\n## Implementation decisions\n\n" + decisions + "\n\n## Verified research sources\n\n" + citations + "\n\nSee " + second["research"] + " for hashes, exact measures, visual verification and limitations. Survey salience orders historical questions; it does not update 2023 party positions.\n"
+    refinement = json.loads((ROOT / plan["nextIteration"]["activeRefinement"]["plan"]).read_text()) if plan.get("nextIteration", {}).get("activeRefinement") else None
+    if refinement:
+        active_note = "\n## Active next-stage refinement\n\n" + refinement["title"] + ". Status: " + refinement["status"] + ". " + refinement["summary"] + "\n\nRead " + refinement["humanPlan"] + " and " + plan["nextIteration"]["activeRefinement"]["plan"] + ". Completed Q/R evidence is preserved; U tasks have separate acceptance.\n"
+        generated["docs/plans/development-plan.md"] += active_note
+        generated["docs/plans/commit-by-commit-plan.md"] += active_note
+        generated["outputs/electoral-app-development-plan.html"] = '<!doctype html><html lang="en"><meta charset="utf-8"><title>Active development plan</title><style>body{max-width:80ch;margin:3rem auto;padding:1rem;font:16px/1.6 system-ui}pre{white-space:pre-wrap}</style><body><pre>' + html.escape(generated["docs/plans/development-plan.md"]) + '</pre></body></html>\n'
+    if refinement:
+        blocks = ["# " + refinement["title"], refinement["planVersion"] + " · " + refinement["status"], refinement["summary"], "Application implementation started: " + str(refinement["applicationImplementationStarted"]).lower() + ". Complete: " + str(refinement["applicationImplementationComplete"]).lower() + ". Public launch and collection remain unapproved/disabled.", "Baseline: " + refinement["baseline"] + ". Prototype: " + refinement["prototype"] + ". Source bank SHA-256: " + refinement["sourceBankSha256"] + "."]
+        blocks.extend("## " + item["title"] + "\n\n" + item["content"] for item in refinement["sections"])
+        blocks.append("## Connected navigation and return graphs")
+        for flow in refinement["flows"]:
+            lines = ["### " + flow["id"] + " " + flow["title"], "Start: " + flow["start"] + ". Walkthrough: " + " → ".join(flow["walkthrough"]) + "."]
+            for node in flow["nodes"]:
+                lines.append("- **" + node["id"] + "**: " + node["goal"] + ". " + "; ".join("“" + action["label"] + "” → " + action["target"] + " (retain " + action["retains"] + ")" for action in node["actions"]))
+            blocks.append("\n\n".join(lines))
+        blocks.append("## Bounded implementation tasks")
+        for task in refinement["tasks"]:
+            lines = ["### " + task["id"] + " " + task["subject"], "Status: " + task["status"] + ". Size: " + task["size"] + ". Dependencies: " + (", ".join(task["dependsOn"]) or "none") + "."]
+            for label, key in [("Deliverables", "deliverables"), ("Accept when", "acceptanceCriteria"), ("Verify", "verification")]:
+                lines.append(label + ":\n\n" + "\n".join("- " + value for value in task[key]))
+            if task.get("completionEvidence"):
+                lines.append("Actual evidence: " + ", ".join(task["completionEvidence"]) + ".")
+            blocks.append("\n\n".join(lines))
+        blocks.append("## Primary design references\n\nThese inform the design constraints, not a claim of proven usability.\n\n" + "\n".join("- [" + item["title"] + "](" + item["url"] + "): " + item["decision"] for item in refinement["references"]))
+        generated[refinement["humanPlan"]] = "\n\n".join(blocks) + "\n"
     for name, content in generated.items():
         path = ROOT / name
         if args.check:
@@ -79,6 +104,10 @@ def render():
             end = text.index("\n};", start) + 2
             view = {**second, "trend": json.loads((ROOT / second["research"]).read_text())["personalConcerns"]}
             text = text[:start] + json.dumps(view, ensure_ascii=False, indent=2) + text[end:]
+        if refinement and "const cleanup = " in text:
+            start = text.index("const cleanup = ") + len("const cleanup = ")
+            end = text.index("\n};", start) + 2
+            text = text[:start] + json.dumps(refinement, ensure_ascii=False, indent=2) + text[end:]
         canvas.write_text(text)
     print("Active plan parity passed." if args.check else "Active plans rendered; existing managed view synchronized.")
 

@@ -196,3 +196,9 @@ First-iteration completion remains historical; the next application changes are 
 - Q028 · docs: prepare the concrete 2023 public release packet · in_progress
 - Q029 · docs: record deferred comparison feedback and translation scope · completed
 - Q030 · feat: prepare separate future-programme edition updates · completed
+
+## Active next-stage refinement
+
+Whole-site UI and UX cleanup: understandable journeys for everyday visitors. Status: planned_application_stage. A full-site next-stage plan, grounded in actual route/rendering defects. Task-led navigation, short plain Spanish, useful didactic interaction, parallel programme comparison, interpretable results, practical help and reliable source/return flows. Includes a real-data comparison prototype; application work is separately planned and no new bank/source/score semantics are authorized by this UI stage.
+
+Read docs/plans/ui-ux-cleanup-loop-plan.md and outputs/ui-ux-cleanup-loop-plan.json. Completed Q/R evidence is preserved; U tasks have separate acceptance.

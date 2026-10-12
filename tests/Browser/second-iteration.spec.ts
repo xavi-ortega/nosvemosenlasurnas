@@ -271,7 +271,11 @@ test('UX07 UX10: generic menu/back preserves only live memory and private data n
     const state = await page.evaluate(async () => ({ history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases(), url: location.pathname + location.search + location.hash }));
     expect(state).toEqual({ history: null, local: [], session: [], databases: [], url: '/programmes' });
     expect(await context.cookies()).toEqual([]);
-    expect(requests.filter(r => r.body || r.method !== 'GET' || /answers|affinity|progress|questionId|profileId|importance|finish=/.test(r.url))).toEqual([]);
+    expect(requests.filter(r => {
+        const url = new URL(r.url);
+        const publicDevelopmentModule = ['localhost', '127.0.0.1'].includes(url.hostname) && url.pathname === '/resources/js/documented-affinity.ts' && !url.search;
+        return r.body || r.method !== 'GET' || (!publicDevelopmentModule && /answers|affinity|progress|questionId|profileId|importance|finish=/.test(r.url));
+    })).toEqual([]);
     expect(requests.filter(r => new URL(r.url).pathname === '/api/bank')).toHaveLength(1);
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cuestionario 2023', exact: true }).click();
     await page.reload(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
     <meta name="referrer" content="no-referrer">
+    @if (Vite::cspNonce())
+        <meta property="csp-nonce" nonce="{{ Vite::cspNonce() }}">
+    @endif
     <title>{{ $title }} · Nos Vemos en las Urnas</title>
     @vite(['resources/css/app.css', 'resources/js/app.ts'])
 </head>

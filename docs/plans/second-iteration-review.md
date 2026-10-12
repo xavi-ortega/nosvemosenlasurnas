@@ -4,6 +4,8 @@ Version: `quiz-2023-iteration-2-v1.1.0`. R001–R008 are completed with local ac
 
 ## Open the local application
 
+For normal live development, run `composer run dev` from the repository root and open [the questionnaire at port 8000](http://localhost:8000/questionnaire). Use `scripts/composer run dev` if PHP/Composer are not on the shell PATH. Laravel and Vite start together; local asset updates do not require a build. The development CSP allows only the active loopback Vite origin, with a per-response nonce and its update socket. Automatic Boost browser-console collection is disabled.
+
 The prepared development runtime is `.tools/iteration-2-runtime`. Open [the questionnaire](http://127.0.0.1:8767/questionnaire), [Programas 2023](http://127.0.0.1:8767/programmes), or [Cómo funciona](http://127.0.0.1:8767/how-it-works).
 
 The previous questionnaire address, [port 8766](http://127.0.0.1:8766/questionnaire), now serves the same second-iteration runtime. Its former runtime and historical bank remain preserved. The root local configuration also selects this prepared bank through `EVIDENCE_DIRECTORY`; no private environment file is committed.

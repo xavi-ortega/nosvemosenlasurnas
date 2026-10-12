@@ -297,6 +297,26 @@ test('UX08: skipped topic has no maximum, review restores it, rapid extension ad
     await page.getByRole('button', { name: 'Volver al punto de decisión' }).click(); await finish(page);
 });
 
+test('delayed result checks keep checkpoint space and restore answers and controls after failure', async ({ page }) => {
+    await start(page); await answer(page, 20);
+    let release!: () => void;
+    const pending = new Promise<void>(resolve => { release = resolve; });
+    await page.route('**/api/release-state', async route => { await pending; await route.fulfill({ status: 503 }); });
+    const before = await page.locator('#app > section').boundingBox();
+    await page.getByRole('button', { name: 'Ver mi resultado', exact: true }).click();
+    await expect(page.locator('#app .loading-skeleton')).toBeVisible();
+    await expect(page.locator('#app .skeleton-content')).toHaveAttribute('inert', '');
+    expect((await page.locator('#app > section').boundingBox())!.height).toBeCloseTo(before!.height, 0);
+    await expect(page.locator('.affinity-row')).toHaveCount(0);
+    release();
+    await expect(page.getByRole('alert')).toContainText('No hemos podido comprobar');
+    await expect(page.locator('#app .loading-skeleton')).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeEnabled();
+    await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeFocused();
+    await page.unroute('**/api/release-state');
+    await finish(page); await expect(page.locator('.affinity-row')).toHaveCount(63);
+});
+
 test('loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset states remain honest', async ({ page }) => {
     await start(page); await answer(page, 20);
     await page.route('**/api/release-state', route => route.fulfill({ json: { sha256: sha, withdrawn: [sha] } }));

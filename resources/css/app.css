@@ -36,6 +36,18 @@ p { max-width: 75ch; }
 .skip-link:focus { top: 1rem; }
 .page-heading { margin-block: 2rem; }
 .app-surface, .information { padding-block: 1rem 2rem; }
+.skeleton-content { display: contents; }
+.loading-region { display: flow-root; }
+.skeleton-text { color: transparent; background: #dce4ef; border-radius: 4px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.loading-skeleton .skeleton-content button, body[data-iteration="2"] .loading-skeleton button.primary { background: #dce4ef; border-color: transparent; opacity: 1; }
+.skeleton-content input, .skeleton-content select { visibility: hidden; }
+.skeleton-content :focus { outline: none; }
+.loading-skeleton .state-enter { animation: none; }
+.skeleton-bar { background: #dce4ef; height: 1.15rem; max-width: 65ch; border-radius: 4px; margin-block: 1rem; }
+.skeleton-heading { height: 2rem; width: 55%; }
+.skeleton-short { width: 65%; }
+.skeleton-control { height: 48px; width: 11rem; }
+.skeleton-list { min-height: 52rem; }
 .information { max-width: 75ch; margin-block: 2rem; }
 fieldset { min-width: 0; padding: 0; margin: 1.5rem 0; border: 0; }
 legend { font-weight: 700; margin-bottom: .8rem; }
@@ -153,6 +165,8 @@ body[data-iteration="2"] .app-surface { container-type: inline-size; }
 .programme-reader p { max-width: 65ch; }
 .programme-reader h2 { font-size: 1.5rem; }
 .topic-index { margin-block: 1.5rem; }
+.featured-proposals { display: grid; gap: .65rem; }
+.featured-proposals button { text-align: left; }
 .programme-reader .topic-index { display: grid; gap: .65rem; }
 .topic-index button { text-align: left; width: 100%; }
 .affinity-chart { list-style: none; padding: 0; margin: 0; }

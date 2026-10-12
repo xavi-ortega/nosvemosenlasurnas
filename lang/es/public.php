@@ -53,7 +53,7 @@ return [
     'development' => 'Edición de 2023 en preparación. Demo con candidaturas y propuestas ficticias para probar el funcionamiento local.',
     'historical' => 'Edición del Congreso del 23 de julio de 2023. Estos programas corresponden a aquellas elecciones; no representan posiciones actuales.',
     'authored_draft' => 'Borrador de la edición de 2023 con programas reales. La revisión de fuentes y posiciones sigue pendiente; estos resultados sirven para revisar el test y aún no constituyen una edición publicada.',
-    'loading' => 'Cargando la edición de fuentes…',
+    'loading' => 'Cargando contenido…',
     'generic_error' => 'No hemos podido cargar esta edición. Recarga la página para intentarlo de nuevo.',
     'unavailable' => 'El test con programas reales de 2023 todavía no está disponible. Puedes consultar cómo funciona la herramienta.',
     'retry' => 'Volver a cargar',

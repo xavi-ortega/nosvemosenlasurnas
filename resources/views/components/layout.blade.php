@@ -1,4 +1,4 @@
-@props(['title', 'page' => 'information'])
+@props(['title', 'page' => 'information', 'iteration' => false])
 <!doctype html>
 <html lang="es">
 <head>
@@ -12,7 +12,7 @@
     <title>{{ $title }} · Nos Vemos en las Urnas</title>
     @vite(['resources/css/app.css', 'resources/js/app.ts'])
 </head>
-<body data-page="{{ $page }}">
+<body data-page="{{ $page }}" @if ($iteration) data-iteration="2" @endif>
     <a class="skip-link" href="#content">{{ __('public.skip_link') }}</a>
     <header class="site-header">
         <a class="brand" href="{{ route('home') }}"><svg aria-hidden="true" viewBox="0 0 32 32" width="32" height="32"><path d="M4 12h24v16H4zM9 4h14v12H9z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m12 9 3 3 6-6" fill="none" stroke="currentColor" stroke-width="2"/></svg><span>Nos Vemos<br>en las Urnas</span></a>

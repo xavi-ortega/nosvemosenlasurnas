@@ -3,6 +3,7 @@ import type { Answer, Bank, Citation, Question, Position, Priorities, Scale } fr
 import { Feedback, renderFeedback } from './feedback.ts';
 import type { FeedbackConfig } from './feedback.ts';
 import { Questionnaire } from './questionnaire.ts';
+import { reserveLoadingSpace, startLoading } from './loading.ts';
 
 const dictionary = document.getElementById('public-messages');
 const messages: Record<string, string> = dictionary ? JSON.parse(dictionary.textContent ?? '{}') : {};
@@ -11,6 +12,7 @@ const feedbackNode = document.getElementById('feedback-config');
 let feedback: Feedback | null = null;
 try { if (feedbackNode) feedback = new Feedback(JSON.parse(feedbackNode.textContent ?? '{}') as FeedbackConfig); } catch { /* Optional feedback cannot block the core. */ }
 const root = document.getElementById('app');
+if (root) reserveLoadingSpace(root);
 const page = document.body.dataset.page;
 let bank: Bank;
 let releaseHash = '';
@@ -128,11 +130,14 @@ function renderSources(): void {
         root.append(card);
     }
     const history = e('section', '', 'source-card'); history.append(e('h2', t('correction_history'))); root.append(history);
+    const entries = e('div', '', 'loading-region'); entries.append(p('history_unavailable')); history.append(entries);
+    const restoreHistory = startLoading(entries, t('loading'));
     void fetch('/api/release-history', { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' }).then(async response => {
         if (!response.ok) throw new Error('History unavailable.');
         const changes: { sha256: string; reason: string; action?: string }[] = await response.json();
-        for (const change of changes) history.append(e('p', `${change.sha256.slice(0, 12)}. ${t(change.action === 'withdraw' ? 'release_withdrawn' : 'release_changed')}: ${change.reason}`));
-    }).catch(() => history.append(p('history_unavailable')));
+        entries.replaceChildren();
+        for (const change of changes) entries.append(e('p', `${change.sha256.slice(0, 12)}. ${t(change.action === 'withdraw' ? 'release_withdrawn' : 'release_changed')}: ${change.reason}`));
+    }).catch(() => entries.replaceChildren(p('history_unavailable'))).finally(restoreHistory);
 
 }
 
@@ -211,18 +216,24 @@ async function finish(): Promise<void> {
     const activeSession = session;
     finishing = true;
     const controls = [...root.querySelectorAll<HTMLButtonElement>('button')];
+    const restore = startLoading(root, t('checking_release'));
     for (const control of controls) control.disabled = true;
-    const status = e('p', t('checking_release'), 'quiet'); status.setAttribute('role', 'status'); root.append(status);
     try {
         const response = await fetch('/api/release-state', { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' });
         if (!response.ok) throw new Error('Release state unavailable.');
         const state: { sha256: string; withdrawn: string[] } = await response.json();
         if (!Array.isArray(state.withdrawn)) throw new Error('Invalid release state.');
         if (session !== activeSession) return;
-        if (state.withdrawn.includes(activeSession.releaseHash)) { status.textContent = t('withdrawn'); status.className = 'error'; return; }
+        if (state.withdrawn.includes(activeSession.releaseHash)) { restore(); root.append(p('withdrawn', 'error')); return; }
         activeSession.finish(); renderResults(); focusHeading();
-    } catch { if (session === activeSession) { status.textContent = t('release_check_failed'); status.className = 'error'; } }
+    } catch {
+        if (session === activeSession) {
+            restore(); const error = root.querySelector<HTMLElement>('.release-error') ?? p('release_check_failed', 'error release-error');
+            error.setAttribute('role', 'alert'); root.append(error);
+        }
+    }
     finally {
+        restore();
         finishing = false;
         for (const control of controls) if (control.isConnected) control.disabled = false;
     }
@@ -367,9 +378,10 @@ async function renderInsights(): Promise<void> {
 }
 
 if (root && page === 'insights') {
-    void renderInsights();
+    void renderInsights().finally(() => root.removeAttribute('aria-busy'));
 } else if (root && page === 'feedback') {
     root.replaceChildren(); if (feedback) renderFeedback(root, feedback, t); else root.append(p('collection_disabled'));
+    root.removeAttribute('aria-busy');
 } else if (root) {
     void load().then(async () => {
         if (bank.engineVersion === 'documented-affinity-v2') {
@@ -379,7 +391,7 @@ if (root && page === 'insights') {
     }).catch((error: unknown) => {
         const unavailable = error instanceof Error && error.message === 'Bank unavailable.';
         root.replaceChildren(p(unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
-    });
+    }).finally(() => root.removeAttribute('aria-busy'));
 }
 document.addEventListener('mousedown', event => {
     if (page === 'quiz' && event.detail > 1 && performance.now() - lastNextClickAt < 180) event.preventDefault();

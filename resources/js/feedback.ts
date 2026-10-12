@@ -1,3 +1,5 @@
+import { startLoading } from './loading.ts';
+
 export type Category = 0 | 1 | 2;
 export type Metric = 'result_fit' | 'policy_agreement';
 export const protocolVersion = 'three_category_randomized_response_v1';
@@ -68,11 +70,11 @@ export function renderFeedback(target: HTMLElement, feedback: Feedback, t: (key:
             let report: Report | null;
             try { report = feedback.prepare(metric, Number(selected.value) as Category, consent.checked); } catch { showStatus('feedback_failed'); return; }
             if (!report) return;
-            showStatus('feedback_sending');
+            const restore = startLoading(card, t('feedback_sending'));
             const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 3000);
             void fetch('/api/feedback', { method: 'POST', body: JSON.stringify(report), headers: { 'Content-Type': 'application/json', 'X-Feedback-Protocol': protocolVersion }, credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer', signal: controller.signal }).then(response => {
                 showStatus(response.status === 202 ? 'feedback_sent' : 'feedback_failed');
-            }).catch(() => showStatus('feedback_failed')).finally(() => clearTimeout(timer));
+            }).catch(() => showStatus('feedback_failed')).finally(() => { restore(); clearTimeout(timer); });
         });
     }
 }

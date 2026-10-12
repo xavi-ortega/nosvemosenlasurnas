@@ -2,6 +2,7 @@ import { Questionnaire } from './questionnaire.ts';
 import { documentedMatch, profilePosition } from './documented-affinity.ts';
 import { relationship, similarity } from './matching.ts';
 import type { Answer, Bank, Position, ProgrammeProfile, Question } from './matching.ts';
+import { startLoading } from './loading.ts';
 
 type Section = 'home' | 'quiz' | 'programmes' | 'method';
 type Translate = (key: string) => string;
@@ -125,7 +126,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     }
     function renderQuiz(reviewTopic?: string): void {
         const page = view('quiz'); page.replaceChildren();
-        const stage = element('section', '', 'quiz-stage state-enter'); page.append(stage);
+        const stage = element('section', '', 'quiz-stage'); stage.classList.toggle('state-enter', !root.hasAttribute('aria-busy')); page.append(stage);
         stage.addEventListener('pointerdown', event => {
             if (performance.now() < answerUnlockAt && !(event.target as Element).closest('.quiz-navigation button')) { event.preventDefault(); focus(stage.querySelector('h2')); }
         }, true);
@@ -189,8 +190,10 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     async function finish(): Promise<void> {
         if (!session || finishing) return;
         const active = session; finishing = true;
-        const page = view('quiz'); const status = paragraph('checking_release', 'quiet'); status.setAttribute('role', 'status'); page.append(status);
-        const controls = [...page.querySelectorAll<HTMLButtonElement>('button')].map(control => ({ control, disabled: control.disabled })); controls.forEach(({ control }) => { control.disabled = true; });
+        const page = view('quiz');
+        const controls = [...page.querySelectorAll<HTMLButtonElement>('button')].map(control => ({ control, disabled: control.disabled }));
+        const restore = startLoading(page, t('checking_release'));
+        controls.forEach(({ control }) => { control.disabled = true; });
         try {
             const response = await fetch('/api/release-state', { credentials: 'omit', cache: 'no-store', referrerPolicy: 'no-referrer' });
             if (!response.ok) throw new Error('Release unavailable.');
@@ -199,8 +202,11 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             if (session !== active) return;
             if (state.withdrawn.includes(releaseHash)) { withdrawn = true; overlay = false; active.revealed = false; page.replaceChildren(element('h2', t('withdrawn')), button('retry', () => location.reload())); return; }
             active.finish(); quizView = 'results'; renderQuiz();
-        } catch { status.textContent = t('release_check_failed'); status.className = 'error'; }
-        finally { finishing = false; controls.forEach(({ control, disabled }) => { if (control.isConnected) control.disabled = disabled; }); }
+        } catch {
+            restore(); const error = page.querySelector<HTMLElement>('.release-error') ?? paragraph('release_check_failed', 'error release-error');
+            error.setAttribute('role', 'alert'); page.append(error);
+        }
+        finally { restore(); finishing = false; controls.forEach(({ control, disabled }) => { if (control.isConnected) control.disabled = disabled; }); }
     }
 
     function readingLayout(page: HTMLElement) {
@@ -319,7 +325,9 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         origin.append(overlayControl());
         if (publicMode === 'catalogue') {
             origin.append(element('h2', t('iteration_featured')), paragraph('iteration_featured_reason'));
-            for (const id of bank.starterQuestionIds!.slice(0, 4)) { const q = bank.questions.find(q => q.id === id)!; const control = action(q.text, opener => openPublicQuestion(q, opener, 'catalogue')); control.dataset.returnId = id; origin.append(control); }
+            const featured = element('div', '', 'featured-proposals');
+            for (const id of bank.starterQuestionIds!.slice(0, 4)) { const q = bank.questions.find(q => q.id === id)!; const control = action(q.text, opener => openPublicQuestion(q, opener, 'catalogue')); control.dataset.returnId = id; featured.append(control); }
+            origin.append(featured);
             origin.append(element('h3', t('iteration_all_topics'))); const topics = element('div', '', 'topic-index grid gap-3 sm:grid-cols-2');
             for (const topic of bank.topics) topics.append(action(topic.name, () => { publicTopic = topic.id; publicMode = 'topic'; publicSearch = ''; renderProgrammes(); }));
             origin.append(topics, actions(button('iteration_select_programmes', () => { publicMode = 'selection'; renderProgrammes(); })), element('p', bank.ordering!.migrationGap, 'quiet'));

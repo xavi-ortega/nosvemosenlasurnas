@@ -1,0 +1,56 @@
+body[data-iteration="2"] .information-surface { max-width: 68ch; }
+body[data-iteration="2"] .method-surface { max-width: 66rem; }
+.information-return { margin-bottom: 1.25rem; }
+body[data-iteration="2"] .information-surface > h2 { font-weight: 600; }
+.information-surface > .lead { max-width: 62ch; margin-bottom: 1.5rem; }
+body[data-iteration="2"] .method-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; list-style: none; counter-reset: method-step; padding: 0; margin-block: 1.75rem 2rem; }
+body[data-iteration="2"] .method-steps > li { counter-increment: method-step; margin: 0; }
+.method-steps h3::before { content: counter(method-step) ". "; color: var(--ui-action); }
+body[data-iteration="2"] .method-steps h3 { font-size: 1.0625rem; font-weight: 600; margin: 0; }
+body[data-iteration="2"] .method-steps p { margin-block: .4rem 0; }
+body[data-iteration="2"] .method-explainer { display: grid; grid-template-columns: minmax(0, 1fr) minmax(19rem, 1fr); grid-template-rows: auto 1fr; grid-template-areas: "heading visual" "meaning visual"; gap: .75rem 2.5rem; margin-block: 2rem; }
+body[data-iteration="2"] .method-explainer > h3 { grid-area: heading; margin: 0; font-size: 1.375rem; font-weight: 600; }
+.method-meaning { grid-area: meaning; }
+body[data-iteration="2"] .method-meaning > p:first-child { margin-top: 0; }
+.method-visual { grid-area: visual; margin: 0; border: 1px solid var(--ui-line); border-radius: .5rem; background: var(--ui-paper); padding: 1.25rem; }
+.method-visual figcaption { margin-bottom: 1rem; color: var(--ui-muted); font-size: .9375rem; }
+.method-marks { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: min(.5rem, 2vw); }
+.method-mark { display: grid; place-items: center; min-height: 3rem; font-size: 1.5rem; font-weight: 600; line-height: 1; border: 1px dashed var(--ui-muted); border-radius: .25rem; background: var(--ui-ground); transition: background-color 140ms ease-out, border-color 140ms ease-out, color 140ms ease-out; }
+.method-mark[data-state="same"] { border-style: solid; background: var(--ui-action); border-color: var(--ui-action); color: white; }
+.method-mark[data-state="different"] { border-style: solid; background: #85642b; border-color: #85642b; color: white; }
+body[data-iteration="2"] .method-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 6rem), 1fr)); gap: .5rem; list-style: none; padding: 0; margin-block: .75rem 1rem; font-size: .875rem; color: var(--ui-muted); }
+body[data-iteration="2"] .method-legend li { margin: 0; }
+.method-values { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 7rem), 1fr)); gap: 1rem; margin-block: 1rem; }
+.method-values > div { display: flex; flex-direction: column; }
+.method-values dt { font-size: .9375rem; }
+.method-values dd { order: -1; margin: 0; font-size: 1.875rem; font-weight: 600; line-height: 1.25; font-variant-numeric: tabular-nums; }
+.method-switch { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; min-height: 2.75rem; margin-top: .5rem; cursor: pointer; }
+.method-switch[hidden] { display: none; }
+.method-switch > span { flex: 1 1 12rem; min-width: 0; }
+.method-switch input { width: 1.25rem; height: 1.25rem; flex-shrink: 0; }
+.method-switch:has(input:focus-visible) { outline: 3px solid var(--ui-action); outline-offset: 4px; border-radius: .125rem; }
+body[data-iteration="2"] .information-text-action { padding: .5rem 0; border: 0; background: transparent; color: var(--ui-action); text-decoration: underline; text-underline-offset: .2em; font-weight: 500; }
+.method-provenance { color: var(--ui-muted); max-width: 68ch; }
+.method-provenance a { display: inline-block; min-height: 2.75rem; align-content: center; color: var(--ui-action); text-decoration: underline; text-underline-offset: .2em; }
+body[data-iteration="2"] .method-surface > .start-link { margin-top: .5rem; background: var(--ui-action); }
+.information-answers { display: grid; gap: 1.5rem; margin-block: 2rem; }
+.information-answers > section { border-top: 1px solid var(--ui-line); padding-top: 1rem; }
+body[data-iteration="2"] .information-answers h3 { margin: 0 0 .5rem; font-size: 1.125rem; font-weight: 600; }
+body[data-iteration="2"] .information-answers p { margin-block: .5rem; }
+.information-answers a { text-decoration: underline; text-underline-offset: .2em; }
+.information-answers a, .information-navigation a { display: inline-flex; align-items: center; min-height: 2.75rem; color: var(--ui-action); }
+.calculation-content > section + section { margin-top: 1.5rem; }
+.calculation-content h3 { font-size: 1.125rem; font-weight: 600; }
+.calculation-content p { max-width: 65ch; }
+.method-fallback { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--ui-line); }
+@media (max-width: 45rem) {
+    body[data-iteration="2"] .method-steps { grid-template-columns: minmax(0, 1fr); gap: 1rem; margin-block: 1.5rem; }
+    body[data-iteration="2"] .method-explainer { grid-template-columns: minmax(0, 1fr); grid-template-areas: "heading" "visual" "meaning"; gap: 1rem; margin-block: 1.5rem; }
+    .method-visual { padding: 1rem; }
+}
+@media (forced-colors: active) {
+    .method-mark { color: CanvasText; background: Canvas; border-color: CanvasText; }
+    .method-mark[data-state="same"], .method-mark[data-state="different"] { color: CanvasText; background: Canvas; border-color: CanvasText; }
+    .method-switch:has(input:focus-visible) { outline-color: Highlight; }
+}
+@media (prefers-reduced-motion: reduce) { .method-mark { transition: none; } }

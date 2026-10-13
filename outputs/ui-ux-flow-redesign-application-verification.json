@@ -1,0 +1,4343 @@
+{
+  "schemaVersion": 1,
+  "planVersion": "ui-ux-cleanup-2023-v2.0.0",
+  "status": "completed_local_application",
+  "recordedAt": "2026-10-13T13:46:12.142787+00:00",
+  "implementationBaselineCommit": "dfc7a3d",
+  "productBaselineCommit": "000d96c",
+  "applicationImplementationComplete": true,
+  "localAcceptanceComplete": true,
+  "ownerAcceptanceConfirmed": false,
+  "publicLaunchApproved": false,
+  "liveCollectionEnabled": false,
+  "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "invariants": {
+    "formations": 59,
+    "questions": 80,
+    "documents": 35,
+    "sourceBankByteParity": true,
+    "sourceInterpretationsAndSummariesUnchanged": true,
+    "calculationFilesUnchanged": [
+      "resources/js/documented-affinity.ts",
+      "resources/js/matching.ts",
+      "resources/js/questionnaire.ts",
+      "resources/js/programme-summaries.ts"
+    ],
+    "hotMarkerSha256": "04f38fc06ceea50a1c122105c49c5001179483fe91f99859071eb243661f7dfd",
+    "dependenciesChanged": false,
+    "branch": "main"
+  },
+  "taskEvidence": [
+    {
+      "id": "N001",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A11",
+        "A24",
+        "A36"
+      ]
+    },
+    {
+      "id": "N002",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A03",
+        "A04",
+        "A08"
+      ]
+    },
+    {
+      "id": "N003",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A02",
+        "A05",
+        "A06",
+        "A09",
+        "A12",
+        "A13",
+        "A32"
+      ]
+    },
+    {
+      "id": "N004",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A05",
+        "A06",
+        "A07",
+        "A10",
+        "A11",
+        "A13",
+        "A27"
+      ]
+    },
+    {
+      "id": "N005",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A14",
+        "A17",
+        "A30",
+        "A31",
+        "A33",
+        "A34"
+      ]
+    },
+    {
+      "id": "N006",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A08",
+        "A15",
+        "A16",
+        "A24",
+        "A29",
+        "A30",
+        "A34",
+        "A36"
+      ]
+    },
+    {
+      "id": "N007",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A01",
+        "A02",
+        "A17",
+        "A18",
+        "A22",
+        "A25",
+        "A30",
+        "A35"
+      ]
+    },
+    {
+      "id": "N008",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A19",
+        "A20",
+        "A24",
+        "A27",
+        "A33"
+      ]
+    },
+    {
+      "id": "N009",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A01",
+        "A02",
+        "A21",
+        "A22",
+        "A23",
+        "A26",
+        "A27",
+        "A37"
+      ]
+    },
+    {
+      "id": "N010",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A12",
+        "A27",
+        "A29",
+        "A35",
+        "A38"
+      ]
+    },
+    {
+      "id": "N011",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A24",
+        "A25",
+        "A38"
+      ]
+    },
+    {
+      "id": "N012",
+      "status": "verified_application",
+      "acceptanceIds": [
+        "A28"
+      ]
+    }
+  ],
+  "flows": [
+    {
+      "id": "F01",
+      "status": "accepted_local",
+      "sequence": [
+        "home",
+        "quiz",
+        "help",
+        "quiz",
+        "home"
+      ],
+      "acceptanceIds": [
+        "A01",
+        "A02",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "home",
+        "quiz",
+        "support"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-simple-start.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-home.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A01",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A02"
+      ]
+    },
+    {
+      "id": "F02",
+      "status": "accepted_local",
+      "sequence": [
+        "selection",
+        "picker",
+        "selection",
+        "selection",
+        "picker",
+        "selection"
+      ],
+      "acceptanceIds": [
+        "A03",
+        "A04",
+        "A08",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "selection",
+        "picker",
+        "comparison"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-current-and-selected.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-2.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-3.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A03 A04 A08",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A04 A08"
+      ]
+    },
+    {
+      "id": "F03",
+      "status": "accepted_local",
+      "sequence": [
+        "workspace",
+        "search",
+        "quotes",
+        "source",
+        "quotes",
+        "workspace"
+      ],
+      "acceptanceIds": [
+        "A05",
+        "A06",
+        "A07",
+        "A09",
+        "A10",
+        "A11",
+        "A12",
+        "A13",
+        "A24",
+        "A32",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "comparison",
+        "source"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-tabs.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-empty.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-1.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A05 A07 A31",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A05 A11",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A06 A10",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A09 A32",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A11",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A11 A24",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A13 A31"
+      ]
+    },
+    {
+      "id": "F04",
+      "status": "accepted_local",
+      "sequence": [
+        "results",
+        "detail",
+        "differences",
+        "source",
+        "differences",
+        "results"
+      ],
+      "acceptanceIds": [
+        "A14",
+        "A15",
+        "A16",
+        "A29",
+        "A30",
+        "A31",
+        "A33",
+        "A34",
+        "A36",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "results",
+        "detail",
+        "source"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-tabs.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A29",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A34",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A35",
+        "tests/Tooling/result-presentation.test.ts"
+      ]
+    },
+    {
+      "id": "F05",
+      "status": "accepted_local",
+      "sequence": [
+        "method",
+        "example",
+        "calculation",
+        "example",
+        "method"
+      ],
+      "acceptanceIds": [
+        "A19",
+        "A20",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "method"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-calculation-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-example-added-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A20 A33 A36",
+        "tests/Feature/PublicJourneyTest.php"
+      ]
+    },
+    {
+      "id": "F06",
+      "status": "accepted_local",
+      "sequence": [
+        "directory",
+        "factsheet",
+        "directory",
+        "notice",
+        "directory"
+      ],
+      "acceptanceIds": [
+        "A21",
+        "A27",
+        "A37",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "support"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/accessibility-reading-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/help-reading-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/privacy-reading-no-script-mobile.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A02 A21",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A04 A37"
+      ]
+    },
+    {
+      "id": "F07",
+      "status": "accepted_local",
+      "sequence": [
+        "quiz",
+        "pending",
+        "failure",
+        "pending",
+        "results",
+        "quiz"
+      ],
+      "acceptanceIds": [
+        "A22",
+        "A23",
+        "A26",
+        "A28",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "quiz",
+        "failure",
+        "results"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-home.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-home.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-retry-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-calculation-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-panel-1.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "scripts/check-staged.py",
+        "tests/Browser/loading.spec.ts",
+        "tests/Browser/second-iteration.spec.ts#invalid bank",
+        "tests/Feature/PublicJourneyTest.php"
+      ]
+    },
+    {
+      "id": "F08",
+      "status": "accepted_local",
+      "sequence": [
+        "results",
+        "export",
+        "results",
+        "restart",
+        "results",
+        "continuation",
+        "results"
+      ],
+      "acceptanceIds": [
+        "A17",
+        "A18",
+        "A25",
+        "A35",
+        "A38"
+      ],
+      "comprehensionStates": [
+        "results",
+        "quiz"
+      ],
+      "evidence": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-pending-checkpoint.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-detail.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "tests/Browser/second-iteration.spec.ts#UX08",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A25",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A31",
+        "tests/Browser/ui-ux-cleanup.spec.ts#A35"
+      ]
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "A01",
+      "status": "accepted_local",
+      "flowIds": [
+        "F01"
+      ],
+      "taskIds": [
+        "N007",
+        "N009"
+      ],
+      "sequence": "Home → start; first question; native radio → confirmation → next → Back",
+      "observed": "Two above-fold tasks and 2023 context; unavailable Back hidden; checked delay and reverse transition retained.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A01",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-home.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-simple-start.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A02",
+      "status": "accepted_local",
+      "flowIds": [
+        "F01"
+      ],
+      "taskIds": [
+        "N003",
+        "N007",
+        "N009"
+      ],
+      "sequence": "Question → Programas → privacy/help → quiz; Back/Forward aliases",
+      "observed": "Selected answer survives only in memory. No programme selection or personal data transfers to public comparison.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A02",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-home.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A03",
+      "status": "accepted_local",
+      "flowIds": [
+        "F02"
+      ],
+      "taskIds": [
+        "N002"
+      ],
+      "sequence": "Open slot → inspect59 alphabetical names → accent-insensitive minor-name search → choose",
+      "observed": "All59 unique names remain available; selected other slot is labelled Ya elegido; long name wraps.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A03 A04 A08",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-current-and-selected.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A04",
+      "status": "accepted_local",
+      "flowIds": [
+        "F02"
+      ],
+      "taskIds": [
+        "N002"
+      ],
+      "sequence": "0 →1 →2 → optional3 → explicit compare → cancel replacement → replace → remove third",
+      "observed": "No fourth slot or disabled checkbox wall. Cancellation preserves DOM/query; one confirmed slot changes; established comparison retains two.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A04 A08",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-2.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-3.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A05",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003",
+        "N004"
+      ],
+      "sequence": "Select PP/PSOE/Sumar → rent cap → quotes → source → return",
+      "observed": "PP/PSOE stay unknown; Sumar supports rent caps; exact literals and conditions survive.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A05 A11",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A06",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003",
+        "N004"
+      ],
+      "sequence": "Select PP/VOX/Sumar → nuclear proposal at1280 and390 → source",
+      "observed": "Same authored values and conditions in one instance per formation; parallel columns reflow to stacked units.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A06 A10",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A07",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N004"
+      ],
+      "sequence": "Search dental and mortgage guarantees → read PSOE/PP summaries → citations",
+      "observed": "Gradual extension/over75 condition;20% under35 first habitual home;PP95% retained. Qualified support differs from full support.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A05 A07 A31",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A08",
+      "status": "accepted_local",
+      "flowIds": [
+        "F02"
+      ],
+      "taskIds": [
+        "N002",
+        "N006"
+      ],
+      "sequence": "Choose PSC → compare → missing evidence → finish test → locate PSC",
+      "observed": "PSC appears once and inherits no PSOE positions; missing programme stays selectable and result visible.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A03 A04 A08",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A09",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003"
+      ],
+      "sequence": "Append6 → category search → append → clear",
+      "observed": "Fixed80 order; first6 then12; no duplication; clearing restores unfiltered loaded count and input focus.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A09 A32",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A10",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N004"
+      ],
+      "sequence": "Show citations at1280 then390; read complete per-formation unit",
+      "observed": "Aligned quote starts/action rows on wide layout; full exact quotations; one DOM representation and natural wrapping.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A05 A11",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-1.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A11",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N001",
+        "N004"
+      ],
+      "sequence": "Open source with quotes closed/open → resize → close/Escape/backdrop → same opener",
+      "observed": "Underlying proposal geometry unchanged; source locator opens explicit original without referrer; quote state unchanged.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A11",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A12",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003",
+        "N010"
+      ],
+      "sequence": "Inspect navigation/search/directory and retired symbol consumers",
+      "observed": "No topic/positions/standalone formation browsing branch, Ver temas or filter. Unified category search and source factsheets remain.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A06 A10",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A13",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003",
+        "N004"
+      ],
+      "sequence": "No-hit query → clear; select two missing programmes → read proposal",
+      "observed": "Useful recovery; unknown stance never becomes opposition/agreement; contextual citations differ from absent quotations.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A13 A31",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-comparison.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-empty.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A14",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N005"
+      ],
+      "sequence": "Varied numeric/priority/family fixtures → documentedMatch → adapter → export comparison",
+      "observed": "Engine untouched; order, unrounded weighted values and export unchanged. Adapter does not mutate inputs.",
+      "evidence": [
+        "tests/Tooling/result-presentation.test.ts",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A15",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N006"
+      ],
+      "sequence": "Deliberate finish → inspect all59 entries; narrow/wide/long formation names",
+      "observed": "All59 unique cards initially in DOM; one Detalle per card; no pager/six-row slice or Ver todas.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A29",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A16",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N006"
+      ],
+      "sequence": "Low grid row → Detalle → Difieres → source → internal Back → close",
+      "observed": "Single panel; retained tab/body scroll/source opener; close restores result origin and grid scroll.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A34",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A17",
+      "status": "accepted_local",
+      "flowIds": [
+        "F08"
+      ],
+      "taskIds": [
+        "N005",
+        "N007"
+      ],
+      "sequence": "Finish skipped/unsure session → empty detail → continue recovery",
+      "observed": "No global percent without numeric topic coverage; all10 topics say Sin respuesta tuya; zero bars/tabs; no fabricated programme gaps.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A31",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-detail.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-pending-checkpoint.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A18",
+      "status": "accepted_local",
+      "flowIds": [
+        "F08"
+      ],
+      "taskIds": [
+        "N007"
+      ],
+      "sequence": "Continue → checkpoint/next block; cancel and confirm reset; finish again",
+      "observed": "Personal detail invalidated; accepted answers/priorities retained on continue; reset cancellation safe; results require new finish.",
+      "evidence": [
+        "tests/Browser/second-iteration.spec.ts#UX08",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A19",
+      "status": "accepted_local",
+      "flowIds": [
+        "F05"
+      ],
+      "taskIds": [
+        "N008"
+      ],
+      "sequence": "Open method/how-it-works with and without JS",
+      "observed": "Identical20+10/exact calculation; no retired four-mode example; static content/link useful with no disabled teaching control.",
+      "evidence": [
+        "tests/Feature/PublicJourneyTest.php",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-calculation-mobile.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A20",
+      "status": "accepted_local",
+      "flowIds": [
+        "F05"
+      ],
+      "taskIds": [
+        "N008"
+      ],
+      "sequence": "Space on teaching switch →40/40 to40/80 → calculation → Escape",
+      "observed": "Five marks and fixed example geometry; focus returns; anonymous example never changes quiz answer.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A20 A33 A36",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-example-added-mobile.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A21",
+      "status": "accepted_local",
+      "flowIds": [
+        "F06"
+      ],
+      "taskIds": [
+        "N009"
+      ],
+      "sequence": "Question/directory → help/privacy/accessibility → contextual return",
+      "observed": "Concise current public statements; selected radio and directory search retained; direct page has useful start.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A02 A21",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/privacy-reading-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/help-reading-no-script-mobile.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/accessibility-reading-no-script-mobile.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A22",
+      "status": "accepted_local",
+      "flowIds": [
+        "F07"
+      ],
+      "taskIds": [
+        "N007",
+        "N009"
+      ],
+      "sequence": "503 bank; delayed/failed release → retry; withdrawal; unavailable source",
+      "observed": "Spanish errors, no raw exception/key, preserved answers; no result before valid deliberate finish or after withdrawal. Independent method example and exact calculation remain accessible on503/invalid hash in both aliases.",
+      "evidence": [
+        "tests/Browser/second-iteration.spec.ts#invalid bank",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-home.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-retry-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-calculation-mobile.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A23",
+      "status": "accepted_local",
+      "flowIds": [
+        "F07"
+      ],
+      "taskIds": [
+        "N009"
+      ],
+      "sequence": "Delayed bank/source loading → new selection skeleton → live UI",
+      "observed": "Existing <0.001 loading-shift gate preserved. Retired controls absent. Overlay base geometry0px displacement.",
+      "evidence": [
+        "tests/Browser/loading.spec.ts",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-panel-1.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A24",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N001",
+        "N006",
+        "N008",
+        "N011"
+      ],
+      "sequence": "Seven viewport matrix; keyboard/200% text/400% native method zoom and equivalent panel reflow; forced colors/motion",
+      "observed": "49 surfaces without overflow or Axe violations. Text200 tabs/chart and source corrected. Native400 coverage bounded to method; equivalent panel viewport separately labelled.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A11 A24",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-tabs.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A25",
+      "status": "accepted_local",
+      "flowIds": [
+        "F08"
+      ],
+      "taskIds": [
+        "N007",
+        "N011"
+      ],
+      "sequence": "Capture requests/storage through quiz/comparison/source/detail/example/export/pagehide",
+      "observed": "Only fixed public automatic requests; no private query/body/history/storage/cookie. External source is explicit noreferrer. Export local and cancelable.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A25",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A26",
+      "status": "accepted_local",
+      "flowIds": [
+        "F07"
+      ],
+      "taskIds": [
+        "N009"
+      ],
+      "sequence": "Direct feedback/insights/404 and useful exits",
+      "observed": "Spanish unavailable/recovery states; collection disabled; no new endpoints/dependencies or publication.",
+      "evidence": [
+        "tests/Feature/PublicJourneyTest.php",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-home.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A27",
+      "status": "accepted_local",
+      "flowIds": [
+        "F06"
+      ],
+      "taskIds": [
+        "N004",
+        "N008",
+        "N009",
+        "N010"
+      ],
+      "sequence": "Audit active labels/help/export; compare original quotations and summary module",
+      "observed": "Obsolete contexts/actions/catalogue keys retired; original quote language preserved. Existing authored political summaries unchanged.",
+      "evidence": [
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A28",
+      "status": "accepted_local",
+      "flowIds": [
+        "F07"
+      ],
+      "taskIds": [
+        "N012"
+      ],
+      "sequence": "Owner dev8000/5173 → production build → exact staged snapshot",
+      "observed": "Installed workflow preserved; hot marker unchanged; strict production CSP retained. Mandatory gate required before commit.",
+      "evidence": [
+        "scripts/check-staged.py",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-home.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A29",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N006",
+        "N010"
+      ],
+      "sequence": "Result → global Programas → browser Back",
+      "observed": "No result selection checkbox/transfer/compare button; global public navigation starts independent state.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A29",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A30",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N005",
+        "N006",
+        "N007"
+      ],
+      "sequence": "Finish → panel/chart; continue/reset/withdraw/pagehide → attempt return",
+      "observed": "Every personal surface gated by current valid session revision and deliberate finish; public comparison never shows own answers.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A35",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A31",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N005"
+      ],
+      "sequence": "All numeric relationship pairs, skipped, unknown and conflict fixtures",
+      "observed": "same/close versus different/opposed use existing relationship function;−1/+1 opposed;0 counted; missing never opposition.",
+      "evidence": [
+        "tests/Tooling/result-presentation.test.ts",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A32",
+      "status": "accepted_local",
+      "flowIds": [
+        "F03"
+      ],
+      "taskIds": [
+        "N003"
+      ],
+      "sequence": "Sanidad/salud/dental/multi-term/accents/spaces/IME/nohit/clear",
+      "observed": "Each term matches question/help/category; stable input/focus; fixed80 ordering; local-only state.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A09 A32",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A33",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N005",
+        "N008"
+      ],
+      "sequence": "Two equal/close answers; shared family and priority fixtures; switch example",
+      "observed": "Counts remain two matches at87.5% similarity; existing weighted denominator unchanged; no residual fraction called disagreement.",
+      "evidence": [
+        "tests/Tooling/result-presentation.test.ts",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A34",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N005",
+        "N006"
+      ],
+      "sequence": "All59 fixture → tied rounded outputs → missing programme detail",
+      "observed": "Ordering unchanged; missing evidence zero is explained; three groups show different evidence without invented confidence.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A34",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A35",
+      "status": "accepted_local",
+      "flowIds": [
+        "F08"
+      ],
+      "taskIds": [
+        "N007",
+        "N010"
+      ],
+      "sequence": "Inspect result actions → continue/pending recovery → review/importance/Back → finish",
+      "observed": "No direct result review/delete/single-answer edit. Reachable checkpoint recovery retained and results invalidated before editing.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A35",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A36",
+      "status": "accepted_local",
+      "flowIds": [
+        "F04"
+      ],
+      "taskIds": [
+        "N001",
+        "N006"
+      ],
+      "sequence": "Tab/Home/End/arrows; close/Escape/backdrop drag guard; rapid toggling; Back/resize",
+      "observed": "Focus trapped; one overlay; no orphan scroll lock; internal source/back retains state; enlarged vertical tabs accept Up/Down.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A30 A34",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-tabs.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A37",
+      "status": "accepted_local",
+      "flowIds": [
+        "F06"
+      ],
+      "taskIds": [
+        "N009"
+      ],
+      "sequence": "Directory search → formation factsheet → documents → close",
+      "observed": "All59 availability/scope/document facts retained; no add/compare/topic action; query and opener restored.",
+      "evidence": [
+        "tests/Browser/ui-ux-cleanup.spec.ts#A04 A37",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    },
+    {
+      "id": "A38",
+      "status": "accepted_local",
+      "flowIds": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08"
+      ],
+      "taskIds": [
+        "N010",
+        "N011"
+      ],
+      "sequence": "Reproduce → define → sketch/critique → implement → test → inspect → correct",
+      "observed": "Fresh application matrix and six motion frames inspected; independent reviews; no known core blocker. Owner satisfaction remains unconfirmed.",
+      "evidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png"
+      ],
+      "viewportScope": "Seven-viewport matrix for associated surfaces; browser regression uses desktop Chromium and Pixel7 profile. See displayCoverage for exact zoom limits."
+    }
+  ],
+  "comprehensionReview": {
+    "questions": [
+      "Where am I?",
+      "What can I do?",
+      "What does it mean?",
+      "What changed?",
+      "How do I return?"
+    ],
+    "method": "Agent critique of visible Spanish UI, not recruited-user comprehension testing.",
+    "states": {
+      "home": [
+        "Nos Vemos en las Urnas, edición2023.",
+        "Empezar el test o Comparar programas.",
+        "Two distinct tasks; answers clear on reload.",
+        "The chosen task opens with its own heading.",
+        "Global Inicio remains available."
+      ],
+      "selection": [
+        "Compara programas de2023.",
+        "Fill two named slots; optionally add third; explicitly compare.",
+        "Each slot is one programme, not a preference/ranking.",
+        "Chosen full name replaces the empty slot; next required action is visible.",
+        "Close picker cancels; Inicio remains available."
+      ],
+      "picker": [
+        "Elegir primer/segundo programa or Cambiar: full name.",
+        "Search and choose one; optionally remove when valid.",
+        "Ya elegido identifies other selected formation without a disabled trap.",
+        "Only target slot commits on choice.",
+        "Cerrar/Escape/backdrop leave selection unchanged."
+      ],
+      "comparison": [
+        "Chosen names above labelled proposal/category search.",
+        "Search, append six, edit a slot, show quotes or source.",
+        "Authored stance and summary retain conditions; unknown explicitly labelled.",
+        "Visible count and active slot names identify filtering/replacement.",
+        "Clear query or close source to exactly same proposal."
+      ],
+      "source": [
+        "Formation/proposal and exact original quotation.",
+        "Read full text; follow linked page/line to original.",
+        "Original locator and quote separate evidence from summary.",
+        "Base comparison remains visible behind backdrop, same geometry.",
+        "Cerrar/Escape/backdrop restores opener; result source has Volver al detalle."
+      ],
+      "results": [
+        "Tus resultados after deliberate finish.",
+        "Search59 entries, open Detalle, download or continue/restart.",
+        "Confirmed overlap differs from information available; absence is not opposition.",
+        "Same values/order; compact all59 rather than paged six.",
+        "Global navigation preserves live memory; next-test action invalidates result."
+      ],
+      "detail": [
+        "Selected formation in persistent panel heading.",
+        "Switch Coincides/Difieres/Sin datos; inspect topic counts and source.",
+        "Each segment is one numeric answer, not a weighted percentage; no-answer topics separate.",
+        "Selected tab underline/border, count and examples change in place.",
+        "Close returns result grid; internal source Back restores tab/scroll."
+      ],
+      "method": [
+        "Cómo funciona: short three-step explanation.",
+        "Use one example switch or Detalle del cálculo.",
+        "Five equal marks distinguish overlap and information;40/40→40/80.",
+        "Only the anonymous example changes, not actual answers.",
+        "Close returns same example; test resume preserves answer."
+      ],
+      "support": [
+        "Ayuda/Privacidad/Accesibilidad/Fuentes heading.",
+        "Read concise visible answers or formation documents.",
+        "2023 scope and memory/privacy limitations are explicit.",
+        "Contextual return label names originating journey.",
+        "Volver a… or direct start; factsheet Close restores directory."
+      ],
+      "quiz": [
+        "Current question and progress.",
+        "Native ordered responses, unsure/skip, Back after first, checkpoint review.",
+        "Opinion, not right/wrong; no party identity during answering.",
+        "Checked confirmation then accepted forward/reverse transition.",
+        "Back/recovery preserve answers; result only deliberate finish."
+      ],
+      "failure": [
+        "Spanish state names loading, failed connection or withdrawn release.",
+        "Retry or use useful public exit.",
+        "No result is available until the release check succeeds.",
+        "Pending/checkpoint space stable; failure removes busy state.",
+        "Return to test with retained answers when valid."
+      ]
+    }
+  },
+  "corrections": [
+    {
+      "observed": "Search input consumed Escape; native focus cycle could leave modal.",
+      "corrected": "Capture Escape and cycle first/last interactive control; verify close and focus.",
+      "tasks": [
+        "N001"
+      ]
+    },
+    {
+      "observed": "Reduced-motion panel initially lost backdrop; teardown retained detached nodes/personal closures.",
+      "corrected": "Explicit static backdrop; cancellation-safe close clears body/header/dialog references and personal flag.",
+      "tasks": [
+        "N001",
+        "N007"
+      ]
+    },
+    {
+      "observed": "Generic picker title obscured destination; scrolling hid search.",
+      "corrected": "Exact slot/current-name heading and sticky picker search; no disabled selection wall.",
+      "tasks": [
+        "N002"
+      ]
+    },
+    {
+      "observed": "Source/text200 toolbar reached332px on320px viewport.",
+      "corrected": "Wrap comparison toolbar; verify full4452-character source and panel/document width320.",
+      "tasks": [
+        "N003",
+        "N004"
+      ]
+    },
+    {
+      "observed": "At320px and200% text, chart labels squeezed bars and tabs split words.",
+      "corrected": "Container-aware chart stacking and vertical tabs; keyboard Up/Down; all10 tracks256px.",
+      "tasks": [
+        "N005",
+        "N006"
+      ]
+    },
+    {
+      "observed": "Forced-color legend swatches converged; textual counts were screen-reader-only.",
+      "corrected": "System-color legend and visible full-row textual counts in forced colors.",
+      "tasks": [
+        "N006"
+      ]
+    },
+    {
+      "observed": "Method text200 legend/value overlap caused12px overflow; switch label crowded narrow layout.",
+      "corrected": "Available-width grid, wrapping switch and viewport-limited symbol gaps; final320/390 text200 review.",
+      "tasks": [
+        "N008"
+      ]
+    },
+    {
+      "observed": "Old code/catalogue/template retained full readers and removed actions.",
+      "corrected": "Remove unreachable modes/state/CSS/keys and no-JS origin block; preserve supported synthetic app.ts consumers.",
+      "tasks": [
+        "N009",
+        "N010"
+      ]
+    },
+    {
+      "observed": "Independent final review found hidden method example/calculation when bank loading failed with JavaScript active.",
+      "corrected": "Shared method mount works without bank after failure; panel lifecycle and static no-JS explanation retained. Raw503/hash-failure paths passed on both aliases and sizes.",
+      "tasks": [
+        "N008",
+        "N009",
+        "N011"
+      ]
+    },
+    {
+      "observed": "Privacy notice exposed internal publication approval status.",
+      "corrected": "Removed that internal workflow sentence; factual hosting/connection limitation retained. Publication boundary remains in technical report.",
+      "tasks": [
+        "N009",
+        "N010"
+      ]
+    }
+  ],
+  "displayCoverage": {
+    "matrix": [
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-home.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-comparison.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-source.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320,
+          "dialogWidth": 320,
+          "dialogClient": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-results.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-result-detail.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320,
+          "dialogWidth": 320,
+          "dialogClient": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-result-source.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320,
+          "dialogWidth": 320,
+          "dialogClient": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-method.png",
+        "geometry": {
+          "width": 320,
+          "documentWidth": 320,
+          "bodyWidth": 320
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          320,
+          568
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-home.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-comparison.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-source.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390,
+          "dialogWidth": 390,
+          "dialogClient": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-results.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390,
+          "dialogWidth": 390,
+          "dialogClient": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-source.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390,
+          "dialogWidth": 390,
+          "dialogClient": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+        "geometry": {
+          "width": 390,
+          "documentWidth": 390,
+          "bodyWidth": 390
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          390,
+          844
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-home.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-comparison.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-source.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768,
+          "dialogWidth": 768,
+          "dialogClient": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-results.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-result-detail.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768,
+          "dialogWidth": 768,
+          "dialogClient": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-result-source.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768,
+          "dialogWidth": 768,
+          "dialogClient": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-method.png",
+        "geometry": {
+          "width": 768,
+          "documentWidth": 768,
+          "bodyWidth": 768
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          768,
+          1024
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-home.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-comparison.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-source.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-detail.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-source.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-method.png",
+        "geometry": {
+          "width": 1280,
+          "documentWidth": 1280,
+          "bodyWidth": 1280
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-home.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-results.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-detail.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-method.png",
+        "geometry": {
+          "width": 1512,
+          "documentWidth": 1512,
+          "bodyWidth": 1512
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1512,
+          850
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-home.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-comparison.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-source.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-results.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-result-detail.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-result-source.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-method.png",
+        "geometry": {
+          "width": 1920,
+          "documentWidth": 1920,
+          "bodyWidth": 1920
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1920,
+          1080
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "home",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-home.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "comparison",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-comparison.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-source.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "results",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-results.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "result-detail",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-result-detail.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "result-source",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-result-source.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024,
+          "dialogWidth": 575,
+          "dialogClient": 575
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "surface": "method",
+        "file": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-method.png",
+        "geometry": {
+          "width": 1024,
+          "documentWidth": 1024,
+          "bodyWidth": 1024
+        },
+        "axe": []
+      },
+      {
+        "viewport": [
+          1024,
+          320
+        ],
+        "pageErrors": [],
+        "storage": {
+          "local": [],
+          "session": [],
+          "cookie": "",
+          "query": ""
+        }
+      }
+    ],
+    "inspection": "All49 surfaces inspected in five contact sheets; key wide/narrow comparison, source, grid and detail captures additionally inspected at full size. Corrected narrow chart/tab captures reinspected.",
+    "textEnlargement": "Actual root text200% (computed32px) at320/390px; separate from page zoom.",
+    "nativeBrowserZoom": "Native Chrome400% confirmed in browser UI and inspected on method only; original zoom restored. Source-panel attempt did not change browser zoom and is explicitly excluded.",
+    "panelZoomReflow": "640x512 and320x256 CSS viewport reflow tested separately; not described as native zoom.",
+    "reflowMeasurements": {
+      "resultText200": {
+        "rootFont": "32px",
+        "viewport": 320,
+        "documentWidth": 320,
+        "panelWidth": 320,
+        "bodyWidth": 320,
+        "bodyScrollWidth": 320,
+        "tracks": [
+          {
+            "topic": "education",
+            "width": 256
+          },
+          {
+            "topic": "employment",
+            "width": 256
+          },
+          {
+            "topic": "energy",
+            "width": 256
+          },
+          {
+            "topic": "health",
+            "width": 256
+          },
+          {
+            "topic": "housing",
+            "width": 256
+          },
+          {
+            "topic": "institutions",
+            "width": 256
+          },
+          {
+            "topic": "pensions",
+            "width": 256
+          },
+          {
+            "topic": "rights",
+            "width": 256
+          },
+          {
+            "topic": "taxes",
+            "width": 256
+          },
+          {
+            "topic": "transport",
+            "width": 256
+          }
+        ],
+        "tabs": [
+          {
+            "name": "Coincides (13)",
+            "x": 32,
+            "right": 288,
+            "top": 515.5,
+            "bottom": 603.5
+          },
+          {
+            "name": "Difieres (2)",
+            "x": 32,
+            "right": 288,
+            "top": 603.5,
+            "bottom": 691.5
+          },
+          {
+            "name": "Sin datos (5)",
+            "x": 32,
+            "right": 288,
+            "top": 691.5,
+            "bottom": 779.5
+          }
+        ]
+      },
+      "forcedColors": {
+        "active": true,
+        "legend": [
+          {
+            "text": "Coincides",
+            "background": "rgba(5, 0, 73, 0.8)",
+            "backgroundImage": "none"
+          },
+          {
+            "text": "Difieres",
+            "background": "rgb(0, 0, 0)",
+            "backgroundImage": "none"
+          },
+          {
+            "text": "Sin datos",
+            "background": "rgb(255, 255, 255)",
+            "backgroundImage": "none"
+          }
+        ],
+        "rows": [
+          {
+            "topic": "education",
+            "counts": "2 coincidencias, 0 diferencias, 0 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "2",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "employment",
+            "counts": "2 coincidencias, 0 diferencias, 0 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "2",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "energy",
+            "counts": "0 coincidencias, 1 diferencias, 1 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "health",
+            "counts": "2 coincidencias, 0 diferencias, 0 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "2",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "housing",
+            "counts": "1 coincidencias, 1 diferencias, 0 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "1",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "institutions",
+            "counts": "1 coincidencias, 0 diferencias, 1 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "1",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "pensions",
+            "counts": "1 coincidencias, 0 diferencias, 1 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "1",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "rights",
+            "counts": "2 coincidencias, 0 diferencias, 0 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "2",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "taxes",
+            "counts": "1 coincidencias, 0 diferencias, 1 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "1",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          },
+          {
+            "topic": "transport",
+            "counts": "1 coincidencias, 0 diferencias, 1 sin datos",
+            "textBounds": {
+              "width": 527,
+              "height": 21.6875
+            },
+            "bars": [
+              {
+                "text": "1",
+                "background": "rgba(5, 0, 73, 0.8)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "",
+                "background": "rgb(0, 0, 0)",
+                "color": "rgb(0, 0, 0)"
+              },
+              {
+                "text": "1",
+                "background": "rgb(255, 255, 255)",
+                "color": "rgb(0, 0, 0)"
+              }
+            ]
+          }
+        ]
+      },
+      "sourceText200": {
+        "rootFont": "32px",
+        "viewport": 320,
+        "documentWidth": 320,
+        "x": 0,
+        "right": 320,
+        "bodyWidth": 320,
+        "bodyScrollWidth": 320,
+        "quoteLength": 4452
+      }
+    },
+    "forcedColors": "System palette with non-color segment distinctions and visible counts, screenshot inspected.",
+    "browsers": [
+      "Chromium desktop",
+      "Chromium mobile emulation"
+    ],
+    "unavailableBrowsers": [
+      "WebKit",
+      "Firefox"
+    ]
+  },
+  "motion": {
+    "sampling": "Actual Web Animations paused at0/50/100 percent for visual inspection; live timing exercised in browser suite",
+    "toggleBefore": {
+      "x": 1164,
+      "y": 349.140625,
+      "width": 84,
+      "height": 44
+    },
+    "quotes": [
+      {
+        "progress": 0,
+        "anchor": {
+          "x": 1165.6875,
+          "y": 349.140625,
+          "width": 82.3125,
+          "height": 44
+        },
+        "height": 290.375
+      },
+      {
+        "progress": 0.5,
+        "anchor": {
+          "x": 1165.6875,
+          "y": 349.140625,
+          "width": 82.3125,
+          "height": 44
+        },
+        "height": 766.859375
+      },
+      {
+        "progress": 1,
+        "anchor": {
+          "x": 1165.6875,
+          "y": 349.140625,
+          "width": 82.3125,
+          "height": 44
+        },
+        "height": 786
+      }
+    ],
+    "baseBefore": {
+      "x": 32,
+      "y": 293.75,
+      "width": 1216,
+      "height": 921.390625
+    },
+    "panels": [
+      {
+        "progress": 0,
+        "base": {
+          "x": 32,
+          "y": 293.75,
+          "width": 1216,
+          "height": 921.390625
+        }
+      },
+      {
+        "progress": 0.5,
+        "base": {
+          "x": 32,
+          "y": 293.75,
+          "width": 1216,
+          "height": 921.390625
+        }
+      },
+      {
+        "progress": 1,
+        "base": {
+          "x": 32,
+          "y": 293.75,
+          "width": 1216,
+          "height": 921.390625
+        }
+      }
+    ],
+    "returned": {
+      "x": 1165.6875,
+      "y": 349.140625,
+      "width": 82.3125,
+      "height": 44
+    }
+  },
+  "checks": [
+    {
+      "command": "ITERATION_REAL_URL=http://127.0.0.1:8000 npx playwright test tests/Browser/ui-ux-cleanup.spec.ts tests/Browser/second-iteration.spec.ts",
+      "result": "86 passed before additional text200 regression; final changed cases rerun independently",
+      "log": ".tools/ui-ux-cleanup/v2/final-browser.log"
+    },
+    {
+      "command": "Affected text200/source reflow cases (both projects)",
+      "result": "4 passed after final chart/tab/forced-color corrections"
+    },
+    {
+      "command": "PHP PublicJourneyTest / SecondIterationRoutesTest",
+      "result": "9 tests,407 assertions passed"
+    },
+    {
+      "command": "Result adapter and documented-affinity tooling tests",
+      "result": "6 adapter and10 existing arithmetic tests passed"
+    },
+    {
+      "command": "npm run lint; npm run typecheck; scripts/php vendor/bin/pint --dirty --format agent; git diff --check",
+      "result": "passed after final app edits"
+    },
+    {
+      "command": "Expanded category-search and alphabetical-picker regressions, both browser projects",
+      "result": "4 passed; explicit Sanidad/salud/dental/multi-term and IME stable-node/focus cases",
+      "log": ".tools/ui-ux-cleanup/v2/search-ime-browser.log"
+    },
+    {
+      "command": "Method aliases with503/invalid hash in raw Chromium desktop/mobile",
+      "result": "8 actual scenarios passed; example, calculation, Escape and memory boundaries inspected"
+    },
+    {
+      "command": "Method failure regressions:503/hash × /method and /how-it-works × desktop/mobile Chromium",
+      "result": "8 passed after shared method bootstrap correction"
+    },
+    {
+      "command": "ITERATION_REAL_URL=http://127.0.0.1:8000 npx playwright test tests/Browser/loading.spec.ts --workers=1",
+      "result": "14 passed, including <0.001 loading shift; original threshold unchanged"
+    },
+    {
+      "recordedAt": "2026-10-13T14:14:25.657106+00:00",
+      "tree": "6b53165862c2dd9cbd7fb8656779343c491b50de",
+      "status": "passed",
+      "command": "python3 scripts/check-staged.py",
+      "log": ".tools/ui-ux-cleanup/v2/corrected-staged-check.log",
+      "logSha256": "1bc5568e33fbe96665bb7742671375447af3bc15974afa857d47267f79c5bf6c",
+      "results": {
+        "phpTests": 48,
+        "phpAssertions": 662,
+        "browserTests": 174,
+        "typeScriptToolingTests": 47,
+        "pythonToolingTests": 52,
+        "failed": 0,
+        "skippedRequiredChecks": 0
+      },
+      "checks": [
+        "Composer validation/audit, Pint, PHPStan, PHPUnit",
+        "npm audit, ESLint, TypeScript, production build/assets",
+        "Desktop/mobile Chromium browser journeys and accessibility checks",
+        "Plan parity, source evidence, reference arithmetic, engine tooling, skill integrity",
+        "Pinned CI tools, actionlint, full-history and staged gitleaks, repository boundaries, Python tooling"
+      ],
+      "fixtureReview": "Independent read-only review found no weakened assertion or required check. ITERATION_REAL_URL and EVIDENCE_DIRECTORY were absent; both test servers refuse reuse."
+    }
+  ],
+  "privacy": {
+    "testInputs": "Scripted synthetic opinions, not user political preferences.",
+    "observed": "Empty localStorage/sessionStorage/IndexedDB/cookies/query/history.state; no private POST/body or answer-dependent endpoints through connected flows.",
+    "personalReveal": "Guarded current session revision and deliberate finish; continue/reset/withdrawal/pagehide invalidate named results.",
+    "externalSources": "Only explicit original-source link; noopener noreferrer; no private params.",
+    "metrics": "Collection remains disabled. Production host/proxy logs are not certified."
+  },
+  "retirement": {
+    "removed": [
+      "Result comparison transfer and selection",
+      "Full-page readers and result examples",
+      "Ver temas and topic/filter tools",
+      "Standalone proposal/positions/formation browsing modes",
+      "Result review/delete/show-all/pagination actions",
+      "Nested original context/origin/full interpretation disclosures",
+      "Unused translation keys, selectors, snapshot state and listeners"
+    ],
+    "retainedConsumers": {
+      "resources/js/app.ts": "Supported synthetic/legacy bank bootstrap and existing independent tests, not newly dead code.",
+      "resetDialog": "Reachable quiz reset and final restart confirmation.",
+      "checkpoint review/priorities": "Reachable incomplete-topic recovery and quiz editing; no result direct edit.",
+      "profilePosition/relationship/summaryText": "Shared evidence semantics retained and reused."
+    }
+  },
+  "failedAttempts": [
+    {
+      "issue": "Wrong localhost8765 dev runtime plus owner hot marker produced CSP module failures.",
+      "resolution": "Use real app8000 for live acceptance; clean exact-stage snapshot builds normal production assets. CSP and hot marker untouched."
+    },
+    {
+      "issue": "Concurrent HMR edits interrupted memory-only test sessions; early final run78/86 with eight failures.",
+      "resolution": "Freeze sources, correct stale selectors and await animation/close before asserting; stable combined86/86 passed."
+    },
+    {
+      "issue": "CSS zoom screenshots did not represent native browser zoom and clipped panels.",
+      "resolution": "Exclude obsolete CSS-zoom files; use real text200, explicitly labelled equivalent reflow and native400 method inspection."
+    },
+    {
+      "issue": "Native source zoom setup did not target intended browser; viewport/dpr unchanged.",
+      "resolution": "Record unsuccessful attempt in .tools/ui-ux-cleanup/v2/native-zoom-verification.json; no source400 native claim."
+    },
+    {
+      "issue": "12 browser cases across desktop/mobile: method aliases, bank failures and panel/browser Back. Later integrity/security jobs were not reached.",
+      "cause": "The clean CI server selected the legacy synthetic server-side view from .env.example; intercepting the browser bank request did not change the server-side edition.",
+      "resolution": "Preserve the existing legacy server on8765; add an isolated8768 server whose content-addressed fixture is byte-identical to the2023 bank. Both v2 suites use8768 by default. No assertion, CSP, owner hot marker or required gate changed. Remove the unreachable template-cloning fallback.",
+      "stagedTree": "d518d1ad453a7228b3a653df56a80981d39e778b",
+      "log": ".tools/ui-ux-cleanup/v2/final-staged-check.log"
+    }
+  ],
+  "exactStageGate": {
+    "requiredCommand": "python3 scripts/check-staged.py",
+    "status": "verified_before_finalization",
+    "log": ".tools/ui-ux-cleanup/v2/corrected-staged-check.log",
+    "attempts": [
+      {
+        "recordedAt": "2026-10-13T14:10:37.371861+00:00",
+        "tree": "d518d1ad453a7228b3a653df56a80981d39e778b",
+        "status": "failed",
+        "command": "python3 scripts/check-staged.py",
+        "log": ".tools/ui-ux-cleanup/v2/final-staged-check.log",
+        "logSha256": "b1ff798826c4e464b32904d04dc590495fa63001d475f1f61f07d0141a51a84c",
+        "passed": [
+          "48 PHP tests / 662 assertions",
+          "Pint, PHPStan, Composer validation/audit",
+          "npm audit, ESLint, TypeScript, production build/assets",
+          "162 browser tests"
+        ],
+        "failed": "12 browser cases across desktop/mobile: method aliases, bank failures and panel/browser Back. Later integrity/security jobs were not reached.",
+        "cause": "The clean CI server selected the legacy synthetic server-side view from .env.example; intercepting the browser bank request did not change the server-side edition.",
+        "correction": "Preserve the existing legacy server on8765; add an isolated8768 server whose content-addressed fixture is byte-identical to the2023 bank. Both v2 suites use8768 by default. No assertion, CSP, owner hot marker or required gate changed. Remove the unreachable template-cloning fallback."
+      },
+      {
+        "recordedAt": "2026-10-13T14:14:25.657106+00:00",
+        "tree": "6b53165862c2dd9cbd7fb8656779343c491b50de",
+        "status": "passed",
+        "command": "python3 scripts/check-staged.py",
+        "log": ".tools/ui-ux-cleanup/v2/corrected-staged-check.log",
+        "logSha256": "1bc5568e33fbe96665bb7742671375447af3bc15974afa857d47267f79c5bf6c",
+        "results": {
+          "phpTests": 48,
+          "phpAssertions": 662,
+          "browserTests": 174,
+          "typeScriptToolingTests": 47,
+          "pythonToolingTests": 52,
+          "failed": 0,
+          "skippedRequiredChecks": 0
+        },
+        "checks": [
+          "Composer validation/audit, Pint, PHPStan, PHPUnit",
+          "npm audit, ESLint, TypeScript, production build/assets",
+          "Desktop/mobile Chromium browser journeys and accessibility checks",
+          "Plan parity, source evidence, reference arithmetic, engine tooling, skill integrity",
+          "Pinned CI tools, actionlint, full-history and staged gitleaks, repository boundaries, Python tooling"
+        ],
+        "fixtureReview": "Independent read-only review found no weakened assertion or required check. ITERATION_REAL_URL and EVIDENCE_DIRECTORY were absent; both test servers refuse reuse."
+      }
+    ],
+    "commitHook": "preserved; must pass again on exact final tree",
+    "verifiedTree": "6b53165862c2dd9cbd7fb8656779343c491b50de",
+    "finalMetadataVerification": {
+      "requiredCommand": "python3 scripts/check-staged.py",
+      "log": ".tools/ui-ux-cleanup/v2/final-metadata-staged-check.log",
+      "commitHookLog": ".tools/ui-ux-cleanup/v2/implementation-commit.log",
+      "boundary": "This report records the completed verification above. The metadata finalized here creates a new tree; the mandatory exact-tree gate and unchanged pre-commit hook must pass again before any commit. Their output and Git history identify that final tree without a self-referential manifest hash."
+    }
+  },
+  "limitations": [
+    "Local agent inspection is not owner acceptance or an assistive-technology/user-study certification.",
+    "Only installed Chromium tested; no native WebKit/Firefox coverage.",
+    "Native400% zoom inspection is bounded to method; source/detail panels have separately identified equivalent reflow and200% text evidence.",
+    "Live original-source availability and production hosting/privacy/performance are not certified by this UI change.",
+    "No push, deployment, collection, new branch/worktree or dependency change."
+  ],
+  "screenshots": [
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-comparison.png",
+      "sha256": "37c8f6cf5348deb09c1bb2d9f4ecc3d09a7973f36b1e97193a0b61b967f670ab"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-home.png",
+      "sha256": "3f3498b08ae05c36c1956c79ec8fb7c5e597c117db8c981b2ee4dc66da3bedfa"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-method.png",
+      "sha256": "fbe39becdcfe1400f1e7fcc55e61ce061d405f9c27e19effd68f3337666aa520"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-result-detail.png",
+      "sha256": "640895a1fcd0a306fc083d47a3ba0877bae9f82c2c6cb8a5468afd94ec2e37e3"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-result-source.png",
+      "sha256": "3663afe2bc3c7baaa677c448c827065c3999504f9bcce14e68b3f2d4f4192957"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-results.png",
+      "sha256": "704a66e0737141e76b923cfa0e7ceaabdc982e10dd254d948e8dc079eb829448"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1024x320-source.png",
+      "sha256": "3291fc7c387f4f2a9dfe49262b451f13c03c463de1b9e4fcabb73ee022ef75a3"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x1000-result-forced-colors.png",
+      "sha256": "d4cddb86ba6575f4672627deea88cde57ab703a47267cffbc0cca8459211bb3c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-comparison.png",
+      "sha256": "7e234951c988a98c893af5ec0fefe16c79342039f41b839f33ad72cbf1310f2b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-home.png",
+      "sha256": "09ae20ac14c778c4d473e6bbf8d569f93de1f7ba406daa706dc116a037db9728"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-method.png",
+      "sha256": "b289768bd73d7f0a054be5a5ade800331dbbe91dcee648ae114328dccbf2679e"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-detail.png",
+      "sha256": "2140f82359582fd295afeac564584a31db6c0d500576e66d914403556706186c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-result-source.png",
+      "sha256": "8da6e653f681acfdeeb3492e642d808920aed89a4d05cc4ecf2472188efa1aaa"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-results.png",
+      "sha256": "409763f13e3e29b3b3ef1e87bf10dca37ae8f09dd5eb6525fed338ae8f92c299"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x720-source.png",
+      "sha256": "b503e496f51390aae0971bda1ba2c5f0c72f9926d56bd8a89f9ff13bb541d619"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-503-error.png",
+      "sha256": "509f5bfd8aa73fb9fc1a58b8d46d0ed8aedcb27585e96f869a2e610847249c1d"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-retry-restored.png",
+      "sha256": "643b2d0a992ed6811c2d814574c00bc3365fbe99468a01a4d5e31254cdc29cac"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-current-and-selected.png",
+      "sha256": "d16ad2cea62c1a0d8e5e53d1578f492dc20688dc935be42c4f0403ad0c9ec582"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-empty.png",
+      "sha256": "492ba8522256056534b1ea093df86c541948aa93f2c0da35fd923fd4e77bc1e9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-0.png",
+      "sha256": "ea14e766f2b3d1917c8b3ae465efeae79866c18eaeb7307df538d07c29f1724b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-1.png",
+      "sha256": "261508e920d1fbbc2dc3c4b5bc72b71f5605b69baa6eba1eddaab9aded35fbf1"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-2.png",
+      "sha256": "58c18b724de0fc59702184e9cd6eed62ae9063bcb2181521a852d1f345d628c9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-3.png",
+      "sha256": "90f09a82b58a84a0b248b551532166eff699b200a5a8d1e06a27f8efa7ecc6ce"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-503-error.png",
+      "sha256": "7521b9022897eba9ec9167f9fda6ea43aadc24d3380a3cbf3e743ff40a572cbd"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-retry-results.png",
+      "sha256": "aa80be8fa48528fcddd86f74d91a591b4a60405b2694b4bcaf572e023026cc9e"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-comparison.png",
+      "sha256": "5ac6e18d9ac23caf28e087c350cac096e61f5403894b58a02a04f9ef2bc073c9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-home.png",
+      "sha256": "3fd1f33a7dea5674b19038763a5bde6ac860591ac43dbafa97ddaaff8e3f5a68"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-method.png",
+      "sha256": "a632290148a75e097a962c30cf9504cc9cc16f5462bc7c71ea936ba2c5ab7c5f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-detail.png",
+      "sha256": "486d67238168fbe9a01ef84745ab029d82f464a32dafdebb1f6aaf538e54c504"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-result-source.png",
+      "sha256": "26a3dd03708e6edf73511e8e7d93af73bbec657690f2f9a263d9543b9b5f273f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-results.png",
+      "sha256": "2b0e3ff0e69cfb8c58239aa1f1ac93efeda59d3fbe30f605b3abcfc9b9803d20"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1512x850-source.png",
+      "sha256": "7a480b9bf88315362d4c728263f2a1c235875c7c6ffdd328bfd25f6058eabf86"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-comparison.png",
+      "sha256": "241bf2bbf6a2fa1ce6ebca603290a50aaceb00760da4459a5310941e39e09204"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-home.png",
+      "sha256": "4bdb113ef63b0b8e9313b5409b669c45fb8d6ca65bc80da88835062ab94e2c22"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-method.png",
+      "sha256": "28754b9cbfbfec59d409c51ef69ea10334f1504bba67120c7448624559c2f29d"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-result-detail.png",
+      "sha256": "f212593e5b99f3c46e7703635d8a884d01fc07a70b29276cadcd9a9309aeb931"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-result-source.png",
+      "sha256": "283081972052019033f735953edb110e8fbe52086bdb675074dbd9db51509034"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-results.png",
+      "sha256": "7e94ce8f703d4af31fe07823913d33552463375451a938faf84447fa6a4bcefa"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1920x1080-source.png",
+      "sha256": "550b97331782d1e023a08c0a89dadf61188592444ca02941cac586099c4ddc86"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-comparison.png",
+      "sha256": "2225b6610c488637393203c8c0eb0227c2b182431266da88848ffb2ec18b80f1"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-home.png",
+      "sha256": "e4aa45cba4f1f375c68c8c71f10ccf3dbf3953d722e9bde979bead7b20d24b69"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-method.png",
+      "sha256": "8e2a599c36a7c38fb3bcc915fad28bb2bb9174e518b08e3dd83534aec4b04a26"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-result-detail.png",
+      "sha256": "d7b1d9c5093eb7b9b21d7dc4eaa3f68d0d3b7790a1dcabb39b6d0feb655c7b17"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-result-source.png",
+      "sha256": "faba91f58ce1ed344e15557e7672d68394b1e1667efac602f0abadfbd98dd333"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-results.png",
+      "sha256": "264061768dfaf0a5c073cd23c7f051e7e2f8d47a1fcc5ebd8f9bf2dc30c182ca"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x568-source.png",
+      "sha256": "3c1fcca4cf76abac93833b72f6376151b7376da45547d00df77004987f608136"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-tabs.png",
+      "sha256": "6e2b58f184d075b44fcd97c84181779730eb1086e8dce2344cddf3b033058c8a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-topic-1.png",
+      "sha256": "5b642a245b39c026131e074e0499f52c6280b51095ed2e481ce730edce9d1e67"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-topic-10.png",
+      "sha256": "6cc113d10ff0266c3bda460a4e3e3673e72cf22d6656c45e051027ea02402e36"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-result-text-200-topic-5.png",
+      "sha256": "012146a2557f23bc742da1a711278dfc5629bb2d0f627c295367bdba0b5b10e6"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-source-text-200-quote.png",
+      "sha256": "2d4f8852783547294b6b6b6186cbc1cc2ee2af8adc487a2e8586223d496a1946"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/320x900-source-text-200.png",
+      "sha256": "ee2040cc03815f839bafcfdbc56c13241109e2bb9a05b598af1d5007fc6b9f07"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-503-error.png",
+      "sha256": "877930a060dfcc0dc72d5c10c88233286bcc593947fa54b05ca14403de01e888"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-retry-restored.png",
+      "sha256": "633b8af9d362337b675510a6fcdd5bb7fab15cb85c7de77332389371c68b9a87"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-comparison.png",
+      "sha256": "b1df9a48b4deae97df4a81d764223fbf0d85b64403d25be85113296a90e7efdf"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-home.png",
+      "sha256": "7c622935461d9f3dafd1c4bf40703ab87a2ac48e2db8b394c2be7f6e16d3148b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-method.png",
+      "sha256": "fd9eed960995a86d7fa2e06a240f3d206111c336ec8b0fe44f0c5e7342b3b18c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-current-and-selected.png",
+      "sha256": "03e03bd8b5c6cdac8e18eb0908ce5ad2edb949018a36a5abd3319d4b0655cfcc"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-empty.png",
+      "sha256": "cacecbd263ddbc2d1a41f05b934139d39152942976b0835f815534ed875fb2c0"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-0.png",
+      "sha256": "c21792290ab14c59aecfce23fe12c1c353a4514d028375e16c5f2cc4d97440e4"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-1.png",
+      "sha256": "652b48fef1ebb75f5e63d7875d4543748c4cf7bc55bb4d39ecaa4c9d75447b98"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-2.png",
+      "sha256": "22bf14d569e12ef2673a6dda60d1f8abc8ab6863924685688309107dca9b6f2a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-3.png",
+      "sha256": "f6551907e8dde5870e1321a90a78871c21e0711223b02afac5371204da7019a9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-503-error.png",
+      "sha256": "788f76b50b6cf385bdfe1a42eff0817f0db9ab385d433949651b151d09a3fefe"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-retry-results.png",
+      "sha256": "1d57f4cd642284daa624e3cfeb2f412bc524444c31644d378571ee68d0c9379f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-detail.png",
+      "sha256": "27c50a71320d3c3376f861e4ad418c13c7c50c945aaf855f887462da55b7c483"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-result-source.png",
+      "sha256": "791131f98c3fb9d0a5d863f1e0253d929031ec0c57400c2621d7aa8b381a7e09"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-results.png",
+      "sha256": "b515ec8ebd535908fbcee70505357740cd35e0c04523d77ae4834f8bdbc0dd51"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-source.png",
+      "sha256": "b789d3b90f975c64f935490f0e61e1b2a484edef1299a1042a16544f3fc2a39f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-comparison.png",
+      "sha256": "25c5d25be4e0fa100bc06d4968b7e0edfb96a39decb928afa3b6630ec69ed0f1"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-home.png",
+      "sha256": "1320a339cc0429436db349bc1810910452735b09121a4fbad3dbf706f7a2b463"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-method.png",
+      "sha256": "d8af86a871d0900e7b3c1228f90faf7521819df1a1d247c766733c3feda42117"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-result-detail.png",
+      "sha256": "3a5eaec4db2f057507fbd308ee523fecfa23d86b268bdfd37ee94ecd06bc57f8"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-result-source.png",
+      "sha256": "36e9e09609d403ac9c9f621d03d22b69a62b646fbf4b10ec4197978d29c93c65"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-results.png",
+      "sha256": "7268cdb0a1e758c5f8219ada7aa0791661458fc3a0e36a5accec898806f1be57"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/768x1024-source.png",
+      "sha256": "a5166981111e7b237880ae4e10cf9c785d909e6f179b575aaf686b3c667d2a24"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/accessibility-reading-no-script-mobile.png",
+      "sha256": "78958e9efca6cf02bff094df7338fda26b9f30ed01ede2cd747eaafeb3b714c2"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/help-reading-no-script-mobile.png",
+      "sha256": "6518a2f587cd8628720acf15636e436e7c4c81b5eb611eddcd3650609df850f2"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-calculation-mobile.png",
+      "sha256": "54483c7767b2dfe06d41c9297fcb749c8361653187bfb9b04559b4399538ccff"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-invalid-hash-desktop.png",
+      "sha256": "a1d87a3671a01c16f52b8fbcec7a01ac9ae6452fdfe152bc02b9f191aa6d57df"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-unavailable-calculation-desktop.png",
+      "sha256": "38f4af539c4d9a1d2d92b4a0de7e23a175ff62426768c3eb550bb2b2d62009ed"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-bank-unavailable-mobile.png",
+      "sha256": "67f48cbfd50fe3ebaaa91ecf66f6284d9febb23638bf0bbf994c6ad37cfa6913"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-calculation-low-height.png",
+      "sha256": "d7ffc9768e4e033b1b59a048747da38e31d13bba55267ebedaa849024d4c8ad7"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-calculation-mobile.png",
+      "sha256": "54483c7767b2dfe06d41c9297fcb749c8361653187bfb9b04559b4399538ccff"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-example-added-mobile.png",
+      "sha256": "8110f2fa26d8a2549bd8230117c412a73b364b54ce536af13fb284b40800cd62"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-no-script-mobile.png",
+      "sha256": "e0dc2811750a430a75870b44afaba8be92fcf38eccfc82a75cdafa1d182a14bd"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-reading-desktop.png",
+      "sha256": "206e431caa590270365ae35ce851115a65b1c2d12742552d61c8f53bb29d7ee8"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-reading-mobile.png",
+      "sha256": "2b70642b9a61ad9a47f037b15ffe0d568bd12cc04e793653c0d49d386c5f6933"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/method-text-200-narrow.png",
+      "sha256": "8e2140674e9ec453d3493aba230451ca2f9417ee8e43fb1135694b55cf062c88"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-panel-0.5.png",
+      "sha256": "1b1e564f94410a522b07b1400decce12bec02714ab04746f52e97f4de953b328"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-panel-0.png",
+      "sha256": "8d4f12462cd2cf0a07bc13225f4cbb0afa24bcf3b3fa6c858420afb105f72b08"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-panel-1.png",
+      "sha256": "336d8bd1f056152835d53eba37ceb3dd9eefff719b015ebf1743cd8040677d1f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.5.png",
+      "sha256": "bb388e142c9972560ad768a2107cffc5ea5607c7b4f9d0fd5532cb89567807e5"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-0.png",
+      "sha256": "bb388e142c9972560ad768a2107cffc5ea5607c7b4f9d0fd5532cb89567807e5"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/motion-quotes-1.png",
+      "sha256": "bb388e142c9972560ad768a2107cffc5ea5607c7b4f9d0fd5532cb89567807e5"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign/privacy-reading-no-script-mobile.png",
+      "sha256": "7f874cdc82f5ad3f46057acd0a5f9a43793a9a3d52502b9bd2f9ab791ac1858b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-automatic-answer.png",
+      "sha256": "50caf4c9a35eab827e26436d43a4b69d47886ccca848bf95b04443ce01e480e4"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-focused-comparison.png",
+      "sha256": "cdfd8cc441263b0e602f647935aac095fc5b59bf16922a774b73a3dff2e4832b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-pending-checkpoint.png",
+      "sha256": "a6f036be89e51c7e27c2fbc73ab0492b4600d66002a77acef855e261b9aba7d0"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-rent-source-panel.png",
+      "sha256": "8da6e653f681acfdeeb3492e642d808920aed89a4d05cc4ecf2472188efa1aaa"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-result-text-200-320csspx-topic-1.png",
+      "sha256": "f331bdc963a96a64e88451649a5c61d21d025b921b9c99865043ad4d290bf066"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-result-text-200-320csspx-topic-10.png",
+      "sha256": "db5eaede5452a33a3af14524ca6fa5b01e2e07ed77c919756e224a847f15f701"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-result-text-200-320csspx-topic-5.png",
+      "sha256": "c2603cf5a764e902d3280d0e36a15a984552dd9c068d52ce9bbd7a072d5c88ab"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-results.png",
+      "sha256": "409763f13e3e29b3b3ef1e87bf10dca37ae8f09dd5eb6525fed338ae8f92c299"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-simple-start.png",
+      "sha256": "ed4ed77e8b9c5cbee0d4c44b07f9a5169b24b4f35f523203ab7807808aaf7631"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-exception.png",
+      "sha256": "d1cdd769d7896ac7ed35d172e88ee95cda134c287c1e4357d0aa23615f910bc3"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-panel-1440.png",
+      "sha256": "3a6697dae927cd7f938be51b66c0097862851e551aa9e2e9813c6a117d9736ab"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-panel-320.png",
+      "sha256": "5e21579917dcc1c4090b7bf2eedb58aa60ef350a068d4962c513d203714c8a90"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-panel-360.png",
+      "sha256": "0418f9f059e237c5fa272fc052639749590c712cd3f0c37c5da82e751f325868"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-panel-720.png",
+      "sha256": "2c452b1d7d6e048a277ad0f267ca29935e55892cefc53887cdb8e061426e782a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-reflow-200-equivalent-640csspx.png",
+      "sha256": "42820d31fab599223cfdff017f9fd0d1698f05d9494d3f9912822c529cbfe2a3"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-reflow-400-equivalent-320csspx.png",
+      "sha256": "264dedca47cc2f1996faba61280bc88f5f27d732cea1654c28ebf9fa09487600"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/chromium-source-text-200-320csspx.png",
+      "sha256": "ee2040cc03815f839bafcfdbc56c13241109e2bb9a05b598af1d5007fc6b9f07"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-automatic-answer.png",
+      "sha256": "bd05a33f519fe4b7c803aac671fb6ad77cda546b84bddd352a5f3a8816bfe967"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-focused-comparison.png",
+      "sha256": "c1ca3c4097e3b361bd12071f50b090217bf35fac5b180e415b7008ac74ef067a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-pending-checkpoint.png",
+      "sha256": "3b5ead3e643dabf9420b60f44067a6f23f89b4019366561ed9dc824a3262cc99"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-rent-source-panel.png",
+      "sha256": "828be049e6f50f9153209806289a20790abc92196e253f70ef2da5ee017dc30e"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-result-text-200-320csspx-topic-1.png",
+      "sha256": "930c81f45a278f6473f35f576612061ffdbc4ac2440eea2f8f5da1a5b8ccf3a4"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-result-text-200-320csspx-topic-10.png",
+      "sha256": "b35a57fa3f816ca08e8e722b08cbc963e13f8307acaa46b5acc1a69986a902eb"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-result-text-200-320csspx-topic-5.png",
+      "sha256": "11ebf9a9348f1d8b0da3f8a09b61467d4b14ddf0fd392ff75e4fcecd35bca017"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-results.png",
+      "sha256": "2b686c9eb97436f1624f9339a29970d4650a7cb9708a97189d012f16dd856bd0"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-simple-start.png",
+      "sha256": "56b573b0d504e5a84cc546bb7658eb0ec853969fa2b86e821860147200fda216"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-exception.png",
+      "sha256": "a0cb587c90cd4282096fa268787076bfe5ce529ce8c1898a9ced0deb5c1cf324"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-panel-1440.png",
+      "sha256": "46a017fd171002ad8c460e6798d9af604749105a5cc2512612c6b016890153f5"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-panel-320.png",
+      "sha256": "ffd5564a8c44b1e0a172011b50949087f03837e97a6a401422fe7b6f2fdf26a2"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-panel-360.png",
+      "sha256": "d818be8b362b2df0ee5c065842b699fd5ab8b3c8ec8adca31da2be92bd51918a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-panel-720.png",
+      "sha256": "ba8f1ee6ee40299995b2e034b613264e53e87567616b0d396421c3613bbfa191"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-reflow-200-equivalent-640csspx.png",
+      "sha256": "f82398632f000f4e1ed529d4b169615ab089fc93f032cc36f1a11f52b2abfb94"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-reflow-400-equivalent-320csspx.png",
+      "sha256": "114f823f93e9441d844b6389a8b6f65d048b6490886e0d1ee8953a496abece7f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/mobile-chromium-source-text-200-320csspx.png",
+      "sha256": "f8459a6b2b8e1874cecf41bd204cf763f4a1e079ad6b3bf87d425dcd1ba7417d"
+    }
+  ],
+  "additionalInteractionCaptures": {
+    "scenarios": [
+      {
+        "scenario": "picker: no programmes chosen",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-0.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Elegir primer programa",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Elegir primer programa"
+          },
+          {
+            "slot": "1",
+            "text": "Elegir segundo programa"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 1 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-1.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Partido Popular (PP)Cambiar",
+          "label": "Cambiar: Partido Popular (PP)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Elegir segundo programa"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 2 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-2.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Partido Socialista Obrero Español (PSOE)Cambiar",
+          "label": "Cambiar: Partido Socialista Obrero Español (PSOE)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Añadir tercero"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 3 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-3.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Sumar (SUMAR)Cambiar",
+          "label": "Cambiar: Sumar (SUMAR)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: searched partido; current PP, PSOE already selected and disabled",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-current-and-selected.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "label": null
+        },
+        "panels": [
+          {
+            "kind": "picker",
+            "x": 704,
+            "right": 1280,
+            "bodyWidth": 575,
+            "bodyScrollWidth": 575
+          }
+        ],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: no search matches; close preserves three selected slots",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-empty.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "label": null
+        },
+        "panels": [
+          {
+            "kind": "picker",
+            "x": 704,
+            "right": 1280,
+            "bodyWidth": 575,
+            "bodyScrollWidth": 575
+          }
+        ],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "bank failure: keyboard path to retry",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "steps": [
+          {
+            "tag": "A",
+            "text": "Saltar al contenido"
+          },
+          {
+            "tag": "A",
+            "text": "Nos Vemosen las Urnas"
+          },
+          {
+            "tag": "A",
+            "text": "Inicio"
+          },
+          {
+            "tag": "A",
+            "text": "Cuestionario 2023"
+          },
+          {
+            "tag": "A",
+            "text": "Programas 2023"
+          },
+          {
+            "tag": "A",
+            "text": "Cómo funciona"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Volver a cargar"
+          }
+        ]
+      },
+      {
+        "scenario": "bank: HTTP503; retry reachable with Tab; no raw exception",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-503-error.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Volver a cargar",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "bank: retry reload succeeds and restores questionnaire start",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-retry-restored.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Empezar el test",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "picker: no programmes chosen",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-0.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Elegir primer programa",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Elegir primer programa"
+          },
+          {
+            "slot": "1",
+            "text": "Elegir segundo programa"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 1 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-1.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Partido Popular (PP)Cambiar",
+          "label": "Cambiar: Partido Popular (PP)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Elegir segundo programa"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 2 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-2.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Partido Socialista Obrero Español (PSOE)Cambiar",
+          "label": "Cambiar: Partido Socialista Obrero Español (PSOE)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Añadir tercero"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: 3 programmes chosen; comparison not yet started",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-3.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Sumar (SUMAR)Cambiar",
+          "label": "Cambiar: Sumar (SUMAR)"
+        },
+        "panels": [],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: searched partido; current PP, PSOE already selected and disabled",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-current-and-selected.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "label": null
+        },
+        "panels": [
+          {
+            "kind": "picker",
+            "x": 0,
+            "right": 390,
+            "bodyWidth": 390,
+            "bodyScrollWidth": 390
+          }
+        ],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "picker: no search matches; close preserves three selected slots",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-empty.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "INPUT",
+          "role": null,
+          "text": "",
+          "label": null
+        },
+        "panels": [
+          {
+            "kind": "picker",
+            "x": 0,
+            "right": 390,
+            "bodyWidth": 390,
+            "bodyScrollWidth": 390
+          }
+        ],
+        "slotIds": [
+          {
+            "slot": "0",
+            "text": "Partido Popular (PP)Cambiar"
+          },
+          {
+            "slot": "1",
+            "text": "Partido Socialista Obrero Español (PSOE)Cambiar"
+          },
+          {
+            "slot": "2",
+            "text": "Sumar (SUMAR)Cambiar"
+          }
+        ],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": []
+      },
+      {
+        "scenario": "bank failure: keyboard path to retry",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "steps": [
+          {
+            "tag": "A",
+            "text": "Saltar al contenido"
+          },
+          {
+            "tag": "A",
+            "text": "Nos Vemosen las Urnas"
+          },
+          {
+            "tag": "A",
+            "text": "Inicio"
+          },
+          {
+            "tag": "A",
+            "text": "Cuestionario 2023"
+          },
+          {
+            "tag": "A",
+            "text": "Programas 2023"
+          },
+          {
+            "tag": "A",
+            "text": "Cómo funciona"
+          },
+          {
+            "tag": "BUTTON",
+            "text": "Volver a cargar"
+          }
+        ]
+      },
+      {
+        "scenario": "bank: HTTP503; retry reachable with Tab; no raw exception",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-503-error.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Volver a cargar",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "bank: retry reload succeeds and restores questionnaire start",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-retry-restored.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Empezar el test",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "release: HTTP503 on deliberate finish; answers kept and finish refocused",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-503-error.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Ver mi resultado",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "release: same preserved checkpoint at desktop size",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-503-error.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Ver mi resultado",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 0,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "release: retry succeeds; same 20 answers, all 59 results, no restart",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-retry-results.png",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "documentWidth": 1280,
+        "innerWidth": 1280,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Descargar resultados",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 59,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      },
+      {
+        "scenario": "release: same recovered results at mobile size",
+        "path": "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-retry-results.png",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "documentWidth": 390,
+        "innerWidth": 390,
+        "focus": {
+          "tag": "BUTTON",
+          "role": null,
+          "text": "Descargar resultados",
+          "label": null
+        },
+        "panels": [],
+        "slotIds": [],
+        "resultCount": 59,
+        "pageErrors": [],
+        "consoleErrors": [
+          "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        ]
+      }
+    ],
+    "events": [
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/bank",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/release-state",
+        "method": "GET",
+        "body": null
+      },
+      {
+        "url": "http://127.0.0.1:8000/api/release-state",
+        "method": "GET",
+        "body": null
+      }
+    ],
+    "visualReview": {
+      "reviewedAt": "2026-10-13T13:57:51.683Z",
+      "inspectedImages": [
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-0.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-1.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-2.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-selection-3.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-current-and-selected.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-picker-search-empty.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-bank-retry-restored.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-0.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-1.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-2.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-selection-3.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-current-and-selected.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-picker-search-empty.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-bank-retry-restored.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-503-error.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/1280x800-release-retry-results.png",
+        "outputs/ui-ux-cleanup-previews/flow-redesign/390x844-release-retry-results.png"
+      ],
+      "findings": [
+        {
+          "surface": "Programme selection",
+          "result": "The zero, one, two and three selection states explain the next action; adding the third is optional, the explicit compare action appears after two, and the full chosen names remain readable at both widths."
+        },
+        {
+          "surface": "Programme picker",
+          "result": "The heading identifies the slot being changed. The sticky query remains visible after scrolling, current PP and already selected PSOE are visibly distinct, and the empty result state keeps clear and close actions. Escape restores focus to the original slot and preserves all three selections."
+        },
+        {
+          "surface": "Bank failure and retry",
+          "result": "The Spanish message and keyboard-reachable reload action are readable at both widths. Tab reaches reload through the shell links; Enter reloads successfully and focuses the restored start action."
+        },
+        {
+          "surface": "Release failure and retry",
+          "result": "Failure keeps the checkpoint and twenty answers, names no personalised party, restores the finish action, and explains that retry is possible. Successful retry shows all 59 formation cards from the same twenty answers. Error and result states remain readable at both widths."
+        }
+      ],
+      "horizontalOverflow": false,
+      "uncaughtPageErrors": [],
+      "expectedConsoleError": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "limitations": [
+        "HTTP503 responses were deliberately intercepted in the local browser to exercise real application recovery; these are not observations of a production outage.",
+        "The release retry used scripted answers in an isolated local browser session."
+      ]
+    }
+  },
+  "methodBankFailureVerification": [
+    {
+      "size": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "failure": "unavailable",
+      "path": "/method",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 1280,
+        "clientWidth": 1280
+      },
+      "errors": []
+    },
+    {
+      "size": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "failure": "unavailable",
+      "path": "/how-it-works",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 1280,
+        "clientWidth": 1280
+      },
+      "errors": []
+    },
+    {
+      "size": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "failure": "invalid-hash",
+      "path": "/method",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 1280,
+        "clientWidth": 1280
+      },
+      "errors": []
+    },
+    {
+      "size": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "failure": "invalid-hash",
+      "path": "/how-it-works",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 1280,
+        "clientWidth": 1280
+      },
+      "errors": []
+    },
+    {
+      "size": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failure": "unavailable",
+      "path": "/method",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "errors": []
+    },
+    {
+      "size": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failure": "unavailable",
+      "path": "/how-it-works",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "errors": []
+    },
+    {
+      "size": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failure": "invalid-hash",
+      "path": "/method",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "errors": []
+    },
+    {
+      "size": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "failure": "invalid-hash",
+      "path": "/how-it-works",
+      "bankRequests": [
+        {
+          "url": "http://127.0.0.1:8000/api/bank",
+          "method": "GET",
+          "body": null
+        }
+      ],
+      "example": "40/40 to 40/80",
+      "calculation": "exact formula and 20 plus 10 progression present",
+      "escapeFocusRestored": true,
+      "popstateClosesPanel": true,
+      "noQuiz": true,
+      "state": {
+        "history": null,
+        "local": [],
+        "session": [],
+        "cookie": "",
+        "search": "",
+        "hash": "",
+        "scrollWidth": 390,
+        "clientWidth": 390
+      },
+      "errors": []
+    }
+  ],
+  "updatedAt": "2026-10-13T14:14:25.657106+00:00"
+}

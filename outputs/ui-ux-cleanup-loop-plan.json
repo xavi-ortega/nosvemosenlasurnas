@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "planVersion": "ui-ux-cleanup-2023-v2.0.0",
   "title": "UI flow redesign: independent comparison, contextual evidence and visual results",
-  "status": "planned_application_stage",
+  "status": "completed_local_application",
   "recordedAt": "2026-10-13T12:12:02.195658+00:00",
-  "authority": "Direct owner feedback on 2026-10-13 after 000d96c: deeply plan the complete flow simplification first, with overlay panels, programme-selection redesign, unified comparison search, compact all-formation results and visual topic detail. This planning turn does not implement the application.",
+  "authority": "Direct owner feedback on2026-10-13 specified this redesign and requested deep planning; subsequent direct instruction “implementa” authorizes the complete local implementation. No publication or collection authorized.",
   "baselineCommit": "000d96c",
   "baseline": "outputs/ui-ux-flow-redesign-baseline.json",
   "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
@@ -12,27 +12,27 @@
   "humanPlan": "docs/plans/ui-ux-cleanup-loop-plan.md",
   "prototype": "outputs/programme-comparison-prototype.html",
   "verification": "outputs/ui-ux-cleanup-prototype-verification.json",
-  "applicationImplementationStarted": false,
-  "applicationImplementationComplete": false,
+  "applicationImplementationStarted": true,
+  "applicationImplementationComplete": true,
   "publicLaunchApproved": false,
   "liveCollectionEnabled": false,
   "preservesCompletedIterations": true,
-  "summary": "Deep planning revision following renewed owner rejection. The next stage replaces capped selection and full-page readers with programme slots and contextual modal panels, separates test results from public comparison, unifies proposal/category search, simplifies exact citations, shows all 59 results with three-tab visual detail, and rewrites Cómo funciona. N001–N012 and revised F01–F08/A01–A38 are planned, not implemented or accepted. Prior U evidence is historical. The 59 formations, 80 questions, weights, calculation and private quiz remain preserved.",
+  "summary": "Implemented and locally verified all N001–N012: two programme slots plus optional third, one proposal/category search, contextual modal sources, concise exact citations, all 59 compact results with three-tab topic counts and a visual explanation. Revised F01–F08/A01–A38 have fresh bounded application evidence and all mandatory local checks passed. The 59 formations, 80 questions, 35 documents, authored summaries, weights/calculation and memory-only quiz remain unchanged. Final metadata is checked again before the local commit. Owner satisfaction and public launch are not claimed.",
   "sections": [
     {
       "id": "outcome",
       "title": "Active revision, authority and definition of done",
-      "content": "This is the planning-first owner revision after commit `000d96c`, version **ui-ux-cleanup-2023-v2.0.0**. The owner explicitly requested a deep plan before implementation. No application implementation or acceptance of this revision is claimed. The earlier U001–U016 work, its F01–F08/A01–A38 evidence and the original prototype are historical baselines. They remain in Git and the existing reports. Passing them does not accept the new journeys or establish owner satisfaction.\n\nThe latest owner decisions supersede the earlier requirements for topic browsing, comparison filters, result-to-comparison transfer, personal overlays in public comparison, direct answer editing from results, full-page readers and citation disclosures. This document replaces those active requirements; it does not change the electoral content or arithmetic. N001–N012 below are the new implementation sequence. All are planned. The planning artifact is the deliverable of this turn, not a substitute for implementing that later sequence.\n\nThe audience is a person with no political or statistical expertise who wants either to answer the test or read two/three programmes. Design around those two independent tasks. Keep a clear next action and a dependable return; do not introduce an account, tour, configuration wizard, metrics consent or extra explanatory layer merely to repair a confusing control.\n\nPreserve the accepted direct quiz start, ordered native radios, brief checked confirmation before automatic advance, reverse Back transition, keyboard confirmation, reduced motion, 20 initial questions and existing optional blocks of 10, priorities and deliberate finish. Keep all 59 formations, 80 authored questions, 35 documents, 209 numeric positions, exact citations, values, budgets, weights, ordering and calculation. The existing bank hash is the release invariant. Missing or conflicting information is never opposition. Metrics stay disabled and every answer, query, selection, progress state, panel history and result stays in memory.\n\nImplementation completion requires every new N task and revised A case to have fresh evidence from the real application, inspected captures, corrected defects and all mandatory checks. Maintain the five-question critique: where am I, what can I do, what does it mean, what changed, how do I return? No new human-review panel, formal owner approval, dependencies, branches, worktrees, push or deployment is needed or authorized."
+      "content": "This is the planning-first owner revision after commit `000d96c`, version **ui-ux-cleanup-2023-v2.0.0**. The owner explicitly requested a deep plan before implementation. The subsequently authorized application implementation is complete with fresh bounded local evidence; owner acceptance is not claimed. The earlier U001–U016 work, its F01–F08/A01–A38 evidence and the original prototype are historical baselines. They remain in Git and the existing reports. Passing them does not accept the new journeys or establish owner satisfaction.\n\nThe latest owner decisions supersede the earlier requirements for topic browsing, comparison filters, result-to-comparison transfer, personal overlays in public comparison, direct answer editing from results, full-page readers and citation disclosures. This document replaces those active requirements; it does not change the electoral content or arithmetic. N001–N012 below are the new implementation sequence. All N001–N012 now have fresh application evidence and the complete local gate has passed; finalized metadata is verified again before the local commit. See `outputs/ui-ux-flow-redesign-application-verification.json`.\n\nThe audience is a person with no political or statistical expertise who wants either to answer the test or read two/three programmes. Design around those two independent tasks. Keep a clear next action and a dependable return; do not introduce an account, tour, configuration wizard, metrics consent or extra explanatory layer merely to repair a confusing control.\n\nPreserve the accepted direct quiz start, ordered native radios, brief checked confirmation before automatic advance, reverse Back transition, keyboard confirmation, reduced motion, 20 initial questions and existing optional blocks of 10, priorities and deliberate finish. Keep all 59 formations, 80 authored questions, 35 documents, 209 numeric positions, exact citations, values, budgets, weights, ordering and calculation. The existing bank hash is the release invariant. Missing or conflicting information is never opposition. Metrics stay disabled and every answer, query, selection, progress state, panel history and result stays in memory.\n\nImplementation completion requires every new N task and revised A case to have fresh evidence from the real application, inspected captures, corrected defects and all mandatory checks. Maintain the five-question critique: where am I, what can I do, what does it mean, what changed, how do I return? No new human-review panel, formal owner approval, dependencies, branches, worktrees, push or deployment is needed or authorized."
     },
     {
       "id": "diagnosis",
       "title": "Reproduced baseline and implications",
-      "content": "Read `outputs/ui-ux-flow-redesign-baseline.json`. On the unchanged real local app at `000d96c`, isolated Chromium inspection produced eight captures at 1280×720 and 390×844; all eight were visually inspected. Scripted opinions are test inputs, not the owner's political preferences.\n\n- After choosing PP, PSOE and Sumar, 56 checkbox options are disabled. The selection summary's viewport top was −2205.25px after scrolling to the third choice, so the explanation and next action were offscreen. A larger warning alone would preserve this structural failure.\n- Opening the comparison tools moved the first proposal down 48px at 1280px. The main search is hidden in that disclosure. The code indexes question text/help but not the topic name.\n- Source reading hides the comparison and opens a long replacement surface. A one-line PP quotation is surrounded by three expandable proof/interpretation areas, repeated explanatory text and duplicate source controls.\n- The current result displays six of 59 formations, with 48 controls in the app DOM for that initial result, several actions per formation and large vertical gaps. The page mixes explaining a result with selecting programmes and revising answers.\n- The method capture has a text-led introduction, four example controls that wrap vertically on mobile, separate explanatory sections and three further disclosures. The example still requires reading paragraphs before understanding the percentage.\n- The first question presents an unavailable Back button. Its placement can remain stable without showing an unusable control.\n- Content stress cases found in the fixed bank include a 73-character formation name, a 4,452-character citation and positions with three citations. Compact layouts cannot depend on every quote or name being short.\n\nNo horizontal overflow or page errors were observed in this bounded reproduction. That does not refute the reported UX problems and is not acceptance of the redesign. The 48px measurement is interaction geometry, not a production CLS score. No new design has yet been rendered or verified."
+      "content": "Read `outputs/ui-ux-flow-redesign-baseline.json`. On the unchanged real local app at `000d96c`, isolated Chromium inspection produced eight captures at 1280×720 and 390×844; all eight were visually inspected. Scripted opinions are test inputs, not the owner's political preferences.\n\n- After choosing PP, PSOE and Sumar, 56 checkbox options are disabled. The selection summary's viewport top was −2205.25px after scrolling to the third choice, so the explanation and next action were offscreen. A larger warning alone would preserve this structural failure.\n- Opening the comparison tools moved the first proposal down 48px at 1280px. The main search is hidden in that disclosure. The code indexes question text/help but not the topic name.\n- Source reading hides the comparison and opens a long replacement surface. A one-line PP quotation is surrounded by three expandable proof/interpretation areas, repeated explanatory text and duplicate source controls.\n- The current result displays six of 59 formations, with 48 controls in the app DOM for that initial result, several actions per formation and large vertical gaps. The page mixes explaining a result with selecting programmes and revising answers.\n- The method capture has a text-led introduction, four example controls that wrap vertically on mobile, separate explanatory sections and three further disclosures. The example still requires reading paragraphs before understanding the percentage.\n- The first question presents an unavailable Back button. Its placement can remain stable without showing an unusable control.\n- Content stress cases found in the fixed bank include a 73-character formation name, a 4,452-character citation and positions with three citations. Compact layouts cannot depend on every quote or name being short.\n\nNo horizontal overflow or page errors were observed in this bounded reproduction. That does not refute the reported UX problems and is not acceptance of the redesign. The 48px measurement is interaction geometry, not a production CLS score. This was the pre-implementation baseline; the new report records the later application review."
     },
     {
       "id": "decisions",
       "title": "Owner feedback translated into concrete decisions",
-      "content": "| Owner decision | Planned product behavior | Explicit removal / boundary |\n| --- | --- | --- |\n| Expansion controls look poor and move everything | Keep essential controls visible; move long secondary reading into one overlay panel; only optional inline quotations expand | No hidden search, no nested proof accordions, no universal conversion of every sentence into a panel |\n| Simplify citations | Quote, compact formation/proposal context and directly linked page/line with external-link icon | Remove the four specified context/origin/full-interpretation/disclaimer items from public reading; retain their evidence data |\n| Ver fuente should retain context | Modal side panel with backdrop; underlying layout and scroll stay fixed | No replacement page or shrinking the comparison to make room |\n| Three programmes are confusing | Two required programme slots plus one optional third; edit one slot with the same picker panel | No fourth slot, no 56 disabled options, no full-page Cambiar programas flow |\n| Comparison should have one search | Always-visible Buscar una propuesta o un tema, also matching category | Remove Tema selector, Mostrar selector, Ver temas, tools disclosure and all topic-exploration branches |\n| Keep citations in comparison, align them | One deliberate Mostrar citas control per proposal, aligned shared quote row, complete exact text | No independently staggered quote starts, truncated quotations, duplicated mobile representation or nested scroll boxes |\n| Test and comparison are separate | Results explain the test; Programas compares public evidence | Remove result checkboxes, transfers, comparison actions, own-answer overlays and cross-origin personal state |\n| Results should show all formations compactly | All 59 in one responsive grid, one Detalle action each; local name search remains optional | No previous/next, six-row slice, Ver todas, result review/delete actions or expandable programme browser |\n| Detail should be visual | One panel with three tabs and a count chart by topic | No radar, ideology map, winner badge, vote prediction or second matching formula |\n| Remove Revisar esta respuesta | Read-only result and citation detail; one next-test action | Preserve internal quiz/checkpoint review, missing-topic recovery and priority editing where still reachable |\n| Keep at most download and continue/restart | One Descargar resultados action and one context-sensitive test action | No result action menu hiding the removed actions |\n| Smooth and subtle movement | Shared motion tokens for panels, tab changes, optional quotes, slot replacement and loading | No cascade of 59 animated cards, bouncing controls or motion delays while typing |\n| Redesign Cómo funciona entirely | Short three-step explanation and one visual five-decision example; exact detail in a panel | Remove the current four-button textual example and long sequence of introductory paragraphs |\n| Apply feedback elsewhere; remove dead code | Audit all public routes, loading/no-JS templates, help, privacy, accessibility, directory and catalog consumers | No unreachable old modes or stale tests kept alive only to make the old suite pass |\n\nThe old B02/B04/B05 borrowed patterns are explicitly retired. B03 retains semantic distinctions but loses its filters. B01 becomes the single comparison search; independent topic-first browsing is removed. B06 becomes a compact explanation and visual example; B07/B08 retain plain meaning/private calculation; B09 becomes a read-only source factsheet; B10 retains measured reading budgets, except that results deliberately show all 59. The seven-site research remains historical UX context, not authority over this owner revision."
+      "content": "| Owner decision | Implemented product behavior | Explicit removal / boundary |\n| --- | --- | --- |\n| Expansion controls look poor and move everything | Keep essential controls visible; move long secondary reading into one overlay panel; only optional inline quotations expand | No hidden search, no nested proof accordions, no universal conversion of every sentence into a panel |\n| Simplify citations | Quote, compact formation/proposal context and directly linked page/line with external-link icon | Remove the four specified context/origin/full-interpretation/disclaimer items from public reading; retain their evidence data |\n| Ver fuente should retain context | Modal side panel with backdrop; underlying layout and scroll stay fixed | No replacement page or shrinking the comparison to make room |\n| Three programmes are confusing | Two required programme slots plus one optional third; edit one slot with the same picker panel | No fourth slot, no 56 disabled options, no full-page Cambiar programas flow |\n| Comparison should have one search | Always-visible Buscar una propuesta o un tema, also matching category | Remove Tema selector, Mostrar selector, Ver temas, tools disclosure and all topic-exploration branches |\n| Keep citations in comparison, align them | One deliberate Mostrar citas control per proposal, aligned shared quote row, complete exact text | No independently staggered quote starts, truncated quotations, duplicated mobile representation or nested scroll boxes |\n| Test and comparison are separate | Results explain the test; Programas compares public evidence | Remove result checkboxes, transfers, comparison actions, own-answer overlays and cross-origin personal state |\n| Results should show all formations compactly | All 59 in one responsive grid, one Detalle action each; local name search remains optional | No previous/next, six-row slice, Ver todas, result review/delete actions or expandable programme browser |\n| Detail should be visual | One panel with three tabs and a count chart by topic | No radar, ideology map, winner badge, vote prediction or second matching formula |\n| Remove Revisar esta respuesta | Read-only result and citation detail; one next-test action | Preserve internal quiz/checkpoint review, missing-topic recovery and priority editing where still reachable |\n| Keep at most download and continue/restart | One Descargar resultados action and one context-sensitive test action | No result action menu hiding the removed actions |\n| Smooth and subtle movement | Shared motion tokens for panels, tab changes, optional quotes, slot replacement and loading | No cascade of 59 animated cards, bouncing controls or motion delays while typing |\n| Redesign Cómo funciona entirely | Short three-step explanation and one visual five-decision example; exact detail in a panel | Remove the current four-button textual example and long sequence of introductory paragraphs |\n| Apply feedback elsewhere; remove dead code | Audit all public routes, loading/no-JS templates, help, privacy, accessibility, directory and catalog consumers | No unreachable old modes or stale tests kept alive only to make the old suite pass |\n\nThe old B02/B04/B05 borrowed patterns are explicitly retired. B03 retains semantic distinctions but loses its filters. B01 becomes the single comparison search; independent topic-first browsing is removed. B06 becomes a compact explanation and visual example; B07/B08 retain plain meaning/private calculation; B09 becomes a read-only source factsheet; B10 retains measured reading budgets, except that results deliberately show all 59. The seven-site research remains historical UX context, not authority over this owner revision."
     },
     {
       "id": "architecture",
@@ -77,7 +77,7 @@
     {
       "id": "visual",
       "title": "Visual direction, typography and motion system",
-      "content": "**Direction:** a clear public reading tool. The memorable content is the parallel proposal and the topic-response graphic. The rest stays quiet. Retain the existing locally available Avenir Next / Segoe UI / Arial family, with deliberate weights: 400 reading text, 500–600 names/actions, 600 page headings. Avoid the current heavy headline treatment on every proposal. No font download/dependency changes, party colours, promotional gradients, giant numbers, decorative illustrations or shadows on every block.\n\nBase palette: paper #ffffff; ground #f4f7f8; ink #192e34; secondary text #52666e; action/confirmed relationship #185b64; difference-series #85642b. Neutral lines/patterns derive from the existing #d4dfe2 border token; verify actual contrast, including graph boundaries and focus, in context. An ochre difference denotes a difference, not a bad answer. Preserve a distinct visible focus ring and check forced colours.\n\nType targets: body 1rem–1.0625rem, 1.5–1.6 line height; controls >=1rem where possible; metadata >=.875rem; non-home page title 1.75–2rem; proposal title 1.125–1.375rem. Use rem units and natural wrapping. Reading measure about 55–68 characters where space permits; panel text must not be squeezed to keep backdrop visible. Spacing scale 4/8/12/16/24/32/48px expressed in rem, compact within a task and generous between proposals. Controls minimum 44×44 CSS px without inflating every text link into a filled button. Thin borders indicate actual grouping; avoid a blue-tinted slab above every proposal or identical padded cards for every paragraph.\n\nResponsive budgets: compare columns only when each has about 18rem of readable width; otherwise stack programme units. Grid reflows by available content width, not device labels. Maximum main content about 90rem for four compact result columns; 2/3 programme comparison never stretches prose across the whole ultrawide screen. At 200% text and 400% zoom, controls wrap and headers may cease being sticky. No fixed text height, ellipsis or horizontal page scroll. Mobile has one readable result per row when needed, not a two-column miniature dashboard.\n\n| Interaction | Default motion | Reduced motion / interruption |\n| --- | --- | --- |\n| Panel open/close | 220ms enter, 160ms exit, restrained 16–24px horizontal motion plus opacity; backdrop 160ms; ease cubic-bezier(.22,1,.36,1) | Immediate state change, no slide/scroll animation; retain focus/feedback |\n| Panel internal source/back and tabs | 120–160ms contained opacity change, stable shell; no scrolling the underlying page | Immediate; keep active tab and target focus |\n| Inline quotations | 180–220ms measured container-height transition; heading/opener anchored; content fades within region | Immediate expand/collapse; same anchor; no clipping after completion |\n| Programme replacement | 140–180ms contained change in the affected column/slot; no whole-page entrance | Immediate, one polite status message |\n| Search and all-result grid | No per-keystroke card animation; stable input and count; optional <=120ms whole-result fade after settled input | Immediate; no focus movement or delayed keyboard action |\n| Loading/retry | Reserve structural geometry; subtle opacity change; avoid skeleton shimmer when reduced | Static shape, readable busy state |\n| Quiz | Existing checked confirmation and forward/reverse motion preserved | Existing accepted behavior retained |\n\nDo not use transition:all, guess a huge max-height, queue animations on repeated clicks, animate all 59 cards, stagger every source paragraph or use scrollIntoView smooth on every update. Use cancellation-safe final states, preserve hit targets during transition, and resolve close even when animationend is skipped. Opening information must never move the base page. A smooth expansion still changes layout: measure its visual anchor and inspect frames, not only a final screenshot.\n\n[web.dev's CLS definition](https://web.dev/articles/cls) excludes some shifts close to user input; therefore a low CLS alone does not establish a comfortable interaction. Record raw element displacement, unexpected shifts during load, panel background geometry and actual short motion clips/frames separately. Preserve the existing loading regression threshold of total recorded shifts <0.001 in tests/Browser/loading.spec.ts; never relax it to the general CLS reference of 0.1. Also require no unexpected loaded-view movement, panel base-page anchor <=1 CSS px movement and quote opener <=2 CSS px. These are future acceptance targets, not measured results or production Core Web Vitals claims."
+      "content": "**Direction:** a clear public reading tool. The memorable content is the parallel proposal and the topic-response graphic. The rest stays quiet. Retain the existing locally available Avenir Next / Segoe UI / Arial family, with deliberate weights: 400 reading text, 500–600 names/actions, 600 page headings. Avoid the current heavy headline treatment on every proposal. No font download/dependency changes, party colours, promotional gradients, giant numbers, decorative illustrations or shadows on every block.\n\nBase palette: paper #ffffff; ground #f4f7f8; ink #192e34; secondary text #52666e; action/confirmed relationship #185b64; difference-series #85642b. Neutral lines/patterns derive from the existing #d4dfe2 border token; verify actual contrast, including graph boundaries and focus, in context. An ochre difference denotes a difference, not a bad answer. Preserve a distinct visible focus ring and check forced colours.\n\nType targets: body 1rem–1.0625rem, 1.5–1.6 line height; controls >=1rem where possible; metadata >=.875rem; non-home page title 1.75–2rem; proposal title 1.125–1.375rem. Use rem units and natural wrapping. Reading measure about 55–68 characters where space permits; panel text must not be squeezed to keep backdrop visible. Spacing scale 4/8/12/16/24/32/48px expressed in rem, compact within a task and generous between proposals. Controls minimum 44×44 CSS px without inflating every text link into a filled button. Thin borders indicate actual grouping; avoid a blue-tinted slab above every proposal or identical padded cards for every paragraph.\n\nResponsive budgets: compare columns only when each has about 18rem of readable width; otherwise stack programme units. Grid reflows by available content width, not device labels. Maximum main content about 90rem for four compact result columns; 2/3 programme comparison never stretches prose across the whole ultrawide screen. At 200% text and 400% zoom, controls wrap and headers may cease being sticky. No fixed text height, ellipsis or horizontal page scroll. Mobile has one readable result per row when needed, not a two-column miniature dashboard.\n\n| Interaction | Default motion | Reduced motion / interruption |\n| --- | --- | --- |\n| Panel open/close | 220ms enter, 160ms exit, restrained 16–24px horizontal motion plus opacity; backdrop 160ms; ease cubic-bezier(.22,1,.36,1) | Immediate state change, no slide/scroll animation; retain focus/feedback |\n| Panel internal source/back and tabs | 120–160ms contained opacity change, stable shell; no scrolling the underlying page | Immediate; keep active tab and target focus |\n| Inline quotations | 180–220ms measured container-height transition; heading/opener anchored; content fades within region | Immediate expand/collapse; same anchor; no clipping after completion |\n| Programme replacement | 140–180ms contained change in the affected column/slot; no whole-page entrance | Immediate, one polite status message |\n| Search and all-result grid | No per-keystroke card animation; stable input and count; optional <=120ms whole-result fade after settled input | Immediate; no focus movement or delayed keyboard action |\n| Loading/retry | Reserve structural geometry; subtle opacity change; avoid skeleton shimmer when reduced | Static shape, readable busy state |\n| Quiz | Existing checked confirmation and forward/reverse motion preserved | Existing accepted behavior retained |\n\nDo not use transition:all, guess a huge max-height, queue animations on repeated clicks, animate all 59 cards, stagger every source paragraph or use scrollIntoView smooth on every update. Use cancellation-safe final states, preserve hit targets during transition, and resolve close even when animationend is skipped. Opening information must never move the base page. A smooth expansion still changes layout: measure its visual anchor and inspect frames, not only a final screenshot.\n\n[web.dev's CLS definition](https://web.dev/articles/cls) excludes some shifts close to user input; therefore a low CLS alone does not establish a comfortable interaction. Record raw element displacement, unexpected shifts during load, panel background geometry and actual short motion clips/frames separately. Preserve the existing loading regression threshold of total recorded shifts <0.001 in tests/Browser/loading.spec.ts; never relax it to the general CLS reference of 0.1. Also require no unexpected loaded-view movement, panel base-page anchor <=1 CSS px movement and quote opener <=2 CSS px. Application measurement: panel base displacement0px and quote opener displacement0px vertically/1.6875px horizontally; see the revision report. These are bounded local observations, not production Core Web Vitals claims."
     },
     {
       "id": "wireframes",
@@ -102,12 +102,12 @@
     {
       "id": "loop",
       "title": "Execution sequence and real design loop",
-      "content": "N001–N012 are separate bounded, dependency-ordered implementation blocks. Each block follows **reproduce → define user task → sketch two viable treatments and critique → implement entry-to-return path → verify behavior → inspect real captures and motion → correct → record evidence**. The layouts above are starting designs, not app acceptance. No block is completed by a prototype or by automated tests alone.\n\nUse real bank examples at every sketch and implementation step. For a changed screen record the five comprehension answers with actual visible labels. Capture both complete viewport and full page where useful, not only isolated beautiful components. Include the data/time/hash, viewport, exact actions, observation, defect, correction and recapture in the existing execution journal and revision-specific application evidence. Do not repeat earlier owner-satisfaction claims. User rejection remains an input, not something a test can overrule.\n\nPer-slice checks: affected behavior regressions, type/lint/build when applicable, real keyboard path, mobile/wide/text enlargement and motion inspection for changed surfaces. Final checks: revised A01–A38 and F01–F08, bank/score/export parity, privacy trace, Spanish copy, no-JS/routes/errors, all required browser/PHP/engine/tooling/security checks. Runtime fallback/template behavior is part of the UI, not a separate afterthought.\n\nMandatory acceptance viewport matrix: 320×568, 390×844, 768×1024, 1280×720 MacBook, 1512×850, 1920×1080 (capped content) and 1024×320; real 200% text enlargement and 400% browser zoom/reflow, not merely a smaller screenshot. Check motion on and reduced, keyboard-only and forced colours. Chromium plus installed WebKit/Firefox where available; unavailable browsers are reported, not invented or installed as a hidden dependency change. Record actual elapsed interaction measurements on the local build and throttled loading; no production performance claim.\n\nBefore every local commit: synchronize the JSON/human/managed plans with `npm run docs:build` and `npm run check:plans`; preserve/install the local hook; stage only the intended tree; run `python3 scripts/check-staged.py` for that exact index; no skipped/failed required checks, bypass or control weakening. Preserve main, files/history and running owner servers; no dependencies, push, deployment or scheduler.\n\nFinal implementation packet must identify baseline and implementation commits, fresh screenshots/motion evidence, actual commands and hashes, remaining honest limits and local preview. This planning turn only records reproduction, decisions, dependencies and planned acceptance. N tasks remain planned until their own application evidence exists.\n\nWrite the future revision acceptance to `outputs/ui-ux-flow-redesign-application-verification.json`. Keep `outputs/ui-ux-cleanup-application-verification.json` unchanged as historical evidence. The future path is a planned deliverable, not a file asserted to exist now."
+      "content": "N001–N012 are separate bounded, dependency-ordered implementation blocks. Each block follows **reproduce → define user task → sketch two viable treatments and critique → implement entry-to-return path → verify behavior → inspect real captures and motion → correct → record evidence**. The layouts above are starting designs, not app acceptance. No block is completed by a prototype or by automated tests alone.\n\nUse real bank examples at every sketch and implementation step. For a changed screen record the five comprehension answers with actual visible labels. Capture both complete viewport and full page where useful, not only isolated beautiful components. Include the data/time/hash, viewport, exact actions, observation, defect, correction and recapture in the existing execution journal and revision-specific application evidence. Do not repeat earlier owner-satisfaction claims. User rejection remains an input, not something a test can overrule.\n\nPer-slice checks: affected behavior regressions, type/lint/build when applicable, real keyboard path, mobile/wide/text enlargement and motion inspection for changed surfaces. Final checks: revised A01–A38 and F01–F08, bank/score/export parity, privacy trace, Spanish copy, no-JS/routes/errors, all required browser/PHP/engine/tooling/security checks. Runtime fallback/template behavior is part of the UI, not a separate afterthought.\n\nMandatory acceptance viewport matrix: 320×568, 390×844, 768×1024, 1280×720 MacBook, 1512×850, 1920×1080 (capped content) and 1024×320; real 200% text enlargement and 400% browser zoom/reflow, not merely a smaller screenshot. Check motion on and reduced, keyboard-only and forced colours. Chromium plus installed WebKit/Firefox where available; unavailable browsers are reported, not invented or installed as a hidden dependency change. Record actual elapsed interaction measurements on the local build and throttled loading; no production performance claim.\n\nBefore every local commit: synchronize the JSON/human/managed plans with `npm run docs:build` and `npm run check:plans`; preserve/install the local hook; stage only the intended tree; run `python3 scripts/check-staged.py` for that exact index; no skipped/failed required checks, bypass or control weakening. Preserve main, files/history and running owner servers; no dependencies, push, deployment or scheduler.\n\nFinal implementation packet must identify baseline and implementation commits, fresh screenshots/motion evidence, actual commands and hashes, remaining honest limits and local preview. The active application loops and corrections are now recorded in the revision report and execution journal. N012 remains in progress until its mandatory exact-tree check and commit preparation are complete.\n\nRead the actual revision acceptance in `outputs/ui-ux-flow-redesign-application-verification.json`. Keep `outputs/ui-ux-cleanup-application-verification.json` unchanged as historical evidence. This is fresh application evidence; historical reports remain untouched."
     },
     {
       "id": "acceptance",
       "title": "Revised A01–A38 acceptance matrix (all pending)",
-      "content": "These are the **v2.0** meanings of the existing IDs. They do not inherit passes from v1.1. The previous matrix remains available at commit 000d96c and in its verification report. Every case below requires fresh evidence from the actual application.\n\n| ID | Practical walkthrough | Required result |\n| --- | --- | --- |\n| A01 | Home and direct quiz entry | The two main tasks and 2023 context are clear. Direct quiz entry is unchanged. Back is absent when unavailable on the first question, while navigation geometry remains stable. |\n| A02 | Separate journeys and session return | Quiz → header Programas → help → quiz preserves answers without transferring selection, personal answers or result data to comparison. |\n| A03 | Programme slot lookup | All 59 formation names are available in alphabetical order. Search handles minor formations, accents and long names. A formation selected in another slot is identified; none is duplicated or hidden. |\n| A04 | Zero, one, two or three selections, and replacement | Visible slots explain the next action and that the third slot is optional. Initial comparison requires an explicit action with valid selections. There is no fourth slot or unusable disabled-list state. Replacement changes only the chosen slot. |\n| A05 | Real-bank rent-cap semantics | PP and PSOE remain unknown; Sumar supports the proposal. Exact contextual citations do not create invented opposition or scored positions. |\n| A06 | Nuclear proposal | PP, VOX and Sumar retain their conditions and original values through search, grid reflow and panel reading. |\n| A07 | Dental and mortgage qualifications | Preserve PSOE's gradual expansion and dental condition for people over 75, and its 20% guarantee, under-35 limit and first habitual home condition. Preserve PP's 95% condition. Positions scored +1 and +2 are not presented as identical policies. |\n| A08 | PSC and missing programmes | PSC has exactly one entry, inherits no PSOE positions, remains selectable in public slots and appears among all 59 results. Missing information never means opposition. |\n| A09 | Search and append across all 80 proposals | An empty query starts across all 80 proposals. Each action appends six more without replacing earlier content. Search, category matching, counts and clearing follow the restoration contract. No hidden filter or pager remains. |\n| A10 | Inline quotation alignment and narrow representation | In two or three columns, quotation starts and action rows align. Narrow layouts use one unit per formation. Summaries and citations remain complete, without duplicated DOM content or clipped conditions. |\n| A11 | Source panel and contextual return | The base page moves no more than 1 px. The close button, Escape and backdrop restore the semantic opener and anchor. The original locator is an external link. Resizing and long sources preserve return context. Exercise entry with inline quotes both closed and open; closing the panel never opens previously closed quotes. |\n| A12 | Replacement of the retired topic journey | No Ver temas action, topic selector, standalone proposal, positions or formation browser, or orphaned entry remains. Category-aware comparison search and the source directory remain useful. |\n| A13 | No results, unknown positions and missing quotations | Clearing the query works. Programmes with only unknown positions still display proposals without fabricated agreement. Contextual citations and absent quotations remain distinct. |\n| A14 | Score and ordering parity | Exact documentedMatch output, weights, ordering and exported values match the baseline across varied fixtures. There is no new matching formula, winner claim or probability claim. |\n| A15 | All 59 compact entries | The initial DOM and visible document contain 59 unique formations. There is no six-row slice, Next, Previous or Ver todas control. The responsive grid keeps long names readable. |\n| A16 | Result → detail → source → return | Each formation has one Detalle action leading to three tabs and a topic chart. The relevant quotation is reachable in two actions, excluding tab selection and scrolling. Internal Back restores the tab and scroll position; Close returns to the grid. |\n| A17 | Incomplete answers, skipping and uncertainty | The global percentage remains null. Charts and tabs count numeric answers only. A topic without the user's opinion is distinguished from an unknown programme position. Recovery uses the single next-test action, leading to the existing checkpoint. An all-skip/unsure session shows ten “Sin respuesta tuya” rows, zero-count tabs and no chart bars or division by zero. |\n| A18 | Continue and restart | Continuing invalidates personal state and uses the existing extension or recovery flow. Restart supports safe cancellation and confirmation. Results require a new deliberate finish. Results contain no direct review or delete action. |\n| A19 | Method aliases and static fallback | Both routes present the same concise current explanation, the 20 + 10 progression and exact calculation. Retired ten-plus-five and cohort contracts are absent. The no-JavaScript fallback has no disabled controls. |\n| A20 | Visual method example | Five marks and one switch demonstrate an exact, anonymous change from 40/40 to 40/80. Geometry stays fixed, keyboard use and a textual equivalent are available, and the example does not mutate quiz state. |\n| A21 | Help, privacy and accessibility | Short answers are visible, flow language is current, and contextual return or a useful direct link is available. Statements about memory, external navigation, logs and disabled metrics remain truthful. |\n| A22 | Failure and recovery | Missing or unavailable official sources, a bank 503 response, release-check failure and withdrawal have Spanish recovery states. There are no fabricated links, raw translation keys, leaked results or stale results. |\n| A23 | Loading and layout stability | Skeletons match the new controls and never flash retired controls. Retain the existing loading shift threshold <0.001 and measure anchor geometry; do not infer reading comfort from CLS alone. Opening a source leaves the base page unchanged. |\n| A24 | Accessibility and motion matrix | Cover every specified viewport, 200% text, 400% zoom, keyboard use, forced colours and reduced motion. Targets are at least 44 px. Nothing clips or obscures focus, and actual transition frames are inspected. |\n| A25 | Traffic, storage and privacy | Automatic app requests use fixed public bank and release endpoints with no personal payload. Counts and timing may vary with deliberate finish/retry. External source navigation occurs only on explicit link activation, without personal data or referrer. Queries, answers, selections, chart IDs and panel IDs never enter traffic, URLs, history or storage. Export is deliberately local, and pagehide purges private state. |\n| A26 | Legacy unavailable and error routes | Feedback, insights and 404 pages provide useful Spanish exits. Metrics remain disabled. There is no new publication, collection or dependency. |\n| A27 | Copy, quotations and exports | Audit the active catalogue for changed and retired consumers. Preserve the original quotation language and essential conditions, label summaries, and remove obsolete actions from help and exports. |\n| A28 | Local build and runtimes | The installed development workflow and build preview work. Preserve the owner's processes and hot marker. Mandatory checks pass without workarounds or weakened assertions. |\n| A29 | Retirement of comparison from results | No result-to-comparison button, checkbox, transfer or selection cache remains. Global Programas navigation carries no private state. Replace the old test with a test of this absence. |\n| A30 | Reveal boundary on every surface | Personal panel, chart and tab content appears only after a deliberate finish of the current session. Public comparison never displays personal data. Continuing, resetting, withdrawal and BFCache restoration cannot revive stale views. |\n| A31 | Chart arithmetic and relationship groups | Preserve the exact same/close and different/opposed groups. −1 versus +1 is opposed despite 50% similarity; +1 versus +2 is close. Unknown positions remain distinct. Totals based on numeric answers reconcile with the tabs. |\n| A32 | Unified proposal and category search | Test Sanidad; salud and dental through actual help text where present; sanidad dental; accents, spaces, IME input, no results and clearing. All 80 proposals retain their fixed order. State stays in memory and focus does not jump. |\n| A33 | Counts and weighted percentages | With duplicate-family and priority fixtures, chart counts remain accurate while existing percentage weights apply. The same two matches may produce 87.5% topic overlap. Do not label a residual similarity fraction as disagreement. |\n| A34 | Equal, close and zero outcomes | Rounded ties and ordering remain unchanged. Clearly label zero overlap when evidence is absent. Detail explains different sets of agreements without invented confidence or ranking recommendations. |\n| A35 | Retired result editing and retained quiz recovery | Results have no Revisar esta respuesta, review or delete actions. Checkpoint review, priorities, pending-topic recovery and Back still work. Editing invalidates results and requires another deliberate finish. |\n| A36 | Panel lifecycle and tabs | Verify focus containment, manual closing, the backdrop drag guard, rapid toggling, tab keyboard behaviour, empty tabs, resizing and section Back. No orphaned overlay or scroll lock remains. Visiting help does not change the selected radio. |\n| A37 | Source factsheets | All 59 formations retain availability, scope and document information. Missing programmes are described honestly. There is no add, compare or topic-browser action. External references are concise, and search and focus are restored. |\n| A38 | End-to-end visual critique | Complete eight connected flows, review screenshots and animation frames, answer the five comprehension questions for each state, and audit dead code. No P0/P1 defect remains open, and no known core UX failure is hidden as P2. Historical evidence is not new acceptance. |\n\nFor every case, record its status, applicable N tasks, exact sequence and viewport, assertions, relevant screenshot or motion evidence, observed defects and corrections. A retained arithmetic test can substantiate arithmetic, but cannot complete acceptance of a changed source panel or result layout. Visual review must include missing and long content, not only major parties and short citations.\n\nDisposition of the previous A cases: retain and rerun A01–A08, A14, A19 and A21–A28 against the new surfaces. Replace A09–A13, A15–A18, A20 and A29–A38 as specified above. A29 and A35 now test the absence of explicitly retired actions alongside the retained privacy and recovery invariants. Source-return tests replace the former full-page and no-inert requirements with the modal contract. This is an owner-authorized behaviour change, not weaker verification."
+      "content": "Local application evidence and per-case dispositions: `outputs/ui-ux-flow-redesign-application-verification.json`. All38 cases have new bounded local evidence; see the reported native-zoom/browser limitations. Owner acceptance remains unconfirmed.\n\nThese are the **v2.0** meanings of the existing IDs. They do not inherit passes from v1.1. The previous matrix remains available at commit 000d96c and in its verification report. Every case below requires fresh evidence from the actual application.\n\n| ID | Practical walkthrough | Required result |\n| --- | --- | --- |\n| A01 | Home and direct quiz entry | The two main tasks and 2023 context are clear. Direct quiz entry is unchanged. Back is absent when unavailable on the first question, while navigation geometry remains stable. |\n| A02 | Separate journeys and session return | Quiz → header Programas → help → quiz preserves answers without transferring selection, personal answers or result data to comparison. |\n| A03 | Programme slot lookup | All 59 formation names are available in alphabetical order. Search handles minor formations, accents and long names. A formation selected in another slot is identified; none is duplicated or hidden. |\n| A04 | Zero, one, two or three selections, and replacement | Visible slots explain the next action and that the third slot is optional. Initial comparison requires an explicit action with valid selections. There is no fourth slot or unusable disabled-list state. Replacement changes only the chosen slot. |\n| A05 | Real-bank rent-cap semantics | PP and PSOE remain unknown; Sumar supports the proposal. Exact contextual citations do not create invented opposition or scored positions. |\n| A06 | Nuclear proposal | PP, VOX and Sumar retain their conditions and original values through search, grid reflow and panel reading. |\n| A07 | Dental and mortgage qualifications | Preserve PSOE's gradual expansion and dental condition for people over 75, and its 20% guarantee, under-35 limit and first habitual home condition. Preserve PP's 95% condition. Positions scored +1 and +2 are not presented as identical policies. |\n| A08 | PSC and missing programmes | PSC has exactly one entry, inherits no PSOE positions, remains selectable in public slots and appears among all 59 results. Missing information never means opposition. |\n| A09 | Search and append across all 80 proposals | An empty query starts across all 80 proposals. Each action appends six more without replacing earlier content. Search, category matching, counts and clearing follow the restoration contract. No hidden filter or pager remains. |\n| A10 | Inline quotation alignment and narrow representation | In two or three columns, quotation starts and action rows align. Narrow layouts use one unit per formation. Summaries and citations remain complete, without duplicated DOM content or clipped conditions. |\n| A11 | Source panel and contextual return | The base page moves no more than 1 px. The close button, Escape and backdrop restore the semantic opener and anchor. The original locator is an external link. Resizing and long sources preserve return context. Exercise entry with inline quotes both closed and open; closing the panel never opens previously closed quotes. |\n| A12 | Replacement of the retired topic journey | No Ver temas action, topic selector, standalone proposal, positions or formation browser, or orphaned entry remains. Category-aware comparison search and the source directory remain useful. |\n| A13 | No results, unknown positions and missing quotations | Clearing the query works. Programmes with only unknown positions still display proposals without fabricated agreement. Contextual citations and absent quotations remain distinct. |\n| A14 | Score and ordering parity | Exact documentedMatch output, weights, ordering and exported values match the baseline across varied fixtures. There is no new matching formula, winner claim or probability claim. |\n| A15 | All 59 compact entries | The initial DOM and visible document contain 59 unique formations. There is no six-row slice, Next, Previous or Ver todas control. The responsive grid keeps long names readable. |\n| A16 | Result → detail → source → return | Each formation has one Detalle action leading to three tabs and a topic chart. The relevant quotation is reachable in two actions, excluding tab selection and scrolling. Internal Back restores the tab and scroll position; Close returns to the grid. |\n| A17 | Incomplete answers, skipping and uncertainty | The global percentage remains null. Charts and tabs count numeric answers only. A topic without the user's opinion is distinguished from an unknown programme position. Recovery uses the single next-test action, leading to the existing checkpoint. An all-skip/unsure session shows ten “Sin respuesta tuya” rows, zero-count tabs and no chart bars or division by zero. |\n| A18 | Continue and restart | Continuing invalidates personal state and uses the existing extension or recovery flow. Restart supports safe cancellation and confirmation. Results require a new deliberate finish. Results contain no direct review or delete action. |\n| A19 | Method aliases and static fallback | Both routes present the same concise current explanation, the 20 + 10 progression and exact calculation. Retired ten-plus-five and cohort contracts are absent. The no-JavaScript fallback has no disabled controls. |\n| A20 | Visual method example | Five marks and one switch demonstrate an exact, anonymous change from 40/40 to 40/80. Geometry stays fixed, keyboard use and a textual equivalent are available, and the example does not mutate quiz state. |\n| A21 | Help, privacy and accessibility | Short answers are visible, flow language is current, and contextual return or a useful direct link is available. Statements about memory, external navigation, logs and disabled metrics remain truthful. |\n| A22 | Failure and recovery | Missing or unavailable official sources, a bank 503 response, release-check failure and withdrawal have Spanish recovery states. There are no fabricated links, raw translation keys, leaked results or stale results. |\n| A23 | Loading and layout stability | Skeletons match the new controls and never flash retired controls. Retain the existing loading shift threshold <0.001 and measure anchor geometry; do not infer reading comfort from CLS alone. Opening a source leaves the base page unchanged. |\n| A24 | Accessibility and motion matrix | Cover every specified viewport, 200% text, 400% zoom, keyboard use, forced colours and reduced motion. Targets are at least 44 px. Nothing clips or obscures focus, and actual transition frames are inspected. |\n| A25 | Traffic, storage and privacy | Automatic app requests use fixed public bank and release endpoints with no personal payload. Counts and timing may vary with deliberate finish/retry. External source navigation occurs only on explicit link activation, without personal data or referrer. Queries, answers, selections, chart IDs and panel IDs never enter traffic, URLs, history or storage. Export is deliberately local, and pagehide purges private state. |\n| A26 | Legacy unavailable and error routes | Feedback, insights and 404 pages provide useful Spanish exits. Metrics remain disabled. There is no new publication, collection or dependency. |\n| A27 | Copy, quotations and exports | Audit the active catalogue for changed and retired consumers. Preserve the original quotation language and essential conditions, label summaries, and remove obsolete actions from help and exports. |\n| A28 | Local build and runtimes | The installed development workflow and build preview work. Preserve the owner's processes and hot marker. Mandatory checks pass without workarounds or weakened assertions. |\n| A29 | Retirement of comparison from results | No result-to-comparison button, checkbox, transfer or selection cache remains. Global Programas navigation carries no private state. Replace the old test with a test of this absence. |\n| A30 | Reveal boundary on every surface | Personal panel, chart and tab content appears only after a deliberate finish of the current session. Public comparison never displays personal data. Continuing, resetting, withdrawal and BFCache restoration cannot revive stale views. |\n| A31 | Chart arithmetic and relationship groups | Preserve the exact same/close and different/opposed groups. −1 versus +1 is opposed despite 50% similarity; +1 versus +2 is close. Unknown positions remain distinct. Totals based on numeric answers reconcile with the tabs. |\n| A32 | Unified proposal and category search | Test Sanidad; salud and dental through actual help text where present; sanidad dental; accents, spaces, IME input, no results and clearing. All 80 proposals retain their fixed order. State stays in memory and focus does not jump. |\n| A33 | Counts and weighted percentages | With duplicate-family and priority fixtures, chart counts remain accurate while existing percentage weights apply. The same two matches may produce 87.5% topic overlap. Do not label a residual similarity fraction as disagreement. |\n| A34 | Equal, close and zero outcomes | Rounded ties and ordering remain unchanged. Clearly label zero overlap when evidence is absent. Detail explains different sets of agreements without invented confidence or ranking recommendations. |\n| A35 | Retired result editing and retained quiz recovery | Results have no Revisar esta respuesta, review or delete actions. Checkpoint review, priorities, pending-topic recovery and Back still work. Editing invalidates results and requires another deliberate finish. |\n| A36 | Panel lifecycle and tabs | Verify focus containment, manual closing, the backdrop drag guard, rapid toggling, tab keyboard behaviour, empty tabs, resizing and section Back. No orphaned overlay or scroll lock remains. Visiting help does not change the selected radio. |\n| A37 | Source factsheets | All 59 formations retain availability, scope and document information. Missing programmes are described honestly. There is no add, compare or topic-browser action. External references are concise, and search and focus are restored. |\n| A38 | End-to-end visual critique | Complete eight connected flows, review screenshots and animation frames, answer the five comprehension questions for each state, and audit dead code. No P0/P1 defect remains open, and no known core UX failure is hidden as P2. Historical evidence is not new acceptance. |\n\nFor every case, record its status, applicable N tasks, exact sequence and viewport, assertions, relevant screenshot or motion evidence, observed defects and corrections. A retained arithmetic test can substantiate arithmetic, but cannot complete acceptance of a changed source panel or result layout. Visual review must include missing and long content, not only major parties and short citations.\n\nDisposition of the previous A cases: retain and rerun A01–A08, A14, A19 and A21–A28 against the new surfaces. Replace A09–A13, A15–A18, A20 and A29–A38 as specified above. A29 and A35 now test the absence of explicitly retired actions alongside the retained privacy and recovery invariants. Source-return tests replace the former full-page and no-inert requirements with the modal contract. This is an owner-authorized behaviour change, not weaker verification."
     }
   ],
   "flows": [
@@ -342,7 +342,7 @@
               "retains": "same formation/outer panel"
             },
             {
-              "label": "Sin datos claros",
+              "label": "Sin datos",
               "target": "unknowns",
               "retains": "same formation/outer panel"
             },
@@ -1132,7 +1132,7 @@
       "subject": "Validate sketches and build the shared modal and motion foundation",
       "dependsOn": [],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Render wide and narrow sketches using real data for programme slots, comparison, sources, results and the method explanation. Critique each connected slice before coding it.",
@@ -1144,6 +1144,10 @@
       ],
       "verification": [
         "A11/A23/A24/A36; inspect actual captures and animation frames, and run the affected browser, type and build checks."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1153,7 +1157,7 @@
         "N001"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide two required slots and an optional third slot, using one native choice picker with local search across all 59 formations.",
@@ -1165,6 +1169,10 @@
       ],
       "verification": [
         "A03/A04/A08/A11/A24; critique sketches of the initial path requiring five actions."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1174,7 +1182,7 @@
         "N002"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide an always-visible query that searches proposal text, help and category names, with visible category labels, accurate counts, a no-results state and an action that appends six more proposals.",
@@ -1186,6 +1194,10 @@
       ],
       "verification": [
         "A02/A09/A12/A13/A29/A30/A32; verify that the source bank remains unchanged."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1196,7 +1208,7 @@
         "N003"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Use shared comparison rows, optional inline quotations that preserve the exact source text, and natural reflow on narrow screens.",
@@ -1208,6 +1220,10 @@
       ],
       "verification": [
         "A05/A06/A07/A10/A11/A13/A22/A24/A27; inspect screenshots and motion using real quotations."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1217,7 +1233,7 @@
         "N001"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Derive group counts for numeric answers using the existing relationship and profilePosition functions, without changing scoring.",
@@ -1229,6 +1245,10 @@
       ],
       "verification": [
         "A14/A17/A31/A33/A34; use meaningful fixtures for the pure presentation adapter and run the unchanged engine suite."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1239,7 +1259,7 @@
         "N005"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide a responsive grid containing all 59 formations, optional name search, one Detalle action per formation, and the shared panel with its chart and three tabs.",
@@ -1251,6 +1271,10 @@
       ],
       "verification": [
         "A14/A15/A16/A17/A24/A29/A30/A31/A34/A36."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1260,7 +1284,7 @@
         "N006"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide Download and one context-sensitive Continue or Restart action. Retain local export formats and safe confirmation.",
@@ -1272,6 +1296,10 @@
       ],
       "verification": [
         "A01/A17/A18/A25/A30/A35; retain the existing quiz keyboard, motion, release and export tests."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1282,7 +1310,7 @@
         "N005"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide three steps, a five-mark example that changes from 40/40 to 40/80 using one switch, and a panel with the exact calculation.",
@@ -1294,6 +1322,10 @@
       ],
       "verification": [
         "A19/A20/A23/A24/A27/A33; critique the actual desktop and mobile copy."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1306,7 +1338,7 @@
         "N008"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Provide read-only source factsheets for all 59 formations and concise help, privacy and accessibility content, without language describing retired flows.",
@@ -1318,6 +1350,10 @@
       ],
       "verification": [
         "A02/A21/A22/A23/A25/A26/A27/A37."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1327,7 +1363,7 @@
         "N009"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Delete unreachable modes and obsolete snapshot, reader, filter and result state, along with their unused CSS, translation keys, listeners and test helpers.",
@@ -1339,6 +1375,10 @@
       ],
       "verification": [
         "A12/A27/A28/A29/A35/A38; search references and run lint, type checks and affected tests."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1348,7 +1388,7 @@
         "N010"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Record fresh, versioned F01–F08 and A01–A38 walkthroughs, actual screenshot and animation-frame reviews across the required matrix, a privacy trace, and hash and parity results.",
@@ -1360,6 +1400,10 @@
       ],
       "verification": [
         "All A cases; run the required browser, PHP, engine, tooling, asset and security checks."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     },
     {
@@ -1369,7 +1413,7 @@
         "N011"
       ],
       "size": "small",
-      "status": "planned",
+      "status": "completed",
       "phase": "active_v2",
       "deliverables": [
         "Update active statuses, the local review packet, the managed plan, command evidence and limitations. Leave the application working locally.",
@@ -1381,6 +1425,10 @@
       ],
       "verification": [
         "Run npm run docs:build and npm run check:plans. Run python3 scripts/check-staged.py before every commit."
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-flow-redesign-application-verification.json",
+        "work/execution-journal.jsonl"
       ]
     }
   ],
@@ -1417,10 +1465,11 @@
     "privateStateLocation": "memory_only"
   },
   "implementationLimits": [
-    "Planning only in this turn; no application code, bank, dependencies or public actions changed.",
-    "N001–N012 and revised acceptance require future real-application work; historical U/prototype evidence cannot complete them.",
-    "Exact political data, common 2023 programme scope and calculation remain immutable.",
-    "No recruited study,owner satisfaction, production privacy, public launch or performance certification claimed."
+    "Local agent inspection is not owner acceptance or an assistive-technology/user-study certification.",
+    "Only installed Chromium tested; no native WebKit/Firefox coverage.",
+    "Native400% zoom inspection is bounded to method; source/detail panels have separately identified equivalent reflow and200% text evidence.",
+    "Live original-source availability and production hosting/privacy/performance are not certified by this UI change.",
+    "No push, deployment, collection, new branch/worktree or dependency change."
   ],
   "preparationMaintenance": [
     {
@@ -1446,7 +1495,7 @@
     "B10"
   ],
   "referenceResearchSha256": "2d2f8c7d16126f3c67da447a073ec403203888e75ba66cf7b1323936511ad354",
-  "applicationVerification": "outputs/ui-ux-cleanup-application-verification.json",
+  "applicationVerification": "outputs/ui-ux-flow-redesign-application-verification.json",
   "preparationImplementationLimits": [
     "No production application changes in the planning/prototype increment.",
     "No re-authorship of the bank or new source acquisition required for this UI plan.",
@@ -1454,9 +1503,9 @@
     "Prototype inspection proves selected local flows, not completion of every site task or broad usability.",
     "Reference additions remain planned. Original prototype/report do not verify them; foreign tools supply UX context only, never electoral positions."
   ],
-  "localAcceptanceComplete": false,
-  "implementationBaselineCommit": "000d96c",
-  "applicationVerificationSha256": "560c28231394ce1772a01ae0c99c756187968656f00e7918f7edfbbf663252fd",
+  "localAcceptanceComplete": true,
+  "implementationBaselineCommit": "dfc7a3d",
+  "applicationVerificationSha256": "f794267308a4b8ad2c5500dc6f2fbece9d191b7854e2deac621f374c6eee36e8",
   "ownerAcceptanceConfirmed": false,
   "activeTaskIds": [
     "N001",
@@ -1473,8 +1522,8 @@
     "N012"
   ],
   "acceptanceRevision": "ui-ux-cleanup-2023-v2.0.0",
-  "acceptanceStatus": "pending_application_implementation",
-  "planningOnly": true,
+  "acceptanceStatus": "accepted_local",
+  "planningOnly": false,
   "historicalImplementation": {
     "planVersion": "ui-ux-cleanup-2023-v1.1.0",
     "completedThroughCommit": "000d96c",
@@ -1516,5 +1565,6 @@
     "reason": "Owner rejected the previous comparison/citation experience as unappealing and unfinished. Prior automated/local acceptance is historical evidence, not owner approval."
   },
   "plannedApplicationVerification": "outputs/ui-ux-flow-redesign-application-verification.json",
-  "applicationVerificationScope": "historical_v1_1_not_active_revision_acceptance"
+  "applicationVerificationScope": "active_v2_real_application",
+  "updatedAt": "2026-10-13T14:14:25.657106+00:00"
 }

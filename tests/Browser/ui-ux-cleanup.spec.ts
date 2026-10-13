@@ -1,7 +1,7 @@
 import { expect, test } from '@playwright/test';
 import type { Locator, Page } from '@playwright/test';
 import { createHash } from 'node:crypto';
-import { readFileSync } from 'node:fs';
+import { readFileSync, mkdirSync } from 'node:fs';
 import type { Bank } from '../../resources/js/matching.ts';
 
 const bytes = readFileSync('outputs/quiz-2023-second-iteration-bank.json');
@@ -10,49 +10,60 @@ const sha = createHash('sha256').update(bytes).digest('hex');
 const name = (id: string) => bank.programmeProfiles!.find(profile => profile.candidacyId === id)!.name;
 const question = (id: string) => bank.questions.find(proposal => proposal.id === id)!;
 const comparison = (page: Page, id: string) => page.locator('.comparison-proposal[data-question-id="' + id + '"]:visible');
-const reader = (page: Page) => page.locator('.programme-reader:visible');
+const panel = (page: Page, kind: string) => page.locator('dialog[data-panel-kind="' + kind + '"]:visible');
+const slot = (page: Page, index: number) => page.locator('.programme-slot[data-slot-index="' + index + '"]');
 const resultRow = (page: Page, id: string) => page.locator('.affinity-row[data-profile-id="' + id + '-p1"]');
-if (process.env.ITERATION_REAL_URL) test.use({ baseURL: process.env.ITERATION_REAL_URL });
+const proposalSearch = (page: Page) => page.getByRole('searchbox', { name: 'Buscar una propuesta o un tema', exact: true });
+test.use({ baseURL: process.env.ITERATION_REAL_URL ?? 'http://127.0.0.1:8768' });
 test.use({ reducedMotion: 'reduce' });
 
 test.beforeEach(async ({ page }) => {
     if (!process.env.ITERATION_REAL_URL) await page.route('**/api/bank', route => route.fulfill({ body: bytes, contentType: 'application/json', headers: { 'X-Evidence-Sha256': sha } }));
 });
 
-async function selectProgrammes(page: Page, ids: string[]) {
-    for (const id of ids) await page.getByRole('checkbox', { name: name(id), exact: true }).check();
-    await page.getByRole('button', { name: 'Comparar ' + ids.length + ' programas', exact: true }).click();
+async function chooseProgramme(page: Page, index: number, id: string) {
+    const labels = ['Elegir primer programa', 'Elegir segundo programa', 'Añadir tercero'];
+    await page.getByRole('button', { name: labels[index], exact: true }).click();
+    await panel(page, 'picker').getByRole('button', { name: name(id), exact: true }).click();
+    await expect(panel(page, 'picker')).toHaveCount(0);
+    await expect(slot(page, index)).toContainText(name(id));
 }
-async function completeStarter(page: Page, answers: Record<string, string> = {}) {
+async function selectProgrammes(page: Page, ids: string[]) {
+    for (const [index, id] of ids.entries()) await chooseProgramme(page, index, id);
+    await page.getByRole('button', { name: 'Comparar programas', exact: true }).click();
+    await expect(page.locator('.comparison-proposal')).toHaveCount(6);
+}
+async function completeStarter(page: Page, answers: Record<string, string> = {}, defaultAnswer = 'Muy de acuerdo') {
     await page.goto('/questionnaire');
     await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
     for (let index = 0; index < 20; index++) {
         const id = (await page.locator('.quiz-card').getAttribute('data-question-id'))!;
-        await page.locator('.quiz-card').getByRole('radio', { name: answers[id] ?? (id === 'rent-price-cap' ? 'Muy en desacuerdo' : 'Muy de acuerdo'), exact: true }).click();
+        await page.locator('.quiz-card').getByRole('radio', { name: answers[id] ?? (id === 'rent-price-cap' && defaultAnswer === 'Muy de acuerdo' ? 'Muy en desacuerdo' : defaultAnswer), exact: true }).click();
         await expect(page.locator('.quiz-card[data-question-id="' + id + '"]')).toHaveCount(0);
     }
     await page.getByRole('button', { name: 'Ver mi resultado', exact: true }).click();
-    await expect(page.getByRole('heading', { name: 'Tus coincidencias con los programas de 2023', exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Tus resultados', exact: true })).toBeVisible();
 }
 async function findResult(page: Page, id: string) {
     await page.locator('.result-search input').fill(name(id));
     await expect(resultRow(page, id)).toBeVisible();
     return resultRow(page, id);
 }
-async function currentResultValues(page: Page) {
-    return page.locator('.affinity-row').evaluateAll(rows => rows.map(row => ({ id: (row as HTMLElement).dataset.profileId, value: row.querySelector('.affinity-value')?.textContent })));
-}
-async function expectInteractiveFocus(page: Page) {
-    await expect.poll(() => page.evaluate(() => document.activeElement?.matches('a[href],button,input,select,textarea,summary'))).toBe(true);
-}
 async function sourceAction(row: Locator) {
     return row.getByRole('button', { name: /Ver fuente/ }).first();
 }
-async function openWorkspaceTools(page: Page) {
-    const tools = page.locator('.comparison-tools');
-    if (!await tools.evaluate(node => (node as HTMLDetailsElement).open)) await tools.locator('summary').click();
+async function proposalIds(page: Page) {
+    return page.locator('.comparison-proposal').evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.questionId));
+}
+async function currentResultValues(page: Page) {
+    return page.locator('.affinity-row').evaluateAll(rows => rows.map(row => ({ id: (row as HTMLElement).dataset.profileId, value: row.querySelector('.affinity-value')?.textContent })));
+}
+async function expectMemoryOnly(page: Page) {
+    expect(await page.evaluate(async () => ({ search: location.search, hash: location.hash, history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases() }))).toEqual({ search: '', hash: '', history: null, local: [], session: [], databases: [] });
 }
 
+// These regressions exercise the owner-approved v2 flows; the retired topic browser,
+// comparison transfer and single-answer review no longer describe public behavior.
 test('A01: the home offers test and programme tasks above the fold on mobile and MacBook', async ({ page }) => {
     for (const viewport of [{ width: 390, height: 844 }, { width: 1280, height: 720 }]) {
         await page.setViewportSize(viewport);
@@ -67,11 +78,9 @@ test('A01: the home offers test and programme tasks above the fold on mobile and
 });
 
 test('A02: browser history restores programme and method aliases after opening privacy', async ({ page }) => {
-    for (const [path, heading] of [['/comparison', '¿Qué programas quieres comparar?'], ['/method', 'Cómo funciona']]) {
-        await page.goto('/comparison');
-        await expect(page.getByRole('button', { name: 'Comparar 0 programas', exact: true })).toBeDisabled();
-        if (path === '/method') await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cómo funciona', exact: true }).click();
-        await expect(page.locator('#app').getByRole('heading', { name: heading, exact: true })).toBeVisible();
+    for (const path of ['/comparison', '/method']) {
+        await page.goto(path);
+        const heading = await page.locator('#app h2:visible').first().textContent();
         await page.evaluate(alias => history.replaceState(null, '', alias), path);
         await page.locator('.site-footer').getByRole('link', { name: 'Privacidad', exact: true }).click();
         await expect(page.locator('#app').getByRole('heading', { name: 'Tus respuestas se quedan contigo', exact: true })).toBeVisible();
@@ -79,7 +88,7 @@ test('A02: browser history restores programme and method aliases after opening p
         await page.goBack();
 
         await expect(page).toHaveURL(new RegExp(path + '$'));
-        await expect(page.locator('#app').getByRole('heading', { name: heading, exact: true })).toBeVisible();
+        await expect(page.locator('#app h2:visible').first()).toHaveText(heading!);
         await page.goForward();
         await expect(page.locator('#app').getByRole('heading', { name: 'Tus respuestas se quedan contigo', exact: true })).toBeVisible();
     }
@@ -99,477 +108,521 @@ test('A02 A21: practical notices return to the live question without revealing o
     }
 });
 
-test('A03 A04 A08: searching minor formations keeps native selection and cancelling replacement restores the workspace', async ({ page }) => {
+test('A03 A04 A08: slots choose one formation at a time, defer the third and require explicit comparison', async ({ page }) => {
     await page.goto('/comparison');
-    await expect(page.getByRole('checkbox')).toHaveCount(59);
-    await expect(page.getByRole('checkbox', { checked: true })).toHaveCount(0);
-    await page.getByRole('checkbox', { name: name('boe-2023-001'), exact: true }).check();
-    const search = page.getByRole('searchbox', { name: 'Buscar una formación', exact: true });
+    await expect(page.getByRole('button', { name: 'Comparar programas', exact: true }).and(page.locator(':enabled'))).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Añadir tercero', exact: true })).toHaveCount(0);
+    await expect(page.locator('.comparison-proposal')).toHaveCount(0);
+    await chooseProgramme(page, 0, 'boe-2023-001');
+    await expect(page.getByRole('button', { name: 'Añadir tercero', exact: true })).toHaveCount(0);
+    await expect(page.getByRole('button', { name: 'Comparar programas', exact: true }).and(page.locator(':enabled'))).toHaveCount(0);
+    await page.getByRole('button', { name: 'Elegir segundo programa', exact: true }).click();
+    const picker = panel(page, 'picker');
+    const search = picker.getByRole('searchbox', { name: 'Buscar una formación', exact: true });
+    await expect(picker.locator('[data-profile-id]')).toHaveCount(59);
+    const collator = new Intl.Collator('es');
+    const alphabeticalProfiles = [...bank.programmeProfiles!].sort((first, second) => collator.compare(first.name, second.name));
+    expect(await picker.locator('[data-profile-id]').evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.profileId))).toEqual(alphabeticalProfiles.map(profile => profile.id));
+    await expect(picker.locator('[data-profile-id="boe-2023-001-p1"]')).toContainText('Ya elegido');
+    await expect(picker.locator('[data-profile-id="boe-2023-001-p1"]').getByRole('button')).toHaveCount(0);
     await search.fill('fuerza civica');
     await expect(search).toBeFocused();
-    await page.getByRole('checkbox', { name: name('boe-2023-059'), exact: true }).check();
-    await search.fill('');
-    await expect(page.getByRole('checkbox', { name: name('boe-2023-001'), exact: true })).toBeChecked();
-    await page.getByRole('checkbox', { name: name('boe-2023-005'), exact: true }).check();
-    const fourth = page.getByRole('checkbox', { name: name('boe-2023-004'), exact: true });
-    if (await fourth.isEnabled()) await fourth.click();
-    await expect(fourth).not.toBeChecked();
-    await expect(page.getByRole('checkbox', { checked: true })).toHaveCount(3);
-    await expect(page.locator('#app')).toContainText('Quita una');
-    await page.getByRole('button', { name: 'Comparar 3 programas', exact: true }).click();
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('housing');
+    await picker.getByRole('button', { name: name('boe-2023-059'), exact: true }).click();
+    await expect(slot(page, 1)).toContainText(name('boe-2023-059'));
+    await expect(page.getByRole('button', { name: 'Añadir tercero', exact: true })).toBeEnabled();
+    await expect(page.locator('.comparison-proposal')).toHaveCount(0);
+    await chooseProgramme(page, 2, 'boe-2023-005');
+    await expect(page.getByRole('button', { name: 'Añadir tercero', exact: true })).toHaveCount(0);
+    await expect(page.locator('.programme-slot')).toHaveCount(3);
+
+    await page.getByRole('button', { name: 'Comparar programas', exact: true }).click();
+
+    await expect(page.locator('.comparison-proposal')).toHaveCount(6);
     await expect(comparison(page, 'rent-price-cap')).toContainText('No hemos encontrado su programa común de 2023');
-    const snapshot = await comparison(page, 'rent-price-cap').textContent();
-    await page.getByRole('button', { name: 'Cambiar programas', exact: true }).click();
-    await page.getByRole('checkbox', { name: name('boe-2023-005'), exact: true }).uncheck();
-    await page.getByRole('checkbox', { name: name('boe-2023-004'), exact: true }).check();
-    await page.getByRole('button', { name: 'Volver sin cambiar', exact: true }).click();
-    await expect(comparison(page, 'rent-price-cap')).toHaveText(snapshot!);
-    await expect(page.getByRole('button', { name: 'Cambiar programas', exact: true })).toBeFocused();
+    await page.getByRole('button', { name: 'Cambiar: ' + name('boe-2023-005'), exact: true }).click();
+    await panel(page, 'picker').getByRole('button', { name: 'Quitar: ' + name('boe-2023-005'), exact: true }).click();
+    await expect(comparison(page, 'rent-price-cap').locator('.comparison-cell')).toHaveCount(2);
+    await page.getByRole('button', { name: 'Cambiar: ' + name('boe-2023-001'), exact: true }).click();
+    await expect(panel(page, 'picker').getByRole('button', { name: /^Quitar:/ })).toHaveCount(0);
+    await page.keyboard.press('Escape');
 });
 
-test('A05 A07 A31: qualified values count as differences and missing information remains an independent view', async ({ page }) => {
+test('A04 A08: closing a replacement cancels its query while a confirmed choice changes only its slot', async ({ page }) => {
+    await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
+    await proposalSearch(page).fill('alquiler');
+    const proposal = comparison(page, 'rent-price-cap');
+    await proposal.getByRole('button', { name: 'Mostrar citas', exact: true }).click();
+    const before = await proposal.textContent();
+    const opener = page.getByRole('button', { name: 'Cambiar: ' + name('boe-2023-001'), exact: true });
+    for (const close of ['button', 'escape']) {
+        await opener.click();
+        const picker = panel(page, 'picker');
+        await expect(picker.getByRole('heading', { name: 'Cambiar: ' + name('boe-2023-001'), exact: true })).toBeVisible();
+        await expect(picker.locator('[data-profile-id="boe-2023-001-p1"]')).toContainText('Actual');
+        const lastFormation = picker.locator('[data-profile-id]').last(); await lastFormation.scrollIntoViewIfNeeded();
+        await expect(lastFormation).toBeInViewport();
+        const search = picker.getByRole('searchbox', { name: 'Buscar una formación', exact: true });
+        await expect(search).toBeInViewport({ ratio: 1 });
+        await search.click(); await search.fill('PSOE');
+        await expect(search).toBeFocused();
+        if (close === 'button') await picker.getByRole('button', { name: 'Cerrar', exact: true }).click();
+        else await page.keyboard.press('Escape');
+        await expect(opener).toBeFocused(); await expect(proposal).toHaveText(before!);
+        await expect(proposalSearch(page)).toHaveValue('alquiler');
+    }
+    await opener.click();
+    await expect(panel(page, 'picker').getByRole('searchbox')).toHaveValue('');
+
+    await panel(page, 'picker').getByRole('button', { name: name('boe-2023-002'), exact: true }).click();
+
+    await expect(slot(page, 0)).toContainText(name('boe-2023-002'));
+    await expect(slot(page, 1)).toContainText(name('boe-2023-004'));
+    await expect(proposalSearch(page)).toHaveValue('alquiler');
+    await expect(proposal.getByRole('button', { name: 'Ocultar citas', exact: true })).toHaveAttribute('aria-expanded', 'true');
+    await expect(proposal.locator('.comparison-cell')).toHaveCount(2);
+    await expect(page.getByRole('button', { name: 'Cambiar: ' + name('boe-2023-002'), exact: true })).toBeFocused();
+});
+
+test('A05 A07 A31: presentation keeps dental and mortgage conditions and treats unavailable programmes separately', async ({ page }) => {
     await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-002', 'boe-2023-004', 'boe-2023-005']);
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('health');
-    await openWorkspaceTools(page);
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption({ label: 'Diferencias' });
-    await expect(comparison(page, 'public-dental-care')).toBeVisible();
-    await expect(comparison(page, 'public-dental-care')).toContainText('75 años');
-    await expect(comparison(page, 'public-dental-care')).toContainText('No hemos encontrado su programa común de 2023');
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption({ label: 'Falta información' });
-    await expect(comparison(page, 'public-dental-care')).toBeVisible();
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('housing');
-    await expect(comparison(page, 'rent-price-cap')).toContainText(/Sin postura documentada|No podemos confirmar/);
-    await expect(comparison(page, 'rent-price-cap')).toContainText('Apoyo');
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption({ label: 'Todas' });
+    await proposalSearch(page).fill(question('public-dental-care').text);
+    const dental = comparison(page, 'public-dental-care');
+    await expect(dental).toContainText('75 años');
+    await expect(dental).toContainText('No hemos encontrado su programa común de 2023');
+    await proposalSearch(page).fill(question('public-young-home-mortgage-guarantees').text);
     const mortgage = comparison(page, 'public-young-home-mortgage-guarantees');
     await expect(mortgage).toContainText('20 %'); await expect(mortgage).toContainText('35 años'); await expect(mortgage).toContainText('primera vivienda habitual');
+    await proposalSearch(page).fill(question('rent-price-cap').text);
+    const rent = comparison(page, 'rent-price-cap');
+    await expect(rent.locator('[data-profile-id="boe-2023-002-p1"] .stance')).toHaveText('No podemos confirmar su postura sobre esta propuesta.');
+    await expect(rent.locator('[data-profile-id="boe-2023-004-p1"] .stance')).toHaveText('Apoyo a la propuesta');
 });
 
-test('A13 A31: two unknown programmes never become an agreement or a documented difference', async ({ page }) => {
+test('A13 A31: two unavailable programmes never become a documented agreement or opposition', async ({ page }) => {
     await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-005', 'boe-2023-015']);
-    await openWorkspaceTools(page);
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption({ label: 'Diferencias' });
-    await expect(page.locator('.comparison-proposal:visible')).toHaveCount(0);
-    await expect(page.locator('#app')).toContainText('Puede faltar información');
-    await page.getByRole('button', { name: 'Ver todas las propuestas', exact: true }).click();
-    await expect(page.locator('.comparison-proposal:visible')).not.toHaveCount(0);
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption({ label: 'Falta información' });
-    await expect(page.locator('.comparison-proposal:visible')).not.toHaveCount(0);
+    const proposal = comparison(page, 'rent-price-cap');
+    await expect(proposal.locator('.comparison-cell')).toHaveCount(2);
+    for (const stance of await proposal.locator('.stance').all()) await expect(stance).not.toContainText(/Apoyo a la propuesta|Rechazo a la propuesta/);
+    for (const cell of await proposal.locator('.comparison-cell').all()) await expect(cell).toContainText(/No hemos encontrado|Sin postura documentada|No podemos confirmar/);
+    await expect(proposal.getByRole('button', { name: /Ver fuente/ })).toHaveCount(0);
 });
 
-test('A09 A11: six-proposal pages and source return keep topic, filter and semantic focus after resize', async ({ page }) => {
+test('A09 A32: category search appends six without duplicates and clearing restores the unfiltered loaded count', async ({ page }) => {
     await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('institutions');
-    await expect(page.locator('.comparison-proposal:visible')).toHaveCount(6);
-    await expect(page.locator('#app')).toContainText('1–6 de 15');
-    await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
-    await expect(page.locator('#app')).toContainText('7–12 de 15');
-    const row = page.locator('.comparison-proposal:visible').filter({ has: page.getByRole('button', { name: /Ver fuente/ }) }).first();
-    const id = (await row.getAttribute('data-question-id'))!;
-    const opener = await sourceAction(row); const identity = await opener.getAttribute('data-reader-origin'); await opener.click();
-    await expect(reader(page).locator('blockquote').first()).toBeVisible();
-    await reader(page).getByText('Leer el contexto original', { exact: true }).first().click();
-    await page.setViewportSize({ width: 390, height: 844 });
-    await reader(page).getByRole('button', { name: 'Volver a la comparación', exact: true }).click();
-    await expect(page.getByRole('combobox', { name: 'Tema', exact: true })).toHaveValue('institutions');
-    await expect(page.locator('#app')).toContainText('7–12 de 15');
-    await expect(comparison(page, id)).toBeVisible();
-    await expectInteractiveFocus(page);
-    await expect(page.locator('[data-reader-origin="' + identity + '"]:visible')).toBeFocused();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    expect(await proposalIds(page)).toEqual(bank.questions.slice(0, 6).map(item => item.id));
+    await page.getByRole('button', { name: 'Mostrar 6 más', exact: true }).click();
+    const firstTwelve = bank.questions.slice(0, 12).map(item => item.id);
+    expect(await proposalIds(page)).toEqual(firstTwelve);
+    const search = proposalSearch(page); await search.fill('  INSTITUCIONES   ');
+    await expect(search).toBeFocused();
+    const institutions = bank.questions.filter(item => item.topicId === 'institutions').map(item => item.id);
+    expect(await proposalIds(page)).toEqual(institutions.slice(0, 6));
+    await page.getByRole('button', { name: 'Mostrar 6 más', exact: true }).click();
+    expect(await proposalIds(page)).toEqual(institutions.slice(0, 12));
+    await page.getByRole('button', { name: 'Mostrar 6 más', exact: true }).click();
+    expect(await proposalIds(page)).toEqual(institutions);
+    await expect(comparison(page, 'single-national-congress-constituency')).toBeVisible();
+
+    await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click();
+
+    await expect(search).toHaveValue(''); await expect(search).toBeFocused();
+    expect(await proposalIds(page)).toEqual(firstTwelve);
+    await search.fill('  EDUCACION   ');
+    expect(await proposalIds(page)).toEqual(bank.questions.filter(item => item.topicId === 'education').slice(0, 6).map(item => item.id));
+    await search.fill('instituciones tramites');
+    await expect(comparison(page, 'keep-in-person-public-services')).toBeVisible();
+    await expect(comparison(page, 'rent-price-cap')).toHaveCount(0);
+
+    const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('es');
+    const expectedMatches = (query: string) => {
+        const terms = normalize(query).trim().split(/\s+/);
+        return bank.questions.filter(item => {
+            const topic = bank.topics.find(topic => topic.id === item.topicId)!.name;
+            const searchable = normalize([item.text, item.help ?? '', topic].join(' '));
+            return terms.every(term => searchable.includes(term));
+        }).map(item => item.id);
+    };
+    const inputNode = (await search.elementHandle())!;
+    for (const query of ['Sanidad', 'salud', 'dental', 'sanidad dental']) {
+        await search.fill(query);
+        await expect(search).toHaveValue(query); await expect(search).toBeFocused();
+        expect(await proposalIds(page)).toEqual(expectedMatches(query).slice(0, 6));
+        expect(await inputNode.evaluate(node => node.isConnected && node === document.activeElement)).toBe(true);
+    }
+
+    await search.dispatchEvent('compositionstart', { data: '' });
+    for (const value of ['sanidad d', 'sanidad dental']) {
+        await search.evaluate((node, value) => {
+            (node as HTMLInputElement).value = value;
+            node.dispatchEvent(new InputEvent('input', { bubbles: true, data: value, inputType: 'insertCompositionText', isComposing: true }));
+        }, value);
+        await expect(search).toHaveValue(value); await expect(search).toBeFocused();
+        expect(await inputNode.evaluate(node => node.isConnected && node === document.activeElement)).toBe(true);
+    }
+    await search.dispatchEvent('compositionend', { data: 'sanidad dental' });
+    await search.dispatchEvent('input', { data: 'sanidad dental', inputType: 'insertText', isComposing: false });
+    await expect(search).toHaveValue('sanidad dental'); await expect(search).toBeFocused();
+    expect(await proposalIds(page)).toEqual(expectedMatches('sanidad dental').slice(0, 6));
+    expect(await inputNode.evaluate(node => node.isConnected && node === document.activeElement)).toBe(true);
+    await inputNode.dispose();
 });
 
-test('A09 A32: workspace search spans topics, keeps selected programmes and returns to the original topic page without private traffic', async ({ page, context }) => {
+test('A09 A32: search recovery and source return preserve programmes without traffic or persistent state', async ({ page, context }) => {
     const requests: { url: string; method: string; body: string | null }[] = [];
     page.on('request', request => requests.push({ url: request.url(), method: request.method(), body: request.postData() }));
     await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
-    const topic = page.getByRole('combobox', { name: 'Tema', exact: true });
-    await topic.selectOption('institutions'); await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
-    const originalIds = await page.locator('.comparison-proposal').evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.questionId));
-    await openWorkspaceTools(page);
-    const search = page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true });
-
-    await search.fill('PSICOTERAPIA');
-
-    await expect(search).toBeFocused(); await expect(topic).toBeDisabled(); await expect(topic.locator('option:checked')).toHaveText('Todos los temas');
-    await expect(page.locator('.comparison-proposal')).toHaveCount(1);
-    const match = comparison(page, 'public-psychotherapy-care');
-    await expect(match).toBeVisible(); await expect(page.locator('#app')).toContainText('1–1 de 1');
-    expect(await match.locator('.comparison-cell').evaluateAll(cells => cells.map(cell => (cell as HTMLElement).dataset.profileId))).toEqual(['boe-2023-001-p1', 'boe-2023-004-p1']);
-    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true })).toHaveCount(0);
-    await expect(page.locator('.own-answer, .affinity-row')).toHaveCount(0);
-    const opener = match.getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true });
-    await opener.click(); await expect(reader(page).locator('blockquote').first()).toBeVisible();
-    await reader(page).getByRole('button', { name: 'Volver a la comparación', exact: true }).click();
-    await expect(search).toHaveValue('PSICOTERAPIA'); await expect(topic).toBeDisabled(); await expect(opener).toBeFocused();
-    await page.getByRole('combobox', { name: 'Mostrar', exact: true }).selectOption('differences');
-    await expect(page.locator('.comparison-proposal')).toHaveCount(0);
-    await expect(page.locator('#app')).toContainText('No hay propuestas que coincidan con la búsqueda y este filtro.');
-    await page.getByRole('button', { name: 'Quitar filtro', exact: true }).click();
-    await expect(search).toHaveValue('PSICOTERAPIA'); await expect(match).toBeVisible();
-    await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click();
-    await page.getByRole('button', { name: 'Siguiente', exact: true }).click();
-    await search.fill('zzzz-no-existent-workspace-proposal');
+    const search = proposalSearch(page); await search.fill('zzzz-no-existent-workspace-proposal');
     await expect(page.locator('#app')).toContainText('No encontramos propuestas con esas palabras.');
     await expect(page.locator('.comparison-proposal')).toHaveCount(0);
     await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click();
-    await expect(search).toHaveValue(''); await expect(search).toBeFocused(); await expect(topic).toBeEnabled(); await expect(topic).toHaveValue('institutions');
-    await expect(page.locator('#app')).toContainText('7–12 de 15');
-    expect(await page.locator('.comparison-proposal').evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.questionId))).toEqual(originalIds);
+    await expect(search).toHaveValue(''); await expect(search).toBeFocused();
+    await search.fill('PSICOTERAPIA');
+    const match = comparison(page, 'public-psychotherapy-care');
+    await expect(page.locator('.comparison-proposal')).toHaveCount(1);
+    expect(await match.locator('.comparison-cell').evaluateAll(cells => cells.map(cell => (cell as HTMLElement).dataset.profileId))).toEqual(['boe-2023-001-p1', 'boe-2023-004-p1']);
+    const opener = match.getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true });
+    await opener.click(); await expect(panel(page, 'source').locator('blockquote').first()).toBeVisible();
+    await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
+    await expect(search).toHaveValue('PSICOTERAPIA'); await expect(opener).toBeFocused();
+    await expect(page.locator('.own-answer, .affinity-row')).toHaveCount(0);
     expect(requests.filter(request => request.method !== 'GET' || request.body !== null)).toEqual([]);
     expect(requests.filter(request => /PSICOTERAPIA|no-existent-workspace-proposal|questionId=|profileId=|search=|selected=/i.test(request.url))).toEqual([]);
-    expect(await context.cookies()).toEqual([]);
-    expect(await page.evaluate(async () => ({ search: location.search, hash: location.hash, history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases() }))).toEqual({ search: '', hash: '', history: null, local: [], session: [], databases: [] });
+    expect(await context.cookies()).toEqual([]); await expectMemoryOnly(page);
 });
 
-test('A06 A10: two or three programmes use one proposal and stance per formation across desktop and mobile', async ({ page }) => {
+test('A06 A10: two or three programmes have one proposal and stance per formation on desktop and mobile', async ({ page }) => {
     for (const ids of [['boe-2023-001', 'boe-2023-004'], ['boe-2023-001', 'boe-2023-003', 'boe-2023-004']]) {
         for (const viewport of [{ width: 1280, height: 720 }, { width: 390, height: 844 }]) {
             await page.setViewportSize(viewport); await page.goto('/comparison'); await selectProgrammes(page, ids);
-            await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('energy');
-            const tools = page.locator('.comparison-tools');
-            await expect(tools).not.toHaveAttribute('open');
-            await expect(tools.locator('summary')).toHaveText('Buscar o filtrar propuestas');
-            await expect(tools.locator('input[type="search"]')).not.toBeVisible();
-            const proposals = page.locator('.comparison-proposal');
-            await expect(proposals).toHaveCount(6);
-            const proposalIds = await proposals.evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.questionId));
-            expect(new Set(proposalIds).size).toBe(6);
+            await expect(proposalSearch(page)).toBeVisible();
+            await expect(page.getByRole('combobox')).toHaveCount(0);
             const nuclear = comparison(page, 'extend-existing-nuclear');
             expect(await nuclear.evaluate(node => node.tagName)).toBe('ARTICLE');
             await expect(nuclear.locator('.comparison-cell')).toHaveCount(ids.length);
             await expect(nuclear.locator('.stance')).toHaveCount(ids.length);
             await expect(nuclear.locator('.rationale')).toHaveCount(ids.length);
             for (const id of ids) await expect(nuclear.getByRole('heading', { name: name(id), exact: true })).toHaveCount(1);
-            const geometry = await nuclear.evaluate(node => {
-                const header = node.querySelector('header')!.getBoundingClientRect();
-                const cells = [...node.querySelectorAll('.comparison-cell')].map(cell => { const box = cell.getBoundingClientRect(); return { x: box.x, y: box.y, right: box.right }; });
-                return { headerWidth: header.width, cells };
-            });
-            for (let index = 1; index < geometry.cells.length; index++) {
-                if (viewport.width > 1000) {
-                    expect(geometry.cells[index].y).toBeCloseTo(geometry.cells[0].y, 0);
-                    expect(geometry.cells[index].x).toBeGreaterThan(geometry.cells[index - 1].x);
-                } else {
-                    expect(geometry.cells[index].x).toBeCloseTo(geometry.cells[0].x, 0);
-                    expect(geometry.cells[index].y).toBeGreaterThan(geometry.cells[index - 1].y);
-                }
+            const cells = await nuclear.locator('.comparison-cell').evaluateAll(nodes => nodes.map(node => { const box = node.getBoundingClientRect(); return { x: box.x, y: box.y }; }));
+            for (let index = 1; index < cells.length; index++) {
+                if (viewport.width > 1000) { expect(cells[index].y).toBeCloseTo(cells[0].y, 0); expect(cells[index].x).toBeGreaterThan(cells[index - 1].x); }
+                else { expect(cells[index].x).toBeCloseTo(cells[0].x, 0); expect(cells[index].y).toBeGreaterThan(cells[index - 1].y); }
             }
-            expect(geometry.headerWidth).toBeGreaterThanOrEqual(geometry.cells.at(-1)!.right - geometry.cells[0].x - 1);
             expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
         }
     }
 });
 
-test('A05 A11: keyboard citation comparison preserves unknown positions and all three exact quotes through source return', async ({ page }) => {
+test('A05 A11: keyboard quote expansion preserves all exact literals, alignment and unknown positions through source return', async ({ page }) => {
     const ids = ['boe-2023-001', 'boe-2023-002', 'boe-2023-004'];
+    await page.setViewportSize({ width: 1280, height: 720 });
     await page.goto('/comparison'); await selectProgrammes(page, ids);
     const proposal = comparison(page, 'rent-price-cap');
     const summaries = await proposal.locator('.rationale').allTextContents();
     const reveal = proposal.getByRole('button', { name: 'Mostrar citas', exact: true });
     await expect(reveal).toHaveAttribute('aria-expanded', 'false');
-    await expect(proposal.locator('.comparison-quotes:visible')).toHaveCount(0);
-
     await reveal.focus(); await page.keyboard.press('Enter');
-
     const hide = proposal.getByRole('button', { name: 'Ocultar citas', exact: true });
     await expect(hide).toBeFocused(); await expect(hide).toHaveAttribute('aria-expanded', 'true');
     await expect(proposal.locator('.comparison-quotes:visible')).toHaveCount(3);
     expect((await hide.getAttribute('aria-controls'))!.split(' ')).toEqual(await proposal.locator('.comparison-quotes').evaluateAll(quotes => quotes.map(quote => quote.id)));
-    for (const id of ids) {
-        const cell = proposal.locator('.comparison-cell[data-profile-id="' + id + '-p1"]');
-        await expect(cell.locator('.comparison-quotes blockquote')).toHaveText(bank.positions[id]['rent-price-cap'].citations.map(citation => citation.quote));
-        await expect(cell.locator('.stance')).toHaveText(id === 'boe-2023-004' ? 'Apoyo a la propuesta' : 'Sin postura documentada');
-        await expect(cell.locator('.rationale')).toBeVisible();
-    }
+    for (const id of ids) await expect(proposal.locator('.comparison-cell[data-profile-id="' + id + '-p1"] .comparison-quotes blockquote')).toHaveText(bank.positions[id]['rent-price-cap'].citations.map(citation => citation.quote));
+    const starts = await proposal.locator('.comparison-quotes').evaluateAll(nodes => nodes.map(node => node.getBoundingClientRect().top));
+    for (const start of starts) expect(start).toBeCloseTo(starts[0], 0);
     const opener = proposal.getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true });
-    await opener.click(); await reader(page).getByText('Leer el contexto original', { exact: true }).first().click();
-    await expect(reader(page).locator('.literal-source details blockquote').first()).toHaveText(bank.positions['boe-2023-004']['rent-price-cap'].citations[0].context);
-    await reader(page).getByRole('button', { name: 'Volver a la comparación', exact: true }).click();
+    await opener.click();
+    await expect(panel(page, 'source').locator('.literal-source blockquote')).toHaveText(bank.positions['boe-2023-004']['rent-price-cap'].citations.map(citation => citation.quote));
+    await page.setViewportSize({ width: 390, height: 844 });
+    await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
     await expect(opener).toBeFocused(); await expect(hide).toHaveAttribute('aria-expanded', 'true');
-    await expect(proposal.locator('.comparison-quotes:visible')).toHaveCount(3);
-    expect(await proposal.locator('.rationale').allTextContents()).toEqual(summaries);
-    await page.getByRole('button', { name: 'Cambiar programas', exact: true }).click();
-    await page.getByRole('checkbox', { name: name('boe-2023-001'), exact: true }).uncheck();
-    await page.getByRole('button', { name: 'Volver sin cambiar', exact: true }).click();
-    await expect(hide).toHaveAttribute('aria-expanded', 'true');
-    await expect(proposal.locator('.comparison-quotes:visible')).toHaveCount(3);
     await expect(proposal.locator('.rationale')).toHaveText(summaries);
     await hide.focus(); await page.keyboard.press('Space');
     await expect(reveal).toBeFocused(); await expect(reveal).toHaveAttribute('aria-expanded', 'false');
     await expect(proposal.locator('.comparison-quotes:visible')).toHaveCount(0);
-    await expect(proposal.locator('.rationale')).toHaveText(summaries);
 });
 
-test('A11: opening a source shows its exact quotation before the interpretation without an extra scroll', async ({ page }) => {
+test('A11: the source modal presents the exact quote first and closes without expanding inline quotes', async ({ page }) => {
     const citation = bank.positions['boe-2023-004']['rent-price-cap'].citations[0];
     for (const viewport of [{ width: 1280, height: 720 }, { width: 390, height: 844 }]) {
         await page.setViewportSize(viewport); await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
-        const opener = comparison(page, 'rent-price-cap').getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true });
-
+        const proposal = comparison(page, 'rent-price-cap');
+        const opener = proposal.getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true });
         await opener.click();
-
-        const source = reader(page); const quote = source.locator('.literal-source > blockquote').first();
-        await expect(source.getByRole('heading', { name: question('rent-price-cap').text, exact: true })).toBeVisible();
+        const source = panel(page, 'source'); const quote = source.locator('.literal-source blockquote').first();
         await expect(quote).toHaveText(citation.quote); await expect(quote).toBeInViewport({ ratio: 0.9 });
-        const positions = await source.evaluate(node => ({ quote: node.querySelector('.literal-source > blockquote')!.getBoundingClientRect().top, interpretation: node.querySelector('.source-interpretation')!.getBoundingClientRect().top }));
-        expect(positions.quote).toBeLessThan(positions.interpretation);
-        await source.getByText('Leer el contexto original', { exact: true }).first().click();
-        await expect(source.locator('.literal-source details blockquote').first()).toHaveText(citation.context);
-        await source.getByRole('button', { name: 'Volver a la comparación', exact: true }).click();
-        await expect(opener).toBeFocused(); await expect(comparison(page, 'rent-price-cap')).toBeVisible();
+        await expect(source.getByText('Leer el contexto original', { exact: true })).toHaveCount(0);
+        await expect(source.locator('.source-interpretation')).toHaveCount(0);
+        await expect(source.getByRole('link').first()).toHaveAttribute('rel', 'noopener noreferrer');
+        await page.keyboard.press('Escape');
+        await expect(opener).toBeFocused();
+        await expect(proposal.getByRole('button', { name: 'Mostrar citas', exact: true })).toHaveAttribute('aria-expanded', 'false');
     }
 });
 
-test('A32: local proposal search has no-hit recovery and returns to its exact query and proposal opener', async ({ page, context }) => {
-    const requests: string[] = []; page.on('request', request => requests.push(request.url()));
-    await page.goto('/programmes'); await page.getByRole('button', { name: 'Buscar una propuesta', exact: true }).click();
-    const search = page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true });
-    await search.fill('zzzz-no-existent-proposal');
-    await expect(page.locator('#app')).toContainText('No encontramos');
-    await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click(); await expect(search).toHaveValue('');
-    await search.fill('PSICOTERAPIA');
-    const opener = page.getByRole('button', { name: question('public-psychotherapy-care').text, exact: true });
-    await opener.click(); await expect(page.locator('.position-row')).toHaveCount(6); await expect(page.locator('#app')).toContainText('59 formaciones');
-    await page.getByRole('button', { name: 'Volver a la búsqueda', exact: true }).click();
-    await expect(search).toHaveValue('PSICOTERAPIA'); await expect(opener).toBeFocused();
-    const privateState = await page.evaluate(async () => ({ search: location.search, hash: location.hash, history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases() }));
-    expect(privateState).toEqual({ search: '', hash: '', history: null, local: [], session: [], databases: [] });
-    expect(await context.cookies()).toEqual([]);
-    expect(requests.some(url => /PSICOTERAPIA|no-existent-proposal/i.test(url))).toBe(false);
+test('A11 A24: modal focus is contained, background geometry stays fixed and only a complete backdrop click cancels', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 720 });
+    await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
+    const opener = await sourceAction(comparison(page, 'rent-price-cap')); await opener.scrollIntoViewIfNeeded();
+    const before = await page.locator('#app').boundingBox(); const scroll = await page.evaluate(() => scrollY); const address = page.url();
+    await opener.click(); const source = panel(page, 'source');
+    await expect(page.getByRole('dialog')).toHaveCount(1); expect(page.url()).toBe(address);
+    const after = await page.locator('#app').boundingBox(); expect(after!.x).toBeCloseTo(before!.x, 0); expect(after!.width).toBeCloseTo(before!.width, 0);
+    for (let index = 0; index < 12; index++) { await page.keyboard.press('Tab'); expect(await page.evaluate(() => Boolean(document.activeElement?.closest('dialog')))).toBe(true); }
+    const box = (await source.boundingBox())!;
+    expect(box.x).toBeGreaterThan(8);
+    await page.mouse.move(box.x + 30, box.y + 70); await page.mouse.down(); await page.mouse.move(box.x - 5, box.y + 70); await page.mouse.up();
+    await expect(source).toBeVisible();
+
+    await page.mouse.click(box.x - 5, box.y + 70);
+
+    await expect(source).toHaveCount(0); await expect(opener).toBeFocused();
+    expect(await page.evaluate(() => scrollY)).toBeCloseTo(scroll, 0);
+    await expectMemoryOnly(page);
 });
 
-test('A29: explicitly chosen results enter the shared comparator and return with identical result context', async ({ page }) => {
+test('A11: multi-citation and longest literal quotes remain complete with natural height', async ({ page }) => {
+    await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-002', 'boe-2023-004']);
+    for (const [id, candidacyId] of [['birth-leave-at-least-six-months', 'boe-2023-002'], ['primary-care-doctors-work-until-seventy-two', 'boe-2023-004']]) {
+        await proposalSearch(page).fill(question(id).text);
+        const proposal = comparison(page, id); await proposal.getByRole('button', { name: 'Mostrar citas', exact: true }).click();
+        const quotes = proposal.locator('.comparison-cell[data-profile-id="' + candidacyId + '-p1"] blockquote');
+        await expect(quotes).toHaveText(bank.positions[candidacyId][id].citations.map(citation => citation.quote));
+        expect(await quotes.evaluateAll(nodes => nodes.every(node => node.scrollHeight <= node.clientHeight + 1))).toBe(true);
+        await proposal.getByRole('button', { name: 'Ver fuente: ' + name(candidacyId), exact: true }).click();
+        await expect(panel(page, 'source').locator('.literal-source blockquote')).toHaveText(bank.positions[candidacyId][id].citations.map(citation => citation.quote));
+        await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
+    }
+});
+
+test('A29: deliberate finish shows all 59 cards with one detail action and no selection transfer', async ({ page }) => {
     await completeStarter(page);
-    await (await findResult(page, 'boe-2023-001')).getByRole('checkbox').check();
-    await (await findResult(page, 'boe-2023-004')).getByRole('checkbox').check();
+    await expect(page.locator('.affinity-row')).toHaveCount(59);
+    for (const row of await page.locator('.affinity-row').all()) {
+        await expect(row.getByRole('button')).toHaveCount(1);
+        await expect(row.getByRole('button', { name: /^Detalle:/ })).toHaveCount(1);
+    }
+    await expect(page.locator('#app').getByRole('checkbox')).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Comparar|Ver todas|Revisar esta respuesta/ })).toHaveCount(0);
     const before = await currentResultValues(page);
-    const compare = page.getByRole('button', { name: 'Comparar programas', exact: true }); await compare.scrollIntoViewIfNeeded();
-    const scroll = await page.evaluate(() => window.scrollY); await compare.click();
-    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true })).not.toBeChecked();
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-    await expect(comparison(page, 'rent-price-cap').getByRole('button', { name: 'Ver fuente: ' + name('boe-2023-004'), exact: true })).toBeVisible();
-    await (await sourceAction(comparison(page, 'rent-price-cap'))).click();
-    await reader(page).getByRole('button', { name: 'Volver a la comparación', exact: true }).click();
-    await page.getByRole('button', { name: 'Volver a mis resultados', exact: true }).click();
-    await expect(page.locator('.result-search input')).toHaveValue(name('boe-2023-004'));
-    expect(await currentResultValues(page)).toEqual(before);
-    await expect(resultRow(page, 'boe-2023-004').getByRole('checkbox')).toBeChecked();
-    await expect(compare).toBeFocused();
-    await expect.poll(() => page.evaluate(() => window.scrollY)).toBeCloseTo(scroll, 0);
-});
-
-test('A30: an explicitly requested own-answer line distinguishes unsure, skipped and unasked proposals', async ({ page }) => {
-    await completeStarter(page, { 'rent-price-cap': 'No lo tengo claro', 'phase-out-prescription-copay': 'Prefiero no responder' });
-    await (await findResult(page, 'boe-2023-001')).getByRole('checkbox').check();
-    await (await findResult(page, 'boe-2023-004')).getByRole('checkbox').check();
-    await page.getByRole('button', { name: 'Comparar con mis respuestas', exact: true }).click();
-    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true })).toBeChecked();
-    await expect(comparison(page, 'rent-price-cap').locator('.own-answer')).toHaveText('Tu respuesta: No lo tengo claro');
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('health');
-    await expect(comparison(page, 'phase-out-prescription-copay').locator('.own-answer')).toHaveText('Tu respuesta: Prefiero no responder');
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('energy');
-    await expect(comparison(page, 'available-repair-parts').locator('.own-answer')).toHaveText('Tu respuesta: Esta pregunta no ha aparecido en tu test.');
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true }).uncheck();
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-    await openWorkspaceTools(page);
-    const search = page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true });
-    await search.fill(question('rent-price-cap').text);
-    await expect(comparison(page, 'rent-price-cap')).toBeVisible(); await expect(page.locator('.own-answer')).toHaveCount(0);
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true }).check();
-    await expect(search).toHaveValue(question('rent-price-cap').text);
-    await expect(comparison(page, 'rent-price-cap').locator('.own-answer')).toHaveText('Tu respuesta: No lo tengo claro');
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true }).uncheck();
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-});
-
-test('A30: hiding own answers remains effective when returning to the original proposal after changing comparison topic', async ({ page }) => {
-    await completeStarter(page);
-    await (await findResult(page, 'boe-2023-001')).getByRole('checkbox').check();
-    await (await findResult(page, 'boe-2023-004')).getByRole('checkbox').check();
-    await page.getByRole('button', { name: 'Comparar con mis respuestas', exact: true }).click();
-    await page.getByRole('button', { name: 'Ver temas', exact: true }).click();
-    await page.getByRole('button', { name: 'Vivienda', exact: true }).click();
-    const originalQuestion = question('rent-price-cap');
-    await page.getByRole('button', { name: originalQuestion.text, exact: true }).click();
-    await expect(page.locator('.own-answer')).toHaveText('Tu respuesta: Muy en desacuerdo');
-    await page.getByRole('button', { name: 'Comparar 2 programas', exact: true }).click();
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true }).uncheck();
-    await page.getByRole('combobox', { name: 'Tema', exact: true }).selectOption('health');
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-
-    await page.getByRole('button', { name: 'Volver a las posturas', exact: true }).click();
-
-    await expect(page.locator('#app').getByRole('heading', { name: originalQuestion.text, exact: true })).toBeVisible();
-    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true })).not.toBeChecked();
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-    await page.getByRole('button', { name: 'Comparar 2 programas', exact: true }).click();
-    await expect(page.getByRole('combobox', { name: 'Tema', exact: true })).toHaveValue('housing');
-    await expect(comparison(page, originalQuestion.id)).toBeVisible();
-    await expect(page.locator('.own-answer')).toHaveCount(0);
-});
-
-test('A34: switching result explanation category and reading its source returns to the original result opener', async ({ page }) => {
-    await completeStarter(page);
-    const row = await findResult(page, 'boe-2023-004');
-    const opener = row.getByRole('button', { name: 'En qué coincides', exact: true });
-    await opener.click();
-    await reader(page).getByRole('button', { name: 'En qué difieres', exact: true }).click();
-    await reader(page).locator('.result-example[data-question-id="rent-price-cap"]').getByRole('button', { name: /Ver fuente/ }).click();
-    await expect(reader(page).locator('blockquote').first()).toBeVisible();
-    await reader(page).getByRole('button', { name: 'Volver a las posiciones', exact: true }).click();
-    await expect(reader(page).getByRole('heading', { name: 'En qué difieres', exact: true })).toBeVisible();
-
-    await reader(page).getByRole('button', { name: 'Volver a resultados', exact: true }).click();
-
-    await expect(reader(page)).toHaveCount(0);
-    await expect(row).toBeVisible();
-    await expect(opener).toBeFocused();
-    await expect(page.locator('.result-search input')).toHaveValue(name('boe-2023-004'));
-});
-
-test('A35: reviewing one cited answer keeps the question set and requires a new deliberate result', async ({ page }) => {
-    await completeStarter(page);
-    await (await findResult(page, 'boe-2023-004')).getByRole('button', { name: 'En qué difieres', exact: true }).click();
-    await reader(page).locator('.result-example[data-question-id="rent-price-cap"]').getByRole('button', { name: 'Revisar esta respuesta', exact: true }).click();
-    await expect(page.locator('#app [data-question-id]')).toHaveCount(1);
-    await expect(page.locator('#app [data-question-id]')).toHaveAttribute('data-question-id', 'rent-price-cap');
-    await expect(page.locator('#app')).not.toContainText('Sumar');
-    await expect(page.locator('.affinity-row, .own-answer, .programme-reader:visible')).toHaveCount(0);
-    await page.getByRole('radio', { name: 'Muy de acuerdo', exact: true }).check();
-    await page.setViewportSize({ width: 390, height: 844 });
     await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
+    await expect(page.getByRole('button', { name: 'Elegir primer programa', exact: true })).toBeVisible();
+    await expect(page.locator('.own-answer, .affinity-row')).toHaveCount(0);
+    await page.goBack();
+    expect(await currentResultValues(page)).toEqual(before);
+});
+
+test('A30 A34: result tabs partition numeric answers and keep source return inside one panel', async ({ page }) => {
+    await completeStarter(page, { 'phase-out-prescription-copay': 'Prefiero no responder', 'birth-leave-at-least-six-months': 'No lo tengo claro' });
+    const row = await findResult(page, 'boe-2023-004'); const opener = row.getByRole('button', { name: 'Detalle: ' + name('boe-2023-004'), exact: true });
+    await opener.click(); const detail = panel(page, 'result');
+    await expect(detail.getByRole('tab')).toHaveCount(3);
+    await expect(detail.locator('[data-topic-id]')).toHaveCount(10);
+    await detail.getByRole('tab', { name: /^Coincides/ }).focus(); await page.keyboard.press('End');
+    await expect(detail.getByRole('tab', { name: /^Sin datos/ })).toBeFocused();
+    await expect(detail.getByRole('tab', { name: /^Sin datos/ })).toHaveAttribute('aria-selected', 'true');
+    await page.keyboard.press('Home'); await expect(detail.getByRole('tab', { name: /^Coincides/ })).toBeFocused();
+    const observed: string[] = [];
+    for (const tabName of [/^Coincides/, /^Difieres/, /^Sin datos/]) {
+        const tab = detail.getByRole('tab', { name: tabName }); await tab.click(); await expect(tab).toHaveAttribute('aria-selected', 'true');
+        const ids = await detail.getByRole('tabpanel').locator('.result-example').evaluateAll(nodes => nodes.map(node => (node as HTMLElement).dataset.questionId!));
+        const count = Number((await tab.textContent())!.match(/\d+/)![0]); expect(ids).toHaveLength(count); observed.push(...ids);
+    }
+    expect([...observed].sort()).toEqual(bank.starterQuestionIds!.filter(id => !['phase-out-prescription-copay', 'birth-leave-at-least-six-months'].includes(id)).sort());
+    expect(new Set(observed).size).toBe(18);
+    await detail.getByRole('tab', { name: /^Difieres/ }).click();
+    const rent = detail.locator('.result-example[data-question-id="rent-price-cap"]'); await expect(rent).toBeVisible();
+    const sourceOpener = rent.getByRole('button', { name: /Ver fuente/ }); await sourceOpener.scrollIntoViewIfNeeded();
+    const detailScroll = await detail.locator('.panel-body').evaluate(node => node.scrollTop);
+    await sourceOpener.click();
+    await expect(page.getByRole('dialog')).toHaveCount(1);
+    await expect(panel(page, 'source').locator('blockquote').first()).toHaveText(bank.positions['boe-2023-004']['rent-price-cap'].citations[0].quote);
+    await panel(page, 'source').getByRole('button', { name: 'Volver al detalle', exact: true }).click();
+    await expect(detail.getByRole('tab', { name: /^Difieres/ })).toHaveAttribute('aria-selected', 'true'); await expect(sourceOpener).toBeFocused();
+    expect(await detail.locator('.panel-body').evaluate(node => node.scrollTop)).toBeCloseTo(detailScroll, 0);
+    await sourceOpener.click(); await page.keyboard.press('Escape');
+    await expect(page.getByRole('dialog')).toHaveCount(0); await expect(opener).toBeFocused();
+    await expect(page.locator('.result-search input')).toHaveValue(name('boe-2023-004'));
+});
+
+test('A18 A30: result topic bars and tabs remain readable at 320 CSS pixels with 200 percent text', async ({ page }, info) => {
+    await completeStarter(page);
+    await (await findResult(page, 'boe-2023-004')).getByRole('button', { name: 'Detalle: ' + name('boe-2023-004'), exact: true }).click();
+    await page.setViewportSize({ width: 320, height: 900 });
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).fontSize)).toBe('32px');
+    const detail = panel(page, 'result'); const body = detail.locator('.panel-body');
+    const tracks = detail.locator('.topic-count-track');
+    await expect(tracks).toHaveCount(10);
+    for (const [index, track] of (await tracks.all()).entries()) {
+        await track.scrollIntoViewIfNeeded();
+        expect((await track.boundingBox())!.width).toBeGreaterThan(0);
+        await expect(track).toBeInViewport({ ratio: 1 });
+        if (process.env.ITERATION_CAPTURE && [0, 4, 9].includes(index)) {
+            const directory = 'outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration';
+            mkdirSync(directory, { recursive: true });
+            await page.screenshot({ path: directory + '/' + info.project.name + '-result-text-200-320csspx-topic-' + (index + 1) + '.png' });
+        }
+    }
+    expect(await body.evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
+    for (const tab of await detail.getByRole('tab').all()) {
+        await tab.focus();
+        await expect(tab).toBeFocused(); await expect(tab).toBeInViewport({ ratio: 1 });
+        const bounds = (await tab.boundingBox())!;
+        expect(bounds.x).toBeGreaterThanOrEqual(0); expect(bounds.x + bounds.width).toBeLessThanOrEqual(320);
+        await page.keyboard.press('Enter'); await expect(tab).toHaveAttribute('aria-selected', 'true');
+        expect(await body.evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
+    }
+    await detail.getByRole('tab').first().focus(); await page.keyboard.press('ArrowDown');
+    await expect(detail.getByRole('tab').nth(1)).toBeFocused();
+    await expect(detail.getByRole('tab').nth(1)).toHaveAttribute('aria-selected', 'true');
+    await page.keyboard.press('ArrowUp');
+    await expect(detail.getByRole('tab').first()).toBeFocused();
+    await expect(detail.getByRole('tab').first()).toHaveAttribute('aria-selected', 'true');
+    await page.keyboard.press('Escape'); await expect(detail).toHaveCount(0);
+});
+
+test('A30 A31: skipped and unsure answers create no personal bars and missing programmes stay unscored', async ({ page }) => {
+    await completeStarter(page, { 'rent-price-cap': 'Prefiero no responder' }, 'No lo tengo claro');
+    await expect(page.locator('.affinity-row')).toHaveCount(59);
+    const row = await findResult(page, 'boe-2023-005');
+    await expect(row).not.toContainText(/\d+\s*%/);
+    await row.getByRole('button', { name: 'Detalle: ' + name('boe-2023-005'), exact: true }).click();
+    const detail = panel(page, 'result');
+    await expect(detail.locator('[data-topic-id]')).toHaveCount(10);
+    await expect(detail).toContainText('Sin respuesta tuya');
+    for (const tab of await detail.getByRole('tab').all()) { await expect(tab).toContainText('0'); await tab.click(); await expect(detail.locator('.result-example:visible')).toHaveCount(0); }
+    await expect(detail).not.toContainText(/\d+\s*%/);
+});
+
+test('A35: continuing invalidates personal panels and results until another deliberate finish', async ({ page }) => {
+    await completeStarter(page);
+    await (await findResult(page, 'boe-2023-004')).getByRole('button', { name: 'Detalle: ' + name('boe-2023-004'), exact: true }).click();
+    await panel(page, 'result').getByRole('button', { name: 'Cerrar', exact: true }).click();
+    await page.getByRole('button', { name: 'Seguir contestando', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toBeVisible();
+    await expect(page.locator('.affinity-row, .own-answer, .result-example, dialog[data-panel-kind="result"]')).toHaveCount(0);
+    await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
+    await expect(page.locator('.own-answer, .affinity-row')).toHaveCount(0);
     await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas', exact: true })).toHaveCount(0);
     await page.goBack();
-    await expect(page.getByRole('radio', { name: 'Muy de acuerdo', exact: true })).toBeChecked();
-    await expect(page.locator('.affinity-row, .own-answer')).toHaveCount(0);
-    await page.getByRole('button', { name: 'Volver a ver mi resultado', exact: true }).click();
-    await expect(page.getByRole('heading', { name: 'Tus coincidencias con los programas de 2023', exact: true })).toBeVisible();
-    await page.getByRole('button', { name: 'Descargar mis resultados', exact: true }).click();
-    const pendingDownload = page.waitForEvent('download');
-    await page.getByRole('dialog').getByRole('button', { name: 'Descargar datos completos (JSON)', exact: true }).click();
-    const path = await (await pendingDownload).path();
-    const exported = JSON.parse(readFileSync(path!, 'utf8')) as { answers: Record<string, number>; answerDetails: { questionId: string }[] };
-    expect(exported.answerDetails.map(answer => answer.questionId)).toEqual(bank.starterQuestionIds);
-    expect(exported.answers).toEqual(Object.fromEntries(bank.starterQuestionIds!.map(id => [id, 2])));
+    await expect(page.locator('.quiz-card')).toBeVisible();
+    await expect(page.locator('.affinity-row, .result-example')).toHaveCount(0);
 });
 
-test('A20 A33 A36: keyboard explanations show equal totals with different agreements without changing a selected answer', async ({ page }) => {
+test('A20 A33 A36: the native teaching switch and calculation panel leave a selected quiz answer unchanged', async ({ page }) => {
     await page.goto('/questionnaire'); await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
     const id = await page.locator('.quiz-card').getAttribute('data-question-id');
     await page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true }).focus(); await page.keyboard.press('ArrowRight');
-    const meaning = page.locator('.quiz-card .question-help summary');
-    await meaning.focus(); await page.keyboard.press('Enter');
+    const meaning = page.locator('.quiz-card .question-help summary'); await meaning.focus(); await page.keyboard.press('Enter');
     await expect(page.locator('.quiz-card .question-help')).toHaveAttribute('open', '');
-    await expect(page.locator('.quiz-card')).not.toContainText('Sumar');
     await page.keyboard.press('Enter'); await expect(meaning).toBeFocused();
-    await expect(page.getByRole('radio', { name: 'En desacuerdo', exact: true })).toBeChecked();
     await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Cómo funciona', exact: true }).click();
-    const equal = page.getByRole('button', { name: 'Mismo total, distintas coincidencias', exact: true });
-    await equal.focus(); await page.keyboard.press('Enter');
-    await expect(equal).toBeFocused();
-    await expect(page.locator('.method-example')).toContainText('40 % de coincidencia y 80 % de información');
-    expect(await page.locator('.example-table tbody tr').allTextContents()).toEqual(['1CoincideDifiere', '2CoincideDifiere', '3DifiereCoincide', '4DifiereCoincide', '5Sin informaciónSin información']);
+    const information = page.getByRole('switch', { name: 'Añadir información al ejemplo', exact: true });
+    expect(await information.evaluate(node => node.tagName)).toBe('INPUT');
+    await expect(information).not.toBeChecked();
+    const example = page.locator('[data-method-example]:visible');
+    await expect(example.locator('[data-example-overlap]')).toHaveText('40 %');
+    await expect(example.locator('[data-example-coverage]')).toHaveText('40 %');
+    const height = (await example.boundingBox())!.height;
+    await information.focus(); await page.keyboard.press('Space');
+    await expect(information).toBeChecked(); await expect(information).toBeFocused();
+    await expect(example.locator('[data-example-overlap]')).toHaveText('40 %'); await expect(example.locator('[data-example-coverage]')).toHaveText('80 %');
+    expect((await example.boundingBox())!.height).toBeCloseTo(height, 0);
+    const calculation = page.getByRole('button', { name: 'Detalle del cálculo', exact: true }); await calculation.click();
+    await expect(panel(page, 'calculation')).toBeVisible(); await page.keyboard.press('Escape'); await expect(calculation).toBeFocused();
+    await expect(information).toBeChecked();
     await page.locator('[data-return-context]:visible').click();
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', id!);
     await expect(page.getByRole('radio', { name: 'En desacuerdo', exact: true })).toBeChecked();
 });
 
-test('A25: readable download is explicit, cancellable and stays local alongside searches and comparison choices', async ({ page, context }) => {
+for (const failure of ['unavailable', 'invalid-hash'] as const) {
+    for (const path of ['/method', '/how-it-works']) {
+        test('A19 A22: method calculation remains available after ' + failure + ' at ' + path, async ({ page, context }) => {
+            await page.route('**/api/bank', route => route.fulfill(failure === 'unavailable'
+                ? { status: 503 }
+                : { body: '{}', contentType: 'application/json', headers: { 'X-Evidence-Sha256': '0'.repeat(64) } }));
+            await page.goto(path);
+            const information = page.getByRole('switch', { name: 'Añadir información al ejemplo', exact: true });
+            await expect(information).toBeVisible();
+            const example = page.locator('#app [data-method-example]');
+            await expect(example.locator('[data-example-coverage]')).toHaveText('40 %');
+            await information.focus(); await page.keyboard.press('Space');
+            await expect(information).toBeChecked(); await expect(information).toBeFocused();
+            await expect(example.locator('[data-example-overlap]')).toHaveText('40 %');
+            await expect(example.locator('[data-example-coverage]')).toHaveText('80 %');
+            await expect(page.locator('#app .calculation-content:visible')).toHaveCount(0);
+            const calculation = page.getByRole('button', { name: 'Detalle del cálculo', exact: true });
+            await calculation.click();
+            await expect(panel(page, 'calculation')).toContainText('1 − |respuesta − postura| / 4');
+            await expect(panel(page, 'calculation')).toContainText('Empiezas con 20 preguntas de diez temas.');
+            await page.keyboard.press('Escape');
+            await expect(page.getByRole('dialog')).toHaveCount(0); await expect(calculation).toBeFocused();
+            await expect(page.locator('.quiz-card, .affinity-row, .own-answer')).toHaveCount(0);
+            expect(await context.cookies()).toEqual([]); await expectMemoryOnly(page);
+        });
+    }
+}
+
+test('A25: readable download is explicit, cancellable and remains local', async ({ page, context }) => {
     const requests: { url: string; method: string; body: string | null }[] = [];
     page.on('request', request => requests.push({ url: request.url(), method: request.method(), body: request.postData() }));
-    await completeStarter(page);
-    let downloads = 0; page.on('download', () => downloads++);
-    const opener = page.getByRole('button', { name: 'Descargar mis resultados', exact: true }); await opener.click();
+    await completeStarter(page); let downloads = 0; page.on('download', () => downloads++);
+    const opener = page.getByRole('button', { name: 'Descargar resultados', exact: true }); await opener.click();
     await expect(page.getByRole('dialog')).toContainText('respuestas políticas');
     await page.keyboard.press('Escape'); await expect(opener).toBeFocused(); expect(downloads).toBe(0);
-    await opener.click();
-    const downloading = page.waitForEvent('download');
+    await opener.click(); const downloading = page.waitForEvent('download');
     await page.getByRole('dialog').getByRole('button', { name: 'Descargar archivo legible', exact: true }).click();
     const download = await downloading; const text = readFileSync((await download.path())!, 'utf8');
     expect(text).toContain('Coincidencia confirmada'); expect(text).toContain('Información disponible'); expect(text).toContain(question('rent-price-cap').text); expect(text).toContain('Muy en desacuerdo');
     await expect(opener).toBeFocused(); expect(downloads).toBe(1);
     expect(requests.filter(request => request.method !== 'GET' || request.body !== null)).toEqual([]);
     expect(requests.filter(request => /answers=|questionId=|profileId=|search=|finish=|selected=/.test(request.url))).toEqual([]);
-    expect(await context.cookies()).toEqual([]);
-    expect(await page.evaluate(async () => ({ local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases(), history: history.state }))).toEqual({ local: [], session: [], databases: [], history: null });
+    expect(await context.cookies()).toEqual([]); await expectMemoryOnly(page);
 });
 
-test('A12: topic exploration transfers the exact late-page proposal and returns to its formation search', async ({ page }) => {
-    await page.goto('/programmes');
-    await page.getByRole('button', { name: 'Explorar por tema', exact: true }).click();
-    await page.getByRole('button', { name: 'Instituciones', exact: true }).click();
-    const id = 'single-national-congress-constituency';
-    const proposalSearch = page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true }); await proposalSearch.fill(question(id).text);
-    const proposalOpener = page.getByRole('button', { name: question(id).text, exact: true }); await proposalOpener.click();
-    const positionSearch = page.getByRole('searchbox', { name: 'Buscar una formación', exact: true });
-    for (const formation of ['boe-2023-005', 'boe-2023-004']) {
-        await positionSearch.fill(name(formation));
-        await page.locator('.position-row[data-profile-id="' + formation + '-p1"]').getByRole('button', { name: 'Añadir a la comparación', exact: true }).click();
-    }
-    const compare = page.getByRole('button', { name: 'Comparar 2 programas', exact: true }); await compare.click();
-    await expect(comparison(page, id)).toBeVisible();
-    await expect(page.getByRole('combobox', { name: 'Tema', exact: true })).toHaveValue('institutions');
-    await expect(page.locator('#app')).toContainText('13–15 de 15');
-    await page.getByRole('button', { name: 'Volver a las posturas', exact: true }).click();
-    await expect(positionSearch).toHaveValue(name('boe-2023-004')); await expect(compare).toBeFocused();
-    await page.getByRole('button', { name: 'Volver a propuestas', exact: true }).click();
-    await expect(proposalSearch).toHaveValue(question(id).text); await expect(proposalOpener).toBeFocused();
-});
-
-test('A04 A37: additions from a factsheet refresh cached choices and remain cancellable in a replacement draft', async ({ page }) => {
-    for (const removeExisting of [false, true]) {
-        await page.goto('/comparison');
-        await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
-        await page.getByRole('link', { name: 'Fuentes', exact: true }).click();
-        await page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill('PSC');
-        await page.getByRole('button', { name: 'Ver ficha y documentos', exact: true }).click();
-        await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
-        await page.getByRole('button', { name: 'Cambiar programas', exact: true }).click();
-        if (removeExisting) await page.getByRole('checkbox', { name: name('boe-2023-004'), exact: true }).uncheck();
-        await page.getByRole('link', { name: 'Fuentes', exact: true }).click();
-        if (removeExisting) await page.getByRole('button', { name: 'Ver ficha y documentos', exact: true }).click();
-        await reader(page).getByRole('button', { name: 'Añadir a la comparación', exact: true }).click();
-        await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
-        await expect(page.getByRole('checkbox', { name: name('boe-2023-005'), exact: true })).toBeChecked();
-        await expect(page.getByRole('checkbox', { checked: true })).toHaveCount(removeExisting ? 2 : 3);
-        await expect(page.getByRole('checkbox', { name: name('boe-2023-004'), exact: true })).toBeChecked({ checked: !removeExisting });
-        await page.getByRole('button', { name: 'Volver sin cambiar', exact: true }).click();
-        await page.getByRole('button', { name: 'Cambiar programas', exact: true }).click();
-        await expect(page.getByRole('checkbox', { name: name('boe-2023-004'), exact: true })).toBeChecked();
-        await expect(page.getByRole('checkbox', { name: name('boe-2023-005'), exact: true })).not.toBeChecked();
-        await page.getByRole('link', { name: 'Fuentes', exact: true }).click();
-        await expect(page.getByRole('searchbox', { name: 'Buscar una formación', exact: true })).toHaveValue('PSC');
-        await page.getByRole('button', { name: 'Ver ficha y documentos', exact: true }).click();
-        await expect(reader(page).getByRole('button', { name: 'Añadir a la comparación', exact: true })).toBeEnabled();
-    }
-});
-
-test('A37: searchable factsheets keep PSC missing, add explicitly and return to the same source query', async ({ page }) => {
-    await page.goto('/comparison');
-    await expect(page.getByRole('checkbox')).toHaveCount(59);
+test('A04 A37: source factsheets are read-only and retain comparison choices and directory search', async ({ page }) => {
+    await page.goto('/comparison'); await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
+    await proposalSearch(page).fill('alquiler');
     await page.getByRole('link', { name: 'Fuentes', exact: true }).click();
     await expect(page.locator('.directory-row')).toHaveCount(59);
-    const search = page.getByRole('searchbox', { name: 'Buscar una formación', exact: true });
-    await search.fill('PSC');
+    const search = page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }); await search.fill('PSC');
     const psc = page.locator('.directory-row[data-profile-id="boe-2023-005-p1"]');
     await expect(psc).toContainText('No hemos encontrado su programa común de 2023');
-    const opener = psc.getByRole('button', { name: 'Ver ficha y documentos', exact: true }); await opener.click();
-    await expect(reader(page)).toContainText('Programa de las generales de 2023');
-    await expect(reader(page).getByRole('link')).toHaveCount(0);
-    await reader(page).getByRole('button', { name: 'Añadir a la comparación', exact: true }).click();
-    await expect(reader(page).getByRole('button', { name: 'Añadido a la comparación', exact: true })).toBeDisabled();
-    await reader(page).getByRole('button', { name: 'Volver a fuentes', exact: true }).click();
+    const opener = psc.getByRole('button', { name: /Ver (?:ficha y )?documentos/ }); await opener.click();
+    await expect(panel(page, 'factsheet')).toContainText('2023');
+    await expect(panel(page, 'factsheet').getByRole('link')).toHaveCount(0);
+    await expect(panel(page, 'factsheet').getByRole('button', { name: /Añadir|Comparar/ })).toHaveCount(0);
+    await panel(page, 'factsheet').getByRole('button', { name: 'Cerrar', exact: true }).click();
     await expect(search).toHaveValue('PSC'); await expect(opener).toBeFocused();
     await search.fill('Fuerza Civica');
-    await page.locator('.directory-row[data-profile-id="boe-2023-059-p1"]').getByRole('button', { name: 'Ver ficha y documentos', exact: true }).click();
-    await expect(reader(page).getByRole('link').first()).toHaveAttribute('rel', 'noopener noreferrer');
-    await reader(page).getByRole('button', { name: 'Añadir a la comparación', exact: true }).click();
+    await page.locator('.directory-row[data-profile-id="boe-2023-059-p1"]').getByRole('button', { name: /Ver (?:ficha y )?documentos/ }).click();
+    await expect(panel(page, 'factsheet').getByRole('link').first()).toHaveAttribute('rel', 'noopener noreferrer');
+    await panel(page, 'factsheet').getByRole('button', { name: 'Cerrar', exact: true }).click();
     await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
-    await expect(page.getByRole('checkbox', { name: name('boe-2023-005'), exact: true })).toBeChecked();
-    await expect(page.getByRole('checkbox', { name: name('boe-2023-059'), exact: true })).toBeChecked();
-    await expect(page.getByRole('checkbox', { checked: true })).toHaveCount(2);
-    await page.getByRole('button', { name: 'Comparar 2 programas', exact: true }).click();
-    await expect(comparison(page, 'rent-price-cap')).toContainText('No hemos encontrado su programa común de 2023');
+    await expect(slot(page, 0)).toContainText(name('boe-2023-001')); await expect(slot(page, 1)).toContainText(name('boe-2023-004'));
+    await expect(proposalSearch(page)).toHaveValue('alquiler');
+});
+
+test('A02 A24: browser Back closes the panel and navigates the section without adding a modal history entry', async ({ page }) => {
+    await page.goto('/method');
+    await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
+    await page.getByRole('button', { name: 'Elegir primer programa', exact: true }).click();
+    await expect(panel(page, 'picker')).toBeVisible();
+    await page.goBack();
+    await expect(page).toHaveURL(/\/method$/);
+    await expect(page.getByRole('dialog')).toHaveCount(0);
+    await expect(page.getByRole('switch', { name: 'Añadir información al ejemplo', exact: true })).toBeVisible();
+});
+
+test('A19 A24: reduced motion cancels panel animation without losing close or focus behavior', async ({ page }) => {
+    await page.goto('/comparison');
+    const opener = page.getByRole('button', { name: 'Elegir primer programa', exact: true }); await opener.click();
+    await expect(panel(page, 'picker')).toBeVisible();
+    expect(await panel(page, 'picker').evaluate(node => node.getAnimations({ subtree: true }).some(animation => animation.playState === 'running'))).toBe(false);
+    await page.keyboard.press('Escape'); await expect(opener).toBeFocused();
+    await page.emulateMedia({ reducedMotion: 'no-preference' }); await opener.click();
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await expect(panel(page, 'picker')).toBeVisible();
+    await expect.poll(() => panel(page, 'picker').evaluate(node => node.getAnimations({ subtree: true }).some(animation => animation.playState === 'running'))).toBe(false);
+    await page.keyboard.press('Escape'); await expect(panel(page, 'picker')).toHaveCount(0); await expect(opener).toBeFocused();
 });

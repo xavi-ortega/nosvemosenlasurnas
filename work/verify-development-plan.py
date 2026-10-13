@@ -166,6 +166,30 @@ if p.get("nextIteration", {}).get("activeRefinement"):
         for capture in baseline["screenshots"]:
             assert hashlib.sha256((root / capture["path"]).read_bytes()).hexdigest() == capture["sha256"]
         print("Active revision boundaries and baseline capture hashes passed.")
+        if cleanup.get("applicationImplementationComplete"):
+            report_path = root / cleanup["applicationVerification"]
+            report_bytes = report_path.read_bytes()
+            report = json.loads(report_bytes)
+            assert cleanup["applicationVerificationScope"] == "active_v2_real_application"
+            assert cleanup["applicationVerificationSha256"] == hashlib.sha256(report_bytes).hexdigest()
+            assert reference["applicationVerification"] == cleanup["applicationVerification"]
+            assert report["planVersion"] == cleanup["planVersion"]
+            assert report["sourceBankSha256"] == bank_hash
+            assert report["applicationImplementationComplete"] is True
+            assert report["localAcceptanceComplete"] is True
+            assert report["ownerAcceptanceConfirmed"] is False
+            assert report["publicLaunchApproved"] is False and report["liveCollectionEnabled"] is False
+            assert {item["id"] for item in report["taskEvidence"]} == set(active_ids)
+            assert {item["id"] for item in report["flows"]} == {f"F{number:02d}" for number in range(1, 9)}
+            assert {item["id"] for item in report["acceptance"]} == {f"A{number:02d}" for number in range(1, 39)}
+            assert all(item["status"] == "accepted_local" and item["evidence"] for item in report["acceptance"] + report["flows"])
+            assert report["screenshots"] and report["comprehensionReview"]["states"] and report["limitations"]
+            for capture in report["screenshots"]:
+                assert hashlib.sha256((root / capture["path"]).read_bytes()).hexdigest() == capture["sha256"]
+            if cleanup["status"] == "completed_local_application":
+                assert all(task["status"] == "completed" for task in active_tasks)
+                assert report["exactStageGate"]["status"] == "verified_before_finalization"
+            print("Active application evidence coverage, boundaries and screenshot hashes passed.")
     assert len({item["id"] for item in cleanup["sections"]}) == len(cleanup["sections"])
     flow_ids = set()
     for flow in cleanup["flows"]:

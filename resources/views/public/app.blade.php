@@ -47,40 +47,16 @@
                         <p class="quiet"><span class="skeleton-text">{{ $surfacePage === 'home' ? __('ui.ui_home_notice') : __('public.quiz_reload') }}</span></p>
                     </section>
                 @elseif ($secondIteration && $surfacePage === 'programmes')
-                    <section>
-                        <div class="reading-layout full-reader"><div class="reading-origin">
-                            <h2><span class="skeleton-text">{{ __('ui.ui_selection_title') }}</span></h2>
-                            <p><span class="skeleton-text">{{ __('ui.ui_selection_intro') }}</span></p>
-                            <div class="actions">
-                                <button type="button" disabled><span class="skeleton-text">{{ __('ui.ui_topics') }}</span></button>
-                                <button type="button" disabled><span class="skeleton-text">{{ __('ui.ui_search_proposals') }}</span></button>
-                            </div>
-                            <div class="choose-layout">
-                                <div>
-                                    <section class="selection-summary">
-                                        <p class="selection-status"><span class="skeleton-text">{{ __('ui.ui_selection_count', ['count' => 0]) }}. {{ __('ui.ui_choose_two') }}</span></p>
-                                        <div class="selected-chips"></div>
-                                        <button type="button" class="primary" disabled><span class="skeleton-text">{{ __('ui.ui_compare_count', ['count' => 0]) }}</span></button>
-                                    </section>
-                                </div>
-                                <div>
-                                    <label class="control search-control"><span class="skeleton-text">{{ __('ui.ui_search_formations') }}</span><input type="search" autocomplete="off" disabled></label>
-                                    <button type="button" disabled><span class="skeleton-text">{{ __('ui.ui_clear_search') }}</span></button>
-                                    <p><span class="skeleton-text">{{ __('ui.ui_found', ['count' => count($orderedProfiles)]) }}</span></p>
-                                    <fieldset class="formation-list">
-                                        <legend><span class="skeleton-text">{{ __('ui.ui_selection_choices') }}</span></legend>
-                                        <div>
-                                            @foreach ($orderedProfiles as $profile)
-                                                <label class="formation-choice">
-                                                    <input type="checkbox" disabled>
-                                                    <span><span class="skeleton-text">{{ $profile['name'] }}</span><small><span class="skeleton-text">{{ collect($release['documents'])->contains('candidacyId', $profile['candidacyId']) ? __('ui.ui_found_programme') : __('ui.ui_missing_programme') }}</span></small></span>
-                                                </label>
-                                            @endforeach
-                                        </div>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div><aside class="programme-reader" hidden></aside></div>
+                    <section class="comparison-workspace">
+                        <h2><span class="skeleton-text">{{ __('ui.flow_comparison_title') }}</span></h2>
+                        <p><span class="skeleton-text">{{ __('ui.flow_selection_intro') }}</span></p>
+                        <div class="programme-slots">
+                            @foreach ([0, 1] as $slot)
+                                <div class="programme-slot"><button class="slot-choice" disabled><span class="skeleton-text">{{ __('ui.flow_slot_'.$slot) }}</span></button></div>
+                            @endforeach
+                        </div>
+                        <p class="quiet selection-feedback"></p>
+                        <div class="comparison-body"><p class="quiet"><span class="skeleton-text">{{ __('ui.flow_choose_two') }}</span></p></div>
                     </section>
                 @else
                     <div class="skeleton-list">
@@ -120,11 +96,6 @@
                             @if (!empty($links['preservedUrl']) && ($links['preservedUrl'] !== ($links['officialUrl'] ?? null)))
                                 <p><a href="{{ $links['preservedUrl'] }}" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">{{ __('cleanup.cleanup_sources_copy') }} — {{ $profile['name'] }} {{ __('iteration.iteration_external') }}</a></p>
                             @endif
-                            <details>
-                                <summary>{{ __('cleanup.cleanup_sources_provenance') }}</summary>
-                                <p>{{ __('cleanup.cleanup_sources_hash') }}: <code class="source-hash">{{ $document['sha256'] }}</code></p>
-                                <p>{{ __('cleanup.cleanup_sources_retrieved') }}: {{ $document['retrievedAt'] }}</p>
-                            </details>
                         @endforeach
                     </details>
                 @endforeach

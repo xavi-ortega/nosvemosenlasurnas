@@ -5,6 +5,7 @@ import type { FeedbackConfig } from './feedback.ts';
 import { Questionnaire } from './questionnaire.ts';
 import { reserveLoadingSpace, startLoading } from './loading.ts';
 import { focusFirstControl } from './focus.ts';
+import { mountMethodInformation } from './method-example.ts';
 
 const dictionary = document.getElementById('public-messages');
 const messages: Record<string, string> = dictionary ? JSON.parse(dictionary.textContent ?? '{}') : {};
@@ -404,7 +405,8 @@ if (root?.hasAttribute('data-deferred-page')) {
         } else if (page === 'comparison') renderComparison(); else if (page === 'sources') renderSources(); else renderSetup();
     }).catch((error: unknown) => {
         const unavailable = error instanceof Error && error.message === 'Bank unavailable.';
-        if (!root.hasAttribute('data-information-page')) root.replaceChildren(p(document.body.dataset.iteration === '2' ? 'ui_restart_failed' : unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
+        if (page === 'method') mountMethodInformation(root, t);
+        else if (!root.hasAttribute('data-information-page')) root.replaceChildren(p(document.body.dataset.iteration === '2' ? 'ui_restart_failed' : unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
     }).finally(() => root.removeAttribute('aria-busy'));
 }
 document.addEventListener('mousedown', event => {

@@ -25,7 +25,7 @@ class SecondIterationRoutesTest extends TestCase
             foreach (['/method', '/how-it-works'] as $path) {
                 $this->get($path)->assertViewHas('page', 'method')
                     ->assertSee('data-information-page="method"', false)
-                    ->assertSeeText('Comparamos tus respuestas con lo que dicen los programas de 2023.')
+                    ->assertSeeText('Comparamos tus respuestas con los programas de las generales de 2023.')
                     ->assertSeeText('Empiezas con 20 preguntas de diez temas.');
             }
             $sources = $this->get('/sources')->assertViewHas('page', 'sources')
@@ -97,7 +97,7 @@ class SecondIterationRoutesTest extends TestCase
 
         foreach ([
             '/method' => ['method', 'Comparamos tus respuestas'],
-            '/how-it-works' => ['method', 'Ver el cálculo completo'],
+            '/how-it-works' => ['method', 'Detalle del cálculo'],
             '/help' => ['help', 'Quiero cambiar una respuesta'],
             '/privacy' => ['privacy', 'Tus respuestas no se envían al servidor.'],
             '/accessibility' => ['accessibility', 'Con teclado'],

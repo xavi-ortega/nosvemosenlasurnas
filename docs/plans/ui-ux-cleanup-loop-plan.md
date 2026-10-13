@@ -1,18 +1,18 @@
 # UI flow redesign: independent comparison, contextual evidence and visual results
 
-ui-ux-cleanup-2023-v2.0.0 · planned_application_stage
+ui-ux-cleanup-2023-v2.0.0 · completed_local_application
 
-Deep planning revision following renewed owner rejection. The next stage replaces capped selection and full-page readers with programme slots and contextual modal panels, separates test results from public comparison, unifies proposal/category search, simplifies exact citations, shows all 59 results with three-tab visual detail, and rewrites Cómo funciona. N001–N012 and revised F01–F08/A01–A38 are planned, not implemented or accepted. Prior U evidence is historical. The 59 formations, 80 questions, weights, calculation and private quiz remain preserved.
+Implemented and locally verified all N001–N012: two programme slots plus optional third, one proposal/category search, contextual modal sources, concise exact citations, all 59 compact results with three-tab topic counts and a visual explanation. Revised F01–F08/A01–A38 have fresh bounded application evidence and all mandatory local checks passed. The 59 formations, 80 questions, 35 documents, authored summaries, weights/calculation and memory-only quiz remain unchanged. Final metadata is checked again before the local commit. Owner satisfaction and public launch are not claimed.
 
-Application implementation started: false. Complete: false. Public launch and collection remain unapproved/disabled.
+Application implementation started: true. Complete: true. Public launch and collection remain unapproved/disabled.
 
 Baseline: outputs/ui-ux-flow-redesign-baseline.json. Prototype: outputs/programme-comparison-prototype.html. Source bank SHA-256: 7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b.
 
 ## Active revision, authority and definition of done
 
-This is the planning-first owner revision after commit `000d96c`, version **ui-ux-cleanup-2023-v2.0.0**. The owner explicitly requested a deep plan before implementation. No application implementation or acceptance of this revision is claimed. The earlier U001–U016 work, its F01–F08/A01–A38 evidence and the original prototype are historical baselines. They remain in Git and the existing reports. Passing them does not accept the new journeys or establish owner satisfaction.
+This is the planning-first owner revision after commit `000d96c`, version **ui-ux-cleanup-2023-v2.0.0**. The owner explicitly requested a deep plan before implementation. The subsequently authorized application implementation is complete with fresh bounded local evidence; owner acceptance is not claimed. The earlier U001–U016 work, its F01–F08/A01–A38 evidence and the original prototype are historical baselines. They remain in Git and the existing reports. Passing them does not accept the new journeys or establish owner satisfaction.
 
-The latest owner decisions supersede the earlier requirements for topic browsing, comparison filters, result-to-comparison transfer, personal overlays in public comparison, direct answer editing from results, full-page readers and citation disclosures. This document replaces those active requirements; it does not change the electoral content or arithmetic. N001–N012 below are the new implementation sequence. All are planned. The planning artifact is the deliverable of this turn, not a substitute for implementing that later sequence.
+The latest owner decisions supersede the earlier requirements for topic browsing, comparison filters, result-to-comparison transfer, personal overlays in public comparison, direct answer editing from results, full-page readers and citation disclosures. This document replaces those active requirements; it does not change the electoral content or arithmetic. N001–N012 below are the new implementation sequence. All N001–N012 now have fresh application evidence and the complete local gate has passed; finalized metadata is verified again before the local commit. See `outputs/ui-ux-flow-redesign-application-verification.json`.
 
 The audience is a person with no political or statistical expertise who wants either to answer the test or read two/three programmes. Design around those two independent tasks. Keep a clear next action and a dependable return; do not introduce an account, tour, configuration wizard, metrics consent or extra explanatory layer merely to repair a confusing control.
 
@@ -32,11 +32,11 @@ Read `outputs/ui-ux-flow-redesign-baseline.json`. On the unchanged real local ap
 - The first question presents an unavailable Back button. Its placement can remain stable without showing an unusable control.
 - Content stress cases found in the fixed bank include a 73-character formation name, a 4,452-character citation and positions with three citations. Compact layouts cannot depend on every quote or name being short.
 
-No horizontal overflow or page errors were observed in this bounded reproduction. That does not refute the reported UX problems and is not acceptance of the redesign. The 48px measurement is interaction geometry, not a production CLS score. No new design has yet been rendered or verified.
+No horizontal overflow or page errors were observed in this bounded reproduction. That does not refute the reported UX problems and is not acceptance of the redesign. The 48px measurement is interaction geometry, not a production CLS score. This was the pre-implementation baseline; the new report records the later application review.
 
 ## Owner feedback translated into concrete decisions
 
-| Owner decision | Planned product behavior | Explicit removal / boundary |
+| Owner decision | Implemented product behavior | Explicit removal / boundary |
 | --- | --- | --- |
 | Expansion controls look poor and move everything | Keep essential controls visible; move long secondary reading into one overlay panel; only optional inline quotations expand | No hidden search, no nested proof accordions, no universal conversion of every sentence into a panel |
 | Simplify citations | Quote, compact formation/proposal context and directly linked page/line with external-link icon | Remove the four specified context/origin/full-interpretation/disclaimer items from public reading; retain their evidence data |
@@ -229,7 +229,7 @@ Responsive budgets: compare columns only when each has about 18rem of readable w
 
 Do not use transition:all, guess a huge max-height, queue animations on repeated clicks, animate all 59 cards, stagger every source paragraph or use scrollIntoView smooth on every update. Use cancellation-safe final states, preserve hit targets during transition, and resolve close even when animationend is skipped. Opening information must never move the base page. A smooth expansion still changes layout: measure its visual anchor and inspect frames, not only a final screenshot.
 
-[web.dev's CLS definition](https://web.dev/articles/cls) excludes some shifts close to user input; therefore a low CLS alone does not establish a comfortable interaction. Record raw element displacement, unexpected shifts during load, panel background geometry and actual short motion clips/frames separately. Preserve the existing loading regression threshold of total recorded shifts <0.001 in tests/Browser/loading.spec.ts; never relax it to the general CLS reference of 0.1. Also require no unexpected loaded-view movement, panel base-page anchor <=1 CSS px movement and quote opener <=2 CSS px. These are future acceptance targets, not measured results or production Core Web Vitals claims.
+[web.dev's CLS definition](https://web.dev/articles/cls) excludes some shifts close to user input; therefore a low CLS alone does not establish a comfortable interaction. Record raw element displacement, unexpected shifts during load, panel background geometry and actual short motion clips/frames separately. Preserve the existing loading regression threshold of total recorded shifts <0.001 in tests/Browser/loading.spec.ts; never relax it to the general CLS reference of 0.1. Also require no unexpected loaded-view movement, panel base-page anchor <=1 CSS px movement and quote opener <=2 CSS px. Application measurement: panel base displacement0px and quote opener displacement0px vertically/1.6875px horizontally; see the revision report. These are bounded local observations, not production Core Web Vitals claims.
 
 ## Concrete wide and narrow sketches, with critique
 
@@ -387,11 +387,13 @@ Mandatory acceptance viewport matrix: 320×568, 390×844, 768×1024, 1280×720 M
 
 Before every local commit: synchronize the JSON/human/managed plans with `npm run docs:build` and `npm run check:plans`; preserve/install the local hook; stage only the intended tree; run `python3 scripts/check-staged.py` for that exact index; no skipped/failed required checks, bypass or control weakening. Preserve main, files/history and running owner servers; no dependencies, push, deployment or scheduler.
 
-Final implementation packet must identify baseline and implementation commits, fresh screenshots/motion evidence, actual commands and hashes, remaining honest limits and local preview. This planning turn only records reproduction, decisions, dependencies and planned acceptance. N tasks remain planned until their own application evidence exists.
+Final implementation packet must identify baseline and implementation commits, fresh screenshots/motion evidence, actual commands and hashes, remaining honest limits and local preview. The active application loops and corrections are now recorded in the revision report and execution journal. N012 remains in progress until its mandatory exact-tree check and commit preparation are complete.
 
-Write the future revision acceptance to `outputs/ui-ux-flow-redesign-application-verification.json`. Keep `outputs/ui-ux-cleanup-application-verification.json` unchanged as historical evidence. The future path is a planned deliverable, not a file asserted to exist now.
+Read the actual revision acceptance in `outputs/ui-ux-flow-redesign-application-verification.json`. Keep `outputs/ui-ux-cleanup-application-verification.json` unchanged as historical evidence. This is fresh application evidence; historical reports remain untouched.
 
 ## Revised A01–A38 acceptance matrix (all pending)
+
+Local application evidence and per-case dispositions: `outputs/ui-ux-flow-redesign-application-verification.json`. All38 cases have new bounded local evidence; see the reported native-zoom/browser limitations. Owner acceptance remains unconfirmed.
 
 These are the **v2.0** meanings of the existing IDs. They do not inherit passes from v1.1. The previous matrix remains available at commit 000d96c and in its verification report. Every case below requires fresh evidence from the actual application.
 
@@ -478,7 +480,7 @@ Start: results. Walkthrough: results → detail → differences → source → d
 
 - **results**: See all 59 after explicit finish. “Detalle” → detail (retain unrounded order/search/grid anchor)
 
-- **detail**: Read count chart and matches tab. “Difieres” → differences (retain same formation/outer panel); “Sin datos claros” → unknowns (retain same formation/outer panel); “Cerrar” → results (retain grid/focus); “Ver fuente” → source (retain current tab and body scroll); available when the proposal has an existing contextual citation
+- **detail**: Read count chart and matches tab. “Difieres” → differences (retain same formation/outer panel); “Sin datos” → unknowns (retain same formation/outer panel); “Cerrar” → results (retain grid/focus); “Ver fuente” → source (retain current tab and body scroll); available when the proposal has an existing contextual citation
 
 - **differences**: Read numeric answered differences. “Ver fuente” → source (retain tab and panel scroll); “Coincides” → detail (retain formation/chart); “Cerrar” → results (retain grid/focus)
 
@@ -534,7 +536,7 @@ Start: results. Walkthrough: results → export → results → restart → resu
 
 ### N001 Validate sketches and build the shared modal and motion foundation
 
-Status: planned. Size: large. Dependencies: none.
+Status: completed. Size: large. Dependencies: none.
 
 Deliverables:
 
@@ -550,9 +552,11 @@ Verify:
 
 - A11/A23/A24/A36; inspect actual captures and animation frames, and run the affected browser, type and build checks.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N002 Replace capped programme selection with explicit slots
 
-Status: planned. Size: medium. Dependencies: N001.
+Status: completed. Size: medium. Dependencies: N001.
 
 Deliverables:
 
@@ -568,9 +572,11 @@ Verify:
 
 - A03/A04/A08/A11/A24; critique sketches of the initial path requiring five actions.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N003 Consolidate public browsing into one comparison search
 
-Status: planned. Size: medium. Dependencies: N002.
+Status: completed. Size: medium. Dependencies: N002.
 
 Deliverables:
 
@@ -586,9 +592,11 @@ Verify:
 
 - A02/A09/A12/A13/A29/A30/A32; verify that the source bank remains unchanged.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N004 Align comparison citations and simplify source reading
 
-Status: planned. Size: large. Dependencies: N001, N003.
+Status: completed. Size: large. Dependencies: N001, N003.
 
 Deliverables:
 
@@ -604,9 +612,11 @@ Verify:
 
 - A05/A06/A07/A10/A11/A13/A22/A24/A27; inspect screenshots and motion using real quotations.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N005 Create the result presentation adapter and topic-count chart
 
-Status: planned. Size: medium. Dependencies: N001.
+Status: completed. Size: medium. Dependencies: N001.
 
 Deliverables:
 
@@ -622,9 +632,11 @@ Verify:
 
 - A14/A17/A31/A33/A34; use meaningful fixtures for the pure presentation adapter and run the unchanged engine suite.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N006 Present all 59 results in a compact grid with a three-tab detail panel
 
-Status: planned. Size: large. Dependencies: N004, N005.
+Status: completed. Size: large. Dependencies: N004, N005.
 
 Deliverables:
 
@@ -640,9 +652,11 @@ Verify:
 
 - A14/A15/A16/A17/A24/A29/A30/A31/A34/A36.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N007 Simplify result actions and preserve quiz recovery
 
-Status: planned. Size: medium. Dependencies: N006.
+Status: completed. Size: medium. Dependencies: N006.
 
 Deliverables:
 
@@ -658,9 +672,11 @@ Verify:
 
 - A01/A17/A18/A25/A30/A35; retain the existing quiz keyboard, motion, release and export tests.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N008 Replace Cómo funciona with a concise visual explanation
 
-Status: planned. Size: medium. Dependencies: N001, N005.
+Status: completed. Size: medium. Dependencies: N001, N005.
 
 Deliverables:
 
@@ -676,9 +692,11 @@ Verify:
 
 - A19/A20/A23/A24/A27/A33; critique the actual desktop and mobile copy.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N009 Reconcile shared notices, the source directory and loading states
 
-Status: planned. Size: medium. Dependencies: N003, N004, N007, N008.
+Status: completed. Size: medium. Dependencies: N003, N004, N007, N008.
 
 Deliverables:
 
@@ -694,9 +712,11 @@ Verify:
 
 - A02/A21/A22/A23/A25/A26/A27/A37.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N010 Complete the dead-code and consumer retirement audit
 
-Status: planned. Size: medium. Dependencies: N009.
+Status: completed. Size: medium. Dependencies: N009.
 
 Deliverables:
 
@@ -712,9 +732,11 @@ Verify:
 
 - A12/A27/A28/A29/A35/A38; search references and run lint, type checks and affected tests.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N011 Complete the real-application visual and accessibility review
 
-Status: planned. Size: large. Dependencies: N010.
+Status: completed. Size: large. Dependencies: N010.
 
 Deliverables:
 
@@ -730,9 +752,11 @@ Verify:
 
 - All A cases; run the required browser, PHP, engine, tooling, asset and security checks.
 
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
+
 ### N012 Synchronize final plans and prepare verified local commits
 
-Status: planned. Size: small. Dependencies: N011.
+Status: completed. Size: small. Dependencies: N011.
 
 Deliverables:
 
@@ -747,6 +771,8 @@ Accept when:
 Verify:
 
 - Run npm run docs:build and npm run check:plans. Run python3 scripts/check-staged.py before every commit.
+
+Actual evidence: outputs/ui-ux-flow-redesign-application-verification.json, work/execution-journal.jsonl.
 
 ## Historical task evidence
 

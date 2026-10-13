@@ -6096,15 +6096,15 @@
       "humanPlan": "docs/plans/ui-ux-cleanup-loop-plan.md",
       "baseline": "outputs/ui-ux-flow-redesign-baseline.json",
       "prototype": "outputs/programme-comparison-prototype.html",
-      "status": "planned_application_stage",
-      "applicationImplementationStarted": false,
+      "status": "completed_local_application",
+      "applicationImplementationStarted": true,
       "preservesCompletedIterations": true,
-      "authority": "Direct owner feedback on 2026-10-13 after 000d96c: deeply plan the complete flow simplification first, with overlay panels, programme-selection redesign, unified comparison search, compact all-formation results and visual topic detail. This planning turn does not implement the application.",
+      "authority": "Direct owner feedback on2026-10-13 specified this redesign and requested deep planning; subsequent direct instruction “implementa” authorizes the complete local implementation. No publication or collection authorized.",
       "referenceResearch": "outputs/ui-ux-cleanup-reference-research.json",
-      "applicationVerification": "outputs/ui-ux-cleanup-application-verification.json",
-      "applicationImplementationComplete": false,
-      "localAcceptanceComplete": false,
-      "implementationBaselineCommit": "000d96c",
+      "applicationVerification": "outputs/ui-ux-flow-redesign-application-verification.json",
+      "applicationImplementationComplete": true,
+      "localAcceptanceComplete": true,
+      "implementationBaselineCommit": "dfc7a3d",
       "historicalImplementation": {
         "planVersion": "ui-ux-cleanup-2023-v1.1.0",
         "completedThroughCommit": "000d96c",
@@ -6152,7 +6152,11 @@
         "N011",
         "N012"
       ],
-      "ownerAcceptanceConfirmed": false
+      "ownerAcceptanceConfirmed": false,
+      "applicationVerificationScope": "active_v2_real_application",
+      "applicationVerificationSha256": "f794267308a4b8ad2c5500dc6f2fbece9d191b7854e2deac621f374c6eee36e8",
+      "acceptanceStatus": "accepted_local",
+      "planningOnly": false
     }
   }
 }

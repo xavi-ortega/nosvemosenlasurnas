@@ -9,7 +9,7 @@ const bytes = readFileSync('outputs/quiz-2023-second-iteration-bank.json');
 const bank = JSON.parse(bytes.toString()) as Bank;
 const sha = createHash('sha256').update(bytes).digest('hex');
 const realUrl = process.env.ITERATION_REAL_URL;
-if (realUrl) test.use({ baseURL: realUrl });
+test.use({ baseURL: realUrl ?? 'http://127.0.0.1:8768' });
 
 test.beforeEach(async ({ page }) => {
     if (!realUrl) await page.route('**/api/bank', route => route.fulfill({ body: bytes, contentType: 'application/json', headers: { 'X-Evidence-Sha256': sha } }));
@@ -28,28 +28,49 @@ async function answer(page: Page, count: number, skipPensions = false) {
 }
 async function finish(page: Page) {
     await page.getByRole('button', { name: 'Ver mi resultado', exact: true }).click();
-    await expect(page.getByRole('heading', { name: 'Tus coincidencias con los programas de 2023', exact: true })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Tus resultados', exact: true })).toBeVisible();
 }
 async function screenshot(page: Page, name: string, project: string) {
     if (!process.env.ITERATION_CAPTURE) return;
+    await waitForPanelMotion(page);
     await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(() => resolve(null)))));
-    mkdirSync('outputs/quiz-2023-second-iteration-previews', { recursive: true });
-    await page.screenshot({ path: 'outputs/quiz-2023-second-iteration-previews/' + project + '-' + name + '.png', fullPage: false, animations: 'disabled' });
+    mkdirSync('outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration', { recursive: true });
+    await page.screenshot({ path: 'outputs/ui-ux-cleanup-previews/flow-redesign-application/second-iteration/' + project + '-' + name + '.png', fullPage: false });
 }
 const programmeRow = (page: Page, id: string) => page.locator('.affinity-row[data-profile-id="' + id + '"]');
-const reader = (page: Page) => page.locator('.programme-reader:not([hidden])');
-async function openPublicProposal(page: Page, id: string) {
-    await page.getByRole('button', { name: 'Buscar una propuesta', exact: true }).click();
-    const text = bank.questions.find(q => q.id === id)!.text;
-    await page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true }).fill(text);
-    await page.getByRole('button', { name: text, exact: true }).click();
+const panel = (page: Page, kind: string) => page.locator('dialog[data-panel-kind="' + kind + '"][open]');
+const proposal = (page: Page, id: string) => page.locator('.comparison-proposal[data-question-id="' + id + '"]');
+const slot = (page: Page, index: number) => page.locator('.programme-slot[data-slot-index="' + index + '"]');
+const proposalSearch = (page: Page) => page.getByRole('searchbox', { name: 'Buscar una propuesta o un tema', exact: true });
+async function waitForPanelMotion(page: Page) {
+    await page.locator('dialog.side-panel[open]').evaluateAll(async panels => {
+        await Promise.all(panels.flatMap(node => node.getAnimations({ subtree: true })).map(animation => animation.finished.catch(() => {})));
+    });
 }
-async function showAllResults(page: Page) {
-    await page.getByRole('button', { name: 'Ver todas las 59 formaciones', exact: true }).click();
+async function selectProgrammes(page: Page, ids: string[]) {
+    for (const [index, id] of ids.entries()) {
+        const name = bank.programmeProfiles!.find(profile => profile.candidacyId === id)!.name;
+        await slot(page, index).getByRole('button').first().click();
+        await panel(page, 'picker').getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill(name);
+        await panel(page, 'picker').getByRole('button', { name, exact: true }).click();
+        await expect(panel(page, 'picker')).toHaveCount(0);
+        await expect(slot(page, index)).toContainText(name);
+    }
+    await page.getByRole('button', { name: 'Comparar programas', exact: true }).click();
+    await expect(page.locator('.comparison-proposal')).toHaveCount(6);
+}
+async function openPublicProposal(page: Page, id: string, ids = ['boe-2023-001', 'boe-2023-004']) {
+    await selectProgrammes(page, ids);
+    const text = bank.questions.find(q => q.id === id)!.text;
+    await proposalSearch(page).fill(text);
+    await expect(proposal(page, id)).toBeVisible();
+}
+async function expectAllResults(page: Page) {
     await expect(page.locator('.affinity-row')).toHaveCount(59);
+    expect(new Set(await page.locator('.affinity-row').evaluateAll(rows => rows.map(row => (row as HTMLElement).dataset.profileId))).size).toBe(59);
 }
 async function downloadTechnicalResults(page: Page) {
-    await page.getByRole('button', { name: 'Descargar mis resultados', exact: true }).click();
+    await page.getByRole('button', { name: 'Descargar resultados', exact: true }).click();
     const download = page.waitForEvent('download');
     await page.getByRole('dialog').getByRole('button', { name: 'Descargar datos completos (JSON)', exact: true }).click();
     return (await download).path();
@@ -109,7 +130,7 @@ test('reduced motion preserves visible confirmation and automatic advancement wi
     await expect(page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true })).toBeFocused();
 });
 
-test('quiz, reader and skip navigation focus only interactive controls', async ({ page }) => {
+test('quiz, source panel and skip navigation focus only interactive controls', async ({ page }) => {
     await page.addInitScript(() => {
         const state = window as typeof window & { textFocusTargets: string[] }; state.textFocusTargets = [];
         document.addEventListener('focusin', event => {
@@ -135,8 +156,8 @@ test('quiz, reader and skip navigation focus only interactive controls', async (
     const navigation = page.getByRole('navigation', { name: 'Navegación principal' });
     await navigation.locator('a[href$="/programmes"]').click();
     await openPublicProposal(page, 'rent-price-cap');
-    const opener = page.locator('.position-row').first().getByRole('button', { name: /Ver fuente|Ver explicación/ }); await opener.click();
-    await expect(reader(page).getByRole('button', { name: 'Volver a las posturas', exact: true })).toBeFocused();
+    const opener = proposal(page, 'rent-price-cap').locator('.comparison-cell').first().getByRole('button', { name: /Ver fuente|Ver explicación/ }); await opener.click();
+    await expect(panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true })).toBeFocused();
     await page.keyboard.press('Escape'); await expect(opener).toBeFocused();
     await navigation.getByRole('link', { name: 'Cómo funciona', exact: true }).click();
     await skip.focus(); await page.keyboard.press('Enter');
@@ -241,6 +262,7 @@ test('simple entry has one start action, no selection form and one choice advanc
     await page.getByRole('button', { name: 'Empezar el test', exact: true }).click();
     const first = bank.starterQuestionIds![0]; const second = bank.starterQuestionIds![1];
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', first);
+    await expect(page.getByRole('button', { name: 'Atrás', exact: true })).toHaveCount(0);
     await expect(page.getByRole('button', { name: 'Continuar', exact: true })).toHaveCount(0);
     const choice = page.getByRole('radio', { name: 'Muy en desacuerdo', exact: true });
     await choice.scrollIntoViewIfNeeded(); const box = (await choice.boundingBox())!;
@@ -277,105 +299,140 @@ test('keyboard choice waits for confirmation and homepage starts directly withou
     await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', second);
 });
 
-test('UX01 UX05: rent disagreement reaches its exact quote in two actions with one accessible reader', async ({ page }, info) => {
+test('UX01 UX05: all results explain a rent disagreement and retain context through one accessible source panel', async ({ page }, info) => {
     await start(page); await answer(page, 20);
     await expect(page.locator('#app')).not.toContainText('Sumar');
     await expect(page.locator('#app')).toContainText('Tu mayor coincidencia');
-    await finish(page); await expect(page.locator('.affinity-row')).toHaveCount(6);
+    await finish(page); await expectAllResults(page);
     await expect(page.locator('.affinity-row blockquote')).toHaveCount(0);
+    await expect(page.getByRole('button', { name: /Revisar respuestas|Ver todas las 59 formaciones|Borrar respuestas/ })).toHaveCount(0);
+    await expect(page.locator('.affinity-row input')).toHaveCount(0);
     await screenshot(page, 'results', info.project.name);
-    await showAllResults(page);
     const p = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-004')!;
-    const opener = programmeRow(page, p.id).getByRole('button', { name: 'En qué difieres', exact: true }); await opener.focus(); await page.keyboard.press('Enter');
-    await expect(reader(page).getByRole('button', { name: 'Volver a resultados', exact: true })).toBeFocused();
-    await expect(page.locator('[aria-modal="true"], [inert]')).toHaveCount(0);
-    const rent = reader(page).locator('.result-example[data-question-id="rent-price-cap"]');
-    await rent.getByRole('button', { name: /Ver fuente/ }).click();
-    await expect(reader(page)).toContainText('Muy en desacuerdo');
-    await expect(reader(page)).toContainText('Tu respuesta está en desacuerdo con la posición citada en esta propuesta.');
-    await expect(reader(page).getByRole('link', { name: /Fuente oficial/ }).first()).toBeVisible();
+    const opener = programmeRow(page, p.id).getByRole('button', { name: 'Detalle: ' + p.name, exact: true }); await opener.focus(); await page.keyboard.press('Enter');
+    await expect(panel(page, 'result').getByRole('button', { name: 'Cerrar', exact: true })).toBeFocused();
+    expect(await panel(page, 'result').evaluate(node => node.matches(':modal'))).toBe(true);
+    await expect(page.locator('.result-surface')).toBeVisible();
+    await expect(panel(page, 'result').getByRole('tab', { name: 'Coincides (13)', exact: true })).toHaveAttribute('aria-selected', 'true');
+    await expect(panel(page, 'result').getByRole('tab', { name: 'Sin datos (5)', exact: true })).toBeVisible();
+    await expect(panel(page, 'result').locator('.topic-count-row')).toHaveCount(10);
+    await panel(page, 'result').getByRole('tab', { name: 'Difieres (2)', exact: true }).click();
+    const rent = panel(page, 'result').locator('.result-example[data-question-id="rent-price-cap"]');
+    await expect(rent).toContainText('Muy en desacuerdo');
+    await expect(rent).toContainText('Tu respuesta está en desacuerdo con la posición citada en esta propuesta.');
+    const sourceOpener = rent.getByRole('button', { name: /Ver fuente/ });
+    await sourceOpener.click();
+    await expect(page.getByRole('dialog')).toHaveCount(1);
+    await expect(panel(page, 'source').locator('.own-answer')).toHaveCount(0);
+    await expect(panel(page, 'source').getByRole('link', { name: /Página.*línea/i }).first()).toBeVisible();
     const quote = bank.positions[p.candidacyId]['rent-price-cap'].citations[0].quote;
-    await expect(reader(page).locator('blockquote').first()).toHaveText(quote);
-    await screenshot(page, 'rent-reader', info.project.name);
+    await expect(panel(page, 'source').locator('blockquote').first()).toHaveText(quote);
+    await waitForPanelMotion(page);
+    await screenshot(page, 'rent-source-panel', info.project.name);
     expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
-    if (info.project.name === 'chromium') {
-        await page.getByRole('navigation', { name: 'Navegación principal' }).getByRole('link', { name: 'Inicio', exact: true }).focus(); await page.keyboard.press('Escape'); await expect(reader(page)).toBeVisible();
-    }
-    await reader(page).getByRole('button', { name: 'Cerrar detalle' }).focus(); await page.keyboard.press('Escape');
-    await expect(opener).toBeFocused(); await expect(page.locator('.programme-reader')).toBeHidden();
+    await page.locator('.site-header a').first().evaluate(link => (link as HTMLElement).focus());
+    expect(await page.evaluate(() => document.activeElement?.closest('dialog.side-panel') !== null)).toBe(true);
+    await panel(page, 'source').getByRole('button', { name: 'Volver al detalle', exact: true }).click();
+    await expect(panel(page, 'result').getByRole('tab', { name: 'Difieres (2)', exact: true })).toHaveAttribute('aria-selected', 'true');
+    await expect(sourceOpener).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(opener).toBeFocused(); await expect(page.locator('dialog.side-panel')).toHaveCount(0);
 });
 
 test('UX02: closing an example from a low result row restores exact origin focus and scroll', async ({ page }) => {
-    await start(page); await answer(page, 20); await finish(page); await showAllResults(page);
-    const row = page.locator('.affinity-row').last(); const button = row.getByRole('button', { name: 'Qué no sabemos', exact: true }); await button.scrollIntoViewIfNeeded();
+    await start(page); await answer(page, 20); await finish(page); await expectAllResults(page);
+    const row = page.locator('.affinity-row').last(); const button = row.getByRole('button', { name: /^Detalle:/ }); await button.scrollIntoViewIfNeeded();
     const scroll = await page.evaluate(() => window.scrollY); await button.click();
-    await reader(page).locator('.result-example').first().getByRole('button', { name: /Ver fuente|Ver explicación/ }).click();
-    await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click();
+    await panel(page, 'result').getByRole('tab', { name: /^Sin datos \(/ }).click();
+    await panel(page, 'result').locator('.result-example').first().getByRole('button', { name: /Ver fuente|Ver explicación/ }).click();
+    await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
     await expect(button).toBeFocused(); await expect.poll(() => page.evaluate(() => window.scrollY)).toBeCloseTo(scroll, 0);
 });
 
-test('UX03 UX09: public proposal search keeps all positions, missing sources and search recovery reachable', async ({ page }, info) => {
-    await page.goto('/programmes'); await openPublicProposal(page, 'rent-price-cap');
-    await expect(page.locator('.position-row')).toHaveCount(6);
+test('UX03 UX09: independent proposal search keeps selected missing programmes and source recovery reachable', async ({ page }, info) => {
     const missing = bank.programmeProfiles!.find(p => !bank.documents.some(d => d.candidacyId === p.candidacyId))!;
-    await page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill(missing.name);
-    await page.locator('.position-row[data-profile-id="' + missing.id + '"]').getByRole('button', { name: /Ver explicación/ }).click();
-    await expect(reader(page)).toContainText('No hemos encontrado su programa común de 2023'); await expect(reader(page).getByRole('link')).toHaveCount(0);
-    await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click();
     const sourceException = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-002')!;
-    await page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill(sourceException.name);
-    await page.locator('.position-row[data-profile-id="' + sourceException.id + '"]').getByRole('button', { name: /Ver fuente/ }).click();
-    await expect(reader(page)).toContainText('Fuente oficial no localizada o no verificable');
-    await expect(reader(page).getByRole('link', { name: /Copia conservada/ }).first()).toHaveAttribute('rel', 'noopener noreferrer');
+    await page.goto('/programmes'); await openPublicProposal(page, 'rent-price-cap', [missing.candidacyId, sourceException.candidacyId]);
+    await expect(proposal(page, 'rent-price-cap').locator('.comparison-cell')).toHaveCount(2);
+    await proposal(page, 'rent-price-cap').locator('.comparison-cell[data-profile-id="' + missing.id + '"]').getByRole('button', { name: /Ver explicación/ }).click();
+    await expect(panel(page, 'source')).toContainText('No hemos encontrado su programa común de 2023'); await expect(panel(page, 'source').getByRole('link')).toHaveCount(0);
+    await expect(panel(page, 'source')).toContainText('La información que falta no significa que esté en contra.');
+    await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
+    await expect(page.locator('dialog.side-panel')).toHaveCount(0);
+    await proposal(page, 'rent-price-cap').locator('.comparison-cell[data-profile-id="' + sourceException.id + '"]').getByRole('button', { name: /Ver fuente/ }).click();
+    const preserved = panel(page, 'source').getByRole('link', { name: /Copia conservada/ }).first();
+    const exceptionDocument = bank.positions[sourceException.candidacyId]['rent-price-cap'].citations[0].documentId;
+    await expect(preserved).toHaveAttribute('href', bank.sourceLinks![exceptionDocument].preservedUrl);
+    await expect(preserved).toHaveAttribute('rel', 'noopener noreferrer');
     await screenshot(page, 'source-exception', info.project.name);
-    await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click();
-    await page.getByRole('button', { name: 'Volver a la búsqueda', exact: true }).click();
-    await page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true }).fill('no-existent-proposal'); await expect(page.locator('#app')).toContainText('No encontramos propuestas');
-    await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click(); await expect(page.getByRole('searchbox', { name: 'Buscar una propuesta', exact: true })).toHaveValue('');
+    await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click();
+    await expect(page.locator('dialog.side-panel')).toHaveCount(0);
+    await proposalSearch(page).fill('no-existent-proposal'); await expect(page.locator('#app')).toContainText('No encontramos propuestas');
+    await page.getByRole('button', { name: 'Borrar búsqueda', exact: true }).click(); await expect(proposalSearch(page)).toHaveValue('');
+    await expect(page.locator('.comparison-proposal')).toHaveCount(6);
 });
 
 test('UX04: two or three common programmes keep their national position, source return and reversible removal', async ({ page }, info) => {
     await page.goto('/programmes');
-    for (const id of ['boe-2023-002', 'boe-2023-003', 'boe-2023-004']) await page.getByRole('checkbox', { name: bank.programmeProfiles!.find(p => p.candidacyId === id)!.name, exact: true }).check();
-    const fourth = page.getByRole('checkbox', { name: bank.programmeProfiles![5].name, exact: true });
-    if (await fourth.isEnabled()) await fourth.click();
-    await expect(fourth).not.toBeChecked(); await expect(page.locator('#app')).toContainText('Ya tienes tres');
-    await page.getByRole('button', { name: 'Comparar 3 programas', exact: true }).click();
-    const housing = page.locator('.comparison-proposal[data-question-id="retain-public-housing-ownership"]:visible');
+    await openPublicProposal(page, 'retain-public-housing-ownership', ['boe-2023-002', 'boe-2023-003', 'boe-2023-004']);
+    await expect(slot(page, 3)).toHaveCount(0);
+    await expect(page.getByRole('checkbox')).toHaveCount(0);
+    const housing = proposal(page, 'retain-public-housing-ownership');
     await expect(housing).toContainText('Apoyo'); await expect(housing).not.toContainText('Posiciones contradictorias');
     const opener = housing.getByRole('button', { name: 'Ver fuente: Sumar (SUMAR)', exact: true }); await opener.click();
-    await expect(reader(page)).toContainText('Sumar (SUMAR)');
-    await expect(reader(page).locator('blockquote').first()).toHaveText(bank.positions['boe-2023-004']['retain-public-housing-ownership'].citations[0].quote);
-    await expect(reader(page)).toContainText('viviendas públicas'); await reader(page).getByRole('button', { name: 'Cerrar detalle' }).click(); await expect(opener).toBeFocused();
+    await expect(panel(page, 'source')).toContainText('Sumar (SUMAR)');
+    await expect(panel(page, 'source').locator('blockquote').first()).toHaveText(bank.positions['boe-2023-004']['retain-public-housing-ownership'].citations[0].quote);
+    await expect(panel(page, 'source')).toContainText('viviendas públicas'); await panel(page, 'source').getByRole('button', { name: 'Cerrar', exact: true }).click(); await expect(opener).toBeFocused();
     await screenshot(page, 'focused-comparison', info.project.name);
-    await page.getByRole('button', { name: 'Cambiar programas', exact: true }).click();
-    await page.getByRole('checkbox', { name: bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-003')!.name, exact: true }).uncheck();
-    await page.getByRole('button', { name: 'Comparar 2 programas', exact: true }).click();
+    const removed = bank.programmeProfiles!.find(p => p.candidacyId === 'boe-2023-003')!.name;
+    await slot(page, 1).getByRole('button', { name: 'Cambiar: ' + removed, exact: true }).click();
+    await panel(page, 'picker').getByRole('button', { name: 'Quitar: ' + removed, exact: true }).click();
     await expect(housing.getByRole('button', { name: /Ver fuente|Ver explicación/ })).toHaveCount(2);
-    await expect(page.locator('[aria-modal="true"]')).toHaveCount(0);
+    await expect(proposalSearch(page)).toHaveValue(bank.questions.find(q => q.id === 'retain-public-housing-ownership')!.text);
+    await expect(page.locator('dialog.side-panel')).toHaveCount(0);
 });
 
-test('UX06: open long original context survives 320px, zoom-equivalent reflow and low height', async ({ page }, info) => {
-    await page.setViewportSize({ width: 1440, height: 1000 }); await page.goto('/programmes'); await openPublicProposal(page, 'rent-price-cap');
-    await page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill('Sumar (SUMAR)');
-    await page.locator('.position-row[data-profile-id="boe-2023-004-p1"]').getByRole('button', { name: /Ver fuente/ }).click();
-    const disclosure = reader(page).locator('.literal-source details').first(); await disclosure.locator('summary').click();
+test('UX06: the longest original quotation survives 320px, text zoom and low panel height without truncation', async ({ page }, info) => {
+    const longest = Object.entries(bank.positions).flatMap(([candidacyId, positions]) => Object.entries(positions).flatMap(([questionId, position]) => position.citations.map(citation => ({ candidacyId, questionId, citation })))).sort((a, b) => b.citation.quote.length - a.citation.quote.length)[0];
+    const target = bank.programmeProfiles!.find(p => p.candidacyId === longest.candidacyId)!;
+    const other = target.candidacyId === 'boe-2023-001' ? 'boe-2023-004' : 'boe-2023-001';
+    await page.setViewportSize({ width: 1440, height: 1000 }); await page.goto('/programmes'); await openPublicProposal(page, longest.questionId, [other, target.candidacyId]);
+    await proposal(page, longest.questionId).locator('.comparison-cell[data-profile-id="' + target.id + '"]').getByRole('button', { name: /Ver fuente/ }).click();
+    const source = panel(page, 'source');
+    const quote = source.locator('blockquote').filter({ hasText: longest.citation.quote });
+    const close = source.getByRole('button', { name: 'Cerrar', exact: true });
+    async function expectReadableSource() {
+        await waitForPanelMotion(page);
+        await expect(quote).toHaveText(longest.citation.quote);
+        await expect(source.locator('details')).toHaveCount(0);
+        const viewport = page.viewportSize()!;
+        expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(viewport.width);
+        expect(await source.locator('.panel-body').evaluate(node => node.scrollWidth <= node.clientWidth)).toBe(true);
+        const bounds = (await source.boundingBox())!;
+        expect(bounds.x).toBeGreaterThanOrEqual(-1); expect(bounds.y).toBeGreaterThanOrEqual(-1);
+        expect(bounds.x + bounds.width).toBeLessThanOrEqual(viewport.width + 1);
+        expect(bounds.y + bounds.height).toBeLessThanOrEqual(viewport.height + 1);
+        await expect(close).toBeFocused(); await expect(close).toBeInViewport({ ratio: 1 });
+    }
     for (const width of [720, 360, 320, 1440]) {
         await page.setViewportSize({ width, height: width === 1440 ? 420 : 900 });
-        await expect(disclosure).toHaveAttribute('open', ''); await expect(reader(page)).toContainText('texto original');
-        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-        await expect(reader(page).getByRole('button', { name: 'Cerrar detalle' })).toBeVisible();
-        await screenshot(page, 'reader-' + width, info.project.name);
+        await expectReadableSource();
+        await screenshot(page, 'source-panel-' + width, info.project.name);
     }
-    await page.setViewportSize({ width: 1440, height: 1000 }); await expect(disclosure).toHaveAttribute('open', '');
-    for (const zoom of ['200%', '400%']) {
-        await page.evaluate(value => { document.documentElement.style.zoom = value; }, zoom);
-        await expect(disclosure).toHaveAttribute('open', '');
-        await expect(disclosure.locator('summary')).toBeFocused(); await expect(disclosure.locator('summary')).toBeInViewport();
-        expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-        await expect(page.locator('.reading-origin')).toBeHidden(); await screenshot(page, 'zoom-' + zoom.slice(0, -1), info.project.name);
+    // These viewport sizes reproduce reflow from a 1280x1024 CSS-pixel viewport;
+    // they do not exercise native browser zoom, which has separate visual evidence.
+    for (const viewport of [{ width: 640, height: 512, scale: 200 }, { width: 320, height: 256, scale: 400 }]) {
+        await page.setViewportSize({ width: viewport.width, height: viewport.height });
+        await expectReadableSource();
+        await expect(proposal(page, longest.questionId)).toBeVisible();
+        await screenshot(page, 'source-reflow-' + viewport.scale + '-equivalent-' + viewport.width + 'csspx', info.project.name);
     }
-    await page.evaluate(() => { document.documentElement.style.zoom = ''; });
+    await page.setViewportSize({ width: 320, height: 900 });
+    await page.evaluate(() => { document.documentElement.style.fontSize = '200%'; });
+    expect(await page.evaluate(() => getComputedStyle(document.documentElement).fontSize)).toBe('32px');
+    await expectReadableSource();
+    await screenshot(page, 'source-text-200-320csspx', info.project.name);
+    await page.evaluate(() => { document.documentElement.style.fontSize = ''; });
 });
 
 test('local Spanish export agrees with all result bars and full useful-block exhaustion never auto-reveals', async ({ page }) => {
@@ -408,11 +465,16 @@ test('local Spanish export agrees with all result bars and full useful-block exh
     expect(new Set(evidence.programmes.map(p => p.candidacyId)).size).toBe(59);
     expect(evidence.documents.every(d => d.programmeRole === 'common_election_programme')).toBe(true);
     expect(evidence.documents.some(d => d.id === 'compromis-sumar' || d.id.includes('childhood-obesity'))).toBe(false);
-    await showAllResults(page);
+    await expectAllResults(page);
     for (const row of data.results.rows) {
         const value = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 }).format(row.affinity) + ' %';
         await expect(programmeRow(page, row.id).locator('.affinity-value')).toHaveText(value);
     }
+    const restart = page.getByRole('button', { name: 'Volver a hacer el test', exact: true });
+    await restart.click();
+    await expect(page.getByRole('dialog').getByRole('button', { name: 'Seguir con mis respuestas', exact: true })).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(restart).toBeFocused(); await expectAllResults(page);
 });
 
 test('optional positive importance keeps all twenty starter decisions and applies the same denominator', async ({ page }) => {
@@ -423,7 +485,7 @@ test('optional positive importance keeps all twenty starter decisions and applie
     await housingImportance.selectOption('2');
     expect(await housingImportance.locator('option').allTextContents()).toEqual(['Normal', 'Me importa especialmente']);
     await page.getByRole('button', { name: 'Volver al punto de decisión', exact: true }).click(); await finish(page);
-    await expect(page.locator('.affinity-row')).toHaveCount(6);
+    await expectAllResults(page);
     const file = await downloadTechnicalResults(page); const result = JSON.parse(readFileSync(file!, 'utf8'));
     expect(result.priorities).toEqual({ housing: 2 }); expect(result.results.denominator).toBe(11);
 });
@@ -431,9 +493,8 @@ test('optional positive importance keeps all twenty starter decisions and applie
 test('intentional official-source navigation sends no referrer or personal state', async ({ page, context }) => {
     await page.goto('/programmes');
     await openPublicProposal(page, 'rent-price-cap');
-    await page.getByRole('searchbox', { name: 'Buscar una formación', exact: true }).fill('Sumar (SUMAR)');
-    await page.locator('.position-row[data-profile-id="boe-2023-004-p1"]').getByRole('button', { name: /Ver fuente/ }).click();
-    const source = reader(page).getByRole('link', { name: /Fuente oficial/ }).first();
+    await proposal(page, 'rent-price-cap').locator('.comparison-cell[data-profile-id="boe-2023-004-p1"]').getByRole('button', { name: /Ver fuente/ }).click();
+    const source = panel(page, 'source').locator('.literal-source a').first();
     const officialUrl = await source.getAttribute('href');
     expect(officialUrl).toBeTruthy();
     const request = new Promise<{ headers: Record<string, string>; url: string; method: string; body: string | null }>(resolve => {
@@ -449,7 +510,7 @@ test('intentional official-source navigation sends no referrer or personal state
     expect(sent.headers.referer).toBeUndefined();
     expect(await external.evaluate(() => window.opener)).toBeNull();
     await external.close();
-    await expect(reader(page)).toBeVisible();
+    await expect(panel(page, 'source')).toBeVisible();
 });
 
 test('UX07 UX10: generic menu/back preserves only live memory and private data never enters navigation or storage', async ({ page, context }) => {
@@ -459,9 +520,10 @@ test('UX07 UX10: generic menu/back preserves only live memory and private data n
     const question = await page.locator('.quiz-card').getAttribute('data-question-id');
     await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
     await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas' })).toHaveCount(0);
-    await openPublicProposal(page, bank.questions[0].id); await expect(page.locator('.proposal-relation')).toHaveCount(0);
+    await openPublicProposal(page, bank.questions[0].id); await expect(page.locator('.own-answer, .proposal-relation')).toHaveCount(0);
     await page.goBack(); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', question!);
-    await page.goForward(); await expect(page.locator('.position-row')).toHaveCount(6);
+    await page.goForward(); await expect(page.locator('.comparison-cell')).toHaveCount(2);
+    await expect(proposalSearch(page)).toHaveValue(bank.questions[0].text);
     const state = await page.evaluate(async () => ({ history: history.state, local: Object.keys(localStorage), session: Object.keys(sessionStorage), databases: await indexedDB.databases(), url: location.pathname + location.search + location.hash }));
     expect(state).toEqual({ history: null, local: [], session: [], databases: [], url: '/programmes' });
     expect(await context.cookies()).toEqual([]);
@@ -475,20 +537,30 @@ test('UX07 UX10: generic menu/back preserves only live memory and private data n
     await page.reload(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
 });
 
-test('UX08: skipped topic has no maximum, review restores it, rapid extension adds exactly ten and edit hides results', async ({ page }, info) => {
+test('UX08: skipped topics recover through the single result action and continue invalidates named results', async ({ page }, info) => {
+    test.setTimeout(60_000);
     await start(page); await answer(page, 20, true);
     await expect(page.locator('#app')).toContainText('Falta una respuesta en algunos temas'); await expect(page.locator('#app')).not.toContainText('Tu mayor coincidencia');
     await screenshot(page, 'pending-checkpoint', info.project.name);
+    await finish(page); await expectAllResults(page);
+    expect(await page.locator('.affinity-value').allTextContents()).toEqual(Array(59).fill('—'));
+    await expect(page.getByRole('button', { name: 'Revisar respuestas', exact: true })).toHaveCount(0);
+    await page.getByRole('button', { name: 'Seguir contestando', exact: true }).click();
+    await expect(page.locator('.affinity-row, dialog[data-panel-kind="result"]')).toHaveCount(0);
     await page.getByRole('button', { name: 'Responder una pregunta de Pensiones' }).click();
     await page.locator('[data-question-id="pensions-cost-of-living"]').getByRole('radio', { name: 'Muy de acuerdo', exact: true }).check();
     await page.getByRole('button', { name: 'Volver al punto de decisión' }).click();
     await expect(page.locator('#app')).toContainText('Tu mayor coincidencia');
     await page.getByRole('button', { name: 'Responder 10 más' }).dblclick(); await expect(page.locator('.quiz-card')).toContainText('21 de 30');
-    await answer(page, 10); await finish(page);
-    await page.getByRole('button', { name: 'Revisar respuestas' }).click();
+    await answer(page, 10);
+    await page.getByRole('button', { name: 'Revisar respuestas', exact: true }).click();
     await expect(page.locator('.affinity-row')).toHaveCount(0); await expect(page.locator('#app')).not.toContainText('Sumar');
     await page.locator('[data-question-id="rent-price-cap"]').getByRole('radio', { name: 'Muy de acuerdo', exact: true }).check();
     await page.getByRole('button', { name: 'Volver al punto de decisión' }).click(); await finish(page);
+    await page.getByRole('button', { name: 'Seguir contestando', exact: true }).click();
+    await expect(page.locator('.quiz-card')).toContainText('31 de 40');
+    await expect(page.locator('.affinity-row, .result-detail, .result-example')).toHaveCount(0);
+    await expect(page.locator('#app')).not.toContainText('Sumar');
 });
 
 test('delayed result checks keep checkpoint space and restore answers and controls after failure', async ({ page }) => {
@@ -508,24 +580,24 @@ test('delayed result checks keep checkpoint space and restore answers and contro
     await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeEnabled();
     await expect(page.getByRole('button', { name: 'Ver mi resultado', exact: true })).toBeFocused();
     await page.unroute('**/api/release-state');
-    await finish(page); await expect(page.locator('.affinity-row')).toHaveCount(6);
+    await finish(page); await expectAllResults(page);
 });
 
-test('loading, invalid bank, withdrawn session, overlay opt-in and cancel/reset states remain honest', async ({ page }) => {
+test('invalid bank, withdrawal, independent public comparison and quiz cancel/reset states remain honest', async ({ page }) => {
+    test.setTimeout(60_000);
     await start(page); await answer(page, 20);
     await page.route('**/api/release-state', route => route.fulfill({ json: { sha256: sha, withdrawn: [sha] } }));
     await page.getByRole('button', { name: 'Ver mi resultado' }).click(); await expect(page.locator('#app')).toContainText('se ha retirado'); await expect(page.locator('.affinity-row')).toHaveCount(0); await expect(page.locator('#app')).not.toContainText('Tu mayor coincidencia');
     await page.unroute('**/api/release-state'); await start(page); await answer(page, 20); await finish(page);
     await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/programmes"]').click();
-    await page.getByRole('checkbox', { name: bank.programmeProfiles![0].name, exact: true }).check();
-    await page.getByRole('checkbox', { name: bank.programmeProfiles![3].name, exact: true }).check();
-    await page.getByRole('button', { name: 'Comparar 2 programas', exact: true }).click();
-    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas' })).not.toBeChecked();
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas' }).check();
-    await expect(page.locator('.comparison-proposal:visible .own-answer').first()).toBeVisible();
-    await page.getByRole('checkbox', { name: 'Mostrar mis respuestas' }).uncheck(); await expect(page.locator('.own-answer')).toHaveCount(0);
+    await selectProgrammes(page, ['boe-2023-001', 'boe-2023-004']);
+    await expect(page.getByRole('checkbox', { name: 'Mostrar mis respuestas' })).toHaveCount(0);
+    await expect(page.locator('.own-answer, .result-detail, .affinity-row')).toHaveCount(0);
     await page.getByRole('navigation', { name: 'Navegación principal' }).locator('a[href$="/questionnaire"]').click();
-    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused(); await page.keyboard.press('Escape'); await expect(page.locator('.affinity-row')).toHaveCount(6);
+    await expectAllResults(page);
+    await page.getByRole('button', { name: 'Seguir contestando', exact: true }).click();
+    const question = await page.locator('.quiz-card').getAttribute('data-question-id');
+    await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Seguir con mis respuestas' })).toBeFocused(); await page.keyboard.press('Escape'); await expect(page.locator('.quiz-card')).toHaveAttribute('data-question-id', question!);
     await page.getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await page.getByRole('dialog').getByRole('button', { name: 'Borrar respuestas', exact: true }).click(); await expect(page.getByRole('button', { name: 'Empezar el test', exact: true })).toBeVisible();
     await page.route('**/api/bank', route => route.fulfill({ body: '{}', headers: { 'X-Evidence-Sha256': 'bad' } })); await page.reload(); await expect(page.locator('#app')).toContainText(/No hemos podido (cargar|abrir)/);
 });

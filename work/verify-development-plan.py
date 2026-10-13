@@ -146,6 +146,26 @@ if p.get("nextIteration", {}).get("activeRefinement"):
             assert task["completionEvidence"]
             assert all((root / path).exists() for path in task["completionEvidence"] if not path.startswith(".tools/"))
         seen.add(task["id"])
+    if cleanup.get("activeTaskIds"):
+        active_ids = cleanup["activeTaskIds"]
+        assert len(active_ids) == len(set(active_ids))
+        assert set(active_ids) <= seen
+        active_tasks = [task for task in cleanup["tasks"] if task["id"] in active_ids]
+        assert all(task["phase"] == "active_v2" for task in active_tasks)
+        assert cleanup["acceptanceRevision"] == cleanup["planVersion"]
+        if cleanup.get("planningOnly"):
+            assert cleanup["applicationImplementationStarted"] is False
+            assert cleanup["applicationImplementationComplete"] is False
+            assert cleanup["localAcceptanceComplete"] is False
+            assert cleanup["acceptanceStatus"] == "pending_application_implementation"
+            assert all(task["status"] == "planned" for task in active_tasks)
+        assert cleanup["historicalImplementation"]["ownerAcceptanceConfirmed"] is False
+        baseline = json.loads((root / cleanup["baseline"]).read_text())
+        assert baseline["sourceBankSha256"] == bank_hash
+        assert baseline["kind"] == "planning_reproduction_not_redesign_acceptance"
+        for capture in baseline["screenshots"]:
+            assert hashlib.sha256((root / capture["path"]).read_bytes()).hexdigest() == capture["sha256"]
+        print("Active revision boundaries and baseline capture hashes passed.")
     assert len({item["id"] for item in cleanup["sections"]}) == len(cleanup["sections"])
     flow_ids = set()
     for flow in cleanup["flows"]:

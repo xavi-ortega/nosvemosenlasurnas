@@ -89,7 +89,7 @@ def render():
         generated[second["humanPlan"]] = "# " + second["title"] + "\n\n" + second["planVersion"] + " · " + implementation + "\n\n" + second["summary"] + "\n\n" + second_sections + "\n\n" + render_interactions(second["interactionDesign"]) + "\n\n## Concrete first-20 editorial order\n\n" + ordering + "\n\n" + starters + "\n\n## Implementation sequence\n\n" + second_tasks + "\n\n## Implementation decisions\n\n" + decisions + "\n\n## Verified research sources\n\n" + citations + "\n\nSee " + second["research"] + " for hashes, exact measures, visual verification and limitations. Survey salience orders historical questions; it does not update 2023 party positions.\n"
     refinement = json.loads((ROOT / plan["nextIteration"]["activeRefinement"]["plan"]).read_text()) if plan.get("nextIteration", {}).get("activeRefinement") else None
     if refinement:
-        active_note = "\n## Active next-stage refinement\n\n" + refinement["title"] + ". Status: " + refinement["status"] + ". " + refinement["summary"] + "\n\nRead " + refinement["humanPlan"] + " and " + plan["nextIteration"]["activeRefinement"]["plan"] + ". Completed Q/R evidence is preserved; U tasks have separate acceptance.\n"
+        active_note = "\n## Active next-stage refinement\n\n" + refinement["title"] + ". Status: " + refinement["status"] + ". " + refinement["summary"] + "\n\nRead " + refinement["humanPlan"] + " and " + plan["nextIteration"]["activeRefinement"]["plan"] + ". Completed Q/R/U evidence is historical; active task IDs and the acceptance revision are defined in the refinement plan.\n"
         generated["docs/plans/development-plan.md"] += active_note
         generated["docs/plans/commit-by-commit-plan.md"] += active_note
         generated["outputs/electoral-app-development-plan.html"] = '<!doctype html><html lang="en"><meta charset="utf-8"><title>Active development plan</title><style>body{max-width:80ch;margin:3rem auto;padding:1rem;font:16px/1.6 system-ui}pre{white-space:pre-wrap}</style><body><pre>' + html.escape(generated["docs/plans/development-plan.md"]) + '</pre></body></html>\n'
@@ -106,8 +106,13 @@ def render():
             for node in flow["nodes"]:
                 lines.append("- **" + node["id"] + "**: " + node["goal"] + ". " + "; ".join("“" + action["label"] + "” → " + action["target"] + " (retain " + action["retains"] + ")" + ("; available when " + action["when"] if action.get("when") else "") for action in node["actions"]))
             blocks.append("\n\n".join(lines))
-        blocks.append("## Bounded implementation tasks")
-        for task in refinement["tasks"]:
+        blocks.append("## Active implementation tasks")
+        active_ids = set(refinement.get("activeTaskIds", [task["id"] for task in refinement["tasks"]]))
+        active_tasks = [task for task in refinement["tasks"] if task["id"] in active_ids]
+        historical_tasks = [task for task in refinement["tasks"] if task["id"] not in active_ids]
+        for task in active_tasks + historical_tasks:
+            if historical_tasks and task["id"] == historical_tasks[0]["id"]:
+                blocks.append("## Historical task evidence\n\nThese completed records describe the earlier implementation. Their deliverables are not active requirements and their checks do not accept the new revision.")
             lines = ["### " + task["id"] + " " + task["subject"], "Status: " + task["status"] + ". Size: " + task["size"] + ". Dependencies: " + (", ".join(task["dependsOn"]) or "none") + "."]
             for label, key in [("Deliverables", "deliverables"), ("Accept when", "acceptanceCriteria"), ("Verify", "verification")]:
                 lines.append(label + ":\n\n" + "\n".join("- " + value for value in task[key]))

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-13T11:58:19.408Z",
+  "baselineCommit": "000d96c",
+  "branch": "main",
+  "workingTreeBeforeWork": "clean",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "kind": "planning_reproduction_not_redesign_acceptance",
+  "applicationChanged": false,
+  "runtime": "http://127.0.0.1:8000",
+  "browser": "installed isolated Playwright Chromium",
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "scriptedAnswerNotice": "Synthetic alternating strong agreement/disagreement for UI inspection only; no owner opinions or population findings.",
+  "actions": [
+    "Choose PP, PSOE, Sumar in public comparison",
+    "Measure disabled options and offscreen summary after third choice",
+    "Compare, open hidden tools,search fortunas, open PP source",
+    "Open method at 1280 and 390",
+    "Start quiz, inspect unavailable Back, answer 20 and deliberately finish",
+    "Inspect six-result surface at 1280 and 390"
+  ],
+  "observations": {
+    "disabledCheckboxesAfterThree": 56,
+    "summaryViewportTopAfterThirdChoice": -2205.25,
+    "summaryHeight": 365.921875,
+    "firstProposalDisplacementOpeningToolsPx": 48,
+    "initialRenderedResultFormations": 6,
+    "totalResultFormations": 59,
+    "resultAppControlCount": 48,
+    "horizontalOverflowObserved": false,
+    "pageErrors": []
+  },
+  "screenshots": [
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/comparison-1280.png",
+      "sha256": "b42ac14aa929ac6620b16eaedb5157e5899009fbe91718c3a5f36e9138822172",
+      "visuallyInspected": true,
+      "surface": "comparison-1280"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/method-1280.png",
+      "sha256": "a2f8189c9169b7fe2fd422228248ab38b221873e1c9d74e1618d1c3fba24e525",
+      "visuallyInspected": true,
+      "surface": "method-1280"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/method-390.png",
+      "sha256": "909ca34df50d5ef13baf213ceba39b75c7f575d559500d6c3ca323e0777d9011",
+      "visuallyInspected": true,
+      "surface": "method-390"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/quiz-first-1280.png",
+      "sha256": "527d7e54db279748c93e2dbd70169b05e683cad9dd1d14093f0cf11c394c3857",
+      "visuallyInspected": true,
+      "surface": "quiz-first-1280"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/results-1280.png",
+      "sha256": "edcd9e4f39ae2a623f2f18d488fe0c87aaf4df571f67f5f2a5e9c40954384b63",
+      "visuallyInspected": true,
+      "surface": "results-1280"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/results-390.png",
+      "sha256": "f6be538945220878c1c592713f68257fc5b66d612dbb1340429ab0956cd94f2f",
+      "visuallyInspected": true,
+      "surface": "results-390"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/selection-3-1280.png",
+      "sha256": "5e5c0ba7e0c065de95e438f8b140ea48c70fa1cdd6eb1a76a8736f28ca1363d6",
+      "visuallyInspected": true,
+      "surface": "selection-3-1280"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/flow-redesign-baseline/source-1280.png",
+      "sha256": "ce62c805077459be380740fc796927a4e943479e965780302f5a7223c08c5890",
+      "visuallyInspected": true,
+      "surface": "source-1280"
+    }
+  ],
+  "userAttachmentsReviewed": [
+    {
+      "path": "/var/folders/qv/64cv_91d4wn5_l6fvphmp8fh0000gp/T/codex-clipboard-590adcde-ae0c-4f16-8f53-68c272f88f2a.png",
+      "observation": "Native tools disclosure"
+    },
+    {
+      "path": "/var/folders/qv/64cv_91d4wn5_l6fvphmp8fh0000gp/T/codex-clipboard-9c3bc185-79e4-4045-bb0c-9adf28185f81.png",
+      "observation": "PP wealth-tax source with proof/disclaimer clutter"
+    },
+    {
+      "path": "/var/folders/qv/64cv_91d4wn5_l6fvphmp8fh0000gp/T/codex-clipboard-f62ff07a-5e89-448e-aa22-f038c74666f4.png",
+      "observation": "Unavailable Back styling"
+    }
+  ],
+  "independentReviews": [
+    "Read-only code/selection/source-flow critique",
+    "Read-only result arithmetic and presentation semantics review",
+    "Read-only dead-code/routes/fallback/test consumer inventory"
+  ],
+  "referencesRead": [
+    {
+      "title": "W3C APG modal dialog",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/",
+      "decision": "Inform contained focus, Close/Escape, background inertness and restoration; current owner chooses overlay surface."
+    },
+    {
+      "title": "W3C APG tabs",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "decision": "Keyboard/selection semantics for the local three-tab result detail."
+    },
+    {
+      "title": "MDN native dialog",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog",
+      "decision": "Use showModal and scoped backdrop; avoid assuming newer convenience APIs or support."
+    },
+    {
+      "title": "web.dev CLS",
+      "url": "https://web.dev/articles/cls",
+      "decision": "Separate unexpected layout-shift measurement from user-triggered geometry and motion critique."
+    }
+  ],
+  "limits": [
+    "No new application design has been built or accepted.",
+    "Reproduction uses Chromium at two viewports, not complete browser/a11y/performance acceptance.",
+    "Synthetic test responses do not represent owner or voter opinions.",
+    "No source reacquisition or current external-link validation performed.",
+    "No recruitment, production privacy audit, deployment or metrics activation."
+  ],
+  "planCritiqueCorrections": [
+    "Replaced an artificial comparison-to-selection return with the actual same-surface slots graph.",
+    "Added direct source entry with closed quotes and origin-conditional return.",
+    "Clarified structural action counts exclude searching/scrolling.",
+    "Preserved stricter existing <0.001 loading-shift gate.",
+    "Separated automatic public requests from explicit external document navigation.",
+    "Specified all-skip zero-axis chart handling and recovery through the existing checkpoint.",
+    "Renamed example switch to avoid claiming all missing information is completed."
+  ]
+}

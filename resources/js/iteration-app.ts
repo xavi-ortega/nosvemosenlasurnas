@@ -62,6 +62,10 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     let publicFilter = 'all';
     let workspaceFilter = 'all';
     let workspacePage = 0;
+    let workspaceSearch = '';
+    let workspaceSearchPage = 0;
+    let workspaceToolsOpen = false;
+    const expandedCitationQuestions = new Set<string>();
     let positionPage = 0;
     let directorySearch = '';
     let sourceSelection = '';
@@ -332,16 +336,18 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         const close = () => { reader.replaceChildren(); reader.hidden = true; layout.classList.remove('has-reader'); stack.splice(0); if (rootOpener) restore(rootOpener, rootScroll); };
         const back = () => {
             const previous = stack.pop(); if (!previous) { close(); return; }
-            reader.replaceChildren(...previous.nodes); restore(previous.opener, previous.pageScroll); reader.scrollTop = previous.readerScroll;
+            reader.replaceChildren(...previous.nodes); reader.classList.toggle('source-reader', !!reader.querySelector('.source-detail')); restore(previous.opener, previous.pageScroll); reader.scrollTop = previous.readerScroll;
         };
         const open = (heading: string, nodes: HTMLElement[], opener: HTMLElement, backKey: string, replace = false) => {
             root.style.minHeight = '';
             if (reader.hidden) { rootOpener = opener; rootScroll = window.scrollY; }
             else if (!replace) stack.push({ nodes: [...reader.childNodes], opener, pageScroll: window.scrollY, readerScroll: reader.scrollTop });
             const title = element('h2', heading); title.id = 'reader-heading'; reader.setAttribute('aria-labelledby', title.id);
-            reader.replaceChildren(actions(button(backKey, back), button('iteration_close_reader', close)), title, ...nodes); reader.hidden = false; layout.classList.add('has-reader'); reader.scrollTop = 0;
+            const closeControl = button('iteration_close_reader', close); closeControl.classList.add('reader-close'); closeControl.setAttribute('aria-label', t('iteration_close_reader')); const closeMark = element('span', '×'); closeMark.setAttribute('aria-hidden', 'true'); closeControl.replaceChildren(closeMark);
+            const navigation = actions(button(backKey, back), closeControl); navigation.classList.add('reader-navigation');
+            reader.replaceChildren(navigation, title, ...nodes); reader.classList.toggle('source-reader', nodes.some(node => node.classList.contains('source-detail'))); reader.hidden = false; layout.classList.add('has-reader'); reader.scrollTop = 0;
             for (const control of reader.querySelectorAll('.actions button')) control.setAttribute('aria-describedby', title.id);
-            focusFirstControl(reader); reader.querySelector('button')?.scrollIntoView({ block: 'nearest' });
+            focusFirstControl(reader); reader.scrollIntoView({ block: 'start' });
         };
         reader.addEventListener('keydown', event => { if (event.key === 'Escape' && reader.contains(document.activeElement)) { event.preventDefault(); close(); } });
         return { origin, open, close };
@@ -366,24 +372,28 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
         return (releaseHash === programmeSummaryBankSha256 ? programmeSummary(p.candidacyId, q.id) : null) ?? profilePosition(bank, p, q.id).rationale ?? t('ui_missing_position');
     }
     function proposalDetail(q: Question, p: ProgrammeProfile, personal: boolean): HTMLElement[] {
-        const position = profilePosition(bank, p, q.id); const block = element('section'); block.dataset.questionId = q.id;
-        block.append(element('h3', p.name), paragraph('ui_source_edition', 'quiet'));
-        if (personal && session?.revealed) block.append(relation(q, p));
-        block.append(element('h3', t('iteration_programme_position')), element('p', positionLabel(position), 'stance'));
-        if (!hasProgramme(p)) block.append(paragraph('ui_missing_programme'), paragraph('ui_no_opposition'));
-        block.append(element('h3', t('ui_interpretation')), element('p', summaryText(q, p)));
-        if (position.rationale) block.append(disclosure(t('ui_full_interpretation'), element('p', position.rationale)));
-        if (position.citations.length) block.append(paragraph('ui_original_notice', 'quiet'));
+        const position = profilePosition(bank, p, q.id); const block = element('section', '', 'source-detail'); block.dataset.questionId = q.id;
+        block.append(element('h3', p.name, 'source-formation'), paragraph('ui_source_edition', 'quiet source-edition'));
         for (const [index, citation] of position.citations.entries()) {
             const source = bank.sourceLinks![citation.documentId]; const document = bank.documents.find(d => d.id === citation.documentId)!;
             const quote = element('section', '', 'literal-source'); quote.dataset.documentId = citation.documentId;
-            quote.append(element('h4', interpolate('ui_original_quote', { number: index + 1 })), element('blockquote', citation.quote), element('p', (document.mediaType === 'text/html' ? t('section') + ' ' + (citation.locator.section ?? '—') : t('page') + ' ' + citation.locator.page) + ', ' + t('line') + ' ' + citation.locator.line), disclosure(t('ui_original_context'), element('blockquote', citation.context)));
+            const locator = (document.mediaType === 'text/html' ? t('section') + ' ' + (citation.locator.section ?? '—') : t('page') + ' ' + citation.locator.page) + ', ' + t('line') + ' ' + citation.locator.line;
+            const caption = element('div', '', 'citation-caption'); caption.append(element('h4', interpolate('ui_original_quote', { number: index + 1 })), element('p', locator));
+            quote.append(caption, element('blockquote', citation.quote));
             const links = element('div', '', 'source-links');
-            if (source.officialUrl) links.append(externalLink(source.officialUrl, t('iteration_official') + ': ' + source.publisher + ' · 2023'));
-            else links.append(paragraph('iteration_official_missing', 'notice'));
-            if (source.officialUrl !== source.preservedUrl) links.append(externalLink(source.preservedUrl, t('iteration_preserved') + ': ' + source.publisher + ' · 2023'));
-            quote.append(links, disclosure(t('ui_document_origin'), element('p', 'SHA-256: ' + document.sha256, 'source-hash'), scopeView(p), paragraph('interpretation'))); block.append(quote);
+            if (source.officialUrl) links.append(externalLink(source.officialUrl, t('iteration_official')));
+            else links.append(paragraph('iteration_official_missing', 'quiet'));
+            if (source.officialUrl !== source.preservedUrl) links.append(externalLink(source.preservedUrl, t('iteration_preserved')));
+            quote.append(links, disclosure(t('ui_original_context'), element('blockquote', citation.context)), disclosure(t('ui_document_origin'), element('p', source.publisher + ' · 2023'), element('p', 'SHA-256: ' + document.sha256, 'source-hash'), scopeView(p), paragraph('interpretation'))); block.append(quote);
         }
+        const interpretation = element('section', '', 'source-interpretation');
+        interpretation.append(element('h4', t('ui_interpretation')), element('p', positionLabel(position), 'stance'), element('p', summaryText(q, p)));
+        if (!hasProgramme(p)) interpretation.append(paragraph('ui_missing_programme'));
+        if (position.status !== 'derived') interpretation.append(paragraph('ui_no_opposition', 'quiet'));
+        if (position.rationale) interpretation.append(disclosure(t('ui_full_interpretation'), element('p', position.rationale)));
+        if (position.citations.length) interpretation.append(paragraph('ui_original_notice', 'quiet'));
+        block.append(interpretation);
+        if (personal && session?.revealed) block.append(relation(q, p));
         return [block];
     }
     function sourceButton(q: Question, p: ProgrammeProfile, layout: ReturnType<typeof readingLayout>, personal: boolean, backKey: string): HTMLButtonElement {
@@ -426,7 +436,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     }
     function resultToComparison(opener: HTMLElement, personal: boolean): void {
         if (!session?.revealed || resultSelected.size < 2) return;
-        selected.clear(); resultSelected.forEach(id => selected.add(id)); draft = null; overlay = personal;
+        workspaceSearch = ''; workspaceSearchPage = 0; selected.clear(); resultSelected.forEach(id => selected.add(id)); draft = null; overlay = personal;
         if (publicQuestion) { const q = bank.questions.find(q => q.id === publicQuestion)!; publicTopic = q.topicId; workspaceFilter = 'all'; workspacePage = Math.floor(bank.questions.filter(item => item.topicId === q.topicId).findIndex(item => item.id === q.id) / 6); }
         resultOrigin = { opener, scroll: window.scrollY, revision: personalRevision }; workspaceOrigin = null; publicMode = 'workspace'; views.delete('programmes'); scrolls.delete('programmes'); show('programmes', true);
     }
@@ -510,7 +520,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     function confirmPublicComparison(opener?: HTMLElement): void {
         if (draft) { selected.clear(); draft.forEach(id => selected.add(id)); draft = null; }
         if (selected.size < 2) return;
-        if (publicMode === 'positions' && opener) workspaceOrigin = publicSnapshot(opener);
+        if (publicMode === 'positions' && opener) { workspaceOrigin = publicSnapshot(opener); workspaceSearch = ''; workspaceSearchPage = 0; }
         if (publicQuestion) { const q = bank.questions.find(q => q.id === publicQuestion)!; publicTopic = q.topicId; const questions = bank.questions.filter(item => item.topicId === publicTopic); workspacePage = Math.floor(questions.findIndex(item => item.id === q.id) / 6); }
         publicNavigate('workspace');
         if (publicQuestion) { const target = [...view('programmes').querySelectorAll<HTMLElement>('[data-reader-origin]')].find(control => control.dataset.readerOrigin?.startsWith(publicQuestion + '/') && control.getClientRects().length); target?.scrollIntoView({ block: 'center' }); focusControl(target ?? null); }
@@ -562,45 +572,65 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
             const container = element('div', '', 'choose-layout'); const searchList = element('div'); searchList.append(search.label, clear, count, list); container.append(summaryHost, searchList); origin.append(container); updateList(); updateSummary();
         } else if (publicMode === 'workspace') {
             if (selected.size < 2) { publicMode = 'selection'; renderProgrammes(); return; }
+            origin.classList.add('comparison-workspace');
             const navigation = actions();
             if (resultOrigin && session?.revealed) navigation.append(button('ui_back_results', () => { const previous = resultOrigin!; show('quiz', true); restoreControl(previous.opener, previous.scroll, previous.revision); }));
             if (workspaceOrigin) navigation.append(button('ui_back_positions', () => restorePublic(workspaceOrigin!)));
-            const change = button('iteration_change_selection', startSelection); change.dataset.control = 'change-selection'; navigation.classList.add('workspace-navigation'); navigation.append(change, button('ui_topics', () => publicNavigate('topics')));
-            origin.append(navigation, element('h2', t('ui_comparison_title')), disclosure(t('ui_selected'), element('p', [...selected].map(id => profile(id).name).join(' / '), 'selected-line')), overlayControl());
+            const change = button('iteration_change_selection', startSelection); change.dataset.control = 'change-selection'; navigation.classList.add('workspace-navigation'); navigation.append(change, button('ui_back_topics', () => publicNavigate('topics')));
+            const heading = element('header', '', 'comparison-heading'); heading.append(element('h2', t('ui_comparison_title')), navigation); origin.append(heading);
             const controls = element('div', '', 'comparison-controls'); const topicLabel = element('label', t('ui_topic'), 'control'); const topic = element('select');
+            const allTopics = new Option(t('ui_all_topics'), 'all'); allTopics.disabled = true; allTopics.hidden = true; topic.append(allTopics);
             for (const item of bank.topics) topic.append(new Option(item.name + ' (' + bank.questions.filter(q => q.topicId === item.id).length + ')', item.id)); topic.value = publicTopic; topicLabel.append(topic);
-            const filterLabel = element('label', t('ui_show'), 'control'); const filter = element('select'); for (const value of ['all', 'differences', 'gaps']) filter.append(new Option(t(value === 'all' ? 'ui_all_proposals' : 'ui_' + value), value)); filter.value = workspaceFilter; filterLabel.append(filter); controls.append(topicLabel, filterLabel);
-            origin.append(controls, disclosure(t('ui_show') + ': ' + t('ui_differences') + ' / ' + t('ui_gaps'), paragraph('ui_filter_hint')), paragraph('ui_equal_hint', 'quiet'));
-            const output = element('div'); const count = element('p'); count.setAttribute('role', 'status'); const paging = element('div'); origin.append(count, output, paging);
+            const search = searchControl('ui_search_proposals', workspaceSearch, value => { workspaceSearch = value; workspaceSearchPage = 0; publicQuestion = null; update(); }); search.input.placeholder = t('ui_workspace_search_placeholder'); search.input.dataset.control = 'workspace-search';
+            const clear = button('ui_clear_search', () => { workspaceSearch = ''; workspaceSearchPage = 0; search.input.value = ''; update(); search.input.focus(); }); clear.classList.add('text-action');
+            const filterLabel = element('label', t('ui_show'), 'control'); const filter = element('select'); for (const value of ['all', 'differences', 'gaps']) filter.append(new Option(t(value === 'all' ? 'ui_all_proposals' : 'ui_' + value), value)); filter.value = workspaceFilter; filterLabel.append(filter);
+            const toolsContent = element('div', '', 'comparison-tools-content'); toolsContent.append(search.label, filterLabel);
+            const tools = disclosure(t('ui_comparison_tools'), toolsContent); tools.classList.add('comparison-tools'); tools.open = workspaceToolsOpen; tools.addEventListener('toggle', () => { if (tools.isConnected) workspaceToolsOpen = tools.open; }); controls.append(topicLabel, tools);
+            const guide = disclosure(t('ui_comparison_help'), paragraph('ui_equal_hint'), paragraph('ui_filter_hint'), paragraph('ui_no_opposition')); guide.classList.add('comparison-help');
+            const toolbar = element('div', '', 'comparison-toolbar'); const count = element('p'); count.setAttribute('role', 'status'); toolbar.append(count, clear, guide, overlayControl());
+            const output = element('div', '', 'comparison-proposals'); const paging = element('div'); origin.append(controls, toolbar, output, paging);
             const update = () => {
-                output.replaceChildren(); paging.replaceChildren(); const questions = bank.questions.filter(q => {
-                    if (q.topicId !== publicTopic) return false; const positions = [...selected].map(id => profilePosition(bank, profile(id), q.id));
+                output.replaceChildren(); paging.replaceChildren(); const query = normalize(workspaceSearch.trim()); topic.disabled = !!query; topic.value = query ? 'all' : publicTopic; clear.hidden = !workspaceSearch;
+                const questions = bank.questions.filter(q => {
+                    if (query ? !normalize(q.text + ' ' + (q.help ?? '')).includes(query) : q.topicId !== publicTopic) return false;
+                    const positions = [...selected].map(id => profilePosition(bank, profile(id), q.id));
                     return workspaceFilter === 'all' || workspaceFilter === 'gaps' && positions.some(p => p.status !== 'derived') || workspaceFilter === 'differences' && new Set(positions.filter(p => p.status === 'derived').map(p => p.value)).size >= 2;
                 });
-                workspacePage = Math.min(workspacePage, Math.max(0, Math.ceil(questions.length / 6) - 1)); const current = questions.slice(workspacePage * 6, (workspacePage + 1) * 6);
-                count.textContent = interpolate('ui_range', { first: questions.length ? workspacePage * 6 + 1 : 0, last: Math.min(questions.length, (workspacePage + 1) * 6), total: questions.length });
-                if (!current.length) { output.append(paragraph(workspaceFilter === 'differences' ? 'ui_empty_differences' : 'ui_empty_filter'), button('ui_all_again', () => { workspaceFilter = 'all'; filter.value = 'all'; update(); filter.focus(); })); return; }
-                const table = element('table', '', 'programme-comparison'); table.dataset.count = String(selected.size); const caption = element('caption', topicName(publicTopic), 'sr-only'); const head = element('thead'); const header = element('tr');
-                const th = element('th', t('proposal')); th.scope = 'col'; header.append(th); for (const id of selected) { const name = element('th', profile(id).name); name.scope = 'col'; header.append(name); } head.append(header); table.append(caption, head); const body = element('tbody');
-                const mobile = element('div', '', 'mobile-comparison');
-                for (const q of current) {
-                    const row = element('tr', '', 'comparison-proposal'); row.dataset.questionId = q.id; const question = element('th', q.text); question.scope = 'row'; if (overlay && session?.revealed) question.append(ownAnswer(q)); row.append(question);
-                    const card = element('section', '', 'comparison-proposal'); card.dataset.questionId = q.id; card.append(element('h3', q.text)); if (overlay && session?.revealed) card.append(ownAnswer(q));
-                    const overview = element('dl', '', 'stance-overview');
-                    const explanations = element('div');
-                    for (const id of selected) {
-                        const p = profile(id); const position = profilePosition(bank, p, q.id); const cell = element('td');
-                        if (!hasProgramme(p)) cell.append(paragraph('ui_missing_programme'));
-                        cell.append(element('p', positionLabel(position), 'stance'), element('p', summaryText(q, p), 'rationale'), sourceButton(q, p, layout, overlay, 'ui_back_comparison')); row.append(cell);
-                        const stance = element('div'); stance.append(element('dt', p.name), element('dd', positionLabel(position))); overview.append(stance);
-                        const explanation = element('section', '', 'mobile-explanation'); if (!hasProgramme(p)) explanation.append(paragraph('ui_missing_programme')); explanation.append(element('h4', p.name), element('p', summaryText(q, p)), sourceButton(q, p, layout, overlay, 'ui_back_comparison')); explanations.append(explanation);
-                    }
-                    card.append(overview, explanations); mobile.append(card); body.append(row);
+                const currentPage = Math.min(query ? workspaceSearchPage : workspacePage, Math.max(0, Math.ceil(questions.length / 6) - 1));
+                if (query) workspaceSearchPage = currentPage; else workspacePage = currentPage;
+                const current = questions.slice(currentPage * 6, (currentPage + 1) * 6);
+                tools.querySelector('summary')!.textContent = t('ui_comparison_tools') + (query || workspaceFilter !== 'all' ? ' (' + t('ui_filter_active') + ')' : '');
+                count.textContent = interpolate('ui_range', { first: questions.length ? currentPage * 6 + 1 : 0, last: Math.min(questions.length, (currentPage + 1) * 6), total: questions.length }) + (query ? '. ' + t('ui_search_all_topics') : '');
+                if (!current.length) {
+                    const empty = element('section', '', 'comparison-empty'); empty.append(paragraph(query ? workspaceFilter === 'all' ? 'ui_no_proposals' : 'ui_no_filtered_proposals' : workspaceFilter === 'differences' ? 'ui_empty_differences' : 'ui_empty_filter'));
+                    if (workspaceFilter !== 'all') empty.append(button(query ? 'ui_remove_filter' : 'ui_all_again', () => { workspaceFilter = 'all'; filter.value = 'all'; update(); filter.focus(); }));
+                    output.append(empty); return;
                 }
-                table.append(body); output.append(table, mobile);
-                paging.append(pagination(questions.length, workspacePage, next => { workspacePage = next; publicQuestion = null; update(); topic.focus({ preventScroll: true }); controls.scrollIntoView({ block: 'start' }); }));
+                for (const q of current) {
+                    const card = element('article', '', 'comparison-proposal'); card.dataset.questionId = q.id;
+                    const title = element('header', '', 'proposal-heading'); if (query) title.append(element('p', topicName(q.topicId), 'quiet'));
+                    title.append(element('h3', q.text)); if (overlay && session?.revealed) title.append(ownAnswer(q)); card.append(title);
+                    const grid = element('div', '', 'comparison-grid'); grid.dataset.count = String(selected.size);
+                    const quotes: HTMLElement[] = [];
+                    const revealQuotes = button(expandedCitationQuestions.has(q.id) ? 'ui_hide_quotes' : 'ui_show_quotes', control => { const expanded = !expandedCitationQuestions.has(q.id); if (expanded) expandedCitationQuestions.add(q.id); else expandedCitationQuestions.delete(q.id); control.setAttribute('aria-expanded', String(expanded)); control.textContent = t(expanded ? 'ui_hide_quotes' : 'ui_show_quotes'); quotes.forEach(quote => { quote.hidden = !expanded; }); }); revealQuotes.classList.add('text-action'); revealQuotes.setAttribute('aria-expanded', String(expandedCitationQuestions.has(q.id)));
+                    for (const id of selected) {
+                        const p = profile(id); const position = profilePosition(bank, p, q.id); const cell = element('section', '', 'comparison-cell'); cell.dataset.profileId = p.id;
+                        const heading = element('h4', p.name); const stance = element('p', position.status === 'unknown' ? t('ui_undocumented') : positionLabel(position), 'stance'); stance.dataset.status = position.status;
+                        cell.append(heading, stance, element('p', summaryText(q, p), 'rationale'));
+                        if (!hasProgramme(p)) cell.append(paragraph('ui_missing_programme', 'quiet'));
+                        if (position.citations.length) {
+                            const originals = element('div', '', 'comparison-quotes'); originals.id = 'quotes-' + q.id + '-' + p.id; originals.hidden = !expandedCitationQuestions.has(q.id); originals.append(paragraph('ui_literal_text', 'quiet'));
+                            for (const citation of position.citations) { const document = bank.documents.find(item => item.id === citation.documentId)!; originals.append(element('blockquote', citation.quote), element('p', document.mediaType === 'text/html' ? t('section') + ' ' + (citation.locator.section ?? '—') : t('page') + ' ' + citation.locator.page, 'quiet')); }
+                            quotes.push(originals); cell.append(originals);
+                        }
+                        const source = sourceButton(q, p, layout, overlay, 'ui_back_comparison'); source.classList.add('text-action'); cell.append(source); grid.append(cell);
+                    }
+                    if (quotes.length) { revealQuotes.setAttribute('aria-controls', quotes.map(quote => quote.id).join(' ')); title.append(revealQuotes); }
+                    card.append(grid); output.append(card);
+                }
+                if (questions.length > 6) paging.append(pagination(questions.length, currentPage, next => { if (query) workspaceSearchPage = next; else workspacePage = next; publicQuestion = null; update(); (query ? search.input : topic).focus({ preventScroll: true }); controls.scrollIntoView({ block: 'start' }); }));
             };
-            topic.addEventListener('change', () => { publicTopic = topic.value; publicQuestion = null; workspacePage = 0; update(); }); filter.addEventListener('change', () => { workspaceFilter = filter.value; workspacePage = 0; update(); }); update();
+            topic.addEventListener('change', () => { publicTopic = topic.value; publicQuestion = null; workspacePage = 0; update(); }); filter.addEventListener('change', () => { workspaceFilter = filter.value; workspacePage = workspaceSearchPage = 0; update(); }); update();
         } else if (['topics', 'proposals', 'search', 'formation'].includes(publicMode)) {
             origin.append(actions(button('iteration_select_programmes', control => startSelection(control)), button('ui_topics', () => publicNavigate('topics')), button('ui_search_proposals', () => publicNavigate('search', 'proposal-search'))));
             origin.append(element('h2', publicMode === 'topics' ? t('ui_topics_title') : publicMode === 'proposals' ? topicName(publicTopic) : publicMode === 'formation' ? profile(formationId!).name : t('ui_search_proposals')));
@@ -671,7 +701,7 @@ export function mountIteration(root: HTMLElement, bank: Bank, releaseHash: strin
     const keepFocusedContentVisible = () => { const active = document.activeElement as HTMLElement; if (active?.closest('.programme-reader')) requestAnimationFrame(() => active.scrollIntoView({ block: 'nearest' })); };
     const resizing = new ResizeObserver(keepFocusedContentVisible); resizing.observe(root);
     window.addEventListener('resize', keepFocusedContentVisible);
-    window.addEventListener('pagehide', () => { navigationRevision++; personalRevision++; resizing.disconnect(); session?.reset(); session = null; overlay = false; selected.clear(); resultSelected.clear(); draft = null; resultOrigin = null; informationOrigin = null; proposalOrigin = null; workspaceOrigin = null; directorySearch = publicSearch = proposalSearch = positionSearch = resultSearch = ''; publicMode = 'selection'; views.clear(); root.replaceChildren(); });
+    window.addEventListener('pagehide', () => { navigationRevision++; personalRevision++; resizing.disconnect(); session?.reset(); session = null; overlay = false; selected.clear(); resultSelected.clear(); expandedCitationQuestions.clear(); draft = null; resultOrigin = null; informationOrigin = null; proposalOrigin = null; workspaceOrigin = null; directorySearch = publicSearch = proposalSearch = positionSearch = resultSearch = workspaceSearch = ''; workspaceSearchPage = 0; publicMode = 'selection'; views.clear(); root.replaceChildren(); });
     window.addEventListener('pageshow', event => { if (event.persisted) { resizing.observe(root); quizView = 'setup'; show(section); } });
     show(section);
 }

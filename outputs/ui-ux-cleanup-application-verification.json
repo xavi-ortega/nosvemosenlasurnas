@@ -3,7 +3,7 @@
   "reportVersion": "ui-ux-cleanup-application-v1.1.0",
   "planVersion": "ui-ux-cleanup-2023-v1.1.0",
   "observedAt": "2026-10-13T08:50:19.285757+00:00",
-  "status": "accepted_local",
+  "status": "locally_verified_owner_revision",
   "baselineCommit": "eb7048e",
   "scope": "U004-U016 completed and accepted locally in the existing application. U001-U003 and unchanged original prototype remain preparation evidence only.",
   "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
@@ -2538,5 +2538,417 @@
     "openP1": 0,
     "openP2": 0,
     "basis": "Observed local journeys, inspected real-content captures, directly authored copy/source ledger, targeted regressions and full required gates; no recruited usability or production certification."
+  },
+  "historicalStatus": "accepted_local",
+  "ownerRevision": {
+    "recordedAt": "2026-10-13T11:27:16.498028+00:00",
+    "baselineCommit": "af8ea00",
+    "status": "locally_verified",
+    "ownerAcceptanceConfirmed": false,
+    "reason": "Owner rejected the previous comparison/citation experience as unappealing and unfinished. Prior automated/local acceptance is historical evidence, not owner approval.",
+    "tasks": [
+      "U006",
+      "U009",
+      "U011",
+      "U015",
+      "U016"
+    ],
+    "reproduction": {
+      "comparisonFirstProposalTopPx": {
+        "1280x720": 678,
+        "390x844": 733
+      },
+      "rentFirstQuoteTopPx": {
+        "1280x720": 694,
+        "390x844": 871
+      },
+      "mobileFirstProposalHeightPx": 1069,
+      "method": "Independent actual browser walkthrough of PP/PSOE/Sumar at af8ea00, plus inspection of existing application captures."
+    },
+    "implemented": [
+      "One semantic article per proposal, with full-width proposition and two/three equal programme columns; narrow screens read each formation exactly once. Exact names, stances and complete authored summaries remain visible.",
+      "Native on-demand search/filter tools at every width. Search all 80 proposals in the existing selection; show Todos los temas during search; clearing restores topic/page. Query/filter empty state names both constraints and offers Quitar filtro.",
+      "Mostrar citas reveals all exact original quotations for the proposal together, keeping interpretation and conditions visible. Expanded quotation state survives source return, topic/filter rendering and cancelled selection replacement.",
+      "Full source reader begins with compact proposition, formation, edition, original quote and locator; full context, provenance and interpretation follow separately. Contextual Back and labelled close/Escape retain source opener/scroll/query.",
+      "Native formation grid uses available width and shares SSR/hydrated markup rules. Responsive container queries also reflow columns for enlarged text."
+    ],
+    "iterations": [
+      {
+        "observation": "Initial redesign still clipped the native Mostrar selection on narrow screens.",
+        "correction": "Full-width mobile topic; search and filters moved into one native disclosure. Tools closed initially at all widths to put reading first."
+      },
+      {
+        "observation": "Close text occupied a second source-navigation row.",
+        "correction": "Use a labelled close symbol and remove inherited button padding; preserve contextual Back and native button focus."
+      },
+      {
+        "observation": "Independent reviewer reproduced loss of open citations on cancelled programme change.",
+        "correction": "Keep expanded proposal IDs in memory and restore during render; keyboard/return regression passes."
+      },
+      {
+        "observation": "Independent reviewer found no-hit copy blamed the query when only an active filter excluded its match.",
+        "correction": "Name search plus filter, and remove only the filter while retaining query; regression passes."
+      }
+    ],
+    "walkthroughs": [
+      {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "text": 100,
+        "cssZoom": 100,
+        "card": {
+          "x": 32,
+          "y": 337.5625,
+          "width": 1216,
+          "height": 384.53125
+        },
+        "quote": {
+          "x": 225,
+          "y": 293.828125,
+          "width": 830,
+          "height": 131.78125
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 1512,
+          "height": 850
+        },
+        "text": 100,
+        "cssZoom": 100,
+        "card": {
+          "x": 84,
+          "y": 337.5625,
+          "width": 1344,
+          "height": 387.78125
+        },
+        "quote": {
+          "x": 341,
+          "y": 293.828125,
+          "width": 830,
+          "height": 131.78125
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "text": 100,
+        "cssZoom": 100,
+        "card": {
+          "x": 16,
+          "y": 485.859375,
+          "width": 358,
+          "height": 995.796875
+        },
+        "quote": {
+          "x": 33,
+          "y": 359.21875,
+          "width": 324,
+          "height": 205.34375
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 320,
+          "height": 568
+        },
+        "text": 100,
+        "cssZoom": 100,
+        "card": {
+          "x": 16,
+          "y": 532.25,
+          "width": 288,
+          "height": 1159.9375
+        },
+        "quote": {
+          "x": 33,
+          "y": 410.296875,
+          "width": 254,
+          "height": 292.015625
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 1024,
+          "height": 320
+        },
+        "text": 100,
+        "cssZoom": 100,
+        "card": {
+          "x": 32,
+          "y": 337.5625,
+          "width": 960,
+          "height": 762.1875
+        },
+        "quote": {
+          "x": 95.71875,
+          "y": 292.546875,
+          "width": 832.5625,
+          "height": 131.78125
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "text": 200,
+        "cssZoom": 100,
+        "card": {
+          "x": 64,
+          "y": 913.15625,
+          "width": 1152,
+          "height": 1669.84375
+        },
+        "quote": {
+          "x": 103.390625,
+          "y": 609.15625,
+          "width": 1073.21875,
+          "height": 324.75
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      },
+      {
+        "viewport": {
+          "width": 1512,
+          "height": 850
+        },
+        "text": 100,
+        "cssZoom": 400,
+        "card": {
+          "x": 128,
+          "y": 2583.953125,
+          "width": 1256,
+          "height": 4700.640625
+        },
+        "quote": {
+          "x": 260,
+          "y": 1707.125,
+          "width": 992,
+          "height": 1506.296875
+        },
+        "sourceOverflow": false,
+        "comparisonOverflow": false,
+        "focus": "public-dental-care/boe-2023-002-p1",
+        "query": "dentales",
+        "comparisonAxe": [],
+        "sourceAxe": [],
+        "errors": []
+      }
+    ],
+    "independentReview": {
+      "screenshotsInspected": 9,
+      "sizes": [
+        1280,
+        390,
+        320
+      ],
+      "rentQuoteTopPx": {
+        "1280": 294,
+        "390": 328,
+        "320": 380
+      },
+      "sourceReturn": "Exact opener/scroll and inline-citation expansion retained. Two cancellation/empty-state defects were reproduced and then corrected with targeted tests."
+    },
+    "fiveQuestionReview": {
+      "comparison": {
+        "where": "2023 programmes and chosen topic; exact formations are beside each proposal. During search, disabled topic says Todos los temas.",
+        "canDo": "Read summaries, show original quotes together, change programmes, select a topic or search/filter.",
+        "meaning": "Qualified and absent postures remain explicit with unchanged complete summaries; scale/gap explanation in one optional guide.",
+        "changed": "Native selection/search/filter and live exact result count; Mostrar/Ocultar citas exposes its expanded state.",
+        "return": "Source Back/Escape restores query, scroll, opener and visible quotations; cancelled replacement retains previous programmes and open quotations."
+      },
+      "source": {
+        "where": "The same complete proposal, exact formation,2023 edition and page/section locator.",
+        "canDo": "Read the requested quote immediately, open context/origin, or follow the original/preserved link.",
+        "meaning": "Original quotation appears before the separately labelled interpretation; personal relation appears only after current deliberate finish and explicit overlay.",
+        "changed": "One reader replaces the comparison; quote expansion does not alter posture or scoring.",
+        "return": "Contextual Back and close/Escape retain existing nested reader behavior and semantic opener."
+      }
+    },
+    "commands": [
+      {
+        "command": "ITERATION_REAL_URL=http://127.0.0.1:8000 npx playwright test tests/Browser/ui-ux-cleanup.spec.ts tests/Browser/second-iteration.spec.ts --workers=4",
+        "outcome": "84 passed before final small refinements",
+        "log": ".tools/ui-ux-cleanup/owner-revision-browser.log"
+      },
+      {
+        "command": "Targeted comparison geometry/overlay/search refinement regression",
+        "outcome": "6 passed",
+        "log": ".tools/ui-ux-cleanup/owner-revision-refinement-tests.log"
+      },
+      {
+        "command": "Targeted workspace-search and inline-citation cancellation regression",
+        "outcome": "4 passed on the final behavior",
+        "log": ".tools/ui-ux-cleanup/owner-revision-return-tests.log"
+      },
+      {
+        "command": "Raw installed Playwright/AxeBuilder on actual :8000 runtime",
+        "outcome": "Five viewport sizes plus200% text and400% CSS zoom; no horizontal overflow, no axe violations, no page errors; exact return focus/query verified.",
+        "log": ".tools/ui-ux-cleanup/owner-revision-final-observations.json"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/comparison-1280.png",
+        "sha256": "51782accac434e33dc0224db09c9e86e6886d1dada263ef97934d3b02cc2fda1"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/comparison-390.png",
+        "sha256": "20e45d74dde4cc439aca0910e2224d840711db1c4b5810d6ba068125d67e3513"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/dental-1280.png",
+        "sha256": "fcd5de4c5e7be0386a20f3e6b0bd21cfa92b6374912494e15128f75af0278358"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/dental-390.png",
+        "sha256": "a25fe956efe22a9cad99430ba13e0d9c1ff8065c15690204023294462955510a"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-1024.png",
+        "sha256": "97e479091cbd23a50c441f1784d8441ce68a6954b007b6d529b53e24252e15da"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-1280.png",
+        "sha256": "675513942c858ca28244c5644f27b1528b2272cdb0936cfde51593ef780f0a01"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-1512.png",
+        "sha256": "71875f6593d4060adca8b27febed0c56e6eb4781345de8b4e453f66081c125b4"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-320.png",
+        "sha256": "f63e9b152401fe33687caf0006cd43215383558e654b4be3307c38e031d8e84a"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-390.png",
+        "sha256": "820faeeb1af97568bfc45406665eb7feba2cc40fccc8696fb2985b6877174dd1"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-css-zoom400.png",
+        "sha256": "d0de1bc070a00051230d111cb4227e77ab7bfd26375e4366a47d042bd6dbf70a"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-comparison-text200.png",
+        "sha256": "d1b8c49936c76d5a2c2d01f52e02b0c4d2ebb675fc79ee7df726541b706ce20d"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-1024.png",
+        "sha256": "e83be3c296b6d10cc7418658490c1929ea49cffa183b4c0ad22d24403912530b"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-1280.png",
+        "sha256": "69350aef3e15760bd57d9904a49374d9aea6d150f77ca2807084b8a194265315"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-1512.png",
+        "sha256": "73f29f5acf51e3c83770939fd38179efc7eed91d7f56896a7fdd6b3f2a90b02e"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-320.png",
+        "sha256": "103ea37bc827557bf6284bd99bd0d926da7a01e9718bca6cf317ec145a92ff73"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-390.png",
+        "sha256": "3910b1728e2ec9ea1bc131d600b7534ffb1f9e75ad650ed51ea212c5c0ebb120"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-css-zoom400.png",
+        "sha256": "dc5544991d34898a0d792c5db6c85fd213b5c834073eade8331c0336c0206766"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/final-source-text200.png",
+        "sha256": "8bca56764174b3fa43312298a302c3a5427f16bc3f276ab261ed8a51e0135e5d"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/inline-citations-1024.png",
+        "sha256": "80ac5a77d8db3d02e7ee1fdcdf563217021595608614b8aa0e538e04efbb6111"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/inline-citations-1280.png",
+        "sha256": "71f5322c2409ddd160896db4eee1ff3110fa48f00036e69c8b18854cf689e993"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/inline-citations-1512.png",
+        "sha256": "7f1b02c2a87af9534a17f5b78c31f09cad0a9f5ef5d83336eb159d7b2d1c53fd"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/inline-citations-320.png",
+        "sha256": "571af5338d47f9bc39804155af19ff79fe67eeaa3c27abf71cedb9fe09355df4"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/inline-citations-390.png",
+        "sha256": "909d10e2815070485d22a2c79541df1df3eb17f239a67a06846c999f7dd6607f"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/source-1280.png",
+        "sha256": "9ca0a3e83c16be3b8034b6d61cf85422bc52afee337b973f913ec1b0092431c9"
+      },
+      {
+        "path": "outputs/ui-ux-cleanup-previews/owner-revision/source-390.png",
+        "sha256": "8ccc0200f77d8a0e3dc1525c85adc7e6ee11e6b9fa4de24c2ce0fcb9c10d9126"
+      }
+    ],
+    "preservation": {
+      "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+      "questionnaireMatchingAndPresentationSummaries": "unchanged from af8ea00",
+      "metrics": "disabled",
+      "privateState": "memory only",
+      "dependencyChanges": false,
+      "publicHotSha256": "04f38fc06ceea50a1c122105c49c5001179483fe91f99859071eb243661f7dfd"
+    },
+    "limits": [
+      "This is an implemented local design revision and inspected task walkthrough, not owner satisfaction, a recruited usability study or universal UX certification.",
+      "At320×568 the first proposal begins near the bottom of the initial viewport (532px). Long conditions/original contexts,1024×320 and enlarged text require normal vertical scrolling; content is not truncated to fit.",
+      "200% text and400% CSS zoom are controlled reflow checks, not a new native browser zoom certification.",
+      "Original publisher availability and external PDF reading were not revalidated in this presentation-only change. Existing preserved sources and no-referrer navigation remain.",
+      "Exact staged-tree checks are separately mandatory before the local commit. No push, deployment or production privacy approval."
+    ]
   }
 }

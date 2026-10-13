@@ -2,11 +2,15 @@
 
 ui-ux-cleanup-2023-v1.1.0 · completed_local
 
-Completed U004-U016 in the existing Laravel application: task-led home and practical method, reversible programme selection, local proposal search, bounded comparison, explicit result transfer/answer review, exact source reading and useful help/recovery. F01-F08 and A01-A38 have separate actual application evidence and inspected captures. All 59 formations,80 questions, source bank, weights and calculation remain unchanged; private state stays in memory and metrics remain disabled. Local acceptance does not authorize publication.
+U004-U016 are implemented locally. After the owner rejected the earlier comparison/citation UX, U006/U009/U011/U015/U016 were reopened and revised in the actual app: proposal-led parallel reading, one narrow representation per formation, inline exact quotations, local workspace search and quote-first source reading. New real-browser captures, independent critique and corrected return/recovery defects supplement the preserved F01-F08/A01-A38 evidence. Source bank,59 formations,80 questions, authored summaries, weights, calculation, quiz and privacy remain unchanged. Local verification is not owner acceptance or publication approval.
 
 Application implementation started: true. Complete: true. Public launch and collection remain unapproved/disabled.
 
 Baseline: outputs/ui-ux-cleanup-baseline.json. Prototype: outputs/programme-comparison-prototype.html. Source bank SHA-256: 7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b.
+
+## Owner-requested comparison and citation revision
+
+The owner rejected comparison/citation quality after af8ea00. Earlier local checks remain historical evidence, not owner approval. U006/U009/U011/U015/U016 were reopened and implemented again: content-led proposal articles, one copy of each programme summary at every width, optional parallel original quotes, in-place80-proposal search and a quote-first reader. Actual wide/narrow/enlarged-text captures, independent critique, keyboard/source-return/private-state regressions and corrected cancellation/empty-state defects are recorded in outputs/ui-ux-cleanup-application-verification.json under ownerRevision. At320×568 the first proposal begins near the bottom of the viewport; long content needs ordinary scrolling. Owner satisfaction has not been claimed. This implementation supersedes the earlier table/duplicated-mobile sketch below; the original prototype remains historical preparation.
 
 ## Product outcome and precedence
 
@@ -357,15 +361,15 @@ The included standalone prototype makes this journey reviewable with the complet
 
 **Selection.** Start at **“¿Qué programas quieres comparar?”** with **“Elige dos o tres formaciones y mira qué proponen sobre vivienda, salud, empleo y otros temas.”** No preselected major party. Search accepts full names and official abbreviations without a remote query. Keep all 59 alphabetically; do not promote only parties with seats. A native checkbox label includes the exact official name and simple programme availability. At three selected, explain **“Ya tienes tres. Quita una para elegir otra.”** Keep checked controls usable; disable or reject additional choices with an announced reason. Selected summary offers remove controls and **Comparar 2/3 programas**, disabled below two. Search does not clear selection; clearing it restores all 59.
 
-**Comparison.** Desktop uses a native table with proposal row headers and 2–3 programme columns. Formation names are stated in the header rather than in every cell. Every cell shows support/opposition/intermediate/unknown and its authored rationale. Qualified +1/−1 retains the qualification visibly. Unknowns must not have a red rejection icon or a zero stance.
+**Comparison.** The revised application uses one semantic article per proposal: full-width proposition then2–3 equal programme columns. Each formation name, posture and complete authored summary appears once within that proposal. Native Mostrar citas reveals all exact originals together while keeping the summaries visible; Ocultar citas restores concise reading. Qualified +1/−1 retains the qualification visibly. Unknowns must not have a red rejection icon or a zero stance.
 
-On mobile, each proposal has a compact same-proposal overview with all selected formations and stance labels visible together. Full explanations follow in labelled blocks; source actions remain directly available. No swipe-only programme carousel, horizontal scrolling as the normal route, or collapse hiding every other party. Some scrolling remains necessary to read full conditions; it is bounded to one topic and one page rather than 80 questions.
+On mobile, the same programme cells reflow vertically: formation, posture, complete conditions and source action. There is no second duplicated stance overview. Expanded quotation state is kept in memory across reader return and cancelled replacement. No swipe-only programme carousel, horizontal scrolling as the normal route, or collapse hiding every other party. Some scrolling remains necessary to read full conditions; it is bounded to one topic and one page rather than 80 questions.
 
-Wide theme rail becomes a native topic select when width cannot support a rail plus three readable columns. A topic contains its actual authored count: education 7, employment 8, energy 10, health 10, housing 4, institutions 15, pensions 2, rights 14, taxes 7, transport 3. Page six proposals at a time without inventing/padding content. Show **Propuestas X–Y de Z**, Previous and Next; selected programmes survive page/topic changes.
+A native topic select stays visible. Buscar o filtrar propuestas opens a native disclosure with all80-proposal local search and the Mostrar filter. It begins collapsed at every width. During a query the disabled topic reads Todos los temas; clearing the query restores the previous topic/page. A topic contains its actual authored count: education 7, employment 8, energy 10, health 10, housing 4, institutions 15, pensions 2, rights 14, taxes 7, transport 3. Page six proposals at a time without inventing/padding content. Show **Propuestas X–Y de Z**, Previous and Next; selected programmes survive page/topic changes.
 
-Default shows all proposals, including gaps. Replace signed-opposition-only discovery with a native **Mostrar** control: **Todas las propuestas / Posturas distintas / Información que falta**. “Posturas distintas” requires at least two documented numeric values that differ among the selected formations; +1 versus +2 qualifies, as does -2 versus +2. “Información que falta” includes any selected formation with an unscored position or absent common programme. Mixed rows may qualify for both views: these are overlapping views, not exclusive political groups. Unknown never becomes coded zero. Counts describe the active topic/view, never a new affinity denominator.
+Default shows all proposals, including gaps. Replace signed-opposition-only discovery with a native **Mostrar** control: **Todas / Diferencias / Falta información**. “Posturas distintas” requires at least two documented numeric values that differ among the selected formations; +1 versus +2 qualifies, as does -2 versus +2. “Información que falta” includes any selected formation with an unscored position or absent common programme. Mixed rows may qualify for both views: these are overlapping views, not exclusive political groups. Unknown never becomes coded zero. Counts describe the active topic/view, never a new affinity denominator.
 
-An empty differences view says **“No hay posturas distintas documentadas en este tema para estos programas.”**, **“Puede faltar información.”** and **Ver todas las propuestas**. Equal values do not imply identical policies or programmes: preserve each qualifier, including those in equal-value rows. An optional same-value description explicitly refers to the authored scale. Two unknowns never count as agreement. The prototype retains the earlier signed-opposition filter; U009 needs fresh evidence for this replacement.
+An empty differences view says **“No hay posturas distintas documentadas en este tema para estos programas.”**, **“Puede faltar información.”** and **Ver todas las propuestas**. Equal values do not imply identical policies or programmes: preserve each qualifier, including those in equal-value rows. An optional same-value description explicitly refers to the authored scale. Two unknowns never count as agreement. The unchanged prototype retains the earlier signed-opposition filter; actual U009 and owner-revision evidence verifies the different-value filter. A combined query/filter empty state names both constraints and offers Quitar filtro without erasing the query.
 
 Changing programmes uses a reversible selection draft. **Volver sin cambiar** discards the draft. Confirming preserves topic, filter and active proposal/page if still meaningful; announce when a filter leaves no proposals. No accidental one-programme comparison after removing a selection. Place a clear **Añadir otro programa** path instead.
 
@@ -386,6 +390,8 @@ Multiple citations remain accessible and numbered; contradictory or qualified ev
 Return restores selected formations, topic, filter, page, search, active proposal, scroll position and the invoking control. On resize choose the corresponding visible mobile/desktop opener by semantic identity, not a stale DOM reference. If the origin disappeared, return to its nearest valid interactive control and explain the change. Never focus headings, paragraphs, main, row containers or live status text.
 
 **Find a proposal without knowing the topic (B01).** Offer **Buscar una propuesta** beside the ten-topic entry. Search the already loaded 80 authored questions/proposals/help using case/diacritic normalization. Extra search labels must be directly authored in U005; never generate positions or policy summaries. Results show proposal, topic and count in six-item pages. Empty search shows the topics, not 80 essays. No hits offers **Borrar búsqueda** and **Ver temas**. A result opens that proposal's all-formation positions directly; choosing two/three programmes transfers to the same comparison row. Return restores query/page/proposal opener and live quiz progress. Query text remains in memory, never in URL, storage or requests.
+
+Owner revision after af8ea00: opening a source now presents the compact exact proposition, formation/edition, original quote and page/section locator before the separate interpretation. Programme comparison can also expand all selected original quotations in place. Full context, provenance, missing-official notice and the safe external link remain available; source return retains query/filter/topic/page and inline-citation expansion.
 
 ## Screen contract: understandable and useful results
 
@@ -966,7 +972,7 @@ Status: completed. Size: large. Dependencies: U008.
 
 Deliverables:
 
-- One topic, exact counts, six/page, desktop semantic table, mobile parallel overview with full conditions, honest filters
+- One topic or explicit all-topic search, exact counts and six/page; single semantic proposal article with equal programme columns and narrow reflow; honest filters and optional inline original quotations.
 - B02-B04 shared result transfer, different-values/gaps views and own-answer line.
 
 Accept when:
@@ -1006,7 +1012,7 @@ Status: completed. Size: medium. Dependencies: U009, U010.
 
 Deliverables:
 
-- Full-width comparison reader; coherent result reader width policy; exact quotes/context/links/provenance
+- Full-width quote-first source reader, exact quote/context/links/provenance and semantic return; inline quote expansion retained on cancelled selection replacement.
 - Comparison source return preserving result and workspace origins.
 
 Accept when:

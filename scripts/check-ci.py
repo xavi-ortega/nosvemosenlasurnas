@@ -37,6 +37,7 @@ JOBS = {
         ["npm", "run", "check:skills"],
     ],
     "security": [
+        ["scripts/composer", "install", "--no-interaction", "--prefer-dist", "--no-progress"],
         ["python3", "scripts/install-ci-tools.py"],
         [".tools/bin/actionlint"],
         [".tools/bin/gitleaks", "git", "--redact", "--no-banner", "--log-opts=--all"],

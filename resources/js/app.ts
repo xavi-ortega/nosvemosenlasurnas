@@ -389,7 +389,9 @@ async function renderInsights(): Promise<void> {
     } catch { root.replaceChildren(p('report_unavailable')); }
 }
 
-if (root && page === 'insights') {
+if (root?.hasAttribute('data-deferred-page')) {
+    root.removeAttribute('aria-busy');
+} else if (root && page === 'insights') {
     void renderInsights().finally(() => root.removeAttribute('aria-busy'));
 } else if (root && page === 'feedback') {
     root.replaceChildren(); if (feedback) renderFeedback(root, feedback, t); else root.append(p('collection_disabled'));
@@ -402,11 +404,14 @@ if (root && page === 'insights') {
         } else if (page === 'comparison') renderComparison(); else if (page === 'sources') renderSources(); else renderSetup();
     }).catch((error: unknown) => {
         const unavailable = error instanceof Error && error.message === 'Bank unavailable.';
-        root.replaceChildren(p(unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
+        if (!root.hasAttribute('data-information-page')) root.replaceChildren(p(document.body.dataset.iteration === '2' ? 'ui_restart_failed' : unavailable ? 'unavailable' : 'generic_error'), button('retry', () => location.reload()));
     }).finally(() => root.removeAttribute('aria-busy'));
 }
 document.addEventListener('mousedown', event => {
     if (page === 'quiz' && event.detail > 1 && performance.now() - lastNextClickAt < 180) event.preventDefault();
 }, true);
-window.addEventListener('pagehide', () => { session?.reset(); session = null; root?.replaceChildren(); });
-window.addEventListener('pageshow', event => { if (event.persisted && page === 'quiz' && root && bank) renderSetup(); });
+window.addEventListener('pagehide', () => {
+    session?.reset(); session = null;
+    if ((bank && bank.engineVersion !== 'documented-affinity-v2') || (page === 'feedback' && !root?.hasAttribute('data-deferred-page'))) root?.replaceChildren();
+});
+window.addEventListener('pageshow', event => { if (event.persisted && page === 'quiz' && root && bank && bank.engineVersion !== 'documented-affinity-v2') renderSetup(); });

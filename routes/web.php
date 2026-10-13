@@ -16,7 +16,7 @@ Route::get('/', function (PublicBank $bank): Response {
         $release = null;
     }
 
-    $view = ($release['engineVersion'] ?? null) === 'documented-affinity-v2' ? 'public.app' : 'welcome';
+    $view = $release === null || ($release['engineVersion'] ?? null) === 'documented-affinity-v2' ? 'public.app' : 'welcome';
 
     return response()->view($view, ['release' => $release, 'page' => 'home'])->withHeaders([
         'Content-Language' => app()->getLocale(),
@@ -57,17 +57,23 @@ Route::get('/api/release-state', function (PublicBank $bank): Response {
     return response()->json(['sha256' => $state['sha256'], 'withdrawn' => $state['withdrawn']])->withHeaders(['Cache-Control' => 'no-store', 'Content-Language' => 'es']);
 })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('release-state');
 
-foreach (['comparison' => 'comparison', 'questionnaire' => 'quiz', 'sources' => 'sources', 'programmes' => 'programmes', 'how-it-works' => 'method'] as $path => $page) {
+foreach (['comparison' => 'comparison', 'questionnaire' => 'quiz', 'sources' => 'sources', 'programmes' => 'programmes'] as $path => $page) {
     Route::view('/'.$path, 'public.app', ['page' => $page])
         ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
 }
-foreach ([
-    'privacy' => ['privacy_details', 'connection_metadata', 'metrics_details'],
-    'method' => ['method_details', 'threshold_details', 'selector_details', 'source_warning'],
-    'accessibility' => ['a11y_details'],
-] as $path => $paragraphs) {
-    Route::view('/'.$path, 'public.information', ['page' => $path, 'paragraphs' => $paragraphs])
-        ->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
+
+foreach (['how-it-works' => 'method', 'method' => 'method', 'help' => 'help', 'privacy' => 'privacy', 'accessibility' => 'accessibility'] as $path => $page) {
+    Route::get('/'.$path, function (PublicBank $bank) use ($page): Response {
+        try {
+            $release = json_decode($bank->bytes(), true);
+        } catch (Throwable) {
+            $release = null;
+        }
+
+        $view = $release === null || ($release['engineVersion'] ?? null) === 'documented-affinity-v2' ? 'public.app' : 'public.information';
+
+        return response()->view($view, ['release' => $release, 'page' => $page]);
+    })->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name($path);
 }
 
 Route::post('/api/feedback', FeedbackController::class)->withoutMiddleware([StartSession::class, ShareErrorsFromSession::class, PreventRequestForgery::class])->name('feedback.submit');

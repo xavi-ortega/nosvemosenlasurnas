@@ -1,10 +1,10 @@
 # Whole-site UI and UX cleanup: understandable journeys for everyday visitors
 
-ui-ux-cleanup-2023-v1.1.0 · planned_application_stage
+ui-ux-cleanup-2023-v1.1.0 · completed_local
 
-A full-site next-stage plan grounded in actual route defects and seven political-tool references with explicit observation limits. Plain Spanish, task-led entry, proposal search, bounded parallel comparison, result-to-comparison transfer, didactic explanations and exact return. The original real-bank prototype is preserved; new reference-driven interactions and U004-U016 application work remain planned. Sources, questions, arithmetic and private-session rules are unchanged.
+Completed U004-U016 in the existing Laravel application: task-led home and practical method, reversible programme selection, local proposal search, bounded comparison, explicit result transfer/answer review, exact source reading and useful help/recovery. F01-F08 and A01-A38 have separate actual application evidence and inspected captures. All 59 formations,80 questions, source bank, weights and calculation remain unchanged; private state stays in memory and metrics remain disabled. Local acceptance does not authorize publication.
 
-Application implementation started: false. Complete: false. Public launch and collection remain unapproved/disabled.
+Application implementation started: true. Complete: true. Public launch and collection remain unapproved/disabled.
 
 Baseline: outputs/ui-ux-cleanup-baseline.json. Prototype: outputs/programme-comparison-prototype.html. Source bank SHA-256: 7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b.
 
@@ -861,7 +861,7 @@ Actual evidence: outputs/programme-comparison-prototype.html, outputs/ui-ux-clea
 
 ### U004 Unify current navigation, aliases and public route meaning
 
-Status: planned. Size: medium. Dependencies: U002.
+Status: completed. Size: medium. Dependencies: U002.
 
 Deliverables:
 
@@ -877,9 +877,11 @@ Verify:
 - A02/A19/A21/A26; existing route/browser/session tests
 - B01/B02/B09 routes/state without private history or URLs.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-server-verification.json, work/execution-journal.jsonl.
+
 ### U005 Rewrite active public copy with a per-screen meaning ledger
 
-Status: planned. Size: large. Dependencies: U002.
+Status: completed. Size: large. Dependencies: U002.
 
 Deliverables:
 
@@ -897,9 +899,11 @@ Verify:
 - Check every display summary against its existing authored rationale and source context; explicit bank-hash/ID linkage and no dropped qualification.
 - B03/B06/B07 meanings, qualifiers and equal-code caveat in actual screens.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-copy-ledger.json, work/execution-journal.jsonl.
+
 ### U006 Apply shared typography, spacing and responsive component rules
 
-Status: planned. Size: medium. Dependencies: U002.
+Status: completed. Size: medium. Dependencies: U002.
 
 Deliverables:
 
@@ -915,9 +919,11 @@ Verify:
 - A23/A24 visual and keyboard checks; existing assets/lint/type checks
 - B10 real long names and zoom; no crowded sticky chrome or narrow prose columns.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, work/execution-journal.jsonl.
+
 ### U007 Finish home, resume and didactic current-method journeys
 
-Status: planned. Size: medium. Dependencies: U004, U005, U006.
+Status: completed. Size: medium. Dependencies: U004, U005, U006.
 
 Deliverables:
 
@@ -933,9 +939,11 @@ Verify:
 - A01/A02/A19/A20; exact reference arithmetic if demonstration logic changes
 - A33 simplified exact 40/80 arithmetic; no real-party/weight implication or quiz mutation.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-server-verification.json, work/execution-journal.jsonl.
+
 ### U008 Finish programme selection and reversible replacement
 
-Status: planned. Size: medium. Dependencies: U004, U005, U006, U003.
+Status: completed. Size: medium. Dependencies: U004, U005, U006, U003.
 
 Deliverables:
 
@@ -950,9 +958,11 @@ Verify:
 
 - A03/A04/A08; browser state-transition regressions
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, work/execution-journal.jsonl.
+
 ### U009 Finish bounded parallel comparison on wide and narrow screens
 
-Status: planned. Size: large. Dependencies: U008.
+Status: completed. Size: large. Dependencies: U008.
 
 Deliverables:
 
@@ -968,9 +978,11 @@ Verify:
 - A05-A10/A13/A24; real-bank screenshots and source semantics
 - A29-A31; sketch/exercise additions before app acceptance; unchanged score/positions.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-copy-ledger.json, work/execution-journal.jsonl.
+
 ### U010 Finish topic-first exploration and transfer to comparison
 
-Status: planned. Size: medium. Dependencies: U008, U009.
+Status: completed. Size: medium. Dependencies: U008, U009.
 
 Deliverables:
 
@@ -986,9 +998,11 @@ Verify:
 - A12/A13; F03 actual connected walkthrough
 - A32 memory-only query; all unscored formations still reachable.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, work/execution-journal.jsonl.
+
 ### U011 Finish contextual source reading and robust return
 
-Status: planned. Size: medium. Dependencies: U009, U010.
+Status: completed. Size: medium. Dependencies: U009, U010.
 
 Deliverables:
 
@@ -1004,9 +1018,11 @@ Verify:
 - A07/A11/A16/A22; keyboard/resize/long-quote regressions
 - A29/A30/A35; resize/deferred callbacks cannot revive stale personal views.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-copy-ledger.json, work/execution-journal.jsonl.
+
 ### U012 Make results understandable, navigable and directly verifiable
 
-Status: planned. Size: large. Dependencies: U004, U005, U006, U011.
+Status: completed. Size: large. Dependencies: U004, U005, U006, U011.
 
 Deliverables:
 
@@ -1022,9 +1038,11 @@ Verify:
 - A14-A18/A25; existing engine + affected browser/export tests
 - A29/A30/A34/A35; current explicit finish, question set, weights/order preserved.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-copy-ledger.json, work/execution-journal.jsonl.
+
 ### U013 Finish task-based help, source directory and truthful notices
 
-Status: planned. Size: medium. Dependencies: U004, U005, U006, U011.
+Status: completed. Size: medium. Dependencies: U004, U005, U006, U011.
 
 Deliverables:
 
@@ -1040,9 +1058,11 @@ Verify:
 - A19/A21/A22/A26/A27; server-rendered/direct-link/no-JS checks
 - A36/A37; all 59, original scope and useful direct/return actions.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-server-verification.json, work/execution-journal.jsonl.
+
 ### U014 Reconcile loading, error, undo and cross-section states
 
-Status: planned. Size: medium. Dependencies: U007, U009, U010, U012, U013.
+Status: completed. Size: medium. Dependencies: U007, U009, U010, U012, U013.
 
 Deliverables:
 
@@ -1058,9 +1078,11 @@ Verify:
 - A02/A17/A18/A22-A26; delayed bank/release tests
 - A30/A32/A35/A36 under pending/error; no hidden private persistence.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-server-verification.json, work/execution-journal.jsonl.
+
 ### U015 Perform the full family-access and comprehension critique loop
 
-Status: planned. Size: large. Dependencies: U014.
+Status: completed. Size: large. Dependencies: U014.
 
 Deliverables:
 
@@ -1076,9 +1098,11 @@ Verify:
 - Relevant browser/PHP/engine checks; all required clean staged-tree checks; no synthetic usability claim
 - Observation/documentation/inference distinguished; no reference popularity or old prototype as new acceptance.
 
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, outputs/ui-ux-cleanup-copy-ledger.json, outputs/ui-ux-cleanup-server-verification.json, work/execution-journal.jsonl.
+
 ### U016 Prepare a coherent local review and rollback packet
 
-Status: planned. Size: small. Dependencies: U015.
+Status: completed. Size: small. Dependencies: U015.
 
 Deliverables:
 
@@ -1093,6 +1117,8 @@ Verify:
 
 - npm run docs:build/check:plans; exact staged-tree gate before commit; compiled and dev local preview
 - Research/canonical/human/managed parity; bank and completed history preserved.
+
+Actual evidence: outputs/ui-ux-cleanup-application-verification.json, work/execution-journal.jsonl.
 
 ## Primary design references
 

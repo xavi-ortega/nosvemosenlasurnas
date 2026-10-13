@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "planVersion": "ui-ux-cleanup-2023-v1.1.0",
   "title": "Whole-site UI and UX cleanup: understandable journeys for everyday visitors",
-  "status": "planned_application_stage",
+  "status": "completed_local",
   "recordedAt": "2026-10-12T22:08:19.404Z",
-  "authority": "Direct owner requests in this chat on 12 October 2026: redesign programme comparison, simplify every non-quiz text, make the entire site didactic/easy to understand/interpret/access/use, deeply review UI/spacing and UX/navigation, and prepare a very detailed next-stage loop-engineering plan. The subsequent owner request authorizes reviewing political-affinity websites and improving this same plan with verified references.",
+  "authority": "Direct owner requests in this chat on 12 October 2026: redesign programme comparison, simplify every non-quiz text, make the entire site didactic/easy to understand/interpret/access/use, deeply review UI/spacing and UX/navigation, and prepare a very detailed next-stage loop-engineering plan. The subsequent owner request authorizes reviewing political-affinity websites and improving this same plan with verified references. The current owner request authorizes completing U004-U016 locally on main, actual application/visual verification, synchronized plans and verified local commits; no push or deployment.",
   "baselineCommit": "8077957",
   "baseline": "outputs/ui-ux-cleanup-baseline.json",
   "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
@@ -12,12 +12,12 @@
   "humanPlan": "docs/plans/ui-ux-cleanup-loop-plan.md",
   "prototype": "outputs/programme-comparison-prototype.html",
   "verification": "outputs/ui-ux-cleanup-prototype-verification.json",
-  "applicationImplementationStarted": false,
-  "applicationImplementationComplete": false,
+  "applicationImplementationStarted": true,
+  "applicationImplementationComplete": true,
   "publicLaunchApproved": false,
   "liveCollectionEnabled": false,
   "preservesCompletedIterations": true,
-  "summary": "A full-site next-stage plan grounded in actual route defects and seven political-tool references with explicit observation limits. Plain Spanish, task-led entry, proposal search, bounded parallel comparison, result-to-comparison transfer, didactic explanations and exact return. The original real-bank prototype is preserved; new reference-driven interactions and U004-U016 application work remain planned. Sources, questions, arithmetic and private-session rules are unchanged.",
+  "summary": "Completed U004-U016 in the existing Laravel application: task-led home and practical method, reversible programme selection, local proposal search, bounded comparison, explicit result transfer/answer review, exact source reading and useful help/recovery. F01-F08 and A01-A38 have separate actual application evidence and inspected captures. All 59 formations,80 questions, source bank, weights and calculation remain unchanged; private state stays in memory and metrics remain disabled. Local acceptance does not authorize publication.",
   "sections": [
     {
       "id": "outcome",
@@ -945,7 +945,7 @@
         "U002"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Named route map; header/footer/section state; current method and useful source directory destination",
         "Proposal-search and factsheet route meaning; result/comparison return map."
@@ -956,7 +956,13 @@
       "verification": [
         "A02/A19/A21/A26; existing route/browser/session tests",
         "B01/B02/B09 routes/state without private history or URLs."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-server-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U005",
@@ -965,7 +971,7 @@
         "U002"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "All active Spanish copy inventory; concise task/meaning/proof layers; consistent names and exports",
         "Directly authored plain UI summaries for displayed programme rationales, with unchanged numeric values, visible conditions and access to the full existing interpretation/citations.",
@@ -978,7 +984,13 @@
         "A27 plus reading actual screens aloud and recorded five-question reviews",
         "Check every display summary against its existing authored rationale and source context; explicit bank-hash/ID linkage and no dropped qualification.",
         "B03/B06/B07 meanings, qualifiers and equal-code caveat in actual screens."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U006",
@@ -987,7 +999,7 @@
         "U002"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "CSS tokens; responsive layout budgets; consistent action hierarchy/targets/disclosures/skeleton geometry",
         "Responsive result selection, proposal search and own-answer line."
@@ -998,7 +1010,12 @@
       "verification": [
         "A23/A24 visual and keyboard checks; existing assets/lint/type checks",
         "B10 real long names and zoom; no crowded sticky chrome or narrow prose columns."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U007",
@@ -1009,7 +1026,7 @@
         "U006"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Task-led first screen; resume; unnamed interactive method example and exact optional calculation",
         "Unnamed equal-total/different-agreement example."
@@ -1020,7 +1037,13 @@
       "verification": [
         "A01/A02/A19/A20; exact reference arithmetic if demonstration logic changes",
         "A33 simplified exact 40/80 arithmetic; no real-party/weight implication or quiz mutation."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-server-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U008",
@@ -1032,7 +1055,7 @@
         "U003"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Alphabetical local search, 2/3 slots, disabled reasons, missing programme labels, edit draft and cancel",
         "Reuse bounded selection when entered from a result or formation factsheet."
@@ -1042,7 +1065,12 @@
       ],
       "verification": [
         "A03/A04/A08; browser state-transition regressions"
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U009",
@@ -1051,7 +1079,7 @@
         "U008"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "One topic, exact counts, six/page, desktop semantic table, mobile parallel overview with full conditions, honest filters",
         "B02-B04 shared result transfer, different-values/gaps views and own-answer line."
@@ -1062,7 +1090,13 @@
       "verification": [
         "A05-A10/A13/A24; real-bank screenshots and source semantics",
         "A29-A31; sketch/exercise additions before app acceptance; unchanged score/positions."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U010",
@@ -1072,7 +1106,7 @@
         "U009"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Topic → proposal → grouped/searched positions → same-proposal comparison",
         "All-80 proposal search with count/page/no-hit/return and transfer."
@@ -1083,7 +1117,12 @@
       "verification": [
         "A12/A13; F03 actual connected walkthrough",
         "A32 memory-only query; all unscored formations still reachable."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U011",
@@ -1093,7 +1132,7 @@
         "U010"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Full-width comparison reader; coherent result reader width policy; exact quotes/context/links/provenance",
         "Comparison source return preserving result and workspace origins."
@@ -1104,7 +1143,13 @@
       "verification": [
         "A07/A11/A16/A22; keyboard/resize/long-quote regressions",
         "A29/A30/A35; resize/deferred callbacks cannot revive stale personal views."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U012",
@@ -1116,7 +1161,7 @@
         "U011"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Plain overlap/coverage presentation; complete searchable 59 results; matches/differences/missing examples; explicit local export",
         "Native result comparison choices, close-result help and one-answer review."
@@ -1127,7 +1172,13 @@
       "verification": [
         "A14-A18/A25; existing engine + affected browser/export tests",
         "A29/A30/A34/A35; current explicit finish, question set, weights/order preserved."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U013",
@@ -1139,7 +1190,7 @@
         "U011"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Short practical help/privacy/accessibility; directory; direct alias/unavailable/error recovery",
         "Compact 2023 factsheets and neutral contextual terms."
@@ -1150,7 +1201,13 @@
       "verification": [
         "A19/A21/A22/A26/A27; server-rendered/direct-link/no-JS checks",
         "A36/A37; all 59, original scope and useful direct/return actions."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-server-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U014",
@@ -1163,7 +1220,7 @@
         "U013"
       ],
       "size": "medium",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Stable skeletons; retry/pending/withdrawn states; safe delete/download; consistent keyboard/reduced-motion feedback",
         "Integrate search/comparison/overlay/revision state invalidation."
@@ -1174,7 +1231,13 @@
       "verification": [
         "A02/A17/A18/A22-A26; delayed bank/release tests",
         "A30/A32/A35/A36 under pending/error; no hidden private persistence."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-server-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U015",
@@ -1183,7 +1246,7 @@
         "U014"
       ],
       "size": "large",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "A01-A38 actual application evidence, active-copy ledger, screenshots, defect ledger, privacy trace",
         "B01-B10 adaptation critique, actual task budgets and A29-A38 application evidence."
@@ -1194,7 +1257,14 @@
       "verification": [
         "Relevant browser/PHP/engine checks; all required clean staged-tree checks; no synthetic usability claim",
         "Observation/documentation/inference distinguished; no reference popularity or old prototype as new acceptance."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "outputs/ui-ux-cleanup-copy-ledger.json",
+        "outputs/ui-ux-cleanup-server-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     },
     {
       "id": "U016",
@@ -1203,7 +1273,7 @@
         "U015"
       ],
       "size": "small",
-      "status": "planned",
+      "status": "completed",
       "deliverables": [
         "Before/after results, active plan statuses, real command evidence, bank hash, preserved history, local preview and limitations",
         "Reference-review hash/version and honest added-flow acceptance packet."
@@ -1214,7 +1284,12 @@
       "verification": [
         "npm run docs:build/check:plans; exact staged-tree gate before commit; compiled and dev local preview",
         "Research/canonical/human/managed parity; bank and completed history preserved."
-      ]
+      ],
+      "completionEvidence": [
+        "outputs/ui-ux-cleanup-application-verification.json",
+        "work/execution-journal.jsonl"
+      ],
+      "completedAt": "2026-10-13T08:50:19.285757+00:00"
     }
   ],
   "references": [
@@ -1290,11 +1365,10 @@
     "privateStateLocation": "memory_only"
   },
   "implementationLimits": [
-    "No production application changes in the planning/prototype increment.",
-    "No re-authorship of the bank or new source acquisition required for this UI plan.",
-    "No deployment, push, collection, scheduler, delegation or new dependencies.",
-    "Prototype inspection proves selected local flows, not completion of every site task or broad usability.",
-    "Reference additions remain planned. Original prototype/report do not verify them; foreign tools supply UX context only, never electoral positions."
+    "Local application implementation only; no deployment,push,collection,scheduler or new dependencies.",
+    "Bank,positions,weights,citations and historical evidence remain unchanged.",
+    "The preserved original prototype/research report records preparation only; application verification is separate.",
+    "Agent walkthroughs and local CI do not establish broad usability or production host/log privacy."
   ],
   "preparationMaintenance": [
     {
@@ -1319,5 +1393,17 @@
     "B09",
     "B10"
   ],
-  "referenceResearchSha256": "2d2f8c7d16126f3c67da447a073ec403203888e75ba66cf7b1323936511ad354"
+  "referenceResearchSha256": "2d2f8c7d16126f3c67da447a073ec403203888e75ba66cf7b1323936511ad354",
+  "applicationVerification": "outputs/ui-ux-cleanup-application-verification.json",
+  "preparationImplementationLimits": [
+    "No production application changes in the planning/prototype increment.",
+    "No re-authorship of the bank or new source acquisition required for this UI plan.",
+    "No deployment, push, collection, scheduler, delegation or new dependencies.",
+    "Prototype inspection proves selected local flows, not completion of every site task or broad usability.",
+    "Reference additions remain planned. Original prototype/report do not verify them; foreign tools supply UX context only, never electoral positions."
+  ],
+  "completedAt": "2026-10-13T08:50:19.285757+00:00",
+  "localAcceptanceComplete": true,
+  "implementationBaselineCommit": "eb7048e",
+  "applicationVerificationSha256": "3419a5b5b040d627c183a61b47e1d699e81288b7d518f6f2de79fb12b6a6d607"
 }

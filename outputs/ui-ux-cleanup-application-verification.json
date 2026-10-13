@@ -1,0 +1,2542 @@
+{
+  "schemaVersion": 1,
+  "reportVersion": "ui-ux-cleanup-application-v1.1.0",
+  "planVersion": "ui-ux-cleanup-2023-v1.1.0",
+  "observedAt": "2026-10-13T08:50:19.285757+00:00",
+  "status": "accepted_local",
+  "baselineCommit": "eb7048e",
+  "scope": "U004-U016 completed and accepted locally in the existing application. U001-U003 and unchanged original prototype remain preparation evidence only.",
+  "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "preserved": {
+    "formations": 59,
+    "questions": 80,
+    "documents": 35,
+    "topics": 10,
+    "bankBytesUnchanged": true,
+    "engineFilesUnchanged": true,
+    "personalState": "memory_only",
+    "metricsEnabled": false,
+    "dependenciesChanged": false,
+    "publicLaunchApproved": false,
+    "pushed": false,
+    "deployed": false
+  },
+  "applicationDecisions": [
+    {
+      "task": "U004",
+      "reproduction": "D07/D12/D14/D15 contradictory method and false source destination",
+      "sketchAndCritique": "One canonical section resolver plus same-document section views; simpler full-document links would erase the ongoing task.",
+      "implementationAndObservedCorrection": "Aliases, source directory and practical routes implemented; final alias Back defect reproduced and fixed."
+    },
+    {
+      "task": "U005",
+      "reproduction": "Dense specialist labels and long rationale repetition",
+      "sketchAndCritique": "Task/meaning/proof layers with directly authored209 summaries; shortening by truncation rejected because qualifiers matter.",
+      "implementationAndObservedCorrection": "All numeric cells audited against existing contextual citations; full interpretation accessible; stale null-bank fallback found and corrected."
+    },
+    {
+      "task": "U006",
+      "reproduction": "Crowded mobile controls and squeezed source columns",
+      "sketchAndCritique": "Shared rem hierarchy and full-width reader; use native two/three-column table only when enough width; narrow stance overview.",
+      "implementationAndObservedCorrection": "Five viewport captures plus enlargement; excess inherited minimum height removed; no horizontal clipping in checked states."
+    },
+    {
+      "task": "U007",
+      "reproduction": "D09 home hierarchy and obsolete method",
+      "sketchAndCritique": "One title/sentence/start+compare; unnamed interactive examples; simpler text-only page retained as no-JS equivalent.",
+      "implementationAndObservedCorrection": "Start/compare above fold at390/1280; native example buttons and40/80 table verified."
+    },
+    {
+      "task": "U008",
+      "reproduction": "D01/D03 selection below fold and59 unsorted choices",
+      "sketchAndCritique": "Searchable official alphabetical list and explicit2/3 summary; draft preserves ability to cancel.",
+      "implementationAndObservedCorrection": "All59/limit/cancel/PSC tests pass; no automatic political selection."
+    },
+    {
+      "task": "U009",
+      "reproduction": "D02/D04/D05 eighty-proposal dump and lost axis",
+      "sketchAndCritique": "Shared one-topic/six-proposal workspace; all/distinct/gap native select; reject carousel hiding third stance.",
+      "implementationAndObservedCorrection": "Inspected dental/rent/nuclear conditions and common stance overview; pagination/source exact return verified.",
+      "additionalSketchAndExerciseEvidence": "addedFlowFinalDesignLoop: dated final sketches/critique before acceptance, followed by actual1280/390 search/filter/F08 walkthroughs and six inspected captures."
+    },
+    {
+      "task": "U010",
+      "reproduction": "Topic-only entry cannot find known proposal quickly",
+      "sketchAndCritique": "Local all80 search and positions using same workspace; separate duplicate comparator rejected.",
+      "implementationAndObservedCorrection": "No-hit recovery/known proposal/late-page transfer/private query verified; snapshot restores topic/question.",
+      "additionalSketchAndExerciseEvidence": "addedFlowFinalDesignLoop: dated final sketches/critique before acceptance, followed by actual1280/390 search/filter/F08 walkthroughs and six inspected captures."
+    },
+    {
+      "task": "U011",
+      "reproduction": "D11 squeezed nested evidence and fragile return",
+      "sketchAndCritique": "One full-width reader, quote visible and context optional; preserve semantic opener through responsive changes.",
+      "implementationAndObservedCorrection": "Source whitespace corrected; original+context exact,resize return focuses source control,not prose."
+    },
+    {
+      "task": "U012",
+      "reproduction": "D10 long59 results and difficult explanation path",
+      "sketchAndCritique": "Six searchable results; three relation examples; optional native comparison section; explicit download dialog.",
+      "implementationAndObservedCorrection": "Results initially too dense: collapsed optional comparison; discovered category stack defect and corrected peer replacement; overlay preference respected.",
+      "additionalSketchAndExerciseEvidence": "addedFlowFinalDesignLoop: dated final sketches/critique before acceptance, followed by actual1280/390 search/filter/F08 walkthroughs and six inspected captures."
+    },
+    {
+      "task": "U013",
+      "reproduction": "D12/D13/D14 notices interrupt task",
+      "sketchAndCritique": "Practical same-document help with useful SSR/direct links; compact source factsheets.",
+      "implementationAndObservedCorrection": "Live question/source-query return and no-JS routes inspected; info return gap corrected to20px."
+    },
+    {
+      "task": "U014",
+      "reproduction": "Recovery and cached views can contradict live choices",
+      "sketchAndCritique": "Keep release-check errors within checkpoint, explicit reset/download dialogs,revision invalidation and guarded deferred focus.",
+      "implementationAndObservedCorrection": "503/withdrawal/reset/privacy tests retained; alias and overlay/topic snapshot bugs corrected rather than accepting happy path only."
+    },
+    {
+      "task": "U015",
+      "reproduction": "Functional pass cannot establish comprehension",
+      "sketchAndCritique": "Inspect actual real-content screenshots plus five visible questions and code/state critique.",
+      "implementationAndObservedCorrection": "Root and independent agents found/corrected multiple P2 defects; observations distinguished from automated and inferred claims."
+    },
+    {
+      "task": "U016",
+      "reproduction": "Historical prototype does not verify app",
+      "sketchAndCritique": "Separate application report and tracked screenshots; preserve bank/history and regenerate existing planning view.",
+      "implementationAndObservedCorrection": "Compiled/development preview, separate application packet, unchanged bank, completed plan/managed parity, mandatory exact-index gate and installed commit hook; no publication claim."
+    }
+  ],
+  "acceptance": [
+    {
+      "id": "A01",
+      "walkthrough": "Home at390×844 and1280×720; start or compare without scrolling.",
+      "observedOutcome": "Both buttons visible;390px bottom coordinates507.86 and565.03; edition and reload/close notice visible.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A02",
+      "walkthrough": "Start quiz, choose by keyboard, visit programmes/help, return; test historical route Back.",
+      "observedOutcome": "Live answer and question preserved; alias resolver restores /comparison and /method correctly.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A03",
+      "walkthrough": "Search official minor name/abbreviation, clear, select.",
+      "observedOutcome": "59 unique alphabetical formations reachable; local input remains focused and selected IDs retained.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A04",
+      "walkthrough": "Choose2, add3rd, attempt4th, edit/remove/cancel.",
+      "observedOutcome": "Native unchecked choices, maximum3; draft cancellation restores committed workspace selection.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A05",
+      "walkthrough": "PP/PSOE/Sumar housing comparison.",
+      "observedOutcome": "Rent-cap PP/PSOE explicitly unknown; Sumar support; absence never rendered as opposition.",
+      "evidence": "outputs/ui-ux-cleanup-previews/rent-390x844.png",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A06",
+      "walkthrough": "Nuclear PP/VOX/Sumar with original source.",
+      "observedOutcome": "Positive/negative codes unchanged; PP regulator/EU conditions remain in summary and literal source.",
+      "evidence": "outputs/ui-ux-cleanup-copy-ledger.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A07",
+      "walkthrough": "Dental and mortgage summaries against complete interpretations.",
+      "observedOutcome": "PSOE gradual dental including fillings/implants starting over75;20% mortgage under35 first habitual home preserved.",
+      "evidence": "outputs/ui-ux-cleanup-copy-ledger.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A08",
+      "walkthrough": "Find PSC and compare/open factsheet.",
+      "observedOutcome": "Exactly one PSC; absent common programme and no PSOE inheritance.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A09",
+      "walkthrough": "Institutions15 questions, next/previous and source.",
+      "observedOutcome": "Six/page,7–12 of15 on page2; source return retains page/filter/selection.",
+      "evidence": "outputs/ui-ux-cleanup-previews/comparison-page2-1024x320.png",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A10",
+      "walkthrough": "Three programmes at390/320.",
+      "observedOutcome": "Same-proposal stance overview precedes full conditions; no swipe or horizontal clipping.",
+      "evidence": "outputs/ui-ux-cleanup-previews/rent-320x568.png",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A11",
+      "walkthrough": "Quote/context/return after resize.",
+      "observedOutcome": "Same visible semantic source button focused, page/filter/scroll preserved; prose never focus target.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A12",
+      "walkthrough": "Topic→late-page proposal→positions/search→choose2→compare→return.",
+      "observedOutcome": "Same question and topic retained, including after workspace topic change and overlay preference change.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A13",
+      "walkthrough": "Distinct-values filter with no qualifying pair.",
+      "observedOutcome": "Honest empty state offers all proposals; unknowns do not establish equality.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A14",
+      "walkthrough": "20 fictitious opinions, deliberate finish, inspect/export bars.",
+      "observedOutcome": "Unchanged shared denominator/order; confirmed overlap distinct from weighted available information.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A15",
+      "walkthrough": "Search low-result formation and missing common programme; show all.",
+      "observedOutcome": "All59 accessible;0% absence explicitly means no evidence, not complete disagreement.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A16",
+      "walkthrough": "Result→difference→source→same result.",
+      "observedOutcome": "Two actions to literal quote; reader source Back returns example, result Back returns original result row.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A17",
+      "walkthrough": "Skip all opinions in one topic, then use review recovery.",
+      "observedOutcome": "Total remains pending; named topic review does not invent neutral opinions.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A18",
+      "walkthrough": "Review one answer after result.",
+      "observedOutcome": "Old personal DOM/reader/overlay invalidated; new deliberate finish required.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A19",
+      "walkthrough": "Direct /method,/how-it-works; header/footer/back aliases.",
+      "observedOutcome": "Same current20+10 explanation; old10+5 branches remain historical synthetic-only.",
+      "evidence": "outputs/ui-ux-cleanup-server-verification.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A20",
+      "walkthrough": "Keyboard method buttons and text equivalents.",
+      "observedOutcome": "Agree/differ/missing meanings available without colour; explicit unnamed simplified example.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A21",
+      "walkthrough": "Direct and contextual help/privacy/accessibility.",
+      "observedOutcome": "Short practical first layer, exact origin control and live answer retained; useful no-JS content.",
+      "evidence": "outputs/ui-ux-cleanup-server-verification.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A22",
+      "walkthrough": "503 bank, failed release check, withdrawal and official-unavailable source.",
+      "observedOutcome": "Spanish actionable retries/return; failed check preserves answers, withdrawn session clears protected personal view.",
+      "evidence": "tests/Browser/second-iteration.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A23",
+      "walkthrough": "Delay bank at1280/390 on home/quiz/programmes/method.",
+      "observedOutcome": "Eight measured hydrations CLS0 and equal app/footer geometry; strict loading regression checks retained.",
+      "evidence": "outputs/ui-ux-cleanup-server-verification.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A24",
+      "walkthrough": "Five viewports, keyboard/reduced motion,200% text,200/400% CSS zoom and native browser zoom.",
+      "observedOutcome": "No clipping observed; interactive focus and source return pass. Native200/400 inspected selection only; source/comparison tested with CSS zoom plus320px reflow.",
+      "evidence": "outputs/ui-ux-cleanup-previews/source-text200.png",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A25",
+      "walkthrough": "Trace quiz/result/comparison/search/help/download.",
+      "observedOutcome": "Only fixed public reads; no private bodies/URLs/history state, cookies,local/session storage or IndexedDB; download needs explicit format choice.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A26",
+      "walkthrough": "Direct feedback/insights/404.",
+      "observedOutcome": "Deferred routes explain absence and exits; no feedback-report request for2023;404 Spanish recovery.",
+      "evidence": "outputs/ui-ux-cleanup-server-verification.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A27",
+      "walkthrough": "All reachable catalogues,209 political summaries and both exports.",
+      "observedOutcome": "Static and observed coverage distinguished; source names/quotations untouched; summaries linked to bank hash/cell/citations.",
+      "evidence": "outputs/ui-ux-cleanup-copy-ledger.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A28",
+      "walkthrough": "Compile assets, verify local runtime, restore original Vite marker after checks.",
+      "observedOutcome": "Compiled build and actual Vite dev journeys passed; source-selection/recovery tests passed in both projects. Existing Vite marker preserved byte-for-byte. No dependencies or owner server process changes.",
+      "evidence": "work/execution-journal.jsonl",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A29",
+      "walkthrough": "Choose2/3 in result→compare→source→workspace→same result.",
+      "observedOutcome": "One compare action after choices; no preselection; result values/search/IDs/scroll/opener preserved.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A30",
+      "walkthrough": "Overlay before finish/after opt-in/unsure/skip/unasked; turn off and return; edit.",
+      "observedOutcome": "Never before explicit finish; honest states; current opt-out remains off through cached returns; editing invalidates.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A31",
+      "walkthrough": "Distinct+1/+2, opposite/equal codes, mixed/all unknown.",
+      "observedOutcome": "Different documented values includes qualified differences; gap filter independent; equal code caveat visible.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A32",
+      "walkthrough": "Search PSICOTERAPIA across80; no-hit/clear/open/return.",
+      "observedOutcome": "Counted bounded results; same query and opener; no query in traffic or storage.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A33",
+      "walkthrough": "Activate equal-total five-decision example.",
+      "observedOutcome": "Two agreements,two differences,one unknown each:40% overlap/80% information, different agreement sets; simplified unnamed example.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A34",
+      "walkthrough": "Open close/rounded results help; switch agreement/difference/missing examples and return.",
+      "observedOutcome": "No winner/probability claim; evidence routes clear; category switch replaces peer reader level and correct result return.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A35",
+      "walkthrough": "From cited example edit its question, deliberately finish; remove topic opinion.",
+      "observedOutcome": "Question set/other answers retained, no party on question screen, honest current result or pending state.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A36",
+      "walkthrough": "Open/close question meaning after keyboard radio selection.",
+      "observedOutcome": "Native disclosure accessible without hover; answer unchanged and focus remains a control.",
+      "evidence": "tests/Browser/ui-ux-cleanup.spec.ts",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A37",
+      "walkthrough": "Minor party/PSC directory→factsheet→scope/original/add/return.",
+      "observedOutcome": "All59 exact source availability and constituencies; no replacement/biography/inheritance.",
+      "evidence": "outputs/ui-ux-cleanup-server-verification.json",
+      "status": "accepted_local"
+    },
+    {
+      "id": "A38",
+      "walkthrough": "Inspect navigation, source outbound actions and optional controls.",
+      "observedOutcome": "Only current overlap/information plus preserved23J evidence; no ideology map/feed/share/account or collection gate.",
+      "evidence": "outputs/ui-ux-cleanup-copy-ledger.json",
+      "status": "accepted_local"
+    }
+  ],
+  "flows": [
+    {
+      "id": "F01",
+      "observedOutcome": "Actual home/start20/resume/navigation/result paths in retained second-iteration tests and new A01/A02; native choices and delayed confirmation preserved.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F02",
+      "observedOutcome": "Real PP/PSOE/Sumar selection, topic,source return,edit/remove/cancel on wide/narrow in tests and root viewport captures.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F03",
+      "observedOutcome": "Topic/proposal/search and late-page transfer exercised in new browser cases; same question restored after workspace topic changes.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F04",
+      "observedOutcome": "Result examples/source/back/category replacement/single-answer review/refinish covered by real fictitious20-answer journeys.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F05",
+      "observedOutcome": "Agent live q2→help/privacy/accessibility→same q2/radio/opener at1280/390; server verification contains exact outcomes.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F06",
+      "observedOutcome": "All59 directory; PSC missing factsheet;PACMA available original200 PDF/no Referer,return to directory search. External viewer completion unverified.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F07",
+      "observedOutcome": "Delayed release check503→retry retains checkpoint geometry/answers and resolves; withdrawn version blocks personal result; bank retry restores app.",
+      "status": "accepted_local"
+    },
+    {
+      "id": "F08",
+      "observedOutcome": "Result unchecked choices→shared comparison→source→return/replacement/cancel→same result; per-example revision invalidates prior views.",
+      "status": "accepted_local"
+    }
+  ],
+  "viewportWalkthroughs": [
+    {
+      "width": 1280,
+      "height": 720,
+      "homeReadyMs": 392,
+      "errors": [],
+      "states": [
+        {
+          "name": "home",
+          "overflow": false,
+          "height": 720,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "selection",
+          "overflow": false,
+          "height": 5693,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison",
+          "overflow": false,
+          "height": 2035,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "rent",
+          "overflow": false,
+          "height": 2035,
+          "scroll": 218,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "dental",
+          "overflow": false,
+          "height": 2579,
+          "scroll": 267,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "source",
+          "overflow": false,
+          "height": 1481,
+          "scroll": 170,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison-page2",
+          "overflow": false,
+          "height": 2687,
+          "scroll": 309,
+          "focus": "SELECT"
+        }
+      ],
+      "homeChoices": [
+        {
+          "label": "Empezar el test",
+          "bottom": 385.859375
+        },
+        {
+          "label": "Comparar programas",
+          "bottom": 385.859375
+        }
+      ]
+    },
+    {
+      "width": 1512,
+      "height": 850,
+      "homeReadyMs": 358,
+      "errors": [],
+      "states": [
+        {
+          "name": "home",
+          "overflow": false,
+          "height": 850,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "selection",
+          "overflow": false,
+          "height": 5696,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison",
+          "overflow": false,
+          "height": 2013,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "rent",
+          "overflow": false,
+          "height": 2013,
+          "scroll": 91,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "dental",
+          "overflow": false,
+          "height": 2531,
+          "scroll": 114,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "source",
+          "overflow": false,
+          "height": 1489,
+          "scroll": 114,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison-page2",
+          "overflow": false,
+          "height": 2639,
+          "scroll": 312,
+          "focus": "SELECT"
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "homeReadyMs": 383,
+      "errors": [],
+      "states": [
+        {
+          "name": "home",
+          "overflow": false,
+          "height": 914,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "selection",
+          "overflow": false,
+          "height": 7202,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison",
+          "overflow": false,
+          "height": 5431,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "rent",
+          "overflow": false,
+          "height": 5431,
+          "scroll": 733,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "dental",
+          "overflow": false,
+          "height": 7459,
+          "scroll": 733,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "source",
+          "overflow": false,
+          "height": 1914,
+          "scroll": 219,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison-page2",
+          "overflow": false,
+          "height": 7718,
+          "scroll": 345,
+          "focus": "SELECT"
+        }
+      ],
+      "homeChoices": [
+        {
+          "label": "Empezar el test",
+          "bottom": 507.859375
+        },
+        {
+          "label": "Comparar programas",
+          "bottom": 565.03125
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 568,
+      "homeReadyMs": 391,
+      "errors": [],
+      "states": [
+        {
+          "name": "home",
+          "overflow": false,
+          "height": 1029,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "selection",
+          "overflow": false,
+          "height": 7618,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison",
+          "overflow": false,
+          "height": 6379,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "rent",
+          "overflow": false,
+          "height": 6379,
+          "scroll": 1203,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "dental",
+          "overflow": false,
+          "height": 8750,
+          "scroll": 1203,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "source",
+          "overflow": false,
+          "height": 2162,
+          "scroll": 219,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison-page2",
+          "overflow": false,
+          "height": 9121,
+          "scroll": 436,
+          "focus": "SELECT"
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "height": 320,
+      "homeReadyMs": 383,
+      "errors": [],
+      "states": [
+        {
+          "name": "home",
+          "overflow": false,
+          "height": 634,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "selection",
+          "overflow": false,
+          "height": 5716,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison",
+          "overflow": false,
+          "height": 2327,
+          "scroll": 0,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "rent",
+          "overflow": false,
+          "height": 2327,
+          "scroll": 681,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "dental",
+          "overflow": false,
+          "height": 2971,
+          "scroll": 681,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "source",
+          "overflow": false,
+          "height": 1468,
+          "scroll": 169,
+          "focus": "BUTTON"
+        },
+        {
+          "name": "comparison-page2",
+          "overflow": false,
+          "height": 3105,
+          "scroll": 306,
+          "focus": "SELECT"
+        }
+      ]
+    }
+  ],
+  "enlargement": {
+    "controlledWalkthroughs": [
+      {
+        "mode": "text200",
+        "overflow": false,
+        "focus": "SUMMARY",
+        "rootFont": "32px",
+        "cssZoom": "1",
+        "returnFocus": true,
+        "errors": []
+      },
+      {
+        "mode": "zoom200",
+        "overflow": false,
+        "focus": "SUMMARY",
+        "rootFont": "16px",
+        "cssZoom": "2",
+        "returnFocus": true,
+        "errors": []
+      },
+      {
+        "mode": "zoom400",
+        "overflow": false,
+        "focus": "SUMMARY",
+        "rootFont": "16px",
+        "cssZoom": "4",
+        "returnFocus": true,
+        "errors": []
+      }
+    ],
+    "nativeBrowser": "CUA Chrome new local window at127.0.0.1:8000/programmes: browser chrome explicitly showed200% then400%; selection text/control reflow inspected in tool screenshots. Native comparison traversal was not established; click merely scrolled to comparison action, then user changed active window. No unrelated app actions taken.",
+    "distinction": "CSS zoom and narrow viewport tests supplement, not impersonate, native browser zoom. At extreme enlargement ordinary vertical scrolling is necessary.",
+    "resetDialogFinal": [
+      {
+        "zoom": "200%",
+        "dialog": {
+          "x": 120,
+          "y": 244.203125,
+          "width": 1200,
+          "height": 511.578125
+        },
+        "button": {
+          "x": 700.828125,
+          "y": 567.796875,
+          "width": 364.796875,
+          "height": 95.984375
+        },
+        "horizontalOverflow": false
+      },
+      {
+        "zoom": "400%",
+        "dialog": {
+          "x": 64,
+          "y": 64,
+          "width": 1312,
+          "height": 872
+        },
+        "button": {
+          "x": 168,
+          "y": 559.921875,
+          "width": 729.609375,
+          "height": 191.984375
+        },
+        "horizontalOverflow": false
+      },
+      {
+        "escapeRestoresOpener": true
+      }
+    ]
+  },
+  "actualTaskBudgets": [
+    {
+      "task": "home to quiz",
+      "actions": 1,
+      "outcome": "Direct start, no party/location gate"
+    },
+    {
+      "task": "known proposal search",
+      "actions": 2,
+      "typingExcluded": true,
+      "outcome": "Open search, select proposal; no mandatory topic"
+    },
+    {
+      "task": "chosen results to comparison",
+      "actions": 1,
+      "selectionExcluded": true,
+      "outcome": "Explicit compare, optional explicit personal version"
+    },
+    {
+      "task": "result example to quote",
+      "actions": 2,
+      "outcome": "Relation example then source; no catalogue detour"
+    },
+    {
+      "task": "comparison to quote and return",
+      "actionsEachWay": 1,
+      "outcome": "Context is optional disclosure; exact opener restored"
+    },
+    {
+      "task": "example to one-answer review",
+      "actions": 1,
+      "outcome": "New result requires separate finish"
+    },
+    {
+      "task": "equal-total method example",
+      "actions": 1,
+      "outcome": "Both40/80, different agreements"
+    }
+  ],
+  "defects": [
+    {
+      "id": "UI01",
+      "severity": "P2",
+      "reproduction": "Source reader inherited large59-choice minimum height",
+      "correction": "Clear reserved initial height on subsequent navigation/source",
+      "outcome": "Source page reduced from5693 to2600px in nuclear copy-agent comparison; no artificial tail",
+      "status": "resolved"
+    },
+    {
+      "id": "UI02",
+      "severity": "P2",
+      "reproduction": "Optional result comparator pushed main results down",
+      "correction": "Native collapsed optional comparison section,auto-open after explicit choices",
+      "outcome": "Result bars appear earlier,all actions remain accessible",
+      "status": "resolved"
+    },
+    {
+      "id": "UI03",
+      "severity": "P2",
+      "reproduction": "Information return button touched heading",
+      "correction": "20px bottom gap",
+      "outcome": "Computed20px and screenshots inspected1280/390",
+      "status": "resolved"
+    },
+    {
+      "id": "UI04",
+      "severity": "P2",
+      "reproduction": "/comparison or/method→privacy→browser Back retained privacy under old URL",
+      "correction": "Shared alias resolver on click/popstate",
+      "outcome": "Specific regression passed on desktop and mobile; exact commands and initial selector correction recorded in journal.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI05",
+      "severity": "P2",
+      "reproduction": "Result difference→match→missing→Back returned another example",
+      "correction": "Replace peer category reader while retaining nested source stack",
+      "outcome": "Specific regression passed on desktop and mobile; exact commands and initial selector correction recorded in journal.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI06",
+      "severity": "P2",
+      "reproduction": "Uncheck personal overlay in workspace then return to stored positions revived old answers",
+      "correction": "Snapshot stores preference/selection/question/topic;rerender if preference/selection changed",
+      "outcome": "Specific regression passed on desktop and mobile; exact commands and initial selector correction recorded in journal.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI07",
+      "severity": "P2",
+      "reproduction": "Home with unreadable bank fell back to legacy10+5 welcome text",
+      "correction": "Unknown release uses current recovery shell",
+      "outcome": "Missing/corrupt-bank fixture regression and current routes pass:6 PHP tests/341 assertions; no source bank altered.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI08",
+      "severity": "P2",
+      "reproduction": "Selection fieldset called all59 unchecked candidates Programas elegidos",
+      "correction": "Use Programas para comparar for available choices,keep selected summary separately",
+      "outcome": "Compiled screenshots at1280/390 show corrected controls;59 native checkboxes",
+      "status": "resolved"
+    },
+    {
+      "id": "UI09",
+      "severity": "P2",
+      "reproduction": "Full staged fixture suite fetched v2 bank after synthetic SSR lacked current information templates",
+      "correction": "Keep hidden current templates available independent of initial shell engine",
+      "outcome": "Complete clean staged gate passed154 browser tests,46 PHP tests/604 assertions and all integrity/security jobs; legacy static and cross-engine hydration cases pass.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI10",
+      "severity": "P2",
+      "reproduction": "Return to proposal list after changed selected IDs regenerated DOM and lost exact opener",
+      "correction": "Restore data-proposal-id when original node detached",
+      "outcome": "A12 exact late-proposal opener regression passed against live Vite in both projects (2); consolidated stable gate recorded separately.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI11",
+      "severity": "P2",
+      "reproduction": "At400% CSS zoom reset dialog exceeded viewport (1773.9px tall in1000px viewport), leaving Borrar respuestas outside view.",
+      "correction": "Constrain native dialog max-height to containing-block percentage instead of dynamic viewport units.",
+      "outcome": "1440×1000 at400%: x/y64,1312×872; both actions scroll into view, no horizontal overflow,Escape restores opener. Existing regression strengthened;2 projects passed; both screenshots inspected.",
+      "status": "resolved"
+    },
+    {
+      "id": "UI12",
+      "severity": "P2",
+      "reproduction": "Programme selection cached before a source-factsheet addition retained stale checkbox/count. Independent follow-up also identified a cached factsheet capturing a confirmed Set before an identical-ID draft began.",
+      "correction": "Source additions resolve the active Set on click, invalidate programme cache, and refresh source views when active IDs change; preserve cancellable drafts.",
+      "outcome": "Ordinary source addition passes in both projects. Expanded draft regression passes both identical-ID and changed-ID variants in both projects (2 tests with two cases each).",
+      "status": "resolved"
+    },
+    {
+      "id": "UI13",
+      "severity": "P2",
+      "reproduction": "A failed-bank error became empty after persisted pagehide/pageshow events before the v2 app mounted.",
+      "correction": "Bootstrap clears only the legacy interactive state it owns; mounted v2 keeps its own private cleanup; nonprivate SSR/error content remains available.",
+      "outcome": "Recovery control remains enabled after lifecycle restoration in both projects. Exact paired loading/geometry assertions remain. Native browser BFCache selection itself not claimed.",
+      "status": "resolved"
+    }
+  ],
+  "fiveQuestionReviews": [
+    {
+      "screen": "Home",
+      "where": "2023 edition and task title",
+      "action": "Empezar el test / Comparar programas",
+      "meaning": "Everyday questions or programme reading",
+      "change": "Question stage or selection heading replaces entry",
+      "return": "Inicio;live session shows resume"
+    },
+    {
+      "screen": "Question stage",
+      "where": "Pregunta n de20 and topic; one preserved proposition",
+      "action": "Seven native ordered responses, brief confirmation/advance, Atrás, meaning disclosure",
+      "meaning": "Neutral optional help; unsure/skip differ from neutral; no formation identity",
+      "change": "Checked answer remains visible briefly; forward movement or no movement under reduced-motion; reverse transition on Back",
+      "return": "Atrás restores checked native control; help/programmes preserve the live session; explicit finish before formations/results"
+    },
+    {
+      "screen": "Selection",
+      "where": "¿Qué programas quieres comparar?",
+      "action": "Buscar una formación / native checkboxes",
+      "meaning": "Exact official name and common-programme availability",
+      "change": "n de3,selected chips,disabled fourth",
+      "return": "Volver sin cambiar restores committed choices; main navigation preserves live task."
+    },
+    {
+      "screen": "Comparison",
+      "where": "Compara sus propuestas,topic and proposal count",
+      "action": "Tema,Mostrar,source and change programmes",
+      "meaning": "Same-proposal stance row; conditions always visible;equal-code caveat",
+      "change": "Count/page/filter and selected summary",
+      "return": "Named result/position return when entered there;source back"
+    },
+    {
+      "screen": "Search/topics/positions",
+      "where": "Topic or query plus proposal text and59 formation count",
+      "action": "Search,group,add to comparison",
+      "meaning": "Documented support/qualified/unknown distinct",
+      "change": "Counts,selection summary and bounded list",
+      "return": "Volver a la búsqueda/propuestas/posturas with original context"
+    },
+    {
+      "screen": "Source",
+      "where": "Exact proposal plus formation and2023",
+      "action": "Read literal quote,context,original or preserved source",
+      "meaning": "Interpretation separate from original and absence",
+      "change": "Full-width reader,origin preserved",
+      "return": "Named Back and Cerrar detalle;semantic source control"
+    },
+    {
+      "screen": "Results/examples",
+      "where": "Tus coincidencias con los programas de2023",
+      "action": "Search,relation examples,comparison,review/download",
+      "meaning": "Confirmed overlap plus separate available information;not vote probability",
+      "change": "Live result values or new selected names;revision explicitly requires finish",
+      "return": "Volver a resultados / own-answer review controls"
+    },
+    {
+      "screen": "Help/privacy/accessibility/method",
+      "where": "Plain section heading",
+      "action": "Practical short answers and native details/example buttons",
+      "meaning": "Memory-only state and missing-evidence arithmetic explained",
+      "change": "Expanded detail or unnamed numerical example",
+      "return": "Volver al recorrido anterior or useful direct links"
+    },
+    {
+      "screen": "Loading/failure/pending/reset/export",
+      "where": "Relevant task shell/checkpoint or named dialog",
+      "action": "Retry/review named topic/cancel/explicit format/clear",
+      "meaning": "Spanish consequence or missing requirement;no raw exception",
+      "change": "Busy controls recover or new deliberate action",
+      "return": "Cancel retains task;release failure retains live answers;reload starts fresh"
+    }
+  ],
+  "evidenceReports": [
+    "outputs/ui-ux-cleanup-copy-ledger.json",
+    "outputs/ui-ux-cleanup-server-verification.json"
+  ],
+  "inspectedScreenshots": [
+    "home-390x844.png",
+    "comparison-1280x720.png",
+    "comparison-390x844.png",
+    "dental-320x568.png",
+    "source-1280x720.png",
+    "comparison-page2-1024x320.png",
+    "source-text200.png",
+    "comparison-zoom400.png",
+    "selection-1512x850.png",
+    "rent-390x844.png",
+    "source-320x568.png",
+    "home-1512x850.png",
+    "f04-f08-results-390.png",
+    "f04-f08-result-sumar-1280.png",
+    "f04-f08-download-dialog-390.png",
+    "selection-final-390.png",
+    "question-restored-1280.png",
+    "question-restored-390.png",
+    "reset-final-zoom200.png",
+    "reset-final-zoom400.png",
+    "added-flow-search-return-390.png",
+    "added-flow-qualified-differences-390.png",
+    "added-flow-result-transfer-1280.png",
+    "added-flow-search-return-1280.png",
+    "added-flow-qualified-differences-1280.png",
+    "added-flow-result-transfer-390.png"
+  ],
+  "limitations": [
+    "Agent walkthroughs with fictitious uniform/mixed opinions; no recruited study or claim of proven family-wide usability.",
+    "Preserved historical2023 evidence only; no new electoral-source validation or political mappings.",
+    "Native browser zoom inspected only selector; remaining enlarged source/comparison evidence isCSS zoom,200% text and320px reflow.",
+    "External PACMA PDF responded200 without referrer;headless viewer did not complete DOMContentLoaded,so visual external-viewer acceptance is not claimed.",
+    "Local checks do not establish production host/proxy/log privacy,hosted Linux/PHP CI or authorize publication/collection.",
+    "Unavailable-bank lifecycle restoration exercised by deterministic persisted PageTransitionEvents; native browser BFCache eligibility not certified."
+  ],
+  "localPreview": "http://127.0.0.1:8000",
+  "rollback": "The ordinary main commit that first adds this report contains the UI implementation. Resolve it with git log --diff-filter=A -- outputs/ui-ux-cleanup-application-verification.json; a future deliberate git revert of that commit restores prior presentation while preserving history and unchanged evidence. Baseline eb7048e remains intact. Never reset or rewrite history.",
+  "checkpointBoundary": "The accepted checkpoint still shows the anonymous maximum percentage before finish. Formation identities,full results and personal public overlays require deliberate finish. This work does not claim zero personalized numbers before finish.",
+  "checks": {
+    "sourceChecks": "typecheck,lint,build,PHPStan passed",
+    "initialExactTreeGate": {
+      "result": "blocked",
+      "browserPassed": 140,
+      "browserFailed": 12,
+      "cause": "Five paired SSR-template/loading cases and one paired proposal-focus case; app corrected and full repetition required.",
+      "log": ".tools/ui-ux-cleanup/staged-gate-application.log"
+    },
+    "finalExactTreeGate": {
+      "result": "passed",
+      "tree": "79f8c7736ff050f24fca391cbb97f947da7843bb",
+      "log": ".tools/ui-ux-cleanup/staged-gate-final-application.log",
+      "browserTests": 154,
+      "phpTests": 46,
+      "phpAssertions": 604,
+      "engineTests": 41,
+      "pythonToolingTests": 52,
+      "jobs": [
+        "php",
+        "frontend",
+        "integrity",
+        "security"
+      ],
+      "scope": "Exact application snapshot before final evidence/status consolidation and final active-Set callback refinement. Expanded callback regression passed separately. Required gate and installed hook rerun the final exact tree before commit."
+    },
+    "intermediateLiveQuizRun": {
+      "passed": 15,
+      "failed": 5,
+      "pairedFailure": "Reset enlargement fixed as UI11.",
+      "otherFailures": "Three desktop detached/footer failures require stable compiled rerun; cause not inferred.",
+      "resolution": "All corresponding stable compiled cases passed in the154-test clean gate. Vite-only transient cause remains unconfirmed; no reproduced ongoing failure."
+    },
+    "portCollisionAttempt": {
+      "result": "blocked",
+      "reason": "An overlapping Playwright run occupied8765; subsequent full gates and CLI browser commands serialized.",
+      "log": ".tools/ui-ux-cleanup/staged-gate-repeat.log"
+    },
+    "finalCommitGate": {
+      "command": "python3 scripts/check-staged.py",
+      "log": ".tools/ui-ux-cleanup/staged-gate-complete.log",
+      "hookLog": ".tools/ui-ux-cleanup/commit-gate.log",
+      "requirement": "Both logs must end with a passing exact-tree result before the ordinary main commit. No hook bypass or skipped required job."
+    },
+    "finalSourceDelta": {
+      "change": "Factsheet Add resolves current draft on click rather than capturing a stale Set reference.",
+      "verification": "Both identical-ID and changed-ID draft cancellation cases passed Chromium and mobile Chromium; final exact-tree gate/hook will include this change.",
+      "test": "A04 A37: additions from a factsheet refresh cached choices and remain cancellable in a replacement draft"
+    }
+  },
+  "referenceReview": {
+    "path": "outputs/ui-ux-cleanup-reference-research.json",
+    "version": "ui-ux-reference-review-2023-v1.0.0",
+    "sha256": "2d2f8c7d16126f3c67da447a073ec403203888e75ba66cf7b1323936511ad354",
+    "role": "Observed/documented UX references only. Original prototype and electoral evidence unchanged."
+  },
+  "referenceAdaptationCritique": [
+    {
+      "id": "B01",
+      "observed": "Local all-80 search has count, no-hit recovery and named return; exact proposal stays selected when transferred.",
+      "critique": "Useful without knowing topic or party; complete official interpretation remains available.",
+      "acceptance": [
+        "A12",
+        "A32"
+      ]
+    },
+    {
+      "id": "B02",
+      "observed": "Unchecked bounded result choices enter shared comparison; original result query, values and opener return.",
+      "critique": "Optional controls initially crowded result bars; collapsed native details corrected this.",
+      "acceptance": [
+        "A29"
+      ]
+    },
+    {
+      "id": "B03",
+      "observed": "Distinct numeric positions include +1/+2; missing information is an independent filter.",
+      "critique": "Equal values do not imply equal programme conditions; no evidence never establishes agreement/opposition.",
+      "acceptance": [
+        "A07",
+        "A13",
+        "A31"
+      ]
+    },
+    {
+      "id": "B04",
+      "observed": "Own answer appears only after deliberate finish plus explicit opt-in; unsure/skipped/unasked remain distinct.",
+      "critique": "Snapshot bug revived opt-out; corrected preference-aware rerender preserves current choice.",
+      "acceptance": [
+        "A30"
+      ]
+    },
+    {
+      "id": "B05",
+      "observed": "Example opens one existing question, invalidates old personal views and requires finishing again.",
+      "critique": "No live result preview while editing; other opinions and selected question set stay unchanged.",
+      "acceptance": [
+        "A18",
+        "A35"
+      ]
+    },
+    {
+      "id": "B06",
+      "observed": "Unnamed equal-total example gives both 40% overlap /80% information with different matched decisions.",
+      "critique": "Simplified teaching example is labelled and not a second scoring model; result help links to evidence.",
+      "acceptance": [
+        "A20",
+        "A33",
+        "A34"
+      ]
+    },
+    {
+      "id": "B07",
+      "observed": "Native question-help disclosure and practical notices operate by touch, click and keyboard.",
+      "critique": "Disclosure never changes the selected answer; bank question wording is preserved.",
+      "acceptance": [
+        "A27",
+        "A36"
+      ]
+    },
+    {
+      "id": "B08",
+      "observed": "Unchanged overlap and evidence arithmetic; explicit local TXT/JSON export; no default collection/storage.",
+      "critique": "No political identity map, winner, probability or reference-site position imported.",
+      "acceptance": [
+        "A14",
+        "A25",
+        "A38"
+      ]
+    },
+    {
+      "id": "B09",
+      "observed": "All59 searchable official formation factsheets retain applicability and exact original/provenance links.",
+      "critique": "PSC absence stays explicit with no PSOE inheritance; minor formations equally reachable.",
+      "acceptance": [
+        "A08",
+        "A22",
+        "A37"
+      ]
+    },
+    {
+      "id": "B10",
+      "observed": "One topic/six proposals, bounded results, one-action quote/return, and narrow stance overview.",
+      "critique": "Full contextual conditions still require vertical scrolling; action budgets are counts, not measured user speed.",
+      "acceptance": [
+        "A01",
+        "A16",
+        "A24",
+        "A29",
+        "A32"
+      ]
+    }
+  ],
+  "quizRegressionReview": {
+    "observations": [
+      {
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "questionId": "rent-price-cap",
+        "bodyFont": "16px",
+        "bodyLineHeight": "24.8px",
+        "headingFont": "28px",
+        "headingTextWrap": "balance",
+        "appPadding": "0px",
+        "heading": {
+          "x": 230,
+          "y": 152,
+          "width": 820,
+          "height": 67.1875
+        },
+        "stage": {
+          "x": 230,
+          "y": 100,
+          "width": 820,
+          "height": 677.640625
+        },
+        "controls": [
+          {
+            "type": "radio",
+            "label": "Muy en desacuerdo",
+            "box": {
+              "x": 230,
+              "y": 376.578125,
+              "width": 820,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "En desacuerdo",
+            "box": {
+              "x": 230,
+              "y": 430.578125,
+              "width": 820,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Ni de acuerdo ni en desacuerdo",
+            "box": {
+              "x": 230,
+              "y": 484.578125,
+              "width": 820,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "De acuerdo",
+            "box": {
+              "x": 230,
+              "y": 538.578125,
+              "width": 820,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Muy de acuerdo",
+            "box": {
+              "x": 230,
+              "y": 592.578125,
+              "width": 820,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "No lo tengo claro",
+            "box": {
+              "x": 230,
+              "y": 652.578125,
+              "width": 403.59375,
+              "height": 48
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Prefiero no responder",
+            "box": {
+              "x": 646.390625,
+              "y": 652.578125,
+              "width": 403.609375,
+              "height": 48
+            }
+          }
+        ],
+        "overflow": false,
+        "activeElement": "INPUT",
+        "script": "http://127.0.0.1:5173/@vite/client",
+        "screenshot": "outputs/ui-ux-cleanup-previews/question-restored-1280.png"
+      },
+      {
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "questionId": "rent-price-cap",
+        "bodyFont": "16px",
+        "bodyLineHeight": "24.8px",
+        "headingFont": "26px",
+        "headingTextWrap": "balance",
+        "appPadding": "0px",
+        "heading": {
+          "x": 16,
+          "y": 233.65625,
+          "width": 358,
+          "height": 124.75
+        },
+        "stage": {
+          "x": 16,
+          "y": 177.59375,
+          "width": 358,
+          "height": 875.9375
+        },
+        "controls": [
+          {
+            "type": "radio",
+            "label": "Muy en desacuerdo",
+            "box": {
+              "x": 16,
+              "y": 563.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "En desacuerdo",
+            "box": {
+              "x": 16,
+              "y": 621.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Ni de acuerdo ni en desacuerdo",
+            "box": {
+              "x": 16,
+              "y": 679.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "De acuerdo",
+            "box": {
+              "x": 16,
+              "y": 737.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Muy de acuerdo",
+            "box": {
+              "x": 16,
+              "y": 795.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "No lo tengo claro",
+            "box": {
+              "x": 16,
+              "y": 863.671875,
+              "width": 358,
+              "height": 52
+            }
+          },
+          {
+            "type": "radio",
+            "label": "Prefiero no responder",
+            "box": {
+              "x": 16,
+              "y": 924.46875,
+              "width": 358,
+              "height": 52
+            }
+          }
+        ],
+        "overflow": false,
+        "activeElement": "INPUT",
+        "script": "http://127.0.0.1:5173/@vite/client",
+        "screenshot": "outputs/ui-ux-cleanup-previews/question-restored-390.png"
+      }
+    ],
+    "recordedAt": "2026-10-13T08:23:54.265250+00:00",
+    "testRun": {
+      "command": "ITERATION_REAL_URL=http://127.0.0.1:8000 npx playwright test tests/Browser/second-iteration.spec.ts tests/Browser/loading.spec.ts --workers=2 --grep 'confirmed answers|reduced motion preserves|navigation and reset|reset dialog|simple entry|keyboard choice|delayed result checks|loading, invalid bank|delayed /questionnaire|a failed bank'",
+      "passed": 15,
+      "failed": 5,
+      "duration": "1.2 minutes",
+      "bothProjectPasses": [
+        "forward/reverse motion and visual confirmation",
+        "reduced-motion confirmation and automatic advance",
+        "navigation/reset cancellation",
+        "simple direct entry and exactly-one advancement",
+        "native keyboard confirmation and live return",
+        "delayed questionnaire skeleton/CLS"
+      ],
+      "pairedFailure": "Reset dialog Borrar respuestas remained outside viewport after scroll in the 200%/400% zoom loop; centering and horizontal containment assertions had passed. The runner did not identify which zoom value failed.",
+      "desktopOnlyFailures": [
+        "failed-bank footer bounding box was null",
+        "delayed-result journey timed out with detached question after a questionnaire navigation",
+        "withdrawal/reset journey timed out after a question control detached"
+      ],
+      "desktopTransientFailureCause": "Unconfirmed; live Vite navigation/reload is a possibility. Mobile counterparts passed. Stable compiled verification is required."
+    },
+    "visualInspection": {
+      "imagesOpenedWithViewImage": [
+        "outputs/ui-ux-cleanup-previews/question-restored-1280.png",
+        "outputs/ui-ux-cleanup-previews/question-restored-390.png"
+      ],
+      "findings": [
+        "Restored compact question scale is visible: 28px at 1280 and 26px at 390, 16px body, zero app padding.",
+        "Ordered native radios, focus outline, progress, back control and proposal help are clear in both screenshots.",
+        "All seven response options fit within the 1280x720 capture. The 390x844 view requires ordinary vertical scrolling for the lower optional responses.",
+        "No horizontal overflow was measured or seen."
+      ],
+      "doesNotCertifyRemainingFailures": true
+    }
+  },
+  "developmentPreview": {
+    "errors": [],
+    "preservedQuestion": true,
+    "developmentModulesLoaded": true,
+    "bankRequests": 2,
+    "hotMarkerSha256": "04f38fc06ceea50a1c122105c49c5001179483fe91f99859071eb243661f7dfd"
+  },
+  "addedFlowFinalDesignLoop": {
+    "schemaVersion": 1,
+    "planVersion": "ui-ux-cleanup-2023-v1.1.0",
+    "recordedAt": "2026-10-13T08:32:31.351121+00:00",
+    "phase": "final_design_loop_after_initial_implementation_before_acceptance",
+    "status": "final_design_loop_verified_locally",
+    "historyBoundary": "These are compact sketches and critique for an actual final design iteration. They are not fabricated evidence of sketches before the initial application build, and do not relabel the original U003 prototype as acceptance of added flows.",
+    "runtime": "http://127.0.0.1:8000",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "constraints": [
+      "Read-only application/test/plan/report review",
+      "Raw installed Playwright Node only; no CLI or port8765",
+      "No application, source-bank, dependency or index changes",
+      "Fictitious public queries only; no owner political opinions"
+    ],
+    "sketches": [
+      {
+        "id": "SK-FINAL-SEARCH",
+        "taskIds": [
+          "U010"
+        ],
+        "decisions": [
+          "B01"
+        ],
+        "referenceEvidenceLevel": "Reference plan distinguishes observed entry/partial databases and documented help; this adaptation is tested on our application, not inferred useful from reference popularity.",
+        "visitorTask": "Find a concrete authored proposal without knowing its topic or doing the test.",
+        "compactSketch": [
+          "Programme entry: comparison choices plus Buscar una propuesta",
+          "Search: labelled local input -> count and six-item page -> proposal button",
+          "No match: plain no-match sentence plus Borrar búsqueda",
+          "Proposal: wording, position groups, formation search and explicit add controls",
+          "Return: Volver a la búsqueda restores query/page and original proposal button"
+        ],
+        "critique": {
+          "simplestAlternative": "A topic-only list removes one input but forces a visitor who knows a policy phrase to guess its category.",
+          "rejectedAlternative": "One long list of all eighty proposal texts makes mobile recovery and return difficult.",
+          "chosen": "Keep one local query, bounded count, explicit no-hit recovery and semantic return."
+        },
+        "falsifiableChecks": [
+          "No-hit query offers clear and removes no selected formation",
+          "Known psychotherapy query opens the exact authored proposal and all59 positions",
+          "Return restores exact query and proposal focus at1280/390",
+          "Query does not enter URL,history,storage or request bodies"
+        ]
+      },
+      {
+        "id": "SK-FINAL-FILTERS",
+        "taskIds": [
+          "U009"
+        ],
+        "decisions": [
+          "B03"
+        ],
+        "referenceEvidenceLevel": "Differences as an evidence-navigation aid is adapted from documented comparison behavior; code-value semantics come exclusively from the preserved local bank.",
+        "visitorTask": "See which selected programmes document different answers and which lack information.",
+        "compactSketch": [
+          "Shared workspace: chosen names -> Tema -> Mostrar",
+          "Documented differences: include rows with at least two distinct known values, including +1/+2",
+          "Information missing: include a row independently when one selected formation is unknown",
+          "Proposal row: all selected stance labels together -> each qualified summary -> exact source",
+          "Empty result: visible explanation plus Ver todas las propuestas"
+        ],
+        "critique": {
+          "simplestAlternative": "A single all-proposals view is truthful but makes the visitor inspect every cell to find a specific difference.",
+          "rejectedAlternative": "An opposition-only filter hides qualified same-direction differences; classing unknown as disagreement invents evidence.",
+          "chosen": "Separate documented-value differences and gaps; allow mixed rows to appear in both views and retain the equal-code caveat."
+        },
+        "falsifiableChecks": [
+          "PP/PSOE/Sumar dental row has unknown/+1/+2 and appears in both independent views",
+          "Qualified dental summary keeps gradual extension and start over75",
+          "Two unknown programmes yield honest empty documented-difference view and a one-action return",
+          "Same topic and explicit chosen programmes persist while changing filters at1280/390"
+        ]
+      },
+      {
+        "id": "SK-FINAL-RESULT-TRANSFER",
+        "taskIds": [
+          "U012",
+          "U009"
+        ],
+        "decisions": [
+          "B02",
+          "B04"
+        ],
+        "referenceEvidenceLevel": "Result comparison and detailed position reading were documented in the reference research; our explicit reveal/privacy rules remain authoritative.",
+        "visitorTask": "Compare deliberately chosen programmes from an already revealed result and return without losing context.",
+        "compactSketch": [
+          "Revealed result: unchecked native formation choices -> count/selected chips",
+          "One compare action: shared workspace without answers; personal version is separately explicit",
+          "Optional own-answer checkbox: honest numeric/unsure/skip/unasked line",
+          "Source -> same workspace -> Volver a mis resultados restores result search/page/selection/opener",
+          "Answer review invalidates personal snapshots; a new result requires deliberate finish"
+        ],
+        "critique": {
+          "simplestAlternative": "A link to the public selector is simple but discards the chosen result names and return context.",
+          "rejectedAlternative": "Preselecting top parties or automatically exposing answers implies recommendation and defeats explicit disclosure.",
+          "chosen": "Reuse the comparator with bounded explicit choices, optional current answer line, and separate result/workspace origins."
+        },
+        "falsifiableChecks": [
+          "No automatic formation selection or result ordering change",
+          "Explicit own-answer preference and current question survive source/workspace return",
+          "Opt-out remains off after cached-view return; edits require finish again",
+          "Exact result search,values,selection,scroll and opener are preserved"
+        ]
+      }
+    ],
+    "existingF08EvidenceReuse": {
+      "report": "outputs/ui-ux-cleanup-server-verification.json",
+      "reportObservedAt": "2026-10-13T08:17:27.663612+00:00",
+      "reportField": "finalResultWalkthrough; flows; acceptanceEvidence",
+      "currentIterationAppSha256": "4d6b07d02e47cd22b0a5a737848ec54b1bb1cd8f4312e2a8b1a054b242dd1cdf",
+      "recordedIterationAppSha256": "4d6b07d02e47cd22b0a5a737848ec54b1bb1cd8f4312e2a8b1a054b242dd1cdf",
+      "exactStateImplementationUnchanged": false,
+      "scope": "Initial planned reuse was superseded after the source changed. See finalDecision and the fresh F08 walkthrough; no current whole-file identity is claimed.",
+      "currentCssSha256": "d5028e5672bb1de4576588597660657a2703ba0f70572e7835a532ffd7116924",
+      "afterSourceStabilized": {
+        "currentIterationAppSha256": "b111dff016167e8bc0ca9b7a56dcfe0647817862bbcf7030cd995bed763f1ce5",
+        "stagedIterationAppSha256": "b111dff016167e8bc0ca9b7a56dcfe0647817862bbcf7030cd995bed763f1ce5",
+        "stagedMatchesPriorReport": false,
+        "functions": [
+          {
+            "name": "resultToComparison",
+            "unchanged": true,
+            "sha256": "6c134cbe42fddf534cbca458fac7cabf1e3492221718f613cec4a1b3b3cb8e4b"
+          },
+          {
+            "name": "renderResults",
+            "unchanged": true,
+            "sha256": "1d3fe0f773266de5f5530349991d65dc6f66953b827dc0173a153da5c87b1d83"
+          },
+          {
+            "name": "restorePublic",
+            "unchanged": true,
+            "sha256": "240306c8bd9f31ceb7fee77d0ee44a1c4e0738242aec0f469e1c86575a6c72d1"
+          },
+          {
+            "name": "overlayControl",
+            "unchanged": true,
+            "sha256": "9d29acdbfafa52e0c1000a9eb98310c9d682c228d96a42950a4d858733b1ade8"
+          },
+          {
+            "name": "reviewOne",
+            "unchanged": true,
+            "sha256": "235d4cca53130d7c34b0ab500a895b57eee1eaf61ceb06cfe84c1113a3dc3320"
+          }
+        ]
+      },
+      "finalDecision": "Existing F08 screenshots and broader review remain supporting evidence. The changed overall JS hash prevented exact whole-file reuse, so this iteration freshly rechecked deliberate reveal, two chosen result IDs, default hidden overlay, explicit own-answer line, source return, opt-out, and identical result search/values/scroll/opener at1280 and390 using one20-answer fixture. One-answer edit and pending-total behavior remain supported by existing specific regressions, not newly traversed here.",
+      "initialAssessmentSuperseded": true,
+      "initialHashObservationOnly": "The first current/recorded hash fields are retained as the earlier actual observation, not the revision of the later fresh traversal."
+    },
+    "executionStartedAt": "2026-10-13T08:44:21.558Z",
+    "walkthroughs": [
+      {
+        "kind": "search_and_filters",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "states": [
+          {
+            "label": "no-hit-recovery",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "INPUT",
+            "scroll": 0
+          },
+          {
+            "label": "exact-proposal-and-retained-selection",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "query-and-opener-return",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "public-psychotherapy-care",
+            "scroll": 0
+          },
+          {
+            "label": "qualified-differences",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "same-mixed-row-in-gaps",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 268
+          },
+          {
+            "label": "source-return-retains-gap-topic-opener",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "Ver fuente: Partido Socialista Obrero Español (PSOE)",
+            "scroll": 268
+          },
+          {
+            "label": "unknowns-do-not-form-a-difference",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "one-action-empty-filter-recovery",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "SELECT",
+            "scroll": 0
+          }
+        ],
+        "screenshots": [
+          {
+            "label": "search-return",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-1280.png",
+            "crop": "viewport"
+          },
+          {
+            "label": "qualified-differences",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-1280.png",
+            "crop": "actual comparison element at configured viewport"
+          }
+        ],
+        "documentedDifference": {
+          "questionId": "public-dental-care",
+          "values": [
+            null,
+            1,
+            2
+          ],
+          "visibleText": "La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.No podemos confirmar su postura sobre esta propuesta.El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuenteApoyo parcial o con condicionesAmpliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteApoyo a la propuestaAñadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente"
+        },
+        "privateState": {
+          "query": "",
+          "hash": "",
+          "history": null,
+          "local": [],
+          "session": [],
+          "databases": []
+        },
+        "status": "passed",
+        "apiRequests": [
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          },
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          },
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          }
+        ],
+        "errors": []
+      },
+      {
+        "kind": "search_and_filters",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "states": [
+          {
+            "label": "no-hit-recovery",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "INPUT",
+            "scroll": 0
+          },
+          {
+            "label": "exact-proposal-and-retained-selection",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "query-and-opener-return",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "public-psychotherapy-care",
+            "scroll": 0
+          },
+          {
+            "label": "qualified-differences",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "same-mixed-row-in-gaps",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 733
+          },
+          {
+            "label": "source-return-retains-gap-topic-opener",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "Ver fuente: Partido Socialista Obrero Español (PSOE)",
+            "scroll": 733
+          },
+          {
+            "label": "unknowns-do-not-form-a-difference",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 0
+          },
+          {
+            "label": "one-action-empty-filter-recovery",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "SELECT",
+            "scroll": 23
+          }
+        ],
+        "screenshots": [
+          {
+            "label": "search-return",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-390.png",
+            "crop": "viewport"
+          },
+          {
+            "label": "qualified-differences",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-390.png",
+            "crop": "actual comparison element at configured viewport"
+          }
+        ],
+        "documentedDifference": {
+          "questionId": "public-dental-care",
+          "values": [
+            null,
+            1,
+            2
+          ],
+          "visibleText": "La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.Partido Popular (PP)No podemos confirmar su postura sobre esta propuesta.Partido Socialista Obrero Español (PSOE)Apoyo parcial o con condicionesSumar (SUMAR)Apoyo a la propuestaPartido Popular (PP)El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuentePartido Socialista Obrero Español (PSOE)Ampliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteSumar (SUMAR)Añadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente"
+        },
+        "privateState": {
+          "query": "",
+          "hash": "",
+          "history": null,
+          "local": [],
+          "session": [],
+          "databases": []
+        },
+        "status": "passed",
+        "apiRequests": [
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          },
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          },
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          }
+        ],
+        "errors": []
+      },
+      {
+        "kind": "F08_current_recheck_one_quiz_two_viewports",
+        "fixture": "20 fictitious answers: strongly disagree on rent cap; strongly agree on other presented questions.",
+        "states": [
+          {
+            "label": "explicit-personal-overlay-1280",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "INPUT",
+            "scroll": 0
+          },
+          {
+            "label": "same-result-context-1280",
+            "url": "http://127.0.0.1:8000/questionnaire",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 137
+          },
+          {
+            "label": "explicit-personal-overlay-390",
+            "url": "http://127.0.0.1:8000/programmes",
+            "history": null,
+            "overflow": false,
+            "focus": "INPUT",
+            "scroll": 0
+          },
+          {
+            "label": "same-result-context-390",
+            "url": "http://127.0.0.1:8000/questionnaire",
+            "history": null,
+            "overflow": false,
+            "focus": "BUTTON",
+            "scroll": 137
+          }
+        ],
+        "screenshots": [
+          {
+            "label": "result-transfer",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-1280.png",
+            "crop": "viewport"
+          },
+          {
+            "label": "result-transfer",
+            "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-390.png",
+            "crop": "actual comparison element at configured viewport"
+          }
+        ],
+        "privateState": {
+          "query": "",
+          "hash": "",
+          "history": null,
+          "local": [],
+          "session": [],
+          "databases": []
+        },
+        "status": "passed",
+        "apiRequests": [
+          {
+            "url": "http://127.0.0.1:8000/api/bank",
+            "method": "GET",
+            "body": null
+          },
+          {
+            "url": "http://127.0.0.1:8000/api/release-state",
+            "method": "GET",
+            "body": null
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "failures": [],
+    "executionFinishedAt": "2026-10-13T08:44:36.791Z",
+    "attempts": [
+      {
+        "startedAt": "2026-10-13T08:41:30.894Z",
+        "finishedAt": "2026-10-13T08:41:35.597Z",
+        "walkthroughs": [
+          {
+            "viewport": {
+              "width": 1280,
+              "height": 720
+            },
+            "states": [
+              {
+                "name": "search-no-hit",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "Buscar una propuesta"
+                ],
+                "focus": "INPUT",
+                "scroll": 0
+              },
+              {
+                "name": "search-exact-proposal",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "La sanidad pública debería incluir la psicoterapia entre sus servicios para quienes la necesitan."
+                ],
+                "focus": "BUTTON",
+                "scroll": 0
+              },
+              {
+                "name": "search-return",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "Buscar una propuesta"
+                ],
+                "focus": "public-psychotherapy-care",
+                "scroll": 0
+              }
+            ],
+            "screenshots": [
+              {
+                "label": "search-return",
+                "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-1280.png",
+                "crop": "viewport"
+              }
+            ],
+            "status": "failed",
+            "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Apoyo con condiciones\"\nReceived string:    \"La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.No podemos confirmar su postura sobre esta propuesta.El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuenteApoyo parcial o con condicionesAmpliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteApoyo a la propuestaAñadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente\"",
+            "errors": [],
+            "navigations": [
+              "http://127.0.0.1:8000/programmes",
+              "http://127.0.0.1:8000/programmes",
+              "http://127.0.0.1:8000/programmes"
+            ]
+          },
+          {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "states": [
+              {
+                "name": "search-no-hit",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "Buscar una propuesta"
+                ],
+                "focus": "INPUT",
+                "scroll": 0
+              },
+              {
+                "name": "search-exact-proposal",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "La sanidad pública debería incluir la psicoterapia entre sus servicios para quienes la necesitan."
+                ],
+                "focus": "BUTTON",
+                "scroll": 0
+              },
+              {
+                "name": "search-return",
+                "url": "http://127.0.0.1:8000/programmes",
+                "history": null,
+                "overflow": false,
+                "heading": [
+                  "Buscar una propuesta"
+                ],
+                "focus": "public-psychotherapy-care",
+                "scroll": 0
+              }
+            ],
+            "screenshots": [
+              {
+                "label": "search-return",
+                "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-390.png",
+                "crop": "viewport"
+              }
+            ],
+            "status": "failed",
+            "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Apoyo con condiciones\"\nReceived string:    \"La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.Partido Popular (PP)No podemos confirmar su postura sobre esta propuesta.Partido Socialista Obrero Español (PSOE)Apoyo parcial o con condicionesSumar (SUMAR)Apoyo a la propuestaPartido Popular (PP)El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuentePartido Socialista Obrero Español (PSOE)Ampliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteSumar (SUMAR)Añadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente\"",
+            "errors": [],
+            "navigations": [
+              "http://127.0.0.1:8000/programmes",
+              "http://127.0.0.1:8000/programmes"
+            ]
+          }
+        ],
+        "failures": [
+          {
+            "viewport": {
+              "width": 1280,
+              "height": 720
+            },
+            "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Apoyo con condiciones\"\nReceived string:    \"La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.No podemos confirmar su postura sobre esta propuesta.El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuenteApoyo parcial o con condicionesAmpliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteApoyo a la propuestaAñadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente\""
+          },
+          {
+            "viewport": {
+              "width": 390,
+              "height": 844
+            },
+            "error": "Error: expect(received).toContain(expected) // indexOf\n\nExpected substring: \"Apoyo con condiciones\"\nReceived string:    \"La sanidad pública debería ampliar los servicios dentales que ofrece a quienes los necesitan.Partido Popular (PP)No podemos confirmar su postura sobre esta propuesta.Partido Socialista Obrero Español (PSOE)Apoyo parcial o con condicionesSumar (SUMAR)Apoyo a la propuestaPartido Popular (PP)El programa electoral remite a un plan externo, pero no concreta por sí mismo una ampliación de la atención dental pública. Esa referencia no basta para puntuar esta postura.Ver fuentePartido Socialista Obrero Español (PSOE)Ampliar poco a poco la atención dental, incluidos empastes e implantes, empezando por las personas mayores de 75 años.Ver fuenteSumar (SUMAR)Añadir y ampliar la atención dental entre los servicios de la sanidad pública.Ver fuente\""
+          }
+        ],
+        "classification": "Observation assertion mismatch only: real label is Apoyo parcial o con condiciones; application text was correct."
+      }
+    ],
+    "completedAt": "2026-10-13T08:48:11.082815+00:00",
+    "visualInspection": {
+      "inspectedAt": "2026-10-13T08:48:11.082815+00:00",
+      "method": "All six new PNGs opened and visually inspected with view_image after the raw installed Playwright walkthrough.",
+      "screenshots": [
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-1280.png",
+          "captureType": "viewport",
+          "sha256": "fff391658c5dfccbd6e65966b8d28f306a3cc6b96ed84bde82c474cf94e1a895",
+          "finding": "Search heading, labelled field, retained PSICOTERAPIA query, Borrar búsqueda, one result count, topic and exact authored proposal action are readable together. Main navigation and footer fit. Returning focus was measured by the walkthrough; this pointer-origin screenshot does not claim a visible keyboard focus ring.",
+          "result": "passed"
+        },
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-390.png",
+          "captureType": "viewport",
+          "sha256": "2678120b089c520e19830a64969ace47aeb8351cb3614be0aaecc25ee42dc98c",
+          "finding": "Navigation and programme actions wrap in ordinary document flow. Search heading, query, clear action, count, topic and full proposal action fit within the 390 by 844 capture. The long proposal wraps without clipping.",
+          "result": "passed"
+        },
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-1280.png",
+          "captureType": "actual comparison element at configured viewport",
+          "sha256": "9f6cc3f0132df1ea11c5a5fd9a003ca799cbaa20f92997feb64fcc98bc2985cc",
+          "finding": "The dental proposal and PP/PSOE/Sumar columns can be read side by side. PP is explicitly unknown with an evidence reason. PSOE is qualified support and retains gradual extension, fillings and implants, starting with people over75. Sumar supports adding and expanding public dental care. Each has a clear Ver fuente control.",
+          "result": "passed"
+        },
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-390.png",
+          "captureType": "actual comparison element at configured viewport",
+          "sha256": "6fe30fffc3c961d8a588fc1485760e0ccec1727cc1f52b7bbdac7d38e18316cc",
+          "finding": "A compact named stance summary precedes each programme explanation. Unknown, partial or conditional support and support remain distinct. The PSOE age and scope conditions remain visible, source actions stay below their explanation and text is unclipped. This tall element capture documents ordinary vertical scrolling, not above-the-fold fit.",
+          "result": "passed"
+        },
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-1280.png",
+          "captureType": "viewport",
+          "sha256": "9ee22a6f851474520ae50352fa1981310d9e173fc945de839303042d28c5f400",
+          "finding": "Volver a mis resultados, Cambiar programas and Explorar por tema identify the next actions and return route. Compara sus propuestas names the workspace. The explicitly checked Mostrar mis respuestas control, Vivienda topic, all-proposals filter, same-code caveat and count are legible; the programme columns begin at the lower edge. This viewport does not itself show the full proposal row.",
+          "result": "passed"
+        },
+        {
+          "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-390.png",
+          "captureType": "actual comparison element at configured viewport",
+          "sha256": "f1a1552961f524d4c49c385e3a37bf45c8c74eb4e3a5aeb34fb5b0cd85152aa4",
+          "finding": "The rent proposal and Tu respuesta: Muy en desacuerdo are distinct from the programme stance summary. PP remains unknown with a reason; Sumar support retains the legal market-area conditions and housing-access context. Each cited explanation has Ver fuente. This element capture requires ordinary vertical scrolling and is not a claim of whole-screen fit.",
+          "result": "passed"
+        }
+      ],
+      "fiveQuestionReviews": [
+        {
+          "flow": "proposal search",
+          "where": "Buscar una propuesta names the view; the result is grouped under Sanidad.",
+          "action": "The labelled search input, Borrar búsqueda and full proposal button state available actions.",
+          "meaning": "Propuestas 1–1 de 1 and the exact authored wording explain the result; opening it exposes all59 formations rather than a party recommendation.",
+          "change": "The known query reduces the count to one; no-hit recovery clears the query; return retains PSICOTERAPIA and restores the proposal opener.",
+          "return": "Volver a la búsqueda returns to the same query/opener; the visible programme actions also provide routes to selection and topics."
+        },
+        {
+          "flow": "documented differences and missing information",
+          "where": "Compara sus propuestas, selected names and Tema establish which programmes and subject are being compared.",
+          "action": "Mostrar offers separate Posturas distintas and Información que falta views; Ver fuente opens the evidence; an empty view offers Ver todas las propuestas.",
+          "meaning": "Known +1/+2 values are distinct documented positions. The unknown PP dental cell says No podemos confirmar su postura and supplies a reason. PSOE retains starting over75 and gradual coverage. Missing evidence is not opposition.",
+          "change": "The same mixed dental row appears independently in both views; changing the filter retains the topic and selected names. Two unknown positions alone do not create a documented difference.",
+          "return": "Source return restores the gaps filter, topic and exact Ver fuente opener. Empty-filter recovery restores all proposals in one action."
+        },
+        {
+          "flow": "F08 result transfer and optional own answers",
+          "where": "Compara sus propuestas and the explicit selected programme names identify the shared comparison workspace reached from an already revealed result.",
+          "action": "Volver a mis resultados, Cambiar programas, Explorar por tema, native filters and Mostrar mis respuestas provide visible choices.",
+          "meaning": "Tu respuesta: Muy en desacuerdo is visibly separated from programme stances; unknown evidence remains unknown. A same-code caveat invites reading the conditions.",
+          "change": "Default comparison hides answers, the explicit checkbox reveals the current answer, and opt-out removes it. Reading a source preserves the active comparison.",
+          "return": "Volver a mis resultados restores the same result query, values, selection, scroll and compare opener at both widths."
+        }
+      ],
+      "defectsFound": [],
+      "correctionNeededInThisBoundedInspection": false,
+      "reusedSupportingImages": [
+        "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-390.png",
+        "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-1280.png"
+      ],
+      "reusedEvidenceBoundary": "The two supporting images were observed earlier. They are not counted among the six newly captured and inspected images or the20 current states."
+    },
+    "revisionBoundary": {
+      "walkthroughIterationAppSha256": "b111dff016167e8bc0ca9b7a56dcfe0647817862bbcf7030cd995bed763f1ce5",
+      "currentIterationAppSha256": "5ec7fceb07c70da234262f1305c1363f88b283cdff8b4abf74a9c7d0af033c94",
+      "bankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+      "subsequentSourceChange": "Root reported one later factsheet Add callback fix that resolves active draft/selection at click time. Search, filters, result transfer and workspace behavior were reported unchanged. This bounded traversal is not relabelled as a rerun of that callback; the root owns its paired regression and final exact-tree gate."
+    },
+    "limits": [
+      "This was an honest final design iteration after initial implementation, with recorded sketches before this walkthrough. It does not fabricate initial pre-build evidence or make U003 validate the added interactions.",
+      "One fictitious20-answer F08 fixture was deliberately finished once and re-used through two viewports, rather than two independently completed quizzes.",
+      "One-answer review and pending-total behavior were not freshly exercised in this bounded run; existing specific regression and server evidence remains responsible for them.",
+      "The capture labels distinguish whole viewport from element captures; mobile comparison needs ordinary vertical scrolling.",
+      "No recruited user study, production host privacy audit or public-launch certification is claimed.",
+      "The initial attempt used an incorrect expected label. The real Apoyo parcial o con condiciones label was correct; the preserved failed attempt records an assertion error rather than an application defect."
+    ]
+  },
+  "screenshotManifest": [
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-1280.png",
+      "sha256": "9f6cc3f0132df1ea11c5a5fd9a003ca799cbaa20f92997feb64fcc98bc2985cc"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-qualified-differences-390.png",
+      "sha256": "6fe30fffc3c961d8a588fc1485760e0ccec1727cc1f52b7bbdac7d38e18316cc"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-1280.png",
+      "sha256": "9ee22a6f851474520ae50352fa1981310d9e173fc945de839303042d28c5f400"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-result-transfer-390.png",
+      "sha256": "f1a1552961f524d4c49c385e3a37bf45c8c74eb4e3a5aeb34fb5b0cd85152aa4"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-1280.png",
+      "sha256": "fff391658c5dfccbd6e65966b8d28f306a3cc6b96ed84bde82c474cf94e1a895"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/added-flow-search-return-390.png",
+      "sha256": "2678120b089c520e19830a64969ace47aeb8351cb3614be0aaecc25ee42dc98c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/before-home-390.png",
+      "sha256": "600168a93a8a816d538619e6b98a4e0662cbf70eedff61cf6268075d4e157c37"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/before-programmes-390.png",
+      "sha256": "0d515f55b154b52461f84c4f0052408319b6f60f2f37bd0ed80e18bb0b81d0de"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-1024x320.png",
+      "sha256": "1d46686d300a13fa7eb69bb43a17ae815955056c18379acc32cc92fc594d07e1"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-1280x720.png",
+      "sha256": "94fb1510c01a7ce7260c909247a99055e198f65b720c4acd88c4cc745b23bc41"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-1512x850.png",
+      "sha256": "c6425295d383e9e637402c40ffdc72ee334764ee169f6a699f7f3721ff60e2f2"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-320x568.png",
+      "sha256": "59dd63cac378b6489ecadf9e3fbd8ddfa606c63c690936b7479b5ab41532f25a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-390x844.png",
+      "sha256": "4bd2244caceeea1f33367fc2f74175ba48b5880e963e676560e178bf856f2130"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-page2-1024x320.png",
+      "sha256": "09cc3d82511e7406bf4bdf932401a45862d48a5b19522a1b9cd8dbc33b8c94cb"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-page2-1280x720.png",
+      "sha256": "4a421a197381b9894b49419b5a82b5db750f76987efedfe992930b1e648f31f0"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-page2-1512x850.png",
+      "sha256": "4603ee1f9afd4ce50cfbb01a86563d86dfb45ae8eb8b79d1b12cd765001ac54b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-page2-320x568.png",
+      "sha256": "46998ad3a1ca10e20bb2ef45a557e48695d9edcbcc084d9c5d383102da814188"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-page2-390x844.png",
+      "sha256": "70f7d1f3a61f91c4a0a94cb0471bd57d58d6823241305ba96e7a2d42ae161848"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-text200.png",
+      "sha256": "7fcaf7869e02e450935be5314875c9b0c0c92b41a573a76d07d67bb372d9f804"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-zoom200.png",
+      "sha256": "b043edc4371545edbcf49357a9e924ff61f7904edf967b378ff9a2eb9c61397b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/comparison-zoom400.png",
+      "sha256": "c047d3555b021b5ea495441a53a6d440693fe3a3e52609a285085b0a63cfd556"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/dental-1024x320.png",
+      "sha256": "7f05cafdf026bc46b55adab77a4e3b366692aa4dce3cdfe57faf1a8db11c18cd"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/dental-1280x720.png",
+      "sha256": "b9fdc957eb38a3fd92758b1896d1a4295e06925be6934af89bf4af29466b10a9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/dental-1512x850.png",
+      "sha256": "a9ac1fb5381ebde5ce9bb96851ce957136f19516717600a6a7686b15ec9fdf26"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/dental-320x568.png",
+      "sha256": "745ba2e42a0ea67ec3f8cfb459a6fba3ce0fbfdd7071561b47fab53f903e1d91"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/dental-390x844.png",
+      "sha256": "96ca493ed2012ca7a404bbd8df386d12c5cebaae87dadd04346c84572ab9ad8a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/development-live-quiz.png",
+      "sha256": "52fe0d3acea77d62de5c44f33ac77e1f922f5e7159bf06d6638cbd50776f7bb0"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-comparison-1280.png",
+      "sha256": "415ec26118814c2629d6e17c6e00f6d39ef0a7966d1c60e15adfb26f8d2081dd"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-comparison-390.png",
+      "sha256": "85197791c5f3610a1914fe7c4faf69482ff648b1ed23b4986d5d553eb2fa838c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-1280.png",
+      "sha256": "85ed865e5685c703911468edda15e6053bb35af591f843b6c3039f4a8acadf9f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-390.png",
+      "sha256": "32e0e4393489fc521c781e2e6f777e61812871722faa62b8180e84743ff3c0de"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-1280.png",
+      "sha256": "db9bf0e31a03ddfe6e512a68ac494cb344b1126164826e55327df1564a694405"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-390.png",
+      "sha256": "7dfbb4c069d10835b809e920172e319df462f64840c741673f7325715b6d023d"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-differences-1280.png",
+      "sha256": "a95fb4f7b258ea464c0c60c3eef16d60efedb5684d6ade64ceff264b95d3d641"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-differences-390.png",
+      "sha256": "b22e4b68cb8ffaf5e6a981bdab1bbe3c50ae4e7648e29a7a0e76dbacd49813e1"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-1280.png",
+      "sha256": "572ff090cb97a452674f7509cbc1ee6406e348597eafa8e99ed4f465ae54e7af"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-390.png",
+      "sha256": "54751f22a24059ada05e75db5fab890eb3dc50eacca32718b327ad5854b628b9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-1280.png",
+      "sha256": "c4812d5fd0f45a0904b70f47fbfdcc204fb8797b3e57138bef6225b1b6d2d16f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-390.png",
+      "sha256": "b156e3e1e7b16b5180844b343420aad845375a8901a020f3b740b7851944ff9e"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-1280.png",
+      "sha256": "76d97e03fea4cf7cab12093cae048cf813346448bbbb812ce295521065c066a6"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-390.png",
+      "sha256": "0cd81caee2773a6510218161bc57ef682a2910af7921d5fa2a38c2d00fe79c35"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-result-narrow-390.png",
+      "sha256": "98667bb95a1c9286f1beac9d918ed2bf9c2b69a94555bdfcd22de68a467922b9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-1280.png",
+      "sha256": "50ee6d2d68f384916f6f96880236edf447a701768f8ec4eb711da32bd995c22b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-390.png",
+      "sha256": "392815d7db14ac81fa22c49323b4ffe7588e18ad2ff3ca102c3fb00f29f17cac"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-results-1280.png",
+      "sha256": "bdcb84f651f81e86fe3fec6090855c107319539e38088e89cb229921df0fa324"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-results-390.png",
+      "sha256": "4fbe22fee3ea22ccf0b8bb419ab4bf9556dc3291fd1d692703aa3907b9955c47"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-review-one-1280.png",
+      "sha256": "d3f03ffd9bf8fdd47f7b55ad1ecadc4bd30c7b7d423367a0531fe2a4869acc27"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f04-f08-review-one-390.png",
+      "sha256": "74715abd0bdcc1be5db406c071020db2b7e153dde5a01ad22abdfcbd2b648ec6"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-1280.png",
+      "sha256": "46d5007fb87b2534f067e2635748d980c979b5dbcfcabf841cb16cd8b551393e"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-390.png",
+      "sha256": "53910e93d92f995d0079073477e29eb2824743b7bcbfae17f47329c6f8d46135"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-recovered-1280.png",
+      "sha256": "d4e0aa61902f96cf5538238c900095cf8b0336fae027941e067f9c7062943303"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-recovered-390.png",
+      "sha256": "58dc71f686b74ffc1887b940ecc0439b0263c68b60b1b1730b078487ac916b02"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-result-1280.png",
+      "sha256": "6d49f9de8e57bbcb4a8d555e70bece3f9245e76b4399ea376d063c59328140ca"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-result-390.png",
+      "sha256": "3baed3c31ea8d57b2ae23d9ac98bc4eb71eae849e8816bb9a1acaa1aa6566f30"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-review-1280.png",
+      "sha256": "ad88a91ff5c1687f87b00ab63e279ce10f2a432d37d8c56a46b335073dd149c7"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-pending-review-390.png",
+      "sha256": "b41ec2eb4b8611e39cee6a25b659b4708d00a612b8a5826d98c99ca48204d5c8"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-removal-after-revealed-topic-removal-390.png",
+      "sha256": "e6a483d4f38aad5bff40dc45c96bd8c7d9cf97435cbec3f5ba6e3a0cec7019ad"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/f08-removal-recovered-after-removal-390.png",
+      "sha256": "58dc71f686b74ffc1887b940ecc0439b0263c68b60b1b1730b078487ac916b02"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/home-1024x320.png",
+      "sha256": "680d5da7993f80d621c69eeb7ee1bc86726d5f9e1c7a4e1b70b372c3c522692a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/home-1280x720.png",
+      "sha256": "98a31580514962dcff45397ffaa2a1fa23c1e8e0164649b1ce48a4a32f516d16"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/home-1512x850.png",
+      "sha256": "2767100f696d897db1a2fb346a6324f47aa0079909de9be4bf19827a62dc6156"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/home-320x568.png",
+      "sha256": "d7f61f220d684a01d7a88e2cd57025b810e6afe854444ade1ff0e911c3f4d08c"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/home-390x844.png",
+      "sha256": "581c8e2c3f4e6c6b39e5aa018a788b0277d2f78e5cca08b0f3485b36f4b37018"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/question-restored-1280.png",
+      "sha256": "f968a8f493156efffa10f5b2a87b903fecacbc09df314fb984a3bc2f7e4af914"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/question-restored-390.png",
+      "sha256": "7547a8721fe25ae865a9b502b214793662afef524760273174c57c1d6450e64b"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/rent-1024x320.png",
+      "sha256": "02e1d4e5aee47670a08a9366907214d4d106b970b4fa1ac2ce3b76bb06251641"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/rent-1280x720.png",
+      "sha256": "bd517a3458d5c0dda12fc7e5562e5a8491c471a1dbf9b16d8c9078f6021cab01"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/rent-1512x850.png",
+      "sha256": "b11f42d9e71dbf402dd4abfb1f5c1b8c6b667b0a685a057ff8d2482ff94cbfc8"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/rent-320x568.png",
+      "sha256": "0ad917e567edeb27217652d52a91503d2b63ed8cbdf562b4593b4493434d52ad"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/rent-390x844.png",
+      "sha256": "df45af60f18876f7ac55cfea3878cad09d6e64906a2ab80760a196f86d4510ae"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/reset-final-zoom200.png",
+      "sha256": "0d4ee536410102e80e55ad8a5e5eb35980d1088c1c918624969845bd731180ff"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/reset-final-zoom400.png",
+      "sha256": "4928e56756c1fa1bb968b7d3a2b736bedaf127651417d9b52dac133f9f58f77a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-1024x320.png",
+      "sha256": "ea921d26d9ed78feffeb7d815d39cc9eb2f15ed8cbe0db703dad0c368631fc73"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-1280x720.png",
+      "sha256": "4314370414648aa322f62597678eea0fa42f60bfe99fd1ec26cc9485333e7bc6"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-1512x850.png",
+      "sha256": "ab609094ee4a4b07a3923882197002bd53318584709f92311da1edb3efbe2582"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-320x568.png",
+      "sha256": "68d82c9466a32dafc35abeb71eebcac0b657f030895b93076abd06a1e866fcc5"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-390x844.png",
+      "sha256": "905add0f89095a46fc7b0a340ebdc384510b745b60228ba760c09160600e702a"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-final-1280.png",
+      "sha256": "fce1cae358d2430d323cb16232600f59f898d9e50166852ecb81826d0e3d729f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/selection-final-390.png",
+      "sha256": "39e83e29803834b05950150b2463765d02b23007a59a523f45e094d5572c36fe"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-1024x320.png",
+      "sha256": "ed34628b7190550cdb203b4fd9f1779dee4d77350847341a727517f85f0aa7d6"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-1280x720.png",
+      "sha256": "4aee48b2567a73d38a1899aa2d7eb4781d848bacce53272c3490ea9a780043b9"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-1512x850.png",
+      "sha256": "6c5eb83b8234eac918b7b045923de513c2c671ccaa38a4dfdb16515f2d4d0253"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-320x568.png",
+      "sha256": "546585f2906443ef88889b9790fb1e855b73978e03301da9c77ef8ab72188385"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-390x844.png",
+      "sha256": "9f9cc7db40d02e9d222d2d322a11e841560c344e99b44561cfbe9c94f57a654d"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-text200.png",
+      "sha256": "0a5d2eacaeccbeb2e8e49abd8551d23891ed45848d65e1e984dc596916785175"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-zoom200.png",
+      "sha256": "c7ccf9e89a940cf16792891eeadbf4dc37eaa5644dd4e22f22c7baf2ed1b9b3f"
+    },
+    {
+      "path": "outputs/ui-ux-cleanup-previews/source-zoom400.png",
+      "sha256": "c59bc1cea96bb75562155ccf4d9a5d2f695a42ecea631f2772bfe5065436e8e6"
+    }
+  ],
+  "screenshotTiming": "Before captures preserve baseline. Earlier after captures predate bounded cache/recovery, selection-legend and compact-quiz corrections; final named captures and defect records identify corrections. No claim that every earlier image is the final exact asset build.",
+  "acceptanceConclusion": {
+    "tasksCompleted": [
+      "U004",
+      "U005",
+      "U006",
+      "U007",
+      "U008",
+      "U009",
+      "U010",
+      "U011",
+      "U012",
+      "U013",
+      "U014",
+      "U015",
+      "U016"
+    ],
+    "flowCount": 8,
+    "acceptanceCount": 38,
+    "openP0": 0,
+    "openP1": 0,
+    "openP2": 0,
+    "basis": "Observed local journeys, inspected real-content captures, directly authored copy/source ledger, targeted regressions and full required gates; no recruited usability or production certification."
+  }
+}

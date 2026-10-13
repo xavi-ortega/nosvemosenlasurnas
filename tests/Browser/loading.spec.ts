@@ -6,10 +6,11 @@ test.use({ reducedMotion: 'reduce' });
 if (process.env.ITERATION_REAL_URL) test.use({ baseURL: process.env.ITERATION_REAL_URL });
 
 for (const path of ['/', '/questionnaire', '/programmes', '/how-it-works', '/insights']) {
-    test(`delayed ${path} uses an inert skeleton and keeps the page geometry`, async ({ page }, info) => {
+    test(`delayed ${path} keeps useful rendered content or an inert skeleton without shifting the page`, async ({ page }, info) => {
         let release!: () => void;
+        let requested = 0;
         const pending = new Promise<void>(resolve => { release = resolve; });
-        await page.route(path === '/insights' ? '**/api/feedback-report' : '**/api/bank', async route => { await pending; await route.continue(); });
+        await page.route(path === '/insights' ? '**/api/feedback-report' : '**/api/bank', async route => { requested++; await pending; await route.continue(); });
         await page.addInitScript(() => {
             const state = window as typeof window & { loadingShifts: number[] }; state.loadingShifts = [];
             new PerformanceObserver(list => {
@@ -25,25 +26,42 @@ for (const path of ['/', '/questionnaire', '/programmes', '/how-it-works', '/ins
             await expect(page.getByRole('heading', { name: 'Tu voto merece contexto.', exact: true })).toBeVisible();
             await expect(page.locator('.loading-skeleton')).toHaveCount(0); release(); return;
         }
-        await expect(app).toHaveAttribute('aria-busy', 'true');
-        await expect(app.locator('.skeleton-content')).toHaveAttribute('inert', '');
-        await expect(app.getByRole('button')).toHaveCount(0);
-        await expect(app.getByRole('status')).toHaveCSS('position', 'absolute');
+        const legacyInformation = path === '/how-it-works' && !await app.count();
+        const surface = legacyInformation ? page.locator('main > article.information') : app;
+        const information = legacyInformation ? null : await app.getAttribute('data-information-page');
+        const deferred = path === '/insights' && await page.locator('body').getAttribute('data-iteration') === '2';
+        if (legacyInformation) {
+            await expect(page.locator('body')).not.toHaveAttribute('data-iteration', '2');
+            await expect(surface.getByRole('heading', { name: 'Cómo funciona', exact: true })).toBeVisible();
+            await expect(page.locator('[aria-busy="true"], .loading-skeleton')).toHaveCount(0);
+        }
+        if (legacyInformation || information || deferred) {
+            await expect(surface).not.toHaveAttribute('aria-busy', 'true');
+            await expect(surface.locator('.loading-skeleton')).toHaveCount(0);
+            await expect(surface).toContainText(legacyInformation || information ? 'Comparamos tus respuestas' : 'Las valoraciones no están disponibles');
+            await expect(surface.getByRole('link').first()).toBeVisible();
+        } else {
+            await expect(app).toHaveAttribute('aria-busy', 'true');
+            await expect(app.locator('.skeleton-content')).toHaveAttribute('inert', '');
+            await expect(app.getByRole('button')).toHaveCount(0);
+            await expect(app.getByRole('status')).toHaveCSS('position', 'absolute');
+        }
         expect((await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze()).violations).toEqual([]);
-        const before = await app.boundingBox(); const footer = await page.locator('.site-footer').boundingBox();
+        const before = await surface.boundingBox(); const footer = await page.locator('.site-footer').boundingBox();
         if (process.env.LOADING_CAPTURE) {
             mkdirSync('.tools', { recursive: true });
             await page.screenshot({ path: `.tools/loading-${info.project.name}-${path.slice(1) || 'home'}.png`, animations: 'disabled' });
         }
         release();
-        await expect(app).not.toHaveAttribute('aria-busy', 'true');
-        await expect(app.locator('.loading-skeleton')).toHaveCount(0);
+        await expect(surface).not.toHaveAttribute('aria-busy', 'true');
+        await expect(surface.locator('.loading-skeleton')).toHaveCount(0);
         await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
-        const after = await app.boundingBox(); const finalFooter = await page.locator('.site-footer').boundingBox();
+        const after = await surface.boundingBox(); const finalFooter = await page.locator('.site-footer').boundingBox();
         expect(after!.y).toBeCloseTo(before!.y, 0);
         expect(finalFooter!.y).toBeGreaterThanOrEqual(footer!.y - 1);
         expect(await page.evaluate(() => (window as typeof window & { loadingShifts: number[] }).loadingShifts.reduce((sum, value) => sum + value, 0))).toBeLessThan(0.001);
         expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+        if (legacyInformation || deferred) expect(requested).toBe(0);
     });
 }
 
@@ -59,6 +77,12 @@ test('a failed bank replaces the skeleton with usable recovery without collapsin
     await expect(retry).toBeEnabled(); await retry.focus(); await expect(retry).toBeFocused();
     await expect(page.locator('#app .loading-skeleton')).toHaveCount(0);
     expect((await page.locator('.site-footer').boundingBox())!.y).toBeCloseTo(footer!.y, 0);
+    await page.evaluate(() => {
+        window.dispatchEvent(new PageTransitionEvent('pagehide', { persisted: true }));
+        window.dispatchEvent(new PageTransitionEvent('pageshow', { persisted: true }));
+    });
+    await expect(retry).toBeEnabled();
+    await expect(page.locator('#app')).not.toBeEmpty();
 });
 
 test('source history reserves its own space while the rest of the sources stay available', async ({ page }) => {

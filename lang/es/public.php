@@ -96,7 +96,7 @@ return [
     'missing_programme' => 'Programa no incorporado a esta edición.',
     'source_warning' => 'Una cita exacta no garantiza que toda interpretación sea correcta. Las posiciones dudosas, ausentes o contradictorias se dejan sin puntuar.',
     'quiz_intro' => 'Empieza con diez preguntas sobre distintos temas. Después puedes ver tus resultados, revisar las respuestas o añadir cinco más.',
-    'quiz_reload' => 'Tus respuestas se quedan en esta página. Al recargar o salir se borran. No verás resultados hasta que decidas terminar.',
+    'quiz_reload' => 'Tus respuestas se quedan en esta página. Al recargar o cerrar esta página se borran. No verás resultados hasta que decidas terminar.',
     'constituency' => 'Ámbito de comparación',
     'all_constituencies' => 'Todas las candidaturas de esta edición',
     'priorities' => 'Importancia de los temas (opcional)',

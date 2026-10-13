@@ -1,0 +1,594 @@
+{
+  "schemaVersion": 1,
+  "reportVersion": "ui-ux-cleanup-server-v1.1.0",
+  "planVersion": "ui-ux-cleanup-2023-v1.1.0",
+  "observedAt": "2026-10-13T08:17:27.663612+00:00",
+  "scope": "Current route aliases, public shell, shared server-readable information, no-JavaScript source directory, F05/F06 return journeys, stable loading geometry, and final real-browser F04/F08 result/comparison/review/download/pending-topic walkthroughs.",
+  "runtime": "http://127.0.0.1:8000",
+  "sourceBank": "outputs/quiz-2023-second-iteration-bank.json",
+  "sourceBankSha256": "7e0f255fed82d06fc6d3dfc0c884adeee1742d127446fc7bdb5195fc720c015b",
+  "status": "implemented_and_locally_verified",
+  "changedFiles": [
+    "routes/web.php",
+    "resources/views/components/layout.blade.php",
+    "resources/views/public/app.blade.php",
+    "resources/views/public/information.blade.php",
+    "resources/views/public/information-content.blade.php",
+    "lang/es/cleanup.php",
+    "tests/Feature/SecondIterationRoutesTest.php"
+  ],
+  "routeDecisions": [
+    {
+      "paths": [
+        "/method",
+        "/how-it-works"
+      ],
+      "page": "method",
+      "result": "Both render the same current 20 + 10 explanation. Removed retired threshold/selector prose from active v2 messages."
+    },
+    {
+      "paths": [
+        "/help",
+        "/privacy",
+        "/accessibility"
+      ],
+      "result": "Shared server-rendered content remains useful without JavaScript or a bank; live SPA navigation clones the same content and exposes an exact-origin return."
+    },
+    {
+      "paths": [
+        "/sources"
+      ],
+      "result": "Distinct source directory. All 59 common-programme formations remain visible; no-JavaScript native disclosures expose original/preserved links, availability, exact territorial scope and provenance."
+    },
+    {
+      "paths": [
+        "/comparison"
+      ],
+      "page": "comparison",
+      "result": "Named public bookmark retained; current app enters programme selection."
+    },
+    {
+      "paths": [
+        "/feedback",
+        "/insights"
+      ],
+      "result": "Current edition renders a truthful unavailable state with useful test/programme links. data-deferred-page prevents collection/report startup."
+    },
+    {
+      "paths": [
+        "/",
+        "/questionnaire",
+        "/programmes",
+        "/comparison",
+        "/sources",
+        "/method",
+        "/how-it-works",
+        "/help",
+        "/privacy",
+        "/accessibility",
+        "/feedback",
+        "/insights"
+      ],
+      "condition": "Missing or corrupt bank; release is null",
+      "result": "Use public.app and current v2 shell. Keep shared help and current recovery messages. Feedback/insights remain deferred. A missing no-JavaScript source directory does not falsely promise 59 loaded entries."
+    }
+  ],
+  "loop": [
+    {
+      "step": "reproduce",
+      "evidence": "Read active route/template implementations and baseline D07/D08/D12/D13/D14. /method used retired thresholds, /sources mapped to programmes, and help was absent."
+    },
+    {
+      "step": "define_and_sketch",
+      "decision": "A small named header, help/source/privacy/accessibility footer; one shared current-method article; four reusable information templates; practical native disclosures with a live origin return and direct-entry fallback actions."
+    },
+    {
+      "step": "critique",
+      "finding": "Avoid duplicate main headings, repeated technical warnings, a source link that lands in comparison, and private state cleared by informational navigation. Keep exact calculation details optional."
+    },
+    {
+      "step": "implement",
+      "evidence": "Changed files listed above; root app provides same-document navigation and reader state."
+    },
+    {
+      "step": "verify_and_inspect",
+      "evidence": "Five feature tests /205 assertions, F05/F06 wide/narrow interaction traces, no-JavaScript route captures, eight delayed-bank geometry records, and named screenshot inspections."
+    },
+    {
+      "step": "correct",
+      "evidence": "Corrected Blade JSON compilation; explicit CI fixture bank on legacy test; no-JavaScript loading placeholder removed through root CSS; exact loading geometry; source hash reflow; scope disclosure renamed by root; contextual-return spacing now verified in final compiled bundle at both widths."
+    }
+  ],
+  "acceptanceEvidence": {
+    "A02": "In a real-bank test on question 2, leave via each practical information link and return. Question identity, currently selected native radio and live quiz state remain; no personalized bars or own-answer overlays appear.",
+    "A19": "Current /method and /how-it-works route/page/content parity verified server-side and in JavaScript-disabled browser contexts.",
+    "A21": "Help/privacy/accessibility have useful no-JavaScript direct content and same-document return to the exact quiz opener at both 1280×720 and 390×844.",
+    "A22": "All12 current public routes preserve the v2 recovery shell for absent/corrupt fixture banks, information stays readable, collection remains disabled, and /api/bank returns503 without a session cookie. Release-state/withdrawal browser failures are covered by the parent packet, not claimed here.",
+    "A23": "Eight measured home/quiz/programmes/method × wide/narrow delayed-bank transitions: unchanged #app geometry and footer position; observed CLS 0.",
+    "A25": "Each full result/comparison/review/download flow makes one public GET /api/bank and two body-free GET /api/release-state requests. No personalized query/body, history payload, cookies, localStorage, sessionStorage or IndexedDB entries. Native local exports require explicit dialog actions; Escape cancels.",
+    "A26": "JavaScript-disabled /feedback and /insights show collection unavailable plus Test/Programmes exits. No collection was activated.",
+    "A37": "Directory has all 59 entries. PSC factsheet keeps missing common programme and Barcelona/Girona/Lleida/Tarragona scope; no inherited PSOE evidence. PACMA original link and local return preserve directory query/opener.",
+    "A14": "F04 screenshot inspection distinguishes Sumar confirmed overlap 62.5% from available information 75% for the fictitious 20-answer case. The individual rent-cap relationship is separately 0%; no vote probability or winner claim appears.",
+    "A16": "At 1280 and390, En qué difieres → Ver fuente opens the exact rent-cap quote in two actions. Back restores rent-price-cap/boe-2023-004-p1 focus. Switching matches/unknowns then one Back restores the original searched result and invoking action.",
+    "A17": "At both widths, skipping the two pension answers shows 18 opinions /9 topics and a named Pensiones review action. Deliberate finish shows a pending dash rather than a fabricated total. One opinion and a new deliberate finish restore the current total.",
+    "A18": "Individual rent-cap review hides every personal result/overlay before the edit; current result returns only through Volver a ver mi resultado. Technical export confirms the same20 starter IDs and only that answer changed.",
+    "A24": "Result, reader, single-question review, comparison and download dialog visually inspected at1280/390; an additional320 result capture has no horizontal overflow. This contribution does not claim the parent full keyboard/zoom/low-height matrix.",
+    "A29": "Explicit PP/Sumar selection enters the shared comparator in one action. Source return, optional personal overlay and cancelling a selection draft retain the workspace. Return restores the same Sumar search, displayed values, selected choice, scroll and compare opener at both widths.",
+    "A30": "Generic comparison after finish starts with own answers hidden. Showing them and Comparar con mis respuestas both require explicit actions after reveal. Editing invalidates personal readings immediately. Unsure/skipped/unasked overlay variants remain owned by the parent regression packet.",
+    "A34": "Matches, differences and missing-evidence panels expose independent proposal evidence. The inspected unknown pension-tax case explicitly says missing information does not mean opposition; its qualified rationale remains visible.",
+    "A35": "Single cited-answer review retains20 question IDs and19 unchanged answers, verified in the actual downloaded JSON at both widths. A separate390 flow removes the only pension opinion after a visible72.5% result: pending dash, no stale personal reading, same20 questions, then explicit re-finish restores72.5%."
+  },
+  "flows": [
+    {
+      "id": "F05",
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "sequence": [
+        "Start quiz",
+        "Confirm first answer and wait until next question controls are enabled",
+        "Select a native radio with keyboard on question 2",
+        "Open Ayuda; expand percentage help; return",
+        "Open Privacidad; expand memory explanation; return",
+        "Open Accesibilidad; expand keyboard explanation; return"
+      ],
+      "result": "Same question ID and native choice retained; exact invoking link receives focus; zero personal result elements before deliberate finish."
+    },
+    {
+      "id": "F06",
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "sequence": [
+        "Open Fuentes from live quiz",
+        "Search PSC",
+        "Open missing-programme factsheet and scope disclosure",
+        "Return to same PSC query/opener",
+        "Search PACMA",
+        "Open available-programme factsheet",
+        "Inspect original-link protections",
+        "Return to same PACMA query/opener",
+        "Return to live quiz"
+      ],
+      "result": "All59 searchable; missing status preserved; original source named; directory and quiz context intact."
+    },
+    {
+      "id": "F06_external_original",
+      "sequence": [
+        "Open PACMA original in another tab",
+        "Close external tab",
+        "Return to PACMA directory"
+      ],
+      "result": "Publisher returned HTTP200 application/pdf without Referer; directory query and opener focus retained.",
+      "limitation": "The headless PDF popup did not reach DOMContentLoaded within 15 seconds. No claim of visually inspecting the external PDF viewer is made."
+    },
+    {
+      "id": "F04",
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "sequence": [
+        "Complete20 fictitious starter answers",
+        "Deliberately finish",
+        "Search Sumar",
+        "Read differences → rent-cap source → same example",
+        "Switch to matches and missing evidence → one return to same result",
+        "Review only the rent-cap answer",
+        "Deliberately finish again",
+        "Cancel export dialog with Escape",
+        "Explicit readable and technical local downloads"
+      ],
+      "result": "Same IDs and all other answers preserved. Result62.5%/information75% changes to67.5%/75% only after changing the rent answer and finishing. Readers return to semantic controls. Both export formats and opener focus work."
+    },
+    {
+      "id": "F08",
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "sequence": [
+        "From revealed result explicitly select PP and Sumar",
+        "Comparar programas; no personal overlay",
+        "Open rent-cap source → same comparison control",
+        "Explicitly enable Mostrar mis respuestas",
+        "Change draft programmes then Volver sin cambiar",
+        "Return to exact result search/values/selection/scroll/opener",
+        "Enter Comparar con mis respuestas explicitly",
+        "Return to results"
+      ],
+      "result": "No preselection, answer mutation or personalized state in navigation/storage. Both entry actions share the programme comparator and retain an exact result return."
+    },
+    {
+      "id": "F08_pending",
+      "viewports": [
+        "1280x720",
+        "390x844"
+      ],
+      "sequence": [
+        "Complete20 questions with both pensions answers skipped",
+        "Read concrete pending-topic action",
+        "Finish deliberately and inspect pending dash",
+        "Open pensions-cost-of-living only",
+        "Answer and deliberately finish again"
+      ],
+      "result": "Required topic is named; no invented neutral answer or total. Search Sumar remains. Result after recovery72.5%, information80% for this fictitious answer set."
+    },
+    {
+      "id": "A35_remove_topic_after_reveal",
+      "viewports": [
+        "390x844"
+      ],
+      "sequence": [
+        "See72.5% result",
+        "Review responses and remove the sole pension opinion",
+        "Return to checkpoint then explicitly finish",
+        "Inspect pending total",
+        "Review named pension question and finish again"
+      ],
+      "result": "All20 questions preserved; personal readings invalidated during review; visible total becomes dash and only a later explicit finish restores72.5%."
+    }
+  ],
+  "screenReviews": [
+    {
+      "screen": "method",
+      "where": "Cómo funciona",
+      "task": "Read the three plain rules or choose an illustrative calculation.",
+      "meaning": "Same rules for all; missing information is not opposition; exact formula and weights remain in Ver el cálculo completo.",
+      "changed": "Illustrative output changes only after a named example action; no quiz mutation.",
+      "return": "Live origin button or direct Home/Test/Programmes actions."
+    },
+    {
+      "screen": "help",
+      "where": "Ayuda para seguir",
+      "task": "Choose a task-named native disclosure.",
+      "meaning": "Percentage, programme comparison, answer editing, missing programmes and privacy explained beside useful links.",
+      "changed": "The open disclosure exposes its answer and action; native arrow changes.",
+      "return": "Volver a lo que estaba haciendo restores the invoking control and question."
+    },
+    {
+      "screen": "privacy",
+      "where": "Tus respuestas se quedan contigo",
+      "task": "Read what stays in memory, what download creates and what an external source/host sees.",
+      "meaning": "No server answers; reload/close erases in-page state; downloaded files remain; host metadata not promised anonymous; metrics disabled.",
+      "changed": "Each disclosure opens one practical explanation without session changes.",
+      "return": "Context return or direct Home/Test/Programmes links."
+    },
+    {
+      "screen": "accessibility",
+      "where": "Usa la web a tu manera",
+      "task": "Choose keyboard, reading, movement or source-return guidance.",
+      "meaning": "Concrete keys, zoom, motion and source fallback; no universal certification claim.",
+      "changed": "Native disclosure reveals relevant instructions.",
+      "return": "Exact task return remains visible above the heading."
+    },
+    {
+      "screen": "sources_directory",
+      "where": "Fuentes de los programas de 2023",
+      "task": "Search a formation and open its source factsheet.",
+      "meaning": "Availability is explicit; all 59 remain accessible, including missing programmes.",
+      "changed": "Search count/rows update while input keeps its query; opening a factsheet replaces the reading area.",
+      "return": "Volver a fuentes restores the same search and opener."
+    },
+    {
+      "screen": "missing_source",
+      "where": "PSC official formation name and Generales de 2023",
+      "task": "Read the missing status/scope or continue into public proposals/comparison.",
+      "meaning": "No common programme found; no PSOE inheritance.",
+      "changed": "Scope disclosure reveals four exact constituencies.",
+      "return": "Volver a fuentes retains PSC query and focus."
+    },
+    {
+      "screen": "available_source",
+      "where": "PACMA official formation name and Generales de 2023",
+      "task": "Open the named official PDF, inspect provenance, or continue into proposals.",
+      "meaning": "Common programme found, original source opens another tab; scope preserved.",
+      "changed": "Original PDF opens separately; provenance and scope are native disclosures.",
+      "return": "Close original tab; app reader and directory query remain; local Back restores opener."
+    },
+    {
+      "screen": "deferred_routes",
+      "where": "Las valoraciones no están disponibles en esta edición",
+      "task": "Continue to test or programmes.",
+      "meaning": "Feedback and statistics are disabled.",
+      "changed": "No collection occurs on entry.",
+      "return": "Useful Test/Programmes links and public header/footer."
+    },
+    {
+      "screen": "revealed_result",
+      "where": "Tus coincidencias con los programas de2023",
+      "task": "Search a formation, inspect one of three evidence categories, optionally select programmes, review or download.",
+      "meaning": "The bar is confirmed overlap, with weighted information shown separately. Intro states that gaps add no agreement.",
+      "changed": "Search changes only visible rows/count. Rent-answer revision changes62.5% to67.5% only after a new finish; available information stays75%.",
+      "return": "Readers and comparator have explicit result returns restoring search, scroll and the invoking control."
+    },
+    {
+      "screen": "result_relationships",
+      "where": "Named formation plus En qué coincides / En qué difieres / Qué no sabemos",
+      "task": "Read your response, programme stance, qualified summary, and open the exact source or review that answer.",
+      "meaning": "Individual relationship is distinct from overall overlap. Missing evidence explicitly does not imply opposition.",
+      "changed": "Category switches replace the category view; opening a source retains this proposal context.",
+      "return": "One category Back returns to the original result; source Back restores the exact proposal action."
+    },
+    {
+      "screen": "result_source",
+      "where": "Full proposal, formation name and Programa de las generales de2023",
+      "task": "Read separately the current personal relationship, programme stance, authored interpretation and original quotation/context.",
+      "meaning": "Original text is labelled; summary and full interpretation remain distinct. Exact page77/line4487 in the rent-cap example.",
+      "changed": "Source opens as one readable full-width panel; it does not alter the answer or score.",
+      "return": "Volver a las posiciones restores the rent-cap action; closing detail returns to the result origin."
+    },
+    {
+      "screen": "comparison_from_results",
+      "where": "Compara sus propuestas with Volver a mis resultados",
+      "task": "Compare the chosen PP/Sumar programmes by topic, open a source, change programmes, or explicitly show personal answers.",
+      "meaning": "Native personal-overlay control starts off for generic comparison. Unknown PP rent-cap stance remains visibly different from Sumar support and retains its qualified interpretation.",
+      "changed": "Enabling overlay shows the previously given answer. Cancelled programme draft preserves the workspace and overlay.",
+      "return": "Source Back restores its semantic control; result return preserves the exact search, values, selected choice, scroll and opener."
+    },
+    {
+      "screen": "one_answer_review",
+      "where": "Revisa tu respuesta with one full authored question",
+      "task": "Choose one native ordered answer and deliberately return to the result.",
+      "meaning": "The notice explicitly says other answers are retained and results require finishing again. No formation or personal score is visible.",
+      "changed": "The radio selection changes with clear border/fill; no automatic result reveal.",
+      "return": "Volver a ver mi resultado rechecks and reveals; Volver al punto de decisión leaves an explicit finish choice."
+    },
+    {
+      "screen": "download_dialog",
+      "where": "Native dialog titled Descargar mis resultados",
+      "task": "Cancel, save a readable local file or explicitly choose complete JSON.",
+      "meaning": "Notice says the file contains political answers, lives on the device and should be shared only intentionally.",
+      "changed": "Escape creates no file; each named download action creates exactly its local format.",
+      "return": "Cancel and both downloads close the dialog and restore Descargar mis resultados focus."
+    },
+    {
+      "screen": "pending_topic",
+      "where": "Checkpoint or deliberately revealed result names missing Pensiones opinion",
+      "task": "Open Responder una pregunta de Pensiones and give an opinion if desired.",
+      "meaning": "18 opinions in9 topics is insufficient for the required total; result uses a dash with Porcentaje global pendiente.",
+      "changed": "Adding the opinion and deliberately finishing removes the pending notice and shows the current total. Removing the sole opinion after reveal makes it pending again.",
+      "return": "Direct one-question review retains all20 authored IDs and returns through a fresh explicit finish; Sumar search remains."
+    }
+  ],
+  "verificationCommands": [
+    {
+      "command": "scripts/composer show --direct",
+      "result": "Confirmed laravel/framework 13.35.0, phpunit/phpunit 12.5.38 and laravel/pint 1.32.1."
+    },
+    {
+      "command": "scripts/php artisan route:list --method=GET --except-vendor",
+      "result": "16 public GET routes listed, including help and shared method aliases."
+    },
+    {
+      "command": "scripts/php vendor/bin/pint --dirty --format agent",
+      "result": "Passed after fallback edits; rerun passed after integration catalog edits including lang/es/ui.php."
+    },
+    {
+      "command": "EVIDENCE_DIRECTORY=/Users/xavi.ortega/Documents/Codex/nosvemosenlasurnas/resources/evidence scripts/php artisan test --compact tests/Feature/SecondIterationRoutesTest.php tests/Feature/PublicJourneyTest.php",
+      "result": "7 tests passed;349 assertions after the absent/corrupt-bank fallback and legacy-shell/current-bank hydration regressions. Explicit fixture EVIDENCE_DIRECTORY preserves the existing synthetic journey test."
+    },
+    {
+      "command": "git diff --check",
+      "result": "Passed."
+    },
+    {
+      "command": "Installed Playwright Chromium invoked inline against http://127.0.0.1:8000, compiled application and real immutable bank; no extra server",
+      "result": "Two full F04/F08 flows, two pending-topic recovery flows, one post-reveal topic-removal flow.31 retained PNGs; zero recorded horizontal overflow; zero browser errors. Actual download contents and private-state traces verified."
+    }
+  ],
+  "rawEvidence": [
+    ".tools/ui-ux-cleanup-server/no-js.json",
+    ".tools/ui-ux-cleanup-server/flows.json",
+    ".tools/ui-ux-cleanup-server/external-original.json",
+    ".tools/ui-ux-cleanup-server/skeleton-geometry.json",
+    ".tools/ui-ux-cleanup-server/corrections.json",
+    ".tools/ui-ux-cleanup-server/compiled-spacing.json",
+    ".tools/ui-ux-cleanup-server/final-result-flows.json",
+    ".tools/ui-ux-cleanup-server/pending-result-flows.json",
+    ".tools/ui-ux-cleanup-server/pending-topic-removal.json"
+  ],
+  "inspectedScreenshots": [
+    "help-390.png",
+    "method-1280.png",
+    "method-390.png",
+    "flow-ayuda-390.png",
+    "flow-psc-1280.png",
+    "flow-pacma-390.png",
+    "source-proof-390.png",
+    "flow-ayuda-1280.png"
+  ],
+  "resolvedDefects": [
+    {
+      "id": "server-01",
+      "issue": "Multi-argument @json expression compiled incorrectly.",
+      "correction": "Merge catalog messages into a PHP variable before @json; route tests pass."
+    },
+    {
+      "id": "server-02",
+      "issue": "No-JavaScript source directory followed a tall inert loading placeholder.",
+      "correction": "Root scripting:none rule hides busy #app; directory now begins at y120 wide/y193.6 mobile."
+    },
+    {
+      "id": "server-03",
+      "issue": "Old scope label used circunscripciones and ámbito.",
+      "correction": "Root changed it to Dónde se presentó (:count), inspected in actual PSC/PACMA captures."
+    },
+    {
+      "id": "server-04",
+      "issue": "No-JavaScript long provenance hash could overflow narrow reading.",
+      "correction": "Reuse source-hash wrapping; expanded proof has no overflow at 390 px."
+    },
+    {
+      "id": "server-05",
+      "issue": "Server skeletons and current app structure differed.",
+      "correction": "Matched home, quiz, full programme selection and method geometry; all eight observed CLS values are 0."
+    },
+    {
+      "id": "server-06",
+      "issue": "Return button touched the information heading before the new spacing utility was compiled.",
+      "correction": "Added mb-5 in information-content.blade.php; app-DvnW4YfW.css gives an actual 20px gap at 1280x720 and 390x844. Inspected both completed Help screenshots and returned to the same quiz opener with focus preserved."
+    },
+    {
+      "id": "server-07",
+      "issue": "A null release selected historical welcome at / and a legacy shell on non-information surfaces. The source fallback also promised a directory that had not loaded.",
+      "reproduction": "New temporary-fixture feature test failed: expected public.app, received welcome. Both absent pointer and corrupt release bytes exercise real PublicBank failure without modifying the real bank.",
+      "correction": "Null release uses public.app and current v2 shell on every public route. Directory fallback uses the existing truthful unavailable message. Six affected tests /341 assertions and final Pint pass."
+    },
+    {
+      "id": "server-08",
+      "issue": "The exact-stage browser suite mounted a fetched v2 bank over the synthetic legacy SSR shell, whose layout omitted current hidden information templates. Contextual help therefore could not hydrate.",
+      "correction": "Always provide the four inert template elements. Legacy visible content and its engine flag are unchanged; the fetched current app can clone the same practical content and contextual return.",
+      "verification": "New synthetic-shell boundary regression plus current-bank and missing/corrupt-bank route tests:7 tests/349 assertions. Pint passes. Parent owns the rerun of the complete exact-stage browser gate."
+    }
+  ],
+  "remainingDefects": [],
+  "limitations": [
+    "This is a local practical agent walkthrough, not a recruited usability study or universal accessibility certification.",
+    "The external PACMA response was verified as a PDF, but its headless viewer did not complete a DOM load.",
+    "No publication, deployed host logging/privacy or live collection was approved or tested here.",
+    "The bank, authored electoral positions, citations and engine arithmetic were not changed.",
+    "Exact staged-tree CI, consolidated A01–A38 evidence and final commits belong to the parent integration packet."
+  ],
+  "artifactHashes": {
+    ".tools/ui-ux-cleanup-server/flow-pacma-390.png": "1eec231b07fddb53fd28f9c78d42c197000982b070bc3c165837f002299ae349",
+    ".tools/ui-ux-cleanup-server/help-390.png": "158cd6875fb1470dade2ad1818cbf01ce05b759a2ea11c3c31c5cf7979c9a7d4",
+    ".tools/ui-ux-cleanup-server/source-proof-390.png": "dc8de62fc5bbb217027429e529a80eb421d0352dbd9e7c64f40d33d26c10d929",
+    ".tools/ui-ux-cleanup-server/flows.json": "a1956b0e6658fcdb97ccf45450281d66f88b39afc680ace22d68d660f021996e",
+    ".tools/ui-ux-cleanup-server/flow-ayuda-390.png": "f22e00b09757bbce1202fbc0dcff6c88fa495c4febe13fdc9f95982b55f6712a",
+    ".tools/ui-ux-cleanup-server/corrections.json": "67331aa4c633ce8d2c90c31e40540f7095064b4c36725eb8ed12e9b9892cce0e",
+    ".tools/ui-ux-cleanup-server/method-390.png": "703f12286ddc5727ddddb7436da55a1139c678aef536d822fefcb5f93f4f0765",
+    ".tools/ui-ux-cleanup-server/skeleton-geometry.json": "5811b77c8f26d94cf03adf1c8cedaf1f68eb6e7023989804736f5e797e5ee35e",
+    ".tools/ui-ux-cleanup-server/method-1280.png": "9a615a552d3274cb3f97417c492ab3ff560543cdf14c42a13a9662581da729e9",
+    ".tools/ui-ux-cleanup-server/flow-psc-1280.png": "ab9d4b598f04e99450a7134ea54cb5e7a8b30f929a72f466055c3c1e9af8bfa0",
+    ".tools/ui-ux-cleanup-server/external-original.json": "694737e20469d9c2e1cf1b9e3432de432127c8971028c895f41f5fdd5a31bf3c",
+    ".tools/ui-ux-cleanup-server/no-js.json": "790fc7cfe4f829d72f06dde0607b3a0081b500dce333dea160e8d87db5f6d11a",
+    ".tools/ui-ux-cleanup-server/compiled-spacing.json": "873de19e7405f1a5e8ead61dfeb596d6a79b4a36c897a65f74f556aa6b8bbb86",
+    ".tools/ui-ux-cleanup-server/flow-ayuda-1280.png": "b1364ffda42394fe361637804fb7b0f049a5bf2a5e7d67e1a0b6699c619ca7b7",
+    ".tools/ui-ux-cleanup-server/final-result-flows.json": "bf5bf446b42cc2781d505c0cec58ca73b9b41cedf88eb0cc6bc95ff9cd418456",
+    ".tools/ui-ux-cleanup-server/pending-result-flows.json": "778060b986f3ffcbf6f47d8f25cc77260f13b4b3e7ab0de1f2c53b849b8f7c5d",
+    ".tools/ui-ux-cleanup-server/pending-topic-removal.json": "c7408d541b66bbb5e40d47f9055dabc4fdd6ae21d7a94326a466a039c825852d",
+    "outputs/ui-ux-cleanup-previews/f04-f08-results-1280.png": "bdcb84f651f81e86fe3fec6090855c107319539e38088e89cb229921df0fa324",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-1280.png": "50ee6d2d68f384916f6f96880236edf447a701768f8ec4eb711da32bd995c22b",
+    "outputs/ui-ux-cleanup-previews/f04-f08-differences-1280.png": "a95fb4f7b258ea464c0c60c3eef16d60efedb5684d6ade64ceff264b95d3d641",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-1280.png": "db9bf0e31a03ddfe6e512a68ac494cb344b1126164826e55327df1564a694405",
+    "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-1280.png": "c4812d5fd0f45a0904b70f47fbfdcc204fb8797b3e57138bef6225b1b6d2d16f",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-1280.png": "415ec26118814c2629d6e17c6e00f6d39ef0a7966d1c60e15adfb26f8d2081dd",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-1280.png": "85ed865e5685c703911468edda15e6053bb35af591f843b6c3039f4a8acadf9f",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-1280.png": "76d97e03fea4cf7cab12093cae048cf813346448bbbb812ce295521065c066a6",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-1280.png": "d3f03ffd9bf8fdd47f7b55ad1ecadc4bd30c7b7d423367a0531fe2a4869acc27",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-1280.png": "572ff090cb97a452674f7509cbc1ee6406e348597eafa8e99ed4f465ae54e7af",
+    "outputs/ui-ux-cleanup-previews/f04-f08-results-390.png": "4fbe22fee3ea22ccf0b8bb419ab4bf9556dc3291fd1d692703aa3907b9955c47",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-390.png": "392815d7db14ac81fa22c49323b4ffe7588e18ad2ff3ca102c3fb00f29f17cac",
+    "outputs/ui-ux-cleanup-previews/f04-f08-differences-390.png": "b22e4b68cb8ffaf5e6a981bdab1bbe3c50ae4e7648e29a7a0e76dbacd49813e1",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-390.png": "7dfbb4c069d10835b809e920172e319df462f64840c741673f7325715b6d023d",
+    "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-390.png": "b156e3e1e7b16b5180844b343420aad845375a8901a020f3b740b7851944ff9e",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-390.png": "85197791c5f3610a1914fe7c4faf69482ff648b1ed23b4986d5d553eb2fa838c",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-390.png": "32e0e4393489fc521c781e2e6f777e61812871722faa62b8180e84743ff3c0de",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-390.png": "0cd81caee2773a6510218161bc57ef682a2910af7921d5fa2a38c2d00fe79c35",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-390.png": "74715abd0bdcc1be5db406c071020db2b7e153dde5a01ad22abdfcbd2b648ec6",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-390.png": "54751f22a24059ada05e75db5fab890eb3dc50eacca32718b327ad5854b628b9",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-narrow-390.png": "98667bb95a1c9286f1beac9d918ed2bf9c2b69a94555bdfcd22de68a467922b9",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-1280.png": "46d5007fb87b2534f067e2635748d980c979b5dbcfcabf841cb16cd8b551393e",
+    "outputs/ui-ux-cleanup-previews/f08-pending-result-1280.png": "6d49f9de8e57bbcb4a8d555e70bece3f9245e76b4399ea376d063c59328140ca",
+    "outputs/ui-ux-cleanup-previews/f08-pending-review-1280.png": "ad88a91ff5c1687f87b00ab63e279ce10f2a432d37d8c56a46b335073dd149c7",
+    "outputs/ui-ux-cleanup-previews/f08-pending-recovered-1280.png": "d4e0aa61902f96cf5538238c900095cf8b0336fae027941e067f9c7062943303",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-390.png": "53910e93d92f995d0079073477e29eb2824743b7bcbfae17f47329c6f8d46135",
+    "outputs/ui-ux-cleanup-previews/f08-pending-result-390.png": "3baed3c31ea8d57b2ae23d9ac98bc4eb71eae849e8816bb9a1acaa1aa6566f30",
+    "outputs/ui-ux-cleanup-previews/f08-pending-review-390.png": "b41ec2eb4b8611e39cee6a25b659b4708d00a612b8a5826d98c99ca48204d5c8",
+    "outputs/ui-ux-cleanup-previews/f08-pending-recovered-390.png": "58dc71f686b74ffc1887b940ecc0439b0263c68b60b1b1730b078487ac916b02",
+    "outputs/ui-ux-cleanup-previews/f08-removal-after-revealed-topic-removal-390.png": "e6a483d4f38aad5bff40dc45c96bd8c7d9cf97435cbec3f5ba6e3a0cec7019ad",
+    "outputs/ui-ux-cleanup-previews/f08-removal-recovered-after-removal-390.png": "58dc71f686b74ffc1887b940ecc0439b0263c68b60b1b1730b078487ac916b02"
+  },
+  "loadingHydrationVerified": "Method measurements wait for its illustrative controls to become enabled; all eight geometry records were repeated with explicit completed hydration and remain CLS 0.",
+  "stableScreenshots": [
+    "outputs/ui-ux-cleanup-previews/f04-f08-results-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-differences-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-results-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-differences-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-source-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-narrow-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-1280.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-result-1280.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-review-1280.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-recovered-1280.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-result-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-review-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-recovered-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-removal-after-revealed-topic-removal-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-removal-recovered-after-removal-390.png"
+  ],
+  "inspectedStableScreenshots": [
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-sumar-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-differences-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-download-dialog-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-result-narrow-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-1280.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-checkpoint-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-result-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-review-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-pending-recovered-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-missing-evidence-390.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-comparison-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-review-one-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-personal-comparison-1280.png",
+    "outputs/ui-ux-cleanup-previews/f04-f08-difference-source-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-removal-after-revealed-topic-removal-390.png",
+    "outputs/ui-ux-cleanup-previews/f08-removal-recovered-after-removal-390.png"
+  ],
+  "finalResultWalkthrough": {
+    "answerData": "Fictitious browser answers only; no owner political preferences were used.",
+    "screenCount": 31,
+    "inspectedScreenCount": 22,
+    "viewports": [
+      "1280x720",
+      "390x844",
+      "320x740 result reflow"
+    ],
+    "allRecordedScreensWithinViewport": true,
+    "browserErrors": [],
+    "compiledStylesheets": [
+      "http://127.0.0.1:8000/build/assets/app-DvnW4YfW.css"
+    ],
+    "privacy": "Per full flow: one fixed bank GET, two release-state GET requests, no other API request; empty browser storage/cookies/IndexedDB/history payload.",
+    "captureCorrection": "The initial pending-checkpoint screenshot caught the final answer confirmation lock. Repeated both affected flows after waiting for enabled checkpoint controls; final screenshots show the completed stable state.",
+    "scope": "Actual application walkthroughs and retained captures; not prototype acceptance or a recruited usability study."
+  },
+  "sourceFileHashes": {
+    "routes/web.php": "df320a907878725f9378bb8a3d94098764688fdfcac62e2839f423f3486891cf",
+    "resources/views/components/layout.blade.php": "01b6d7ee0a0e95952a9a6b3e1f5b241bd01b6b01f6270809c843614e1fff8772",
+    "resources/views/public/app.blade.php": "17df94702d4e5b5f8e6fab55f2a18e0ae80e84791e710e5b3db3aa2348e2f99b",
+    "resources/views/public/information.blade.php": "9c5bc37a31ca319ed4382d13793cd673e276d20189d90c11a91957eac9172e2c",
+    "resources/views/public/information-content.blade.php": "b3af80915e32197fa7e7c3b75c97a353697fa2a56a4e83e21219869df2918a5b",
+    "lang/es/cleanup.php": "6ec6aced7bc885af950f6c2e07007da3b3757055c5f48a12c65c7b9c90f25bc4",
+    "tests/Feature/SecondIterationRoutesTest.php": "dc070a84c0b48552f5e3f7ee1cbbbac4ad08c43fa1b392c8814315af9e496777",
+    "lang/es/ui.php": "d2431ea8289d1ebacc0d97f7cad0f464e4cbd782380d89a1bc7a89503eedd5ed",
+    "resources/js/iteration-app.ts": "4d6b07d02e47cd22b0a5a737848ec54b1bb1cd8f4312e2a8b1a054b242dd1cdf",
+    "resources/css/app.css": "09a8458b4ac1dca2dc2ac764596e60ec804cf5827c0b78915280481f99356ed7"
+  },
+  "sourceHashesRecordedAt": "2026-10-13T08:17:27.664130+00:00"
+}
